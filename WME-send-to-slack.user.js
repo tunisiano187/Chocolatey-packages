@@ -14,20 +14,12 @@
 // @compatible firefox
 // @compatible opera
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
+// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
 
-// Adding scripts
-    var wf = document.createElement('script');
-    ds.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js';
-    ds.type = 'text/javascript';
-    ds.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ds, s);
-    
 // Updates informations
 var UpdateNotes = "Added support for promotion followup tool and corrected some errors that made venues to not be able to send to slack";
 
