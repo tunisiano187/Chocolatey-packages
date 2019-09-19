@@ -10,7 +10,9 @@
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @author          Tunisiano18
 // @license         MIT/BSD/X11
-// @compatible      chrome firefox
+// @compatible chrome
+// @compatible firefox
+// @compatible opera
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-benelux-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
