@@ -14,7 +14,8 @@
 // @compatible firefox
 // @compatible opera
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-benelux-public/issues
+// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js
+// @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
