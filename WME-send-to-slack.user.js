@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.09.20.03
+// @version         2019.09.20.04
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -69,11 +69,9 @@ function init(e) {
 
                     if (locklevelDiv) {
                         log('Lock icons added');
-                        if(W.layerSwitcherController.state.attributes.ITEM_CLOSURES) {
-                            $( "#WMESTSlock" ).remove();
-                            $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSlock">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
-                            //WMESTS.makeEditsSigns(locklevelDiv);
-                        }
+                        $( "#WMESTSlock" ).remove();
+                        $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSlock">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
+                        //WMESTS.makeEditsSigns(locklevelDiv);
                         $( "#WMESTSvalidation" ).remove();
                         $('div.selection.selection-icon').append('<span id="WMESTSvalidation">' + validationicon + '</div>');
                         log('Validation icon added');
@@ -83,7 +81,9 @@ function init(e) {
                         log('Closure icons added');
                         //WMESTS.makeClosureSigns(closureslistDiv);
                         $( "#WMESTSclosures" ).remove();
-                        $('.closures-list').before('<div id="WMESTSclosures">' + closureicon + '&nbsp;' + openicon + '</div>');
+                        if(W.layerSwitcherController.state.attributes.ITEM_CLOSURES === true) {
+                            $('.closures-list').before('<div id="WMESTSclosures">' + closureicon + '&nbsp;' + openicon + '</div>');
+                        }
                         Loadactions();
                     }
                 }
@@ -91,7 +91,8 @@ function init(e) {
         });
     });
     WMESTSObserver.observe(document.getElementById('edit-panel'), { childList: true, subtree: true });
-};
+    VersionCheck();
+}
 
 // Functions used by the Script
 
@@ -121,7 +122,7 @@ function getPermalinkCleaned(text) {
     var projE=new OpenLayers.Projection("EPSG:4326");
     var currentlocation = (new OpenLayers.LonLat(W.map.center.lon,W.map.center.lat)).transform(projI,projE).toString().replace(',','&');
     $.each(W.selectionManager.getSelectedFeatures(), function(indx, section){
-        if(selectedindex!="")
+        if(selectedindex!=="")
         {
             selectedindex=selectedindex + ",";
         }
@@ -135,6 +136,16 @@ function getPermalinkCleaned(text) {
     return (text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex);
 }
 
+function Versioncheck() {
+    ///////////////////////////////////////
+    //  Verification de la mise à jour   //
+    ///////////////////////////////////////
+    if (localStorage.getItem('WMESTSVersion') === ScriptVersion && 'WMESTSVersion' in localStorage) {
 
+    } else if ('WMESTSVersion' in localStorage) {
+        WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
+        localStorage.setItem('WMESTSVersion', ScriptVersion);
+    }
+}
 
 init();
