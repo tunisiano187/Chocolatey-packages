@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.09.20.02
+// @version         2019.09.20.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -21,7 +21,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Added support for promotion followup tool and corrected some errors that made venues to not be able to send to slack";
+var UpdateNotes = "Check if the closure layer is active before loading the icons";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -69,9 +69,11 @@ function init(e) {
 
                     if (locklevelDiv) {
                         log('Lock icons added');
-                        $( "#WMESTSlock" ).remove();
-                        $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSlock">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
-                        //WMESTS.makeEditsSigns(locklevelDiv);
+                        if(W.layerSwitcherController.state.attributes.ITEM_CLOSURES) {
+                            $( "#WMESTSlock" ).remove();
+                            $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSlock">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
+                            //WMESTS.makeEditsSigns(locklevelDiv);
+                        }
                         $( "#WMESTSvalidation" ).remove();
                         $('div.selection.selection-icon').append('<span id="WMESTSvalidation">' + validationicon + '</div>');
                         log('Validation icon added');
