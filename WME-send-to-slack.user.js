@@ -12,7 +12,6 @@
 // @license         MIT/BSD/X11
 // @compatible chrome
 // @compatible firefox
-// @compatible opera
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
