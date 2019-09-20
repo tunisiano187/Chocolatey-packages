@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.09.19.02
+// @version         2019.09.20.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -69,16 +69,19 @@ function init(e) {
 
                     if (locklevelDiv) {
                         log('Lock icons added');
-                        $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSactions">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
+                        $( "#WMESTSlock" ).remove();
+                        $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSlock">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
                         //WMESTS.makeEditsSigns(locklevelDiv);
-                        $('div.selection.selection-icon').append('<span id="WMESTSactions">' + validationicon + '</div>');
+                        $( "#WMESTSvalidation" ).remove();
+                        $('div.selection.selection-icon').append('<span id="WMESTSvalidation">' + validationicon + '</div>');
                         log('Validation icon added');
                         Loadactions();
                     }
                     if (closureslistDiv) {
                         log('Closure icons added');
                         //WMESTS.makeClosureSigns(closureslistDiv);
-                        $('.closures-list').before('<div id="WMESTSactions">' + closureicon + '&nbsp;' + openicon + '</div>');
+                        $( "#WMESTSclosures" ).remove();
+                        $('.closures-list').before('<div id="WMESTSclosures">' + closureicon + '&nbsp;' + openicon + '</div>');
                         Loadactions();
                     }
                 }
