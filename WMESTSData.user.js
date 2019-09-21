@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         WMESTSData
-// @namespace    https://gitlab.com/WMEScripts
-// @version      2019.09.21.01
-// @description  Datas for the script WME-send-to-slack
-// @author       Tunisiano18
-// @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
+// @name            WMESTSData
+// @namespace       https://gitlab.com/WMEScripts
+// @version         2019.09.21.01
+// @description     Datas for the script WME-send-to-slack
+// @author          Tunisiano18
+// @include         /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
-// @grant        none
+// @grant           none
 // ==/UserScript==
 
 var _0xcaf7=["\x33\x30\x2D\x64\x65\x6D\x61\x6E\x64\x65\x73\x5F\x77\x6D\x65\x5F\x61\x75\x74\x6F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x6F\x6F\x6B\x73\x2E\x73\x6C\x61\x63\x6B\x2E\x63\x6F\x6D\x2F\x73\x65\x72\x76\x69\x63\x65\x73\x2F\x54\x43\x4B\x51\x43\x4D\x39\x51\x53\x2F\x42\x44\x51\x53\x42\x46\x48\x45\x30\x2F\x5A\x68\x7A\x69\x79\x61\x36\x71\x71\x4B\x32\x68\x52\x70\x35\x62\x45\x77\x4C\x70\x59\x63\x50\x4B","\x6E\x6F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x6F\x6F\x6B\x73\x2E\x73\x6C\x61\x63\x6B\x2E\x63\x6F\x6D\x2F\x73\x65\x72\x76\x69\x63\x65\x73\x2F\x54\x30\x33\x37\x41\x54\x32\x4B\x4E\x2F\x42\x44\x45\x31\x58\x4C\x33\x38\x54\x2F\x72\x6F\x41\x4A\x73\x6A\x4D\x73\x78\x57\x39\x33\x6D\x53\x4D\x77\x72\x31\x70\x46\x72\x63\x75\x6A","","\x33\x30\x2D\x66\x72\x5F\x66\x65\x72\x6D\x65\x74\x75\x72\x65\x73","\x32\x39\x2D\x66\x72\x5F\x64\x65\x6D\x61\x6E\x64\x65\x73\x5F\x77\x6D\x65","\x33\x30\x2D\x76\x6C\x5F\x63\x6C\x6F\x73\x75\x72\x65\x73","\x32\x39\x2D\x76\x6C\x5F\x72\x65\x71\x75\x65\x73\x74\x73\x2D\x77\x6D\x65"];var channel=_0xcaf7[0];var countryDB={BE:{webhook:_0xcaf7[1],states:_0xcaf7[2],str_lvl:-1,pri_lvl:1,min_lvl:2,maj_lvl:3,rmp_lvl:4,fwy_lvl:4,place_lvl:3},LU:{webhook:_0xcaf7[1],states:_0xcaf7[2],str_lvl:-1,pri_lvl:1,min_lvl:2,maj_lvl:3,rmp_lvl:4,fwy_lvl:4,place_lvl:3},NL:{webhook:_0xcaf7[3],states:_0xcaf7[2],str_lvl:0,pri_lvl:1,min_lvl:2,maj_lvl:3,rmp_lvl:4,fwy_lvl:4,place_lvl:3},default:{webhook:_0xcaf7[4],states:_0xcaf7[2],str_lvl:0,pri_lvl:1,min_lvl:2,maj_lvl:3,rmp_lvl:4,fwy_lvl:4,place_lvl:3}};var channelDB={BE_fr:{closure:_0xcaf7[5],editing:_0xcaf7[6]},BE_nl:{closure:_0xcaf7[7],editing:_0xcaf7[8]},LU_fr:{closure:_0xcaf7[5],editing:_0xcaf7[6]},LU_en:{closure:_0xcaf7[7],editing:_0xcaf7[8]},NL_nl:{closure:_0xcaf7[7],editing:_0xcaf7[8]}}
