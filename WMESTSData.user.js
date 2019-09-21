@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         WMESTSData
 // @namespace    https://gitlab.com/WMEScripts
-// @version      2019.09.19.01
+// @version      2019.09.21.01
 // @description  Datas for the script WME-send-to-slack
 // @author       Tunisiano18
-// @match        http://*/*
+// @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
+// @exclude         https://www.waze.com/user/*editor/*
+// @exclude         https://www.waze.com/*/user/*editor/*
 // @grant        none
 // ==/UserScript==
 
