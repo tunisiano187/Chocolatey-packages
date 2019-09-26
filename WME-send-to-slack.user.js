@@ -165,7 +165,7 @@ function CheckNeededParams() {
     for (var key in neededparams){
         if(!(neededparams.hasOwnProperty(key) in localStorage)) {
             $('#WSTSFS-Container').hide();
-            alert(k + ' manquant');
+            alert(key + ' manquant');
         }
     }
     initializeFirstUseInterface();
