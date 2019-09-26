@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.09.25.05
+// @version         2019.09.25.06
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -21,7 +21,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Check parameters and log them";
+var UpdateNotes = "Check parameters and log them + Waiting for WazeWrap";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -147,6 +147,11 @@ function VersionCheck() {
     if (localStorage.getItem('WMESTSVersion') === ScriptVersion && 'WMESTSVersion' in localStorage) {
 
     } else if ('WMESTSVersion' in localStorage) {
+        if(!WazeWrap.Interface) {
+            setTimeout(VersionCheck, 1000);
+            log("WazeWrap not ready, waiting");
+            return;
+        }
         WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
         localStorage.setItem('WMESTSVersion', ScriptVersion);
     }
