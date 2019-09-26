@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.09.20.06
+// @version         2019.09.25.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -12,6 +12,7 @@
 // @license         MIT/BSD/X11
 // @compatible chrome
 // @compatible firefox
+// @compatible opera
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
@@ -53,7 +54,7 @@ function init(e) {
         return;
     }
     log('chargé');
-
+    initializeFirstUseInterface();
     // On change, check for changes in the edit-panel
     var WMESTSObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -91,6 +92,7 @@ function init(e) {
     });
     WMESTSObserver.observe(document.getElementById('edit-panel'), { childList: true, subtree: true });
     setTimeout(VersionCheck(),2000);
+    $('#WSTSFS-Container').css('display', 'block');
 }
 
 // Functions used by the Script
@@ -145,6 +147,50 @@ function VersionCheck() {
         WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
         localStorage.setItem('WMESTSVersion', ScriptVersion);
     }
+    else
+    {
+        localStorage.setItem('WMESTSVersion', ScriptVersion);
+    }
 }
+
+function initializeFirstUseInterface() {
+        log("creating first use interface");
+        injectCSS();
+        var $section = $("<div>", { style: "padding:8px 16px", id: "WMESTSFirstUse" });
+        $section.html([
+            '<div id="WSTSFS-Container" class="fa" style="position:fixed; top:20%; left:40%; z-index:1000; display:none;">',
+            '<div id="WSTSFS-Close" class="fa-close fa-lg"></div>',
+            '<div class="modal-heading">',
+            '<h2>Script First use</h2>',
+            '<div class="WSTSFS-wrapper">',
+            '<div id="WSTSFS-settings">',
+            '</div>',
+            '</div></div></div>'
+        ].join(' '));
+        $("#WazeMap").append($section.html());
+
+        $('#WSTSFS-Close').click(function () {
+            $('#WSTSFS-Container').hide();
+        });
+
+        $(document).on('click', '.WSTSFS-script-item', function () {
+            $('.WSTSFS-script-item').removeClass("WSTSFS-active");
+            $(this).addClass("WSTSFS-active");
+        });
+    }
+
+    function injectCSS() {
+        let css = [
+            '#WSTSFS-Container { position:relative; background-color:#fbfbfb; width:650px; height:375px; border-radius:8px; padding:20px; box-shadow: 0 22px 84px 0 rgba(87, 99, 125, 0.5); border:1px solid #ededed; }',
+            '#WSTSFS-Close { color:#000000; background-color:#ffffff; border:1px solid #ececec; border-radius:10px; height:25px; width:25px; position: absolute; right:14px; top:10px; cursor:pointer; padding: 5px 0px 0px 5px;}',
+            '#WSTSFS-Container .modal-heading,.WWSU-updates-wrapper { font-family: "Helvetica Neue", Helvetica, "Open Sans", sans-serif; } ',
+            '.WSTSFS-updates-wrapper { height:350px; }',
+            '#WSTSFS-settings { float:left; width:175px; height:100%; padding-right:6px; margin-right:10px; overflow-y: auto; overflow-x: hidden; height:300px; }',
+            '.WSTSFS-settings-item { text-decoration: none; min-height:40px; display:flex; text-align: center; justify-content: center; align-items: center; margin:3px 3px 10px 3px; background-color:white; border-radius:8px; box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 1px 0.25px; transition:all 200ms ease-in-out; cursor:pointer;}',
+            '.WSTSFS-settings-item:hover { text-decoration: none; }',
+            '.WSTSFS-active { transform: translate3d(5px, 0px, 0px); box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 7px 0px; }'
+        ].join(' ');
+        $('<style type="text/css">' + css + '</style>').appendTo('head');
+    }
 
 init();
