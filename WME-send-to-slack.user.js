@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.07.04
+// @version         2019.10.07.05
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -21,7 +21,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Country Choose in tab and refuse setting ---";
+var UpdateNotes = "Empty Language Choose dropdown in tab ";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -112,6 +112,18 @@ function Loadactions() {
     LoadTab();
 }
 
+function UpdateLanguages() {
+    while ($('#WMESTSLanguage').firstChild) {
+      $('#WMESTSLanguage').removeChild($('#WMESTSLanguage').firstChild);
+    }
+    if(!('WMESTSLanguage' in localStorage)) {
+        var OptionLanguage = document.createElement('option');
+        OptionLanguage.text = "------";
+        $('#WMESTSLanguage').appendChild(OptionLanguage)
+    }
+    $('#WMESTSLanguage').appendChild(OptionLanguage);
+}
+
 function LoadTab() {
     if(!$('.slack-settings-tab').length){
         var b = $('<li><a class="slack-settings-tab" data-toggle="tab" href="#segment-edit-settings" aria-expanded="false">' + settingsicon + '</a></li>');
@@ -138,7 +150,22 @@ function LoadTab() {
         $("#segment-edit-settings").html(countrychoose);
         $('#WMESTSCountry').change(function() {
             $(localStorage.setItem('WMESTSCountry', $('#WMESTSCountry').val()));
+            UpdateLanguages();
         });
+        var languagechoose = document.createElement('select');
+        languagechoose.id='WMESTSLanguage';
+        languagechoose.className='form-control';
+        languagechoose.style.margin = '8px 0';
+        if(!('WMESTSLanguage' in localStorage)) {
+            var OptionLanguage = document.createElement('option');
+            OptionLanguage.text = "------";
+            languagechoose.appendChild(OptionLanguage)
+        }
+        $("#segment-edit-settings").append(languagechoose);
+        $('#WMESTSLanguage').change(function() {
+            $(localStorage.setItem('WMESTSLanguage', $('#WMESTSLanguage').val()));
+        });
+        UpdateLanguages();
     }
 }
 
