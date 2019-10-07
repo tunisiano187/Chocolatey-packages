@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.07.03
+// @version         2019.10.07.04
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -21,7 +21,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Country Choose in tab";
+var UpdateNotes = "Country Choose in tab and refuse setting ---";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -121,9 +121,11 @@ function LoadTab() {
         countrychoose.id='WMESTSCountry';
         countrychoose.className='form-control';
         countrychoose.style.margin = '8px 0';
-        var OptionCountry = document.createElement('option');
-        OptionCountry.text="------";
-        countrychoose.appendChild(OptionCountry);
+        if(!('WMESTSCountry' in localStorage)) {
+            var OptionCountry = document.createElement('option');
+            OptionCountry.text="------";
+            countrychoose.appendChild(OptionCountry);
+        }
         for (var key in countryDB){
             OptionCountry = document.createElement('option');
             OptionCountry.text=countryDB[key].name;
