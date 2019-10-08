@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.07.05
+// @version         2019.10.08.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -21,7 +21,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Empty Language Choose dropdown in tab ";
+var UpdateNotes = "Language choose complete + channel";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -113,15 +113,21 @@ function Loadactions() {
 }
 
 function UpdateLanguages() {
-    while ($('#WMESTSLanguage').firstChild) {
-      $('#WMESTSLanguage').removeChild($('#WMESTSLanguage').firstChild);
-    }
+    $('#WMESTSLanguage option').each(function() {
+        $(this).remove();
+    });
+    var OptionLanguage = document.createElement('option');
     if(!('WMESTSLanguage' in localStorage)) {
-        var OptionLanguage = document.createElement('option');
         OptionLanguage.text = "------";
-        $('#WMESTSLanguage').appendChild(OptionLanguage)
+        $('#WMESTSLanguage').append(OptionLanguage)
     }
-    $('#WMESTSLanguage').appendChild(OptionLanguage);
+    var languageselected = languageDB[$('#WMESTSCountry').val()];
+    for (var key in languageselected){
+        OptionLanguage = document.createElement('option');
+        OptionLanguage.text=languageselected[key];
+        OptionLanguage.value=key;
+        $('#WMESTSLanguage').append(OptionLanguage);
+    }
 }
 
 function LoadTab() {
@@ -150,6 +156,8 @@ function LoadTab() {
         $("#segment-edit-settings").html(countrychoose);
         $('#WMESTSCountry').change(function() {
             $(localStorage.setItem('WMESTSCountry', $('#WMESTSCountry').val()));
+            localStorage.removeItem('WMESTSLanguage');
+            localStorage.removeItem('WMESTSChanel');
             UpdateLanguages();
         });
         var languagechoose = document.createElement('select');
@@ -164,6 +172,7 @@ function LoadTab() {
         $("#segment-edit-settings").append(languagechoose);
         $('#WMESTSLanguage').change(function() {
             $(localStorage.setItem('WMESTSLanguage', $('#WMESTSLanguage').val()));
+            $(localStorage.setItem('WMESTSChanel', $('#WMESTSCountry').val() + "_" + $('#WMESTSLanguage').val()));
         });
         UpdateLanguages();
     }
