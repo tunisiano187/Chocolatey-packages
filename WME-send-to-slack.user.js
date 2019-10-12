@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.08.01
+// @version         2019.10.12.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -15,13 +15,15 @@
 // @compatible opera
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/master/WMESTSData.user.js?env=dev
+// @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
+// @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Language choose complete + channel";
+var UpdateNotes = "Download and Update links";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
