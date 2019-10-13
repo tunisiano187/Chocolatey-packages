@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.13.04
+// @version         2019.10.13.05
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -23,7 +23,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Creation of texts for selected items";
+var UpdateNotes = "Completion of the message City name, Country";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -103,14 +103,55 @@ function init(e) {
 
 // Functions used by the Script
 
+// Get City ID from Segment/venue ID
+function GetCityID(selection, Type) {
+    var StreetID = 0;
+    if(Type != "segment")
+    {
+        StreetID = selection.model.attributes.streetID;
+    }
+    else {
+        StreetID = selection.model.attributes.primaryStreetID;
+    }
+    if(StreetID) {
+        return W.model.streets.getObjectById(StreetID).cityID
+    } else {
+        return 0;
+    }
+}
+
+// Get City name from City ID
+function GetCity(CityId) {
+    if(CityId>0) {
+       return W.model.cities.getObjectById(CityId).attributes.name;
+    }
+    else {
+        return $('span.full-address').text().split(",")[0];
+    }
+}
+
+// Get Country name from City ID
+function GetCountry(CityId) {
+    if(CityId>0) {
+       var CountryID = W.model.cities.getObjectById(CityId).attributes.countryID
+       return W.model.countries.getObjectById(CountryID).name;
+    }
+    else {
+        return $('span.full-address').text().split(",")[1];
+    }
+}
+
 // Construction of the request
 function Construct(iconaction) {
     var answers = getPermalinkCleaned();
     var permalink = answers[0];
     var textSelection = answers[1];
     var countselected = answers[2];
-    var selectedtype = answer[3];
-    var TextToSend = "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nrequested to " + iconaction;
+    var selectedtype = answers[3];
+    var RequiredLevel = answers[4];
+    var CityName = answers[5];
+    var CountryName = answers[6];
+    var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName;
     alert(TextToSend);
 }
 
@@ -209,8 +250,11 @@ function getPermalinkCleaned(text) {
     text = "https://www.waze.com/editor?env=row&";
     var count = 0;
     var texttype = "venue";
+    var CityName = "";
+    var CountryName = "";
     var selectedindex="";
     var selectiontype="&venues=";
+    var RequiredRank = 0;
     var projI=new OpenLayers.Projection("EPSG:900913");
     var projE=new OpenLayers.Projection("EPSG:4326");
     var currentlocation = (new OpenLayers.LonLat(W.map.center.lon,W.map.center.lat)).transform(projI,projE).toString().replace(',','&');
@@ -235,6 +279,11 @@ function getPermalinkCleaned(text) {
             texttype="segment";
         }
         count++;
+        if(section.model.attributes.rank > RequiredRank) {
+            RequiredRank = section.model.attributes.rank;
+        }
+        CityName = GetCity(GetCityID(section, texttype));
+        CountryName = GetCountry(GetCityID(section, texttype));
     });
     var PL = text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex;
     var type = texttype;
@@ -243,7 +292,8 @@ function getPermalinkCleaned(text) {
     } else {
         type = "a " + type
     }
-    var arr = [PL, type, count, texttype]
+    RequiredRank = ":l" + (RequiredRank + 1) + ": "
+    var arr = [PL, type, count, texttype, RequiredRank, CityName, CountryName]
     return arr;
 }
 
@@ -274,7 +324,7 @@ function VersionCheck() {
 function CheckNeededParams() {
     log("Checking the needed parameters");
     for (var key in neededparams){
-        if(!(neededparams.hasOwnProperty(key) in localStorage)) {
+        if(!(key in localStorage)) {
             log(key + ' manquant');
         }
     }
