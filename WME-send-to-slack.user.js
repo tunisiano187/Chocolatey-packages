@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.13.01
+// @version         2019.10.13.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -23,7 +23,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Comments + support of JB and cameras";
+var UpdateNotes = "Creation of texts for selected items";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -105,7 +105,11 @@ function init(e) {
 
 // Construction of the request
 function Construct(iconaction) {
-    alert('click on ' + iconaction);
+    var answers = getPermalinkCleaned();
+    var permalink = answers[0];
+    var textSelection = answers[1];
+    var countselected = answers[0];
+    alert(textSelection);
 }
 
 // Prepare the role of the icons
@@ -201,12 +205,15 @@ function log(message) { // Thanks to Glodenox but enhanced
 // Create the permalink
 function getPermalinkCleaned(text) {
     text = "https://www.waze.com/editor?env=row&";
+    var count = 0;
+    var texttype = "venue";
     var selectedindex="";
     var selectiontype="&venues=";
     var projI=new OpenLayers.Projection("EPSG:900913");
     var projE=new OpenLayers.Projection("EPSG:4326");
     var currentlocation = (new OpenLayers.LonLat(W.map.center.lon,W.map.center.lat)).transform(projI,projE).toString().replace(',','&');
     $.each(W.selectionManager.getSelectedFeatures(), function(indx, section){
+        if(texttype == "venue") { texttype = section.model.attributes.categories }
         if(selectedindex!="")
         {
             selectedindex=selectedindex + ",";
@@ -215,16 +222,27 @@ function getPermalinkCleaned(text) {
         if(section.model.type == "camera")
         {
             selectiontype="&cameras=";
+            texttype="camera";
         } else if(section.model.type == "bigJunction")
         {
             selectiontype="&bigJunctions=";
+            texttype="JB";
         } else if(section.model.type !== 'venue')
         {
             selectiontype="&segments=";
+            texttype="segment";
         }
-        segmentcount++;
+        count++;
     });
-    return (text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex);
+    var PL = text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex;
+    var type = texttype;
+    if (count>1) {
+        type = count + " " + type + "s";
+    } else {
+        type = "a " + type
+    }
+    var arr = [PL, type, count]
+    return arr;
 }
 
 // Check the version of the scritpt in the browser to Warn if the script has been updates
