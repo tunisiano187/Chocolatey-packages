@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.12.01
+// @version         2019.10.13.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -23,7 +23,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Download and Update links";
+var UpdateNotes = "Comments + support of JB and cameras";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -103,17 +103,25 @@ function init(e) {
 
 // Functions used by the Script
 
+// Construction of the request
+function Construct(iconaction) {
+    alert('click on ' + iconaction);
+}
+
+// Prepare the role of the icons
 function Loadactions() {
     if(actionsloaded!=1){
         $(document).on("click", "img#slackPermalink", function () {
             var iconaction = $(this).attr('class');
-            alert('click on ' + iconaction);
+            log('click on ' + iconaction);
+            Construct(iconaction);
         });
         actionsloaded=1;
     }
     LoadTab();
 }
 
+// Update the language in the Browser's database
 function UpdateLanguages() {
     $('#WMESTSLanguage option').each(function() {
         $(this).remove();
@@ -132,6 +140,7 @@ function UpdateLanguages() {
     }
 }
 
+// Create Settings Tab
 function LoadTab() {
     if(!$('.slack-settings-tab').length){
         var b = $('<li><a class="slack-settings-tab" data-toggle="tab" href="#segment-edit-settings" aria-expanded="false">' + settingsicon + '</a></li>');
@@ -180,7 +189,7 @@ function LoadTab() {
     }
 }
 
-
+// Send easily logs into the console
 function log(message) { // Thanks to Glodenox but enhanced
   if (typeof message === 'string') {
     console.log('%c' + ScriptName + ' : %c' + message, 'color:black', 'color:#d97e00');
@@ -189,6 +198,7 @@ function log(message) { // Thanks to Glodenox but enhanced
   }
 }
 
+// Create the permalink
 function getPermalinkCleaned(text) {
     text = "https://www.waze.com/editor?env=row&";
     var selectedindex="";
@@ -197,12 +207,18 @@ function getPermalinkCleaned(text) {
     var projE=new OpenLayers.Projection("EPSG:4326");
     var currentlocation = (new OpenLayers.LonLat(W.map.center.lon,W.map.center.lat)).transform(projI,projE).toString().replace(',','&');
     $.each(W.selectionManager.getSelectedFeatures(), function(indx, section){
-        if(selectedindex!=="")
+        if(selectedindex!="")
         {
             selectedindex=selectedindex + ",";
         }
         selectedindex = selectedindex + section.model.attributes.id;
-        if(section.model.type !== 'venue')
+        if(section.model.type == "camera")
+        {
+            selectiontype="&cameras=";
+        } else if(section.model.type == "bigJunction")
+        {
+            selectiontype="&bigJunctions=";
+        } else if(section.model.type !== 'venue')
         {
             selectiontype="&segments=";
         }
@@ -211,6 +227,7 @@ function getPermalinkCleaned(text) {
     return (text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex);
 }
 
+// Check the version of the scritpt in the browser to Warn if the script has been updates
 function VersionCheck() {
     ///////////////////////////////////////
     //  Verification de la mise à jour   //
@@ -233,18 +250,13 @@ function VersionCheck() {
     }
 }
 
-function initializeFirstUseInterface() {
-    log("creating first use interface");
-}
-
+// Check if the required parameters are Set
 function CheckNeededParams() {
     log("Checking the needed parameters");
     for (var key in neededparams){
         if(!(neededparams.hasOwnProperty(key) in localStorage)) {
-            $('#WSTSFS-Container').hide();
             log(key + ' manquant');
         }
     }
-    initializeFirstUseInterface();
 }
 init();
