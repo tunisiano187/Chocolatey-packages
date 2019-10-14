@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.13.05
+// @version         2019.10.14.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -16,14 +16,14 @@
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/master/WMESTSData.user.js?env=dev
 // @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
-// @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
+// @updateURL	    https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js?env=dev
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Completion of the message City name, Country";
+var UpdateNotes = "Dropdown titles";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -77,7 +77,6 @@ function init(e) {
                         log('Lock icons added');
                         $( "#WMESTSlock" ).remove();
                         $('div.form-control.lock-level-selector.waze-radio-container').after('<div id="WMESTSlock">' + Downlockicon + '&nbsp;' + Relockicon + '</div>');
-                        //WMESTS.makeEditsSigns(locklevelDiv);
                         $( "#WMESTSvalidation" ).remove();
                         $('div.selection.selection-icon').append('<span id="WMESTSvalidation">' + validationicon + '</div>');
                         log('Validation icon added');
@@ -85,7 +84,6 @@ function init(e) {
                     }
                     if (closureslistDiv) {
                         log('Closure icons added');
-                        //WMESTS.makeClosureSigns(closureslistDiv);
                         $( "#WMESTSclosures" ).remove();
                         if(W.layerSwitcherController.state.attributes.ITEM_CLOSURES === true) {
                             $('.closures-list').before('<div id="WMESTSclosures">' + closureicon + '&nbsp;' + openicon + '</div>');
@@ -211,7 +209,8 @@ function LoadTab() {
             }
             countrychoose.appendChild(OptionCountry);
         }
-        $("#segment-edit-settings").html(countrychoose);
+        $("#segment-edit-settings").html('<label class="control-label">Country</label>')
+        $("#segment-edit-settings").append(countrychoose);
         $('#WMESTSCountry').change(function() {
             $(localStorage.setItem('WMESTSCountry', $('#WMESTSCountry').val()));
             localStorage.removeItem('WMESTSLanguage');
@@ -227,6 +226,7 @@ function LoadTab() {
             OptionLanguage.text = "------";
             languagechoose.appendChild(OptionLanguage)
         }
+        $("#segment-edit-settings").append('<label class="control-label">Channel</label>')
         $("#segment-edit-settings").append(languagechoose);
         $('#WMESTSLanguage').change(function() {
             $(localStorage.setItem('WMESTSLanguage', $('#WMESTSLanguage').val()));
