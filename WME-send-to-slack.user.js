@@ -167,6 +167,8 @@ function Loadactions() {
             log('click on ' + iconaction);
             if(CheckNeededParams()) {
                 Construct(iconaction);
+            } else {
+                $(".slack-settings-tab").click();
             }
         });
         actionsloaded=1;
