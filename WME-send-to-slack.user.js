@@ -56,7 +56,7 @@ function init(e) {
         return;
     }
     log('WME chargé');
-    CheckNeededParams();
+    
     // On change, check for changes in the edit-panel
     var WMESTSObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -77,6 +77,7 @@ function init(e) {
                         $('div.selection.selection-icon').append('<span id="WMESTSvalidation">' + validationicon + '</div>');
                         log('Validation icon added');
                         Loadactions();
+                        CheckNeededParams();
                     }
                     if (closureslistDiv) {
                         log('Closure icons added');
@@ -85,6 +86,7 @@ function init(e) {
                             $('.closures-list').before('<div id="WMESTSclosures">' + closureicon + '&nbsp;' + openicon + '</div>');
                         }
                         Loadactions();
+                        CheckNeededParams();
                     }
                 }
             }
