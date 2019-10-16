@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.16.02
+// @version         2019.10.16.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -151,6 +151,7 @@ function Construct(iconaction) {
     var Details = "";
     if(iconaction == "Downlock" || iconaction == "Lock") {
         if(iconaction == "Lock") {
+            if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
             Details = prompt("To level : ", ShouldbeLockedAt);
         }
         Details = "\r\nInformations : " + Details
