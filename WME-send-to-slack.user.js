@@ -362,6 +362,10 @@ function CheckNeededParams() {
             check = check + 1;
         }
     }
-    return check == 0 ;
+    if ( check == 0 ) {
+        return true;
+    } else {
+        return false;
+    }
 }
 init();
