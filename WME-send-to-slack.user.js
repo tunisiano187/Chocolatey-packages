@@ -152,14 +152,14 @@ function Construct(iconaction) {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
             Details = prompt("To level : ", ShouldbeLockedAt);
             if(Details !== null) {
-                if(parseInt(Details)>ShouldbeLockedAt) {
-                    ShouldbeLockedAt = parseInt(Details);
+                if(parseInt(Details)>RequiredLevel) {
+                    RequiredLevel = parseInt(Details);
                 }
                 var Details = "To level : " + ShouldbeLockedAt;
             }
         }
         Details = "\r\nInformations : " + Details
-        var Reason = Prompt("Reason : ")
+        var Reason = prompt("Reason : ")
         if(Reason !== null) {
             Reason = "Reason : " + Reason;
         }
