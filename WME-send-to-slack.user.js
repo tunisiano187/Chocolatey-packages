@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.16.04
+// @version         2019.10.16.05
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -23,7 +23,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Guide to settings if there is missing parameters and Warn user";
+var UpdateNotes = "Guide to settings if there is missing parameters and Warn user + Required lock from segment";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -311,7 +311,9 @@ function getPermalinkCleaned(text) {
             ShouldBeLockedAt = getShouldLockedAt(section, ShouldBeLockedAt)
         }
         count++;
-        if(section.model.attributes.rank > RequiredRank) {
+        if(section.model.attributes.lockRank !== null && section.model.attributes.lockRank > RequiredRank) {
+            RequiredRank = section.model.attributes.lockRank;
+        } else if(section.model.attributes.rank > RequiredRank) {
             RequiredRank = section.model.attributes.rank;
         }
         CityName = GetCity(GetCityID(section, texttype));
