@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.16.08
+// @version         2019.10.20.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -99,7 +99,7 @@ function init(e) {
 
 // Get City ID from Segment/venue ID
 function GetCityID(selection, Type) {
-    var StreetID = 0;
+    var StreetID = 0; 
     if(Type != "segment")
     {
         StreetID = selection.model.attributes.streetID;
@@ -108,7 +108,7 @@ function GetCityID(selection, Type) {
         StreetID = selection.model.attributes.primaryStreetID;
     }
     if(StreetID) {
-        return W.model.streets.getObjectById(StreetID).cityID
+        return W.model.streets.getObjectById(StreetID).cityID;
     } else {
         return 0;
     }
@@ -127,7 +127,7 @@ function GetCity(CityId) {
 // Get Country name from City ID
 function GetCountry(CityId) {
     if(CityId>0) {
-       var CountryID = W.model.cities.getObjectById(CityId).attributes.countryID
+       var CountryID = W.model.cities.getObjectById(CityId).attributes.countryID;
        return W.model.countries.getObjectById(CountryID).name;
     }
     else {
@@ -147,7 +147,7 @@ function Construct(iconaction) {
     var CountryName = answers[6];
     var ShouldbeLockedAt = answers[7];
     var Details = "";
-    if(iconaction == "Downlock" || iconaction == "Lock") {
+    if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
             Details = prompt("To level : ", ShouldbeLockedAt);
@@ -158,12 +158,19 @@ function Construct(iconaction) {
                 var Details = "To level " + Details;
             }
         }
-        Details = "\r\nInformations : " + Details + "\r\n"
-        var Reason = prompt("Reason : ")
+        Details = "\r\nInformations : " + Details + "\r\n";
+        var Reason = prompt("Reason : ");
         if(Reason !== null) {
             Reason = "Reason : " + Reason;
         }
         Details = Details + Reason;
+    } else if (iconaction == "Closure" || iconaction == "Open") {
+        if(iconaction == "Closure")
+        {
+            var Reason = prompt("from date hh:mm to date hh:mm directions and a reason (ex: from now till 31/12 22:00 A<->B - roadworks)", "from #Now until " + date.toLocaleDateString("fr-FR") + " A<->B");
+            Reason = "Details : " + Reason;
+            Details = Details + Reason;
+        }
     }
     
     var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
