@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.20.04
+// @version         2019.10.20.05
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -23,7 +23,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Return after informations : ";
+var UpdateNotes = "Return after informations : and avoid double return";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -155,16 +155,16 @@ function Construct(iconaction) {
                 if(parseInt(Details)>RequiredLevel) {
                     RequiredLevel = parseInt(Details);
                 }
-                var Details = "To level " + Details;
+                Details = "To level " + Details;
             }
         }
-        if(Detail !== "")
+        if(Details !== "")
         {
             Details = "\r\nInformations : " + Details + "\r\n";
         }
         var Reason = prompt("Reason : ");
         if(Reason !== null) {
-            Reason = "Reason : " + Reason;
+            Reason = "\r\nReason : " + Reason;
         }
         Details = Details + Reason;
     } else if (iconaction == "Closure" || iconaction == "Open") {
@@ -173,13 +173,13 @@ function Construct(iconaction) {
             var date = new Date();
             date.setDate(date.getDate() + 1);
             var Reason = prompt("from date hh:mm to date hh:mm directions and a reason (ex: from now till 31/12 22:00 A<->B - roadworks)", "from #Now until " + date.toLocaleDateString("fr-FR") + " A<->B");
-            Reason = "Details : " + Reason;
+            Reason = "\r\nDetails : " + Reason;
             Details = Details + Reason;
         }
     }
-    
     var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
-    alert(TextToSend);
+    TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
+    alert(TextToSend)
 }
 
 // Prepare the role of the icons
