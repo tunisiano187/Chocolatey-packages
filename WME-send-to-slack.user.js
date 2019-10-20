@@ -16,14 +16,14 @@
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/master/WMESTSData.user.js?env=dev
 // @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
-// @updateURL	    https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js?env=dev
+// @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Guide to settings if there is missing parameters and Warn user + Required lock from segment and question + Reason";
+var UpdateNotes = "Closure/Open/Validation Questions";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
