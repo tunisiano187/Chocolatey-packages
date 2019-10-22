@@ -4,7 +4,7 @@
 // @namespace       https://gitlab.com/WMEScripts
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.20.05
+// @version         2019.10.22.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -13,6 +13,7 @@
 // @compatible chrome
 // @compatible firefox
 // @compatible opera
+// @connect         https://cdn.staticaly.io/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/master/WMESTSData.user.js?env=dev
 // @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
@@ -23,7 +24,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Return after informations : and avoid double return";
+var UpdateNotes = "Add support of staticaly, test the webboks, Add slack support";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -56,7 +57,7 @@ function init(e) {
         return;
     }
     log('WME chargé');
-    
+
     // On change, check for changes in the edit-panel
     var WMESTSObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -99,7 +100,7 @@ function init(e) {
 
 // Get City ID from Segment/venue ID
 function GetCityID(selection, Type) {
-    var StreetID = 0; 
+    var StreetID = 0;
     if(Type != "segment")
     {
         StreetID = selection.model.attributes.streetID;
@@ -147,6 +148,7 @@ function Construct(iconaction) {
     var CountryName = answers[6];
     var ShouldbeLockedAt = answers[7];
     var Details = "";
+    var chanel = "";
     if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
@@ -167,6 +169,7 @@ function Construct(iconaction) {
             Reason = "\r\nReason : " + Reason;
         }
         Details = Details + Reason;
+        chanel = "editing";
     } else if (iconaction == "Closure" || iconaction == "Open") {
         if(iconaction == "Closure")
         {
@@ -176,10 +179,58 @@ function Construct(iconaction) {
             Reason = "\r\nDetails : " + Reason;
             Details = Details + Reason;
         }
+        chanel = "closure";
     }
     var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
-    alert(TextToSend)
+    // Get the webhooks
+    var Country = countryDB[localStorage.getItem('WMESTSCountry')];
+    var Webhooks = Country.webhook;
+    for (var key in Webhooks)
+    {
+        switch (key.toLowerCase()) {
+            case "slack":
+                var actionicon="";
+                log(iconaction)
+                switch(iconaction.toLowerCase()) {
+                    case "closure":
+                        actionicon = "road_closed"
+                        break;
+                    case "open":
+                        actionicon = "open_closure"
+                        break;
+                    case "lock":
+                        actionicon = "lock"
+                        break;
+                    case "downlock":
+                        actionicon = "unlock"
+                        break;
+                    case "validation":
+                        actionicon = "heavy_check_mark"
+                        break;
+                    default:
+                        actionicon = "pencil2"
+                }
+                $.ajax({
+                    data: 'payload=' + JSON.stringify({
+                        "text": TextToSend,
+                        "username": GM_info.script.name + " " + GM_info.script.version,
+                        "mrkdwn": true,
+                        "channel": channelDB[localStorage.getItem('WMESTSChanel')][chanel],
+                        "icon_emoji": actionicon
+                    }),
+                    dataType: 'json',
+                    processData: false,
+                    type: 'POST',
+                    url: Webhooks[key]
+                });
+                break;
+            case "gform":
+                
+                break;
+            default:
+        }
+    }
 }
 
 // Prepare the role of the icons
