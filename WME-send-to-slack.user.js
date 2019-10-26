@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.25.01
+// @version         2019.10.26.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -183,7 +183,7 @@ function Construct(iconaction) {
         }
         chanel = "closure";
     }
-    var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
+    var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
     var Country = countryDB[localStorage.getItem('WMESTSCountry')];
