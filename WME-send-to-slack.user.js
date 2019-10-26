@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.26.02
+// @version         2019.10.26.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -25,7 +25,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Production mode";
+var UpdateNotes = "Handle the cancel and avoid useless message";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -169,6 +169,8 @@ function Construct(iconaction) {
         var Reason = prompt("Reason : ");
         if(Reason !== null) {
             Reason = "\r\nReason : " + Reason;
+        } else {
+            Reason = 'Cancelled'
         }
         Details = Details + Reason;
         chanel = "editing";
@@ -178,6 +180,9 @@ function Construct(iconaction) {
             var date = new Date();
             date.setDate(date.getDate() + 1);
             var Reason = prompt("from date hh:mm to date hh:mm directions and a reason (ex: from now till 31/12 22:00 A<->B - roadworks)", "from #Now until " + date.toLocaleDateString("fr-FR") + " A<->B");
+            if(Reason == null) {
+                Reason = 'Cancelled'
+            }
             Reason = "\r\nDetails : " + Reason;
             Details = Details + Reason;
         }
@@ -188,68 +193,70 @@ function Construct(iconaction) {
     // Get the webhooks
     var Country = countryDB[localStorage.getItem('WMESTSCountry')];
     var Webhooks = Country.webhook;
-    for (var key in Webhooks)
-    {
-        switch (key.toLowerCase()) {
-            case "discord":
-            case "slack":
-                var actionicon="";
-                log(iconaction)
-                switch(iconaction.toLowerCase()) {
-                    case "closure":
-                        actionicon = "road_closed"
-                        break;
-                    case "open":
-                        actionicon = "open_closure"
-                        break;
-                    case "lock":
-                        actionicon = "lock"
-                        break;
-                    case "downlock":
-                        actionicon = "unlock"
-                        break;
-                    case "validation":
-                        actionicon = "heavy_check_mark"
-                        break;
-                    default:
-                        actionicon = "pencil2"
-                }
-                $.ajax({
-                    data: 'payload=' + JSON.stringify({
-                        "text": TextToSend,
-                        "username": GM_info.script.name + " " + GM_info.script.version,
-                        "mrkdwn": true,
-                        "channel": channelDB[localStorage.getItem('WMESTSChanel')][chanel],
-                        "icon_emoji": actionicon
-                    }),
-                    dataType: 'json',
-                    processData: false,
-                    type: 'POST',
-                    url: Webhooks[key],
-                    error: function(x, y, z)
-                    {
-                        log(x + ' ' + y + ' ' + z);
+    if(Reason !== 'Cancelled') {
+        for (var key in Webhooks)
+        {
+            switch (key.toLowerCase()) {
+                case "discord":
+                case "slack":
+                    var actionicon="";
+                    log(iconaction)
+                    switch(iconaction.toLowerCase()) {
+                        case "closure":
+                            actionicon = "road_closed"
+                            break;
+                        case "open":
+                            actionicon = "open_closure"
+                            break;
+                        case "lock":
+                            actionicon = "lock"
+                            break;
+                        case "downlock":
+                            actionicon = "unlock"
+                            break;
+                        case "validation":
+                            actionicon = "heavy_check_mark"
+                            break;
+                        default:
+                            actionicon = "pencil2"
                     }
-                });
-                sent=sent+1;
-                break;
-            case "gform":
-                var projI=new OpenLayers.Projection("EPSG:900913");
-                var projE=new OpenLayers.Projection("EPSG:4326");
-                var currentlocation = (new OpenLayers.LonLat(Waze.map.center.lon,Waze.map.center.lat)).transform(projI,projE).toString().replace('lon=','').replace("lat=","");
-                $.ajax({
-                    url: Webhooks[key],
-                    data: {"entry.960265519" : unescape(permalink), "entry.566177441" : W.loginManager.user.userName, "entry.649821268" : W.loginManager.user.normalizedLevel, "entry.757655116" : RequiredLevel.replace(/:/g,'').replace('l',''), "entry.1039159705" : selectedtype, "entry.1152764180" : currentlocation, "entry.1552113337" : iconaction, "entry.1912561816" : CityName, "entry.2891793" : CountryName, "entry.1360658462" : countselected,"entry.980020299" : chanel, "entry.554494717" : Details},
-                    type : "POST",
-                    dataType: "xml",
-                    error: function(x, y, z)
-                    {
-                        log(x + ' ' + y + ' ' + z);
-                    }
-                });
-                sent=sent+1;
-                break;
-            default:
+                    $.ajax({
+                        data: 'payload=' + JSON.stringify({
+                            "text": TextToSend,
+                            "username": GM_info.script.name + " " + GM_info.script.version,
+                            "mrkdwn": true,
+                            "channel": channelDB[localStorage.getItem('WMESTSChanel')][chanel],
+                            "icon_emoji": actionicon
+                        }),
+                        dataType: 'json',
+                        processData: false,
+                        type: 'POST',
+                        url: Webhooks[key],
+                        error: function(x, y, z)
+                        {
+                            log(x + ' ' + y + ' ' + z);
+                        }
+                    });
+                    sent=sent+1;
+                    break;
+                case "gform":
+                    var projI=new OpenLayers.Projection("EPSG:900913");
+                    var projE=new OpenLayers.Projection("EPSG:4326");
+                    var currentlocation = (new OpenLayers.LonLat(Waze.map.center.lon,Waze.map.center.lat)).transform(projI,projE).toString().replace('lon=','').replace("lat=","");
+                    $.ajax({
+                        url: Webhooks[key],
+                        data: {"entry.960265519" : unescape(permalink), "entry.566177441" : W.loginManager.user.userName, "entry.649821268" : W.loginManager.user.normalizedLevel, "entry.757655116" : RequiredLevel.replace(/:/g,'').replace('l',''), "entry.1039159705" : selectedtype, "entry.1152764180" : currentlocation, "entry.1552113337" : iconaction, "entry.1912561816" : CityName, "entry.2891793" : CountryName, "entry.1360658462" : countselected,"entry.980020299" : chanel, "entry.554494717" : Details},
+                        type : "POST",
+                        dataType: "xml",
+                        error: function(x, y, z)
+                        {
+                            log(x + ' ' + y + ' ' + z);
+                        }
+                    });
+                    sent=sent+1;
+                    break;
+                default:
+            }
         }
     }
     if(sent>0) {
@@ -257,7 +264,6 @@ function Construct(iconaction) {
     } else {
         alert('Nothing sent');
     }
-    alert(sent);
 }
 
 
