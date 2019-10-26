@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.26.03
+// @version         2019.10.26.04
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -182,9 +182,10 @@ function Construct(iconaction) {
             var Reason = prompt("from date hh:mm to date hh:mm directions and a reason (ex: from now till 31/12 22:00 A<->B - roadworks)", "from #Now until " + date.toLocaleDateString("fr-FR") + " A<->B");
             if(Reason == null) {
                 Reason = 'Cancelled'
+            } else {
+                Reason = "\r\nDetails : " + Reason;
+                Details = Details + Reason;
             }
-            Reason = "\r\nDetails : " + Reason;
-            Details = Details + Reason;
         }
         chanel = "closure";
     }
