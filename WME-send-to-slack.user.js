@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.26.04
+// @version         2019.10.26.05
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -25,7 +25,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Handle the cancel and avoid useless message";
+var UpdateNotes = "Handle the cancel and avoid useless message and no question on lock if first question cancelled";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -160,20 +160,26 @@ function Construct(iconaction) {
                     RequiredLevel = parseInt(Details);
                 }
                 Details = "To level " + Details;
+            } else {
+                Details = 'Cancelled';
             }
         }
-        if(Details !== "")
+        if(Details !== 'Cancelled')
         {
             Details = "\r\nInformations : " + Details + "\r\n";
         }
-        var Reason = prompt("Reason : ");
-        if(Reason !== null) {
-            Reason = "\r\nReason : " + Reason;
+        if(iconaction !== "Lock" || Details !== 'Cancelled') {
+            var Reason = prompt("Reason : ");
+            if(Reason !== null) {
+                Reason = "\r\nReason : " + Reason;
+            } else {
+                Reason = 'Cancelled'
+            }
+            Details = Details + Reason;
+            chanel = "editing";
         } else {
             Reason = 'Cancelled'
         }
-        Details = Details + Reason;
-        chanel = "editing";
     } else if (iconaction == "Closure" || iconaction == "Open") {
         if(iconaction == "Closure")
         {
@@ -194,7 +200,7 @@ function Construct(iconaction) {
     // Get the webhooks
     var Country = countryDB[localStorage.getItem('WMESTSCountry')];
     var Webhooks = Country.webhook;
-    if(Reason !== 'Cancelled') {
+    if(Reason !== 'Cancelled' && chanel !== "") {
         for (var key in Webhooks)
         {
             switch (key.toLowerCase()) {
