@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.26.05
+// @version         2019.10.26.06
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -25,7 +25,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Handle the cancel and avoid useless message and no question on lock if first question cancelled";
+var UpdateNotes = "Update to force the new version of the depedency integrating settings for Nederland";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
