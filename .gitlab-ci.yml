@@ -4,9 +4,12 @@ stages:
 publishing:
     stage: release
     script: 
+         - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+         - eval $(ssh-agent -s)
+         - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
          - git config --global user.email "Tunisiano18@wazebelgium.be"
          - git config --global user.name "Tunisiano18"
          - git tag -a $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3) -m "Version created by Tunisiano18"
-         - git push https://Gitlab-ci:${CI_PUSH_TOKEN}@gitlab.com/WMEScripts/wme-send-to-slack-public.git/ HEAD:master
+         - git push git@gitlab.com:WMEScripts/wme-send-to-slack-public.git HEAD:master
          - git push origin $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3)
         # - git push origin :refs/tags/v4
