@@ -11,6 +11,6 @@ publishing:
          - git config --global user.name "Tunisiano18"
          - git tag -a $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3) -m "Version created by Tunisiano18"
          - git remote set-url origin git@gitlab.com:WMEScripts/wme-send-to-slack-public.git
-         - git push 
+         - git push origin HEAD:master
         # - git push origin $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3)
         # - git push origin :refs/tags/v4
