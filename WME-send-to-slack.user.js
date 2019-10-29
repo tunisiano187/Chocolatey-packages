@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.26.06
+// @version         2019.10.29.1
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -444,6 +444,8 @@ function getPermalinkCleaned(text) {
         type = "a " + type
     }
     RequiredRank = ":l" + (RequiredRank + 1) + ": "
+
+    // Return built array containing all parameters
     var arr = [PL, type, count, texttype, RequiredRank, CityName, CountryName, ShouldBeLockedAt]
     return arr;
 }
@@ -451,10 +453,10 @@ function getPermalinkCleaned(text) {
 // Check the version of the scritpt in the browser to Warn if the script has been updates
 function VersionCheck() {
     ///////////////////////////////////////
-    //  Verification de la mise à jour   //
+    //         Check for updates         //
     ///////////////////////////////////////
     if (localStorage.getItem('WMESTSVersion') === ScriptVersion && 'WMESTSVersion' in localStorage) {
-
+        // Do nothing
     } else if ('WMESTSVersion' in localStorage) {
         if(!WazeWrap.Interface) {
             setTimeout(VersionCheck, 1000);
@@ -464,28 +466,29 @@ function VersionCheck() {
         WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
         localStorage.setItem('WMESTSVersion', ScriptVersion);
         $(".WWSUFooter a").text("Gitlab")
-    }
-    else
-    {
+    } else {
         localStorage.setItem('WMESTSVersion', ScriptVersion);
     }
 }
 
 // Check if the required parameters are Set
 function CheckNeededParams() {
+    // Inits
     log("Checking the needed parameters");
-    var check = 0;
-    for (var key in neededparams){
-        if(!(key in localStorage)) {
-            log(key + ' manquant');
-            check = check + 1;
+    var check = true;
+
+    // Check all needed params
+    for (var key in neededparams) {
+        if (!(key in localStorage)) {
+            log("\tMissing : " + key);
+            check = false;
         }
     }
-    if ( check == 0 ) {
-        return true;
-    } else {
+
+    // How was the check going on?
+    if (!check) {
         alert('Missing settings, please set all of the following dropdown');
-        return false;
     }
+    return check;
 }
 init();
