@@ -10,6 +10,6 @@ publishing:
          - git config --global user.email "Tunisiano18@wazebelgium.be"
          - git config --global user.name "Tunisiano18"
          - git tag -a $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3) -m "Version created by Tunisiano18"
-         - git push --repo=git@gitlab.com:WMEScripts/wme-send-to-slack-public.git HEAD:master
+         - git push --repo=git@gitlab.com:WMEScripts/wme-send-to-slack-public.git HEAD:master HEAD:master
         # - git push origin $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3)
         # - git push origin :refs/tags/v4
