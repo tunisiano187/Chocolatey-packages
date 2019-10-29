@@ -4,6 +4,8 @@ stages:
 publishing:
     stage: release
     script: 
+         - git config --global user.email "Tunisiano18@wazebelgium.be"
+         - git config --global user.name "Tunisiano18"
          - git tag -a $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3) -m "Version created by Tunisiano18"
          - git push https://gitlab-ci-token:YR4YsPjeSiyxajREX_6L@gitlab.com/WMEScripts/wme-send-to-slack-public.git/ HEAD:master
          - git push origin $(cat WME-send-to-slack.user.js | grep @version | tr -s " " | cut -d " " -f3)
