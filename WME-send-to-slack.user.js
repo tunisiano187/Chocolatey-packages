@@ -25,7 +25,7 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Update to force the new version of the depedency integrating settings for Nederland";
+var UpdateNotes = "Set level 3 as minimum for closures and open";
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -139,7 +139,7 @@ function GetCountry(CityId) {
 
 // Construction of the request
 function Construct(iconaction) {
-    var answers = getPermalinkCleaned();
+    var answers = getPermalinkCleaned(iconaction);
     var permalink = answers[0];
     var textSelection = answers[1];
     var countselected = answers[2];
@@ -392,7 +392,7 @@ function log(message) { // Thanks to Glodenox but enhanced
 }
 
 // Create the permalink
-function getPermalinkCleaned(text) {
+function getPermalinkCleaned(iconaction) {
     text = "https://www.waze.com/editor?env=row&";
     var count = 0;
     var texttype = "venue";
@@ -443,6 +443,7 @@ function getPermalinkCleaned(text) {
     } else {
         type = "a " + type
     }
+    if(RequiredRank<2 && (iconaction.toLowerCase() == "closure" || iconaction.toLowerCase() == "open")) { RequiredRank = 2; }
     RequiredRank = ":l" + (RequiredRank + 1) + ": "
 
     // Return built array containing all parameters
