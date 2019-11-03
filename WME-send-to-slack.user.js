@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.10.29.1
+// @version         2019.11.03.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -25,7 +25,13 @@
 // ==/UserScript==
 
 // Updates informations
-var UpdateNotes = "Set level 3 as minimum for closures and open";
+var UpdateNotes = "";
+const _WHATS_NEW_LIST = { // New in this version
+    '2019.10.29.01': 'Test',
+    '2019.10.30.1': 'Set level 3 as minimum for closures and open.',
+    '2019.11.03.01': 'Release notes history added',
+    '2019.11.09.01': 'Will be Adding the support for different GForm fields. (Delay needed)'
+};
 
 // Var declaration
 var ScriptName = GM_info.script.name;
@@ -443,7 +449,7 @@ function getPermalinkCleaned(iconaction) {
     } else {
         type = "a " + type
     }
-    if(RequiredRank<2 && (iconaction.toLowerCase() == "closure" || iconaction.toLowerCase() == "open")) { RequiredRank = 2; }
+    if(RequiredRank<2 && iconaction.toLowerCase() == "closure") { RequiredRank = 2; }
     RequiredRank = ":l" + (RequiredRank + 1) + ": "
 
     // Return built array containing all parameters
@@ -463,6 +469,16 @@ function VersionCheck() {
             setTimeout(VersionCheck, 1000);
             log("WazeWrap not ready, waiting");
             return;
+        }
+        UpdateNotes = "";
+        for (var key in _WHATS_NEW_LIST) {
+            if(UpdateNotes != "")
+            {
+                UpdateNotes = UpdateNotes + "<br />" + key + ": " + _WHATS_NEW_LIST[key];
+            }
+            if(ScriptVersion == key) {
+                UpdateNotes = "What's New ?<br />";
+            }
         }
         WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
         localStorage.setItem('WMESTSVersion', ScriptVersion);
