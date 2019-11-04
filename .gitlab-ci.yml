@@ -1,4 +1,7 @@
 # Full project: https://gitlab.com/pages/plain-html
+stages:
+  - release
+  - deploy
 pages:
   stage: deploy
   script:
@@ -11,9 +14,6 @@ pages:
   only:
     - master
 
-stages:
-  - release
-  
 publishing:
     stage: release
     only:
