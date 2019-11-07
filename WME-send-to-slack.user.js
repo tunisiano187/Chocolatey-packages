@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.03.01
+// @version         2019.11.07.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -30,6 +30,7 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.10.29.01': 'Test',
     '2019.10.30.1': 'Set level 3 as minimum for closures and open.',
     '2019.11.03.01': 'Release notes history added',
+    '2019.11.07.01': 'Solve the problem with the Level required set to a wrong number',
     '2019.11.09.01': 'Will be Adding the support for different GForm fields. (Delay needed)'
 };
 
@@ -162,7 +163,11 @@ function Construct(iconaction) {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
             Details = prompt("To level : ", ShouldbeLockedAt);
             if(Details !== null) {
-                if(parseInt(Details)>RequiredLevel) {
+                if(parseInt(Details)>parseInt(RequiredLevel)) {
+                    RequiredLevel = parseInt(Details);
+                }
+                alert(parseInt(RequiredLevel));
+                if(RequiredLevel == null) {
                     RequiredLevel = parseInt(Details);
                 }
                 Details = "To level " + Details;
@@ -201,7 +206,7 @@ function Construct(iconaction) {
         }
         chanel = "closure";
     }
-    var TextToSend = RequiredLevel + "User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
+    var TextToSend = ':l' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + Details;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
     var Country = countryDB[localStorage.getItem('WMESTSCountry')];
@@ -450,7 +455,7 @@ function getPermalinkCleaned(iconaction) {
         type = "a " + type
     }
     if(RequiredRank<2 && iconaction.toLowerCase() == "closure") { RequiredRank = 2; }
-    RequiredRank = ":l" + (RequiredRank + 1) + ": "
+    RequiredRank = (RequiredRank + 1);
 
     // Return built array containing all parameters
     var arr = [PL, type, count, texttype, RequiredRank, CityName, CountryName, ShouldBeLockedAt]
