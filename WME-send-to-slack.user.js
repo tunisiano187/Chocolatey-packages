@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.07.01
+// @version         2019.11.08.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -31,6 +31,7 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.10.30.1': 'Set level 3 as minimum for closures and open.',
     '2019.11.03.01': 'Release notes history added',
     '2019.11.07.01': 'Solve the problem with the Level required set to a wrong number',
+    '2019.11.08.01': 'Solve the channel selection problem that select the first after reload',
     '2019.11.09.01': 'Will be Adding the support for different GForm fields. (Delay needed)'
 };
 
@@ -166,7 +167,6 @@ function Construct(iconaction) {
                 if(parseInt(Details)>parseInt(RequiredLevel)) {
                     RequiredLevel = parseInt(Details);
                 }
-                alert(parseInt(RequiredLevel));
                 if(RequiredLevel == null) {
                     RequiredLevel = parseInt(Details);
                 }
@@ -338,6 +338,9 @@ function UpdateLanguages() {
         OptionLanguage = document.createElement('option');
         OptionLanguage.text=languageselected[key];
         OptionLanguage.value=key;
+        if(('WMESTSLanguage' in localStorage) && localStorage.getItem('WMESTSLanguage') === key) {
+            OptionLanguage.selected=true;
+        }
         $('#WMESTSLanguage').append(OptionLanguage);
     }
 }
