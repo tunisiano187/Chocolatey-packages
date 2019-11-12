@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.12.02
+// @version         2019.11.12.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -35,7 +35,7 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.08.01': 'Solve the channel selection problem that select the first after reload',
     '2019.11.12.01': 'Add GForm in the list of connected website',
     '2019.11.12.02': 'Add support of mapComments',
-    '2019.11.13.01': 'Will be Adding the support for different GForm fields. (Delay needed)'
+    '2019.11.12.03': 'Adding the support for different GForm fields.'
 };
 
 // Var declaration
@@ -264,9 +264,23 @@ function Construct(iconaction) {
                     var projI=new OpenLayers.Projection("EPSG:900913");
                     var projE=new OpenLayers.Projection("EPSG:4326");
                     var currentlocation = (new OpenLayers.LonLat(Waze.map.center.lon,Waze.map.center.lat)).transform(projI,projE).toString().replace('lon=','').replace("lat=","");
+                    var GFormDBloc = gFormDB[localStorage.getItem('WMESTSChanel')];
+                    var datas = {};
+                    datas[GFormDBloc.pl]=unescape(permalink);
+                    datas[GFormDBloc.username]=W.loginManager.user.userName;
+                    datas[GFormDBloc.editorlevel]=W.loginManager.user.normalizedLevel;
+                    datas[GFormDBloc.levelrequired]=RequiredLevel.toString().replace(/:/g,'').replace('l','');
+                    datas[GFormDBloc.type]=selectedtype;
+                    datas[GFormDBloc.longlat]=currentlocation;
+                    datas[GFormDBloc.requesttype]=iconaction;
+                    datas[GFormDBloc.city]=CityName;
+                    datas[GFormDBloc.country]=CountryName;
+                    datas[GFormDBloc.selectcount]=countselected;
+                    datas[GFormDBloc.communitypart]=chanel;
+                    datas[GFormDBloc.message]=Details;
                     $.ajax({
                         url: Webhooks[key],
-                        data: {"entry.960265519" : unescape(permalink), "entry.566177441" : W.loginManager.user.userName, "entry.649821268" : W.loginManager.user.normalizedLevel, "entry.757655116" : RequiredLevel.replace(/:/g,'').replace('l',''), "entry.1039159705" : selectedtype, "entry.1152764180" : currentlocation, "entry.1552113337" : iconaction, "entry.1912561816" : CityName, "entry.2891793" : CountryName, "entry.1360658462" : countselected,"entry.980020299" : chanel, "entry.554494717" : Details},
+                        data: datas,
                         type : "POST",
                         dataType: "xml",
                         error: function(x, y, z)
