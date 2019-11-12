@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.08.01
+// @version         2019.11.12.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -15,6 +15,7 @@
 // @compatible firefox
 // @compatible opera
 // @connect         https://cdn.staticaly.io/
+// @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/master/WMESTSData.user.js?env=dev
 // @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
@@ -32,7 +33,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.03.01': 'Release notes history added',
     '2019.11.07.01': 'Solve the problem with the Level required set to a wrong number',
     '2019.11.08.01': 'Solve the channel selection problem that select the first after reload',
-    '2019.11.09.01': 'Will be Adding the support for different GForm fields. (Delay needed)'
+    '2019.11.12.01': 'Add GForm in the list of connected website',
+    '2019.11.13.01': 'Will be Adding the support for different GForm fields. (Delay needed)'
 };
 
 // Var declaration
