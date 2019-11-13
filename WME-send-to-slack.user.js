@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.13.02
+// @version         2019.11.13.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -37,7 +37,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.12.02': 'Add support of mapComments',
     '2019.11.12.03': 'Adding the support for different GForm fields.',
     '2019.11.13.01': 'Allow special characters in the comments',
-    '2019.11.13.02': 'Solving problem with update history'
+    '2019.11.13.02': 'Solving problem with update history',
+    '2019.11.13.03': 'Hide buttons on click to avoid multiple requests'
 };
 
 // Var declaration
@@ -310,6 +311,9 @@ function Loadactions() {
         $(document).on("click", "img#slackPermalink", function () {
             var iconaction = $(this).attr('class');
             log('click on ' + iconaction);
+            $( "#WMESTSlock" ).remove();
+            $( "#WMESTSvalidation" ).remove();
+            $( "#WMESTSclosures" ).remove();
             if(CheckNeededParams()) {
                 Construct(iconaction);
             } else {
