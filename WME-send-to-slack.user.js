@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.13.01
+// @version         2019.11.13.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -36,7 +36,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.12.01': 'Add GForm in the list of connected website',
     '2019.11.12.02': 'Add support of mapComments',
     '2019.11.12.03': 'Adding the support for different GForm fields.',
-    '2019.11.13.01': 'Allow special characters in the comments'
+    '2019.11.13.01': 'Allow special characters in the comments',
+    '2019.11.13.02': 'Solving problem with update history'
 };
 
 // Var declaration
@@ -503,12 +504,12 @@ function VersionCheck() {
         }
         UpdateNotes = "";
         for (var key in _WHATS_NEW_LIST) {
+            if(ScriptVersion == key) {
+                UpdateNotes = "What's New ?<br />";
+            }
             if(UpdateNotes != "")
             {
                 UpdateNotes = UpdateNotes + "<br />" + key + ": " + _WHATS_NEW_LIST[key];
-            }
-            if(ScriptVersion == key) {
-                UpdateNotes = "What's New ?<br />";
             }
         }
         WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
