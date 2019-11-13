@@ -512,6 +512,7 @@ function VersionCheck() {
                 UpdateNotes = UpdateNotes + "<br />" + key + ": " + _WHATS_NEW_LIST[key];
             }
         }
+        UpdateNotes = UpdateNotes + "<br />";
         WazeWrap.Interface.ShowScriptUpdate(ScriptName, ScriptVersion, UpdateNotes, "https://gitlab.com/WMEScripts/WME-send-to-slack-public");
         localStorage.setItem('WMESTSVersion', ScriptVersion);
         $(".WWSUFooter a").text("Gitlab")
