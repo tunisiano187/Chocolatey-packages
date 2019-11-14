@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.13.03
+// @version         2019.11.14.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -38,7 +38,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.12.03': 'Adding the support for different GForm fields.',
     '2019.11.13.01': 'Allow special characters in the comments',
     '2019.11.13.02': 'Solving problem with update history',
-    '2019.11.13.03': 'Hide buttons on click to avoid multiple requests'
+    '2019.11.13.03': 'Hide buttons on click to avoid multiple requests',
+    '2019.11.14.01': 'Add support of states'
 };
 
 // Var declaration
@@ -151,6 +152,19 @@ function GetCountry(CityId) {
     }
 }
 
+function GetState(CityId) {
+    var StateID = W.model.cities.getObjectById(CityId).attributes.stateID
+    var State = W.model.states.getObjectById(StateID).name
+    if(State==null)
+    {
+        return false;
+    }
+    else
+    {
+        return State;
+    }
+}
+
 // Construction of the request
 function Construct(iconaction) {
     var answers = getPermalinkCleaned(iconaction);
@@ -162,6 +176,7 @@ function Construct(iconaction) {
     var CityName = answers[5];
     var CountryName = answers[6];
     var ShouldbeLockedAt = answers[7];
+    var StateName = answers[8];
     var Details = "";
     var chanel = "";
     var sent=0;
@@ -212,7 +227,14 @@ function Construct(iconaction) {
         }
         chanel = "closure";
     }
-    var TextToSend = ':l' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + ", " + CountryName + escape(Details);
+    log("City : " + CityName);
+    var separatorCity="";
+    if(CityName !="") {separatorCity = ", "}
+    log("State : " + StateName);
+    var separatorState = ""
+    if(StateName !="") {separatorState = ", "}
+    log("Counrty : " + CountryName);
+    var TextToSend = ':l' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + escape(Details);
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
     var Country = countryDB[localStorage.getItem('WMESTSCountry')];
@@ -261,6 +283,7 @@ function Construct(iconaction) {
                             log(x + ' ' + y + ' ' + z);
                         }
                     });
+                    log(TextToSend);
                     sent=sent+1;
                     break;
                 case "gform":
@@ -435,6 +458,7 @@ function getPermalinkCleaned(iconaction) {
     var texttype = "venue";
     var CityName = "";
     var CountryName = "";
+    var StateName = "";
     var selectedindex="";
     var selectiontype="&venues=";
     var RequiredRank = 0;
@@ -475,7 +499,16 @@ function getPermalinkCleaned(iconaction) {
             RequiredRank = section.model.attributes.rank;
         }
         CityName = GetCity(GetCityID(section, texttype));
+        if(CityName == null) {
+            CityName = "";
+        }
         CountryName = GetCountry(GetCityID(section, texttype));
+        StateName = GetState(GetCityID(section, texttype));
+        log("State Name : " + StateName);
+        if(StateName == false) {
+            StateName = "";
+            log("State Name : emptyied" + StateName);
+        }
     });
     if(ShouldBeLockedAt == -5) { ShouldBeLockedAt = ""; }
     var PL = text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex;
@@ -489,7 +522,7 @@ function getPermalinkCleaned(iconaction) {
     RequiredRank = (RequiredRank + 1);
 
     // Return built array containing all parameters
-    var arr = [PL, type, count, texttype, RequiredRank, CityName, CountryName, ShouldBeLockedAt]
+    var arr = [PL, type, count, texttype, RequiredRank, CityName, CountryName, ShouldBeLockedAt, StateName]
     return arr;
 }
 
