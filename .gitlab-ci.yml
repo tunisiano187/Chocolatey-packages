@@ -29,6 +29,6 @@ publishing:
          - git tag
          - git remote set-url origin git@gitlab.com:WMEScripts/wme-send-to-slack-public.git
          - GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git push origin HEAD:master
-         - curl -s https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js | grep -i version
+         - curl -s https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js | grep -i @version
         # - git push origin $script_version
         # - git push origin :refs/tags/v4
