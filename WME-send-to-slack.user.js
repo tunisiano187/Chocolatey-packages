@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.19.03
+// @version         2019.11.20.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -42,7 +42,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.14.01': 'Add support of states',
     '2019.11.19.01': 'Solve issue that Map problem couldn\'t be sent',
     '2019.11.19.02': 'Solve accents and PL in the same request',
-    '2019.11.19.03': 'Stop desactivating buttons but warn the user if already sent'
+    '2019.11.19.03': 'Stop desactivating buttons but warn the user if already sent',
+    '2019.11.20.01': 'Correction due to update of WME, closures options weren\'t available'
 };
 
 // Var declaration
@@ -105,7 +106,7 @@ function init(e) {
                         sent=0;
                         log('Closure icons added');
                         $( "#WMESTSclosures" ).remove();
-                        if(W.layerSwitcherController.state.attributes.ITEM_CLOSURES === true) {
+                        if(W.layerSwitcherController.checkboxState.attributes.ITEM_CLOSURES === true) {
                             $('.closures-list').before('<div id="WMESTSclosures">' + closureicon + '&nbsp;' + openicon + '</div>');
                         }
                         Loadactions();
