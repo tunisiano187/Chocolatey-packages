@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.20.01
+// @version         2019.11.20.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -43,7 +43,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.19.01': 'Solve issue that Map problem couldn\'t be sent',
     '2019.11.19.02': 'Solve accents and PL in the same request',
     '2019.11.19.03': 'Stop desactivating buttons but warn the user if already sent',
-    '2019.11.20.01': 'Correction due to update of WME, closures options weren\'t available'
+    '2019.11.20.01': 'Correction due to update of WME, closures options weren\'t available',
+    '2019.11.20.02': 'Due to WME update, Links were brokens'
 };
 
 // Var declaration
@@ -180,7 +181,9 @@ function GetState(CityId) {
 
 // Construction of the request
 function Construct(iconaction) {
+    log('Construction');
     var answers = getPermalinkCleaned(iconaction);
+    log('Permalink generated');
     var permalink = answers[0];
     var textSelection = answers[1];
     var countselected = answers[2];
@@ -493,7 +496,9 @@ function getPermalinkCleaned(iconaction) {
     var ShouldBeLockedAt = -5;
     var projI=new OpenLayers.Projection("EPSG:900913");
     var projE=new OpenLayers.Projection("EPSG:4326");
-    var currentlocation = (new OpenLayers.LonLat(W.map.center.lon,W.map.center.lat)).transform(projI,projE).toString().replace(',','&');
+    var center = W.map.getCenter();
+    var mapCenter = new OL.Geometry.Point(center.lon,center.lat);
+    var currentlocation = (new OpenLayers.LonLat(mapCenter.x,mapCenter.y)).transform(projI,projE).toString().replace(',','&');
     $.each(W.selectionManager.getSelectedFeatures(), function(indx, section){
         if(texttype == "venue") { texttype = section.model.attributes.categories }
         if(selectedindex!="")
