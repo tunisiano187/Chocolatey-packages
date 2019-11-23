@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WMESTSData
 // @namespace    https://gitlab.com/WMEScripts
-// @version      2019.11.22.01
+// @version      2019.11.23.01
 // @description  Datas for the script WME-send-to-slack
 // @author       Tunisiano18
 // @match        http://*/*
