@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.20.02
+// @version         2019.11.24.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -44,7 +44,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.19.02': 'Solve accents and PL in the same request',
     '2019.11.19.03': 'Stop desactivating buttons but warn the user if already sent',
     '2019.11.20.01': 'Correction due to update of WME, closures options weren\'t available',
-    '2019.11.20.02': 'Due to WME update, Links were brokens'
+    '2019.11.20.02': 'Due to WME update, Links were brokens',
+    '2019.11.24.01': 'Remove a useless line in the requests'
 };
 
 // Var declaration
@@ -255,7 +256,7 @@ function Construct(iconaction) {
         return escape(url);
     });
     log(Details);
-    var TextToSend = ':l' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nFor : " + textSelection + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var TextToSend = ':l' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nFor : " + textSelection + ", Link : <" + escape(permalink) + "|here>\r\nrequest type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
     var Country = countryDB[localStorage.getItem('WMESTSCountry')];
