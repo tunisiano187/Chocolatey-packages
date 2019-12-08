@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.11.24.02
+// @version         2019.12.08.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -29,7 +29,7 @@
 var UpdateNotes = "";
 const _WHATS_NEW_LIST = { // New in this version
     '2019.10.29.01': 'Test',
-    '2019.10.30.1': 'Set level 3 as minimum for closures and open.',
+    '2019.10.30.01': 'Set level 3 as minimum for closures and open.',
     '2019.11.03.01': 'Release notes history added',
     '2019.11.07.01': 'Solve the problem with the Level required set to a wrong number',
     '2019.11.08.01': 'Solve the channel selection problem that select the first after reload',
@@ -46,7 +46,11 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.20.01': 'Correction due to update of WME, closures options weren\'t available',
     '2019.11.20.02': 'Due to WME update, Links were brokens',
     '2019.11.24.01': 'Remove a useless line in the requests',
-    '2019.11.24.02': 'Change the text to shorter'
+    '2019.11.24.02': 'Change the text to shorter',
+    '2019.11.30.01': 'Add Chanels by Webhook',
+    '2019.12.07.01': 'Add States in the settings, automate the selection if only one choice',
+    '2019.12.08.01': 'Add support For new Countries with States, Multiple plateforms, and webhooks depending on the Language',
+    '2019.12.08.02': 'Your settings may need to be modified for this update.'
 };
 
 // Var declaration
@@ -56,8 +60,8 @@ var segmentcount = 0;
 var actionsloaded = 0;
 var neededparams = {
     WMESTSCountry: "",
-    WMESTSLanguage: "",
-    WMESTSChanel: ""
+    WMESTSState: "",
+    WMESTSServer: "",
 };
 
 // Icons in variables
@@ -243,7 +247,7 @@ function Construct(iconaction) {
                 Details = Details + Reason;
             }
         }
-        chanel = "closure";
+        chanel = "closures";
     }
     log("City : " + CityName);
     var separatorCity="";
@@ -257,17 +261,16 @@ function Construct(iconaction) {
         return escape(url);
     });
     log(Details);
-    var TextToSend = ':l' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nrequest type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var TextToSend = ':L' + RequiredLevel + ": User : " + W.loginManager.user.userName + " (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nrequest type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
-    var Country = countryDB[localStorage.getItem('WMESTSCountry')];
-    var Webhooks = Country.webhook;
     if(Reason !== 'Cancelled' && chanel !== "") {
-        for (var key in Webhooks)
+        for (var key in serverDB[localStorage.getItem('WMESTSServer')])
         {
             switch (key.toLowerCase()) {
                 case "discord":
                 case "slack":
+                    log('Chanel : ' + chanel);
                     var actionicon="";
                     log(iconaction)
                     switch(iconaction.toLowerCase()) {
@@ -294,13 +297,13 @@ function Construct(iconaction) {
                             "text": TextToSend,
                             "username": GM_info.script.name + " " + GM_info.script.version,
                             "mrkdwn": true,
-                            "channel": channelDB[localStorage.getItem('WMESTSChanel')][chanel],
+                            "channel": serverDB[localStorage.getItem('WMESTSServer')][key]["chanel_" + chanel],
                             "icon_emoji": actionicon
                         }),
                         dataType: 'json',
                         processData: false,
                         type: 'POST',
-                        url: Webhooks[key],
+                        url: serverDB[localStorage.getItem('WMESTSServer')][key][chanel],
                         error: function(x, y, z)
                         {
                             log(x + ' ' + y + ' ' + z);
@@ -312,8 +315,8 @@ function Construct(iconaction) {
                 case "gform":
                     var projI=new OpenLayers.Projection("EPSG:900913");
                     var projE=new OpenLayers.Projection("EPSG:4326");
-                    var currentlocation = (new OpenLayers.LonLat(Waze.map.center.lon,Waze.map.center.lat)).transform(projI,projE).toString().replace('lon=','').replace("lat=","");
-                    var GFormDBloc = gFormDB[localStorage.getItem('WMESTSChanel')];
+                    var currentlocation = (new OpenLayers.LonLat(Waze.map.getCenter().lon,Waze.map.getCenter().lat)).transform(projI,projE).toString().replace('lon=','').replace("lat=","");
+                    var GFormDBloc = gFormDB[localStorage.getItem('WMESTSServer')];
                     var datas = {};
                     datas[GFormDBloc.pl]=unescape(permalink);
                     datas[GFormDBloc.username]=W.loginManager.user.userName;
@@ -328,7 +331,7 @@ function Construct(iconaction) {
                     datas[GFormDBloc.communitypart]=chanel;
                     datas[GFormDBloc.message]=Details;
                     $.ajax({
-                        url: Webhooks[key],
+                        url: serverDB[localStorage.getItem('WMESTSServer')][key]['url'],
                         data: datas,
                         type : "POST",
                         dataType: "xml",
@@ -357,12 +360,9 @@ function Loadactions() {
         $(document).on("click", "img#slackPermalink", function () {
             var iconaction = $(this).attr('class');
             log('click on ' + iconaction);
-            //$( "#WMESTSlock" ).remove();
-            //$( "#WMESTSvalidation" ).remove();
-            //$( "#WMESTSclosures" ).remove();
             if(CheckNeededParams()) {
                 log("Params set sent=" + sent);
-                if(sent==1) {
+                if(sent>=1) {
                     log("already sent");
                     if (confirm('Request already sent, send again ?')) {
                         log("send again");
@@ -408,20 +408,51 @@ function UpdateLanguages() {
         $(this).remove();
     });
     var OptionLanguage = document.createElement('option');
-    if(!('WMESTSLanguage' in localStorage)) {
-        OptionLanguage.text = "------";
-        $('#WMESTSLanguage').append(OptionLanguage)
+    OptionLanguage.text = "------";
+    if(!languageDB[localStorage.getItem('WMESTSState')]) {
+        OptionLanguage.text = "Default";
     }
-    var languageselected = languageDB[$('#WMESTSCountry').val()];
+    $('#WMESTSLanguage').append(OptionLanguage);
+    if(localStorage.getItem('WMESTSState') && !languageDB[localStorage.getItem('WMESTSState')]) {
+        localStorage.setItem('WMESTSServer',localStorage.getItem('WMESTSState') + "_en");
+        OptionLanguage.selected=true;
+    }
+    var languageselected = languageDB[localStorage.getItem('WMESTSState')];
     for (var key in languageselected){
         OptionLanguage = document.createElement('option');
         OptionLanguage.text=languageselected[key];
-        OptionLanguage.value=key;
-        if(('WMESTSLanguage' in localStorage) && localStorage.getItem('WMESTSLanguage') === key) {
+        OptionLanguage.value=localStorage.getItem('WMESTSState') + '_' + key;
+        if(('WMESTSServer' in localStorage) && localStorage.getItem('WMESTSServer') === localStorage.getItem('WMESTSState') + '_' + key) {
             OptionLanguage.selected=true;
         }
         $('#WMESTSLanguage').append(OptionLanguage);
     }
+}
+
+// Update the language in the Browser's database
+function UpdateStates() {
+    $('#WMESTSState option').each(function() {
+        $(this).remove();
+    });
+    var OptionState = document.createElement('option');
+    OptionState.text = "No State";
+    if(stateDB[$('#WMESTSCountry').val()]) {
+        OptionState.text = "------"
+        OptionState.selected=true;
+    }
+    OptionState.id = $('#WMESTSCountry').val() + "ns";
+    $('#WMESTSState').append(OptionState)
+    var Stateselected = stateDB[$('#WMESTSCountry').val()];
+    for (var key in Stateselected){
+        OptionState = document.createElement('option');
+        OptionState.text=Stateselected[key];
+        OptionState.value=localStorage.getItem('WMESTSCountry') + key;
+        if(('WMESTSState' in localStorage) && localStorage.getItem('WMESTSState') === localStorage.getItem('WMESTSCountry')+key) {
+            OptionState.selected=true;
+        }
+        $('#WMESTSState').append(OptionState);
+    }
+    UpdateLanguages();
 }
 
 // Create Settings Tab
@@ -452,15 +483,36 @@ function LoadTab() {
         $("#segment-edit-settings").append(countrychoose);
         $('#WMESTSCountry').change(function() {
             $(localStorage.setItem('WMESTSCountry', $('#WMESTSCountry').val()));
+            localStorage.removeItem('WMESTSState');
             localStorage.removeItem('WMESTSLanguage');
             localStorage.removeItem('WMESTSChanel');
+            localStorage.removeItem('WMESTSServer');
+            if(!stateDB[$('#WMESTSCountry').val()])
+            {
+                localStorage.setItem('WMESTSState', $('#WMESTSCountry').val() + "ns");
+            }
+            UpdateStates();
+        });
+        var statechoose = document.createElement('select');
+        statechoose.id='WMESTSState';
+        statechoose.className='form-control';
+        statechoose.style.margin = '8px 0';
+        var OptionState = document.createElement('option');
+        OptionState.text = "------";
+        statechoose.appendChild(OptionState)
+        $("#segment-edit-settings").append('<label class="control-label">State</label>')
+        $("#segment-edit-settings").append(statechoose);
+        $('#WMESTSState').change(function() {
+            localStorage.removeItem('WMESTSLanguage');
+            localStorage.removeItem('WMESTSChanel');
+            $(localStorage.setItem('WMESTSState', $('#WMESTSState').val()));
             UpdateLanguages();
         });
         var languagechoose = document.createElement('select');
         languagechoose.id='WMESTSLanguage';
         languagechoose.className='form-control';
         languagechoose.style.margin = '8px 0';
-        if(!('WMESTSLanguage' in localStorage)) {
+        if(!('WMESTSServer' in localStorage)) {
             var OptionLanguage = document.createElement('option');
             OptionLanguage.text = "------";
             languagechoose.appendChild(OptionLanguage)
@@ -468,10 +520,18 @@ function LoadTab() {
         $("#segment-edit-settings").append('<label class="control-label">Channel</label>')
         $("#segment-edit-settings").append(languagechoose);
         $('#WMESTSLanguage').change(function() {
-            $(localStorage.setItem('WMESTSLanguage', $('#WMESTSLanguage').val()));
-            $(localStorage.setItem('WMESTSChanel', $('#WMESTSCountry').val() + "_" + $('#WMESTSLanguage').val()));
+            $(localStorage.setItem('WMESTSServer', $('#WMESTSLanguage').val()));
+            //$(localStorage.setItem('WMESTSChanel', $('#WMESTSCountry').val() + "_" + $('#WMESTSLanguage').val()));
         });
-        UpdateLanguages();
+        if(('WMESTSCountry' in localStorage) && !stateDB[$('#WMESTSCountry').val()])
+        {
+            localStorage.setItem('WMESTSState', localStorage.getItem('WMESTSCountry') + "ns");
+        }
+        if(('WMESTSState' in localStorage) && !languageDB[localStorage.getItem('WMESTSState')])
+        {
+            localStorage.setItem('WMESTSServer', localStorage.getItem('WMESTSState') + "_en");
+        }
+        UpdateStates();
     }
 }
 
