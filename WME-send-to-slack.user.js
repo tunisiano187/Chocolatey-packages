@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.12.08.02
+// @version         2019.12.09.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -50,7 +50,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.11.30.01': 'Add Chanels by Webhook',
     '2019.12.07.01': 'Add States in the settings, automate the selection if only one choice',
     '2019.12.08.01': 'Add support For new Countries with States, Multiple plateforms, and webhooks depending on the Language',
-    '2019.12.08.02': 'Your settings may need to be modified for this update.'
+    '2019.12.08.02': 'Your settings may need to be modified for this update.',
+    '2019.12.09.01': 'Add support of the environment variable'
 };
 
 // Var declaration
@@ -546,7 +547,7 @@ function log(message) { // Thanks to Glodenox but enhanced
 
 // Create the permalink
 function getPermalinkCleaned(iconaction) {
-    text = "https://www.waze.com/editor?env=row&";
+    text = "https://www.waze.com/editor?env=" + W.app.getAppRegionCode() + "&";
     var count = 0;
     var texttype = "venue";
     var CityName = "";
