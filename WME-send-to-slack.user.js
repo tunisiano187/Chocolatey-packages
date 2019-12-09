@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.12.09.01
+// @version         2019.12.09.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -51,7 +51,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.12.07.01': 'Add States in the settings, automate the selection if only one choice',
     '2019.12.08.01': 'Add support For new Countries with States, Multiple plateforms, and webhooks depending on the Language',
     '2019.12.08.02': 'Your settings may need to be modified for this update.',
-    '2019.12.09.01': 'Add support of the environment variable'
+    '2019.12.09.01': 'Add support of the environment variable',
+    '2019.12.09.02': 'Embed text in discord to hide preview'
 };
 
 // Var declaration
@@ -171,9 +172,9 @@ function GetCountry(CityId) {
 function GetState(CityId) {
     if(W.model.cities.getObjectById(CityId))
     {
-        var StateID = W.model.cities.getObjectById(CityId).attributes.stateID
-        var State = W.model.states.getObjectById(StateID).name
-        if(State==null)
+        var StateID = W.model.cities.getObjectById(CityId).attributes.stateID;
+        var State = W.model.states.getObjectById(StateID).name;
+        if(State===null)
         {
             return false;
         }
@@ -211,7 +212,7 @@ function Construct(iconaction) {
                 if(parseInt(Details)>parseInt(RequiredLevel)) {
                     RequiredLevel = parseInt(Details);
                 }
-                if(RequiredLevel == null) {
+                if(RequiredLevel === null) {
                     RequiredLevel = parseInt(Details);
                 }
                 Details = "To level " + Details;
@@ -293,23 +294,46 @@ function Construct(iconaction) {
                         default:
                             actionicon = "pencil2"
                     }
-                    $.ajax({
-                        data: 'payload=' + JSON.stringify({
-                            "text": TextToSend,
-                            "username": GM_info.script.name + " " + GM_info.script.version,
-                            "mrkdwn": true,
-                            "channel": serverDB[localStorage.getItem('WMESTSServer')][key]["chanel_" + chanel],
-                            "icon_emoji": actionicon
-                        }),
-                        dataType: 'json',
-                        processData: false,
-                        type: 'POST',
-                        url: serverDB[localStorage.getItem('WMESTSServer')][key][chanel],
-                        error: function(x, y, z)
-                        {
-                            log(x + ' ' + y + ' ' + z);
-                        }
-                    });
+                    if(key.toLowerCase() == "slack")
+                    {
+                        $.ajax({
+                            data: 'payload=' + JSON.stringify({
+                                "text": TextToSend,
+                                "username": GM_info.script.name + " " + GM_info.script.version,
+                                "mrkdwn": true,
+                                "channel": serverDB[localStorage.getItem('WMESTSServer')][key]["chanel_" + chanel],
+                                "icon_emoji": actionicon
+                            }),
+                            dataType: 'json',
+                            processData: false,
+                            type: 'POST',
+                            url: serverDB[localStorage.getItem('WMESTSServer')][key][chanel],
+                            error: function(x, y, z)
+                            {
+                                log(x + ' ' + y + ' ' + z);
+                            }
+                        });
+                    } else if (key.toLowerCase() == "discord")
+                    {
+                        $.ajax({
+                            data: 'payload=' + JSON.stringify({
+                                "attachments": [{
+                                    "text": TextToSend}],
+                                "username": GM_info.script.name + " " + GM_info.script.version,
+                                "mrkdwn": true,
+                                "channel": serverDB[localStorage.getItem('WMESTSServer')][key]["chanel_" + chanel],
+                                "icon_emoji": actionicon
+                            }),
+                            dataType: 'json',
+                            processData: false,
+                            type: 'POST',
+                            url: serverDB[localStorage.getItem('WMESTSServer')][key][chanel],
+                            error: function(x, y, z)
+                            {
+                                log(x + ' ' + y + ' ' + z);
+                            }
+                        });
+                    }
                     log(TextToSend);
                     sent=sent+1;
                     break;
