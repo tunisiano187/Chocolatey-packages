@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.12.09.02
+// @version         2019.12.10.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -52,7 +52,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.12.08.01': 'Add support For new Countries with States, Multiple plateforms, and webhooks depending on the Language',
     '2019.12.08.02': 'Your settings may need to be modified for this update.',
     '2019.12.09.01': 'Add support of the environment variable',
-    '2019.12.09.02': 'Embed text in discord to hide preview'
+    '2019.12.09.02': 'Embed text in discord to hide preview',
+    '2019.12.10.01': 'Solve Zoom problem'
 };
 
 // Var declaration
@@ -631,7 +632,7 @@ function getPermalinkCleaned(iconaction) {
         }
     });
     if(ShouldBeLockedAt == -5) { ShouldBeLockedAt = ""; }
-    var PL = text + currentlocation + "&zoom=" + W.map.zoom + selectiontype + selectedindex;
+    var PL = text + currentlocation + "&zoom=" + W.map.getOLMap().getZoom() + selectiontype + selectedindex;
     var type = texttype;
     if (count>1) {
         type = count + " " + type + "s";
