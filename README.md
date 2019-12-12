@@ -1,13 +1,16 @@
 [![Open Source Helpers](https://www.codetriage.com/wazedev/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/wazedev/wme-send-to-slack)
 
-What's doing this script ?
+---What's doing this script ?---
 
 It's more easy to send requests about Lock, Downlock, Closure, Openning, and Validation of changes
 The requests are sent to a webhook to Slack or Discrord
 The requests can be sent to a GForm too (currently only with the sames fields we have in BeLux)
 Thanks to that and to Bertzzz's , we've got a spreadsheet that helps to promotion decision on L1-L3 levels
 
-What does it looks like ?
+---What's New---
+This script now supports States, and i've added the USA NewYork, New Jersay, ...
+
+---What does it looks like ?---
  
 The Validation link is on top of the Left collumn just above the settings tab
 
@@ -22,7 +25,7 @@ The Closure and Open links are ...? In the Closure Tab just above the Closure ta
 
 ![Img](https://api.tipeee.com/cache/20191024194111/media/1753058/201910245db1e237a2538.png)
 
-How can i use it ?
+---How can i use it ?---
 
 Like most of the scripts used by Waze editors, you need to install 
 A browser, but beeing here, i assume that's already the case...(Not Internet explorer or Edge)
@@ -30,7 +33,7 @@ Tampermonkey extention
 The script itself... 
 https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 
-What's different whith the old one ?
+---What's different whith the old one ?---
 
 I've : 
 - rewrited completely the script
@@ -44,7 +47,7 @@ I've :
 So now, If you want to add a Country/Community, if you're using Slack or Discord, just tell me...
 If you just want to add other supports(other than Discord or Slack), let me know which, and i'll search to use it.
 
-How to send bugs or features ?
+---How to send bugs or features ?---
 
 Just :
 go on this page (you'll need to create an account) : https://gitlab.com/WMEScripts/wme-send-to-slack-public/issues
