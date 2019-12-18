@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.12.19.02
+// @version         2019.12.19.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -55,14 +55,13 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.12.09.02': 'Embed text in discord to hide preview',
     '2019.12.10.01': 'Solve Zoom problem',
     '2019.12.19.01': 'Removing ajax return that was causing an error',
-    '2019.12.19.02': 'Handle errors and send them to a GForm (Only the errors no private informations)'
+    '2019.12.19.02': 'Handle errors and send them to a GForm (Only the errors no private informations)',
+    '2019.12.19.03': 'Cancel Handle errors, Too many returns'
 };
 
 // Handle script errors and send them to GForm
 
 window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
-    log('Error: ' + errorMsg.message + ' \nLine: ' + errorMsg.lineno
-    + ' \nColumn: ' + errorMsg.colno + ' \nStackTrace: ' +  errorMsg.error);
     var datas = {};
     datas["entry.685415388"]=W.loginManager.user.userName;
     datas["entry.1178459605"]=errorMsg.message;
@@ -71,12 +70,13 @@ window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
             datas["entry.1178459605"]=datas["entry.1178459605"] + " \n" + key + ":" + errorMsg[key];
         }
     }
-    $.ajax({
+    log(datas["entry.1178459605"]);
+    /*$.ajax({
         url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLNa8UFj8j4hZiO5qGUYAmEnYqZrWRIvN2xcbf97wtZ_9VKQ/formResponse",
         data: datas,
         type : "POST",
         dataType: "xml"
-    });
+    });*/
 }
 
 
