@@ -335,7 +335,7 @@ function Construct(iconaction) {
                             url: serverDB[localStorage.getItem('WMESTSServer')][key][chanel],
                             error: function(x, y, z)
                             {
-                                log(x + ' ' + y + ' ' + z);
+                                log('Slack error : ' + x + ' ' + y + ' ' + z);
                             }
                         });
                     } else if (key.toLowerCase() == "discord")
@@ -354,7 +354,7 @@ function Construct(iconaction) {
                             url: serverDB[localStorage.getItem('WMESTSServer')][key][chanel],
                             error: function(x, y, z)
                             {
-                                log(x + ' ' + y + ' ' + z);
+                                log('Discord error : ' + x + ' ' + y + ' ' + z);
                             }
                         });
                     }
