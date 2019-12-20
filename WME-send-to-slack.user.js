@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2019.12.19.03
+// @version         2019.12.20.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -56,7 +56,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.12.10.01': 'Solve Zoom problem',
     '2019.12.19.01': 'Removing ajax return that was causing an error',
     '2019.12.19.02': 'Handle errors and send them to a GForm (Only the errors no private informations)',
-    '2019.12.19.03': 'Cancel Handle errors, Too many returns'
+    '2019.12.19.03': 'Cancel Handle errors, Too many returns',
+    '2019.12.20.01': 'Logs enhanced'
 };
 
 // Handle script errors and send them to GForm
@@ -70,7 +71,7 @@ window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
             datas["entry.1178459605"]=datas["entry.1178459605"] + " \n" + key + ":" + errorMsg[key];
         }
     }
-    log(datas["entry.1178459605"]);
+    log(datas["entry.1178459605"], "One of your scripts");
     /*$.ajax({
         url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLNa8UFj8j4hZiO5qGUYAmEnYqZrWRIvN2xcbf97wtZ_9VKQ/formResponse",
         data: datas,
@@ -585,12 +586,12 @@ function LoadTab() {
 }
 
 // Send easily logs into the console
-function log(message) { // Thanks to Glodenox but enhanced
-  if (typeof message === 'string') {
-    console.log('%c' + ScriptName + ' : %c' + message, 'color:black', 'color:#d97e00');
-  } else {
-    console.log('%c' + ScriptName + ' :', 'color:black', message);
-  }
+function log(message, thisscript = ScriptName) { // Thanks to Glodenox but enhanced
+    if (typeof message === 'string') {
+        console.log('%c' + thisscript + ' : %c' + message, 'color:black', 'color:#d97e00');
+    } else {
+        console.log('%c' + thisscript + ' :', 'color:black', message);
+    }
 }
 
 // Create the permalink
