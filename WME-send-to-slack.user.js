@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.01.04.01
+// @version         2020.01.04.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -57,8 +57,9 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.12.19.01': 'Removing ajax return that was causing an error',
     '2019.12.19.02': 'Handle errors and send them to a GForm (Only the errors no private informations)',
     '2019.12.19.03': 'Cancel Handle errors, Too many returns',
-    '2019.12.20.01': 'Logs enhanced'
-    '2020.01.04.01': "Link username to Waze's user profile"
+    '2019.12.20.01': 'Logs enhanced',
+    '2020.01.04.01': "Link username to Waze's user profile",
+    '2020.01.04.02': "char error"
 };
 
 // Handle script errors and send them to GForm
