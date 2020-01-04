@@ -344,7 +344,7 @@ function Construct(iconaction) {
                         });
                     } else if (key.toLowerCase() == "discord")
                     {
-                         $.ajax({
+                        $.ajax({
                             data: 'payload=' + JSON.stringify({
                                 "attachments": [{
                                     "text": TextToSend}],
