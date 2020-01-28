@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.01.04.02
+// @version         2020.01.28.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -17,7 +17,7 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://cdn.statically.io/gl/WMEScripts/wme-send-to-slack-public/master/WMESTSData.user.js?env=dev
+// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js
 // @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 // @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
@@ -59,7 +59,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2019.12.19.03': 'Cancel Handle errors, Too many returns',
     '2019.12.20.01': 'Logs enhanced',
     '2020.01.04.01': "Link username to Waze's user profile",
-    '2020.01.04.02': "char error"
+    '2020.01.04.02': "char error",
+    '2020.01.28.01': "Added France"
 };
 
 // Handle script errors and send them to GForm
