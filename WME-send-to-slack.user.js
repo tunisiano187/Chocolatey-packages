@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.03.26.01
+// @version         2020.04.12.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -62,7 +62,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.01.04.02': "char error",
     '2020.01.28.01': "Added France",
     '2020.03.06.01': "Added Railroad Crossing support",
-    '2020.03.26.01': "New version of WazeWrap"
+    '2020.03.26.01': "New version of WazeWrap",
+    '2020.04.12.01': "Correction for normalizedRank removal in beta"
 };
 
 // Handle script errors and send them to GForm
@@ -296,7 +297,8 @@ function Construct(iconaction) {
     });
     log(Details);
     var profileurl="https://www.waze.com/user/editor/"
-    var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + W.loginManager.user.normalizedLevel + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nrequest type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var userRank = W.loginManager.user.getRank() + 1;
+    var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + userRank + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nrequest type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
     if(Reason !== 'Cancelled' && chanel !== "") {
