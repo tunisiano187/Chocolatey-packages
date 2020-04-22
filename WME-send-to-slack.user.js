@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.04.21.01
+// @version         2020.04.22.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -17,7 +17,7 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js
+// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js?2020042201
 // @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 // @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
@@ -64,7 +64,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.03.06.01': "Added Railroad Crossing support",
     '2020.03.26.01': "New version of WazeWrap",
     '2020.04.12.01': "Correction for normalizedRank removal in beta",
-    '2020.04.21.01': "Support for China added"
+    '2020.04.21.01': "Support for China added",
+    '2020.04.22.01': "Support for Mongolia added"
 };
 
 // Handle script errors and send them to GForm
