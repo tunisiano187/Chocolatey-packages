@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.04.22.01
+// @version         2020.05.14.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -65,7 +65,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.03.26.01': "New version of WazeWrap",
     '2020.04.12.01': "Correction for normalizedRank removal in beta",
     '2020.04.21.01': "Support for China added",
-    '2020.04.22.01': "Support for Mongolia added"
+    '2020.04.22.01': "Support for Mongolia added",
+    '2020.05.14.01': "Automatic change when lock requested"
 };
 
 // Handle script errors and send them to GForm
@@ -87,6 +88,16 @@ window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
         dataType: "xml"
     });*/
 }
+
+var $_GET = {};
+
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
 
 
 
@@ -124,6 +135,7 @@ function init(e) {
     }
     log('WME chargé');
 
+
     // On change, check for changes in the edit-panel
     var WMESTSObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -144,6 +156,11 @@ function init(e) {
                         $( "#WMESTSvalidation" ).remove();
                         $('div.selection.selection-icon').append('<span id="WMESTSvalidation">' + validationicon + '</div>');
                         log('Validation icon added');
+                        if($_GET['wmeststo']) {
+                            $value=$_GET['wmeststo']-1;
+                            $link='input[type=radio][name=lockRank][value=' + $value + ']';
+                            $($link).click();
+                        }
                         Loadactions();
                     }
                     if (closureslistDiv) {
@@ -250,6 +267,7 @@ function Construct(iconaction) {
                 if(RequiredLevel === null) {
                     RequiredLevel = parseInt(Details);
                 }
+                permalink = permalink + "&wmeststo=" + Details;
                 Details = "To level " + Details;
             } else {
                 Details = 'Cancelled';
