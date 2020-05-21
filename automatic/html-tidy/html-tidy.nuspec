@@ -17,10 +17,7 @@ Tidy is a console application for Mac OS X, Linux, Windows, UNIX, and more. It c
     <copyright>HTACG</copyright>
     <licenseUrl>https://github.com/htacg/tidy-html5/blob/master/README/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
+    $<releaseNotes></releaseNotes>
     <docsUrl>http://www.html-tidy.org/documentation</docsUrl>
     <bugTrackerUrl>https://github.com/htacg/tidy-html5/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/htacg/tidy-html5</projectSourceUrl>
