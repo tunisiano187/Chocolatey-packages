@@ -6,7 +6,7 @@ build_image:
     - ./setup/au_setup.ps1
     - Write-Host "Start updating packages"
     - cd au
-    - Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value 2
+    - ./au/invoke-setup.ps1
     - ./update_all.ps1
   #  - ./update.ps1
   after_script:
