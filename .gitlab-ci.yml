@@ -6,6 +6,7 @@ build_image:
     - ./setup/au_setup.ps1
     - Write-Host "Start updating packages"
     - cd au
+    - $download_page = Invoke-WebRequest -Uri "https://github.com/htacg/tidy-html5/releases"
     - ./update_all.ps1
   #  - ./update.ps1
   after_script:
