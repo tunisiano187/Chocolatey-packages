@@ -1,0 +1,20 @@
+build_image:
+  before_script:
+    - Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+  script:
+    - Write-Host "Setup AU module"
+    - ./setup/au_setup.ps1
+    - Write-Host "Start updating packages"
+    - cd au
+    - ./update_all.ps1
+  #  - ./update.ps1
+  after_script:
+    - md upload
+    - Get-ChildItem -Path ./ -Include *.nupkg -Recurse -File | Move-Item -Destination ./upload/
+  artifacts:
+    paths:
+        - upload/
+    expire_in: 1 week
+  tags:
+    - shared-windows
+    - windows
