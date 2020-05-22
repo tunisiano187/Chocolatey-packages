@@ -8,8 +8,8 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://foldingathome.org/support/faq/opensource/</licenseUrl>
     <projectUrl>https://foldingathome.org/</projectUrl>
-    <iconUrl>https://gitlab.com/chocolatey-package/foldingathome/-/raw/master/fah.png</iconUrl>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/foldingathome</packageSourceUrl>
+    <iconUrl>https://glcdn.rawgit.org/chocolatey-packages/automatic-updating/raw/master/icons/fah.png</iconUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/fah</packageSourceUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Help Stanford University scientists studying Alzheimer's, Huntington's, Parkinson's, and many cancers by simply running a piece of software on your computer. The program does this by building simulations of how proteins, RNA, and nanoscale synthetic polymers fold. 
 
@@ -30,7 +30,7 @@ This program does not slow your computer down and only uses unused computer powe
     <releaseNotes>#### Program
 * [News](http://folding.stanford.edu/home/blog)
 </releaseNotes>
-    <copyright>© Pande Lab, Stanford University</copyright>
+    <copyright>Pande Lab, Stanford University</copyright>
     <language>en-us</language>
     <tags>distributed-computing protein-folding biology science</tags>
     <dependencies>
