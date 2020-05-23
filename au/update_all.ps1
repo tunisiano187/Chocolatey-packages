@@ -26,10 +26,13 @@ $Options = [ordered]@{
         Path        = "$PSScriptRoot\Update-AUPacakges.md"  #List of files to add to gist
     }
 
-    #Git = @{
-        #User     = ''                                       #Git username, leave empty if github api key is used
-        #Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    #}
+    GitLab = @{
+        User			= 'tunisiano187'					#Git username, leave empty if github api key is used
+        API_Key			= $Gitlab_api_key					#Password if username is not empty, otherwise api key
+		PushURL			= $Gitlab_PushURL
+		Force			= $True
+		commitStrategy	= 'atomictag'
+    }
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
