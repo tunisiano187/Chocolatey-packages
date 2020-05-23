@@ -2,8 +2,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = 'ultracopier'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32="https://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.1/ultracopier-windows-x86-2.2.4.1-setup.exe"
-$url64="https://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.1/ultracopier-windows-x86_64-2.2.4.1-setup.exe"
+$url32='https://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.1/ultracopier-windows-x86-2.2.4.1-setup.exe'
+$url64='https://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.1/ultracopier-windows-x86_64-2.2.4.1-setup.exe'
 
 
 $packageArgs = @{
