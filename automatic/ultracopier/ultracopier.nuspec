@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ultracopier</id>
+        <version>2.2.4.1</version>
+        <title>Ultracopier</title>
+        <authors>Ultracopier</authors>
+		<owners>Tunisiano187</owners>
+        <projectUrl>http://ultracopier.first-world.info</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A replacement for the default windows file transfer progression bar.</description>
+        <summary>A replacement for the default windows file transfer progression bar.</summary>
+		<tags>ultracopier supercopier copy quick admin</tags>
+		<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/ultracopier</packageSourceUrl>
+		<iconUrl>https://ghcdn.rawgit.org/alphaonex86/Ultracopier/master/android-sources/res/drawable-hdpi/icon.png</iconUrl>
+    </metadata>
+</package>
