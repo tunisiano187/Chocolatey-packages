@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	. $working_dir/$install_fname /qb
 	$version=Get-Version('Juggler')
 	Write-host "Version : $version"
-	$url32 = $releases
+	$url32 = $release
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
