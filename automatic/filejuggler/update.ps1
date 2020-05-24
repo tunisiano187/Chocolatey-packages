@@ -1,5 +1,6 @@
 import-module au
 
+$NoCheckChocoVersion = $True
 $release = 'https://www.filejuggler.com/download/filejuggler.exe'
 
 function Get-Version($name) {
