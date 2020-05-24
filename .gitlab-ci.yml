@@ -12,6 +12,7 @@
   after_script:
     - md upload
     - Get-ChildItem -Path ./ -Include *.nupkg -Recurse -File | Move-Item -Destination ./upload/
+    - Get-ChildItem -Path ./ -Include Update-AUPacakges.md -Recurse -File | Move-Item -Destination ./upload/
   artifacts:
     paths:
         - upload/
