@@ -10,7 +10,7 @@
     <description>You set up the rules, and File Juggler will monitor your folders and manage your files automatically</description>
 	<packageSourceUrl>https://gitlab.com/chocolatey-packages/FileJuggler</packageSourceUrl>
     <projectUrl>http://www.filejuggler.com/</projectUrl>
-    <iconUrl>https://lh4.googleusercontent.com/-IV-wPLMjbAU/AAAAAAAAAAI/AAAAAAAAAFY/SqmUfOOF8X4/photo.jpg</iconUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/filejuggler.png</iconUrl>
 	<tags>FileJuggler File Juggler organisation organization admin trial</tags>
     <copyright>Simon</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
