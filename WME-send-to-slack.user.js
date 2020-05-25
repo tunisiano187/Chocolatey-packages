@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.05.25.01
+// @version         2020.05.25.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -67,7 +67,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.04.21.01': "Support for China added",
     '2020.04.22.01': "Support for Mongolia added",
     '2020.05.14.01': "Automatic change when lock requested",
-    '2020.05.25.01': 'Adding Afghanistan, Bhutan and Germany'
+    '2020.05.25.01': 'Adding Afghanistan, Bhutan and Germany',
+    '2020.05.25.02': 'OpenLayers var changed by Waze'
 };
 
 // Handle script errors and send them to GForm
@@ -638,7 +639,7 @@ function getPermalinkCleaned(iconaction) {
     var projI=new OpenLayers.Projection("EPSG:900913");
     var projE=new OpenLayers.Projection("EPSG:4326");
     var center = W.map.getCenter();
-    var mapCenter = new OL.Geometry.Point(center.lon,center.lat);
+    var mapCenter = new OpenLayers.Geometry.Point(center.lon,center.lat);
     var currentlocation = (new OpenLayers.LonLat(mapCenter.x,mapCenter.y)).transform(projI,projE).toString().replace(',','&');
     $.each(W.selectionManager.getSelectedFeatures(), function(indx, section){
         if(texttype == "venue") { texttype = section.model.attributes.categories }
