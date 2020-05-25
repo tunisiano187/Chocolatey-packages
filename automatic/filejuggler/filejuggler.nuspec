@@ -14,5 +14,8 @@
 	<tags>FileJuggler File Juggler organisation organization admin trial</tags>
     <copyright>Simon</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<dependencies>
+      <dependency id="dotnetfx" />
+    </dependencies>
   </metadata>
 </package>
