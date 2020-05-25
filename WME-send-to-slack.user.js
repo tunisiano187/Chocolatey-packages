@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.05.14.01
+// @version         2020.05.25.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -66,7 +66,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.04.12.01': "Correction for normalizedRank removal in beta",
     '2020.04.21.01': "Support for China added",
     '2020.04.22.01': "Support for Mongolia added",
-    '2020.05.14.01': "Automatic change when lock requested"
+    '2020.05.14.01': "Automatic change when lock requested",
+    '2020.05.25.01': 'Adding Afghanistan, Bhutan and Germany'
 };
 
 // Handle script errors and send them to GForm
