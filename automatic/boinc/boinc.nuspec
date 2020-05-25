@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>boinc</id>
+    <version>~version~</version>
+    <title>BOINC</title>
+    <authors>University of California</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_limit%C3%A9e_GNU</licenseUrl>
+    <projectUrl>https://boinc.berkeley.edu/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/boinc.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Berkeley Open Infrastructure for Network Computing (BOINC) uses the idle time on your computer (Windows, Mac, Linux, or Android) to cure diseases, study global warming, discover pulsars, and do many other types of scientific research.
+
+After installing, run `BoincMgr.exe` and choose a [BOINC project](https://boinc.berkeley.edu/projects.php) to contribute to.
+
+### Documentation
+* [Help](https://boinc.berkeley.edu/wiki/BOINC_Help)
+* [User manual](https://boinc.berkeley.edu/wiki/User_manual)
+* [Development](https://boinc.berkeley.edu/trac/wiki/WikiStart)
+
+### Community
+* [Forum](https://boinc.berkeley.edu/dev/)</description>
+    <summary>Berkeley Open Infrastructure for Network Computing</summary>
+    <releaseNotes>#### Program
+* [Release notes](https://boinc.berkeley.edu/wiki/Release_Notes)
+* [Version history](https://boinc.berkeley.edu/trac/wiki/VersionHistory)
+</releaseNotes>
+    <copyright>© University of California</copyright>
+    <language>en-us</language>
+    <tags>distributed-computing science admin</tags>
+    <projectSourceUrl>https://boinc.berkeley.edu/trac/wiki/SourceCodeGit</projectSourceUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/boinc</packageSourceUrl>
+    <mailingListUrl>https://boinc.berkeley.edu/trac/wiki/EmailLists</mailingListUrl>
+  </metadata>
+</package>
