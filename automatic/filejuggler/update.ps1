@@ -28,7 +28,7 @@ function global:au_GetLatest {
 	Write-host 'Download'
 	Invoke-WebRequest -Uri $installer -OutFile "$working_dir\$install_fname"
 	Write-host 'Install'
-	. $working_dir/$install_fname '/a /s /v"/qb"'
+	. $working_dir/$install_fname '/qb'
 	$version=Get-Version('Juggler')
 	Write-host "Version : $version"
 	$url32 = $release

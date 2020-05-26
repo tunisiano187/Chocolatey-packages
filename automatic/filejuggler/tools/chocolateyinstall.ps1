@@ -1,6 +1,6 @@
 $packageName= 'FileJuggler'
-$installerType      = 'EXE'
-$silentArgs = '/a /s /v"/qb"'
+$installerType      = 'msi'
+$silentArgs = '/qb'
 $url        = 'https://www.filejuggler.com/download/filejuggler.exe'
 $checksum   = 'C0ACFE3DCB51ABD982A4AA4CF5369AB6'
 $checksumtype	= 'sha256'
