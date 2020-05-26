@@ -28,7 +28,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
 	Write-host 'Install'
 	. $working_dir/$install_fname /S
-	$version=Get-Version('fing')
+	$version=Get-Version('^fing')
 	Write-host "Version : $version"
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
