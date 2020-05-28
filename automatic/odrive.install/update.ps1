@@ -30,6 +30,7 @@ function global:au_GetLatest {
 	. $working_dir/$install_fname /quiet
 	$version=Get-Version('^odrive$')
 	Write-host "Version : $version"
+	del $working_dir/$install_fname
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
