@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>odrive</id>
+    <version>1.6452</version>
+    <title>odrive (Install)</title>
+    <authors>ODrive.com</authors>
+    <owners>Fabian Clerbois</owners>
+    <projectUrl>http://www.odrive.com/</projectUrl>
+    <iconUrl>http://images.slackreview.com/logos/odrive.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</description>
+    <summary>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</summary>
+    <copyright>Copyright 2017, ODrive Inc.</copyright>
+    <tags>odrive cloud admin</tags>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/odrive.git</packageSourceUrl>
+    <dependencies>
+      <dependency id="DotNet4.6.1" />
+    </dependencies>
+  </metadata>
+</package>
