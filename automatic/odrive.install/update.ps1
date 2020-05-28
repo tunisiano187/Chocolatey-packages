@@ -22,7 +22,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$working_dir = "."
+	$working_dir = "../../"
 	$install_fname = 'odrive.exe'
 	Write-host 'Download'
 	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
