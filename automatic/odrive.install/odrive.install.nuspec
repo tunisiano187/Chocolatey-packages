@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>odrive</id>
-    <version>1.6452</version>
+    <id>odrive.install</id>
+    <version>1.0.6452</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
     <owners>Fabian Clerbois</owners>
