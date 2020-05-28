@@ -15,7 +15,7 @@ function Get-Version($name) {
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 		}
 	}
 }
