@@ -7,7 +7,7 @@
     - Write-Host "Start updating packages"
     - cd au
     - ./invoke-setup.ps1
-    - ./update_all.ps1 -Name $Name
+    - ./update_all.ps1
   #  - ./update.ps1
   after_script:
     - md upload
