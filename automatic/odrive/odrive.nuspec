@@ -17,8 +17,5 @@
     <dependencies>
       <dependency id="odrive.inslall" />
     </dependencies>
-	<files>
-		<file src="*.*" exclude="update.ps1" />
-	</files>
   </metadata>
 </package>
