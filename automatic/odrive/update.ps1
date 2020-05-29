@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	Start-Process -FilePath "$working_dir/$install_fname"  -ArgumentList "/quiet" -Wait
 	$version=Get-Version('^odrive$')
 	Write-host "Version : $version"
-	
+	$version=$version.replace('.00.','.0.')
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
