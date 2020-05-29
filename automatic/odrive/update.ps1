@@ -22,7 +22,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$working_dir = "../../"
+	$working_dir = "../../tmp/"
+	md "../../tmp/"
 	$install_fname = 'odrive.exe'
 	Write-host 'Download'
 	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
@@ -30,6 +31,7 @@ function global:au_GetLatest {
 	Start-Process -FilePath "$working_dir/$install_fname"  -ArgumentList "/quiet" -Wait
 	$version=Get-Version('^odrive$')
 	Write-host "Version : $version"
+	
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
