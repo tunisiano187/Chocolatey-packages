@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$working_dir = "../../"
 	$install_fname = 'odrive.exe'
 	Write-host 'Download'
-	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname" -Wait
+	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
 	Write-host 'Install'
 	Start-Process -FilePath "$working_dir/$install_fname"  -ArgumentList "/quiet" -Wait
 	$version=Get-Version('^odrive$')
