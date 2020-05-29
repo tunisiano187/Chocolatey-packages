@@ -5,7 +5,7 @@
     <version>1.6452.0.1</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
-    <owners>Fabian Clerbois</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://www.odrive.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/odrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,7 +15,7 @@
     <tags>odrive cloud admin</tags>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/odrive.git</packageSourceUrl>
     <dependencies>
-      <dependency id="odrive.inslatt" />
+      <dependency id="odrive.inslall" />
     </dependencies>
   </metadata>
 </package>
