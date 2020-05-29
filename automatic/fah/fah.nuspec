@@ -37,4 +37,7 @@ This program does not slow your computer down and only uses unused computer powe
       <dependency id="autohotkey.portable" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

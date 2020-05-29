@@ -17,4 +17,7 @@
     <language>en-us</language>
     <tags>network monitoring scanner</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -14,4 +14,7 @@
 		<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/ultracopier</packageSourceUrl>
 		<iconUrl>https://ghcdn.rawgit.org/alphaonex86/Ultracopier/master/android-sources/res/drawable-hdpi/icon.png</iconUrl>
     </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
