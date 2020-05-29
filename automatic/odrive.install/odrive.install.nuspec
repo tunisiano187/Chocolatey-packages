@@ -17,5 +17,8 @@
     <dependencies>
       <dependency id="DotNet4.6.1" />
     </dependencies>
+	<files>
+		<file src="*.*" exclude="update.ps1" />
+	</files>
   </metadata>
 </package>
