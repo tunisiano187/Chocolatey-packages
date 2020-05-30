@@ -5,12 +5,12 @@ body {
 
 #Sidenav a {
   position: absolute;
-  left: -80px;
+  left: -130px;
   transition: 0.3s;
   padding: 15px;
-  width: 100px;
+  width: 150px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   border-radius: 0 5px 5px 0;
   float:right;
