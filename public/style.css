@@ -13,7 +13,7 @@ body {
   font-size: 15px;
   color: white;
   border-radius: 0 5px 5px 0;
-  float:right;
+  text-align:right;
 }
 
 #Sidenav a:hover {
