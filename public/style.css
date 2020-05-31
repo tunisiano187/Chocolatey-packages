@@ -1,41 +1,47 @@
 body {
-  font-family: sans-serif;
-  margin: auto;
+	font-family: sans-serif;
+	margin: auto;
+	background-color:#E6E6E6;
 }
 
 #Sidenav a {
-  position: absolute;
-  right: -130px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 150px;
-  text-decoration: none;
-  font-size: 15px;
-  color: white;
-  border-radius: 0 5px 5px 0;
+	position: absolute;
+	right: -130px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 150px;
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	border-radius: 0 5px 5px 0;
 }
 
 #Sidenav a:hover {
-  right: 0;
+	right: 0;
 }
 
 #WMESTS {
-  top: 20px;
-  background-color: #4CAF50;
+	top: 20px;
+	background-color: #4CAF50;
 }
 
 #git {
-  top: 80px;
-  background-color: #2196F3;
+	top: 80px;
+	background-color: #2196F3;
 }
 
 #issues {
-  top: 140px;
-  background-color: #f44336;
+	top: 140px;
+	background-color: #f44336;
 }
 
 #features {
-  top: 200px;
-  background-color: #555
+	top: 200px;
+	background-color: #555
 }
 
+#main {
+	left:10%;
+	width:80%;
+	background-color:#FFFFFF;
+}
