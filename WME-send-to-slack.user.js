@@ -18,10 +18,10 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020053101
-// @downloadURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
-// @updateURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
-// @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
+// @require         https://gitlab.bowlman.org/script/WMESTSData.user.js?2020053101
+// @downloadURL	    https://gitlab.bowlman.org/script/WME-send-to-slack.user.js
+// @updateURL	    https://gitlab.bowlman.org/script/WME-send-to-slack.user.js
+// @supportURL      https://github.com/WazeDev/WME-send-to-slack/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
@@ -29,7 +29,6 @@
 // Updates informations
 var UpdateNotes = "";
 const _WHATS_NEW_LIST = { // New in this version
-    '2019.10.29.01': 'Test',
     '2019.10.30.01': 'Set level 3 as minimum for closures and open.',
     '2019.11.03.01': 'Release notes history added',
     '2019.11.07.01': 'Solve the problem with the Level required set to a wrong number',
@@ -71,7 +70,7 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.25.01': 'Adding Afghanistan, Bhutan and Germany',
     '2020.05.25.02': 'OpenLayers var changed by Waze',
     '2020.05.30.01': 'Pakistan added',
-    '2020.05.31.01': 'Poland added'
+    '2020.05.31.01': 'Poland added and update server changed'
 };
 
 // Handle script errors and send them to GForm
