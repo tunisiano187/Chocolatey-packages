@@ -4,7 +4,8 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - mkdir public/script
+  - cp *.user.js public/script/
   artifacts:
     paths:
     - public
