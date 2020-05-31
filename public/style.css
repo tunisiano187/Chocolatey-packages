@@ -41,7 +41,8 @@ body {
 }
 
 #main {
-	left:10%;
+	margin:2% 0% 0% 10%;
+	padding:1% 2% 2% 2%;
 	width:80%;
 	background-color:#FFFFFF;
 }
