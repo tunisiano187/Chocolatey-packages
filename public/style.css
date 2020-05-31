@@ -5,7 +5,7 @@ body {
 
 #Sidenav a {
   position: absolute;
-  left: -130px;
+  right: -130px;
   transition: 0.3s;
   padding: 15px;
   width: 150px;
@@ -17,7 +17,7 @@ body {
 }
 
 #Sidenav a:hover {
-  left: 0;
+  right: 0;
 }
 
 #WMESTS {
