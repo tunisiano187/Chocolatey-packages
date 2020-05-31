@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.05.30.01
+// @version         2020.05.31.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -14,12 +14,13 @@
 // @compatible chrome
 // @compatible firefox
 // @compatible opera
+// @compatible brave
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WMESTSData.user.js?2020053001
-// @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
-// @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
+// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020053101
+// @downloadURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
+// @updateURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
 // @supportURL      https://gitlab.com/WMEScripts/WME-send-to-slack-public/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
@@ -69,7 +70,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.14.01': "Automatic change when lock requested",
     '2020.05.25.01': 'Adding Afghanistan, Bhutan and Germany',
     '2020.05.25.02': 'OpenLayers var changed by Waze',
-    '2020.05.30.01': 'Pakistan added'
+    '2020.05.30.01': 'Pakistan added',
+    '2020.05.31.01': 'Poland added'
 };
 
 // Handle script errors and send them to GForm
