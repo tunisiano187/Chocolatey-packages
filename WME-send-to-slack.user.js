@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.05.31.01
+// @version         2020.05.31.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,7 +18,7 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://gitlab.bowlman.org/script/WMESTSData.user.js?2020053101
+// @require         https://gitlab.bowlman.org/script/WMESTSData.user.js?2020053103
 // @downloadURL	    https://gitlab.bowlman.org/script/WME-send-to-slack.user.js
 // @updateURL	    https://gitlab.bowlman.org/script/WME-send-to-slack.user.js
 // @supportURL      https://github.com/WazeDev/WME-send-to-slack/issues
@@ -70,7 +70,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.25.01': 'Adding Afghanistan, Bhutan and Germany',
     '2020.05.25.02': 'OpenLayers var changed by Waze',
     '2020.05.30.01': 'Pakistan added',
-    '2020.05.31.01': 'Poland added and update server changed'
+    '2020.05.31.01': 'Poland added and update server changed',
+	'2020.05.31.02': 'Changed to Poland Production server'
 };
 
 // Handle script errors and send them to GForm
