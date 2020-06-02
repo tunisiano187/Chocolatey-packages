@@ -1,4 +1,13 @@
-while(!Invoke-WebRequest -Uri "https://github.com/htacg/tidy-html5/releases" -ErrorAction SilentlyContinue)
+$ok='no';
+while ($ok -eq 'no')
 {
-	start-sleep -Seconds 1
+	$ok='yes'
+	try
+	{
+		$download_page = Invoke-WebRequest -Uri "https://github.com/htacg/tidy-html5/releases" -ErrorAction SilentlyContinue
+	}
+	catch
+	{
+		 $ok='no'
+	}
 }
