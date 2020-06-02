@@ -8,6 +8,7 @@ while ($ok -eq 'no')
 	}
 	catch
 	{
-		 $ok='no'
+		Write-Host -fore Red $_
+		$ok='no'
 	}
 }
