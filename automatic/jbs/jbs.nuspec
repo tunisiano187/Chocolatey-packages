@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jbs</id>
+    <title>John's Background Switcher</title>
+    <version>5.2.0.9</version>
+    <authors>John Conners</authors>
+    <owners>Fabian</owners>
+    <summary>John’s Background Switcher for Windows</summary>
+    <description>John’s Background Switcher (or JBS for short) periodically changes the background image on your Windows computer to something awesome.</description>
+    <projectUrl>https://johnsad.ventures/software/backgroundswitcher/</projectUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/jbs</packageSourceUrl>
+	<iconUrl>https://johnconners.files.wordpress.com/2014/09/jmsicon-175.png?w=900</iconUrl>
+	<tags>jbs john background switcher</tags>
+    <copyright>John Conners</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://johnsad.ventures/software/backgroundswitcher/johns-background-switcher-5-2-release-notes/</releaseNotes>
+  </metadata>
+</package>
