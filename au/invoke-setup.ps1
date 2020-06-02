@@ -1,8 +1,4 @@
-try
+while(!Invoke-WebRequest -Uri "https://github.com/htacg/tidy-html5/releases" -ErrorAction SilentlyContinue)
 {
-    $download_page = Invoke-WebRequest -Uri "https://github.com/htacg/tidy-html5/releases" -ErrorAction SilentlyContinue
-}
-catch
-{
-	 Write-Host -fore Red $_
+	start-sleep -Seconds 1
 }
