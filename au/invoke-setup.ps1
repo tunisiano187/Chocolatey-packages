@@ -11,7 +11,6 @@ while ($ok -eq 'no')
 	}
 	catch
 	{
-		#Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value "2"
 		Write-Host -fore Red $_
 		$ok='no'
 		start-sleep -Seconds 1
