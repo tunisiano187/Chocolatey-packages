@@ -14,7 +14,7 @@ while ($ok -eq 'no')
 		Write-Host -fore Red $_
 		$ok='no'
 		start-sleep -Seconds 1
-		$test++:
+		$test++;
 		if($test -eq 5){exit;}
 	}
 }
