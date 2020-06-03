@@ -22,7 +22,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$jbs = (Invoke-WebRequest -Uri $releases)
+	$jbs = (Invoke-WebRequest -Uri $releases -UseBasicParsing)
 	$url32 = ($jbs.Links | Where-Object {$_ -match 'exe'})[0].href
 	
 	$working_dir = "."
