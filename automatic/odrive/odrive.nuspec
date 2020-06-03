@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>odrive</id>
@@ -13,7 +13,7 @@
     <summary>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</summary>
     <copyright>Copyright 2017, ODrive Inc.</copyright>
     <tags>odrive cloud admin</tags>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/odrive.git</packageSourceUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/odrive</packageSourceUrl>
     <dependencies>
       <dependency id="odrive.inslall" />
     </dependencies>
