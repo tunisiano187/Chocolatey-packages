@@ -1,3 +1,4 @@
+Enable-WindowsOptionalFeature –FeatureName "Internet-Explorer-Optional-amd64" -All -Online
 $ok='no';
 while ($ok -eq 'no')
 {
