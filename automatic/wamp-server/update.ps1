@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = "$($releases)$((((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match 'exe'}).href)[0])"
+	$url32 = "$($releases)$((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'exe'}).href)[0])"
 	$url64 = $url32.replace('x86','x64')
 	
 	$version = $url32.split('/').split('_')[-2].replace('wampserver','')
