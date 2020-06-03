@@ -32,6 +32,9 @@ After installing, run `BoincMgr.exe` and choose a [BOINC project](https://boinc.
     <projectSourceUrl>https://boinc.berkeley.edu/trac/wiki/SourceCodeGit</projectSourceUrl>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/boinc</packageSourceUrl>
     <mailingListUrl>https://boinc.berkeley.edu/trac/wiki/EmailLists</mailingListUrl>
+	<dependencies>
+      <dependency id="KB2919355" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
