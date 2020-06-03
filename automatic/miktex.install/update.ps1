@@ -15,9 +15,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$filename32 = ((Invoke-WebRequest -Uri $release32).Links | Where-Object {$_ -match 'basic-'}  | Where-Object {$_ -match 'exe'}).href
+	$filename32 = ((Invoke-WebRequest -Uri $release32 -UseBasicParsing).Links | Where-Object {$_ -match 'basic-'}  | Where-Object {$_ -match 'exe'}).href
 	$url32 = Join-Path $releases $filename32
-	$filename64 = ((Invoke-WebRequest -Uri $release64).Links | Where-Object {$_ -match 'basic-'}  | Where-Object {$_ -match 'exe'}).href
+	$filename64 = ((Invoke-WebRequest -Uri $release64 -UseBasicParsing).Links | Where-Object {$_ -match 'basic-'}  | Where-Object {$_ -match 'exe'}).href
 	$url64 = Join-Path $releases $filename64[-1]
 	$version=$filename32.split('-')[2].replace('.exe','')
 	
