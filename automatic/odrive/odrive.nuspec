@@ -15,7 +15,8 @@
     <tags>odrive cloud admin</tags>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/odrive</packageSourceUrl>
     <dependencies>
-      <dependency id="odrive.inslall" />
+      <dependency id="DotNet4.6.1" />
+      <dependency id="KB2919355" />
     </dependencies>
   </metadata>
   <files>

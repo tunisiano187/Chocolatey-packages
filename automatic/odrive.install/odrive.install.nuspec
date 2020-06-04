@@ -16,6 +16,7 @@
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/odrive.git</packageSourceUrl>
     <dependencies>
       <dependency id="DotNet4.6.1" />
+      <dependency id="KB2919355" />
     </dependencies>
   </metadata>
   <files>
