@@ -4,8 +4,8 @@ $url = '{{DownloadUrl}}'
 $checksum = '{{Checksum}}'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
-$binRoot = Get-ToolsLocation
-$installPath = Join-Path $binRoot "Foldit"
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$installPath = Join-Path $toolsDir "Foldit"
 $silentArgsBase = '/S /D='
 $silentArgs = $($silentArgsBase + '"' + $installPath + '"')
 
