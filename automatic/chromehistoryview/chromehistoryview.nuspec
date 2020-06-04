@@ -20,6 +20,6 @@ You can select one or more history items, and them export them into html/xml/csv
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2011 NirSoft</copyright>
     <tags>web browser history visited url admin</tags>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/chromehistoryview/</packageSourceUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/chromehistoryview/</packageSourceUrl>
   </metadata>
 </package>
