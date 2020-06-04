@@ -22,9 +22,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$binRoot = Get-BinRoot
-	$installPath = Join-Path $binRoot "Foldit"
-	$silentArgsBase = '/S /D='
+	$silentArgs = '/S /D=.'
 	$working_dir = "."
 	$install_fname = 'foldit.exe'
 	Write-host 'Download'
