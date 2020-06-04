@@ -22,15 +22,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$silentArgs = '/S /D=.'
-	$working_dir = "."
-	$install_fname = 'foldit.exe'
-	Write-host 'Download'
-	Invoke-WebRequest -Uri $release -OutFile "$working_dir\$install_fname"
-	Write-host 'Install'
-	. $working_dir/$install_fname $silentArgs
-	
-	$version=Get-Version('foldit')
+	$version=$([datetime]$(Invoke-WebRequest -Uri $release -Method Head).Headers["Last-Modified"]).ToString("0.0.yyyyMMdd")
 	Write-host "Version : $version"
 	$url32 = $release
 	
