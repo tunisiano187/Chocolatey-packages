@@ -22,7 +22,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$version=$([datetime]$(Invoke-WebRequest -Uri $release -Method Head).Headers["Last-Modified"]).ToString("0.0.yyyyMMdd")
+	$clnt = new-object System.Net.WebClient;
+	$clnt.OpenRead($release).Close();
+	$version=$([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("0.0.yyyyMMdd")
 	Write-host "Version : $version"
 	$url32 = $release
 	
