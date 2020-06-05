@@ -12,11 +12,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$working_dir = "."
-	$install_fname = 'DeepLSetup.exe'
-	Write-host 'Download'
-	Invoke-WebRequest -Uri $release -OutFile "$working_dir\$install_fname"
-	. $working_dir/$install_fname /S
+	choco source add -n Bowlman -s https://tracker.bowlman.be/api/v2
+	cup -y deepl --ignore-checksums
 	$version=$(ls "$($env:LOCALAPPDATA)\deepl\app*" -Directory).Name.split("-")[1]
 	Write-host "Version : $version"
 	
