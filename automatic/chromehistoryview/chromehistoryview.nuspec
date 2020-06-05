@@ -22,4 +22,7 @@ You can select one or more history items, and them export them into html/xml/csv
     <tags>web browser history visited url admin</tags>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/chromehistoryview/</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
