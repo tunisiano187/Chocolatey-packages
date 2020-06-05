@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$install_fname = 'deepl.exe'
 	Write-host 'Download'
 	Invoke-WebRequest -Uri $release -OutFile "$working_dir\$install_fname"
-	. $working_dir/$install_fname /S
+	$working_dir/$install_fname /S
 	$version=Get-Version('DeepL')
 	Write-host "Version : $version"
 	
