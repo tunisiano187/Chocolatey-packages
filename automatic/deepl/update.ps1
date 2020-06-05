@@ -14,7 +14,6 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	cup -y deepl --ignore-checksums
 	$version=$(ls "$($env:LOCALAPPDATA)\deepl\app*" -Directory).Name.split("-")[1]
-	Write-host "Version : $version"
 	
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
