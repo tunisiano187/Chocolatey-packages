@@ -12,7 +12,6 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	choco source add -n Bowlman -s https://tracker.bowlman.be/api/v2
 	cup -y deepl --ignore-checksums
 	$version=$(ls "$($env:LOCALAPPDATA)\deepl\app*" -Directory).Name.split("-")[1]
 	Write-host "Version : $version"
