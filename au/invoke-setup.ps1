@@ -5,10 +5,10 @@ function Set-DefaultBrowser
     $regKeyHttp  = $regKey -f 'http'
     $regKeyHttps = $regKey -f 'https'
 
-	Set-ItemProperty $regKeyFtp   -name ProgId FirefoxURL
-	Set-ItemProperty $regKeyHttp  -name ProgId FirefoxURL
-	Set-ItemProperty $regKeyHttps -name ProgId FirefoxURL
+	Set-ItemProperty $regKeyFtp   -name ProgId ChromeHTML
+	Set-ItemProperty $regKeyHttp  -name ProgId ChromeHTML
+	Set-ItemProperty $regKeyHttps -name ProgId ChromeHTML
 }
 
-cup -y firefox
+cup -y googlechrome
 Set-DefaultBrowser
