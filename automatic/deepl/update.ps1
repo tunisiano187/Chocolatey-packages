@@ -12,8 +12,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	cinst -y deepl --ignore-checksums
-	$version=$(ls "$($env:LOCALAPPDATA)\deepl\app*" -Directory).Name.split("-")[1]
+	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "DeepLSetup.exe"
+	Invoke-WebRequest -Uri $release -OutFile $File
+	[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	
 	$Latest = @{ URL64 = $release; Version = $version }
 	return $Latest
