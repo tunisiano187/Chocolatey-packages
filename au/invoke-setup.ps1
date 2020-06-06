@@ -1,8 +1,14 @@
-try
+function Set-DefaultBrowser
 {
-    $download_page = Invoke-WebRequest -Uri "https://github.com/htacg/tidy-html5/releases" -ErrorAction SilentlyContinue
+	$regKey      = "HKCU:\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\{0}\UserChoice"
+    $regKeyFtp   = $regKey -f 'ftp'
+    $regKeyHttp  = $regKey -f 'http'
+    $regKeyHttps = $regKey -f 'https'
+
+	Set-ItemProperty $regKeyFtp   -name ProgId FirefoxURL
+	Set-ItemProperty $regKeyHttp  -name ProgId FirefoxURL
+	Set-ItemProperty $regKeyHttps -name ProgId FirefoxURL
 }
-catch
-{
-	 Write-Host -fore Red $_
-}
+
+cup -y firefox
+Set-DefaultBrowser
