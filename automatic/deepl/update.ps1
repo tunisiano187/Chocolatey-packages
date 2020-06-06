@@ -5,18 +5,18 @@ $release = 'https://appdownload.deepl.com/windows/full/DeepLSetup.exe'
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
 		}
 	}
 }
 
 function global:au_GetLatest {
-	cup -y deepl --ignore-checksums
+	cinst -y deepl --ignore-checksums
 	$version=$(ls "$($env:LOCALAPPDATA)\deepl\app*" -Directory).Name.split("-")[1]
 	
-	$Latest = @{ URL32 = $release; Version = $version }
+	$Latest = @{ URL64 = $release; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 64
