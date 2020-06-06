@@ -17,4 +17,7 @@
     <copyright />
     <tags>wamp-server apache php mysql dev web</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
