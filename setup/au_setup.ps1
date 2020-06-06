@@ -14,5 +14,5 @@ if ($refreshenv -ne $null -and $refreshenv.CommandType -ne 'Application') {
 Install-PackageProvider -Name NuGet -Force
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 Install-Module au -Scope AllUsers
-Copy-Item AU -Destination "$Env:ProgramFiles\WindowsPowerShell\Modules" -Recurse
+Copy-Item AU -Destination "$Env:ProgramFiles\WindowsPowerShell\Modules" -Recurse -Force
 Get-Module au -ListAvailable | select Name, Version
