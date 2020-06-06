@@ -10,10 +10,10 @@ Invoke-WebRequest -Uri $url64 -OutFile ".\DeepLSetup.exe"
 
 $url64 = ".\DeepLSetup.exe"
 
-Install-ChocolateyPackage -PackageName "$packageName" `
+invoke-expression 'cmd /c start powershell -Command { Install-ChocolateyPackage -PackageName "$packageName" `
                           -FileType "$installerType" `
                           -SilentArgs "$silentArgs" `
                           -Url64bit "$url64" `
                           -ValidExitCodes $validExitCodes `
                           -Checksum64 "$checksum64" `
-                          -ChecksumType64 "$checksumType64"
+                          -ChecksumType64 "$checksumType64" }'
