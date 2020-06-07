@@ -18,9 +18,9 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://wmests.bowlman.org/script/WMESTSData.user.js?2020053103
-// @downloadURL	    https://wmests.bowlman.org/script/WME-send-to-slack.user.js
-// @updateURL	    https://wmests.bowlman.org/script/WME-send-to-slack.user.js
+// @require         https://wmests.bowlman.be/script/WMESTSData.user.js?2020053103
+// @downloadURL	    https://wmests.bowlman.be/script/WME-send-to-slack.user.js
+// @updateURL	    https://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @supportURL      https://github.com/WazeDev/WME-send-to-slack/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
