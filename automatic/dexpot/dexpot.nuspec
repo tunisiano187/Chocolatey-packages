@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dexpot</id>
+    <title>Dexpot</title>
+    <version>1.6.14</version>
+    <authors>Sebastian Brands and Patrick Dubbert</authors>
+    <owners>Brian Mego</owners>
+    <summary>dexpot</summary>
+    <description>Virtual desktops for Windows. This will install to C:\Program Files (x86)\Dexpot</description>
+    <projectUrl>http://www.dexpot.de/</projectUrl>
+    <tags>dexpot virtual desktops</tags>
+    <copyright>2015</copyright>
+    <licenseUrl>http://www.dexpot.de/download/eula_en.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/brianmego/Chocolatey/252e9496d5430e3aedeb4197cfabef35183ff460/dexpot/icon.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
