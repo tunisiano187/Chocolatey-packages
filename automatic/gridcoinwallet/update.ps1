@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$install_fname = 'GridCoinWallet.exe'
 	Write-host 'Download'
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) $install_fname
-	Invoke-WebRequest -Uri $release -OutFile $File
+	Invoke-WebRequest -Uri $releases -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	Write-host "Version : $version"
 	$url32 = $release
