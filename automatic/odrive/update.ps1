@@ -32,6 +32,10 @@ function global:au_GetLatest {
 	$version=Get-Version('^odrive$')
 	Write-host "Version : $version"
 	$version=$version.replace('.00.','.0.')
+	if($version.Split('.')[1] -lt "6452")
+	{
+		$version=$version.replace("1.0.","1.6452.")
+	}
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
