@@ -22,13 +22,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+	$compare="6452"
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "Odrive.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	$version=$version.replace('.00.','.0.')
-	if($version.Split('.')[1] -lt "6452")
+	if($version.Split('.')[1] -lt $compare)
 	{
-		$version=$version.replace(".$($version.Split('.')[1]).",".6452.")
+		$version=$version.replace(".$($version.Split('.')[1]).",".$($compare).")
 	}
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
