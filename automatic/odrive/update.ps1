@@ -22,19 +22,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$working_dir = "../../tmp/"
-	md $working_dir
-	$install_fname = 'odrive.exe'
-	Write-host 'Download'
-	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
-	Write-host 'Install'
-	Start-Process -FilePath "$working_dir/$install_fname"  -ArgumentList "/quiet" -Wait
-	$version=Get-Version('^odrive$')
-	Write-host "Version : $version"
+	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "Odrive.exe"
+	Invoke-WebRequest -Uri $url32 -OutFile $File
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	$version=$version.replace('.00.','.0.')
 	if($version.Split('.')[1] -lt "6452")
 	{
-		$version=$version.replace("1.0.","1.6452.")
+		$version=$version.replace(".$($version.Split('.')[1]).",".6452.")
 	}
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
