@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dexpot</id>
@@ -13,7 +13,7 @@
     <copyright>2015</copyright>
     <licenseUrl>http://www.dexpot.de/download/eula_en.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/brianmego/Chocolatey/252e9496d5430e3aedeb4197cfabef35183ff460/dexpot/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/dexpot.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
 </package>
