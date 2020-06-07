@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gridcoinwallet</id>
@@ -58,4 +58,7 @@ Fix "Owed" amount in output of "magnitude" RPC method #1569 (@cyrossignol)</rele
     <docsUrl>https://github.com/gridcoin-community/Gridcoin-Wiki/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/gridcoin-community/Gridcoin-Research/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
