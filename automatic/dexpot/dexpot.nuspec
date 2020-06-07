@@ -3,7 +3,7 @@
   <metadata>
     <id>dexpot</id>
     <title>Dexpot</title>
-    <version>1.6.13</version>
+    <version>1.6.14.0</version>
     <authors>Sebastian Brands and Patrick Dubbert</authors>
     <owners>Brian Mego</owners>
     <summary>dexpot</summary>
@@ -26,10 +26,10 @@ Individual support by the developers
 Free for private use</description>
     <projectUrl>http://www.dexpot.de/</projectUrl>
     <tags>dexpot virtual desktops</tags>
-    <copyright>2015</copyright>
+    <copyright>Dexpot GbR</copyright>
     <licenseUrl>http://www.dexpot.de/download/eula_en.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/dexpot.png</iconUrl>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://www.dexpot.de/index.php?id=changelog</releaseNotes>
   </metadata>
 </package>
