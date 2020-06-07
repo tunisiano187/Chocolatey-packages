@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.05.31.02
+// @version         2020.06.02.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -71,7 +71,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.25.02': 'OpenLayers var changed by Waze',
     '2020.05.30.01': 'Pakistan added',
     '2020.05.31.01': 'Poland added and update server changed',
-	'2020.05.31.02': 'Changed to Poland Production server'
+	'2020.05.31.02': 'Changed to Poland Production server',
+	'2020.06.02.01': 'Changing sources locations'
 };
 
 // Handle script errors and send them to GForm
