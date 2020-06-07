@@ -7,7 +7,23 @@
     <authors>Sebastian Brands and Patrick Dubbert</authors>
     <owners>Brian Mego</owners>
     <summary>dexpot</summary>
-    <description>Virtual desktops for Windows. This will install to C:\Program Files (x86)\Dexpot</description>
+    <description>Virtual desktops for Windows.
+---What are virtual desktops?---
+Virtual desktops are supplemental work spaces for windows and icons in Windows.
+You can switch virtual desktops at a keystroke or with your mouse.
+
+---What's the use of virtual desktops?---
+Overcome desktop clutter
+Facilitate working with many applications
+Organize applications into work areas
+
+---Why choose Dexpot?---
+Easy to use for beginners
+Highly customizable for experts
+Packed with features
+Small memory footprint
+Individual support by the developers
+Free for private use</description>
     <projectUrl>http://www.dexpot.de/</projectUrl>
     <tags>dexpot virtual desktops</tags>
     <copyright>2015</copyright>
