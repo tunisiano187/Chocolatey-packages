@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>gridcoinwallet</id>
+    <version>4.0.6.1</version>
+    <title>Gridcoin Wallet</title>
+    <authors>Gridcoin Developers</authors>
+    <owners>Tunisiano18</owners>
+    <licenseUrl>https://github.com/gridcoin-community/Gridcoin-Research/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://gridcoin.us</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/gridcoin-community/Gridcoin-Marketing/master/Gridcoin%20Logos/PNG%20Format/Standalone%20Logos/GRCLogoOnly_Purple_Transparent.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Gridcoin is a decentralized, open-source, math-based digital asset (cryptocurrency). Gridcoin, while energy-efficient, is the first and only cryptocurrency that rewards individuals for scientific contributions and performs transactions peer-to-peer cryptographically - without the need for a central authority to distribute rewards. It is the first block chain protocol that delivered a working algorithm that rewards and cryptographically proves solving BOINC (Berkeley Open Infrastructure for Network Computing) hosted work, which could be virtually any kind of computing process. Gridcoin provides benefits to humanity through contributions to computational research. There are no limitations to a single BOINC project, providing the flexibility to be rewarded for virtually any type of computational process. 
+	The wallet and it's config file is stored in `%APPDATA%\GridcoinResearch`.</description>
+    <summary>Gridcoin is an open source cryptocurrency which securely rewards volunteer computing performed on the BOINC platform.</summary>
+    <releaseNotes>Added:
+Add testnet desktop launcher action for Linux #1516 (@caraka)
+Shuffle vSideStakeAlloc if necessary to support sidestaking to more than 6 destinations #1532 (@jamescowens)
+New Superblock format preparations for Fern #1526, #1542 (@jamescowens, @cyrossignol)
+Multisigtools:
+Consolidate multisig unspent #1529 (@iFoggz)
+Scanforunspent #1547 (@iFoggz)
+consolidatemsunspent and scanforunspent bug fix #1561 (@iFoggz)
+New banning misbehavior handling and Peers Tab on Debug Console #1537 (@jamescowens)
+Reimplement getunconfirmedbalance rpc #1548 (@jamescowens)
+Add CLI switch to display binary version #1553 (@cyrossignol)
+
+Changed:
+Select smallest coins for contracts #1519 (@iFoggz)
+Move some functionality from miner to SelectCoinsForStaking + Respect the coin reserve setting + Randomize UTXO order #1525 (@iFoggz)
+For voting - if url does not contain http then add it #1531 (@iFoggz)
+Backport newer serialization facilities from Bitcoin #1535 (@cyrossignol)
+Refactor ThreadSocketHandler2() Inactivity checks #1538 (@iFoggz)
+Update outdated checkpoints #1539 (@barton2526)
+Change needed to build Gridcoin for OSX using homebrew #1540 (@Git-Jiro)
+Optimize scraper traffic for expiring manifests #1542 (@jamescowens)
+Move legacy neural vote warnings to debug log level #1560 (@cyrossignol)
+Change banlist save interval to 5 minutes #1564 (@jamescowens)
+Change default rpcconsole.ui window size to better support new Peers tab #1566 (@jamescowens)
+
+Removed:
+Remove deprecated RSA weight and legacy kernel #1507 (@cyrossignol)
+
+Fixed:
+Clean up compiler warnings #1521 (@cyrossignol)
+Handle missing external CPID in client_state.xml #1530 (@cyrossignol)
+Support boost 1.70+ #1533 (@iFoggz)
+Fix diagnostics failed to make connection to NTP server #1545 (@Git-Jiro)
+Install manpages in correct system location #1546 (@Git-Jiro)
+Fix ability to show help and version without a config file #1553 (@cyrossignol)
+Refactor QT UI variable names to be more consistent, Fix Difficulty default #1563 (@barton2526)
+Fix two regressions in previous UI refactor #1565 (@barton2526)
+Fix "Owed" amount in output of "magnitude" RPC method #1569 (@cyrossignol)</releaseNotes>
+    <copyright>2014-2019 Gridcoin Developers</copyright>
+    <tags>gridcoin wallet grc crypto cryptocurrency</tags>
+    <projectSourceUrl>https://github.com/gridcoin-community/Gridcoin-Research</projectSourceUrl>
+    <packageSourceUrl>https://github.com/gridcoin-community/Gridcoin-Research/releases/tag/4.0.6.0</packageSourceUrl>
+    <docsUrl>https://github.com/gridcoin-community/Gridcoin-Wiki/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/gridcoin-community/Gridcoin-Research/issues</bugTrackerUrl>
+  </metadata>
+</package>
