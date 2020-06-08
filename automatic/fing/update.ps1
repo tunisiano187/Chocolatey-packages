@@ -2,16 +2,6 @@ import-module au
 
 $url32 = 'https://get.fing.com/fing-desktop-releases/windows/Fing.exe'
 
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -22,13 +12,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$working_dir = "."
-	$install_fname = 'fing.exe'
-	Write-host 'Download'
-	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
-	Write-host 'Install'
-	. $working_dir/$install_fname /S
-	$version=Get-Version('^fing')
+	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "fing.exe"
+	Invoke-WebRequest -Uri $url32 -OutFile $File
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	Write-host "Version : $version"
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
