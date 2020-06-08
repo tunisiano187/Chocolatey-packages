@@ -23,16 +23,19 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-host 'Check Folder'
+	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'gridcoin-'} | Where-Object {$_ -match "-setup.exe"} | Where-Object {$_ -notmatch 'hotfix'} | Where-Object {$_ -notmatch 'sha256'}).href | Select -First 2 | Sort-Object )
 	$working_dir = "."
 	$install_fname = 'GridCoinWallet.exe'
 	Write-host 'Download'
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) $install_fname
 	Invoke-WebRequest -Uri $releases -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	Write-host 'Checking version'
+	$version=$installer.split('/')[-1].split('-')[1]
 	Write-host "Version : $version"
-	$url32 = $release
+	$url32 = $release[0];
+	$url64 = $release[1];
 	
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
