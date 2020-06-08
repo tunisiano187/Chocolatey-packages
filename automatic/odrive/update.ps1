@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	{
 		if($version.Split('.')[1] -lt $compare)
 		{
-			$version=$version.replace(".$($version.Split('.')[1]).",".$($compare).$($version.Split('.')[1].")
+			$version=$version.replace(".$($version.Split('.')[1]).",".$($compare).$($version.Split('.')[1]).")
 		}
 	}
 	
