@@ -29,7 +29,7 @@ function global:au_GetLatest {
 	$version=$version.replace('.00.','.0.')
 	if($version.Split('.')[1] -lt $compare)
 	{
-		$version=$version.replace(".$($version.Split('.')[1]).",".$($compare).")
+		$version=$version.replace(".$($version.Split('.')[1]).",".$($compare).$($version.Split('.')[1].")
 	}
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
