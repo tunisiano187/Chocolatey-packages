@@ -10,10 +10,13 @@
     <description>John’s Background Switcher (or JBS for short) periodically changes the background image on your Windows computer to something awesome.</description>
     <projectUrl>https://johnsad.ventures/software/backgroundswitcher/</projectUrl>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/jbs</packageSourceUrl>
-	<iconUrl>https://johnconners.files.wordpress.com/2014/09/jmsicon-175.png?w=900</iconUrl>
+	<iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/jbs.png</iconUrl>
 	<tags>jbs john background switcher</tags>
     <copyright>John Conners</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>https://johnsad.ventures/software/backgroundswitcher/johns-background-switcher-5-2-release-notes/</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
