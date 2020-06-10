@@ -32,4 +32,7 @@ Free for private use</description>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/dexpot.png</iconUrl>
     <releaseNotes>https://www.dexpot.de/index.php?id=changelog</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
