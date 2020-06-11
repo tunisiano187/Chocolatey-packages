@@ -3,7 +3,7 @@
 ---What's doing this script ?---
 
 It's more easy to send requests about Lock, Downlock, Closure, Openning, and Validation of changes
-The requests are sent to a webhook to Slack or Discrord
+The requests are sent to a webhook to Slack or Discord
 The requests can be sent to a GForm too (currently only with the sames fields we have in BeLux)
 Thanks to that and to Bertzzz's , we've got a spreadsheet that helps to promotion decision on L1-L3 levels
 
