@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.02.01
+// @version         2020.06.11.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -72,7 +72,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.30.01': 'Pakistan added',
     '2020.05.31.01': 'Poland added and update server changed',
 	'2020.05.31.02': 'Changed to Poland Production server',
-	'2020.06.02.01': 'Changing sources locations'
+	'2020.06.02.01': 'Changing sources locations',
+  '2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001'
 };
 
 // Handle script errors and send them to GForm
@@ -244,7 +245,6 @@ function GetState(CityId) {
         return false;
     }
 }
-
 // Construction of the request
 function Construct(iconaction) {
     log('Construction');
@@ -266,6 +266,13 @@ function Construct(iconaction) {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
             Details = prompt("To level : ", ShouldbeLockedAt);
+            if (Details < -1 || Details > 6) {
+              log("Invalid Details, nothing sent.")
+              Details = null
+              var Reason = 'Cancelled'
+              alert("Invalid Lock Level, please try again.")
+              chanel = ""
+            }
             if(Details !== null) {
                 if(parseInt(Details)>parseInt(RequiredLevel)) {
                     RequiredLevel = parseInt(Details);
@@ -316,7 +323,7 @@ function Construct(iconaction) {
     log("State : " + StateName);
     var separatorState = ""
     if(StateName !="") {separatorState = ", "}
-    log("Counrty : " + CountryName);
+    log("Country : " + CountryName);
     var urlRegex = /(https?:\/\/[^\s]+)/g;
     Details=Details.replace(urlRegex, function(url) {
         return escape(url);
