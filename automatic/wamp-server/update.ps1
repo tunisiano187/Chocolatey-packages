@@ -23,5 +23,5 @@ function global:au_GetLatest {
     return $Latest
 }
 
-Test-install
+Test-Package
 update
