@@ -16,3 +16,6 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 $Env:au_version = "master"
 git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
 . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+
+git clone -q https://github.com/chocolatey/package-validator.git $Env:TEMP/validator
+. "$Env:TEMP/build.bat"
