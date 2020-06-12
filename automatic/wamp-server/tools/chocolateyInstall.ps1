@@ -7,7 +7,7 @@ $checksum64type = 'sha256'
 $checksum32 = ''
 $checksum64 = ''
 
-$silentArgs = '/verysilent' 
+$silentArgs = '/verysilent /SUPRRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS' 
 $validExitCodes = @(0) 
 
 $packageArgs = @{
