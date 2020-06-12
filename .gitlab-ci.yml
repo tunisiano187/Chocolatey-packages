@@ -1,6 +1,9 @@
  build_image:
   before_script:
     - Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+    - git remote set-url origin https://tunisiano187:${Gitlab_api}@gitlab.com/your-project.git
+    - git config --global user.email 'helpdesk.choc@gmail.com'
+    - git config --global user.name 'tunisiano'
   script:
     - Write-Host "Setup AU module"
     - ./setup/au_setup.ps1
@@ -13,6 +16,9 @@
     - md upload
     - Get-ChildItem -Path ./ -Include *.nupkg -Recurse -File | Move-Item -Destination ./upload/
     - Get-ChildItem -Path ./ -Include Update-AUPacakges.md -Recurse -File | Move-Item -Destination ./upload/
+    - git checkout -B master
+    - git commit -m '[skip ci] commit from CI runner'
+    - git push --follow-tags origin master
   artifacts:
     paths:
         - upload/
