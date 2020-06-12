@@ -16,6 +16,9 @@
     <releaseNotes />
     <copyright />
     <tags>wamp-server apache php mysql dev web</tags>
+	<dependencies>
+      <dependency id="vcredist-all" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
