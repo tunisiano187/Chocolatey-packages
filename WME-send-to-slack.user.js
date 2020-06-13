@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.11.01
+// @version         2020.06.13.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -73,7 +73,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.31.01': 'Poland added and update server changed',
 	'2020.05.31.02': 'Changed to Poland Production server',
 	'2020.06.02.01': 'Changing sources locations',
-  '2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001'
+  	'2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
+  	'2020.06.13.01': '<br /><b>1.)</b> Alert the editor while sending the request if he can edit himself.<br /> <b>2.)</b>Fixed some bugs.<br /> <b>3.)</b> Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>'
 };
 
 // Handle script errors and send them to GForm
@@ -118,6 +119,8 @@ var neededparams = {
     WMESTSState: "",
     WMESTSServer: "",
 };
+//KILL SWITCH
+var abort = false;
 
 // Icons in variables
 var iconopacity = "0.7";
@@ -245,6 +248,7 @@ function GetState(CityId) {
         return false;
     }
 }
+
 // Construction of the request
 function Construct(iconaction) {
     log('Construction');
@@ -260,18 +264,20 @@ function Construct(iconaction) {
     var ShouldbeLockedAt = answers[7];
     var StateName = answers[8];
     var Details = "";
+    var telegramDetails = "";
+    var telegramReason = "";
     var chanel = "";
+    var closureTelegramDetails = ""; //Bug while sending to telegram creates a new line, so this will fill it.
     sent=0;
     if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
             Details = prompt("To level : ", ShouldbeLockedAt);
+            telegramDetails = Details;
             if (Details < -1 || Details > 6) {
-              log("Invalid Details, nothing sent.")
-              Details = null
-              var Reason = 'Cancelled'
-              alert("Invalid Lock Level, please try again.")
-              chanel = ""
+              log("Invalid Details, nothing sent. Kill Switch Activated.")
+              abort = true;
+              log("Kill Switch Activated.")
             }
             if(Details !== null) {
                 if(parseInt(Details)>parseInt(RequiredLevel)) {
@@ -282,21 +288,41 @@ function Construct(iconaction) {
                 }
                 permalink = permalink + "&wmeststo=" + Details;
                 Details = "To level " + Details;
+                telegramDetails = Details;
             } else {
                 Details = 'Cancelled';
             }
         }
         if(Details !== 'Cancelled')
         {
+            telegramDetails = "*Informations :* " + Details;
             Details = "\r\nInformations : " + Details + "\r\n";
         }
         if(iconaction !== "Lock" || Details !== 'Cancelled') {
-            var Reason = prompt("Reason : ");
+            //Alert the editor if he can edit himself
+            var lvlEditor = W.loginManager.user.getRank() + 1
+            if (lvlEditor >= RequiredLevel && iconaction != 'Validation') {
+              if (confirm("You can perform this edit. Do you wish to continue?") === false) {
+                log("User can edit, so no edit is sent.")
+                abort = true;
+                log("Kill Switch Activated")
+              } else {
+                log("Editor Level check triggered, user decided to continue anyway.")
+                var Reason = prompt("Reason : ");
+              }
+            }
             if(Reason !== null) {
+                //Fixing Reason var bug as undefined when only validation
+                if (Reason == undefined) {
+                  Reason = '';
+                }
+                telegramReason = "*Reason :* " + Reason;
                 Reason = "\r\nReason : " + Reason;
             } else {
                 Reason = 'Cancelled'
             }
+            telegramDetails = `${telegramDetails}
+${telegramReason}`
             Details = Details + Reason;
             chanel = "editing";
         } else {
@@ -308,11 +334,17 @@ function Construct(iconaction) {
             var date = new Date();
             date.setDate(date.getDate() + 1);
             var Reason = prompt("from date hh:mm to date hh:mm directions and a reason (ex: from now till 31/12 22:00 A<->B - roadworks)", "from #Now until " + date.toLocaleDateString("fr-FR") + " A<->B");
+            telegramReason = Reason;
             if(Reason == null) {
                 Reason = 'Cancelled'
             } else {
+                telegramReason = "*Details :* " + Reason
                 Reason = "\r\nDetails : " + Reason;
                 Details = Details + Reason;
+                closureTelegramDetails = "*Closure Details*"
+                telegramDetails =
+`${telegramDetails}
+${telegramReason}`
             }
         }
         chanel = "closures";
@@ -331,10 +363,15 @@ function Construct(iconaction) {
     log(Details);
     var profileurl="https://www.waze.com/user/editor/"
     var userRank = W.loginManager.user.getRank() + 1;
-    var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + userRank + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nrequest type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + userRank + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nRequest Type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var TexToSendTelegramMD = `L${RequiredLevel} *User:* [${W.loginManager.user.userName}](www.waze.com/user/editor/${W.loginManager.user.userName}) (*${userRank}*)
+*Link :* [${textSelection}](${permalink})
+*Request Type :* ${iconaction}
+*Location :* ${CityName}, ${StateName}, ${CountryName}
+${closureTelegramDetails}${telegramDetails}`;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
-    if(Reason !== 'Cancelled' && chanel !== "") {
+    if(Reason !== 'Cancelled' && chanel !== "" && abort === false) {
         for (var key in serverDB[localStorage.getItem('WMESTSServer')])
         {
             switch (key.toLowerCase()) {
@@ -433,6 +470,25 @@ function Construct(iconaction) {
                     });
                     sent=sent+1;
                     break;
+                case "telegram":
+                    var dataTelegram = {
+                      chat_id: serverDB[localStorage.getItem('WMESTSServer')][key]['chat_id'],
+                      text: TexToSendTelegramMD,
+                      parse_mode: "Markdown",
+                      disable_web_page_preview: true
+                    };
+                    $.ajax({
+                        data: dataTelegram,
+                        type: 'POST',
+                        url: serverDB[localStorage.getItem('WMESTSServer')][key]['editing'],
+                        error: function(x, y, z)
+                        {
+                            log('Telegram error : ' + x + ' ' + y + ' ' + z);
+                        }
+                    });
+                    log("Telegram request processed")
+                    sent=sent+1
+                  break;
                 default:
             }
         }
