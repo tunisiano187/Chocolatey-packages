@@ -3,12 +3,14 @@
 ---What's doing this script ?---
 
 It's more easy to send requests about Lock, Downlock, Closure, Openning, and Validation of changes
-The requests are sent to a webhook to Slack or Discord
+The requests are sent from the WME to a webhook in Slack or Discord or even to a Telegram group chat.
 The requests can be sent to a GForm too (currently only with the sames fields we have in BeLux)
-Thanks to that and to Bertzzz's , we've got a spreadsheet that helps to promotion decision on L1-L3 levels
+Thanks to that and to Bertzzz's , we've got a spreadsheet that helps to promotion decision on L1-L3 levels.
+Thanks to santyg2001, we've added Telegram bot support for sending messages.
 
 ---What's New---
 This script now supports States, and i've added the USA NewYork, New Jersay, ...
+This script now supports Telegram
 
 ---What does it looks like ?---
  
@@ -45,7 +47,7 @@ I've :
 - the script source code is now in clear text except for one dependency
 
 So now, If you want to add a Country/Community, if you're using Slack or Discord, just tell me...
-If you just want to add other supports(other than Discord or Slack), let me know which, and i'll search to use it.
+If you just want to add other supports(other than Discord or Slack or Telegram or GForms), let me know which, and i'll search to use it.
 
 ---How to send bugs or features ?---
 
