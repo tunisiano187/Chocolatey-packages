@@ -74,7 +74,7 @@ const _WHATS_NEW_LIST = { // New in this version
 	'2020.05.31.02': 'Changed to Poland Production server',
 	'2020.06.02.01': 'Changing sources locations',
   	'2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
-  	'2020.06.13.01': '<br /><b>1.)</b> Alert the editor while sending the request if he can edit himself.<br /> <b>2.)</b>Fixed some bugs.<br /> <b>3.)</b> Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>'
+  	'2020.06.13.01': '1.) Alert the editor while sending the request if he can edit himself.<br />2.)Fixed some bugs.<br />3.) Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>'
 };
 
 // Handle script errors and send them to GForm
