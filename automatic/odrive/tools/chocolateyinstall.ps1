@@ -1,5 +1,5 @@
 ﻿$url			= 'https://www.odrive.com/downloaddesktop?platform=win'
-$checksum		= ''
+$checksum		= 'f32dc461560261ee06c9064bd9eedf74827f8c4aab6edfdc3a2de5cef6f472a5'
 $packageArgs = @{
   packageName   = 'odrive'
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
