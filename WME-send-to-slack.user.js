@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.13.02
+// @version         2020.06.13.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,7 +18,7 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://wmests.bowlman.be/script/WMESTSData.user.js?2020061301
+// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WMESTSData.user.js?2020061302
 // @downloadURL	    https://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @updateURL	    https://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @supportURL      https://github.com/WazeDev/WME-send-to-slack/issues
@@ -75,7 +75,8 @@ const _WHATS_NEW_LIST = { // New in this version
 	'2020.06.02.01': 'Changing sources locations',
   	'2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
   	'2020.06.13.01': '1.) Alert the editor while sending the request if he can edit himself.<br />2.)Fixed some bugs.<br />3.) Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>',
-  	'2020.06.13.02': 'Force Datas update'
+  	'2020.06.13.02': 'Force Datas update',
+  	'2020.06.13.03': 'Correction of DB link, sorry for the mistakes'
 };
 
 // Handle script errors and send them to GForm
