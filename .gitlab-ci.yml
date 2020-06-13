@@ -6,6 +6,7 @@ pages:
   script:
   - mkdir public/script
   - cp *.user.js public/script/
+  - sed -i 's/.version./2020.06.13.02/g' public/index.html
   artifacts:
     paths:
     - public
