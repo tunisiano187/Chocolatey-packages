@@ -17,6 +17,7 @@
     - Get-ChildItem -Path ./ -Include *.nupkg -Recurse -File | Move-Item -Destination ./upload/
     - Get-ChildItem -Path ./ -Include Update-AUPacakges.md -Recurse -File | Move-Item -Destination ./upload/
     - git checkout -B master
+    - git add -u :/
     - git commit -m '[skip ci] commit from CI runner'
     - git push --follow-tags origin master
   artifacts:
