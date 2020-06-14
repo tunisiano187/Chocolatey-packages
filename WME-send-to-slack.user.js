@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.14.02
+// @version         2020.06.14.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -78,7 +78,8 @@ const _WHATS_NEW_LIST = { // New in this version
   	'2020.06.13.02': 'Force Datas update',
   	'2020.06.13.03': 'Correction of DB link, sorry for the mistakes',
   	'2020.06.14.01': 'Telegram DB enhacements',
-  	'2020.06.14.02': 'Telegram support for Indonesia added'
+  	'2020.06.14.02': 'Telegram support for Indonesia added',
+	'2020.06.14.03': 'Solve reason trouble'
 };
 
 // Handle script errors and send them to GForm
@@ -314,7 +315,10 @@ function Construct(iconaction) {
                 log("Editor Level check triggered, user decided to continue anyway.")
                 var Reason = prompt("Reason : ");
               }
-            }
+            } else if(iconaction != 'Validation') {
+		log("Editor Level checked, ask.")
+                var Reason = prompt("Reason : ");
+	    }
             if(Reason !== null) {
                 //Fixing Reason var bug as undefined when only validation
                 if (Reason == undefined) {
