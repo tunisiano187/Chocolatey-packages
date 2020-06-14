@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>odrive</id>
-    <version>1.0.6590</version>
+    <version>1.6452.0.6608</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
     <owners>tunisiano</owners>
     <projectUrl>http://www.odrive.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/odrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</description>
+    <description><![CDATA[]]></description>
     <summary>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</summary>
     <copyright>Copyright 2017, ODrive Inc.</copyright>
     <tags>odrive cloud admin</tags>
