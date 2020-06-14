@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.13.03
+// @version         2020.06.14.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -76,7 +76,9 @@ const _WHATS_NEW_LIST = { // New in this version
   	'2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
   	'2020.06.13.01': '1.) Alert the editor while sending the request if he can edit himself.<br />2.)Fixed some bugs.<br />3.) Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>',
   	'2020.06.13.02': 'Force Datas update',
-  	'2020.06.13.03': 'Correction of DB link, sorry for the mistakes'
+  	'2020.06.13.03': 'Correction of DB link, sorry for the mistakes',
+  	'2020.06.14.01': 'Telegram DB enhacements',
+  	'2020.06.14.02': 'Telegram support for Indonesia added'
 };
 
 // Handle script errors and send them to GForm
@@ -482,7 +484,7 @@ ${closureTelegramDetails}${telegramDetails}`;
                     $.ajax({
                         data: dataTelegram,
                         type: 'POST',
-                        url: serverDB[localStorage.getItem('WMESTSServer')][key]['editing'],
+                        url: serverDB['DEVns_en'][key]['editing'],
                         error: function(x, y, z)
                         {
                             log('Telegram error : ' + x + ' ' + y + ' ' + z);
