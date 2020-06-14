@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>RemoveEmptyDirectory</id>
-    <version>2.1</version>
+    <id>removeemptydirectory</id>
+    <version>2.2</version>
     <title>Remove empty directories</title>
     <authors>NiceHash</authors>
     <owners>tunisiano</owners>
