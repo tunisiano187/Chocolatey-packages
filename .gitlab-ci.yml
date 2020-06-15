@@ -15,7 +15,7 @@ pages:
   except:
   - schedules
 
-run:triage:triage:
+.post:
   stage: triage
   script:
     - gem install gitlab-triage
