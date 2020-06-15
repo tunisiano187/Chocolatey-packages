@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>shareit</id>
-        <version>0.0.0.1</version>
-        <title>Shareit</title>
-        <authors>Shareit</authors>
+		<id>shareit</id>
+		<version>0.0.0.1</version>
+		<title>Shareit</title>
+		<authors>Shareit</authors>
 		<owners>tunisiano</owners>
-        <projectUrl>https://shareit.one/</projectUrl>
-        <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>SHAREit is the fastest cross-platform app for Android, iOS, PC & Mac. SHAREit allows you to transfer video, music, files and apps from one device to another.</description>
-        <summary>SHAREit allows you to transfer video, music, files and apps from one device to another.</summary>
+		<projectUrl>https://shareit.one/</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>SHAREit is the fastest cross-platform app for Android, iOS, PC & Mac. SHAREit allows you to transfer video, music, files and apps from one device to another.</description>
+		<summary>SHAREit allows you to transfer video, music, files and apps from one device to another.</summary>
 		<tags>Shareit copy quick multiplateform admin</tags>
 		<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/Shareit</packageSourceUrl>
 		<iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/shareit.png</iconUrl>
