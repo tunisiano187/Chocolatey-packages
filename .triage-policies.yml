@@ -1,0 +1,37 @@
+resource_rules:
+  issues:
+    rules:
+      - name: Issues Policy
+        conditions:
+          date:
+            attribute: updated_at
+            condition: older_than
+            interval_type: days
+            interval: 15
+          state: opened
+          labels:
+            - None
+        limits:
+          most_recent: 50
+        actions:
+          labels:
+            - needs attention
+          mention:
+            - tunisiano187
+          comment: |
+            {{author}} This issue is unlabelled after 5 days. It needs attention. Please take care of this before the end of #{2.days.from_now.strftime('%Y-%m-%d')}
+  merge_requests:
+    rules:
+      - name: Merge Policy
+        conditions:
+          state: opened
+          labels:
+            - None
+        limits:
+          most_recent: 50
+        actions:
+          labels:
+            - needs attention
+          comment_type: thread
+          comment: |
+            {{author}} This issue is unlabelled. Please add one or more labels.

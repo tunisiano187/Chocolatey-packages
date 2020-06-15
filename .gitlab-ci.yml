@@ -12,3 +12,13 @@ pages:
     - public
   only:
   - master
+  except:
+  - schedules
+
+run:triage:triage:
+  stage: triage
+  script:
+    - gem install gitlab-triage
+    - gitlab-triage --token $API_TOKEN --source-id $CI_PROJECT_PATH
+  only:
+    - schedules
