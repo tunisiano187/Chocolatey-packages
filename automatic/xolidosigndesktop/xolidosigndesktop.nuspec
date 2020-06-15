@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xolidosigndesktop</id>
-    <version>2.500</version>
+    <version>0.0.0.0</version>
     <title>Xolido Sign Desktop</title>
     <authors>Xolido</authors>
     <owners>tunisiano</owners>

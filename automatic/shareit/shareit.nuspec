@@ -15,6 +15,6 @@
 		<iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/shareit.png</iconUrl>
     </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\*" target="tools" />
   </files>
 </package>
