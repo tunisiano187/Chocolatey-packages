@@ -1,5 +1,8 @@
 [![Open Source Helpers](https://www.codetriage.com/wazedev/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/wazedev/wme-send-to-slack)
 
+---Current Verion of the script---
+Check here : https://wmests.bowlman.org
+
 ---What's doing this script ?---
 
 It's more easy to send requests about Lock, Downlock, Closure, Openning, and Validation of changes
