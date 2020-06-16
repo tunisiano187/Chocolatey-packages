@@ -6,7 +6,7 @@
 #>
 param(
     # Version to set
-    [string] $Version = [Version](Get-Date).ToUniversalTime().ToString("yyyy.M.d.HHmmss"),
+    [string] $Version = [Version]$(git log -1 --date=short)[2].split(' ')[-1].replace("-","."),
 
     # Install module in the system after the build
     [switch] $Install,
