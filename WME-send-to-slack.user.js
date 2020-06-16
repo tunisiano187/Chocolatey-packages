@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.15.01
+// @version         2020.06.16.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -80,7 +80,7 @@ const _WHATS_NEW_LIST = { // New in this version
   	'2020.06.14.01': 'Telegram DB enhacements',
   	'2020.06.14.02': 'Telegram support for Indonesia added',
     '2020.06.14.03': 'Solve reason trouble',
-    '2020.06.15.01': 'Reason field as mandatory'
+    '2020.06.16.02': 'Solve bug'
 };
 
 // Handle script errors and send them to GForm
@@ -275,7 +275,6 @@ function Construct(iconaction) {
     var chanel = "";
     var closureTelegramDetails = ""; //Bug while sending to telegram creates a new line, so this will fill it.
     sent=0;
-    [lbl] reasonmissing:
     if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
@@ -318,9 +317,9 @@ function Construct(iconaction) {
                 var Reason = prompt("Reason : ");
               }
             } else if(iconaction != 'Validation') {
-		        log("Editor Level checked, ask.")
+		log("Editor Level checked, ask.")
                 var Reason = prompt("Reason : ");
-	        }
+	    }
             if(Reason !== null) {
                 //Fixing Reason var bug as undefined when only validation
                 if (Reason == undefined) {
@@ -358,10 +357,6 @@ ${telegramReason}`
             }
         }
         chanel = "closures";
-    }
-    if(Reason == undefined || Reason == null || Reason.length == 0) 
-    {
-        goto reasonmissing;
     }
     log("City : " + CityName);
     var separatorCity="";
