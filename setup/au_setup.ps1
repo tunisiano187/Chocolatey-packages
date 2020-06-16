@@ -17,7 +17,7 @@ $Env:au_version = "master"
 
 Write-Host "Buid AU"
 git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-tools/Replace-FileString.ps1 '$(Get-Date).ToUniversalTime().ToString("yyyy.M.d.HHmmss")' '$(git log -1 --date=short)[2].split(' ')[-1].replace("-",".")' "$Env:TEMP/au/build.ps1" -Overwrite
+Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
 . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
 Write-Host "Build validator"
