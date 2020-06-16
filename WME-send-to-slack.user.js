@@ -276,7 +276,7 @@ function Construct(iconaction) {
     var chanel = "";
     var closureTelegramDetails = ""; //Bug while sending to telegram creates a new line, so this will fill it.
     sent=0;
-    [lbl] reasonmissing:
+    //[lbl] reasonmissing:
     if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
@@ -362,7 +362,7 @@ ${telegramReason}`
     }
     if(Reason == undefined || Reason == null || Reason.length == 0) 
     {
-        goto reasonmissing;
+        //goto reasonmissing;
     }
     log("City : " + CityName);
     var separatorCity="";
