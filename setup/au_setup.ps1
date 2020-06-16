@@ -17,7 +17,7 @@ $Env:au_version = "master"
 
 Write-Host "Buid AU"
 git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-$version = $(git log -1 --date=short)[2].split(' ')[-1].replace("-",".") "$Env:TEMP/au/build.ps1" -Overwrite
+$version = $(git log -1 --date=short)[2].split(' ')[-1].replace("-",".")
 . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version -Version $version
 
 Write-Host "Build validator"
