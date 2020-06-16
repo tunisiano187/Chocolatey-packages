@@ -5,7 +5,7 @@
 // @namespace       https://en.tipeee.com/Tunisiano18
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.15.01
+// @version         2020.06.16.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -80,7 +80,8 @@ const _WHATS_NEW_LIST = { // New in this version
   	'2020.06.14.01': 'Telegram DB enhacements',
   	'2020.06.14.02': 'Telegram support for Indonesia added',
     '2020.06.14.03': 'Solve reason trouble',
-    '2020.06.15.01': 'Reason field as mandatory'
+    '2020.06.15.01': 'Reason field as mandatory',
+    '2020.06.16.01': 'Broken script'
 };
 
 // Handle script errors and send them to GForm
