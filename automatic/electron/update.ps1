@@ -20,8 +20,8 @@ function global:au_GetLatest {
 	Write-host 'Checking version'
 	$version=$url64.split('/')[5].replace('v','')
 	Write-host "Version : $version"
-	$url32 = "https://github.com$($installer[0])";
-	$url64 = "https://github.com$($installer[1])";
+	$url32 = "https://github.com$($url32)";
+	$url64 = "https://github.com$($url64)";
 	
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
