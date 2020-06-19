@@ -26,15 +26,15 @@ With Electron, creating a desktop application for your company or idea is easy. 
     <docsUrl>http://electron.atom.io/docs/</docsUrl>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/electron.png</iconUrl>
     <tags>atom web development builder</tags>
-    <copyright>© 2014 GitHub Inc</copyright>
+    <copyright>GitHub Inc</copyright>
     <licenseUrl>https://github.com/atom/electron/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Program
-* [Changelog](https://github.com/atom/electron/releases/tag/v{{PackageVersion}})
+* [Changelog](https://github.com/atom/electron/releases/)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
   </metadata>
   <files>
