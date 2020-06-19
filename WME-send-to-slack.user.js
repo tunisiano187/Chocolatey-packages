@@ -19,8 +19,8 @@
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WMESTSData.user.js?2020061302
-// @downloadURL	    https://wmests.bowlman.be/script/WME-send-to-slack.user.js
-// @updateURL	    https://wmests.bowlman.be/script/WME-send-to-slack.user.js
+// @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WME-send-to-slack.user.js
+// @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WME-send-to-slack.user.js
 // @supportURL      https://github.com/WazeDev/WME-send-to-slack/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
