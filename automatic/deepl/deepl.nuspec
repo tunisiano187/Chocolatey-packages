@@ -19,6 +19,7 @@ results by a factor of 3:1. DeepL also achieves record-breaking performance acco
     <language>en-us</language>
     <tags>translation</tags>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/deepl</packageSourceUrl>
+    <releaseNotes />
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
