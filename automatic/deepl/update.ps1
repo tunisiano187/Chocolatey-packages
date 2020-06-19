@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "DeepLSetup.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	
 	$Latest = @{ URL64 = $release; Version = $version }
 	return $Latest
