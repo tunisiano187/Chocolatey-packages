@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.19.01
+// @version         2020.06.20.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -81,7 +81,8 @@ const _WHATS_NEW_LIST = { // New in this version
   	'2020.06.14.02': 'Telegram support for Indonesia added',
     '2020.06.14.03': 'Solve reason trouble',
     '2020.06.16.02': 'Solve bug',
-	'2020.06.19.01': 'Reason is now mandatory'
+    '2020.06.19.01': 'Reason is now mandatory',
+    '2020.06.20.01': 'Use WazeWrap for the Alerts'
 };
 
 // Handle script errors and send them to GForm
@@ -261,7 +262,7 @@ function AskReason() {
 	while(x<1) {
 		var Reason = prompt("Reason : ");
 		if(Reason == "") {
-			alert('You need to complete the reason ' + Reason);
+			alert('You need to complete the reason ');
 			Reason=null;
 		} else {
 			x++;
@@ -518,9 +519,9 @@ ${closureTelegramDetails}${telegramDetails}`;
         }
     }
     if(sent>0) {
-        alert('Request sent');
+        WazeWrap.Alerts.success(GM_info.script.name, 'Request sent');
     } else {
-        alert('Nothing sent');
+        WazeWrap.Alerts.error(GM_info.script.name, 'Nothing sent');
     }
 }
 
@@ -844,7 +845,7 @@ function CheckNeededParams() {
 
     // How was the check going on?
     if (!check) {
-        alert('Missing settings, please set all of the following dropdown');
+        WazeWrap.Alerts.error(GM_info.script.name, 'Missing settings, please set all of the following dropdown in the left panel');
     }
     return check;
 }
