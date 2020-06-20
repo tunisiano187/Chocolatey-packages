@@ -83,7 +83,7 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.16.02': 'Solve bug',
     '2020.06.19.01': 'Reason is now mandatory',
     '2020.06.20.01': 'Use WazeWrap for the Alerts',
-    '2020.06.20.01': 'Adding Brasil - Bahia'
+    '2020.06.20.02': 'Adding Brasil - Bahia'
 };
 
 // Handle script errors and send them to GForm
