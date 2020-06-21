@@ -36,11 +36,10 @@ Like most of the scripts used by Waze editors, you need to install
 A browser, but beeing here, i assume that's already the case...(Not Internet explorer or Edge)
 Tampermonkey extention
 The script itself... 
-https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
+https://wmests.bowlman.org/script/WME-send-to-slack.user.js
 
 ## What's different whith the old one ? ##
 
-I've : 
 - rewrited completely the script
 - fixed some of the bugs
 - moved the icons
@@ -48,8 +47,10 @@ I've :
 - added the ability to add more Countries on Slack/Discord
 - updated the GForm submition
 - the script source code is now in clear text except for one dependency
+- Added the support of Railroad crossings
+- Added support for Telegram
 
-So now, If you want to add a Country/Community, if you're using Slack or Discord, just tell me...
+So now, If you want to add a Country/Community, if you're using Slack or Discord, just complete this GForm : https://forms.gle/gjWajvFdXu3kRwoS8
 If you just want to add other supports(other than Discord or Slack or Telegram or GForms), let me know which, and i'll search to use it.
 
 And the old one isn't supported anymore
