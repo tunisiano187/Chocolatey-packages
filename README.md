@@ -51,7 +51,8 @@ https://wmests.bowlman.org/script/WME-send-to-slack.user.js
 - Added support for Telegram
 
 So now, If you want to add a Country/Community, if you're using Slack or Discord, just complete this GForm : https://forms.gle/gjWajvFdXu3kRwoS8
-If you just want to add other supports(other than Discord or Slack or Telegram or GForms), let me know which, and i'll search to use it.
+
+If you just want to add other supports(other than Discord or Slack or Telegram or GForms), let me know which by requesting the feature on : https://github.com/WazeDev/WME-send-to-slack/issues
 
 And the old one isn't supported anymore
 
