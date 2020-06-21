@@ -1,9 +1,9 @@
 [![Open Source Helpers](https://www.codetriage.com/wazedev/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/wazedev/wme-send-to-slack)
 
----Current Verion of the script---
+## Current Verion of the script ##
 Check here : https://wmests.bowlman.org
 
----What's doing this script ?---
+## What's doing this script ? ##
 
 It's more easy to send requests about Lock, Downlock, Closure, Openning, and Validation of changes
 The requests are sent from the WME to a webhook in Slack or Discord or even to a Telegram group chat.
@@ -11,11 +11,11 @@ The requests can be sent to a GForm too (currently only with the sames fields we
 Thanks to that and to Bertzzz's , we've got a spreadsheet that helps to promotion decision on L1-L3 levels.
 Thanks to santyg2001, we've added Telegram bot support for sending messages.
 
----What's New---
+## What's New ##
 This script now supports States, and i've added the USA NewYork, New Jersay, ...
 This script now supports Telegram
 
----What does it looks like ?---
+## What does it looks like ? ##
  
 The Validation link is on top of the Left collumn just above the settings tab
 
@@ -30,7 +30,7 @@ The Closure and Open links are ...? In the Closure Tab just above the Closure ta
 
 ![Img](https://api.tipeee.com/cache/20191024194111/media/1753058/201910245db1e237a2538.png)
 
----How can i use it ?---
+## How can i use it ? ##
 
 Like most of the scripts used by Waze editors, you need to install 
 A browser, but beeing here, i assume that's already the case...(Not Internet explorer or Edge)
@@ -38,7 +38,7 @@ Tampermonkey extention
 The script itself... 
 https://gitlab.com/WMEScripts/wme-send-to-slack-public/raw/master/WME-send-to-slack.user.js
 
----What's different whith the old one ?---
+## What's different whith the old one ? ##
 
 I've : 
 - rewrited completely the script
@@ -52,14 +52,13 @@ I've :
 So now, If you want to add a Country/Community, if you're using Slack or Discord, just tell me...
 If you just want to add other supports(other than Discord or Slack or Telegram or GForms), let me know which, and i'll search to use it.
 
----How to send bugs or features ?---
+And the old one isn't supported anymore
+
+## How to send bugs or features ? ##
 
 Just :
-go on this page (you'll need to create an account) : https://gitlab.com/WMEScripts/wme-send-to-slack-public/issues
-or send it by mail at incoming+wmescripts-wme-send-to-slack-public-14393158-issue-@incoming.gitlab.com
-The mail does not work with every mailbox
+go on this page (you'll need to create an account) : https://github.com/WazeDev/WME-send-to-slack/issues
 
 See you later for New things...
 
-
-New informations here : https://en.tipeee.com/tunisiano18/news
+New informations here : https://wmests.bowlman.org
