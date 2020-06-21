@@ -50,16 +50,20 @@ https://wmests.bowlman.org/script/WME-send-to-slack.user.js
 - Added the support of Railroad crossings
 - Added support for Telegram
 
-So now, If you want to add a Country/Community, if you're using Slack or Discord, just complete this GForm : https://forms.gle/gjWajvFdXu3kRwoS8
+## How to add a Country/Community ? ##
 
-If you just want to add other supports(other than Discord or Slack or Telegram or GForms), let me know which by requesting the feature on : https://github.com/WazeDev/WME-send-to-slack/issues
+if you're using Slack, Discord or Telegram, just complete this GForm : https://forms.gle/gjWajvFdXu3kRwoS8
 
-And the old one isn't supported anymore
+For another plateform, Request the feature by submitting it (Eplained bellow)
+
+## Is the old one stil working ##
+
+The old one isn't supported anymore, and it should update automatically to this version after some updates
 
 ## How to send bugs or features ? ##
 
-Just :
-go on this page (you'll need to create an account) : https://github.com/WazeDev/WME-send-to-slack/issues
+Just go on this page (you'll need to create an account), and submit a Bug or feature : https://github.com/WazeDev/WME-send-to-slack/issues
+You need to complete the request by completing every question.
 
 See you later for New things...
 
