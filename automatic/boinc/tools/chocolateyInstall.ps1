@@ -6,6 +6,8 @@ $checksum = '~sha1~'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 Install-ChocolateyPackage -PackageName "$packageName" `
                           -FileType "$installerType" `
                           -SilentArgs "$silentArgs" `
