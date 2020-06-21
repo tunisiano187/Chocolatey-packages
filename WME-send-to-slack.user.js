@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.20.02
+// @version         2020.06.21.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,9 +18,9 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WMESTSData.user.js?2020062001
-// @downloadURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WME-send-to-slack.user.js
-// @updateURL	    https://gitlab.com/WMEScripts/wme-send-to-slack-public/-/raw/master/WME-send-to-slack.user.js
+// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020062001
+// @downloadURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
+// @updateURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @supportURL      https://github.com/WazeDev/WME-send-to-slack/issues
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
@@ -83,7 +83,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.16.02': 'Solve bug',
     '2020.06.19.01': 'Reason is now mandatory',
     '2020.06.20.01': 'Use WazeWrap for the Alerts',
-    '2020.06.20.02': 'Adding Brasil - Bahia'
+    '2020.06.20.02': 'Adding Brasil - Bahia',
+    '2020.06.21.01': 'Update support links'
 };
 
 // Handle script errors and send them to GForm
