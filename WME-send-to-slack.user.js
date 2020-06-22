@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.22.01
+// @version         2020.06.22.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -85,7 +85,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.20.01': 'Use WazeWrap for the Alerts',
     '2020.06.20.02': 'Adding Brasil - Bahia',
     '2020.06.21.01': 'Update support links',
-    '2020.06.22.01': 'Alert on unsaved object'
+    '2020.06.22.01': 'Alert on unsaved object',
+    '2020.06.22.02': 'Solved a small error'
 };
 
 // Handle script errors and send them to GForm
@@ -390,7 +391,7 @@ ${telegramReason}`
     });
     log(Details);
     if(permalink.indexOf("-100") >= 0 ) {
-        abort==1;
+        abort=true;
         WazeWrap.Alerts.error(GM_info.script.name, "Some segments aren't saved, please save them and try again");
     }
     var profileurl="https://www.waze.com/user/editor/"
