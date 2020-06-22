@@ -391,6 +391,7 @@ ${telegramReason}`
     log(Details);
     if(permalink.indexOf("-100") >= 0 ) {
         abort==1;
+        WazeWrap.Alerts.error(GM_info.script.name, "Some segments aren't saved, please save them and try again");
     }
     var profileurl="https://www.waze.com/user/editor/"
     var userRank = W.loginManager.user.getRank() + 1;
