@@ -1,4 +1,4 @@
-[![Open Source Helpers](https://www.codetriage.com/wazedev/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/wazedev/wme-send-to-slack)
+[![Open Source Helpers](https://www.codetriage.com/wazedev/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/wazedev/wme-send-to-slack) [![Gitter](https://badges.gitter.im/Tunisiano18/community.svg)](https://gitter.im/Tunisiano18/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Current Verion of the script ##
 Check here : https://wmests.bowlman.org
