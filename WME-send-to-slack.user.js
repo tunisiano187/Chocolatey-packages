@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.21.01
+// @version         2020.06.22.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -84,7 +84,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.19.01': 'Reason is now mandatory',
     '2020.06.20.01': 'Use WazeWrap for the Alerts',
     '2020.06.20.02': 'Adding Brasil - Bahia',
-    '2020.06.21.01': 'Update support links'
+    '2020.06.21.01': 'Update support links',
+    '2020.06.22.01': 'Alert on unsaved object'
 };
 
 // Handle script errors and send them to GForm
@@ -388,6 +389,9 @@ ${telegramReason}`
         return escape(url);
     });
     log(Details);
+    if(permalink.indexOf("-100") >= 0 ) {
+        abort==1;
+    }
     var profileurl="https://www.waze.com/user/editor/"
     var userRank = W.loginManager.user.getRank() + 1;
     var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + userRank + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nRequest Type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
@@ -398,6 +402,7 @@ ${telegramReason}`
 ${closureTelegramDetails}${telegramDetails}`;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
+
     if(Reason !== 'Cancelled' && chanel !== "" && abort === false) {
         for (var key in serverDB[localStorage.getItem('WMESTSServer')])
         {
