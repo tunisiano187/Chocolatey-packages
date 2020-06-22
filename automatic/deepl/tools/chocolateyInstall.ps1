@@ -1,19 +1,13 @@
-$packageName = 'deepl'
-$installerType = 'exe'
-$silentArgs = '/S'
-$url64 = 'https://appdownload.deepl.com/windows/full/DeepLSetup.exe'
-$checksum64 = '1498BFCA4361B90D9F7F0345A5E0981B257270CC2D52761B4D3464FE22F8C6F4'
-$checksumType64 = 'sha256'
-$validExitCodes = @(0)
+$ErrorActionPreference = 'Stop';
 
-Invoke-WebRequest -Uri $url64 -OutFile ".\DeepLSetup.exe"
+$packageArgs = @{
+  packageName  = $env:ChocolateyPackageName
 
-$url64 = ".\DeepLSetup.exe"
+  url          = 'https://www.deepl.com/windows/download/full/DeepLSetup.exe'
+  checksum     = '1498BFCA4361B90D9F7F0345A5E0981B257270CC2D52761B4D3464FE22F8C6F4'
+  checksumType = 'sha256'
 
-invoke-expression 'cmd /c start powershell -Command { Install-ChocolateyPackage -PackageName "$packageName" `
-                          -FileType "$installerType" `
-                          -SilentArgs "$silentArgs" `
-                          -Url64bit "$url64" `
-                          -ValidExitCodes $validExitCodes `
-                          -Checksum64 "$checksum64" `
-                          -ChecksumType64 "$checksumType64" }'
+  silentArgs   = '/s'
+}
+
+Install-ChocolateyPackage @packageArgs
