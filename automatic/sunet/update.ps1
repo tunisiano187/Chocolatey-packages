@@ -29,8 +29,7 @@ function global:au_GetLatest {
     }
 	$version=$sunet.DisplayVersion
 	if($version -eq "0.0.0") {
-		$versiondate = Get-Date $([Net.HttpWebRequest]::Create($url32).GetResponse().LastModified) -Format "yyyMMdd"
-		$versiondate = Get-Date $versiondate -Format "yyyMMdd"
+		$versiondate = Get-Date $([Net.HttpWebRequest]::Create($url32).GetResponse().LastModified) -Format "yyyyMMdd"
 		$version = "0.0.0.$versiondate"
 	}
 	
