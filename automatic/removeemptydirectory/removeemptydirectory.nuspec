@@ -7,10 +7,10 @@
     <authors>NiceHash</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.jonasjohn.de/red.htm</projectUrl>
-	<projectSourceUrl>https://github.com/hxseven/Remove-Empty-Directories</projectSourceUrl>
-    <iconUrl>https://github.com/hxseven/Remove-Empty-Directories/raw/master/RED2/coffee.png</iconUrl>
+	  <projectSourceUrl>https://github.com/hxseven/Remove-Empty-Directories</projectSourceUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/removeemptydirectory.png</iconUrl>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/RED</packageSourceUrl>
-	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>RED searches and deletes empty directories recursively below a given start folder and shows the result in a well arranged tree. Further you can create some custom rules for keeping and deleting folders. Empty files in directories can also be ignored.
 
 Features
