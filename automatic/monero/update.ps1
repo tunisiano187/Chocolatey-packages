@@ -24,8 +24,8 @@ function global:au_GetLatest {
 	$url32 = "$($installer[0])";
 	$url64 = "$($installer[1])";
 	
-	$Latest = @{ URL32 = $release; Version = $version }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update
