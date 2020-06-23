@@ -36,6 +36,7 @@ With Electron, creating a desktop application for your company or idea is easy. 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
+    dotnetfx
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
