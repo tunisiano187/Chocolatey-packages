@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>monero</id>
+    <title>Monero Wallet</title>
+    <version>0.0</version>
+    <authors>Monero Project</authors>
+    <owners>tunisiano</owners>
+    <summary>Monero: the secure, private, untraceable cryptocurrency</summary>
+    <description>
+Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork.
+
+Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
+
+### Community
+* [Forum](https://forum.getmonero.org/)
+* [Bitcointalk](https://bitcointalk.org/index.php?topic=583449.0)
+* [Reddit](http://www.reddit.com/r/monero)
+
+### Documentation
+* [FAQ](http://monero.org/faq/)
+* [Services](http://monero.org/services/)
+* [Developer blog](https://getmonero.org/blog/)
+    </description>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/monero</packageSourceUrl>
+    <projectUrl>http://getmonero.org/</projectUrl>
+    <projectSourceUrl>https://github.com/monero-project/bitmonero</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/monero-project/bitmonero/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/monero.png</iconUrl>
+    <tags>xmr p2p anonymity cryptonote cryptonight cpu-mining</tags>
+    <copyright>Monero Project</copyright>
+    <licenseUrl>https://github.com/monero-project/bitmonero#license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+#### Program
+* [News](http://monero.org/news/)
+* [Missives](http://monero.org/missives/)
+* [Roadmap](https://getmonero.org/design-goals/)
+* [Changelog](https://github.com/monero-project/bitmonero/blob/development/ReleaseNotes.txt)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

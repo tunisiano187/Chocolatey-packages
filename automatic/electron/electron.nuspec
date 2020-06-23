@@ -21,7 +21,7 @@ With Electron, creating a desktop application for your company or idea is easy. 
 ]]></description>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/electron/</packageSourceUrl>
     <projectUrl>http://electron.atom.io/</projectUrl>
-    <projectSourceUrl>https://github.com/atom/electron</projectSourceUrl>
+    <projectSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/electron</projectSourceUrl>
     <bugTrackerUrl>https://github.com/atom/electron/issues</bugTrackerUrl>
     <docsUrl>http://electron.atom.io/docs/</docsUrl>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/electron.png</iconUrl>

@@ -1,0 +1,31 @@
+import-module au
+
+$releases = 'https://github.com/monero-project/monero/releases/latest'
+
+function global:au_SearchReplace {
+	@{
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumtype\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+            "(^[$]url64\s*=\s*)('.*')"      		= "`$1'$($Latest.URL64)'"
+			"(^[$]checksum64\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum64)'"
+			"(^[$]checksum64type\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType64)'"
+		}
+	}
+}
+
+function global:au_GetLatest {
+	Write-host 'Check Folder'
+	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'monero-'} | Where-Object {$_ -match "-win-"} | Where-Object {$_ -match 'zip'} | Select -First 2 | Sort-Object )
+	Write-host 'Checking version'
+	$version=$($installer[0]).href.split('/')[-1].split('-')[-1].replace('v','').replace('.zip','')
+	Write-host "Version : $version"
+	$url32 = "$($installer[0])";
+	$url64 = "$($installer[1])";
+	
+	$Latest = @{ URL32 = $release; Version = $version }
+	return $Latest
+}
+
+update -ChecksumFor 32
