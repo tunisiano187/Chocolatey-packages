@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>removeemptydirectory</id>
-    <version>2.1</version>
+    <version>1.0</version>
     <title>Remove empty directories</title>
     <authors>NiceHash</authors>
     <owners>tunisiano</owners>
@@ -24,5 +24,8 @@ Portable (runs from USB drive)</description>
     <copyright>© JonasJohn</copyright>
     <language>en-us</language>
     <tags>remove empty directories directory folder</tags>
+    <dependencies>
+      <dependency id="dotnetfx" />
+    </dependencies>
   </metadata>
 </package>
