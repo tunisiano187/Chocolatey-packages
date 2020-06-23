@@ -1,15 +1,16 @@
 $ErrorActionPreference = 'Stop';
-$url      = ''
-$checksum = ''
+$url            = ''
+$checksum       = ''
+$checksumtype   = ''
 
 $packageArgs = @{
-  packageName  = $env:ChocolateyPackageName
+  packageName   = $env:ChocolateyPackageName
 
-  url          = $url
-  checksum     = $checksum
-  checksumType = 'sha256'
+  url           = $url
+  checksum      = $checksum
+  checksumType  = $checksumtype
 
-  silentArgs   = '/s'
+  silentArgs     = '/s'
 }
 
 Install-ChocolateyPackage @packageArgs
