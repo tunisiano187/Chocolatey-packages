@@ -7,7 +7,7 @@ Check here : https://wmests.bowlman.org
 
 It's more easy to send requests about Lock, Downlock, Closure, Openning, and Validation of changes
 The requests are sent from the WME to a webhook in Slack or Discord or even to a Telegram group chat.
-The requests can be sent to a GForm too (currently only with the sames fields we have in BeLux)
+The requests can be sent to a GForm too (currently only with the sames fields we have in BeLux) (Currently broken)
 Thanks to that and to Bertzzz's , we've got a spreadsheet that helps to promotion decision on L1-L3 levels.
 Thanks to santyg2001, we've added Telegram bot support for sending messages.
 
