@@ -21,6 +21,8 @@
     - git add -u :/
     - git commit -m '[skip ci] commit from CI runner'
     - git push --follow-tags origin master
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
   artifacts:
     paths:
         - upload/
