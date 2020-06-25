@@ -45,7 +45,7 @@ environment:
 
   #Chocolatey API key - to push updated packages
   api_key:
-    secure: 97kzpWK6hube+75dD44758RlG3o6gDbR1h0GvUO4neY=
+    secure: aXQkG8BvsO7/zFDzAb7ADCdvottWbXf1sRoC34DUk9RIvzOiIdjprfw39CvNT4WK
 
   #Chocolatey version we want to use when checking for updates (usually latest).
   choco_version: '0.10.15'
