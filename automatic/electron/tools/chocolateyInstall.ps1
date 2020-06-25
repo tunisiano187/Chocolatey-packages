@@ -1,9 +1,9 @@
 ﻿$packageName = 'electron'
-$url = 'https://github.com/electron/electron/releases/download/v8.3.3/electron-v8.3.3-win32-ia32.zip'
-$checksum = 'b0d7edc16599bb7b343be8f7bc6eee79d82e0ed798b556b3fa52785a9bf1ad04'
+$url = 'https://github.com/electron/electron/releases/download/v8.3.4/electron-v8.3.4-win32-ia32.zip'
+$checksum = 'e0b22a15c69da52016cabfbe548e54197a94e09365c8d4cd9a31564827fe606b'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/electron/electron/releases/download/v8.3.3/electron-v8.3.3-win32-ia32.zip'
-$checksum64 = 'b0d7edc16599bb7b343be8f7bc6eee79d82e0ed798b556b3fa52785a9bf1ad04'
+$url64 = 'https://github.com/electron/electron/releases/download/v8.3.4/electron-v8.3.4-win32-ia32.zip'
+$checksum64 = 'e0b22a15c69da52016cabfbe548e54197a94e09365c8d4cd9a31564827fe606b'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
