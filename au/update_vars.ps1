@@ -7,7 +7,9 @@ $Env:mail_server      = 'smtp.gmail.com'
 $Env:mail_port        = '465'
 $Env:mail_enablessl   = 'true'
 
-$Env:api_key          = $choco_api          #Chocolatey api key
+if(!(Test-Path Env:api_key)) {
+    $Env:api_key          = $choco_api          #Chocolatey api key
+}
 if(!(Test-Path Env:gist_id)) {
     $Env:gist_id          = $Gist_id          #Specify your gist id or leave empty for anonymous gist
 }
