@@ -25,6 +25,3 @@ Get-ChocolateyUnzip -FileFullPath "$zipFile" `
                     -Destination "$toolsDir" `
                     -PackageName "$packageName"
 
-# create sidecar file for shimgen
-Set-Content -Path ("$installFile.gui") `
-            -Value $null
