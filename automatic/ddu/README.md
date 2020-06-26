@@ -12,6 +12,6 @@ The current effect after you use this driver removal will be similar as if its t
 * Make a backup or a system restore. (but it should normally be pretty safe.)
 
 #### Community
-* [Forum - NVIDIA](http://forums.guru3d.com/showthread.php?t=379506#posts)
-* [Forum - AMD](http://forums.guru3d.com/showthread.php?t=379505#posts)
+* [Forum - NVIDIA](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379506/#posts)
+* [Forum - AMD](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379505/#posts)
 * [Twitter](https://twitter.com/Wagnard)
