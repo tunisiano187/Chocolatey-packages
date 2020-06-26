@@ -10,6 +10,7 @@
     - Write-Host "Start updating packages"
     - cd au
     - ./invoke-setup.ps1
+    - ../scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     - ./update_all.ps1
   #  - ./update.ps1
   after_script:
