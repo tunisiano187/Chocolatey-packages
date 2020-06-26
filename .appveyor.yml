@@ -126,7 +126,7 @@ build_script:
             }
         }
     }
-
+    scripts/Update-IconUrl.ps1 -Quiet
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
