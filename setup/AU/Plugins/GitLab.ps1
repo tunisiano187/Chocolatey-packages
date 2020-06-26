@@ -14,7 +14,7 @@ param(
     [string] $API_Key,
 
     # Repository HTTP(S) URL
-    [string]$PushURL,
+    [string]$PushURL = 'https://gitlab.com/chocolatey-packages/automatic-updating',
 
     # Force git commit when package is updated but not pushed.
     [switch] $Force,
