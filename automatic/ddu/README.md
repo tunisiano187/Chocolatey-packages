@@ -1,0 +1,17 @@
+# ddu
+[(https://img.shields.io/chocolatey/v/ddu.svg?color=green&label=ddu)](https://chocolatey.org/packages/ddu)
+
+Display Driver Uninstaller is a driver removal utility that can help you completely remove Graphics Processing Unit (GPU) display card drivers and packages (AMD/NVIDIA) from your system without leaving leftovers behind; including registry keys, folders and files, services, and the driver store.
+
+The AMD/NVIDIA video drivers can normally be uninstalled from the Windows Control panel, this driver uninstaller program was designed to be used in cases where the standard driver uninstall fails, or whenever you need to thoroughly delete NVIDIA and ATI video card drivers.
+
+The current effect after you use this driver removal will be similar as if its the first time you install a new driver just like a fresh, clean install of Windows. As with any tool of this kind, we recommend creating a new system restore point before using it, so that you can revert your system at any time if you run into problems.
+
+#### Usage
+* The tool can be used in Normal mode but for absolute stability when using DDU, Safe Mode is always recommended.
+* Make a backup or a system restore. (but it should normally be pretty safe.)
+
+#### Community
+* [Forum - NVIDIA](http://forums.guru3d.com/showthread.php?t=379506#posts)
+* [Forum - AMD](http://forums.guru3d.com/showthread.php?t=379505#posts)
+* [Twitter](https://twitter.com/Wagnard)
