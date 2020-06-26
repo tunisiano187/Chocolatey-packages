@@ -1,5 +1,5 @@
 # foldingathome
-![Folding at home version](https://img.shields.io/chocolatey/v/fah?color=green&label=fah)(https://chocolatey.org/packages/fah)
+![Folding at home version](https://img.shields.io/chocolatey/v/fah?color=green&label=fah)(https://chocolatey.org/packages/fah) ![](https://img.shields.io/chocolatey/dt/fah)
 
 Fight Covid !
 

@@ -1,5 +1,5 @@
 ## Electron
-![Electron version](https://img.shields.io/chocolatey/v/electron?color=green&label=electron)(https://chocolatey.org/packages/electron)
+![Electron version](https://img.shields.io/chocolatey/v/electron?color=green&label=electron)(https://chocolatey.org/packages/electron) ![](https://img.shields.io/chocolatey/dt/electron)
 
 Electron, formerly _Atom Shell_, framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS. It is based on [io.js](https://chocolatey.org/packages/io.js) and [Chromium](https://chocolatey.org/packages/chromium) and is used in the [Atom editor](https://chocolatey.org/packages/atom).
 
