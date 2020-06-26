@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.22.02
+// @version         2020.06.26.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -86,7 +86,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.20.02': 'Adding Brasil - Bahia',
     '2020.06.21.01': 'Update support links',
     '2020.06.22.01': 'Alert on unsaved object',
-    '2020.06.22.02': 'Solved a small error'
+    '2020.06.22.02': 'Solved a small error',
+    '2020.06.26.01': 'Solve issue #13 After cancel, the script don t work'
 };
 
 // Handle script errors and send them to GForm
@@ -295,6 +296,7 @@ function Construct(iconaction) {
     var chanel = "";
     var closureTelegramDetails = ""; //Bug while sending to telegram creates a new line, so this will fill it.
     sent=0;
+    abort=false;
     if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
