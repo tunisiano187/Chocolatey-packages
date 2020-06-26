@@ -16,7 +16,7 @@ branches:
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version: master
-  au_push: false
+  au_push: true
   # Use 1 to test all, or N to split testing into N groups
   au_test_groups: 4
 
@@ -127,7 +127,6 @@ build_script:
         }
     }
 
-    git remote set-url origin https://tunisiano187:$($Env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
     scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     au/update_all.ps1 -ForcedPackages $forced
