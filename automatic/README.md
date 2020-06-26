@@ -1,5 +1,5 @@
 ## Automatic Folder
-![Chocolatey Version](https://img.shields.io/chocolatey/v/chocolatey)
+[![Chocolatey Version](https://img.shields.io/chocolatey/v/chocolatey)](www.chocolatey.org)
 
 This is where you put your Chocolatey packages that are automatically packaged up by [AU](https://chocolatey.org/packages/au)
 
