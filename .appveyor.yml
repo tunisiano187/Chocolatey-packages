@@ -63,7 +63,6 @@ init:
 - git config --global user.email "helpdesk.choc@gmail.com"
 - git config --global user.name "Tunisiano18"
 - git config --global core.safecrlf false
-- git remote set-url origin https://tunisiano187:$($Env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
 
 install:
 - ps: |
@@ -128,6 +127,7 @@ build_script:
         }
     }
 
+    git remote set-url origin https://tunisiano187:$($Env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
     scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     au/update_all.ps1 -ForcedPackages $forced
