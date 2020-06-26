@@ -4,6 +4,8 @@ $checksum = ''
 $checksumType = ''
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -Url "$url" `
                              -UnzipLocation "$toolsDir" `
