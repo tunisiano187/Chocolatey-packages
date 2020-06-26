@@ -4,6 +4,7 @@ pages:
   - mkdir public/script
   - cp *.user.js public/script/
   - sed -i "s/.version./$(cat public/script/WME-send-to-slack.user.js | grep @version | tail -c 14 | cut -c-13)/g" public/index.html
+  - sed -i "s/requested-*-success.svg/requested-$(cat public/features.html | grep '<li>' | wc -l)-success.svg/g" public/index.html
   artifacts:
     paths:
     - public
