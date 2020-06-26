@@ -15,7 +15,9 @@ if(!(Test-Path Env:api_key)) {
 if(!(Test-Path Env:gist_id)) {
     $Env:gist_id          = $Gist_id          #Specify your gist id or leave empty for anonymous gist
 }
-$Env:github_user_repo = $Github_user_repo          #{github_user>/{repo}
+if(!(Test-Path Env:github_user_repo)) {
+    $Env:github_user_repo = $Github_user_repo          #{github_user>/{repo}
+}
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
 }
