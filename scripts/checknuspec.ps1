@@ -10,8 +10,8 @@ foreach ($nuspec in $nuspecs) {
         $NewFileContent = @()
         for ($i = 0; $i -lt $FileContent.Length; $i++) {
             if ($FileContent[$i] -like "*\/metadata*") {
-                $NewFileContent += "#### Package
-                * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)"
+                $NewFileContent += '<releaseNotes>#### Package
+                * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>'
             }
             $NewFileContent += $FileContent[$i].Replace('{{PackageName}}', $($destspec.package.metadata.title).Replace(' ', "-"))
         }
