@@ -392,7 +392,7 @@ if ($counts.missing -gt 1) {
     $message = "Do you want to view the package names?";
     $choice = $host.ui.PromptForChoice($caption, $message, $options, $defaultChoice);
   } elseif($Quiet) {
-    $choice = 1
+    $choice = 0
   } else {
     $choice = 0
   }
