@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>deepl</id>
-    <version>1.11.0.1</version>
+    <version>1.0.1</version>
     <title>DeepL</title>
     <authors>DeepL</authors>
     <owners>tunisiano</owners>
@@ -23,7 +23,7 @@ results by a factor of 3:1. DeepL also achieves record-breaking performance acco
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/deepl</packageSourceUrl>
     <releaseNotes />
     <dependencies>
-      <dependency id="dotnetfx" />
+      <dependency id="dotnetfx" version="4.5" />
     </dependencies>
   </metadata>
   <files>
