@@ -27,4 +27,7 @@ much more. Autoruns goes way beyond other autostart utilities.
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/autoruns</packageSourceUrl>
     <mailingListUrl>https://social.technet.microsoft.com/Forums/en-US/home?forum=autoruns</mailingListUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
