@@ -30,7 +30,12 @@ Free for private use</description>
     <licenseUrl>http://www.dexpot.de/download/eula_en.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/dexpot.png</iconUrl>
-    <releaseNotes>https://www.dexpot.de/index.php?id=changelog</releaseNotes>
+    <releaseNotes>#### Software
+https://www.dexpot.de/index.php?id=changelog
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
 	<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/dexpot</packageSourceUrl>
   </metadata>
   <files>

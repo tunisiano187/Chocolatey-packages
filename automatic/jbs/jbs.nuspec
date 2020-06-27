@@ -14,7 +14,12 @@
 	<tags>jbs john background switcher</tags>
     <copyright>John Conners</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>https://johnsad.ventures/software/backgroundswitcher/johns-background-switcher-5-2-release-notes/</releaseNotes>
+    <releaseNotes>#### Program
+https://johnsad.ventures/software/backgroundswitcher/johns-background-switcher-5-2-release-notes/
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

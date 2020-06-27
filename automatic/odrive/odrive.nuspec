@@ -15,6 +15,9 @@ universal sync client. It makes any cloud storage unified, synchronized, shareab
     <summary>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</summary>
     <copyright>Copyright 2017, ODrive Inc.</copyright>
     <tags>odrive cloud admin</tags>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/odrive</packageSourceUrl>
     <dependencies>
       <dependency id="DotNet4.6.1" />

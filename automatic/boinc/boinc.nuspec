@@ -25,6 +25,9 @@ After installing, run `BoincMgr.exe` and choose a [BOINC project](https://boinc.
     <releaseNotes>#### Program
 * [Release notes](https://boinc.berkeley.edu/wiki/Release_Notes)
 * [Version history](https://boinc.berkeley.edu/trac/wiki/VersionHistory)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 </releaseNotes>
     <copyright>© University of California</copyright>
     <language>en-us</language>

@@ -21,7 +21,9 @@ results by a factor of 3:1. DeepL also achieves record-breaking performance acco
     <language>en-us</language>
     <tags>translation</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/deepl</packageSourceUrl>
-    <releaseNotes />
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.5" />
     </dependencies>

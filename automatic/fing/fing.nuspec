@@ -16,6 +16,9 @@
     <copyright>© Fing</copyright>
     <language>en-us</language>
     <tags>network monitoring scanner</tags>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -21,6 +21,9 @@ startup folder, Run, RunOnce, and other Registry keys. Autoruns reports Explore
 extensions, toolbars, browser helper objects, Winlogon notifications, auto-start services, and 
 much more. Autoruns goes way beyond other autostart utilities.
 ]]></description>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
     <summary>What programs are configured to startup automatically</summary>
     <copyright>Mark Russinovich, Bryce Cogswell</copyright>
     <tags>startup sysinternals</tags>

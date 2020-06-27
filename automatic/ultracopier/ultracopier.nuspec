@@ -13,6 +13,9 @@
 		<tags>ultracopier supercopier copy quick admin</tags>
 		<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/ultracopier</packageSourceUrl>
 		<iconUrl>https://ghcdn.rawgit.org/alphaonex86/Ultracopier/master/android-sources/res/drawable-hdpi/icon.png</iconUrl>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
     </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -14,6 +14,9 @@
 	<tags>FileJuggler File Juggler organisation organization admin trial</tags>
     <copyright>Simon</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
 	<dependencies>
       <dependency id="dotnetfx" />
     </dependencies>
