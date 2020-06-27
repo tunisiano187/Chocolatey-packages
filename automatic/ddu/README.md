@@ -23,6 +23,6 @@ Mode is always recommended.
 * Make a backup or a system restore. (but it should normally be pretty safe.)
 
 #### Community
-* [Forum - NVIDIA](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379506/#posts)
-* [Forum - AMD](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379505/#posts)
+* [Forum - NVIDIA](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379506/)
+* [Forum - AMD](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379505/)
 * [Twitter](https://twitter.com/Wagnard)
