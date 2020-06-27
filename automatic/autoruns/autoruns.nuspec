@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>autoruns</id>
-    <version>13.98</version>
+    <version>13.96</version>
     <title>Autoruns</title>
     <authors>Mark Russinovich,Bryce Cogswell</authors>
     <owners>tunisiano</owners>
