@@ -12,6 +12,7 @@
     - ./invoke-setup.ps1
     - ../scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     - ../scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
+    - ../scripts/checknuspec.ps1
     - ./update_all.ps1
   #  - ./update.ps1
   after_script:
