@@ -48,9 +48,6 @@ Mode is always recommended.
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
-    <dependencies>
-      <dependency id="dotnetfx" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
