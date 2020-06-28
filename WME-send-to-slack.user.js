@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.06.26.02
+// @version         2020.06.28.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -88,7 +88,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.22.01': 'Alert on unsaved object',
     '2020.06.22.02': 'Solved a small error',
     '2020.06.26.01': 'Solve issue #13 After cancel, the script stop working',
-    '2020.06.26.02': 'Solve issue #14, Open requests were sent with L1 and L2 accepted'
+    '2020.06.26.02': 'Solve issue #14, Open requests were sent with L1 and L2 accepted',
+    '2020.06.28.01': 'Solve issue #11, GForm did not receive the level of the editor'
 };
 
 // Handle script errors and send them to GForm
@@ -485,7 +486,7 @@ ${closureTelegramDetails}${telegramDetails}`;
                     var datas = {};
                     datas[GFormDBloc.pl]=unescape(permalink);
                     datas[GFormDBloc.username]=W.loginManager.user.userName;
-                    datas[GFormDBloc.editorlevel]=W.loginManager.user.normalizedLevel;
+                    datas[GFormDBloc.editorlevel]=W.loginManager.user.getRank()+1;
                     datas[GFormDBloc.levelrequired]=RequiredLevel.toString().replace(/:/g,'').replace('l','');
                     datas[GFormDBloc.type]=selectedtype;
                     datas[GFormDBloc.longlat]=currentlocation;
