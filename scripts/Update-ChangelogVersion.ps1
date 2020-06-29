@@ -3,7 +3,7 @@ function Update-ChangelogVersion([string]$version, [string]$format = '## Version
 
   if (!(Test-Path "Changelog.md")) { return }
 
-  Write-Host "Updating changelog version."
+  Write-Output "Updating changelog version."
 
   $path = (Resolve-Path "Changelog.md")
   [string[]]$changelog = gc $path -Encoding UTF8 | % {
