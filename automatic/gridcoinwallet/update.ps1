@@ -22,11 +22,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-host 'Check Folder'
+	Write-Output 'Check Folder'
 	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'gridcoin-'} | Where-Object {$_ -match "-setup.exe"} | Where-Object {$_ -notmatch 'hotfix'} | Where-Object {$_ -notmatch 'sha256'}).href | Select -First 2 | Sort-Object )
-	Write-host 'Checking version'
+	Write-Output 'Checking version'
 	$version=$installer[0].split('/')[-1].split('-')[1]
-	Write-host "Version : $version"
+	Write-Output "Version : $version"
 	$url32 = "https://github.com$($installer[0])";
 	$url64 = "https://github.com$($installer[1])";
 	

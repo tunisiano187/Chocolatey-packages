@@ -16,11 +16,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-host 'Check Folder'
+	Write-Output 'Check Folder'
 	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'monero-'} | Where-Object {$_ -match "-win-"} | Where-Object {$_ -match 'zip'} | Select -First 2 | Sort-Object ).href
-	Write-host 'Checking version'
+	Write-Output 'Checking version'
 	$version=$($installer[0]).split('/')[-1].split('-')[-1].replace('v','').replace('.zip','')
-	Write-host "Version : $version"
+	Write-Output "Version : $version"
 	$url32 = "$($installer[0])";
 	$url64 = "$($installer[1])";
 	
