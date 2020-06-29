@@ -31,7 +31,7 @@ param(
 )
 
 [array]$packages = if ($Force) { $Info.result.updated } else { $Info.result.pushed }
-if ($packages.Length -eq 0) { Write-Host "No package updated, skipping"; return }
+if ($packages.Length -eq 0) { Write-Output "No package updated, skipping"; return }
 
 $root = Split-Path $packages[0].Path
 
@@ -60,18 +60,18 @@ $RepoURL = (
 git remote set-url origin $RepoURL
 
 ### Ensure local is up-to-date to avoid conflicts
-Write-Host "Executing git pull"
+Write-Output "Executing git pull"
 git checkout -q $Branch
 git pull -q origin $Branch
 
 ### Commit
 if  ($commitStrategy -like 'atomic*') {
     $packages | % {
-        Write-Host "Adding update package to git repository: $($_.Name)"
+        Write-Output "Adding update package to git repository: $($_.Name)"
         git add -u $_.Path
         git status
 
-        Write-Host "Commiting $($_.Name)"
+        Write-Output "Commiting $($_.Name)"
         $message = "AU: $($_.Name) upgraded from $($_.NuspecVersion) to $($_.RemoteVersion)"
         $gist_url = $Info.plugin_results.Gist -split '\n' | select -Last 1
         $snippet_url = $Info.plugin_results.Snippet -split '\n' | select -Last 1
@@ -84,11 +84,11 @@ if  ($commitStrategy -like 'atomic*') {
     }
 }
 else {
-    Write-Host "Adding updated packages to git repository: $( $packages | % Name)"
+    Write-Output "Adding updated packages to git repository: $( $packages | % Name)"
     $packages | % { git add -u $_.Path }
     git status
 
-    Write-Host "Commiting"
+    Write-Output "Commiting"
     $message = "AU: $($packages.Length) updated - $($packages | % Name)"
     $gist_url = $Info.plugin_results.Gist -split '\n' | select -Last 1
     $snippet_url = $Info.plugin_results.Snippet -split '\n' | select -Last 1
@@ -97,10 +97,10 @@ else {
 }
 
 ### Push
-Write-Host "Pushing changes"
+Write-Output "Pushing changes"
 git push -q 
 if ($commitStrategy -eq 'atomictag') {
-    write-host 'Atomic Tag Push'
+    Write-Output 'Atomic Tag Push'
     git push -q --tags
 }
 popd
