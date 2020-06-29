@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	$version=$installer.split('_')[1]
 	Write-Output "Version : $version"
 	$url32 = "$($releases)$($installer)"
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

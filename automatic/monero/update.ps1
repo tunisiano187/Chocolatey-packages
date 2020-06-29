@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	Write-Output "Version : $version"
 	$url32 = "$($installer[0])";
 	$url64 = "$($installer[1])";
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }

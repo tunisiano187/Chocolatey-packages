@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	$release = "https://download.sysinternals.com/files/Autoruns.zip"
-	
+
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
 }

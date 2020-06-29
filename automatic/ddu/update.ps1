@@ -16,9 +16,9 @@ function global:au_GetLatest {
 	Add-Type -AssemblyName System.Web # To URLDecode
 	$release="https://www.wagnardsoft.com/forums/$([System.Web.HttpUtility]::UrlDecode(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Released'}).href[0].replace('./','').replace('&amp;','&')))"
 	$url32=((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href
-	
+
 	$version=$url32.split('/')[-1].ToLower().split('v')[-1].replace('.exe','')
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
