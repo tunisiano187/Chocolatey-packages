@@ -22,14 +22,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-host 'Check Folder'
+	Write-Output 'Check Folder'
 	$working_dir = "."
 	$install_fname = 'Filejuggler.exe'
-	Write-host 'Download'
+	Write-Output 'Download'
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "$install_fname"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-	Write-host "Version : $version"
+	Write-Output "Version : $version"
 	$url32 = $release
 	
 	$Latest = @{ URL32 = $url32; Version = $version }

@@ -16,10 +16,10 @@ function global:au_GetLatest {
 	
 	$File = './sunet.exe'
 
-	Write-host "Downloading"
+	Write-Output "Downloading"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	
-	Write-host "Installation"
+	Write-Output "Installation"
 	. $File /S
 	
 	$sunet=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex 'sunet')

@@ -33,7 +33,7 @@ $b = {
 
     $ErrorActionPreference = 'Stop'
 
-    Write-Host "`n==| Building $module_name $version`n"
+    Write-Output "`n==| Building $module_name $version`n"
     init
 
     $module_path = "$build_dir/$module_name"
@@ -50,7 +50,7 @@ $b = {
 }
 
 function zip_module() {
-    Write-Host "Creating 7z package"
+    Write-Output "Creating 7z package"
 
     $zip_path = "$build_dir\${module_name}_$version.7z"
     $cmd = "$Env:ChocolateyInstall/tools/7z.exe a '$zip_path' '$module_path' '$installer_path'"
@@ -60,7 +60,7 @@ function zip_module() {
 
 function init() {
     if ($remove_old) {
-        Write-Host "Removing older builds"
+        Write-Output "Removing older builds"
         rm -Recurse (Split-Path $build_dir) -ea ignore
     }
     mkdir -Force $build_dir | Out-Null
@@ -68,14 +68,14 @@ function init() {
 }
 
 function build_chocolatey_package {
-    if ($NoChocoPackage) { Write-Host "Skipping chocolatey package build"; return }
+    if ($NoChocoPackage) { Write-Output "Skipping chocolatey package build"; return }
 
     & $PSScriptRoot/chocolatey/build-package.ps1
     mv "$PSScriptRoot/chocolatey/${module_name}.$version.nupkg" $build_dir
 }
 
 function create_help() {
-    Write-Host 'Creating module help'
+    Write-Output 'Creating module help'
 
     $help_dir = "$module_path/en-US"
     mkdir -Force $help_dir | Out-Null
@@ -83,7 +83,7 @@ function create_help() {
 }
 
 function create_manifest() {
-    Write-Host 'Creating module manifest'
+    Write-Output 'Creating module manifest'
     $params = @{
         ModulePath = $module_path
         Version    = $version

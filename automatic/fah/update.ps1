@@ -22,17 +22,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-host 'Check Folder'
+	Write-Output 'Check Folder'
 	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^v\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
 	$installer = "$($releases)v$($version_folder)/latest.exe"
 	$working_dir = "."
 	$install_fname = 'folding_installer.exe'
-	Write-host 'Download'
+	Write-Output 'Download'
 	Invoke-WebRequest -Uri $installer -OutFile "$working_dir\$install_fname"
-	Write-host 'Install'
+	Write-Output 'Install'
 	. $working_dir/$install_fname /S
 	$version=Get-Version('folding')
-	Write-host "Version : $version"
+	Write-Output "Version : $version"
 	$url32 = "$($releases)v$($version_folder)/fah-installer_$($version)_x86.exe"
 	
 	$Latest = @{ URL32 = $url32; Version = $version }

@@ -184,7 +184,7 @@ function Optimize-Image {
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     return $_.Extensions.Contains($extension) -and (Get-Command $name -ea 0)
   } | % {
-    Write-Host "Optimizing the icon $fileName using $($_.DisplayName)"
+    Write-Output "Optimizing the icon $fileName using $($_.DisplayName)"
     $originalSize = Get-Item $iconPath | % Length
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     $path = Get-Command $name
@@ -196,7 +196,7 @@ function Optimize-Image {
 
     if ($sizeAfter -lt $originalSize) {
       $format = Format-Size ($originalSize - $sizeAfter)
-      Write-Host "$fileName size decreased by $format"
+      Write-Output "$fileName size decreased by $format"
     } elseif($sizeAfter -gt $originalSize) {
       $format = Format-Size ($sizeAfter - $originalSize)
       Write-Warning "$fileName size increased by $format"
@@ -371,16 +371,16 @@ else {
 if ($UseStopwatch) {
   $stopWatch.Stop();
   if (!$Quiet) {
-    Write-Host "Time Used: $($stopWatch.Elapsed)"
+    Write-Output "Time Used: $($stopWatch.Elapsed)"
   }
 }
 if ($counts.replaced -eq 0 -and !$Quiet) {
-  Write-Host "Congratulations, all found icon urls is up to date."
+  Write-Output "Congratulations, all found icon urls is up to date."
 } elseif (!$Quiet) {
-  Write-Host "Updated $($counts.replaced) icon url(s)";
+  Write-Output "Updated $($counts.replaced) icon url(s)";
 }
 if ($counts.uptodate -gt 0 -and !$Quiet) {
-  Write-Host "$($counts.uptodate) icon url(s) was already up to date.";
+  Write-Output "$($counts.uptodate) icon url(s) was already up to date.";
 }
 if ($counts.missing -gt 1) {
   Write-Warning "$($counts.missing) icon(s) was not found!"

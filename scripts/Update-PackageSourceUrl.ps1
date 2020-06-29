@@ -160,14 +160,14 @@ else {
 if ($UseStopwatch) {
   $stopWatch.Stop();
   if (!$Quiet) {
-    Write-Host "Time Used: $($stopWatch.Elapsed)"
+    Write-Output "Time Used: $($stopWatch.Elapsed)"
   }
 }
 if ($counts.replaced -eq 0 -and !$Quiet) {
-  Write-Host "Congratulations, all found urls are up to date."
+  Write-Output "Congratulations, all found urls are up to date."
 } elseif (!$Quiet) {
-  Write-Host "Updated $($counts.replaced) url(s)";
+  Write-Output "Updated $($counts.replaced) url(s)";
 }
 if ($counts.uptodate -gt 0 -and !$Quiet) {
-  Write-Host "$($counts.uptodate) url(s) was already up to date.";
+  Write-Output "$($counts.uptodate) url(s) was already up to date.";
 }

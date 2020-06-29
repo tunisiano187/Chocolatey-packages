@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$clnt = new-object System.Net.WebClient;
 	$clnt.OpenRead($release).Close();
 	$version=$([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("0.0.yyyyMMdd")
-	Write-host "Version : $version"
+	Write-Output "Version : $version"
 	$url32 = $release
 	
 	$Latest = @{ URL32 = $url32; Version = $version }
