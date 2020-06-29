@@ -1,4 +1,4 @@
-[![Open Source Helpers](https://www.codetriage.com/wazedev/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/wazedev/wme-send-to-slack) [![Gitter](https://badges.gitter.im/Tunisiano18/community.svg)](https://gitter.im/Tunisiano18/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![CodeFactor](https://www.codefactor.io/repository/github/wazedev/wme-send-to-slack/badge)](https://www.codefactor.io/repository/github/wazedev/wme-send-to-slack)
+[![Open Source Helpers](https://www.codetriage.com/tunisiano187/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/tunisiano187/wme-send-to-slack) [![Gitter](https://badges.gitter.im/Tunisiano18/community.svg)](https://gitter.im/Tunisiano18/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![CodeFactor](https://www.codefactor.io/repository/github/tunisiano187/wme-send-to-slack/badge)](https://www.codefactor.io/repository/github/tunisiano187/wme-send-to-slack)
 
 ## Current Verion of the script ##
 Check here : https://wmests.bowlman.org
@@ -62,7 +62,7 @@ The old one isn't supported anymore, and it should update automatically to this 
 
 ## How to send bugs or features ? ##
 
-Just go on this page (you'll need to create an account), and submit a Bug or feature : https://github.com/WazeDev/WME-send-to-slack/issues
+Just go on this page (you'll need to create an account), and submit a Bug or feature : https://github.com/tunisiano187/WME-send-to-slack/issues
 You need to complete the request by completing every question.
 
 See you later for New things...

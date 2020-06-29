@@ -30,7 +30,7 @@ If one of them isn't up-to-date, try to update them before sending a bug repport
 
 ### Reporting the issue
 
-If the above steps fail and you are sure its a bug, issues are tracked in the [issue tracker](https://github.com/WazeDev/WME-send-to-slack/issues).
+If the above steps fail and you are sure its a bug, issues are tracked in the [issue tracker](https://github.com/tunisiano187/WME-send-to-slack/issues).
 
 ## Tips For Submitting Code
 
@@ -84,7 +84,7 @@ Please follow this process; it's the best way to get your work included in the p
    # navigate to the newly cloned directory
    cd WME-Send-to-slack
    # assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/WazeDev/WME-Send-to-slack.git
+   git remote add upstream https://github.com/tunisiano187/WME-Send-to-slack.git
    ```
 
 - If you cloned a while ago, get the latest changes from upstream:
