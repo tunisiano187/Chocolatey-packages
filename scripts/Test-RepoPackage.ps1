@@ -130,10 +130,10 @@ function WriteOutput() {
    switch -Exact ($type) {
     'Error' { Write-Error $text }
     'Warning' { Write-Warning $text }
-    'ChocoError' { Write-Host $text -ForegroundColor Black -BackgroundColor Red }
-    'ChocoWarning' { Write-Host $text -ForegroundColor Black -BackgroundColor Yellow }
-    'ChocoInfo' { Write-Host $text -ForegroundColor White -BackgroundColor Black }
-    Default { Write-Host $text }
+    'ChocoError' { Write-Output $text -ForegroundColor Black -BackgroundColor Red }
+    'ChocoWarning' { Write-Output $text -ForegroundColor Black -BackgroundColor Yellow }
+    'ChocoInfo' { Write-Output $text -ForegroundColor White -BackgroundColor Black }
+    Default { Write-Output $text }
   }
 }
 
