@@ -1,4 +1,4 @@
 # PSScriptAnalyzerSettings.psd1
 @{
-    ExcludeRules=@('PSAvoidGlobalVars')
+    ExcludeRules=@('PSAvoidGlobalVars','PSUseShouldProcessForStateChangingFunctions')
 }
