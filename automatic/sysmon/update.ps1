@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'sysmon.zip'}).href)[0]
-	$File = "./sysmon.zip"
+	$ZipFile = "./sysmon.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $ZipFile -UseBasicParsing
 	Expand-Archive $ZipFile -DestinationPath .\sysmon
 	$File = $(Get-ChildItem Sysmon.exe -Recurse).FullName
