@@ -53,7 +53,7 @@ function zip_module() {
     Write-Output "Creating 7z package"
 
     $zip_path = "$build_dir\${module_name}_$version.7z"
-    $("$Env:ChocolateyInstall/tools/7z.exe a '$zip_path' '$module_path' '$installer_path'") | Out-Null
+    $("$Env:ChocolateyInstall/tools/7z.exe a $zip_path $module_path $installer_path") | Out-Null
     if (!(Test-Path $zip_path)) { throw "Failed to build 7z package" }
 }
 
