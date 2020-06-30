@@ -15,7 +15,7 @@ function global:au_GetLatest {
 	$file = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup.exe'}).href
 	$url32 = "$($releases)$($file)"
 	$version = $file.split('-')[1].replace('v','')
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

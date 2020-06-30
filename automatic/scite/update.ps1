@@ -17,13 +17,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'scite'} | Where-Object {$_ -match ".msi"} | Select -First 2 | Sort-Object ).href
+	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'scite'} | Where-Object {$_ -match ".msi"} | Select-Object -First 2 | Sort-Object ).href
 	Write-Output 'Checking version'
 	$version=$($installer[1]).split('/')[-1].split('-')[-1].replace('x86.msi','')
 	Write-Output "Version : $version"
 	$url32 = "https://www.ebswift.com$($installer[1])";
 	$url64 = "https://www.ebswift.com$($installer[0])";
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }

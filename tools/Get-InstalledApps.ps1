@@ -23,7 +23,7 @@ https://www.reddit.com/r/PowerShell/comments/4l5kkm/what_are_all_or_at_least_the
         [string[]]$ComputerName = $env:COMPUTERNAME,
         [string]$NameRegex = ''
     )
-    
+
     foreach ($comp in $ComputerName) {
         $keys = '','\Wow6432Node'
         foreach ($key in $keys) {

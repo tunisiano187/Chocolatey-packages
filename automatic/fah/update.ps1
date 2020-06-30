@@ -34,7 +34,7 @@ function global:au_GetLatest {
 	$version=Get-Version('folding')
 	Write-Output "Version : $version"
 	$url32 = "$($releases)v$($version_folder)/fah-installer_$($version)_x86.exe"
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

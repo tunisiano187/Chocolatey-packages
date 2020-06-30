@@ -19,9 +19,9 @@ param(
     # Force git commit when package is updated but not pushed.
     [switch] $Force,
 
-    # Commit strategy: 
+    # Commit strategy:
     #  single    - 1 commit with all packages
-    #  atomic    - 1 commit per package    
+    #  atomic    - 1 commit per package
     #  atomictag - 1 commit and tag per package
     [ValidateSet('single', 'atomic', 'atomictag')]
     [string]$commitStrategy = 'single',
@@ -98,7 +98,7 @@ else {
 
 ### Push
 Write-Output "Pushing changes"
-git push -q 
+git push -q
 if ($commitStrategy -eq 'atomictag') {
     Write-Output 'Atomic Tag Push'
     git push -q --tags

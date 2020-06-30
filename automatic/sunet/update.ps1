@@ -13,15 +13,15 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = $release
-	
+
 	$File = './sunet.exe'
 
 	Write-Output "Downloading"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	
+
 	Write-Output "Installation"
 	. $File /S
-	
+
 	$sunet=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex 'sunet')
     while($sunet.count -eq 0)
     {
@@ -32,7 +32,7 @@ function global:au_GetLatest {
 		$versiondate = Get-Date $([Net.HttpWebRequest]::Create($url32).GetResponse().LastModified) -Format "yyyyMMdd"
 		$version = "0.0.0.$versiondate"
 	}
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

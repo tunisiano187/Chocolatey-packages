@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	if($version -eq "1.6.14") { $version="1.6.14.1" } #Solve previously rejected
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }

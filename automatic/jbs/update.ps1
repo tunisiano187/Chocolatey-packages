@@ -14,11 +14,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$jbs = (Invoke-WebRequest -Uri $releases -UseBasicParsing)
 	$url32 = ($jbs.Links | Where-Object {$_ -match 'exe'})[0].href
-	
+
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "SwitcherSetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
