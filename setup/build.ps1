@@ -9,16 +9,16 @@ param(
     [string] $Version = [Version]$(git log -1 --date=short)[3].split(' ')[-1].replace("-","."),
 
     # Install module in the system after the build
-    [switch] $Install,
+    [switch] $Install = $false,
 
     # Use short date string
-    [switch] $ShortVersion,
+    [switch] $ShortVersion = $false,
 
     # Clean up
-    [switch] $Clean,
+    [switch] $Clean = $false,
 
     # Do not build chocolatey package
-    [switch] $NoChocoPackage
+    [switch] $NoChocoPackage = $false
 )
 
 $b = {
@@ -40,7 +40,7 @@ $b = {
     create_manifest
     create_help
 
-    cp $installer_path $build_dir
+    Copy-Item $installer_path $build_dir
     zip_module
     build_chocolatey_package
 
@@ -60,17 +60,17 @@ function zip_module() {
 function init() {
     if ($remove_old) {
         Write-Output "Removing older builds"
-        rm -Recurse (Split-Path $build_dir) -ea ignore
+        Remove-Item -Recurse (Split-Path $build_dir) -ea ignore
     }
     mkdir -Force $build_dir | Out-Null
-    cp -Recurse $module_path $build_dir
+    Copy-Item -Recurse $module_path $build_dir
 }
 
 function build_chocolatey_package {
     if ($NoChocoPackage) { Write-Output "Skipping chocolatey package build"; return }
 
     & $PSScriptRoot/chocolatey/build-package.ps1
-    mv "$PSScriptRoot/chocolatey/${module_name}.$version.nupkg" $build_dir
+    Move-Item "$PSScriptRoot/chocolatey/${module_name}.$version.nupkg" $build_dir
 }
 
 function create_help() {
@@ -78,7 +78,7 @@ function create_help() {
 
     $help_dir = "$module_path/en-US"
     mkdir -Force $help_dir | Out-Null
-    gc $PSScriptRoot/README.md | select -Skip 4 | Set-Content "$help_dir/about_${module_name}.help.txt" -Encoding ascii
+    Get-Content $PSScriptRoot/README.md | Select-Object -Skip 4 | Set-Content "$help_dir/about_${module_name}.help.txt" -Encoding ascii
 }
 
 function create_manifest() {
