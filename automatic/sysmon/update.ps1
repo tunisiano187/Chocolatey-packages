@@ -18,8 +18,9 @@ function global:au_GetLatest {
 	$File = "./sysmon.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $ZipFile -UseBasicParsing
 	Expand-Archive $ZipFile -DestinationPath .\sysmon
-	$File = Get-ChildItem Sysmon.exe -Recurse
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File.FullName).FileVersion
+	$File = $(Get-ChildItem Sysmon.exe -Recurse).FullName
+	Write-Output $File
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
