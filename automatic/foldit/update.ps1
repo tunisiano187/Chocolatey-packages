@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$version=$([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("0.0.yyyyMMdd")
 	Write-Output "Version : $version"
 	$url32 = $release
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

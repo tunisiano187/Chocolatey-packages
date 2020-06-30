@@ -35,7 +35,7 @@ if ($packages.Length -eq 0) { Write-Output "No package updated, skipping"; retur
 
 $root = Split-Path $packages[0].Path
 
-pushd $root
+Push-Location $root
 $origin  = git config --get remote.origin.url
 $origin -match '(?<=:/+)[^/]+' | Out-Null
 $machine = $Matches[0]
@@ -79,7 +79,7 @@ if  ($commitStrategy -like 'atomic*') {
 
         if ($commitStrategy -eq 'atomictag') {
           $tagcmd = "git tag -a $($_.Name)-$($_.RemoteVersion) -m '$($_.Name)-$($_.RemoteVersion)'"
-          Invoke-Expression $tagcmd
+          . $tagcmd
         }
     }
 }
