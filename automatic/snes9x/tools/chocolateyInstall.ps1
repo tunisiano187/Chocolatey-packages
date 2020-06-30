@@ -1,8 +1,8 @@
-﻿$packageName = "{{PackageName}}"
-$url = "{{DownloadUrl}}"
+﻿$packageName = "snes9x"
+$url = '{{DownloadUrl}}'
 $checksum = '{{Checksum}}'
 $checksumType = 'sha256'
-$url64 = "{{DownloadUrlx64}}"
+$url64 = '{{DownloadUrlx64}}'
 $checksum64 = '{{Checksumx64}}'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
