@@ -331,7 +331,7 @@ function Construct(iconaction) {
         }
         if(iconaction !== "Lock" || Details !== 'Cancelled') {
             //Alert the editor if he can edit himself
-            var lvlEditor = W.loginManager.user.getRank() + 1
+            var lvlEditor = WazeWrap.User.Rank();
             if (lvlEditor >= RequiredLevel && iconaction != 'Validation') {
               if (confirm("You can perform this edit. Do you wish to continue?") === false) {
                 log("User can edit, so no edit is sent.")
@@ -400,7 +400,7 @@ ${telegramReason}`
         WazeWrap.Alerts.error(GM_info.script.name, "Some segments aren't saved, please save them and try again");
     }
     var profileurl="https://www.waze.com/user/editor/"
-    var userRank = W.loginManager.user.getRank() + 1;
+    var userRank = WazeWrap.User.Rank();
     var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + userRank + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nRequest Type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
     var TexToSendTelegramMD = `L${RequiredLevel} *User:* [${W.loginManager.user.userName}](www.waze.com/user/editor/${W.loginManager.user.userName}) (*${userRank}*)
 *Link :* [${textSelection}](${permalink})
@@ -487,7 +487,7 @@ ${closureTelegramDetails}${telegramDetails}`;
                     var datas = {};
                     datas[GFormDBloc.pl]=unescape(permalink);
                     datas[GFormDBloc.username]=W.loginManager.user.userName;
-                    datas[GFormDBloc.editorlevel]=W.loginManager.user.getRank()+1;
+                    datas[GFormDBloc.editorlevel]=WazeWrap.User.Rank();
                     datas[GFormDBloc.levelrequired]=RequiredLevel.toString().replace(/:/g,'').replace('l','');
                     datas[GFormDBloc.type]=selectedtype;
                     datas[GFormDBloc.longlat]=currentlocation;
