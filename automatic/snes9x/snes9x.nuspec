@@ -3,9 +3,9 @@
   <metadata>
     <id>snes9x</id>
     <title>Snes9x</title>
-    <version>1.60</version>
+    <version>1.59</version>
     <authors>Snes9x Team</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>SNES emulator widely ported to many systems</summary>
     <description>
 Snes9x is an SNES emulator written in C++ with official ports for Linux, Microsoft Windows, AmigaOS 4, Mac OS X, MorphOS, iOS, PSP, and Android. Both Windows RT and Windows Phone 8 have an unofficial port named Snes8x.
@@ -21,7 +21,7 @@ Snes9x is an SNES emulator written in C++ with official ports for Linux, Microso
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@61475e7d61446cf0e7b07a134f9cdfb0ef00bd85/icons/snes9x.png</iconUrl>
     <tags>emulator snes gaming</tags>
     <copyright>© Snes9x Team</copyright>
-    <licenseUrl>https://raw.githubusercontent.com/snes9xgit/snes9x/master/docs/snes9x-license.txt</licenseUrl>
+    <licenseUrl>http://www.snes9x.com/privacy.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Program
@@ -29,7 +29,7 @@ Snes9x is an SNES emulator written in C++ with official ports for Linux, Microso
 * [Changelog](https://raw.githubusercontent.com/snes9xgit/snes9x/master/docs/changes.txt)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
     <dependencies>
       <dependency id="directx" version="9.0.0.0" />
