@@ -11,6 +11,7 @@
 Monitors and reports key system activity via the Windows event log.
     </description>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cd5cf1ca2a05382d624f904a28d1f77789350bcb/icons/sysmon.png</iconUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/dn798348</projectUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
     <tags>eventlog monitor tools sysinternals</tags>
