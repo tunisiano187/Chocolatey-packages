@@ -18,7 +18,7 @@
     - md upload
     - Get-ChildItem -Path ./ -Include *.nupkg -Recurse -File | Move-Item -Destination ./upload/
     - Get-ChildItem -Path ./ -Include Update-AUPacakges.md -Recurse -File | Move-Item -Destination ./upload/
-    - Move-Item au/update_info.xml -Destination ./upload/
+    - Get-ChildItem -Path ./ -Include update_info.xml -Recurse -File | Move-Item -Destination ./upload/
     #- git checkout -B master
     #- git add -u :/
     #- git commit -m '[skip ci] commit from CI runner'
