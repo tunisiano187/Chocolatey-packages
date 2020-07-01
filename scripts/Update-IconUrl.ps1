@@ -380,7 +380,7 @@ if ($counts.replaced -eq 0 -and !$Quiet) {
   Write-Output "Updated $($counts.replaced) icon url(s)";
 }
 if ($counts.uptodate -gt 0 -and !$Quiet) {
-  Write-Output "$($counts.uptodate) icon url(s) was already up to date.";
+  Write-Output "$($counts.uptodate) icon url(s) were already up to date.";
 }
 if ($counts.missing -gt 1) {
   Write-Warning "$($counts.missing) icon(s) was not found!"
