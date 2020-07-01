@@ -168,6 +168,8 @@ if ($counts.replaced -eq 0 -and !$Quiet) {
 } elseif (!$Quiet) {
   Write-Output "Updated $($counts.replaced) url(s)";
 }
-if ($counts.uptodate -gt 0 -and !$Quiet) {
+if ($counts.uptodate -eq 1 -and !$Quiet) {
   Write-Output "$($counts.uptodate) url(s) was already up to date.";
+} elseif ($counts.uptodate -gt 1 -and !$Quiet) {
+  Write-Output "$($counts.uptodate) url(s) were already up to date.";
 }
