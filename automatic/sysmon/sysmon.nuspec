@@ -18,11 +18,7 @@ Monitors and reports key system activity via the Windows event log.
     <copyright>© Mark Russinovich</copyright>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [News](http://blogs.technet.com/Sysinternals)
-
-#### Package
+    <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
   </metadata>
