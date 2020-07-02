@@ -3,7 +3,7 @@
   <metadata>
     <id>sysmon</id>
     <title>Sysmon</title>
-    <version>11.8</version>
+    <version>11.10</version>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
     <summary>Monitors and reports key system activity via the Windows event log</summary>
