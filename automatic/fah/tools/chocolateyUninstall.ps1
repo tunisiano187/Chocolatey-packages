@@ -1,4 +1,4 @@
-$packageName = 'fah'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = "FAHClient"
 $installerType = 'exe'
 $silentArgs = '/S'

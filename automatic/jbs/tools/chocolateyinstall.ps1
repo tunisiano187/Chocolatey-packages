@@ -1,4 +1,4 @@
-$packageName= 'JBS'
+$packageName= $env:ChocolateyPackageName
 $installerType      = 'EXE'
 $silentArgs = '/S'
 $url        = 'https://dl.johnsadventures.com/SwitcherSetup52.exe'

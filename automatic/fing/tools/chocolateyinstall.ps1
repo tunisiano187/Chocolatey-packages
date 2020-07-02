@@ -1,4 +1,4 @@
-﻿$packageName = 'fing'
+﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
 $url32 = 'https://get.fing.com/fing-desktop-releases/windows/Fing.exe'

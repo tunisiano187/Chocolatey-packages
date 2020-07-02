@@ -1,4 +1,4 @@
-$packageName = 'boinc'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = "$packageName"
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'

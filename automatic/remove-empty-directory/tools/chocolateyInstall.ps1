@@ -1,4 +1,4 @@
-﻿$packageName = 'removeemptydirectory'
+﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $url = 'https://vorboss.dl.sourceforge.net/project/rem-empty-dir/red-v2.2-setup.exe'

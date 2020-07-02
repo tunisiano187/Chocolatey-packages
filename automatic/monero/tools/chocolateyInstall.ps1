@@ -1,4 +1,4 @@
-﻿$packageName = 'monero'
+﻿$packageName = $env:ChocolateyPackageName
 $url = 'https://downloads.getmonero.org/cli/monero-win-x86-v0.16.0.0.zip'
 $checksum = 'b1fc293dd9c12f90c7c343777298e86a22f25788561629b92ec0b23eb6cfb42c'
 $checksumType = 'sha256'

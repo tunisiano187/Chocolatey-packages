@@ -1,4 +1,4 @@
-﻿$packageName = 'sunett'
+﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S /v/qn'
 $url = 'https://boinc-client.oss-accelerate.aliyuncs.com/SUNET%20Setup.exe'

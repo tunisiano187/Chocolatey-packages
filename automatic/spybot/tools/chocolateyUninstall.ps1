@@ -1,4 +1,4 @@
-$packageName = 'spybot'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = "Spybot - Search and Destroy*"
 $installerType = 'exe'
 $silentArgs = '/SILENT'

@@ -1,4 +1,4 @@
-$packageName = 'dexpot'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = "$packageName"
 $fileType = 'exe'
 $silentArgs = '/S'

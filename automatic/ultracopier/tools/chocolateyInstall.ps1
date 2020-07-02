@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName = 'ultracopier'
+$packageName = $env:ChocolateyPackageName
 $url32='http://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.3/ultracopier-windows-x86-2.2.4.3-setup.exe'
 $url64='http://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.3/ultracopier-windows-x86_64-2.2.4.3-setup.exe'
 $checksum32='e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'

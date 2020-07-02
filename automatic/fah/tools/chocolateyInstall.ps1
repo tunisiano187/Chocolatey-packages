@@ -1,4 +1,4 @@
-$packageName = 'fah'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
 $url32       = ''

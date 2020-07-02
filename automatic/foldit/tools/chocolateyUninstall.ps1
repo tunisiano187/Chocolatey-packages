@@ -1,4 +1,4 @@
-﻿$packageName = 'foldit'
+﻿$packageName = $env:ChocolateyPackageName
 $packageSearch = "$packageName"
 $fileType = 'exe'
 $silentArgs = '/S'

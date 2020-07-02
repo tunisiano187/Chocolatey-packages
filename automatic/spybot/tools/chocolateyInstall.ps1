@@ -1,4 +1,4 @@
-﻿$packageName = 'spybot'
+﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT'
 $url = 'https://www.safer-networking.org/files/spybotsd-2.8.68.0.exe'
