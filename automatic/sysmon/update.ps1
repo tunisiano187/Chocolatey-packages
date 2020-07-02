@@ -8,7 +8,6 @@ function global:au_SearchReplace {
 			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-			"(^[$]packageName\s*=\s*)('.*')" = "`$1'$($Latest.PackageName)'"
 		}
 	}
 }
@@ -26,4 +25,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 32 -NoCheckChocoVersion
