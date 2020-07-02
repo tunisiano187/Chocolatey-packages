@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>odrive</id>
-    <version>1.6452.0.6617</version>
+    <version>1.6452.0.6627</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
     <owners>tunisiano</owners>
     <projectUrl>http://www.odrive.com/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/odrive.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a2b19f901b4c83ce943b86021ecaab3946aba566/icons/odrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[
 universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.
@@ -18,7 +18,7 @@ universal sync client. It makes any cloud storage unified, synchronized, shareab
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/odrive</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/odrive</packageSourceUrl>
     <dependencies>
       <dependency id="DotNet4.6.1" />
       <dependency id="KB2919355" />
