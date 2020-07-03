@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://sourceforge.net/projects/freeplane/files/latest/download'
+$releases = 'https://sourceforge.net/projects/freeplane/files/freeplane%20stable/'
 
 function global:au_SearchReplace {
 	@{
