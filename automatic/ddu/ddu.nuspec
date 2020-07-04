@@ -3,7 +3,7 @@
   <metadata>
     <id>ddu</id>
     <title>Display Driver Uninstaller</title>
-    <version>18.0.2.6</version>
+    <version>18.0.2.5</version>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
     <summary>Utility to completely remove system drivers</summary>
@@ -48,6 +48,9 @@ Mode is always recommended.
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
+    <dependencies>
+      <dependency id="KB2919355" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
