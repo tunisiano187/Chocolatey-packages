@@ -1,24 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>freeplane</id>
     <title>Freeplane</title>
-    <version>{{packageVersion}}</version>
+    <version>1.8.6</version>
     <authors>Dimitry Polivaev,Volker Börchers</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/freeplane/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freeplane</packageSourceUrl>
     <projectUrl>http://freeplane.sourceforge.net/wiki/index.php/Home</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/19d35dff574b7496b92f235fa1503d47b861871a/icons/{{PackageName}}.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a359590c095a0045893a36468fdbb026b8d0b1fe/icons/freeplane.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Open source mind mapping program</summary>
-    <description>
+    <description><![CDATA[
 Freeplane is a free and open source software application that supports thinking, sharing information and getting things done at work, in school and at home. The software can be used for mind mapping and analysing the information contained in mind maps. Freeplane runs on any operating system that has a current version of Java installed. It can be run locally or portably from removable storage like a USB drive. 
 
 Originally based on FreeMind.  
 
-For more information, see http://freeplane.sourceforge.net/wiki/index.php/Goals
-    </description>
+For more information, see https://freeplane.sourceforge.io/wiki/index.php/Goals
+]]></description>
     <releaseNotes>#### Program
 * [Changelog](http://folding.stanford.edu/home/blog)
 
