@@ -49,7 +49,7 @@ Mode is always recommended.
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
     <dependencies>
-      <dependency id="KB2919355" />
+      <dependency id="KB2919355" version="1.0.20160915"/>
     </dependencies>
   </metadata>
   <files>
