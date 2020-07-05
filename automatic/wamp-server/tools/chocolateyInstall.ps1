@@ -6,7 +6,6 @@ $checksumType   = 'sha256'
 $checksum64type = 'sha256'
 $checksum32     = ''
 $checksum64     = ''
-$arch           = ''
 
 $silentArgs = ''
 $validExitCodes = @(0)
@@ -25,8 +24,10 @@ $packageArgs = @{
   checksum64Type= $checksum64type
 }
 
-if($arch) {
-  $arch ='64'
+if([System.Environment]::Is64BitOperatingSystem) {
+  $installahk   = "chocolateyInstall64.ahk"
+} else {
+  $installahk   = "chocolateyInstall.ahk"
 }
 
 $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
