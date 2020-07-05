@@ -18,7 +18,7 @@
     <tags>wamp-server apache php mysql dev web</tags>
 	<dependencies>
       <dependency id="vcredist2012" version="11.0.61031"/>
-      <dependency id="autohotkey.portable" version="2.0"/>
+      <dependency id="autohotkey.portable" version="2.0-a112"/>
     </dependencies>
   </metadata>
   <files>
