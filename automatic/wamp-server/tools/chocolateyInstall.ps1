@@ -31,16 +31,16 @@ if([System.Environment]::Is64BitOperatingSystem) {
 }
 
 $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$ahkFile = Join-Path $scriptPath "chocolateyInstall$($arch).ahk"
+$ahkFile = Join-Path $scriptPath $installahk
 $ahkExe = 'AutoHotKey'
-$ahkRun = "$Env:Temp\chocolateyInstall.ahk"
+$ahkRun = "$Env:Temp\$(Get-Random).ahk"
 Copy-Item $ahkFile "$ahkRun" -Force
 Start-Process $ahkExe $ahkRun
 
 $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkFile = Join-Path $scriptPath "chocolateyLang.ahk"
 $ahkExe = 'AutoHotKey'
-$ahkRun = "$Env:Temp\chocolateyLang.ahk"
+$ahkRun = "$Env:Temp\$(Get-Random).ahk"
 Copy-Item $ahkFile "$ahkRun" -Force
 Start-Process $ahkExe $ahkRun
 
