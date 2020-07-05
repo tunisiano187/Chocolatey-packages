@@ -24,10 +24,10 @@ $packageArgs = @{
   checksum64Type= $checksum64type
 }
 
-if([System.Environment]::Is64BitOperatingSystem) {
-  $installahk   = "chocolateyInstall64.ahk"
+if(Get-ProcessorBits -compare 64) {
+  $installahk   = 'chocolateyInstall64.ahk'
 } else {
-  $installahk   = "chocolateyInstall.ahk"
+  $installahk   = 'chocolateyInstall.ahk'
 }
 
 $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
