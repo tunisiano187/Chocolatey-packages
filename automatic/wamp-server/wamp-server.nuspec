@@ -2,23 +2,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>wamp-server</id>
-    <version>2.400</version>
+    <version>3.2.0</version>
     <title>Wamp Server</title>
     <authors>Romain Bourdon</authors>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/wamp-server</packageSourceUrl>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/wamp.png</iconUrl>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>http://www.wampserver.com/en/</projectUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>https://www.wampserver.com/en/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WampServer is a Windows web development environment. It allows you to create web applications with Apache2, PHP and a MySQL database. Alongside, PhpMyAdmin allows you to manage easily your databases.</description>
+    <description><![CDATA[WampServer is a Windows web development environment. It allows you to create web applications 
+with Apache2, PHP and a MySQL database. Alongside, PhpMyAdmin allows you to manage easily 
+your databases.
+]]></description>
     <summary>a Windows web development environment.</summary>
     <releaseNotes />
     <copyright />
     <tags>wamp-server apache php mysql dev web</tags>
 	<dependencies>
-      <dependency id="vcredist2012" version="11.0.61031"/>
-      <dependency id="autohotkey.portable" version="1.1.32.00"/>
+      <dependency id="vcredist2012" version="11.0.61031" />
+      <dependency id="autohotkey.portable" version="1.1.32.00" />
     </dependencies>
   </metadata>
   <files>
