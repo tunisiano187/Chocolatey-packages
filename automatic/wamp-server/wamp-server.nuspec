@@ -16,7 +16,6 @@ with Apache2, PHP and a MySQL database. Alongside, PhpMyAdmin allows you to mana
 your databases.
 ]]></description>
     <summary>a Windows web development environment.</summary>
-    <releaseNotes />
     <copyright />
     <tags>wamp-server apache php mysql dev web</tags>
 	  <releaseNotes>#### Package
