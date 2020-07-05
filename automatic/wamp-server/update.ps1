@@ -16,10 +16,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = "$($releases)$((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'exe'}).href)[0])"
+    try {$url32 = "$($releases)$((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'exe'}).href)[0])"}
+    catch {
+        Write-Error "Line url32 problem"
+    }
 	$url64 = $url32.replace('x86','x64')
 
-	$version = $url32.split('/').split('_')[-2].replace('wampserver','')
+    try{$version = $url32.split('/').split('_')[-2].replace('wampserver','')}
+    catch { Write-Error "version error"}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
