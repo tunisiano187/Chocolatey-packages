@@ -19,7 +19,10 @@ your databases.
     <releaseNotes />
     <copyright />
     <tags>wamp-server apache php mysql dev web</tags>
-	  <dependencies>
+	  <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
+    <dependencies>
       <dependency id="vcredist2012" version="11.0.61031" />
       <dependency id="autohotkey.portable" version="1.1.32.00" />
     </dependencies>
