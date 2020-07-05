@@ -24,7 +24,7 @@ $packageArgs = @{
   checksum64Type= $checksum64type
 }
 
-if(Get-ProcessorBits -compare 64) {
+if([System.Environment]::Is64BitOperatingSystem]) {
   $installahk   = 'chocolateyInstall64.ahk'
 } else {
   $installahk   = 'chocolateyInstall.ahk'
