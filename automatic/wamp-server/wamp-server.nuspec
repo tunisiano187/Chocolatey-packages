@@ -6,8 +6,8 @@
     <title>Wamp Server</title>
     <authors>Romain Bourdon</authors>
     <owners>tunisiano</owners>
-	<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/wamp-server</packageSourceUrl>
-	<iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/wamp.png</iconUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/wamp-server</packageSourceUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/wamp.png</iconUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://www.wampserver.com/en/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
