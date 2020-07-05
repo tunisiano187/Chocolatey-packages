@@ -37,7 +37,7 @@ This program does not slow your computer down and only uses unused computer powe
     <language>en-us</language>
     <tags>distributed-computing protein-folding biology science</tags>
     <dependencies>
-      <dependency id="autohotkey.portable" />
+      <dependency id="autohotkey.portable" version="2.0"/>
     </dependencies>
   </metadata>
   <files>
