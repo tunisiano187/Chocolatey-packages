@@ -1,9 +1,9 @@
 ﻿$packageName = $env:ChocolateyPackageName
-$url = 'https://downloads.getmonero.org/cli/monero-win-x86-v0.16.0.0.zip'
-$checksum = 'b1fc293dd9c12f90c7c343777298e86a22f25788561629b92ec0b23eb6cfb42c'
+$url = 'https://downloads.getmonero.org/cli/monero-win-x86-v0.16.0.1.zip'
+$checksum = 'e944d15b98fcf01e54badb9e2d22bae4cd8a28eda72c3504a8156ee30aac6b0f'
 $checksumType = 'sha256'
-$url64 = 'https://downloads.getmonero.org/cli/monero-win-x64-v0.16.0.0.zip'
-$checksum64 = 'f2750efb65b70ae9cad64d977cb0bfbe4dc6d014fe0b7fd565002282d67d469d'
+$url64 = 'https://downloads.getmonero.org/cli/monero-win-x64-v0.16.0.1.zip'
+$checksum64 = '851b57ec0783d191f0942232e431aedfbc2071125b1bd26af9356c7b357ab431'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 

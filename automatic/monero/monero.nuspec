@@ -3,7 +3,7 @@
   <metadata>
     <id>monero</id>
     <title>Monero Wallet</title>
-    <version>0.16.0.0</version>
+    <version>0.16.0.1</version>
     <authors>Monero Project</authors>
     <owners>tunisiano</owners>
     <summary>Monero: the secure, private, untraceable cryptocurrency</summary>
@@ -22,11 +22,11 @@ Main Monero features that were inherited from CryptoNote are Ring Signatures and
 * [Services](http://monero.org/services/)
 * [Developer blog](https://getmonero.org/blog/)
     </description>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/monero</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/monero</packageSourceUrl>
     <projectUrl>http://getmonero.org/</projectUrl>
     <projectSourceUrl>https://github.com/monero-project/bitmonero</projectSourceUrl>
     <bugTrackerUrl>https://github.com/monero-project/bitmonero/issues</bugTrackerUrl>
-    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/monero.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@55af253cdb1806c5d30bac63c5ede46e0fca00d0/icons/monero.png</iconUrl>
     <tags>xmr p2p anonymity cryptonote cryptonight cpu-mining</tags>
     <copyright>Monero Project</copyright>
     <licenseUrl>https://github.com/monero-project/bitmonero#license</licenseUrl>
