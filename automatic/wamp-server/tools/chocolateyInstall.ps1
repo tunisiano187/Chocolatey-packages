@@ -34,14 +34,25 @@ $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkFile = Join-Path $scriptPath $installahk
 $ahkExe = 'AutoHotKey'
 $ahkRun = "$Env:Temp\$(Get-Random).ahk"
+if(!(Test-Path $ahkFile)) {
+  Write-Error "ahkFile not Found"
+}
 Copy-Item $ahkFile "$ahkRun" -Force
+if(!(Test-Path $ahkRun)) {
+  Write-Error "ahkCopiedFile not Found"
+}
 Start-Process $ahkExe $ahkRun
 
-$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$ahkFile = Join-Path $scriptPath "chocolateyLang.ahk"
+$ahkLang = Join-Path $scriptPath "chocolateyLang.ahk"
 $ahkExe = 'AutoHotKey'
-$ahkRun = "$Env:Temp\$(Get-Random).ahk"
-Copy-Item $ahkFile "$ahkRun" -Force
-Start-Process $ahkExe $ahkRun
+$ahkLangRun = "$Env:Temp\$(Get-Random).ahk"
+if(!(Test-Path $ahkLangFile)) {
+  Write-Error "ahkLangFile not Found"
+}
+Copy-Item $ahkLang "$ahkLangRun" -Force
+if(!(Test-Path $ahkLangRun)) {
+  Write-Error "ahkLangRun not Found"
+}
+Start-Process $ahkExe $ahkLangRun
 
 Install-ChocolateyPackage @packageArgs
