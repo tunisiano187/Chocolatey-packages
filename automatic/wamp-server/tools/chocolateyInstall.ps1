@@ -1,27 +1,26 @@
-﻿$packageName = $env:ChocolateyPackageName
-$installerType  = 'EXE'
-$url32          = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x86.exe'
-$url64          = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x64.exe'
-$checksumType   = 'sha256'
-$checksum64type = 'sha256'
-$checksum32     = ''
-$checksum64     = ''
-
-$silentArgs = ''
-$validExitCodes = @(0)
+﻿$packageName      = $env:ChocolateyPackageName
+$installerType    = 'EXE'
+$url32            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x86.exe'
+$url64            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x64.exe'
+$checksum32Type   = 'sha256'
+$checksum64type   = 'sha256'
+$checksum32       = ''
+$checksum64       = ''
+$silentArgs       = ''
+$validExitCodes   = @(0)
 
 $packageArgs = @{
-  packageName   = $packageName
-  fileType      = $installerType
-  url           = $url32
-  url64			    = $url64
-  silentArgs    = $silentArgs
-  validExitCodes= $validExitCodes
-  softwareName  = 'wamp-server*'
-  checksum      = $checksum32
-  checksum64    = $checksum64
-  checksumType  = $checksumtype
-  checksum64Type= $checksum64type
+  packageName     = $packageName
+  fileType        = $installerType
+  url             = $url32
+  url64			      = $url64
+  silentArgs      = $silentArgs
+  validExitCodes  = $validExitCodes
+  softwareName    = 'wamp-server*'
+  checksum        = $checksum32
+  checksum64      = $checksum64
+  checksumType    = $checksum32type
+  checksum64Type  = $checksum64type
 }
 
 if([System.Environment]::Is64BitOperatingSystem) {

@@ -9,7 +9,7 @@ function global:au_SearchReplace {
             "(^[$]url32\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
             "(^[$]checksum32\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
             "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-            "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+            "(^[$]checksum32Type\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
 			"(^[$]checksum64type\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
         }
      }
