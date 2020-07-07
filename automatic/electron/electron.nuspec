@@ -3,11 +3,12 @@
   <metadata>
     <id>electron</id>
     <title>Electron</title>
-    <version>8.3.4</version>
+    <version>9.1.0</version>
     <authors>GitHub Inc</authors>
     <owners>tunisiano</owners>
     <summary>Build cross platform desktop apps with web technologies</summary>
-    <description><![CDATA[Electron, formerly _Atom Shell_, framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS. It is based on [io.js](https://chocolatey.org/packages/io.js) and [Chromium](https://chocolatey.org/packages/chromium) and is used in the [Atom editor](https://chocolatey.org/packages/atom).
+    <description><![CDATA[
+Electron, formerly _Atom Shell_, framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS. It is based on [io.js](https://chocolatey.org/packages/io.js) and [Chromium](https://chocolatey.org/packages/chromium) and is used in the [Atom editor](https://chocolatey.org/packages/atom).
 
 With Electron, creating a desktop application for your company or idea is easy. Initially developed for GitHub's Atom editor, Electron has since been used to create applications by companies like Microsoft, Facebook, Slack, and Docker.
 
@@ -15,16 +16,16 @@ With Electron, creating a desktop application for your company or idea is easy. 
 * [Quick start](https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md)
 
 #### Community
-* [Forum](http://discuss.atom.io/category/electron)
+* [Forum](https://discuss.atom.io/c/electron)
 * [IRC](http://webchat.freenode.net/?nick=username..%26channels=%23atom-shell%26prompt=1)
 * [Twitter](https://twitter.com/electronjs)
 ]]></description>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/electron/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/electron</packageSourceUrl>
     <projectUrl>http://electron.atom.io/</projectUrl>
     <projectSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/electron</projectSourceUrl>
     <bugTrackerUrl>https://github.com/atom/electron/issues</bugTrackerUrl>
     <docsUrl>http://electron.atom.io/docs/</docsUrl>
-    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/electron.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7506c56eb4e327a92d51d0b608dc4af2364f7e61/icons/electron.png</iconUrl>
     <tags>atom web development builder</tags>
     <copyright>GitHub Inc</copyright>
     <licenseUrl>https://github.com/atom/electron/blob/master/LICENSE</licenseUrl>
