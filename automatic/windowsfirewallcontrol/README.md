@@ -1,3 +1,4 @@
+[![](https://img.shields.io/chocolatey/v/wfc?color=green&label=wfc)](https://chocolatey.org/packages/wfc) [![](https://img.shields.io/chocolatey/dt/wfc)](https://chocolatey.org/packages/wfc)
 
 ## Windows Firewall Control - Managing Windows Firewall is now easier than ever
 Program Overview

@@ -20,6 +20,7 @@ function global:au_GetLatest {
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 
 	$Latest = @{ URL32 = $url32; Version = $version }
+
     return $Latest
 }
 
