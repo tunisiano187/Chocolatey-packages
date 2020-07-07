@@ -13,12 +13,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	#$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$url32="https://www.binisoft.org/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href)"
 
-	#$re  = "setup.exe"
-	#$url32 = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
-
-    $url32 = "https://www.binisoft.org/download/wfc6setup.exe"
     $File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "wfcsetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
