@@ -1,6 +1,6 @@
 # Automatic-Updating
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Automatic updating of chocolatey packages
@@ -40,6 +40,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/RedBaron2"><img src="https://avatars1.githubusercontent.com/u/1191271?v=4" width="100px;" alt=""/><br /><sub><b>RB</b></sub></a><br /><a href="https://github.com/tunisiano187/Chocolatey-packages/issues?q=author%3ARedBaron2" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://www.bowlman.org"><img src="https://avatars2.githubusercontent.com/u/6095739?v=4" width="100px;" alt=""/><br /><sub><b>Tunisiano18</b></sub></a><br /><a href="https://github.com/tunisiano187/Chocolatey-packages/commits?author=tunisiano187" title="Code">💻</a></td>
   </tr>
 </table>
 
