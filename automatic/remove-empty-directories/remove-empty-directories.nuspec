@@ -23,7 +23,7 @@ Allows white and black listing of directories by using filter lists
 Can detect directories with empty files as empty
 Portable (runs from USB drive)
 ]]></description>
-    <summary>Remove empty folder</summary>
+    <summary>Remove empty directories</summary>
     <releaseNotes>
 #### Program
 * [Changelog](https://github.com/hxseven/Remove-Empty-Directories/commit/master)
