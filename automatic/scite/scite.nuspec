@@ -3,7 +3,7 @@
   <metadata>
     <id>scite</id>
     <title>SciTE</title>
-    <version>4.3.2</version>
+    <version>4.3.3</version>
     <authors>Neil Hodgson</authors>
     <owners>tunisiano</owners>
     <summary>Lightweight, fast text editor using SCIntilla library</summary>
@@ -14,13 +14,13 @@ Lightweight and built for speed, it is designed mainly for source editing, and p
 
 Other text editors based on [SCIntilla](https://chocolatey.org/packages?q=tag:SCIntilla) are [Geany](https://chocolatey.org/packages/geany) (cross-platform), [Notepad++](https://chocolatey.org/packages/notepadplusplus) (Windows), and [Notepad2](https://chocolatey.org/packages/notepad2) (Windows).
     </description>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/scite</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scite</packageSourceUrl>
     <projectUrl>http://www.scintilla.org/SciTEDownload.html</projectUrl>
     <projectSourceUrl>https://sourceforge.net/p/scintilla/code</projectSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/scintilla/_list/tickets</bugTrackerUrl>
     <docsUrl>http://www.scintilla.org/SciTEDoc.html</docsUrl>
     <mailingListUrl>http://groups.google.com/group/scite-interest</mailingListUrl>
-    <iconUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/raw/master/icons/scite.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53a069fca4226175a4b2f6d0aa29a6ec98f9f193/icons/scite.png</iconUrl>
     <tags>text editor scintilla admin</tags>
     <copyright>© 1998 Neil Hodgson</copyright>
     <licenseUrl>http://www.scintilla.org/License.txt</licenseUrl>
