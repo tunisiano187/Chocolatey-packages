@@ -39,7 +39,7 @@ Mode is always recommended.
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@25a56cf43c322e4f95083c17b9ebd92c510f83ff/icons/ddu.png</iconUrl>
     <tags>driver uninstaller nvidia ati</tags>
     <copyright>© Ghislain Harvey</copyright>
-    <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
+    <licenseUrl>https://www.wagnardsoft.com/display-driver-uninstaller-ddu</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <mailingListUrl>https://www.wagnardsoft.com/forums/viewforum.php?f=5</mailingListUrl>
     <releaseNotes>
