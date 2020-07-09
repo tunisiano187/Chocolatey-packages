@@ -4,7 +4,6 @@ $checksumType   = 'sha256'
 $referer        = 'https://www.wagnardsoft.com/forums/viewtopic.php?f=5&t=3183'
 
 $packageArgs		        = @{
-	UnzipLocation	          = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 	packageName		          = $env:ChocolateyPackageName
 	url				          = $url
 	checksum		          = $checksum
