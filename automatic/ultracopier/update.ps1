@@ -19,7 +19,8 @@ function global:au_GetLatest {
 	$re  = "ultracopier-windows-x86"
 	$url = $download_page.links | Where-Object href -match $re | Select-Object -First 2 -expand href
 
-	$version = $url[0] -split '-' | Select-Object -Last 1 -Skip 1
+	$version = Get-Version $url[0]
+	#$version = $url[0] -split '-' | Select-Object -Last 1 -Skip 1
 	$url32 = $url[0]
     $url64 = $url[1]
 
