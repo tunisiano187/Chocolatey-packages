@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.10.01
+// @version         2020.07.10.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,7 +18,7 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020062001
+// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071001
 // @downloadURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @updateURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @supportURL      https://github.com/tunisiano187/WME-send-to-slack/issues
@@ -91,7 +91,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.26.02': 'Solve issue #14, Open requests were sent with L1 and L2 accepted',
     '2020.06.28.01': 'Solve issue #11, GForm did not receive the level of the editor',
     '2020.06.29.01': 'Moving the repository for Github bot help',
-    '2020.07.10.01': 'Adding Autralia'
+    '2020.07.10.01': 'Adding Autralia',
+    '2020.07.10.02': 'Forcing Australia'
 };
 
 // Handle script errors and send them to GForm
