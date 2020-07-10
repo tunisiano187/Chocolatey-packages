@@ -3,7 +3,7 @@
   <metadata>
     <id>snes9x</id>
     <title>Snes9x</title>
-    <version>1.59</version>
+    <version>1.60-win32-x64zip</version>
     <authors>Snes9x Team</authors>
     <owners>tunisiano</owners>
     <summary>SNES emulator widely ported to many systems</summary>
