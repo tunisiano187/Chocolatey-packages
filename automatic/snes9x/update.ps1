@@ -17,8 +17,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'snes9x-'} | Where-Object {$_ -match 'win32'} | Where-Object {$_ -match '.zip'} | Select-Object -First 2 | Sort-Object ).href)
-	$version = Get-Version $installer[0]
-	#$version=$installer[0].split('-')[1]
+	$version=$installer[0].split('-')[1]
 	Write-Output "Version : $version"
 	$url32 = "$("http://www.s9x-w32.de/dl/")$($installer[0])"
 	$url64 = "$("http://www.s9x-w32.de/dl/")$($installer[1])"
