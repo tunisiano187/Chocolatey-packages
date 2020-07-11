@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$file = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href
+	$file = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href | Where-Object {$_ -match '.zip'})[0]
 	$url32 = "https://github.com$($file)";
 	$version = $file.split('/')[-1].replace('.zip','')
 
