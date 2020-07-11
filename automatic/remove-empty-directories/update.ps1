@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$file = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup.exe'}).href
+	$file = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-portable.zip'}).href
 	$url32 = "$($releases)$($file)"
 	$version = Get-Version $file
 	#$version = $file.split('-')[1].replace('v','')
@@ -22,4 +22,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 32 -NoCheckChocoVersion
