@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://vorboss.dl.sourceforge.net/project/rem-empty-dir/'
+$releases = 'https://github.com/hxseven/Remove-Empty-Directories/releases'
 
 function global:au_SearchReplace {
 	@{
@@ -13,8 +13,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$file = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-portable.zip'}).href
-	$url32 = "$($releases)$($file)"
+	$file = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href
+	$url32 = "https://github.com$($file)";
 	$version = Get-Version $file
 	#$version = $file.split('-')[1].replace('v','')
 

@@ -34,9 +34,6 @@ Portable (runs from USB drive)
     <copyright>© JonasJohn</copyright>
     <language>en-us</language>
     <tags>remove empty directories directory folder</tags>
-    <dependencies>
-      <dependency id="dotnetfx" version="3.5" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
