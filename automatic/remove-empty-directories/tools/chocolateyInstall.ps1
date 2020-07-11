@@ -1,6 +1,6 @@
 ﻿$packageName = $env:ChocolateyPackageName
-$url = 'https://vorboss.dl.sourceforge.net/project/rem-empty-dir/red-v2.2-setup.exe'
-$checksum = '8f163a667304e6d86c306cab637b6f344afdb166fb4ed66190cf10fcbb1b91d3'
+$url = 'https://github.com/hxseven/Remove-Empty-Directories/archive/2.2.zip'
+$checksum = 'e95969290d7987a469c93c07e4b01712909d4d859174b36365265b26a89a404e'
 $checksumType = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `
