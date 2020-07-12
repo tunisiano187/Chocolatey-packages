@@ -15,9 +15,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32="https://www.binisoft.org/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href)"
 
-    $File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "wfcsetup.exe"
+    $File = Join-Path($(Split-Path $env:TEMP)) "wfcsetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version = Get-Version [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 
