@@ -21,7 +21,7 @@
 // @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071001
 // @downloadURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @updateURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
-// @supportURL      https://github.com/tunisiano187/WME-send-to-slack/issues
+// @supportURL      mailto:wmests@fire.fundersclub.com
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
 // ==/UserScript==
