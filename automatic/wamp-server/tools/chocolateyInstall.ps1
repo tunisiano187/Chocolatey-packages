@@ -6,7 +6,7 @@ $checksum32Type   = 'sha256'
 $checksum64Type   = 'sha256'
 $checksum32       = ''
 $checksum64       = ''
-$silentArgs       = ''
+$silentArgs       = '/DIR="C:\wamp" /VERYSILENT /SUPPRESSMSGBOXES'
 $validExitCodes   = @(0)
 
 $packageArgs = @{
@@ -23,24 +23,24 @@ $packageArgs = @{
   checksum64Type  = $checksum64type
 }
 
-if([System.Environment]::Is64BitOperatingSystem) {
-  $installahk   = 'chocolateyInstall64.ahk'
-} else {
-  $installahk   = 'chocolateyInstall.ahk'
-}
+#if([System.Environment]::Is64BitOperatingSystem) {
+#  $installahk   = 'chocolateyInstall64.ahk'
+#} else {
+#  $installahk   = 'chocolateyInstall.ahk'
+#}
 
-$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$ahkFile = Join-Path $scriptPath $installahk
-$ahkExe = 'AutoHotKey'
-$ahkRun = "$Env:Temp\$(Get-Random).ahk"
-Copy-Item $ahkFile "$ahkRun" -Force
-Start-Process $ahkExe $ahkRun
+#$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+#$ahkFile = Join-Path $scriptPath $installahk
+#$ahkExe = 'AutoHotKey'
+#$ahkRun = "$Env:Temp\$(Get-Random).ahk"
+#Copy-Item $ahkFile "$ahkRun" -Force
+#Start-Process $ahkExe $ahkRun
 
-$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$ahkFile = Join-Path $scriptPath "chocolateyLang.ahk"
-$ahkExe = 'AutoHotKey'
-$ahkRun = "$Env:Temp\$(Get-Random).ahk"
-Copy-Item $ahkFile "$ahkRun" -Force
-Start-Process $ahkExe $ahkRun
+#$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+#$ahkFile = Join-Path $scriptPath "chocolateyLang.ahk"
+#$ahkExe = 'AutoHotKey'
+#$ahkRun = "$Env:Temp\$(Get-Random).ahk"
+#Copy-Item $ahkFile "$ahkRun" -Force
+#Start-Process $ahkExe $ahkRun
 
 Install-ChocolateyPackage @packageArgs
