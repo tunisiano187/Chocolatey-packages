@@ -5,7 +5,7 @@ $release = 'https://www.autodesk.com/eagle-download-win'
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
         }
