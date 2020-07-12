@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <version>{{PackageVersion}}</version>
+    <id>transmission</id>
+    <version>3.00</version>
     <title>Transmission</title>
     <authors>Transmission Project</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/transmission/transmission/blob/master/COPYING</licenseUrl>
     <projectUrl>https://transmissionbt.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/da0540782070a0603a6f86cbdf6b183662d8a49a/icons/{{PackageName}}.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@58a6d860646264781f989d7ec9cda64c6fff0572/icons/transmission.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
+    <description><![CDATA[## Transmission Torrent Client
 Transmission is a cross-platform BitTorrent client that is open source, easy, powerful, and lean.
 
 * Uses fewer resources than other clients
@@ -18,7 +18,8 @@ Transmission is a cross-platform BitTorrent client that is open source, easy, po
 * Daemon ideal for servers, embedded systems, and headless use
 * All these can be remote controlled by Web and Terminal clients
 * Local Peer Discovery
-* Full encryption, DHT, µTP, PEX and Magnet Link support</description>
+* Full encryption, DHT, µTP, PEX and Magnet Link support
+]]></description>
     <summary>Fast, easy, and free BitTorrent client</summary>
     <releaseNotes>
 #### Program
@@ -30,7 +31,7 @@ Transmission is a cross-platform BitTorrent client that is open source, easy, po
     <copyright>© 2005 Transmission Project</copyright>
     <tags>transmission qt torrent magnet p2p admin</tags>
     <projectSourceUrl>https://github.com/transmission/transmission</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/transmission/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/transmission</packageSourceUrl>
     <docsUrl>https://github.com/transmission/transmission/wiki</docsUrl>
     <mailingListUrl>https://forum.transmissionbt.com/</mailingListUrl>
     <bugTrackerUrl>https://github.com/transmission/transmission/issues/</bugTrackerUrl>
