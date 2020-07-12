@@ -8,7 +8,7 @@
     - Write-Host "Setup AU module"
     - ./setup/au_setup.ps1
     - Write-Host "Start updating packages"
-    - . scipts/Get-RedirectedUrl.ps1
+    - install-module Wormies-AU-Helpers
     - cd au
     - ./invoke-setup.ps1
     - ../scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch

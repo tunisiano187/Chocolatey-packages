@@ -13,6 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    import-module Wormies-AU-Helpers
 	$url64 = Get-RedirectedUrl $release
 	$version = $url64.split("_")[2]
 

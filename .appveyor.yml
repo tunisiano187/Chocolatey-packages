@@ -83,7 +83,7 @@ install:
 - choco --version
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-    . scipts/Get-RedirectedUrl.ps1
+    install-module Wormies-AU-Helpers
     Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force
     Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
