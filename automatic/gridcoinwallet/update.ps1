@@ -30,9 +30,6 @@ function global:au_GetLatest {
 	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'gridcoin-'} | Where-Object {$_ -match "-setup.exe"} | Where-Object {$_ -notmatch 'hotfix'} | Where-Object {$_ -notmatch 'sha256'}).href | Select-Object -First 2 | Sort-Object )
 	Write-Output 'Checking version'
 	$version=$installer[0].split('/')[-1].split('-')[1]
-	if($version -eq "4.0.6") {
-		$version = "4.0.6.2020071301"
-	}
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($installer[0])";
 	$url64 = "https://github.com$($installer[1])";
@@ -41,4 +38,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update
