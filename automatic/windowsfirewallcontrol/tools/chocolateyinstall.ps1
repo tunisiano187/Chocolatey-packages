@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url            = ''
-$checksum       = ''
+$url            = 'https://www.binisoft.org/download/wfc6setup.exe'
+$checksum       = '2f8da7b55fb65c308b7c7773b21cdb8422cc5215692078720f2d265a1e7b19d8'
 $checksumType   = ''
 
 $packageArgs = @{
