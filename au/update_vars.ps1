@@ -33,5 +33,5 @@ if(!(Test-Path Env:gitlab_push_url)) {
     $Env:gitlab_push_url        = $Gitlab_PushURL   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://git.example.org/jekotia/au.git
 }
 if(!(Test-Path Env:gitlab_commit_strategy)) {
-    $Env:gitlab_commit_strategy = 'atomic'   # Same values as the Git plugin; single, atomic, or atomictag
+    $Env:gitlab_commit_strategy = 'atomictag'   # Same values as the Git plugin; single, atomic, or atomictag
 }

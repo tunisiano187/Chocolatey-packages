@@ -36,7 +36,7 @@ $Options = [ordered]@{
         API_Key			= $Gitlab_api_key					#Password if username is not empty, otherwise api key
 		PushURL			= $Gitlab_PushURL
 		Force			= $True
-		commitStrategy	= 'atomic'
+		commitStrategy	= 'atomictag'
     }
 
     RunInfo = @{
