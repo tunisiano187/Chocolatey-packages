@@ -131,8 +131,14 @@ build_script:
         }
     }
 
+    Write-Host "updating packageSourceUrl"
     scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
+    Write-Host "updating IconUrl"
     scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch -Optimize
+    Write-Host "updating owners"
+    import-module Wormies-AU-Helpers
+    Get-ChildItem ./*.nuspec -Recurse | Update-Metadata -key owners -value "tunisiano"
+    Write-Host "updating packages"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:

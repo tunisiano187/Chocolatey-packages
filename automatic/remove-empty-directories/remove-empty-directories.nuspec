@@ -7,7 +7,7 @@
     <authors>Jonas John</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.jonasjohn.de/red.htm</projectUrl>
-	  <projectSourceUrl>https://github.com/hxseven/Remove-Empty-Directories</projectSourceUrl>
+	<projectSourceUrl>https://github.com/hxseven/Remove-Empty-Directories</projectSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@971fbf4e23f6e4b93dfd60b831485eb49d0af918/icons/removeemptydirectories.png</iconUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/remove-empty-directories</packageSourceUrl>
 	  <requireLicenseAcceptance>false</requireLicenseAcceptance>
