@@ -1,6 +1,6 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $url = 'https://download.sysinternals.com/files/Sysmon.zip'
-$checksum = '78e640d1c0002a97e9d2d9ab528d7bba3a350e978d7f619f78859c3d68a85f25'
+$checksum = '8d78706b5ed7b7ec2c80bb388e3d361ba2d4b0461cbbd0c787cf523d4cfbfd81'
 $checksumType = 'sha256'
 $url64 = "$url"
 $checksum64 = "$checksum"
