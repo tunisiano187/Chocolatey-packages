@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windowsfirewallcontrol</id>
-    <version>6.2.0.0</version>
+    <version>6.1.0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windowsfirewallcontrol</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>windowsfirewallcontrol (Install)</title>
@@ -87,7 +87,6 @@ Firewall Control. Thank you for your support!
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1" />
       <dependency id="chocolatey-core.extension" version="1.1.0" />
-      <dependency id="dotnetfx" version="4.5" />
     </dependencies>
   </metadata>
   <files>
