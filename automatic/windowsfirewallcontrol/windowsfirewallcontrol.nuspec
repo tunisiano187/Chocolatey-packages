@@ -87,6 +87,7 @@ Firewall Control. Thank you for your support!
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1" />
       <dependency id="chocolatey-core.extension" version="1.1.0" />
+      <dependency id="dotnetfx" version="4.5" />
     </dependencies>
   </metadata>
   <files>
