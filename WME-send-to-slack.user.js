@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.17.04
+// @version         2020.07.17.05
 // @include 	      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -73,12 +73,12 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.31.01': 'Poland added and update server changed',
     '2020.05.31.02': 'Changed to Poland Production server',
     '2020.06.02.01': 'Changing sources locations',
-  	'2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
-  	'2020.06.13.01': '1.) Alert the editor while sending the request if he can edit himself.<br />2.)Fixed some bugs.<br />3.) Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>',
-  	'2020.06.13.02': 'Force Datas update',
-  	'2020.06.13.03': 'Correction of DB link, sorry for the mistakes',
-  	'2020.06.14.01': 'Telegram DB enhacements',
-  	'2020.06.14.02': 'Telegram support for Indonesia added',
+    '2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
+    '2020.06.13.01': '1.) Alert the editor while sending the request if he can edit himself.<br />2.)Fixed some bugs.<br />3.) Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>',
+    '2020.06.13.02': 'Force Datas update',
+    '2020.06.13.03': 'Correction of DB link, sorry for the mistakes',
+    '2020.06.14.01': 'Telegram DB enhacements',
+    '2020.06.14.02': 'Telegram support for Indonesia added',
     '2020.06.14.03': 'Solve reason trouble',
     '2020.06.16.02': 'Solve bug',
     '2020.06.19.01': 'Reason is now mandatory',
@@ -95,7 +95,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.10.02': 'Forcing Australia',
     '2020.07.17.02': 'Translations through Google spreadsheets added. Special thanks to @santyg2001 in this update.',
     '2020.07.17.03': 'Solve Issue #23, City appears twice on Junction boxes',
-    '2020.07.17.04': 'Typos'
+    '2020.07.17.04': 'Typos',
+    '2020.07.17.05': 'Language alert moved to the console'
 };
 
 // Handle script errors and send them to GForm
@@ -256,9 +257,7 @@ async function localization () {
 				console.log("Error while calling 'requestTranslations' function");
 			}
 		}else if (!(suppLngs.includes(I18n.locale))) {
-			alert('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator')
-			alert('Missing locale is:' + I18n.locale)
-			log("Missing locale is:" + I18n.locale)
+			log('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
 			log("Loading default locale")
 			try {
 				const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
