@@ -18,7 +18,7 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071704
+// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071705
 // @downloadURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @updateURL	      http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
