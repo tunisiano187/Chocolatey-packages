@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.17.02
+// @version         2020.07.17.03
 // @include 	      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -93,7 +93,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.29.01': 'Moving the repository for Github bot help',
     '2020.07.10.01': 'Adding Autralia',
     '2020.07.10.02': 'Forcing Australia',
-    '2020.07.17.02': 'Translations through Google spreadsheets added. Special thanks to @santyg2001 in this update.'
+    '2020.07.17.02': 'Translations through Google spreadsheets added. Special thanks to @santyg2001 in this update.',
+    '2020.07.17.03': 'Solve Issue #23, City appears twice on Junction boxes'
 };
 
 // Handle script errors and send them to GForm
@@ -298,7 +299,7 @@ function GetCity(CityId) {
        return W.model.cities.getObjectById(CityId).attributes.name;
     }
     else {
-        return $('span.full-address').text().split(",")[0];
+        return $('span.full-address').text().split(",")[$('span.full-address').text().split(",").length-1];
     }
 }
 
