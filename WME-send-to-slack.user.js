@@ -5,22 +5,22 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.10.02
-// @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
+// @version         2020.07.17.02
+// @include 	      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @author          Tunisiano18
 // @license         MIT/BSD/X11
-// @compatible chrome
-// @compatible firefox
-// @compatible opera
-// @compatible brave
+// @compatible      chrome
+// @compatible      firefox
+// @compatible      opera
+// @compatible      brave
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071001
+// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071704
 // @downloadURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
-// @updateURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
+// @updateURL	      http://wmests.bowlman.be/script/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
@@ -71,8 +71,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.05.25.02': 'OpenLayers var changed by Waze',
     '2020.05.30.01': 'Pakistan added',
     '2020.05.31.01': 'Poland added and update server changed',
-	'2020.05.31.02': 'Changed to Poland Production server',
-	'2020.06.02.01': 'Changing sources locations',
+    '2020.05.31.02': 'Changed to Poland Production server',
+    '2020.06.02.01': 'Changing sources locations',
   	'2020.06.11.01': 'Lock requests limited now from -1 to 6. Thanks to @santyg2001',
   	'2020.06.13.01': '1.) Alert the editor while sending the request if he can edit himself.<br />2.)Fixed some bugs.<br />3.) Support for Telegram Added!!! ;-).<br /><br />  <b>Special thanks to @santyg2001 in this update.</b>',
   	'2020.06.13.02': 'Force Datas update',
@@ -92,7 +92,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.06.28.01': 'Solve issue #11, GForm did not receive the level of the editor',
     '2020.06.29.01': 'Moving the repository for Github bot help',
     '2020.07.10.01': 'Adding Autralia',
-    '2020.07.10.02': 'Forcing Australia'
+    '2020.07.10.02': 'Forcing Australia',
+    '2020.07.17.02': 'Translations through Google spreadsheets added. Special thanks to @santyg2001 in this update.'
 };
 
 // Handle script errors and send them to GForm
@@ -137,6 +138,7 @@ var neededparams = {
     WMESTSState: "",
     WMESTSServer: "",
 };
+var translationsInfo = []
 //KILL SWITCH
 var abort = false;
 
@@ -163,7 +165,8 @@ function init(e) {
     }
     log('WME chargé');
 
-
+    //Loading translations
+    localization()
     // On change, check for changes in the edit-panel
     var WMESTSObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -210,6 +213,67 @@ function init(e) {
 }
 
 // Functions used by the Script
+
+// Get browser language and load translations
+async function localization () {
+	var sheetName = sheetsAPI.sheetName
+	async function requestTranslations (i18n) {
+		const cons_connect_one = sheetsAPI.link + sheetsAPI.sheet + "/values/"
+		const cons_connect_two = "!" + sheetsAPI.range + "?key=" + sheetsAPI.key
+		var statusSheetsCallback = false
+		await $.get(cons_connect_one + i18n + cons_connect_two)
+		  .then( function(data) {
+		    $.each( data.values, function( key, val ) {
+          if (!(Array.isArray(val) && val.length)) {
+            translationsInfo.push("Not Translated")
+          } else {
+            translationsInfo.push(val)
+          }
+		  	});
+				statusSheetsCallback = true;
+		    log("$.get succeeded");
+		  } )
+		  .catch( function() {
+		    log( "$.get failed!" );
+		  } );
+		if (statusSheetsCallback) {
+			log('Connected to Google Sheets API')
+		}else if (!statusSheetsCallback){
+			WazeWrap.Alerts.error(GM_info.script.name, 'Cannot connect to Google Sheets API')
+		}
+	//Closing async f(x)
+	}
+	//Checking if require translations
+	if (!(I18n.locale === I18n.defaultLocale)) {
+		//Checking if the language is available for display
+		if (suppLngs.includes(I18n.locale)) {
+			sheetName = I18n.locale
+			try {
+				const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
+			} catch (e) {
+				console.log("Error while calling 'requestTranslations' function");
+			}
+		}else if (!(suppLngs.includes(I18n.locale))) {
+			alert('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator')
+			alert('Missing locale is:' + I18n.locale)
+			log("Missing locale is:" + I18n.locale)
+			log("Loading default locale")
+			try {
+				const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
+			} catch (e) {
+				console.log("Error while calling 'requestTranslations' function");
+			}
+		}
+	}else{//Loads default language because no translation is required
+		log("Loading default locale")
+		try {
+			const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
+		} catch (e) {
+			console.log("Error while calling 'requestTranslations' function");
+		}
+	}
+	log("Localization function have loaded correctly")
+}
 
 // Get City ID from Segment/venue ID
 function GetCityID(selection, Type) {
@@ -270,9 +334,9 @@ function GetState(CityId) {
 function AskReason() {
     var x=0;
 	while(x<1) {
-		var Reason = prompt("Reason : ");
+		var Reason = prompt(translationsInfo[1] + " : ");//"Reason : "
 		if(Reason == "") {
-			alert('You need to complete the reason ');
+			alert(translationsInfo[2] + ' ');//"You need to complete the reason "
 			Reason=null;
 		} else {
 			x++;
@@ -300,12 +364,33 @@ function Construct(iconaction) {
     var telegramReason = "";
     var chanel = "";
     var closureTelegramDetails = ""; //Bug while sending to telegram creates a new line, so this will fill it.
+    var iconactionlocale = ""
     sent=0;
     abort=false;
+    switch (iconaction) {
+      case "Downlock":
+        iconactionlocale = translationsInfo[34]
+        break;
+      case "Lock":
+        iconactionlocale = translationsInfo[33]
+        break;
+      case "Validation":
+        iconactionlocale = translationsInfo[35]
+        break;
+      case "Closure":
+        iconactionlocale = translationsInfo[31]
+        break;
+      case "Open":
+        iconactionlocale = translationsInfo[32]
+        break;
+      default:
+        log("Not expected error while loading actionicon string")
+
+    }
     if(iconaction == "Downlock" || iconaction == "Lock" || iconaction == "Validation") {
         if(iconaction == "Lock") {
             if(ShouldbeLockedAt == -1) { ShouldbeLockedAt == 1 }
-            Details = prompt("To level : ", ShouldbeLockedAt);
+            Details = prompt(translationsInfo[3] + " : ", ShouldbeLockedAt);//"To level"
             telegramDetails = Details;
             if (Details < -1 || Details > 6) {
               log("Invalid Details, nothing sent. Kill Switch Activated.")
@@ -320,7 +405,7 @@ function Construct(iconaction) {
                     RequiredLevel = parseInt(Details);
                 }
                 permalink = permalink + "&wmeststo=" + Details;
-                Details = "To level " + Details;
+                Details = translationsInfo[3] + " " + Details;//"To level"
                 telegramDetails = Details;
             } else {
                 Details = 'Cancelled';
@@ -328,14 +413,14 @@ function Construct(iconaction) {
         }
         if(Details !== 'Cancelled')
         {
-            telegramDetails = "*Informations :* " + Details;
-            Details = "\r\nInformations : " + Details + "\r\n";
+            telegramDetails = "*" + translationsInfo[4] + " :* " + Details;//"Informations"
+            Details = "\r\n" + translationsInfo[4] + " : " + Details + "\r\n";//"Informations"
         }
         if(iconaction !== "Lock" || Details !== 'Cancelled') {
             //Alert the editor if he can edit himself
             var lvlEditor = WazeWrap.User.Rank();
             if (lvlEditor >= RequiredLevel && iconaction != 'Validation') {
-              if (confirm("You can perform this edit. Do you wish to continue?") === false) {
+              if (confirm(translationsInfo[5]) === false) {//"You can perform this edit. Do you wish to continue?"
                 log("User can edit, so no edit is sent.")
                 abort = true;
                 log("Kill Switch Activated")
@@ -352,13 +437,12 @@ function Construct(iconaction) {
                 if (Reason == undefined) {
                   Reason = '';
                 }
-                telegramReason = "*Reason :* " + Reason;
-                Reason = "\r\nReason : " + Reason;
+                telegramReason = "*" + translationsInfo[1] + " :* " + Reason;//"Reason"
+                Reason = "\r\n" + translationsInfo[1] + " : " + Reason;//"Reason"
             } else {
                 Reason = 'Cancelled'
             }
-            telegramDetails = `${telegramDetails}
-${telegramReason}`
+            telegramDetails = telegramDetails + "\n" + telegramReason
             Details = Details + Reason;
             chanel = "editing";
         } else {
@@ -369,18 +453,16 @@ ${telegramReason}`
         {
             var date = new Date();
             date.setDate(date.getDate() + 1);
-            var Reason = prompt("from date hh:mm to date hh:mm directions and a reason (ex: from now till 31/12 22:00 A<->B - roadworks)", "from #Now until " + date.toLocaleDateString("fr-FR") + " A<->B");
+            var Reason = prompt(translationsInfo[6], translationsInfo[36] + " " + date.toLocaleDateString("fr-FR") + " A<->B");//Check Drive sheet
             telegramReason = Reason;
             if(Reason == null) {
                 Reason = 'Cancelled'
             } else {
-                telegramReason = "*Details :* " + Reason
-                Reason = "\r\nDetails : " + Reason;
+                telegramReason = "*" + translationsInfo[7] + " :* " + Reason//"Details"
+                Reason = "\r\n" + translationsInfo[7] + " : " + Reason;//"Details"
                 Details = Details + Reason;
-                closureTelegramDetails = "*Closure Details*"
-                telegramDetails =
-`${telegramDetails}
-${telegramReason}`
+                closureTelegramDetails = "*" + translationsInfo[8] + "*"//"Closure Details"
+                telegramDetails = telegramDetails + "\n" + telegramReason
             }
         }
         chanel = "closures";
@@ -399,15 +481,15 @@ ${telegramReason}`
     log(Details);
     if(permalink.indexOf("-100") >= 0 ) {
         abort=true;
-        WazeWrap.Alerts.error(GM_info.script.name, "Some segments aren't saved, please save them and try again");
+        WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[9]);//"Some segments aren't saved, please save them and try again"
     }
     var profileurl="https://www.waze.com/user/editor/"
     var userRank = WazeWrap.User.Rank();
-    var TextToSend = ':L' + RequiredLevel + ": User : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*L" + userRank + "*)\r\nLink : <" + escape(permalink) + "|" + textSelection + ">\r\nRequest Type : " + iconaction + "\r\nLocation : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
-    var TexToSendTelegramMD = `L${RequiredLevel} *User:* [${W.loginManager.user.userName}](www.waze.com/user/editor/${W.loginManager.user.userName}) (*${userRank}*)
-*Link :* [${textSelection}](${permalink})
-*Request Type :* ${iconaction}
-*Location :* ${CityName}, ${StateName}, ${CountryName}
+    var TextToSend = ':' + translationsInfo[11] + RequiredLevel + ": " + translationsInfo[10] + " : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*" + translationsInfo[11] + userRank + "*)\r\n" + translationsInfo[12] + " : <" + escape(permalink) + "|" + textSelection + ">\r\n" + translationsInfo[13] + " : " + iconactionlocale + "\r\n" + translationsInfo[14] + " : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var TexToSendTelegramMD = `${translationsInfo[11]}${RequiredLevel} *${translationsInfo[10]}:* [${W.loginManager.user.userName}](www.waze.com/user/editor/${W.loginManager.user.userName}) (*${userRank}*)
+*${translationsInfo[12]} :* [${textSelection}](${permalink})
+*${translationsInfo[13]} :* ${iconactionlocale}
+*${translationsInfo[14]} :* ${CityName}, ${StateName}, ${CountryName}
 ${closureTelegramDetails}${telegramDetails}`;
     TextToSend = TextToSend.replace('\r\n\r\n','\r\n');
     // Get the webhooks
@@ -535,9 +617,9 @@ ${closureTelegramDetails}${telegramDetails}`;
         }
     }
     if(sent>0) {
-        WazeWrap.Alerts.success(GM_info.script.name, 'Request sent');
+        WazeWrap.Alerts.success(GM_info.script.name, translationsInfo[15]);//"Rquest Sent"
     } else {
-        WazeWrap.Alerts.error(GM_info.script.name, 'Nothing sent');
+        WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[16]);//'Nothing sent'
     }
 }
 
@@ -552,7 +634,7 @@ function Loadactions() {
                 log("Params set sent=" + sent);
                 if(sent>=1) {
                     log("already sent");
-                    if (confirm('Request already sent, send again ?')) {
+                    if (confirm(translationsInfo[17] + ' ?')) {
                         log("send again");
                         sent=0;
                     }
@@ -623,7 +705,7 @@ function UpdateStates() {
         $(this).remove();
     });
     var OptionState = document.createElement('option');
-    OptionState.text = "No State";
+    OptionState.text = translationsInfo[18];
     if(stateDB[$('#WMESTSCountry').val()]) {
         OptionState.text = "------"
         OptionState.selected=true;
@@ -667,7 +749,7 @@ function LoadTab() {
             }
             countrychoose.appendChild(OptionCountry);
         }
-        $("#segment-edit-settings").html('<label class="control-label">Country</label>')
+        $("#segment-edit-settings").html('<label class="control-label">' + translationsInfo[19] + '</label>')//"Country"
         $("#segment-edit-settings").append(countrychoose);
         $('#WMESTSCountry').change(function() {
             $(localStorage.setItem('WMESTSCountry', $('#WMESTSCountry').val()));
@@ -688,7 +770,7 @@ function LoadTab() {
         var OptionState = document.createElement('option');
         OptionState.text = "------";
         statechoose.appendChild(OptionState)
-        $("#segment-edit-settings").append('<label class="control-label">State</label>')
+        $("#segment-edit-settings").append('<label class="control-label">' + translationsInfo[20] + '</label>')
         $("#segment-edit-settings").append(statechoose);
         $('#WMESTSState').change(function() {
             localStorage.removeItem('WMESTSLanguage');
@@ -705,7 +787,7 @@ function LoadTab() {
             OptionLanguage.text = "------";
             languagechoose.appendChild(OptionLanguage)
         }
-        $("#segment-edit-settings").append('<label class="control-label">Channel</label>')
+        $("#segment-edit-settings").append('<label class="control-label">' + translationsInfo[21] + '</label>')
         $("#segment-edit-settings").append(languagechoose);
         $('#WMESTSLanguage').change(function() {
             $(localStorage.setItem('WMESTSServer', $('#WMESTSLanguage').val()));
@@ -736,7 +818,8 @@ function log(message, thisscript = ScriptName) { // Thanks to Glodenox but enhan
 function getPermalinkCleaned(iconaction) {
     text = "https://www.waze.com/editor?env=" + W.app.getAppRegionCode() + "&";
     var count = 0;
-    var texttype = "venue";
+    var texttype = "venue"
+    var textTypeLoc = translationsInfo[23];//"venue"
     var CityName = "";
     var CountryName = "";
     var StateName = "";
@@ -760,23 +843,28 @@ function getPermalinkCleaned(iconaction) {
         {
             selectiontype="&cameras=";
             texttype="camera";
+            textTypeLoc = translationsInfo[24]
         } else if(section.model.type == "bigJunction")
         {
             selectiontype="&bigJunctions=";
             texttype="JB";
+            textTypeLoc = translationsInfo[25]
         } else if (section.model.type == "mapComment")
         {
             selectiontype="&mapComments=";
             texttype="map comment";
+            textTypeLoc = translationsInfo[26]
         } else if (section.model.type == "railroadCrossing")
         {
             selectiontype="&railroadCrossings=";
             texttype="Railroad Crossing";
+            textTypeLoc = translationsInfo[27]
         }
         else if(section.model.type !== 'venue')
         {
             selectiontype="&segments=";
             texttype="segment";
+            textTypeLoc = translationsInfo[28]
             ShouldBeLockedAt = getShouldLockedAt(section, ShouldBeLockedAt)
         }
         count++;
@@ -799,11 +887,11 @@ function getPermalinkCleaned(iconaction) {
     });
     if(ShouldBeLockedAt == -5) { ShouldBeLockedAt = ""; }
     var PL = text + currentlocation + "&zoom=" + W.map.getOLMap().getZoom() + selectiontype + selectedindex;
-    var type = texttype;
+    var type = textTypeLoc;
     if (count>1) {
-        type = count + " " + type + "s";
+        type = count + " " + type + translationsInfo[29];
     } else {
-        type = "a " + type
+        type = translationsInfo[30] + " " + type
     }
     if(RequiredRank<2 && (iconaction.toLowerCase() == "closure" || iconaction.toLowerCase() == "open")) { RequiredRank = 2; }
     RequiredRank = (RequiredRank + 1);
@@ -861,7 +949,7 @@ function CheckNeededParams() {
 
     // How was the check going on?
     if (!check) {
-        WazeWrap.Alerts.error(GM_info.script.name, 'Missing settings, please set all of the following dropdown in the left panel');
+        WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[22]);
     }
     return check;
 }
