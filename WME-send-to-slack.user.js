@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.17.03
+// @version         2020.07.17.04
 // @include 	      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -94,7 +94,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.10.01': 'Adding Autralia',
     '2020.07.10.02': 'Forcing Australia',
     '2020.07.17.02': 'Translations through Google spreadsheets added. Special thanks to @santyg2001 in this update.',
-    '2020.07.17.03': 'Solve Issue #23, City appears twice on Junction boxes'
+    '2020.07.17.03': 'Solve Issue #23, City appears twice on Junction boxes',
+    '2020.07.17.04': 'Typos'
 };
 
 // Handle script errors and send them to GForm
@@ -299,7 +300,7 @@ function GetCity(CityId) {
        return W.model.cities.getObjectById(CityId).attributes.name;
     }
     else {
-        return $('span.full-address').text().split(",")[$('span.full-address').text().split(",").length-1];
+        return $('span.full-address').text().split(",")[0];
     }
 }
 
@@ -310,7 +311,7 @@ function GetCountry(CityId) {
        return W.model.countries.getObjectById(CountryID).name;
     }
     else {
-        return $('span.full-address').text().split(",")[1];
+        return $('span.full-address').text().split(",")[$('span.full-address').text().split(",").length-1];
     }
 }
 
