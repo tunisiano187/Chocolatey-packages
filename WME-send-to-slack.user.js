@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.18.02
+// @version         2020.07.18.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -15,10 +15,10 @@
 // @compatible      firefox
 // @compatible      opera
 // @compatible      brave
-// @connect         https://cdn.staticaly.io/
+// @connect         https://cdn.jsdelivr.net/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071802
+// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020071802
 // @downloadURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
 // @updateURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
@@ -97,7 +97,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.17.03': 'Solve Issue #23, City appears twice on Junction boxes',
     '2020.07.17.04': 'Typos',
     '2020.07.17.05': 'Language alert moved to the console',
-    '2020.07.18.02': 'Activating pt-BR as translation'
+    '2020.07.18.02': 'Activating pt-BR as translation',
+    '2020.07.18.03': 'move to jsdelivr.net'
 };
 
 // Handle script errors and send them to GForm
