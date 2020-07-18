@@ -3,7 +3,7 @@
   <metadata>
     <id>ddu</id>
     <title>Display Driver Uninstaller</title>
-    <version>18.0.2.6</version>
+    <version>18.0.2.7</version>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
     <summary>Utility to completely remove system drivers</summary>
@@ -37,7 +37,7 @@ Mode is always recommended.
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>
     <projectSourceUrl>https://github.com/Wagnard/display-drivers-uninstaller</projectSourceUrl>
     <projectUrl>https://www.wagnardsoft.com/display-driver-uninstaller-ddu</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@25a56cf43c322e4f95083c17b9ebd92c510f83ff/icons/ddu.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d4a26e219e87e99a78659c27d83b92b936ad9d8f/icons/ddu.png</iconUrl>
     <tags>driver uninstaller nvidia ati</tags>
     <copyright>© Ghislain Harvey</copyright>
     <licenseUrl>https://github.com/Wagnard/display-drivers-uninstaller/blob/WPF/LICENSE.md</licenseUrl>
