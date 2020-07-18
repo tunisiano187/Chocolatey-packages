@@ -161,7 +161,7 @@ var sent=0;
 // Initialization
 function init(e) {
     log("Load");
-    if (typeof W === 'undefined' || typeof W.map === 'undefined' || typeof W.prefs === 'undefined' || typeof W.app.modeController === 'undefined' || document.getElementById('edit-panel') === null) {
+    if (typeof W === 'undefined' || typeof W.map === 'undefined' || typeof W.prefs === 'undefined' || typeof W.app.modeController === 'undefined' || document.getElementById('edit-panel') === null || (!WazeWrap.Ready)) {
         setTimeout(init, 800);
         log("Map is still loading so we'll wait");
         return;
@@ -257,7 +257,7 @@ async function localization () {
 				console.log("Error while calling 'requestTranslations' function");
 			}
 		}else if (!(suppLngs.includes(I18n.locale))) {
-			log('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
+			WazeWrap.Alerts.Error('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
 			log("Loading default locale")
 			try {
 				const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
