@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.18.03
+// @version         2020.07.18.04
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -98,7 +98,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.17.04': 'Typos',
     '2020.07.17.05': 'Language alert moved to the console',
     '2020.07.18.02': 'Activating pt-BR as translation',
-    '2020.07.18.03': 'move to jsdelivr.net'
+    '2020.07.18.03': 'move to jsdelivr.net',
+    '2020.07.18.04': 'Solve localization break and breaking WazeWrap until we have the solution'
 };
 
 // Handle script errors and send them to GForm
@@ -222,10 +223,6 @@ function init(e) {
 
 // Get browser language and load translations
 async function localization () {
-    if(!WazeWrap.Ready) {
-        setTimeout(500, localization());
-        return;
-    }
     var sheetName = sheetsAPI.sheetName
 	async function requestTranslations (i18n) {
 		const cons_connect_one = sheetsAPI.link + sheetsAPI.sheet + "/values/"
