@@ -617,7 +617,7 @@ ${closureTelegramDetails}${telegramDetails}`;
         }
     }
     if(sent>0) {
-        WazeWrap.Alerts.success(GM_info.script.name, translationsInfo[15]);//"Rquest Sent"
+        WazeWrap.Alerts.success(GM_info.script.name, translationsInfo[15]);//"Request Sent"
     } else {
         WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[16]);//'Nothing sent'
     }
