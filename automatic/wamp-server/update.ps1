@@ -24,4 +24,4 @@ function global:au_GetLatest {
     return $Latest
 }
 cup -y KB2919355
-update
+update -NoCheckChocoVersion

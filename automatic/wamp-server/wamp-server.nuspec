@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>wamp-server</id>
-    <version>3.2.0</version>
+    <version>3.1.0</version>
     <title>Wamp Server</title>
     <authors>Romain Bourdon</authors>
     <owners>tunisiano</owners>
@@ -24,7 +24,6 @@ your databases.
     <dependencies>
       <dependency id="vcredist2012" version="11.0.61031" />
       <dependency id="autohotkey.portable" version="1.1.32.00" />
-      <dependency id="KB2919355" />
     </dependencies>
   </metadata>
   <files>
