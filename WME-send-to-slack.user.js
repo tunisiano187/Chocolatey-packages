@@ -5,8 +5,8 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.17.05
-// @include 	      /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
+// @version         2020.07.18.01
+// @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
 // @author          Tunisiano18
@@ -18,9 +18,9 @@
 // @connect         https://cdn.staticaly.io/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         http://wmests.bowlman.org/script/WMESTSData.user.js?2020071705
-// @downloadURL	    http://wmests.bowlman.be/script/WME-send-to-slack.user.js
-// @updateURL	      http://wmests.bowlman.be/script/WME-send-to-slack.user.js
+// @require         http://wmests.bowlman.be/script/WMESTSData.user.js?2020071801
+// @downloadURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
+// @updateURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
@@ -96,7 +96,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.17.02': 'Translations through Google spreadsheets added. Special thanks to @santyg2001 in this update.',
     '2020.07.17.03': 'Solve Issue #23, City appears twice on Junction boxes',
     '2020.07.17.04': 'Typos',
-    '2020.07.17.05': 'Language alert moved to the console'
+    '2020.07.17.05': 'Language alert moved to the console',
+    '2020.07.18.01': 'Solve Issue #29 WazeWrap.Alerts don\'t show'
 };
 
 // Handle script errors and send them to GForm
