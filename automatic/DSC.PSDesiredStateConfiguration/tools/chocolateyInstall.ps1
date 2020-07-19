@@ -1,5 +1,5 @@
 ﻿$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = ''
+$url            = ''
 $checksum       = ''
 $checksumType   = ''
 
