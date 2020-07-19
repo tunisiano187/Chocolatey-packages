@@ -2,7 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-([jsdelivr](https://data.jsdelivr.com/v1/package/gh/tunisiano187/Chocolatey-packages/badge?style=rounded))
+[![jsdelivr](https://data.jsdelivr.com/v1/package/gh/tunisiano187/Chocolatey-packages/badge?style=rounded)]
 
 Automatic updating of chocolatey packages
 
