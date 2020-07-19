@@ -15,8 +15,8 @@ function global:au_GetLatest {
 	$referer = "http://www.nirsoft.net/utils/chromepass.html"
 	$url32 = 'http://www.nirsoft.net/toolsdownload/chromepass.zip'
 
-	$zipFile = './chomepass.zip'
-	$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+	$zipFile = "$(Get-Location)/chomepass.zip"
+	$toolsDir = Get-Location
 
 	$wc = New-Object System.Net.WebClient
 	$wc.Headers.Add("Referer", $referer)
@@ -24,7 +24,7 @@ function global:au_GetLatest {
 
 	$7ZipPath = "$env:ProgramData\chocolatey\tools\7z.exe"
 	$zipFilePassword = "chpass9126*"
-	$command = "& $7ZipPath e -oe$toolsDir -y -tzip -p$zipFilePassword $zipFile"
+	$command = "& $7ZipPath e -o$toolsDir -y -tzip -p$zipFilePassword $zipFile"
 	Invoke-Expression $command
 
 	$File = "$toolsDir/ChromePass.exe"
