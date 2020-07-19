@@ -23,4 +23,7 @@ https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest
       <dependency id="powershell4" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
