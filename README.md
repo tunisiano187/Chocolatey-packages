@@ -56,6 +56,7 @@ URL to the install binary
   9. social
   10. game
   11. media
+  12. security
 
 3. **Qualification tags**: Individually required if a package meets the qualification:
   1. portable - software does not require admin rights to install or use.
