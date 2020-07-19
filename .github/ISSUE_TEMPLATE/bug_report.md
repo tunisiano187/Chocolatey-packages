@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve our script
 title: "[Bug] Short explaination"
-labels: bug
+labels: ''
 assignees: ''
 
 ---
