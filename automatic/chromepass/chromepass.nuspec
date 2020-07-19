@@ -16,10 +16,12 @@ For each password entry, the following information is displayed: Origin URL, Act
 
 You can select one or more items and then save them into text/html/xml file or copy them to the clipboard.</description>
     <summary>freeware tool Chrome Browser Password Recovery</summary>
-    <releaseNotes>#### Package
+    <releaseNotes>#### Software releases notes
+(https://www.nirsoft.net/utils/chromepass.html)
+#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2008 NirSoft</copyright>
-    <tags>chrome password recover</tags>
+    <tags>freeware tools chrome password recover</tags>
     <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/chromepass/</packageSourceUrl>
   </metadata>
   <files>
