@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.19.01
+// @version         2020.07.19.02
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -19,8 +19,8 @@
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
 // @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020071901
-// @downloadURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
-// @updateURL	    http://wmests.bowlman.org/script/WME-send-to-slack.user.js
+// @downloadURL	    https://github.com/tunisiano187/WME-send-to-slack/raw/master/WME-send-to-slack.user.js
+// @updateURL	    https://github.com/tunisiano187/WME-send-to-slack/raw/master/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
@@ -100,7 +100,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.18.02': 'Activating pt-BR as translation',
     '2020.07.18.03': 'move to jsdelivr.net',
     '2020.07.18.04': 'Solve localization break and breaking WazeWrap until we have the solution',
-    '2020.07.19.01': 'Some people have the script broken so thisis is a test to solve'
+    '2020.07.19.01': 'Some people have the script broken so thisis is a test to solve',
+    '2020.07.19.02': 'cdn seems causing the problem'
 };
 
 // Handle script errors and send them to GForm
