@@ -15,7 +15,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$version = Get-Version $url32
+	$zipFile = './chomepass.zip'
+	$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+	$wc = New-Object System.Net.WebClient
+	$wc.Headers.Add("Referer", $referer)
+	$wc.DownloadFile($url32, $zipFile)
+
+	$7ZipPath = "$env:ProgramData\chocolatey\tools\7z.exe"
+	$zipFilePassword = "chpass9126*"
+	$command = "& $7ZipPath e -oe$toolsDir -y -tzip -p$zipFilePassword $zipFile"
+	Invoke-Expression $command
+
+	$File = "$toolsDir/ChromePass.exe"
+
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
 	$Latest = @{ URL32 = $url32; Referer = $referer; Version = $version }
 	return $Latest
