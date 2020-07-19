@@ -1,9 +1,12 @@
-﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = ''
+﻿$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url32          = ''
+$checksum       = ''
+$checksumType   = ''
 
 Install-ChocolateyZipPackage -PackageName $packageName `
                     -url $url32 `
                     -checksum $checksum `
+                    -checksumType $checksumType `
                     -unzipLocation "$toolsDir" `
                     -specificFolder ""
 
