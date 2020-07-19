@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DSC.PSDesiredStateConfiguration</id>
+    <version>3.0.2.0</version>
+    <title>xPSDesiredStateConfiguration Module – PowerShell DSC Resource Kit</title>
+    <authors>PowerShell Team</authors>
+    <owners>Mark R. Johnson</owners>
+    <projectUrl>https://gallery.technet.microsoft.com/xPSDesiredStateConfiguratio-417dc71d</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The xPSDesiredStateConfiguration module is a part of the Windows PowerShell Desired State Configuration (DSC) Resource Kit, which is a collection of DSC Resources produced by the PowerShell Team. This module contains the xDscWebService resource that makes a node a DSC Pull Server</description>
+    <summary>xPSDesiredStateConfiguration Module allows to keep Windows machine in a defined state</summary>
+    <releaseNotes>#### Software
+https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+    </releaseNotes>
+    <copyright>Powershell Team</copyright>
+    <tags>foss programming DSC.PSDesiredStateConfiguration admin dsc desired state configuration powershell</tags>
+    <dependencies>
+      <dependency id="PsGet" />
+      <dependency id="powershell4" />
+    </dependencies>
+  </metadata>
+</package>
