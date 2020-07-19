@@ -1,4 +1,4 @@
-﻿$packageName    = $env:ChcolateyPackageName
+﻿$packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = ''
 $checksum       = ''
