@@ -1,8 +1,5 @@
 import-module au
 
-$referer = "http://www.nirsoft.net/utils/chromepass.html"
-$url32 = 'http://www.nirsoft.net/toolsdownload/chromepass.zip'
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -15,8 +12,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+	$referer = "http://www.nirsoft.net/utils/chromepass.html"
+	$url32 = 'http://www.nirsoft.net/toolsdownload/chromepass.zip'
+
 	$zipFile = './chomepass.zip'
 	$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
 	$wc = New-Object System.Net.WebClient
 	$wc.Headers.Add("Referer", $referer)
 	$wc.DownloadFile($url32, $zipFile)
