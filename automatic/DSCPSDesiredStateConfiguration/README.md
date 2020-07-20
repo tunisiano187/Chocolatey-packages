@@ -1,5 +1,5 @@
-# DSC.PSDesiredStateConfiguration
-[![](https://img.shields.io/chocolatey/v/DSC.PSDesiredStateConfiguration?color=green&label=DSC.PSDesiredStateConfiguration)](https://chocolatey.org/packages/DSC.PSDesiredStateConfiguration) [![](https://img.shields.io/chocolatey/dt/DSC.PSDesiredStateConfiguration)](https://chocolatey.org/packages/DSC.PSDesiredStateConfiguration)
+# DSCPSDesiredStateConfiguration
+[![](https://img.shields.io/chocolatey/v/DSCPSDesiredStateConfiguration?color=green&label=DSCPSDesiredStateConfiguration)](https://chocolatey.org/packages/DSCPSDesiredStateConfiguration) [![](https://img.shields.io/chocolatey/dt/DSCPSDesiredStateConfiguration)](https://chocolatey.org/packages/DSCPSDesiredStateConfiguration)
 
 The xPSDesiredStateConfiguration module is a part of the Windows PowerShell 
 Desired State Configuration (DSC) Resource Kit, which is a collection of 
