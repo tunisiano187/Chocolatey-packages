@@ -102,7 +102,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.18.04': 'Solve localization break and breaking WazeWrap until we have the solution',
     '2020.07.19.01': 'Some people have the script broken so thisis is a test to solve',
     '2020.07.19.02': 'cdn seems causing the problem',
-    '2020.07.20.01': 'Add DE Translation'
+    '2020.07.20.01': 'Add DE Translation',
+    '2020.07.20.02': 'Translation to Default broken'
 };
 
 // Handle script errors and send them to GForm
@@ -275,6 +276,7 @@ async function localization () {
 	}else{//Loads default language because no translation is required
 		log("Loading default locale")
 		try {
+            sheetName = "Default"
 			const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
 		} catch (e) {
 			console.log("Error while calling 'requestTranslations' function");
