@@ -104,7 +104,7 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.19.02': 'cdn seems causing the problem',
     '2020.07.20.01': 'Add DE Translation',
     '2020.07.20.02': 'Translation to Default broken',
-    '2020.07.20.03': 'English (UK) issue'
+    '2020.07.20.04': 'English (UK) issue'
 };
 
 // Handle script errors and send them to GForm
