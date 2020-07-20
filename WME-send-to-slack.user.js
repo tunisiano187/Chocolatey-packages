@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.20.02
+// @version         2020.07.20.04
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -103,7 +103,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.19.01': 'Some people have the script broken so thisis is a test to solve',
     '2020.07.19.02': 'cdn seems causing the problem',
     '2020.07.20.01': 'Add DE Translation',
-    '2020.07.20.02': 'Translation to Default broken'
+    '2020.07.20.02': 'Translation to Default broken',
+    '2020.07.20.03': 'English (UK) issue'
 };
 
 // Handle script errors and send them to GForm
@@ -255,6 +256,7 @@ async function localization () {
 	//Closing async f(x)
 	}
 	//Checking if require translations
+    sheetName = "Default"
 	if (!(I18n.locale === I18n.defaultLocale)) {
 		//Checking if the language is available for display
 		if (suppLngs.includes(I18n.locale)) {
@@ -276,8 +278,7 @@ async function localization () {
 	}else{//Loads default language because no translation is required
 		log("Loading default locale")
 		try {
-            sheetName = "Default"
-			const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
+            const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
 		} catch (e) {
 			console.log("Error while calling 'requestTranslations' function");
 		}
