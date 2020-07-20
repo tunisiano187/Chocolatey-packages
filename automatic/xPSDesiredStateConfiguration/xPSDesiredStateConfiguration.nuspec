@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <projectUrl>https://gallery.technet.microsoft.com/xPSDesiredStateConfiguratio-417dc71d</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/DSCPSDesiredStateConfiguration</packageSourceUrl>
     <description><![CDATA[
 The xPSDesiredStateConfiguration module is a part of the Windows PowerShell 
 Desired State Configuration (DSC) Resource Kit, which is a collection of 
