@@ -18,9 +18,9 @@
 // @connect         https://cdn.jsdelivr.net/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020071901
-// @downloadURL	    https://github.com/tunisiano187/WME-send-to-slack/raw/master/WME-send-to-slack.user.js
-// @updateURL	    https://github.com/tunisiano187/WME-send-to-slack/raw/master/WME-send-to-slack.user.js
+// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020072001
+// @downloadURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
+// @updateURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
 // @contributionURL http://ko-fi.com/tunisiano
 // @grant           GM_info
@@ -101,7 +101,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.18.03': 'move to jsdelivr.net',
     '2020.07.18.04': 'Solve localization break and breaking WazeWrap until we have the solution',
     '2020.07.19.01': 'Some people have the script broken so thisis is a test to solve',
-    '2020.07.19.02': 'cdn seems causing the problem'
+    '2020.07.19.02': 'cdn seems causing the problem',
+    '2020.07.20.01': 'Add DE Translation'
 };
 
 // Handle script errors and send them to GForm
