@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.20.04
+// @version         2020.07.20.05
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -104,7 +104,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.19.02': 'cdn seems causing the problem',
     '2020.07.20.01': 'Add DE Translation',
     '2020.07.20.02': 'Translation to Default broken',
-    '2020.07.20.04': 'English (UK) issue'
+    '2020.07.20.04': 'English (UK) issue',
+    '2020.07.20.05': 'Too many alerts'
 };
 
 // Handle script errors and send them to GForm
@@ -267,7 +268,7 @@ async function localization () {
 				console.log("Error while calling 'requestTranslations' function");
 			}
 		}else if (!(suppLngs.includes(I18n.locale))) {
-			WazeWrap.Alerts.Error('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
+			log('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
 			log("Loading default locale")
 			try {
 				const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
