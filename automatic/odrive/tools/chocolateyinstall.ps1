@@ -1,5 +1,5 @@
 ﻿$url			= 'https://www.odrive.com/downloaddesktop?platform=win'
-$checksum		= 'ca53a944a5f6dcdfd408e7d5782819e71cc4b040a03b8dce11fda06eb10afae5'
+$checksum		= '8be93da59a14e60ab86b9bc443c0fe5a7377573e37d92067ffd2d503a4510423'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

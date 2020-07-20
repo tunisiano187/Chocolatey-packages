@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>odrive</id>
-    <version>1.6452.0.6627</version>
+    <version>1.6452.0.6637</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
     <owners>tunisiano</owners>
@@ -20,7 +20,7 @@ universal sync client. It makes any cloud storage unified, synchronized, shareab
     </releaseNotes>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/odrive</packageSourceUrl>
     <dependencies>
-      <dependency id="dotnetfw" version="4.6.1"/>
+      <dependency id="dotnetfw" version="4.6.1" />
       <dependency id="KB2919355" version="1.0.20160915" />
     </dependencies>
   </metadata>
