@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>DSCPSDesiredStateConfiguration</id>
+    <id>xPSDesiredStateConfiguration</id>
     <version>9.0.0</version>
     <title>xPSDesiredStateConfiguration Module – PowerShell DSC Resource Kit</title>
     <authors>PowerShell Team</authors>
@@ -22,6 +22,7 @@ https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
+    <licenceUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/master/LICENSE</licenceUrl>
     <copyright>Powershell Team</copyright>
     <tags>foss programming DSC.PSDesiredStateConfiguration admin dsc desired state configuration powershell</tags>
     <dependencies>
