@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>brave-nighly</id>
+    <version>1.12.91-beta</version>
+    <title>Brave Browser (Nightly)</title>
+    <authors>Brave Software Inc.</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://github.com/brave/brave-browser/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://brave.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-coreteampackages@a23ca30653/icons/brave-beta.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description></description>
+    <summary>A browser that lets you browse safer and faster by blocking ads and trackers.</summary>
+    <releaseNotes>https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md</releaseNotes>
+    <tags>foss cross-platform admin brave brave-browser bravebrowser web browser web-browser chromium adblock adblocker privacy</tags>
+    <projectSourceUrl>https://github.com/brave/brave-browser</projectSourceUrl>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-coreteampackages/tree/master/automatic/brave</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
