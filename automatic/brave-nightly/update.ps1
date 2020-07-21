@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/electron/electron/releases/latest/'
+$releases = 'https://github.com/brave/brave-browser/releases'
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
