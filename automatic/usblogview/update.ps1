@@ -1,26 +1,33 @@
 import-module au
 
-$releases = "https://www.nirsoft.net/utils/usb_log_view.html"
+$url32 = 'https://www.nirsoft.net/utils/usblogview.zip'
+
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+function Unzip
+{
+    param([string]$zipfile, [string]$outpath)
+    [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
+}
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-        }
-     }
+	@{
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+		}
+	}
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$File = "./chromehistoryview.zip"
+	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
+	Expand-Archive $File -DestinationPath .\chv
 
-	$url32 = "https://www.nirsoft.net/utils/usblogview.zip"
-
-	$version = $download_page.Content.Split(" v").split("<br>") | Where-Object {$_ -match "[0-9]\.[0-9][0-9]"} | Select-Object -First 1
+	$version=$(Get-Content .\chv\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[2]
 
 	$Latest = @{ URL32 = $url32; Version = $version }
-    return $Latest
+	return $Latest
 }
 
 update -ChecksumFor 32
