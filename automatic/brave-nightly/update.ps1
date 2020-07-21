@@ -2,6 +2,13 @@ import-module au
 
 $releases = 'https://github.com/brave/brave-browser/releases'
 
+function global:au_SearchReplace {
+	@{
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+		}
+	}
+}
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup32.exe'}).href)[0]
