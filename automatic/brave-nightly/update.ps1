@@ -7,9 +7,9 @@ function global:au_GetLatest {
 	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup32.exe'}).href
 	$url64 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup.exe'}).href
 	Write-Output 'Checking version'
-	$version = $url64 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'Brave-v'}).split('v')[1].split('-')[0]
+	$version = $url32[0].split('/')[5].replace('v','')
 	Write-Output "Version : $version"
-	$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+	$toolsPath = Join-Path $(Get-Location) "tools"
 
 	$url32 = "https://github.com$($url32)";
 	Invoke-WebRequest -Uri $url32 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentSetup32.exe")
