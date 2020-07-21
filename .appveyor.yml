@@ -164,6 +164,11 @@ notifications:
   on_build_status_changed: true
 - provider: GitHubPullRequest
   template: "{{#passed}}:white_check_mark: Package verification completed without issues. PR is now pending human review{{/passed}}{{#failed}}:x: Package verification failed, please review the [Appveyor Logs]({{buildUrl}}) and the provided [Artifacts]({{buildUrl}}/artifacts) before requesting a human reviewer to take a look.{{/failed}}"
+- provider: Webhook
+  url: https://webhooks.gitter.im/e/e7cfeb1b6fc707cee118
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
 
 cache:
   - '%nupkg_cache_path% -> .appveyor.yml'
