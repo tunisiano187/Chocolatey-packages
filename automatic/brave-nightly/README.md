@@ -13,6 +13,5 @@ Everywhere;
 
 ## Notes
 
-* Beta is an early preview for new versions of Brave. This build showcases the newest
-advances and it’s ready for daily use. Brave Beta automatically sends crash reports, but
-you can turn this off if you’d like.
+* Nightly is an early preview for new versions of Brave. This build showcases the newest
+advances and it’s not ready for daily use. Brave Beta automatically sends crash reports.

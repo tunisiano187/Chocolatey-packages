@@ -13,7 +13,7 @@
     <description></description>
     <summary>A browser that lets you browse safer and faster by blocking ads and trackers.</summary>
     <releaseNotes>https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md</releaseNotes>
-    <tags>foss cross-platform admin brave brave-browser bravebrowser web browser web-browser chromium adblock adblocker privacy</tags>
+    <tags>foss nightly cross-platform admin brave brave-browser bravebrowser web browser web-browser chromium adblock adblocker privacy</tags>
     <projectSourceUrl>https://github.com/brave/brave-browser</projectSourceUrl>
     <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-coreteampackages/tree/master/automatic/brave</packageSourceUrl>
   </metadata>
