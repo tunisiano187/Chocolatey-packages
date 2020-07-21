@@ -4,8 +4,8 @@ $releases = 'https://github.com/brave/brave-browser/releases'
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup32.exe'}).href
-	$url64 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup.exe'}).href
+	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup32.exe'}).href)[0]
+	$url64 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup.exe'}).href)[0]
 	Write-Output 'Checking version'
 	$version = $url32[0].split('/')[5].replace('v','')
 	Write-Output "Version : $version"
