@@ -1,4 +1,4 @@
-﻿$packageName = '{{PackageName}}'
+﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $url = '{{DownloadUrl}}'
