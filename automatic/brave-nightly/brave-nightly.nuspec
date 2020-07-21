@@ -1,21 +1,36 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>brave-nighly</id>
-    <version>1.12.91-beta</version>
+    <id>brave-nightly</id>
+    <version>1.13.33</version>
     <title>Brave Browser (Nightly)</title>
     <authors>Brave Software Inc.</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/brave/brave-browser/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://brave.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-coreteampackages@a23ca30653/icons/brave-beta.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2371ed68b8a747d6ad6cc31d9c09707648aee683/icons/brave-nightly.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description></description>
+    <description><![CDATA[
+Brave is a free and open-source web browser developed by Brave Software Inc. based
+on the Chromium web browser. Brave supports Windows, macOS, Linux and Android.
+
+## Features
+
+* Fast browsing: by blocking trackers and intrusive ads that slows down the browsing;
+* Secure browsing: blocks harmful advertising and redirects sites to HTTPS using HTTPS
+Everywhere;
+* Privacy: blocks tracking pixels and tracking cookies.
+
+## Notes
+
+* Nightly is an early preview for new versions of Brave. This build showcases the newest
+advances and it’s not ready for daily use. Brave Beta automatically sends crash reports.
+]]></description>
     <summary>A browser that lets you browse safer and faster by blocking ads and trackers.</summary>
     <releaseNotes>https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md</releaseNotes>
     <tags>foss nightly cross-platform admin brave brave-browser bravebrowser web browser web-browser chromium adblock adblocker privacy</tags>
     <projectSourceUrl>https://github.com/brave/brave-browser</projectSourceUrl>
-    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-coreteampackages/tree/master/automatic/brave</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/brave-nightly</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
