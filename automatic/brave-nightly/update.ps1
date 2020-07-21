@@ -21,6 +21,7 @@ function global:au_GetLatest {
 	$url64 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserNightlySetup.exe'}).href)[0]
 	Write-Output 'Checking version'
 	$version = $url32.split('/')[5].replace('v','')
+	$version = "$version-nightly"
 	Write-Output "Version : $version"
 	$toolsPath = Join-Path $(Get-Location) "tools"
 
