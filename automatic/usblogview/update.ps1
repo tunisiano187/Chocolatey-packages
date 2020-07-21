@@ -20,11 +20,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = "./chromehistoryview.zip"
+	$File = "./usblogview.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
-	Expand-Archive $File -DestinationPath .\chv
+	Expand-Archive $File -DestinationPath .\usblv
 
-	$version=$(Get-Content .\chv\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[2]
+	$version=$(Get-Content .\usblv\readme.txt | Where-Object {$_ -match 'USBLogView'})[0].split(' ')[-1].Replace('v','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
