@@ -6,7 +6,7 @@ $packageArgs = @{
   file        = "$toolsPath\BraveBrowserSilentSetup32.exe"
   file64      = "$toolsPath\BraveBrowserSilentSetup.exe"
 }
-$version = ''
+$version = '1.13.33'
 
 [version]$softwareVersion = $version
 
