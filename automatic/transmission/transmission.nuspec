@@ -36,4 +36,7 @@ Transmission is a cross-platform BitTorrent client that is open source, easy, po
     <mailingListUrl>https://forum.transmissionbt.com/</mailingListUrl>
     <bugTrackerUrl>https://github.com/transmission/transmission/issues/</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
