@@ -7,7 +7,7 @@ function global:au_SearchReplace {
 		'tools/chocolateyInstall.ps1' = @{
 			"(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
 		}
-		"legal\VERIFICATION.txt"      = @{
+		"tools\VERIFICATION.txt"      = @{
 			"(?i)(x86:).*"        = "`${1} $($Latest.URL32)"
 			"(?i)(x86_64:).*"     = "`${1} $($Latest.URL64)"
 			"(?i)(checksum32:).*" = "`${1} $($Latest.Checksum32)"
@@ -34,4 +34,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
