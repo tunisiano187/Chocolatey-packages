@@ -6,11 +6,12 @@ $packageArgs = @{
   file        = "$toolsPath\BraveBrowserSilentNightlySetup32.exe"
   file64      = "$toolsPath\BraveBrowserSilentNightlySetup.exe"
 }
-$version = $env:ChocolateyPackageVersion
+$version = '1.13.34-nightly'
+$version = $version.Split('-')[0]
 
 [version]$softwareVersion = $version
 
-Write-Host "Checking already installed version..."
+Write-Verbose "Checking already installed version..."
 $installedVersion = Get-InstalledVersion
 
 if ($installedVersion -and ($softwareVersion -lt $installedVersion)) {

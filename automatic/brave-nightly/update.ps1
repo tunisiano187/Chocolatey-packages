@@ -4,6 +4,9 @@ $releases = 'https://github.com/brave/brave-browser/releases'
 
 function global:au_SearchReplace {
 	@{
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+		}
 		"tools\VERIFICATION.txt"      = @{
 			"(?i)(x86:).*"        = "`${1} $($Latest.URL32)"
 			"(?i)(x86_64:).*"     = "`${1} $($Latest.URL64)"
