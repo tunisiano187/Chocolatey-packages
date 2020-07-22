@@ -19,28 +19,8 @@ $packageArgs = @{
   softwareName    = 'wamp-server*'
   checksum        = $checksum32
   checksum64      = $checksum64
-  checksumType    = $checksum32type
-  checksum64Type  = $checksum64type
+  checksumType    = $checksum32Ttype
+  checksum64Type  = $checksum64ttype
 }
-
-#if([System.Environment]::Is64BitOperatingSystem) {
-#  $installahk   = 'chocolateyInstall64.ahk'
-#} else {
-#  $installahk   = 'chocolateyInstall.ahk'
-#}
-
-#$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-#$ahkFile = Join-Path $scriptPath $installahk
-#$ahkExe = 'AutoHotKey'
-#$ahkRun = "$Env:Temp\$(Get-Random).ahk"
-#Copy-Item $ahkFile "$ahkRun" -Force
-#Start-Process $ahkExe $ahkRun
-
-#$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-#$ahkFile = Join-Path $scriptPath "chocolateyLang.ahk"
-#$ahkExe = 'AutoHotKey'
-#$ahkRun = "$Env:Temp\$(Get-Random).ahk"
-#Copy-Item $ahkFile "$ahkRun" -Force
-#Start-Process $ahkExe $ahkRun
 
 Install-ChocolateyPackage @packageArgs
