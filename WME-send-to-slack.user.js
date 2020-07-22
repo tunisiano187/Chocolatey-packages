@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.20.05
+// @version         2020.07.22.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -105,7 +105,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.20.01': 'Add DE Translation',
     '2020.07.20.02': 'Translation to Default broken',
     '2020.07.20.04': 'English (UK) issue',
-    '2020.07.20.05': 'Too many alerts'
+    '2020.07.20.05': 'Too many alerts',
+    '2020.07.22.01': 'WazeWrap alerts issue solved'
 };
 
 // Handle script errors and send them to GForm
@@ -170,7 +171,7 @@ var sent=0;
 // Initialization
 function init(e) {
     log("Load");
-    if (typeof W === 'undefined' || typeof W.map === 'undefined' || typeof W.prefs === 'undefined' || typeof W.app.modeController === 'undefined' || document.getElementById('edit-panel') === null) {
+    if (typeof W === 'undefined' || typeof W.map === 'undefined' || typeof W.prefs === 'undefined' || typeof W.app.modeController === 'undefined' || document.getElementById('edit-panel') === null || WazeWrap.Ready != true) {
         setTimeout(init, 800);
         log("Map is still loading so we'll wait");
         return;
@@ -252,13 +253,12 @@ async function localization () {
 		if (statusSheetsCallback) {
 			log('Connected to Google Sheets API')
 		}else if (!statusSheetsCallback){
-			WazeWrap.Alerts.error(GM_info.script.name, 'Cannot connect to Google Sheets API')
+			WazeWrap.Alerts.error(ScriptName, 'Cannot connect to Google Sheets API')
 		}
 	//Closing async f(x)
 	}
-	//Checking if require translations
-    sheetName = "Default"
-	if (!(I18n.locale === I18n.defaultLocale)) {
+	//Checking if require translations different from any english language
+	if (I18n.locale != "en-US" && I18n.locale != "en-GB" && I18n.locale != "en-AU") {
 		//Checking if the language is available for display
 		if (suppLngs.includes(I18n.locale)) {
 			sheetName = I18n.locale
@@ -268,7 +268,7 @@ async function localization () {
 				console.log("Error while calling 'requestTranslations' function");
 			}
 		}else if (!(suppLngs.includes(I18n.locale))) {
-			log('SendToSlack:This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
+			WazeWrap.Alerts.warning(ScriptName, 'This language is not yet supported, loading default. Do you want a translation? ask your community, or send a request to wmests@fire.fundersclub.com with a gmail account to became localizator. Missing locale is: ' + I18n.locale)
 			log("Loading default locale")
 			try {
 				const waiting = await requestTranslations(sheetName)//Modify and ask for local storage before call the request
@@ -493,7 +493,7 @@ function Construct(iconaction) {
     log(Details);
     if(permalink.indexOf("-100") >= 0 ) {
         abort=true;
-        WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[9]);//"Some segments aren't saved, please save them and try again"
+        WazeWrap.Alerts.error(ScriptName, translationsInfo[9]);//"Some segments aren't saved, please save them and try again"
     }
     var profileurl="https://www.waze.com/user/editor/"
     var userRank = WazeWrap.User.Rank();
@@ -539,7 +539,7 @@ ${closureTelegramDetails}${telegramDetails}`;
                         $.ajax({
                             data: 'payload=' + JSON.stringify({
                                 "text": TextToSend,
-                                "username": GM_info.script.name + " " + GM_info.script.version,
+                                "username": ScriptName + " " + GM_info.script.version,
                                 "mrkdwn": true,
                                 "channel": serverDB[localStorage.getItem('WMESTSServer')][key]["chanel_" + chanel],
                                 "icon_emoji": actionicon
@@ -558,7 +558,7 @@ ${closureTelegramDetails}${telegramDetails}`;
                             data: 'payload=' + JSON.stringify({
                                 "attachments": [{
                                     "text": TextToSend}],
-                                "username": GM_info.script.name + " " + GM_info.script.version,
+                                "username": ScriptName + " " + GM_info.script.version,
                                 "mrkdwn": true,
                                 "channel": serverDB[localStorage.getItem('WMESTSServer')][key]["chanel_" + chanel],
                                 "icon_emoji": actionicon
@@ -629,9 +629,9 @@ ${closureTelegramDetails}${telegramDetails}`;
         }
     }
     if(sent>0) {
-        WazeWrap.Alerts.success(GM_info.script.name, translationsInfo[15]);//"Request Sent"
+        WazeWrap.Alerts.success(ScriptName, translationsInfo[15]);//"Request Sent"
     } else {
-        WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[16]);//'Nothing sent'
+        WazeWrap.Alerts.error(ScriptName, translationsInfo[16]);//'Nothing sent'
     }
 }
 
@@ -961,7 +961,7 @@ function CheckNeededParams() {
 
     // How was the check going on?
     if (!check) {
-        WazeWrap.Alerts.error(GM_info.script.name, translationsInfo[22]);
+        WazeWrap.Alerts.error(ScriptName, translationsInfo[22]);
     }
     return check;
 }
