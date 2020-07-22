@@ -1,4 +1,4 @@
-﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+﻿$toolsPath = Get-Location
 . $toolsPath\helpers.ps1
 
 $packageArgs = @{
@@ -6,6 +6,7 @@ $packageArgs = @{
   file        = "$toolsPath\BraveBrowserSilentNightlySetup32.exe"
   file64      = "$toolsPath\BraveBrowserSilentNightlySetup.exe"
 }
+
 $version = '1.13.36-nightly'
 $version = $version.Split('-')[0]
 
