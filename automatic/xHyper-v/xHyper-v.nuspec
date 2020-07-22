@@ -2,21 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>xHyper-v</id>
-    <version>1.1.0</version>
+    <version>3.17.0</version>
     <title>xPSDesiredStateConfiguration Module – PowerShell DSC Resource Kit</title>
     <authors>PowerShell Team</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://gallery.technet.microsoft.com/xPSDesiredStateConfiguratio-417dc71d</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/xPSDesiredStateConfiguration</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/xHyper-v</packageSourceUrl>
     <projectSourceUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration</projectSourceUrl>
     <bugTrackerUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/issues</bugTrackerUrl>
     <docsUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/master/README.md</docsUrl>
     <description><![CDATA[
-The xPSDesiredStateConfiguration module is a part of the Windows PowerShell 
-Desired State Configuration (DSC) Resource Kit, which is a collection of 
-DSC Resources produced by the PowerShell Team. This module contains the 
-xDscWebService resource that makes a node a DSC Pull Server
+The xHyper-V module contains DSC resources for deployment and configuration of Hyper-V hosts, virtual machines and related resources.
 ]]></description>
     <summary>xPSDesiredStateConfiguration Module allows to keep Windows machine in a defined state</summary>
     <releaseNotes>#### Software
