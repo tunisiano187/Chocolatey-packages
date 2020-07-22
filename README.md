@@ -13,7 +13,8 @@ Thanks to santyg2001, we've added Telegram bot support for sending messages.
 
 ## What's New ##
 This script now supports States, and i've added the USA NewYork, New Jersay, ...
-This script now supports Telegram
+This script now supports Telegram.
+This script now supports translations.
 
 ## What does it looks like ? ##
  
