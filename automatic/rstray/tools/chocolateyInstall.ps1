@@ -4,7 +4,7 @@ $version    = ''
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
-    FileFullPath    = "$toolsDir\redshift-tray.zip"
+    Path    = "$toolsDir\redshift-tray.zip"
     Destination     = "$installDir"
 }
 
