@@ -11,11 +11,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
+	Write-Verbose 'Check Folder'
 	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href)[0]
-	Write-Output 'Checking version'
-	$version = $url32.split('_')[-1].split('.')[0]
-	Write-Output "Version : $version"
+	Write-Verbose 'Checking version'
+	$version = $url32.split('_')[-1].replace('.zip','')
+	Write-Verbose "Version : $version"
 	$url32 = "https://github.com$($url32)";
 	Invoke-WebRequest -Uri $url32 -OutFile "$(Get-Location)\tools\redshift-tray.zip"
 
