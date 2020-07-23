@@ -1,4 +1,4 @@
-﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
+﻿$toolsPath = Get-Location
 . $toolsPath\helpers.ps1
 
 $packageArgs = @{
