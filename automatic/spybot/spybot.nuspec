@@ -3,12 +3,12 @@
   <metadata>
     <id>spybot</id>
     <title>Spybot</title>
-    <version>2.8.67.0</version>
+    <version>2.8.68.0</version>
     <authors>Safer-Networking Ltd</authors>
     <owners>tunisiano</owners>
     <summary>Detects and removes spyware and rootkits</summary>
     <description><![CDATA[
-For home users who want spyware protection for their own or their families Windows based Personal Computers and do not need additional antivirus protection. Users manually look after own updating. Can be upgraded to the ‘Home Edition’ if required.
+Spybot - Search & Destroy detects and removes spyware, a kind of threat not very well covered by common anti-virus applications. Spyware silently tracks your surfing behaviour to create a marketing profile for you that is transmitted without your knowledge to the compilers and sold to advertising companies. If you see new toolbars in your Internet Explorer that you haven't intentionally installed, if your browser crashes inexplicably, or if your home page has been "hijacked" (or changed without your knowledge), your computer is most probably infected with spyware. Even if you don't see the symptoms, your computer may be infected, because more and more spyware is emerging.
 
 #### Freeware
 This package installs the free version of Spybot which allows full, manual scanning of malware and rootkits. For anti-virus protection and additional features licensed versions are available. For more info, see https://www.safer-networking.org/compare-spybot-editions/
