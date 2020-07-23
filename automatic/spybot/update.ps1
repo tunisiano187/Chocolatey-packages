@@ -23,4 +23,3 @@ function global:au_GetLatest {
 }
 
 update -ChecksumFor 32 -NoCheckChocoVersion
-Test-Package -Verbose
