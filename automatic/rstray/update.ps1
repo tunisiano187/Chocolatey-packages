@@ -6,15 +6,13 @@ function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
 			"(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.VERSION)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href
+	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href)[0]
 	Write-Output 'Checking version'
 	$version = $url32.split('/')[-1].split('.')[0]
 	Write-Output "Version : $version"
