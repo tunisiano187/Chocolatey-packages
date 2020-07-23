@@ -26,9 +26,9 @@ function global:au_GetLatest {
 	$toolsPath = Join-Path $(Get-Location) "tools"
 
 	$url32 = "https://github.com$($url32)";
-	Invoke-WebRequest -Uri $url32 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup32")
+	Invoke-WebRequest -Uri $url32 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup32.exe")
 	$url64 = "https://github.com$($url64)";
-	Invoke-WebRequest -Uri $url64 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup")
+	Invoke-WebRequest -Uri $url64 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup.exe")
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
