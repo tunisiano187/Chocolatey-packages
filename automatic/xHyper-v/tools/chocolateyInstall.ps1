@@ -1,7 +1,7 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/dsccommunity/xPSDesiredStateConfiguration/archive/v9.1.0.zip'
-$checksum       = '72c9ac7aae5437abf226bb9b58be01dcb89710a575c1830172bab5ab2c47d208'
+$url            = 'https://github.com/dsccommunity/xHyper-V/archive/v3.17.0.zip'
+$checksum       = 'df8819d8b48ce9d1058b18605a5c22cbb58a0817bfa9f29d7fcc7b3fdf164800'
 $checksumType   = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName $packageName `

@@ -3,7 +3,7 @@
   <metadata>
     <id>{{PackageName}}</id>
     <title>EAGLE</title>
-    <version>{{PackageVersion}}</version>
+    <version>9.6.2</version>
     <authors>CadSoft</authors>
     <owners>dtgm</owners>
     <summary>Easy to use, yet powerful tool for designing printed circuit boards (PCBs)</summary>
