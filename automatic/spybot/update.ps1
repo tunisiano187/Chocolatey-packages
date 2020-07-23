@@ -1,6 +1,6 @@
 import-module au
 
-$releases = "https://forums.spybot.info/downloads.php?id=1"
+$releases = "https://www.safer-networking.org/products/spybot-free-edition/download-mirror-1/"
 
 function global:au_SearchReplace {
 	@{
@@ -22,4 +22,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
