@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.22.02
+// @version         2020.07.22.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -107,7 +107,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.20.04': 'English (UK) issue',
     '2020.07.20.05': 'Too many alerts',
     '2020.07.22.01': 'WazeWrap alerts issue solved',
-    '2020.07.22.02': 'Changing deprecated functions'
+    '2020.07.22.02': 'Changing deprecated functions',
+    '2020.07.22.03': '#31 Solved'
 };
 
 // Handle script errors and send them to GForm
@@ -962,7 +963,7 @@ function CheckNeededParams() {
 
     // How was the check going on?
     if (!check) {
-        WazeWrap.Alerts.error(ScriptName, translationsInfo[22]);
+        alert(translationsInfo[22]);
     }
     return check;
 }
