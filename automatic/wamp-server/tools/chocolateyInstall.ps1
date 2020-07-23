@@ -19,8 +19,8 @@ $packageArgs = @{
   softwareName    = 'wamp-server*'
   checksum        = $checksum32
   checksum64      = $checksum64
-  checksumType    = $checksum32Ttype
-  checksum64Type  = $checksum64ttype
+  checksumType    = $checksum32Type
+  checksum64Type  = $checksum64Type
 }
 
 Install-ChocolateyPackage @packageArgs
