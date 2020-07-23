@@ -3,9 +3,9 @@ $installDir = "$(Get-ToolsLocation)\rstray"
 $version    = ''
 
 $packageArgs = @{
-    packageName = $env:ChocolateyPackageName
-    file        = "$toolsDir\redshift-tray.zip"
-    destination = "$installDir"
+    packageName     = $env:ChocolateyPackageName
+    FileFullPath    = "$toolsDir\redshift-tray.zip"
+    Destination     = "$installDir"
 }
 
 Get-ChocolateyUnzip @packageArgs
