@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>xHyper-v</id>
-    <version>3.17.0</version>
-    <title>xPSDesiredStateConfiguration Module – PowerShell DSC Resource Kit</title>
+    <version>3.15.0</version>
+    <title>xHyper-v DSC Module</title>
     <authors>PowerShell Team</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://gallery.technet.microsoft.com/xPSDesiredStateConfiguratio-417dc71d</projectUrl>
