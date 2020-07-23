@@ -19,8 +19,8 @@ function global:au_GetLatest {
 	$url32 = "https://github.com$($url32)";
 	Invoke-WebRequest -Uri $url32 -OutFile "$(Get-Location)\tools\redshift-tray.zip"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
