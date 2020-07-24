@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.24.02
+// @version         2020.07.24.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -111,7 +111,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.22.03': '#31 Solved',
     '2020.07.23.01': 'Translations Info fix',
     '2020.07.24.01': 'escape back',
-    '2020.07.24.02': 'updates from Github directly except for depedencies'
+    '2020.07.24.02': 'updates from Github directly except for depedencies',
+    '2020.07.24.03': 'en language included again as default.'
 };
 
 // Handle script errors and send them to GForm
@@ -263,7 +264,7 @@ async function localization () {
 	//Closing async f(x)
 	}
 	//Checking if require translations different from any english language
-	if (I18n.locale != "en-US" && I18n.locale != "en-GB" && I18n.locale != "en-AU") {
+	if (I18n.locale != "en-US" && I18n.locale != "en-GB" && I18n.locale != "en-AU" && I18n.locale != I18n.defaultLocale) {
 		//Checking if the language is available for display
 		if (suppLngs.includes(I18n.locale)) {
 			sheetName = I18n.locale
