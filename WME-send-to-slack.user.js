@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.23.01
+// @version         2020.07.24.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,7 +18,7 @@
 // @connect         https://cdn.jsdelivr.net/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020072001
+// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020072401
 // @downloadURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @updateURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
@@ -109,7 +109,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.22.01': 'WazeWrap alerts issue solved',
     '2020.07.22.02': 'Changing deprecated functions',
     '2020.07.22.03': '#31 Solved',
-    '2020.07.23.01': 'Translations Info fix'
+    '2020.07.23.01': 'Translations Info fix',
+    '2020.07.24.01': 'escape back'
 };
 
 // Handle script errors and send them to GForm
@@ -491,7 +492,7 @@ function Construct(iconaction) {
     log("Country : " + CountryName);
     var urlRegex = /(https?:\/\/[^\s]+)/g;
     Details=Details.replace(urlRegex, function(url) {
-        return encodeURI(url);
+        return escape(url);
     });
     log(Details);
     if(permalink.indexOf("-100") >= 0 ) {
@@ -500,7 +501,7 @@ function Construct(iconaction) {
     }
     var profileurl="https://www.waze.com/user/editor/"
     var userRank = WazeWrap.User.Rank();
-    var TextToSend = ':' + translationsInfo[11][0] + RequiredLevel + ": " + translationsInfo[10][0] + " : <" + encodeURI(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*" + translationsInfo[11][0] + userRank + "*)\r\n" + translationsInfo[12][0] + " : <" + encodeURI(permalink) + "|" + textSelection + ">\r\n" + translationsInfo[13][0] + " : " + iconactionlocale + "\r\n" + translationsInfo[14][0] + " : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
+    var TextToSend = ':' + translationsInfo[11][0] + RequiredLevel + ": " + translationsInfo[10][0] + " : <" + escape(profileurl) + W.loginManager.user.userName + "|" + W.loginManager.user.userName + "> (*" + translationsInfo[11][0] + userRank + "*)\r\n" + translationsInfo[12][0] + " : <" + escape(permalink) + "|" + textSelection + ">\r\n" + translationsInfo[13][0] + " : " + iconactionlocale + "\r\n" + translationsInfo[14][0] + " : " + CityName + separatorCity + StateName + separatorState + CountryName + Details;
     var TexToSendTelegramMD = `${translationsInfo[11][0]}${RequiredLevel} *${translationsInfo[10][0]}:* [${W.loginManager.user.userName}](www.waze.com/user/editor/${W.loginManager.user.userName}) (*${userRank}*)
 *${translationsInfo[12][0]} :* [${textSelection}](${permalink})
 *${translationsInfo[13][0]} :* ${iconactionlocale}
@@ -584,7 +585,7 @@ ${closureTelegramDetails}${telegramDetails}`;
                     var currentlocation = (new OpenLayers.LonLat(Waze.map.getCenter().lon,Waze.map.getCenter().lat)).transform(projI,projE).toString().replace('lon=','').replace("lat=","");
                     var GFormDBloc = gFormDB[localStorage.getItem('WMESTSServer')];
                     var datas = {};
-                    datas[GFormDBloc.pl]=decodeURI(permalink);
+                    datas[GFormDBloc.pl]=unescape(permalink);
                     datas[GFormDBloc.username]=W.loginManager.user.userName;
                     datas[GFormDBloc.editorlevel]=WazeWrap.User.Rank();
                     datas[GFormDBloc.levelrequired]=RequiredLevel.toString().replace(/:/g,'').replace('l','');
