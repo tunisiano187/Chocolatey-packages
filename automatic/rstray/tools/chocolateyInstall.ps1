@@ -1,6 +1,6 @@
 ﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installDir = "$(Get-ToolsLocation)\rstray"
-$version    = ''
+$version    = '1.9.8'
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName

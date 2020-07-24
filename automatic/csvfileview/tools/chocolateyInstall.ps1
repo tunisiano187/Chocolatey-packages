@@ -1,6 +1,6 @@
 ﻿$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
+$url = 'https://www.nirsoft.net/utils/csvfileview.zip'
+$checksum = '97daf89e54a46d859bcea682625281fca68f2421d74573ad441431b525e87ab7'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
