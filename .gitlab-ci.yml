@@ -6,6 +6,7 @@ pages:
   - sed -i "s/.version./$(cat public/script/WME-send-to-slack.user.js | grep @version | tail -c 14 | cut -c-13)/g" public/index.html
   - cat public/features.html | grep '<li>' | wc -l
   - sed -i "s/requested-*-success.svg/requested-$(cat public/features.html | grep '<li>' | wc -l)-success.svg/g" public/index.html
+  - wget https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
   - cat public/index.html
   artifacts:
     paths:
