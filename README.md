@@ -1,4 +1,7 @@
 [![Open Source Helpers](https://www.codetriage.com/tunisiano187/wme-send-to-slack/badges/users.svg)](https://www.codetriage.com/tunisiano187/wme-send-to-slack) [![Gitter](https://badges.gitter.im/Tunisiano18/community.svg)](https://gitter.im/Tunisiano18/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![CodeFactor](https://www.codefactor.io/repository/github/tunisiano187/wme-send-to-slack/badge)](https://www.codefactor.io/repository/github/tunisiano187/wme-send-to-slack)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Current Version of the script ##
 Check here : https://wmests.bowlman.org
@@ -69,3 +72,21 @@ You need to complete the request by completing every question.
 See you later for New things...
 
 New informations here : https://wmests.bowlman.org
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ordonezgs"><img src="https://avatars3.githubusercontent.com/u/17103864?v=4" width="100px;" alt=""/><br /><sub><b>ordonezgs</b></sub></a><br /><a href="https://github.com/tunisiano187/WME-send-to-slack/commits?author=ordonezgs" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
