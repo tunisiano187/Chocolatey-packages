@@ -28,7 +28,7 @@ function global:au_GetLatest {
 
 	$version=$(Get-Content .\csvfv\readme.txt | Where-Object {$_ -match 'CSVFileView'})[0].split(' ')[-1].Replace('v','')
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version}
 	return $Latest
 }
 
