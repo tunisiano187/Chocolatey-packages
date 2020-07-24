@@ -115,26 +115,6 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.24.03': 'en language included again as default.'
 };
 
-// Handle script errors and send them to GForm
-
-window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
-    var datas = {};
-    datas["entry.685415388"]=W.loginManager.user.userName;
-    datas["entry.1178459605"]=errorMsg.message;
-    for (var key in errorMsg) {
-        if (!(key in localStorage)) {
-            datas["entry.1178459605"]=datas["entry.1178459605"] + " \n" + key + ":" + errorMsg[key];
-        }
-    }
-    log(datas["entry.1178459605"], "One of your scripts");
-    /*$.ajax({
-        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLNa8UFj8j4hZiO5qGUYAmEnYqZrWRIvN2xcbf97wtZ_9VKQ/formResponse",
-        data: datas,
-        type : "POST",
-        dataType: "xml"
-    });*/
-}
-
 var $_GET = {};
 
 document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
