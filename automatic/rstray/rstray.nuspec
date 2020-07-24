@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rstray</id>
-    <version>1.9.8</version>
+    <version>1.9.7</version>
     <title>Redshift Tray</title>
     <authors>ltGuillaume</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://github.com/ltGuillaume/Redshift-Tray/blob/1.9.3/license</licenseUrl>
+    <licenseUrl>https://github.com/ltGuillaume/Redshift-Tray/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ltGuillaume/Redshift-Tray</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@72e31a13e654321c9c65f282d6d0b1bf3df9024f/icons/rstray.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -33,9 +33,12 @@ So please tell your antivirus software to back off and mind its own business,
 or - if you can - report the executable as safe.
 ]]></description>
     <summary>A no-frills GUI for the excellent Redshift, with some optional OS hotkeys.</summary>
-    <releaseNotes>https://github.com/ltGuillaume/Redshift-Tray/releases/tag/1.9.3</releaseNotes>
+    <releaseNotes>https://github.com/ltGuillaume/Redshift-Tray/releases/latest/</releaseNotes>
     <tags>rstray foss wrapper gui redshift tray icon</tags>
     <projectSourceUrl>https://github.com/ltGuillaume/Redshift-Tray</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rstray</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -4,7 +4,7 @@
 Redshift Tray (by ltGuillaume) is a no-frills GUI for the excellent screen 
 temperature adjustment tool Redshift by Jon Lund Steffensen. 
 
-##Features
+### Features
 
 * Quickly enable/disable Redshift: double-click the tray icon;
 * Force a full nighttime temperature adjustment, no matter what the actual time is;
@@ -14,7 +14,7 @@ temperature adjustment tool Redshift by Jon Lund Steffensen.
 
 It also includes a set of optional [hotkeys](https://github.com/ltGuillaume/Redshift-Tray#list-of-hotkeys).
 
-##Notes
+### Notes
 
 * The compiled version of Redshift Tray (`rstray.exe`) offered by this package 
 is completely free of viruses and other malware. Unfortunately, many pesky virus 
