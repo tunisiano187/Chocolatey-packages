@@ -18,7 +18,7 @@
 // @connect         https://cdn.jsdelivr.net/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020072401
+// @require         https://cdn.jsdelivr.net/gh/tunisiano187@e7327fbef446fb70370bc123296ecef5cd71eb48/WME-send-to-slack/WMESTSData.user.js
 // @downloadURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @updateURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
