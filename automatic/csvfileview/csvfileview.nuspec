@@ -19,15 +19,15 @@ their order, and then save the result back into CSV file, tab-delimited file, XM
 or HTML report.
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/csvfileview</packageSourceUrl>
-    <projectUrl>http://www.nirsoft.net/utils/csv_file_view.html</projectUrl>
+    <projectUrl>https://www.nirsoft.net/utils/csv_file_view.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@427e56b487883626ee31079e72777afc821fb7b9/icons/csvfileview.png</iconUrl>
     <tags>csv file view convert</tags>
     <copyright>© 2011 NirSoft</copyright>
-    <licenseUrl>http://www.nirsoft.net/utils/csv_file_view.html</licenseUrl>
+    <licenseUrl>https://www.nirsoft.net/utils/csv_file_view.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
   </metadata>
   <files>
