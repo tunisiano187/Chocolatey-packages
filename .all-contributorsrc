@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tunisiano187",
+      "name": "Tunisiano18",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6095739?v=4",
+      "profile": "https://www.bowlman.org",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "WME-send-to-slack",
+  "projectOwner": "tunisiano187",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
