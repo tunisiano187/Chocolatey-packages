@@ -9,6 +9,7 @@
     - ./setup/au_setup.ps1
     - Write-Host "Start updating packages"
     - install-module Wormies-AU-Helpers
+    - tosend/try.ps1
     - cd au
     - ./invoke-setup.ps1
     - ../scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
