@@ -4,7 +4,7 @@
     <id>{{PackageName}}</id>
     <title>KeePass Plugin WebAutoType</title>
     <version>{{PackageVersion}}</version>
-    <authors>CEPOCTb,Alex Vallat</authors>
+    <authors>Alex Vallat</authors>
     <owners>dtgm</owners>
     <summary>Adds support to KeePass AutoType for URL matching</summary>
     <description>
@@ -16,8 +16,8 @@ WebAutoType is a plugin for [KeePass](https://chocolatey.org/packages/keepass) t
     <bugTrackerUrl>https://sourceforge.net/p/webautotype/tickets/</bugTrackerUrl>
     <docsUrl>https://sourceforge.net/p/webautotype/code/HEAD/tree/trunk/Readme.txt</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/webautotype/discussion/</mailingListUrl>
-    <tags>keepass plugin url autotype</tags>
-    <copyright>© 2011 CEPOCTb, 2013 Alex Vallat</copyright>
+    <tags>foss keepass plugin url autotype</tags>
+    <copyright>Alex Vallat</copyright>
     <licenseUrl>https://github.com/dlech/KeeAgent/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
@@ -25,7 +25,7 @@ WebAutoType is a plugin for [KeePass](https://chocolatey.org/packages/keepass) t
 * [Changelog](https://sourceforge.net/p/webautotype/code/HEAD/tree/trunk/Readme.txt#l163)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     </releaseNotes>
     <dependencies>
       <dependency id="keepass" version="[2.19, 3.0)" />
