@@ -13,6 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+	cup -y keepass
 	$url32 = "https://sourceforge.net/projects/webautotype/files/latest/download"
 	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match "files\/v"}).href[0].split('/')[-2].replace('v','')
 

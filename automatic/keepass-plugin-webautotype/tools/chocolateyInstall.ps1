@@ -9,8 +9,8 @@ if ($psver -ge 3) {
 $packageName    = $env:ChocolateyPackageName
 $typName        = 'WebAutoType.plgx'
 $packageSearch  = 'KeePass Password Safe'
-$url            = '{{DownloadUrl}}'
-$checksum       = '{{Checksum}}'
+$url            = 'https://sourceforge.net/projects/webautotype/files/latest/download'
+$checksum       = '0bf16ca0e03d48998678de00a2147db73a632a6485c0f39e2cd47c0a6991dfbe'
 $checksumType   = 'sha256'
 
 try {
@@ -28,9 +28,9 @@ $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Window
 $installPath = $regPath
 if (! $installPath) {
   Write-Verbose "Searching $env:ChocolateyBinRoot for portable install..."
-  $binRoot = Get-BinRoot
+  $binRoot = Get-ToolsLocation
   $portPath = Join-Path $binRoot "keepass"
-  $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
+  $installPath = Get-ChildItemDir "$portPath*"
 }
 if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
