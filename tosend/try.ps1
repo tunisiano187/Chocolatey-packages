@@ -2,7 +2,7 @@ Write-Verbose "Searching for packages to upload"
 
 $list = get-childitem ./*.nupkg -Recurse
 foreach ($file in $list) {
-    if(choco push $file.FullName --api-key $choco_api) {
+    if(choco push $file.FullName --api-key $choco_api --failstderr) {
         git checkout -B master
         git rm $file.FullName
         git commit -m "remove $($file.FullName)"
