@@ -1,6 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir	      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32		      = ''
+﻿$url32		      = ''
 $checksum32	    = ''
 $checksumType32 = ''
 $url64		      = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/download/4.0.6.0/gridcoin-4.0.6-win64-setup.exe'
