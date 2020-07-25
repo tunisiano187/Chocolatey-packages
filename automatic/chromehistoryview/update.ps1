@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\chv
 
-	$version=$(Get-Content .\chv\readme.txt | Where-Object {$_ -match 'HistoryView v'})[0].split(' ')[1].replace('v','')
+	$version=$(Get-Content .\chv\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[2]
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
