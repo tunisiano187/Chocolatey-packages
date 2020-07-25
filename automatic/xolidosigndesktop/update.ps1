@@ -1,6 +1,6 @@
 import-module au
 
-$url32 = "http://www.xolido.com/instaladores/SetupXolidoSign.exe"
+$url32 = "https://www.xolido.com/instaladores/SetupXolidoSign.exe"
 
 function global:au_SearchReplace {
     @{
