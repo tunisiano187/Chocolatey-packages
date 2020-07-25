@@ -82,6 +82,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/ordonezgs"><img src="https://avatars3.githubusercontent.com/u/17103864?v=4" width="100px;" alt=""/><br /><sub><b>ordonezgs</b></sub></a><br /><a href="https://github.com/tunisiano187/WME-send-to-slack/commits?author=ordonezgs" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.bowlman.org"><img src="https://avatars2.githubusercontent.com/u/6095739?v=4" width="100px;" alt=""/><br /><sub><b>Tunisiano18</b></sub></a><br /><a href="https://github.com/tunisiano187/WME-send-to-slack/commits?author=tunisiano187" title="Code">💻</a></td>
   </tr>
 </table>
 

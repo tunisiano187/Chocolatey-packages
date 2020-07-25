@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.24.01
+// @version         2020.07.24.03
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,7 +18,7 @@
 // @connect         https://cdn.jsdelivr.net/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WMESTSData.user.js?2020072401
+// @require         https://cdn.jsdelivr.net/gh/tunisiano187@e7327fbef446fb70370bc123296ecef5cd71eb48/WME-send-to-slack/WMESTSData.user.js
 // @downloadURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @updateURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
@@ -110,28 +110,10 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.22.02': 'Changing deprecated functions',
     '2020.07.22.03': '#31 Solved',
     '2020.07.23.01': 'Translations Info fix',
-    '2020.07.24.01': 'escape back'
+    '2020.07.24.01': 'escape back',
+    '2020.07.24.02': 'updates from Github directly except for depedencies',
+    '2020.07.24.03': 'en language included again as default.'
 };
-
-// Handle script errors and send them to GForm
-
-window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
-    var datas = {};
-    datas["entry.685415388"]=W.loginManager.user.userName;
-    datas["entry.1178459605"]=errorMsg.message;
-    for (var key in errorMsg) {
-        if (!(key in localStorage)) {
-            datas["entry.1178459605"]=datas["entry.1178459605"] + " \n" + key + ":" + errorMsg[key];
-        }
-    }
-    log(datas["entry.1178459605"], "One of your scripts");
-    /*$.ajax({
-        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLNa8UFj8j4hZiO5qGUYAmEnYqZrWRIvN2xcbf97wtZ_9VKQ/formResponse",
-        data: datas,
-        type : "POST",
-        dataType: "xml"
-    });*/
-}
 
 var $_GET = {};
 
@@ -262,7 +244,7 @@ async function localization () {
 	//Closing async f(x)
 	}
 	//Checking if require translations different from any english language
-	if (I18n.locale != "en-US" && I18n.locale != "en-GB" && I18n.locale != "en-AU") {
+	if (I18n.locale != "en-US" && I18n.locale != "en-GB" && I18n.locale != "en-AU" && I18n.locale != I18n.defaultLocale) {
 		//Checking if the language is available for display
 		if (suppLngs.includes(I18n.locale)) {
 			sheetName = I18n.locale
