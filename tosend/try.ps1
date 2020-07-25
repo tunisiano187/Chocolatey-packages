@@ -1,6 +1,6 @@
 Write-Verbose "Searching for packages to upload"
 
-$list = get-childitem ./*.nupkg
+$list = get-childitem ./*.nupkg -Recurse
 foreach ($file in $list) {
 
     try {
