@@ -28,6 +28,7 @@ https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest
     <dependencies>
       <dependency id="PowerShell" version="5.1" />
     </dependencies>
+    <replaces>DSC.HyperV</replaces>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

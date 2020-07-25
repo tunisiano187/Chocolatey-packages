@@ -28,6 +28,7 @@ https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest
     <licenseUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/master/LICENSE</licenseUrl>
     <copyright>Powershell Team</copyright>
     <tags>foss programming DSC.PSDesiredStateConfiguration admin dsc desired state configuration powershell</tags>
+    <replaces>DSC.PSDesiredStateConfiguration</replaces>
     <dependencies>
       <dependency id="PowerShell" version="5.1" />
     </dependencies>
