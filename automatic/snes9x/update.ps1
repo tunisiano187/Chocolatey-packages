@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.s9x-w32.de/dl/?C=M;O=D'
+$releases = 'http://www.s9x-w32.de/dl/?C=M;O=D'
 
 function global:au_SearchReplace {
 	@{
