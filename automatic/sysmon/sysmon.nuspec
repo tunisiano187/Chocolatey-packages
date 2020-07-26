@@ -3,7 +3,7 @@
   <metadata>
     <id>sysmon</id>
     <title>Sysmon</title>
-    <version>11.11</version>
+    <version>11.10</version>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
     <summary>Monitors and reports key system activity via the Windows event log</summary>
@@ -14,7 +14,7 @@ Monitors and reports key system activity via the Windows event log.
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@098f304e729bc92a5be78a9ec736ec97b069e85d/icons/sysmon.png</iconUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/dn798348</projectUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
-    <tags>eventlog monitor tools sysinternals</tags>
+    <tags>freeware eventlog monitor tools sysinternals</tags>
     <copyright>© Mark Russinovich</copyright>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
