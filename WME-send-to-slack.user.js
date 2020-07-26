@@ -5,7 +5,7 @@
 // @namespace       https://wmests.bowlman.be
 // @description     Script to send unlock/closures/Validations requests to slack
 // @description:fr  Ce script vous permettant d'envoyer vos demandes de délock/fermeture et de validation directement sur slack
-// @version         2020.07.24.03
+// @version         2020.07.26.01
 // @include 	    /^https:\/\/(www|beta)\.waze\.com\/(?!user\/)(.{2,6}\/)?editor.*$/
 // @exclude         https://www.waze.com/user/*editor/*
 // @exclude         https://www.waze.com/*/user/*editor/*
@@ -18,7 +18,7 @@
 // @connect         https://cdn.jsdelivr.net/
 // @connect         https://docs.google.com/
 // @require         https://greasyfork.org/scripts/24851-wazewrap/code/WazeWrap.js
-// @require         https://cdn.jsdelivr.net/gh/tunisiano187@e7327fbef446fb70370bc123296ecef5cd71eb48/WME-send-to-slack/WMESTSData.user.js
+// @require         https://cdn.jsdelivr.net/gh/tunisiano187@2020072501/WME-send-to-slack/WMESTSData.user.js
 // @downloadURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @updateURL	    https://cdn.jsdelivr.net/gh/tunisiano187/WME-send-to-slack/WME-send-to-slack.user.js
 // @supportURL      mailto:wmests@fire.fundersclub.com
@@ -29,35 +29,6 @@
 // Updates informations
 var UpdateNotes = "";
 const _WHATS_NEW_LIST = { // New in this version
-    '2019.10.30.01': 'Set level 3 as minimum for closures and open.',
-    '2019.11.03.01': 'Release notes history added',
-    '2019.11.07.01': 'Solve the problem with the Level required set to a wrong number',
-    '2019.11.08.01': 'Solve the channel selection problem that select the first after reload',
-    '2019.11.12.01': 'Add GForm in the list of connected website',
-    '2019.11.12.02': 'Add support of mapComments',
-    '2019.11.12.03': 'Adding the support for different GForm fields.',
-    '2019.11.13.01': 'Allow special characters in the comments',
-    '2019.11.13.02': 'Solving problem with update history',
-    '2019.11.13.03': 'Hide buttons on click to avoid multiple requests',
-    '2019.11.14.01': 'Add support of states',
-    '2019.11.19.01': 'Solve issue that Map problem couldn\'t be sent',
-    '2019.11.19.02': 'Solve accents and PL in the same request',
-    '2019.11.19.03': 'Stop desactivating buttons but warn the user if already sent',
-    '2019.11.20.01': 'Correction due to update of WME, closures options weren\'t available',
-    '2019.11.20.02': 'Due to WME update, Links were brokens',
-    '2019.11.24.01': 'Remove a useless line in the requests',
-    '2019.11.24.02': 'Change the text to shorter',
-    '2019.11.30.01': 'Add Chanels by Webhook',
-    '2019.12.07.01': 'Add States in the settings, automate the selection if only one choice',
-    '2019.12.08.01': 'Add support For new Countries with States, Multiple plateforms, and webhooks depending on the Language',
-    '2019.12.08.02': 'Your settings may need to be modified for this update.',
-    '2019.12.09.01': 'Add support of the environment variable',
-    '2019.12.09.02': 'Embed text in discord to hide preview',
-    '2019.12.10.01': 'Solve Zoom problem',
-    '2019.12.19.01': 'Removing ajax return that was causing an error',
-    '2019.12.19.02': 'Handle errors and send them to a GForm (Only the errors no private informations)',
-    '2019.12.19.03': 'Cancel Handle errors, Too many returns',
-    '2019.12.20.01': 'Logs enhanced',
     '2020.01.04.01': "Link username to Waze's user profile",
     '2020.01.04.02': "char error",
     '2020.01.28.01': "Added France",
@@ -112,7 +83,8 @@ const _WHATS_NEW_LIST = { // New in this version
     '2020.07.23.01': 'Translations Info fix',
     '2020.07.24.01': 'escape back',
     '2020.07.24.02': 'updates from Github directly except for depedencies',
-    '2020.07.24.03': 'en language included again as default.'
+    '2020.07.24.03': 'en language included again as default.',
+    '2020.07.26.01': 'Script seems not updating for some people trying to force the update'
 };
 
 var $_GET = {};
