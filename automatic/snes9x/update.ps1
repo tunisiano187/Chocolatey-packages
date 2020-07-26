@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.s9x-w32.de/dl/?C=M;O=D'
+$releases = 'https://www.s9x-w32.de/dl/?C=M;O=D'
 
 function global:au_SearchReplace {
 	@{
@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	$version=$installer[0].split('-')[1]
 	Write-Output "Version : $version"
 	$url32 = "$("http://www.s9x-w32.de/dl/")$($installer[1])"
-	$url64 = "$("http://www.s9x-w32.de/dl/")$($installer[2])"
+	$url64 = "$("http://www.s9x-w32.de/dl/")$($installer[0])"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
