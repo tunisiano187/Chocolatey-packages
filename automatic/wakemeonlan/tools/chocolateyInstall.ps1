@@ -4,7 +4,7 @@ $checksum = '{{Checksum}}'
 $checksumType = 'sha256'
 $url64 = ''
 $checksum64 = ''
-$checksumType64 = '' 
+$checksumType64 = ''
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
 
