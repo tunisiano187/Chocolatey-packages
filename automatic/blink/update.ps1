@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	$url32 = Get-RedirectedURL $release
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "blink.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=$(Get-Command $File).FileVersionInfo.ProductVersion
+	$version=$(Get-Command $File).FileVersionInfo.ProductVersion.trim()
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
