@@ -3,14 +3,6 @@ import-module au
 $url32 = 'https://www.nirsoft.net/utils/wakemeonlan.zip'
 $url64 = 'https://www.nirsoft.net/utils/wakemeonlan-x64.zip'
 
-
-Add-Type -AssemblyName System.IO.Compression.FileSystem
-function Unzip
-{
-    param([string]$zipfile, [string]$outpath)
-    [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
-}
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -30,7 +22,7 @@ function global:au_GetLatest {
 	Expand-Archive $File -DestinationPath .\wol
 
 	$version=$(Get-Content .\wol\readme.txt | Where-Object {$_ -match 'WakeMeOnLan'})[0].split(' ')[-1].Replace('v','')
-
+	Remove-Item -Recurse .\wol -Force
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
