@@ -17,7 +17,11 @@ function global:au_GetLatest {
 
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "SwitcherSetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	Start-Process -FilePath $File -ArgumentList "/S" -Wait
+	while (!Test-Path $(join-path ${env:ProgramFiles(x86)} "johnsadventures.com\John's Background Switcher\BackgroundSwitcher.exe")) {
+		Start-Sleep -Seconds 1
+	}
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($(join-path ${env:ProgramFiles(x86)} "johnsadventures.com\John's Background Switcher\BackgroundSwitcher.exe")).FileVersion
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
