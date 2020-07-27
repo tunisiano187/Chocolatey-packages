@@ -31,7 +31,7 @@ function global:au_GetLatest {
 
 	$version=$(Get-Content .\wol\readme.txt | Where-Object {$_ -match 'WakeMeOnLan'})[0].split(' ')[-1].Replace('v','')
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
