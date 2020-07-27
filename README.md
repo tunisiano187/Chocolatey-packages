@@ -11,7 +11,7 @@
 This repository contains chocolatey packages created and maintained by [tunisiano](https://chocolatey.org/profiles/tunisiano) that are daily updated
 
 ### Patreon
-<a href="https://www.patreon.com/bePatron?u=39585820" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+<a href="https://www.patreon.com/bePatron?u=39585820" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
 
 ## Guidelines
 
