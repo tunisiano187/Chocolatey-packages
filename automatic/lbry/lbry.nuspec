@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lbry</id>
+    <version>__REPLACE__</version>
+    <owners>tunisiano</owners>
+    <title>lbry (Install)</title>
+    <authors>lbry.com</authors>
+    <projectUrl>https://lbry.com</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/lbry.png</iconUrl>
+    <copyright>lbry.com</copyright>
+    <licenseUrl>https://github.com/lbryio/lbry-desktop/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/lbryio/lbry-desktop</projectSourceUrl>
+    <docsUrl>https://lbry.com/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/lbryio/lbry-desktop/issues</bugTrackerUrl>
+    <tags>foss browser client lbry</tags>
+    <summary>LBRY is a secure, open, and community-run digital marketplace.Enjoy the latest content from your favorite creators—as a user, not a product.</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>#### Program
+    * [Release log](https://github.com/lbryio/lbry-desktop/releases)
+    
+    #### Package
+    * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
