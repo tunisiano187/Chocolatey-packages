@@ -3,7 +3,7 @@
   <metadata>
     <id>electron</id>
     <title>Electron</title>
-    <version>9.1.1</version>
+    <version>9.1.2</version>
     <authors>GitHub Inc</authors>
     <owners>tunisiano</owners>
     <summary>Build cross platform desktop apps with web technologies</summary>
@@ -25,7 +25,7 @@ With Electron, creating a desktop application for your company or idea is easy. 
     <projectSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/electron</projectSourceUrl>
     <bugTrackerUrl>https://github.com/atom/electron/issues</bugTrackerUrl>
     <docsUrl>http://electron.atom.io/docs/</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7506c56eb4e327a92d51d0b608dc4af2364f7e61/icons/electron.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bf7bd1c6cd3eab65ad33c890a2f1807265933f6d/icons/electron.png</iconUrl>
     <tags>atom web development builder</tags>
     <copyright>GitHub Inc</copyright>
     <licenseUrl>https://github.com/atom/electron/blob/master/LICENSE</licenseUrl>
