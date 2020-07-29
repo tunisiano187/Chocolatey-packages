@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
 	$url32 = "https://files.informer.com/siinst.exe"
 
-	$version = $download_page.Content.Split("<span>").split(" ") | Where-Object {$_ -match "\.[0-9][0-9][0-9][0-9]"} | Select-Object -First 1
+	$version = $($download_page.Content.Split("<span>") | Where-Object {$_ -match "\.[0-9][0-9][0-9][0-9]"} | Where-Object {$_ -match '(x86/x64)'}).split(' ')[0].trim()
 
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
