@@ -1,4 +1,4 @@
-[![](https://img.shields.io/chocolatey/v/ultraiso.install?color=green&label=ultraiso.install)](https://chocolatey.org/packages/ultraiso.install) [![](https://img.shields.io/chocolatey/dt/ultraiso.install)](https://chocolatey.org/packages/ultraiso.install)
+[![](https://img.shields.io/chocolatey/v/ultraiso?color=green&label=ultraiso)](https://chocolatey.org/packages/ultraiso) [![](https://img.shields.io/chocolatey/dt/ultraiso)](https://chocolatey.org/packages/ultraiso)
 
 UltraISO  is an ISO CD/DVD image file creating/editing/converting tool and a bootable 
 CD/DVD maker , it can directly edit the CD/DVD image file and extract files and folders 

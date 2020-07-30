@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>ultraiso.install</id>
+    <id>ultraiso</id>
     <version>9.7.3.3629</version>
     <title>UltraISO</title>
     <authors>EZB Systems,Inc</authors>
