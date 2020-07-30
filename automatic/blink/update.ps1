@@ -15,9 +15,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Import-Module Wormies-AU-Helpers
-	$url32 = Get-RedirectedUrl $release
-	#$url32 = $release
+	$url32 = $release
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "blink.exe"
 	(new-object System.Net.WebClient).DownloadFile($url32,$File)
 	#Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
