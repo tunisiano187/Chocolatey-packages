@@ -22,6 +22,7 @@
 [Development ToDo](http://devel.ag-projects.com/repositories/blink-qt/TODO)
     </releaseNotes>
     <dependencies>
+      <dependency id='KB2919355' version="1.0.20160915">
       <dependency id="dotnet3.5" version="3.5.20160716"/>
     </dependencies>
   </metadata>

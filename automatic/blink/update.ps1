@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = Get-RedirectedURL $release
+	$url32 = $release
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "blink.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=$(Get-Command $File).FileVersionInfo.ProductVersion.trim()

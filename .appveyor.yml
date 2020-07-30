@@ -139,6 +139,7 @@ build_script:
     import-module Wormies-AU-Helpers
     $nuspec=Get-ChildItem ./*.nuspec -Recurse; foreach ($file in $nuspec) { Update-Metadata -key owners -value "tunisiano" -NuspecFile $file.FullName }
     Write-Host "updating packages"
+    cup -y KB2919355
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
