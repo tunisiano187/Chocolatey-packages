@@ -1,17 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>blink</id>
     <title>Blink</title>
-    <version>{{PackageVersion}}</version>
+    <version>3.2.0</version>
     <authors>Adrian Georgescu</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Real-time communications client using SIP protocol</summary>
-    <description>
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/blink/</packageSourceUrl>
+    <description><![CDATA[
+Blink is the best real-time communications client using SIP protocol. You can use it with many SIP providers, on the LAN using Bonjour and SIP2SIP free service.
+
+### Features
+* Voice and Video	
+* IM and Presence	
+* File Transfers	
+* Screen Sharing	
+* Conferencing
+
+[Wiki](http://blink-qt.ag-projects.com/)
+[Source code repository](http://devel.ag-projects.com/repositories/blink-qt)
+
+### Package-specific issue
+Attempting to install previous versions will fail.  Only the latest release of blink may be installed.
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/blink</packageSourceUrl>
     <projectUrl>http://icanblink.com</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2d36d582524442618d1c3b8bc4f3830f9e75281d/icons/blink.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2f95688034e8dea30ec26633f3105b39711575de/icons/blink.png</iconUrl>
     <tags>blink sip phone calls telephony softphone admin</tags>
     <copyright>© AG Projects B.V.</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
@@ -22,8 +36,8 @@
 [Development ToDo](http://devel.ag-projects.com/repositories/blink-qt/TODO)
     </releaseNotes>
     <dependencies>
-      <dependency id="KB2919355" version="1.0.20160915"/>
-      <dependency id="dotnet3.5" version="3.5.20160716"/>
+      <dependency id="KB2919355" version="1.0.20160915" />
+      <dependency id="dotnet3.5" version="3.5.20160716" />
     </dependencies>
   </metadata>
   <files>
