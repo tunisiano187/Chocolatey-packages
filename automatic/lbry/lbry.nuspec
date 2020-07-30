@@ -12,6 +12,7 @@
     <licenseUrl>https://github.com/lbryio/lbry-desktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/lbryio/lbry-desktop</projectSourceUrl>
+    <packageSourceUrl><packageSourceUrl>
     <docsUrl>https://lbry.com/faq</docsUrl>
     <bugTrackerUrl>https://github.com/lbryio/lbry-desktop/issues</bugTrackerUrl>
     <tags>foss browser client lbry</tags>
