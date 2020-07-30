@@ -14,10 +14,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+	Set-UseUnsafeHeaderParsing -Enable
 	$referer        = 'http://icanblink.com/download/'
 	Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html" #  Required to be allowed just after
 	$url32 = $release
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "blink.exe"
+	Set-UseUnsafeHeaderParsing -Enable
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=$(Get-Command $File).FileVersionInfo.ProductVersion.trim()
 
