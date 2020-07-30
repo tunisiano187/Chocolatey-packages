@@ -4,7 +4,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-![jsdelivr](https://data.jsdelivr.com/v1/package/gh/tunisiano187/Chocolatey-packages/badge?style=rounded)[![pipeline status](https://gitlab.com/chocolatey-packages/automatic-updating/badges/master/pipeline.svg)](https://gitlab.com/chocolatey-packages/automatic-updating/-/commits/master) [![CodeFactor](https://www.codefactor.io/repository/github/tunisiano187/chocolatey-packages/badge)](https://www.codefactor.io/repository/github/tunisiano187/chocolatey-packages)
+[jsdelivr](https://data.jsdelivr.com/v1/package/gh/tunisiano187/Chocolatey-packages/badge?style=rounded)[![pipeline status](https://gitlab.com/chocolatey-packages/automatic-updating/badges/master/pipeline.svg)](https://gitlab.com/chocolatey-packages/automatic-updating/-/commits/master) [![CodeFactor](https://www.codefactor.io/repository/github/tunisiano187/chocolatey-packages/badge)](https://www.codefactor.io/repository/github/tunisiano187/chocolatey-packages)
 
 ### Description
 
@@ -19,7 +19,7 @@ This repository contains chocolatey packages created and maintained by [tunisian
 
 If packages from this repository fail to install or a new version has been released by the software vendor for a particular package, please report it in any or all of the following ways:
 
-Github issue: https://github.com/tunisiano187/chocolatey-packages/automatic-update/issues/new
+Github issue: https://github.com/tunisiano187/chocolatey-packages/issues/new
 
 ### Broken packages
 
