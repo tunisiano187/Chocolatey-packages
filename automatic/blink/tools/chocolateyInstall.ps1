@@ -17,7 +17,5 @@ $options =
     Referer = $referer;
   }
 }
-Set-UseUnsafeHeaderParsing -Enable
-Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html"  #  Required to be allowed just after
-Set-UseUnsafeHeaderParsing -Enable
+Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html" -UseBasicParsing #  Required to be allowed just after
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes -checksum "$checksum" -checksumType "$checksumType" -Options $options

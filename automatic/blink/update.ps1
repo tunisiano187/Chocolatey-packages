@@ -2,39 +2,6 @@ import-module au
 
 $release = 'https://blink.sipthor.net/download.phtml?download&os=nt'
 
-function Set-UseUnsafeHeaderParsing
-{
-    param(
-        [Parameter(Mandatory,ParameterSetName='Enable')]
-        [switch]$Enable,
-
-        [Parameter(Mandatory,ParameterSetName='Disable')]
-        [switch]$Disable
-    )
-
-    $ShouldEnable = $PSCmdlet.ParameterSetName -eq 'Enable'
-
-    $netAssembly = [Reflection.Assembly]::GetAssembly([System.Net.Configuration.SettingsSection])
-
-    if($netAssembly)
-    {
-        $bindingFlags = [Reflection.BindingFlags] 'Static,GetProperty,NonPublic'
-        $settingsType = $netAssembly.GetType('System.Net.Configuration.SettingsSectionInternal')
-
-        $instance = $settingsType.InvokeMember('Section', $bindingFlags, $null, $null, @())
-
-        if($instance)
-        {
-            $bindingFlags = 'NonPublic','Instance'
-            $useUnsafeHeaderParsingField = $settingsType.GetField('useUnsafeHeaderParsing', $bindingFlags)
-
-            if($useUnsafeHeaderParsingField)
-            {
-              $useUnsafeHeaderParsingField.SetValue($instance, $ShouldEnable)
-            }
-        }
-    }
-}
 
 function global:au_SearchReplace {
 	@{
@@ -48,13 +15,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Set-UseUnsafeHeaderParsing -Enable
 	$referer        = 'http://icanblink.com/download/'
-	Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html" #  Required to be allowed just after
+	Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html" -UseBasicParsing #  Required to be allowed just after
 	$url32 = $release
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "blink.exe"
-	Set-UseUnsafeHeaderParsing -Enable
-	Invoke-WebRequest -Uri $url32 -OutFile $File
+	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	$version=$(Get-Command $File).FileVersionInfo.ProductVersion.trim()
 
 	$Latest = @{ URL32 = $url32; Version = $version; Referer = $referer }
