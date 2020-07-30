@@ -15,11 +15,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$referer        = 'http://icanblink.com/download/'
-	Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html" -UseBasicParsing #  Required to be allowed just after
+	#$referer        = 'http://icanblink.com/download/'
+	#Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/icanblink.html" -UseBasicParsing #  Required to be allowed just after
 	$url32 = $release
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "blink.exe"
-	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
+	#Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
+	Import-Module BitsTransfer
+	Start-BitsTransfer -Source $url32 -Destination $File
 	$version=$(Get-Command $File).FileVersionInfo.ProductVersion.trim()
 
 	$Latest = @{ URL32 = $url32; Version = $version; Referer = $referer }
