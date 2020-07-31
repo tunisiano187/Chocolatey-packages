@@ -15,7 +15,7 @@ function global:au_GetLatest {
 
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "jcpicker.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 
 	$url32 = 'https://annystudio.com/jcpicker.zip'
 
