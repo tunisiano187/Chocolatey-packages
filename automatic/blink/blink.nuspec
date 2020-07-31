@@ -3,7 +3,7 @@
   <metadata>
     <id>blink</id>
     <title>Blink</title>
-    <version>3.2.0</version>
+    <version>3.1.0</version>
     <authors>Adrian Georgescu</authors>
     <owners>tunisiano</owners>
     <summary>Real-time communications client using SIP protocol</summary>
