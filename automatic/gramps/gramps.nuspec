@@ -31,9 +31,8 @@ Gramps is a genealogy program for Linux, Windows, Mac, and FreeBSD that allows y
 * [Changelog](https://github.com/gramps-project/gramps/releases/v{{PackageVersion}})
 
 #### Package
-* Automatically built: if this package's version is out of date by more than a day of the program's version, please [contact the maintainer](https://chocolatey.org/packages/{{PackageName}}/ContactOwners).
-* Packaged by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
