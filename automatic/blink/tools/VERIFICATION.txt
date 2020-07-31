@@ -13,7 +13,7 @@ x86: https://blink.sipthor.net/download.phtml?download&os=nt
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum32: 
+checksum32: 88a14a67916a3700d98b6deede1a5f689d6f9674e29da14caf76d7e80f183470
 
 The included 'LICENSE.txt' file have been obtained from:
 https://github.com/AGProjects/blink-qt/blob/master/LICENSE
