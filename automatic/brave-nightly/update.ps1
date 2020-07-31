@@ -17,8 +17,8 @@ function global:au_SearchReplace {
 }
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserSilentNightlySetup32.exe'}).href)[0]
-	$url64 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserSilentNightlySetup.exe'}).href)[0]
+	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserSilentNightlySetup32.exe'} | Select-Object -First 1).href)
+	$url64 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserSilentNightlySetup.exe'} | Select-Object -First 1).href)
 	Write-Output 'Checking version'
 	$version = $url32.split('/')[5].replace('v','')
 	$version = "$version-nightly"
