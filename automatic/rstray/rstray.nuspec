@@ -33,7 +33,11 @@ So please tell your antivirus software to back off and mind its own business,
 or - if you can - report the executable as safe.
 ]]></description>
     <summary>A no-frills GUI for the excellent Redshift, with some optional OS hotkeys.</summary>
-    <releaseNotes>https://github.com/ltGuillaume/Redshift-Tray/releases/latest/</releaseNotes>
+    <releaseNotes>https://github.com/ltGuillaume/Redshift-Tray/releases/latest/
+    
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <tags>rstray foss wrapper gui redshift tray icon</tags>
     <projectSourceUrl>https://github.com/ltGuillaume/Redshift-Tray</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rstray</packageSourceUrl>

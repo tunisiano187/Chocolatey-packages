@@ -27,8 +27,8 @@ file, or copy the information to the clipboard and paste it into Excel.
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

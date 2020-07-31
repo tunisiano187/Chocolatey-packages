@@ -27,7 +27,12 @@ Everywhere;
 advances and it’s not ready for daily use. Brave Beta automatically sends crash reports.
 ]]></description>
     <summary>A browser that lets you browse safer and faster by blocking ads and trackers.</summary>
-    <releaseNotes>https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md</releaseNotes>
+    <releaseNotes>#### Software
+* [ChangeLog](https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <tags>foss nightly cross-platform admin brave brave-browser bravebrowser web browser web-browser chromium adblock adblocker privacy</tags>
     <projectSourceUrl>https://github.com/brave/brave-browser</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/brave-nightly</packageSourceUrl>

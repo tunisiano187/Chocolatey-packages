@@ -22,7 +22,8 @@
     * [Release log](https://github.com/lbryio/lbry-desktop/releases)
     
     #### Package
-    * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+    * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

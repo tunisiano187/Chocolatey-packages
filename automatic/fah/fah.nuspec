@@ -32,7 +32,7 @@ This program does not slow your computer down and only uses unused computer powe
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-    </releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <copyright>Pande Lab, Stanford University</copyright>
     <language>en-us</language>
     <tags>distributed-computing protein-folding biology science</tags>

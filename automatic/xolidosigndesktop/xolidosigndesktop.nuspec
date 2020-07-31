@@ -12,7 +12,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Software to be installed in your computer being useful as a complementary tool for other apps and telematics procedures that could need PDF signed electronically with time-stamp.</description>
     <summary>Program FREE for signing, verifying and time-stamping documents on your computer</summary>
-    <releaseNotes />
+    <releaseNotes>
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <copyright />
     <tags>xolido document sign signing admin</tags>
     <dependencies>

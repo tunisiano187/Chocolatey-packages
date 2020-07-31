@@ -30,10 +30,14 @@ Attempting to install previous versions will fail.  Only the latest release of b
     <copyright>© AG Projects B.V.</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
+    <releaseNotes>#### Software
 [Changelog](http://icanblink.com/changelog/)
 [Development Notes](http://devel.ag-projects.com/repositories/blink-qt/Notes)
 [Development ToDo](http://devel.ag-projects.com/repositories/blink-qt/TODO)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
     </releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />

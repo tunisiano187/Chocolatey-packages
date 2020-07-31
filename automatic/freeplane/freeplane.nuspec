@@ -23,7 +23,8 @@ For more information, see https://freeplane.sourceforge.io/wiki/index.php/Goals
 * [Changelog](http://folding.stanford.edu/home/blog)
 
 #### Package
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <copyright />
     <tags>freemind diagram mindmap graph visualization admin</tags>
   </metadata>

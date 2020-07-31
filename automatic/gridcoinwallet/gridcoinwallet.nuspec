@@ -50,7 +50,11 @@ Install manpages in correct system location #1546 (@Git-Jiro)
 Fix ability to show help and version without a config file #1553 (@cyrossignol)
 Refactor QT UI variable names to be more consistent, Fix Difficulty default #1563 (@barton2526)
 Fix two regressions in previous UI refactor #1565 (@barton2526)
-Fix "Owed" amount in output of "magnitude" RPC method #1569 (@cyrossignol)</releaseNotes>
+Fix "Owed" amount in output of "magnitude" RPC method #1569 (@cyrossignol)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <copyright>2014-2019 Gridcoin Developers</copyright>
     <tags>gridcoin wallet grc crypto cryptocurrency</tags>
     <projectSourceUrl>https://github.com/gridcoin-community/Gridcoin-Research</projectSourceUrl>

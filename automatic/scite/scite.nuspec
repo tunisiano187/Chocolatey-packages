@@ -31,7 +31,7 @@ Other text editors based on [SCIntilla](https://chocolatey.org/packages?q=tag:SC
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-    </releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.5" />
     </dependencies>

@@ -27,7 +27,7 @@ allow the AutoType functionality to work with browser URLs as well as window tit
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-    </releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="[2.19, 3.0)" />
     </dependencies>

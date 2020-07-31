@@ -15,9 +15,10 @@
 	By aggregating under-utilized computing resources for advanced scientific research, 
 	SUNET dedicates to optimizing the efficiency of computing resources allocation and lowering its cost.</description>
     <summary>Official sunet.cc client based on boinc</summary>
-    <releaseNotes>#### Package
+    <releaseNotes>
+#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-    </releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <copyright>Sunet.cc</copyright>
     <language>en-us</language>
     <tags>distributed-computing science admin</tags>

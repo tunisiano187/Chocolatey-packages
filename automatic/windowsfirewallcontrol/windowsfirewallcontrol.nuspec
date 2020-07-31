@@ -81,9 +81,10 @@ Firewall Control. Thank you for your support!
 ]]></description>
     <releaseNotes>#### Software 
     https://www.binisoft.org/changelog.txt
-    #### Package
-    * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-    </releaseNotes>
+    
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1" />
       <dependency id="chocolatey-core.extension" version="1.1.0" />
