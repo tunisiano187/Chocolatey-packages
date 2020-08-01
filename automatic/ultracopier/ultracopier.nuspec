@@ -5,7 +5,7 @@
         <version>2.2.4.4</version>
         <title>Ultracopier</title>
         <authors>Ultracopier</authors>
-		<owners>tunisiano</owners>
+    		<owners>tunisiano</owners>
         <projectUrl>http://ultracopier.first-world.info</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A replacement for the default windows file transfer progression bar.</description>

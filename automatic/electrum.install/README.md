@@ -16,3 +16,7 @@ because it does not download the Bitcoin blockchain.
 * Cold Storage: Sign transactions from a computer that is always offline. Broadcast them using a machine that does not have your keys.
 * Reachable: You can export your private keys into other Bitcoin clients.
 * Established: Electrum is open source and was first released in November 2011.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

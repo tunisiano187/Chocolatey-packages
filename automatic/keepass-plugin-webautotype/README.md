@@ -3,3 +3,7 @@
 
 WebAutoType is a plugin for [KeePass](https://chocolatey.org/packages/keepass) to
 allow the AutoType functionality to work with browser URLs as well as window titles.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

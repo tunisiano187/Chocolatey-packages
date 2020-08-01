@@ -14,3 +14,8 @@ The program consists of three main modules: Layout Editor, Schematic Editor, and
 This software is free for non-profit usage or evaluation. If you earn (or save) money by using 
 the Freeware version of EAGLE Light, you have to [register it](https://www.autodesk.com/products/eagle/overview).  
 For limitations, see https://www.autodesk.com/products/eagle/overview
+
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

@@ -12,3 +12,7 @@ This package installs the free version of Spybot which allows full, manual scann
 * [Facebook](https://www.facebook.com/SpybotSearchAndDestroy/)
 * [Twitter](https://www.twitter.com/SpybotSD)
 * [YouTube](https://www.youtube.com/user/SaferNetworking)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

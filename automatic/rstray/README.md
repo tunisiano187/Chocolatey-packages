@@ -21,3 +21,7 @@ is completely free of viruses and other malware. Unfortunately, many pesky virus
 scanners mark compiled AutoHotkey scripts as infected (see [here](https://www.autohotkey.com/docs/FAQ.htm#Virus)). 
 So please tell your antivirus software to back off and mind its own business, 
 or - if you can - report the executable as safe.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

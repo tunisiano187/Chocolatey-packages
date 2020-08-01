@@ -14,5 +14,5 @@ Blink is the best real-time communications client using SIP protocol. You can us
 [Source code repository](http://devel.ag-projects.com/repositories/blink-qt)
 
 ### Package-specific issue
-Attempting to install previous versions will fail.  Only the latest release of blink may be installed.
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

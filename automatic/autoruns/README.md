@@ -10,3 +10,7 @@ Internet Explorer, Explorer and media players. These programs and drivers includ
 startup folder, Run, RunOnce, and other Registry keys. Autoruns reports Explorer shell 
 extensions, toolbars, browser helper objects, Winlogon notifications, auto-start services, and 
 much more. Autoruns goes way beyond other autostart utilities.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

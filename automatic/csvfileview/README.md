@@ -10,3 +10,7 @@ software, in a simple table viewer.
 You can sort the lines according to one of the fields, remove unwanted fields and change 
 their order, and then save the result back into CSV file, tab-delimited file, XML file, 
 or HTML report.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

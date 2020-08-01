@@ -6,3 +6,7 @@ Freeplane is a free and open source software application that supports thinking,
 Originally based on FreeMind.  
 
 For more information, see https://freeplane.sourceforge.io/wiki/index.php/Goals
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

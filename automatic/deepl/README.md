@@ -5,3 +5,7 @@ The World’s Best Machine Translation
 DeepL’s neural networks are able to capture even the slightest nuances and reproduce them in translation unlike 
 any other service. In blind tests pitting DeepL Translator against the competition, translators prefer DeepL's 
 results by a factor of 3:1. DeepL also achieves record-breaking performance according to scientific benchmarks.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

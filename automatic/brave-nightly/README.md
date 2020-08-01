@@ -15,3 +15,7 @@ Everywhere;
 
 * Nightly is an early preview for new versions of Brave. This build showcases the newest
 advances and it’s not ready for daily use. Brave Beta automatically sends crash reports.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

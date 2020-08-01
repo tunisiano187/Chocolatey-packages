@@ -26,3 +26,7 @@ Mode is always recommended.
 * [Forum - NVIDIA](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379506/)
 * [Forum - AMD](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379505/)
 * [Twitter](https://twitter.com/Wagnard)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
