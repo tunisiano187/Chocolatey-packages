@@ -1,6 +1,6 @@
-# foldingathome
 [![](https://img.shields.io/chocolatey/v/fah?color=green&label=fah)](https://chocolatey.org/packages/fah) [![](https://img.shields.io/chocolatey/dt/fah)](https://chocolatey.org/packages/fah)
 
+## foldingathome
 Fight Covid !
 
 Help Stanford University scientists studying Alzheimer's, Huntington's, Parkinson's, and many cancers by simply running a piece of software on your computer. The program does this by building simulations of how proteins, RNA, and nanoscale synthetic polymers fold. 

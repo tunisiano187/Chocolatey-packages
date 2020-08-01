@@ -1,5 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/wakemeonlan?color=green&label=wakemeonlan)](https://chocolatey.org/packages/wakemeonlan) [![](https://img.shields.io/chocolatey/dt/wakemeonlan)](https://chocolatey.org/packages/wakemeonlan)
 
+## Wake Me On LAN
 This utility allows you to easily turn on one or more computers remotely by sending 
 Wake-on-LAN (WOL) packet to the remote computers.
 

@@ -1,6 +1,6 @@
-# spybot
 [![](https://img.shields.io/chocolatey/v/spybot?color=green&label=spybot)](https://chocolatey.org/packages/spybot) [![](https://img.shields.io/chocolatey/dt/spybot)](https://chocolatey.org/packages/spybot)
 
+## Spybot
 Spybot - Search & Destroy detects and removes spyware, a kind of threat not very well covered by common anti-virus applications. Spyware silently tracks your surfing behaviour to create a marketing profile for you that is transmitted without your knowledge to the compilers and sold to advertising companies. If you see new toolbars in your Internet Explorer that you haven't intentionally installed, if your browser crashes inexplicably, or if your home page has been "hijacked" (or changed without your knowledge), your computer is most probably infected with spyware. Even if you don't see the symptoms, your computer may be infected, because more and more spyware is emerging.
 
 #### Freeware

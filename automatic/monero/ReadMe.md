@@ -1,5 +1,6 @@
 ﻿[![](https://img.shields.io/chocolatey/v/monero?color=green&label=monero)](https://chocolatey.org/packages/monero) [![](https://img.shields.io/chocolatey/dt/monero)](https://chocolatey.org/packages/monero)
 
+# Monero
 Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork.
 
 Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.

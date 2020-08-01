@@ -1,6 +1,6 @@
-## scite
 [![](https://img.shields.io/chocolatey/v/scite?color=green&label=scite)](https://chocolatey.org/packages/scite) [![](https://img.shields.io/chocolatey/dt/scite)](https://chocolatey.org/packages/scite)
 
+## SciTE
 SciTE is a cross-platform, advanced text editor using the free, open source library SCIntilla (developed by the same author).
 
 Lightweight and built for speed, it is designed mainly for source editing, and performs syntax highlighting and inline function reference for many different languages.

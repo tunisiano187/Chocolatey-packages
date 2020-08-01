@@ -1,9 +1,9 @@
-# blink
 [![](https://img.shields.io/chocolatey/v/blink?color=green&label=blink)](https://chocolatey.org/packages/blink) [![](https://img.shields.io/chocolatey/dt/blink)](https://chocolatey.org/packages/blink)
 
+## Blink
 Blink is the best real-time communications client using SIP protocol. You can use it with many SIP providers, on the LAN using Bonjour and SIP2SIP free service.
 
-### Features
+#### Features
 * Voice and Video	
 * IM and Presence	
 * File Transfers	

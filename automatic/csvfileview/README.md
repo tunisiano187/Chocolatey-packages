@@ -1,6 +1,6 @@
-# CSVFileView
 [![](https://img.shields.io/chocolatey/v/csvfileview?color=green&label=csvfileview)](https://chocolatey.org/packages/csvfileview) [![](https://img.shields.io/chocolatey/dt/csvfileview)](https://chocolatey.org/packages/csvfileview)
 
+## CSVFileView
 CSVFileView is a simple CSV file viewer/converter utility that allows you to easily view 
 
 

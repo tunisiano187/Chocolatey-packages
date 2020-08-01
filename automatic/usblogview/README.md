@@ -1,5 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/usblogview?color=green&label=usblogview)](https://chocolatey.org/packages/usblogview) [![](https://img.shields.io/chocolatey/dt/usblogview)](https://chocolatey.org/packages/usblogview)
 
+## USBLogView
 USBLogView is a small utility that runs in the background and records the details of any USB device 
 that is plugged or unplugged into your system.
 

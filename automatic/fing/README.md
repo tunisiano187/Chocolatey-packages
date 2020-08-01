@@ -1,6 +1,6 @@
-# foldingathome
 [![](https://img.shields.io/chocolatey/v/fing?color=green&label=fing)](https://chocolatey.org/packages/fing) [![](https://img.shields.io/chocolatey/dt/fing)](https://chocolatey.org/packages/fing)
 
+## foldingathome
 Fing App is a free network scanner that makes you discover all connected devices, run internet 
 speed tests and help troubleshoot network and device issues. Get Fingbox for more advanced security 
 and protection for your network.

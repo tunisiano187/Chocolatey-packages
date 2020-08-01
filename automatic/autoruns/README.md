@@ -1,6 +1,6 @@
-# autoruns
 [![](https://img.shields.io/chocolatey/v/autoruns?color=green&label=autoruns)](https://chocolatey.org/packages/autoruns) [![](https://img.shields.io/chocolatey/dt/autoruns)](https://chocolatey.org/packages/autoruns)
 
+## Autoruns
 See what programs are configured to startup automatically when your system boots and you login. 
 Autoruns also shows you the full list of Registry and file locations where applications can 
 configure auto-start settings. This utility, which has the most comprehensive knowledge of 

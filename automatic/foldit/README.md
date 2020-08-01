@@ -1,6 +1,6 @@
-# foldingathome
 [![](https://img.shields.io/chocolatey/v/foldit?color=green&label=foldit)](https://chocolatey.org/packages/foldit) [![](https://img.shields.io/chocolatey/dt/foldit)](https://chocolatey.org/packages/foldit)
 
+## foldingathome
 Foldit is an online game in which humans try to solve one of the hardest computational problems 
 in biology: protein folding. You don't need to know anything about biology to play the game, 
 although a little background will help. Most of the players of Foldit are not biologists.

@@ -1,6 +1,6 @@
-## electrum
 [![](https://img.shields.io/chocolatey/v/electrum?color=green&label=electrum)](https://chocolatey.org/packages/electrum) [![](https://img.shields.io/chocolatey/dt/electrum)](https://chocolatey.org/packages/electrum)
 
+## Electrum
 Electrum is an easy to use Bitcoin wallet. It protects you from losing coins in a backup 
 mistake or computer failure, because your wallet can be recovered from a secret phrase that 
 you can write on paper or learn by heart. There is no waiting time when you start the client, 

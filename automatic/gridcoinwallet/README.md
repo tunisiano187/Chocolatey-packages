@@ -1,6 +1,6 @@
-# gridcoinwallet
 [![](https://img.shields.io/chocolatey/v/gridcoinwallet?color=green&label=gridcoinwallet)](https://chocolatey.org/packages/gridcoinwallet) [![](https://img.shields.io/chocolatey/dt/gridcoinwallet)](https://chocolatey.org/packages/gridcoinwallet)
 
+## gridcoinwallet
 Gridcoin is a decentralized, open-source, math-based digital asset (cryptocurrency). Gridcoin, 
 while energy-efficient, is the first and only cryptocurrency that rewards individuals for scientific 
 contributions and performs transactions peer-to-peer cryptographically - without the need for a 

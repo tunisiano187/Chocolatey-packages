@@ -1,6 +1,6 @@
-# pinginfoview
 [![](https://img.shields.io/chocolatey/v/pinginfoview?color=green&label=pinginfoview)](https://chocolatey.org/packages/pinginfoview) [![](https://img.shields.io/chocolatey/dt/pinginfoview)](https://chocolatey.org/packages/pinginfoview)
 
+## pinginfoview
 ChromeHistoryView is a small utility that reads the history data file of Google Chrome 
 Web browser, and displays the list of all visited Web pages in the last days. For each 
 visited Web page, the following information is displayed:

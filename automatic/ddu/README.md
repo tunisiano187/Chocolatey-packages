@@ -1,6 +1,6 @@
-# ddu
 [![](https://img.shields.io/chocolatey/v/ddu?color=green&label=ddu)](https://chocolatey.org/packages/ddu) [![](https://img.shields.io/chocolatey/dt/ddu)](https://chocolatey.org/packages/ddu)
 
+## Display Driver Uninstaller
 Display Driver Uninstaller is a driver removal utility that can help you completely 
 remove Graphics Processing Unit (GPU) display card drivers and packages (AMD/NVIDIA) 
 from your system without leaving leftovers behind; including registry keys, folders 

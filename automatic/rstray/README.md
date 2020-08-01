@@ -1,6 +1,6 @@
-## rstray
 [![](https://img.shields.io/chocolatey/v/rstray?color=green&label=rstray)](https://chocolatey.org/packages/rstray) [![](https://img.shields.io/chocolatey/dt/rstray)](https://chocolatey.org/packages/rstray)
 
+## Redshift Tray
 Redshift Tray (by ltGuillaume) is a no-frills GUI for the excellent screen 
 temperature adjustment tool Redshift by Jon Lund Steffensen. 
 

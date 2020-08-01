@@ -1,6 +1,6 @@
-# foldingathome
 [![](https://img.shields.io/chocolatey/v/filejuggler?color=green&label=filejuggler)](https://chocolatey.org/packages/filejuggler) [![](https://img.shields.io/chocolatey/dt/filejuggler)](https://chocolatey.org/packages/filejuggler)
 
+## foldingathome
 You set up the rules, and File Juggler will monitor your folders and manage your files automatically
 
 ### Package-specific issue

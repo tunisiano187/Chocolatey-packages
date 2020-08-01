@@ -1,6 +1,6 @@
-## Eagle
 [![](https://img.shields.io/chocolatey/v/eagle?color=green&label=eagle)](https://chocolatey.org/packages/eagle) [![](https://img.shields.io/chocolatey/dt/eagle)](https://chocolatey.org/packages/eagle)
 
+## Eagle
 The EAGLE (__E__asily __A__pplicable __G__raphical __L__ayout __E__ditor) Light Edition is 
 an easy to use, yet powerful tool for designing printed circuit boards (PCBs).
 
