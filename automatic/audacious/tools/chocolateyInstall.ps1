@@ -2,10 +2,18 @@
 $url = '{{DownloadUrl}}'
 $checksum = '{{Checksum}}'
 $checksumType = 'sha256'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$silentArgs = '/S'
+$validExitCodes = @(0)
 
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType"
+$packageArgs = @{
+    packageName     = $packageName
+    fileType        = 'exe'
+    url             = $url
+    silentArgs      = $silentArgs
+    validExitCodes  = $validExitCodes
+    softwareName    = "$packageName*"
+    checksum        = $checksum
+    checksumType    = $checksumType
+}
+
+Install-ChocolateyPackage @packageArgs

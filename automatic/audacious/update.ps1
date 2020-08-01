@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '-win32.zip'})[-1].href
+	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '-win32.exe'})[-1].href
 	$version = $url32.split('-')[1].trim()
 	$url32 = "$($releases)$($url32)"
 
