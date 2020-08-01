@@ -63,7 +63,7 @@ $global:au_Root = "$PSScriptRoot/../automatic"                           #Path t
 $info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-if (Test-Path Env:gitlab_push_url) {
+if (!($Gitlab_PushURL)) {
     Write-Information "On Appveyor"
     if ($info.error_count.total) { throw "$($info.error_count.total) errors during update" }
 }
