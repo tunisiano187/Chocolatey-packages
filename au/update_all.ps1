@@ -63,6 +63,7 @@ $global:au_Root = "$PSScriptRoot/../automatic"                           #Path t
 $info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-if ($env:AppVeyor) {
+Write-Host $env:APPVEYOR
+if ($env:APPVEYOR) {
     if ($info.error_count.total) { throw "$($info.error_count.total) errors during update" }
 }
