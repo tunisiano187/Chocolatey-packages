@@ -6,21 +6,21 @@
   "commit": false,
   "contributors": [
     {
-      "login": "RedBaron2",
-      "name": "RB",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/1191271?v=4",
-      "profile": "https://github.com/RedBaron2",
-      "contributions": [
-        "bug"
-      ]
-    },
-    {
       "login": "tunisiano187",
       "name": "Tunisiano18",
       "avatar_url": "https://avatars2.githubusercontent.com/u/6095739?v=4",
       "profile": "https://www.bowlman.org",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "RedBaron2",
+      "name": "RB",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1191271?v=4",
+      "profile": "https://github.com/RedBaron2",
+      "contributions": [
+        "bug"
       ]
     }
   ],
