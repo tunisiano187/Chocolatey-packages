@@ -4,11 +4,11 @@
     <id>geany-plugins</id>
     <version>1.30</version>
     <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-    <owners>__REPLACE_YOUR_NAME__</owners>
+    <owners>tunisiano</owners>
     <title>geany-plugins (Install)</title>
     <authors>Geany Team</authors>
     <projectUrl>https://plugins.geany.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/geany-plugins.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/tunisiano187/master/icons/geany-plugins.png</iconUrl>
     <copyright>Geany Teams</copyright>
     <licenseUrl>https://plugins.geany.org/licensing.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
