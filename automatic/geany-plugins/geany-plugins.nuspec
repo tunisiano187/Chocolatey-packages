@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>geany-plugins</id>
-    <version>1.30</version>
-    <packageSourceUrl></packageSourceUrl>
+    <version>1.36</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/geany-plugins</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>geany-plugins (Install)</title>
     <authors>Geany Team</authors>
     <projectUrl>https://plugins.geany.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/tunisiano187/master/icons/geany-plugins.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cf82c159528e71e55980c3ad533e8b9a67c2efb7/icons/geany-plugins.png</iconUrl>
     <copyright>Geany Teams</copyright>
     <licenseUrl>https://plugins.geany.org/licensing.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -17,7 +17,14 @@
     <bugTrackerUrl>https://github.com/geany/geany-plugins/issues</bugTrackerUrl>
     <tags>foss plugin geany-plugins</tags>
     <summary>Plugins for Geany</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## Geany plugins
+Plugins for [Geany](https://chocolatey.org/packages/geany) a Fast and lightweight IDE
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <releaseNotes>https://github.com/geany/geany-plugins/releases</releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
