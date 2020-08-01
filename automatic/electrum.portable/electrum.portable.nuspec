@@ -3,7 +3,7 @@
   <metadata>
     <id>electrum.portable</id>
     <title>Electrum (Portable)</title>
-    <version>4.0.2</version>
+    <version>4.0.1</version>
     <authors>Electrum Developers</authors>
     <owners>tunisiano</owners>
     <summary>Lightweight Bitcoin client</summary>
