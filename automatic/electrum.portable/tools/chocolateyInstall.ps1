@@ -12,7 +12,7 @@ try {
                         -ChecksumType "$checksumType"
   # create an empty sidecar metadata file for closed-source shimgen.exe to prevent blank black window
   Set-Content -Path ("$installFile.gui") `
-              -Value $null  
+              -Value $null
 } catch {
   throw $_.Exception
 }
