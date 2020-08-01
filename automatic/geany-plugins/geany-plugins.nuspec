@@ -3,7 +3,7 @@
   <metadata>
     <id>geany-plugins</id>
     <version>1.30</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <packageSourceUrl></packageSourceUrl>
     <owners>tunisiano</owners>
     <title>geany-plugins (Install)</title>
     <authors>Geany Team</authors>
@@ -11,14 +11,14 @@
     <iconUrl>http://cdn.rawgit.com/tunisiano187/master/icons/geany-plugins.png</iconUrl>
     <copyright>Geany Teams</copyright>
     <licenseUrl>https://plugins.geany.org/licensing.html</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/geany/geany-plugins</projectSourceUrl>
     <docsUrl>https://plugins.geany.org/about.html</docsUrl>
     <bugTrackerUrl>https://github.com/geany/geany-plugins/issues</bugTrackerUrl>
     <tags>foss plugin geany-plugins</tags>
     <summary>Plugins for Geany</summary>
     <description>__REPLACE__MarkDown_Okay </description>
-    <releaseNotes>https://github.com/geany/geany-plugins/releases</releaseNotes> -->
+    <releaseNotes>https://github.com/geany/geany-plugins/releases</releaseNotes>
     <dependencies>
       <dependency id="geany" version="1.36" />
     </dependencies>
