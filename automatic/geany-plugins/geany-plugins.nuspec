@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>geany-plugins</id>
+    <version>1.30</version>
+    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+    <title>geany-plugins (Install)</title>
+    <authors>Geany Team</authors>
+    <projectUrl>https://plugins.geany.org/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/geany-plugins.png</iconUrl>
+    <copyright>Geany Teams</copyright>
+    <licenseUrl>https://plugins.geany.org/licensing.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <projectSourceUrl>https://github.com/geany/geany-plugins</projectSourceUrl>
+    <docsUrl>https://plugins.geany.org/about.html</docsUrl>
+    <bugTrackerUrl>https://github.com/geany/geany-plugins/issues</bugTrackerUrl>
+    <tags>foss plugin geany-plugins</tags>
+    <summary>Plugins for Geany</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>https://github.com/geany/geany-plugins/releases</releaseNotes> -->
+    <dependencies>
+      <dependency id="geany" version="1.36" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
