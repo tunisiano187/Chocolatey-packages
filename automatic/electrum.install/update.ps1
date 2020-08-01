@@ -9,6 +9,11 @@ function global:au_SearchReplace {
 			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
 		}
+		"tools\VERIFICATION.txt"      = @{
+			"(?i)(x86:).*"        = "`${1} $($Latest.URL32)"
+			"(?i)(checksum32:).*" = "`${1} $($Latest.Checksum32)"
+			"(?i)(checksumtype:).*" = "`${1} $($Latest.ChecksumType32)"
+		}
 	}
 }
 
