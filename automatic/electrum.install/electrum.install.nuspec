@@ -1,14 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>electrum.install</id>
     <title>Electrum (Install)</title>
-    <version>{{PackageVersion}}</version>
+    <version>4.0.2</version>
     <authors>Electrum Developers</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Lightweight Bitcoin client</summary>
-    <description>
-Electrum is an easy to use Bitcoin wallet. It protects you from losing coins in a backup mistake or computer failure, because your wallet can be recovered from a secret phrase that you can write on paper or learn by heart. There is no waiting time when you start the client, because it does not download the Bitcoin blockchain.
+    <description><![CDATA[
+Electrum is an easy to use Bitcoin wallet. It protects you from losing coins in a backup 
+mistake or computer failure, because your wallet can be recovered from a secret phrase that 
+you can write on paper or learn by heart. There is no waiting time when you start the client, 
+because it does not download the Bitcoin blockchain.
 
 ### Features:
 * Instant on: Your client does not download the blockchain. It uses a network of specialized servers that index the blockchain.
@@ -20,11 +23,11 @@ Electrum is an easy to use Bitcoin wallet. It protects you from losing coins in 
 * Cold Storage: Sign transactions from a computer that is always offline. Broadcast them using a machine that does not have your keys.
 * Reachable: You can export your private keys into other Bitcoin clients.
 * Established: Electrum is open source and was first released in November 2011.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/electrum.install</packageSourceUrl>
     <projectUrl>https://electrum.org</projectUrl>
     <projectSourceUrl>https://github.com/spesmilo/electrum</projectSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/spesmilo/electrum/34f835746b4545d2c505ebe123139a670f0aafe0/icons/electrum.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@660846a46d1e9d5b2b9ff2909b518aa3463e62bd/icons/electrum.png</iconUrl>
     <tags>bitcoin btc blockchain wallet cryptocurrency admin</tags>
     <copyright>© 2012 Electrum</copyright>
     <licenseUrl>https://raw.githubusercontent.com/spesmilo/electrum/master/LICENCE</licenseUrl>
