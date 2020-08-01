@@ -20,6 +20,7 @@
     <description>__REPLACE__MarkDown_Okay </description>
     <releaseNotes>https://github.com/geany/geany-plugins/releases</releaseNotes>
     <dependencies>
+      <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="geany" version="1.36" />
     </dependencies>
   </metadata>
