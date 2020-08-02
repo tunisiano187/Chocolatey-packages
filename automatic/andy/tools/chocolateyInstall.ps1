@@ -1,12 +1,12 @@
-﻿$packageName = $env:ChocolateyPackageName
-$installerType = 'exe'
-$silentArgs = '/S'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'md5'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'md5'
+﻿$packageName    = $env:ChocolateyPackageName
+$installerType  = 'exe'
+$silentArgs     = '/S'
+$url            = '{{DownloadUrl}}'
+$checksum       = '{{Checksum}}'
+$checksumType   = 'md5'
+$url64          = '{{DownloadUrl}}'
+$checksum64     = '{{Checksum}}'
+$checksumType64 = 'md5'
 $validExitCodes = @(0)
 
 Install-ChocolateyPackage -PackageName "$packageName" `
