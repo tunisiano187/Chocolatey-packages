@@ -5,6 +5,6 @@ Just Color Picker is a tool that captures the colour of any pixel in any screen 
 displays its code in a variety of formats: HTML, RGB, HEX, HSB/HSV, HSL, CMYK and Delphi.
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

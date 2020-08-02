@@ -20,6 +20,6 @@ This program does not slow your computer down and only uses unused computer powe
 * [Teams and Stats](https://stats.foldingathome.org/teams)
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

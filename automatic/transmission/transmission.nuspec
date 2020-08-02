@@ -27,7 +27,7 @@ Transmission is a cross-platform BitTorrent client that is open source, easy, po
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>© 2005 Transmission Project</copyright>
     <tags>transmission qt torrent magnet p2p admin</tags>
     <projectSourceUrl>https://github.com/transmission/transmission</projectSourceUrl>

@@ -6,6 +6,6 @@ speed tests and help troubleshoot network and device issues. Get Fingbox for mor
 and protection for your network.
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

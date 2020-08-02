@@ -37,8 +37,7 @@ Attempting to install previous versions will fail.  Only the latest release of b
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
-    </releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="dotnet3.5" version="3.5.20160716" />

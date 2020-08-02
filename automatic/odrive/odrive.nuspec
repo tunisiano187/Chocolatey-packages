@@ -17,7 +17,7 @@ universal sync client. It makes any cloud storage unified, synchronized, shareab
     <tags>odrive cloud admin</tags>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)</releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/odrive</packageSourceUrl>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />

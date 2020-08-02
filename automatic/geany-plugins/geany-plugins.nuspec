@@ -21,11 +21,16 @@
 Plugins for [Geany](https://chocolatey.org/packages/geany) a Fast and lightweight IDE
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <releaseNotes>https://github.com/geany/geany-plugins/releases</releaseNotes>
+    <releaseNotes>#### Program
+https://github.com/geany/geany-plugins/releases
+    
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="geany" version="1.36" />

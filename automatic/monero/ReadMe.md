@@ -16,6 +16,6 @@ Main Monero features that were inherited from CryptoNote are Ring Signatures and
 * [Developer blog](https://getmonero.org/blog/)
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)

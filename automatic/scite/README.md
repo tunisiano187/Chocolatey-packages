@@ -8,6 +8,6 @@ Lightweight and built for speed, it is designed mainly for source editing, and p
 Other text editors based on [SCIntilla](https://chocolatey.org/packages?q=tag:SCIntilla) are [Geany](https://chocolatey.org/packages/geany) (cross-platform), [Notepad++](https://chocolatey.org/packages/notepadplusplus) (Windows), and [Notepad2](https://chocolatey.org/packages/notepad2) (Windows).
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/chocolatey-packages/issues/new)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
