@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/geany-plugins?color=green&label=geany-plugins)](https://chocolatey.org/packages/geany-plugins) [![](https://img.shields.io/chocolatey/dt/geany-plugins)](https://chocolatey.org/packages/geany-plugins)
+[![](https://img.shields.io/chocolatey/v/geany-plugins?color=green&label=geany-plugins)](https://chocolatey.org/packages/geany-plugins) [![](https://img.shields.io/chocolatey/dt/geany-plugins)](https://chocolatey.org/packages/geany-plugins)
 
 ## Geany plugins
 Plugins for [Geany](https://chocolatey.org/packages/geany) a Fast and lightweight IDE
