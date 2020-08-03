@@ -42,6 +42,7 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/andy</packageSourceUrl>
     <projectUrl>http://www.andyroid.net/</projectUrl>
+    <mailingListUrl>https://www.facebook.com/groups/AndySupport</mailingListUrl>
     <tags>unattended software-testing android-emulator virtualbox virtualization vm freeware admin</tags>
     <copyright>© 2014 Andy OS Inc</copyright>
     <licenseUrl>http://www.andyroid.net/terms-conditions</licenseUrl>
@@ -58,8 +59,8 @@ https://www.facebook.com/groups/AndySupport/
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
     </releaseNotes>
     <dependencies>
-      <dependency id="virtualbox" />
-      <dependency id="autohotkey.portable" />
+      <dependency id="virtualbox" version="6.1.12"/>
+      <dependency id="autohotkey.portable" version="1.1.15.00"/>
     </dependencies>
   </metadata>
   <files>

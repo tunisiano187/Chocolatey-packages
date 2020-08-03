@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>aria2</id>
-    <title>aria2</title>
+    <title>Aria2 Client</title>
     <version>1.35.0</version>
     <authors>Tatsuhiro Tsujikawa</authors>
     <owners>tunisiano</owners>
