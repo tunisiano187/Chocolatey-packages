@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/multibit-hd?color=green&label=multibit-hd)](https://chocolatey.org/packages/multibit-hd) [![](https://img.shields.io/chocolatey/dt/multibit-hd)](https://chocolatey.org/packages/multibit-hd)
+[![](https://img.shields.io/chocolatey/v/multibit-hd?color=green&label=multibit-hd)](https://chocolatey.org/packages/multibit-hd) [![](https://img.shields.io/chocolatey/dt/multibit-hd)](https://chocolatey.org/packages/multibit-hd)
 
 ## Multibit HD
 MultiBit Hierarchical Deterministic (HD) wallet is an open source desktop Hierarchical Deterministic Wallet (HDW) for Bitcoin using the Simplified Payment Verification (SPV) mode to provide very fast blockchain synchronization for a modest pay-to-send fee.

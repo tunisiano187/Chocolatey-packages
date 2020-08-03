@@ -1,12 +1,12 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '/S'
-$url            = '{{DownloadUrl}}'
-$checksum       = '{{Checksum}}'
-$checksumType   = 'md5'
-$url64          = '{{DownloadUrl}}'
-$checksum64     = '{{Checksum}}'
-$checksumType64 = 'md5'
+$url            = 'https://sdl.adaware.com/?bundleid=AR001&savename=Andy_47.260_1096_26_x86.exe'
+$checksum       = ''
+$checksumType   = ''
+$url64          = 'https://sdl.adaware.com/?bundleid=AR001&savename=Andy_47.260_1096_26_x64.exe'
+$checksum64     = ''
+$checksumType64 = ''
 $validExitCodes = @(0)
 
 Install-ChocolateyPackage -PackageName "$packageName" `

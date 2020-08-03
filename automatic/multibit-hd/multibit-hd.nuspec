@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>multibit-hd</id>
     <title>MultiBit HD</title>
-    <version>{{PackageVersion}}</version>
+    <version>0.5.1</version>
     <authors>Jim Burton,Gary Rowe</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Hierarchical Deterministic Bitcoin desktop wallet</summary>
-    <description>
+    <description><![CDATA[## Multibit HD
 MultiBit Hierarchical Deterministic (HD) wallet is an open source desktop Hierarchical Deterministic Wallet (HDW) for Bitcoin using the Simplified Payment Verification (SPV) mode to provide very fast blockchain synchronization for a modest pay-to-send fee.
 
 The target audience is "international mainstream" which compels the user interface to remain as simple and consistent as possible while still retaining advanced capabilities under the covers.
@@ -25,13 +25,18 @@ Please note that although this is open source software, a cost to use is integra
 * Free to install.
 * Free to receive incoming transactions.
 * __Fee on each outgoing transaction__.
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/multibit-hd</packageSourceUrl>
     <projectUrl>https://multibit.org/</projectUrl>
     <projectSourceUrl>https://github.com/bitcoin-solutions/multibit-hd</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bitcoin-solutions/multibit-hd/issues</bugTrackerUrl>
     <docsUrl>https://multibit.org/help/</docsUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/bd918913d80f6400aee905575017f69ac0997631/icons/{{PackageName}}.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bbcc0d5033854319733a88d1d1bdad0c8471019a/icons/multibit-hd.png</iconUrl>
     <tags>fee-to-send cryptocurrency bitcoin blockchain digital-wallet admin</tags>
     <copyright>© 2013 Bitcoin Solutions Ltd</copyright>
     <licenseUrl>https://multibit.org/tandc.html</licenseUrl>

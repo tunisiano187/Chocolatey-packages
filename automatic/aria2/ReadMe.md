@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/aria2?color=green&label=aria2)](https://chocolatey.org/packages/aria2) [![](https://img.shields.io/chocolatey/dt/aria2)](https://chocolatey.org/packages/aria2)
+[![](https://img.shields.io/chocolatey/v/aria2?color=green&label=aria2)](https://chocolatey.org/packages/aria2) [![](https://img.shields.io/chocolatey/dt/aria2)](https://chocolatey.org/packages/aria2)
 
 ## Aria2C
 aria2 is a multi-protocol &amp; multi-source, cross platform download utility. The supported 
