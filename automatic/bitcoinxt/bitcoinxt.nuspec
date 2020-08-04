@@ -44,7 +44,7 @@ It is built by taking the latest stable Core release, applying a series of [patc
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="bitcoinxt.install" version="0.11K" />
+      <dependency id="bitcoinxt.install" version="0.11" />
     </dependencies>
   </metadata>
 </package>
