@@ -5,12 +5,7 @@ $releases = 'https://github.com/bitcoinxt/bitcoinxt/releases'
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      			= "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" 			= "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumtype\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
-            "(^[$]url64\s*=\s*)('.*')"      		= "`$1'$($Latest.URL64)'"
-			"(^[$]checksum64\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum64)'"
-			"(^[$]checksumType64\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType64)'"
+			"(^[$]version\s*=\s*)('.*')"      		= "`$1'$($Latest.Version)'"
 		}
 	}
 }
@@ -22,10 +17,11 @@ function global:au_GetLatest {
 	$v=$($installer[0]).split('/')[-2].replace('v','')
 	foreach ($char in [int[]][char[]]$v) {
 		if($char -gt 65){
-			$version = "$version,"
-			$char=$char-64
+			$ver = $char - 64
+			$version = "$($version).$($ver)"
+		} else {
+			$version = "$($version)$([char[]]$char)"
 		}
-		$version = "$($version)$([char[]]$char)"
 	}
 	Write-Verbose "Version : $version"
 	$url32 = "https://github.com/$($installer[1])";
