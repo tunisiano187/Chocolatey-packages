@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$request = Invoke-WebRequest -Method Head -Uri $releases
+	$request = Invoke-WebRequest -Method Head -Uri $releases -UseBasicParsing
 	if ($null -ne $request.BaseResponse.ResponseUri) {
 		# This is for Powershell 5
 		$url32 = $request.BaseResponse.ResponseUri.AbsoluteUri
