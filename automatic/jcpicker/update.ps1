@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = 'https://annystudio.com/jcpicker.exe'
+	$url32 = 'http://annystudio.com/jcpicker.exe'
 
 	$File = Join-Path ($(Split-Path $script:MyInvocation.MyCommand.Path)) "jcpicker.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
