@@ -1,15 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>jcpicker</id>
     <title>Just Color Picker</title>
-    <version>{{PackageVersion}}</version>
+    <version>5.4.0.0</version>
     <authors>Anny</authors>
     <owners>dtgm</owners>
     <summary>Free portable colour picker and colour editor</summary>
-    <description>
-Just Color Picker is a tool that captures the colour of any pixel in any screen area and displays its code in a variety of formats: HTML, RGB, HEX, HSB/HSV, HSL, CMYK and Delphi.
-    </description>
+    <description><![CDATA[## jcpicker
+Just Color Picker is a tool that captures the colour of any pixel in any screen area and 
+displays its code in a variety of formats: HTML, RGB, HEX, HSB/HSV, HSL, CMYK and Delphi.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
     <projectUrl>http://annystudio.com/software/colorpicker/</projectUrl>
     <docsUrl>http://annystudio.com/software/colorpicker/#jcp-manual</docsUrl>
