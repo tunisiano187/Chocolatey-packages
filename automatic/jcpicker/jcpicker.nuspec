@@ -3,9 +3,9 @@
   <metadata>
     <id>jcpicker</id>
     <title>Just Color Picker</title>
-    <version>5.2.0.0</version>
+    <version>5.4.0.0</version>
     <authors>Anny</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Free portable colour picker and colour editor</summary>
     <description><![CDATA[## jcpicker
 Just Color Picker is a tool that captures the colour of any pixel in any screen area and 
@@ -16,10 +16,10 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jcpicker</packageSourceUrl>
     <projectUrl>http://annystudio.com/software/colorpicker/</projectUrl>
     <docsUrl>http://annystudio.com/software/colorpicker/#jcp-manual</docsUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/a9d6b01b2f0c160ce3a2f2cfbe1e9b2972b35fd4/icons/{{PackageName}}.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c76e9e5bb48023c10b47b329ce159403406c21b0/icons/jcpicker.png</iconUrl>
     <tags>color picker portable</tags>
     <copyright>© 2003 Anny</copyright>
     <licenseUrl>https://wikipedia.org/wiki/Freeware</licenseUrl>
