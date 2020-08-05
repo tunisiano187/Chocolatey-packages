@@ -3,7 +3,7 @@
   <metadata>
     <id>blink</id>
     <title>Blink</title>
-    <version>3.2.0</version>
+    <version>3.1.0</version>
     <authors>Adrian Georgescu</authors>
     <owners>tunisiano</owners>
     <summary>Real-time communications client using SIP protocol</summary>
@@ -41,6 +41,7 @@ Attempting to install previous versions will fail.  Only the latest release of b
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="dotnet3.5" version="3.5.20160716" />
+      <dependency id="bonjour" version="3.5.20160716" />
     </dependencies>
   </metadata>
   <files>
