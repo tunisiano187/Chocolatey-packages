@@ -1,9 +1,9 @@
 ﻿$packageName = $env:ChocolateyPackageName
-$url = 'https://github.com/electron/electron/releases/download/v9.1.2/electron-v9.1.2-win32-ia32.zip'
-$checksum = '78400cbf365b5e6b3c323bd5c877aa53f1e2454a32818967aac688edd9a9d617'
+$url = 'https://github.com/electron/electron/releases/download/v9.2.0/electron-v9.2.0-win32-ia32.zip'
+$checksum = '71f4de93dd0919fdf24a8dba786647c056a9e986c77847c864b6046a3a4fc755'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/electron/electron/releases/download/v9.1.2/electron-v9.1.2-win32-x64.zip'
-$checksum64 = '5d004e34bd1d16967cedbe98d1a00ed6bfe3b2bb9f066cc2d6dac44deb8ab938'
+$url64 = 'https://github.com/electron/electron/releases/download/v9.2.0/electron-v9.2.0-win32-x64.zip'
+$checksum64 = 'b2c0a62e51906d6e4beab2328942a54f0f4aa1c7e31cae6985a821000b7d9c79'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
