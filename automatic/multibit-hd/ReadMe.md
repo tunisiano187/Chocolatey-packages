@@ -13,7 +13,7 @@ The target audience is "international mainstream" which compels the user interfa
 * [Forum](https://bitcointalk.org/index.php?board=99.0)
 
 #### Commercial software
-Please note that although this is open source software, a cost to use is integrated into the distributed binaries. Please see [Terms and Conditions](https://multibit.org/tandc.html) for details.
+Please note that although this is open source software, a cost to use is integrated into the distributed binaries. Please see [Terms and Conditions](https://multibit.org/legal/terms-and-conditions.html) for details.
 
 * Free to install.
 * Free to receive incoming transactions.
