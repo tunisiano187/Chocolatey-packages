@@ -3,11 +3,11 @@
   <metadata>
     <id>spybot</id>
     <title>Spybot</title>
-    <version>2.8.67.0</version>
+    <version>2.8.68.0</version>
     <authors>Safer-Networking Ltd</authors>
     <owners>tunisiano</owners>
     <summary>Detects and removes spyware and rootkits</summary>
-    <description><![CDATA[
+    <description><![CDATA[## Spybot
 Spybot - Search & Destroy detects and removes spyware, a kind of threat not very well covered by common anti-virus applications. Spyware silently tracks your surfing behaviour to create a marketing profile for you that is transmitted without your knowledge to the compilers and sold to advertising companies. If you see new toolbars in your Internet Explorer that you haven't intentionally installed, if your browser crashes inexplicably, or if your home page has been "hijacked" (or changed without your knowledge), your computer is most probably infected with spyware. Even if you don't see the symptoms, your computer may be infected, because more and more spyware is emerging.
 
 #### Freeware
@@ -19,6 +19,11 @@ This package installs the free version of Spybot which allows full, manual scann
 * [Facebook](https://www.facebook.com/SpybotSearchAndDestroy/)
 * [Twitter](https://www.twitter.com/SpybotSD)
 * [YouTube](https://www.youtube.com/user/SaferNetworking)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/spybot</packageSourceUrl>
     <projectUrl>http://www.safer-networking.org/private/</projectUrl>
