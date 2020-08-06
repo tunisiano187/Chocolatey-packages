@@ -1,3 +1,3 @@
 ﻿# MetaPackage
-$version = ''
+$version = '0.11.11'
 Write-Verbose $version
