@@ -6,7 +6,7 @@ $validExitCodes = @(0)
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
 
-$key | ForEach-Object { 
+$key | ForEach-Object {
   Uninstall-ChocolateyPackage -PackageName "$packageName" `
                               -FileType "$installerType" `
                               -SilentArgs "$($silentArgs)" `
