@@ -1,22 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>digikam</id>
     <title>digiKam</title>
-    <version>{{PackageVersion}}</version>
+    <version>7.0.0</version>
     <authors>digiKam team</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Manage your photographs like a professional</summary>
-    <description>
+    <description><![CDATA[## Digikam
 digiKam is an advanced digital photo management application for KDE, which makes importing and organizing digital photos a "snap". The photos are organized in albums which can be sorted chronologically, by folder layout or by custom collections.
 
 #### System Requirements
 * Download file size is about **240 MiB**
 * Final install size is about **1.25 GiB**
 
-[Screenshots](https://www.digikam.org/)
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+[Screenshots](https://www.digikam.org/node/323)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/digikam</packageSourceUrl>
     <projectUrl>https://www.digikam.org/</projectUrl>
     <projectSourceUrl>https://invent.kde.org/graphics/digikam</projectSourceUrl>
     <bugTrackerUrl>https://bugs.kde.org/component-report.cgi?product=digikam</bugTrackerUrl>
@@ -26,7 +31,7 @@ digiKam is an advanced digital photo management application for KDE, which makes
     <copyright>© 2020 digiKam team</copyright>
     <licenseUrl>https://gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/5e0b5f9f8a32b6ec0146e718fe62edc6908c2362/icons/digikam.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@007c4a331b262e623d55a3233fc1b1576a4acbd7/icons/digikam.svg</iconUrl>
     <releaseNotes>
 #### Program
 * [Roadmap](https://www.digikam.org/about/releaseplan)
