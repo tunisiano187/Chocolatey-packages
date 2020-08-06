@@ -3,7 +3,7 @@
   <metadata>
     <id>andy</id>
     <title>Andy</title>
-    <version>47.260.1096.26</version>
+    <version>47.260.1096.25</version>
     <authors>Andy OS Inc</authors>
     <owners>tunisiano</owners>
     <summary>Run Android apps on desktop</summary>
@@ -43,7 +43,7 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/andy</packageSourceUrl>
     <projectUrl>http://www.andyroid.net/</projectUrl>
     <mailingListUrl>https://www.facebook.com/groups/AndySupport</mailingListUrl>
-    <tags>unattended software-testing android-emulator virtualbox virtualization vm freeware admin</tags>
+    <tags>notSilent software-testing android-emulator virtualbox virtualization vm freeware admin</tags>
     <copyright>© 2014 Andy OS Inc</copyright>
     <licenseUrl>http://www.andyroid.net/terms-conditions</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
