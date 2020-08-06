@@ -3,7 +3,7 @@
   <metadata>
     <id>andy</id>
     <title>Andy</title>
-    <version>47.260.1096.25</version>
+    <version>47.260.1096.26</version>
     <authors>Andy OS Inc</authors>
     <owners>tunisiano</owners>
     <summary>Run Android apps on desktop</summary>
@@ -59,8 +59,8 @@ https://www.facebook.com/groups/AndySupport/
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
     </releaseNotes>
     <dependencies>
-      <dependency id="virtualbox" version="6.1.12"/>
-      <dependency id="autohotkey.portable" version="1.1.15.00"/>
+      <dependency id="virtualbox" version="6.1.12" />
+      <dependency id="autohotkey.portable" version="1.1.15.00" />
     </dependencies>
   </metadata>
   <files>
