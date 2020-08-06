@@ -27,8 +27,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
-	$installer = "$($releases)v$($version_folder)/latest.exe"
+	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
+	$installer = "$($releases)v$($version)/latest.exe"
 	$working_dir = "."
 	$url32 = "https://download.kde.org/stable/digikam/7.0.0/digiKam-$($version)-Win32.exe"
 	$url64 = "https://download.kde.org/stable/digikam/7.0.0/digiKam-$($version)-Win64.exe"
