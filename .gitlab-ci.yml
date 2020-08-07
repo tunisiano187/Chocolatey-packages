@@ -7,6 +7,8 @@
   script:
     - Write-Host "Setup AU module"
     - ./setup/au_setup.ps1
+    - Write-Host "Updating Packages.md"
+    - ./scripts/ListPackages.ps1
     - Write-Host "Start updating packages"
     - install-module Wormies-AU-Helpers
     - tosend/try.ps1
@@ -24,7 +26,7 @@
     #- git checkout -B master
     #- git add -u :/
     #- git commit -m '[skip ci] commit from CI runner'
-    #- git push --follow-tags origin master
+    - if(git log origin/master..master) { git push origin master }
   rules:
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
   artifacts:
