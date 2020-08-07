@@ -1,6 +1,6 @@
 $mdfile = "$PSScriptRoot/../Packages.md"
 Set-Content $mdfile "| Downloads | Package Name |"
-Add-Content $mdfile "|-----------|--------------|"
+Add-Content $mdfile "|-----------:|--------------|"
 $paths = Get-ChildItem -Path "$PSScriptRoot/../automatic/" -Directory | Select-Object FullName
 foreach ($path in $paths) {
     $package = $path.FullName.split('\')[-1]
