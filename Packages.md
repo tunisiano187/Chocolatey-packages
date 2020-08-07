@@ -1,5 +1,5 @@
 | Downloads | Package Name |
-|-----------|--------------|
+|-----------:|--------------|
 | [![](http://img.shields.io/chocolatey/dt/andy.svg?color=green&label=andy)](https://chocolatey.org/packages/andy) | [andy]|
 | [![](http://img.shields.io/chocolatey/dt/aria2.svg?color=green&label=aria2)](https://chocolatey.org/packages/aria2) | [aria2]|
 | [![](http://img.shields.io/chocolatey/dt/audacious.svg?color=green&label=audacious)](https://chocolatey.org/packages/audacious) | [audacious]|
