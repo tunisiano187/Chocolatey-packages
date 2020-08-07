@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wireedit</id>
+    <version>0.11.430</version>
+    <title>WireEdit</title>
+    <owners>Alex Lutz</owners>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windowsfirewallcontrol</packageSourceUrl>
+    <authors>Omnipacket</authors>
+    <licenseUrl>https://wireedit.com/current/WireEditEULA.pdf</licenseUrl>
+    <projectUrl>https://wireedit.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/alexinslc/alexinslc-chocolatey-packages/master/_icons/WireEdit.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WireEdit allows you to edit any packet at any later from L1 to L7 with just a few mouse clicks. No hacking required. No need to look at Hex dumps.</description>
+    <summary>A Full Stack WYSIWYG Editor for Network Packets</summary>
+    <releaseNotes>#### Software 
+https://omnipacket.com/current/RELEASENOTES.txt
+    
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <copyright>Omnipacket</copyright>
+    <tags>wireedit admin packet editor</tags>
+  </metadata>
+</package>
