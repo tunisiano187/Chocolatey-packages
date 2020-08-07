@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>citrix-sharefile-sync</id>
+    <version>3.2.508</version>
+    <title>Citrix ShareFile Sync</title>
+    <authors>Citrix</authors>
+    <owners>patm</owners>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/chromehistoryview/</packageSourceUrl>
+    <licenseUrl>https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html#ctx-dl-eula-external</licenseUrl>
+    <projectUrl>https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html</projectUrl>
+    <iconUrl>https://lh5.ggpht.com/9-Czy9eFSpN9r4YAIpT4fzpeKHk2SKaumtUvXICqWAuObJIr6TvHsWm39R33DieLJWA</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <description>ShareFile Sync for Windows is designed to provide ShareFile Enterprise customers with an easy way to access and synchronize folders from your ShareFile account to your local computer.</description>
+    <summary>ShareFile Sync for Windows is designed to provide ShareFile Enterprise customers with an easy way to access and synchronize folders from your ShareFile account to your local computer.</summary>
+    <tags>citrix sharefile share file folder sync synchronize enterprise account</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
