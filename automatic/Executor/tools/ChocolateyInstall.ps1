@@ -10,5 +10,10 @@ $packageArgs = @{
     silentArgs      = '/verysilent'
     checksum        = $checksum32
     checksumType    = $checksumType32
+    Options = @{
+        Headers = @{
+            referer = "http://www.1space.dk/executor/download.html"
+        }
+    }
 }
 Install-ChocolateyPackage @packageArgs
