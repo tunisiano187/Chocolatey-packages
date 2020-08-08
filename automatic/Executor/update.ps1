@@ -1,7 +1,5 @@
 import-module au
 
-$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -13,9 +11,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "executor.exe"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-
+	$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
+	$pattern =  '(?i)<h3[^>]*>(.*)</h3>'
 	$version=$([Regex]::Matches($(Invoke-WebRequest -Uri 'http://www.1space.dk/executor/vhistory.html').Content, $pattern)[0]).value.split('v')[1].split(' ')[0]
 	Write-Output "Version : $version"
 
