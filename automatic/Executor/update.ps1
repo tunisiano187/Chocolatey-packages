@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "executor.exe"
-	Invoke-WebRequest -Uri $release -OutFile $File
+	Invoke-WebRequest -Uri $url32 -OutFile $File
 
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	Write-Output "Version : $version"
