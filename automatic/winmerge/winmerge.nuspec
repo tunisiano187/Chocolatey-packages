@@ -11,12 +11,13 @@
   | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/bb198f7f2c19aa099ec6be29b1ad9eb187437c0e/icons/winmerge.png</iconUrl>
     <projectUrl>http://winmerge.org/</projectUrl>
+    <projectSourceUrl>https://github.com/winmerge/winmerge</projectSourceUrl>
     <packageSourceUrl>https://github.com/kujotx/chocolatey-packages/tree/master/automatic/winmerge</packageSourceUrl>
-    <tags>chocolatey winmerge diff merge</tags>
+    <tags>foss winmerge diff merge</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Software 
-http://winmerge.org/docs/releasenotes.php
+* Releases Notes : https://github.com/WinMerge/winmerge/releases
     
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
