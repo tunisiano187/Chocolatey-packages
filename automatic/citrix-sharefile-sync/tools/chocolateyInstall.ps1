@@ -7,6 +7,7 @@ $checksum64 			= ''
 $checksumType64 		= ''
 $silentArgs 			= '/quiet'
 $validExitCodes 		= @(0)
+$referer				= 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
 
 $packageArgs = @{
 	packageName   		= $env:ChocolateyPackageName
@@ -19,6 +20,8 @@ $packageArgs = @{
 	checksumType64 		= $checksumType64
 	silentArgs    		= $silentArgs
 	validExitCodes		= $validExitCodes
-  }
+}
 
-  Install-ChocolateyPackage @packageArgs
+Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP\sharefile.html"
+
+Install-ChocolateyPackage @packageArgs
