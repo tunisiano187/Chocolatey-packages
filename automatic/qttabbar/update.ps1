@@ -14,9 +14,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32="$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href)[0]"
+	$url32=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href)[0]
 
-	$version=$url32.split('Bar')[-1].replace('.zip','')
+	$version="$($url32.split('Bar')[-1].replace('.zip','')).0"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

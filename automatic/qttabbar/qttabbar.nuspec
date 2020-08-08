@@ -46,7 +46,7 @@ To start using the new version, process 'explorer.exe' must be restarted. To eas
     </releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.33.01" />
-      <dependency id="qttabbar" version="1038"/>
+      <dependency id="qttabbar" version="1038.0"/>
     </dependencies> 
   </metadata>
   <files>
