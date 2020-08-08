@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "executor.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$version=$([Regex]::Matches($(Invoke-WebRequest -Uri 'http://www.1space.dk/executor/vhistory.html').Content, $pattern)[0]).value.split('v')[1].split(' ')[0]
 	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
