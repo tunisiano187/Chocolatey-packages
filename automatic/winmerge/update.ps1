@@ -22,6 +22,9 @@ function global:au_GetLatest {
     $url64 = $download_page.links | where-object href -match $re64 | select-object -First 1 -expand href
 
     $version = $url32 -split '-|.exe' | select-object -Last 1 -Skip 2
+    if($version -eq '2.16.6') {
+        $version="$version.0"
+    }
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
