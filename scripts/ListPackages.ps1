@@ -1,5 +1,6 @@
+$ErrorActionPreference = 'Continue';
 $mdfile = "$PSScriptRoot/../Packages.md"
-Set-Content $mdfile "| Downloads | Package Name |"
+Set-Content $mdfile "| Downloads | Package Name and version |"
 Add-Content $mdfile "|-----------:|--------------|"
 $paths = Get-ChildItem -Path "$PSScriptRoot/../automatic/" -Directory | Select-Object FullName
 foreach ($path in $paths) {
