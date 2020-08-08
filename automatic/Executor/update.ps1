@@ -14,7 +14,7 @@ function global:au_GetLatest {
 	$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
 	$version='1.0.0'
 	$File = Join-Path $env:TEMP "ver.html"
-	Invoke-WebRequest -Uri 'http://www.1space.dk/executor/vhistory.html' -OutFile $File -UseBasicParsing
+	Invoke-WebRequest -Uri 'https://eu9.proxysite.com/process.php?d=tanTrxUVxhqzY1eLoTmZYCXkhmdcTQsAMBBMn4Z5aDMtmwGte%2FXf&b=1&f=norefer' -OutFile $File -UseBasicParsing
 	$version = $(Get-Content $File | Where-Object {$_ -match "h3"})[0].split('v')[1].split(' ')[0].trim()
 	Write-Output "Version : $version"
 
