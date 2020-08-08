@@ -27,7 +27,7 @@ function global:au_GetLatest {
                 $clnt = new-object System.Net.WebClient;
                 $clnt.OpenRead("https://github.com$($installer[0])").Close();
                 $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-                $version = "$version.$($date)-pre"
+                $version = "$version-pre$($date)"
             }
         }
     }
@@ -35,4 +35,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 
-update-package -ChecksumFor all
+update-package
