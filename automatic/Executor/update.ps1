@@ -12,8 +12,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
-	$pattern =  '(?i)<h3[^>]*>(.*)</h3>'
-	$version=$([Regex]::Matches($(Invoke-WebRequest -Uri 'http://www.1space.dk/executor/vhistory.html').Content, $pattern)[0]).value.split('v')[1].split(' ')[0]
+	$version='1.0.0'
 	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
