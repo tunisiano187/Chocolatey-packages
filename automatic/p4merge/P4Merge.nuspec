@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+	<id>P4Merge</id>
+	<version>2019.2.1904275</version>
+	<owners>hans0</owners>
+	<packageSourceUrl>https://github.com/hansnull/chocolatey-p4merge-package</packageSourceUrl>
+	<iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/P4Merge/p4merge.png</iconUrl>
+	<title>P4Merge, the Perforce Visual Merge Tool</title>
+	<authors>Perforce Software, Inc.</authors>
+	<projectUrl>https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge</projectUrl>
+	<copyright>Perforce Software, Inc.</copyright>
+	<licenseUrl>https://www.perforce.com/terms-use</licenseUrl>
+	<requireLicenseAcceptance>true</requireLicenseAcceptance>
+	<docsUrl>https://filehost.perforce.com/perforce/r20.1/doc/manuals/p4merge.pdf</docsUrl>
+	<tags>freeware p4merge diff merge admin</tags>
+	<summary>P4Merge is an excellent, free diff and merge tool.</summary>
+	<description>P4Merge is a visual diff tool that displays the differences between file versions and helps you to resolve conflicts and merge competing versions into one.</description>
+	<releaseNotes>#### Software
+https://www.perforce.com/perforce/doc.current/user/p4vmergenotes.txt
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+	<dependencies>
+	  <dependency id="vcredist2017" version="14.16.27027.20190415" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
+</package>
