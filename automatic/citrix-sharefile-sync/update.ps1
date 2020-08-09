@@ -17,10 +17,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$urls=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
-	$url32 = "https:$($urls[0].split('?')[0])"
-	$url64 = "https:$($urls[1].split('?')[0])"
+	$url32 = "https:$($urls[0])"
+	$url64 = "https:$($urls[1])"
 
-    $version = $url32.split('v')[-1].replace('.msi','')
+    $version = $url32.split('?')[0].split('v')[-1].replace('.msi','')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 
