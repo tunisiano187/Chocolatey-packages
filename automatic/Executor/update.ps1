@@ -1,5 +1,7 @@
 import-module au
 
+# $releases = "http://www.1space.dk/executor/download.html"
+
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -12,9 +14,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
-	$File = Join-Path $env:TEMP "ver.html"
-	Invoke-WebRequest -Uri 'http://www.1space.dk/executor/vhistory.html' -OutFile $File -UseBasicParsing
-	$version = $(Get-Content $File | Where-Object {$_ -match "h3"})[0].split('v')[1].split(' ')[0].trim()
+
+	$feed = $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml')).Content
+	$version = $feed.rss.channel.item[0].title.split(' ')[-1].trim()
 	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
