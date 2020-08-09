@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
 
-	$feed = $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml')).Content
+	[XML]$feed = $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml')).Content
 	$version = $feed.rss.channel.item[0].title.split(' ')[-1].trim()
 	Write-Output "Version : $version"
 
