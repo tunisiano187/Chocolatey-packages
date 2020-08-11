@@ -1,4 +1,4 @@
-[![](https://img.shields.io/chocolatey/v/p4merge?color=green&label=p4merge)](https://chocolatey.org/packages/p4merge) [![](https://img.shields.io/chocolatey/dt/p4merge)](https://chocolatey.org/packages/p4merge)
+[![](https://img.shields.io/chocolatey/v/p4merge.install?color=green&label=p4merge)](https://chocolatey.org/packages/p4merge.install) [![](https://img.shields.io/chocolatey/dt/p4merge.install)](https://chocolatey.org/packages/p4merge.install)
 
 ## P4Merge
 P4Merge is a visual diff tool that displays the differences between file versions and helps you 
