@@ -23,7 +23,9 @@ function global:au_GetLatest {
 			$date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
 			if($found -ne $true -and ($date))
 			{
-				$version = $item.replace(',','.')
+				$link = "https://cdist2.perforce.com/perforce/r$($ver)/doc/user/relnotes.txt"
+				Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
+				$version = $($(cat "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
 				$found = $true
 			}
 		}
