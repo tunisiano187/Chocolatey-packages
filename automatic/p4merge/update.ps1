@@ -36,7 +36,7 @@ function global:au_GetLatest {
 
 	$link = "https://cdist2.perforce.com/perforce/r$($version)/doc/user/relnotes.txt"
 	Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
-	$version = $($(cat "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
+	$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
