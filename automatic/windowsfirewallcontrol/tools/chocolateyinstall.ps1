@@ -18,7 +18,7 @@ $packageArgs = @{
 }
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
-if ($key.Count -gt 1) {
+if ($key -and $key.Count -ge 1) {
     $packageArgs['silentArgs'] = '-u -c'
 }
 
