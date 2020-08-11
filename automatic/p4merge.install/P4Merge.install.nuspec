@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>P4Merge</id>
-	<version>2019.2.1904275</version>
+	<version>0.0</version>
 	<owners>hans0</owners>
 	<packageSourceUrl>https://github.com/hansnull/chocolatey-p4merge-package</packageSourceUrl>
 	<iconUrl>https://github.com/alanstevens/ChocoPackages/raw/master/P4Merge/p4merge.png</iconUrl>
