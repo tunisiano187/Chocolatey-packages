@@ -2,16 +2,24 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>wireedit</id>
-    <version>0.11.430</version>
+    <version>2.16.63</version>
     <title>WireEdit</title>
     <owners>Alex Lutz</owners>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windowsfirewallcontrol</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wireedit</packageSourceUrl>
     <authors>Omnipacket</authors>
     <licenseUrl>https://wireedit.com/current/WireEditEULA.pdf</licenseUrl>
     <projectUrl>https://wireedit.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/alexinslc/alexinslc-chocolatey-packages/master/_icons/WireEdit.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@423d1562dd06ea8500ca5f4f083ab31446b02fbd/icons/wireedit.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WireEdit allows you to edit any packet at any later from L1 to L7 with just a few mouse clicks. No hacking required. No need to look at Hex dumps.</description>
+    <description><![CDATA[## Wire Edit
+WireEdit allows you to edit any packet at any later from L1 to L7 with just a few mouse 
+clicks. No hacking required. No need to look at Hex dumps.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>A Full Stack WYSIWYG Editor for Network Packets</summary>
     <releaseNotes>#### Software 
 https://omnipacket.com/current/RELEASENOTES.txt
