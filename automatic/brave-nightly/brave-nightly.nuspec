@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>brave-nightly</id>
-    <version>1.14.25-nightly</version>
+    <version>1.14.33-nightly</version>
     <title>Brave Browser (Nightly)</title>
     <authors>Brave Software Inc.</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/brave/brave-browser/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://brave.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@14434c96d11f9d0194de9b83c15b47db750a8150/icons/brave-nightly.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@423d1562dd06ea8500ca5f4f083ab31446b02fbd/icons/brave-nightly.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Brave-nightly
 Brave is a free and open-source web browser developed by Brave Software Inc. based
