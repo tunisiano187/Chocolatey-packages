@@ -13,10 +13,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = $releases
-	$working_dir = "."
 	$install_fname = 'bonjour.exe'
 	Write-Output 'Download'
-	$File = "$working_dir\$install_fname"
+	$File = Join-Path $env:TEMP $install_fname
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	Write-Output 'Get version'
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
