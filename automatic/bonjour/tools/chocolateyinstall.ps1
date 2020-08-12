@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName    = 'bonjour'
-$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+#$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://support.apple.com/downloads/DL999/en_US/BonjourPSSetup.exe'
 $fileType       = 'msi'
 $checksum       = '847f39e0ea80d2a4d902fe59657e18f5bc32a8cb'
@@ -16,4 +16,4 @@ if (Get-ProcessorBits -eq 64) {
 }
 
 &(Get-ChocolateyWebFile $packageName "$env:temp\BonjourPSSetup.exe" $url -Checksum $checksum -ChecksumType $checksumType) /extract $env:temp
-Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
+Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file -validExitCodes $validExitCodes
