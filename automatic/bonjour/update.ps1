@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	$working_dir = "."
 	$install_fname = 'bonjour.exe'
 	Write-Output 'Download'
-	Invoke-WebRequest -Uri $installer -OutFile "$working_dir\$install_fname"
+	Invoke-WebRequest -Uri $url32 -OutFile "$working_dir\$install_fname"
 	Write-Output 'Get version'
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	Write-Output "Version : $version"
