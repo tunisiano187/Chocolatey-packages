@@ -27,6 +27,6 @@ $packageArgs = @{
 	validExitCodes		= $validExitCodes
 }
 
-Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP\sharefile.html"
+# Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP\sharefile.html"
 
 Install-ChocolateyPackage @packageArgs
