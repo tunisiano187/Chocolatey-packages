@@ -9,10 +9,10 @@ $silentArgs 			= '/quiet'
 $validExitCodes 		= @(0)
 $referer				= 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
 
-$releases = 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
-$urls=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
-	$packageArgs.url = "https:$($urls[0])"
-	$packageArgs.url64 = "https:$($urls[1])"
+$releases 				= 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
+$urls					=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
+$url 					= "https:$($urls[0])"
+$url64 					= "https:$($urls[1])"
 
 $packageArgs = @{
 	packageName   		= $env:ChocolateyPackageName
