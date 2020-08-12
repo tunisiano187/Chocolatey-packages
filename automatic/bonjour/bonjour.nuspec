@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>bonjour</id>
+    <version>2.0.2.0</version>
+    <title>Bonjour (Install)</title>
+    <authors>Apple Inc.</authors>
+    <owners>Tharre</owners>
+    <licenseUrl>https://www.apple.com/legal/sla/docs/Bonjour_for_Windows.pdf</licenseUrl>
+    <projectUrl>https://support.apple.com/kb/DL999</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Bonjour is Apple's implementation of zero-configuration networking (zeroconf), a group of technologies that includes service discovery, address assignment, and hostname resolution.</description>
+    <summary>Zeroconf implementation by Apple.</summary>
+    <tags>bonjour zeroconf apple admin</tags>
+    <packageSourceUrl>https://support.apple.com/downloads/DL999/en_US/BonjourPSSetup.exe</packageSourceUrl>
+    <bugTrackerUrl>http://www.apple.com/feedback/bonjour.html</bugTrackerUrl>
+    <releaseNotes> #### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+</package>

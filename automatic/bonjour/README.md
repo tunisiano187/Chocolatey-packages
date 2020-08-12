@@ -1,0 +1,10 @@
+[![](https://img.shields.io/chocolatey/v/bonjour?color=green&label=bonjour)](https://chocolatey.org/packages/bonjour) [![](https://img.shields.io/chocolatey/dt/bonjour)](https://chocolatey.org/packages/bonjour)
+
+## Bonjour
+Bonjour is Apple's implementation of zero-configuration networking (zeroconf), a group of technologies 
+that includes service discovery, address assignment, and hostname resolution.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
