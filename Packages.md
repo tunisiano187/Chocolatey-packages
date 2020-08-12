@@ -1,4 +1,4 @@
-| Downloads | Package Name and version | Repology |
+| Downloads | Package Name and version | Repology | 
 |-----------:|--------------|--------------|
 | [![](http://img.shields.io/chocolatey/dt/andy.svg)](https://chocolatey.org/packages/andy) | [![](https://img.shields.io/chocolatey/v/andy?color=green&label=andy)](https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/andy)|[![Chocolatey package](https://repology.org/badge/version-for-repo/chocolatey/andy.svg)](https://repology.org/project/andy/versions))|
 | [![](http://img.shields.io/chocolatey/dt/aria2.svg)](https://chocolatey.org/packages/aria2) | [![](https://img.shields.io/chocolatey/v/aria2?color=green&label=aria2)](https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/aria2)|[![Chocolatey package](https://repology.org/badge/version-for-repo/chocolatey/aria2.svg)](https://repology.org/project/aria2/versions))|
