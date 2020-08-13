@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>minecraft-education</id>
     <version>1.14.31.0</version>
     <title>Minecraft</title>
-    <authors>tunisiano</authors>
+    <authors>Microsoft</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.microsoft.com/servicesagreement</licenseUrl>
     <projectUrl>https://education.minecraft.net/get-started/download</projectUrl>
