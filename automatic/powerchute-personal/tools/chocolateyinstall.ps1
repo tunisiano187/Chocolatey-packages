@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName      = $env:ChocolateyPackageName
-$url              = 'https://cdist2.perforce.com/perforce/r20.1/bin.ntx86/p4vinst.exe'
-$checksum         = '5b7ce5100cbdd7cfb5732d28d39beec9ca9f9e4a72fa52b3c5f26cc683cfac4e'
+$url              = 'https://download.schneider-electric.com/files?p_enDocType=Software+-+Released&p_Doc_Ref=APC_PCPE_310&p_File_Name=PCPE_3.1.0.exe'
+$checksum         = '06cdb01b2e23ed72452ff090212ba72b5a250c16c41485ecd05d4ac9f75e25ff'
 $checksumType     = 'sha256'
 
 $packageArgs = @{
