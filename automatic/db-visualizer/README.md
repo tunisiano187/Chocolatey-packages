@@ -1,7 +1,7 @@
-[![](https://img.shields.io/chocolatey/v/dbVisualizer?color=green&label=dbVisualizer)](https://chocolatey.org/packages/dbVisualizer) [![](https://img.shields.io/chocolatey/dt/dbVisualizer)](https://chocolatey.org/packages/dbVisualizer)
+[![](https://img.shields.io/chocolatey/v/db-visualizer?color=green&label=db-visualizer)](https://chocolatey.org/packages/db-visualizer) [![](https://img.shields.io/chocolatey/dt/db-visualizer)](https://chocolatey.org/packages/db-visualizer)
 
 ## DB Visualizer
-DbVisualizer is the universal database tool for developers, DBAs and analysts. It is the perfect 
+dbVisualizer is the universal database tool for developers, DBAs and analysts. It is the perfect 
 solution since the same tool can be used on all major operating systems accessing a wide range of 
 databases.
 
