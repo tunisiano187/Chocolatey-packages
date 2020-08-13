@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>compressonator-cli</id>
+    <title>Compressonator CLI</title>
+    <version>0.0</version>
+    <authors>GPUOpen initiative</authors>
+    <owners>Kurt Johnson (kujotx)</owners>
+    <summary>Compressonator is a set of tools to allow artists and developers to more easily create compressed texture assets or model mesh optimizations and easily visualize the quality impact of various compression and rendering technologies</summary>
+    <description><![CDATA[## WinMerge
+WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both 
+folders and files, presenting differences in a visual text format that is easy to understand and handle.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c50a453e5159f9b856288b523fe2c9e4e2cea0a9/icons/winmerge.png</iconUrl>
+    <projectUrl>https://github.com/GPUOpen-Tools/compressonator</projectUrl>
+    <projectSourceUrl>https://github.com/GPUOpen-Tools/compressonator</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winmerge</packageSourceUrl>
+    <tags>foss tools compressed texture</tags>
+    <licenseUrl>https://github.com/GPUOpen-Tools/compressonator/blob/master/LICENSE_FILE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>#### Software 
+* Releases Notes : https://github.com/GPUOpen-Tools/compressonator/releases
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
