@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+	<id>powerchute-personal</id>
+	<version>0.0</version>
+	<owners>tunisiano</owners>
+	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/p4merge</packageSourceUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@844f2a7fa61f639af9ca6245f8e767e868e3300d/icons/p4merge.png</iconUrl>
+	<title>PowerChute Personal Edition</title>
+	<authors>APC Schneider</authors>
+	<projectUrl>https://www.apc.com/shop/us/en/categories/power/uninterruptible-power-supply-ups-/ups-management/powerchute-personal-edition/N-1b6nbpp</projectUrl>
+	<copyright>APC, Inc.</copyright>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<docsUrl>https://www.apc.com/us/en/download/range/61934-PowerChute+Personal+Edition/doc-group-type/10574147182-User+Guides/?appSource=APC</docsUrl>
+	<tags>powerchute APC power supply ups admin</tags>
+	<summary>power and energy management features for home computers and battery backups..</summary>
+	<description><![CDATA[## P4Merge
+P4Merge is a visual diff tool that displays the differences between file versions and helps you 
+to resolve conflicts and merge competing versions into one.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+	<releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
+</package>
