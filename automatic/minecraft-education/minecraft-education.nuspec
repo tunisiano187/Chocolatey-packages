@@ -2,23 +2,34 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>minecraft-education</id>
-    <version>1.9</version>
+    <version>1.14.31.0</version>
     <title>Minecraft</title>
     <authors>tunisiano</authors>
-    <owners>Microsoft</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.microsoft.com/servicesagreement</licenseUrl>
     <projectUrl>https://education.minecraft.net/get-started/download</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/Laures/chocolatey-packages/master/minecraft/minecraft.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ac23013250379e787d67577ce2566745b4e5f32b/icons/minecraft.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Minecraft is a game about breaking and placing blocks. At first, people built structures to protect against nocturnal monsters, but as the game grew players worked together to create wonderful, imaginative things.
-It can also be about adventuring with friends or watching the sun rise over a blocky ocean. It’s pretty. Brave players battle terrible things in The Nether, which is more scary than pretty. You can also visit a land of mushrooms if it sounds more like your cup of tea.</description>
+    <description><![CDATA[## Minecraft education
+Minecraft is a game about breaking and placing blocks. At first, people built structures to protect against nocturnal
+monsters, but as the game grew players worked together to create wonderful, imaginative things.
+
+It can also be about adventuring with friends or watching the sun rise over a blocky ocean. It’s pretty. Brave 
+players battle terrible things in The Nether, which is more scary than pretty. You can also visit a land of mushrooms 
+if it sounds more like your cup of tea.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Minecraft</summary>
     <releaseNotes>#### Package
     * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>Microsoft</copyright>
     <tags>minecraft mine craft microsoft education</tags>
-    <packageSourceUrl>https://chocolatey.org/packages/minecraft/1.9</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/minecraft-education</packageSourceUrl>
     <dependencies>
       <dependency id="jre8" />
     </dependencies>
