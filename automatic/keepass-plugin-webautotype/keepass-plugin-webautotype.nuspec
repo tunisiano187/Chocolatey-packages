@@ -3,7 +3,7 @@
   <metadata>
     <id>keepass-plugin-webautotype</id>
     <title>KeePass Plugin WebAutoType</title>
-    <version>6.3.0</version>
+    <version>6.3.0.20200813</version>
     <authors>Alex Vallat</authors>
     <owners>tunisiano</owners>
     <summary>Adds support to KeePass AutoType for URL matching</summary>
@@ -28,7 +28,7 @@ allow the AutoType functionality to work with browser URLs as well as window tit
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="keepass" version="[2.19, 3.0)" />
+      <dependency id="keepass" version="2.19" />
     </dependencies>
   </metadata>
   <files>
