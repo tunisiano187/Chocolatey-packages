@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>db-visualizer</id>
+    <title>DbVisualizer</title>
+    <version>10.0.25.20200130</version>
+    <authors>DbVis Software</authors>
+    <owners>Keith Gable (ZiggyTheHamster), Joe Athman (jjathman)</owners>
+    <summary>DbVisualizer is the universal database tool for developers, DBAs and analysts.</summary>
+    <description>DbVisualizer is the universal database tool for developers, DBAs and analysts. It is the perfect solution since the same tool can be used on all major operating systems accessing a wide range of databases.</description>
+    <packageSourceUrl>https://github.com/ziggythehamster/nugetpackages/tree/master/db-visualizer</packageSourceUrl>
+    <projectUrl>http://www.dbvis.com/</projectUrl>
+    <tags>Java DB DbVis DBVisualizer</tags>
+    <licenseUrl>http://www.dbvis.com/eula/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl></iconUrl>
+  <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <dependencies>
+      <dependency id="openjdk11" version="11.0.5.10" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
