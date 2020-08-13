@@ -23,4 +23,7 @@ It can also be about adventuring with friends or watching the sun rise over a bl
       <dependency id="jre8" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
