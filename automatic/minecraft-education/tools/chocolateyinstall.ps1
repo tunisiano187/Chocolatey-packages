@@ -8,7 +8,7 @@ $checksumType     = 'sha256'
 
 $packageArgs = @{
   packageName     = $packageName
-  fileType        = 'msi'
+  fileType        = 'exe'
   url             = $url
 
   silentArgs      = "/qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
