@@ -17,7 +17,6 @@ function global:au_GetLatest {
 	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '.zip'} | Where-Object {$_.href -notmatch '.src'} | Where-Object {$_.href -match '0.5'}| Select-Object -First 1).href
 	Write-Verbose 'Checking version'
 	$version = $url.Split('-')[-1].replace('.zip','').replace('beta','-beta')
-$version = "0.5.0.20200814"
 	Write-Verbose "Version : $version"
 	$url32 = "http://www.chrysocome.net/$($url)";
 
@@ -25,4 +24,4 @@ $version = "0.5.0.20200814"
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
