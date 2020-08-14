@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
-	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '.zip'} | Where-Object {$_.href -notmatch '.src'} | select -First 1).href
+	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '.zip'} | Where-Object {$_.href -notmatch '.src'} | Select-Object -First 1).href
 	Write-Verbose 'Checking version'
 	$version = $url.Split('-')[-1].replace('.zip','').replace('beta','-beta')
 
