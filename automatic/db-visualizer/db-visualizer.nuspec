@@ -21,7 +21,6 @@
       <dependency id="openjdk11" version="11.0.5.10" />
     </dependencies>
   </metadata>
-
   <files>
     <file src="tools\**" target="tools" />
   </files>
