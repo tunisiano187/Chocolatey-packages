@@ -19,9 +19,4 @@ $packageArgs = @{
   checksumType    = $checksumType
 }
 
-if($('systeminfo /fo csv | convertfrom-csv | select "OS Name"') -notmatch "Serv") {
   Install-ChocolateyPackage @packageArgs
-} else {
-  Write-Information "System not supported"
-  exit 0
-}
