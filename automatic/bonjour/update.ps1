@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	7z.exe x $exeFile
 	7z.exe x "$(get-location)\bonjour*.msi"
 	Write-Output 'Get version'
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
