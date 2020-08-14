@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>powerchute-personal</id>
-	<version>3.0.0</version>
+	<version>3.1.0</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powerchute-personal</packageSourceUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c4b4e27ab28db1e8e6e8fda92d986ca08fde42fc/icons/powerchute-personal.png</iconUrl>
@@ -30,7 +30,7 @@ enable cost savings. Note: Features vary by Back-UPS model and by operating syst
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
 	<releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
