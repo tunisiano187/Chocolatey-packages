@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>dd</id>
@@ -13,10 +13,10 @@
     <description>This version does not actually do any conversion but it allows the flexible copying of data in a win32 environment.</description>
     <summary>Convert and copy a file</summary>
     <releaseNotes>http://www.chrysocome.net/dd
-  
-  #### Package
+
+#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes></releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>Chrysocome</copyright>
     <language>en-us</language>
     <tags>disk commandline</tags>
