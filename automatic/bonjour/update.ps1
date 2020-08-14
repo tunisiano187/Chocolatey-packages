@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	Write-Output 'Download'
 	$exeFile = Join-Path $env:TEMP $install_fname
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile
-	$File = "$env:temp\mDNSResponder.exe"
+	$File = "$(get-location)\mDNSResponder.exe"
 	7z.exe x $exeFile
 	7z.exe x "$(get-location)\bonjour*.msi"
 	Write-Output 'Get version'
