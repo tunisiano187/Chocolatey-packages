@@ -1,6 +1,7 @@
+$ErrorActionPreference = 'Continue';
 import-module au
 
-$releases = 'https://support.apple.com/downloads/DL999/en_US/BonjourPSSetup.exe'
+$releases = 'https://www.apple.com/itunes/download/win'
 
 function global:au_SearchReplace {
 	@{
@@ -12,16 +13,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = $releases
+	$url32 = "$($releases)32"
+	$url64 = "$($releases)64"
 	$install_fname = 'bonjour.exe'
 	Write-Output 'Download'
-	$File = Join-Path $env:TEMP $install_fname
-	Invoke-WebRequest -Uri $url32 -OutFile $File
+	$exeFile = Join-Path $env:TEMP $install_fname
+	Invoke-WebRequest -Uri $url32 -OutFile $exeFile
+	$File = "$env:temp\mDNSResponder.exe"
+	7z.exe x $exeFile
+	7z.exe x "$(get-location)\bonjour*.msi"
 	Write-Output 'Get version'
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	Write-Output "Version : $version"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
