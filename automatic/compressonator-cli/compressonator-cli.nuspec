@@ -3,23 +3,26 @@
   <metadata>
     <id>compressonator-cli</id>
     <title>Compressonator CLI</title>
-    <version>0.0</version>
+    <version>4.0.4855</version>
     <authors>GPUOpen initiative</authors>
-    <owners>Kurt Johnson (kujotx)</owners>
+    <owners>tunisiano</owners>
     <summary>Compressonator is a set of tools to allow artists and developers to more easily create compressed texture assets or model mesh optimizations and easily visualize the quality impact of various compression and rendering technologies</summary>
-    <description><![CDATA[## WinMerge
-WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both 
-folders and files, presenting differences in a visual text format that is easy to understand and handle.
+    <description><![CDATA[## compressonator-cli
+Compressonator is a set of tools to allow artists and developers to more easily create compressed texture assets or model mesh optimizations and easily visualize the quality impact of various compression and rendering technologies.  It consists of a GUI application, a command line application and an SDK for easy integration into a developer tool chain.
+
+Compressonator supports Microsoft Windows®, Linux and Mac builds.
+
+For more details goto the online Compressonator Documents: http://compressonator.readthedocs.io/en/latest/ 
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c50a453e5159f9b856288b523fe2c9e4e2cea0a9/icons/winmerge.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2d71c90ca067eb7aec04a070afa38fbf5eb3ef84/icons/compressonator-cli.png</iconUrl>
     <projectUrl>https://github.com/GPUOpen-Tools/compressonator</projectUrl>
     <projectSourceUrl>https://github.com/GPUOpen-Tools/compressonator</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winmerge</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/compressonator-cli</packageSourceUrl>
     <tags>foss tools compressed texture</tags>
     <licenseUrl>https://github.com/GPUOpen-Tools/compressonator/blob/master/LICENSE_FILE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
