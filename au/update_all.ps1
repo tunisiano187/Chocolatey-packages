@@ -54,7 +54,7 @@ $Options = [ordered]@{
                 EnableSsl   = $Env:enable_ssl -eq 'true'
                 Attachments = "$PSScriptRoot\update_info.xml"
                 UserMessage = ''
-                SendAlways  = $false                        #Send notifications every time
+                SendAlways  = $True                        #Send notifications every time
              }
            } else {}
 }
