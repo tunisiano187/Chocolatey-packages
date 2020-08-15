@@ -29,6 +29,9 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist2015" version="14.0.24215.20160928" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

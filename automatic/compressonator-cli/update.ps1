@@ -13,11 +13,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -match 'CLI'} | select -First 1).href
+    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -match 'CLI'} | Select-Object -First 1).href
     $version = $($installer).split('_')[-1].replace('.exe','')
     $url64 = "https://github.com$($installer)";
 
     return @{ URL64 = $url64; Version = $version }
 }
 
-update-package -ChecksumFor 64
+update-package -ChecksumFor 64 -NoCheckChocoVersion
