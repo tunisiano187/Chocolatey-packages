@@ -32,7 +32,7 @@ environment:
   # Mail credentials - for error notifications
   mail_user: helpdesk.choc@gmail.com
   mail_pass:
-    secure: ugqSoSt9dQDngjcf9e6TXQ==
+    secure: g3q4/u5581iqgaHEOXANHdd+AGhRVUT8osLi+AmmNdQ=
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
