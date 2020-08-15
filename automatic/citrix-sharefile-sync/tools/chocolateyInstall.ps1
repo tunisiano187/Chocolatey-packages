@@ -7,7 +7,6 @@ $checksum64 			= '4a4d085d22f6743b84f766d91395dd0b4e0ba2a2963257c1851e4ce7fbadec
 $checksumType64 		= 'sha256'
 $silentArgs 			= '/quiet'
 $validExitCodes 		= @(0)
-#$referer				= 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
 
 $releases 				= 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
 $urls					=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
@@ -26,7 +25,5 @@ $packageArgs = @{
 	silentArgs    		= $silentArgs
 	validExitCodes		= $validExitCodes
 }
-
-# Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP\sharefile.html"
 
 Install-ChocolateyPackage @packageArgs

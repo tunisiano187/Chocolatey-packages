@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>citrix-sharefile-sync</id>
-    <version>3.24.106.0</version>
+    <version>3.24.105.0</version>
     <title>Citrix ShareFile Sync</title>
     <authors>Citrix</authors>
     <owners>tunisiano</owners>
