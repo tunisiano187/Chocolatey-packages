@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>powerchute-personal</id>
-	<version>3.0.0</version>
+	<version>3.1.0</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powerchute-personal</packageSourceUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c4b4e27ab28db1e8e6e8fda92d986ca08fde42fc/icons/powerchute-personal.png</iconUrl>
