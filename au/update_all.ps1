@@ -10,6 +10,21 @@ $Options = [ordered]@{
     Push       = $Env:au_Push -eq 'true'                    #Push to chocolatey
     PluginPath = ''                                         #Path to user plugins
 
+    RepeatOn      = @(                                      #Error message parts on which to repeat package updater
+      'Could not create SSL/TLS secure channel'             # https://github.com/chocolatey/chocolatey-coreteampackages/issues/718
+      'Could not establish trust relationship'              # -||-
+      'Unable to connect'
+      'The remote name could not be resolved'
+      'Choco pack failed with exit code 1'                  # https://github.com/chocolatey/chocolatey-coreteampackages/issues/721
+      'The operation has timed out'
+      'Internal Server Error'
+      'An exception occurred during a WebClient request'
+      'remote session failed with an unexpected state'
+      'The connection was closed unexpectedly.'
+    )
+    RepeatSleep   = 30                                    #How much to sleep between repeats in seconds, by default 0
+    RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
+
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
         Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path where to save the report
@@ -33,10 +48,16 @@ $Options = [ordered]@{
 
     GitLab = @{
         User			= 'tunisiano187'					#Git username, leave empty if github api key is used
-        API_Key			= $Gitlab_api_key					#Password if username is not empty, otherwise api key
-		PushURL			= $Gitlab_PushURL
+        API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
+		PushURL			= $env:Gitlab_PushURL
 		Force			= $True
 		commitStrategy	= 'atomictag'
+    }
+
+    History = @{
+        Lines = 90                                          #Number of lines to show
+        Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
+        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
 
     RunInfo = @{
