@@ -21,7 +21,7 @@ $packageArgs = @{
 
 $OSIsServerVersion = if ([Int]3 -eq [Int](Get-CimInstance -Class Win32_OperatingSystem).ProductType) {$True} else {$False}
 if($OSIsServerVersion) {
-  Write-Information "System not supported"
+  Write-Warning "System not supported"
   exit 0
 } else {
   Install-ChocolateyPackage @packageArgs
