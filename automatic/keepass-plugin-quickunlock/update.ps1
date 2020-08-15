@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	cup -y keepass
-	$url32 = "https://gitbub.com$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".plgx"}).href)"
+	$url32 = "https://gitbub.com$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".plgx"})[0].href)"
 	$version = $url32.split('/')[-2]
 
 	$Latest = @{ URL32 = $url32; Version = $version }
