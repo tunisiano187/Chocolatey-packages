@@ -32,7 +32,6 @@ Use your Android device from a web browser or desktop or restrict sending input 
     <releaseNotes>#### Package
     * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    </releaseNotes>
     <dependencies>
       <dependency id="chocolatey-uninstall.extension" />
     </dependencies>
