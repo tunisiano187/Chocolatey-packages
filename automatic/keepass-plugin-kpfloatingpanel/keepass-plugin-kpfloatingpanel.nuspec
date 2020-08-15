@@ -20,8 +20,7 @@ KP Floating Panel allows easy access to KeePass entries through a small floating
     <copyright>© Alexeev Alexander, S², Mitch Capper</copyright>
     <licenseUrl>https://github.com/mitchcapper/KPFloatingPanel/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
+    <releaseNotes>#### Program
 * [Changelog](https://github.com/mitchcapper/KPFloatingPanel/releases/tag/{{PackageVersion}})
 
 #### Package
