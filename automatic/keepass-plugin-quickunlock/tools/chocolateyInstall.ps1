@@ -29,7 +29,7 @@ if (! $installPath) {
   Write-Verbose "Searching $env:ChocolateyBinRoot for portable install..."
   $binRoot = Get-BinRoot
   $portPath = Join-Path $binRoot "keepass"
-  $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
+  $installPath = Get-ChildItemDir $portPath*
 }
 if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
@@ -42,7 +42,6 @@ if (! $installPath) {
   Write-Warning "$($packageSearch) not found."
   throw
 }
-Write-Verbose "`t...found."
 
 Write-Verbose "Searching for plugin directory..."
 $pluginPath = (Get-ChildItemDir $installPath\Plugin*).FullName
