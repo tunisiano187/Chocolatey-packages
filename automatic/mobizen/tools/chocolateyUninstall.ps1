@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $softwareName = "$packageName"
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'

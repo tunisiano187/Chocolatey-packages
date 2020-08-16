@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://download.mobizen.com/download/mobizen.exe'

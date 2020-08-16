@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://plugins.geany.org/geany-plugins/'
