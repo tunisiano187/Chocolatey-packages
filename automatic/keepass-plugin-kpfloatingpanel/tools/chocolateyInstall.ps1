@@ -29,7 +29,7 @@ if (! $installPath) {
   Write-Verbose "Searching $env:ChocolateyBinRoot for portable install..."
   $binRoot = Get-BinRoot
   $portPath = Join-Path $binRoot "keepass"
-  $installPath = Get-ChildItemDir $portPath -ErrorAction SilentlyContinue
+  $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
 }
 if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
@@ -58,7 +58,7 @@ Get-ChocolateyWebFile -PackageName "$packageName" `
                       -ChecksumType "$checksumType"
 if ( Get-Process -Name "KeePass" `
                  -ErrorAction SilentlyContinue ) {
-  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)." 
+  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)."
 } else {
   Write-Host "$($packageName) will be loaded the next time KeePass is started."
   Write-Host "Please note this plugin may require additional configuration. Look for a new entry in KeePass' Menu>Tools"

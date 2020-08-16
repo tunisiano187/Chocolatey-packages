@@ -1,1 +1,1 @@
-cup -y checksum
+cup -y checksum keepass
