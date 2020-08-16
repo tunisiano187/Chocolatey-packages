@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>boinc</id>
     <version>7.16.7</version>
@@ -36,8 +37,8 @@ After installing, run `BoincMgr.exe` and choose a [BOINC project](https://boinc.
     <projectSourceUrl>https://boinc.berkeley.edu/trac/wiki/SourceCodeGit</projectSourceUrl>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/boinc</packageSourceUrl>
     <mailingListUrl>https://boinc.berkeley.edu/trac/wiki/EmailLists</mailingListUrl>
-	  <dependencies>
-      <dependency id="KB2919355" version="1.0.20160915"/>
+    <dependencies>
+      <dependency id="KB2919355" version="1.0.20160915" />
     </dependencies>
   </metadata>
   <files>

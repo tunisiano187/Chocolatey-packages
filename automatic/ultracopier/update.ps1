@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://ultracopier-fr.first-world.info/telecharger-toutes-les-versions.html"

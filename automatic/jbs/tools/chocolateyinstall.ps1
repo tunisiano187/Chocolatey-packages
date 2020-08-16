@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $packageName= $env:ChocolateyPackageName
 $installerType      = 'EXE'
 $silentArgs = '/S'

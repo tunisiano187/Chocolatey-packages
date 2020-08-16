@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://www.autodesk.com/eagle-download-win'

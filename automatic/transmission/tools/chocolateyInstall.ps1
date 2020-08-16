@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'
 $url = 'https://github.com/transmission/transmission/releases/download/3.00/transmission-3.00-x64.msi'

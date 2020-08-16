@@ -1,4 +1,5 @@
-﻿$packageName    = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '/S'
 $url            = 'https://sdl.adaware.com/?bundleid=AR001&savename=Andy_47.260_1096_26_x86.exe'

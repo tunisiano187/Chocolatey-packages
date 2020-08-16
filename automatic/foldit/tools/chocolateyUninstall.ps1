@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = "$packageName"
 $fileType = 'exe'
 $silentArgs = '/S'

@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'http://fold.it/portal/files/app/Foldit-win_x86.exe'

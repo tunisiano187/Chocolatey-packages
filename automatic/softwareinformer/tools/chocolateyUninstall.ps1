@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $packageSearch = "Software Informer"
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'

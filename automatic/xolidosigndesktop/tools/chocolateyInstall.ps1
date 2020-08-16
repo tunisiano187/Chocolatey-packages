@@ -1,4 +1,5 @@
-﻿$packageName    = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName    = $env:ChocolateyPackageName
 $installerType  = 'EXE'
 $url32          = 'https://www.xolido.com/instaladores/SetupXolidoSign.exe'
 $checksumtype   = 'sha256'

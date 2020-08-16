@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'EXE'
 $url64 = '{{DownloadUrlx64}}'
 $checksum64 = '{{Checksumx64}}'

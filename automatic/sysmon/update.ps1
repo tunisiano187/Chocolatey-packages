@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon'

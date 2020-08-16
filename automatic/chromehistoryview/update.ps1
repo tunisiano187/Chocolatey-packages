@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $url32 = 'https://www.nirsoft.net/utils/chromehistoryview.zip'

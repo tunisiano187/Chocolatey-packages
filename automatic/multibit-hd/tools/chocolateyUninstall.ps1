@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $packageSearch = "MultiBit HD {{PackageVersion}}"
 $installerType = 'exe'
 $silentArgs = '-q'

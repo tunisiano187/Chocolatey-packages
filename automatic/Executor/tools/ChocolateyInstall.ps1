@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $url32          = ''
 $checksum32     = ''
 $checksumType32 = ''

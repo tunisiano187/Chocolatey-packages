@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/monero-project/monero/releases/latest'

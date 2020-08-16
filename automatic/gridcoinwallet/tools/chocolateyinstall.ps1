@@ -1,4 +1,5 @@
-﻿$url32		      = ''
+﻿$ErrorActionPreference = 'Stop'
+$url32		      = ''
 $checksum32	    = ''
 $checksumType32 = ''
 $url64		      = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/download/4.0.6.0/gridcoin-4.0.6-win64-setup.exe'

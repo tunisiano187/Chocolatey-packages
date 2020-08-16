@@ -1,4 +1,5 @@
-﻿$packageName      = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName      = $env:ChocolateyPackageName
 $installerType    = 'EXE'
 $url32            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x86.exe'
 $url64            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x64.exe'

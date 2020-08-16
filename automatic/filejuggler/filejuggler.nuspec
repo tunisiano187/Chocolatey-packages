@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>filejuggler</id>
@@ -8,16 +9,16 @@
     <owners>Tunisiano187</owners>
     <summary>You set up the rules, and File Juggler will monitor your folders and manage your files automatically</summary>
     <description>You set up the rules, and File Juggler will monitor your folders and manage your files automatically</description>
-	<packageSourceUrl>https://gitlab.com/chocolatey-packages/FileJuggler</packageSourceUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/FileJuggler</packageSourceUrl>
     <projectUrl>http://www.filejuggler.com/</projectUrl>
     <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/filejuggler.png</iconUrl>
-	<tags>FileJuggler File Juggler organisation organization admin trial</tags>
+    <tags>FileJuggler File Juggler organisation organization admin trial</tags>
     <copyright>Simon</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-	<dependencies>
+    <dependencies>
       <dependency id="dotnetfx" />
     </dependencies>
   </metadata>

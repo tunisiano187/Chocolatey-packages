@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $packageSearch = "Dogecoin Core"
 $installerType = 'exe'
 $silentArgs = '/S'

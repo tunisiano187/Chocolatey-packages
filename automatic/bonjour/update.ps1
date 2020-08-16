@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Continue';
+﻿$ErrorActionPreference = 'Continue';
 import-module au
 
 $releases = 'https://www.apple.com/itunes/download/win'

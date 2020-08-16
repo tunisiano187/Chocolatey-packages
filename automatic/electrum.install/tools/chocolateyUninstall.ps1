@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $packageSearch = $packageName
 $installerType = 'exe'
 $silentArgs = '/S'

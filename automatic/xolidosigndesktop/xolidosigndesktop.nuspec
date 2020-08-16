@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xolidosigndesktop</id>
@@ -6,8 +7,8 @@
     <title>Xolido Sign Desktop</title>
     <authors>Xolido</authors>
     <owners>tunisiano</owners>
-	<packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/xolidosigndesktop</packageSourceUrl>
-	<iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/xolidosigndesktop.png</iconUrl>
+    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/xolidosigndesktop</packageSourceUrl>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/xolidosigndesktop.png</iconUrl>
     <projectUrl>http://www.xolido.com/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Software to be installed in your computer being useful as a complementary tool for other apps and telematics procedures that could need PDF signed electronically with time-stamp.</description>

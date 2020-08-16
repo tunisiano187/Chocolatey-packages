@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $packageSearch = "$packageName"
 $fileType = 'exe'

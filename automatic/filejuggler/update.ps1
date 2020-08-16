@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://www.filejuggler.com/download/filejuggler.exe'

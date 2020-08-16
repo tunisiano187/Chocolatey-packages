@@ -1,4 +1,5 @@
-﻿$packageName    = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName    = $env:ChocolateyPackageName
 $url            = 'https://github.com//aria2/aria2/releases/download/release-1.35.0/aria2-1.35.0-win-32bit-build1.zip'
 $checksum       = '60b3720d1d08ff0124224c53e5f0ee05a4427782e2abc63b6a67c023aa5ffb66'
 $checksumType   = 'sha256'

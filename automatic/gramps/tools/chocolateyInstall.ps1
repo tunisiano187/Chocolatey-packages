@@ -1,4 +1,5 @@
-﻿$packageName        = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName        = $env:ChocolateyPackageName
 $installerType      = 'exe'
 $silentArgs         = '/S'
 $url                = 'https://github.com/gramps-project/gramps/releases/download/v5.1.2/GrampsAIO-5.1.2-1_win32.exe'

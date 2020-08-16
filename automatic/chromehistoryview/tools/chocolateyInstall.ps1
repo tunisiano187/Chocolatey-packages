@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'http://www.nirsoft.net/utils/chromehistoryview.zip'
 $checksum = 'a2161a23cdcc92293301402b267e60ff638f83e129a2ad3c1684609c0323d2e6'

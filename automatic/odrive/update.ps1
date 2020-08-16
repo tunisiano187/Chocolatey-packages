@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $url32 = 'https://www.odrive.com/downloaddesktop?platform=win'

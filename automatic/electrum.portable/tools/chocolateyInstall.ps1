@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $url = 'https://download.electrum.org/4.0.2/electrum-4.0.2-portable.exe'
 $checksum = '2e04699258027df8dd66335ae58567f81b45d01f5d2d2ab69da9ae037f39d1d2'
 $checksumType = 'sha256'

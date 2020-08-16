@@ -1,4 +1,5 @@
-﻿$packageName    = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://github.com/dsccommunity/xHyper-V/archive/v3.17.0.zip'
 $checksum       = 'df8819d8b48ce9d1058b18605a5c22cbb58a0817bfa9f29d7fcc7b3fdf164800'

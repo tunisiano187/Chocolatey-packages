@@ -1,4 +1,5 @@
-﻿$packageName        = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName        = $env:ChocolateyPackageName
 $installerType      = 'exe'
 $silentArgs         = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes     = @(0)

@@ -1,4 +1,5 @@
-﻿$packageName= $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName= $env:ChocolateyPackageName
 $installerType      = 'EXE'
 $silentArgs = '/qb'
 $url        = 'https://www.filejuggler.com/download/filejuggler.exe'

@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.apc.com/shop/us/en/search/body/N-1b6nbpp'

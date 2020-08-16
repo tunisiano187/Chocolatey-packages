@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://appdownload.deepl.com/windows/full/DeepLSetup.exe'

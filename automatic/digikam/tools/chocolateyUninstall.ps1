@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $softwareName = "$packageName*"
 $installerType = 'exe'
 $silentArgs = '/S'

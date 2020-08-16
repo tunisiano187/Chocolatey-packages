@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $url = 'https://github.com/electron/electron/releases/download/v9.2.0/electron-v9.2.0-win32-ia32.zip'
 $checksum = '71f4de93dd0919fdf24a8dba786647c056a9e986c77847c864b6046a3a4fc755'
 $checksumType = 'sha256'

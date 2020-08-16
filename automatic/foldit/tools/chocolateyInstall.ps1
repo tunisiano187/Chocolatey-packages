@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $url = 'http://fold.it/portal/files/app/Foldit-win_x86.exe'
 $checksum = 'f92e30c8dc0c1c7502940206d095172fba9676104a16693595266835cd798456'

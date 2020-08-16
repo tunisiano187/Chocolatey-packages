@@ -1,4 +1,5 @@
-﻿$packageName = '{{PackageName}}'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = '{{PackageName}}'
 $packageSearch = 'SciTE Text Editor'
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'

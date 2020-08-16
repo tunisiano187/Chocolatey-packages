@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $url = 'https://www.nirsoft.net/utils/usblogview.zip'
 $checksum = '8ec630a9ed42389d73c1c82de05f0019f61baf7af81fc16de13c6643eb07fd4d'
 $checksumType = 'sha256'

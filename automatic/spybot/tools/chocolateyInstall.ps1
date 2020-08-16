@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /NORESTART /SP-'
 $url = 'https://updates2.safer-networking.org/spybot1/spybotsd-2.8.68.0.exe'

@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://www.safer-networking.org/products/spybot-free-edition/download-mirror-1/"

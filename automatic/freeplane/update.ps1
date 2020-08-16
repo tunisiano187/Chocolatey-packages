@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://sourceforge.net/projects/freeplane/files/freeplane%20stable/'

@@ -1,4 +1,5 @@
-﻿$url			= 'https://www.odrive.com/downloaddesktop?platform=win'
+﻿$ErrorActionPreference = 'Stop'
+$url			= 'https://www.odrive.com/downloaddesktop?platform=win'
 $checksum		= '7f5946906095411b1f8b43d4adcfe1c325f67f24b9a2fd2b6139d29bf3892fb2'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

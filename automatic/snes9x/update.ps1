@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'http://www.s9x-w32.de/dl/?C=M;O=D'

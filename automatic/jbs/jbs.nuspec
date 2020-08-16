@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jbs</id>
@@ -10,8 +11,8 @@
     <description>John’s Background Switcher (or JBS for short) periodically changes the background image on your Windows computer to something awesome.</description>
     <projectUrl>https://johnsad.ventures/software/backgroundswitcher/</projectUrl>
     <packageSourceUrl>https://gitlab.com/chocolatey-packages/jbs</packageSourceUrl>
-	<iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/jbs.png</iconUrl>
-	<tags>jbs john background switcher</tags>
+    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/jbs.png</iconUrl>
+    <tags>jbs john background switcher</tags>
     <copyright>John Conners</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Program

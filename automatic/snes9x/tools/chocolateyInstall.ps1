@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $url = 'http://www.s9x-w32.de/dl/snes9x-1.60-win32-x64.zip'
 $checksum = 'd5914d166e6d9987429566b8ad70f42d8c851c87ababace738918966852a58a3'
 $checksumType = 'sha256'

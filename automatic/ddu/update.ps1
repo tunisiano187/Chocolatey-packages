@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://www.wagnardsoft.com/forums/viewforum.php?f=5"

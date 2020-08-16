@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32            = 'https://www.dbvis.com/product_download/dbvis-10.0.25/media/dbvis_windows-x32_10_0_25.exe'
 $url64            = 'https://www.dbvis.com/product_download/dbvis-10.0.25/media/dbvis_windows-x64_10_0_25.exe'

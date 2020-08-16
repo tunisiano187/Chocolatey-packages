@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $url32 = 'https://get.fing.com/fing-desktop-releases/windows/Fing.exe'

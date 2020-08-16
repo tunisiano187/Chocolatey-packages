@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://download.foldingathome.org/releases/public/release/fah-installer/windows-10-32bit/'

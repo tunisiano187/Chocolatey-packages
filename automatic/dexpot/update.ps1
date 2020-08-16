@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = "https://dexpot.de/index.php?id=thankyou"

@@ -1,4 +1,5 @@
-﻿$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20V18.0.2.7.exe'
+﻿$ErrorActionPreference = 'Stop'
+$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20V18.0.2.7.exe'
 $checksum       = '4c04466d569162a272a60443e4bb28b100260d1636460c30ecf43a1e2431b37e'
 $checksumType   = 'sha256'
 $referer        = 'https://www.wagnardsoft.com/forums/viewtopic.php?f=5&t=3202'

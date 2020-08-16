@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://blink.sipthor.net/download.phtml?download&os=nt'
