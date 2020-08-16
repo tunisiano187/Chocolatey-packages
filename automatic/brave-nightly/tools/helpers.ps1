@@ -1,4 +1,5 @@
-﻿function Get-InstalledVersion() {
+﻿$ErrorActionPreference = 'Stop'
+function Get-InstalledVersion() {
   [array]$key = Get-UninstallRegistryKey -SoftwareName 'Brave*'
   if ($key.Length -ge 1) {
     $installedVersion = $key.Version[3..($key.Version.length - 1)]
