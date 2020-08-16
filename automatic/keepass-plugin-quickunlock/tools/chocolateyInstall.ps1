@@ -11,7 +11,7 @@ $packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
 $url = '{{DownloadUrl}}'
 $checksum = '{{Checksum}}'
-$checksumType = 'sha256'
+$checksumType = 'md5'
 
 Write-Verbose "Searching registry for installed KeePass..."
 $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
@@ -29,7 +29,7 @@ if (! $installPath) {
   Write-Verbose "Searching $env:ChocolateyBinRoot for portable install..."
   $binRoot = Get-BinRoot
   $portPath = Join-Path $binRoot "keepass"
-  $installPath = Get-ChildItemDir $portPath*
+  $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
 }
 if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
