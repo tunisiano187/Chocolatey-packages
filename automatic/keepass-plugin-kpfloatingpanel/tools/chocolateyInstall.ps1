@@ -29,7 +29,7 @@ if (! $installPath) {
   Write-Verbose "Searching $env:ChocolateyBinRoot for portable install..."
   $binRoot = Get-BinRoot
   $portPath = Join-Path $binRoot "keepass"
-  $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
+  $installPath = Get-ChildItemDir $portPath -ErrorAction SilentlyContinue
 }
 if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
