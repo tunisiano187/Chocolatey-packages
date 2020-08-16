@@ -1,4 +1,5 @@
-﻿$installerType 			= 'MSI'
+﻿$ErrorActionPreference = 'Stop'
+$installerType 			= 'MSI'
 $url 					= 'https://downloads.citrix.com/7110/ShareFileSync32_v3.24.106.0.msi?__gda__=1597501042_c6d123f2ea5e300104da2af9feccaf29'
 $checksum 				= 'dcf05efb9b81ae50fb6d0b0cd6b983866ab79d93544c48ed8c010fef0f0d09ed'
 $checksumType 			= 'sha256'

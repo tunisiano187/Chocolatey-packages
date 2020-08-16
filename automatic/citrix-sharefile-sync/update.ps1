@@ -1,3 +1,4 @@
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
