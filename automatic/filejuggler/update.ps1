@@ -24,6 +24,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+	cup -y autohotkey
 	Write-Output 'Check Folder'
 	$File = "$($env:Temp)\Filejuggler.exe"
 	Write-Output 'Download'
