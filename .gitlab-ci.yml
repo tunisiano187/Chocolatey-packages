@@ -7,6 +7,8 @@
   script:
     - Write-Host "Setup AU module"
     - ./setup/au_setup.ps1
+    - Write-Host "Setup requisites"
+    - ./setup/requisites.ps1
     - Write-Host "Updating Packages.md"
     - ./scripts/ListPackages.ps1
     - Write-Host "Start updating packages"

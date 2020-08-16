@@ -130,7 +130,8 @@ build_script:
             }
         }
     }
-
+    Write-Host "Installing requisites"
+    setup/requisites.ps1
     Write-Host "updating packageSourceUrl"
     scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     Write-Host "updating IconUrl"
