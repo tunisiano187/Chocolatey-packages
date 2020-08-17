@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windowsfirewallcontrol</id>
-    <version>6.3.0.0</version>
+    <version>6.4.0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windowsfirewallcontrol</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>windowsfirewallcontrol (Install)</title>
     <authors>Alexandru Dicu</authors>
     <licenseUrl>https://www.binisoft.org/eula</licenseUrl>
     <projectUrl>https://www.binisoft.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c0a1a3f3509041c77fd8542e19bad5542db174b0/icons/windowsfirewallcontrol.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4ff04c7c68fbb7828896e7de7ea5b5d372ffcf01/icons/windowsfirewallcontrol.png</iconUrl>
     <tags>windowsfirewallcontrol Windows Firewall Control WFC binisoft malwarebytes</tags>
     <summary>Windows Firewall Control is a powerful tool which extends the functionality of Windows Firewall and provides new extra features which makes Windows Firewall better. </summary>
     <description><![CDATA[## Windows Firewall Control - Managing Windows Firewall is now easier than ever
@@ -78,7 +78,11 @@ Firewall to their own filtering module.
 √ Due to multiple system configurations and software installed there may be 
 incompatibility problems. Please report them and help us to improve Windows 
 Firewall Control. Thank you for your support!
-    
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <releaseNotes>#### Software 
     https://www.binisoft.org/changelog.txt
