@@ -2,8 +2,8 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url            = 'https://www.binisoft.org/download/wfc6setup.exe'
-$checksum       = '2f8da7b55fb65c308b7c7773b21cdb8422cc5215692078720f2d265a1e7b19d8'
-$checksumType   = ''
+$checksum       = '11f44ad524fa01aa04ee5866728d4ec9ef4951996056fd88c00a35dc533a3dc1'
+$checksumType   = 'sha256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
