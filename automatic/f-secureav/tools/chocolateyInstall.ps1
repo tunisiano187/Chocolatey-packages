@@ -3,13 +3,13 @@ $checksum       = ''
 $checksumType   = ''
 
 $packageArgs    = @{
-    packageName     = $env:ChocolateyPackageName
-    fileType        = 'EXE'
-    url             = $url
-    checksum        = $checksum
-    checksumType    = $checksumType
-    silentArgs      = '/s'
-    validExitCodes  = @(0)
+    PackageName     = $env:ChocolateyPackageName
+    FileType        = 'EXE'
+    Url             = $url
+    Checksum        = $checksum
+    ChecksumType    = $checksumType
+    SilentArgs      = '/s'
+    ValidExitCodes  = @(0)
 }
 
 Install-ChocolateyPackage $packageArgs
