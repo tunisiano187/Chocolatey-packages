@@ -9,9 +9,9 @@ if ($psver -ge 3) {
 
 $packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'md5'
+$url = 'https://github.com/mitchcapper/KPFloatingPanel/releases/download/7.5/KPFloatingPanel.plgx'
+$checksum = 'bdacbe5442cc9c592f3c88134e790cff2ba49641abbb023db40693f59e350620'
+$checksumType = 'sha256'
 
 Write-Verbose "Searching registry for installed KeePass..."
 $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
