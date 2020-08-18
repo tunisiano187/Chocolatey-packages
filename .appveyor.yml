@@ -60,7 +60,7 @@ environment:
   gitlab_commit_strategy: atomictag
 
   #Gitter
-  gitter_WebHookUrl:
+  gitter_webhook:
     secure: SuvLP4KrBXFvRRG7tcBiTUJvh8urQl3gOu4WYjLO9ZEXX0wZB3CwmIx1VnoA4I009yKsuPdPZ1P6NTuE7Vt9Cg==
 
 init:
