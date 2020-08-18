@@ -46,6 +46,10 @@ $Options = [ordered]@{
         Password = $Env:github_api_key
     }
 
+    Gitter = @{
+        WebHookUrl = $env:gitter_webhook
+    }
+
     GitLab = @{
         User			= 'tunisiano187'					#Git username, leave empty if github api key is used
         API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
