@@ -59,6 +59,10 @@ environment:
   gitlab_PushURL: https://gitlab.com/chocolatey-packages/automatic-updating.git   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://git.example.org/jekotia/au.git
   gitlab_commit_strategy: atomictag
 
+  #Gitter
+  gitter_WebHookUrl:
+    secure: SuvLP4KrBXFvRRG7tcBiTUJvh8urQl3gOu4WYjLO9ZEXX0wZB3CwmIx1VnoA4I009yKsuPdPZ1P6NTuE7Vt9Cg==
+
 init:
 - git config --global user.email "helpdesk.choc@gmail.com"
 - git config --global user.name "Tunisiano18"
