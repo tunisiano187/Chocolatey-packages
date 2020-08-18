@@ -27,7 +27,7 @@ environment:
 
   # Gitter Integration
   gitter_webhook:
-    secure: SuvLP4KrBXFvRRG7tcBiTdxxhb75Pcdz+ixNouPugCpwbBCeDYnyxgOAlEcxrm+8tRuKGmxou0wLOQAp/qM6rA==
+    secure: SuvLP4KrBXFvRRG7tcBiTUJvh8urQl3gOu4WYjLO9ZEXX0wZB3CwmIx1VnoA4I009yKsuPdPZ1P6NTuE7Vt9Cg==
 
   # Mail credentials - for error notifications
   mail_user: helpdesk.choc@gmail.com
@@ -58,10 +58,6 @@ environment:
     secure: 97kzpWK6hube+75dD44758RlG3o6gDbR1h0GvUO4neY=   # GitLab API key associated with gitlab_user
   gitlab_PushURL: https://gitlab.com/chocolatey-packages/automatic-updating.git   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://git.example.org/jekotia/au.git
   gitlab_commit_strategy: atomictag
-
-  #Gitter
-  gitter_webhook:
-    secure: SuvLP4KrBXFvRRG7tcBiTUJvh8urQl3gOu4WYjLO9ZEXX0wZB3CwmIx1VnoA4I009yKsuPdPZ1P6NTuE7Vt9Cg==
 
 init:
 - git config --global user.email "helpdesk.choc@gmail.com"
