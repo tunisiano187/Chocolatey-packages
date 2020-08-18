@@ -2,8 +2,8 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S /v/qn'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
+$url = 'https://download.mobizen.com/download/mobizen.exe'
+$checksum = 'b68cc87ff054fd21a0c8d19d4e1a92986d42abaf2330046b6fa099ff0e86e19a'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
