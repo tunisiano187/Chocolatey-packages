@@ -1,16 +1,15 @@
-﻿$ErrorActionPreference = 'Stop';
-$url            = 'http://download.sp.f-secure.com/SE/Retail/installer/2/F-SecureNetworkInstaller_AV-ESTORE-TRIAL-GLOBAL_.exe'
-$checksum       = ''
-$checksumType   = ''
+﻿$ErrorActionPreference = 'Stop'
+$url32          = ''
+$checksum32     = ''
+$checksumType32 = ''
 
-$packageArgs    = @{
-    PackageName     = $env:ChocolateyPackageName
-    FileType        = 'EXE'
-    Url             = $url
-    Checksum        = $checksum
-    ChecksumType    = $checksumType
-    SilentArgs      = '/s'
-    ValidExitCodes  = @(0)
+$packageArgs = @{
+    url             = $url32
+    fileType        = 'exe'
+    softwareName    = $env:ChocolateyPackageName
+    packageName     = $env:ChocolateyPackageName
+    silentArgs      = '/s'
+    checksum        = $checksum32
+    checksumType    = $checksumType32
 }
-
-Install-ChocolateyPackage $packageArgs
+Install-ChocolateyPackage @packageArgs
