@@ -1,4 +1,4 @@
-# F-Secure Antivirus
+﻿# F-Secure Antivirus
 
 [![Fing](https://img.shields.io/chocolatey/v/fing?color=green&label=fing)](https://chocolatey.org/packages/fing) [![Fing](https://img.shields.io/chocolatey/dt/fing)](https://chocolatey.org/packages/fing)
 

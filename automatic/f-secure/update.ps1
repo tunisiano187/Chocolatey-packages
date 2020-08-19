@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$url32 = 'https://download.sp.f-secure.com/SE/Retail/installer/2/F-SecureNetworkInstaller_AV-ESTORE-TRIAL-GLOBAL_.exe'
+$url32 = 'https://download.sp.f-secure.com/SE/Retail/installer/F-SecureNetworkInstaller-AV.exe'
 
 function global:au_SearchReplace {
 	@{
@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "fing.exe"
+	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "fsav.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	Write-Output "Version : $version"

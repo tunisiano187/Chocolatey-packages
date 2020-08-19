@@ -1,4 +1,5 @@
-﻿$url            = 'http://download.sp.f-secure.com/SE/Retail/installer/2/F-SecureNetworkInstaller_AV-ESTORE-TRIAL-GLOBAL_.exe'
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
+$url            = 'http://download.sp.f-secure.com/SE/Retail/installer/2/F-SecureNetworkInstaller_AV-ESTORE-TRIAL-GLOBAL_.exe'
 $checksum       = ''
 $checksumType   = ''
 

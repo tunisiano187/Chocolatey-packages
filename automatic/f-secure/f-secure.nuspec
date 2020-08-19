@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>f-secureav</id>
@@ -6,8 +6,8 @@
     <title>F-Secure Anti-Virus</title>
     <authors>F-Secure</authors>
     <owners>tonigellida</owners>
-    <licenseUrl>http://www.f-secure.com/en/web/home_global/license-terms</licenseUrl>
-    <projectUrl>http://www.f-secure.com/en/web/home_global/anti-virus</projectUrl>
+    <licenseUrl>https://www.f-secure.com/en/legal/terms/websites</licenseUrl>
+    <projectUrl>https://www.f-secure.com/en/home/products/anti-virus</projectUrl>
     <iconUrl>https://raw.github.com/tonigellida/chocolateyautomaticpackages/master/f-secureav/f-secureav.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>F-Secure Anti-Virus provides real-time protection against viruses, spyware, infected e-mail attachments and other malware.
