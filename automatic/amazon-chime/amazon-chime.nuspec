@@ -3,20 +3,40 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>amazon-chime</id>
-    <version>0.0.0.0</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <version>4.33.9754.1</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/amazon-chime</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>amazon-chime (Install)</title>
     <authors>Amazon</authors>
     <projectUrl>https://aws.amazon.com/chime/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/amazon-chimes.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3e629295008de5fd76db8beb4775c7536bb5669d/icons/amazon-chime.jpg</iconUrl>
     <copyright>Amazon</copyright>
     <licenseUrl>https://aws.amazon.com/service-terms/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://aws.amazon.com/chime/getting-started/</docsUrl>
     <tags>amazon chimes aws communication</tags>
     <summary>Amazon Chime est un service de communication qui vous permet de vous réunir et de discuter avec vos collaborateurs</summary>
-    <description></description>
+    <description><![CDATA[## Amazon chime
+Amazon Chime est un service de communication qui vous permet de vous réunir et de discuter avec vos
+collaborateurs, mais également de passer des appels professionnels au sein de votre organisation comme
+en dehors, le tout à partir d'une simple application. Les développeurs peuvent utiliser les mêmes
+infrastructures de communication et services qui alimentent Amazon Chime. Ils peuvent également ajouter
+directement des fonctions d'appel audio, d'appel vidéo et de partage d'écran à leurs applications à
+l’aide d’Amazon Chime SDK.
+
+Amazon Chime Voice Connector est un service qui permet aux entreprises de migrer leurs charges de
+travail de téléphonie vers AWS. Les professionnels de l’informatique peuvent utiliser le service Voice
+Connector pour des liaisons SIP à bas coût depuis les systèmes téléphoniques présents sur les sites ou
+basés sur le cloud. Le service Voice Connector prend en charge les appels entrants, les appels sortants
+ou les deux. Les développeurs peuvent également utiliser le service Voice Connector pour créer des
+appels PSTN dans leurs propres applications à l’aide du kit SDK d’Amazon Chime ou bien pour envoyer des
+flux audio pour les appels analytiques et le machine learning.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <releaseNotes>### Package
 
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
