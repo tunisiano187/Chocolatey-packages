@@ -1,6 +1,6 @@
-[![](https://img.shields.io/chocolatey/v/amazon-chimes?color=green&label=amazon-chimes)](https://chocolatey.org/packages/amazon-chimes) [![](https://img.shields.io/chocolatey/dt/amazon-chimes)](https://chocolatey.org/packages/amazon-chimes)
+[![](https://img.shields.io/chocolatey/v/amazon-chime?color=green&label=amazon-chime)](https://chocolatey.org/packages/amazon-chime) [![](https://img.shields.io/chocolatey/dt/amazon-chime)](https://chocolatey.org/packages/amazon-chime)
 
-## Amazon Chimes
+## Amazon chime
 Amazon Chime est un service de communication qui vous permet de vous réunir et de discuter avec vos
 collaborateurs, mais également de passer des appels professionnels au sein de votre organisation comme
 en dehors, le tout à partir d'une simple application. Les développeurs peuvent utiliser les mêmes

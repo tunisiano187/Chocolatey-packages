@@ -7,7 +7,7 @@
     <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
     <owners>__REPLACE_YOUR_NAME__</owners>
 
-    <title>amazon-chimes (Install)</title>
+    <title>amazon-chime (Install)</title>
     <authors>Amazon</authors>
     <projectUrl>https://aws.amazon.com/chime/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/amazon-chimes.png</iconUrl>

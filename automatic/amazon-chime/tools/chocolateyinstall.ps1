@@ -1,6 +1,5 @@
 ﻿
 $ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = ''
 $checksum       = ''
 $checksumType   = ''
@@ -10,7 +9,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
 
-  softwareName  = 'amazon-chimes*'
+  softwareName  = 'amazon-chime*'
 
   checksum      = $checksum
   checksumType  = $checksumType
