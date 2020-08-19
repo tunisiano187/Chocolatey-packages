@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Faceit</id>
-    <version>1.12</version>
+    <version>1.11</version>
     <title>Faceit</title>
     <authors>Faceit</authors>
     <owners>Muhammed Kaplan</owners>
@@ -19,4 +19,7 @@
     <tags>faceit anticheat ac</tags>
     <packageSourceUrl>https://github.com/MuhammedKpln/chocolatey-packages/</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
