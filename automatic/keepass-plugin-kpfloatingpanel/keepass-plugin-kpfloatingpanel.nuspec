@@ -4,7 +4,7 @@
   <metadata>
     <id>keepass-plugin-kpfloatingpanel</id>
     <title>KeePass Plugin KP Floating Panel</title>
-    <version>7.5</version>
+    <version>7.4</version>
     <authors>Alexeev Alexander,Mitch Capper</authors>
     <owners>tunisiano</owners>
     <summary>Plugin for KeePass 2.x to add small floating panel for quick access to KeePass entries</summary>
@@ -27,7 +27,6 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <iconUrl>https://cdn.rawgit.com/mitchcapper/KPFloatingPanel/829759b6cf991bb057fb15cd59540e479a3cab7d/2.ico</iconUrl>
     <tags>keepass plugin floating-panel</tags>
     <copyright>© Alexeev Alexander, S², Mitch Capper</copyright>
-    <licenseUrl>https://github.com/mitchcapper/KPFloatingPanel/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Program
 * [Changelog](https://github.com/mitchcapper/KPFloatingPanel/releases/tag/{{PackageVersion}})
