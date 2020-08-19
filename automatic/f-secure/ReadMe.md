@@ -1,8 +1,6 @@
-﻿# F-Secure Antivirus
+﻿[![f-secureav](https://img.shields.io/chocolatey/v/f-secureav?color=green&label=f-secureav)](https://chocolatey.org/packages/f-secureav) [![f-secureav](https://img.shields.io/chocolatey/dt/f-secureav)](https://chocolatey.org/packages/f-secureav)
 
-[![Fing](https://img.shields.io/chocolatey/v/fing?color=green&label=fing)](https://chocolatey.org/packages/fing) [![Fing](https://img.shields.io/chocolatey/dt/fing)](https://chocolatey.org/packages/fing)
-
-## Description
+# F-Secure Antivirus
 
 F-Secure Anti-Virus provides real-time protection against viruses, spyware, infected e-mail
 attachments and other malware.
