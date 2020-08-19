@@ -1,21 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>f-secureav</id>
-    <version>2.6.303.0</version>
+    <id>f-secure</id>
+    <version>5.1.18.0</version>
     <title>F-Secure Anti-Virus</title>
     <authors>F-Secure</authors>
-    <owners>tonigellida</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.f-secure.com/en/legal/terms/websites</licenseUrl>
     <projectUrl>https://www.f-secure.com/en/home/products/anti-virus</projectUrl>
-    <iconUrl>https://raw.github.com/tonigellida/chocolateyautomaticpackages/master/f-secureav/f-secureav.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b2cac9cb3a1825a28f2efab45c14227afe96893d/icons/f-secureav.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>F-Secure Anti-Virus provides real-time protection against viruses, spyware, infected e-mail attachments and other malware.
-Automatic updates and advanced real-time response guarantee the fastest protection against all new threats, while DeepGuard 5 Exploit Protection elevates your protection to a new level.
-F-Secure Anti-Virus is a security solution that uses superior cloud-based technology to protect you against existing online threats and to respond to new threats effectively as they appear.
+    <description><![CDATA[# F-Secure Antivirus
+
+F-Secure Anti-Virus provides real-time protection against viruses, spyware, infected e-mail
+attachments and other malware.
+Automatic updates and advanced real-time response guarantee the fastest protection against all
+new threats, while DeepGuard 5 Exploit Protection elevates your protection to a new level.
+F-Secure Anti-Virus is a security solution that uses superior cloud-based technology to protect
+you against existing online threats and to respond to new threats effectively as they appear.
 Easy to install and does not slow down your computer.
-F-Secure Anti-Virus will protect you.</description>
+F-Secure Anti-Virus will protect you.
+
+### Package-specific issue
+
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>F-Secure Anti-Virus provides real-time protection against viruses, spyware, infected e-mail attachments and other malware.</summary>
     <copyright />
     <tags>trial-version notSilent antivirus anti-spyware malware-remover</tags>

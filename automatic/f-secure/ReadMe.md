@@ -1,4 +1,4 @@
-﻿[![f-secureav](https://img.shields.io/chocolatey/v/f-secureav?color=green&label=f-secureav)](https://chocolatey.org/packages/f-secureav) [![f-secureav](https://img.shields.io/chocolatey/dt/f-secureav)](https://chocolatey.org/packages/f-secureav)
+[![f-secureav](https://img.shields.io/chocolatey/v/f-secureav?color=green&label=f-secureav)](https://chocolatey.org/packages/f-secureav) [![f-secureav](https://img.shields.io/chocolatey/dt/f-secureav)](https://chocolatey.org/packages/f-secureav)
 
 # F-Secure Antivirus
 
