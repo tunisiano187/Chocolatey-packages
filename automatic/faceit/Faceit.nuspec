@@ -1,23 +1,30 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>Faceit</id>
-    <version>0.0</version>
+    <id>faceit</id>
+    <version>1.24.1</version>
     <title>Faceit</title>
     <authors>Faceit</authors>
-    <owners>Muhammed Kaplan</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.faceit.com/en/fit/terms</licenseUrl>
     <projectUrl>https://www.faceit.com/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/MuhammedKpln/chocolatey-packages/master/icons/faceit.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d05429304500434cde40a3e76ec14b3b3ff87413/icons/faceit.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>With Faceit Client you can easily join Faceit servers.</description>
+    <description><![CDATA[## FaceIt
+With Faceit Client you can easily join Faceit servers.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Faceit Client Anti cheat for faceit gamers.</summary>
     <releaseNotes>#### Package
     * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>Faceit</copyright>
     <tags>faceit anticheat ac</tags>
-    <packageSourceUrl>https://github.com/MuhammedKpln/chocolatey-packages/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/faceit</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
