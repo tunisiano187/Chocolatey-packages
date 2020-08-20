@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>amazon-chime</id>
-    <version>4.33.9754.1</version>
+    <version>4.33.9805.1</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/amazon-chime</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>amazon-chime (Install)</title>
