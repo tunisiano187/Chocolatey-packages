@@ -25,6 +25,12 @@ $Options = [ordered]@{
     RepeatSleep   = 30                                    #How much to sleep between repeats in seconds, by default 0
     RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
 
+    History = @{
+        Lines = 90                                          #Number of lines to show
+        Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
+        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
+    }
+
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
         Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path where to save the report
@@ -56,12 +62,6 @@ $Options = [ordered]@{
 		PushURL			= $env:Gitlab_PushURL
 		Force			= $True
 		commitStrategy	= 'atomictag'
-    }
-
-    History = @{
-        Lines = 90                                          #Number of lines to show
-        Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
-        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
 
     RunInfo = @{
