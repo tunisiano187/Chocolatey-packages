@@ -4,17 +4,26 @@
   <metadata>
     <id>db-visualizer</id>
     <title>DbVisualizer</title>
-    <version>10.0.25.20200130</version>
+    <version>11.0.4</version>
     <authors>DbVis Software</authors>
-    <owners>Keith Gable (ZiggyTheHamster), Joe Athman (jjathman)</owners>
+    <owners>tunisiano</owners>
     <summary>DbVisualizer is the universal database tool for developers, DBAs and analysts.</summary>
-    <description>DbVisualizer is the universal database tool for developers, DBAs and analysts. It is the perfect solution since the same tool can be used on all major operating systems accessing a wide range of databases.</description>
-    <packageSourceUrl>https://github.com/ziggythehamster/nugetpackages/tree/master/db-visualizer</packageSourceUrl>
+    <description><![CDATA[## DB Visualizer
+dbVisualizer is the universal database tool for developers, DBAs and analysts. It is the perfect 
+solution since the same tool can be used on all major operating systems accessing a wide range of 
+databases.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/db-visualizer</packageSourceUrl>
     <projectUrl>http://www.dbvis.com/</projectUrl>
     <tags>Java DB DbVis DBVisualizer</tags>
     <licenseUrl>http://www.dbvis.com/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl></iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0dcb0e878f8cc2e29bdc0a3f40518fafd58097db/icons/db-visualizer.png</iconUrl>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
