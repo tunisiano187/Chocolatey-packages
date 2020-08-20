@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>amazon-chime</id>
-    <version>0.0</version>
+    <version>4.33.9754.1</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/amazon-chime</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>amazon-chime (Install)</title>
     <authors>Amazon</authors>
     <projectUrl>https://aws.amazon.com/chime/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3e629295008de5fd76db8beb4775c7536bb5669d/icons/amazon-chime.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d05429304500434cde40a3e76ec14b3b3ff87413/icons/amazon-chime.png</iconUrl>
     <copyright>Amazon</copyright>
     <licenseUrl>https://aws.amazon.com/service-terms/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

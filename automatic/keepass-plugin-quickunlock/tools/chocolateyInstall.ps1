@@ -9,9 +9,9 @@ if ($psver -ge 3) {
 
 $packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
-$checksumType = 'md5'
+$url = 'https://github.com/JanisEst/KeePassQuickUnlock/releases/download/v2.4/KeePassQuickUnlock.plgx'
+$checksum = 'feaf3323f30def99448f170e5c39db1f58fc9008fe8d3686fa99c98b9039cd50'
+$checksumType = 'sha256'
 
 Write-Verbose "Searching registry for installed KeePass..."
 $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',

@@ -2,8 +2,8 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>f-secure</id>
-    <version>0.0.0.0</version>
+    <id>f-secureav</id>
+    <version>5.1.18.0</version>
     <title>F-Secure Anti-Virus</title>
     <authors>F-Secure</authors>
     <owners>tunisiano</owners>
