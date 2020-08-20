@@ -1,5 +1,4 @@
 ﻿import-module au
-. $PSScriptRoot\..\_scripts\all.ps1
 
 $domain   = 'https://www.sweetscape.com/'
 $version_url = 'https://www.sweetscape.com/010editor/latest_version.html'
