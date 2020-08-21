@@ -8,4 +8,4 @@ function global:au_SearchReplace {
     }
 }
 
-update -ChecksumFor none -NoCheckUrl
+update -ChecksumFor none -NoCheckUrl -NoCheckChocoVersion

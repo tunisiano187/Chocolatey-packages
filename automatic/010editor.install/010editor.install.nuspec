@@ -3,20 +3,29 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor.install</id>
-    <version>9.0.1</version>
-    <packageSourceUrl>https://github.com/EntranceJew/chocolatey-packages/tree/master/010editor.install</packageSourceUrl>
-    <owners>EntranceJew</owners>
+    <version>10.0.2</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor.install</packageSourceUrl>
+    <owners>tunisiano</owners>
     <title>010 Editor (Install)</title>
     <authors>SweetScape Software Inc.</authors>
     <projectUrl>https://www.sweetscape.com/010editor/</projectUrl>
     <copyright>2017 SweetScape Software Inc.</copyright>
     <licenseUrl>https://www.sweetscape.com/010editor/manual/License.htm</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/EntranceJew/chocolatey-packages/20ef4eb3f32d29e1c42f9a41ba292ad13a1a9ed3/010editor/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@493821b4e04297e9d17beb59b05053ed4e0c3c65/icons/010editor.png</iconUrl>
     <docsUrl>https://www.sweetscape.com/010editor/manual/</docsUrl>
     <tags>010editor admin editor hex file binary template script trial</tags>
     <summary>010 Editor is a hex and process editor that allows exploration of data using binary templates and interaction with data via scripts</summary>
-    <description>(30 day trial) Easily edit any text file, binary file, drive, or process on your computer. Our unique Binary Templates technology allows you to view and edit complex binary data in an easy, intuitive way. Includes a whole range of powerful analysis and editing tools.</description>
+    <description><![CDATA[## 010editor.install
+(30 day trial) Easily edit any text file, binary file, drive, or process on your computer. 
+Our unique Binary Templates technology allows you to view and edit complex binary data in an 
+easy, intuitive way. Includes a whole range of powerful analysis and editing tools.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <releaseNotes>### Software 
 https://www.sweetscape.com/010editor/release_notes.html
 
