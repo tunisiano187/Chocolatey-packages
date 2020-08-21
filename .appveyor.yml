@@ -35,7 +35,7 @@ environment:
     secure: g3q4/u5581iqgaHEOXANHdd+AGhRVUT8osLi+AmmNdQ=
   mail_server: smtp.gmail.com
   mail_port: 587
-  mail_enablessl: true
+  mail_enablessl: $true
 
   #ID of the gist used to save run results
   gist_id: 7032dea203873812b435f152ee3794bf
