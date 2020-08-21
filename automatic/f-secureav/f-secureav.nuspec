@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>f-secureav</id>
-    <version>5.1.18.0</version>
+    <version>5.1.17.0</version>
     <title>F-Secure Anti-Virus (Windows clients only)</title>
     <authors>F-Secure</authors>
     <owners>tunisiano</owners>
@@ -37,6 +37,6 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="tools\*.exe"/>
   </files>
 </package>
