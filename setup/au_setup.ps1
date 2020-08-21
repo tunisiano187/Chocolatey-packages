@@ -17,7 +17,7 @@ $Env:au_version = "master"
 
 Write-Output "Buid AU"
 git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
+#Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
 . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
 Write-Output "Build validator"
