@@ -1,9 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32       = 'https://www.sweetscape.com/download/010EditorWin32Portable.exe'
-$url64       = 'https://www.sweetscape.com/download/010EditorWin64Portable.exe'
-$checksum32  = '1a5ea969c98ffb8373ee8c5dcc7fff9e3766d89d9104f379b919a7c91f7b5aec'
-$checksum64  = 'd4454c7755a6e2f686f816127e482b9c25b507fc6fb633011635fa5b765d2315'
+$url32            = 'https://www.sweetscape.com/download/010EditorWin32Portable.exe'
+$url64            = 'https://www.sweetscape.com/download/010EditorWin64Portable.exe'
+$checksum32       = '1a5ea969c98ffb8373ee8c5dcc7fff9e3766d89d9104f379b919a7c91f7b5aec'
+$checksum64       = 'd4454c7755a6e2f686f816127e482b9c25b507fc6fb633011635fa5b765d2315'
+$checksumType32   = ''
+$checksumType64   = ''
 $installLocation = Join-Path "$env:ChocolateyInstall\lib" "010editor.portable\tools"
 
 $cwd = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -25,13 +27,13 @@ $packageArgs = @{
   fileType      = 'EXE'
   softwareName  = '010 Editor*'
   FileFullPath  = $full_dl_filename
-  
+
   checksum      = $checksum32
-  checksumType  = 'sha256'
+  checksumType  = $checksumType32
   url           = $url32
 
   checksum64    = $checksum64
-  checksumType64= 'sha256'
+  checksumType64= $checksumType64
   url64bit      = $url64
 }
 

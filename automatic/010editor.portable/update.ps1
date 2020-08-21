@@ -14,6 +14,8 @@ function global:au_SearchReplace {
       "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
       "(^[$]checksum32\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
       "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+      "(^[$]checksumType32\s*=\s*)('.*')"     = "`$1'$($Latest.ChecksumType32)'"
+      "(^[$]checksumType64\s*=\s*)('.*')"     = "`$1'$($Latest.ChecksumType64)'"
     }
   }
 }
@@ -22,9 +24,9 @@ function global:au_GetLatest {
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
   $download_page64 = Invoke-WebRequest -UseBasicParsing -Uri $releases64
 
-  $re    = '\.exe$'
-  $url   = ($download_page.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
-  $url64   = ($download_page64.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
+  $re       = '\.exe$'
+  $url      = ($download_page.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
+  $url64    = ($download_page64.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
 
   $download_version = Invoke-WebRequest -Uri $version_url
   $version_text = $($download_version.ParsedHtml.getElementsByTagName("h2") | select -First 1 | % innerText)
