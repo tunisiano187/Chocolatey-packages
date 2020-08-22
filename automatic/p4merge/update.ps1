@@ -25,8 +25,8 @@ function global:au_GetLatest {
 			$clnt = new-object System.Net.WebClient;
 			$clnt.OpenRead("https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe").Close();
 			$date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-			$linktest = "https://cdist2.perforce.com/perforce/r$($version)/doc/user/relnotes.txt"
-			Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
+			$linktest = "https://cdist2.perforce.com/perforce/r$($ver)/doc/user/relnotes.txt"
+			Invoke-WebRequest -Uri $linktest -OutFile "$env:TEMP\p4v.txt"
 			if($found -ne $true -and ($date))
 			{
 				$version = $item.replace(',','.')
