@@ -9,7 +9,7 @@ if((Test-Path $source)) {
             Write-Host "$search v$($winout) available"
         } else {
             Write-host "$search not available on winget"
-            Get-Content $source | Add-Content "tools/Check/Todo.txt"
+            Get-Content $source | Add-Content "$($PSScriptRoot)/Check/Todo.txt"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
         }
@@ -18,6 +18,6 @@ if((Test-Path $source)) {
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }
-    git add $source
+    git add "$($PSScriptRoot)/Check/list.txt"
     git commit -m "[skip-ci] Package check $search"
 }
