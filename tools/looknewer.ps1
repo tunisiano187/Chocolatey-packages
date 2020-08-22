@@ -18,6 +18,6 @@ if((Test-Path $source)) {
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }
-    git add "$($PSScriptRoot)/Check/list.txt"
+    git add "$($PSScriptRoot)/Check/*.txt"
     git commit -m "[skip-ci] Package check $search"
 }
