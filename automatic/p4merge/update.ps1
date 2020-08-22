@@ -25,17 +25,14 @@ function global:au_GetLatest {
 			$clnt = new-object System.Net.WebClient;
 			$clnt.OpenRead("https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe").Close();
 			$date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-			$linktest = "https://cdist2.perforce.com/perforce/r$($ver)/doc/user/relnotes.txt"
-			Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
+			$linktest = "https://cdist2.perforce.com/perforce/r$($ver)/doc/user/p4vnotes.txt"
+			Invoke-WebRequest -Uri $linktest -OutFile "$env:TEMP\p4v.txt"
 			if($found -ne $true -and ($date))
 			{
-				$version = $item.replace(',','.')
 				$found = $true
-				$url32 = "https://cdist2.perforce.com/perforce/r$($version)/bin.ntx86/p4vinst.exe"
-				$url64 = "https://cdist2.perforce.com/perforce/r$($version)/bin.ntx64/p4vinst64.exe"
+				$url32 = "https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx86/p4vinst.exe"
+				$url64 = "https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe"
 
-				$link = "https://cdist2.perforce.com/perforce/r$($version)/doc/user/p4vnotes.txt"
-				Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
 				$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
 			}
 		}
