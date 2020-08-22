@@ -5,6 +5,8 @@
     - git config --global user.email $GITLAB_USER_EMAIL
     - git config --global user.name $GITLAB_USER_LOGIN
   script:
+    - Write-Host "Windows Version"
+    - Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
     - Write-Host "Setup AU module"
     - ./setup/au_setup.ps1
     - Write-Host "Setup requisites"
