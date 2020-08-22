@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>f-secureav</id>
-    <version>5.1.18.0</version>
+    <version>5.1.17.0</version>
     <title>F-Secure Anti-Virus (Windows clients only)</title>
     <authors>F-Secure</authors>
     <owners>tunisiano</owners>
@@ -29,8 +29,8 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>F-Secure Anti-Virus provides real-time protection against viruses, spyware, infected e-mail attachments and other malware.</summary>
-    <copyright />
-    <tags>trial-version notSilent antivirus anti-spyware malware-remover</tags>
+    <copyright>F-secure</copyright>
+    <tags>trial-version antivirus anti-spyware malware-remover</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/f-secureav</packageSourceUrl>
     <releaseNotes>#### Package
     * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
