@@ -9,7 +9,7 @@ if((Test-Path $source)) {
             Write-Host "$search v$($winout) available"
         } else {
             Write-host "$search not available on winget"
-            Get-Content $source | Add-Content "Check/Todo.txt"
+            Get-Content $source | Add-Content "tools/Check/Todo.txt"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
         }
