@@ -29,18 +29,18 @@ function global:au_GetLatest {
 			{
 				$version = $item.replace(',','.')
 				$found = $true
+				$url32 = "https://cdist2.perforce.com/perforce/r$($version)/bin.ntx86/p4vinst.exe"
+				$url64 = "https://cdist2.perforce.com/perforce/r$($version)/bin.ntx64/p4vinst64.exe"
+
+				$link = "https://cdist2.perforce.com/perforce/r$($version)/doc/user/relnotes.txt"
+				Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
+				$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
 			}
 		}
 		catch {
 			Write-Verbose "V$($item) Not found"
 		}
 	}
-	$url32 = "https://cdist2.perforce.com/perforce/r$($version)/bin.ntx86/p4vinst.exe"
-	$url64 = "https://cdist2.perforce.com/perforce/r$($version)/bin.ntx64/p4vinst64.exe"
-
-	$link = "https://cdist2.perforce.com/perforce/r$($version)/doc/user/relnotes.txt"
-	Invoke-WebRequest -Uri $link -OutFile "$env:TEMP\p4v.txt"
-	$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
