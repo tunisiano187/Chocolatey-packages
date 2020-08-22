@@ -1,3 +1,5 @@
+$ErrorActionPreference = 'Continue';
+
 $source = Join-Path $(Get-Location) "Check/list.txt"
 if((Test-Path $source)) {
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -16,4 +18,6 @@ if((Test-Path $source)) {
         get-content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }
+    git add $source
+    git commit -m "[skip-ci] Package check $search"
 }

@@ -1,16 +1,3 @@
-RSSOwl 2.2.1.20160620 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-cmder.portable 1.1.4.102 [Approved] - Possibly broken
-simpleprogramdebugger 1.05 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tfsSidekicks 2.4.0 - Possibly broken
-mailpv.portable 1.86 [Approved] - Possibly broken
-ChirpyVSI 2.0.0.4 - Possibly broken
-iepv 1.35 [Approved] - Possibly broken
-xnews 5.4.25 - Possibly broken
-hydrairc 0.3.165.1 - Possibly broken
-digsby 0.91.30192 [Approved] - Possibly broken
-docash-vega-driver 3.3.2011.11 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-Shotty 2.0.2 - Possibly broken
-wpfinspector 0.9.9 - Possibly broken
 cassinidev 3.5.1.8 - Possibly broken
 wubi 12.04.20120921 - Possibly broken
 sd-card-formatter 5.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
