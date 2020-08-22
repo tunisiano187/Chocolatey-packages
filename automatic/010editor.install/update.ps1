@@ -18,6 +18,12 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if the script 
     }
 }
 
+function Get-fileinfo($url) {
+  $result = Invoke-WebRequest -method GET -Uri $url
+  $outFilename = $result.Headers."Content-Disposition".split('=')[-1]
+  return $outFilename
+}
+
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
     $download_page64 = Invoke-WebRequest -UseBasicParsing -Uri $releases64
@@ -26,10 +32,8 @@ function global:au_GetLatest {
     $url   = ($download_page.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
     $url64   = ($download_page64.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
 
-    $download_version = Invoke-WebRequest -Uri $version_url
-    $version_text = $($download_version.ParsedHtml.getElementsByTagName("h2") | select -First 1 | % innerText)
-    $version_text -match "Version (.*) - .*$"
-    $version = $Matches[1]
+    $filename = Get-fileinfo($domain + $url)
+    $version = $filename.split('r')[-1].replace('.exe','')
 
     return @{
         URL32 = $domain + $url
@@ -39,5 +43,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-  update -NoCheckChocoVersion
+  update
 }
