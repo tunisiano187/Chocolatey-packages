@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>solarwinds-permissions-analyser</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Solarwinds-Permissions-Analyser (Install)</title>
+    <authors>Solarwinds</authors>
+    <projectUrl>https://www.solarwinds.com/free-tools/permissions-analyzer-for-active-directory</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/solarwinds-permissions-analyser.png</iconUrl>
+    <copyright>Solarwinds</copyright> -->
+    <tags>solarwinds permissions analyser freeware</tags>
+    <summary>Permissions analyser for active directory</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
