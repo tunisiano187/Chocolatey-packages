@@ -5,9 +5,8 @@ Install-PackageProvider -name winget -Force
 if((Test-Path $source)) {
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
-        $winout = (winget.exe search $search)
-        if($($winout[-1] -replace(' {2,}',' ')).split(' ')[-3] -ne "matching") {
-            $($winout[-1] -replace(' {2,}',' ')).split(' ')[-3]
+        if($winout = ($(Find-Package $search).Version)) {
+            Write-Host "$search v$($winout) available"
         } else {
             Write-host "$search not available on winget"
             Get-Content $source | Add-Content "Check/Todo.txt"
