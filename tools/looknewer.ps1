@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Continue';
 $source = Join-Path $PSScriptRoot "Check/list.txt"
 Install-PackageProvider -name winget -Force
 
