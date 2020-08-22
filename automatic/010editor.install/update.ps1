@@ -18,11 +18,6 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if the script 
     }
 }
 
-function Get-fileinfo($url) {
-  $result = Invoke-WebRequest -method GET -Uri $url
-  $outFilename = $result.Headers."Content-Disposition".split('=')[-1]
-  return $outFilename
-}
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
@@ -32,8 +27,9 @@ function global:au_GetLatest {
     $url   = ($download_page.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
     $url64   = ($download_page64.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
 
-    $filename = Get-fileinfo($domain + $url)
-    $version = $filename.split('r')[-1].replace('.exe','')
+    $tempfile = New-TemporaryFile
+    Invoke-WebRequest -Uri $version_url -UseBasicParsing -OutFile $tempfile
+    $version = $(Get-Content $tempfile | where {$_ -match 'h1'}).split(' ')[-1].split('<')[0]
 
     return @{
         URL32 = $domain + $url
