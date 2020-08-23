@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Continue';
 $source = Join-Path $PSScriptRoot "Check/list.txt"
 Install-PackageProvider -name winget -Force
-. $PSScriptRoot\..\scripts\New-Githubissues.ps1
+. $PSScriptRoot\..\scripts\New-Githubissue.ps1
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
 }
