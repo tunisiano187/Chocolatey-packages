@@ -4,12 +4,11 @@
 2. [How To Report Bugs](#how-to-report-bugs)
 3. [Tips For Submitting Code](#tips-for-submitting-code)
 
-
 ## Getting Involved
 
 There are a number of ways to get involved with this project. Even if you've never contributed code to an Open Source project before, we're always looking for help identifying bugs, cleaning up code, writing documentation and testing.
 
-The goal of this guide is to provide the best way to contribute. 
+The goal of this guide is to provide the best way to contribute.  
 Please read through the full guide detailing [How to Report Bugs](#how-to-report-bugs).
 
 ## Discussion
@@ -127,7 +126,6 @@ Please follow this process; it's the best way to get your work included in the p
 
 - [Open a Pull Request](https://help.github.com/articles/using-pull-requests) with a
     clear title and description.
-
 
 ## Code guidelines
 
