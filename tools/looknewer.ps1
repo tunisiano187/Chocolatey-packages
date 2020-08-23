@@ -20,7 +20,7 @@ if((Test-Path $source)) {
             [string]$Label = "ToCreateFrom"
             [string]$Title = "($search) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            #New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
         } else {
             Write-host "$search not available on winget"
             Get-Content $source | Add-Content "$($PSScriptRoot)/Check/Todo.txt"
@@ -29,7 +29,7 @@ if((Test-Path $source)) {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            #New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
         }
     } else {
         Write-host "$search already maintained here"
