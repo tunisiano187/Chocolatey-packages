@@ -27,7 +27,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Host "$search v$($winout) available"
             [string]$Label = "ToCreateFrom"
-            [string]$Title = "($search) Needs update"
+            [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
             if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
@@ -39,7 +39,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
-            [string]$Description = "($search) Outdated and needs to be updated"
+            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
             if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
