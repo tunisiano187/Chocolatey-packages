@@ -2,6 +2,9 @@ $ErrorActionPreference = 'Continue';
 $source = Join-Path $PSScriptRoot "Check/list.txt"
 Install-PackageProvider -name winget -Force
 . $PSScriptRoot\..\scripts\New-Githubissue.ps1
+Install-Module psgithubsearch
+Import-Module psgithubsearch
+
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
 }
@@ -21,7 +24,9 @@ if((Test-Path $source)) {
             [string]$Label = "ToCreateFrom"
             [string]$Title = "($search) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            #New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open) {
+                New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            }
         } else {
             Write-host "$search not available on winget"
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
@@ -30,7 +35,9 @@ if((Test-Path $source)) {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            #New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open) {
+                New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            }
         }
     } else {
         Write-host "$search already maintained here"
