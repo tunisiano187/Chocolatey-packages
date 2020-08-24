@@ -16,6 +16,7 @@ if((Test-Path $source)) {
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
         if($winout = ($(Find-Package $search).Version)) {
+            "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Host "$search v$($winout) available"
             [string]$Label = "ToCreateFrom"
             [string]$Title = "($search) Needs update"
@@ -23,7 +24,7 @@ if((Test-Path $source)) {
             #New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
         } else {
             Write-host "$search not available on winget"
-            Get-Content $source | Add-Content "$($PSScriptRoot)/Check/Todo.txt"
+            "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
@@ -37,5 +38,6 @@ if((Test-Path $source)) {
         Move-Item "$source-temp" $source -Force
     }
     git add "$($PSScriptRoot)/Check/*.txt"
+    git add "$($PSScriptRoot)/Check/*.md"
     git commit -m "[skip-ci] Package check $search"
 }
