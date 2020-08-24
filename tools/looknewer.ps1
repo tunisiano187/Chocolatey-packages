@@ -50,5 +50,5 @@ if((Test-Path $source)) {
     }
     git add -u :/tools/Check/
     git commit -m "[skip-ci] Package check $search"
-    git push origin master
+    git push # origin master
 }
