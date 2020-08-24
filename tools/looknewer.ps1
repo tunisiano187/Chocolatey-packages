@@ -20,7 +20,7 @@ $Headers = @{
     Authorization='token '+$UserToken
 }
 
-if((Test-Path $source)) {
+if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
         if($winout = ($(Find-Package $search).Version)) {
