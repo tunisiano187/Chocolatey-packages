@@ -5,8 +5,12 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $InstallArgs = @{
    packageName    = $env:ChocolateyPackageName
    fileType       = 'msi'
-   File           = (Get-ChildItem $toolsDir -filter "*x86.msi").FullName
-   File64bit      = (Get-ChildItem $toolsDir -filter "*x64.msi").FullName
+   url            = ''
+   url64bit       = ''
+   Checksum       = ''
+   ChecksumType   = ''
+   Checksum64     = ''
+   ChecksumType64 = ''
    silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
    validExitCodes= @(0, 3010, 1641)
 }
