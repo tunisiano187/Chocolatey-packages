@@ -24,7 +24,7 @@ if((Test-Path $source)) {
             [string]$Label = "ToCreateFrom"
             [string]$Title = "($search) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open) {
+            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
@@ -35,7 +35,7 @@ if((Test-Path $source)) {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open) {
+            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
