@@ -44,7 +44,8 @@ if((Test-Path $source)) {
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }
-    git add "$($PSScriptRoot)/Check/*.txt"
-    git add "$($PSScriptRoot)/Check/*.md"
+    git add -u "$($PSScriptRoot)/Check/*.txt"
+    git add -u "$($PSScriptRoot)/Check/*.md"
     git commit -m "[skip-ci] Package check $search"
+    git push origin master
 }
