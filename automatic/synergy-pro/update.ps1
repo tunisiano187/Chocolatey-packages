@@ -14,15 +14,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32="$($releases)86"
-	$url64="$($releases)64"
+	$url32="https://binaries.symless.com/synergy/v1-core-standard/v1.11.1-stable-55ec3105/synergy_v1.11.1-stable_b145-55ec3105_windows_x86.msi"
+	$url64="https://binaries.symless.com/synergy/v1-core-standard/v1.11.1-stable-55ec3105/synergy_v1.11.1-stable_b169-55ec3105_windows_x64.msi"
 
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "synergy.msi"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	$version="1.11.1"
 	Write-Output "Version : $version"
-	
-	$Latest = @{ URL32 = $url32; Version = $version }
+
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
