@@ -48,7 +48,7 @@ if((Test-Path $source)) {
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }
-    git add -u :/
+    git add -u :/tools/Check/
     git commit -m "[skip-ci] Package check $search"
     git push origin master
 }
