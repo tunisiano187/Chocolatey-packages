@@ -1,20 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url32          = ''
-$checksum32     = ''
-$checksumType32 = ''
 
 $packageArgs = @{
-    url             = $url32
-    fileType        = 'exe'
-    softwareName    = $env:ChocolateyPackageName
-    packageName     = $env:ChocolateyPackageName
-    silentArgs      = '/verysilent'
-    checksum        = $checksum32
-    checksumType    = $checksumType32
-    Options = @{
-        Headers = @{
-            referer = "http://www.1space.dk/executor/download.html"
-        }
-    }
+    PackageName     = $env:ChocolateyPackageName
+    FileType        = 'exe'
+    Url             = 'http://www.1space.dk/executor/ExecutorSetup.exe'
+    Checksum        = '10D170EEBE36D0E43F2A2BDE0F7E3712BB82AC8141D60126BDEBF67A3F191B79'
+    ChecksumType    = 'sha256'
+    SilentArgs      = '/SILENT /VERYSILENT /SUPRESSMSGBOXES /SP-'
 }
 Install-ChocolateyPackage @packageArgs

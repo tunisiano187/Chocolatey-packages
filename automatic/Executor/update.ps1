@@ -1,27 +1,33 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-# $releases = "http://www.1space.dk/executor/download.html"
+$base     = 'http://www.1space.dk/executor'
+$releases = "$base/downloadlinks.html" 
+
+function global:au_BeforeUpdate {
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+}
 
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+			"(Url\s*=\s*)('.*')"        = "`$1'$($Latest.Url32)'"
+			"(Checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 		}
 	}
 }
 
 function global:au_GetLatest {
-	$url32 = 'http://www.1space.dk/executor/ExecutorSetup.exe'
+	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$url32        = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base +  '/' + $_ } | select -First 1
 
 	[XML]$feed = $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml')).Content
 	$version = $feed.rss.channel.item[0].title.split(' ')[-1].trim()
-	Write-Output "Version : $version"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	return @{
+		Url32 = $url32
+		Version = $version
+	}
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none -NoReadme -NoCheckUrl
