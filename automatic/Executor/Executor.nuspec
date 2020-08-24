@@ -4,13 +4,23 @@
   <metadata>
     <id>Executor</id>
     <title>Executor</title>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <authors>Martin Bresson</authors>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/Executor</packageSourceUrl>
     <summary>Executor is a multi purpose launcher and windows run replacement.</summary>
-    <description>Executor is a multi purpose launcher and a more advanced and customizable version of windows run. The program originated as I was sick of spending too much time searching for programs through my ever growing windows start-menu, and also I missed a tool that could ease and optimize my daily work flow. There was of course already programs like this available, but each had it's annoyance or missing features or too(!) geeky.
-    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description><![CDATA[## Executor
+Executor is a multi purpose launcher and a more advanced and customizable version of windows run. 
+The program originated as I was sick of spending too much time searching for programs through my 
+ever growing windows start-menu, and also I missed a tool that could ease and optimize my daily 
+work flow. There was of course already programs like this available, but each had it's annoyance 
+or missing features or too(!) geeky.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <projectUrl>http://executor.dk/</projectUrl>
     <tags>executor run launcher chocolatey</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
