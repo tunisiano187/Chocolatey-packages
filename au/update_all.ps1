@@ -92,3 +92,11 @@ if (($null -ne $Env:APPVEYOR_PULL_REQUEST_NUMBER) -and ($Env:APPVEYOR_PULL_REQUE
     Write-Information "On Appveyor"
     if ($info.error_count.total) { throw "$($info.error_count.total) errors during update" }
 }
+# if($info.error_count.total) {
+#    foreach ($issue in $info.error) {
+#        # check the content of the $issue
+#        if no created issue about it => create one
+#        if issue exists but closed, reopen It 
+#        if issue exist and opened add a comment to show the date
+#    }
+# }
