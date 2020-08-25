@@ -1,6 +1,6 @@
-[![](https://img.shields.io/chocolatey/v/odrive?color=green&label=odrive)](https://chocolatey.org/packages/odrive) [![](https://img.shields.io/chocolatey/dt/odrive)](https://chocolatey.org/packages/odrive)
+[![](https://img.shields.io/chocolatey/v/opus-tools?color=green&label=opus-tools)](https://chocolatey.org/packages/opus-tools) [![](https://img.shields.io/chocolatey/dt/opus-tools)](https://chocolatey.org/packages/opus-tools)
 
-## Odrive
+## Opus-tools
 Opus is a totally open, royalty-free, highly versatile audio codec. Opus is unmatched for interactive
 speech and music transmission over the Internet, but is also intended for storage and streaming
 applications. It is standardized by the Internet Engineering Task Force (IETF) as RFC 6716 which

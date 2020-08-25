@@ -3,16 +3,6 @@ import-module au
 
 $releases = 'https://www.opus-codec.org/downloads/'
 
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion | select-object -first 1
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion | select-object -first 1
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
