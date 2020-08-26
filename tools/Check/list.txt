@@ -9802,3 +9802,4 @@ psping 2.10 [Approved] Downloads cached for licensed users - Possibly broken for
 iis-externalcache 1.1.20151123 [Approved] - Possibly broken
 vim-x86.install 7.4.1825 [Approved] - Possibly broken
 datacrow 4.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+SolarWinds-Permissions-Analyzer 0.0
