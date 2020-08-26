@@ -1,0 +1,11 @@
+﻿$packageName    = $env:ChocolateyPackageName
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url            = '{{DownloadUrl}}'
+$checksum       = '{{Checksum}}'
+$checksumType   = 'sha256'
+
+Install-ChocolateyZipPackage -PackageName "$packageName" `
+                             -Url "$url" `
+                             -UnzipLocation "$toolsDir" `
+                             -Checksum "$checksum" `
+                             -ChecksumType "$checksumType"
