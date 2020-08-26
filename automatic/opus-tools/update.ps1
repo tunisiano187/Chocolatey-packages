@@ -17,7 +17,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$urls = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'opus/win'} | where {$_.href -match '-win'}).href
+	$urls = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'opus/win'} | Where-Object {$_.href -match '-win'}).href
 	$url32 = $urls[0]
 	$url64 = $urls[1]
 	$version = $url32.split('-')[-2]
@@ -28,4 +28,4 @@ function global:au_GetLatest {
 	}
 }
 
-update
+update -NoCheckChocoVersion
