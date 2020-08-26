@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sd-card-formatter</id>
-    <version>5.0.0.0</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/sd-card-formatter</packageSourceUrl>
-    <owners>galeksandrp</owners>
+    <version>5.0.1</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sd-card-formatter</packageSourceUrl>
+    <owners>tunisiano</owners>
     <title>SD Memory Card Formatter (Install)</title>
     <authors>SD Association</authors>
     <projectUrl>https://www.sdcard.org/downloads/formatter_4/</projectUrl>
@@ -20,16 +20,29 @@
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <description>The SD Memory Card Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card (respectively SD/SDHC/SDXC Cards) complying with the SD File System Specification created by the SD Association (SDA).
+    <description><![CDATA[## SD-Card-formatter
+The SD Memory Card Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card (respectively
+SD/SDHC/SDXC Cards) complying with the SD File System Specification created by the SD Association (SDA).
 
+It is strongly recommended to use the SD Memory Card Formatter to format SD/SDHC/SDXC Cards rather than
+using formatting tools provided with individual operating systems. In general, formatting tools provided
+with operating systems can format various storage media including SD/SDHC/SDXC Cards, but it may not be 
+ptimized for SD/SDHC/SDXC Cards and it may result in lower performance.
 
-It is strongly recommended to use the SD Memory Card Formatter to format SD/SDHC/SDXC Cards rather than using formatting tools provided with individual operating systems. In general, formatting tools provided with operating systems can format various storage media including SD/SDHC/SDXC Cards, but it may not be optimized for SD/SDHC/SDXC Cards and it may result in lower performance.
+SD/SDHC/SDXC Cards have a “Protected Area” for SD Card security purposes. The SD Memory Card Formatter
+does not format the protected area in the SD/SDHC/SDXC Cards. The protected area shall be formatted by
+an appropriate PC application or SD host devices that provide SD security function.
 
+The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the “BitLocker To Go"
+functionality of Windows. Please format the SD/SDHC/SDXC Card after it has been unlocked.
 
-SD/SDHC/SDXC Cards have a “Protected Area” for SD Card security purposes. The SD Memory Card Formatter does not format the protected area in the SD/SDHC/SDXC Cards. The protected area shall be formatted by an appropriate PC application or SD host devices that provide SD security function.
+[FAQ](https://wiki.xiph.org/OpusFAQ)
 
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the “BitLocker To Go" functionality of Windows. Please format the SD/SDHC/SDXC Card after it has been unlocked.</description>
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

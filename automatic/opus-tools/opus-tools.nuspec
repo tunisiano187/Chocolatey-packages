@@ -1,25 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>opus-tools</id>
     <title>Opus Tools</title>
-    <version>{{PackageVersion}}</version>
+    <version>0.2</version>
     <authors>Mozilla,Xiph.Org</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Command-line utilities to encode, inspect, and decode .opus files</summary>
-    <description>
-Opus is a totally open, royalty-free, highly versatile audio codec. Opus is unmatched for interactive speech and music transmission over the Internet, but is also intended for storage and streaming applications. It is standardized by the Internet Engineering Task Force (IETF) as RFC 6716 which incorporated technology from Skype's SILK codec and Xiph.Org's CELT codec.
+    <description><![CDATA[## Opus-tools
+Opus is a totally open, royalty-free, highly versatile audio codec. Opus is unmatched for interactive
+speech and music transmission over the Internet, but is also intended for storage and streaming
+applications. It is standardized by the Internet Engineering Task Force (IETF) as RFC 6716 which
+incorporated technology from Skype's SILK codec and Xiph.Org's CELT codec.
 
 [FAQ](https://wiki.xiph.org/OpusFAQ)
-    </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/opus-tools</packageSourceUrl>
     <projectUrl>http://www.opus-codec.org/</projectUrl>
     <projectSourceUrl>http://git.xiph.org/?p=opus.git</projectSourceUrl>
     <tags>audio codec speech cli</tags>
     <copyright>© Opus</copyright>
     <licenseUrl>http://www.opus-codec.org/license/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/fcb2b69cbc1baa11cbd2adbcd59e588b2f29dd96/icons/{{PackageName}}.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c1097620e9fd638d1216270d252cc2f9c6ed10df/icons/opus-tools.svg</iconUrl>
     <releaseNotes>#### Software
 [What's New](http://www.opus-codec.org/downloads/)
 [Changelog](http://git.xiph.org/?p=opus.git;a=log)
