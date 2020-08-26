@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = "https://github.com$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where {$_ -match 'windows'} | Where-Object {$_ -match '.zip'}).href)[0]"
+	$url32 = "https://github.com$((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where {$_ -match 'windows'} | Where-Object {$_ -match '.zip'}).href)[0])"
 
 	$version = $url32.split('/')[-2].replace('v','')
 
