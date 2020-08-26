@@ -16,8 +16,6 @@ an appropriate PC application or SD host devices that provide SD security functi
 The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the “BitLocker To Go"
 functionality of Windows. Please format the SD/SDHC/SDXC Card after it has been unlocked.
 
-[FAQ](https://wiki.xiph.org/OpusFAQ)
-
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 

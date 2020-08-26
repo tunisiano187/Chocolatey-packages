@@ -8,12 +8,12 @@
     <owners>tunisiano</owners>
     <title>SD Memory Card Formatter (Install)</title>
     <authors>SD Association</authors>
-    <projectUrl>https://www.sdcard.org/downloads/formatter_4/</projectUrl>
+    <projectUrl>https://www.sdcard.org/downloads/formatter/index.html</projectUrl>
     <iconUrl>https://www.sdcard.org/cmn/img/head_logo.gif</iconUrl>
     <copyright>Copyright SD Association</copyright>
-    <licenseUrl>https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html</licenseUrl>
+    <licenseUrl>https://www.sdcard.org/downloads/formatter/eula_windows/index.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <docsUrl>https://www.sdcard.org/downloads/formatter_4/SD_CardFormatter5UserManualEN_v0100.pdf</docsUrl>
+    <docsUrl>https://www.sdcard.org/downloads/formatter/SD_CardFormatterUserManualEN.pdf</docsUrl>
     <bugTrackerUrl>https://www.sdcard.org/contact_us/index.html</bugTrackerUrl>
     <tags>sdcard sc-card sdhc sdxc format formatter</tags>
     <summary>The SD Memory Card Formatter formats SD Memory Card, SDHC Memory Card and SDXC Memory Card (respectively SD/SDHC/SDXC Cards) complying with the SD File System Specification created by the SD Association (SDA)</summary>
