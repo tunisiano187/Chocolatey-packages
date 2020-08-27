@@ -4,20 +4,23 @@
   <metadata>
     <id>pinginfoview</id>
     <title>PingInfoView</title>
-    <version>2.00</version>
+    <version>2.02</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>Ping to multiple host names/IP addresses</summary>
-    <description><![CDATA[
-ChromeHistoryView is a small utility that reads the history data file of Google Chrome 
-Web browser, and displays the list of all visited Web pages in the last days. For each 
-visited Web page, the following information is displayed:
+    <description><![CDATA[## pinginfoview
+PingInfoView is a small utility that allows you to easily ping multiple host names and IP addresses, and
+watch the result in one table.
 
-URL, Title, Visit Date/Time, Number of visits, number of times that the user typed this 
-address (Typed Count), Referrer, and Visit ID. 
+It automatically ping to all hosts every number of seconds that you specify, and displays the number of
+succeed and failed pings, as well as the average ping time.
 
-You can select one or more history items, and them export them into html/xml/csv/text 
-file, or copy the information to the clipboard and paste it into Excel.
+You can also save the ping result into text/html/xml file, or copy it to the clipboard.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pinginfoview</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/multiple_ping_tool.html</projectUrl>
