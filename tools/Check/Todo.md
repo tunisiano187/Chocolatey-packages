@@ -4,3 +4,4 @@
 |cassinidev|
 |wubi|
 |sd-card-formatter|
+|shazzam|

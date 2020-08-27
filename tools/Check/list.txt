@@ -1,4 +1,3 @@
-shazzam 1.3 - Possibly broken
 officeribboneditor 4.4.2 - Possibly broken
 Snipe 1.0.2.0 - Possibly broken
 mobalivecd 2.1 - Possibly broken
