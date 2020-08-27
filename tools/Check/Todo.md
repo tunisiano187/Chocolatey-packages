@@ -5,3 +5,4 @@
 |wubi|
 |sd-card-formatter|
 |shazzam|
+|officeribboneditor|
