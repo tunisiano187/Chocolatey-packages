@@ -3,26 +3,37 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>chromehistoryview</id>
-    <version>1.41</version>
+    <version>1.42</version>
     <title>ChromeHistoryView</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/chrome_history_view.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/chrome_history_view.html</projectUrl>
-    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/chromehistoryview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@de9cd97ea14eb7d956f8f5937b189e00193d9ade/icons/chromehistoryview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ChromeHistoryView is a small utility that reads the history data file of Google Chrome Web browser, and displays the list of all visited Web pages in the last days. For each visited Web page, the following information is displayed:
+    <description><![CDATA[## ChromeHistoryView
+ChromeHistoryView is a small utility that reads the history data file of Google Chrome 
+Web browser, and displays the list of all visited Web pages in the last days. For each 
+visited Web page, the following information is displayed:
 
-URL, Title, Visit Date/Time, Number of visits, number of times that the user typed this address (Typed Count), Referrer, and Visit ID. 
+URL, Title, Visit Date/Time, Number of visits, number of times that the user typed this 
+address (Typed Count), Referrer, and Visit ID. 
 
-You can select one or more history items, and them export them into html/xml/csv/text file, or copy the information to the clipboard and paste it into Excel.</description>
+You can select one or more history items, and them export them into html/xml/csv/text 
+file, or copy the information to the clipboard and paste it into Excel.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>View the browsing history of Chrome Web browser</summary>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>© 2011 NirSoft</copyright>
     <tags>web browser history visited url admin</tags>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/chromehistoryview/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/chromehistoryview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,23 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lbry</id>
-    <version>__REPLACE__</version>
+    <version>0.47.2-rc3</version>
     <owners>tunisiano</owners>
     <title>lbry (Install)</title>
     <authors>lbry.com</authors>
     <projectUrl>https://lbry.com</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/lbry.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@497640a941ede7fc49f9e4e8c0a7c220c2b8da16/icons/lbry.png</iconUrl>
     <copyright>lbry.com</copyright>
     <licenseUrl>https://github.com/lbryio/lbry-desktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/lbryio/lbry-desktop</projectSourceUrl>
-    <packageSourceUrl><packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/lbry</packageSourceUrl>
     <docsUrl>https://lbry.com/faq</docsUrl>
     <bugTrackerUrl>https://github.com/lbryio/lbry-desktop/issues</bugTrackerUrl>
     <tags>foss browser client lbry</tags>
     <summary>LBRY is a secure, open, and community-run digital marketplace.Enjoy the latest content from your favorite creators—as a user, not a product.</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## Lbry
+It's time to take back control from YouTube and Amazon.
+
+Top creators, self-respecting users, the privacy conscious, computer geeks, freedom 
+lovers, loveable kooks, and readers of small gray text everywhere choose LBRY, because 
+it's open, fair, and free.
+The LBRY app is a graphical browser for the decentralized content marketplace provided 
+by the LBRY protocol. It is essentially the lbry daemon bundled with a UI using Electron.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <releaseNotes>#### Program
     * [Release log](https://github.com/lbryio/lbry-desktop/releases)
     
