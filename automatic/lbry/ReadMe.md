@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/lbry?color=green&label=lbry)](https://chocolatey.org/packages/lbry) [![](https://img.shields.io/chocolatey/dt/lbry)](https://chocolatey.org/packages/lbry)
+[![](https://img.shields.io/chocolatey/v/lbry?color=green&label=lbry)](https://chocolatey.org/packages/lbry) [![](https://img.shields.io/chocolatey/dt/lbry)](https://chocolatey.org/packages/lbry)
 
 ## Lbry
 It's time to take back control from YouTube and Amazon.
