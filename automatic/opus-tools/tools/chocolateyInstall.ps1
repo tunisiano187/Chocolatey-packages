@@ -14,4 +14,4 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -ChecksumType "$checksumType" `
                              -url64bit "$url64" `
                              -checksum64 "$checksum64" ´
-                             -checksum64 "$checksumType64"
+                             -checksumType64 "$checksumType64"
