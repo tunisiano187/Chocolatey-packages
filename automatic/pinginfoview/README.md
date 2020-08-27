@@ -1,15 +1,13 @@
 [![](https://img.shields.io/chocolatey/v/pinginfoview?color=green&label=pinginfoview)](https://chocolatey.org/packages/pinginfoview) [![](https://img.shields.io/chocolatey/dt/pinginfoview)](https://chocolatey.org/packages/pinginfoview)
 
 ## pinginfoview
-ChromeHistoryView is a small utility that reads the history data file of Google Chrome 
-Web browser, and displays the list of all visited Web pages in the last days. For each 
-visited Web page, the following information is displayed:
+PingInfoView is a small utility that allows you to easily ping multiple host names and IP addresses, and
+watch the result in one table.
 
-URL, Title, Visit Date/Time, Number of visits, number of times that the user typed this 
-address (Typed Count), Referrer, and Visit ID. 
+It automatically ping to all hosts every number of seconds that you specify, and displays the number of
+succeed and failed pings, as well as the average ping time.
 
-You can select one or more history items, and them export them into html/xml/csv/text 
-file, or copy the information to the clipboard and paste it into Excel.
+You can also save the ping result into text/html/xml file, or copy it to the clipboard.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
