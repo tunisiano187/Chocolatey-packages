@@ -9,7 +9,7 @@
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wireedit</packageSourceUrl>
     <authors>Omnipacket</authors>
     <licenseUrl>https://web.archive.org/web/20190618053217/https://wireedit.com/current/WireEditEULA.pdf</licenseUrl>
-    <projectUrl>https://wireedit.com/</projectUrl>
+    <projectUrl>https://omnipacket.com/wireedit</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@727bf60f81b31d955e558ff42f17e164e8741895/icons/wireedit.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Wire Edit
