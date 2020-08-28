@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = $env:TEMP "fsav.exe"
+	$File = Join-Path $env:TEMP "fsav.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	Write-Output "Version : $version"
