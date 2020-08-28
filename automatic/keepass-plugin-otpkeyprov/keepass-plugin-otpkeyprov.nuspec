@@ -3,7 +3,7 @@
   <metadata>
     <id>{{PackageName}}</id>
     <title>KeePass Plugin OtpKeyProv</title>
-    <version>{{PackageVersion}}</version>
+    <version>2.6</version>
     <authors>Dominik Reichl</authors>
     <owners>dtgm</owners>
     <summary>Key provider based on one-time passwords</summary>
