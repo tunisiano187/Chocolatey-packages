@@ -6,3 +6,4 @@
 |sd-card-formatter|
 |shazzam|
 |officeribboneditor|
+|Snipe|
