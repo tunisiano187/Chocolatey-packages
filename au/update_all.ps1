@@ -53,7 +53,7 @@ $Options = [ordered]@{
     }
 
     Gitter = @{
-        WebHookUrl = $env:gitter_webhook
+        WebHookUrl = "https://webhooks.gitter.im/e/b70be555bdfec2aefc67"
     }
 
     GitLab = @{
