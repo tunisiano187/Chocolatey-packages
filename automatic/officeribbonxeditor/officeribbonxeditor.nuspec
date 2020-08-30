@@ -9,6 +9,7 @@
     <licenseUrl>http://creativecommons.org/licenses/by-nd/3.0/</licenseUrl>
     <projectUrl>https://github.com/fernandreu/office-ribbonx-editor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl></packageSourceUrl>
     <description><![CDATA[## Office RibbonX Editor
 Office ribbonX editor for Microsoft Office 2007 and newer.
 
