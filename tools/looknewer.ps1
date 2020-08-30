@@ -1,8 +1,4 @@
 $ErrorActionPreference = 'Continue';
-git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
-git config --global user.email "helpdesk.choc@gmail.com"
-git config --global user.name "$env:gitlab_user"
-git checkout master
 
 $source = Join-Path $PSScriptRoot "Check/list.txt"
 Install-PackageProvider -name winget -Force
