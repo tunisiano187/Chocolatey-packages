@@ -10,7 +10,7 @@ foreach ($file in $list) {
         git checkout -B master
         git pull
         git rm $file.FullName
-        git commit -m "remove $($file.FullName)"
+        git commit -m "remove $($file.Name)"
         Write-Verbose "$($file.Name) sent"
         git push --follow-tags origin master
     }
