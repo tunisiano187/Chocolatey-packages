@@ -50,6 +50,6 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
         Move-Item "$source-temp" $source -Force
     }
     git add -u :/tools/Check/
-    git commit -m "[skip ci] Package check $search"
+    git commit -m "Package check $search"
     git push origin master
 }
