@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>officeribbonxeditor</id>
-    <version>1.7.0</version>
+    <version>1.7.1</version>
     <title>Office RibbonX Editor</title>
     <authors>Fernando Andreu</authors>
     <owners>tunisiano</owners>
