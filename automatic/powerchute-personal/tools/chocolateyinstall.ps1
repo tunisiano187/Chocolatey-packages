@@ -2,8 +2,8 @@
 
 $packageName      = $env:ChocolateyPackageName
 $url              = 'https://download.schneider-electric.com/files?p_enDocType=Software+-+Released&p_Doc_Ref=APC_PCPE_310&p_File_Name=PCPE_3.1.0.exe'
-$checksum         = ''
-$checksumType     = ''
+$checksum         = '06cdb01b2e23ed72452ff090212ba72b5a250c16c41485ecd05d4ac9f75e25ff'
+$checksumType     = 'sha256'
 
 $packageArgs = @{
   packageName     = $packageName
