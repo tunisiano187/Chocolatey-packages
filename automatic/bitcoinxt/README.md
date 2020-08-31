@@ -1,9 +1,12 @@
 [![](https://img.shields.io/chocolatey/v/bitcoinxt?color=green&label=bitcoinxt)](https://chocolatey.org/packages/bitcoinxt) [![](https://img.shields.io/chocolatey/dt/bitcoinxt)](https://chocolatey.org/packages/bitcoinxt)
 
-## Bitcoin XT
+## Bitcoin XT (Not maintained anymore)
 Bitcoin XT is an implementation of a Bitcoin full node, based upon the source code of Bitcoin Core with a focus on upgrades to the peer to peer protocol. By running it you can opt in to providing the Bitcoin network with additional services beyond what Bitcoin Core provides, including [bigger blocks](https://bitcoinxt.software/#sec-hardfork).
 
 It is built by taking the latest stable Core release, applying a series of [patches](https://github.com/bitcoinxt/bitcoinxt/releases), and then doing deterministic builds so anyone can check the downloads correspond to the source code.
+
+### Known issues
+Virus detection : [More info](https://github.com/bitcoinxt/bitcoinxt/issues/520)
 
 ### Disk Requirements
 * Size increases based on quantity of transactions ([growth chart](https://blockchain.info/charts/blocks-size))
