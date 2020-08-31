@@ -24,8 +24,7 @@ much more. Autoruns goes way beyond other autostart utilities.
 ]]></description>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
-    </releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <summary>What programs are configured to startup automatically</summary>
     <copyright>Mark Russinovich, Bryce Cogswell</copyright>
     <tags>startup sysinternals</tags>

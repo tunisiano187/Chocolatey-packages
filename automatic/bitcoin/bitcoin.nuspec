@@ -15,7 +15,6 @@ All transactions executed upon the Bitcoin network are public record.  Bitcoin C
 New transactions are approved by computing a value determined dynamically by recent conditions of the Bitcoin network which satisfy conditions specified within the Bitcoin protocol.  The Bitcoin protocol can only be modified by adjusting over 50% of currently running nodes, or in other words, upgrading to a new version.  Most upgrades only modify the user interface and make no changes to the Bitcoin protocol.  In the rare event a Bitcoin protocol update has been mandated, called a "hard fork", all software nodes that utilizes the Bitcoin blockchain must be upgraded by a certain date.
 
 ### Disk Requirements
-* {{PackageGuid}} 
 * Size increases based on quantity of transactions ([growth chart](https://blockchain.info/charts/blocks-size))
 * Blockchain is slowly downloaded only when Bitcoin Core is running and connected to network
 * Blockchain default location is `%AppData%\Bitcoin\data`
@@ -49,8 +48,7 @@ New transactions are approved by computing a value determined dynamically by rec
     <copyright>© 2009 Bitcoin Project</copyright>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
+    <releaseNotes>#### Program
 * [Release log](https://bitcoin.org/en/version-history)
 * [Release RSS feed](https://bitcoin.org/en/rss/releases.rss)
 * [Release notes](https://bitcoin.org/en/release/v{{PackageVersion}}#content)
@@ -61,11 +59,11 @@ New transactions are approved by computing a value determined dynamically by rec
 * [Network health](https://getaddr.bitnodes.io/)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
-    </releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <conflicts>bitcoinxt</conflicts>
     <dependencies>
       <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
     </dependencies>
   </metadata>
-</package>
+</package>
