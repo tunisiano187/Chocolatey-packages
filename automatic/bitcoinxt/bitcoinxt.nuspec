@@ -52,4 +52,7 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
       <dependency id="bitcoinxt.install" version="0.11" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

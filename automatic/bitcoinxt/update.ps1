@@ -5,9 +5,9 @@ $releases = 'https://github.com/bitcoinxt/bitcoinxt/releases'
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]version\s*=\s*)('.*')"      		= "`$1'$($Latest.Version)'"
-		}
+		"$($Latest.PackageName).nuspec" = @{
+            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+        }
 	}
 }
 
@@ -24,11 +24,7 @@ function global:au_GetLatest {
 			$version = "$($version)$([char[]]$char)"
 		}
 	}
-	Write-Verbose "Version : $version"
-	$url32 = "https://github.com/$($installer[1])";
-	$url64 = "https://github.com/$($installer[0])";
-
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ Version = $version }
 	return $Latest
 }
 

@@ -66,4 +66,7 @@ New transactions are approved by computing a value determined dynamically by rec
       <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
