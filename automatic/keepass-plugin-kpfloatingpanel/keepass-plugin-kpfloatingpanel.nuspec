@@ -4,7 +4,7 @@
   <metadata>
     <id>keepass-plugin-kpfloatingpanel</id>
     <title>KeePass Plugin KP Floating Panel</title>
-    <version>7.4</version>
+    <version>7.5</version>
     <authors>Alexeev Alexander,Mitch Capper</authors>
     <owners>tunisiano</owners>
     <summary>Plugin for KeePass 2.x to add small floating panel for quick access to KeePass entries</summary>

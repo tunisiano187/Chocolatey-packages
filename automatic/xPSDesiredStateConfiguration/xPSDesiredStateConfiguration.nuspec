@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xPSDesiredStateConfiguration</id>
-    <version>9.0.0</version>
+    <version>9.1.0</version>
     <title>xPSDesiredStateConfiguration Module – PowerShell DSC Resource Kit</title>
     <authors>PowerShell Team</authors>
     <owners>tunisiano</owners>
@@ -13,11 +13,16 @@
     <projectSourceUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration</projectSourceUrl>
     <bugTrackerUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/issues</bugTrackerUrl>
     <docsUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/master/README.md</docsUrl>
-    <description><![CDATA[
+    <description><![CDATA[## xPSDesiredStateConfiguration
 The xPSDesiredStateConfiguration module is a part of the Windows PowerShell 
 Desired State Configuration (DSC) Resource Kit, which is a collection of 
 DSC Resources produced by the PowerShell Team. This module contains the 
 xDscWebService resource that makes a node a DSC Pull Server
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>xPSDesiredStateConfiguration Module allows to keep Windows machine in a defined state</summary>
     <releaseNotes>#### Software
