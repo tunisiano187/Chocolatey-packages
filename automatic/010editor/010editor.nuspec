@@ -38,6 +38,6 @@ https://www.sweetscape.com/010editor/release_notes.html
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="README.md" />
   </files>
 </package>
