@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>minecraft-education</id>
-    <version>1.14.31.0</version>
-    <title>Minecraft</title>
+    <version>1.14.30.0</version>
+    <title>Minecraft Education</title>
     <authors>Microsoft</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.microsoft.com/servicesagreement</licenseUrl>
