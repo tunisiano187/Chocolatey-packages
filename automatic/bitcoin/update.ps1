@@ -22,4 +22,4 @@ function global:au_GetLatest {
     return @{ URL64 = $url64; Version = $version }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion

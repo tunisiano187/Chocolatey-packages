@@ -3,7 +3,7 @@
   <metadata>
     <id>bitcoin</id>
     <title>Bitcoin Core Wallet</title>
-    <version>0.20.1</version>
+    <version>0.20.0</version>
     <authors>Satoshi Nakamoto,Gavin Andresen,Bitcoin Developers</authors>
     <owners>dtgm</owners>
     <summary>A software-based online payment system</summary>
@@ -65,12 +65,12 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/</packageSourceUrl>
     <projectUrl>https://bitcoin.org/</projectUrl>
     <projectSourceUrl>https://github.com/bitcoin/bitcoin</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bitcoin/bitcoin/issues</bugTrackerUrl>
     <mailingListUrl>https://sourceforge.net/p/bitcoin/mailman/</mailingListUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/19d35dff574b7496b92f235fa1503d47b861871a/icons/{{PackageName}}.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/19d35dff574b7496b92f235fa1503d47b861871a/icons/bitcoin.svg</iconUrl>
     <tags>bitcoin btc blockchain wallet crypto currency p2p</tags>
     <copyright>© 2009 Bitcoin Project</copyright>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
