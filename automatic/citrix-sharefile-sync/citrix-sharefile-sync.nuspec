@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>citrix-sharefile-sync</id>
-    <version>3.24.106.0</version>
+    <version>3.24.105</version>
     <title>Citrix ShareFile Sync</title>
     <authors>Citrix</authors>
     <owners>tunisiano</owners>
@@ -26,6 +26,9 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 ]]></description>
     <summary>ShareFile Sync for Windows is designed to provide ShareFile Enterprise customers with an easy way to access and synchronize folders from your ShareFile account to your local computer.</summary>
     <tags>citrix sharefile share file folder sync synchronize enterprise account</tags>
+    <dependencies>
+      <dependency id="dotnet4.5.2" version="4.5.2.20140902" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
