@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>citrix-sharefile-sync</id>
-    <version>3.24.105</version>
+    <version>3.24.106.0</version>
     <title>Citrix ShareFile Sync</title>
     <authors>Citrix</authors>
     <owners>tunisiano</owners>

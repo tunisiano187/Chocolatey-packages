@@ -4,7 +4,7 @@
   <metadata>
     <id>bitcoinxt.install</id>
     <title>Bitcoin XT (no longer maintained)</title>
-    <version>0.10</version>
+    <version>0.11.11</version>
     <authors>Bitcoin XT Developers</authors>
     <owners>tunisiano</owners>
     <summary>Software-based online payment system</summary>
