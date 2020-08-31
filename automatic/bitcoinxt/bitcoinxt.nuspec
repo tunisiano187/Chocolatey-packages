@@ -4,7 +4,7 @@
   <metadata>
     <id>bitcoinxt</id>
     <title>Bitcoin XT (no longer maintained)</title>
-    <version>0.10</version>
+    <version>0.09</version>
     <authors>Bitcoin XT Developers</authors>
     <owners>dtgm</owners>
     <summary>Software-based online payment system</summary>
