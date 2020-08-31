@@ -4,33 +4,11 @@
   <metadata>
     <id>bitcoinxt</id>
     <title>Bitcoin XT (no longer maintained)</title>
-    <version>0.09</version>
+    <version>0.11.11</version>
     <authors>Bitcoin XT Developers</authors>
     <owners>dtgm</owners>
     <summary>Software-based online payment system</summary>
-    <description><![CDATA[## Bitcoin XT
-Bitcoin XT is an implementation of a Bitcoin full node, based upon the source code of Bitcoin Core with a focus on upgrades to the peer to peer protocol. By running it you can opt in to providing the Bitcoin network with additional services beyond what Bitcoin Core provides, including [bigger blocks](https://bitcoinxt.software/#sec-hardfork).
-
-It is built by taking the latest stable Core release, applying a series of [patches](https://github.com/bitcoinxt/bitcoinxt/releases), and then doing deterministic builds so anyone can check the downloads correspond to the source code.
-
-### Disk Requirements
-* Size increases based on quantity of transactions ([growth chart](https://blockchain.info/charts/blocks-size))
-* Blockchain is slowly downloaded only when Bitcoin XT is running and connected to network
-* Blockchain default location is `%AppData%\Bitcoin\data`
-* Bitcoin XT uses the same data directories as Bitcoin Core so either program can use the same blockchain data.
-
-### Security
-* This program should only be installed on a trusted machine.
-* By default, upon first execution Bitcoin XT creates an unencrypted wallet file at `%AppData%\Bitcoin\wallet.dat`
-* Wallet.dat stores all your private keys for public Bitcoin addresses.  If this file is not encrypted, anyone with access to the file may withdraw funds from addresses stored in the file.  For this reason, you should encrypt wallet.dat as soon as possible from the Bitcoin XT interface.
-* After encrypting wallet.dat, back up wallet.dat to at least one other secure storage medium.
-* More information about [securing your wallet](https://bitcoin.org/en/secure-your-wallet)
-
-### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
-
-Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
-]]></description>
+    <description></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bitcoinxt</packageSourceUrl>
     <projectUrl>https://bitcoinxt.software</projectUrl>
     <projectSourceUrl>https://github.com/bitcoinxt/bitcoinxt</projectSourceUrl>
@@ -38,7 +16,7 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
     <mailingListUrl>https://gitter.im/bitcoinxt/Lobby</mailingListUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a18994eaade02196d86f620111f494135e209e41/icons/bitcoinxt.png</iconUrl>
     <tags>bitcoin btc blockchain wallet crypto currency p2p</tags>
-    <copyright>© 2009 Bitcoin XT Developers</copyright>
+    <copyright>© 2019 Bitcoin XT Developers</copyright>
     <licenseUrl>https://github.com/bitcoinxt/bitcoinxt/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
@@ -49,10 +27,8 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="bitcoinxt.install" version="0.11" />
+      <dependency id="bitcoinxt.install" version="[0.11.11]" />
     </dependencies>
   </metadata>
-  <files>
-    <file />
-  </files>
+  <files />
 </package>
