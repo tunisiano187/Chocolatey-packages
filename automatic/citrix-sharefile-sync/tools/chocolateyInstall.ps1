@@ -27,4 +27,10 @@ $packageArgs = @{
 	validExitCodes		= $validExitCodes
 }
 
-Install-ChocolateyPackage @packageArgs
+$OSIsServerVersion = if ([Int]3 -eq [Int](Get-CimInstance -Class Win32_OperatingSystem).ProductType) {$True} else {$False}
+if($OSIsServerVersion) {
+  Write-Warning "Server system not supported"
+  exit 0
+} else {
+  Install-ChocolateyPackage @packageArgs
+}
