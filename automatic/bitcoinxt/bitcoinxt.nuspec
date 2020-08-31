@@ -4,7 +4,7 @@
   <metadata>
     <id>bitcoinxt</id>
     <title>Bitcoin XT</title>
-    <version>0.11.11</version>
+    <version>0.11.10</version>
     <authors>Bitcoin XT Developers</authors>
     <owners>dtgm</owners>
     <summary>Software-based online payment system</summary>
@@ -53,6 +53,6 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file />
   </files>
 </package>
