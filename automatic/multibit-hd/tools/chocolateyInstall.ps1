@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '-q'
 $url = 'https://github.com//Multibit-Legacy/multibit-hd/releases/download/v0.5.1/multibit-windows-0.5.1.exe'

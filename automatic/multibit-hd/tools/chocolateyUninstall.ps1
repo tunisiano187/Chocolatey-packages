@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
-$packageSearch = "MultiBit HD {{PackageVersion}}"
+$packageName = $env:ChocolateyPackageName
+$packageSearch = "MultiBit HD"
 $installerType = 'exe'
 $silentArgs = '-q'
 $validExitCodes = @(0)
