@@ -48,15 +48,11 @@ $counts = @{
   uptodate = 0
 }
 
-$Wrongvar = New-Object System.Collections.Generic.List[object];
-
 $encoding = New-Object System.Text.UTF8Encoding($false)
 
-function Update-Variables {
+function Update-Variable {
   param(
-    [string]$PS1Path,
-    [string]$PackageName,
-    [string]$PackagesDirectory
+    [string]$PS1Path
   )
 
   $ps1 = Get-Content "$PS1Path" -Encoding UTF8
@@ -84,14 +80,14 @@ If ($Name) {
   $packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory/$Name" -Filter "*.ps1"
 
   foreach ($package in $packages) {
-    Update-Variables -Name $package.FullName -Quiet $Quiet
+    Update-Variable -Name $package.FullName -Quiet $Quiet
   }
 }
 else {
   $packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory" -Filter "*.ps1";
 
   foreach ($package in $packages) {
-    Update-PackageSourceUrl -Name $package.FullName -Quiet $Quiet
+    Update-Variable -Name $package.FullName -Quiet $Quiet
   }
 }
 
