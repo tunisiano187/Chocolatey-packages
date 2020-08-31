@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wireedit</id>
-    <version>2.16.103</version>
+    <version>2.16.10</version>
     <title>WireEdit</title>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wireedit</packageSourceUrl>
@@ -31,4 +31,7 @@ https://omnipacket.com/current/RELEASENOTES.txt
     <copyright>Omnipacket</copyright>
     <tags>wireedit admin packet editor</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

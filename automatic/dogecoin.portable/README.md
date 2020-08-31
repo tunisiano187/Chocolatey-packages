@@ -3,6 +3,9 @@
 ## Dogecoin
 Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide.
 
+### Known issue
+Virus detection discussed here : https://github.com/dogecoin/dogecoin/issues/1643
+
 #### Documentation
 * [FAQ](https://github.com/dogecoin/dogecoin#very-much-frequently-asked-questions)
 

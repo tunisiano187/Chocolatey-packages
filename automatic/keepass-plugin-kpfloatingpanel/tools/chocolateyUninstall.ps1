@@ -7,7 +7,7 @@ if ($psver -ge 3) {
   function Get-ChildItemDir {Get-ChildItem $args}
 }
 
-$packageName = '{{PackageName}}'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
 
 Write-Verbose "Checking KeePass is not running..."

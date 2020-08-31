@@ -14,4 +14,8 @@ Install-ChocolateyZipPackage -PackageName $packageName `
 
 $moduleManifest = Get-ChildItem $toolsDir -filter *.psd1 -Recurse
 
-Install-Module -modulename ([io.path]::GetFileNameWithoutExtension($moduleManifest)) -modulepath $moduleManifest.Parent.FullName -global -force
+if($PSVersionTable.PSVersion.Major -ge 4) {
+    Install-Module -modulename ([io.path]::GetFileNameWithoutExtension($moduleManifest)) -modulepath $moduleManifest.Parent.FullName -global -force
+} else {
+    Write-Error "Powershell 4+ is required to use install-module"
+}

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xPSDesiredStateConfiguration</id>
-    <version>9.1.0</version>
+    <version>9.0.0</version>
     <title>xPSDesiredStateConfiguration Module – PowerShell DSC Resource Kit</title>
     <authors>PowerShell Team</authors>
     <owners>tunisiano</owners>

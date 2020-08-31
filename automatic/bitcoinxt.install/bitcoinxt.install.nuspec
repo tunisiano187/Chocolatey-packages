@@ -4,7 +4,7 @@
   <metadata>
     <id>bitcoinxt.install</id>
     <title>Bitcoin XT (Install)</title>
-    <version>0.11.11</version>
+    <version>0.11.10</version>
     <authors>Bitcoin XT Developers</authors>
     <owners>tunisiano</owners>
     <summary>Software-based online payment system</summary>
@@ -50,6 +50,6 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="README.md" />
   </files>
 </package>

@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$packageName = $env:ChocolateyPackageName
 $softwareName = "$packageName"
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'
