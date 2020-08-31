@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>bitcoinxt</id>
-    <title>Bitcoin XT</title>
+    <title>Bitcoin XT (no longer maintained)</title>
     <version>0.10</version>
     <authors>Bitcoin XT Developers</authors>
     <owners>dtgm</owners>
