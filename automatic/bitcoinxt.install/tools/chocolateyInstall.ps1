@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
 $url = 'https://github.com//bitcoinxt/bitcoinxt/releases/download/v0.11K/bitcoin-0.11.0-win32-setup-unsigned.exe'

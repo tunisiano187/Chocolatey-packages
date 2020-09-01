@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = 'Bitcoin XT *'
 $installerType = 'exe'
 $silentArgs = '/S'
