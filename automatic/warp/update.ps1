@@ -28,7 +28,7 @@ function global:au_GetLatest {
 
     $File = Join-Path $env:TEMP "warp.msi"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-    . "$File /qn /norestart"
+    Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
     $version = Get-Version("warp")
 
 	$Latest = @{ URL64 = $url64; Version = $version }
