@@ -24,6 +24,6 @@ $packageArgs = @{
 if(([System.Environment]::OSVersion.Version.Major -ge 10) -and ((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ReleaseId -ge 1909)) {
   Install-ChocolateyPackage @packageArgs
 } else {
-  Write-Warning "System not supported 1909+ required but $((Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion").ReleaseId) installed"
+  Write-Warning "System not supported, 1909+ required"
   exit 0;
 }
