@@ -1,6 +1,6 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = '{{DownloadUrl}}'
+$url = $env:ChocolateyPackageName
 $checksum = '{{Checksum}}'
 $checksumType = 'sha256'
 $url64 = 'https://bitcoincore.org/bin/bitcoin-core-0.20.1/bitcoin-0.20.1-win64.zip'
