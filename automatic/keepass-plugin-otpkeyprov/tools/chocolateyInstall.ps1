@@ -56,7 +56,7 @@ foreach ($i in Get-ChildItem -Path $pluginPath -Filter $typName*) {
 # report state
 if ( Get-Process -Name "KeePass" `
                  -ErrorAction SilentlyContinue ) {
-  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)." 
+  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)."
 } else {
   Write-Output "$($packageName) will be loaded the next time KeePass is started."
   Write-Output "Please note this plugin may require additional configuration. Look for a new entry in KeePass' Menu>Tools"

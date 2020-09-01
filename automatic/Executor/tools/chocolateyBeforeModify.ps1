@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
-if ((get-process "Executor" -ea SilentlyContinue) -eq $Null) { 
-  Write-Host "Executor NOT running." 
-} else { 
-  Write-Host "Stopping Executor process..."
+if ($Null -eq (get-process "Executor" -ea SilentlyContinue)) {
+  Write-Output "Executor NOT running."
+} else {
+  Write-Output "Stopping Executor process..."
   Stop-Process -processname "Executor"
 }

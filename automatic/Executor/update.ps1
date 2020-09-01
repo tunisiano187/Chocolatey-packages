@@ -2,7 +2,7 @@
 import-module au
 
 $base     = 'http://www.1space.dk/executor'
-$releases = "$base/downloadlinks.html" 
+$releases = "$base/downloadlinks.html"
 
 function global:au_BeforeUpdate {
   $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32      = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base +  '/' + $_ } | select -First 1
+	$url32      = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base +  '/' + $_ } | Select-Object -First 1
 
 	[XML]$feed	= $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml')).Content
 	$version 	= $feed.rss.channel.item[0].title.split(' ')[-1].trim()

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'; 
+﻿$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url            = 'https://faceit-client.faceit-cdn.net/release/FACEIT-setup-latest.exe'
@@ -11,7 +11,7 @@ $packageArgs = @{
   fileType      = 'exe'
   url           = $url
 
-  softwareName  = 'faceit*' 
+  softwareName  = 'faceit*'
   checksum      = $checksum
   checksumType  = $checksumType
 

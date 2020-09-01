@@ -96,7 +96,7 @@ if (($null -ne $Env:APPVEYOR_PULL_REQUEST_NUMBER) -and ($Env:APPVEYOR_PULL_REQUE
 #    foreach ($issue in $info.error) {
 #        # check the content of the $issue
 #        if no created issue about it => create one
-#        if issue exists but closed, reopen It 
+#        if issue exists but closed, reopen It
 #        if issue exist and opened add a comment to show the date
 #    }
 # }

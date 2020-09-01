@@ -21,7 +21,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
         if($winout = ($(Find-Package $search).Version)) {
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
-            Write-Host "$search v$($winout) available"
+            Write-Output "$search v$($winout) available"
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
@@ -29,7 +29,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
-            Write-host "$search not available on winget"
+            Write-Output "$search not available on winget"
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
@@ -41,7 +41,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
             }
         }
     } else {
-        Write-host "$search already maintained here"
+        Write-Output "$search already maintained here"
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }

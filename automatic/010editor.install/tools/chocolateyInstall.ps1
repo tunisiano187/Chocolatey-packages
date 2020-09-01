@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = '010editor.install'
   fileType      = 'EXE'
   softwareName  = '010 Editor*'
-  
+
   checksum      = $checksum32
   checksumType  = 'sha256'
   url           = $url32
