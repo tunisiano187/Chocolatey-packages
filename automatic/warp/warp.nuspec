@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>warp</id>
-    <version>1.2.1415</version>
+    <version>1.2.1</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/warp</packageSourceUrl>
     <owners>tunisiano</owners>
     
@@ -15,7 +15,7 @@
     <docsUrl>https://support.cloudflarewarp.com/hc/en-us/articles/360051891814-Beta-Install-Instructions</docsUrl>
     <bugTrackerUrl>https://support.cloudflarewarp.com/hc/en-us/articles/360051891794-Beta-Known-issues</bugTrackerUrl>
     <tags>warp free vpn cloudflare</tags>
-    <summary>__REPLACE__</summary>
+    <summary>Warp Cloudflare free vpn</summary>
     <description><![CDATA[## WARP free cloudflare vpn
 The free app that makes your Internet safer.
 
