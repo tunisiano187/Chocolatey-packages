@@ -132,16 +132,16 @@ build_script:
     }
     Write-Host "Installing requisites"
     setup/requisites.ps1
+    git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
+    git config --global user.email "helpdesk.choc@gmail.com"
+    git config --global user.name "$env:gitlab_user"
+    git checkout master
     Write-Host "updating packageSourceUrl"
     scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     Write-Host "updating IconUrl"
     scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch -Optimize
     Write-Host "updating owners"
     import-module Wormies-AU-Helpers
-    git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
-    git config --global user.email "helpdesk.choc@gmail.com"
-    git config --global user.name "$env:gitlab_user"
-    git checkout master
     $nuspec=Get-ChildItem ./*.nuspec -Recurse; foreach ($file in $nuspec) { Update-Metadata -key owners -value "tunisiano" -NuspecFile $file.FullName }
     Write-Host "Updating Packages.md"
     scripts/ListPackages.ps1
