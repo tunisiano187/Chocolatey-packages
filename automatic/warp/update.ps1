@@ -24,10 +24,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32=$releases
+	$url64=$releases
 
     $File = Join-Path $env:TEMP "warp.msi"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
+	Invoke-WebRequest -Uri $url64 -OutFile $File
     Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
     $version = Get-Version("warp")
 
