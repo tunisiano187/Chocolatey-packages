@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName      = $env:ChocolateyPackageName
 $installerType    = 'EXE'
-$url32            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x86.exe'
-$url64            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.0_x64.exe'
+$url32            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.3_x86.exe'
+$url64            = 'http://wampserver.aviatechno.net/files/install/wampserver3.2.3_x64.exe'
 $checksum32Type   = 'sha256'
 $checksum64Type   = 'sha256'
-$checksum32       = '921f2815298ff5b6f965505da9b74f517cddeae6bc3c0508449a6fa62edd952b'
-$checksum64       = '9a89260d4240b938fbcf9d98f29c27e527ac104f8ba67453be94bcd73b54df7a'
+$checksum32       = '6841d4fb0ae3f736bcb882221df3b6ad6847f345f65b01691c9f80d02b3facdc'
+$checksum64       = '4749aaa7d13187656ac7e057ada5d6e7c0ff40d56d573b0b6b0e8e11ad44a76a'
 $silentArgs       = '/DIR="C:\wamp" /VERYSILENT /SUPPRESSMSGBOXES'
 $validExitCodes   = @(0)
 
