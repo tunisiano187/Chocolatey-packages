@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = $env:ChocolateyPackageName
-$installerType = 'exe'
-$silentArgs = '/S'
-$url32 = 'https://download.kde.org/stable/digikam/7.0.0/digiKam-7.0.0-Win32.exe'
-$checksum32 = '5e3e7f6a196873d0d0391547badd06ea1d4cb627852cf0fd1b3037d3af4a7690'
+$packageName    = $env:ChocolateyPackageName
+$installerType  = 'exe'
+$silentArgs     = '/S'
+$url32          = 'https://download.kde.org/stable/digikam/7.0.0/digiKam-7.0.0-Win32.exe'
+$checksum32     = '5e3e7f6a196873d0d0391547badd06ea1d4cb627852cf0fd1b3037d3af4a7690'
 $checksumType32 = 'sha256'
-$url64 = 'https://download.kde.org/stable/digikam/7.0.0/digiKam-7.0.0-Win64.exe'
-$checksum64 = ''
+$url64          = 'https://download.kde.org/stable/digikam/7.0.0/digiKam-7.0.0-Win64.exe'
+$checksum64     = ''
 $checksumType64 = ''
 $validExitCodes = @(0)
 
