@@ -26,7 +26,7 @@ $Options = [ordered]@{
     RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
 
     History = @{
-        Lines = 90                                          #Number of lines to show
+        Lines = 120                                          #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
         Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
@@ -37,14 +37,14 @@ $Options = [ordered]@{
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo          #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
-            UserMessage = 'tunisiano'                                #  Markdown, Text: Custom user message to show
+            UserMessage = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags)"       #  Markdown, Text: Custom user message to show
         }
     }
 
     Gist = @{
         Id          = $Env:gist_id                          #Your gist id or leave empty for anonymous
         ApiKey      = $Env:github_api_key                   #Your github api key
-        Path        = "$PSScriptRoot\Update-AUPacakges.md"  #List of files to add to gist
+        Path        = "$PSScriptRoot\Update-AUPacakges.md", "$PSScriptRoot\Update-History.md"  #List of files to add to gist
     }
 
     Git = @{
