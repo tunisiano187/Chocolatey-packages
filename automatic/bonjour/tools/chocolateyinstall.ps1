@@ -3,20 +3,14 @@
 $packageName    = 'bonjour'
 #$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://support.apple.com/downloads/DL999/en_US/BonjourPSSetup.exe'
-$checksum       = '847f39e0ea80d2a4d902fe59657e18f5bc32a8cb'
-$checksumType   = 'sha1'
-$url64          = 'https://support.apple.com/downloads/DL999/en_US/BonjourPSSetup.exe'
-$checksum64     = '847f39e0ea80d2a4d902fe59657e18f5bc32a8cb'
-$checksumType64 = 'sha1'
+$checksum       = '7f1ec347cd429cfb25a34b2147e02231334f28290e0c28be213415b0f99da1a0'
+$checksumType   = 'sha256'
 $fileType       = 'msi'
 $silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" # ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0
 $validExitCodes = @(0, 3010, 1641)
 $file = "$env:temp\Bonjour.msi"
 
 if (Get-ProcessorBits -eq 64) {
-	$url = $url64
-	$checksum = $checksum64
-	$checksumType = $checksumType64
 	$file = "$env:temp\Bonjour64.msi"
 }
 
