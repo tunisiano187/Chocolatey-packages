@@ -17,12 +17,12 @@ function global:au_GetLatest {
     $download_page64 = Invoke-WebRequest -UseBasicParsing -Uri $releases64
 
     $re    = '\.exe$'
-    $url   = ($download_page.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
-    $url64   = ($download_page64.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
+    $url   = ($download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href).Replace("../","")
+    $url64   = ($download_page64.links | Where-Object href -match $re | Select-Object -First 1 -expand href).Replace("../","")
 
     $tempfile = New-TemporaryFile
     Invoke-WebRequest -Uri $version_url -UseBasicParsing -OutFile $tempfile
-    $version = $(Get-Content $tempfile | where {$_ -match 'h1'}).split(' ')[-1].split('<')[0]
+    $version = $(Get-Content $tempfile | Where-Object {$_ -match 'h1'}).split(' ')[-1].split('<')[0]
 
     return @{
         URL32 = $domain + $url

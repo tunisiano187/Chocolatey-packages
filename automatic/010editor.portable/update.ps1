@@ -25,11 +25,11 @@ function global:au_GetLatest {
   $download_page64 = Invoke-WebRequest -UseBasicParsing -Uri $releases64
 
   $re       = '\.exe$'
-  $url      = ($download_page.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
-  $url64    = ($download_page64.links | ? href -match $re | select -First 1 -expand href).Replace("../","")
+  $url      = ($download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href).Replace("../","")
+  $url64    = ($download_page64.links | Where-Object href -match $re | Select-Object -First 1 -expand href).Replace("../","")
 
   $download_version = Invoke-WebRequest -Uri $version_url
-  $version_text = $($download_version.ParsedHtml.getElementsByTagName("h2") | select -First 1 | % innerText)
+  $version_text = $($download_version.ParsedHtml.getElementsByTagName("h2") | Select-Object -First 1 | ForEach-Object innerText)
   $version_text -match "Version (.*) - .*$"
   $version = $Matches[1]
 
