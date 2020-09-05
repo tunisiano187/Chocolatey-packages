@@ -338,6 +338,10 @@ function Update-IconUrl{
   if (!($commitHash)) {
     $counts.missing++;
     $missingIcons.Add($Name);
+    $possibleName = 'Default'
+    $extension = 'png'
+    $iconNameWithExtension = "$possibleName.$extension";
+    $commitHash = Test-Icon -Name $possibleName -Extension $extension -IconDir $IconDir -Optimize $Optimize -PackageName $Name;
     return;
   }
   $resolvedPath = Resolve-Path $IconDir/$iconNameWithExtension -Relative;
