@@ -4,7 +4,7 @@
   <metadata>
     <id>{{PackageName}}</id>
     <title>Electrum</title>
-    <version>{{PackageVersion}}</version>
+    <version>4.0.2</version>
     <authors>Electrum Developers</authors>
     <owners>dtgm</owners>
     <summary>Lightweight Bitcoin client</summary>

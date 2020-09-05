@@ -4,7 +4,7 @@
   <metadata>
     <id>{{PackageName}}</id>
     <title>WakeMeOnLan</title>
-    <version>{{PackageVersion}}</version>
+    <version>1.86</version>
     <authors>Nir Sofer</authors>
     <owners>dtgm</owners>
     <summary>Turn on computers on your network with Wake-on-LAN packet</summary>
