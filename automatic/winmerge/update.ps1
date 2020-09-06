@@ -19,8 +19,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Select-Object -First 2 | Sort-Object ).href
     $version=$($installer[0]).split('/')[-1].split('-')[1]
-    $url32 = "https://github.com/$($installer[1])";
-	$url64 = "https://github.com/$($installer[0])";
+    $url32 = "https://github.com$($installer[1])";
+	$url64 = "https://github.com$($installer[0])";
 
     $version = $installer -split '-|.exe' | select-object -Last 1 -Skip 2
     $tags = Invoke-WebRequest 'https://api.github.com/repos/WinMerge/winmerge/releases' -UseBasicParsing | ConvertFrom-Json

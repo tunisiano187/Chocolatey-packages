@@ -23,8 +23,8 @@ function global:au_GetLatest {
 	$version=$($installer[0]).split('/')[-1].split('-')[-1].replace('.exe','')
 
 	Write-Output "Version : $version"
-	$url32 = "https://github.com/$($installer[1])";
-	$url64 = "https://github.com/$($installer[0])";
+	$url32 = "https://github.com$($installer[1])";
+	$url64 = "https://github.com$($installer[0])";
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
