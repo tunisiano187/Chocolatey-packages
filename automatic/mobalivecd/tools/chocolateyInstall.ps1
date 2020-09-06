@@ -1,9 +1,9 @@
-﻿try {
-  $toolsDir     = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  $url          = 'http://mobalivecd.mobatek.net/en/MobaLiveCD_v2.1.exe'
-  $checksum     = ''
-  $checksumType = ''
+﻿$toolsDir     = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$url          = 'http://mobalivecd.mobatek.net/en/MobaLiveCD_v2.1.exe'
+$checksum     = ''
+$checksumType = ''
 
+try {
   #Install-ChocolateyPackage 'mobalivecd' 'EXE' '/SILENT' "$downUrl" -validExitCodes @(0)
 
   $packageArgs = @{
