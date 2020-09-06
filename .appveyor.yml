@@ -136,6 +136,8 @@ build_script:
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "$env:gitlab_user"
     git checkout master
+    Write-Host "Checking nuspec errors"
+    scripts/Find-NuspecError.ps1
     Write-Host "updating packageSourceUrl"
     scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     Write-Host "updating variables in ps1"
