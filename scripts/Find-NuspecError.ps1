@@ -28,11 +28,11 @@ function Find-NuspecError {
             $errornuspec = "$errornuspec $($nuspec.Name): missing <files></files>`n"
         }
 
-        if($errornuspec.count() -ne 0) {
+        if($errornuspec -ne '') {
             $errors = "$errornuspec `n"
         }
     }
-    if($errors.count() -eq 0) {
+    if($errors -eq '') {
         return "OK"
     } else {
         return $errors
