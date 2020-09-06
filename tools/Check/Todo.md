@@ -9,3 +9,4 @@
 |Snipe|
 |mobalivecd|
 |kaxaml|
+|git-flow-dependencies|

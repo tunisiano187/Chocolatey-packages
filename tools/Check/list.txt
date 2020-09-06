@@ -1,4 +1,3 @@
-git-flow-dependencies 0.2 - Possibly broken
 h2database 1.3.169 - Possibly broken
 PeStudio 4.5 [Approved] - Possibly broken
 instanteyedropper.app 1.75 [Approved] - Possibly broken
