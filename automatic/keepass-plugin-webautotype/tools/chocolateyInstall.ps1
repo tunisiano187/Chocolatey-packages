@@ -49,7 +49,7 @@ Write-Verbose "`t...found."
 $pluginDir = "Plugins"
 $pluginPath = Join-Path $installPath $pluginDir
 Write-Verbose "Installing plugins into $($pluginPath)"
-if (![System.IO.Directory]::Exists($pluginPath)) {[System.IO.Directory]::CreateDirectory($pluginPath)}
+if (!(Test-path $pluginPath)) {[System.IO.Directory]::CreateDirectory($pluginPath)}
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Write-Verbose "Downloading and extracting zip into $($toolsDir)."
@@ -61,9 +61,9 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
 
 Write-Verbose "Removing any plugin with name $($typName) in $($installPath) to prevent duplicate plugin loading"
 $cur = Get-ChildItem -Path $installPath -Filter $typName -Recurse
-if ($cur -eq 1) {
+if ($cur.count -eq 1) {
   Remove-Item $cur.FullName
-} ElseIf ($cur -gt 1) {
+} ElseIf ($cur.count -gt 1) {
   Write-Warning "More than 1 copy of $($typName) was found in $($installPath). This may mean multiple plugins are unnecessarily being loaded into KeePass. It is strongly advised you clean up $($installPath)"
 }
 
