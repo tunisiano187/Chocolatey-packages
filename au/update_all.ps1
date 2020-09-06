@@ -26,7 +26,7 @@ $Options = [ordered]@{
     RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
 
     History = @{
-        Lines = 120                                          #Number of lines to show
+        Lines = 120                                         #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
         Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
@@ -56,13 +56,13 @@ $Options = [ordered]@{
         WebHookUrl = "https://webhooks.gitter.im/e/b70be555bdfec2aefc67"
     }
 
-    GitLab = @{
-        User			= 'tunisiano187'					#Git username, leave empty if github api key is used
-        API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
-		PushURL			= $env:Gitlab_PushURL
-		Force			= $True
-		commitStrategy	= 'atomictag'
-    }
+    #GitLab = @{
+    #    User			= 'tunisiano187'					#Git username, leave empty if github api key is used
+    #    API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
+	#	PushURL			= $env:Gitlab_PushURL
+	#	Force			= $True
+	#	commitStrategy	= 'atomictag'
+    #}
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
