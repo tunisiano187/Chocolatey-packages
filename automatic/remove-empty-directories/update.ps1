@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/hxseven/Remove-Empty-Directories/releases'
+$releases = 'https://www.jonasjohn.de/red.htm'
 
 function global:au_SearchReplace {
 	@{
@@ -14,9 +14,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$file = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href | Where-Object {$_ -match '.zip'})[0]
-	$url32 = "https://github.com$($file)";
-	$version = $file.split('/')[-1].replace('.zip','')
+	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href)[0]
+	$version = $url32.split('v|-')[-2]
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
