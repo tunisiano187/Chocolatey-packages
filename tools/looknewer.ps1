@@ -25,7 +25,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open)) {
+            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
@@ -36,7 +36,7 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
-            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Keywords "$Title" -Labels 'ToCreateManualy' -State open)) {
+            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
