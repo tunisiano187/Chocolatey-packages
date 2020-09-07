@@ -1,10 +1,15 @@
 $ErrorActionPreference = 'Continue';
 
+Install-Module psgithubsearch
+Import-Module psgithubsearch
+
+if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
+    Write-Output "Some issues are still open"
+    exit 0;
+}
 $source = Join-Path $PSScriptRoot "Check/list.txt"
 Install-PackageProvider -name winget -Force
 . $PSScriptRoot\..\scripts\New-Githubissue.ps1
-Install-Module psgithubsearch
-Import-Module psgithubsearch
 
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
@@ -14,11 +19,6 @@ if(!(Test-Path Env:github_api_key)) {
 $UserToken = $env:github_api_key
 $Headers = @{
     Authorization='token '+$UserToken
-}
-
-if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
-    Write-Output "Some issues are still open"
-    exit 0;
 }
 
 if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
