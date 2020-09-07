@@ -16,6 +16,11 @@ $Headers = @{
     Authorization='token '+$UserToken
 }
 
+if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
+    Write-Output "Some issues are still open"
+    exit 0;
+}
+
 if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
