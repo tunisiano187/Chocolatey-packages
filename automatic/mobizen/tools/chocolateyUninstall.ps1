@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $softwareName = "$packageName"
-$installerType = 'msi'
-$silentArgs = '/quiet /qn /norestart'
+$installerType = 'exe'
+$silentArgs = '/S /v/qn'
 $validExitCodes = @(0,3010)
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
