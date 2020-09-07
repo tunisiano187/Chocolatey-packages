@@ -1,9 +1,11 @@
-﻿$url          = 'http://www.h2database.com/h2-setup-2012-07-13.exe'
+﻿$url          = 'https://h2database.com/h2-setup-2019-10-14.exe'
 $checksum     = ''
 $checksumType = ''
 
 $packageArgs  = @{
+  packageName   	= $env:ChocolateyPackageName
   fileType      	= 'EXE'
+  softwareName  	= "$env:ChocolateyPackageName*"
   url             = $url
   checksum        = $checksum
   checksumType    = $checksumType
@@ -11,4 +13,4 @@ $packageArgs  = @{
   validExitCodes	= @(0)
 }
 
-Install-ChocolateyPackage $packageArgs
+Install-ChocolateyPackage @packageArgs
