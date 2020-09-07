@@ -13,7 +13,8 @@ $Headers = @{
 }
 
 if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
-    Write-Output "Some issues are still open"
+    Write-Warning "Some issues are still open"
+    Write-Warning "Not checking for broken packages"
     exit 0;
 }
 $source = Join-Path $PSScriptRoot "Check/list.txt"
