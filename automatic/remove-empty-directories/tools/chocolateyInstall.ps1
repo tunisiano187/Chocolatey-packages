@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
-$url = 'https://github.com/hxseven/Remove-Empty-Directories/archive/2.2.zip'
-$checksum = 'e95969290d7987a469c93c07e4b01712909d4d859174b36365265b26a89a404e'
+$url = 'http://sourceforge.net/projects/rem-empty-dir/files/red-v2.2-portable.zip/download'
+$checksum = 'c3dcaf87a336ea2bf71a6e183d8c7bae2923258a10586284ca23c985d2c688d5'
 $checksumType = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `

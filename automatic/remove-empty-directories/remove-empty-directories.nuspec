@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>remove-empty-directories</id>
-    <version>2.1</version>
+    <version>2.2.0.1</version>
     <title>Remove empty directories (Portable)</title>
     <authors>Jonas John</authors>
     <owners>tunisiano</owners>
@@ -12,8 +12,7 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@971fbf4e23f6e4b93dfd60b831485eb49d0af918/icons/removeemptydirectories.png</iconUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/remove-empty-directories</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[[![](https://img.shields.io/chocolatey/v/remove-empty-directories?color=green&label=remove-empty-directories)](https://chocolatey.org/packages/remove-empty-directories) [![](https://img.shields.io/chocolatey/dt/remove-empty-directories)](https://chocolatey.org/packages/remove-empty-directories)
-
+    <description><![CDATA[# Remove-Empty-Directories
 RED searches and deletes empty directories recursively below a given start folder and shows the result in a well arranged tree. Further you can create some custom rules for keeping and deleting folders. Empty files in directories can also be ignored.
 
 Features
@@ -23,6 +22,11 @@ Supports multiple delete modes (including Delete to recycle bin)
 Allows white and black listing of directories by using filter lists
 Can detect directories with empty files as empty
 Portable (runs from USB drive)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Remove empty directories</summary>
     <releaseNotes>
