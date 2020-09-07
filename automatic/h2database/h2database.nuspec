@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>h2database</id>
+    <version>1.3.169</version>
+    <title>H2 Database Engine</title>
+    <authors>Thomas Mueller</authors>
+    <owners>Yoshimov</owners>
+    <licenseUrl>http://www.h2database.com/html/license.html</licenseUrl>
+    <projectUrl>http://www.h2database.com/</projectUrl>
+    <iconUrl>https://github.com/yoshimov/chocolatey-packages/raw/master/h2database/h2-logo-2.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>H2 is the Java SQL database which is very fast, open source, JDBC API, embeddable and small footprint.</description>
+    <summary>H2 is the Java SQL database which is very fast, open source, JDBC API, embeddable and small footprint.</summary>
+    <releaseNotes />
+    <copyright />
+    <tags>h2database embed rdb java</tags>
+  </metadata>
+</package>
