@@ -1,16 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
-$installerType 			= 'MSI'
-$checksum 				= 'dcf05efb9b81ae50fb6d0b0cd6b983866ab79d93544c48ed8c010fef0f0d09ed'
+$installerType 			= 'exe'
+$checksum 				= 'a8fcb8a7f50800c3c47bc90ade56437398610c6a9a8c54323716bfa9dc2ae33c'
 $checksumType 			= 'sha256'
-$checksum64 			= '4a4d085d22f6743b84f766d91395dd0b4e0ba2a2963257c1851e4ce7fbadec1c'
+$checksum64 			= 'a8fcb8a7f50800c3c47bc90ade56437398610c6a9a8c54323716bfa9dc2ae33c'
 $checksumType64 		= 'sha256'
 $silentArgs 			= '/quiet'
 $validExitCodes 		= @(0)
 
-$releases 				= 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
-$urls					=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
-$url 					= "https:$($urls[0])"
-$url64 					= "https:$($urls[1])"
+$url 					= 'https://dl.sharefile.com/sync2win'
+$url64 					= $url
 
 $packageArgs = @{
 	packageName   		= $env:ChocolateyPackageName
