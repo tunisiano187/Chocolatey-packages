@@ -2,15 +2,23 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mobalivecd</id>
-    <version>2.1</version>
+    <version>2.1.0.1</version>
     <title>MobaLiveCD</title>
     <authors>Mobatek</authors>
-    <owners>Yoshimov</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.mobatek.net/mobalivecd_license.txt</licenseUrl>
     <projectUrl>https://www.mobatek.net/labs_mobalivecd.html</projectUrl>
-    <iconUrl>https://github.com/yoshimov/chocolatey-packages/raw/master/mobalivecd/mobalivecd_128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e9ee6abe83df68a7cffdfeef364d4eb1238ec46/icons/mobalivecd.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>MobaLiveCD is a freeware that will run your Linux LiveCD on Windows thanks to the excellent emulator called "Qemu". Please execute the link as administrator.</description>
+    <description><![CDATA[## MobaLiveCD
+MobaLiveCD is a freeware that will run your Linux LiveCD on Windows thanks to the excellent emulator
+called "Qemu". Please execute the link as administrator.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>MobaLiveCD is a freeware that will run your Linux LiveCD on Windows thanks to the excellent emulator called "Qemu".</summary>
     <releaseNotes />
     <copyright />
