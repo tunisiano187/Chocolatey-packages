@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>h2database</id>
-    <version>1.4.200</version>
+    <version>1.4.0</version>
     <title>H2 Database Engine</title>
     <authors>Thomas Mueller</authors>
     <owners>tunisiano</owners>
@@ -23,4 +23,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <copyright />
     <tags>h2database embed rdb java</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
