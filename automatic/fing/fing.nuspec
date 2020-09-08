@@ -3,16 +3,25 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fing</id>
-    <version>2.1.0</version>
+    <version>2.2.0</version>
     <title>Fing</title>
     <authors>Fing</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.fing.com/fing-terms-of-service</licenseUrl>
     <projectUrl>https://www.fing.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@36f4509cef60dcb22c8eaa3e730b49d1545afb4c/icons/fing.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@db51cc19fed6d551ba0b00ac096fdfd2c49c24f0/icons/fing.png</iconUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fing</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Fing App is a free network scanner that makes you discover all connected devices, run internet speed tests and help troubleshoot network and device issues. Get Fingbox for more advanced security and protection for your network.</description>
+    <description><![CDATA[## foldingathome
+Fing App is a free network scanner that makes you discover all connected devices, run internet 
+speed tests and help troubleshoot network and device issues. Get Fingbox for more advanced security 
+and protection for your network.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Scanner that discover devices, run internet speed tests and helps troubleshooting your network</summary>
     <copyright>© Fing</copyright>
     <language>en-us</language>
