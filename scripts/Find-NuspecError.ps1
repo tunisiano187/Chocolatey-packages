@@ -28,6 +28,11 @@ function Find-NuspecError {
             $errornuspec = "$errornuspec $($nuspec.Name): missing <files></files>`n"
         }
 
+        $contain = $content | ForEach-Object{$_ -match '<packageSourceUrl>'}
+        If($contain -contains $false) {
+            $errornuspec = "$errornuspec $($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>`n"
+        }
+
         if($errornuspec -ne '') {
             $errors = "$errornuspec `n"
         }
@@ -35,7 +40,8 @@ function Find-NuspecError {
     if($errors -eq '') {
         return "OK"
     } else {
-        return $errors
+        throw $errors
+        #return $errors
     }
 }
 
