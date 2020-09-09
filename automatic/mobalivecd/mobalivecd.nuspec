@@ -2,12 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mobalivecd</id>
-    <version>2.1.0.1</version>
+    <version>2.1.0</version>
     <title>MobaLiveCD</title>
     <authors>Mobatek</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.mobatek.net/mobalivecd_license.txt</licenseUrl>
     <projectUrl>https://www.mobatek.net/labs_mobalivecd.html</projectUrl>
+    <packageSourceUrl></packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e9ee6abe83df68a7cffdfeef364d4eb1238ec46/icons/mobalivecd.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## MobaLiveCD
