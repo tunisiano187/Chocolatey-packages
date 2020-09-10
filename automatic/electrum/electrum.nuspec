@@ -41,4 +41,7 @@ Electrum is an easy to use Bitcoin wallet. It protects you from losing coins in 
       <dependency id="electrum.install" version="4.0.2" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="electrum.nuspec" />
+  </files>
 </package>
