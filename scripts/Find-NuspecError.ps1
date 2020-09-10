@@ -23,24 +23,24 @@ function Find-NuspecError {
     foreach ($nuspec in $nuspecs) {
         $errornuspec = ''
         $content = Get-Content $nuspec.FullName
-        $contain = $content | ForEach-Object{$_ -match '<files'}
-        If($contain -contains $false) {
-            $errornuspec = "$errornuspec $($nuspec.Name): missing <files></files>`n"
+        $contain = $content | ForEach-Object{$_ -notmatch '<files'}
+        If($contain -contains $true) {
+            $errornuspec = "$errornuspec $($nuspec.Name): missing <files></files> `n "
         }
 
-        $contain = $content | ForEach-Object{$_ -match '<packageSourceUrl>'}
-        If($contain -contains $false) {
-            $errornuspec = "$errornuspec $($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>`n"
+        $contain = $content | ForEach-Object{$_ -notmatch '<packageSourceUrl>'}
+        If($contain -contains $true) {
+            $errornuspec = "$errornuspec $($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>`n "
         }
 
         if($errornuspec.count -ne 0) {
-            $errors = "$errornuspec `n"
+            $errors = "$errornuspec `n "
         }
     }
-    if($errors.count -ne 0) {
+    if($errors.count -eq 0) {
         return "OK"
     } else {
-        throw $errors
+        write-error $errors
         #return $errors
     }
 }
