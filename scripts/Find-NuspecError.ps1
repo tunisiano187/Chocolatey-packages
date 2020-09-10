@@ -13,7 +13,7 @@
 #>
 function Find-NuspecError {
     param(
-        [string]$folder = "../automatic/"
+        [string]$folder = '../automatic/'
     )
 
     $folder = "$PSScriptRoot/$($folder)"
@@ -21,27 +21,14 @@ function Find-NuspecError {
     $errors = ''
 
     foreach ($nuspec in $nuspecs) {
-        $errornuspec = ''
         $content = Get-Content $nuspec.FullName
-        $contain = $content | ForEach-Object{$_ -notmatch '<files'}
-        If($contain -contains $true) {
-            $errornuspec = "$errornuspec $($nuspec.Name): missing <files></files> `n "
+        If($content.contains('<files>')) {
+            throw "$($nuspec.Name): missing <files></files>"
         }
 
-        $contain = $content | ForEach-Object{$_ -notmatch '<packageSourceUrl>'}
-        If($contain -contains $true) {
-            $errornuspec = "$errornuspec $($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>`n "
+        If($content.contains('<packageSourceUrl>')) {
+            throw "$($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>"
         }
-
-        if($errornuspec.count -ne 0) {
-            $errors = "$errornuspec `n "
-        }
-    }
-    if($errors.count -eq 0) {
-        return "OK"
-    } else {
-        throw $errors
-        #return $errors
     }
 }
 
