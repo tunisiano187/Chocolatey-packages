@@ -13,4 +13,7 @@
     <copyright>Copyright 2012 Marc Ochsenmeier</copyright>
     <tags>Chocolatey PeStudio Pe</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
