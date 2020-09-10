@@ -40,7 +40,7 @@ function Find-NuspecError {
     if($errors.count -eq 0) {
         return "OK"
     } else {
-        write-error $errors
+        throw $errors
         #return $errors
     }
 }
