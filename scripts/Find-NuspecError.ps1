@@ -33,11 +33,11 @@ function Find-NuspecError {
             $errornuspec = "$errornuspec $($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>`n"
         }
 
-        if($errornuspec -ne '') {
+        if($errornuspec.count -ne 0) {
             $errors = "$errornuspec `n"
         }
     }
-    if($errors -eq '') {
+    if($errors.count -ne 0) {
         return "OK"
     } else {
         throw $errors
