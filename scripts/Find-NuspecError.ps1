@@ -17,7 +17,7 @@ function Find-NuspecError {
     )
 
     $folder = "$PSScriptRoot/$($folder)"
-    $nuspecs = Get-ChildItem -Path $folder -Filter *.nupkg -Recurse
+    $nuspecs = Get-ChildItem -Path $folder -Filter *.nuspec -Recurse
     $errors = ''
 
     foreach ($nuspec in $nuspecs) {
