@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.mobatek.net/mobalivecd_license.txt</licenseUrl>
     <projectUrl>https://www.mobatek.net/labs_mobalivecd.html</projectUrl>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>.</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e9ee6abe83df68a7cffdfeef364d4eb1238ec46/icons/mobalivecd.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## MobaLiveCD
