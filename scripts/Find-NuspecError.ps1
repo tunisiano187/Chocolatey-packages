@@ -23,11 +23,12 @@ function Find-NuspecError {
     foreach ($nuspec in $nuspecs) {
         [xml]$content = Get-Content $nuspec.FullName
         If(!($content.package.files)) {
-            throw "$($nuspec.Name): missing <files></files>"
+            $errormsg = ': missing <files><file src="tools\**" target="tools" /></files>'
+            throw "$($nuspec.Name) $($errormsg)"
         }
 
         If(!($content.package.metadata.packageSourceUrl)) {
-            throw "$($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>"
+            throw "$($nuspec.Name): missing <packageSourceUrl>.</packageSourceUrl>"
         }
     }
 }
