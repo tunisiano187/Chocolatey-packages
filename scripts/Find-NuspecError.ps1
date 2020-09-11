@@ -18,7 +18,6 @@ function Find-NuspecError {
 
     $folder = "$PSScriptRoot/$($folder)"
     $nuspecs = Get-ChildItem -Path $folder -Filter *.nuspec -Recurse
-    $errors = ''
 
     foreach ($nuspec in $nuspecs) {
         [xml]$content = Get-Content $nuspec.FullName
