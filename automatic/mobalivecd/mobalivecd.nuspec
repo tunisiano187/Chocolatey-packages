@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mobalivecd</id>
-    <version>2.1.0</version>
+    <version>2.1.0.20200909</version>
     <title>MobaLiveCD</title>
     <authors>Mobatek</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.mobatek.net/mobalivecd_license.txt</licenseUrl>
     <projectUrl>https://www.mobatek.net/labs_mobalivecd.html</projectUrl>
-    <packageSourceUrl>.</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e9ee6abe83df68a7cffdfeef364d4eb1238ec46/icons/mobalivecd.png</iconUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mobalivecd</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@49ae02a1739a415c0693e34e13a26b64c0c7cb8b/icons/mobalivecd.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## MobaLiveCD
 MobaLiveCD is a freeware that will run your Linux LiveCD on Windows thanks to the excellent emulator
