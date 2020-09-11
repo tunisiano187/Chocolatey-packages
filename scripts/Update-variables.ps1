@@ -60,14 +60,14 @@ function Update-Variable {
   $oldContent = ($ps1 | Out-String) -replace '\r\n?',"`n"
 
   $ps1 = $ps1 -replace '{{PackageName}}','$env:ChocolateyPackageName'
-  $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut'
+  $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
 
   $output = ($ps1 | Out-String) -replace '\r\n?',"`n"
   if ($oldContent -eq $output) {
     $counts.uptodate++;
     return;
   }
-  [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
+  [System.IO.File]::WriteAllText("$PS1Path", $output, $encoding);
 
   $counts.replaced++;
 }
@@ -85,10 +85,10 @@ If ($Name) {
   }
 }
 else {
-  $packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory" -Filter "*.ps1";
+  $packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory" -Filter "*.ps1" -Recurse;
 
   foreach ($package in $packages) {
-    Update-Variable -Name $package.FullName -Quiet $Quiet
+    Update-Variable $package.FullName -Quiet $Quiet
   }
 }
 
