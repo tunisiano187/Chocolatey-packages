@@ -61,7 +61,7 @@ environment:
 
 init:
 - git config --global user.email "helpdesk.choc@gmail.com"
-- git config --global user.name "Tunisiano18"
+- git config --global user.name "tunisiano187"
 - git config --global core.safecrlf false
 
 install:
