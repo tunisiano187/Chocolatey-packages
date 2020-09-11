@@ -60,6 +60,7 @@ function Update-Variable {
   $oldContent = ($ps1 | Out-String) -replace '\r\n?',"`n"
 
   $ps1 = $ps1 -replace '{{PackageName}}','$env:ChocolateyPackageName'
+  $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut'
 
   $output = ($ps1 | Out-String) -replace '\r\n?',"`n"
   if ($oldContent -eq $output) {
