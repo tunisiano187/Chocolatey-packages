@@ -4,11 +4,11 @@
   <metadata>
     <id>electrum.install</id>
     <title>Electrum (Install)</title>
-    <version>4.0.2</version>
+    <version>4.0.3</version>
     <authors>Electrum Developers</authors>
     <owners>tunisiano</owners>
     <summary>Lightweight Bitcoin client</summary>
-    <description><![CDATA[
+    <description><![CDATA[## Electrum.install
 Electrum is an easy to use Bitcoin wallet. It protects you from losing coins in a backup 
 mistake or computer failure, because your wallet can be recovered from a secret phrase that 
 you can write on paper or learn by heart. There is no waiting time when you start the client, 
@@ -24,6 +24,11 @@ because it does not download the Bitcoin blockchain.
 * Cold Storage: Sign transactions from a computer that is always offline. Broadcast them using a machine that does not have your keys.
 * Reachable: You can export your private keys into other Bitcoin clients.
 * Established: Electrum is open source and was first released in November 2011.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/electrum.install</packageSourceUrl>
     <projectUrl>https://electrum.org</projectUrl>
