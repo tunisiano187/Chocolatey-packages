@@ -1,4 +1,4 @@
 ﻿$ErrorActionPreference = 'Stop'
 # MetaPackage for
-$version = ''
+$version = '4.0.3'
 Write-Verbose $version
