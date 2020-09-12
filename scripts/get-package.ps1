@@ -28,6 +28,14 @@ param(
     )
     $nupkg = "$env:TEMP/$($packageName)"
 
+    if(Test-Path "$folder\$packageName\") {
+        $replace = Read-Host -Prompt "the package already exist in the destination folder, do you want to replace it ? Y/[N]"
+        if($replace.ToLower() -eq "y") {
+            Remove-Item "$folder\$packageName\" -Force -Recurse
+            Remove-Item "$nupkg.zip" -Force
+        }
+
+    }
     # Try to download the nupkg
     Invoke-WebRequest -Uri "https://chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.zip"
     if(Test-Path "$nupkg.zip") {
