@@ -20,8 +20,7 @@
 .OUTPUTS
     A folder containing the main files and the icon if that's available
 #>
-function Get-Package {
-    param(
+param(
         [Parameter(Mandatory = $true)]
         [string]$packageName,
         [string]$folder = '..\automatic\',
@@ -30,15 +29,17 @@ function Get-Package {
     $nupkg = "$env:TEMP/$($packageName)"
 
     # Try to download the nupkg
-    If(Invoke-WebRequest -Uri "https://chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.nupkg") {
-
+    Invoke-WebRequest -Uri "https://chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.zip"
+    if(Test-Path "$nupkg.zip") {
         # Expand file
-        Expand-Archive -Path $nupkg -DestinationPath $nupkg
-        New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder\$packageName"
+        Expand-Archive -Path "$nupkg.zip" -DestinationPath $nupkg -Force
+        New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder\" -Force
 
         # copy required files in the new folder
-        Move-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\"
-        Move-Item -Path "$nupkg\$packageName\tools" -Destination "$folder\$packageName\" -Recursive
+        Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
+        if(Test-Path "$nupkg\tools") {
+            Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Force
+        }
 
         # read nuspec
         [xml]$nuspec = Get-Content "$folder\$packageName\$packageName.nuspec"
@@ -48,4 +49,3 @@ function Get-Package {
             Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
         }
     }
-}
