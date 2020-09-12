@@ -29,7 +29,7 @@
     <mailingListUrl>http://ibotpeaches.github.io/Apktool/#links-of-interest</mailingListUrl>
     <bugTrackerUrl>https://github.com/iBotPeaches/Apktool/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="javaruntime" />
+      <dependency id="javaruntime" version="1.8"/>
     </dependencies>
   </metadata>
   <files>
