@@ -10,9 +10,6 @@ function global:au_SearchReplace {
 			"(^[$]checksum\s*=\s*)('.*')" 			= "`$1'$($Latest.Checksum32)'"
             "(^[$]checksumtype\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
 		}
-		'update.ps1' = @{
-			"-NoCheckChocoVersion"			 		= ""
-		}
 	}
 }
 
