@@ -56,6 +56,9 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <dependencies>
+      <dependency id="kb2919355" version="1.0.20160915" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
