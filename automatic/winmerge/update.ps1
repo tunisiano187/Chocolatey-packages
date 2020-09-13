@@ -18,14 +18,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"} | Select-Object -First 2 | Sort-Object ).href
-    $version=$($installer[0]).split('/')[-1].split('-')[1]
-    if($version -eq '2.16.8') {
-        $version = '2.16.8.20200913'
-    }
     $url32 = "https://github.com$($installer[1])";
 	$url64 = "https://github.com$($installer[0])";
 
     $version = $installer -split '-|.exe' | select-object -Last 1 -Skip 2
+    if($version -eq '2.16.8') {
+        $version = '2.16.8.20200913'
+    }
     $tags = Invoke-WebRequest 'https://api.github.com/repos/WinMerge/winmerge/releases' -UseBasicParsing | ConvertFrom-Json
     foreach ($tag in $tags) {
         if($tag.tag_name -match $version) {
