@@ -77,4 +77,7 @@ Duplicati is configured by a web interface that runs in any browser (even mobile
       <dependency id="dotnet4.5" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
