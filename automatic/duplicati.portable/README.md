@@ -1,0 +1,62 @@
+[![](https://img.shields.io/chocolatey/v/dogecoin.portable?color=green&label=dogecoin.portable)](https://chocolatey.org/packages/dogecoin.portable) [![](https://img.shields.io/chocolatey/dt/dogecoin.portable)](https://chocolatey.org/packages/dogecoin.portable)
+
+## Duplicati.portable
+![Screenshot of Duplicati](http://www.duplicati.com/images/news/2016-03-20-New-UI.jpg)
+
+Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers. It works with:
+
+* Amazon S3
+* OneDrive
+* Google Drive (Google Docs)
+* Rackspace Cloud Files
+* HubiC
+* Backblaze (B2)
+* Amazon Cloud Drive (AmzCD)
+* Swift / OpenStack
+* WebDAV
+* SSH (SFTP)
+* FTP
+* and more
+
+Duplicati is licensed under LGPL and available for Windows, OSX and Linux (.NET 4.5+ or Mono required).
+
+###Features
+
+* Duplicati uses AES-256 encryption (or GNU Privacy Guard) to secure all data before it is uploaded.
+* Duplicati uploads a full backup initially and stores smaller, incremental updates afterwards to save bandwidth and storage space.
+* A scheduler keeps backups up-to-date automatically.
+* Integrated updater notifies you when a new release is out
+* Encrypted backup files are transferred to targets like FTP, Cloudfiles, WebDAV, SSH (SFTP), Amazon S3 and others.
+* Duplicati allows backups of folders, document types like e.g. documents or images, or custom filter rules.
+* Duplicati is available as application with an easy-to-use user interface and as command line tool.
+* Duplicati can make proper backups of opened or locked files using the Volume Snapshot Service (VSS) under Windows or the Logical Volume Manager (LVM) under Linux. This allows Duplicati to back up the Microsoft Outlook PST file while Outlook is running.
+* Filters, deletion rules, transfer and bandwidth options, etc
+
+###Many Backends
+Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive " S3, Google Drive, box.com, Mega, hubiC and many others.
+
+
+###Features
+Backup files and folders with strong AES-256 encryption. Save space with incremental backups and data deduplication. Run backups on any machine through the web-based interface or via command line interface. Duplicati has a built-in scheduler and auto-updater.
+
+
+###Free software
+Duplicati is free software and open source. You can use Duplicati for free even for commercial purposes. Source code is licensed under LGPL. Duplicati runs under Windows, Linux, MacOS. It requires .NET 4.5 or Mono.
+
+
+###Strong encryption
+Duplicati uses strong AES-256 encryption to protect your privacy. You can also use GPG to encrypt your backup.
+
+
+###Built for online
+Duplicati was designed for online backups from scratch. It is not only data efficient but also handles network issues nicely. E.g. interrupted backups can be resumed and Duplicati tests the content of backups regularly. That way broken backups on corrupt storage systems can be detected before it’s too late.
+
+
+###Web-based user interface
+Duplicati is configured by a web interface that runs in any browser (even mobile) and can be accessed - if you like - from anywhere. This also allows to run Duplicati on headless machines like a NAS (network attached storage).	
+
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
