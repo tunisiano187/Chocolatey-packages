@@ -1,20 +1,14 @@
 [![](https://img.shields.io/chocolatey/v/amazon-chime?color=green&label=amazon-chime)](https://chocolatey.org/packages/amazon-chime) [![](https://img.shields.io/chocolatey/dt/amazon-chime)](https://chocolatey.org/packages/amazon-chime)
 
 ## Amazon chime
-Amazon Chime est un service de communication qui vous permet de vous réunir et de discuter avec vos
-collaborateurs, mais également de passer des appels professionnels au sein de votre organisation comme
-en dehors, le tout à partir d'une simple application. Les développeurs peuvent utiliser les mêmes
-infrastructures de communication et services qui alimentent Amazon Chime. Ils peuvent également ajouter
-directement des fonctions d'appel audio, d'appel vidéo et de partage d'écran à leurs applications à
-l’aide d’Amazon Chime SDK.
+Amazon Chime is a communications service that lets you meet, chat, and place business calls inside and outside your organization, all
+using a single application. Developers can use the same communications infrastructure and services that power Amazon Chime, and add
+audio calling, video calling, and screen sharing capabilities directly to their applications using the Amazon Chime SDK.
 
-Amazon Chime Voice Connector est un service qui permet aux entreprises de migrer leurs charges de
-travail de téléphonie vers AWS. Les professionnels de l’informatique peuvent utiliser le service Voice
-Connector pour des liaisons SIP à bas coût depuis les systèmes téléphoniques présents sur les sites ou
-basés sur le cloud. Le service Voice Connector prend en charge les appels entrants, les appels sortants
-ou les deux. Les développeurs peuvent également utiliser le service Voice Connector pour créer des
-appels PSTN dans leurs propres applications à l’aide du kit SDK d’Amazon Chime ou bien pour envoyer des
-flux audio pour les appels analytiques et le machine learning.
+Amazon Chime Voice Connector is a service that enables enterprises to migrate their telephony workloads to AWS. IT professionals can
+use Voice Connector for low-cost SIP trunking from on-premises or cloud-based phone systems. Voice Connector supports inbound calling,
+outbound calling, or both. Developers can also use Voice Connector to build PSTN calling in their own applications using the Amazon
+Chime SDK or stream audio for phone call analytics and machine learning.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
