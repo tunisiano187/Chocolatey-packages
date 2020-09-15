@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = $env:ChocolateyPackageName
 $url            = 'https://annystudio.com/jcpicker.zip'
-$checksum       = 'a8242605238dd16adfdff4fb0ca2b8a79072b147b109ad5dfed7e7ef6f0f503b'
+$checksum       = 'a9fbfd326c40e67954178fd3aa04039d6003c751b37bb4754daee9b9588a9b8f'
 $checksumType   = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
