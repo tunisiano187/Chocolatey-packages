@@ -1,7 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/dogecoin.portable?color=green&label=dogecoin.portable)](https://chocolatey.org/packages/dogecoin.portable) [![](https://img.shields.io/chocolatey/dt/dogecoin.portable)](https://chocolatey.org/packages/dogecoin.portable)
 
 ## Duplicati.portable
-![Screenshot of Duplicati](http://www.duplicati.com/images/news/2016-03-20-New-UI.jpg)
 
 Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers. It works with:
 
