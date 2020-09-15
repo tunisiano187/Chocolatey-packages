@@ -30,13 +30,13 @@ function Search-Issues {
 
     $result = Invoke-Api -url $apiUrls.issue_search_url -parameters @{ query = $query }
 
-    return $result.items | % {
+    return $result.items | ForEach-Object {
         $item = [IssueData]::new()
-        $item.assignees = $_.assignes | % login
+        $item.assignees = $_.assignes | ForEach-Object login
         $item.body = $_.body
         $item.html_url = $_.html_url
         $item.id = $_.id
-        $item.labels = $_.labels | % name
+        $item.labels = $_.labels | ForEach-Object name
         $item.number = $_.number
         $item.state = $_.state
         $item.title = $_.title
