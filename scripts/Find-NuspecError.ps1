@@ -29,6 +29,10 @@ function Find-NuspecError {
         If(!($content.package.metadata.packageSourceUrl)) {
             throw "$($nuspec.Name): missing <packageSourceUrl>.</packageSourceUrl>"
         }
+
+        If($content.package.metadata.Description -contains " est ") {
+            throw "$($nuspec.Name): Description in French should be in english"
+        }
     }
 }
 
