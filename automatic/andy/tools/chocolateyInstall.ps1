@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
-$silentArgs     = '/S'
+$silentArgs     = '/quiet'
 $url            = 'https://sdl.adaware.com/?bundleid=AR001&savename=Andy_47.260_1096_26_x86.exe'
 $checksum       = ''
 $checksumType   = ''
@@ -10,13 +10,33 @@ $checksum64     = ''
 $checksumType64 = ''
 $validExitCodes = @(0)
 
-Install-ChocolateyPackage -PackageName "$packageName" `
-                          -FileType "$installerType" `
-                          -SilentArgs "$silentArgs" `
-                          -Url "$url" `
-                          -Url64 "$url64" `
-                          -ValidExitCodes $validExitCodes `
-                          -Checksum "$checksum" `
-                          -ChecksumType "$checksumType" `
-                          -Checksum64 "$checksum64" `
-                          -ChecksumType64 "$checksumType64"
+$extractDir   = "$toolsDir\extracted"
+$fileLocation = "$extractDir\Carrier.exe"
+
+$packageArgs = @{
+    packageName   = $packageName
+    unzipLocation = $extractDir
+    fileType      = 'ZIP'
+    url           = $url
+    checksum      = $checksum
+    checksumType  = $checksumType
+    url64bit      = $url64
+    checksum64    = $checksum64
+    checksumType64= $checksumType64
+  }
+
+  Install-ChocolateyZipPackage @packageArgs
+
+  $packageArgs = @{
+    packageName    = $packageName
+    fileType       = $installerType
+    file           = $fileLocation
+    silentArgs     = $silentArgs
+    validExitCodes = $validExitCodes
+    softwareName   = 'uTorrent*'
+  }
+
+  Install-ChocolateyPackage @packageArgs
+
+  Start-Sleep -s 10
+  Remove-Item "$extractDir" -Recurse -ErrorAction SilentlyContinue | Out-Null
