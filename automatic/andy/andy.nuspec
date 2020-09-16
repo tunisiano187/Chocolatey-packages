@@ -4,7 +4,7 @@
   <metadata>
     <id>andy</id>
     <title>Andy</title>
-    <version>47.260.1096.26</version>
+    <version>47.260.109.26</version>
     <authors>Andy OS Inc</authors>
     <owners>tunisiano</owners>
     <summary>Run Android apps on desktop</summary>
@@ -60,7 +60,6 @@ https://www.facebook.com/groups/AndySupport/
     </releaseNotes>
     <dependencies>
       <dependency id="virtualbox" version="6.1.12" />
-      <dependency id="autohotkey.portable" version="1.1.15.00" />
     </dependencies>
   </metadata>
   <files>
