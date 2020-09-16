@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Continue';
 
-Install-Module psgithubsearch
+Install-Module psgithubsearch -ErrorAction SilentlyContinue
 Import-Module psgithubsearch
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
@@ -52,14 +52,5 @@ if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repos
     }
     git add -u :/tools/Check/
     git commit -m "Package check $search"
-    Write-Output "Search the next package to import"
-    $search = (Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "ToCreateManualy" | Sort-Object -Property Number).Title.split('(|)')[1]
-    $source = Join-Path $PSScriptRoot "automatic/$search"
-    if(Test-Path "/automatic/$search/") {
-        Write-Warning "Package in the folder, the package $search needs to be finished and the issue closed"
-    } else {
-        #git add :/automatic/$search/
-        #git commit -m "Package $search downloaded"
-    }
     git push origin master
 }
