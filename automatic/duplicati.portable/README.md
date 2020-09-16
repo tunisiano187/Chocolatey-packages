@@ -19,7 +19,7 @@ Duplicati is a free, open source, backup client that securely stores encrypted, 
 
 Duplicati is licensed under LGPL and available for Windows, OSX and Linux (.NET 4.5+ or Mono required).
 
-###Features
+### Features
 
 * Duplicati uses AES-256 encryption (or GNU Privacy Guard) to secure all data before it is uploaded.
 * Duplicati uploads a full backup initially and stores smaller, incremental updates afterwards to save bandwidth and storage space.
@@ -31,27 +31,27 @@ Duplicati is licensed under LGPL and available for Windows, OSX and Linux (.NET 
 * Duplicati can make proper backups of opened or locked files using the Volume Snapshot Service (VSS) under Windows or the Logical Volume Manager (LVM) under Linux. This allows Duplicati to back up the Microsoft Outlook PST file while Outlook is running.
 * Filters, deletion rules, transfer and bandwidth options, etc
 
-###Many Backends
+### Many Backends
 Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive " S3, Google Drive, box.com, Mega, hubiC and many others.
 
 
-###Features
+### Features
 Backup files and folders with strong AES-256 encryption. Save space with incremental backups and data deduplication. Run backups on any machine through the web-based interface or via command line interface. Duplicati has a built-in scheduler and auto-updater.
 
 
-###Free software
+### Free software
 Duplicati is free software and open source. You can use Duplicati for free even for commercial purposes. Source code is licensed under LGPL. Duplicati runs under Windows, Linux, MacOS. It requires .NET 4.5 or Mono.
 
 
-###Strong encryption
+### Strong encryption
 Duplicati uses strong AES-256 encryption to protect your privacy. You can also use GPG to encrypt your backup.
 
 
-###Built for online
+### Built for online
 Duplicati was designed for online backups from scratch. It is not only data efficient but also handles network issues nicely. E.g. interrupted backups can be resumed and Duplicati tests the content of backups regularly. That way broken backups on corrupt storage systems can be detected before it’s too late.
 
 
-###Web-based user interface
+### Web-based user interface
 Duplicati is configured by a web interface that runs in any browser (even mobile) and can be accessed - if you like - from anywhere. This also allows to run Duplicati on headless machines like a NAS (network attached storage).	
 
 
