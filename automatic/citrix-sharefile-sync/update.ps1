@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
+$releases = 'https://dl.sharefile.com/sync2win'
 
 function global:au_SearchReplace {
 	@{
@@ -17,13 +17,12 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$urls=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
 	$url32 = "https:$($urls[0])"
-	$url64 = "https:$($urls[1])"
 
     $version = $url32.split('?')[0].split('v')[-1].replace('.msi','')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 
-	Invoke-WebRequest -Uri 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html' -OutFile "$env:TEMP\sharefile.html"
+	#Invoke-WebRequest -Uri 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html' -OutFile "$env:TEMP\sharefile.html"
 	return $Latest
 }
 
