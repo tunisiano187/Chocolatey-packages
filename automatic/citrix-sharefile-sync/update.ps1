@@ -26,4 +26,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update -checksumfor 32 -NoCheckChocoVersion
