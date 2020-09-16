@@ -20,7 +20,7 @@ function global:au_GetLatest {
 
     $version = $url32.split('?')[0].split('v')[-1].replace('.msi','')
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version }
 
 	#Invoke-WebRequest -Uri 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html' -OutFile "$env:TEMP\sharefile.html"
 	return $Latest
