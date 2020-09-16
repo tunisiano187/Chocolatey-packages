@@ -151,6 +151,8 @@ build_script:
     scripts/ListPackages.ps1
     Write-host "Check broken package"
     tools/looknewer.ps1
+    Write-Host "Downloading next issue's package"
+    scripts/Find-nextissue.ps1
     Write-Host "updating packages"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
