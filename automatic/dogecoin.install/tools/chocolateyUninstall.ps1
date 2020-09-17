@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$ErrorActionPreference = 'Stop'
+$packageName = '$env:ChocolateyPackageName'
 $packageSearch = "Dogecoin Core"
 $installerType = 'exe'
 $silentArgs = '/S'

@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$packageName = '$env:ChocolateyPackageName'
 $installerType = 'exe'
 $silentArgs = '/S'
 $url = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.2/dogecoin-1.14.2-win32-setup-unsigned.exe'

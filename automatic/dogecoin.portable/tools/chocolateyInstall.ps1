@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$packageName = '$env:ChocolateyPackageName'
 $url = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.2/dogecoin-1.14.2-win32.zip'
 $checksum = '4851613ca6677030acd1a85afce5c7544f3fdc000fd4be219afc570de1e32bc6'
 $checksumType = 'sha256'
