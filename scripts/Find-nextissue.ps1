@@ -13,6 +13,9 @@ $folder = Join-Path $PSScriptRoot "../automatic/$search"
 if(Test-Path $folder) {
     Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
 } else {
-    #git add :/automatic/$search/
-    #git commit -m "Package $search downloaded"
+    $script = Join-Path $PSScriptRoot "Get-Package.ps1"
+    . $script $search
+    git add :/automatic/$search/
+    git commit -m "Package $search downloaded"
+    git push
 }
