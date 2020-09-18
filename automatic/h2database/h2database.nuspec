@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>h2database</id>
-    <version>1.4.0</version>
+    <version>1.4.200</version>
     <title>H2 Database Engine</title>
     <authors>Thomas Mueller</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://www.h2database.com/html/license.html</licenseUrl>
     <projectUrl>http://www.h2database.com/</projectUrl>
-    <packageSourceUrl>.</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/h2database</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b04bdba45ec57194259f93c96ee7fc9bfad58f1a/icons/h2database.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description><![CDATA[## H2Database
