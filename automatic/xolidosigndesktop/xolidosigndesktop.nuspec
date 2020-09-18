@@ -3,15 +3,23 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xolidosigndesktop</id>
-    <version>2.2.1.49</version>
+    <version>2.2.1.50</version>
     <title>Xolido Sign Desktop</title>
     <authors>Xolido</authors>
     <owners>tunisiano</owners>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/xolidosigndesktop</packageSourceUrl>
-    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/xolidosigndesktop.png</iconUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/xolidosigndesktop</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@124012c8fdfc87ffabb421e3a4f836b661aeac26/icons/xolidosigndesktop.png</iconUrl>
     <projectUrl>http://www.xolido.com/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Software to be installed in your computer being useful as a complementary tool for other apps and telematics procedures that could need PDF signed electronically with time-stamp.</description>
+    <description><![CDATA[## Xolido Sign Desktop
+Software to be installed in your computer being useful as a complementary tool for other apps 
+and telematics procedures that could need PDF signed electronically with time-stamp.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Program FREE for signing, verifying and time-stamping documents on your computer</summary>
     <releaseNotes>
 #### Package
