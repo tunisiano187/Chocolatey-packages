@@ -5,7 +5,6 @@ if(!(Test-Path Env:github_api_key)) {
 }
 [string]$Owner = "tunisiano187"
 [string]$Repository = "Chocolatey-packages"
-$UserToken = $env:github_api_key
 
 Write-Output "Search the next package to import"
 $search = (Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "ToCreateManualy" | Sort-Object -Property Number).Title.split('(|)')[1]
@@ -15,7 +14,7 @@ if(Test-Path $folder) {
 } else {
     $script = Join-Path $PSScriptRoot "Get-Package.ps1"
     . $script $search
-    git add :/automatic/$search/
+    git add :/automatic/$search
     git commit -m "Package $search downloaded"
     git push
 }
