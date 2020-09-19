@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version.trim }
 	return $Latest
 }
 
