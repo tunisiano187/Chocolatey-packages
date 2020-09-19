@@ -16,4 +16,7 @@ $packageArgs		        = @{
 	silentArgs                = '/s'
 }
 
+Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\*.exe"
+Get-ChildItem -Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) -Directory -Exclude "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\tools"
+
 Install-ChocolateyZipPackage @packageArgs
