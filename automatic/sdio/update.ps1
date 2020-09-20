@@ -35,7 +35,7 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $title = $download_page.Links | ? href -match '/download' | % title | select -First 1 # /SDIO_0.6.0.558.zip
+    $title = $download_page.Links | Where-Object href -match '/download' | ForEach-Object title | Select-Object -First 1 # /SDIO_0.6.0.558.zip
     $version = [regex]::match($title, '[a-zA-Z_]*([\d\.]*)\.zip').Groups[1].Value # 0.6.0.558
     $baseVersion = $version.split('.')[-1] # 558
 
@@ -50,5 +50,5 @@ try {
     update -ChecksumFor 32
 } catch {
     $ignore = "Unable to connect to the remote server"
-    if ($_ -match $ignore) { Write-Host $ignore; 'ignore' } else { throw $_ }
+    if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
 }
