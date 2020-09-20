@@ -21,19 +21,19 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scite</packageSourceUrl>
-    <projectUrl>http://www.scintilla.org/SciTEDownload.html</projectUrl>
+    <projectUrl>https://www.scintilla.org/SciTEDownload.html</projectUrl>
     <projectSourceUrl>https://sourceforge.net/p/scintilla/code</projectSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/scintilla/_list/tickets</bugTrackerUrl>
-    <docsUrl>http://www.scintilla.org/SciTEDoc.html</docsUrl>
-    <mailingListUrl>http://groups.google.com/group/scite-interest</mailingListUrl>
+    <docsUrl>https://www.scintilla.org/SciTEDoc.html</docsUrl>
+    <mailingListUrl>https://groups.google.com/g/scite-interest</mailingListUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53a069fca4226175a4b2f6d0aa29a6ec98f9f193/icons/scite.png</iconUrl>
     <tags>text editor scintilla admin</tags>
     <copyright>© 1998 Neil Hodgson</copyright>
-    <licenseUrl>http://www.scintilla.org/License.txt</licenseUrl>
+    <licenseUrl>https://www.scintilla.org/License.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Program
-* [Changelog](http://www.scintilla.org/ScintillaHistory.html)
+* [Changelog](https://www.scintilla.org/ScintillaHistory.html)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

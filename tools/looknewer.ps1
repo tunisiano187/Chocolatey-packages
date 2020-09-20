@@ -17,12 +17,19 @@ if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
     Write-Warning "Not checking for broken packages"
     exit 0;
 }
-$source = Join-Path $PSScriptRoot "Check/list.txt"
+
+$ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
+if($ToDo){
+    $search = $ToDo.Title.split(' ')[-1]
+} else {
+    $source = Join-Path $PSScriptRoot "Check/list.txt"
+    $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
+}
+
 Install-PackageProvider -name winget -Force
 . $PSScriptRoot\..\scripts\New-Githubissue.ps1
 
-if((Test-Path $source) -and (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
-    $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
+if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
         if($winout = ($(Find-Package $search).Version)) {
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
