@@ -56,10 +56,15 @@ param(
         if($nuspec.package.metadata.iconUrl) {
             Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
         }
+        $packagesourceurl = $($nuspec.package.metadata.packageSourceUrl).split('/')[3]
         if($nuspec.package.metadata.packageSourceUrl -and $nuspec.package.metadata.packageSourceUrl -match $packageName) {
             if($nuspec.package.metadata.packageSourceUrl -match 'github' -or $nuspec.package.metadata.packageSourceUrl -match 'gitlab') {
-                $readmelink = (Find-GitHubCode -user $($nuspec.package.metadata.packageSourceUrl.split('/')[3]) -Extension 'md' -Keywords $packageName | Where-Object {$_ -imatch 'readme'}).html_url.replace('blob','raw')
-                Invoke-WebRequest -Uri $readmelink -OutFile "$folder\$packageName\ReadMe.md"
+                $readmelink = (Find-GitHubCode -user $packagesourceurl -Extension 'md' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'readme'}).html_url.replace('blob','raw')
+                try {
+                    Invoke-WebRequest -Uri $readmelink -OutFile "$folder\$packageName\ReadMe.md" -ErrorAction SilentlyContinue
+                } catch {
+                    Write-Output "No Readme fount in $packagesourceurl"
+                }
             }
         }
     }
