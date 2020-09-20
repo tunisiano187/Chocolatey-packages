@@ -6,11 +6,11 @@ $releases = 'https://cdist2.perforce.com/perforce/'
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-			"(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+			"(^[$]url64\s*=\s*)('.*')"      	= "`$1'$($Latest.URL64)'"
+			"(^[$]checksum64\s*=\s*)('.*')" 	= "`$1'$($Latest.Checksum64)'"
 			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
 	}
@@ -34,6 +34,9 @@ function global:au_GetLatest {
 				$url64 = "https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe"
 
 				$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
+				if($version -eq '2020.2')  {
+					$version = "2020.2.$date"
+				}
 			}
 		}
 		catch {
