@@ -66,5 +66,6 @@ _Since `r558` all application data, including downloaded drivers, is stored unde
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

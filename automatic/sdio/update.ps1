@@ -13,7 +13,7 @@ function global:au_SearchReplace {
         }
 
         ".\legal\VERIFICATION.txt" = @{
-            "(^[$]url\s*=\s*)('.*')"     = "`$1'$($Latest.URL32)'"
+          "(?i)(\s+x32:).*"              = "`${1} $($Latest.URL32)"
           "(?i)(checksum32:).*"          = "`${1} $($Latest.Checksum32)"
           "(?i)(Get-RemoteChecksum32).*" = "`${1} $($Latest.URL32)"
         }
