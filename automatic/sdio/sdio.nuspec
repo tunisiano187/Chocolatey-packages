@@ -7,7 +7,7 @@
     <authors>Glenn Delahoy</authors>
     <owners>Spunkie, bcurran3</owners>
     <licenseUrl>https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/resources/gpl-3.0.txt?format=raw</licenseUrl>
-    <projectUrl>http://www.snappy-driver-installer.org/</projectUrl>
+    <projectUrl>https://www.snappy-driver-installer.org/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/Spunkie/chocolatey-packages/a189a397e2b7eecd723f317bfd5473bcb4da2ecf/automatic/sdio/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description># Snappy Driver Installer Origin (SDIO)
@@ -55,9 +55,16 @@ ___
 #### _Maintainer Notes_
 _Since `r558` all application data, including downloaded drivers, is stored under `%ALLUSERSPROFILE%\SDIO`. This folder is cleaned up on uninstall._</description>
     <summary>Windows driver updater program.</summary>
-    <releaseNotes>[latest changelog.txt](https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/docs/changelog.txt?format=raw)</releaseNotes>
+    <releaseNotes>#### Software
+[latest changelog.txt](https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/docs/changelog.txt?format=raw)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <tags>snappy driver installer origin drivers updater utility portable SDI SDIO</tags>
-    <projectSourceUrl>https://www.snappy-driver-installer.org/</projectSourceUrl>
     <packageSourceUrl>https://github.com/Spunkie/chocolatey-packages/tree/master/automatic/snappy-driver-installer-origin</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
