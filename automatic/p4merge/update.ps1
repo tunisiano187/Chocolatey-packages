@@ -34,9 +34,7 @@ function global:au_GetLatest {
 				$url64 = "https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe"
 
 				$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
-				if($version -eq '2020.2.1')  {
-					$version = "2020.2.$date"
-				}
+				$version = "$version.$date"
 			}
 		}
 		catch {
