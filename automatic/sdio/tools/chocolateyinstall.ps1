@@ -1,11 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'https://snappy-driver-installer.org/downloads/SDIO_1.5.8.707.zip'
 
 $packageArgs = @{
     packageName   = 'sdio'
     unzipLocation = $toolsDir
     fileType      = 'ZIP'
-    url           = 'https://snappy-driver-installer.org/downloads/SDIO_1.5.8.707.zip'
+    url           = $url
     checksum      = 'd0558d687653cd1877f3a15a960219fef87780e46cd9a3a0efcfdef30700616f'
     checksumType  = 'sha256'
 }
