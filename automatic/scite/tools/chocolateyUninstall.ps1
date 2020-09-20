@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$ErrorActionPreference = 'Stop'
+$packageName = '$env:ChocolateyPackageName'
 $packageSearch = 'SciTE Text Editor'
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'
