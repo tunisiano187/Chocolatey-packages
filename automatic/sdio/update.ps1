@@ -35,7 +35,7 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $title = $download_page.Links | ? href -EQ '/projects/snappy-driver-installer-origin/files/latest/download?source=files' | % title | select -First 1 # /SDIO_0.6.0.558.zip
+    $title = $download_page.Links | ? href -match '/download' | % title | select -First 1 # /SDIO_0.6.0.558.zip
     $version = [regex]::match($title, '[a-zA-Z_]*([\d\.]*)\.zip').Groups[1].Value # 0.6.0.558
     $baseVersion = $version.split('.')[-1] # 558
 
