@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>sdio</id>
+    <version>1.5.8.707</version>
+    <title>Snappy Driver Installer Origin</title>
+    <authors>Glenn Delahoy</authors>
+    <owners>Spunkie, bcurran3</owners>
+    <licenseUrl>https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/resources/gpl-3.0.txt?format=raw</licenseUrl>
+    <projectUrl>http://www.snappy-driver-installer.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/Spunkie/chocolatey-packages/a189a397e2b7eecd723f317bfd5473bcb4da2ecf/automatic/sdio/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description># Snappy Driver Installer Origin (SDIO)
+
+Snappy Driver Installer Origin is a fork of Snappy Driver Installer starting at version `r541`. The old project is no longer in the hands of the original developers, is no longer open source and is not safe to use.
+
+Snappy Driver Installer Origin remains a free, open source project. Free means it costs you nothing to download and use. Free means it is free of adware, malware, backdoors, unwanted third party software or other dodgy stuff.
+
+## INSTALL MISSING DRIVERS AND UPDATE OLD DRIVERS
+
+If you've lost your driver discs, you're unable to find drivers on the manufacturer's website or Windows Update can't configure your hardware, use this tool to quickly find and install all missing drivers.
+
+If you're a PC technician, keep Snappy Driver Installer Origin on your USB flash drive or external hard drive and take it with you wherever you go. In environments with no Internet access, you can quickly get things working. No more searching for drivers after a clean install, just let Snappy Driver Installer Origin do its thing and your job will be done in no time.
+
+### Free
+No limitations. No premium features. No adware. No gotchas.
+
+### Portable
+Keep it on your USB flash drive and use it on the go. No installation is necessary.
+
+### Up-to-date
+You'll be notified about available updates and you'll be able to download them with the tool itself.
+
+### Safety
+Easy system restore point creation. 
+
+### Supports all Windows
+Compatible with all versions of Windows, including server editions. 
+
+### Customizable
+Pick any theme you like or make your own.
+
+### Accurate
+State of the art algorithms for finding the best matching drivers for any devices.
+
+### Open source
+Licensed under GNU GPL v3.0.
+
+### Multilingual
+Twenty-seven languages are supported. Your language is probably among them.	
+
+### Supports: Windows XP, Vista, 7, 8, 8.1, 10
+
+___
+#### _Maintainer Notes_
+_Since `r558` all application data, including downloaded drivers, is stored under `%ALLUSERSPROFILE%\SDIO`. This folder is cleaned up on uninstall._</description>
+    <summary>Windows driver updater program.</summary>
+    <releaseNotes>[latest changelog.txt](https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/docs/changelog.txt?format=raw)</releaseNotes>
+    <tags>snappy driver installer origin drivers updater utility portable SDI SDIO</tags>
+    <projectSourceUrl>https://www.snappy-driver-installer.org/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Spunkie/chocolatey-packages/tree/master/automatic/snappy-driver-installer-origin</packageSourceUrl>
+  </metadata>
+</package>
