@@ -67,7 +67,8 @@ param(
                 }
             }
         }
-        git add automatic/$packageName
+        $PSScriptRoot
+        git add $PSScriptRoot/../automatic/$packageName
         git commit -m "Package download $packageName"
         git push origin master
     }
