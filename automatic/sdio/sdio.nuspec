@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sdio</id>
-    <version>1.6.3.712</version>
+    <version>1.6.3.711</version>
     <title>Snappy Driver Installer Origin</title>
     <authors>Glenn Delahoy</authors>
     <owners>tunisiano</owners>
@@ -61,7 +61,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 ]]></description>
     <summary>Windows driver updater program.</summary>
     <releaseNotes>#### Software
-[latest changelog.txt](https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/docs/changelog.txt?format=raw)
+[latest changelog.txt](https://snappy-driver-installer.org/downloads/changelog.txt)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
