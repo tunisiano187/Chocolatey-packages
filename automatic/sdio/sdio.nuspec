@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sdio</id>
-    <version>1.6.3.711</version>
+    <version>1.6.3.712</version>
     <title>Snappy Driver Installer Origin</title>
     <authors>Glenn Delahoy</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/resources/gpl-3.0.txt?format=raw</licenseUrl>
     <projectUrl>https://www.snappy-driver-installer.org</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/Spunkie/chocolatey-packages/a189a397e2b7eecd723f317bfd5473bcb4da2ecf/automatic/sdio/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7e62d1d987cbebf759a96d045bbe82bc0747403e/icons/sdio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Snappy Driver Installer Origin (SDIO)
 Snappy Driver Installer Origin is a fork of Snappy Driver Installer starting at version `r541`. The old project is no longer in the hands of the original developers, is no longer open source and is not safe to use.
