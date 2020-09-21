@@ -67,7 +67,7 @@ param(
                 }
             }
         }
-        git add :/$folder/$packageName
+        git add $folder/$packageName
         git commit -m "Package download $packageName"
         git push origin master
     }
