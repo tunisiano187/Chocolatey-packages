@@ -67,6 +67,7 @@ param(
                 }
             }
         }
+        (Get-ChildItem .).FullName
         git add ./automatic/$packageName
         git commit -m "Package download $packageName"
         git push origin master
