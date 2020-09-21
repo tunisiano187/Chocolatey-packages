@@ -47,7 +47,7 @@ function global:au_GetLatest {
 }
 
 try {
-    update -ChecksumFor 32
+    update -ChecksumFor 32 -NoCheckChocoVersion
 } catch {
     $ignore = "Unable to connect to the remote server"
     if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
