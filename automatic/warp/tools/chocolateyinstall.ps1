@@ -2,8 +2,8 @@
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url64          = 'https://1.1.1.1/Cloudflare_WARP_Release-x64.msi'
-$Checksum64     = '66113df1963c502eb66948a3388bef1c99235925fda287fd928f0121e99dfc94'
-$ChecksumType64 = 'sha256'
+$Checksum64     = ''
+$ChecksumType64 = ''
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
