@@ -7,7 +7,7 @@
     <authors>Glenn Delahoy</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/resources/gpl-3.0.txt?format=raw</licenseUrl>
-    <projectUrl>https://www.snappy-driver-installer.org</projectUrl>
+    <projectUrl>https://sourceforge.net/p/snappy-driver-installer-origin</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7e62d1d987cbebf759a96d045bbe82bc0747403e/icons/sdio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Snappy Driver Installer Origin (SDIO)
