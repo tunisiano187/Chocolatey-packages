@@ -67,8 +67,7 @@ param(
                 }
             }
         }
-        get-childitem -path "$folder\$packageName"
-        git add "$folder\$packageName"
+        git add "automatic\$packageName"
         git commit -m "Package download $packageName"
         try {
             git push origin master
