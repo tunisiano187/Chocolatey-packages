@@ -59,8 +59,8 @@ param(
         $packagesourceurl = $($nuspec.package.metadata.packageSourceUrl).split('/')[3]
         if($nuspec.package.metadata.packageSourceUrl -and $nuspec.package.metadata.packageSourceUrl -match $packageName) {
             if($nuspec.package.metadata.packageSourceUrl -match 'github' -or $nuspec.package.metadata.packageSourceUrl -match 'gitlab') {
-                $readmelink = (Find-GitHubCode -user $packagesourceurl -Extension 'md' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'readme'}).html_url.replace('blob','raw')
                 try {
+                    $readmelink = (Find-GitHubCode -user $packagesourceurl -Extension 'md' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'readme'}).html_url.replace('blob','raw')
                     Invoke-WebRequest -Uri $readmelink -OutFile "$folder\$packageName\ReadMe.md" -ErrorAction SilentlyContinue
                 } catch {
                     Write-Output "No Readme fount in $packagesourceurl"
@@ -68,5 +68,9 @@ param(
             }
         }
         git commit -a -m "Package download $packageName"
-        git push origin master
+        try {
+            git push origin master
+        } catch {
+            write-output "nothing to push"
+        }
     }
