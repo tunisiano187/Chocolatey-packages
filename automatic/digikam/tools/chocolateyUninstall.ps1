@@ -11,6 +11,6 @@ $key | ForEach-Object {
   Uninstall-ChocolateyPackage -PackageName "$packageName" `
                               -FileType "$installerType" `
                               -SilentArgs "$($silentArgs)" `
-                              -File "$($_.UninstallString.Replace('"',$env:ChocolateyPackageName))" `
+                              -File "$($_.UninstallString.Replace('"',''))" `
                               -ValidExitCodes $validExitCodes
 }
