@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\usblv
 
-	$version=$(Get-Content .\usblv\readme.txt | Where-Object {$_ -match 'USBLogView'})[0].split(' ')[-1].Replace('v',$env:ChocolateyPackageName)
+	$version=$(Get-Content .\usblv\readme.txt | Where-Object {$_ -match 'USBLogView'})[0].split(' ')[-1].Replace('v','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
