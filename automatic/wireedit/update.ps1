@@ -16,11 +16,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32="https://omnipacket.com/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.msi'}).href)"
 
-    $version = $url32.Split("-")[-1].replace('.msi',$env:ChocolateyPackageName)
+    $version = $url32.Split("-")[-1].replace('.msi','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 
     return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
