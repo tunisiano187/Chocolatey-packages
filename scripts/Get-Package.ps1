@@ -71,6 +71,7 @@ param(
         foreach ($file in $toadd) {
             git add $file
         }
+        git add $iconfolder
         git commit -m "Package download $packageName"
         try {
             git push origin master
