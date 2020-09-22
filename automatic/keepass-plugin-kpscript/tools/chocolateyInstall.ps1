@@ -34,11 +34,7 @@ if (! $installPath) {
   Write-Verbose "$($packageSearch) not found in $($env:ChocolateyBinRoot)"
   throw "$($packageSearch) location could not be found."
 }
-$pluginPath = (Get-ChildItemDir $installPath\Plugin*).FullName
-if ($pluginPath.Count -eq 0) {
-  $pluginPath = Join-Path $installPath "Plugins"
-  [System.IO.Directory]::CreateDirectory($pluginPath)
-}
+$pluginPath = $installPath
 # download and extract PLGX file into Plugins dir
 Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -Url "$url" `

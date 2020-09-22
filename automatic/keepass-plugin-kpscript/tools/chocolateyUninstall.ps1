@@ -28,10 +28,7 @@ if (! $installPath) {
   Write-Verbose "$($packageSearch) not found in $($env:ChocolateyBinRoot)"
   throw "$($packageSearch) install location could not be found."
 }
-$pluginPath = (Get-ChildItemDir $installPath\Plugin*).FullName
-if ($pluginPath.Count -eq 0) {
-  throw "Plugins directory not found."
-}
+$pluginPath = $installPath
 $installFile = Join-Path $pluginPath $typName
 Remove-Item -Path $installFile `
             -Force `
