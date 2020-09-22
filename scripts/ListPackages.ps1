@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Continue';
-git checkout origin master
+#git checkout origin master
 $mdfile = "$PSScriptRoot/../Packages.md"
 Set-Content $mdfile "# Automatic Packages currently maintained here"
 Add-Content $mdfile "| Downloads | Package Name and version | Repology |"
