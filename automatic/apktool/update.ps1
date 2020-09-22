@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.jar'} | Select-Object -First 1).href
 	Write-Verbose 'Checking version'
-	$version=$($url32).split('_')[-1].replace('.jar',$env:ChocolateyPackageName)
+	$version=$($url32).split('_')[-1].replace('.jar','')
 
 	Write-Verbose "Version : $version"
 	$url32 = "https://github.com$($url32)";
