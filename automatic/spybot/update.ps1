@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://www.safer-networking.org/products/spybot-free-edition/download-mirror-1/"
@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	$url32=(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href).split('#')[0]
 
 	$version = Get-Version $url32
-	#$version=$url32.split('-')[-1].ToLower().replace('.exe','')
+	#$version=$url32.split('-')[-1].ToLower().replace('.exe',$env:ChocolateyPackageName)
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

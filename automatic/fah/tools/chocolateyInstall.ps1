@@ -1,9 +1,9 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
-$url32       = ''
-$checksum32 = ''
+$url32       = $env:ChocolateyPackageName
+$checksum32 = $env:ChocolateyPackageName
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html'
@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	$urls=$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.rel -match '.msi'}).rel)
 	$url32 = "https:$($urls[0])"
 
-	$version = $url32.split('?')[0].split('v')[-1].replace('.msi','')
+	$version = $url32.split('?')[0].split('v')[-1].replace('.msi',$env:ChocolateyPackageName)
 	$url32 = "https://dl.sharefile.com/sync2win"
 
 	$Latest = @{ URL32 = $url32; Version = $version }

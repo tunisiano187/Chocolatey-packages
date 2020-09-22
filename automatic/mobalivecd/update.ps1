@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.mobatek.net/labs_mobalivecd.html'
@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = "https://www.mobatek.net$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Sort-Object | Where-Object {$_.href -notmatch 'Sources'}).href)"
-	$version=$url32.split('/')[-1].split('v')[-1].replace('.exe','')
+	$version=$url32.split('/')[-1].split('v')[-1].replace('.exe',$env:ChocolateyPackageName)
 	if($version -eq '2.1') { $version = '2.1.0.20200909'}
 	$File	= $url32.Split('/')[-1]
 

@@ -1,9 +1,9 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url64          = 'https://1.1.1.1/Cloudflare_WARP_Release-x64.msi'
-$Checksum64     = ''
-$ChecksumType64 = ''
+$Checksum64     = $env:ChocolateyPackageName
+$ChecksumType64 = $env:ChocolateyPackageName
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

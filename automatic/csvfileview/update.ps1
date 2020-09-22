@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $url32 = 'https://www.nirsoft.net/utils/csvfileview.zip'
@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\csvfv
 
-	$version=$(Get-Content .\csvfv\readme.txt | Where-Object {$_ -match 'CSVFileView'})[0].split(' ')[-1].Replace('v','')
+	$version=$(Get-Content .\csvfv\readme.txt | Where-Object {$_ -match 'CSVFileView'})[0].split(' ')[-1].Replace('v',$env:ChocolateyPackageName)
 
 	$Latest = @{ URL32 = $url32; Version = $version}
 	return $Latest

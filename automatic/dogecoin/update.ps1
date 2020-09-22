@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://github.com/dogecoin/dogecoin/releases"
@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v','')
+	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v',$env:ChocolateyPackageName)
 
 	$Latest = @{ Version = $version }
     return $Latest

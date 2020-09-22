@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://download.kde.org/stable/digikam/'
@@ -28,7 +28,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
+	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', $env:ChocolateyPackageName)} | Measure-Object -Max).Maximum
 	$url32 = "https://download.kde.org/stable/digikam/$($version)/digiKam-$($version)-Win32.exe"
 	$url64 = "https://download.kde.org/stable/digikam/$($version)/digiKam-$($version)-Win64.exe"
 

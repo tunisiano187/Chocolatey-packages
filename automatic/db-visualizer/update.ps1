@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.dbvis.com/download'
@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$links = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'dbvis_windows'} | Where-Object  {$_.href -match 'exe'} | Where-Object {$_.href -notMatch '_jre'})).href
 
-	$version = $links[0].split('-')[-1].replace('x32_','').replace('.exe','').replace('_','.')
+	$version = $links[0].split('-')[-1].replace('x32_',$env:ChocolateyPackageName).replace('.exe',$env:ChocolateyPackageName).replace('_','.')
 
 	$url32 = $links[0]
 	$url64 = $links[1]

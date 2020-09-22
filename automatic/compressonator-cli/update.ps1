@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/GPUOpen-Tools/compressonator/releases'
@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -match 'CLI'} | Select-Object -First 1).href
-    $version = $($installer).split('_')[-1].replace('.exe','')
+    $version = $($installer).split('_')[-1].replace('.exe',$env:ChocolateyPackageName)
     $url64 = "https://github.com$($installer)";
 
     return @{ URL64 = $url64; Version = $version }

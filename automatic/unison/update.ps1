@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://github.com/bcpierce00/unison/releases"
@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32 = "https://github.com$((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where {$_ -match 'windows'} | Where-Object {$_ -match '.zip'}).href)[0])"
 
-	$version = $url32.split('/')[-2].replace('v','')
+	$version = $url32.split('/')[-2].replace('v',$env:ChocolateyPackageName)
 
     $Latest = @{ URL32 = $url32; Version = $version }
     return $Latest

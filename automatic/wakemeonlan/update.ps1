@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $url32 = 'https://www.nirsoft.net/utils/wakemeonlan.zip'
@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\wol
 
-	$version=$(Get-Content .\wol\readme.txt | Where-Object {$_ -match 'WakeMeOnLan'})[0].split(' ')[-1].Replace('v','')
+	$version=$(Get-Content .\wol\readme.txt | Where-Object {$_ -match 'WakeMeOnLan'})[0].split(' ')[-1].Replace('v',$env:ChocolateyPackageName)
 	Remove-Item -Recurse .\wol -Force
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest

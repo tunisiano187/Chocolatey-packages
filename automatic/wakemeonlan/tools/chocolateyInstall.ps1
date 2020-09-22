@@ -1,11 +1,11 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = '{{DownloadUrl}}'
 $checksum = '{{Checksum}}'
 $checksumType = 'sha256'
-#$url64 = ''
-#$checksum64 = ''
-#$checksumType64 = ''
+#$url64 = $env:ChocolateyPackageName
+#$checksum64 = $env:ChocolateyPackageName
+#$checksumType64 = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
 

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $packageSearch = "MultiBit HD"
 $installerType = 'exe'
@@ -13,5 +13,5 @@ Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentV
 | ForEach-Object { Uninstall-ChocolateyPackage -PackageName "$packageName" `
                                                -FileType "$installerType" `
                                                -SilentArgs "$($silentArgs)" `
-                                               -File "$($_.UninstallString.Replace('"',''))" `
+                                               -File "$($_.UninstallString.Replace('"',$env:ChocolateyPackageName))" `
                                                -ValidExitCodes $validExitCodes }

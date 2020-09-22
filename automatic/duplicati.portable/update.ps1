@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://github.com/duplicati/duplicati/releases"
@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $installers = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'} | Where-Object {$_ -notmatch '-signatures'} | Select-Object -First 1).href)
     $url32 = "https://github.com$($installers)"
-	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v','').split('-')[0]
+	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v',$env:ChocolateyPackageName).split('-')[0]
 
     $tags = Invoke-WebRequest 'https://api.github.com/repos/duplicati/duplicati/releases' -UseBasicParsing | ConvertFrom-Json
     foreach ($tag in $tags) {

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://omnipacket.com/downloads"
@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32="https://omnipacket.com/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.msi'}).href)"
 
-    $version = $url32.Split("-")[-1].replace('.msi','')
+    $version = $url32.Split("-")[-1].replace('.msi',$env:ChocolateyPackageName)
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 

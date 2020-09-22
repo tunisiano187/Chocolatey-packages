@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.apc.com/shop/us/en/search/body/N-1b6nbpp'
@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'exe'})[0].href
-	$version = $url32.split('_')[-1].replace('.exe','')
+	$version = $url32.split('_')[-1].replace('.exe',$env:ChocolateyPackageName)
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
