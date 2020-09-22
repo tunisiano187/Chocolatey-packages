@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'LBRY-'} | Where-Object {$_ -match '.exe'} | where {$_ -notmatch '.blockmap'}).href[0]
 	Write-Output 'Checking version'
-	#$version=$url64.split('/')[5].replace('v',$env:ChocolateyPackageName)
+	#$version=$url64.split('/')[5].replace('v','')
 	$version = Get-Version $url32
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($url32)";
