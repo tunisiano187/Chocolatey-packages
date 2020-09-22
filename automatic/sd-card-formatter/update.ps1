@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = "https://www.sdcard.org/downloads/formatter/eula_windows/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_ -match 'Accept'} | Where-Object {$_.href -match '.zip'}).href.replace('./',$env:ChocolateyPackageName))"
+	$url32 = "https://www.sdcard.org/downloads/formatter/eula_windows/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_ -match 'Accept'} | Where-Object {$_.href -match '.zip'}).href.replace('./',''))"
 	$File = "$env:TEMP/sdc.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath $env:TEMP\sdc -Force
