@@ -23,8 +23,8 @@
 param(
         [Parameter(Mandatory = $true)]
         [string]$packageName,
-        [string]$folder = '..\automatic\',
-        [string]$iconfolder = '..\icons\'
+        [string]$folder = 'automatic\',
+        [string]$iconfolder = 'icons\'
     )
     $nupkg = "$env:TEMP/$($packageName)"
 
