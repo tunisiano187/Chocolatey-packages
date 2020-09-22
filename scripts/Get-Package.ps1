@@ -27,7 +27,7 @@ param(
         [string]$iconfolder = 'icons\'
     )
     $nupkg = "$env:TEMP/$($packageName)"
-
+    $icon = "$iconfolder\$packageName"
     if(Test-Path "$folder\$packageName\") {
         $replace = Read-Host -Prompt "the package already exist in the destination folder, do you want to replace it ? Y/[N]"
         if($replace.ToLower() -eq "y") {
@@ -54,7 +54,8 @@ param(
 
         # Check if the nuspec has an iconUrl and download the icon to the right folder
         if($nuspec.package.metadata.iconUrl) {
-            Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
+            $icon = "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
+            Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile $icon
         }
         $packagesourceurl = $($nuspec.package.metadata.packageSourceUrl).split('/')[3]
         if($nuspec.package.metadata.packageSourceUrl -and $nuspec.package.metadata.packageSourceUrl -match $packageName) {
