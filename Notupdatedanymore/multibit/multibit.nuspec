@@ -6,7 +6,7 @@
     <title>MultiBit Classic</title>
     <version>{{PackageVersion}}</version>
     <authors>Jim Burton</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Simplified Payment Verification (SPV) Bitcoin desktop client</summary>
     <description>
 MultiBit is a Simplified Payment Verification (SPV) Bitcoin desktop client.

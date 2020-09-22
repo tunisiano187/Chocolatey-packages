@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/brave/brave-browser/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://brave.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cb6f31f2827885d56bfca843629de80f6a4b52cb/icons/brave-nightly.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2371ed68b8a747d6ad6cc31d9c09707648aee683/icons/brave-nightly.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Brave-nightly
 Brave is a free and open-source web browser developed by Brave Software Inc. based

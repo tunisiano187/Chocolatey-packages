@@ -55,7 +55,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <mailingListUrl>http://ibotpeaches.github.io/Apktool/#links-of-interest</mailingListUrl>
     <bugTrackerUrl>https://github.com/iBotPeaches/Apktool/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="javaruntime" version="1.8"/>
+      <dependency id="javaruntime" version="1.8" />
     </dependencies>
   </metadata>
   <files>

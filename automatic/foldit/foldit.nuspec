@@ -23,9 +23,9 @@ Foldit is an online game in which humans try to solve one of the hardest computa
 * [Facebook](https://www.facebook.com/folditgame)
 * [Twitter](https://twitter.com/foldit)
     </description>
-    <packageSourceUrl>https://gitlab.com/chocolatey-packages/automatic-updating/-/tree/master/automatic/foldit/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/foldit</packageSourceUrl>
     <projectUrl>http://fold.it/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gl/chocolatey-packages/automatic-updating/master/icons/foldit.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@5dba5b47b000277db4307163798fe03683c5412a/icons/foldit.png</iconUrl>
     <tags>citizen-science biology protein-folding game puzzle admin</tags>
     <copyright>© Center for Game Science at University of Washington</copyright>
     <licenseUrl>http://fold.it/portal/legal</licenseUrl>

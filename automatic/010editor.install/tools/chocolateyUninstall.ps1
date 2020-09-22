@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $PreProcesses = Get-Process
 function Delta-Process {
@@ -30,7 +30,7 @@ function Delta-Process {
 
 $packageName = '010editor'
 $softwareName = '010 Editor*'
-$installerType = 'EXE' 
+$installerType = 'EXE'
 
 $validExitCodes = @(0, 3010, 1605, 1614, 1641)
 if ($installerType -ne 'MSI') {
@@ -42,7 +42,7 @@ $uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
 
 if ($key.Count -eq 1) {
-  $key | % { 
+  $key | % {
     $file = "$($_.UninstallString)"
 
     if ($installerType -eq 'MSI') {

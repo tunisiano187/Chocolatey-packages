@@ -6,7 +6,7 @@
     <title>EAGLE</title>
     <version>9.6.2</version>
     <authors>CadSoft</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Easy to use, yet powerful tool for designing printed circuit boards (PCBs)</summary>
     <description>
 The EAGLE (__E__asily __A__pplicable __G__raphical __L__ayout __E__ditor) Light Edition is an easy to use, yet powerful tool for designing printed circuit boards (PCBs).
@@ -20,7 +20,7 @@ The program consists of three main modules: Layout Editor, Schematic Editor, and
 
 This software is free for non-profit usage or evaluation. If you earn (or save) money by using the Freeware version of EAGLE Light, you have to [register it](http://www.cadsoftusa.com/shop/pricing/).  For limitations, see http://www.cadsoftusa.com/download-eagle/freeware/
     </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/eagle</packageSourceUrl>
     <projectUrl>http://www.cadsoftusa.com/download-eagle/freeware/</projectUrl>
     <docsUrl>http://www.cadsoftusa.com/downloads/documentation</docsUrl>
     <mailingListUrl>http://www.cadsoftusa.com/community/</mailingListUrl>
@@ -28,7 +28,7 @@ This software is free for non-profit usage or evaluation. If you earn (or save) 
     <copyright>© 2011 CadSoft</copyright>
     <licenseUrl>http://www.cadsoftusa.com/license-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/d1e037cc7c943fda29b9067b3b1c3229d99402ff/icons/{{PackageName}}.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@900679bce97e998950d8a9766056d5f715a0d863/icons/eagle.png</iconUrl>
     <releaseNotes>
 #### Program
 * [Changelog](http://www.cadsoftusa.com/training-service/release-notes/)

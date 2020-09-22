@@ -6,7 +6,7 @@
     <title>WakeMeOnLan</title>
     <version>1.86</version>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Turn on computers on your network with Wake-on-LAN packet</summary>
     <description>
 This utility allows you to easily turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet to the remote computers.
@@ -17,9 +17,9 @@ Later, when your computers are turned off or in standby mode, you can use the st
 
 WakeMeOnLan also allows you to turn on a computer from command-line, by specifying the computer name, IP address, or the MAC address of the remote network card.
     </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wakemeonlan</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/wake_on_lan.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/wakemeonlan.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d93af7e531d05df9e326830b206bcaa167ea011c/icons/wakemeonlan.png</iconUrl>
     <tags>wol network remote magic-packet cli</tags>
     <copyright>© 2011 NirSoft</copyright>
     <licenseUrl>http://www.nirsoft.net/utils/wake_on_lan.html</licenseUrl>

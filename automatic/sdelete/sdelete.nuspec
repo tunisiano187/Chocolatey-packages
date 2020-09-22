@@ -6,7 +6,7 @@
     <title>SDelete</title>
     <version>2.02</version>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <summary>Securely overwrite sensitive files and cleanse free space</summary>
     <description>
 Securely overwrite your sensitive files and cleanse your free space of previously deleted files using this DoD-compliant secure delete program.
@@ -33,7 +33,7 @@ __-s__ or __-r__  Recurse subdirectories.
 
 __-z__  Zero free space (good for virtual disk optimization).
     </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/{{PackageName}}/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sdelete</packageSourceUrl>
     <projectUrl>https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete</projectUrl>
     <mailingListUrl>https://docs.microsoft.com/sysinternals/community</mailingListUrl>
     <tags>privacy security delete erase sysinternals cli</tags>

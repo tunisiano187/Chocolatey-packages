@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName = '{{PackageName}}'
+$ErrorActionPreference = 'Stop'
+$packageName = '$env:ChocolateyPackageName'
 $packageSearch = "Software Informer"
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
