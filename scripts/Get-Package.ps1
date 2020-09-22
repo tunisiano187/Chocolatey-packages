@@ -67,7 +67,9 @@ param(
                 }
             }
         }
-        git commit -a -m "Package download $packageName"
+        get-childitem -path "$folder\$packageName"
+        git add "$folder\$packageName"
+        git commit -m "Package download $packageName"
         try {
             git push origin master
         } catch {
