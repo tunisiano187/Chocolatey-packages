@@ -18,7 +18,7 @@
 
 #### Package
 * Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
-    <copyright>© 2007 Dominik Reichl</copyright>
+    <copyright>© Dominik Reichl</copyright>
     <tags>keepass plugin automate cli</tags>
     <projectSourceUrl>http://keepass.info/extensions/v2/KPScript-2.42.1-Source.zip</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/keepass-plugin-kpscript/</packageSourceUrl>
@@ -27,4 +27,7 @@
       <dependency id="keepass" version="[2.29, 3.0)" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
