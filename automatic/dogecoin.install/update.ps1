@@ -20,10 +20,10 @@ function global:au_GetLatest {
     $installers = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup-'} | Select-Object -First 2 | Sort-Object).href)
     $url32 = "https://github.com$($installers[1])"
 	$url64 = "https://github.com$($installers[0])"
-	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v',$env:ChocolateyPackageName)
+	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v','')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
 }
 
-update -NoCheckChocoVersion
+update
