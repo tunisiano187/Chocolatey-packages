@@ -72,7 +72,7 @@ param(
         foreach ($file in $toadd) {
             git add $file
         }
-        git add "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
+        git add ((get-childitem -path $iconfolder).FullName)
         git commit -m "Package download $packageName"
         try {
             git push origin master
