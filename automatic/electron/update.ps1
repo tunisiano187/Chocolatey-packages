@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-ia32.zip'}).href
 	$url64 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-x64.zip'}).href
 	Write-Output 'Checking version'
-	#$version=$url64.split('/')[5].replace('v',$env:ChocolateyPackageName)
+	#$version=$url64.split('/')[5].replace('v','')
 	$version = Get-Version $url64
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($url32)";
@@ -31,4 +31,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update
