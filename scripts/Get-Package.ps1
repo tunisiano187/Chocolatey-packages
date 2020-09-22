@@ -72,7 +72,10 @@ param(
         foreach ($file in $toadd) {
             git add $file
         }
-        git add ((get-childitem -path $iconfolder).FullName)
+        $toadd = (get-childitem -path $iconfolder).FullName
+        foreach ($file in $toadd) {
+            git add $file
+        }
         git commit -m "Package download $packageName"
         try {
             git push origin master
