@@ -20,7 +20,7 @@ if ($key.Count -eq 1) {
     if ($installerType -eq 'MSI') {
       $silentArgs = "$($_.PSChildName) $silentArgs"
 
-      $file = $env:ChocolateyPackageName
+      $file = ''
     }
 
     Uninstall-ChocolateyPackage -PackageName $packageName `
