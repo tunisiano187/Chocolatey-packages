@@ -15,10 +15,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'exe'})[0].href
-	$version = $url32.split('_')[-1].replace('.exe',$env:ChocolateyPackageName)
+	$version = $url32.split('_')[-1].replace('.exe','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
