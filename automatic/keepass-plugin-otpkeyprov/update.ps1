@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = "https://keepass.info/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "OtpKeyProv-"} | where {$_.href -notmatch '-source'}).href)"
-	$version = $url32.split('-')[-1].Replace('.zip',$env:ChocolateyPackageName)
+	$version = $url32.split('-')[-1].Replace('.zip','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

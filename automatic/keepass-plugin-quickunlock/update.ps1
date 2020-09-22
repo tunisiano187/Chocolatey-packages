@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = "https://github.com$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match '.plgx'})[0].href)"
-	$version = $url32.split('/')[-2].replace('v',$env:ChocolateyPackageName)
+	$version = $url32.split('/')[-2].replace('v','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

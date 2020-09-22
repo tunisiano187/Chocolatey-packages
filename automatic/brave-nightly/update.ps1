@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserSilentNightlySetup32.exe'} | Select-Object -First 1).href)
 	$url64 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserSilentNightlySetup.exe'} | Select-Object -First 1).href)
 	Write-Output 'Checking version'
-	$version = $url32.split('/')[5].replace('v',$env:ChocolateyPackageName)
+	$version = $url32.split('/')[5].replace('v','')
 	$version = "$version-nightly"
 	Write-Output "Version : $version"
 	$toolsPath = Join-Path $(Get-Location) "tools"

@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".exe"} | Where-Object {$_ -notmatch '.asc'} | Select-Object -First 2 | Sort-Object ).href
 	Write-Output 'Checking version'
-	$version=$($installer[0]).split('/')[-1].split('-')[-1].replace('.exe',$env:ChocolateyPackageName)
+	$version=$($installer[0]).split('/')[-1].split('-')[-1].replace('.exe','')
 
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($installer[1])";
@@ -30,4 +30,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update

@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = "https://www.mobatek.net$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Sort-Object | Where-Object {$_.href -notmatch 'Sources'}).href)"
-	$version=$url32.split('/')[-1].split('v')[-1].replace('.exe',$env:ChocolateyPackageName)
+	$version=$url32.split('/')[-1].split('v')[-1].replace('.exe','')
 	if($version -eq '2.1') { $version = '2.1.0.20200909'}
 	$File	= $url32.Split('/')[-1]
 
@@ -26,4 +26,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32

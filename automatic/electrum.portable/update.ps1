@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Verbose 'Check Version'
-	$version = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '/$'} | Select-Object -First 1).href.replace('/',$env:ChocolateyPackageName)
+	$version = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '/$'} | Select-Object -First 1).href.replace('/','')
 	Write-Verbose "Version : $version"
 	$url32 = "https://download.electrum.org/$($version)/electrum-$($version)-portable.exe"
 	Write-Verbose 'Getting latest LICENSE.txt file'

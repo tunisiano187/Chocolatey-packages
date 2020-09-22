@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^r\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', $env:ChocolateyPackageName)} | Sort-Object -Descending)
+	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^r\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Sort-Object -Descending)
 	foreach ($item in $version_folder) {
 		try {
 			$ver = $item.replace(',','.')

@@ -12,10 +12,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v',$env:ChocolateyPackageName)
+	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tree/v'} | Select-Object -First 1).title).replace('v','')
 
 	$Latest = @{ Version = $version }
     return $Latest
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
