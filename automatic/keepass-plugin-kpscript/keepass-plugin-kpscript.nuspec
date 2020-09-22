@@ -7,7 +7,7 @@
     <authors>Dominik Reichl</authors>
     <owners>dtgm</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>http://keepass.info/plugins.html#kpscript</projectUrl>
+    <projectUrl>https://keepass.info/plugins.html#kpscript</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>KPScript allows automating database operations in KeePass. There are two ways to automate KeePass: single command operations and KPScript files:
 
@@ -17,7 +17,8 @@
     <releaseNotes>#### Program
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>© Dominik Reichl</copyright>
     <tags>keepass plugin automate cli</tags>
     <projectSourceUrl>http://keepass.info/extensions/v2/KPScript-2.42.1-Source.zip</projectSourceUrl>
