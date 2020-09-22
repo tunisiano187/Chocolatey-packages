@@ -67,7 +67,10 @@ param(
                 }
             }
         }
-        git add "automatic\$packageName"
+        $toadd = (get-childitem -path "$folder\$packageName").FullName
+        foreach ($file in $toadd) {
+            git add $file
+        }
         git commit -m "Package download $packageName"
         try {
             git push origin master
