@@ -26,4 +26,7 @@
     <mailingListUrl>https://www.reddit.com/r/PopCornTime</mailingListUrl>
     <bugTrackerUrl>https://github.com/popcorn-official/popcorn-desktop/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
