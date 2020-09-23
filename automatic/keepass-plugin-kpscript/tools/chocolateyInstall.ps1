@@ -1,4 +1,4 @@
-# powershell v2 compatibility
+﻿# powershell v2 compatibility
 $psVer = $PSVersionTable.PSVersion.Major
 if ($psver -ge 3) {
   function Get-ChildItemDir {Get-ChildItem -Directory $args}
@@ -7,8 +7,8 @@ if ($psver -ge 3) {
 }
 $packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
-$url = 'http://keepass.info/extensions/v2/kpscript/KPScript-2.42.1.zip'
-$checksum = 'a5eb2355d249b9dd49337aee8f720d5ecc1ec33ad37ceb8a51bd3458204969e1'
+$url = 'https://keepass.info/extensions/v2/kpscript/KPScript-2.46.zip'
+$checksum = '8cc7b761557cb798d6309dbc58ab1341c5042dab9c1a0a0f244b3ab6e79ed5d2'
 $checksumType = 'sha256'
 try {
 # search registry for location of installed KeePass
@@ -43,7 +43,7 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -ChecksumType "$checksumType"
 if ( Get-Process -Name "KeePass" `
                  -ErrorAction SilentlyContinue ) {
-  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)." 
+  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)."
 } else {
   Write-Output "$($packageName) will be loaded the next time KeePass is started."
   Write-Output "Please note this plugin may require additional configuration. Look for a new entry in KeePass' Menu>Tools"

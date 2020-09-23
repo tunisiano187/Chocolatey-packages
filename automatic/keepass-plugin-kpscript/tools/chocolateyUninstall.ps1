@@ -35,7 +35,7 @@ Remove-Item -Path $installFile `
             -ErrorAction Continue
 if ( Get-Process -Name "KeePass" `
                  -ErrorAction SilentlyContinue ) {
-  Write-Warning "$($packageSearch) is running. $($packageName) will be removed at next restart of $($packageSearch)." 
+  Write-Warning "$($packageSearch) is running. $($packageName) will be removed at next restart of $($packageSearch)."
 }
 } catch {
   throw $_.Exception
