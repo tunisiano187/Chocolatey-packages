@@ -1,4 +1,4 @@
-$packageName = 'popcorntime'
+$packageName = $env:ChocolateyPackageName
 $packageSearch = 'popcorn time'
 $installerType = 'exe'
 $silentArgs = '/S'
