@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "-Setup.exe$"} | Select-Object -First 1).href)"
     $url64 = $url32.Replace('win32','win64')
-    $version = $url32.split('-')[-2]
+    $version = $url32.split('-')[-3]
     $tags = Invoke-WebRequest 'https://api.github.com/repos/popcorn-official/popcorn-desktop/releases' -UseBasicParsing | ConvertFrom-Json
     foreach ($tag in $tags) {
         if($tag.tag_name -match $version) {
