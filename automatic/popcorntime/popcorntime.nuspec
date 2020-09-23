@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>popcorntime</id>
+    <version>0.3.9</version>
+    <title>Popcorn Time</title>
+    <authors>Popcorn Time developers</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://github.com/popcorn-official/popcorn-desktop/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://popcorntime.sh/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/5df5d849c2feb6a30225bad1f7a8e27d4cd2fa65/icons/popcorntime.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Popcorn Time streams movies and TV shows from torrents.</description>
+    <summary>Stream movies and TV shows from torrents</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://ci.popcorntime.sh/job/Popcorn-Time-Desktop/changes)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© Popcorn Time developers</copyright>
+    <tags>p2p movie-catalog torrent</tags>
+    <projectSourceUrl>https://github.com/popcorn-official/popcorn-desktop</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/popcorntime/0.3.9</packageSourceUrl>
+    <docsUrl>https://popcorntime.sh/faq</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/PopCornTime</mailingListUrl>
+    <bugTrackerUrl>https://github.com/popcorn-official/popcorn-desktop/issues</bugTrackerUrl>
+  </metadata>
+</package>
