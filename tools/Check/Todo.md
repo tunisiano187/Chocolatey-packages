@@ -12,3 +12,4 @@
 |git-flow-dependencies|
 |h2database|
 |PeStudio|
+|gMKVExtractGUI|
