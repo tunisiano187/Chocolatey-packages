@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>gmkvextractgui</id>
+    <version>2.5.2</version>
+    <title>gMKVExtractGUI</title>
+    <authors>gpower2</authors>
+    <owners>boubou</owners>
+    <projectUrl>http://forum.doom9.org/showthread.php?t=170249</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/boubou/chocolatey/e8305a826b9360092ef03e1d5420824b354d1c49/packages/icons/mkvtoolnix.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Use almost 100% of mkvextract functionality (supports extraction of tracks, attachments, chapters in XML, OGM and CUE, timecodes, tags and CUE sheet)
+* Use mkvinfo to analyse mkv elements really really fast
+* Automatically detects MKVToolnix installation directory from registry
+* Doesn't require the executable to be placed inside MKVToolnix directory, but it still checks for it if registry search fails
+* Use file extensions for tracks according to CODEC_ID as defined in official mkvextract documentation
+* Use separate thread for invoking mkvextract in order to have a responsive GUI
+* Incorporate a job mode for batch extracting
+* Support Linux through MONO
+* Support all MKVToolnix versions from v4.x and newer</description>
+    <summary>gMKVExtractGUI is a GUI for mkvextract utility (part of MKVToolnix) which incorporates most functionality of mkvextract and mkvinfo utilities.</summary>
+    <releaseNotes>http://forum.doom9.org/showthread.php?t=170249</releaseNotes>
+    <tags>mkv mkvtoolnix media video splitter demuxing matroska foss</tags>
+    <projectSourceUrl>https://sourceforge.net/p/gmkvextractgui/code</projectSourceUrl>
+    <packageSourceUrl>https://github.com/boubou/chocolatey/tree/master/packages/gmkvextractgui</packageSourceUrl>
+    <bugTrackerUrl>http://forum.doom9.org/showthread.php?t=170249</bugTrackerUrl>
+    <dependencies>
+      <dependency id="mkvtoolnix" version="9.4.0" />
+    </dependencies>
+  </metadata>
+</package>
