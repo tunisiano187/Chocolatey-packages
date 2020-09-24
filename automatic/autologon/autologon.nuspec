@@ -6,8 +6,8 @@
     <title>Autologon</title>
     <authors>Mark Russinovich</authors>
     <owners>dtgm</owners>
-    <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
-    <projectUrl>http://technet.microsoft.com/sysinternals/bb963905</projectUrl>
+    <licenseUrl>https://docs.microsoft.com/fr-fr/sysinternals/license-terms</licenseUrl>
+    <projectUrl>https://docs.microsoft.com/fr-fr/sysinternals/downloads/autologon</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Autologon enables you to easily configure Windows’ built-in autologon mechanism. Instead of waiting for a user to enter their name and password, Windows uses the credentials you enter with Autologon, which are encrypted in the Registry, to log on the specified user automatically.</description>
     <summary>Bypass password screen during logon</summary>
@@ -15,10 +15,14 @@
 * [News](http://blogs.technet.com/Sysinternals)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
-    <copyright>© 2002-2011 Mark Russinovich</copyright>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <copyright>© Mark Russinovich</copyright>
     <tags>login sysinternals gui admin</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/autologon/</packageSourceUrl>
-    <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
+    <mailingListUrl>https://social.technet.microsoft.com/Forums/en-US/home?category=sysinternals&filter=alltypes&sort=lastpostdesc</mailingListUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
