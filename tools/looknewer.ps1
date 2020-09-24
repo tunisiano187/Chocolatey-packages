@@ -11,6 +11,7 @@ $UserToken = $env:github_api_key
 $Headers = @{
     Authorization='token '+$UserToken
 }
+$search = ''
 
 if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
     Write-Warning "Some issues are still open"
@@ -26,7 +27,8 @@ if($ToDo){
     if($closed.Count -gt 0) {
         $noissue = 'yes'
     }
-} else {
+}
+if($search -eq '') {
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     $check=(choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}
