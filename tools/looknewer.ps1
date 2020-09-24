@@ -27,6 +27,7 @@ if($ToDo){
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(((choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'})) {
         $noissue = 'yes'
+        throw "exists"
     }
 }
 
