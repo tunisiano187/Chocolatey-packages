@@ -64,7 +64,9 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
     } else {
         Write-Output "$search already maintained here or not broken"
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
-        Move-Item "$source-temp" $source -Force
+        if($noissue -ne 'yes') {
+            Move-Item "$source-temp" $source -Force
+        }
     }
     git add -u :/tools/Check/
     git commit -m "Package check $search"
