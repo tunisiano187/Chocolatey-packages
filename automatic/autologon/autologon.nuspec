@@ -20,7 +20,7 @@
     <copyright>© Mark Russinovich</copyright>
     <tags>login sysinternals gui admin</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/autologon/</packageSourceUrl>
-    <mailingListUrl>https://social.technet.microsoft.com/Forums/en-US/home?category=sysinternals&filter=alltypes&sort=lastpostdesc</mailingListUrl>
+    <mailingListUrl>https://social.technet.microsoft.com/Forums/en-US/home?category=sysinternals</mailingListUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
