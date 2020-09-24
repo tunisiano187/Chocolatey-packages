@@ -24,6 +24,9 @@ if($ToDo){
 } else {
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
+    if(((choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}) -eq '') {
+        $search = ''
+    }
 }
 
 Install-PackageProvider -name winget -Force
@@ -53,7 +56,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             }
         }
     } else {
-        Write-Output "$search already maintained here"
+        Write-Output "$search already maintained here or not broken"
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
     }
