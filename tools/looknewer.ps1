@@ -22,12 +22,14 @@ Start-Sleep 10;
 $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
 if($ToDo){
     $search = $ToDo.Title.split(' ')[-1]
+    if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search) {
+        $noissue = 'yes'
+    }
 } else {
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(((choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'})) {
         $noissue = 'yes'
-        throw "exists"
     }
 }
 
