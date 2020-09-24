@@ -74,5 +74,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
     }
     git add -u :/tools/Check/
     git commit -m "Package check $search"
-    git push origin master
+    if($noissue -ne 'yes') {
+        git push origin master
+    }
 }
