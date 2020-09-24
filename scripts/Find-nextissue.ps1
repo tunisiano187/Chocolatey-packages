@@ -13,5 +13,5 @@ if(Test-Path $folder) {
     Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
 } else {
     $script = Join-Path $PSScriptRoot "Get-Package.ps1"
-    . $script $search
+    . $script $search.Tolower()
 }
