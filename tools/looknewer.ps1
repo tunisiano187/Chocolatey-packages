@@ -46,18 +46,22 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) -and $noissue -ne 'yes') {
+            if($noissue -eq 'yes') {
+                Write-Output "Don't create an issue"
+            } elseif (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
-            Write-Output "$search not available on winget : noissue $noissue"
+            Write-Output "$search not available on winget"
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
-            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) -and $noissue -ne 'yes') {
+            if($noissue -eq 'yes') {
+                Write-Output "Don't create an issue"
+            } elseif (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
