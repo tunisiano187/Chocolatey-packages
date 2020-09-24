@@ -21,6 +21,9 @@ function global:au_GetLatest {
 	$File = $(Get-ChildItem autologon.exe -Recurse).FullName
 	Write-Output $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	if($version -eq '3.10') {
+		$version = '3.10.0.20200924'
+	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
