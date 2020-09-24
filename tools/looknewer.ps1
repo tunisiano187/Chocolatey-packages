@@ -17,6 +17,7 @@ if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
     Write-Warning "Not checking for broken packages"
     exit 0;
 }
+Start-Sleep 10;
 
 $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
 if($ToDo){
@@ -24,7 +25,7 @@ if($ToDo){
 } else {
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
-    if(((choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}) -eq '') {
+    if(((choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'})) {
         $search = ''
     }
 }
