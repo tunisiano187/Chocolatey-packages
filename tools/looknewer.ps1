@@ -50,7 +50,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
-            Write-Output "$search not available on winget"
+            Write-Output "$search not available on winget : noissue $noissue"
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
