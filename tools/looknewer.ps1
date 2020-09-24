@@ -72,9 +72,9 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             Move-Item "$source-temp" $source -Force
         }
     }
-    git add -u :/tools/Check/
-    git commit -m "Package check $search"
     if($noissue -ne 'yes') {
+        git add -u :/tools/Check/
+        git commit -m "Package check $search"
         git push origin master
     }
 }
