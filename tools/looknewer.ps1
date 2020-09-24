@@ -26,7 +26,7 @@ if($ToDo){
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     if(((choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'})) {
-        $search = ''
+        $noissue = 'yes'
     }
 }
 
@@ -41,7 +41,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) -and $noissue -ne 'yes') {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
@@ -52,7 +52,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
-            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            if(!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) -and $noissue -ne 'yes') {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
