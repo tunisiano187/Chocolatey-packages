@@ -25,7 +25,7 @@ if($ToDo){
     $search = $ToDo.Title.split(' ')[-1]
     $closed = Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search
     if($closed.Count -gt 0) {
-        $noissue = 'yes'
+        $search = ''
     }
 }
 if($search -eq '') {
@@ -33,7 +33,7 @@ if($search -eq '') {
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     $check=(choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}
     if($check.Count -gt 0) {
-        $noissue = 'yes'
+        $search = ''
     }
 }
 
@@ -48,9 +48,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
-            if($noissue -eq 'yes') {
-                Write-Output "Don't create an issue"
-            } elseif (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
@@ -61,20 +59,18 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($search) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
-            if($noissue -eq 'yes') {
-                Write-Output "Don't create an issue"
-            } elseif (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
     } else {
         Write-Output "$search already maintained here or not broken"
         Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
-        if($noissue -ne 'yes') {
+        if($search -ne '') {
             Move-Item "$source-temp" $source -Force
         }
     }
-    if($noissue -ne 'yes') {
+    if($search -ne '') {
         git add -u :/tools/Check/
         git commit -m "Package check $search"
         git push origin master
