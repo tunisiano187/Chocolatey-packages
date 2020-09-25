@@ -2,14 +2,23 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>autologon</id>
-    <version>3.10</version>
+    <version>3.10.0.20200924</version>
     <title>Autologon</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://docs.microsoft.com/fr-fr/sysinternals/license-terms</licenseUrl>
     <projectUrl>https://docs.microsoft.com/fr-fr/sysinternals/downloads/autologon</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Autologon enables you to easily configure Windows’ built-in autologon mechanism. Instead of waiting for a user to enter their name and password, Windows uses the credentials you enter with Autologon, which are encrypted in the Registry, to log on the specified user automatically.</description>
+    <description><![CDATA[## autologon
+Autologon enables you to easily configure Windows’ built-in autologon mechanism. Instead of waiting for
+a user to enter their name and password, Windows uses the credentials you enter with Autologon, which
+are encrypted in the Registry, to log on the specified user automatically.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Bypass password screen during logon</summary>
     <releaseNotes>#### Program
 * [News](http://blogs.technet.com/Sysinternals)
@@ -19,7 +28,7 @@
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>© Mark Russinovich</copyright>
     <tags>login sysinternals gui admin</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/autologon/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/autologon</packageSourceUrl>
     <mailingListUrl>https://social.technet.microsoft.com/Forums/en-US/home?category=sysinternals</mailingListUrl>
   </metadata>
   <files>

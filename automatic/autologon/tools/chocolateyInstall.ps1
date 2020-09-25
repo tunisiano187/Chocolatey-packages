@@ -1,6 +1,6 @@
 ﻿$packageName = 'autologon'
 $url = 'https://download.sysinternals.com/files/AutoLogon.zip'
-$checksum = '4ba5b92411a9b4b8743bdc479ead0e3f50ed2c8cb5517a49246ef57f3ebb09c7'
+$checksum = '9a477624ea6488acfbd2cefcc392fac082383a3a8db1c6d867af1b410f4731b7'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Install-ChocolateyZipPackage -PackageName "$packageName" `
