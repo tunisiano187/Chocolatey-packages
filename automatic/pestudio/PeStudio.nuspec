@@ -3,7 +3,7 @@
   <metadata>
     <id>pestudio</id>
     <title>PE Studio</title>
-    <version>9.6.0.0</version>
+    <version>9.5.0.0</version>
     <authors>Marc Ochsenmeier</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.winitor.com/</projectUrl>
@@ -11,8 +11,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>PeStudio is a malware assessment tool.</summary>
     <description>PeStudio is a utility for inspecting PE formatted binaries such as windows EXEs and DLLs.</description>
+    <summary>PeStudio is a utility for inspecting PE formatted binaries</summary>
+    <licenseUrl>https://www.winitor.com/tools/pestudio/changes.log</licenseUrl>
     <iconUrl>https://chocolatey.org/Content/Images/packageDefaultIcon.png</iconUrl>
-    <releaseNotes>#### Package
+    <releaseNotes>#### Software
+* [Changelog](https://www.winitor.com/tools/pestudio/changes.log)
+
+#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>Copyright 2012 Marc Ochsenmeier</copyright>
