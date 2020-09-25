@@ -32,3 +32,4 @@
 |gMKVExtractGUI|
 |gMKVExtractGUI|
 |gMKVExtractGUI|
+|freac.portable|
