@@ -2,11 +2,11 @@
 $packageName        = $env:ChocolateyPackageName
 $installerType      = 'exe'
 $silentArgs         = '/S'
-$url                = 'https://github.com/gramps-project/gramps/releases/download/v5.1.2/GrampsAIO-5.1.2-1_win32.exe'
-$checksum           = 'e1a8630cf1ca79b747a51c731bf41a62cee57755da1f2cbc4497220a1ef43bff'
+$url                = 'https://github.com/gramps-project/gramps/releases/download/v5.1.3/GrampsAIO-5.1.3-1_win32.exe'
+$checksum           = 'da88cb39bf75ebcbbf22c9e276e682620ddb4885ca7c04f1d3922d818095c0e3'
 $checksumType       = 'sha256'
-$url64              = 'https://github.com/gramps-project/gramps/releases/download/v5.1.2/GrampsAIO-5.1.2-1_win64.exe'
-$checksum64         = 'ee12c79b8aca928a53074f0537a1ba10f2decff678d81448aa348612f4eddb9d'
+$url64              = 'https://github.com/gramps-project/gramps/releases/download/v5.1.3/GrampsAIO-5.1.3-2_win32.exe'
+$checksum64         = 'bbe69ebcf2f35f456243081593dcc87a7175967302638bd475a3a87ab4feb785'
 $checksumType64     = 'sha256'
 $validExitCodes     = @(0)
 
