@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Select-Object -First 2 | Sort-Object ).href
 	Write-Output 'Checking version'
-	$version=$($installer[0]).split('/')[-1].split('-')[1].split('_')[0].trim()
+	$version=$($installer[0]).split('O')[-1].split('_')[0].trim().substring(1).replace('-','.')
 
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($installer[1])";
