@@ -29,7 +29,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\cports
 
-	$version=$(Get-Content .\cports\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[-1].Replace(':','')
+	$version=$(Get-Content .\cports\readme.txt | Where-Object {$_ -match '\* Version'})[0].split(' ')[-1].Replace(':','')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
