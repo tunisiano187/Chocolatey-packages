@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://sourceforge.net/projects/snappy-driver-installer-origin/files/'
+$releases = 'https://www.snappy-driver-installer.org/download/'
 
 function global:au_SearchReplace {
    @{
@@ -35,14 +35,14 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $title = $download_page.Links | Where-Object href -match '/download' | ForEach-Object title | Select-Object -First 1 # /SDIO_0.6.0.558.zip
-    $version = [regex]::match($title, '[a-zA-Z_]*([\d\.]*)\.zip').Groups[1].Value # 0.6.0.558
+    $url32 = ($download_page.Links | Where-Object href -match '.zip' | Select-Object -First 1).href
+    $version = [regex]::match($url32, '[a-zA-Z_]*([\d\.]*)\.zip').Groups[1].Value # 0.6.0.558
     $baseVersion = $version.split('.')[-1] # 558
 
     @{
         Version      = $version
         baseVersion  = $baseVersion
-        URL32        = "https://downloads.sourceforge.net/project/snappy-driver-installer-origin/SDIO_${version}.zip"
+        URL32        = $url32
     }
 }
 
