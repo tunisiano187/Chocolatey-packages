@@ -6,8 +6,8 @@
     <title>CurrPorts</title>
     <authors>Nir Sofer</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.nirsoft.net/utils/cports.html</licenseUrl>
-    <projectUrl>http://www.nirsoft.net/utils/cports.html</projectUrl>
+    <licenseUrl>https://www.nirsoft.net/utils/cports.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/cports.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/cports.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>CurrPorts is network monitoring software that displays the list of all currently opened TCP/IP and UDP ports on your local computer.
@@ -18,10 +18,17 @@ In addition, CurrPorts allows you to close unwanted TCP connections, kill the pr
 
 CurrPorts also automatically mark with pink color suspicious TCP/UDP ports owned by unidentified applications (Applications without version information and icons).</description>
     <summary>Monitoring TCP/IP network connections</summary>
-    <releaseNotes>#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
-    <copyright>© 2004 NirSoft</copyright>
+    <releaseNotes>#### Software
+* [Releases Notes](https://www.nirsoft.net/utils/cports.html)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <copyright>© NirSoft</copyright>
     <tags>tcp ip udp port monitor</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/cports/</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
