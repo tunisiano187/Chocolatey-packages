@@ -61,7 +61,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 ]]></description>
     <summary>Windows driver updater program.</summary>
     <releaseNotes>#### Software
-[latest changelog.txt](https://snappy-driver-installer.org/downloads/changelog.txt)
+[latest changes](https://snappy-driver-installer.org/downloads/changelog.txt)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
