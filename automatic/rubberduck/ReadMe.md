@@ -1,22 +1,10 @@
-# Rubberduck-Choco
+[![](https://img.shields.io/chocolatey/v/rubberduck?color=green&label=rubberduck)](https://chocolatey.org/packages/rubberduck) [![](https://img.shields.io/chocolatey/dt/rubberduck)](https://chocolatey.org/packages/rubberduck)
 
-Chocolatey package for Rubberduck.  It's on the chocolately repo now so if you
-have [chocolatey installed](https://chocolatey.org/install) already run in
-powershell,
+## Rubberduck
+Rubberduck is an add-in for the Microsoft Office Visual Basic Applications (VBA) editor (VBE).
+It features a Unit-Testing framework, a Code Explorer, Code Inspections and a TODO: item list.
 
-```
-    PS> choco install rubberduck
-```
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-## Packaging yourself
-Clone the repo then package and install
-```
-    PS> git clone https://github.com/ptwales/Rubberduck-Choco
-    PS> cd Rubberduck-Choco
-    PS> choco pack
-    PS> choco install rubberduck -s $pwd
-```
-# SOMEONE CLAIM ME
-
-I'm leaving this repo orphaned since I haven't used rubberduck in over a year
-and barely touch windows devices any more.
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
