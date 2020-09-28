@@ -2,21 +2,33 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>cports</id>
-    <version>2.60</version>
+    <version>2.62</version>
     <title>CurrPorts</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/cports.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/cports.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/cports.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e7ebe7c31e19117d4e8c047ec0e0e43c5b6fe643/icons/cports.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>CurrPorts is network monitoring software that displays the list of all currently opened TCP/IP and UDP ports on your local computer.
+    <description><![CDATA[## cports
+CurrPorts is network monitoring software that displays the list of all currently opened TCP/IP and UDP
+ports on your local computer.
 
-For each port in the list, information about the process that opened the port is also displayed, including the process name, full path of the process, version information of the process (product name, file description, and so on), the time that the process was created, and the user that created it.
+For each port in the list, information about the process that opened the port is also displayed,
+including the process name, full path of the process, version information of the process (product name,
+file description, and so on), the time that the process was created, and the user that created it.
 
-In addition, CurrPorts allows you to close unwanted TCP connections, kill the process that opened the ports, and save the TCP/UDP ports information to HTML file , XML file, or to tab-delimited text file.
+In addition, CurrPorts allows you to close unwanted TCP connections, kill the process that opened the
+ports, and save the TCP/UDP ports information to HTML file , XML file, or to tab-delimited text file.
 
-CurrPorts also automatically mark with pink color suspicious TCP/UDP ports owned by unidentified applications (Applications without version information and icons).</description>
+CurrPorts also automatically mark with pink color suspicious TCP/UDP ports owned by unidentified
+applications (Applications without version information and icons).
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Monitoring TCP/IP network connections</summary>
     <releaseNotes>#### Software
 * [Releases Notes](https://www.nirsoft.net/utils/cports.html)
@@ -26,7 +38,7 @@ CurrPorts also automatically mark with pink color suspicious TCP/UDP ports owned
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>© NirSoft</copyright>
     <tags>tcp ip udp port monitor</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/cports/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cports</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

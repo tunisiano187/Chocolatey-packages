@@ -12,7 +12,7 @@ $packageArgs = @{
     unzipLocation = $toolsDir
     fileType      = 'ZIP'
     url           = 'https://snappy-driver-installer.org/downloads/SDIO_1.6.7.717.zip'
-    checksum      = '6d83a57d498726f18f3be10e0df33b9ed928be08e173cdadc67f2ad5d81c3dfa'
+    checksum      = ''
     checksumType  = 'sha256'
 }
 
