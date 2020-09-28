@@ -21,7 +21,7 @@ function global:au_GetLatest {
         if($tag.tag_name -match $version) {
             if($tag.prerelease -match "true") {
                 $clnt = new-object System.Net.WebClient;
-                $clnt.OpenRead("https://github.com$($url32)").Close();
+                $clnt.OpenRead("$($url32)").Close();
                 $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
                 $version = "$version-pre$($date)"
             }
