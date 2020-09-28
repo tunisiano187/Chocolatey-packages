@@ -1,6 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
+$os=(Get-WMIObject win32_operatingsystem).Version.split('.')
+if(($os[0] -le 6) -or ($os[1] -le 3)) {
+    Write-output "Operating system not supported"
+    exit 0;
+}
+
 $packageArgs = @{
     packageName   = 'sdio'
     unzipLocation = $toolsDir
