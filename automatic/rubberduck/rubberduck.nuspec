@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>rubberduck</id>
+    <version>1.4.3</version>
+    <title>rubberduck VBE addin</title>
+    <authors>Mathieu Guindon, Christopher McClellan</authors>
+    <owners>cheezsteak</owners>
+    <licenseUrl>https://github.com/retailcoder/Rubberduck/blob/master/license</licenseUrl>
+    <projectUrl>https://github.com/retailcoder/Rubberduck/releases</projectUrl>
+    <iconUrl>https://camo.githubusercontent.com/95e9fbf01c8820ce762aadf56a7c002005e59a72/687474703a2f2f692e737461636b2e696d6775722e636f6d2f7461494d672e706e67</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Rubberduck is an add-in for the Microsoft Office Visual Basic Applications (VBA) editor (VBE).
+	It features a Unit-Testing framework, a Code Explorer, Code Inspections and a TODO: item list.</description>
+    <summary>VBE add-in for unit-testing and other features.</summary>
+    <releaseNotes>https://github.com/rubberduck-vba/Rubberduck/releases</releaseNotes>
+    <copyright>GPLv3</copyright>
+    <tags>rubberduck admin</tags>
+    <projectSourceUrl>https://github.com/rubberduck-vba/Rubberduck</projectSourceUrl>
+    <packageSourceUrl>https://github.com/ptwales/Rubberduck-Choco</packageSourceUrl>
+    <docsUrl>https://github.com/rubberduck-vba/Rubberduck/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/rubberduck-vba/Rubberduck/issues</bugTrackerUrl>
+  </metadata>
+</package>
