@@ -2,9 +2,12 @@
 $packageName = 'pwgen.portable'
 $url = 'https://sourceforge.net/projects/pwgen-win/files/PWGen/2.9.0/PWGen-2.9.0.zip'
 $checksum = 'cd896d32ae523f39f1bb3deae9f2af30d991f2ab454f6a3e21b20fd340be64e1'
+$url64 = 'https://sourceforge.net/projects/pwgen-win/files/PWGen/2.9.0/PWGen-2.9.0.zip'
+$checksum64 = 'cd896d32ae523f39f1bb3deae9f2af30d991f2ab454f6a3e21b20fd340be64e1'
 
 # static vars
 $checksumType = 'sha256'
+$checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # $Env:ChocolateyInstall\helpers\functions
