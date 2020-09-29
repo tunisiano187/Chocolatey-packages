@@ -22,7 +22,6 @@
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-</releaseNotes>
     <copyright>(c) 2017 Robert Kausch</copyright>
     <tags>freac audio music codec media convert extract encoder ripper foss</tags>
     <projectSourceUrl>https://www.freac.org/</projectSourceUrl>
