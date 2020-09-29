@@ -17,7 +17,12 @@
 * Portable application to install on a USB drive and run everywhere
 * Completely free and open source without any ads or other malware</description>
     <summary>fre:ac is a free audio converter and CD ripper with support for various popular formats and encoders.</summary>
-    <releaseNotes>https://www.freac.org/index.php/en/latest-news-mainmenu-2</releaseNotes>
+    <releaseNotes>#### Software https://www.freac.org/index.php/en/latest-news-mainmenu-2
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+</releaseNotes>
     <copyright>(c) 2017 Robert Kausch</copyright>
     <tags>freac audio music codec media convert extract encoder ripper foss</tags>
     <projectSourceUrl>https://www.freac.org/</projectSourceUrl>
