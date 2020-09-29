@@ -1,7 +1,7 @@
-[![](https://img.shields.io/chocolatey/v/pestudio?color=green&label=pestudio)](https://chocolatey.org/packages/pestudio) [![](https://img.shields.io/chocolatey/dt/pestudio)](https://chocolatey.org/packages/pestudio)
+[![](https://img.shields.io/chocolatey/v/popcorntime?color=green&label=popcorntime)](https://chocolatey.org/packages/popcorntime) [![](https://img.shields.io/chocolatey/dt/popcorntime)](https://chocolatey.org/packages/popcorntime)
 
-## pestudio
-PeStudio is a utility for inspecting PE formatted binaries such as windows EXEs and DLLs.
+## popcorntime
+Popcorn Time streams movies and TV shows from torrents.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
