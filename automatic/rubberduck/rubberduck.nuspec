@@ -29,7 +29,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <docsUrl>https://github.com/rubberduck-vba/Rubberduck/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/rubberduck-vba/Rubberduck/issues</bugTrackerUrl>
     <dependencies>
-	  <dependency id="dotnet4.6" version="4.6.00081.20150925" />
+	    <dependency id="dotnet4.6" version="4.6.00081.20150925" />
     </dependencies>
   </metadata>
   <files>
