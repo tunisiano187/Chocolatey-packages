@@ -23,8 +23,8 @@ Github issue: https://github.com/tunisiano187/chocolatey-packages/issues/new
 
 ### Broken packages
 
-If the package fails to install or uninstall via choco, please include debug information from the console:
-choco install PKGID --yes --verbose --debug
+If the package fails to install or uninstall via choco, please include debug information from the console:   
+```choco install PKGID --yes --verbose --debug```
 
 ### Outdated packages
 

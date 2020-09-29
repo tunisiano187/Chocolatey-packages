@@ -10,8 +10,8 @@
     <projectUrl>https://popcorntime.app/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@459d7c476f63455bdd404a7c3bf24a89a05536bb/icons/popcorntime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## pestudio
-PeStudio is a utility for inspecting PE formatted binaries such as windows EXEs and DLLs.
+    <description><![CDATA[## popcorntime
+Popcorn Time streams movies and TV shows from torrents.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)

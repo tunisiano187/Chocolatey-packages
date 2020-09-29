@@ -68,9 +68,6 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <tags>snappy driver installer origin drivers updater utility portable SDI SDIO</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sdio</packageSourceUrl>
-    <dependencies>
-      <dependency id="KB2919355" version="1.0.20160915" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

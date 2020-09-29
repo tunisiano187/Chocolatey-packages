@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/rubberduck-vba/Rubberduck/releases/latest'
+$releases = 'https://github.com/rubberduck-vba/Rubberduck/releases'
 
 function global:au_SearchReplace {
     @{
