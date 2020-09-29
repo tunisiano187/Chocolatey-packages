@@ -25,4 +25,7 @@
     <docsUrl>https://www.freac.org/index.php/en/help-aamp-support-mainmenu-36</docsUrl>
     <bugTrackerUrl>https://sourceforge.net/p/bonkenc/bugs</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
