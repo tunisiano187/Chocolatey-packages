@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "-windows.zip"} | Select-Object -First 1).href)"
     $url64 = $url32.Replace('windows.zip','windows-x64.zip')
-    $version = $url32 -split '-' | select-object -Last 1 -Skip 1
+    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     $tags = Invoke-WebRequest 'https://api.github.com/repos/enzo1982/freac/releases' -UseBasicParsing | ConvertFrom-Json
     if($tag.tag_name -match $version) {
         foreach ($tag in $tags) {
