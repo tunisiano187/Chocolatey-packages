@@ -8,7 +8,7 @@ function global:au_SearchReplace {
 		'tools/chocolateyInstall.ps1' = @{
 			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumtype\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
