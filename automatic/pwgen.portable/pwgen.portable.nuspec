@@ -28,4 +28,7 @@
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/pwgen.portable/</packageSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/pwgen-win/bugs/</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
