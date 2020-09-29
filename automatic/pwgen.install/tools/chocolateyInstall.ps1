@@ -1,5 +1,5 @@
 ﻿# generated vars
-$packageName = 'pwgen.install'
+$packageName = $env:ChocolateyPackageName
 $url = 'https://sourceforge.net/projects/pwgen-win/files/PWGen/2.9.0/PWGen-2.9.0-Setup.exe'
 $checksum = '7b363521a010d681e0da5db4d925757ff10654185119ff6c74d328df0e2853e9'
 

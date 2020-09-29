@@ -1,4 +1,4 @@
-﻿$packageName = 'pwgen.install'
+﻿$packageName = $env:ChocolateyPackageName
 $packageSearch = 'PWGen 2.9.0'
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
