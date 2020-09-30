@@ -6,7 +6,7 @@ $releases = 'https://github.com/enzo1982/freac/releases'
 function global:au_SearchReplace {
    @{
         "$($Latest.PackageName).nuspec" = @{
-            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+            "(\<dependency .+?`"$($Latest.PackageName).portable`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
     }
 }
