@@ -26,7 +26,7 @@ function global:au_GetLatest {
         }
     }
 
-    return @{ URL32 = $url32; URL64 = $url64; Version = $version }
+    return @{ URL32 = $url32; Version = $version }
 }
 
-update-package
+update-package -CheckSumFor none
