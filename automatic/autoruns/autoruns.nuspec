@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>autoruns</id>
-    <version>13.98</version>
+    <version>13.98.20200930</version>
     <title>Autoruns</title>
     <authors>Mark Russinovich,Bryce Cogswell</authors>
     <owners>tunisiano</owners>
@@ -11,7 +11,7 @@
     <projectUrl>http://technet.microsoft.com/sysinternals/bb963902</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9591d3204eb2883f49625292d386b612898057e4/icons/autoruns.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
+    <description><![CDATA[## Autoruns
 See what programs are configured to startup automatically when your system boots and you login. 
 Autoruns also shows you the full list of Registry and file locations where applications can 
 configure auto-start settings. This utility, which has the most comprehensive knowledge of 
@@ -21,6 +21,11 @@ Internet Explorer, Explorer and media players. These programs and drivers includ
 startup folder, Run, RunOnce, and other Registry keys. Autoruns reports Explorer shell 
 extensions, toolbars, browser helper objects, Winlogon notifications, auto-start services, and 
 much more. Autoruns goes way beyond other autostart utilities.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
