@@ -1,9 +1,11 @@
 $ErrorActionPreference = 'Stop';
 
-$packageName= 'nteract'
-$url        = 'https://github.com/nteract/nteract/releases/download/v0.15.0/nteract-setup-0.15.0.exe'
+$packageName  = $env:ChocolateyPackageName
+$url          = 'https://github.com/nteract/nteract/releases/download/v0.15.0/nteract-setup-0.15.0.exe'
+$checksum     = ''
+$checksumType = ''
 
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = $packageName
@@ -13,17 +15,11 @@ $packageArgs = @{
 
   softwareName  = 'nteract*'
 
-  checksum      = '6b070c19f91e74c33a2678dd842e891aff19c10f9d36cf4dbec25810ed4cee41'
-  checksumType  = 'sha256'
+  checksum      = $checksum
+  checksumType  = $checksumType
 
   silentArgs   = '/S' # NSIS
   validExitCodes= @(0)
 }
 
 Install-ChocolateyPackage @packageArgs
-
-# Install ipykernel to get started directly
-# try {
-#   Start-ChocolateyProcessAsAdmin "&python -m pip install ipykernel"
-#   Start-ChocolateyProcessAsAdmin "&python -m ipykernel install --user"    
-# } catch {}

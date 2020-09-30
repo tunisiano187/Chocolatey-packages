@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop';
 
-$packageName  = 'nteract'
+$packageName  = $env:ChocolateyPackageName
 $softwareName = 'nteract*'
 $installerType= 'EXE'
 
