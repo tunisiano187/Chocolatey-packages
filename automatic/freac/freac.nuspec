@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>freac</id>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <title>fre:ac - free audio converter</title>
     <authors>Robert Kausch</authors>
-    <owners>boubou</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://www.freac.org/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/boubou/chocolatey/d926883080e26b5253c75350e3189b6d4c37397b/packages/icons/freac.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@378c8c707459b466e4048cb98a975f8ef894a504/icons/freac.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## freac
 Features:
@@ -32,7 +32,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <copyright>(c) 2017 Robert Kausch</copyright>
     <tags>freac audio music codec media convert extract encoder ripper foss</tags>
     <projectSourceUrl>https://www.freac.org/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/boubou/chocolatey/tree/master/packages/freac</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freac</packageSourceUrl>
     <docsUrl>https://www.freac.org/index.php/en/help-aamp-support-mainmenu-36</docsUrl>
     <bugTrackerUrl>https://sourceforge.net/p/bonkenc/bugs</bugTrackerUrl>
     <dependencies>
