@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $url            = 'https://appdownload.deepl.com/windows/full/DeepLSetup.exe'
-$checksum       = '398c8c89188e551823e1a730154a79d5f5acbe03e72a61888f6f1b0390591f6d'
+$checksum       = '2cc87cee87b2b4f13ed534b0bd5b78497bcc5c62bb025786dfa4a2c389351af3'
 $checksumtype   = 'sha256'
 
 $packageArgs = @{
