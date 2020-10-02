@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mblock</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+    
+    <title>mblock (Install)</title>
+    <authors>MakeBloc</authors>
+    <projectUrl>https://mblock.makeblock.com/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/mblock.png</iconUrl>
+    <copyright>MakeBlock</copyright>
+    <tags>mblock learn codding</tags>
+    <summary>Learn to code with blocks</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>#### Package
+    * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
