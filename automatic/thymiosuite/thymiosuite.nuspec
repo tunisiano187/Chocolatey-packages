@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>thymiosuite</id>
-    <version>__REPLACE__</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-    <owners>tuni</owners>
+    <version>2.1.1</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thymiosuite</packageSourceUrl>
+    <owners>tunisiano</owners>
     
     <title>thymiosuite (Install)</title>
     <authors>Aseba Studio</authors>
@@ -15,7 +15,35 @@
     <mailingListUrl>https://www.thymio.org/forum</mailingListUrl>
     <tags>thymio suite azeba learn</tags>
     <summary>Thymio is a programable robot to learn the basics of programming.</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## Thymio Suite
+
+#### Thymio
+Thymio is a programable robot to learn the basics of programming.
+
+Program and manage your Thymio robots with 5 programming languages.
+
+
+#### Code with blocks
+Associate an event to an action and program
+Thymio to do what you want.
+
+#### Code with Scratch
+Use Scratch to create more great things,
+for example a video game.
+
+#### Code with Blockly
+Use math, logic, loops, variables and discover more programming concepts!
+
+#### Code with Text
+Discover all the possibilities of Thymio
+with the Aseba text language
+
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
