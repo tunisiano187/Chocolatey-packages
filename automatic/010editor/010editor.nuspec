@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor</id>
-    <version>10.0.2</version>
+    <version>11.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>010 Editor</title>
@@ -12,7 +12,7 @@
     <copyright>2020 SweetScape Software Inc.</copyright>
     <licenseUrl>https://www.sweetscape.com/010editor/manual/License.htm</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@493821b4e04297e9d17beb59b05053ed4e0c3c65/icons/010editor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7bbd0c30a3e20c7a3c3143ea1025a399d6251268/icons/010editor.png</iconUrl>
     <docsUrl>https://www.sweetscape.com/010editor/manual/</docsUrl>
     <tags>010editor admin editor hex file binary template script trial</tags>
     <summary>010 Editor is a hex and process editor that allows exploration of data using binary templates and interaction with data via scripts</summary>
@@ -24,7 +24,7 @@ easy, intuitive way. Includes a whole range of powerful analysis and editing too
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <releaseNotes>#### Software
 https://www.sweetscape.com/010editor/release_notes.html
@@ -34,7 +34,7 @@ https://www.sweetscape.com/010editor/release_notes.html
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="010editor.install" version="[10.0.2]" />
+      <dependency id="010editor.install" version="[11.0]" />
     </dependencies>
   </metadata>
   <files>

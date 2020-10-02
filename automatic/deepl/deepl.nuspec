@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>deepl</id>
-    <version>1.12.2</version>
+    <version>1.14.0</version>
     <title>DeepL</title>
     <authors>DeepL</authors>
     <owners>tunisiano</owners>
@@ -11,11 +11,16 @@
     <projectUrl>http://deepl.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0d343df0eafa60c0ae463f1fd68fe6a384418d43/icons/deepl-logo-blue.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
+    <description><![CDATA[## Deepl
 The World’s Best Machine Translation
 DeepL’s neural networks are able to capture even the slightest nuances and reproduce them in translation unlike 
 any other service. In blind tests pitting DeepL Translator against the competition, translators prefer DeepL's 
 results by a factor of 3:1. DeepL also achieves record-breaking performance according to scientific benchmarks.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Deepl Traductor</summary>
     <copyright>© Deepl</copyright>
