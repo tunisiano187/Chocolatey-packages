@@ -4,7 +4,7 @@
     <id>thymiosuite</id>
     <version>__REPLACE__</version>
     <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-    <owners>__REPLACE_YOUR_NAME__</owners>
+    <owners>tuni</owners>
     
     <title>thymiosuite (Install)</title>
     <authors>Aseba Studio</authors>
