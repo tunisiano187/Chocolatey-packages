@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>thymiosuite</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+    
+    <title>thymiosuite (Install)</title>
+    <authors>Aseba Studio</authors>
+    <projectUrl>https://www.thymio.org</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/thymiosuite.png</iconUrl>
+    <copyright>Aseba Studio</copyright>
+    <docsUrl>https://www.thymio.org/program/</docsUrl>
+    <mailingListUrl>https://www.thymio.org/forum</mailingListUrl>
+    <tags>thymio suite azeba learn</tags>
+    <summary>Thymio is a programable robot to learn the basics of programming.</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
