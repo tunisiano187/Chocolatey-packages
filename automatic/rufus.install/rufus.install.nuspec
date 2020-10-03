@@ -28,6 +28,7 @@ Oh, and Rufus is fast. For instance it's about twice as fast as UNetbootin, Univ
     <summary>Create bootable USB drives from Windows and Linux images</summary>
     <releaseNotes>#### Software
 https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
+
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>

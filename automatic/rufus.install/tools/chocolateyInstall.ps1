@@ -1,19 +1,25 @@
-$packageName = 'rufus.install'
-$packageVersion = '2.9'
-$url = 'http://rufus.akeo.ie/downloads/rufus-2.9.exe'
-$checksum = 'aae8a0389f853776adb43482a6a2a12712b70917'
-$checksumType = 'sha1'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "rufus.exe"
-try {
-  Get-ChocolateyWebFile -PackageName "$packageName" `
-                        -FileFullPath "$installFile" `
-                        -Url "$url" `
-                        -Checksum "$checksum" `
-                        -ChecksumType "$checksumType"
-  Set-Content -Path ("$installFile.gui") `
-              -Value $null
+$ErrorActionPreference = 'Stop';
 
-} catch {
-  throw $_.Exception
+$WindowsVersion=[Environment]::OSVersion.Version
+if ($WindowsVersion.Major -ne "10") {
+  Write-Warning "This package requires Windows 10."
+  exit 0
 }
+
+$AppxPackageName = "Rufus"
+$version        = '3.11.1678.0'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$fileName       = "$toolsDir\Rufus-3.11.appx"
+
+if ((Get-AppxPackage -name $AppxPackageName).Version -Match $version) {
+  if($env:ChocolateyForce) {
+    # you can't install the same version of an appx package, you need to remove it first
+    Write-Output "Removing already installed version first."
+    Get-AppxPackage -Name Rufus | Remove-AppxPackage
+  } else {
+    Write-Output "The $version version of Rufus is already installed. If you want to reinstall use --force"
+    return
+  }
+}
+
+Add-AppxPackage -Path $fileName
