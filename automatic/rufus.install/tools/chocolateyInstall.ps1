@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $WindowsVersion=[Environment]::OSVersion.Version
 if ($WindowsVersion.Major -ne "10") {
@@ -7,7 +7,7 @@ if ($WindowsVersion.Major -ne "10") {
 }
 
 $AppxPackageName = "Rufus"
-$version        = '3.11.1678.0'
+$version        = '3.11'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileName       = "$toolsDir\Rufus-$version.appx"
 
