@@ -37,4 +37,7 @@ https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
     <projectSourceUrl>https://github.com/pbatard/rufus/</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/rufus.portable/2.9</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
