@@ -1,6 +1,6 @@
-[![](https://img.shields.io/chocolatey/v/rufus.install?color=green&label=rufus.install)](https://chocolatey.org/packages/rufus.install) [![](https://img.shields.io/chocolatey/dt/rufus.install)](https://chocolatey.org/packages/rufus.install)
+[![](https://img.shields.io/chocolatey/v/rufus.portable?color=green&label=rufus.portable)](https://chocolatey.org/packages/rufus.portable) [![](https://img.shields.io/chocolatey/dt/rufus.portable)](https://chocolatey.org/packages/rufus.portable)
 
-## Rufus (Install)
+## Rufus (portable)
 Rufus is a utility that helps format and create bootable USB flash drives, such as USB
 keys/pendrives, memory sticks, etc.
 
