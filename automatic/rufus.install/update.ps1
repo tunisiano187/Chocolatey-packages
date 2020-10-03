@@ -16,9 +16,7 @@ function global:au_GetLatest {
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     $version = $version.replace('_','-')
 
-    $toolsDir = Join-Path '.' "tools"
-    $file = Join-Path $toolsDir "Rufus-$version.appx"
-    Invoke-WebRequest -Uri $url32 -OutFile $file
+    Invoke-WebRequest -Uri $url32 -OutFile "tools/Rufus-$version.appxbundle"
 
     return @{ URL32 = $url32; Version = $version }
 }

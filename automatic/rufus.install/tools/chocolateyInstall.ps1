@@ -9,7 +9,7 @@ if ($WindowsVersion.Major -ne "10") {
 $AppxPackageName = "Rufus"
 $version        = '3.11.1678.0'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName       = "$toolsDir\Rufus-$version.appx"
+$fileName       = "$toolsDir\Rufus-$version.appxbundle"
 
 if ((Get-AppxPackage -name $AppxPackageName).Version -Match $version) {
   if($env:ChocolateyForce) {
