@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
-$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir = join-path $toolsDir "tools"
 $releases = 'https://github.com/pbatard/rufus/releases'
 
 function global:au_SearchReplace {
@@ -16,7 +17,7 @@ function global:au_GetLatest {
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     $version = $version.replace('_','-')
 
-    Invoke-WebRequest -Uri $url32 -OutFile "tools/Rufus-$version.appxbundle"
+    Invoke-WebRequest -Uri $url32 -OutFile "tools/Rufus-$version.appx"
 
     return @{ URL32 = $url32; Version = $version }
 }
