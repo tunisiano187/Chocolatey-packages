@@ -25,9 +25,9 @@ function global:au_GetLatest {
             }
         }
     }
-    $toolsdir = Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) tools
+    $toolsdir = Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) "tools"
     $file = Join-Path $toolsdir "rufus$version.appx"
-    Invoke-WebRequest $url32 -OutFile $file
+    Invoke-WebRequest -Uri $url32 -OutFile $file
 
     return @{ URL32 = $url32; Version = $version }
 }
