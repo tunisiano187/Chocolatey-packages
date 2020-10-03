@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "rufus-"} | where-object {$_.href -match '.exe'} | Select-Object -First 1).href)"
+    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "rufus-"} | where-object {$_.href -match '.appx'} | Select-Object -First 1).href)"
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     $version = $version.replace('_','-')
 
