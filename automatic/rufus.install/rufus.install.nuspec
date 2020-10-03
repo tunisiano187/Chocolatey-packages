@@ -26,10 +26,17 @@ Oh, and Rufus is fast. For instance it's about twice as fast as UNetbootin, Univ
 [FAQ](https://github.com/pbatard/rufus/wiki/FAQ)
 [Supported ISOs](http://rufus.akeo.ie/#ref2)</description>
     <summary>Create bootable USB drives from Windows and Linux images</summary>
-    <releaseNotes>https://github.com/pbatard/rufus/blob/master/ChangeLog.txt</releaseNotes>
+    <releaseNotes>#### Software
+https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright>Akeo Consulting</copyright>
     <tags>liveusb bootdisk linux windows</tags>
     <projectSourceUrl>https://github.com/pbatard/rufus/</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/rufus.install/2.9</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
