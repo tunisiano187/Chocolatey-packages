@@ -34,7 +34,8 @@ So please tell your antivirus software to back off and mind its own business,
 or - if you can - report the executable as safe.
 ]]></description>
     <summary>A no-frills GUI for the excellent Redshift, with some optional OS hotkeys.</summary>
-    <releaseNotes>https://github.com/ltGuillaume/Redshift-Tray/releases/latest/
+    <releaseNotes>#### Software
+https://github.com/ltGuillaume/Redshift-Tray/releases/latest/
     
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>thymiosuite</id>
-    <version>2.1.0</version>
+    <version>2.1.1</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thymiosuite</packageSourceUrl>
     <owners>tunisiano</owners>
     
     <title>thymiosuite (Install)</title>
     <authors>Aseba Studio</authors>
     <projectUrl>https://www.thymio.org</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fb2850ca7983fb6b004f88c1e1798f44aa39d072/icons/thymiosuite.png</iconUrl>
     <copyright>Aseba Studio</copyright>
     <docsUrl>https://www.thymio.org/program/</docsUrl>
     <mailingListUrl>http://wiki.thymio.org/forum:start</mailingListUrl>

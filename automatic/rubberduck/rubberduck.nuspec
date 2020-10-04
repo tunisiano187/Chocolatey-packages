@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rubberduck</id>
-    <version>2.5.1.5559</version>
+    <version>2.5.1.5585</version>
     <title>rubberduck VBE addin</title>
     <authors>Mathieu Guindon, Christopher McClellan</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/retailcoder/Rubberduck/blob/master/license</licenseUrl>
     <projectUrl>https://github.com/retailcoder/Rubberduck/releases</projectUrl>
-    <iconUrl>https://camo.githubusercontent.com/95e9fbf01c8820ce762aadf56a7c002005e59a72/687474703a2f2f692e737461636b2e696d6775722e636f6d2f7461494d672e706e67</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e13e68140db6d8c98f9cd774df5e199b27d26fe5/icons/rubberduck.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Rubberduck
 Rubberduck is an add-in for the Microsoft Office Visual Basic Applications (VBA) editor (VBE).
@@ -21,7 +21,13 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>VBE add-in for unit-testing and other features.</summary>
-    <releaseNotes>https://github.com/rubberduck-vba/Rubberduck/releases</releaseNotes>
+    <releaseNotes>#### Software
+https://github.com/rubberduck-vba/Rubberduck/releases
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+
     <copyright>GPLv3</copyright>
     <tags>rubberduck admin</tags>
     <projectSourceUrl>https://github.com/rubberduck-vba/Rubberduck</projectSourceUrl>
