@@ -1,18 +1,24 @@
-﻿$packageName= 'nteract'
-$version    = '0.0.15'
+﻿$packageName= $env:ChocolateyPackageName
 
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$softwareDir= "$toolsDir/nteract"
-$softwareExe= "$softwareDir/nteract.exe"
+$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$softwareDir  = "$toolsDir/nteract"
+$softwareExe  = "$softwareDir/nteract.exe"
 
-$baseUrl    = "https://github.com/nteract/nteract/releases/download/v$version"
-$url        = "$baseUrl/nteract-0.015-win.zip"
-$checksum   = '65e13464287c27a964a9d614a2171b2dff3224db39a968cd8b1f3a0b5a8ccbc9'
+$url          = ''
+$checksum     = '65e13464287c27a964a9d614a2171b2dff3224db39a968cd8b1f3a0b5a8ccbc9'
+$checksumType = ''
 
+$packageArgs = @{
+  PackageName   = $packageName
+  Url           = $url
+  UnzipLocation = $toolsDir
+  ChecksumType  = $checksumType
+  Checksum      = $checksum
+}
 
-Install-ChocolateyZipPackage -PackageName "$packageName" -Url "$url" -UnzipLocation "$toolsDir" -ChecksumType 'sha256' -Checksum "$checksum"
+Install-ChocolateyZipPackage @packageArgs
 
-# Rename unzipped folder
+ # Rename unzipped folder
 Rename-Item "$toolsDir\win-unpacked" "$softwareDir"
 
 # Don't create shims for anything other than main exe

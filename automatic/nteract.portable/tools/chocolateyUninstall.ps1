@@ -1,6 +1,4 @@
-﻿$packageName= 'nteract'
-$version    = '0.0.15'
-
+﻿$packageName= $env:ChocolateyPackageName
 
 # Remove desktop shortcut
 $desktop = $([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))
