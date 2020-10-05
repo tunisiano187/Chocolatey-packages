@@ -3,13 +3,13 @@
   <metadata>
     <id>freeplane</id>
     <title>Freeplane</title>
-    <version>1.8.7</version>
+    <version>1.8.8</version>
     <authors>Dimitry Polivaev,Volker Börchers</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freeplane</packageSourceUrl>
     <projectUrl>http://freeplane.sourceforge.net/wiki/index.php/Home</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a359590c095a0045893a36468fdbb026b8d0b1fe/icons/freeplane.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@5367b19c77d17e27304a9351fbbe4564b7881a56/icons/freeplane.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Open source mind mapping program</summary>
     <description><![CDATA[## freeplane

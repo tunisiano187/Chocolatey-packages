@@ -4,7 +4,7 @@
   <metadata>
     <id>monero</id>
     <title>Monero Wallet</title>
-    <version>0.17.0.0</version>
+    <version>0.17.0.1</version>
     <authors>Monero Project</authors>
     <owners>tunisiano</owners>
     <summary>Monero: the secure, private, untraceable cryptocurrency</summary>
@@ -32,7 +32,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <projectUrl>http://getmonero.org/</projectUrl>
     <projectSourceUrl>https://github.com/monero-project/bitmonero</projectSourceUrl>
     <bugTrackerUrl>https://github.com/monero-project/bitmonero/issues</bugTrackerUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3377422a1efeacb74e195349e436a5c1e4d7e2da/icons/monero.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@5367b19c77d17e27304a9351fbbe4564b7881a56/icons/monero.png</iconUrl>
     <tags>xmr p2p anonymity cryptonote cryptonight cpu-mining</tags>
     <copyright>Monero Project</copyright>
     <licenseUrl>https://github.com/monero-project/bitmonero#license</licenseUrl>
