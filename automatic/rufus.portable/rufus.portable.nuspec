@@ -2,15 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rufus.portable</id>
-    <version>2.9</version>
+    <version>3.11</version>
     <title>Rufus (Portable)</title>
     <authors>Pete "Akeo" Batard</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>http://rufus.akeo.ie/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/b3aba1acb55094c68db73f87e4db4d72df664794/icons/rufus.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@591b34e009a15fd86dca8b83c1480b17bff71dd9/icons/rufus.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc.
+    <description><![CDATA[## Rufus (portable)
+Rufus is a utility that helps format and create bootable USB flash drives, such as USB
+keys/pendrives, memory sticks, etc.
 
 It can be especially useful for cases where:
 
@@ -21,10 +23,17 @@ It can be especially useful for cases where:
 
 Despite its small size, Rufus provides everything you need!
 
-Oh, and Rufus is fast. For instance it's about twice as fast as UNetbootin, Universal USB Installer or Windows 7 USB download tool, on the creation of a Windows 7 USB installation drive from an ISO. It is also marginally faster on the creation of Linux bootable USB from ISOs (http://rufus.akeo.ie/#ref1).
+Oh, and Rufus is fast. For instance it's about twice as fast as UNetbootin, Universal USB Installer
+or Windows 7 USB download tool, on the creation of a Windows 7 USB installation drive from an ISO.
+It is also marginally faster on the creation of Linux bootable USB from ISOs.
 
 [FAQ](https://github.com/pbatard/rufus/wiki/FAQ)
-[Supported ISOs](http://rufus.akeo.ie/#ref2)</description>
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Create bootable USB drives from Windows and Linux images</summary>
     <releaseNotes>#### Software
 https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
@@ -35,7 +44,7 @@ https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
     <copyright>Akeo Consulting</copyright>
     <tags>liveusb bootdisk linux windows</tags>
     <projectSourceUrl>https://github.com/pbatard/rufus/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/rufus.portable/2.9</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rufus.portable</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>deepl</id>
-    <version>1.14.0</version>
+    <version>1.14.1</version>
     <title>DeepL</title>
     <authors>DeepL</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.deepl.com/fr/pro-license#free</licenseUrl>
     <projectUrl>http://deepl.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0d343df0eafa60c0ae463f1fd68fe6a384418d43/icons/deepl-logo-blue.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d51ca2582990c5e7fed546dde230184dc05ccad/icons/deepl.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Deepl
 The World’s Best Machine Translation
