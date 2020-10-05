@@ -3,7 +3,7 @@
   <metadata>
     <id>nteract</id>
     <version>0.25.1</version>
-    <title>nteract (Install)</title>
+    <title>nteract</title>
     <authors>nteract contributors</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/nteract/nteract/blob/master/LICENSE</licenseUrl>
@@ -32,10 +32,16 @@ https://github.com/nteract/nteract/releases/
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>(c) 2017 nteract</copyright>
+    <copyright>nteract</copyright>
     <tags>nteract python jupyter notebook scientific numerical computation data analysis analytics statistics visualization plot graph chart admin foss</tags>
     <projectSourceUrl>https://github.com/nteract/nteract</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nteract</packageSourceUrl>
     <bugTrackerUrl>https://github.com/nteract/nteract/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="nteract.install" version="[0.0]" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="nteract.nuspec" />
+  </files>
 </package>
