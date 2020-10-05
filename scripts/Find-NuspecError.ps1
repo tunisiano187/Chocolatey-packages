@@ -21,7 +21,8 @@ function Find-NuspecError {
 
     foreach ($nuspec in $nuspecs) {
         [xml]$content = Get-Content $nuspec.FullName
-        If(!($content -match 'files')) {
+        $filecontent = Get-Content $nuspec.FullName
+        If(!($filecontent -match 'files')) {
             $errormsg = ': missing <files><file src="tools\**" target="tools" /></files>'
             throw "$($nuspec.Name) $($errormsg)"
         }
