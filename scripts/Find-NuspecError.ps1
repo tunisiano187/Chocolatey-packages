@@ -27,8 +27,8 @@ function Find-NuspecError {
             throw "$($nuspec.Name) $($errormsg)"
         }
 
-        If(!($content.package.metadata.packageSourceUrl)) {
-            throw "$($nuspec.Name): missing <packageSourceUrl>.</packageSourceUrl>"
+        If(!($filecontent -match 'packageSourceUrl')) {
+            throw "$($nuspec.Name): missing <packageSourceUrl></packageSourceUrl>"
         }
 
         If($content.package.metadata.description -match " est ") {
