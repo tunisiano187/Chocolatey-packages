@@ -2,15 +2,24 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nteract.portable</id>
-    <version>0.0.15</version>
+    <version>0.25.1</version>
     <title>nteract</title>
     <authors>nteract team</authors>
-    <owners>Andrei Bejenaru</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/nteract/nteract/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://nteract.io/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/abejenaru/chocolatey-packages/master/icons/nteract.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3a7701a39d17b0698b455581200dacd3ee72550c/icons/nteract.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>nteract is a literate coding environment that supports Python, R, JavaScript and other Jupyter kernels. It wraps up the best of the web based Jupyter notebook and embeds it as a desktop application that allows you to open notebooks natively on your system.</description>
+    <description><![CDATA[## nteract
+nteract is a literate coding environment that supports Python, R, JavaScript and other
+Jupyter kernels. It wraps up the best of the web based Jupyter notebook and embeds it
+as a desktop application that allows you to open notebooks natively on your system.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>nteract is a desktop application that allows you to develop rich documents that contain prose, executable code (in almost any language!), and images. Whether you're a developer, data scientist, researcher, or journalist, nteract helps you write your next code-driven story.</summary>
     <releaseNotes>#### Software
 https://github.com/nteract/nteract/releases/
@@ -21,7 +30,7 @@ https://github.com/nteract/nteract/releases/
     <copyright>2020 nteract</copyright>
     <tags>nteract python jupyter scientific numerical computation data analysis analytics statistics visualization plot graph chart admin</tags>
     <projectSourceUrl>https://github.com/nteract/nteract</projectSourceUrl>
-    <packageSourceUrl>https://github.com/abejenaru/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nteract.portable</packageSourceUrl>
     <bugTrackerUrl>https://github.com/nteract/nteract/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="python2" />
