@@ -24,7 +24,6 @@ if (!(Test-Path -path "$ENV:ALLUSERSPROFILE\SDIO")) {
 }
 
 $shortcutName    = 'Snappy Driver Installer Origin'
-$baseVersion     = '718'
 $fileName32      = 'SDIO_R718.exe'
 $fileName64      = 'SDIO_x64_R718.exe'
 $fullVersion     = '1.5.8.707'

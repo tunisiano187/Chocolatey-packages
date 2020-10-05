@@ -10,12 +10,12 @@ $machine_key     = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$r
 $machine_key6432 = "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$registryUninstallerKeyName"
 
 $file = @($local_key, $local_key6432, $machine_key, $machine_key6432) `
-    | ?{ Test-Path $_ } `
+    | Where-Object{ Test-Path $_ } `
     | Get-ItemProperty `
     | Select-Object -ExpandProperty UninstallString
 
-if ($file -eq $null -or $file -eq '') {
-    Write-Host "$packageName may have been uninstalled by other means."
+if ($null -eq $file -or $file -eq '') {
+    Write-Output "$packageName may have been uninstalled by other means."
     $shouldUninstall = $false
 }
 

@@ -11,11 +11,17 @@ $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # $Env:ChocolateyInstall\helpers\functions
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType"
+$packageArgs = @{
+    PackageName     = $packageName
+    UnzipLocation   = $toolsDir
+    Url             = $url
+    Checksum        = $checksum
+    Url64bit        = $url64
+    Checksum64      = $checksum64
+    ChecksumType64  = $checksumType64
+}
+
+Install-ChocolateyZipPackage @packageArgs
 
 # create empty sidecar so shimgen creates shim for GUI rather than console
 $installFile = Join-Path -Path $toolsDir `
