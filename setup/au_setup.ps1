@@ -15,11 +15,12 @@ Install-PackageProvider -Name NuGet -Force
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 $Env:au_version = "master"
 
-Write-Output "Buid AU"
-git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+#Write-Output "Buid AU"
+#git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
 #Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
-. "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+#. "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
+choco install -y au
 Write-Output "Build validator"
 git clone -q https://github.com/chocolatey/package-validator.git $Env:TEMP/validator
 cmd /c "%temp%/validator/build.bat"
