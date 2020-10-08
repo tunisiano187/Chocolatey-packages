@@ -38,7 +38,6 @@ function global:au_GetLatest {
     $url32 = ($download_page.Links | Where-Object href -match '.zip' | Select-Object -First 1).href
     $version = [regex]::match($url32, '[a-zA-Z_]*([\d\.]*)\.zip').Groups[1].Value # 0.6.0.558
     $baseVersion = $version.split('.')[-1] # 558
-
     @{
         Version      = $version
         baseVersion  = $baseVersion
