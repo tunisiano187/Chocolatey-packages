@@ -3,6 +3,8 @@ if ($PSVersionTable.PSVersion -lt $(New-Object System.Version("5.0.0.0"))) {
   choco install dotnet4.5.1 -y
   choco upgrade powershell-packagemanagement --ignore-dependencies -y
 }
+New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value 1 -PropertyType "DWord" -Force | Out-Null
+Write-Output "Internet explorer First run disables"
 
 $refreshenv = Get-Command refreshenv -ea SilentlyContinue
 if ($null -ne $refreshenv -and $refreshenv.CommandType -ne 'Application') {
