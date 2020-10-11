@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rufus.portable</id>
-    <version>3.10</version>
+    <version>3.9</version>
     <title>Rufus (Portable)</title>
     <authors>Pete "Akeo" Batard</authors>
     <owners>tunisiano</owners>
@@ -47,7 +47,6 @@ https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rufus.portable</packageSourceUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
-    <file exclude="tools\*.exe" />
+    <file src="tools\chocolatey.ps1" target="tools" />
   </files>
 </package>
