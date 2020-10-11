@@ -25,15 +25,17 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url64=$releases
+	$checksumType = "SHA512"
 
     $File = Join-Path $env:TEMP "warp.msi"
 	Invoke-WebRequest -Uri $url64 -OutFile $File
     Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
-    $version = Get-Version("warp")
+	$version = Get-Version("warp")
+	$checksum = Get-FileHash -Path $File -Algorithm $checksumType
 
-	$Latest = @{ URL64 = $url64; Version = $version}
+	$Latest = @{ URL64 = $url64; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumType}
 
     return $Latest
 }
 
-update -ChecksumFor 64 -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckChocoVersion
