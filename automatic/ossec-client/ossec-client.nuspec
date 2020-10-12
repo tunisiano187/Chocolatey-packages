@@ -16,4 +16,7 @@
     <copyright>Trend Micro</copyright>
     <tags>ossec hids ossec-agent</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
