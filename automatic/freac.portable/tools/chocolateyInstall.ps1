@@ -2,7 +2,7 @@
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64          = 'https://github.com/enzo1982/freac/releases'
-$chcksum64      = ''
+$checksum64     = ''
 $ChecksumType64 = ''
 
 $packageArgs = @{
