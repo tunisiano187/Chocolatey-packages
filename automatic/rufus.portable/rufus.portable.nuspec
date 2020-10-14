@@ -47,6 +47,6 @@ https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rufus.portable</packageSourceUrl>
   </metadata>
   <files>
-    <file src="tools\chocolatey.ps1" target="tools" />
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
   </files>
 </package>
