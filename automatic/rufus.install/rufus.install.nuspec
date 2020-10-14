@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rufus.install</id>
-    <version>3.11</version>
+    <version>3.12</version>
     <title>Rufus (Install appx Windows 10)</title>
     <authors>Pete "Akeo" Batard</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>http://rufus.akeo.ie/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/b3aba1acb55094c68db73f87e4db4d72df664794/icons/rufus.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@923fb43c13ab879f96b2b5018e617849451fb03b/icons/rufus.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## rufus.install
+    <description><![CDATA[## Rufus (Install)
 Rufus is a utility that helps format and create bootable USB flash drives, such as USB
 keys/pendrives, memory sticks, etc.
 
@@ -44,7 +44,7 @@ https://github.com/pbatard/rufus/blob/master/ChangeLog.txt
     <copyright>Akeo Consulting</copyright>
     <tags>liveusb bootdisk linux windows</tags>
     <projectSourceUrl>https://github.com/pbatard/rufus/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/rufus.install/2.9</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rufus.install</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

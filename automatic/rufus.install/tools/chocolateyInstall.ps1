@@ -7,18 +7,18 @@ if ($WindowsVersion.Major -ne "10") {
 }
 
 $AppxPackageName  = "Rufus"
-$version          = '3.11'
+$version          = '3.12'
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileName         = "$toolsDir\Rufus-$version.appx"
 
-# Allow package outside appstore 
+# Allow package outside appstore
 $registryPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock"
 $Name1 = "AllowAllTrustedApps"
 $value1 = "1"
 New-ItemProperty -Path $registryPath -Name $name1 -Value $value1 -PropertyType DWORD -Force
 
-$Name2 = "AllowDevelopmentWithoutDevLicense" 
-$value2 = "0" 
+$Name2 = "AllowDevelopmentWithoutDevLicense"
+$value2 = "0"
 New-ItemProperty -Path $registryPath -Name $name2 -Value $value2 -PropertyType DWORD -Force
 
 if ((Get-AppxPackage -name $AppxPackageName).Version -Match $version) {
