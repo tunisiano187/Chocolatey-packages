@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop';
- 
+
 $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
   fileType        = 'exe'
