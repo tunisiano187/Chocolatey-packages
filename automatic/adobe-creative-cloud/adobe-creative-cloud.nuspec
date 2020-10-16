@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>adobe-creative-cloud</id>
+        <version>1.0</version>
+        <title>Adobe Creative Cloud Client</title>
+        <authors>Adobe</authors>
+        <owners>Chris McGrath</owners>
+        <licenseUrl>http://www.adobe.com/legal/general-terms.html</licenseUrl>
+        <projectUrl>http://creative.adobe.com</projectUrl>
+        <iconUrl>http://mix.adobe.com/images/52909.en.icon-cc-app.256.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</description>
+        <summary>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</summary>
+        <releaseNotes />
+        <copyright>Adobe</copyright>
+        <tags>Adobe Creative Cloud</tags>
+    </metadata>
+</package>
