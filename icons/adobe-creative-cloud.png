@@ -1,0 +1,5839 @@
+
+<!DOCTYPE HTML>
+<html class="spectrum--medium" lang="en">
+    <head>
+    <title>Image Editing &amp; Composition App for iOS, Android | Adobe Photoshop Mix</title>
+    <link rel="canonical" href="https://www.adobe.com/products/mix.html"/>
+    
+
+    
+        
+        
+            <link rel="alternate" hreflang="en-IE" href="https://www.adobe.com/ie/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="de" href="https://www.adobe.com/de/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="uk-UA" href="https://www.adobe.com/ua/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-kw" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-us" href="https://www.adobe.com/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="lv-LV" href="https://www.adobe.com/lv/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-IL" href="https://www.adobe.com/il_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-eg" href="https://www.adobe.com/mena_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-IN" href="https://www.adobe.com/in/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-ae" href="https://www.adobe.com/mena_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-ZA" href="https://www.adobe.com/africa/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-MT" href="https://www.adobe.com/mt/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="nl-BE" href="https://www.adobe.com/be_nl/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-my" href="https://www.adobe.com/sea/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="nl-NL" href="https://www.adobe.com/nl/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-AU" href="https://www.adobe.com/au/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-lb" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="he-IL" href="https://www.adobe.com/il_he/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-vn" href="https://www.adobe.com/sea/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="de-CH" href="https://www.adobe.com/ch_de/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ja-JP" href="https://www.adobe.com/jp/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="hu-HU" href="https://www.adobe.com/hu/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-BE" href="https://www.adobe.com/be_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-sv" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-qa" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-gt" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en" href="https://www.adobe.com/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-cr" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-cl" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fr-CA" href="https://www.adobe.com/ca_fr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-co" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-la" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-pe" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="pl-PL" href="https://www.adobe.com/pl/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-NZ" href="https://www.adobe.com/nz/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="pt-PT" href="https://www.adobe.com/pt/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-sa" href="https://www.adobe.com/mena_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-pa" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-il" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ro-RO" href="https://www.adobe.com/ro/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fr-BE" href="https://www.adobe.com/be_fr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-eg" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ja" href="https://www.adobe.com/jp/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-sg" href="https://www.adobe.com/sea/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="it-CH" href="https://www.adobe.com/ch_it/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="et-EE" href="https://www.adobe.com/ee/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="tr-TR" href="https://www.adobe.com/tr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-ma" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fr-FR" href="https://www.adobe.com/fr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="nl" href="https://www.adobe.com/nl/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-gb" href="https://www.adobe.com/uk/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fi-FI" href="https://www.adobe.com/fi/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="nb-NO" href="https://www.adobe.com/no/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-CA" href="https://www.adobe.com/ca/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="lt-LT" href="https://www.adobe.com/lt/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-ae" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fr" href="https://www.adobe.com/fr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="sl-SI" href="https://www.adobe.com/si/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-GR" href="https://www.adobe.com/gr_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-iq" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="de-AT" href="https://www.adobe.com/at/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-kw" href="https://www.adobe.com/mena_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fr-CH" href="https://www.adobe.com/ch_fr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="bg-BG" href="https://www.adobe.com/bg/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-ec" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-th" href="https://www.adobe.com/sea/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-CY" href="https://www.adobe.com/cy_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="cs-CZ" href="https://www.adobe.com/cz/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-ph" href="https://www.adobe.com/sea/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-sa" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="de-DE" href="https://www.adobe.com/de/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="zh-TW" href="https://www.adobe.com/tw/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="zh-HK" href="https://www.adobe.com/hk_zh/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-HK" href="https://www.adobe.com/hk_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ko-KR" href="https://www.adobe.com/kr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="pt-BR" href="https://www.adobe.com/br/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="sk-SK" href="https://www.adobe.com/sk/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-ES" href="https://www.adobe.com/es/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-ve" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-jo" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-LU" href="https://www.adobe.com/lu_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-MX" href="https://www.adobe.com/mx/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="it-IT" href="https://www.adobe.com/it/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ar-om" href="https://www.adobe.com/mena_ar/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="ru-RU" href="https://www.adobe.com/ru/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="es-ar" href="https://www.adobe.com/la/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-qa" href="https://www.adobe.com/mena_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="sv-SE" href="https://www.adobe.com/se/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="da-DK" href="https://www.adobe.com/dk/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="de-LU" href="https://www.adobe.com/lu_de/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="fr-LU" href="https://www.adobe.com/lu_fr/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-dz" href="https://www.adobe.com/mena_en/products/mix.html"/>
+        
+            <link rel="alternate" hreflang="en-id" href="https://www.adobe.com/sea/products/mix.html"/>
+        
+        
+        
+            <link rel="alternate" hreflang="x-default" href="https://www.adobe.com/products/mix.html"/>
+        
+    
+
+    <script id="georouting-Head" data-geomap="{&#34;fallbackPage&#34;:&#34;index.html&#34;,&#34;currentLocale&#34;:&#34;us&#34;,&#34;locales&#34;:{&#34;de&#34;:{&#34;root&#34;:&#34;/de/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/de/&#34;},&#34;hk_zh&#34;:{&#34;root&#34;:&#34;/hk_zh/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/hk_zh/&#34;},&#34;mena_en&#34;:{&#34;root&#34;:&#34;/mena_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/mena_en/&#34;},&#34;tw&#34;:{&#34;root&#34;:&#34;/tw/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/tw/&#34;},&#34;pt&#34;:{&#34;root&#34;:&#34;/pt/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/pt/&#34;},&#34;dk&#34;:{&#34;root&#34;:&#34;/dk/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/dk/&#34;},&#34;lt&#34;:{&#34;root&#34;:&#34;/lt/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/lt/&#34;},&#34;hr&#34;:{&#34;root&#34;:&#34;/hr/&#34;,&#34;target&#34;:false,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/hr/&#34;},&#34;lv&#34;:{&#34;root&#34;:&#34;/lv/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/lv/&#34;},&#34;ua&#34;:{&#34;root&#34;:&#34;/ua/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ua/&#34;},&#34;hu&#34;:{&#34;root&#34;:&#34;/hu/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/hu/&#34;},&#34;hk_en&#34;:{&#34;root&#34;:&#34;/hk_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/hk_en/&#34;},&#34;uk&#34;:{&#34;root&#34;:&#34;/uk/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/uk/&#34;},&#34;ie&#34;:{&#34;root&#34;:&#34;/ie/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ie/&#34;},&#34;gr_en&#34;:{&#34;root&#34;:&#34;/gr_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/gr_en/&#34;},&#34;us&#34;:{&#34;root&#34;:&#34;/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/&#34;},&#34;ee&#34;:{&#34;root&#34;:&#34;/ee/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ee/&#34;},&#34;africa&#34;:{&#34;root&#34;:&#34;/africa/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/africa/&#34;},&#34;in&#34;:{&#34;root&#34;:&#34;/in/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/in/&#34;},&#34;mt&#34;:{&#34;root&#34;:&#34;/mt/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/mt/&#34;},&#34;it&#34;:{&#34;root&#34;:&#34;/it/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/it/&#34;},&#34;mx&#34;:{&#34;root&#34;:&#34;/mx/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/mx/&#34;},&#34;be_nl&#34;:{&#34;root&#34;:&#34;/be_nl/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/be_nl/&#34;},&#34;es&#34;:{&#34;root&#34;:&#34;/es/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/es/&#34;},&#34;be_en&#34;:{&#34;root&#34;:&#34;/be_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/be_en/&#34;},&#34;at&#34;:{&#34;root&#34;:&#34;/at/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/at/&#34;},&#34;au&#34;:{&#34;root&#34;:&#34;/au/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/au/&#34;},&#34;lu_en&#34;:{&#34;root&#34;:&#34;/lu_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/lu_en/&#34;},&#34;ch_de&#34;:{&#34;root&#34;:&#34;/ch_de/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ch_de/&#34;},&#34;cy_en&#34;:{&#34;root&#34;:&#34;/cy_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/cy_en/&#34;},&#34;mena_ar&#34;:{&#34;root&#34;:&#34;/mena_ar/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/mena_ar/&#34;},&#34;ro&#34;:{&#34;root&#34;:&#34;/ro/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ro/&#34;},&#34;nl&#34;:{&#34;root&#34;:&#34;/nl/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/nl/&#34;},&#34;il_en&#34;:{&#34;root&#34;:&#34;/il_en/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/il_en/&#34;},&#34;no&#34;:{&#34;root&#34;:&#34;/no/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/no/&#34;},&#34;rs&#34;:{&#34;root&#34;:&#34;/rs/&#34;,&#34;target&#34;:false,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/rs/&#34;},&#34;fi&#34;:{&#34;root&#34;:&#34;/fi/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/fi/&#34;},&#34;ru&#34;:{&#34;root&#34;:&#34;/ru/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ru/&#34;},&#34;bg&#34;:{&#34;root&#34;:&#34;/bg/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/bg/&#34;},&#34;ch_fr&#34;:{&#34;root&#34;:&#34;/ch_fr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ch_fr/&#34;},&#34;jp&#34;:{&#34;root&#34;:&#34;/jp/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/jp/&#34;},&#34;fr&#34;:{&#34;root&#34;:&#34;/fr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/fr/&#34;},&#34;nz&#34;:{&#34;root&#34;:&#34;/nz/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/nz/&#34;},&#34;sea&#34;:{&#34;root&#34;:&#34;/sea/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/sea/&#34;},&#34;br&#34;:{&#34;root&#34;:&#34;/br/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/br/&#34;},&#34;se&#34;:{&#34;root&#34;:&#34;/se/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/se/&#34;},&#34;si&#34;:{&#34;root&#34;:&#34;/si/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/si/&#34;},&#34;sk&#34;:{&#34;root&#34;:&#34;/sk/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/sk/&#34;},&#34;be_fr&#34;:{&#34;root&#34;:&#34;/be_fr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/be_fr/&#34;},&#34;mena_fr&#34;:{&#34;root&#34;:&#34;/mena_fr/&#34;,&#34;target&#34;:false,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/mena_fr/&#34;},&#34;ca&#34;:{&#34;root&#34;:&#34;/ca/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ca/&#34;},&#34;lu_de&#34;:{&#34;root&#34;:&#34;/lu_de/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/lu_de/&#34;},&#34;il_he&#34;:{&#34;root&#34;:&#34;/il_he/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/il_he/&#34;},&#34;ch_it&#34;:{&#34;root&#34;:&#34;/ch_it/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ch_it/&#34;},&#34;kr&#34;:{&#34;root&#34;:&#34;/kr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/kr/&#34;},&#34;lu_fr&#34;:{&#34;root&#34;:&#34;/lu_fr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/lu_fr/&#34;},&#34;cn&#34;:{&#34;root&#34;:&#34;/cn/&#34;,&#34;target&#34;:false,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/cn/&#34;},&#34;ca_fr&#34;:{&#34;root&#34;:&#34;/ca_fr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/ca_fr/&#34;},&#34;la&#34;:{&#34;root&#34;:&#34;/la/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/la/&#34;},&#34;cz&#34;:{&#34;root&#34;:&#34;/cz/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/cz/&#34;},&#34;pl&#34;:{&#34;root&#34;:&#34;/pl/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/pl/&#34;},&#34;tr&#34;:{&#34;root&#34;:&#34;/tr/&#34;,&#34;target&#34;:true,&#34;externalizedRoot&#34;:&#34;https://www.adobe.com/tr/&#34;}},&#34;referrers&#34;:{&#34;search.yahoo.co.jp&#34;:[&#34;jp&#34;],&#34;google.co.jp&#34;:[&#34;jp&#34;]},&#34;localeServletPath&#34;:&#34;/etc/dexter.hawks/public/localeContent&#34;,&#34;contentRootPath&#34;:&#34;/content/cc&#34;,&#34;targetPage&#34;:&#34;products/mix.html&#34;}" data-georouting-ims-country="false">
+    </script>
+    
+
+
+    
+    
+    
+<script type="text/javascript" src="/etc.hawks.dexterlibs/dexter/clientlibs/base/headIE.fp-d17e89f9398ec691b830b2cc6cab4899.js" nomodule></script>
+
+
+
+    
+    
+    <script type="text/javascript">
+        window.dexter = window.dexter || {};
+        window.dexter.Analytics = window.dexter.Analytics || {};
+        window.dexter.Analytics.language = "en_us";
+        window.dexter.Analytics.geoRegion = "us";
+    </script>
+    
+        <script>
+            window.dexter.Analytics.launchLoaded = true;
+            window.dexter.Analytics.audienceManagerEnabled = '' !== 'disabled';
+        </script>
+        
+            <script>
+                window.dexter.Analytics.environment = 'production';
+                window.marketingtech = window.marketingtech || {};
+                window.marketingtech.adobe = {
+                    target: true,
+                    audienceManager: window.dexter.Analytics.audienceManagerEnabled,
+                    launch: {
+                        property: 'global',
+                        environment: window.dexter.Analytics.environment,
+                        controlPageLoad: true
+                    },
+                    analytics: {
+                        additionalAccounts: ''
+                    }
+                };
+            </script>
+
+            
+            
+
+            <script id="AdobeLaunch" src="https://www.adobe.com/marketingtech/main.no-promise.min.js" data-seed-adobelaunch="true"></script>
+        
+    
+
+
+    
+    
+<script type="text/javascript" src="/etc.hawks.dexterlibs/dexter/clientlibs/base/head.fp-63301d27b58cb0827035d597c6da73bd.js"></script>
+
+
+
+    <link rel="icon" href="/content/dam/cc/Adobe_favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/content/dam/cc/Adobe_favicon.ico" type="image/x-icon"/>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="robots" content="noodp"/>
+    <meta http-equiv="Content-Language" lang="en-us"/>
+
+    
+    <meta name="description" content="Adobe Photoshop Mix gives you powerful, easy-to-use tools that let you combine and cut out images, apply looks and make nondestructive edits on your iPad or iPhone."/>
+
+    
+    <meta name="serp-content-type" content="product"/>
+    
+    
+    
+    <meta name="pageCreatedAt" content="en"/>
+    
+    <meta name="translated" content="false"/>
+    
+    <meta name="publishDate" content="2020-03-04T01:00:30.367Z"/>
+    
+    
+    
+    
+    
+    
+    
+    <meta name="primaryProduct" content="photoshopmix"/>
+    
+    <meta name="productJcrID" content="products:SG_PHOTOSHOPMIX"/>
+    
+    <meta name="primaryProductName" content="Adobe Photoshop Mix"/>
+    
+    
+    
+    
+    
+    
+    
+    <meta name="sap_code" content="PHSP_MBL"/>
+    
+    <meta name="fi_code" content="ps_mix"/>
+
+    
+    <meta name="entity_id" content="8d5ef242-086a-3ced-9815-54c7993001a3"/>
+
+    
+    <meta name="twitter:card" content="app"/>
+    
+    
+    
+    
+    <meta name="twitter:app:country" content="US"/>
+    <meta name="twitter:app:name:iphone" content="Adobe Photoshop Mix - Cut out, combine, create"/>
+    <meta name="twitter:app:id:iphone" content="885271158"/>
+    <meta name="twitter:app:url:iphone" content="https://apps.apple.com/app/id885271158"/>
+    <meta name="twitter:app:name:googleplay" content="Adobe Photoshop Mix - Cut-out, Combine, Create"/>
+    <meta name="twitter:app:id:googleplay" content="com.adobe.photoshopmix"/>
+    <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.adobe.photoshopmix"/>
+
+     
+        <meta property="og:title" content="Image Editing &amp; Composition App for iOS, Android | Adobe Photoshop Mix"/>
+        <meta property="og:url" content="https://www.adobe.com/products/mix.html"/>
+        
+        
+        
+        <meta property="og:description" content="Adobe Photoshop Mix gives you powerful, easy-to-use tools that let you combine and cut out images, apply looks and make nondestructive edits on your iPad or iPhone."/>
+        <meta property="og:locale" content="en-us"/>
+        
+        
+        
+ 
+
+
+    
+    
+    <link rel="stylesheet" href="https://use.typekit.net/pps7abe.css"/>
+    
+
+
+
+    
+    
+    
+    
+
+
+    <script type="text/javascript">
+        window.dexter.Analytics.sophiaEnabled = '' !== 'disabled';
+            // Analytics flag for sophia
+            if (window.dexter.Analytics.sophiaEnabled && window.marketingtech) {
+                window.marketingtech.sophia = true;
+            }
+    </script>
+    
+    
+    
+<link rel="stylesheet" href="/etc.hawks.dexterlibs/hawks/clientlibs/publish.combined.fp-1e03c0269a3e179bac2db60b577d90e6.css" type="text/css">
+
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+
+
+    
+
+
+    
+    
+    
+    
+        <script>
+        window.dexter.jarvis = {
+            isDesktop: (window.dexter.personalization && window.dexter.personalization.technology && window.dexter.personalization.technology.platform && window.dexter.personalization.technology.platform.type) ? window.dexter.personalization.technology.platform.type === 'desktop' : false,
+        };
+        window.dexter.jarvis.desktopEnabled = window.dexter.jarvis.isDesktop && true,
+        window.dexter.jarvis.mobileEnabled = !window.dexter.jarvis.isDesktop && true,
+        window.dexter.jarvis.lazyLoadEnabled = (!window.dexter.jarvis.isDesktop)
+            ? true
+            : true;
+        window.fedsConfig = {
+            locale: 'en',
+            disableSticky: false,
+            content: {
+                experience: 'acom/cc-mega-menu/photoshop-mix-localnav',
+            },
+            breadcrumbs: {
+                showLogo: true,
+                links: []
+            },
+            subnav: {},
+            footer: {
+                regionModal: function () { window.location.hash = 'languageNavigation'; }
+            },
+            privacy: {
+                otDomainId: '7a5eb705\u002D95ed\u002D4cc4\u002Da11d\u002D0cc5760e93db',
+                footerLinkSelector: '[data\u002Dfeds\u002Daction=\x22open\u002Dadchoices\u002Dmodal\x22]',
+            },
+            search: {
+                context: '',
+            },
+        };
+
+        if (window.dexter.jarvis.desktopEnabled || window.dexter.jarvis.mobileEnabled) {
+            var mSurface = "";
+            window.fedsConfig.jarvis = {
+                surfaceName: !window.dexter.jarvis.isDesktop && mSurface ? mSurface : "adobedotcom2",
+                surfaceVersion: "1.83",
+                getContext: (window.dexter && window.dexter.callbacks) ? window.dexter.callbacks.getContext : null,
+                directConfig:  {
+                    lazyLoad: window.dexter.jarvis.lazyLoadEnabled,
+                },
+                onDemand: false
+            }
+        }
+        </script>
+        <script src="https://www.adobe.com/etc.clientlibs/globalnav/clientlibs/base/feds.js" id="feds-script"></script>
+    
+
+
+    
+
+    
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<defs><radialGradient id="a" cx="606.268" cy="16071" r="2384.688" gradientTransform="matrix(1 0 0 -1 -5.5 16215)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ed1c24"></stop><stop offset="1" stop-color="#84191b"></stop></radialGradient></defs>
+<symbol id="spectrum-icon-.-spectrum-icons-color"></symbol>
+</svg>
+</head>
+    <body class="page basicpage hawks-theme spectrum spectrum--lightest" data-checkout-disable-ims-country="false">
+        
+        
+            <div class="xfpage page basicpage">
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="appBanner aem-GridColumn aem-GridColumn--default--12">
+
+
+</div>
+
+    
+</div>
+
+</div>
+</div>
+
+            
+
+
+
+
+
+            
+
+
+
+            
+    
+    
+
+
+
+
+
+    
+    
+
+
+
+    
+        <div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="globalNavHeader aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+    
+
+    <div>
+        <div id="feds-header"></div>
+        <div id="feds-subnav">
+            <!-- #ADOBE-GLOBALNAV SUBNAV -->
+<div id="AdobeSecondaryNav" class="Subnav-wrapper">
+    <nav class="Subnav" data-signedin-force-trial="true">
+        <button class="Subnav-trigger" aria-expanded="false" aria-haspopup="true" aria-label="ADOBE PHOTOSHOP MIX"></button>
+        <div class="Subnav-logo">
+            <i class="icon-spacing Subnav-logo-image">
+                <img src="/content/dam/cc/icons/photoshop-mix.svg" alt="ADOBE PHOTOSHOP MIX" title="ADOBE PHOTOSHOP MIX"/>
+            </i>
+            <span class='Subnav-logo-text'>ADOBE PHOTOSHOP MIX</span>
+        </div>
+        
+    </nav>
+</div>
+
+        </div>
+    </div>
+
+
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items {
+        
+        margin: -10px;
+    }
+    
+    
+    
+    #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > * {
+        border: 0 solid transparent; border-width: 10px;}
+    
+    
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 50%; max-width: 50%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395 > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_copy_1761729395" class="dexter-FlexContainer 
+     
+     dexter-FlexContainer--GapWrapper
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395_items_flex_1703211722 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_copy_1761729395_items_flex_1703211722" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="dexter-Spacer"><style>
+
+#root_content_flex_copy_1761729395_items_flex_1703211722_items_spacer {
+    height: 100px;
+}
+
+
+@media screen and (min-width: 600px) {
+#root_content_flex_copy_1761729395_items_flex_1703211722_items_spacer {
+    height: 125px;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+#root_content_flex_copy_1761729395_items_flex_1703211722_items_spacer {
+    height: 150px;
+}
+}
+
+</style>
+<div id="root_content_flex_copy_1761729395_items_flex_1703211722_items_spacer"></div>
+</div>
+<div class="text spectrum-Heading1--quiet">
+<div class="cmp-text ">
+    <h1 style="text-align: center;">Cut out, combine and create amazing images.</h1>
+<h1 style="text-align: center;">Anywhere.</h1>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p style="text-align: center;">Get the app that brings serious Photoshop editing to your mobile device. Photoshop Mix lets you cut out and combine elements from different images, blend layers and apply looks on your iPhone, iPad or Android device — all compatible with Photoshop.</p>
+<p> </p>
+<p style="text-align: center;"><a href="#mixvideo01" target="_self" data-disable-query="false" disablelinktracking="false">Watch the video ›</a></p>
+
+</div>
+
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy_1761729395_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_copy_1761729395_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  mobile-padding-bottom-20 tablet-padding-bottom-0 desktop-padding-bottom-0">
+    <style>
+        
+    
+        #root_content_flex_copy_1761729395_items_flex_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_copy_1761729395_items_flex_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_copy_1761729395_items_flex_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="http://c00.adobe.com/53d1c127b7067cc8da873076d2c109faf21da7a701aad9eb54cb2dba3a6fe0d3/4q8m5868/i/885271158" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_copy_1761729395_items_flex_items_image" data-src="/content/dam/cc/us/en/creative-cloud/comp/button_apple_download_button.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzUiIGhlaWdodD0iNDAiPjxyZWN0IHdpZHRoPSIxMzUiIGhlaWdodD0iNDAiIHN0eWxlPSJmaWxsOiM5NDk0OTQiIC8+PC9zdmc+" class=" dexter-LazyImage " alt="Download on the AppStore"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_copy_1761729395_items_flex_items_image_442663804 { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_copy_1761729395_items_flex_items_image_442663804 { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_copy_1761729395_items_flex_items_image_442663804 { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://play.google.com/store/apps/details?id=com.adobe.photoshopmix" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_copy_1761729395_items_flex_items_image_442663804" data-src="/content/dam/cc/icons/google-play-badge.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDgiIGhlaWdodD0iNDQiPjxyZWN0IHdpZHRoPSIxNDgiIGhlaWdodD0iNDQiIHN0eWxlPSJmaWxsOiM5NDk0OTQiIC8+PC9zdmc+" class=" dexter-LazyImage " alt="Get it on Google Play"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_copy_1761729395_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_copy_1761729395_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_copy_1761729395_items_image { width:auto; }
+        }
+    
+
+    </style>
+    
+        
+            <picture class="dexter-LazyImage">
+                <source data-srcset="/content/dam/cc/us/en/products/mix/mix-marquee.jpg.img.jpg" srcset="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAwIiBoZWlnaHQ9Ijc1MiI+PHJlY3Qgd2lkdGg9IjI0MDAiIGhlaWdodD0iNzUyIiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" media="(min-width: 1200px)"/>
+                <source data-srcset="/content/dam/cc/us/en/products/mix/mix-marquee.jpg/jcr%3acontent/renditions/cq5dam.tablet_1400.1400.439.jpg" srcset="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAwIiBoZWlnaHQ9IjQzOSI+PHJlY3Qgd2lkdGg9IjE0MDAiIGhlaWdodD0iNDM5IiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" media="(min-width: 600px)"/>
+                <source data-srcset="/content/dam/cc/us/en/products/mix/mix-marquee.jpg/jcr%3acontent/renditions/cq5dam.mobile_640.640.201.jpg" srcset="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMjAxIj48cmVjdCB3aWR0aD0iNjQwIiBoZWlnaHQ9IjIwMSIgc3R5bGU9ImZpbGw6Izk0OTQ5NCIgLz48L3N2Zz4=" media="(max-width: 599px)"/>
+                <img id="root_content_flex_copy_1761729395_items_image" data-src="/content/dam/cc/us/en/products/mix/mix-marquee.jpg.img.jpg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAwIiBoZWlnaHQ9Ijc1MiI+PHJlY3Qgd2lkdGg9IjI0MDAiIGhlaWdodD0iNzUyIiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" alt="Cut out, combine and create amazing images. Anywhere."/>
+                
+            </picture>
+        
+        
+    
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    #root_content_flex_971499110_copy > .dexter-FlexContainer-Items {
+        
+        margin: -10px;
+    }
+    
+    
+    
+    #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > * {
+        border: 0 solid transparent; border-width: 10px;}
+    
+    
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(5) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(6) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+        #root_content_flex_971499110_copy {
+            
+                background-color: #f5f5f5; 
+            
+            
+        }
+    
+    
+    
+
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy {
+        color: #999999; 
+        }
+    
+    
+    
+
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(5) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(6) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(5) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy > .dexter-FlexContainer-Items > *:nth-child(6) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy" class="dexter-FlexContainer 
+     
+     dexter-FlexContainer--GapWrapper
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-40 mobile-padding-bottom-40">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="text spectrum-Heading2--quiet">
+<div class="cmp-text ">
+    <h2 style="text-align: center;">Photoshop Mix in action.</h2>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p style="text-align: center;">Photoshop Mix offers advanced imaging in a simple-to-use mobile app that lets you easily share your work. Seamless integration with Adobe Creative Cloud means you can work with other desktop apps like Photoshop and Lightroom.</p>
+
+</div>
+
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 50%; max-width: 50%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 50%; max-width: 50%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy_items_flex_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy_items_flex_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-bottom-20 tablet-padding-right-20 tablet-padding-bottom-0 desktop-padding-bottom-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStart dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_971499110_copy_items_flex_items_flex_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_971499110_copy_items_flex_items_flex_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_971499110_copy_items_flex_items_flex_items_image { width:auto; }
+        }
+    
+
+    </style>
+    
+        
+        
+            
+            <img id="root_content_flex_971499110_copy_items_flex_items_flex_items_image" data-src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-combine.svg" src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-combine.svg" class=" dexter-LazyImage " alt="Combining"/>
+            
+        
+    
+    
+</div>
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <h3><b>Combining</b></h3>
+<p>Cut out and remove portions of your images, merge them with other images using multiple layers and create sophisticated blends by controlling layer opacity.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy_items_flex_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy_items_flex_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy_items_flex_items_flex_1607152825 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy_items_flex_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy_items_flex_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy_items_flex_items_flex_1607152825" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     tablet-padding-left-20">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStart dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_971499110_copy_items_flex_items_flex_1607152825_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_971499110_copy_items_flex_items_flex_1607152825_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_971499110_copy_items_flex_items_flex_1607152825_items_image { width:auto; }
+        }
+    
+
+    </style>
+    
+        
+        
+            
+            <img id="root_content_flex_971499110_copy_items_flex_items_flex_1607152825_items_image" data-src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-enhance.svg" src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-enhance.svg" class=" dexter-LazyImage " alt="Enhancing"/>
+            
+        
+    
+    
+</div>
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <h3><b>Enhancing</b></h3>
+<p>Enhance or adjust an image or apply one of over a dozen looks to select areas or your entire image.</p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy_items_flex_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy_items_flex_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy_items_flex_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy_items_flex_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 50%; max-width: 50%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy_items_flex_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 50%; max-width: 50%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy_items_flex_copy" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy_items_flex_copy_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-bottom-20 tablet-padding-right-20 tablet-padding-bottom-0 desktop-padding-bottom-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStart dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_971499110_copy_items_flex_copy_items_flex_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_971499110_copy_items_flex_copy_items_flex_items_image { width:auto; }
+        }
+    
+
+    </style>
+    
+        
+        
+            
+            <img id="root_content_flex_971499110_copy_items_flex_copy_items_flex_items_image" data-src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-publish-behance.svg" src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-publish-behance.svg" class=" dexter-LazyImage " alt="Sharing"/>
+            
+        
+    
+    
+</div>
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <h3><b>Sharing</b></h3>
+<p>Upload your work to the Photoshop Mix community on Behance to get kudos and feedback.</p>
+<p> </p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     tablet-padding-left-20">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStart dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825_items_image { width:auto; }
+        }
+    
+
+    </style>
+    
+        
+        
+            
+            <img id="root_content_flex_971499110_copy_items_flex_copy_items_flex_1607152825_items_image" data-src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-do-more-on-devices.svg" src="/content/dam/cc/us/en/products/mix/adobe-icon-feature-do-more-on-devices.svg" class=" dexter-LazyImage " alt="Do more on your devices"/>
+            
+        
+    
+    
+</div>
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <h3 style="text-align: left;"><b>Do more on your devices</b></h3>
+<p>Easily move images between Photoshop Mix and Photoshop Fix to get the complete picture. Or edit using the new Apple Pencil on your iPad Pro, and work with files up to 64 megapixels. <br />
+</p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1418028755_copy" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-40 mobile-padding-bottom-40">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="text hawks-theme">
+<div class="cmp-text ">
+    <h2 style="text-align: center;"><b>Learn &amp; Support</b></h2>
+
+</div>
+
+    
+
+</div>
+<div class="text hawks-Body3--quiet spectrum-Display--quiet hawks-display">
+<div class="cmp-text mobile-padding-bottom-20">
+    <p style="text-align: center;">Learn Photoshop Fix with our easy-to-follow tutorials, or find answers in the forums and FAQ.</p>
+
+</div>
+
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1418028755_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1418028755_copy_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1418028755_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1418028755_copy_items_flex_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p style="text-align: center;">Get started</p>
+
+</div>
+
+    
+
+</div>
+<div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_1418028755_copy_items_flex_items_flex_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1418028755_copy_items_flex_items_flex_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1418028755_copy_items_flex_items_flex_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://helpx.adobe.com/mobile-apps/how-to/merge-photos-photoshop-mix.html" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_1418028755_copy_items_flex_items_flex_items_image" data-src="/content/dam/cc/us/en/products/draw/get-started-icon.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI3NSI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9Ijc1IiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" class=" dexter-LazyImage " alt="Get started"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1418028755_copy_items_flex_items_flex_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy_items_flex_items_flex_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1418028755_copy_items_flex_items_flex_copy" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-20 mobile-padding-bottom-20 tablet-padding-top-0 tablet-padding-right-0 tablet-padding-bottom-0 tablet-padding-left-0 desktop-padding-top-0 desktop-padding-right-0 desktop-padding-bottom-0 desktop-padding-left-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="position hawks-theme">
+
+
+
+    <style>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+
+
+
+        
+        
+        
+        
+    #root_content_flex_1418028755_copy_items_flex_items_flex_copy_items_position {
+        border-right: solid 1px #eee; border-left: solid 1px #eee; 
+        
+    }
+
+        
+        
+    </style>
+    
+    <div id="root_content_flex_1418028755_copy_items_flex_items_flex_copy_items_position" class="dexter-Position  mobile-place-relative mobile-place-left mobile-place-top mobile-padding-top-0 mobile-padding-right-0 mobile-padding-bottom-0 mobile-padding-left-0 mobile-margin-top-0 mobile-margin-right-0 mobile-margin-bottom-0 mobile-margin-left-0  
+        dexter-Background dexter-LazyImage
+        is-Editor-false    " data-animations="[]">
+        
+        
+        
+        
+        
+            
+                
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text spectrum-Body-3 hawks-Body3--quiet aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text ">
+    <p style="text-align: center;">Common questions</p>
+
+</div>
+
+    
+
+</div>
+<div class="image parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_1418028755_copy_items_flex_items_flex_copy_items_position_position-par_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1418028755_copy_items_flex_items_flex_copy_items_position_position-par_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1418028755_copy_items_flex_items_flex_copy_items_position_position-par_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="http://helpx.adobe.com/mobile-apps/help/mix-faq.html?set=mobile-apps--fundamentals--adobe-photoshop-mix" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_1418028755_copy_items_flex_items_flex_copy_items_position_position-par_image" data-src="/content/dam/cc/us/en/products/draw/common-questions-icon.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI3NSI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9Ijc1IiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" class=" dexter-LazyImage " alt="Common questions"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+
+    
+</div>
+
+            
+        
+    </div>
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p style="text-align: center;">Ask the community</p>
+
+</div>
+
+    
+
+</div>
+<div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://forums.adobe.com/community/photoshop_mix" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_1418028755_copy_items_flex_items_flex_copy_1744731082_items_image" data-src="/content/dam/cc/us/en/products/draw/ask-community-icon.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI3NSI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9Ijc1IiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" class=" dexter-LazyImage " alt="Ask the community"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    #root_content_flex_603844269_copy > .dexter-FlexContainer-Items {
+        
+        margin: -10px;
+    }
+    
+    
+    
+    #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > * {
+        border: 0 solid transparent; border-width: 10px;}
+    
+    
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100px; max-width: 100px;
+            min-height: auto;
+            }
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+        #root_content_flex_603844269_copy {
+            
+                background-color: #444444; 
+            
+            
+        }
+    
+    
+    
+
+    
+    
+    
+    
+    
+        #root_content_flex_603844269_copy {
+        color: #FFFFFF; 
+        }
+    
+    
+    
+
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100px; max-width: 100px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_603844269_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_603844269_copy" class="dexter-FlexContainer 
+     
+     dexter-FlexContainer--GapWrapper
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-40 mobile-padding-bottom-40">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_603844269_copy_items_image_1164622935_cop { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_603844269_copy_items_image_1164622935_cop { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_603844269_copy_items_image_1164622935_cop { width:auto; }
+        }
+    
+
+    </style>
+    
+        
+        
+            
+            <img id="root_content_flex_603844269_copy_items_image_1164622935_cop" data-src="/content/dam/cc1/en/genuine/images/AFC/cc%20logo.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI1MyI+PHJlY3Qgd2lkdGg9IjcyIiBoZWlnaHQ9IjUzIiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" class=" dexter-LazyImage " alt="Adobe Creative Cloud logo"/>
+            
+        
+    
+    
+</div>
+</div>
+<div class="text hawks-theme">
+<div class="cmp-text ">
+    <h2 style="text-align: center;">Connected to Creative Cloud.</h2>
+
+</div>
+
+    
+
+</div>
+<div class="text hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p style="text-align: center;">Photoshop Mix integrates seamlessly with Creative Cloud so you can open and edit your Photoshop files and Lightroom images on your mobile device, make edits using powerful features like Upright and Content-Aware Fill, and export your work to Photoshop and Lightroom if you want to take your creations further. It’s all powered by Adobe CreativeSync.</p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p style="text-align: center;">CCreative Cloud brings together the world’s best <a href="https://www.adobe.com/creativecloud/tools/app-design-software.html" data-disable-query="false" target="_self" disablelinktracking="false">creative apps</a> for desktop and mobile, plus more connected ways of creating and sharing. </p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"><a href="https://www.adobe.com/creativecloud.html" data-disable-query="false" target="_self" disablelinktracking="false">Learn more ›</a></p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    #root_content_flex_537111556_copy > .dexter-FlexContainer-Items {
+        
+        margin: -10px;
+    }
+    
+    
+    
+    #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > * {
+        border: 0 solid transparent; border-width: 10px;}
+    
+    
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+            #root_content_flex_537111556_copy {
+                
+                    
+                    
+                        background-image: url(\2f content\2f dam\2f cc\2fus\2f en\2fproducts\2fmix\2f 52909.en.mix-promo-914.2840x1120.jpg\2fjcr%3acontent\2frenditions\2f cq5dam.mobile_640.640.252.jpg); background-size: cover; 
+                    
+                    background-position: 50% 50%; 
+                
+                
+            }
+            
+                #root_content_flex_537111556_copy.dexter-LazyImage {
+                
+                    
+                    
+                        background-image: url(data:image\2fsvg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMjUyIj48cmVjdCB3aWR0aD0iNjQwIiBoZWlnaHQ9IjI1MiIgc3R5bGU9ImZpbGw6Izk0OTQ5NCIgLz48L3N2Zz4=); background-size: cover; 
+                    
+                    background-position: 50% 50%; 
+                
+                
+                }
+            
+    
+    
+        @media screen and (min-width: 600px) {
+            #root_content_flex_537111556_copy {
+                
+                    
+                    
+                        background-image: url(\2f content\2f dam\2f cc\2fus\2f en\2fproducts\2fmix\2f 52909.en.mix-promo-914.2840x1120.jpg\2fjcr%3acontent\2frenditions\2f cq5dam.tablet_1400.1400.552.jpg); background-size: cover; 
+                    
+                    background-position: 50% 50%; 
+                
+                
+            }
+            
+                #root_content_flex_537111556_copy.dexter-LazyImage {
+                
+                    
+                    
+                        background-image: url(data:image\2fsvg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAwIiBoZWlnaHQ9IjU1MiI+PHJlY3Qgd2lkdGg9IjE0MDAiIGhlaWdodD0iNTUyIiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==); background-size: cover; 
+                    
+                    background-position: 50% 50%; 
+                
+                
+                }
+            
+        }
+    
+    
+        @media screen and (min-width: 1200px) {
+            #root_content_flex_537111556_copy {
+                
+                    
+                    
+                        background-image: url(\2f content\2f dam\2f cc\2fus\2f en\2fproducts\2fmix\2f 52909.en.mix-promo-914.2840x1120.jpg.img.jpg); background-size: cover; 
+                    
+                    background-position: 50% 50%; 
+                
+                
+            }
+            
+                #root_content_flex_537111556_copy.dexter-LazyImage {
+                
+                    
+                    
+                        background-image: url(data:image\2fsvg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAwIiBoZWlnaHQ9Ijk0NiI+PHJlY3Qgd2lkdGg9IjI0MDAiIGhlaWdodD0iOTQ2IiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==); background-size: cover; 
+                    
+                    background-position: 50% 50%; 
+                
+                
+                }
+            
+        }
+    
+
+    
+    
+    
+        #root_content_flex_537111556_copy {
+        color: #FFFFFF; 
+        }
+    
+    
+    
+
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 83.333333%; max-width: 83.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items {
+            min-height: 300px;
+            
+        }
+        
+        
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_537111556_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_537111556_copy" class="dexter-FlexContainer 
+     
+     dexter-FlexContainer--GapWrapper
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-40 mobile-padding-bottom-40">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="position spectrum-Heading2--quiet">
+
+
+
+    <style>
+
+        
+        
+
+        
+        
+
+        
+        
+    
+        #root_content_flex_537111556_copy_items_position {
+        color: #FFFFFF; 
+        }
+    
+    
+    
+
+
+        
+        
+
+
+
+
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    <div id="root_content_flex_537111556_copy_items_position" class="dexter-Position  mobile-place-relative mobile-place-left mobile-place-top mobile-padding-top-0 mobile-padding-right-0 mobile-padding-bottom-0 mobile-padding-left-0 mobile-margin-top-0 mobile-margin-right-0 mobile-margin-bottom-0 mobile-margin-left-0  
+        dexter-Background dexter-LazyImage
+        is-Editor-false    " data-animations="[]">
+        
+        
+        
+        
+        
+            
+                
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text hawks-theme aem-GridColumn aem-GridColumn--default--12">
+<div class="cmp-text mobile-padding-bottom-40">
+    <h2 style="text-align: center;">Download the app today.</h2>
+
+</div>
+
+    
+
+</div>
+
+    
+</div>
+
+            
+        
+    </div>
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_537111556_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_537111556_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_537111556_copy_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_537111556_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_537111556_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 25%; max-width: 25%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_537111556_copy_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_537111556_copy_items_flex_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-bottom-20 tablet-padding-bottom-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_537111556_copy_items_flex_items_flex_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_537111556_copy_items_flex_items_flex_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_537111556_copy_items_flex_items_flex_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="http://c00.adobe.com/53d1c127b7067cc8da873076d2c109faf21da7a701aad9eb54cb2dba3a6fe0d3/4q8m5868/i/885271158" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_537111556_copy_items_flex_items_flex_items_image" data-src="/content/dam/cc/us/en/creative-cloud/comp/button_apple_download_button.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzUiIGhlaWdodD0iNDAiPjxyZWN0IHdpZHRoPSIxMzUiIGhlaWdodD0iNDAiIHN0eWxlPSJmaWxsOiM5NDk0OTQiIC8+PC9zdmc+" class=" dexter-LazyImage " alt="Download on the AppStore"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_537111556_copy_items_flex_items_flex_2013514653" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_537111556_copy_items_flex_items_flex_2013514653_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_537111556_copy_items_flex_items_flex_2013514653_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_537111556_copy_items_flex_items_flex_2013514653_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://play.google.com/store/apps/details?id=com.adobe.photoshopmix" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_537111556_copy_items_flex_items_flex_2013514653_items_image" data-src="/content/dam/cc/icons/google-play-badge.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDgiIGhlaWdodD0iNDQiPjxyZWN0IHdpZHRoPSIxNDgiIGhlaWdodD0iNDQiIHN0eWxlPSJmaWxsOiM5NDk0OTQiIC8+PC9zdmc+" class=" dexter-LazyImage " alt="Get it on Google Play"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items {
+        
+        margin: -10px;
+    }
+    
+    
+    
+    #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > * {
+        border: 0 solid transparent; border-width: 10px;}
+    
+    
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(5) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(6) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(7) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(3) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(4) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(5) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(6) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(7) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(8) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(9) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(10) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(11) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(12) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy > .dexter-FlexContainer-Items > *:nth-child(13) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy" class="dexter-FlexContainer 
+     
+     dexter-FlexContainer--GapWrapper
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-20 mobile-padding-bottom-20">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   container dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_1927285918" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Heading2--quiet">
+<div class="cmp-text ">
+    <h2 style="text-align: center;">Related apps</h2>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-left  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_items_image_copy { width:100px; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_items_image_copy { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_items_image_copy { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://www.adobe.com/products/photoshop.html" target="_self">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_items_image_copy" data-src="/content/dam/cc/icons/photoshop-mobile.svg" src="/content/dam/cc/icons/photoshop-mobile.svg" class=" dexter-LazyImage " alt="Adobe Photoshop"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStart dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-0">
+    <h3><a href="https://www.adobe.com/products/photoshop.html" data-disable-query="false" disablelinktracking="false" target="_self"><b>Adobe Photoshop</b></a></h3>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet NoMarginTop">
+<div class="cmp-text ">
+    <p>Image editing and compositing.</p>
+<p> </p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_image_copy_1305589988 { width:70px; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_image_copy_1305589988 { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_image_copy_1305589988 { width:auto; }
+        }
+    
+
+    </style>
+    <a href="/content/cc/us/en/products/lightroom-mobile.html" target="_self">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_image_copy_1305589988" data-src="/content/dam/cc/icons/lightroom-cc.svg" src="/content/dam/cc/icons/lightroom-cc.svg" class=" dexter-LazyImage " alt="Adobe Lightroom"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1411494751_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-4">
+    <p><a target="_self" href="/content/cc/us/en/products/lightroom-mobile.html" data-disable-query="false" disablelinktracking="false">Adobe Lightroom for mobile</a></p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet NoMarginTop">
+<div class="cmp-text ">
+    <p>Edit and organize images anywhere.</p>
+<p><a name="photography-everywhere"></a></p>
+<p><a name="photos-tell-a-story"></a></p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-center  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://www.adobe.com/products/fix.html">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_image" data-src="/content/dam/cc/icons/photoshop-fix.svg" src="/content/dam/cc/icons/photoshop-fix.svg" class=" dexter-LazyImage " alt="Adobe Photoshop Fix"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1672066608_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-4">
+    <p><b><a disablelinktracking="false" href="https://www.adobe.com/products/fix.html" target="_self" data-disable-query="false">Adobe Photoshop Fix</a></b></p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet NoMarginTop">
+<div class="cmp-text ">
+    <p>Photoshop retouching for everyone.<br />
+</p>
+<p><a name="photography-everywhere"></a></p>
+<p><a name="photos-tell-a-story"></a></p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-left  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://spark.adobe.com/about/page" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_image" data-src="/content/dam/cc/icons/spark-page.svg" src="/content/dam/cc/icons/spark-page.svg" class=" dexter-LazyImage " alt="Adobe Spark Page"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-4">
+    <p><a disablelinktracking="false" href="https://spark.adobe.com/about/page" target="_blank">Spark Page</a></p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet">
+<div class="cmp-text ">
+    <p>Turn words and images into beautiful web stories — in minutes.<br />
+</p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 75%; max-width: 75%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-0 tablet-padding-left-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-left  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_image_2017657055 { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_image_2017657055 { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_image_2017657055 { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://www.adobe.com/products/draw.html" target="_self">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_image_2017657055" data-src="/content/dam/cc/icons/illustrator-draw.svg" src="/content/dam/cc/icons/illustrator-draw.svg" class=" dexter-LazyImage " alt="Adobe Illustrator Draw"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1642718975_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-4">
+    <p><a target="_self" href="https://www.adobe.com/products/draw.html" data-disable-query="false" disablelinktracking="false">Adobe Illustrator Draw</a></p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet NoMarginTop">
+<div class="cmp-text mobile-padding-top-0">
+    <p>Vector drawing anywhere.</p>
+<p><a name="photography-everywhere"></a></p>
+<p><a name="photos-tell-a-story"></a></p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-left  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_image_1440977956 { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_image_1440977956 { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_image_1440977956 { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://itunes.apple.com/us/app/adobe-creative-cloud/id852473028" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_image_1440977956" data-src="/content/dam/cc1/en/genuine/images/AFC/cc%20logo.png.img.png" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI1MyI+PHJlY3Qgd2lkdGg9IjcyIiBoZWlnaHQ9IjUzIiBzdHlsZT0iZmlsbDojOTQ5NDk0IiAvPjwvc3ZnPg==" class=" dexter-LazyImage " alt="Adobe Creative Cloud for iOS"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_11856114_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-4">
+    <p><a href="https://itunes.apple.com/us/app/adobe-creative-cloud/id852473028" target="_blank">Adobe Creative Cloud for iOS</a></p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet NoMarginTop">
+<div class="cmp-text ">
+    <p>Mobile access to your Creative Cloud account.</p>
+<p><a name="photography-everywhere"></a></p>
+<p><a name="photos-tell-a-story"></a></p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162 > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162 > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 70px; max-width: 70px;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162 > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 66.666667%; max-width: 66.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-16 tablet-padding-left-0 desktop-padding-left-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="image parbase">
+
+
+
+<div class="dexter-Image  dexter-Image-left  ">
+    <style>
+        
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_image { width:auto; }
+    
+    
+        @media (min-width: 600px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_image { width:auto; }
+        }
+    
+    
+        @media (min-width: 1200px) {
+            #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_image { width:auto; }
+        }
+    
+
+    </style>
+    <a href="https://spark.adobe.com/about/video" target="_blank">
+        
+        
+            
+            <img id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_image" data-src="/content/dam/cc/icons/spark-video.svg" src="/content/dam/cc/icons/spark-video.svg" class=" dexter-LazyImage " alt="Adobe Spark Video"/>
+            
+        
+    </a>
+    
+</div>
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_flex > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_flex > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 100%; max-width: 100%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_copy_1281468038_1931533162_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-left-12">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStart dexter-FlexContainer--mobileAlignItemStart dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="text spectrum-Body-1 spectrum-Display--strong NoMargin">
+<div class="cmp-text mobile-padding-bottom-4">
+    <p><b><a disablelinktracking="false" href="https://spark.adobe.com/about/video" target="_blank">Spark Video</a></b></p>
+
+</div>
+
+    
+
+</div>
+<div class="text spectrum-Body-3 hawks-Body3--quiet NoMarginTop">
+<div class="cmp-text ">
+    <p>Create compelling animated videos — in minutes.<br />
+</p>
+<p><a name="photography-everywhere"></a></p>
+<p><a name="photos-tell-a-story"></a></p>
+
+</div>
+
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_613031017" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1614133833_copy_items_flex_313231159" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    
+    
+    
+    
+        #root_content_flex_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+        #root_content_flex_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 91.666667%; max-width: 91.666667%; flex: 1 1 auto;
+            min-height: auto;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 600px) {
+        #root_content_flex_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 33.333333%; max-width: 33.333333%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        #root_content_flex_copy > .dexter-FlexContainer-Items {
+            
+            
+        }
+        
+        
+        #root_content_flex_copy > .dexter-FlexContainer-Items > *:nth-child(1) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+        #root_content_flex_copy > .dexter-FlexContainer-Items > *:nth-child(2) {
+            width: 16.666667%; max-width: 16.666667%; flex: 1 1 auto;
+            min-height: auto;
+            
+        }
+        
+    }
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_copy" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-top-20 mobile-padding-bottom-40">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyCenter dexter-FlexContainer--mobileAlignItemCenter dexter-FlexContainer--mobileAlignContentCenter dexter-FlexContainer--mobileAlignItemContentCenter">
+
+
+
+
+
+    <div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_copy_items_flex" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     mobile-padding-bottom-20 tablet-padding-bottom-0">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="cta"><div class="dexter-Cta dexter-Cta--align-center">
+    <a href="/content/cc/us/en/creativecloud/catalog/mobile.html" class="spectrum-Button spectrum-Button--cta" target="_self" data-disable-query="false">
+        
+        
+            <span class="spectrum-Button-label">See all mobile apps</span>
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_copy_items_flex_1679422788" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    <div class="cta"><div class="dexter-Cta dexter-Cta--align-center">
+    <a href="/content/cc/us/en/creativecloud/catalog/desktop.html" class="spectrum-Button spectrum-Button--cta" target="_self" data-disable-query="false">
+        
+        
+            <span class="spectrum-Button-label">See all desktop apps</span>
+        
+    </a>
+    
+</div>
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+<div class="flex aem-GridColumn aem-GridColumn--default--12"><style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+</style>
+
+    
+    <div id="root_content_flex_1265332423" class="dexter-FlexContainer 
+     
+     
+     
+      
+     dexter-Background dexter-LazyImage
+     ">
+        
+        
+
+        <div class="dexter-FlexContainer-Items   dexter-FlexContainer--mobileJustifyStretch dexter-FlexContainer--mobileAlignAlignmentStretch dexter-FlexContainer--mobileAlignContentStretch dexter-FlexContainer--mobileAlignItemContentStart">
+
+
+
+
+
+    
+    
+
+</div>
+        
+    </div>
+    
+
+</div>
+
+    
+</div>
+</div>
+<div class="globalNavFooter aem-GridColumn aem-GridColumn--default--12">
+
+
+
+    
+    <div id="feds-footer"></div>
+
+</div>
+
+    
+</div>
+</div>
+
+    
+        <div class="modalContainer parsys">
+
+
+
+
+    
+    
+    <div class="modal"><div class="dexter-Modal_overlay mobile-place-center mobile-place-middle tablet-inherit tablet-inherit desktop-inherit desktop-inherit closePlacement-insideTopRight" data-conf-display="onHashChange" data-conf-delay="0" data-page-name="mix" aria-modal="true">
+    <div class="dexter-Modal mobile-width-100 mobile-height-100 tablet-width-640 tablet-height-auto desktop-width-1024 desktop-height-auto" id="mixvideo01">
+        
+        <h6 id="mixvideo01-modalTitle" class="hide-all">Cut out, combine and create amazing images. Anywhere.</h6>
+        <p id="mixvideo01-modalDescription" class="hide-all">Cut out, combine and create amazing images. Anywhere.</p>
+        
+            
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="video aem-GridColumn aem-GridColumn--default--12">
+    
+
+    <div class="videoContainer">
+        
+   
+       <iframe data-video-src="https://video.tv.adobe.com/v/4668t1?autoplay=true&amp;quality=5&amp;end=nothing&amp;learn=on" allow="autoplay; fullscreen" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+
+</div>
+
+    
+</div>
+
+        
+        
+        <a href="#" class="dexter-CloseButton" aria-label="Close" role="button"><i class="dexter-CloseButton_icon spectrum-close-circle-dark"></i></a>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+    
+        
+    
+
+    
+    
+
+    
+    <div class="modalContainer static">
+        
+            
+            
+    <div class="modal dexter-Author-Hide">
+        <div class="dexter-Modal_overlay mobile-place-center mobile-place-middle" data-conf-display="onHashChange">
+            <div class="dexter-Modal mobile-width-100 mobile-height-100 tablet-width-640 tablet-height-auto desktop-width-1024" id="languageNavigation">
+                <h6 id="languageNavigation-modalTitle" class="hide-all">Language Navigation</h6>
+                <p id="languageNavigation-modalDescription" class="hide-all">Language Navigation</p>
+                <a href="#" class="dexter-CloseButton"><i class="dexter-CloseButton_icon spectrum-close-circle-dark"></i></a>
+                
+    <nav class="language-Navigation">
+        <h2 class="language-Navigation_heading">Choose your region</h2>
+        <p class="language-Navigation_subheading">Selecting a region changes the language and/or content on Adobe.com.</p>
+        <ul class="language-Navigation_region-List">
+            <li><h3>Americas</h3></li>
+            
+                <li>
+                    <a href="https://www.adobe.com/br/products/mix.html" hreflang="br">
+                        Brasil
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ca/products/mix.html" hreflang="ca">
+                        Canada - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ca_fr/products/mix.html" hreflang="ca_fr">
+                        Canada - Français
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/la/products/mix.html" hreflang="la">
+                        Latinoamérica
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/mx/products/mix.html" hreflang="mx">
+                        México
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/products/mix.html" hreflang="us">
+                        United States
+                    </a>
+                </li>
+            
+        
+            <li><h3>Europe, Middle East and Africa</h3></li>
+            
+                <li>
+                    <a href="https://www.adobe.com/mena_fr/" hreflang="mena_fr">
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/africa/products/mix.html" hreflang="africa">
+                        Africa - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/be_fr/products/mix.html" hreflang="be_fr">
+                        Belgique - Français
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/be_en/products/mix.html" hreflang="be_en">
+                        Belgium - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/be_nl/products/mix.html" hreflang="be_nl">
+                        België - Nederlands
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/cy_en/products/mix.html" hreflang="cy_en">
+                        Cyprus - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/dk/products/mix.html" hreflang="dk">
+                        Danmark
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/de/products/mix.html" hreflang="de">
+                        Deutschland
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ee/products/mix.html" hreflang="ee">
+                        Eesti
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/es/products/mix.html" hreflang="es">
+                        España
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/fr/products/mix.html" hreflang="fr">
+                        France
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/gr_en/products/mix.html" hreflang="gr_en">
+                        Greece - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ie/products/mix.html" hreflang="ie">
+                        Ireland
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/il_en/products/mix.html" hreflang="il_en">
+                        Israel - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/it/products/mix.html" hreflang="it">
+                        Italia
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/lv/products/mix.html" hreflang="lv">
+                        Latvija
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/lt/products/mix.html" hreflang="lt">
+                        Lietuva
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/lu_de/products/mix.html" hreflang="lu_de">
+                        Luxembourg - Deutsch
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/lu_en/products/mix.html" hreflang="lu_en">
+                        Luxembourg - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/lu_fr/products/mix.html" hreflang="lu_fr">
+                        Luxembourg - Français
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/hu/products/mix.html" hreflang="hu">
+                        Magyarország
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/mt/products/mix.html" hreflang="mt">
+                        Malta - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/mena_en/products/mix.html" hreflang="mena_en">
+                        Middle East and North Africa - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/nl/products/mix.html" hreflang="nl">
+                        Nederland
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/no/products/mix.html" hreflang="no">
+                        Norge
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/pl/products/mix.html" hreflang="pl">
+                        Polska
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/pt/products/mix.html" hreflang="pt">
+                        Portugal
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ro/products/mix.html" hreflang="ro">
+                        România
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ch_de/products/mix.html" hreflang="ch_de">
+                        Schweiz
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/si/products/mix.html" hreflang="si">
+                        Slovenija
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/sk/products/mix.html" hreflang="sk">
+                        Slovensko
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ch_fr/products/mix.html" hreflang="ch_fr">
+                        Suisse
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/fi/products/mix.html" hreflang="fi">
+                        Suomi
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/se/products/mix.html" hreflang="se">
+                        Sverige
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ch_it/products/mix.html" hreflang="ch_it">
+                        Svizzera
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/tr/products/mix.html" hreflang="tr">
+                        Türkiye
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/uk/products/mix.html" hreflang="uk">
+                        United Kingdom
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/at/products/mix.html" hreflang="at">
+                        Österreich
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/cz/products/mix.html" hreflang="cz">
+                        Česká republika
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/bg/products/mix.html" hreflang="bg">
+                        България
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ru/products/mix.html" hreflang="ru">
+                        Россия
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/ua/products/mix.html" hreflang="ua">
+                        Україна
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/il_he/products/mix.html" hreflang="il_he">
+                        ישראל - עברית
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/mena_ar/products/mix.html" hreflang="mena_ar">
+                        الشرق الأوسط وشمال أفريقيا - اللغة العربية
+                    </a>
+                </li>
+            
+        
+            <li><h3>Asia Pacific</h3></li>
+            
+                <li>
+                    <a href="https://www.adobe.com/au/products/mix.html" hreflang="au">
+                        Australia
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/hk_en/products/mix.html" hreflang="hk_en">
+                        Hong Kong S.A.R. of China
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/in/products/mix.html" hreflang="in">
+                        India
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/nz/products/mix.html" hreflang="nz">
+                        New Zealand
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/sea/products/mix.html" hreflang="sea">
+                        Southeast Asia (Includes Indonesia, Malaysia, Philippines, Singapore, Thailand, and Vietnam) - English
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/cn/" hreflang="cn">
+                        中国
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/hk_zh/products/mix.html" hreflang="hk_zh">
+                        中國香港特別行政區
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/tw/products/mix.html" hreflang="tw">
+                        台灣地區
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/jp/products/mix.html" hreflang="jp">
+                        日本
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/kr/products/mix.html" hreflang="kr">
+                        한국
+                    </a>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <a href="https://www.adobe.com/hr/" hreflang="hr">
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.adobe.com/rs/" hreflang="rs">
+                        
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+
+            </div>
+        </div>
+    </div>
+
+            
+            
+    <locale-modal data-current-locale-text="Are you visiting adobe.com from outside your region?
+            Visit your regional site for more relevant pricing, promotions and events." data-current-locale-button-text="Continue to United States">
+    </locale-modal>
+
+        
+        
+        
+            
+        
+    </div>
+
+    
+    
+<script>
+    var adobeid = {
+        env: '',
+        jumpToken: {
+            api: '',
+        },
+        client_id: 'adobedotcom-cc',
+        scope: 'AdobeID,openid,creative_cloud,gnav,read_organizations,additional_info.projectedProductContext,sao.ACOM_CLOUD_STORAGE,sao.stock,sao.cce_private,additional_info.roles',
+        uses_redirect_mode: true,
+        locale : 'en_US',
+        uses_modal_mode: false,
+        optimizations: {
+            fastEvents: true
+        },
+        api_parameters: {
+            authorize: {
+                state: {
+                    ac: '',
+                }
+            }
+        },
+        redirect_uri: 'http:\/\/www.adobe.com#ref_cc' || window.location.url,
+        onReady: function () {
+            window.dispatchEvent(new Event('dexter:IMSReady'));
+        }
+    };
+</script>
+<script src="https://static.adobelogin.com/imslib/imslib.min.js"></script>
+
+    
+    
+    
+
+
+    
+    
+<script>
+    window.dexter.Anyware = window.dexter.Anyware || {};
+    window.dexter.Anyware.ims = {
+        clientId: 'unified_checkout_client_app',
+        targetScope: 'AdobeID,openid,sao.stock,additional_info.roles,additional_info.vat_id,additional_info.dob,update_profile.countryCode',
+    }
+    window.dexter.Ims = {
+        imsTimeout: '3000',
+    }
+</script>
+<script>
+    window.dexter.config = window.dexter.config || {};
+    window.dexter.config.lazyThreshold = '2000px 0px';
+</script>
+
+
+
+            
+  
+    
+    
+
+    
+    
+
+    
+    <script>
+        window.hawks = window.hawks || {};
+        window.hawks.sophiaConfig = {};
+        window.hawks.sophiaConfig.stageUrl = 'https:\/\/p13n\u002Dstage.adobe.io\/psdk\/v2\/content';
+        window.hawks.sophiaConfig.prodUrl = 'https:\/\/p13n.adobe.io\/psdk\/v2\/content';
+        window.hawks.sophiaConfig.surfaceId = 'cc_web';
+        window.hawks.sophiaConfig.apiKey = 'adobedotcom\u002Dcc';
+        window.hawks.sophiaConfig.clientCode = 'adobe.com';
+    </script>
+
+
+    
+
+
+    <script defer type="text/javascript">
+        (function(){
+            function preLoad(){
+                var i = document.createElement( 'iframe' );
+                i.style.display = 'none';
+                i.src = "https:\/\/commerce.adobe.com\/checkout\/iframe\/preload\/";
+                document.body.appendChild(i);
+            }
+            (function(){
+                setTimeout(preLoad, 30000);
+            })();
+        })();
+    </script>
+
+
+    
+    
+<script type="text/javascript" src="/etc.hawks.dexterlibs/hawks/clientlibs/publish.combined.fp-12478832fd40f72c065a3a6dfdd81c07.js"></script>
+
+
+    
+    
+
+
+
+  
+    
+
+
+
+  
+
+  
+
+
+            
+
+
+            
+            <div class="evidon-notice-link"></div>
+
+            
+            
+            <!-- PAGELOADOK -->
+
+        
+    </body>
+</html>
