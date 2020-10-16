@@ -9,6 +9,7 @@
         <licenseUrl>http://www.adobe.com/legal/general-terms.html</licenseUrl>
         <projectUrl>http://creative.adobe.com</projectUrl>
         <iconUrl>http://mix.adobe.com/images/52909.en.icon-cc-app.256.png</iconUrl>
+        <packageSourceUrl></packageSourceUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</description>
         <summary>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</summary>
