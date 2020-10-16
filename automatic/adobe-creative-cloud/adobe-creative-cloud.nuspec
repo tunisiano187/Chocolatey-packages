@@ -16,4 +16,7 @@
         <copyright>Adobe</copyright>
         <tags>Adobe Creative Cloud</tags>
     </metadata>
+    <files>
+        <file src="tools\**" target="tools" />
+    </files>
 </package>
