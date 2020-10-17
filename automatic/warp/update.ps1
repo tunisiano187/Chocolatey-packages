@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url64 -OutFile $File
     Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
 	$version = Get-Version("warp")
-	$checksum = Get-FileHash -Path $File.Hash -Algorithm $checksumType
+	$checksum = (Get-FileHash -Path $File.Hash -Algorithm $checksumType).Hash
 
 	$Latest = @{ URL64 = $url64; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumType}
 
