@@ -11,3 +11,21 @@ foreach ($path in $paths) {
 }
 git add $mdfile
 git commit -m "[skip ci] List Packages"
+
+$mdfile = "$PSScriptRoot/../ToCorrect.md"
+Set-Content $mdfile "# To Correct"
+Add-Content $mdfile "| Package Name and version |"
+Add-Content $mdfile "|------------|"
+$paths = Get-ChildItem -Path "$PSScriptRoot/../automatic/" -Directory | Select-Object FullName
+foreach ($path in $paths) {
+    $package = $path.FullName.split('\')[-1]
+    $ps1s = Get-ChildItem -Path "$($path.FullName)\tools\" -File -Filter ".ps1" 
+    foreach ($ps1file in $ps1s) {
+        $content = Get-Content $ps1file | Select-Object {$_ -match 'headers.add'}
+        if($content.Lenght -gt 0) {
+            Add-Content $ps1file "|$package|"
+        }
+    }
+}
+git add $mdfile
+git commit -m "[skip ci] Deprecate custom WebClient code"
