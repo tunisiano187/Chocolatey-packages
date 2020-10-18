@@ -8,7 +8,7 @@ $checksumType   = 'sha256'
 $url64          = 'https://sdl.adaware.com/?bundleid=AR001&savename=Andy_47.260_1096_26_x64.exe'
 $checksum64     = '41dff12941f78bca3497d662294aeb9f55e99f15442e04165f0bdce94ffb73ef'
 $checksumType64 = 'sha256'
-$validExitCodes = @(0)
+$validExitCodes = @(0,1603)
 
 $extractDir   = "$toolsDir\extracted"
 $fileLocation = "$extractDir\Carrier.exe"
