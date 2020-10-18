@@ -1,17 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>adobe-creative-cloud</id>
-        <version>1.0</version>
+        <version>5.3.0.48</version>
         <title>Adobe Creative Cloud Client</title>
         <authors>Adobe</authors>
-        <owners>Chris McGrath</owners>
+        <owners>tunisiano</owners>
         <licenseUrl>http://www.adobe.com/legal/general-terms.html</licenseUrl>
         <projectUrl>http://creative.adobe.com</projectUrl>
-        <iconUrl>http://mix.adobe.com/images/52909.en.icon-cc-app.256.png</iconUrl>
-        <packageSourceUrl></packageSourceUrl>
+        <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a8856a907c19803f761e269fc0aca3a21cb7c9f8/icons/adobe-creative-cloud.png</iconUrl>
+        <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/adobe-creative-cloud</packageSourceUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</description>
+        <description><![CDATA[## Adobe Creative Cloud Client Installer
+Adobe Creative Cloud Client Installer for installing creative cloud subscription applications
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
         <summary>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</summary>
         <releaseNotes />
         <copyright>Adobe</copyright>
