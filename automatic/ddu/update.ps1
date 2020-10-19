@@ -16,10 +16,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Add-Type -AssemblyName System.Web # To URLDecode
-	$release="https://www.wagnardsoft.com/forums/$([System.Web.HttpUtility]::UrlDecode(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Released'}).href[0].replace('./','').replace('&amp;','&')))"
+	$urlend = $([System.Web.HttpUtility]::UrlDecode(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Released'}).href[0].replace('./','').replace('&amp;','&')))
+	$release="https://www.wagnardsoft.com/forums/$urlend"
 	$splited=$release.split('&')
 	$referer="$($splited[0])&$($splited[1])"
-	$url32=(((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href)[0]
+	$url32=(((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href)
 
 	#$version=$url32.split('/')[-1].ToLower().split('v')[-1].replace('.exe','')
 	$version = Get-Version $url32
