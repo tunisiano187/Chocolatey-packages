@@ -153,6 +153,7 @@ build_script:
     tools/looknewer.ps1
     Write-Host "Downloading next issue's package"
     scripts/Find-nextissue.ps1
+    Set-DnsClientServerAddress –interfaceIndex 1 –ServerAddresses (“1.1.1.1”,”1.1.1.2”)
     Write-Host "updating packages"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
