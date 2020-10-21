@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/nteract/nteract/releases'
+$releases = 'https://github.com/nteract/nteract/releases/latest'
 
 function global:au_SearchReplace {
     @{
