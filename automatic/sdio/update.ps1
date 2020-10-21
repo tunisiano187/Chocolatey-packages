@@ -9,6 +9,7 @@ function global:au_SearchReplace {
             "(?i)(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
             "(?i)(^\s*.fileName32\s*=\s*)('.*')"  = "`$1'SDIO_R$($Latest.baseVersion).exe'"
             "(?i)(^\s*.fileName64\s*=\s*)('.*')"  = "`$1'SDIO_x64_R$($Latest.baseVersion).exe'"
+            "(?i)(^\s*.fullVersion\s*=\s*)('.*')" = "`$1'$($Latest.version)'"
         }
 
         ".\legal\VERIFICATION.txt" = @{
