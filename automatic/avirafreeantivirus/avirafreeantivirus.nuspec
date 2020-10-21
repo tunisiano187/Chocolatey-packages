@@ -9,6 +9,7 @@
     <licenseUrl>https://www.avira.com/en/end-user-license-agreement-terms-of-use</licenseUrl>
     <projectUrl>https://www.avira.com/en/free-antivirus-windows</projectUrl>
     <iconUrl>https://raw.github.com/tonigellida/chocolateyautomaticpackages/master/avirafreeantivirus/avirafreeantivirus.png</iconUrl>
+    <packageSourceUrl></packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Avira Free Antivirus offers basic protection for your computer against dangerous viruses, worms, spy-ware, trojans and costly dialers.</description>
     <summary>Avira Free Antivirus offers basic protection for your computer against dangerous viruses, worms, spy-ware, trojans and costly dialers.</summary>
