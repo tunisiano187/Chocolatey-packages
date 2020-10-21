@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mblock</id>
-    <version>__REPLACE__</version>
+    <version>5.2.0</version>
     <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
     <owners>__REPLACE_YOUR_NAME__</owners>
     
