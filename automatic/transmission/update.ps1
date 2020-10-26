@@ -18,8 +18,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$file = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.msi'}).href | Where-Object {$_ -match '.msi'}) | Select-Object -First 2
-	$url32 = "https://github.com$($file[0])";
-	$url64 = "https://github.com$($file[1])";
+	$url32 = "https://github.com$($file | Where-Object {$_ -match 'x86'})";
+	$url64 = "https://github.com$($file | Where-Object {$_ -match 'x64'})";
 	$version = $file.split('/')[-2].trim()
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
