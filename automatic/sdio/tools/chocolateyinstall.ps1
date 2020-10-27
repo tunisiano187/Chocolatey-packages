@@ -2,7 +2,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $os=(Get-WMIObject win32_operatingsystem).Version.split('.')
-if(($os[0] -le 6) -and ($os[1] -le 3)) {
+if(([int]$os[0] -le [int]6) -and ([int]$os[1] -le [int]3)) {
     Write-output "Operating system not supported"
     exit 0;
 }
