@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName  = $env:ChocolateyPackageName
-$url          = 'https://github.com/nteract/nteract/releases/download/v0.25.1/nteract-Setup-0.25.1.exe'
-$checksum     = 'd0e330d4e460b0f5633030307fa5cdf1a22cb9bf0de43a31db9f83286563853b'
+$url          = 'https://github.com/nteract/nteract/releases/download/v0.26.0/nteract-Setup-0.26.0.exe'
+$checksum     = '3234f2cb2b25a57b32dc877b87040b5da62a961bb77ef8e4cfbbe38a0c9e6069'
 $checksumType = 'sha256'
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

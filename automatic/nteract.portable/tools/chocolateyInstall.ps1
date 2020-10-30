@@ -4,8 +4,8 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $softwareDir  = "$toolsDir/nteract"
 $softwareExe  = "$softwareDir/nteract.exe"
 
-$url          = 'https://github.com/nteract/nteract/releases/download/v0.25.1/nteract-0.25.1-win.zip'
-$checksum     = '75572f71c5a50f478715189177c1cb0f7a558b41225651434366410a94016ae0'
+$url          = 'https://github.com/nteract/nteract/releases/download/v0.26.0/nteract-0.26.0-win.zip'
+$checksum     = 'd22784a5f10d9d12a892495489c3c8b1bd88675394fa4f44c381018d6ad575da'
 $checksumType = 'sha256'
 
 $packageArgs = @{
