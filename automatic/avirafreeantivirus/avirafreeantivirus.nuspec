@@ -15,4 +15,7 @@
     <copyright />
     <tags>notSilent notUninstallable security antivirus vulnerability</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
