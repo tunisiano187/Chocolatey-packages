@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>scratch</id>
+    <version>1.4</version>
+    <title>scratch (Install)</title>
+    <authors>CSI</authors>
+    <owners>CSI</owners>
+    <projectUrl>https://scratch.mit.edu/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community.</description>
+    <summary>scratch</summary>
+    <tags>scratch</tags>
+  </metadata>
+</package>
