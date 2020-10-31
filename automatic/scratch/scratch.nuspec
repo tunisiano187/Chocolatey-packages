@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>scratch</id>
@@ -9,7 +9,11 @@
     <projectUrl>https://scratch.mit.edu/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community.</description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scite</packageSourceUrl>
     <summary>scratch</summary>
     <tags>scratch</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
