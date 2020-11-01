@@ -46,7 +46,7 @@ param(
         # copy required files in the new folder
         Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
         if(Test-Path "$nupkg\tools") {
-            Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.exe" -Force
+            Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Force
         }
 
         # read nuspec
@@ -78,6 +78,7 @@ param(
         }
         git commit -m "Package download $packageName"
         try {
+            git pull
             git push origin master
         } catch {
             write-output "nothing to push"
