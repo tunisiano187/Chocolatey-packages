@@ -78,6 +78,7 @@ param(
         }
         git commit -m "Package download $packageName"
         try {
+            git pull
             git push origin master
         } catch {
             write-output "nothing to push"
