@@ -136,6 +136,7 @@ build_script:
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "$env:gitlab_user"
     git checkout master
+    git pull
     Write-Host "Checking nuspec errors"
     scripts/Find-NuspecError.ps1
     Write-Host "updating packageSourceUrl"
