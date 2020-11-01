@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nteract</id>
-    <version>0.25.1</version>
+    <version>0.26.0</version>
     <title>nteract</title>
     <authors>nteract contributors</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://nteract.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@20711351a2a3cf31a958cf346c1f4c5f6518a08a/icons/nteract.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>## nteract
+    <description><![CDATA[## nteract
 nteract is a literate coding environment that supports Python, R, JavaScript and other Jupyter kernels. 
 It wraps up the best of the web based Jupyter notebook and embeds it as a desktop application that allows
 you to open notebooks natively on your system.
@@ -24,7 +24,8 @@ also tries to enable the default IPython kernel for your system:
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>nteract is a desktop application that allows you to develop rich documents that contain prose, executable code (in almost any language!), and images. Whether you're a developer, data scientist, researcher, or journalist, nteract helps you write your next code-driven story.</summary>
     <releaseNotes>#### Software
 https://github.com/nteract/nteract/releases/
@@ -38,7 +39,7 @@ https://github.com/nteract/nteract/releases/
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nteract</packageSourceUrl>
     <bugTrackerUrl>https://github.com/nteract/nteract/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="nteract.install" version="[0.0]" />
+      <dependency id="nteract.install" version="[0.26.0]" />
     </dependencies>
   </metadata>
   <files>
