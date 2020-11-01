@@ -1,11 +1,8 @@
-﻿
+﻿$ErrorActionPreference = 'Stop';
 
-
-$ErrorActionPreference = 'Stop';
-
-$packageName = 'scratch'
+$packageName = $env:ChocolateyPackageName
 $softwareName = 'scratch*'
-$installerType = 'MSI' 
+$installerType = 'MSI'
 
 $silentArgs = '/qn /norestart'
 $validExitCodes = @(0, 3010, 1605, 1614, 1641)
