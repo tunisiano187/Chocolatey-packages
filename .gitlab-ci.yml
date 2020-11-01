@@ -35,7 +35,7 @@
     #- git add -u :/
     #- git commit -m '[skip ci] commit from CI runner'
     #- if(git log origin/master..master) { git push origin master }
-    - choco add source "$CI_SERVER_URL/api/v4/projects/$CI_PROJECT_ID/packages/nuget/index.json" --name gitlab --username gitlab-ci-token --password $CI_JOB_TOKEN --store-password-in-clear-text
+    - choco source add "$CI_SERVER_URL/api/v4/projects/$CI_PROJECT_ID/packages/nuget/index.json" --name gitlab --username gitlab-ci-token --password $CI_JOB_TOKEN --store-password-in-clear-text
     - choco push "./upload/*.nupkg" --source gitlab
   rules:
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
