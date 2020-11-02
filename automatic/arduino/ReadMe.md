@@ -1,33 +1,24 @@
+[![](https://img.shields.io/chocolatey/v/arduino?color=green&label=arduino)](https://chocolatey.org/packages/arduino) [![](https://img.shields.io/chocolatey/dt/arduino)](https://chocolatey.org/packages/arduino)
 
+# Arduino
 
-# Arduino CLI
+Arduino integrated development environment (IDE) is a cross-platform application written in Java, and derives from the IDE for the Processing programming language and the Wiring projects. It is designed to introduce programming to artists and other newcomers unfamiliar with software development. It includes a code editor with features such as syntax highlighting, brace matching, and automatic indentation, and is also capable of compiling and uploading programs to the board with a single click. A program or code written for Arduino is called a sketch.
 
-Arduino CLI is an all-in-one solution that provides builder, boards/library manager,
-uploader, discovery and many other tools needed to use any Arduino compatible
-board and platforms.
+Arduino programs are written in C or C++. The Arduino IDE comes with a software library called "Wiring" from the original Wiring project, which makes many common input/output operations much easier.
 
-> **Note:** this software is currently under active development: anything can change
-  at any time, API and UI must be considered unstable until we release version 1.0.0.
+#### Documentation
+* [FAQ](http://www.arduino.cc/en/Main/FAQ)
+* [Getting Started](http://www.arduino.cc/en/Guide/HomePage)
+* [Examples](http://www.arduino.cc/en/Tutorial/HomePage)
+* [Language Reference](http://www.arduino.cc/en/Reference/HomePage)
+* [Manuals](http://playground.arduino.cc/Main/ManualsAndCurriculum)
 
-## Docs
-
-For guidance on installation and development, see the [User documentation](https://arduino.github.io/arduino-cli/).
-
-## Quickstart
-
-1. [Install](https://arduino.github.io/arduino-cli/installation) the Arduino CLI
-2. Follow the [Getting Started](https://arduino.github.io/arduino-cli/getting-started/) guide to check out what the CLI can do
-3. Browse the [Commands reference](https://arduino.github.io/arduino-cli/commands/arduino-cli) to see all the available commands
-4. Should you have an issue, read the [FAQ](https://arduino.github.io/arduino-cli/FAQ/) page
-
-## How to contribute
-
-Contributions are welcome!
-
-Please read the document [How to contribute](https://arduino.github.io/arduino-cli/CONTRIBUTING/) which will show you how to build
-the source code, run the tests, and contribute your changes to the project.
-
-Thanks to all our [contributors](https://github.com/arduino/arduino-cli/graphs/contributors)!
+#### Community
+* [User forum](http://arduino.cc/forum/)
+* [Wiki playground](http://playground.arduino.cc/)
+* [StackExchange](http://arduino.stackexchange.com/)
+* [Twitter](https://twitter.com/arduino)
+* [Facebook](https://www.facebook.com/official.arduino)
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
