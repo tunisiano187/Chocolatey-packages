@@ -19,6 +19,7 @@ function Find-NuspecError {
     $folder = "$PSScriptRoot/$($folder)"
 
     # Update to the latest official xml
+    choco new test --outputdirectory $env:TEMP\Chocolatey\
     $nuspecofficel = Get-Content -Path "$env:TEMP\Chocolatey\test\test.nuspec"
     $nuspecstart = $nuspecofficel.Where({$_ -match "<metadata>"},'until') | Where-Object {$_ -notmatch "^\s*#"} | ForEach-Object {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | ForEach-Object {
         if(($_ -notmatch '\*') -and (($_ -match '<package') -or ($_ -match 'Ω') -or ($_ -match '<?xml')))
@@ -34,7 +35,6 @@ function Find-NuspecError {
         $filecontent = Get-Content $nuspec.FullName
 
         # Get the latest official xml informations
-        choco new test --outputdirectory $env:TEMP\Chocolatey\
         $nuspecend = $filecontent.Where({$_ -match "<metadata>"},'skipuntil') | Select-Object -Skip 1
         $filecontent = "$nuspecstart
 $nuspecend"
