@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rstray</id>
-    <version>1.9.8</version>
+    <version>1.9.9</version>
     <title>Redshift Tray</title>
     <authors>ltGuillaume</authors>
     <owners>tunisiano</owners>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/ltGuillaume/Redshift-Tray</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@72e31a13e654321c9c65f282d6d0b1bf3df9024f/icons/rstray.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[
+    <description><![CDATA[## Redshift Tray
 Redshift Tray (by ltGuillaume) is a no-frills GUI for the excellent screen 
 temperature adjustment tool Redshift by Jon Lund Steffensen. 
 
@@ -32,6 +32,11 @@ is completely free of viruses and other malware. Unfortunately, many pesky virus
 scanners mark compiled AutoHotkey scripts as infected (see [here](https://www.autohotkey.com/docs/FAQ.htm#Virus)). 
 So please tell your antivirus software to back off and mind its own business, 
 or - if you can - report the executable as safe.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>A no-frills GUI for the excellent Redshift, with some optional OS hotkeys.</summary>
     <releaseNotes>#### Software

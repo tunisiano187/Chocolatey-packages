@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nteract.portable</id>
-    <version>0.25.0</version>
-    <title>nteract</title>
+    <version>0.26.0</version>
+    <title>nteract (Portable)</title>
     <authors>nteract team</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/nteract/nteract/blob/master/LICENSE</licenseUrl>
