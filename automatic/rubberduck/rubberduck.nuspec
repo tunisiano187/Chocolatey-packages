@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rubberduck</id>
-    <version>2.5.1.5631</version>
+    <version>2.5.1.5632-pre</version>
     <title>rubberduck VBE addin</title>
     <authors>Mathieu Guindon, Christopher McClellan</authors>
     <owners>tunisiano</owners>
