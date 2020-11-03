@@ -1,15 +1,7 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-  <metadata>
-    <id>procdump</id>
-    <version>9.00</version>
-    <title>ProcDump</title>
-    <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
-    <licenseUrl>https://technet.microsoft.com/sysinternals/bb469936</licenseUrl>
-    <projectUrl>https://technet.microsoft.com/sysinternals/dd996900</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps. 
+[![](https://img.shields.io/chocolatey/v/procdump?color=green&label=procdump)](https://chocolatey.org/packages/procdump) [![](https://img.shields.io/chocolatey/dt/procdump)](https://chocolatey.org/packages/procdump)
+
+## ProcDump
+ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps. 
 
 #### Command line usage
 
@@ -97,19 +89,9 @@ __-64__
 `     By default ProcDump will capture a 32-bit dump of a 32-bit process when running on 64-bit Windows. This option overrides to create a 64-bit dump. Only use for WOW64 subsystem debugging`
 
 __-?__
-`     Use -? -e to see example command lines`</description>
-    <summary>Command-line utility to capture process dumps</summary>
-    <releaseNotes>#### Program
-* [News](http://blogs.technet.com/Sysinternals)
+`     Use -? -e to see example command lines`
 
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
-    <copyright>© Mark Russinovich</copyright>
-    <tags>debug process dump sysinternals cli</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/procdump/</packageSourceUrl>
-    <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
