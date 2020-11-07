@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <metadata>
         <id>adobe-creative-cloud</id>
-        <version>5.3.5.12</version>
+        <version>5.3.5.13</version>
         <title>Adobe Creative Cloud Client</title>
         <authors>Adobe</authors>
         <owners>tunisiano</owners>
@@ -14,6 +14,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description><![CDATA[## Adobe Creative Cloud Client Installer
 Adobe Creative Cloud Client Installer for installing creative cloud subscription applications
+Request a user before continuing, so not fully silent
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
