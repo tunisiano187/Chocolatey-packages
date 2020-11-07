@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <metadata>
         <id>adobe-creative-cloud</id>
-        <version>5.3.5.13</version>
+        <version>5.3.5.12</version>
         <title>Adobe Creative Cloud Client</title>
         <authors>Adobe</authors>
         <owners>tunisiano</owners>
@@ -23,7 +23,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
         <summary>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</summary>
         <releaseNotes />
         <copyright>Adobe</copyright>
-        <tags>Adobe Creative Cloud</tags>
+        <tags>Adobe Creative Cloud NotSilent</tags>
     </metadata>
     <files>
         <file src="tools\**" target="tools" />

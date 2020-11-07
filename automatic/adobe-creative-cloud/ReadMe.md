@@ -2,6 +2,7 @@
 
 ## Adobe Creative Cloud Client Installer
 Adobe Creative Cloud Client Installer for installing creative cloud subscription applications
+Request a user before continuing, so not fully silent
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
