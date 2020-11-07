@@ -19,22 +19,20 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^r\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Sort-Object -Descending)
+	$newversion='0.0'
+	$version='0.0'
 	foreach ($item in $version_folder) {
 		try {
 			$ver = $item.replace(',','.')
-			$clnt = new-object System.Net.WebClient;
-			$clnt.OpenRead("https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe").Close();
-			$date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
 			$linktest = "https://cdist2.perforce.com/perforce/r$($ver)/doc/user/p4vnotes.txt"
-			if($found -ne $true -and ($date))
+			Invoke-WebRequest -Uri $linktest -OutFile "$env:TEMP\p4v.txt"
+			$newversion = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
+			if([version]$version -gt [version]$newversion)
 			{
-				$found = $true
 				$url32 = "https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx86/p4vinst.exe"
 				$url64 = "https://cdist2.perforce.com/perforce/r$($ver)/bin.ntx64/p4vinst64.exe"
 
-				Invoke-WebRequest -Uri $linktest -OutFile "$env:TEMP\p4v.txt"
-				$version = $($(Get-Content "$env:TEMP\p4v.txt" | Where-Object { $_ -match 'version'}).trim() | Where-Object { $_ -match '^Version'})[0].split(' ')[-1]
-				$version = "$version.$date"
+				$version = $newversion
 			}
 		}
 		catch {
