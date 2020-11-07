@@ -1,19 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mblock</id>
-    <version>5.2.0</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-    <owners>__REPLACE_YOUR_NAME__</owners>
+    <version>5.3.0</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mblock</packageSourceUrl>
+    <owners>tunisiano</owners>
     
     <title>mblock (Install)</title>
     <authors>MakeBloc</authors>
     <projectUrl>https://mblock.makeblock.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/mblock.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c38c2502caabc13208962a34c004e47a76ec9f37/icons/mblock.png</iconUrl>
     <copyright>MakeBlock</copyright>
     <tags>mblock learn codding</tags>
     <summary>Learn to code with blocks</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## MakeBlock
+
+#### Make with Code
+One-stop coding platform tailored to coding education, trusted by 15 million educators, and learners
+
+Learn coding at any device, any where
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <releaseNotes>#### Package
     * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
