@@ -13,16 +13,23 @@ $Headers = @{
 }
 $search = ''
 
-if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open){
+if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
     exit 0;
 }
 Start-Sleep 10;
 
-$ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
+Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:list.txt)"
+$Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
+
+if($Todo.Count -eq 0) {
+    $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
+    $ToDo = $ToDo.Title.split(' ')[-1]
+}
+
 if($ToDo){
-    $search = $ToDo.Title.split(' ')[-1]
+    $search = $ToDo
     $closed = Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search
     if($closed.Count -gt 0) {
         $search = ''
