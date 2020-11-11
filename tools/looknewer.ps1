@@ -56,7 +56,7 @@ Install-PackageProvider -name winget -Force
 . $PSScriptRoot\..\scripts\New-Githubissue.ps1
 
 if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
-    if(!(Test-Path "$($PSScriptRoot)/../automatic/$search")) {
+    if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
         if($winout = ($(Find-Package $search).Version)) {
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Output "$search v$($winout) available"
