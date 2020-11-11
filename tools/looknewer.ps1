@@ -72,7 +72,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
-            [string]$Title = "($search) Needs update"
+            [string]$Title = "($($search)$($version)) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
             if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
