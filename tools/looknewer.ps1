@@ -21,10 +21,12 @@ if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
 }
 Start-Sleep 10;
 
-$chocoprofile = "https://chocolatey.org/profiles/tunisiano"
-$links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
-$Todo=$links.split('/')[-2]
-$version=" $($links.split('/')[-1])"
+if($Todo.Count -eq 0) {
+    $chocoprofile = "https://chocolatey.org/profiles/tunisiano"
+    $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
+    $Todo=$links.split('/')[-2]
+    $version=" $($links.split('/')[-1])"
+}
 
 Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:list.txt)"
 $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
