@@ -2,14 +2,22 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>scratch</id>
-    <version>1.4</version>
+    <version>3.18.1</version>
     <title>scratch (Install)</title>
     <authors>CSI</authors>
-    <owners>CSI</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://scratch.mit.edu/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community.</description>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scite</packageSourceUrl>
+    <description><![CDATA[## Scratch
+With Scratch, you can program your own interactive stories, games, and animations 
+and share your creations with others in the online community.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scratch</packageSourceUrl>
     <summary>scratch</summary>
     <tags>scratch</tags>
   </metadata>

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $packageName = $env:ChocolateyPackageName
 $softwareName = 'scratch*'
@@ -14,7 +14,7 @@ $uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
 
 if ($key.Count -eq 1) {
-  $key | % { 
+  $key | % {
     $file = "$($_.UninstallString)"
 
     if ($installerType -eq 'MSI') {
