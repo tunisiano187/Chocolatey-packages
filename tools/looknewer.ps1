@@ -13,6 +13,12 @@ $Headers = @{
 }
 $search = ''
 $version = ''
+$updates=(Get-ChildItem .\automatic\update.ps1 -Recurse | Where-Object{$_.LastWriteTime -lt (Get-Date).AddDays(-7)}).FullName
+foreach ($update in $updates) {
+    $cont=Get-Content -Path $update
+    $cont.Replace('-NoCheckChocoVersion','')
+    Set-Content -Path $update -Value $cont
+}
 
 if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
     Write-Warning "Some issues are still open"
