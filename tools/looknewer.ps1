@@ -12,6 +12,7 @@ $Headers = @{
     Authorization='token '+$UserToken
 }
 $search = ''
+$version = ''
 
 if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
     Write-Warning "Some issues are still open"
@@ -19,6 +20,11 @@ if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
     exit 0;
 }
 Start-Sleep 10;
+
+$chocoprofile = "https://chocolatey.org/profiles/tunisiano"
+$links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
+$Todo=$links.split('/')[-2]
+$version=" $($links.split('/')[-1])"
 
 Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:list.txt)"
 $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
@@ -53,7 +59,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Output "$search v$($winout) available"
             [string]$Label = "ToCreateFrom"
-            [string]$Title = "([$search](https://chocolatey.org/packages/$search)) Needs update"
+            [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search)) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
             if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
