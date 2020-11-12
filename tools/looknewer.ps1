@@ -38,6 +38,7 @@ if($Todo.Count -eq 0) {
     $ToDo = $ToDo.Title.split(' ')[-1]
 }
 
+$ToDo=$ToDo.trim()
 if($ToDo.Count -gt 0){
     $search = $ToDo
     $closed = Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search
