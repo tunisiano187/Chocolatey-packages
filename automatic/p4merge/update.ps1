@@ -39,7 +39,7 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
-if($version -eq "2020.2.3") { $version = 2020.2.20201107}
+if($version -eq "2020.2.3") { $version = "2020.2.20201107"}
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
