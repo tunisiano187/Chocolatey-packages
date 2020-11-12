@@ -31,6 +31,7 @@ if($Todo.Count -eq 0) {
 if($Todo.Count -eq 0) {
     Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:list.txt)"
     $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
+    $ToDo=$ToDo.Trim()
 }
 
 if($Todo.Count -eq 0) {
