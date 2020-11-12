@@ -13,12 +13,6 @@ $Headers = @{
 }
 $search = ''
 $version = ''
-$updates=(Get-ChildItem .\automatic\update.ps1 -Recurse | Where-Object{$_.LastWriteTime -lt (Get-Date).AddDays(-7)}).FullName
-foreach ($update in $updates) {
-    $cont=Get-Content -Path $update
-    $cont.Replace('-NoCheckChocoVersion','')
-    Set-Content -Path $update -Value $cont
-}
 
 if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
     Write-Warning "Some issues are still open"
@@ -34,15 +28,17 @@ if($Todo.Count -eq 0) {
     $version=" $($links.split('/')[-1])"
 }
 
-Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:list.txt)"
-$Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
+if($Todo.Count -eq 0) {
+    Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:list.txt)"
+    $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
+}
 
 if($Todo.Count -eq 0) {
     $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
     $ToDo = $ToDo.Title.split(' ')[-1]
 }
 
-if($ToDo){
+if($ToDo.Count -gt 0){
     $search = $ToDo
     $closed = Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search
     if($closed.Count -gt 0) {
