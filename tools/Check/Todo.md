@@ -35,3 +35,4 @@
 |freac.portable|
 |nteract|
 |mblock|
+|naps2|
