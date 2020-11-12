@@ -22,9 +22,6 @@ function global:au_GetLatest {
 	Write-Output $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
-	if($version -eq '10.0') {
-		$version = '10.0.0.20201112'
-	}
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
