@@ -7,7 +7,7 @@ $packageArgs = @{
   file        = "$toolsPath\BraveBrowserSilentNightlySetup32.exe"
   file64      = "$toolsPath\BraveBrowserSilentNightlySetup.exe"
 }
-$version = '1.18.48-nightly'
+$version = '1.19.6-nightly'
 $version = $version.Split('-')[0]
 
 [version]$softwareVersion = $version
