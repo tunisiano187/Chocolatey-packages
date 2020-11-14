@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "ThymioSuite"} | Where-Object {$_.href -match 'exe'} | Select-Object -First 1).href)"
     $url64 = $url32.replace('win32','win64')
 
-    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+    $version = $url32 -split '-' | select-object -Last 1 -Skip 1
     $tags = Invoke-WebRequest 'https://api.github.com/repos/Mobsya/aseba/releases' -UseBasicParsing | ConvertFrom-Json
     if($tag.tag_name -match $version) {
         foreach ($tag in $tags) {
