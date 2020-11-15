@@ -7,5 +7,24 @@ Write-Output "IE first run welcome screen has been disabled."
 Write-Output 'Setting Windows Update service to Manual startup type.'
 Set-Service -Name wuauserv -StartupType Manual
 
-Write-Output "Get-DnsClientServerAddress"
-Get-DnsClientServerAddress
+Write-Output "Set DNS to cloudflare"
+
+$DNSAddresses = @(
+  ([IPAddress]'1.1.1.1').IPAddressToString
+  ([IPAddress]'1.0.0.1').IPAddressToString
+  ([IPAddress]'2606:4700:4700::1111').IPAddressToString
+  ([IPAddress]'2606:4700:4700::1001').IPAddressToString  
+)
+
+$(Get-DnsClientServerAddress).InterfaceIndex | Get-Unique | sort | foreach{ 
+    $InterfaceIndex = $_
+
+    Invoke-Command -ScriptBlock {
+        $Params = @{
+            'ServerAddresses' = $Using:DNSAddresses
+            'InterfaceIndex'  = $Using:InterfaceIndex
+        }
+
+        Set-DnsClientServerAddress @Params
+    }
+}
