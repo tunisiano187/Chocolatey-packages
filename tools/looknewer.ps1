@@ -25,7 +25,7 @@ if($Todo.Count -eq 0) {
     $chocoprofile = "https://chocolatey.org/profiles/tunisiano"
     $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
     $Todo=$links.split('/')[-2]
-    $version=" $($links.split('/')[-1])"
+    $version="/$($links.split('/')[-1])"
 }
 
 if($Todo.Count -eq 0) {
@@ -65,7 +65,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Output "$search v$($winout) available"
             [string]$Label = "ToCreateFrom"
-            [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search)) Needs update"
+            [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search$($version))) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated"
             if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
