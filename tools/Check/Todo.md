@@ -41,3 +41,4 @@
 |autocomplete|
 |FreePlane|
 |procdump|
+|nteract.install|
