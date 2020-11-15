@@ -6,3 +6,6 @@ Write-Output "IE first run welcome screen has been disabled."
 
 Write-Output 'Setting Windows Update service to Manual startup type.'
 Set-Service -Name wuauserv -StartupType Manual
+
+Write-Output "Get-DnsClientServerAddress"
+Get-DnsClientServerAddress
