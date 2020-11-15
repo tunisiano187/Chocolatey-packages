@@ -33,6 +33,8 @@ param(
         if($replace.ToLower() -eq "y") {
             Remove-Item "$folder\$packageName\" -Force -Recurse
             Remove-Item "$nupkg.zip" -Force
+        } else {
+            Exit 0;
         }
 
     }
