@@ -55,6 +55,7 @@ if($ToDo.Count -gt 0){
     $closed = Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search
     if($closed.Count -gt 0) {
         $search = ''
+        $version = ''
     }
 }
 
@@ -67,6 +68,7 @@ if($search -eq '') {
     Move-Item "$source-temp" $source -Force
     if(($check.Count -gt 0) -or (Test-Path("../automatic/$search"))) {
         $search = ''
+        $version = ''
     }
 }
 
