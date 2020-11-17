@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>voicemod</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl></packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+
+    <title>voicemod (Install)</title>
+    <authors>VoiceMod</authors>
+    <projectUrl>https://www.voicemod.net/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/voicemod.png</iconUrl>
+    <copyright>VoiceMod</copyright>
+    <licenseUrl>https://support.voicemod.net/hc/en-us/categories/360002495939-Licenses-and-subscriptions</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://support.voicemod.net/hc/en-us</docsUrl>
+    <mailingListUrl>https://www.voicemod.net/blog/</mailingListUrl>
+
+    <tags>voicemod Voice modulator</tags>
+    <summary>FREE Real Time Voice Changer for Online Games</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
