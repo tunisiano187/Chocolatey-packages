@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nteract</id>
-    <version>0.26.0</version>
+    <version>0.25.0</version>
     <title>nteract</title>
     <authors>nteract contributors</authors>
     <owners>tunisiano</owners>
