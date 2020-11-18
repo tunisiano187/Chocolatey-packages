@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>voicemod</id>
-    <version>2.2.0.0</version>
+    <version>2.2.0.2</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/voicemod</packageSourceUrl>
     <owners>tunisiano</owners>
 
     <title>voicemod (Free)</title>
     <authors>VoiceMod</authors>
     <projectUrl>https://www.voicemod.net/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/voicemod.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96ccc2ecf9cdc0b75592d3095130de0ec24bf396/icons/voicemod.jpg</iconUrl>
     <copyright>VoiceMod</copyright>
     <licenseUrl>https://support.voicemod.net/hc/en-us/categories/360002495939-Licenses-and-subscriptions</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
