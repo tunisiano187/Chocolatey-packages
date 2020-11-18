@@ -50,14 +50,10 @@ __-s__
 `     Consecutive seconds before dump is written (default is 10)`
 __-t__
 `     Write a dump when the process terminates`
-__-u__
-`     Treat CPU usage relative to a single core (used with -c).  As the only option, Uninstalls ProcDump as the postmortem debugger`
 __-w__
 `     Wait for the specified process to launch if it's not running`
 __-x__
 `     Launch the specified image with optional arguments. If it is a Store Application or Package, ProcDump will start on the next activation (only)`
-__-64__
-`     By default ProcDump will capture a 32-bit dump of a 32-bit process when running on 64-bit Windows. This option overrides to create a 64-bit dump. Only use for WOW64 subsystem debugging`
 __-?__
 `     Use -? -e to see example command lines`
 ### Package-specific issue
