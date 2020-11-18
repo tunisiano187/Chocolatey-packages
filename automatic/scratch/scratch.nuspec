@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>scratch</id>
-    <version>3.18.1</version>
+    <version>3.18.0</version>
     <title>scratch (Install)</title>
-    <authors>CSI</authors>
+    <authors>MIT</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://scratch.mit.edu/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,6 +20,10 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scratch</packageSourceUrl>
     <summary>scratch</summary>
     <tags>scratch</tags>
+    <licenceUrl>https://scratch.mit.edu/terms_of_use</licenceUrl>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
