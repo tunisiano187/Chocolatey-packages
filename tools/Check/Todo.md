@@ -44,3 +44,4 @@
 |nteract.install|
 |nteract.install|
 |procdump|
+|thymiosuite|
