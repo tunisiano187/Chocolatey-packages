@@ -14,7 +14,7 @@ $packageArgs = @{
     Checksum        = $checksum
     ChecksumType    = $ChecksumType
     Url64           = $url64
-    Checksum64      = $chcksum64
+    Checksum64      = $checksum64
     ChecksumType64  = $ChecksumType64
     UnzipLocation   = $toolsDir
 }
