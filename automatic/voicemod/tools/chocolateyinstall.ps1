@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url          = ''
-$checksum     = ''
-$checksumType = ''
+$url          = 'https://www.voicemod.net/b2c/v2/VoicemodSetup_2.2.0.2.exe'
+$checksum     = 'fe984cfe417284c42168e5a55762621818e8f66f84cce571e2a83ae9f40ad268'
+$checksumType = 'sha256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

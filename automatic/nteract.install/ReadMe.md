@@ -1,6 +1,6 @@
-[![](https://img.shields.io/chocolatey/v/nteract?color=green&label=nteract)](https://chocolatey.org/packages/nteract) [![](https://img.shields.io/chocolatey/dt/nteract)](https://chocolatey.org/packages/nteract)
+[![](https://img.shields.io/chocolatey/v/nteract?color=green&label=nteract.install)](https://chocolatey.org/packages/nteract.install) [![](https://img.shields.io/chocolatey/dt/nteract.install)](https://chocolatey.org/packages/nteract.install)
 
-## nteract
+## nteract (Install)
 nteract is a literate coding environment that supports Python, R, JavaScript and other Jupyter kernels. 
 It wraps up the best of the web based Jupyter notebook and embeds it as a desktop application that allows
 you to open notebooks natively on your system.

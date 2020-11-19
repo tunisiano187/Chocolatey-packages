@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>voicemod</id>
-    <version>__REPLACE__</version>
-    <packageSourceUrl></packageSourceUrl>
-    <owners>__REPLACE_YOUR_NAME__</owners>
+    <version>2.2.0.2</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/voicemod</packageSourceUrl>
+    <owners>tunisiano</owners>
 
     <title>voicemod (Free)</title>
     <authors>VoiceMod</authors>
     <projectUrl>https://www.voicemod.net/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/voicemod.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96ccc2ecf9cdc0b75592d3095130de0ec24bf396/icons/voicemod.jpg</iconUrl>
     <copyright>VoiceMod</copyright>
     <licenseUrl>https://support.voicemod.net/hc/en-us/categories/360002495939-Licenses-and-subscriptions</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -19,7 +19,18 @@
 
     <tags>voicemod Voice modulator</tags>
     <summary>FREE Real Time Voice Changer for Online Games</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## voicemod
+Voicemod is the best free voice changer & soundboard software for Windows (coming soon for Linux and Mac OSX). A simple online voice modifier and transformer with effects capable of converting your voice into robot, female or girl online. It?s great for games and chatting as an app. In addition, it integrates perfectly with Stream Deck and Streamlabs OBS.
+
+Use this incredible voice changer also in applications such as Wire, Vivox (Overtone), Paltalk, Mumble, Tox, Riot.im, ooVoo, Viber, Ekiga, Jitsi, Ventrilo or Hangouts. Create your Voice Skins in seconds! Voice changing for everyone! Use it in video editors too!
+
+Troll like a PRO!
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <releaseNotes>
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

@@ -1,6 +1,6 @@
-$packageName = $env:ChocolateyPackageName
+﻿$packageName = $env:ChocolateyPackageName
 $url = 'https://download.sysinternals.com/files/Procdump.zip'
-$checksum = '9e089b3f25a85c58f901094e4126412bbef480bd7baef2a9039bdef328bf5baa'
+$checksum = 'cf3ece5f2d9b39c35ca008e7016831213f5033ae4470fb64f396a3fbded17d19'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Install-ChocolateyZipPackage -PackageName "$packageName" `
