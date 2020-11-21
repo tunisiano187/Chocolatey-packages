@@ -20,7 +20,7 @@ function global:au_GetLatest {
     $version = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".zip"} | Select-Object -First 1).href).split('/')[-1].replace('.zip', '').replace('v','')
 	$realversion = $version.replace('rc','-rc');
 	Write-Verbose 'Get files'
-	$url64 = $("https://bitcoincore.org/bin/bitcoin-core-0.20.1/bitcoin-0.20.1-win64.zip").replace('0.20.1',$version)
+	$url64 = $((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".zip"} | Select-Object -First 1).href
 
     return @{ URL64 = $url64; Version = $realversion }
 }
