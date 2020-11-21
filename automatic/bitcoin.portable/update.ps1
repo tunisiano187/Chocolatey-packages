@@ -18,11 +18,11 @@ if ($MyInvocation.InvocationName -ne '.') {
 function global:au_GetLatest {
     Write-Verbose 'Get version'
     $version = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".zip"} | Select-Object -First 1).href).split('/')[-1].replace('.zip', '').replace('v','')
-	$version = $version.replace('rc','-rc');
+	$realversion = $version.replace('rc','-rc');
 	Write-Verbose 'Get files'
 	$url64 = $("https://bitcoincore.org/bin/bitcoin-core-0.20.1/bitcoin-0.20.1-win64.zip").replace('0.20.1',$version)
 
-    return @{ URL64 = $url64; Version = $version }
+    return @{ URL64 = $url64; Version = $realversion }
 }
 
 update -ChecksumFor 64 -NoCheckChocoVersion
