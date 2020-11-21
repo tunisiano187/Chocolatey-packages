@@ -6,7 +6,7 @@
 #>
 param(
     # Version to set
-    [string] $Version = [Version]$(git log -1 --date=short)[3].split(' ')[-1].replace("-","."),
+    [string] $Version = [Version]$(git log -1 --date=short)[3].split(' ')[-1].replace("-",".").trim,
 
     # Install module in the system after the build
     [switch] $Install = $false,
