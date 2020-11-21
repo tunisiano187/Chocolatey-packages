@@ -6,7 +6,7 @@
 #>
 param(
     # Version to set
-    [string] $Version = [Version]$(git log -1 --date=short)[3].split(' ')[-1].replace("-","."),
+    [string] $Version = [Version]$((git log -1 --date=short) | Where-Object { $_ -match "date"}).split(' ')[-1].replace("-","."),
 
     # Install module in the system after the build
     [switch] $Install = $false,
@@ -20,8 +20,6 @@ param(
     # Do not build chocolatey package
     [switch] $NoChocoPackage = $false
 )
-
-throw ".$Version."
 
 $b = {
     if ($Clean) { git clean -Xfd -e vars.ps1; return }
