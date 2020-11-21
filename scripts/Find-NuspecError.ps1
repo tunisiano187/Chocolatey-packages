@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Check the content of the nuspec for common errror and output them
 
@@ -22,7 +22,7 @@ function Find-NuspecError {
     choco new test --outputdirectory $env:TEMP\Chocolatey\
     $nuspecofficel = Get-Content -Path "$env:TEMP\Chocolatey\test\test.nuspec"
     $nuspecstart = $nuspecofficel.Where({$_ -match "<metadata>"},'until') | Where-Object {$_ -notmatch "^\s*#"} | ForEach-Object {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | ForEach-Object {
-        if(($_ -notmatch '\*') -and (($_ -match '<package') -or ($_ -match 'Ω') -or ($_ -match '<?xml')))
+        if(($_ -notmatch '\*') -and (($_ -match '<package') -or ($_ -match 'Î©') -or ($_ -match '<?xml')))
         {
             $_
         }
