@@ -7,7 +7,7 @@ if ($WindowsVersion.Major -ne "10") {
 }
 
 $AppxPackageName  = "Rufus"
-$version          = '3.12'
+$version          = '3.13'
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileName         = "$toolsDir\Rufus-$version.appx"
 
