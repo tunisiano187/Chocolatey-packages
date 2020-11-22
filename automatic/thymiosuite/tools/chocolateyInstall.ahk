@@ -11,4 +11,12 @@ WinWait, Windows Security ahk_class #32770, , 40
 Send NumpadLeft
 Send {enter}
 
+WinWait, Windows Security ahk_class #32770, , 40
+Send NumpadLeft
+Send {enter}
+
+WinWait, Windows Security ahk_class #32770, , 40
+Send NumpadLeft
+Send {enter}
+
 ExitApp
