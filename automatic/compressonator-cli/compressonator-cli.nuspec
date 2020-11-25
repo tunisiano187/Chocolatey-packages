@@ -4,7 +4,7 @@
   <metadata>
     <id>compressonator-cli</id>
     <title>Compressonator CLI</title>
-    <version>4.0.4855</version>
+    <version>4.1.5083</version>
     <authors>GPUOpen initiative</authors>
     <owners>tunisiano</owners>
     <summary>Compressonator is a set of tools to allow artists and developers to more easily create compressed texture assets or model mesh optimizations and easily visualize the quality impact of various compression and rendering technologies</summary>
@@ -18,7 +18,7 @@ For more details goto the online Compressonator Documents: http://compressonator
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2d71c90ca067eb7aec04a070afa38fbf5eb3ef84/icons/compressonator-cli.png</iconUrl>
     <projectUrl>https://github.com/GPUOpen-Tools/compressonator</projectUrl>
