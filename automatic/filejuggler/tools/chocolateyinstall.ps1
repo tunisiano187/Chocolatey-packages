@@ -3,7 +3,7 @@ $packageName    = $env:ChocolateyPackageName
 $installerType  = 'EXE'
 $silentArgs     = '/qb'
 $url            = 'https://www.filejuggler.com/download/filejuggler.exe'
-$checksum       = 'c60981621eb9958c7f6414bbf715ee7f15a694445658adf0f01dfd487677b7ec'
+$checksum       = 'eb80f7bf7256c2860e7a607caef313ba897f55fcab4f591422c062a760429d7a'
 $checksumtype	= 'sha256'
 
 $scriptPath     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
