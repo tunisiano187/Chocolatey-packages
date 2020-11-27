@@ -4,7 +4,7 @@
   <metadata>
     <id>compressonator-cli</id>
     <title>Compressonator CLI</title>
-    <version>4.1.5083</version>
+    <version>4.0.5083</version>
     <authors>GPUOpen initiative</authors>
     <owners>tunisiano</owners>
     <summary>Compressonator is a set of tools to allow artists and developers to more easily create compressed texture assets or model mesh optimizations and easily visualize the quality impact of various compression and rendering technologies</summary>
@@ -25,7 +25,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/GPUOpen-Tools/compressonator</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/compressonator-cli</packageSourceUrl>
     <tags>foss tools compressed texture</tags>
-    <licenseUrl>https://github.com/GPUOpen-Tools/compressonator/blob/master/LICENSE_FILE</licenseUrl>
+    <licenseUrl>https://github.com/GPUOpen-Tools/compressonator/tree/master/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Software 
 * Releases Notes : https://github.com/GPUOpen-Tools/compressonator/releases
