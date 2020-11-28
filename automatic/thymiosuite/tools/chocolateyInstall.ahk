@@ -8,15 +8,15 @@ DetectHiddenText, off
 SetTitleMatchMode, 1  ;begins
 
 WinWait, Windows Security ahk_class #32770, , 40
-Send NumpadLeft
+Send {AltDown}I{AltUp}
 Send {enter}
 
 WinWait, Windows Security ahk_class #32770, , 40
-Send NumpadLeft
+Send {AltDown}I{AltUp}
 Send {enter}
 
 WinWait, Windows Security ahk_class #32770, , 40
-Send NumpadLeft
+Send {AltDown}I{AltUp}
 Send {enter}
 
 ExitApp
