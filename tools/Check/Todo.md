@@ -45,3 +45,4 @@
 |nteract.install|
 |procdump|
 |thymiosuite|
+|thymiosuite|
