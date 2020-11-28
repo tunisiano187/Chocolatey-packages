@@ -3,7 +3,7 @@
   <metadata>
     <id>pestudio</id>
     <title>PE Studio</title>
-    <version>9.7.0.0</version>
+    <version>9.8.0.0</version>
     <authors>Marc Ochsenmeier</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.winitor.com/</projectUrl>
@@ -15,11 +15,11 @@ PeStudio is a utility for inspecting PE formatted binaries such as windows EXEs 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>PeStudio is a utility for inspecting PE formatted binaries</summary>
     <licenseUrl>https://www.winitor.com/tools/pestudio/changes.log</licenseUrl>
-    <iconUrl>https://w1.updatestar.com/img/icons/2235044.32.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3ae1c7e65f334d7906f25c0de9d07ab4ee8b3d73/icons/pestudio.png</iconUrl>
     <releaseNotes>#### Software
 * [Changelog](https://www.winitor.com/tools/pestudio/changes.log)
 
