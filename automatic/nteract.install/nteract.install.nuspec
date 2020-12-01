@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nteract.install</id>
-    <version>0.25.0</version>
+    <version>0.27.0</version>
     <title>nteract (Install)</title>
     <authors>nteract contributors</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://nteract.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@20711351a2a3cf31a958cf346c1f4c5f6518a08a/icons/nteract.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## nteract
+    <description><![CDATA[## nteract (Install)
 nteract is a literate coding environment that supports Python, R, JavaScript and other Jupyter kernels. 
 It wraps up the best of the web based Jupyter notebook and embeds it as a desktop application that allows
 you to open notebooks natively on your system.
