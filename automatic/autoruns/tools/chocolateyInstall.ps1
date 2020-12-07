@@ -17,7 +17,7 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -ChecksumType "$checksumType" `
                              -Checksum64 "$checksum64" `
                              -ChecksumType64 "$checksumType64"
-$programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
+$programs = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\"
 $shortcutFilePath = Join-Path $programs $linkName
 $targetPath = Join-Path $toolsDir $fileName
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath
