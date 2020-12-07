@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $linkName = "Autoruns.lnk"
-$programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
+$programs = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\"
 $shortcutFilePath = Join-Path $programs $linkName
 
 if(Test-Path $shortcutFilePath) {
