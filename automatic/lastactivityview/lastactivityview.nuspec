@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>lastactivityview</id>
+    <version>1.32</version>
+    <title>LastActivityView</title>
+    <authors>Nir Sofer</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/computer_activity_view.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/computer_activity_view.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/lastactivityview.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>LastActivityView is a tool for Windows operating system that collects information from various sources on a running system, and displays a log of actions made by the user and events occurred on this computer.
+
+The activity displayed by LastActivityView includes: Running .exe file, Opening open/save dialog-box, Opening file/folder from Explorer or other software, software installation, system shutdown/start, application or system crash, network connection/disconnection and more...</description>
+    <summary>View the latest computer activity in Windows operating system</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2012 NirSoft</copyright>
+    <tags>activity viewer log</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/lastactivityview/</packageSourceUrl>
+  </metadata>
+</package>
