@@ -18,6 +18,9 @@ function global:au_GetLatest {
 	$File = "$($env:TEMP)\jcpicker.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	if($version -eq '5.5.0.0') {
+		$version = '5.5.0.20201209'
+	}
 
 	$url32 = 'https://annystudio.com/jcpicker.zip'
 
