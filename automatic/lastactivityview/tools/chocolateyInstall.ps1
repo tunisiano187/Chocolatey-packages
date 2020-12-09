@@ -1,4 +1,4 @@
-$packageName = 'lastactivityview'
+$packageName = $env:ChocolateyPackageName
 $url = 'http://www.nirsoft.net/utils/lastactivityview.zip'
 $checksum = '8572b903d316b55e89fa7c129a7c8d0e1da597158fcde8a7210b2b1a6e34df17'
 $checksumType = 'sha256'
