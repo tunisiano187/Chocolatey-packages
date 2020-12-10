@@ -17,6 +17,9 @@ function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "DeepLSetup.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	if($version -eq '1.17.0') {
+		$version = '1.17.0.20201210'
+	}
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
