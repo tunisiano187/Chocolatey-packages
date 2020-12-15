@@ -1,26 +1,18 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName    = 'bonjour'
-#$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-
-# Package download informations
-$url            = 'https://support.apple.com/downloads/DL999/en_US/BonjourPSSetup.exe'
-$checksum       = '7f1ec347cd429cfb25a34b2147e02231334f28290e0c28be213415b0f99da1a0'
-$checksumType   = 'sha256'
-
-# Installer informations (contained in the exe package)
-$fileType       = 'msi'
-$silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" # ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0
-$validExitCodes = @(0, 3010, 1641)
-
-# Installer selection
-$file = "$env:temp\Bonjour.msi"
-if (Get-ProcessorBits -eq 64) {
-	$file = "$env:temp\Bonjour64.msi"
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType		= "msi"
+  
+  url           = 'http://sdupdt.itsupport247.net/tpupdate/Bonjour_3.1.0.1.msi'
+  checksum      = '7d7b2986d4fd35cc98af3607b1a5e2e004d6ab1116a4a9db37a66c17b63b6397'
+  checksumType  = 'sha256'
+  
+  url64bit      = 'http://sdupdt.itsupport247.net/tpupdate/Bonjour64_3.1.0.1.msi'
+  checksum64    = '46e31e284da64d6c2d366352b8a8abcf7db28d3e2a870d8fcf15c4a6fe0a6dd1'
+  checksumType64= 'sha256'
+  
+  silentArgs	= "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 }
 
-# Downloading package and unzipping it
-&(Get-ChocolateyWebFile $packageName "$env:temp\BonjourPSSetup.exe" $url -Checksum $checksum -ChecksumType $checksumType) /extract $env:temp
-
-# Installing from the extracted msi
-Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file -validExitCodes $validExitCodes
+Install-ChocolateyPackage @packageArgs
