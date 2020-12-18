@@ -4,7 +4,7 @@
   <metadata>
     <id>electrum</id>
     <title>Electrum</title>
-    <version>4.0.8</version>
+    <version>4.0.9</version>
     <authors>Electrum Developers</authors>
     <owners>tunisiano</owners>
     <summary>Lightweight Bitcoin client</summary>
