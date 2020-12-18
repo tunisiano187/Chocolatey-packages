@@ -20,7 +20,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/scratch</packageSourceUrl>
     <summary>scratch</summary>
     <tags>scratch</tags>
-    <licenceUrl>https://scratch.mit.edu/terms_of_use</licenceUrl>
+    <licenseUrl>https://scratch.mit.edu/terms_of_use</licenseUrl>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
