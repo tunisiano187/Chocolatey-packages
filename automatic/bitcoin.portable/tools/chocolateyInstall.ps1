@@ -1,7 +1,7 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = 'https://github.com//bitcoin/bitcoin/archive/v0.21.0rc2.zip'
-$checksum64 = 'f7e0bde7bc24f8047e3ca1438d6e92166e4aabe0f5b9d0bf3d7ff397f355a78f'
+$url64 = 'https://github.com//bitcoin/bitcoin/archive/v0.21.0rc3.zip'
+$checksum64 = 'a75feaa4b700e5ad03f5439da4459c8f53503010c91390b1c2b9d6928e97e021'
 $checksumType64 = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `
