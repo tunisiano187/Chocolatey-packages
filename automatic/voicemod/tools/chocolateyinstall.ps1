@@ -17,4 +17,11 @@ $packageArgs = @{
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
 }
 
+$scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$ahkFile = Join-Path $scriptPath "chocolateyInstall.ahk"
+$ahkExe = 'AutoHotKey'
+$ahkRun = "$Env:Temp\$(Get-Random).ahk"
+Copy-Item $ahkFile "$ahkRun" -Force
+Start-Process $ahkExe $ahkRun
+
 Install-ChocolateyPackage @packageArgs
