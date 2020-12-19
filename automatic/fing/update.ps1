@@ -16,6 +16,9 @@ function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "fing.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	if($version -eq '2.4.1') {
+		$version = '2.4.1.20201219'
+	}
 	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
