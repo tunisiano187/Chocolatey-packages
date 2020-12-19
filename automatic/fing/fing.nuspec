@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fing</id>
-    <version>2.4.1</version>
+    <version>2.4.1.20201219</version>
     <title>Fing</title>
     <authors>Fing</authors>
     <owners>tunisiano</owners>
@@ -12,7 +12,7 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@db51cc19fed6d551ba0b00ac096fdfd2c49c24f0/icons/fing.png</iconUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fing</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## foldingathome
+    <description><![CDATA[## Fing
 Fing App is a free network scanner that makes you discover all connected devices, run internet 
 speed tests and help troubleshoot network and device issues. Get Fingbox for more advanced security 
 and protection for your network.
