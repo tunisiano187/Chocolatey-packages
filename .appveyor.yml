@@ -19,6 +19,7 @@ environment:
   au_push: true
   # Use 1 to test all, or N to split testing into N groups
   au_test_groups: 4
+  au_PushUrl: https://ci.appveyor.com/nuget/chocolatey-packages-0q3ax0ay0owf
 
   # Github token to commit pushed packages to repository
   github_user_repo: tunisiano187/Chocolatey-packages
@@ -45,7 +46,7 @@ environment:
 
   #Chocolatey API key - to push updated packages
   api_key:
-    secure: aXQkG8BvsO7/zFDzAb7ADCdvottWbXf1sRoC34DUk9RIvzOiIdjprfw39CvNT4WK
+    secure: mBBWh7aPGjcYn2dICPTfPSby56rMpYeavRDdzcZd2/8=
 
   #Chocolatey version we want to use when checking for updates (usually latest).
   choco_version: '0.10.15'
