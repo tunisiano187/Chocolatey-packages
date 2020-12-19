@@ -38,7 +38,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
   <dependencies>
       <dependency id="autohotkey.portable" version="1.1.33.01" />
       <dependency id="vcredist140" version="14.28.29325.2" />
-      <dependency id="dotnet4.7.2" version="[4.7.2.0]" />
+      <dependency id="dotnetfx" version="[4.7.2.20180712]" />
     </dependencies>
   </metadata>
   <files>
