@@ -9,9 +9,7 @@ if(!(Test-Path Env:mail_user)) {
     $Env:mail_enablessl   = 'true'
 }
 
-if(!(Test-Path $Env:au_PushUrl)) {
-    $Env:au_PushUrl             = $choco_push_url           # Chocolatey Push URL
-}
+$Env:au_PushUrl             = "https://ci.appveyor.com/nuget/chocolatey-packages-0q3ax0ay0owf/api/v2/package"           # Chocolatey Push URL
 
 if(!(Test-Path Env:api_key)) {
     $Env:api_key                = $choco_api                # Chocolatey api key
