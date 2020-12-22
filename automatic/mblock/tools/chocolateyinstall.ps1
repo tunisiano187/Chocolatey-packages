@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $url            = 'https://dl.makeblock.com/mblock5/win32/V5.3.0.exe'
-$checksum       = '88f5d4fc512df8d7aed06611f44177a7be34fcdb6ffa662a6f92bf1c52c71c76'
+$checksum       = '3ba017427350a75f8a03a4078900a20cc75a3614ba530af5cf42b9cb8945337e'
 $checksumType   = 'sha256'
 
 

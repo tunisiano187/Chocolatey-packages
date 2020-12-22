@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installDir = "$(Get-ToolsLocation)\rstray"
-$version    = '1.9.9'
+$version    = '2.0.0'
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
