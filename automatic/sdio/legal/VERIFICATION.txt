@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://snappy-driver-installer.org/downloads/SDIO_1.8.0.722.zip
+   x32: https://snappy-driver-installer.org/downloads/SDIO_1.9.0.728.zip
 
    to download the installer.
 
@@ -15,9 +15,9 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 834e8371959f30280671fb7e3552b9dc56982a991bcd00e5146cd01a7d9fe127
+   checksum32: fdcdbef094bbf49fa7c6eb979172592fe64b0b4778795d1cdd5082787d1dd031
 
 Using AU:
 
-   Get-RemoteChecksum32 https://snappy-driver-installer.org/downloads/SDIO_1.8.0.722.zip
+   Get-RemoteChecksum32 https://snappy-driver-installer.org/downloads/SDIO_1.9.0.728.zip
 
