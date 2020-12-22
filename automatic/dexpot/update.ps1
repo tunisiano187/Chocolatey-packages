@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "dexpot.exe"
+	$File = Join-Path $env:TEMP "dexpot.exe"
 	$url32 = "https://dexpot.de/$($((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match 'exe'}).outerHTML.split('"')[1])"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion

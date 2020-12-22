@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "FACEIT-setup-latest.exe"
+	$File = Join-Path $env:TEMP "FACEIT-setup-latest.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 

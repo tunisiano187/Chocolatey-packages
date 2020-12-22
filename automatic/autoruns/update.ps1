@@ -14,13 +14,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "autoruns.exe"
+	$File = Join-Path $env:TEMP "autoruns.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	$release = "https://download.sysinternals.com/files/Autoruns.zip"
-	if($version -eq '13.98') {
-		$version = '13.98.20200930'
-	}
+
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest

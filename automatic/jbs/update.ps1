@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	$jbs = (Invoke-WebRequest -Uri $releases -UseBasicParsing)
 	$url32 = ($jbs.Links | Where-Object {$_ -match 'exe'})[0].href
 
-	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "SwitcherSetup.exe"
+	$File = Join-Path $env:TEMP "SwitcherSetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	Start-Process -FilePath $File -ArgumentList "/S" -Wait
 	while (!(Test-Path $(join-path ${env:ProgramFiles(x86)} "johnsadventures.com\John's Background Switcher\BackgroundSwitcher.exe"))) {
