@@ -39,9 +39,18 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
-if($version -eq "2020.3.1") { $version = "2020.3.1.20201225"}
+
+	# check if the sha is the same as the current
+	$currentcheck = "$env:TEMP\p4vinst.exe"
+	$currenttools = "./tools/chocolateyinstall.ps1"
+	Invoke-WebRequest -UseBasicParsing -Uri $url32 -OutFile $currentcheck
+	foreach ($line in $(Get-Content $currenttools)) {
+		if($_ -like "*$(Get-FileHash $currentcheck)*") {
+			$version = "2020.1"
+		}
+	}
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
-}
+
 
 update
