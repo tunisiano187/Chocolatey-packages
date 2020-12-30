@@ -31,14 +31,16 @@ Install-PackageProvider -name winget -Force
 if($Todo.Count -eq 0) {
     $chocoprofile = "https://chocolatey.org/profiles/tunisiano"
     $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
+    $ToDo=$links
     foreach ($item in $links) {
         $search=$item.split('/')[-2]
-        $version="/$($item.split('/')[-1])"
+        $version=$item.split('/')[-1]
         [string]$Label = "ToCreateManualy"
         [string]$Title = "($($search)/$($version)) Require maintainer action"
         [string]$Description = "([$search](https://chocolatey.org/packages/$search/$version)) Waiting for maintainer action"
         if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
             New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            Start-Sleep -Seconds 6
         }
     }
 }
