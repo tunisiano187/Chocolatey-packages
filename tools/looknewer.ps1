@@ -24,12 +24,23 @@ if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
 # Wait to avoid api requests limit
 Start-Sleep 10;
 
+Install-PackageProvider -name winget -Force
+. $PSScriptRoot\..\scripts\New-Githubissue.ps1
+
 # Check if one package is waiting for maintainer action on Chocolatey
 if($Todo.Count -eq 0) {
     $chocoprofile = "https://chocolatey.org/profiles/tunisiano"
     $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
-    $Todo=$links.split('/')[-2]
-    $version="/$($links.split('/')[-1])"
+    foreach ($item in $ToDo) {
+        $search=$item.split('/')[-2]
+        $version="/$($item.split('/')[-1])"
+        [string]$Label = "ToCreateManualy"
+        [string]$Title = "($($search)$($version)) Needs update"
+        [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Waiting for maintainer action"
+        if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+        }
+    }
 }
 
 # If no package is waiting
@@ -71,9 +82,6 @@ if($search -eq '') {
         $version = ''
     }
 }
-
-Install-PackageProvider -name winget -Force
-. $PSScriptRoot\..\scripts\New-Githubissue.ps1
 
 if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
