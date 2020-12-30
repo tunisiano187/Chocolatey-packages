@@ -35,7 +35,7 @@ if($Todo.Count -eq 0) {
         $search=$item.split('/')[-2]
         $version="/$($item.split('/')[-1])"
         [string]$Label = "ToCreateManualy"
-        [string]$Title = "($($search)$($version)) Needs update"
+        [string]$Title = "($($search)$($version)) Require maintainer action"
         [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Waiting for maintainer action"
         if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
             New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
