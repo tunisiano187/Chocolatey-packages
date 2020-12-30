@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'LBRY-'} | Where-Object {$_ -match '.exe'} | where {$_ -notmatch '.blockmap'}).href[0]
+	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Select-Object -First 1).href
 	Write-Output 'Checking version'
 	#$version=$url64.split('/')[5].replace('v','')
 	$version = Get-Version $url32
