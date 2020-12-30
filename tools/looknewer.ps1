@@ -31,7 +31,7 @@ Install-PackageProvider -name winget -Force
 if($Todo.Count -eq 0) {
     $chocoprofile = "https://chocolatey.org/profiles/tunisiano"
     $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
-    foreach ($item in $ToDo) {
+    foreach ($item in $links) {
         $search=$item.split('/')[-2]
         $version="/$($item.split('/')[-1])"
         [string]$Label = "ToCreateManualy"
