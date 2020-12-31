@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	Write-Verbose "Version : $version"
 	$url32 = "https://github.com$($url32)";
 	Invoke-WebRequest -Uri $url32 -OutFile "$(Get-Location)\tools\redshift-tray.zip"
-	Get-FileHash -Path "$(Get-Location)\tools\redshift-tray.zip" -Algorithm SHA256
+	$checksum = Get-FileHash -Path "$(Get-Location)\tools\redshift-tray.zip" -Algorithm SHA256
 	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ltGuillaume/Redshift-Tray/master/LICENSE" -OutFile "$(Get-Location)\tools\license.txt"
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum }
 	return $Latest
