@@ -13,7 +13,7 @@ x86: https://github.com/ltGuillaume/Redshift-Tray/releases/download/2.0.0/redshi
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: 
+checksum: @{Algorithm=SHA256; Hash=7236592EBD628A1C357006F57798DB42A781371EBCD095CDA0BF63652E6B5D6A; Path=C:\projects\chocolatey-packages\automatic\rstray\tools\redshift-tray.zip}
 
 The included 'LICENSE.txt' file have been obtained from:
 https://github.com/brave/brave-browser/blob/master/LICENSE
