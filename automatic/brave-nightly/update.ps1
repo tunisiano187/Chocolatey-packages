@@ -28,10 +28,12 @@ function global:au_GetLatest {
 
 	$url32 = "https://github.com$($url32)";
 	Invoke-WebRequest -Uri $url32 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup32.exe")
+	$checksum32 = Get-FileHash -Algorithm SHA256 -Path $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup32.exe")
 	$url64 = "https://github.com$($url64)";
 	Invoke-WebRequest -Uri $url64 -OutFile $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup.exe")
+	$checksum64 = Get-FileHash -Algorithm SHA256 -Path $(Join-Path $toolsPath "BraveBrowserSilentNightlySetup.exe")
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version; Checksum32=$checksum32; Checksum64=$checksum64 }
 	return $Latest
 }
 
