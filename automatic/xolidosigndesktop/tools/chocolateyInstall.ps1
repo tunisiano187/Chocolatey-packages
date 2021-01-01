@@ -2,7 +2,7 @@
 $packageName    = $env:ChocolateyPackageName
 $installerType  = 'EXE'
 $url32          = 'https://www.xolido.com/instaladores/SetupXolidoSign.exe'
-$checksum32     = '151509c6dc8be02bce9853b22f76ed10d62189775b4128388189d1f24f73fed1'
+$checksum32     = '926ee4d7246e71b9202b074c025ffbc1e12708a50c88b19d82a26bd1ae9f1c8a'
 $checksumType   = 'sha256'
 
 $silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
