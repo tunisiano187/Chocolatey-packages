@@ -26,7 +26,7 @@ $packageArgs = @{
 
 $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkFile = Join-Path $scriptPath "chocolateyInstall.ahk"
-$ahkExe = 'AutoHotKey'
+$ahkExe = '$env:ChocolateyInstall\AutoHotKey.exe'
 $ahkRun = "$Env:Temp\$(Get-Random).ahk"
 Copy-Item $ahkFile "$ahkRun" -Force
 Start-Process $ahkExe $ahkRun
