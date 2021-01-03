@@ -15,7 +15,9 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 #$fileLocation = '\\SHARE_LOCATION\to\INSTALLER_FILE'
 # Community Repo: Use official urls for non-redist binaries or redist where total package size is over 200MB
 # Internal/Organization: Download from internal location (internet sources are unreliable)
-$url        = '' # download url, HTTPS preferred
+$url          = '' # download url, HTTPS preferred
+$checksum     = ''
+$checksumType = ''
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -23,8 +25,8 @@ $packageArgs = @{
   url           = $url
   softwareName  = 'kasperskyfree*'
 
-  checksum      = ''
-  checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
+  checksum      = $checksum
+  checksumType  = $checksumType
 
   silentArgs   = '/S'           # NSIS
   #silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
