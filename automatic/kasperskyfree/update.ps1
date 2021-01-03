@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	$encoding = New-Object System.Text.UTF8Encoding($false)
-	$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
+	$nuspec = Get-Content "./kasperskyfree.nuspec" -Encoding UTF8
 	$nuspec = $nuspec -replace '<copyright>.*',"<copyright>$url</copyright>"
 	$output = ($nuspec | Out-String) -replace '\r\n?',"`n"
 	[System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
