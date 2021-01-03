@@ -22,10 +22,11 @@ function global:au_GetLatest {
 	$File = "$($env:TEMP)\kav.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$copyright = (Get-Item($File)).VersionInfo.LegalCopyright
 	$encoding = New-Object System.Text.UTF8Encoding($false)
 	$NuspecPath = "$(Get-Location)\kasperskyfree.nuspec"
 	$nuspec = Get-Content $NuspecPath -Encoding UTF8
-	$nuspec = $nuspec -replace '<copyright>.*',"<copyright>$url</copyright>"
+	$nuspec = $nuspec -replace '<copyright>.*',"<copyright>$copyright</copyright>"
 	$output = ($nuspec | Out-String) -replace '\r\n?',"`n"
 	[System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
 
