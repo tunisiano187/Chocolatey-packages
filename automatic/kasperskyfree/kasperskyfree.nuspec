@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kasperskyfree</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <owners>tunisiano</owners>
+    
+    <title>kasperskyfree (Install)</title>
+    <authors>Kaspersky Labs</authors>
+    <projectUrl>https://www.kaspersky.com/free-cloud-antivirus</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/kasperskyfree.png</iconUrl>
+    <copyright>Year Software Vendor</copyright>
+    <licenseUrl>https://www.kaspersky.com/end-user-license-agreement</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>kaspersky free cloud antivirus</tags>
+    <summary>Kaspersky Security Cloud – Free to the device you’re using right away.</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
