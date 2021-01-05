@@ -2,21 +2,31 @@
 <!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>wakemeonlan</id>
     <title>WakeMeOnLan</title>
-    <version>1.86</version>
+    <version>1.87</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>Turn on computers on your network with Wake-on-LAN packet</summary>
-    <description>
-This utility allows you to easily turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet to the remote computers.
+    <description><![CDATA[## Wake Me On LAN
+This utility allows you to easily turn on one or more computers remotely by sending 
+Wake-on-LAN (WOL) packet to the remote computers.
 
-When your computers are turned on,  WakeMeOnLan allows you to scan your network, and collect the MAC addresses of all your computers, and save the computers list into a file.
+When your computers are turned on,  WakeMeOnLan allows you to scan your network, and 
+collect the MAC addresses of all your computers, and save the computers list into a file.
 
-Later, when your computers are turned off or in standby mode, you can use the stored computers list to easily choose the computer you want to turn on, and then turn on all these computers with a single click.
+Later, when your computers are turned off or in standby mode, you can use the stored 
+computers list to easily choose the computer you want to turn on, and then turn on all 
+these computers with a single click.
 
-WakeMeOnLan also allows you to turn on a computer from command-line, by specifying the computer name, IP address, or the MAC address of the remote network card.
-    </description>
+WakeMeOnLan also allows you to turn on a computer from command-line, by specifying the 
+computer name, IP address, or the MAC address of the remote network card.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wakemeonlan</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/wake_on_lan.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d93af7e531d05df9e326830b206bcaa167ea011c/icons/wakemeonlan.png</iconUrl>
