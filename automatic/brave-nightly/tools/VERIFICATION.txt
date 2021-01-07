@@ -6,16 +6,16 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://github.com/brave/brave-browser/releases/download/v1.20.60/BraveBrowserSilentNightlySetup32.exe
-x86_64: https://github.com/brave/brave-browser/releases/download/v1.20.61/BraveBrowserSilentNightlySetup.exe
+x86: https://github.com/brave/brave-browser/releases/download/v1.20.62/BraveBrowserSilentNightlySetup32.exe
+x86_64: https://github.com/brave/brave-browser/releases/download/v1.20.64/BraveBrowserSilentNightlySetup.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum32: @{Algorithm=SHA256; Hash=BCA297FAFD08F5B7B636083C338167B71983D64D1B2F00A509DBCBC03DE2B2F8; Path=C:\projects\chocolatey-packages\automatic\brave-nightly\tools\BraveBrowserSilentNightlySetup32.exe}
-checksum64: @{Algorithm=SHA256; Hash=DE2475F32555BCC9AFCCF5C12A6C4E6825370B84909897961B06D6F0675A9137; Path=C:\projects\chocolatey-packages\automatic\brave-nightly\tools\BraveBrowserSilentNightlySetup.exe}
+checksum32: @{Algorithm=SHA256; Hash=798E3FE7C258B172C6559AC8392A068B9F7B7D9990D0F3F133C0AA914BF75C36; Path=C:\projects\chocolatey-packages\automatic\brave-nightly\tools\BraveBrowserSilentNightlySetup32.exe}
+checksum64: @{Algorithm=SHA256; Hash=A45AF563E0ED5ECF80F4A406EDC263C6B54090DF58BEB3E47ADFC868DE9C0A40; Path=C:\projects\chocolatey-packages\automatic\brave-nightly\tools\BraveBrowserSilentNightlySetup.exe}
 
 The included 'LICENSE.txt' file have been obtained from:
 https://github.com/brave/brave-browser/blob/master/LICENSE
