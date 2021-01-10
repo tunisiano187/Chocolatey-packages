@@ -31,6 +31,9 @@ function global:au_GetLatest {
             }
         }
     }
+    if($version -eq '1.1.3') {
+        $version = '1.1.3.20200110'
+    }
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
