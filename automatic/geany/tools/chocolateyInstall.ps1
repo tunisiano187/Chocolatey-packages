@@ -9,7 +9,7 @@ $validExitCodes = @(0)
 Install-ChocolateyPackage -PackageName "$packageName" `
                           -FileType "$installerType" `
                           -SilentArgs "$silentArgs" `
-                          -Url "$url" `
+                          -Url "$url32" `
                           -ValidExitCodes $validExitCodes `
-                          -Checksum "$checksum" `
+                          -Checksum "$checksum32" `
                           -ChecksumType "$checksumType"
