@@ -18,13 +18,17 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Select-Object -First 2 | Sort-Object ).href
+	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Sort-Object -Descending | Select-Object -First 2 | Sort-Object ).href
 	Write-Output 'Checking version'
 	$version=$($installer[0]).split('O')[-1].split('_')[0].trim().substring(1).replace('-','.')
 
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($installer[1])";
 	$url64 = "https://github.com$($installer[0])";
+
+	if($version -eq '5.1.3.2') {
+		$version = '5.1.3.3'
+	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest

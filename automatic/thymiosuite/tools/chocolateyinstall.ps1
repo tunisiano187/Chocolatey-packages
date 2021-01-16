@@ -21,7 +21,7 @@ $packageArgs = @{
   checksumType64= $checksumType64
 
   validExitCodes= @(0, 3010, 1641)
-  silentArgs   = '/S'
+  silentArgs   = '/S /SkipDotNetInstall'
 }
 
 $scriptPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
