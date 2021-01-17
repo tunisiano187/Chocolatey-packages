@@ -24,7 +24,6 @@ function global:au_GetLatest {
 	$version = $url32.split('/')[5].replace('v','')
 	$version = "$version-nightly"
 	Write-Output "Version : $version"
-	Write-Error $(Get-Location)
 	$toolsPath = Join-Path $(Get-Location) "tools"
 
 	$url32 = "https://github.com$($url32)";
