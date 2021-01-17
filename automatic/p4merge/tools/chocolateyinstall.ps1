@@ -30,7 +30,7 @@ $packageArgs = @{
 $forceX86 = $env:chocolateyForceX86;
 if (-not $forceX86) {
   if (Get-OSArchitectureWidth 64) {
-    $packageArgs.silentArgs = '/s REMOVEAPPS=P4ADMIN,P4MERGE,P4'
+    $packageArgs.silentArgs = '/s REMOVEAPPS=P4V,P4ADMIN,P4'
   }
 }
 
