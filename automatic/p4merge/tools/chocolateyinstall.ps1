@@ -24,13 +24,13 @@ $packageArgs = @{
   checksumType64  = $checksumType64
 
   validExitCodes= @(0, 3010, 1641)
-  silentArgs   = '/s /V"/qn ADDLOCAL=P4MERGE,QT,QT32"'
+  silentArgs   = '/s REMOVEAPPS=P4ADMIN,P4MERGE,P4'
 }
 
 $forceX86 = $env:chocolateyForceX86;
 if (-not $forceX86) {
   if (Get-OSArchitectureWidth 64) {
-    $packageArgs.silentArgs = '/s /V"/qn ADDLOCAL=P4MERGE,QT"'
+    $packageArgs.silentArgs = '/s REMOVEAPPS=P4ADMIN,P4MERGE,P4'
   }
 }
 
