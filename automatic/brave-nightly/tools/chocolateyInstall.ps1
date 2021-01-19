@@ -3,12 +3,12 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
 $packageName      = $env:ChocolateyPackageName
-$url32            = 'https://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.9/ultracopier-windows-x86-2.2.4.9-setup.exe'
-$url64            = 'https://cdn.confiared.com/files.first-world.info/ultracopier/2.2.4.9/ultracopier-windows-x86_64-2.2.4.9-setup.exe'
-$checksum32       = 'be8882f326f8f633323ee7ec7d6a7833aa2049d2dcb54937b9ca6f0fe045604a'
-$checksum64       = 'ba4018e7f251c80d7ddd6a413b3e7f4cfc813d2c5624741780b94cb7db5d771f'
-$checksumType32   = ''
-$checksumType64   = ''
+$url32            = 'https://github.com/brave/brave-browser/releases/download/v1.21.9/BraveBrowserSilentNightlySetup32.exe'
+$url64            = 'https://github.com/brave/brave-browser/releases/download/v1.21.11/BraveBrowserSilentNightlySetup.exe'
+$checksum32       = '97e67b55f222ea0223349f8a5cea23e131f20355e1f65cc521df7537dd134c9d'
+$checksum64       = 'f63124bf48a98a2a0f66df1b874da6b57d3dd695449b4a1e85f427c647618302'
+$checksumType32   = 'sha256'
+$checksumType64   = 'sha256'
 
 $packageArgs = @{
   packageName     = $packageName
