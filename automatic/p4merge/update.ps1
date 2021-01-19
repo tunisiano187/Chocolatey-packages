@@ -49,6 +49,8 @@ function global:au_GetLatest {
 			$version = "$version.1.$(Get-Date -Format "yyyyMMdd")"
 		}
 	}
+	Write-Error $version
+	$version="2020.3.1.20210119"
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
