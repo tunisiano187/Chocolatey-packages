@@ -39,6 +39,7 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
+	$same='no'
 
 	# check if the sha is the same as the current
 	$currentcheck = "$env:TEMP\p4vinst.exe"
@@ -46,8 +47,11 @@ function global:au_GetLatest {
 	Invoke-WebRequest -UseBasicParsing -Uri $url32 -OutFile $currentcheck
 	foreach ($line in $(Get-Content $currenttools)) {
 		if($_ -like "$((Get-FileHash $currentcheck).hash )") {
-			$version = "$version.$(Get-Date -Format "yyyyMMdd")"
+			$same = 'yes'
 		}
+	}
+	if($same -eq 'yes') {
+		$version = "$version.$(Get-Date -Format "yyyyMMdd")"
 	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
