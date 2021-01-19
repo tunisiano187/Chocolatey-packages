@@ -45,7 +45,7 @@ function global:au_GetLatest {
 	$currenttools = "./tools/chocolateyinstall.ps1"
 	Invoke-WebRequest -UseBasicParsing -Uri $url32 -OutFile $currentcheck
 	foreach ($line in $(Get-Content $currenttools)) {
-		if($_ -like "$(Get-FileHash $currentcheck )") {
+		if($_ -like "$((Get-FileHash $currentcheck).hash )") {
 			$version = "$version.$(Get-Date -Format "yyyyMMdd")"
 		}
 	}
