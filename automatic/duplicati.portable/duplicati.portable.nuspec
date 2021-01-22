@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>duplicati.portable</id>
-    <version>2.0.5.111-pre20200926</version>
+    <version>2.0.5.112-pre20210120</version>
     <title>Duplicati (Portable)</title>
     <authors>Kenneth Skovhede and Rene Stach</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/duplicati/duplicati/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>http://www.duplicati.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c6419ef05a14086dba181bcf2ff7f0e55f4c0138/icons/duplicati.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2caf3e50f0e9adec6f6a39499d27360cfb887c63/icons/duplicati.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Duplicati.portable
 
@@ -68,7 +68,7 @@ Duplicati is configured by a web interface that runs in any browser (even mobile
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Duplicati - Free backup software to store encrypted backups online.</summary>
     <releaseNotes>### Program
