@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pslab-desktop</id>
-    <version>__REPLACE__</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <version>2.5.2</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pslab-desktop</packageSourceUrl>
     <owners>tunisiano</owners>
     
     <title>pslab-desktop (Install)</title>
     <authors>FOSSASIA</authors>
     <projectUrl>https://github.com/fossasia/pslab-desktop</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/pslab-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a1963a59582b62debd2d57e10b7704ee65bb651e/icons/pslab-desktop.jpg</iconUrl>
     <copyright>https://github.com/fossasia/pslab-desktop</copyright>
     
     <licenseUrl>https://github.com/fossasia/pslab-desktop/blob/development/LICENSE</licenseUrl>
@@ -18,7 +18,20 @@
     <projectSourceUrl>https://github.com/fossasia/pslab-desktop</projectSourceUrl>
     <tags>pslab-desktop</tags>
     <summary>Desktop application for the Pocket Science Lab (PSlab) open hardware platform.</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## PSLab Desktop
+ It is using ElectronJS running React on top as UI renderer and uses Python scripts under the hood
+ for device communication. The goal of PSLab is to create an Open Source hardware device (open on
+ all layers) and software applications that can be used for experiments by teachers, students and
+ scientists. Our tiny pocket lab provides an array of instruments for doing science and engineering
+ experiments. It provides functions of numerous measurement tools including an oscilloscope, a
+ waveform generator, a frequency counter, a programmable voltage, current source and even a component
+ to control robots with up to four servos. Our website is at [PSLab.io](https://pslab.io/). See also the [screenshots and demos](https://github.com/fossasia/pslab-desktop/blob/development/docs/screenshots-and-demos.md).
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <releaseNotes>https://github.com/fossasia/pslab-desktop/releases</releaseNotes>
   </metadata>
   <files>
