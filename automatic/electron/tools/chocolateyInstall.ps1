@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
-$url = 'https://github.com/electron/electron/releases/download/v11.2.0/electron-v11.2.0-win32-ia32.zip'
-$checksum = '912bc35412efa7976629a27ea7782d3011326ce80cfa4b0715a9572fd6d3b7ef'
+$url = 'https://github.com/electron/electron/releases/download/v11.2.1/electron-v11.2.1-win32-ia32.zip'
+$checksum = '7dfe726decd3567db64787b85038b50c17427ac3762541baae97764144f82dda'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/electron/electron/releases/download/v11.2.0/electron-v11.2.0-win32-x64.zip'
-$checksum64 = '99deb27ce739bb90339fbe1eb9f83d3be642c7e7bd05fc4e81dbb580c26c1987'
+$url64 = 'https://github.com/electron/electron/releases/download/v11.2.1/electron-v11.2.1-win32-x64.zip'
+$checksum64 = 'd685a16bd5559355f928b1d3a389c89eca88f859510750f86299ec2688606895'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
