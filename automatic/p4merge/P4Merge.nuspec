@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>p4merge</id>
-	<version>2020.3.1.20210123</version>
+	<version>2020.3.1.20210124</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/p4merge</packageSourceUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@844f2a7fa61f639af9ca6245f8e767e868e3300d/icons/p4merge.png</iconUrl>
