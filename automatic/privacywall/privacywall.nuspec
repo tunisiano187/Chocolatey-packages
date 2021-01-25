@@ -1,23 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>privacywall</id>
-    <version>__REPLACE__</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <version>1.0.0.0</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/privacywall</packageSourceUrl>
     <owners>tunisiano</owners>
     
     <title>privacywall (Install)</title>
     <authors>PrivacyWall</authors>
     
     <projectUrl>https://www.privacywall.org</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/privacywall.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b7b7260f37166e8d2c6d7f430d3e1458545ef0f6/icons/privacywall.png</iconUrl>
     <copyright>PrivacyWall</copyright>
     <docsUrl>https://www.privacywall.org/faq.html</docsUrl>
     
     <tags>privacywall browser</tags>
     <summary>PrivacyWall block unwanted data collection.</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## PrivacyWall
+PrivacyWall is a Free Firewall Built by Privacy-Obsessed Engineers and the #1 anti-tracking and
+ad-blocking technology built in America
+Goodbye Annoying Ads! Free Built-In AdBlocker! Boost Your Surfing Speed. PrivacyWall's Protection List
+Is Updated in Real-Time As Threats Are Discovered
+Block Facebook, Google Chrome, Windows 10, and Over 3000+ Invasive Trackers From Tracking Your Activity
+Online
+Protect Your Corporate and Government Data. Protect Your ClickStream Data and Your Most Sensitive Data
+Online and Secrets from Bulk Collection and Exfiltration.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
