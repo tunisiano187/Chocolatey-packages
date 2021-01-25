@@ -15,9 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32 = (Invoke-WebRequest -Uri $releases -UseBasicParsing).content.split("'") | Where-Object {$_ -match 'exe'} | Select-Object -First 1
 
-	$File = Join-Path $env:TEMP "Idrive.exe"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).content.split('"') | Where-Object {$_ -match 'Version '} | Select-Object -First 1).split(' ') | Select-Object -Last 1
 
 	$Latest = @{ URL32 = $url32; Version = $version.trim() }
 	return $Latest
