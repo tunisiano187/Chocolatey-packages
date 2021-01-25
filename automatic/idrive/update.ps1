@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://static.idriveonlinebackup.com/downloads/idrivethin/thin_version.js'
+$releases = 'https://static.idriveonlinebackup.com/downloads/version_win.js'
 
 function global:au_SearchReplace {
 	@{
@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = (Invoke-WebRequest -Uri $releases -UseBasicParsing).content.split("'") | Where-Object {$_ -match 'exe'}
+	$url32 = (Invoke-WebRequest -Uri $releases -UseBasicParsing).content.split("'") | Where-Object {$_ -match 'exe'} | Select-Object -First 1
 
 	$File = Join-Path $env:TEMP "Idrive.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
