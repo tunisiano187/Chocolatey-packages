@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $url32 = $releases
-    $File = "$($env:TEMP)\privacywall.exe"
+    $File = Join-Path $env:TEMP "privacywall.exe"
 
     Invoke-WebRequest -Uri $url32 -OutFile $File
 
