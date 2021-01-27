@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nteract</id>
-    <version>0.27.0</version>
+    <version>0.28.0</version>
     <title>nteract</title>
     <authors>nteract contributors</authors>
     <owners>tunisiano</owners>
@@ -39,7 +39,7 @@ https://github.com/nteract/nteract/releases/
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nteract</packageSourceUrl>
     <bugTrackerUrl>https://github.com/nteract/nteract/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="nteract.install" version="[0.27.0]" />
+      <dependency id="nteract.install" version="[0.28.0]" />
     </dependencies>
   </metadata>
   <files>
