@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	choco install wormies-au-helpers -y
 	$url32 = Get-RedirectedUrl $url32
-	$version = $url32.Split('_')[-1].replace('.exe','')
+	$version = $url32.Split('_')[-1].replace('.exe','').split('?') | Select-Object -First 1
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
