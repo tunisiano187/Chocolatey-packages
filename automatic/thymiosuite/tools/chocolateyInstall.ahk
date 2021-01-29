@@ -7,23 +7,21 @@ SetControlDelay, 20
 DetectHiddenText, off
 SetTitleMatchMode, 1  ;begins
 
-WinWait, Windows Security ahk_class #32770, , 40
-WinActivate Windows Security ahk_class #32770
-Send {AltDown}I{AltUp}
-Send {enter}
+winTitle = Windows Security ahk_class #32770
 
-Sleep, 10000
+; Drivers install
 
-WinWait, Windows Security ahk_class #32770, , 40
-WinActivate Windows Security ahk_class #32770
-Send {AltDown}I{AltUp}
-Send {enter}
-
-Sleep, 10000
-
-WinWait, Windows Security ahk_class #32770, , 40
-WinActivate Windows Security ahk_class #32770
-Send {AltDown}I{AltUp}
-Send {enter}
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
 
 ExitApp

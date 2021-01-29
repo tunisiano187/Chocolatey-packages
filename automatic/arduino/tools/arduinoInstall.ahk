@@ -22,5 +22,17 @@ Sleep, 100
 WinWait, %winTitle%
 WinActivate
 ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
 
 ExitApp
