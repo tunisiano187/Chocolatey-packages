@@ -1,18 +1,26 @@
-; default environment
-DetectHiddenWindows, off
-SetControlDelay, 20
-
-; modified environment
+; environment
 #NoEnv
-DetectHiddenText, off
-SetTitleMatchMode, 1  ;begins
+#NoTrayIcon
+SendMode Input
+DetectHiddenText, off  ;toggle search hidden window text
+DetectHiddenWindows, off  ;toggle detect hidden windows
+SetTitleMatchMode, 2   ;contains
 
-WinWait, Windows Security ahk_class #32770, , 40
-WinActivate Windows Security ahk_class #32770
-Send {AltDown}I{AltUp}
+winTitle = Windows Security ahk_class #32770
 
-WinWait, Windows Security ahk_class #32770, , 40
-WinActivate Windows Security ahk_class #32770
-Send {AltDown}I{AltUp}
+; Drivers install
+
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
+WinWait, %winTitle%
+WinActivate
+ControlClick, &Install, %winTitle%
+Sleep, 100
 
 ExitApp

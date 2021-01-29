@@ -1,11 +1,10 @@
-; default environment
-DetectHiddenWindows, off
-SetControlDelay, 20
-
-; modified environment
+; environment
 #NoEnv
-DetectHiddenText, off
-SetTitleMatchMode, 1  ;begins
+#NoTrayIcon
+SendMode Input
+DetectHiddenText, off  ;toggle search hidden window text
+DetectHiddenWindows, off  ;toggle detect hidden windows
+SetTitleMatchMode, 2   ;contains
 
 winTitle = Windows Security ahk_class #32770
 
