@@ -2,19 +2,29 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>geany</id>
-    <version>1.35</version>
+    <version>1.37.1</version>
     <title>Geany</title>
     <authors>Enrico Tröger, Frank Lanitz, Nick Treleaven and Dominic Hopf</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/geany/geany/blob/master/COPYING</licenseUrl>
     <projectUrl>https://www.geany.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/d1e037cc7c943fda29b9067b3b1c3229d99402ff/icons/geany.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e13d7b620841e512cb79142feb8c0aa02de27ab8/icons/geany.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Geany is a small and lightweight integrated development environment (IDE). It was developed to provide a small and fast IDE, which has only a few dependencies from other packages. Another goal was to be as independent as possible from a special Desktop Environment like KDE or GNOME. So it is using only the GTK2 toolkit and therefore you need only the GTK2 runtime libraries to run Geany.
+    <description><![CDATA[## geany
+Features:Geany is a small and lightweight integrated development environment (IDE). It was developed
+to provide a small and fast IDE, which has only a few dependencies from other packages. Another goal
+was to be as independent as possible from a special Desktop Environment like KDE or GNOME. So it is
+using only the GTK2 toolkit and therefore you need only the GTK2 runtime libraries to run Geany.
 
-[Screenshots](https://www.geany.org/Documentation/Screenshots)
-[Plugins](https://www.geany.org/Support/Plugins)
-[Wiki](https://wiki.geany.org/)</description>
+[Screenshots](http://www.geany.org/Documentation/Screenshots)
+[Plugins](http://www.geany.org/Support/Plugins)
+[Wiki](http://wiki.geany.org/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Fast and lightweight IDE</summary>
     <releaseNotes>#### Program
 * [Release Notes](https://www.geany.org/Documentation/ReleaseNotes)
@@ -26,7 +36,7 @@
     <copyright>© 2006 Enrico Tröger, Matthew Brush, Colomban Wendling, Frank Lanitz, Nick Treleaven and Dominic Hopf</copyright>
     <tags>text editor ide scintilla admin</tags>
     <projectSourceUrl>https://github.com/geany/geany</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/geany/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/geany</packageSourceUrl>
     <docsUrl>https://www.geany.org/Documentation/Manual</docsUrl>
   </metadata>
   <files>
