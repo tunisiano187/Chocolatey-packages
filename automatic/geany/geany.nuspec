@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>geany</id>
-    <version>1.36</version>
+    <version>1.35</version>
     <title>Geany</title>
     <authors>Enrico Tröger, Frank Lanitz, Nick Treleaven and Dominic Hopf</authors>
     <owners>dtgm</owners>
@@ -29,4 +29,7 @@
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/geany/</packageSourceUrl>
     <docsUrl>https://www.geany.org/Documentation/Manual</docsUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
