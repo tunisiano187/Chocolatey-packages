@@ -45,12 +45,8 @@ function global:au_GetLatest {
 	$currentcheck = "$env:TEMP\p4vinst.exe"
 	$currenttools = "./tools/chocolateyinstall.ps1"
 	Invoke-WebRequest -UseBasicParsing -Uri $url32 -OutFile $currentcheck
-	foreach ($line in $(Get-Content $currenttools)) {
-		if($line -like "$((Get-FileHash $currentcheck).hash.tolower )") {
-			$same = 'yes'
-		}
-	}
-	if($same -ne 'yes') {
+	$return = Get-Content $currenttools | Where-Object {$_ -match $((Get-FileHash $currentcheck).hash.tolower )}
+	if($return.Length -gt 1) {
 		$version = "$version.$(Get-Date -Format "yyyyMMdd")"
 	}
 
