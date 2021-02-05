@@ -2,11 +2,11 @@
 
 $packageName      = $env:ChocolateyPackageName
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url              = 'https://cdist2.perforce.com/perforce/r20.3/bin.ntx86/p4vinst.exe'
-$url64            = 'https://cdist2.perforce.com/perforce/r20.3/bin.ntx64/p4vinst64.exe'
-$checksum         = 'b6e10012dfe313525a8bad6d042083e9ce2657108e98f725555a67f307ca1788'
+$url              = 'https://cdist2.perforce.com/perforce/r21.1/bin.ntx86/p4vinst.exe'
+$url64            = 'https://cdist2.perforce.com/perforce/r21.1/bin.ntx64/p4vinst64.exe'
+$checksum         = '40ddec492fc318e178d87c7b2fdf3bef794da551aa41d2a8f2efe276751b9f3f'
 $checksumType     = 'sha256'
-$checksum64       = 'aaf7a92b09d9c654f716755dc78fb0c0f5c01c65ad073e7cb0f8b40c8743ae7e'
+$checksum64       = 'f9f32144286fb15cef01ac4130009e15ea682acc57de6aa70cfbf572607b0a8f'
 $checksumType64   = 'sha256'
 
 $packageArgs = @{
