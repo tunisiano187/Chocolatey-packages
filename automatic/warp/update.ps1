@@ -1,17 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = "https://1.1.1.1/Cloudflare_WARP_Release-x64.msi"
-
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
+$releases = "https://api.appcenter.ms/v0.1/public/sparkle/apps/50ab4048-8c3c-4084-ab64-793a4993a6b3"
 
 function global:au_SearchReplace {
 	@{
@@ -24,16 +14,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url64=$releases
-	$checksumType = "SHA512"
+	[XML]$page = Invoke-WebRequest -Uri $releases
+	$url64=$page.rss.channel.Item[0].enclosure.url
 
-    $File = Join-Path $env:TEMP "warp.msi"
-	Invoke-WebRequest -Uri $url64 -OutFile $File
-    Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
-	$version = Get-Version("warp")
-	$checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
+    $version = $page.rss.channel.Item[0].enclosure.version
 
-	$Latest = @{ URL64 = $url64; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumType}
+	$Latest = @{ URL64 = $url64; Version = $version}
 
     return $Latest
 }
