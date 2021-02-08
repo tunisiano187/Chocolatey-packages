@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64          = 'https://1.1.1.1/Cloudflare_WARP_Release-x64.msi'
-$checksum64     = '465D1288B7E6065C851E8F6F7D9FF7BB4C1862A902BE6D6889BF6776735E6C4B40B94E2E0C080559452ADDA45316495E3392B0D7C583565653B4B663F1095933'
-$checksumType64 = 'SHA512'
+$url64          = 'https://appcenter-filemanagement-distrib1ede6f06e.azureedge.net/023a5e09-105b-4037-b28b-87e7ce26bef4/Cloudflare_WARP_Release-x64.msi?sv=2019-02-02&sr=c&sig=kLf287jB3Kdx0VgoRw1iFYck37Vd6yCFG35cjKxrADU%3D&se=2021-02-09T13%3A50%3A30Z&sp=r'
+$checksum64     = ''
+$checksumType64 = ''
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
