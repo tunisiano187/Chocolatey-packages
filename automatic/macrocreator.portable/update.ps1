@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".zip"} | Select-Object -First 1).href)"
-    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+    $version = $($url32 -split '/' | select-object -Last 1 -Skip 1).replace('v','')
     $tags = Invoke-WebRequest 'https://api.github.com/repos/Pulover/PuloversMacroCreator/releases' -UseBasicParsing | ConvertFrom-Json
     if($tag.tag_name -match $version) {
         foreach ($tag in $tags) {
