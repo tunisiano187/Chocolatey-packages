@@ -1,4 +1,4 @@
-﻿$packageName = 'macrocreator.install'
+﻿$packageName = $env:ChocolateyPackageName
 $packageSearch = "Pulover's Macro Creator*"
 $fileType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
