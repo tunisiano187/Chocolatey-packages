@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>macrocreator.install</id>
+    <version>5.0.5</version>
+    <title>Pulover's Macro Creator (Install)</title>
+    <authors>Rodolfo U. Batista</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://github.com/Pulover/PuloversMacroCreator/blob/master/License.txt</licenseUrl>
+    <projectUrl>http://www.macrocreator.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/5916f6094315ccd6f3037a1bffe0531f4962c4dd/icons/macrocreator.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pulover's Macro Creator is a free automation tool and script generator based on AutoHotkey language. It features a large range of automation commands, has a built-in recorder and can capture inputs in its interface. The macros can be executed from the program itself or you can export them to AutoHotkey Script format.
+
+[Features](http://www.macrocreator.com/highlights/)  
+[Screenshots](http://www.macrocreator.com/screenshots/)</description>
+    <summary />
+    <releaseNotes>#### Program
+* [Changelog](https://github.com/Pulover/PuloversMacroCreator/releases)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2013 Rodolfo U. Batista</copyright>
+    <tags>ahk automation recorder script generator admin</tags>
+    <projectSourceUrl>https://github.com/Pulover/PuloversMacroCreator</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/macrocreator.install/</packageSourceUrl>
+    <docsUrl>http://www.macrocreator.com/help/</docsUrl>
+    <mailingListUrl>https://autohotkey.com/boards/viewtopic.php?f=6%26t=143</mailingListUrl>
+    <bugTrackerUrl>https://github.com/Pulover/PuloversMacroCreator/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="autohotkey" />
+    </dependencies>
+  </metadata>
+</package>
