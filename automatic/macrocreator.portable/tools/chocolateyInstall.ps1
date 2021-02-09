@@ -1,4 +1,4 @@
-﻿$packageName = 'macrocreator.portable'
+﻿$packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://github.com/Pulover/PuloversMacroCreator/releases/download/v5.0.5/PuloversMacroCreator-Portable.zip'
 $checksum = 'cf47b94a621141bbff875256db95c510'
