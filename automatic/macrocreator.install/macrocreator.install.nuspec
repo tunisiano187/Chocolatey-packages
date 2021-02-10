@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>macrocreator.install</id>
-    <version>5.4.0</version>
+    <version>5.3.0</version>
     <title>Pulover's Macro Creator (Install)</title>
     <authors>Rodolfo U. Batista</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Pulover/PuloversMacroCreator/blob/master/License.txt</licenseUrl>
-    <projectUrl>http://www.macrocreator.com/</projectUrl>
+    <projectUrl>https://www.macrocreator.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d6597f4bedcfe45cc046d8747a023768d3c494b3/icons/macrocreator.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## macrocreator.install
@@ -35,7 +35,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/Pulover/PuloversMacroCreator</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/macrocreator.install</packageSourceUrl>
     <docsUrl>http://www.macrocreator.com/help/</docsUrl>
-    <mailingListUrl>https://autohotkey.com/boards/viewtopic.php?f=6%26t=143</mailingListUrl>
     <bugTrackerUrl>https://github.com/Pulover/PuloversMacroCreator/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="autohotkey" />
