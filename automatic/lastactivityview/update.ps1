@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	$url32 = $releases
 	$ZipFile = "$($env:TEMP)/lastactivityview.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $ZipFile -UseBasicParsing
-	Expand-Archive $ZipFile -DestinationPath .\lastactivityview
+	Expand-Archive $ZipFile -DestinationPath .\lastactivityview -Force
 	$File = $(Get-ChildItem lastactivityview.exe -Recurse).FullName
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
