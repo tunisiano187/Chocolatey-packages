@@ -2,18 +2,27 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>macrocreator.install</id>
-    <version>5.0.5</version>
+    <version>5.4.0</version>
     <title>Pulover's Macro Creator (Install)</title>
     <authors>Rodolfo U. Batista</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Pulover/PuloversMacroCreator/blob/master/License.txt</licenseUrl>
     <projectUrl>http://www.macrocreator.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/5916f6094315ccd6f3037a1bffe0531f4962c4dd/icons/macrocreator.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d6597f4bedcfe45cc046d8747a023768d3c494b3/icons/macrocreator.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Pulover's Macro Creator is a free automation tool and script generator based on AutoHotkey language. It features a large range of automation commands, has a built-in recorder and can capture inputs in its interface. The macros can be executed from the program itself or you can export them to AutoHotkey Script format.
+    <description><![CDATA[## macrocreator.install
+Pulover's Macro Creator is a free automation tool and script generator based on AutoHotkey language. 
+It features a large range of automation commands, has a built-in recorder and can capture inputs in its interface. 
+The macros can be executed from the program itself or you can export them to AutoHotkey Script format.
 
-[Features](http://www.macrocreator.com/highlights/)  
-[Screenshots](http://www.macrocreator.com/screenshots/)</description>
+[Features](https://www.macrocreator.com/features/)  
+[Screenshots](https://www.macrocreator.com/screenshots/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary />
     <releaseNotes>#### Program
 * [Changelog](https://github.com/Pulover/PuloversMacroCreator/releases)
@@ -24,7 +33,7 @@
     <copyright>© 2013 Rodolfo U. Batista</copyright>
     <tags>ahk automation recorder script generator admin</tags>
     <projectSourceUrl>https://github.com/Pulover/PuloversMacroCreator</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/macrocreator.install/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/macrocreator.install</packageSourceUrl>
     <docsUrl>http://www.macrocreator.com/help/</docsUrl>
     <mailingListUrl>https://autohotkey.com/boards/viewtopic.php?f=6%26t=143</mailingListUrl>
     <bugTrackerUrl>https://github.com/Pulover/PuloversMacroCreator/issues</bugTrackerUrl>
