@@ -6,7 +6,7 @@ $url              = 'https://cdist2.perforce.com/perforce/r21.1/bin.ntx86/p4vins
 $url64            = 'https://cdist2.perforce.com/perforce/r21.1/bin.ntx64/p4vinst64.exe'
 $checksum         = '40ddec492fc318e178d87c7b2fdf3bef794da551aa41d2a8f2efe276751b9f3f'
 $checksumType     = 'sha256'
-$checksum64       = 'f9f32144286fb15cef01ac4130009e15ea682acc57de6aa70cfbf572607b0a8f'
+$checksum64       = 'e8e1563b201ec8ad34bb31612d0a4d4436eb95de700fcf1c14281acab5315cf6'
 $checksumType64   = 'sha256'
 
 $packageArgs = @{
