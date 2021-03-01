@@ -4,7 +4,7 @@
   <metadata>
     <id>dogecoin</id>
     <title>Dogecoin Core Wallet</title>
-    <version>1.14.2</version>
+    <version>1.14.3</version>
     <authors>Jackson Palmer</authors>
     <owners>tunisiano</owners>
     <summary>Cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW)</summary>
@@ -25,7 +25,7 @@ the software include cryptocurrency miner that are considered as virus
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dogecoin</packageSourceUrl>
     <projectUrl>http://dogecoin.com</projectUrl>
