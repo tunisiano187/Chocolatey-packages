@@ -2,8 +2,8 @@
 $packageName= $env:ChocolateyPackageName
 $installerType      = 'EXE'
 $silentArgs = '/S'
-$url        = 'https://dl.johnsadventures.com/SwitcherSetup53.exe'
-$checksum   = '435919a59346d063929f740c10f61aee4d110a5aefb5624e303bd16877a0a1cd'
+$url        = 'https://dl.johnsadventures.com/SwitcherSetup531.exe'
+$checksum   = '36dd2d18dbae935d85cd85ceb129f0b3161ac25d9c35cd52f3518959e9b33203'
 $checksumtype = 'sha256'
 
 Install-ChocolateyPackage $packageName $installerType $silentArgs $url $url -checksum $checksum -ValidExitCodes @(0,1223) -checksumType $checksumtype
