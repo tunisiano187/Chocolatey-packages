@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url          = 'https://github.com/fossasia/pslab-desktop/releases/download/v2.6.0/PSLab-Desktop-Setup-2.6.0.exe'
-$checksum     = 'd54073a230ebe3783055dfb0d721162af4c269ded0171472c3bf88ba7b720c05'
+$url          = 'https://github.com/fossasia/pslab-desktop/releases/download/v2.8.1/PSLab-Desktop-Setup-2.8.1.exe'
+$checksum     = 'cd7b845847dfde8c47ad205a7b3612b42c20da648393c63c60bf9408a5efbcb1'
 $checksumType = 'sha256'
 
 $packageArgs = @{
