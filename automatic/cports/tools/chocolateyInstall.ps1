@@ -1,9 +1,9 @@
 ﻿$packageName = 'cports'
 $url = 'https://www.nirsoft.net/utils/cports.zip'
-$checksum = 'b985b9a07a54e32dff83448ef8ea911c60a49269a3a82147d749f57e1271a75a'
+$checksum = 'a384aa13d86ba2e38e8c73d6669f92da07892a895cad8e1bb6aec250269b5d3c'
 $checksumType = 'sha256'
 $url64 = 'https://www.nirsoft.net/utils/cports-x64.zip'
-$checksum64 = '09f7c48ba9fc208c5a4d901361ec167a785cd527d64f2d4c1a08635b36b039ae'
+$checksum64 = '6288c8beaf775443201791d282b3c48508de37636376577c4319b19c525548db'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
