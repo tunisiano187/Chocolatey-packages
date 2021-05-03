@@ -18,9 +18,12 @@ if ($MyInvocation.InvocationName -ne '.') {
 function global:au_GetLatest {
     Write-Verbose 'Get version'
     $version = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".zip"} | Select-Object -First 1).href).split('/')[-1].replace('.zip', '').replace('v','')
-	$realversion = $version.replace('rc','-rc');
+    $realversion = $version.replace('rc','-rc');
+    $folder = "https://bitcoincore.org/bin/$(((Invoke-WebRequest -Uri 'https://bitcoincore.org/bin/' -UseBasicParsing).Links | Where-Object {$_.href -match $version}| Select-Object -Last 1).href)"
+
 	Write-Verbose 'Get files'
-	$url64 = $("https://bitcoincore.org/bin/bitcoin-core-0.20.1/bitcoin-0.20.1-win64-setup.exe").replace('0.20.1',$version)
+	$file = $(((Invoke-WebRequest -Uri $folder -UseBasicParsing).Links | Where-Object {$_.href -match ".exe"}).href)
+    $url64 = "$folder$file"
 
     return @{ URL64 = $url64; Version = $realversion }
 }
