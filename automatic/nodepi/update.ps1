@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".exe"}).href
-	[version]$version=$link.replace("%20"," ").Split(" ")[-1].replace('.exe','')
+	[version]$version=$url.replace("%20"," ").Split(" ")[-1].replace('.exe','')
 
 	$Latest = @{ URL32 = $url; Version = $version }
 	return $Latest
