@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>nodepi</id>
-	<version>0.0</version>
+	<version>0.4.4</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nodepi</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@844f2a7fa61f639af9ca6245f8e767e868e3300d/icons/p4merge.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@58f22d2a2d0dd4396d2fb910916f3ad98709e7de/icons/nodepi.png</iconUrl>
 	<title>Node Pi</title>
 	<authors>SocialChain Inc.</authors>
 	<projectUrl>https://minepi.com/</projectUrl>
