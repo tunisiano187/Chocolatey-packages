@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	Write-Output "Version : $version"
 
 	$url32 = "https://github.com$($url32)";
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
