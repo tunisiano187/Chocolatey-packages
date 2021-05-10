@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+	<id>nodepi</id>
+	<version>_REPLACE_</version>
+	<owners>tunisiano</owners>
+	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nodepi</packageSourceUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@844f2a7fa61f639af9ca6245f8e767e868e3300d/icons/p4merge.png</iconUrl>
+	<title>Node Pi</title>
+	<authors>SocialChain Inc.</authors>
+	<projectUrl>https://minepi.com/</projectUrl>
+	<copyright>SocialChain Inc.</copyright>
+	<licenseUrl>https://github.com/minepi-finance/PI/blob/master/LICENSE</licenseUrl>
+	<requireLicenseAcceptance>true</requireLicenseAcceptance>
+	<docsUrl>https://minepi.com/white-paper</docsUrl>
+	<tags>freeware minepi pi crypto currency</tags>
+	<summary>The First Digital Currency You Can Mine On Your Phone</summary>
+	<description></description>
+	<releaseNotes>#### Software
+https://minepi.com/#download
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+	<dependencies>
+	  <dependency id="vcredist2017" version="14.16.27027.20190415" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
+</package>
+
