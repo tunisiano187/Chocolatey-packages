@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>nodepi</id>
-	<version>_REPLACE_</version>
+	<version>0.0</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nodepi</packageSourceUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@844f2a7fa61f639af9ca6245f8e767e868e3300d/icons/p4merge.png</iconUrl>
@@ -16,7 +16,14 @@
 	<docsUrl>https://minepi.com/white-paper</docsUrl>
 	<tags>freeware minepi pi crypto currency</tags>
 	<summary>The First Digital Currency You Can Mine On Your Phone</summary>
-	<description></description>
+	<description><![CDATA[## nodepi
+Node Pi is a node that helps to decentralize the pi network.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
 	<releaseNotes>#### Software
 https://minepi.com/#download
 

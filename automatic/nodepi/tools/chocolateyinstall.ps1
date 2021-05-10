@@ -2,8 +2,8 @@
 
 $packageName      = $env:ChocolateyPackageName
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url              = 'https://cdist2.perforce.com/perforce/r21.1/bin.ntx86/p4vinst.exe'
-$checksum         = '40ddec492fc318e178d87c7b2fdf3bef794da551aa41d2a8f2efe276751b9f3f'
+$url              = 'https://node-cdn.minepi.com/Pi%20Network%20Setup%200.4.4.exe'
+$checksum         = '1b338264420c4446b0a6e5993995b9dcb2886b18ece81caaa38523c3b6eacc39'
 $checksumType     = 'sha256'
 
 $packageArgs = @{
