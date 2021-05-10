@@ -17,6 +17,6 @@ $DNSAddresses = @(
 )
 
 $(Get-DnsClientServerAddress).InterfaceIndex | Get-Unique | Sort-Object | ForEach-Object{
-        Set-DnsClientServerAddress -InterfaceIndex $_ -ServerAddresses $DNSAddresses
+        #Set-DnsClientServerAddress -InterfaceIndex $_ -ServerAddresses $DNSAddresses
 }
 $(Get-DnsClientServerAddress).ServerAddresses
