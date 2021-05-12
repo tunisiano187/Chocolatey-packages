@@ -1,7 +1,7 @@
 [![](https://img.shields.io/chocolatey/v/pinode.install?color=green&label=pinode)](https://chocolatey.org/packages/pinode.install) [![](https://img.shields.io/chocolatey/dt/pinode.install)](https://chocolatey.org/packages/pinode.install)
 
-## nodepi
-Node Pi is a node that helps to decentralize the pi network.
+## PiNode
+PiNode is a node that helps to decentralize the pi network.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
