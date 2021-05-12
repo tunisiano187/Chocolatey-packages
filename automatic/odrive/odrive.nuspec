@@ -3,11 +3,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>odrive</id>
-    <version>1.6452.0.6977</version>
+    <version>1.6452.0.69</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
     <owners>tunisiano</owners>
-    <projectUrl>http://www.odrive.com/</projectUrl>
+    <projectUrl>https://www.odrive.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a2b19f901b4c83ce943b86021ecaab3946aba566/icons/odrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://docs.odrive.com/docs/odrive-terms-of-service</licenseUrl>
