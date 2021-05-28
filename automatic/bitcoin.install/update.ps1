@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/bitcoin/bitcoin/releases'
+$releases = 'https://github.com/bitcoin/bitcoin/releases/latest'
 
 if ($MyInvocation.InvocationName -ne '.') {
     function global:au_SearchReplace {
