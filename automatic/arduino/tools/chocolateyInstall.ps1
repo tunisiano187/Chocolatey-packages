@@ -19,4 +19,4 @@ Start-Process -FilePath 'AutoHotKey' -ArgumentList $ahkFile
 Install-ChocolateyPackage @packageArgs
 
 #Don't need installer anymore
-rm $toolsDir\*_x32.exe -ea 0 -force
+Remove-Item $toolsDir\*.exe -ea 0 -force
