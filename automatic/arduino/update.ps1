@@ -21,6 +21,9 @@ function global:au_GetLatest {
     
     $url32 = 'https://downloads.arduino.cc/arduino-' + $version + '-windows.exe'
     
+    $location='tools/arduino-' + $version + '-windows.exe'
+    
+    Invoke-WebRequest -Uri $url32 -OutFile $location
     return @{ URL32 = $url32; Version = $version }
 }
 

@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop';
 
 $packageName= 'arduino'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Get-Item "$toolsDir\*_x32.exe"
+$fileLocation = Get-Item "$toolsDir\*.exe"
 
 $packageArgs = @{
   packageName   = $packageName
