@@ -6,8 +6,8 @@
     <title>WinDjView</title>
     <authors>Andrew Zhezherun, Leonid Zhezherun</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>http://windjview.sourceforge.net/</projectUrl>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>https://windjview.sourceforge.net/</projectUrl>
     <packageSourceUrl></packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2cd7b088935b5385402c8bd43a3c8097d57c7dac/icons/windjview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
