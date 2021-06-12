@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup.'} | Where-Object {$_ -match '.exe'} | Where-Object {$_ -match "https"}).href | Select-Object -First 1
-	$version = Get-Version $url32
+	$version = $url32.Split('-')[-2]
 	if($version -eq '2.1') {
 		$version="2.1.0.20210612"
 	}
