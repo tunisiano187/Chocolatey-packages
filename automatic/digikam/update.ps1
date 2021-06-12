@@ -16,7 +16,6 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
-	$url32 = Invoke-WebRequest -Uri "https://download.kde.org/stable/digikam/$($version)/"
 	$url64 = "https://download.kde.org/stable/digikam/$($version)/digiKam-$($version)-Win64.exe"
 
 	$Latest = @{ URL64 = $url64; Version = $version }
