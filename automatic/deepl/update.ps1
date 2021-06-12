@@ -17,7 +17,9 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "DeepLSetup.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
-
+	if($version -eq '2.5.1') {
+		$version = '2.5.1.20210612'
+	}
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
 }
