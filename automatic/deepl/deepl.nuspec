@@ -7,8 +7,8 @@
     <title>DeepL</title>
     <authors>DeepL</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://www.deepl.com/fr/pro-license#free</licenseUrl>
-    <projectUrl>http://deepl.com/</projectUrl>
+    <licenseUrl>https://www.deepl.com/en/pro-license</licenseUrl>
+    <projectUrl>https://deepl.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d51ca2582990c5e7fed546dde230184dc05ccad/icons/deepl.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Deepl
