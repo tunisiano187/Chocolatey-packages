@@ -2,19 +2,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>windjview</id>
-    <version>2.1</version>
+    <version>2.1.0.20210612</version>
     <title>WinDjView</title>
     <authors>Andrew Zhezherun, Leonid Zhezherun</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://windjview.sourceforge.net/</projectUrl>
-    <packageSourceUrl></packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2cd7b088935b5385402c8bd43a3c8097d57c7dac/icons/windjview.png</iconUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windjview</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@27748ef3affd3f0afa66fcfd94db7e4cee43e5f5/icons/windjview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WinDjView is a fast, compact and powerful DjVu viewer for Windows with tabbed interface, continuous scrolling and advanced printing options. It uses the free [DjVuLibre](http://djvu.sourceforge.net/) library to decode DjVu documents. [DjVu](http://djvu.org/) is a web-centric format and software platform for distributing documents and images.
+    <description><![CDATA[## WinDjView
+WinDjView is a fast, compact and powerful DjVu viewer for Windows with tabbed interface, continuous scrolling and advanced printing options. It uses the free [DjVuLibre](http://djvu.sourceforge.net/) library to decode DjVu documents. [DjVu](http://djvu.org/) is a web-centric format and software platform for distributing documents and images.
 
 [Forum](https://sourceforge.net/p/windjview/discussion/)
-[Source code](https://sourceforge.net/p/windjview/code/)</description>
+[Source code](https://sourceforge.net/p/windjview/code/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Fast, compact, and powerful DjVu viewer</summary>
     
     <releaseNotes>[News](http://windjview.sourceforge.net/news)
