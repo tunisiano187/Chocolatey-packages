@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://appdownload.deepl.com/windows/full/DeepLSetup.exe'
@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "DeepLSetup.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
-	
+
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
 }
