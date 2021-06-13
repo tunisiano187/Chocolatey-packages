@@ -39,7 +39,7 @@ param(
 
     }
     # Try to download the nupkg
-    Invoke-WebRequest -Uri "https://chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.zip"
+    Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.zip"
     if(Test-Path "$nupkg.zip") {
         # Expand file
         Expand-Archive -Path "$nupkg.zip" -DestinationPath $nupkg -Force
