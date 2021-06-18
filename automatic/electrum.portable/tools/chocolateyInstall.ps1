@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = '$env:ChocolateyPackageName'
-$url = 'https://download.electrum.org/4.1.3/electrum-4.1.3-portable.exe'
-$checksum = '6a9b878df7ae61ad80fbdbd8845fe1916a809704fa95a6dc82ece0fbadc0ee96'
+$url = 'https://download.electrum.org/4.1.4/electrum-4.1.4-portable.exe'
+$checksum = 'cc58ecbf19472b97fc8c23883e86f6b8c32dd4380a4198f750a2d90e5a88bcfe'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "electrum.exe"
