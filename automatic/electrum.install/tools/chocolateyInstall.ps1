@@ -2,8 +2,8 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
-$url = 'https://download.electrum.org/4.1.2/electrum-4.1.2-setup.exe'
-$checksum = '2c3bed0f25f811be9e19317f2662283259ce2108269d19b328eab67252df34bd'
+$url = 'https://download.electrum.org/4.1.4/electrum-4.1.4-setup.exe'
+$checksum = '2871d063f9d1317446df92ad5333d36b9163d6f1388b7c0743f29339223f1f0e'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 

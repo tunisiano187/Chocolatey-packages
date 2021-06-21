@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mblock</id>
-    <version>5.3.0</version>
+    <version>5.3.5</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mblock</packageSourceUrl>
     <owners>tunisiano</owners>
     
