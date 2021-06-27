@@ -1,6 +1,6 @@
 ﻿$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www.winitor.com/tools/pestudio/current/pestudio.zip'
-$checksum       = '1560BEE6A942273CCC2C5DF75E7E7EA5E0BDA3C00155551B4CF3A14F3A4D97BD'
+$checksum       = '713B0B9B6A1DAE0879B5043324427C9CA42B87DFDD35597FEC9433966831D687'
 $checksumType   = 'SHA256'
 
 $packageArgs = @{
