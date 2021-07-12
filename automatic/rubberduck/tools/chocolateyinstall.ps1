@@ -2,8 +2,8 @@
 
 $packageName  = $env:ChocolateyPackageName
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://github.com/rubberduck-vba/Rubberduck/releases/download/Prerelease-v2.5.2.5953/Rubberduck.Setup.2.5.2.5953-pre.exe' # download url
-$checksum     = '2a5f35c27e392bb92459500677d8fb0289ef7811d5f34c0aa84ecc24e03d4f68'
+$url          = 'https://github.com/rubberduck-vba/Rubberduck/releases/download/Prerelease-v2.5.2.5958/Rubberduck.Setup.2.5.2.5958-pre.exe' # download url
+$checksum     = 'c7b090195d227d33e7dc437bbd8a4c5d539cabbe3af2ff95bf2a99c2866a6545'
 $checksumType = 'sha256'
 
 $packageArgs = @{
