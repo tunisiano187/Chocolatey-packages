@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName    = 'WinMerge'
-$url64          = 'https://github.com/GPUOpen-Tools/compressonator/releases/download/V4.1.5083/CompressonatorCLI_x64_4.1.5083.exe'
-$checksum64     = '372c56777a56d41720c85d494cbfa1ef8b4c62b4752643be7f82e08784668ee6'
+$url64          = 'https://github.com/GPUOpen-Tools/compressonator/releases/download/V4.2.5185/CompressonatorCLI_x64_4.2.5185.exe'
+$checksum64     = '89bd8d9704b4d2890aba50928ec57ce3b9c3f1dd05ce572a2058d0f738ff1f5e'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
