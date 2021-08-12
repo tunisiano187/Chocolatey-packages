@@ -3,7 +3,7 @@ $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
 $url = 'https://downloads.scratch.mit.edu/desktop/Scratch%20Setup.exe'
-$checksum = '985f33f2b87c059cf05c3517dfcb0905b1a8385fc327c82fb1282ad22486b191'
+$checksum = 'a3e6402c35504c2d9be6f55ddd3664ba9c51b4af81447e183cb0289fdff63958'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
