@@ -17,9 +17,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"} | Select-Object -First 2 | Sort-Object ).href
-    $url32 = "https://github.com$($installer[1])";
-	$url64 = "https://github.com$($installer[0])";
+    $installers = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"}).href
+    $url32 = "https://github.com$($installers.Where({$_ -match "(?<!64)-Setup\.exe$"}, 1))";
+    $url64 = "https://github.com$($installers.Where({$_ -like "*-X64-Setup.exe"}, 1))";
 
     $version = ($installer | Where-Object {$_ -notmatch 'ARM'}).split('-') | select-object -Last 1 -Skip 1
     $tags = Invoke-WebRequest 'https://api.github.com/repos/WinMerge/winmerge/releases' -UseBasicParsing | ConvertFrom-Json
