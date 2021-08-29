@@ -19,7 +19,7 @@ function global:au_GetLatest {
 		$version = '7.16.16.20201101'
 	}
 	Write-Output "Version : $version"
-	$url32 = "$($releases)$($installer)"
+	$url32 = "$($installer)"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
