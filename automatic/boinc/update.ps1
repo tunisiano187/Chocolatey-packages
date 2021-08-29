@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://boinc.berkeley.edu/dl/'
+$releases = 'https://boinc.berkeley.edu/download.php'
 
 function global:au_SearchReplace {
 	@{
