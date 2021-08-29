@@ -4,9 +4,14 @@ $releases = 'https://github.com/arduino/Arduino/releases'
 
 
 function global:au_SearchReplace {
-    
+	@{
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+		}
+	}
 }
-
 
 function global:au_GetLatest {
     $url = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match '.tar.xz'} | Select-Object -First 1).href)
@@ -15,9 +20,6 @@ function global:au_GetLatest {
     
     $url32 = 'https://downloads.arduino.cc/arduino-' + $version + '-windows.exe'
     
-    $location='tools/arduino-' + $version + '-windows.exe'
-    
-    Invoke-WebRequest -Uri $url32 -OutFile $location
     return @{ URL32 = $url32; Version = $version }
 }
 
