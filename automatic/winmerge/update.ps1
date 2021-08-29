@@ -17,11 +17,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"} | Sort-Object ).href
-    $url32 = $installer | Where-Object {$_ -notmatch "x64"} | Where-Object {$_ -notmatch "ARM64"} | Sort-Object -Descending | Select-Object -First 1
-    $url64 = $installer | Where-Object {$_ -match "x64"} | Sort-Object -Descending | Select-Object -First 1
-    $url32 = "https://github.com$($installer[1])";
-	$url64 = "https://github.com$($installer[0])";
+    $installers = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"}).href
+    $url32 = "https://github.com$($installers.Where({$_ -match "(?<!64)-Setup\.exe$"}, 1))";
+    $url64 = "https://github.com$($installers.Where({$_ -like "*-X64-Setup.exe"}, 1))";
 
     $version = $url32.split('-') | select-object -Last 1 -Skip 1
     if($version -eq '2.16.14') { $version = '2.16.14.20210829' }
