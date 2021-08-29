@@ -24,6 +24,7 @@ function global:au_GetLatest {
 	$url64 = "https://github.com$($installer[0])";
 
     $version = ($installer | Where-Object {$_ -notmatch 'ARM'}).split('-') | select-object -Last 1 -Skip 1
+    if($version -eq "2.16.14") { $version = '2.16.14.20210829' }
     $tags = Invoke-WebRequest 'https://api.github.com/repos/WinMerge/winmerge/releases' -UseBasicParsing | ConvertFrom-Json
     foreach ($tag in $tags) {
         if($tag.tag_name -match $version) {
