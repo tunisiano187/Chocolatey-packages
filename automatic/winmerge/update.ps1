@@ -17,7 +17,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"} | Select-Object -First 2 | Sort-Object ).href
+    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"} | Sort-Object ).href
+    $url32 = $installer | Where-Object {$_ -notmatch "x64"} | Where-Object {$_ -notmatch "ARM64"} | Sort-Object -Descending | Select-Object -First 1
+    $url64 = $installer | Where-Object {$_ -match "x64"} | Sort-Object -Descending | Select-Object -First 1
     $url32 = "https://github.com$($installer[1])";
 	$url64 = "https://github.com$($installer[0])";
 
