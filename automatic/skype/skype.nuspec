@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>skype</id>
+    <title>Skype</title>
+    <version>8.75.0.140</version>
+    <authors>Microsoft</authors>
+    <owners>chocolatey-community,Rob Reynolds</owners>
+    <summary>Skype - VOIP</summary>
+    <description><![CDATA[Skype - Install Skype, add your friends as contacts, then call, video call and instant message with them for free. Call people who aren't on Skype too, at really low rates.
+
+## Notes
+The package have the following known issues.
+- Skype automatically starts after installation (no known way to disable it yet)
+- A desktop shortcut is automatically created.
+]]></description>
+    <projectUrl>http://www.skype.com</projectUrl>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-coreteampackages/tree/master/automatic/skype</packageSourceUrl>
+    <tags>Skype VOIP voice over ip video conferencing admin</tags>
+    <licenseUrl>https://www.microsoft.com/servicesagreement#14e_Skype</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-coreteampackages@040c834d483de9e38ceeef0fd8283d803be082bf/icons/skype.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
