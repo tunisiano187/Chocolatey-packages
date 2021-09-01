@@ -6,7 +6,7 @@
     <version>1.8.13</version>
     <title>Arduino IDE (Install)</title>
     <authors>Arduino team</authors>
-    <owners>dtgm, LudicrousByte</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/arduino/Arduino/master/license.txt</licenseUrl>
     <projectUrl>http://arduino.cc/en/Main/Software/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1fcd37da23a72b340d22f0ee7081ffc963bbd444/icons/arduino.png</iconUrl>
