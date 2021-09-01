@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $url32 = ($files.Links | Where-Object {$_.outerText -match '.appx'})[0].href
 
     $version = (($files.Links | Where-Object {$_.outerText -match '.appx'})[0].outerText).split('_')[1]
-    
+
     Invoke-WebRequest -Uri $url32 -OutFile "tools/Rufus-$version.appx"
 
     return @{ URL32 = $url32; Version = $version }
