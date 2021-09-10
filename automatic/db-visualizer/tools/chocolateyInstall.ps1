@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32            = 'https://dbvis.com/product_download/dbvis-12.1.2/media/dbvis_windows-x32_12_1_2.exe'
-$url64            = 'https://dbvis.com/product_download/dbvis-12.1.2/media/dbvis_windows-x64_12_1_2.exe'
-$checksum         = '59cb7f2a49967fc3812f79fe8053f4a27c8d15e0cf87643dd74b38a341427bf6'
+$url32            = 'https://dbvis.com/product_download/dbvis-12.1.3/media/dbvis_windows-x32_12_1_3.exe'
+$url64            = 'https://dbvis.com/product_download/dbvis-12.1.3/media/dbvis_windows-x64_12_1_3.exe'
+$checksum         = 'a6ed0675dfbc0af1056b0a64fe600de84e2454c38884be658eed6beae112869a'
 $checksumType     = 'sha256'
-$checksum64       = 'cfc8ef5882371ac6426bea058a0ca364344488db7719e9a04055570621b3a77b'
+$checksum64       = '661d67798839f51a4bdc88951a5dba9de39ae2869aff92419187a6893df74ed4'
 $checksumType64   = 'sha256'
 
 $packageArgs = @{
