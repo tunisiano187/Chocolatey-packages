@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor</id>
-    <version>11.0.1</version>
+    <version>12.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>010 Editor</title>
@@ -24,7 +24,7 @@ easy, intuitive way. Includes a whole range of powerful analysis and editing too
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <releaseNotes>#### Software
 https://www.sweetscape.com/010editor/release_notes.html
@@ -34,7 +34,7 @@ https://www.sweetscape.com/010editor/release_notes.html
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="010editor.install" version="[11.0.1]" />
+      <dependency id="010editor.install" version="[12.0]" />
     </dependencies>
   </metadata>
   <files>
