@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>macrocreator</id>
-    <version>5.4.0</version>
+    <version>5.4.1</version>
     <title>Pulover's Macro Creator</title>
     <authors>Rodolfo U. Batista</authors>
     <owners>tunisiano</owners>
@@ -37,7 +37,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <docsUrl>http://www.macrocreator.com/help/</docsUrl>
     <bugTrackerUrl>https://github.com/Pulover/PuloversMacroCreator/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="macrocreator.install" version="[5.4.0]" />
+      <dependency id="macrocreator.install" version="[5.4.1]" />
     </dependencies>
   </metadata>
 </package>

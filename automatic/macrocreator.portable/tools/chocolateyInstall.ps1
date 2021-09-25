@@ -1,7 +1,7 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/Pulover/PuloversMacroCreator/releases/download/v5.4.0/PuloversMacroCreator-Portable.zip'
-$checksum = 'e5d1af7dcc40d37f554a808224d932dac328f99c3db23c4a184c19e015f94670'
+$url = 'https://github.com/Pulover/PuloversMacroCreator/releases/download/v5.4.1/PuloversMacroCreator-Portable.zip'
+$checksum = 'aebdf335913eae4270b585339727b44593a98d17d73a3aae80e4d46d27c01310'
 $checksumType = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `

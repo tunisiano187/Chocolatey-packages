@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>macrocreator.portable</id>
-    <version>5.4.0</version>
+    <version>5.4.1</version>
     <title>Pulover's Macro Creator (Portable)</title>
     <authors>Rodolfo U. Batista</authors>
     <owners>tunisiano</owners>
