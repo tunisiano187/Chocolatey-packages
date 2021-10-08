@@ -40,4 +40,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
       <dependency id="autohotkey" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
