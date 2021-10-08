@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
-$url = 'https://distfiles.audacious-media-player.org/audacious-4.1-beta1-win32.exe'
-$checksum = 'f853c7c04197b854a87ff63778faba9d942d9998f85689c61f8281a11a0f03c1'
+$url = 'https://ftp.binance.com/electron-desktop/windows/production/binance-setup.exe'
+$checksum = '883a271a0685388db395188966f279729ff5762ba859772bb7c1b10c81c72c1a'
 $checksumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
