@@ -4,15 +4,13 @@
   <metadata>
     <id>binance</id>
     <title>Binance</title>
-    <version>0.0</version>
+    <version>1.24.2</version>
     <authors>Binance ©</authors>
     <owners>tunisiano</owners>
     <summary>Binance crypto trading app</summary>
-    <description><![CDATA[## Audacious
-Audacious is an advanced audio player. It is free, lightweight, based on GTK+, runs on Linux and many 
-other *nix platforms and is focused on audio quality and supporting a wide range of audio codecs.
+    <description><![CDATA[## binance
+All the power of Binance's cryptocurrency exchange, in the palm of your hand. Download the Binance crypto trading app today.
 
-Audacious is a fork of Beep Media Player (BMP), which itself is forked from XMMS.
 
 ### Package-specific issue
 
