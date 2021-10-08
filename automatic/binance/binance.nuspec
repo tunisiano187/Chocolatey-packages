@@ -19,11 +19,11 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/binance</packageSourceUrl>
-    <projectUrl>https://www.binance.com/en/download</projectUrl>
+    <ProjectUrl>https://www.binance.com/en/download</ProjectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@707318015cd793f52a104b876b5c7dac1badd806/icons/binance.png</iconUrl>
     <tags>binance trading</tags>
     <copyright>© Binance</copyright>
-    <licenseUrl>https://www.binance.com/en/terms</licenseUrl>
+    <LicenseUrl>https://www.binance.com/en/terms</LicenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Package
