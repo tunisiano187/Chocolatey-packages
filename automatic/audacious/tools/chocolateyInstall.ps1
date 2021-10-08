@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
-$url = 'https://distfiles.audacious-media-player.org/audacious-4.1-beta1-win32.exe'
-$checksum = 'f853c7c04197b854a87ff63778faba9d942d9998f85689c61f8281a11a0f03c1'
+$url = 'https://distfiles.audacious-media-player.org/audacious-4.1-win32.exe'
+$checksum = '5357cda5e9f225f4cc63eddd0e744b7179d59bc48f3a395b175835936d69a250'
 $checksumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
