@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "Installer-NETFramework.exe$"} | Select-Object -First 1).href)"
+    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "NETFramework-Installer.exe$"} | Select-Object -First 1).href)"
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     $tags = Invoke-WebRequest 'https://api.github.com/repos/fernandreu/office-ribbonx-editor/releases' -UseBasicParsing | ConvertFrom-Json
     foreach ($tag in $tags) {
