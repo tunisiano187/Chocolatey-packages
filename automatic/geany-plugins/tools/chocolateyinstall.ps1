@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://plugins.geany.org/geany-plugins/geany-plugins-1.37_setup.exe'
-$checksum       = '7a9935d55342674b47dcbcced03f4d36d1ba216bf67ebd93f6ce2993936cca9f'
+$url            = 'https://plugins.geany.org/geany-plugins/geany-plugins-1.38_setup.exe'
+$checksum       = '3bb95f8aed7e37de495b899865d9fc51b951e7385842f2c11df2cdddbd5f80f6'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
