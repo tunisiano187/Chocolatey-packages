@@ -3,8 +3,8 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
 $packageName      = $env:ChocolateyPackageName
-$url32            = 'https://github.com/brave/brave-browser/releases/download/v1.33.28/BraveBrowserStandaloneSilentNightlySetup.exe'
-$checksum32       = '28d7e975af7b83467a49cd9b4a55dda1d34dfa8cd9325aa070ff8e854929d405'
+$url32            = 'https://github.com/brave/brave-browser/releases/download/v1.33.30/BraveBrowserStandaloneSilentNightlySetup.exe'
+$checksum32       = 'c15fedb2b7dfa4d790236f8203033e13920ef8151ec04ae2a902cbdc1caafae8'
 $checksumType32   = 'sha256'
 
 $packageArgs = @{
