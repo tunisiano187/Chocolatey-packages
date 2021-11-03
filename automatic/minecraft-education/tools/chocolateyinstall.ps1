@@ -3,7 +3,7 @@
 
 $packageName      = $env:ChocolateyPackageName
 $url              = 'https://aka.ms/downloadmee-desktopApp'
-$checksum         = '04b3b00658399d717958cd0bdf675b2ff2cf53c165694a8e6c52b052850c2013'
+$checksum         = '161ad1b7fbfdf03382f3be6ccec3abe9ac59f1d2ef821beb6775fd900c48d3b4'
 $checksumType     = 'sha256'
 
 $packageArgs = @{
