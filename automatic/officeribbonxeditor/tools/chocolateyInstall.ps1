@@ -1,5 +1,5 @@
-﻿$url32          = 'https://github.com/fernandreu/office-ribbonx-editor/releases/download/v1.8.0/OfficeRibbonXEditor-NETFramework-Installer.exe'
-$checksum32     = 'ff57d64725825fdaebdbeaf2fd663e80b0a6b85c92ebdd6a1f74be4a44f9e4b0'
+﻿$url32          = 'https://github.com/fernandreu/office-ribbonx-editor/releases/download/v1.9.0/OfficeRibbonXEditor-NETFramework-Installer.exe'
+$checksum32     = '97a3c53a2ee1e81fc58e3322c55331fac228dfba7d64a26645558200da1a4970'
 $checksumType32 = 'sha256'
 
 $packageArgs = @{
