@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>macrocreator.portable</id>
-    <version>5.4.0</version>
+    <version>5.4.1</version>
     <title>Pulover's Macro Creator (Portable)</title>
     <authors>Rodolfo U. Batista</authors>
     <owners>tunisiano</owners>
@@ -17,6 +17,11 @@ The macros can be executed from the program itself or you can export them to Aut
 
 [Features](https://www.macrocreator.com/features/)  
 [Screenshots](https://www.macrocreator.com/screenshots/)
+
+### About virus alerts:
+The developper received many messages about virus alerts for the previous release and realized that it must have been because he had updated AutoHotkey version. he's still investigating it but it seems that some Anti-Virus softwares are wrongly flagging the latest versions. He cannot guarantee that PMC won’t have false alerts as well, but he can asure it’s completely safe to use it. It has no viruses, malwares or spywares. It’s an Open Source project and you can even run it from source or compile it yourself. If you’re still concerned, you can restrict its internet access from your firewall settings.
+
+Here’s a thread to help report false positive to Anti-Virus companies: https://www.autohotkey.com/boards/viewtopic.php?f=17&t=62266
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
