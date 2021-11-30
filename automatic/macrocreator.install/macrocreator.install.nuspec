@@ -23,7 +23,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <summary />
+    <summary>Pulover's Macro Creator is a free automation tool and script generator based on AutoHotkey language.</summary>
     <releaseNotes>#### Program
 * [Changelog](https://github.com/Pulover/PuloversMacroCreator/releases)
 
@@ -37,7 +37,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <docsUrl>http://www.macrocreator.com/help/</docsUrl>
     <bugTrackerUrl>https://github.com/Pulover/PuloversMacroCreator/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="autohotkey" />
+      <dependency id="autohotkey"  version="1.1.33.09" />
     </dependencies>
   </metadata>
   <files>
