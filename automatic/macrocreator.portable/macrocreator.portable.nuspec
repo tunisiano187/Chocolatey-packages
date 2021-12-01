@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <docsUrl>http://www.macrocreator.com/help/</docsUrl>
     <bugTrackerUrl>https://github.com/Pulover/PuloversMacroCreator/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="autohotkey.portable" version="1.1.33.09"/>
+      <dependency id="autohotkey.portable" version="1.1.33.09" />
     </dependencies>
   </metadata>
   <files>
