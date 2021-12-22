@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>h2database</id>
-    <version>2.0.202</version>
+    <version>2.0.204</version>
     <title>H2 Database Engine</title>
     <authors>Thomas Mueller</authors>
     <owners>tunisiano</owners>
