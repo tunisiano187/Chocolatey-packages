@@ -2,8 +2,8 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /NORESTART /SP-'
-$url = 'https://updates2.safer-networking.org/spybot1/spybotsd-2.8.68.0.exe'
-$checksum = '647cfdf796154ba0ce1786fd72f62102653f6fbfcc982e25da26579b844d966a'
+$url = 'https://updates2.safer-networking.org/spybot1/spybotsd-2.9.82.0.exe'
+$checksum = 'fa38ffc4b0246a0248bbfac79cb19ba94be9aa114e5b8d98b7ffcc75c3c2f6f0'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 $options =
