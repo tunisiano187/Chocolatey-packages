@@ -1,5 +1,5 @@
-﻿$url          = 'https://github.com/h2database/h2database/releases/download/version-2.0.206/h2-setup-2022-01-04.exe'
-$checksum     = '7a47f677683ac5d6787db2c91a6125a978b5f692869c18eacdb4584a43cfa820'
+﻿$url          = 'https://github.com/h2database/h2database/releases/download/version-2.1.210/h2-setup-2022-01-17.exe'
+$checksum     = '36759d154dd91a1363dda2d41dfa051cafa732f7a1e4fa2216ae8a021196d3b3'
 $checksumType = 'sha256'
 
 $packageArgs  = @{
