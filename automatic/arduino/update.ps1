@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/arduino/Arduino/releases'
+$releases = 'https://www.arduino.cc/en/software'
 
 
 function global:au_SearchReplace {
@@ -14,11 +14,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $url = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match '.tar.xz'} | Select-Object -First 1).href)
+    $url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match '-windows.exe'} | Select-Object -First 1).href)
 
-    $version = $url -split '/' | Select-Object -Last 1 -Skip 1
-
-    $url32 = 'https://downloads.arduino.cc/arduino-' + $version + '-windows.exe'
+    $version = $url -split '-' | Select-Object -Last 1 -Skip 1
 
     return @{ URL32 = $url32; Version = $version }
 }
