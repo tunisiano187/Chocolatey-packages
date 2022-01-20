@@ -18,7 +18,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	if($version -eq '5.3.5.13') {
-		$version = '5.3.5.14'
+		$version = '5.3.5.14.2022012001'
 	}
 
 	$Latest = @{ URL32 = $release; Version = $version }
