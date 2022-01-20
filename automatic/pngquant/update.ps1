@@ -18,7 +18,9 @@ function global:au_GetLatest {
 	$r = [regex]"\(v(.*)\)"
 	$match = $r.match($page.content)
 	$version = $match.groups[1].value
-
+	if($version -eq "2.17.0") {
+		$version="2.17.0.2022012001"
+	}
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
