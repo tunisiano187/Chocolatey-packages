@@ -1,6 +1,6 @@
 ﻿$packageName = 'pngquant'
 $url = 'https://pngquant.org/pngquant-windows.zip'
-$checksum = 'e8e2a3b945bac3b20b7264823ef9f99179a62adcaae310e327d548fc7f84d631'
+$checksum = 'bd0257aeeccfe446a4cd764927e26f8af6051796f28abed104307284107b120d'
 $checksumType = 'sha256'
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
