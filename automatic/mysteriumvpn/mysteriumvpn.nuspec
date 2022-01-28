@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>mysteriumvpn</id>
-    <version>10.5.1</version>
+    <version>10.5.0</version>
     <title>MysteriumVPN</title>
     <authors>Mysterium Team</authors>
     <owners>tunisiano</owners>
@@ -40,7 +40,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>© 2014 Ryszard Wiśniewski</copyright>
+    <copyright>© Mysterium</copyright>
     <tags>apk smali android admin</tags>
     <projectSourceUrl>https://github.com/mysteriumnetwork/mysterium-vpn-desktop</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mysteriumvpn</packageSourceUrl>
