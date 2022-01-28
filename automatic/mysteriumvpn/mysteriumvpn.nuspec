@@ -8,7 +8,7 @@
     <authors>Mysterium Team</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/mysteriumnetwork/mysterium-vpn-desktop/master/LICENSE</licenseUrl>
-    <projectUrl>http://ibotpeaches.github.io/Apktool/</projectUrl>
+    <projectUrl>https://mysteriumvpn.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e3fa871082a4e95072459e13ec55f80001b1985f/icons/mysteriumvpn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Mysterium VPN
