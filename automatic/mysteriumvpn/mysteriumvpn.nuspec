@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/mysteriumnetwork/mysterium-vpn-desktop/master/LICENSE</licenseUrl>
     <projectUrl>http://ibotpeaches.github.io/Apktool/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@455f0e6e70a9b8154a6a56ce030970bc1ccf40d6/icons/apktool.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e3fa871082a4e95072459e13ec55f80001b1985f/icons/mysteriumvpn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## APK Tool
 A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications. It also makes working with an app easier because of the project like file structure and automation of some repetitive tasks like building apk, etc.
