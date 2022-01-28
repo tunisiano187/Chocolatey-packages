@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>thymiosuite</id>
-    <version>2.3.0</version>
+    <version>2.2.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thymiosuite</packageSourceUrl>
     <owners>tunisiano</owners>
     
@@ -11,7 +11,7 @@
     <projectUrl>https://www.thymio.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fb2850ca7983fb6b004f88c1e1798f44aa39d072/icons/thymiosuite.png</iconUrl>
     <copyright>Aseba Studio</copyright>
-    <docsUrl>https://www.thymio.org/program/</docsUrl>
+    <docsUrl>https://www.thymio.org/products/programming-with-thymio-suite/</docsUrl>
     <mailingListUrl>http://wiki.thymio.org/forum:start</mailingListUrl>
     <tags>thymio suite azeba learn</tags>
     <summary>Thymio is a programable robot to learn the basics of programming.</summary>
