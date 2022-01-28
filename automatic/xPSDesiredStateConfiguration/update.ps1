@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href
 	Write-Output 'Checking version'
-	$version = Get-Version $url32
+	$version=$($url32).split('v')[-1].replace('.zip','')
 	if($version -eq '9.1.0') {
 		$version="9.1.0.20220128"
 	}
