@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $url64 = $url32.replace('win32','win64')
 
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    
+
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 

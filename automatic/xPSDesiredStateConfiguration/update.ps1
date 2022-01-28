@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest'
@@ -18,7 +18,7 @@ function global:au_GetLatest {
 	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href
 	Write-Output 'Checking version'
 	$version = Get-Version $url32
-	if($version -eq '9.1.0') { 
+	if($version -eq '9.1.0') {
 		$version="9.1.0.20220128"
 	}
 	Write-Output "Version : $version"
