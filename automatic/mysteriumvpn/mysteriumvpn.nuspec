@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>mysteriumvpn</id>
-    <version>0.0.0</version>
+    <version>10.5.1</version>
     <title>MysteriumVPN</title>
     <authors>Mysterium Team</authors>
     <owners>tunisiano</owners>
@@ -11,27 +11,21 @@
     <projectUrl>http://ibotpeaches.github.io/Apktool/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e3fa871082a4e95072459e13ec55f80001b1985f/icons/mysteriumvpn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## APK Tool
-A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications. It also makes working with an app easier because of the project like file structure and automation of some repetitive tasks like building apk, etc.
+    <description><![CDATA[## Mysterium VPN
+### Censorship free internet for all
+Safe, secure and affordable.
+The first decentralized VPN of its kind.
 
-It is **NOT** intended for piracy and other non-legal uses. It could be used for localizing, adding some features or support for custom platforms, analyzing applications and much more.
+### Unlock global entertainment
+Netflix, iPlayer, Hulu, Peacock, Amazon Prime and more. With MysteriumVPN, access streaming services from all around the world.
 
-#### Features
- * Disassembling resources to nearly original form (including `resources.arsc`, `classes.dex`, `9.png.` and `XMLs`)
- * Rebuilding decoded resources back to binary APK/JAR
- * Organizing and handling APKs that depend on framework resources
- * Smali Debugging (Removed in `2.1.0` in favor of [IdeaSmali](https://github.com/JesusFreke/smali/wiki/smalidea))
- * Helping with repetitive tasks
+Watch your favorite movies, events, tournaments and more with top-tier speed and privacy wherever you are.
 
-#### Requirements
- * Java 8 (JRE 1.8)
- * Basic knowledge of Android SDK, AAPT and smali
+### Say no to censorship and online restrictions
+Bypass all geo-blocks and regional restrictions and censorships. Websites and apps are just one tap away.
 
-### Links of Interest
- * [XDA Thread](https://forum.xda-developers.com/showthread.php?t=1755243) - For those who wish to communicate on XDA-Developers for community support
- * [Smali Project](https://github.com/JesusFreke/smali) - Smali Project is the tool used in the disassembling of `.dex` files
- * [Gitter #apktool](https://gitter.im/iBotPeaches/Apktool) - Gitter Channel for support, bugs and discussions
- * [Freenode #apktool](https://webchat.freenode.net/?channels=apktool) - IRC Channel for support, bugs and discussions
+MysteriumVPN guarantees private and unrestricted internet.
+
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
