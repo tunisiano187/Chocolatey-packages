@@ -18,6 +18,7 @@ function global:au_GetLatest {
 	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href
 	Write-Output 'Checking version'
 	$version = Get-Version $url32
+	if($version -eq '9.1.0') { $version='9.1.0.20220128'}
 	Write-Output "Version : $version"
 	$url32 = "https://github.com$($url32)";
 
