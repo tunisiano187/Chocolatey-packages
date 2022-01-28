@@ -49,7 +49,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© 2014 Ryszard Wiśniewski</copyright>
     <tags>apk smali android admin</tags>
     <projectSourceUrl>https://github.com/mysteriumnetwork/mysterium-vpn-desktop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/apktool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mysteriumvpn</packageSourceUrl>
     <docsUrl>https://www.mysteriumvpn.com/post/what-is-vpn</docsUrl>
     <bugTrackerUrl>https://github.com/mysteriumnetwork/mysterium-vpn-desktop/issues</bugTrackerUrl>
   </metadata>
