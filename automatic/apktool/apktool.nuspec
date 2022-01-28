@@ -3,11 +3,11 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>apktool</id>
-    <version>2.6.0</version>
+    <version>2.5.0</version>
     <title>Apktool</title>
     <authors>Ryszard Wiśniewski</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://raw.githubusercontent.com/iBotPeaches/Apktool/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/iBotPeaches/Apktool/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>http://ibotpeaches.github.io/Apktool/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@455f0e6e70a9b8154a6a56ce030970bc1ccf40d6/icons/apktool.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
