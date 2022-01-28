@@ -1,6 +1,6 @@
 ﻿$packageName    = $env:ChocolateyPackageName
-$url            = 'https://github.com/iBotPeaches/Apktool/releases/download/v2.6.0/apktool_2.6.0.jar'
-$checksum       = 'f750a3cd2c1f942f27f5f7fd5d17eada3bdaff0a6643f49db847e842579fdda5'
+$url            = 'https://github.com/mysteriumnetwork/mysterium-vpn-desktop/releases/download/10.5.1/MysteriumVPN-Setup-10.5.1.exe'
+$checksum       = '2e2536ac252cb8da2212494db4256580a3d8eb7fcc35361f9cd9d66e7105e57b'
 $checksumType   = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -9,14 +9,14 @@ $packageArgs = @{
     unzipLocation = $toolsDir
     fileType      = 'EXE'
     url           = $url
-  
+
     softwareName  = 'mysterium*'
-  
+
     checksum      = $checksum
     checksumType  = $checksumType
-  
+
     silentArgs   = '/S' # NSIS
     validExitCodes= @(0)
   }
-  
+
   Install-ChocolateyPackage @packageArgs
