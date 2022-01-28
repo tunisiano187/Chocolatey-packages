@@ -12,7 +12,7 @@ $Headers = @{
 
 $chocousers     = {tunisiano},{dtgm}
 foreach ($user in $chocousers) {
-    $chocoprofile = "https://chocolatey.org/profiles/$user"
+    $chocoprofile = "https://community.chocolatey.org/profiles/$user"
     $chocoprofile
     $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
 
@@ -24,7 +24,7 @@ foreach ($user in $chocousers) {
         if($check -eq 0) {
             [string]$Label = "NeedsUpdate"
             [string]$Title = "($packageName) Needs update"
-            [string]$Description = "([$packageName](https://chocolatey.org/packages/$packageName)) needs mainatainer"
+            [string]$Description = "([$packageName](https://community.chocolatey.org/packages/$packageName)) needs mainatainer"
             New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
         }
     }
