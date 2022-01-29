@@ -48,3 +48,4 @@
 |thymiosuite|
 |voicemod|
 |autocomplete|
+|vibrancegui|
