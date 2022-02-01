@@ -12,5 +12,5 @@ $packageArgs = @{
     checksum      = $checksum
     checksumType  = $checksumType
 }
-  
+
 Install-ChocolateyPackage @packageArgs
