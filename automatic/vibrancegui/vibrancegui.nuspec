@@ -16,4 +16,7 @@
     <packageSourceUrl>https://github.com/2m/vibrance-gui-nuget</packageSourceUrl>
     <bugTrackerUrl>https://github.com/juvlarN/vibranceGUI/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
