@@ -1,5 +1,3 @@
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
 apache-cassandra 3.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
