@@ -5,10 +5,10 @@
     <version>2.5.3</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>http://www.nano-editor.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f4ad6c3db2782dadeff6a9848225f43abca7a6d9/icons/nano.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec9700d9c083614a05a4c771f5ec93d188168d8f/icons/nano.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Nano is ANOther editor.  The nano project was started because of a few "problems" with the wonderfully easy-to-use and friendly Pico text editor.
 
@@ -38,7 +38,7 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
     <copyright>© 2002 GNU Project</copyright>
     <tags>gnu text editor</tags>
     <projectSourceUrl>http://svn.savannah.gnu.org/viewvc/trunk/nano/?root=nano</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/nano/2.5.3</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nano</packageSourceUrl>
     <docsUrl>http://www.nano-editor.org/docs.php</docsUrl>
     <bugTrackerUrl>https://savannah.gnu.org/bugs/?group=nano</bugTrackerUrl>
   </metadata>
