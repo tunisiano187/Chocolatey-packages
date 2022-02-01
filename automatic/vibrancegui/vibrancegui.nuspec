@@ -5,7 +5,7 @@
     <version>2.0.0.0</version>
     <title>VibranceGUI</title>
     <authors>https://github.com/juvlarN/vibranceGUI/graphs/contributors</authors>
-    <owners>https://github.com/2m</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://vibrancegui.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@45c446c9e6d92e7b1482193b2784de424157cf91/icons/vibrancegui.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
