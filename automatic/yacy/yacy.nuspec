@@ -6,8 +6,8 @@
     <title>YaCy</title>
     <authors>YaCy developers</authors>
     <owners>dtgm</owners>
-    <licenseUrl>https://gitorious.org/yacy/rc1/source/COPYRIGHT</licenseUrl>
-    <projectUrl>http://yacy.net</projectUrl>
+    <licenseUrl>https://github.com/yacy/yacy_search_server/blob/master/COPYRIGHT</licenseUrl>
+    <projectUrl>https://yacy.net</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/aaae5f8457ea1087ec2a155ef594617d8c7ff34d/icons/yacy.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>YaCy is a search engine for the web, based on Solr and a peer-to-peer protocol. You may also use it without P2P as search appliance for a search portal or your intranet.
@@ -38,9 +38,9 @@ To be able to perform a search using the YaCy network, every user has to set up 
     <copyright>© YaCy developers</copyright>
     <language>en-us</language>
     <tags>p2p search engine admin</tags>
-    <projectSourceUrl>https://gitorious.org/yacy/rc1/</projectSourceUrl>
+    <projectSourceUrl>https://github.com/yacy/yacy_search_server</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/yacy/</packageSourceUrl>
-    <bugTrackerUrl>http://mantis.tokeek.de/my_view_page.php</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/yacy/yacy_search_server/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="javaruntime" />
     </dependencies>

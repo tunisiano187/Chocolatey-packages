@@ -1,7 +1,7 @@
-﻿$packageName = 'yacy'
-$packageSearch = "$packageName"
-$installerType = 'exe'
-$silentArgs = '/S'
+﻿$packageName    = $env:ChocolateyPackageName
+$packageSearch  = "$packageName"
+$installerType  = 'exe'
+$silentArgs     = '/S'
 $validExitCodes = @(0)
 
 Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
