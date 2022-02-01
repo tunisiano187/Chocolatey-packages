@@ -13,7 +13,7 @@
     <summary>Automates vibrance/saturation control for CSGO</summary>
     <tags>vibrance saturation csgo</tags>
     <projectSourceUrl>https://github.com/juvlarN/vibranceGUI</projectSourceUrl>
-    <packageSourceUrl>https://github.com/2m/vibrance-gui-nuget</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vibrancegui</packageSourceUrl>
     <bugTrackerUrl>https://github.com/juvlarN/vibranceGUI/issues</bugTrackerUrl>
   </metadata>
   <files>
