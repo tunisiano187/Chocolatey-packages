@@ -5,7 +5,7 @@
     <version>2.5.3</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>http://www.nano-editor.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec9700d9c083614a05a4c771f5ec93d188168d8f/icons/nano.svg</iconUrl>
