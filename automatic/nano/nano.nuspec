@@ -42,4 +42,7 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
     <docsUrl>http://www.nano-editor.org/docs.php</docsUrl>
     <bugTrackerUrl>https://savannah.gnu.org/bugs/?group=nano</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
