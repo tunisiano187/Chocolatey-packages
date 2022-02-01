@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>nano</id>
+    <version>2.5.3</version>
+    <title>GNU nano</title>
+    <authors>Chris Allegretta</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <projectUrl>http://www.nano-editor.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f4ad6c3db2782dadeff6a9848225f43abca7a6d9/icons/nano.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Nano is ANOther editor.  The nano project was started because of a few "problems" with the wonderfully easy-to-use and friendly Pico text editor.
+
+First and foremost was its license: the Pine suite does not use the GPL or a GPL-friendly license, and has unclear restrictions on
+redistribution.  Because of this, Pine and Pico are not included with many GNU/Linux distributions.  Also, other features (like go-to-line-number or search-and-replace) were unavailable until recently or require a command-line flag.  Yuck.
+
+nano aims to solve these problems by emulating the functionality of Pico as closely as possible while addressing the problems above and providing other extra functionality.
+
+* [Screenshots](http://www.nano-editor.org/screenshots.php)
+* [FAQ](http://www.nano-editor.org/dist/v2.5/faq.html)
+* [Manual](http://www.nano-editor.org/dist/v2.5/nano.html)
+
+#### Mailing lists
+* [Info-nano](http://mail.gnu.org/mailman/listinfo/info-nano) - announcements
+* [Help-nano](https://lists.gnu.org/mailman/listinfo/help-nano) - help
+* [Nano-devel](https://lists.gnu.org/mailman/listinfo/nano-devel) - development discussions</description>
+    <summary>Free replacement for the Pico text editor, while possibly adding new features</summary>
+    <releaseNotes>#### Program
+* [News](http://savannah.gnu.org/news/?group=nano)
+* [Release log](http://www.nano-editor.org/dist/v2.5/NEWS)
+* [Roadmap](http://www.nano-editor.org/dist/v2.5/TODO)
+* [Changelog](http://www.nano-editor.org/dist/v2.5/ChangeLog)
+* [Upgrade notes](http://www.nano-editor.org/dist/v2.5/UPGRADE)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2002 GNU Project</copyright>
+    <tags>gnu text editor</tags>
+    <projectSourceUrl>http://svn.savannah.gnu.org/viewvc/trunk/nano/?root=nano</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/nano/2.5.3</packageSourceUrl>
+    <docsUrl>http://www.nano-editor.org/docs.php</docsUrl>
+    <bugTrackerUrl>https://savannah.gnu.org/bugs/?group=nano</bugTrackerUrl>
+  </metadata>
+</package>
