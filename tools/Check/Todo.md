@@ -25,3 +25,4 @@
 |procdump|
 |voicemod|
 |autocomplete|
+|hulu.desktop|
