@@ -39,7 +39,7 @@ To be able to perform a search using the YaCy network, every user has to set up 
     <language>en-us</language>
     <tags>p2p search engine admin</tags>
     <projectSourceUrl>https://github.com/yacy/yacy_search_server</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/yacy/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/yacy</packageSourceUrl>
     <bugTrackerUrl>https://github.com/yacy/yacy_search_server/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="javaruntime" />
