@@ -16,5 +16,8 @@
     <dependencies>
       <dependency id="autoit.commandline" />
     </dependencies>
+    <files>
+      <file src="tools\**" target="tools" />
+    </files>
   </metadata>
 </package>
