@@ -5,11 +5,11 @@ $releases = 'https://yacy.net/download_installation/'
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-		}
+		"tools\VERIFICATION.txt" = @{
+			"(^Version\s+:).*"  = "`${1} $($Latest.Version)"
+			"(^URL\s+:).*"      = "`${1} $($Latest.URL32)"
+			"(^Checksum\s+:).*" = "`${1} $($Latest.Checksum32)"
+		 }
 	}
 }
 
@@ -25,4 +25,9 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+function global:au_BeforeUpdate() {
+	Write-host "Downloading yacy $($Latest.Version) installer file"
+	Get-RemoteFiles -Purge -NoSuffix
+ }
+ 
+ update -ChecksumFor none
