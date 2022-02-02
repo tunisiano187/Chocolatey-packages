@@ -5,7 +5,7 @@
     <version>1.90</version>
     <title>YaCy</title>
     <authors>YaCy developers</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/yacy/yacy_search_server/blob/master/COPYRIGHT</licenseUrl>
     <projectUrl>https://yacy.net</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@de2115f54ab00c28bfe1acd27e13790b78bc8120/icons/yacy.png</iconUrl>
