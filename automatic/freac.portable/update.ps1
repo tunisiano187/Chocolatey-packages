@@ -17,12 +17,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "-windows.zip"} | Select-Object -First 1).href)"
+    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "-windows-i686.zip"} | Select-Object -First 1).href)"
     $url64 = $url32.Replace('windows.zip','windows-x64.zip')
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     $tags = Invoke-WebRequest 'https://api.github.com/repos/enzo1982/freac/releases' -UseBasicParsing | ConvertFrom-Json
-    if($tag.tag_name -match $version) {
-        foreach ($tag in $tags) {
+    foreach ($tag in $tags) {
+        if($tag.tag_name -match $version) {
             if($tag.prerelease -match "true") {
                 $clnt = new-object System.Net.WebClient;
                 $clnt.OpenRead("$($url32)").Close();
@@ -30,9 +30,6 @@ function global:au_GetLatest {
                 $version = "$version-pre$($date)"
             }
         }
-    }
-    if($version -eq '1.1.3') {
-        $version = '1.1.3.20200110'
     }
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
