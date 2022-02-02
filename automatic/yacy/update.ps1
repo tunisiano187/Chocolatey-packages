@@ -26,7 +26,7 @@ function global:au_GetLatest {
 }
 
 function global:au_BeforeUpdate() {
-	Write-host "Downloading yacy $($Latest.Version) installer file"
+	Write-Output "Downloading yacy $($Latest.Version) installer file"
 	Get-RemoteFiles -Purge -NoSuffix
  }
  
