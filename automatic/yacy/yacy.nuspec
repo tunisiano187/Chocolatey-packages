@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://github.com/yacy/yacy_search_server/blob/master/COPYRIGHT</licenseUrl>
     <projectUrl>https://yacy.net</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/aaae5f8457ea1087ec2a155ef594617d8c7ff34d/icons/yacy.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@de2115f54ab00c28bfe1acd27e13790b78bc8120/icons/yacy.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>YaCy is a search engine for the web, based on Solr and a peer-to-peer protocol. You may also use it without P2P as search appliance for a search portal or your intranet.
 
