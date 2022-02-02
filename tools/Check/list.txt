@@ -703,7 +703,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -1409,7 +1408,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -2114,7 +2112,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -2818,7 +2815,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -3521,7 +3517,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -4223,7 +4218,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -4924,7 +4918,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -5624,7 +5617,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -6323,7 +6315,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -7021,7 +7012,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -7718,7 +7708,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -8414,7 +8403,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken
@@ -9109,7 +9097,6 @@ sqldiagmanager 10.5.1.202 - Possibly broken
 SelfSSL7 1.0.1 - Possibly broken
 vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 regexpixie 1.0.0 - Possibly broken
-yacy 1.90 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 deskspace 1.5.8.13 [Approved] - Possibly broken
 hulu.desktop 0.9.14.2 - Possibly broken
 WebFlipScreenSaver 0.2.0.1 - Possibly broken

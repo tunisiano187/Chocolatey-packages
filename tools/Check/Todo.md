@@ -25,4 +25,3 @@
 |procdump|
 |voicemod|
 |autocomplete|
-|yacy|
