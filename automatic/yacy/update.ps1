@@ -18,9 +18,9 @@ function global:au_GetLatest {
 	$url32 = ($((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.exe'}) | Select-Object -First 1).href
 	Write-Output 'Checking version'
 	$version=$($url32).split('v')[-1].split('_')[0]
-	
-	
-	
+
+
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
