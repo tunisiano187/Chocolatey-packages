@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>itag</id>
+    <version>0.483</version>
+    <title>iTag</title>
+    <authors>Metalogic</authors>
+    <owners>sbussinger</owners>
+    <licenseUrl>http://www.itagsoftware.com/buy.php</licenseUrl>
+    <projectUrl>http://www.itagsoftware.com/</projectUrl>
+    <iconUrl>https://github.com/sbussinger/chocolatey/raw/master/itag/itag.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Photo tagging software that embeds title, description and keywords into your photos and movies.</description>
+    <tags>itag photo picture video tagging iptc xmp admin</tags>
+  </metadata>
+</package>
