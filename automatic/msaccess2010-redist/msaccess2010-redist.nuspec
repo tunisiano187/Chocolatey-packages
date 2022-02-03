@@ -7,6 +7,7 @@
     <authors>Microsoft</authors>
     <owners>Justin Dearing</owners>
     <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=13255</projectUrl>
+    <packageSourceUrl></packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A set of components that facilitate the transfer of data between existing Microsoft Office files such as Microsoft Office Access 2010 (*.mdb and *.accdb) files and Microsoft Office Excel 2010 (*.xls, *.xlsx, and *.xlsb) files to other data sources such as Microsoft SQL Server. Connectivity to existing text files is also supported. ODBC and OLEDB drivers are installed for application developers to use in developing their applications with connectivity to Office file formats.</description>
     <tags>Microsoft Access Excel OleDb ODBC Database</tags>
