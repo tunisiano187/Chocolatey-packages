@@ -1,5 +1,3 @@
-MSAccess2010-redist 1.0 - Possibly broken
-xCmd 1.12.0 - Possibly broken
 itag 0.483 - Possibly broken
 sugarsync 1.9.71.1 - Possibly broken
 TortoiseGit.latest 1.7.15 - Possibly broken
