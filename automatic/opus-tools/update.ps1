@@ -15,12 +15,14 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$urls = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'opus/win'} | Where-Object {$_.href -match '-win'}).href
-	$url32 = $urls[0]
+	$url32 = $urls | Where-Object {$_ -match 'win32'}
+	$url64 = $urls | Where-Object {$_ -match 'win64'}
 	$version = $url32.split('-')[-2]
 
 	return @{ 	URL32 = $url32
+				URL64 = $url64
 				Version = $version
 	}
 }
 
-update -ChecksumFor 32
+update
