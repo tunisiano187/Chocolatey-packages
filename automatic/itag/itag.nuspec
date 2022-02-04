@@ -13,4 +13,7 @@
     <description>Photo tagging software that embeds title, description and keywords into your photos and movies.</description>
     <tags>itag photo picture video tagging iptc xmp admin</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
