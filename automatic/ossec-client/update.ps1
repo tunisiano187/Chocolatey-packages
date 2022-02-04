@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://www.ossec.net/downloads/'
+$releases = 'https://www.ossec.net/download-ossec/'
 
 function global:au_SearchReplace {
 	@{
@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'ossec-agent-win32'} | Where-Object {$_.href -notmatch '.asc'}).href
+	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'ossec-agent-win32'} | Where-Object {$_.href -notmatch '.asc'}).href | Select-Object -Unique
 	$version = $url32.split('-')[-2]
 
 	return @{ 	URL32 = $url32
