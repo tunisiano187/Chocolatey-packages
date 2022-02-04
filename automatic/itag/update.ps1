@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'http://www.itagsoftware.com/iTagInstaller.exe'
+$releases = 'https://www.itagsoftware.com/iTagInstaller.exe'
 
 function global:au_SearchReplace {
 	@{
