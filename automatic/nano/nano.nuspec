@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nano</id>
-    <version>2.5.3</version>
+    <version>6.0</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,8 @@
     <projectUrl>https://github.com/lhmouse/nano-win</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec9700d9c083614a05a4c771f5ec93d188168d8f/icons/nano.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Nano is ANOther editor.  The nano project was started because of a few "problems" with the wonderfully easy-to-use and friendly Pico text editor.
+    <description><![CDATA[## nano
+Nano is ANOther editor.  The nano project was started because of a few "problems" with the wonderfully easy-to-use and friendly Pico text editor.
 
 First and foremost was its license: the Pine suite does not use the GPL or a GPL-friendly license, and has unclear restrictions on
 redistribution.  Because of this, Pine and Pico are not included with many GNU/Linux distributions.  Also, other features (like go-to-line-number or search-and-replace) were unavailable until recently or require a command-line flag.  Yuck.
@@ -24,7 +25,7 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
 #### Mailing lists
 * [Info-nano](https://lists.gnu.org/mailman/listinfo/info-nano) - announcements
 * [Help-nano](https://lists.gnu.org/mailman/listinfo/help-nano) - help
-* [Nano-devel](https://lists.gnu.org/mailman/listinfo/nano-devel) - development discussions</description>
+]]></description>
     <summary>Free replacement for the Pico text editor, while possibly adding new features</summary>
     <releaseNotes>#### Program
 * [Release log](https://github.com/lhmouse/nano-win/tags)
