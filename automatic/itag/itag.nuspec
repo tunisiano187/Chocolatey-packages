@@ -8,7 +8,7 @@
     <owners>sbussinger</owners>
     <licenseUrl>http://www.itagsoftware.com/buy.php</licenseUrl>
     <projectUrl>http://www.itagsoftware.com/</projectUrl>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/itag</packageSourceUrl>
     <iconUrl>https://github.com/sbussinger/chocolatey/raw/master/itag/itag.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Photo tagging software that embeds title, description and keywords into your photos and movies.</description>
