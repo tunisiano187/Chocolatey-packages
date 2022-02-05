@@ -31,6 +31,9 @@ function global:au_GetLatest {
             }
         }
     }
+    i($version -eq '0.4.6') {
+        $version='0.4.6.20220205'
+    }
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
