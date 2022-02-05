@@ -1,5 +1,3 @@
-indihiang 1.0.0.1 - Possibly broken
-Fitbit.Ultra 2.1.0.8 - Possibly broken
 bzeditor 1.7.6 - Possibly broken
 astah 6.6.4 - Possibly broken
 cksdevserver 2.4.0.0 - Possibly broken
