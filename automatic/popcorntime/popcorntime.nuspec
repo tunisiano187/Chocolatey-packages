@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>popcorntime</id>
-    <version>0.4.6</version>
+    <version>0.4.5</version>
     <title>Popcorn Time</title>
     <authors>Popcorn Time developers</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/popcorn-official/popcorn-desktop/blob/master/LICENSE.txt</licenseUrl>
-    <projectUrl>https://popcorntime.app/</projectUrl>
+    <projectUrl>https://github.com/popcorn-official/popcorn-desktop</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@459d7c476f63455bdd404a7c3bf24a89a05536bb/icons/popcorntime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## popcorntime
@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>p2p movie-catalog torrent</tags>
     <projectSourceUrl>https://github.com/popcorn-official/popcorn-desktop</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/popcorntime</packageSourceUrl>
-    <docsUrl>https://popcorntime.app/faq</docsUrl>
+    <docsUrl>https://github.com/popcorn-official/popcorn-desktop/wiki</docsUrl>
     <mailingListUrl>https://www.reddit.com/r/PopCornTime</mailingListUrl>
     <bugTrackerUrl>https://github.com/popcorn-official/popcorn-desktop/issues</bugTrackerUrl>
   </metadata>
