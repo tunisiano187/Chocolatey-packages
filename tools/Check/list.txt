@@ -1,5 +1,3 @@
-bzeditor 1.7.6 - Possibly broken
-astah 6.6.4 - Possibly broken
 cksdevserver 2.4.0.0 - Possibly broken
 couchdb 1.2.0 - Possibly broken
 VS2012SDK 1.0 - Possibly broken
