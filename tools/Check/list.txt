@@ -1,4 +1,3 @@
-sqlbpa.2012 12.0.0.1 - Possibly broken
 indihiang 1.0.0.1 - Possibly broken
 Fitbit.Ultra 2.1.0.8 - Possibly broken
 bzeditor 1.7.6 - Possibly broken
