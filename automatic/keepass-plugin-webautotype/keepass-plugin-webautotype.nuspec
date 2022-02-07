@@ -19,7 +19,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/keepass-plugin-webautotype</packageSourceUrl>
     <projectUrl>https://sourceforge.net/projects/webautotype/</projectUrl>
-    <projectSourceUrl>https://sourceforge.net/p/webautotype/src/</projectSourceUrl>
+    <projectSourceUrl>https://sourceforge.net/p/webautotype/src/ci/main/tree/</projectSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/webautotype/tickets/</bugTrackerUrl>
     <docsUrl>https://sourceforge.net/p/webautotype/src/ci/main/tree/Readme.txt</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/webautotype/discussion/</mailingListUrl>
