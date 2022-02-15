@@ -2,6 +2,7 @@
 import-module au
 
 $releases = 'https://johnsad.ventures/software/backgroundswitcher/windows/'
+$padVersionUnder = '5.4.0.1'
 
 function global:au_SearchReplace {
 	@{
@@ -23,9 +24,8 @@ function global:au_GetLatest {
 		Start-Sleep -Seconds 1
 	}
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($(join-path ${env:ProgramFiles(x86)} "johnsadventures.com\John's Background Switcher\BackgroundSwitcher.exe")).FileVersion
-	if($version -eq '5.4.0.1') {$version = '5.4.0.2'}
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = Get-FixVersion $version -OnlyFixBelowVersion $padVersionUnder }
 	return $Latest
 }
 
