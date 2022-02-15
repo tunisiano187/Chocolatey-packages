@@ -2,7 +2,7 @@
 import-module au
 
 $releases = 'https://johnsad.ventures/software/backgroundswitcher/windows/'
-$padVersionUnder = '5.4.0.1'
+$padVersionUnder = '5.4.0.3'
 
 function global:au_SearchReplace {
 	@{
