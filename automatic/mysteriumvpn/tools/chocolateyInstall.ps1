@@ -1,6 +1,6 @@
 ﻿$packageName    = $env:ChocolateyPackageName
-$url            = 'https://github.com/mysteriumnetwork/mysterium-vpn-desktop/releases/download/10.5.1/MysteriumVPN-Setup-10.5.1.exe'
-$checksum       = '2e2536ac252cb8da2212494db4256580a3d8eb7fcc35361f9cd9d66e7105e57b'
+$url            = 'https://github.com/mysteriumnetwork/mysterium-vpn-desktop/releases/download/10.5.3/MysteriumVPN-Setup-10.5.3.exe'
+$checksum       = 'a71a88dc700e1e374afe1abaf3a45e3c3cb11203d6f9ae7e79ac96bc737d3ca0'
 $checksumType   = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
