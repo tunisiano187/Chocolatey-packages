@@ -5,8 +5,10 @@ $releases = 'https://github.com/lhmouse/nano-win/tags'
 
 function global:au_SearchReplace {
 	@{
-		"$($Latest.PackageName).nuspec" = @{
-			"(\<dependency .+?`"$($Latest.PackageName)-win`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      			= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 			= "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumtype\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
