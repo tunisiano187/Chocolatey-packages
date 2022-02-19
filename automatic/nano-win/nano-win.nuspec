@@ -36,7 +36,7 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
     <copyright>© GNU Project</copyright>
     <tags>gnu text editor</tags>
     <projectSourceUrl>https://github.com/lhmouse/nano-win/commits/master</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nano</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nano-win</packageSourceUrl>
     <docsUrl>https://www.nano-editor.org/docs.php</docsUrl>
     <bugTrackerUrl>https://github.com/lhmouse/nano-win/issues</bugTrackerUrl>
   </metadata>
