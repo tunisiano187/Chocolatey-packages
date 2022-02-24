@@ -17,6 +17,6 @@ $packageArgs		        = @{
 }
 
 Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\*.exe"
-Get-ChildItem -Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) -Directory -Exclude "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\tools"
+Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\DDU*" -Recurse
 
 Install-ChocolateyZipPackage @packageArgs
