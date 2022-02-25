@@ -16,4 +16,4 @@ checksumtype: sha256
 checksum: 5e7ee21aaea1d572c7dac75432ac5005dab25d5ea7610360cae612267a005d26
 
 The included 'LICENSE.txt' file have been obtained from:
-https://cdist2.perforce.com/perforce/r21.4/doc/user/p4vmergenotes.txt
+license: https://cdist2.perforce.com/perforce/r21.4/doc/user/p4vmergenotes.txt

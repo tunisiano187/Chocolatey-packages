@@ -42,7 +42,6 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
-	$same='no'
 
 	# check if the sha is the same as the current
 	$currentcheck = "$env:TEMP\p4vinst.exe"
