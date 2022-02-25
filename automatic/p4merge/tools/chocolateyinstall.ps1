@@ -14,9 +14,6 @@ $packageArgs = @{
 
   softwareName    = 'Helix Core*'
 
-  checksum        = $checksum
-  checksumType    = $checksumType
-
   validExitCodes= @(0, 3010, 1641)
   silentArgs   = '/s REMOVEAPPS=P4V,P4ADMIN,P4'
 }

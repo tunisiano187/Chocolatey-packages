@@ -31,4 +31,10 @@ function global:au_GetLatest {
 	return $Latest
 }
 
+function global:au_BeforeUpdate() {
+	Write-Output "Downloading $($Latest.Version) installer file"
+	Get-RemoteFiles -Purge -NoSuffix
+}
+
+
 update -ChecksumFor 32 -NoCheckChocoVersion
