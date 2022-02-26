@@ -18,6 +18,12 @@ function global:au_SearchReplace {
 	}
 }
 
+
+function global:au_BeforeUpdate() {
+	Write-Output "Downloading $($Latest.Version) installer file"
+	Get-RemoteFiles -Purge -NoSuffix
+}
+
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^r\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Sort-Object -Descending)
@@ -42,15 +48,7 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
-
-	# check if the sha is the same as the current
-	$currentcheck = "$env:TEMP\p4vinst.exe"
-	$currenttools = "./tools/chocolateyinstall.ps1"
-	Invoke-WebRequest -UseBasicParsing -Uri $url64 -OutFile $currentcheck
-	$return = Get-Content $currenttools | Where-Object {$_ -match $((Get-FileHash $currentcheck).hash.tolower )}
-	if($return.Length -gt 1) {
-		$version = "$version.$(Get-Date -Format "yyyyMMdd")"
-	}
+	Invoke-WebRequest -Uri $url64 -OutFile ".\tools\p4vinst64.exe"
 
 	$Latest = @{ URL32 = $url64; Version = $version }
 	return $Latest
