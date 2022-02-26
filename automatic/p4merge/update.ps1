@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 			"(?i)(link:).*"        				= "`${1} $($Latest.URL32)"
 			"(?i)(checksum:).*" 				= "`${1} $($Latest.Checksum32)"
 			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
-			"(?i)(license:).*" 			= "`${1} $($Latest.License)"
+			"(?i)(license:).*" 					= "`${1} $($Latest.License)"
 		}
 	}
 }
@@ -50,7 +50,7 @@ function global:au_GetLatest {
     }
 	Invoke-WebRequest -Uri $url64 -OutFile ".\tools\p4vinst64.exe"
 
-	$Latest = @{ URL32 = $url64; Version = $version }
+	$Latest = @{ URL32 = $url64; Version = $version; License = $license }
 	return $Latest
 }
 
