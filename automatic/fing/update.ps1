@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$url32 = 'https://get.fing.com/fing-desktop-releases/windows/Fing.exe'
+$url32 = 'https://get.fing.com/fing-desktop-releases/win/Fing.exe'
 
 function global:au_SearchReplace {
 	@{
