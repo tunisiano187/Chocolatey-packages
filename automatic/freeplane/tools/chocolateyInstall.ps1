@@ -1,9 +1,9 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
-$url = 'https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-1.9.12.exe/download'
+$url = 'https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-1.9.13.exe/download'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0)
-$checksum = 'ce5ae82556ad0e533f57632d6e924a44b78aeff4f0971cd78f295be5a3fe2eb8'
+$checksum = '1e07a7ceb0a22e942233348c14885f1ecfa6d92a19dbc635db32e66c24823208'
 $checksumType = 'sha256'
 
 Install-ChocolateyPackage -PackageName "$packageName" -FileType "$installerType" -SilentArgs "$silentArgs" -Url "$url" -validExitCodes $validExitCodes -Checksum "$checksum" -ChecksumType "$checksumType"
