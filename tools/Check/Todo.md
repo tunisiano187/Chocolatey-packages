@@ -29,4 +29,3 @@
 |itag|
 |indihiang|
 |bzeditor|
-|slpolicy|
