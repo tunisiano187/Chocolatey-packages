@@ -1,5 +1,3 @@
-SymbolSource.Integration.NuGet.CommandLine 1.3.4 - Possibly broken
-SickBeard 2012.11.04.1 - Possibly broken
 editorconfig.vs 0.2.6 [Approved] - Possibly broken
 tfsSidekicks2012 4.5 - Possibly broken
 PreCode.WLW 5.02 [Approved] - Possibly broken

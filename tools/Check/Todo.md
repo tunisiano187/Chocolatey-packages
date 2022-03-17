@@ -29,3 +29,4 @@
 |itag|
 |indihiang|
 |bzeditor|
+|SymbolSource.Integration.NuGet.CommandLine|
