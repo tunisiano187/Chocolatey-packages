@@ -1,10 +1,10 @@
 ﻿
 $ErrorActionPreference = 'Stop';
-$url            = 'https://github.com/Mobsya/aseba/releases/download/2.3.0/ThymioSuite-2.3.0-win32.exe'
-$url64          = 'https://github.com/Mobsya/aseba/releases/download/2.3.0/ThymioSuite-2.3.0-win64.exe'
-$checksum       = '6d0f3fb5a3e64b4154099f84d6ec4263271eb774874fc0ad2a7b799a9d6661ee'
+$url            = 'https://github.com/Mobsya/aseba/releases/download/2.3.1/ThymioSuite-2.3.1-win32.exe'
+$url64          = 'https://github.com/Mobsya/aseba/releases/download/2.3.1/ThymioSuite-2.3.1-win64.exe'
+$checksum       = '274aa082d4c250a0d91eaa2f542a589ec25d8d34e90abf603d8407cc3a4709cf'
 $checksumType   = 'sha256'
-$checksum64     = '86a8ccbf6181be132f7a92cf6ec1377a3e70db2a14308ddfaeb0cbcd4fb5d8d8'
+$checksum64     = 'f418b9daf02e653148a43882cff10b34ee1a67aa30b243c9532289dbebd82361'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
