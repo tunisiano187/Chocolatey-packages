@@ -18,7 +18,7 @@ function global:au_GetLatest {
 	$File = "$env:TEMP/sdc.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath $env:TEMP\sdc -Force
-	$version = $(Get-ChildItem -Path $env:TEMP\sdc -Filter *.exe -Recurse)[0].Name.split(' ')[-2]
+	$version = $(Get-ChildItem -Path $env:TEMP\sdc -Filter *.exe -Recurse)[0].Name.split(' ')[3]
 
 	return @{ URL32 = $url32
 		Version = $version
