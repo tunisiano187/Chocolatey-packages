@@ -13,12 +13,12 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'} | Select-Object -First 1).href
+	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.7z'} | Select-Object -First 1).href
 	Write-Verbose 'Checking version'
-	$version=$($url32).split('v')[-1].replace('.zip','')
+	$version=$($url32).split('v|g')[-2].replace('-','.')
+	$version=$version.Substring(0,$version.Length-1)
 
 	Write-Verbose "Version : $version"
-	$url32 = "https://github.com$($url32)";
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
