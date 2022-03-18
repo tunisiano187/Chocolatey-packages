@@ -79,7 +79,7 @@ if($search -eq '') {
     $check=(choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}
     get-content $source | Select-Object -Skip 1 | set-content "$source-temp"
     Move-Item "$source-temp" $source -Force
-    if(($check.Count -gt 0) -or (Test-Path("../automatic/$search"))) {
+    if(($check.Count -gt 0) -or (Test-Path("$($PSScriptRoot)/../automatic/$search"))) {
         $search = ''
         $version = ''
     }
