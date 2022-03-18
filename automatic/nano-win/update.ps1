@@ -24,17 +24,13 @@ function global:au_GetLatest {
 	$version=$($filename).split('v|g')[-2].replace('-','.')
 	$version=$version.Substring(0,$version.Length-1)
 	Invoke-WebRequest -Uri "https://github.com/lhmouse/nano-win/blob/master/COPYING" -OutFile "tools/LICENSE.md"
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/$filename"
 
 	$url32 = $releases + $filename
 	Write-Verbose "Version : $version"
 
 	$Latest = @{ URL32 = $url32; Version = $version; FileName = $filename }
 	return $Latest
-}
-
-function global:au_BeforeUpdate() {
-	Write-Output "Downloading $($Latest.Version) installer"
-	Get-RemoteFiles -Purge -NoSuffix
 }
 
 update -ChecksumFor 32 -NoCheckChocoVersion
