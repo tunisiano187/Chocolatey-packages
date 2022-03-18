@@ -443,7 +443,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -1146,7 +1145,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -1848,7 +1846,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -2550,7 +2547,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -3251,7 +3247,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -3951,7 +3946,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -4650,7 +4644,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -5348,7 +5341,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -6045,7 +6037,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -6741,7 +6732,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -7436,7 +7426,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -8130,7 +8119,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -8823,7 +8811,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
@@ -9515,7 +9502,6 @@ mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly 
 exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 systemninja 3.1.6 [Approved] - Possibly broken
 TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nano 2.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
 staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
