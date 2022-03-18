@@ -6,13 +6,9 @@ $releases = 'https://files.lhmouse.com/nano-win/'
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]file\s*=\s*)('.*')"      			= "`$1'$($Latest.FileName)'"
-		}
-		"tools\VERIFICATION.txt" = @{
-			"(^Version\s+:).*"  					= "`${1} $($Latest.Version)"
-			"(^URL\s+:).*"      					= "`${1} $($Latest.URL32)"
-			"(^Checksum\s+:).*" 					= "`${1} $($Latest.Checksum32)"
-	  		"(^ChecksumType\s+:).*" 				= "`$1'$($Latest.ChecksumType32)'"
+			"(^[$]url\s*=\s*)('.*')"      			= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 			= "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumtype\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
@@ -23,13 +19,11 @@ function global:au_GetLatest {
 	Write-Verbose 'Checking version'
 	$version=$($filename).split('v|g')[-2].replace('-','.')
 	$version=$version.Substring(0,$version.Length-1)
-	Invoke-WebRequest -Uri "https://github.com/lhmouse/nano-win/blob/master/COPYING" -OutFile "tools/LICENSE.md"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/$filename"
 
 	$url32 = $releases + $filename
 	Write-Verbose "Version : $version"
 
-	$Latest = @{ URL32 = $url32; Version = $version; FileName = $filename }
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
