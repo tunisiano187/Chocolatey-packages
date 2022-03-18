@@ -1,7 +1,0 @@
-VERIFICATION
-   
-Informations:
-Version         : 7.14.0
-URL             : https://downloads.puppet.com/windows/puppet7/puppet-agent-7.14.0-x86.msi
-CheckSum        : 83E3F1BB82CE7B3D5C07F02F9C9994325733342B188E874F4F71B8D2AC12167B
-CheckSumType    :'sha256'

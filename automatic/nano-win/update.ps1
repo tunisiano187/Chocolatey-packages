@@ -5,11 +5,10 @@ $releases = 'https://files.lhmouse.com/nano-win/'
 
 function global:au_SearchReplace {
 	@{
-		"tools\VERIFICATION.txt" = @{
-			"(^Version\s+:).*"  					= "`${1} $($Latest.Version)"
-			"(^URL\s+:).*"      					= "`${1} $($Latest.URL32)"
-			"(^Checksum\s+:).*" 					= "`${1} $($Latest.Checksum32)"
-	  		"(^ChecksumType\s+:).*" 				= "`$1'$($Latest.ChecksumType32)'"
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      			= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 			= "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumtype\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
@@ -26,12 +25,6 @@ function global:au_GetLatest {
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
-}
-
-function global:au_BeforeUpdate() {
-	Write-Output "Downloading $($Latest.Version) installer"
-	Get-RemoteFiles -Purge -NoSuffix
-	Invoke-WebRequest -Uri "https://github.com/lhmouse/nano-win/blob/master/COPYING" -OutFile "tools/LICENSE.md"
 }
 
 update -ChecksumFor 32 -NoCheckChocoVersion
