@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference     = 'Stop'
 $url                       = 'https://www.sdcard.org/downloads/formatter/eula_windows/SDCardFormatterv5_WinEN.zip'
-$Checksum                  = '4a3e7018af14681100c17d0e71464113a2f4dd4bc6eaa45b8aeed4ce6c67bfba'
+$Checksum                  = 'df18843616643f53a613fd536eb4ff05a068de16b2902f48234706a2cfedc374'
 $ChecksumType              = 'sha256'
 
 $packageArgs = @{
