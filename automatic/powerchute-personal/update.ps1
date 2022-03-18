@@ -14,9 +14,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$link = "https://www.apc.com/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'PowerChute-Personal-Edition'} | Where-Object {$_.href -notmatch 'pdf'})[0].href)"
-	$url32 = ((Invoke-WebRequest -Uri $link -UseBasicParsing).Links | Where-Object  {$_.href -match 'exe'})[0].href
-	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'download.sc'})[0].href.split('/|v')[-2].replace('-','.')
+	$url32 = "$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'PCPE'} | Where-Object {$_.href -notmatch 'pdf'} | Where-Object {$_.href -match 'files'})[0].href)"
+	$version = ($url32.Split('=|&') | Where-Object {$_ -match '.exe'}).replace('PCPE_','').replace('.exe','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
