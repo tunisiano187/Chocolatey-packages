@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'ossec-agent-win32'} | Where-Object {$_.href -notmatch '.asc'}).href | Select-Object -Unique
+	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'ossec-agent-win32'} | Where-Object {$_.href -notmatch '.asc'}).href | Select-Object -Unique -First 1
 	$version = $url32.split('-')[-2]
 
 	return @{ 	URL32 = $url32
