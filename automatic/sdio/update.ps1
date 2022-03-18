@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.snappy-driver-installer.org/download/'
+$releases = 'https://www.glenn.delahoy.com/snappy-driver-installer-origin/'
 
 function global:au_SearchReplace {
    @{
@@ -35,7 +35,7 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $url32 = "https://www.snappy-driver-installer.org$(($download_page.Links | Where-Object href -match '.zip' | Select-Object -First 1).href)"
+    $url32 = "https://www.glenn.delahoy.com$(($download_page.Links | Where-Object href -match '.zip' | Select-Object -First 1).href)"
     $version = [regex]::match($url32, '[a-zA-Z_]*([\d\.]*)\.zip').Groups[1].Value # 0.6.0.558
     $baseVersion = $version.split('.')[-1] # 558
     @{
