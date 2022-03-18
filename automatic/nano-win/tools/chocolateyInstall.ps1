@@ -3,9 +3,9 @@ $file           = 'https://files.lhmouse.com/nano-win/nano-win_9986_v6.2-16-g58b
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-    packageName   = $packageName
-    unzipLocation = $toolsDir
-    file          = Join-Path $toolsDir $file
+    packageName     = $packageName
+    Destination     = $toolsDir
+    file            = Join-Path $toolsDir $file
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
