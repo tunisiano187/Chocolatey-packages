@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	Write-Verbose 'Checking version'
 	$version=$($filename).split('v|g')[-2].replace('-','.')
 	$version=$version.Substring(0,$version.Length-1)
-	
+
 	$url32 = $releases + $filename
 	Write-Verbose "Version : $version"
 
