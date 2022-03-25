@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = '$env:ChocolateyPackageName'
 $url = 'https://www.nirsoft.net/utils/csvfileview.zip'
-$checksum = '883b3a61aa09bcff6be8ad58b299c8b8d1c141e827657a034364c0af74649dd8'
+$checksum = 'a4d4bef45d5691f89231874c643b6fef9b009d44f313a8950bbb2cfb98db49d2'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
