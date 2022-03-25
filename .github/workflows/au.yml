@@ -1,7 +1,9 @@
 ﻿name: Auto Update
 
 on:
-  [push]
+  push:
+    branches:
+      master
   workflow_dispatch: # Enable manual trigger
     inputs:
       forced_packages:
