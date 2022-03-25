@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url64          = 'https://1.1.1.1/Cloudflare_WARP_Release-x64.msi'
-$checksum64     = 'FADD4288A71ADF374859D7D8994704542DE3880BC743F0766E00EA590DC61CD5DD5FFDC014FFF476D8FFB4CF6965A66B46AF80B83560950CDC17D36367E16022'
+$url64          = 'https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi'
+$checksum64     = '832F63031189C1180A19D888E9199A1C5EFCFF4A1E9777017F7D58CB97AFCD40564A12C48437F309CC70A99E4226EAD5C3B4915F19D1E49B8B473A5B91083187'
 $checksumType64 = 'SHA512'
 
 $packageArgs = @{
