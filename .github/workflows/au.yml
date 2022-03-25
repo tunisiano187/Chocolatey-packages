@@ -1,13 +1,14 @@
 ﻿name: Auto Update
 
 on:
+  [push]
   workflow_dispatch: # Enable manual trigger
     inputs:
       forced_packages:
         description: The list of packages to forcibly update (like "pkg1:ver1 pkg2")
         required: false
   schedule:
-    - cron:  '40 9 * * *'
+    - cron:  '4 0/8 * * *'
 
 jobs:
   auto_update:
@@ -43,7 +44,7 @@ jobs:
       - name: Check update for packages
         run: |
           $ErrorActionPreference = 'Continue'
-          ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
+          au/update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
         env:
           au_push: true
