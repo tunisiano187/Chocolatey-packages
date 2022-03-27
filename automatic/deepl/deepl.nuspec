@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>deepl</id>
-    <version>3.3.4484</version>
+    <version>3.4.15088</version>
     <title>DeepL</title>
     <authors>DeepL</authors>
     <owners>tunisiano</owners>
