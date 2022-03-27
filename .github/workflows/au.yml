@@ -71,7 +71,7 @@ jobs:
           # GitHub Actions build url which points to this build
           GH_ACTIONS_BUILD_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
       - name: Upload update results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: update_results
           path: |
