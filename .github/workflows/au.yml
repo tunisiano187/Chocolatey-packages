@@ -10,7 +10,7 @@ on:
         description: The list of packages to forcibly update (like "pkg1:ver1 pkg2")
         required: false
   schedule:
-    - cron:  '4 0/8 * * *'
+    - cron:  '4 6 * * *'
 
 jobs:
   auto_update:
