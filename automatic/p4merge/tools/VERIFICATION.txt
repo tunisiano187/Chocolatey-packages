@@ -6,14 +6,14 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-link: https://cdist2.perforce.com/perforce/r21.4/bin.ntx64/p4vinst64.exe
+link: https://cdist2.perforce.com/perforce/r22.1/bin.ntx64/p4vinst64.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum: 26174EFAB2F3C4C50BD53243894D2C5C1B940D84D9A07A9BC787599620C8B846
+checksum: 57C9D23DB923572366CF1123C9BEB325CD4DA653CC32115D267E6B64E847AB12
 
 The included 'LICENSE.txt' file have been obtained from:
 license: https://cdist2.perforce.com/perforce/r14.1/doc/user/p4v_license.txt
