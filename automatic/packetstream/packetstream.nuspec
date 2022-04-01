@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>packetstream</id>
+    <version>__REPLACE__</version>
+    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+    <title>packetstream (Install)</title>
+    <authors>Packetstream.io</authors>
+    <projectUrl>https://packetstream.io/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/packetstream.png</iconUrl>
+    <copyright>PacketStream.io</copyright>
+    <docsUrl>https://packetstream.io/support/faq</docsUrl>
+    <tags>packetstream earn bandwidth</tags>
+    <summary>Share your bandwidth and earn money</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
