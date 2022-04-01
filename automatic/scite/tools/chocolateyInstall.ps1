@@ -2,11 +2,11 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'
-$url = 'https://www.ebswift.com/uploads/7/0/4/0/70403747/scite-5.2.1x86.msi'
-$checksum = '4913de9517b43074b88edd1a7c201636df81f4e1ed552588c9ea7602b30542cd'
+$url = 'https://www.ebswift.com/uploads/7/0/4/0/70403747/scite-5.2.2x86.msi'
+$checksum = '4d99fb044f7b075c130aea5c9f681c6233647ee6ce22604adbea74876e0f247a'
 $checksumType = 'sha256'
-$url64 = 'https://www.ebswift.com/uploads/7/0/4/0/70403747/scite-5.2.1x64.msi'
-$checksum64 = '85b65978e8798d9bb6a62e64d27b57e8b9877c375a1bbc335ed4c021174a04f6'
+$url64 = 'https://www.ebswift.com/uploads/7/0/4/0/70403747/scite-5.2.2x64.msi'
+$checksum64 = 'c153ee54f0b516ff9af1add13f8144237e47449930690eb461f6aedb768d9c8b'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0)
 
