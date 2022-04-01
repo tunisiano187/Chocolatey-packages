@@ -1,4 +1,4 @@
-﻿## Summary
+## Summary
 How do I create packages? See https://docs.chocolatey.org/en-us/create/create-packages
 
 If you are submitting packages to the community feed (https://community.chocolatey.org)
