@@ -4,7 +4,7 @@
   <metadata>
     <id>packetstream</id>
     <version>__REPLACE__</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/packetstream</packageSourceUrl>
     <owners>__REPLACE_YOUR_NAME__</owners>
     <title>packetstream (Install)</title>
     <authors>Packetstream.io</authors>
