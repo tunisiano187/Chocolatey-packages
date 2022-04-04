@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/lbryio/lbry-desktop/releases/download/v0.52.6-alpha.5/LBRY_0.52.6-alpha.5.exe'
-$checksum       = 'c88d62b7eb2b1da1ded2cc2278d0ff9fa0d067496c42bc5828a7ebb33144cd99'
+$url            = 'https://github.com/lbryio/lbry-desktop/releases/download/v0.52.6-alpha.7/LBRY_0.52.6-alpha.7.exe'
+$checksum       = 'f63b2f15289b4c398f12d473db2405e4a81018c9267fa4d6095913841a1ade02'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
