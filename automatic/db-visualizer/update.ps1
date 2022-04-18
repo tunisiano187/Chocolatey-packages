@@ -21,6 +21,9 @@ function global:au_GetLatest {
 	$links = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'dbvis_windows'} | Where-Object  {$_.href -match 'exe'} | Where-Object {$_.href -notMatch '_jre'})).href
 
 	$version = $links[0].split('-')[-1].replace('x32_','').replace('.exe','').replace('_','.')
+	if($version -eq '13.0.3') {
+		$version = '13.0.3.22041801'
+	}
 
 	$url32 = $links[0]
 	$url64 = $links[1]
