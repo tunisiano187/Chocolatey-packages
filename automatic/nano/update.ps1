@@ -13,10 +13,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
-	$filename = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.7z'} | Select-Object -Last 1).href
+	$filename = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Links.href | Where-Object {$_ -match '\.7z'} | Sort-Object | Select-Object -Last 1
 	Write-Verbose 'Checking version'
-	$version=$($filename).split('v|g')[-2].replace('-','.')
-	$version=$version.Substring(0,$version.Length-1)
+	$fileversion_regex = '(?<=v)[0-9\.\-]+[0-9](?!=\[0-9])'
+	$version = ($filename | Select-String -Pattern $fileversion_regex).Matches.Value -replace '-','.'
 
 	$url32 = $releases + $filename
 	Write-Verbose "Version : $version"
