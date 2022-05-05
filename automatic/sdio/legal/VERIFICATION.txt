@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.3.743.zip
+   x32: https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.4.744.zip
 
    to download the installer.
 
@@ -15,9 +15,9 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: ec7df9cdc73938698aba9fb0d4a7d2621c8ecff103c99687e6102180a9ffe6f0
+   checksum32: c713d1e9885c27457920816656c152416d1115391ad743bad97f85b4048d455a
 
 Using AU:
 
-   Get-RemoteChecksum32 https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.3.743.zip
+   Get-RemoteChecksum32 https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.4.744.zip
 

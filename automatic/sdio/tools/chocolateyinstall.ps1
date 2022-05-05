@@ -11,8 +11,8 @@ $packageArgs = @{
     packageName   = 'sdio'
     unzipLocation = $toolsDir
     fileType      = 'ZIP'
-    url           = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.3.743.zip'
-    checksum      = 'ec7df9cdc73938698aba9fb0d4a7d2621c8ecff103c99687e6102180a9ffe6f0'
+    url           = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.4.744.zip'
+    checksum      = 'c713d1e9885c27457920816656c152416d1115391ad743bad97f85b4048d455a'
     checksumType  = 'sha256'
 }
 
@@ -24,9 +24,9 @@ if (!(Test-Path -path "$ENV:ALLUSERSPROFILE\SDIO")) {
 }
 
 $shortcutName    = 'Snappy Driver Installer Origin'
-$fileName32      = 'SDIO_R743.exe'
-$fileName64      = 'SDIO_x64_R743.exe'
-$fullVersion     = '1.12.3.743'
+$fileName32      = 'SDIO_R744.exe'
+$fileName64      = 'SDIO_x64_R744.exe'
+$fullVersion     = '1.12.4.744'
 $FileFullpath32  = Join-Path $ToolsDir\SDIO_$fullVersion $fileName32
 $FileFullpath64  = Join-Path $ToolsDir\SDIO_$fullVersion $fileName64
 
