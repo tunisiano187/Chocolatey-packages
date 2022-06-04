@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url			= 'https://static.idriveonlinebackup.com/downloads/110522/IDriveWinSetup.exe'
-$checksum		= '0c94b77756bc2872ae11c4a5d7afaafb463818c6061a2c427eb1adadf434b177'
+$url			= 'https://static.idriveonlinebackup.com/downloads/060422/IDriveWinSetup.exe'
+$checksum		= '953c3dc2f9a4691b123166361782a484bb1d94302c8e08b48e3fa7d78a26e256'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
