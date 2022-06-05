@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xHyper-v</id>
-    <version>3.17.0</version>
+    <version>3.18.0</version>
     <title>xHyper-v DSC Module</title>
     <authors>PowerShell Team</authors>
     <owners>tunisiano</owners>
@@ -13,8 +13,14 @@
     <projectSourceUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration</projectSourceUrl>
     <bugTrackerUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/issues</bugTrackerUrl>
     <docsUrl>https://github.com/dsccommunity/xPSDesiredStateConfiguration/blob/master/README.md</docsUrl>
-    <description><![CDATA[
-The xHyper-V module contains DSC resources for deployment and configuration of Hyper-V hosts, virtual machines and related resources.
+    <description><![CDATA[## xHyper-v
+The xHyper-V module contains DSC resources for deployment and configuration of Hyper-V hosts, 
+virtual machines and related resources.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>xPSDesiredStateConfiguration Module allows to keep Windows machine in a defined state</summary>
     <releaseNotes>#### Software

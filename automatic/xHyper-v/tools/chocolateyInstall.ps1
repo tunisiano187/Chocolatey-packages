@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/dsccommunity/xHyper-V/archive/v3.17.0.zip'
-$checksum       = 'df8819d8b48ce9d1058b18605a5c22cbb58a0817bfa9f29d7fcc7b3fdf164800'
+$url            = 'https://github.com/dsccommunity/HyperVDsc/archive/refs/tags/v3.18.0.zip'
+$checksum       = '042b51dabc3bab2e9bb585be4f8b529ae76fd17d12378c9be71037720da90a36'
 $checksumType   = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName $packageName `
