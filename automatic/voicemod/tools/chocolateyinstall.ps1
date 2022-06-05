@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url          = 'https://www.voicemod.net/b2c/v2/VoicemodSetup_2.31.0.3.exe'
-$checksum     = '860e3a0d273fa3cecd8a0cd2503097031bae30b0261aa4807a5749dd74863639'
+$url          = 'https://www.voicemod.net/b2c/v2/VoicemodSetup_2.32.0.1.exe'
+$checksum     = '7713c54442f41b10326f71669d7267e3c126da126a871857c9dd150d43806a3a'
 $checksumType = 'sha256'
 
 $packageArgs = @{
