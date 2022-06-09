@@ -1,4 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
+﻿# Disabled because of PUP install into it
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/Pulover/PuloversMacroCreator/releases'
