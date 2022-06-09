@@ -4,7 +4,7 @@
   <metadata>
     <id>binance</id>
     <title>Binance</title>
-    <version>1.0.0</version>
+    <version>1.33.0</version>
     <authors>Binance ©</authors>
     <owners>tunisiano</owners>
     <summary>Binance crypto trading app</summary>
@@ -23,7 +23,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@707318015cd793f52a104b876b5c7dac1badd806/icons/binance.png</iconUrl>
     <tags>binance trading</tags>
     <copyright>© Binance</copyright>
-    <LicenseUrl>https://www.binance.com/en/terms</LicenseUrl>
+    <licenseUrl>https://www.binance.com/en/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Package
