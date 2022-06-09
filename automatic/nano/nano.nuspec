@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nano</id>
-    <version>6.3.7</version>
+    <version>6.3.6</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <licenseUrl>https://github.com/lhmouse/nano-win/blob/master/COPYING</licenseUrl>
     <projectUrl>https://github.com/lhmouse/nano-win</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec9700d9c083614a05a4c771f5ec93d188168d8f/icons/nano.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -40,7 +40,7 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
     <docsUrl>https://www.nano-editor.org/docs.php</docsUrl>
     <bugTrackerUrl>https://github.com/lhmouse/nano-win/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="nano-win" version="[6.3.7]" />
+      <dependency id="nano-win" version="[6.3.6]" />
     </dependencies>
   </metadata>
   <files>

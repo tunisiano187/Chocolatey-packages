@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nano-win</id>
-    <version>6.3.7</version>
+    <version>6.3.6</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <licenseUrl>https://github.com/lhmouse/nano-win/blob/master/COPYING</licenseUrl>
     <projectUrl>https://github.com/lhmouse/nano-win</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ad64ecd44f231b4d32b01c4d4670e34dade550d8/icons/nano-win.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
