@@ -5,11 +5,11 @@ $releases = "https://www.wagnardsoft.com/forums/viewforum.php?f=5"
 
 function global:au_SearchReplace {
 	@{
-		"tools\VERIFICATION.txt" = @{
-			"(^Version\s+:).*"  	= "`${1} $($Latest.Version)"
-			"(^URL\s+:).*"      	= "`${1} $($Latest.URL32)"
-			"(^Checksum\s+:).*" 	= "`${1} $($Latest.Checksum32)"
-			"(^ChecksumType\s+:).*" = "`${1} $($Latest.ChecksumType32)"
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+			"(^[$]referer\s*=\s*)('.*')" = "`$1'$($Latest.Referer)'"
 		}
 	}
 }
@@ -29,11 +29,6 @@ function global:au_GetLatest {
 
 	$Latest = @{ URL32 = $url32; Referer = $referer; Version = $version }
 	return $Latest
-}
-
-function global:au_BeforeUpdate() {
-	Write-Output "Downloading $($Latest.Version) installer file"
-	Get-RemoteFiles -Purge -NoSuffix
 }
 
 
