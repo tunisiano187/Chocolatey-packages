@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $installerType  = 'msi'
-$url            = 'https://omnipacket.com/current/WireEdit-3.10.154.msi'
+$url            = 'https://omnipacket.com/current/WireEdit-3.10.190.msi'
 $silentArgs     = '/quiet'
-$checksum       = '70dd12ee3e3605c594fe222127b69d395df63d4a504e75bb96df56d931f34a24'
+$checksum       = '3652c98b282b6e8aa4bac47ad770ad98c24e675fc640976b67a32660eea29e47'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
