@@ -24,7 +24,7 @@ foreach ($user in $chocousers) {
         if($check -eq 0) {
             [string]$Label = "NeedsUpdate"
             [string]$Title = "($packageName) Needs update"
-            [string]$Description = "([$packageName](https://community.chocolatey.org/packages/$packageName)) needs mainatainer"
+            [string]$Description = "([$packageName](https://community.chocolatey.org/packages/$packageName)) needs maintainer"
             New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
         }
     }
