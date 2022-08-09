@@ -4,7 +4,7 @@
   <metadata>
     <id>monero</id>
     <title>Monero Wallet</title>
-    <version>0.17.0.0</version>
+    <version>0.18.0.0</version>
     <authors>Monero Project</authors>
     <owners>tunisiano</owners>
     <summary>Monero: the secure, private, untraceable cryptocurrency</summary>
@@ -12,6 +12,10 @@
 Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork.
 
 Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
+
+## Attention ! 
+This software is detected as vis by many sources, the developper say to add an exception to your antivirus.
+[Virus related issue](https://github.com/monero-project/monero/issues/8283)
 
 ### Community
 * [Forum](https://forum.getmonero.org/)
