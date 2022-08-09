@@ -64,14 +64,14 @@ param(
 
 if (!$GithubRepository) {
   $allRemotes = . git remote
-  $remoteName = if ($allRemotes | ? { $_ -eq 'upstream' }) { "upstream" }
-                elseif ($allRemotes | ? { $_ -eq 'origin' }) { 'origin' }
-                else { $allRemotes | select -first 1 }
+  $remoteName = if ($allRemotes | Where-Object { $_ -eq 'upstream' }) { "upstream" }
+                elseif ($allRemotes | Where-Object { $_ -eq 'origin' }) { 'origin' }
+                else { $allRemotes | Select-Object -first 1 }
 
   if ($remoteName) { $remoteUrl = . git remote get-url $remoteName }
 
   if ($remoteUrl) {
-    $GithubRepository = ($remoteUrl -split '\/' | select -last 2) -replace '\.git$','' -join '/'
+    $GithubRepository = ($remoteUrl -split '\/' | Select-Object -last 2) -replace '\.git$','' -join '/'
   } else {
     Write-Warning "Unable to get repository and user, setting dummy values..."
     $GithubRepository = "USERNAME/REPOSITORY-NAME"
@@ -87,7 +87,7 @@ $missingIcons = New-Object System.Collections.Generic.List[object];
 
 $encoding = New-Object System.Text.UTF8Encoding($false)
 
-function Replace-PackageSourceUrl{
+function Set-NewPackageSourceUrl{
   param(
     [string]$NuspecPath,
     [string]$PackageName,
@@ -132,7 +132,7 @@ function Update-PackageSourceUrl{
 
   $FolderName = $PackagesDirectory -split '/' | Select-Object -Last 1
 
-  Replace-packageSourceUrl `
+Set-newpackageSourceUrl `
     -NuspecPath "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" `
     -PackageName $Name `
     -GithubRepository $GithubRepository `
