@@ -2,11 +2,11 @@
 $packageName = '$env:ChocolateyPackageName'
 $installerType = 'exe'
 $silentArgs = '/S'
-$url = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-win32-setup-unsigned.exe'
-$checksum = '186cb2cd0a8926dc10cdc15b3e78ae1b825c79953c2c5c6b55b69e0749a5de1d'
+$url = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.6/dogecoin-1.14.6-win32-setup-unsigned.exe'
+$checksum = 'c3dd01612f70afaf7b293199e016feeb8c5071fbb673a02a3baf24d04014cc02'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-win64-setup-unsigned.exe'
-$checksum64 = 'a1c14d75b3ff45ad4cbf1efa5fcbb457186e88298ca7a6e74818f0897cf8d606'
+$url64 = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.6/dogecoin-1.14.6-win64-setup-unsigned.exe'
+$checksum64 = '888429200b5cd1a414e33215e8e8aea0957fa7a615c407b19b8a9ab2fa9e180a'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0)
 

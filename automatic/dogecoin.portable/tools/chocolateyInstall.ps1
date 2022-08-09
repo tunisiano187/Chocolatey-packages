@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = '$env:ChocolateyPackageName'
-$url = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-win32.zip'
-$checksum = 'f83994d7d68cc86d728f8aa021a221e6f71a5134ee0619db549ef6d9c13f18b7'
+$url = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.6/dogecoin-1.14.6-win32.zip'
+$checksum = 'c919fdc966764ec554273791699426448eedd8d305e76284e4f1cd1d5f0b5a7a'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.5/dogecoin-1.14.5-win64.zip'
-$checksum64 = 'd66906cb5c5b132ca7e126734c074345f1655a4f72205ed7c0bf028dbff41120'
+$url64 = 'https://github.com/dogecoin/dogecoin/releases/download/v1.14.6/dogecoin-1.14.6-win64.zip'
+$checksum64 = '709490ac8464b015266884831a2b5b594efc8b2c17a7e6b85255058cbee049de'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
