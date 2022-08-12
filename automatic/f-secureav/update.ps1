@@ -18,8 +18,10 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	Write-Output "Version : $version"
+	$ChecksumType = "sha256"
+	$Checksum = Get-RemoteChecksum($url32, $ChecksumType)
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Checksum32 = $Checksum; ChecksumType32 = $ChecksumType ; Version = $version }
 	return $Latest
 }
 
