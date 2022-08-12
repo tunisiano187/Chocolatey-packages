@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
-$url = 'https://downloads.getmonero.org/cli/monero-win-x86-v0.18.0.0.zip'
-$checksum = 'd55e86e1434a7e1cebd6931d21063e82c25a7126ddad8704f15501bb9a6e64a4'
+$url = 'https://downloads.getmonero.org/cli/monero-win-x86-v0.18.1.0.zip'
+$checksum = 'ed18233503b6135a29732a79b261b50aced24b99686843bc11e7e9fb2d50cf42'
 $checksumType = 'sha256'
-$url64 = 'https://downloads.getmonero.org/cli/monero-win-x64-v0.18.0.0.zip'
-$checksum64 = '0b94088db62d0ded1d62d02a631b93978984acce337e01a802edd87e521dfcd1'
+$url64 = 'https://downloads.getmonero.org/cli/monero-win-x64-v0.18.1.0.zip'
+$checksum64 = 'd0e2b3255163ec0499de42639cc86cf4ddae0bc5fa65aa7377ff9c40305da8fd'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
