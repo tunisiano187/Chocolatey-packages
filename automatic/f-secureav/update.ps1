@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	Write-Output "Version : $version"
 	$ChecksumType = "sha256"
-	$Checksum = Get-RemoteChecksum($url32, $ChecksumType)
+	$Checksum = Get-FileHash -Path $File -Algorithm $ChecksumType
 
 	$Latest = @{ URL32 = $url32; Checksum32 = $Checksum; ChecksumType32 = $ChecksumType ; Version = $version }
 	return $Latest
