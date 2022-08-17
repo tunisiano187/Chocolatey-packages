@@ -29,3 +29,4 @@
 |itag|
 |indihiang|
 |bzeditor|
+|editorconfig.vs|
