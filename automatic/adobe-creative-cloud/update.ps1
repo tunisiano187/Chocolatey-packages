@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
-$padVersionUnder = '5.3.5.17'
+$padVersionUnder = '5.8.0.591'
 
 $release = 'https://prod-rel-ffc-ccm.oobesaas.adobe.com/adobe-ffc-external/core/v1/wam/download?sapCode=KCCC&productName=Creative%20Cloud&os=win&environment=prod'
 
