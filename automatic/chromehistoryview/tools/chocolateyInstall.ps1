@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'https://www.nirsoft.net/utils/chromehistoryview.zip'
-$checksum = 'bbf0254113c710d985e14197ac0ed45b26883c7a80f81e3889d817613c72c822'
+$checksum = '87caf95a41cb970870b4ed0b10d460407f443945b7d9e1e14ee2edde28026032'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
