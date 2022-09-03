@@ -3,7 +3,7 @@ $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $url = 'https://files.informer.com/siinst.exe'
-$checksum = 'e545505c69cee250c86e9449411f3c744a4fad1551f17e3ab1ea39eb7990f7dc'
+$checksum = 'e7c2536efb15b2137c4f4c07a94ebe37d396cee2fff0dffe14bdbe4f8254e9db'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
