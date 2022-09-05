@@ -17,7 +17,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "adobe-creative-cloud.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$version="5.8.0.592"
 
 	$Latest = @{ URL32 = $release; Version = Get-FixVersion $version -OnlyFixBelowVersion $padVersionUnder }
 	return $Latest
