@@ -1,5 +1,5 @@
 ﻿$url            = 'https://prod-rel-ffc-ccm.oobesaas.adobe.com/adobe-ffc-external/core/v1/wam/download?sapCode=KCCC&productName=Creative%20Cloud&os=win&environment=prod' # download url
-$checksum       = 'f1ce9a3a681b1175f7bz1e70c95f9b32efd2c72a6c5d816b32788e6a976ab1deb'
+$checksum       = '13ba3a1827b13a3a9c3bbd77f7e59646e185748231ec67e0ff53e0602d788a77'
 $checksumType   = 'sha256'
 
 $silentArgs     = '/quiet' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
