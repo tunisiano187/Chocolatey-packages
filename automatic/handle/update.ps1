@@ -20,7 +20,11 @@ function global:au_GetLatest {
 	Expand-Archive $ZipFile -DestinationPath .\handle
 	$File = $(Get-ChildItem handle.exe -Recurse).FullName
 	Write-Output $File
+
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	if($version -eq '4.22') {
+		$version = '4.22.0.2022090701'
+	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
