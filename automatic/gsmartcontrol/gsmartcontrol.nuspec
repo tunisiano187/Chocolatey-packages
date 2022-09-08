@@ -6,8 +6,8 @@
     <title>GSmartControl</title>
     <authors>Alexander Shaduri</authors>
     <owners>dtgm</owners>
-    <licenseUrl>https://gsmartcontrol.sourceforge.io/home/index.php/License</licenseUrl>
-    <projectUrl>https://gsmartcontrol.sourceforge.io/</projectUrl>
+    <licenseUrl>https://github.com/ashaduri/gsmartcontrol/blob/main/LICENSE.txt</licenseUrl>
+    <projectUrl>https://gsmartcontrol.shaduri.dev</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f5e747aa09fc8236c0f08577bf3f5be5a0148ea7/icons/gsmartcontrol.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>GSmartControl is a graphical user interface (GUI) for smartctl (from smartmontools package), which is a tool for querying and controlling SMART (Self-Monitoring, Analysis, and Reporting Technology) data on modern hard disk and solid-state drives. It allows you to inspect the drive's SMART data to determine its health, as well as run various tests on it.
@@ -15,15 +15,18 @@
 GSmartControl supports ATA drives (both PATA and SATA), various USB to ATA bridges and drives behind some RAID controllers (selected models of 3ware, Areca, Adaptec, Intel RAID controllers). See smartmontools USB support overview for an (incomplete) list of supported USB to ATA bridges.</description>
     <summary>Hard disk drive and SSD health inspection tool</summary>
     <releaseNotes>#### Program
-* https://sourceforge.net/p/gsmartcontrol/code/HEAD/tree/trunk/gsmartcontrol/doc/NEWS.txt
+* https://github.com/ashaduri/gsmartcontrol/releases
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© Alexander Shaduri</copyright>
     <tags>smart hdd hardware disk reporting monitoring gui admin</tags>
     <projectSourceUrl>https://sourceforge.net/p/gsmartcontrol/code/HEAD/tree/trunk/gsmartcontrol/</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/gsmartcontrol/</packageSourceUrl>
-    <docsUrl>https://gsmartcontrol.sourceforge.io/home/index.php/Documentation</docsUrl>
-    <bugTrackerUrl>https://gsmartcontrol.sourceforge.io/home/index.php/Support</bugTrackerUrl>
+    <docsUrl>https://gsmartcontrol.shaduri.dev/usage</docsUrl>
+    <bugTrackerUrl>https://github.com/ashaduri/gsmartcontrol/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
