@@ -5,7 +5,7 @@
     <version>4.22</version>
     <title>Handle</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/bb896655</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
