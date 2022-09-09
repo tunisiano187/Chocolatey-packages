@@ -1,6 +1,6 @@
-$packageName  = $env:ChocolateyPackageName
+﻿$packageName  = $env:ChocolateyPackageName
 $url          = 'https://download.sysinternals.com/files/Handle.zip'
-$checksum     = '1f2e6eda07f0581c1cfac733f34005c9122c4d2a9d5e0b6d99797502a76ad79e'
+$checksum     = '524e61547c8e26608cda1b11b6e9471616cccc48530f6e7ec9131eabf839357e'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Install-ChocolateyZipPackage -PackageName "$packageName" `
