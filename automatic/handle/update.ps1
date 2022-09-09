@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://docs.microsoft.com/fr-be/sysinternals/downloads/handle'
@@ -23,7 +23,7 @@ function global:au_GetLatest {
 
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 	if($version -eq '4.22') {
-		$version = '4.22.0.2022090701' 
+		$version = '4.22.0.2022090701'
 	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
