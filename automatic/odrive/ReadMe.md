@@ -1,11 +1,7 @@
-[![](https://img.shields.io/chocolatey/v/PacketStream?color=green&label=PacketStream)](https://chocolatey.org/packages/PacketStream) [![](https://img.shields.io/chocolatey/dt/PacketStream)](https://chocolatey.org/packages/PacketStream)
+[![](https://img.shields.io/chocolatey/v/Odrive?color=green&label=Odrive)](https://chocolatey.org/packages/Odrive) [![](https://img.shields.io/chocolatey/dt/Odrive)](https://chocolatey.org/packages/Odrive)
 
-## PacketStream
-PacketStream's multi-hop proxy tunnel enables businesses automation tooling to access more reliable data and unlock geolocation-restricted content.
-Access the network with your existing data-collection tooling, or use one of PacketStream's marketplace apps.
-
-Packeters share their un-utilized bandwidth with the PacketStream network and get paid for participating.
-The PacketStream service measures the amount of bandwidth shared and credits your account accordingly.
+## Odrive
+universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
