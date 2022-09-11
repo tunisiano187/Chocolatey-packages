@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32            = 'https://www.sweetscape.com/download/010EditorWin32Portable.exe'
-$url64            = 'https://www.sweetscape.com/download/010EditorWin64Portable.exe'
-$checksum32       = '242ec33c930c555d7e3ff4be3eb7c5fc0a3f564e05b2c4554658dd89ebbf1869'
-$checksum64       = '02006035d3e86103be08e53e88296a98e92f5c276242a8226b7b084a46b5df38'
+$url32            = 'https://www.sweetscape.com/download/010EditorWin32Portable.zip'
+$url64            = 'https://www.sweetscape.com/download/010EditorWin64Portable.zip'
+$checksum32       = '8a43ac994661a9b75bd351a3762e72ce8d8ecc284ff9c7a178a2643fae348e18'
+$checksum64       = 'a3741dca98a86af34d877b7442e7a67a7321c699aed8f4aba2d7d0b3629a1ada'
 $checksumType32   = 'sha256'
 $checksumType64   = 'sha256'
 $installLocation = Join-Path "$env:ChocolateyInstall\lib" "010editor.portable\tools"
