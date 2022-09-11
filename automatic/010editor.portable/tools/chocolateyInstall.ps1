@@ -24,7 +24,7 @@ $full_dl_filename = (Join-Path "$cwd" "$unzip_file")
 
 $packageArgs = @{
   packageName   = '010editor.portable'
-  fileType      = 'EXE'
+  fileType      = 'ZIP'
   softwareName  = '010 Editor*'
   FileFullPath  = $full_dl_filename
 
