@@ -7,7 +7,7 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -Url "$url" `
                              -UnzipLocation "$toolsDir" `
                              -Checksum "$checksum" `
-                             -ChecksumType "$checksumType" `
+                             -ChecksumType "$checksumType"
 Write-Verbose "Accepting license..."
 $regRoot = 'HKCU:\Software\Sysinternals'
 $regPkg = 'Handle'

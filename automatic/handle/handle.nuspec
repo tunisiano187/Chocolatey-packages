@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>handle</id>
-    <version>4.22.0.2022090701</version>
+    <version>4.22.0.2022090700</version>
     <title>Handle</title>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
