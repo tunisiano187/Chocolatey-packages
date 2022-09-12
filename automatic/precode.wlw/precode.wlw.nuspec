@@ -23,4 +23,7 @@ Code Snippet With Syntaxhighlighter Support for Windows Live Writer</summary>
       <dependency id="WindowsLiveWriter" version="2011.0.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
