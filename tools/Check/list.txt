@@ -1,5 +1,3 @@
-xfinder 11.11 - Possibly broken
-kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.PowerShell 10.50.1600.1 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 dragondisk 1.05 - Possibly broken

@@ -31,3 +31,4 @@
 |bzeditor|
 
 |PreCode.WLW|
+|xfinder|
