@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>PreCode.WLW</id>
+    <version>5.02</version>
+    <title>PreCode Code Snippet With Syntaxhighlighter Support (WindowsLiveWriter)</title>
+    <authors>FiftyEightBits</authors>
+    <owners>Rob Reynolds</owners>
+    <licenseUrl>http://precode.codeplex.com/license</licenseUrl>
+    <projectUrl>http://precode.codeplex.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>PreCode - A code snippet plugin for Windows Live Writer with support for Syntaxhighlighter as well as good support for snippet indentation.
+
+Updated Windows Live Writer plugin supports Syntaxhighlighter 2.0 and will add the required code class attributes when selected. This release supports SyntaxHighlighter 2.0. Note: Do NOT install this version unless you are ready to update your site to SyntaxHighlighter 2.0. Stay with the version 3.0.0 msi installer until you do. This release only supports SyntaxHighlighter 2.0 (although Alex has included scripts for legacy support for previous code postings).
+
+Now includes a standalone Windows desktop application so that you can paste formatted code snippets into other applications as well. Ideal for http://stackoverflow.com since the indentation options can be used to create a 4 space indent (CTRL-A to select all - and then &gt;&gt; to indent).</description>
+    <summary>PreCode - 
+Code Snippet With Syntaxhighlighter Support for Windows Live Writer</summary>
+    <releaseNotes />
+    <copyright />
+    <tags>PreCode code syntax highlighter SyntaxHighlighter WLW WindowsLiveWriter admin</tags>
+    <dependencies>
+      <dependency id="WindowsLiveWriter" version="2011.0.0" />
+    </dependencies>
+  </metadata>
+</package>
