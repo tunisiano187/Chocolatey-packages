@@ -1,6 +1,5 @@
 ﻿import-module au
 
-$domain   = 'https://www.sweetscape.com/'
 $version_url = 'https://www.sweetscape.com/010editor/latest_version.html'
 
 # todo: add executable to "App Path" registry

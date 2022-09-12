@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor.portable</id>
-    <version>13.0</version>
+    <version>12.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor.portable</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>010 Editor  (Portable)</title>
@@ -38,7 +38,7 @@ https://www.sweetscape.com/010editor/release_notes.html
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" exclude="tools\*.exe" />
+    <file src="tools\**" target="tools" exclude="tools\*.zip" />
   </files>
 </package>
 <!-- character encoding: “UTF-8” -->
