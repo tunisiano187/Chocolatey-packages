@@ -7,7 +7,7 @@ Main Monero features that were inherited from CryptoNote are Ring Signatures and
 
 ## Attention ! 
 This software is detected as vis by many sources, the developper say to add an exception to your antivirus.
-[Virus related issue](https://github.com/monero-project/monero/issues/8283)
+[Virus related issue](https://www.getmonero.org/get-started/faq/#antivirus)
 
 ### Community
 * [Forum](https://forum.getmonero.org/)
