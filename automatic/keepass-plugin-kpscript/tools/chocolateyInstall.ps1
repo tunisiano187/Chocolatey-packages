@@ -23,15 +23,15 @@ $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Window
                            $_.DisplayVersion -lt 3.0 } `
            | ForEach-Object {$_.InstallLocation}
 $installPath = $regPath
-# search $env:ChocolateyBinRoot for portable install
+# search Get-ToolsLocation for portable install
 if (! $installPath) {
   Write-Verbose "$($packageSearch) not found installed."
-  $binRoot = Get-BinRoot
+  $binRoot = Get-ToolsLocation
   $portPath = Join-Path $binRoot "keepass"
   $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
 }
 if (! $installPath) {
-  Write-Verbose "$($packageSearch) not found in $($env:ChocolateyBinRoot)"
+  Write-Verbose "$($packageSearch) not found in $(Get-ToolsLocation)"
   throw "$($packageSearch) location could not be found."
 }
 $pluginPath = $installPath
