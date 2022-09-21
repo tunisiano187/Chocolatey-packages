@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/aria2/aria2/releases/latest'
@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$tags = Invoke-WebRequest 'https://api.github.com/repos/aria2/aria2/releases' -UseBasicParsing | ConvertFrom-Json
 	$url32 = ($tags[0].assets | where {$_.browser_download_url -match ".zip"} | where {$_.browser_download_url -match "32bit"}).browser_download_url
 	$url64 = ($tags[0].assets | where {$_.browser_download_url -match ".zip"} | where {$_.browser_download_url -match "64bit"}).browser_download_url
-	
+
 	Write-Verbose 'Checking version'
 	$version=$tags[0].name.Split(' ')[-1]
 
