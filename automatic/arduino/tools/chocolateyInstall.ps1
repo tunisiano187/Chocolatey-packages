@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url            = 'https://downloads.arduino.cc/arduino-1.8.15-windows.exe'
-$checksum       = ''
-$checksumType   = ''
+$url            = 'https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.0_Windows_64bit.exe'
+$checksum       = '15e3f307fade3cf8819e33bd266559756181cd8b31611be341bf55256ecf7afc'
+$checksumType   = 'sha256'
 $validExitCodes = @(0)
 
 $packageArgs = @{
@@ -15,10 +15,6 @@ $packageArgs = @{
   silentArgs    = '/S'
   validExitCodes= $validExitCodes
 }
-
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$ahkFile    = Join-Path $toolsDir "arduinoInstall.ahk"
-Start-Process -FilePath 'AutoHotKey' -ArgumentList $ahkFile
 
 Install-ChocolateyPackage @packageArgs
 
