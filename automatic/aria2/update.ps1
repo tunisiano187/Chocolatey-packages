@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/aria2/aria2/releases'
+$releases = 'https://github.com/aria2/aria2/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -18,13 +18,12 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
-	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match "-win-"} | Where-Object {$_ -match '.zip'} | Select-Object -First 2 | Sort-Object ).href
+	$tags = Invoke-WebRequest 'https://api.github.com/repos/aria2/aria2/releases' -UseBasicParsing | ConvertFrom-Json
+	$url32 = $tags[0].assets | where {$_.browser_download_url -match ".zip"} | where {$_.browser_download_url -match "32bit"}
+	$url64 = $tags[0].assets | where {$_.browser_download_url -match ".zip"} | where {$_.browser_download_url -match "64bit"}
+	
 	Write-Verbose 'Checking version'
-	$version=$($installer[0]).split('/')[-1].split('-')[1]
-
-	Write-Verbose "Version : $version"
-	$url32 = "https://github.com$($installer[1])";
-	$url64 = "https://github.com$($installer[0])";
+	$version=$tags[0].name.Split(' ')[-1]
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
