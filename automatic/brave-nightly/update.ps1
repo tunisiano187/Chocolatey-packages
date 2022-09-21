@@ -13,14 +13,17 @@ function global:au_SearchReplace {
 	}
 }
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'BraveBrowserStandaloneSilentNightlySetup.exe'} | Select-Object -First 1).href)
-	Write-Output 'Checking version'
-	$version = $url32.split('/')[5].replace('v','')
-	$version = "$version-nightly"
-	Write-Output "Version : $version"
+	Write-Verbose 'Get files'
+	$tags = Invoke-WebRequest 'https://api.github.com/repos/brave/brave-browser/releases' -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets | where {$_.browser_download_url -match ".exe$"}).browser_download_url
+	
+	Write-Verbose 'Checking version'
+	$version=($tags[0].name.Split(' ')[1]).replace('v','')
 
-	$url32 = "https://github.com$($url32)";
+	if($tags[0].prerelease -eq $true) {
+		$version = "$version-nightly"
+	}
+	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
