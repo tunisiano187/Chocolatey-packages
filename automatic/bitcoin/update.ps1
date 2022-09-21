@@ -16,7 +16,7 @@ if ($MyInvocation.InvocationName -ne '.') {
 function global:au_GetLatest {
     Write-Verbose 'Get files'
 	$tags = Invoke-WebRequest 'https://api.github.com/repos/bitcoin/bitcoin/releases' -UseBasicParsing | ConvertFrom-Json
-	
+
     Write-Verbose 'Get version'
     [version]$version = $tags[0].name.Split(' ')[-1]
     $folder = "https://bitcoincore.org/bin/$(((Invoke-WebRequest -Uri 'https://bitcoincore.org/bin/' -UseBasicParsing).Links | Where-Object {$_.href -match $version}| Select-Object -Last 1).href)"
