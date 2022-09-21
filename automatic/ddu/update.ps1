@@ -24,8 +24,8 @@ function global:au_GetLatest {
 	$referer="$($splited[0])&$($splited[1])"
 	$url32=(((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href)
 
-	#$version=$url32.split('/')[-1].ToLower().split('v')[-1].replace('.exe','')
-	$version = Get-Version $url32
+	$version=$url32.split('/')[-1].ToLower().split('v')[-1].replace('.exe','')
+	#$version = Get-Version $url32
 	if($version -eq "18.0.5.4") {
 		$version = '18.0.5.2023082201'
 	}
