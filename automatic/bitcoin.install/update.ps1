@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$file = $(((Invoke-WebRequest -Uri $folder -UseBasicParsing).Links | Where-Object {$_.href -match ".exe"}).href)
     $url64 = "$folder$file"
 
-    return @{ URL64 = $url64; Version = $realversion }
+    return @{ URL64 = $url64; Version = $version }
 }
 
 update -ChecksumFor 64
