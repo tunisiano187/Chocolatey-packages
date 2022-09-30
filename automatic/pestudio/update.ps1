@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$File = (Get-ChildItem "$env:temp/pestudio.exe" -Recurse).FullName
 	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	$checksumType = 'SHA256'
-	$checksum = (Get-FileHash -Algorithm $checksumType -Path $File).Hash
+	$checksum = (Get-FileHash -Algorithm $checksumType -Path "$env:temp/pestudio.zip").Hash
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType }
 	return $Latest
