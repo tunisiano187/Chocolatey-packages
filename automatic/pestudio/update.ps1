@@ -22,11 +22,14 @@ function global:au_GetLatest {
 	Expand-Archive -Path "$env:temp/pestudio.zip" -DestinationPath "$env:temp/pestudio" -Force
 	$File = (Get-ChildItem "$env:temp/pestudio.exe" -Recurse).FullName
 	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
-	$checksumType = 'SHA256'
-	$checksum = (Get-FileHash -Algorithm $checksumType -Path "$env:temp/pestudio.zip").Hash
-
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType }
+	
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+function global:au_BeforeUpdate {
+    $Latest.ChecksumType32 = 'sha256' # Not necessary, but just my preference to add it
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Algorithm $Latest.ChecksumType32 # You can omit the algorithm, the function will use sha256 by default
+}
+
+update -ChecksumFor none
