@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$checksumType = 'SHA256'
 	$checksum = (Get-FileHash -Algorithm $checksumType -Path $File).Hash
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType }
 	return $Latest
 }
 
