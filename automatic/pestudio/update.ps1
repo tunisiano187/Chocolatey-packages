@@ -32,4 +32,4 @@ function global:au_BeforeUpdate {
     $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Algorithm $Latest.ChecksumType32 # You can omit the algorithm, the function will use sha256 by default
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
