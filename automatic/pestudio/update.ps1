@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	Expand-Archive -Path "$env:temp/pestudio.zip" -DestinationPath "$env:temp/pestudio" -Force
 	$File = (Get-ChildItem "$env:temp/pestudio.exe" -Recurse).FullName
 	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
