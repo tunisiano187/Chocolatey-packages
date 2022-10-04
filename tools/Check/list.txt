@@ -1,5 +1,3 @@
-SQL2008R2.PowerShell 10.50.1600.1 - Possibly broken
-SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 dragondisk 1.05 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 p4scc 2012.1 - Possibly broken
