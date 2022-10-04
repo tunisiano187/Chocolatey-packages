@@ -18,9 +18,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$links = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'dbvis_windows'} | Where-Object  {$_.href -match 'exe'} | Where-Object {$_.href -notMatch '_jre'})).href
+	$links = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'dbvis_windows'} | Where-Object  {$_.href -match 'exe'} | Where-Object {$_.href -notMatch '_jre'})).href | Select-Object -First 1
 
-	$version = $links[0].split('-')[-1].replace('x32_','').replace('.exe','').replace('_','.')
+	$version = $links.split('-')[-1].replace('x32_','').replace('.exe','').replace('_','.').replace('x64.','')
 	if($version -eq '13.0.4') {
 		$version = '13.0.4.22060901'
 	}
