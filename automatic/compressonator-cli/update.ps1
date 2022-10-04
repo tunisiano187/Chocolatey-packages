@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/GPUOpen-Tools/compressonator/releases'
+#$releases = 'https://github.com/GPUOpen-Tools/compressonator/releases'
 
 function global:au_SearchReplace {
     @{
@@ -14,9 +14,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -match 'CLI'} | Select-Object -First 1).href
-    $version = $($installer).split('_')[-1].replace('.exe','')
-    $url64 = "https://github.com$($installer)";
+    $tags = Invoke-WebRequest 'https://api.github.com/repos/GPUOpen-Tools/compressonator/releases' -UseBasicParsing | ConvertFrom-Json
+    $url64 = ($tags[0].assets | where {$_.browser_download_url -match ".exe$"}).browser_download_url | Where-Object {$_ -match 'CLI'} | Select-Object -First 1
+    $version = ($tags[0].tag_name).replace('V','')
+    
 
     return @{ URL64 = $url64; Version = $version }
 }
