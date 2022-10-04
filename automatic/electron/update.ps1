@@ -22,10 +22,10 @@ function global:au_GetLatest {
 	$url32 = ($tags[0].assets).browser_download_url | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-ia32.zip'}
 	$url64 = ($tags[0].assets).browser_download_url | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-x64.zip'}
 	Write-Output 'Checking version'
-	
+
 	$version = Get-Version $url64
 	Write-Output "Version : $version"
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
