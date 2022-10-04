@@ -24,8 +24,8 @@ function global:au_GetLatest {
 
 	$url64 = $links
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ URL64 = $url64; Version = $version }
 	return $Latest
 }
 
-update
+update -ChecksumFor 64
