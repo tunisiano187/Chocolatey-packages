@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/electron/electron/releases/latest/'
+$releases = 'https://api.github.com/repos/electron/electron/releases'
 
 function global:au_SearchReplace {
 	@{
@@ -18,15 +18,14 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-ia32.zip'}).href
-	$url64 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-x64.zip'}).href
+	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets).browser_download_url | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-ia32.zip'}
+	$url64 = ($tags[0].assets).browser_download_url | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-x64.zip'}
 	Write-Output 'Checking version'
-	#$version=$url64.split('/')[5].replace('v','')
+	
 	$version = Get-Version $url64
 	Write-Output "Version : $version"
-	$url32 = "https://github.com$($url32)";
-	$url64 = "https://github.com$($url64)";
-
+	
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
