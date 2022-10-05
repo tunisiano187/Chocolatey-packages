@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/enzo1982/freac/releases/latest'
+$releases = 'https://api.github.com/repos/enzo1982/freac/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -17,10 +17,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "-windows-i686.zip"} | Select-Object -First 1).href)"
+    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+    $url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "-windows-x64.zip"}).browser_download_url
     $url64 = $url32.Replace('windows.zip','windows-x64.zip')
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    $tags = Invoke-WebRequest 'https://api.github.com/repos/enzo1982/freac/releases' -UseBasicParsing | ConvertFrom-Json
     foreach ($tag in $tags) {
         if($tag.tag_name -match $version) {
             if($tag.prerelease -match "true") {
