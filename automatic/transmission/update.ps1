@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/transmission/transmission/releases'
+$releases = 'https://api.github.com/repos/transmission/transmission/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -17,9 +17,21 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$file = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.msi'}).href | Where-Object {$_ -match '.msi'}) | Select-Object -First 2
-	$url32 = "https://github.com$($file | Where-Object {$_ -match 'x86'})";
-	$url64 = "https://github.com$($file | Where-Object {$_ -match 'x64'})";
+	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$urls = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".msi$"}).browser_download_url
+    $url32 = $urls | Where-Object {$_ -match 'x86'}
+    $url64 = $urls | Where-Object {$_ -match 'x64'}
+	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+    if($tag.tag_name -match $version) {
+        foreach ($tag in $tags) {
+            if($tag.prerelease -match "true") {
+                $clnt = new-object System.Net.WebClient;
+                $clnt.OpenRead("$($url32)").Close();
+                $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
+                $version = "$version-pre$($date)"
+            }
+        }
+    }
 	$version = $file.split('/')[-2].trim()
 	if($version -eq '3.00') {
 		$version = '3.00.0.20201026'

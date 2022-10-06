@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/dsccommunity/xHyper-V/releases/latest'
+$releases = 'https://api.github.com/repos/dsccommunity/xHyper-V/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -14,12 +14,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$url32 = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href
-	Write-Output 'Checking version'
-	$version = Get-Version $url32
+	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = $tags[0].zipball_url
+	$version = $url32.split('v')[-1]
 	Write-Output "Version : $version"
-	$url32 = "https://github.com$($url32)";
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

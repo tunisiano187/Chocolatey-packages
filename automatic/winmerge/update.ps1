@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/WinMerge/winmerge/releases'
+$releases = 'https://api.github.com/repos/WinMerge/winmerge/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -17,24 +17,24 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installers = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe$"} | Where-Object {$_.href -notmatch "PerUser"}).href
-    $url32 = "https://github.com$($installers.Where({$_ -match "(?<!64)-Setup\.exe$"}, 1))";
-    $url64 = "https://github.com$($installers.Where({$_ -like "*-X64-Setup.exe"}, 1))";
-
-    $version = $url32.split('-') | select-object -Last 1 -Skip 1
-    if($version -eq '2.16.14') { $version = '2.16.14.20210829' }
-    $tags = Invoke-WebRequest 'https://api.github.com/repos/WinMerge/winmerge/releases' -UseBasicParsing | ConvertFrom-Json
-    foreach ($tag in $tags) {
-        if($tag.tag_name -match $version) {
+    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$urls = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".exe$"} | Where-Object {$_.browser_download_url -notmatch "PerUser"}).browser_download_url
+    $url32 = $urls | Where-Object {$_ -notmatch '64'}
+    $url64 = $urls | Where-Object {$_ -match 'x64'}
+	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+    if($tag.tag_name -match $version) {
+        foreach ($tag in $tags) {
             if($tag.prerelease -match "true") {
                 $clnt = new-object System.Net.WebClient;
-                $clnt.OpenRead("https://github.com$($installer[0])").Close();
+                $clnt.OpenRead("$($url32)").Close();
                 $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
                 $version = "$version-pre$($date)"
             }
         }
     }
-
+    
+    if($version -eq '2.16.14') { $version = '2.16.14.20210829' }
+    
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 

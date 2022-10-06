@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/ltGuillaume/Redshift-Tray/releases/latest'
+$releases = 'https://api.github.com/repos/ltGuillaume/Redshift-Tray/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -16,12 +16,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Verbose 'Check Folder'
-	$url32 = $(((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '.zip'}).href)[0]
-	Write-Verbose 'Checking version'
-	$version = $url32.split('_')[-1].replace('.zip','')
-	Write-Verbose "Version : $version"
-	$url32 = "https://github.com$($url32)";
+	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".zip$"}).browser_download_url
+    $version = ($url32 -split '_' | select-object -Last 1).replace('.zip','')
+    if($tag.tag_name -match $version) {
+        foreach ($tag in $tags) {
+            if($tag.prerelease -match "true") {
+                $clnt = new-object System.Net.WebClient;
+                $clnt.OpenRead("$($url32)").Close();
+                $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
+                $version = "$version-pre$($date)"
+            }
+        }
+    }
 	Invoke-WebRequest -Uri $url32 -OutFile "$(Get-Location)\tools\redshift-tray.zip"
 	$checksum = Get-FileHash -Path "$(Get-Location)\tools\redshift-tray.zip" -Algorithm SHA256
 	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ltGuillaume/Redshift-Tray/master/LICENSE" -OutFile "$(Get-Location)\tools\license.txt"

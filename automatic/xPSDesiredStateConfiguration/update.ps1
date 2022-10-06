@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest'
+$releases = 'https://api.github.com/repos/dsccommunity/xPSDesiredStateConfiguration/releases/latest'
 
 function global:au_SearchReplace {
 	@{

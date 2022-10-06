@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/fossasia/pslab-desktop/releases'
+$releases = 'https://api.github.com/repos/fossasia/pslab-desktop/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -13,12 +13,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Select-Object -First 1).href
-	Write-Output 'Checking version'
-	$version = Get-Version $url32
-	Write-Output "Version : $version"
-	$url32 = "https://github.com$($url32)";
+	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".exe$"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
+    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+    if($tag.tag_name -match $version) {
+        foreach ($tag in $tags) {
+            if($tag.prerelease -match "true") {
+                $clnt = new-object System.Net.WebClient;
+                $clnt.OpenRead("$($url32)").Close();
+                $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
+                $version = "$version-pre$($date)"
+            }
+        }
+    }
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
