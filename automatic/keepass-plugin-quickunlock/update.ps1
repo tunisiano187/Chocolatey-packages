@@ -19,7 +19,7 @@ function global:au_GetLatest {
 
 	Write-Verbose 'Checking version'
 	$version=($tags[0].name.Split(' ')[1]).replace('v','')
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

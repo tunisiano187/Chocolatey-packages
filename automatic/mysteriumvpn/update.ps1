@@ -18,7 +18,7 @@ function global:au_GetLatest {
 	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
 	$version=$($url32).split('-')[-1].replace('.exe','')
 
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
