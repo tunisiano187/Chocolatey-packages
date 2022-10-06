@@ -17,6 +17,9 @@ function global:au_GetLatest {
 	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
 	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".plgx$"}).browser_download_url
 
+	Write-Verbose 'Checking version'
+	$version=($tags[0].name.Split(' ')[1]).replace('v','')
+	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

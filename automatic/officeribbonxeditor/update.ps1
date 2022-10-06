@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/fernandreu/office-ribbonx-editor/releases'
+$releases = 'https://api.github.com/repos/fernandreu/office-ribbonx-editor/releases'
 
 function global:au_SearchReplace {
     @{
@@ -14,14 +14,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "NETFramework-Installer.exe$"} | Select-Object -First 1).href)"
-    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    $tags = Invoke-WebRequest 'https://api.github.com/repos/fernandreu/office-ribbonx-editor/releases' -UseBasicParsing | ConvertFrom-Json
-    foreach ($tag in $tags) {
-        if($tag.tag_name -match $version) {
+    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "NETFramework-Installer.exe$"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
+	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+    if($tag.tag_name -match $version) {
+        foreach ($tag in $tags) {
             if($tag.prerelease -match "true") {
                 $clnt = new-object System.Net.WebClient;
-                $clnt.OpenRead("https://github.com$($url32)").Close();
+                $clnt.OpenRead("$($url32)").Close();
                 $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
                 $version = "$version-pre$($date)"
             }
