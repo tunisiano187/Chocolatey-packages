@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/JanisEst/KeePassQuickUnlock/releases'
+$releases = 'https://api.github.com/repos/JanisEst/KeePassQuickUnlock/releases/latest'
 
 function global:au_SearchReplace {
 	@{
@@ -14,11 +14,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = "https://github.com$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match '.plgx'})[0].href)"
-	$version = $url32.split('/')[-2].replace('v','')
+	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".plgx$"}).browser_download_url
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32

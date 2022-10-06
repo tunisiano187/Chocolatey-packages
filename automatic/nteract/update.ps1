@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/nteract/nteract/releases/latest'
+$releases = 'https://api.github.com/repos/nteract/nteract/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -12,9 +12,9 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-    $url32 = "https://github.com$($((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "nteract-Setup"} | Select-Object -First 1).href)"
-    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    $tags = Invoke-WebRequest 'https://api.github.com/repos/nteract/nteract/releases' -UseBasicParsing | ConvertFrom-Json
+    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "nteract-Setup"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
+	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     if($tag.tag_name -match $version) {
         foreach ($tag in $tags) {
             if($tag.prerelease -match "true") {
