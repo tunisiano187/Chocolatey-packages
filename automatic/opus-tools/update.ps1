@@ -18,6 +18,9 @@ function global:au_GetLatest {
 	$url32 = $urls | Where-Object {$_ -match 'win32'}
 	$url64 = $urls | Where-Object {$_ -match 'win64'}
 	$version = $url32.split('-')[-2]
+	if($version -eq "0.2") {
+		$version = "0.2.0.20221010"
+	}
 
 	return @{ 	URL32 = $url32
 				URL64 = $url64
