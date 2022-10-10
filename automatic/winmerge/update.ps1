@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/WinMerge/winmerge/releases/latest'
@@ -32,9 +32,9 @@ function global:au_GetLatest {
             }
         }
     }
-    
+
     if($version -eq '2.16.14') { $version = '2.16.14.20210829' }
-    
+
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 
