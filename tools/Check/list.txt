@@ -1,5 +1,3 @@
-pavement.standard 1.0.2 - Possibly broken
-SQLMaintenanceSolution 0.6 - Possibly broken
 chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken

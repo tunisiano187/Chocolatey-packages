@@ -34,3 +34,4 @@
 |SQL2008R2.PowerShell|
 |dragondisk|
 |p4scc|
+|pavement.standard|
