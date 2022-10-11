@@ -1,6 +1,6 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $url = 'https://www.nirsoft.net/utils/lastactivityview.zip'
-$checksum = 'a668cfc978f76e081abd941d4ac1445cef3ad0c3e809f492bf096a5b40bcb831'
+$checksum = 'ace91b961d16a4d59ef2e2545fc5c2159bec6daccc5eaff1ff689f51f9df4e82'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
