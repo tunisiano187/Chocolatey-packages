@@ -22,6 +22,10 @@ function global:au_GetLatest {
 
 	if($tags[0].prerelease -eq $true) {
 		$version = "$version-nightly"
+	} elseif ($url32 -match 'Nightly') {
+		$version = "$version-nightly"
+	} else {
+		$version = '0.0'
 	}
 	Write-Output "Version : $version"
 
