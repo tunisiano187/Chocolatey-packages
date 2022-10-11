@@ -692,7 +692,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -1388,7 +1387,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -2083,7 +2081,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -2777,7 +2774,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -3470,7 +3466,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -4162,7 +4157,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -4853,7 +4847,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -5543,7 +5536,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -6232,7 +6224,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -6920,7 +6911,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -7607,7 +7597,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -8293,7 +8282,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
@@ -8978,7 +8966,6 @@ pavement.dev 1.0.1 - Possibly broken
 kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
 SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
-p4scc 2012.1 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 pavement.standard 1.0.2 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
