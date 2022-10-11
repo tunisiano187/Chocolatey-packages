@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>p4scc</id>
+    <version>2012.1</version>
+    <title>P4SCC: SCC Plug-in</title>
+    <authors>"Perforce Software, Inc."</authors>
+    <owners>caskater4</owners>
+    <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
+    <projectUrl>http://www.perforce.com/perforce/products/p4scc.html</projectUrl>
+    <iconUrl>https://raw.github.com/caskater4/ChocoPackages/master/p4scc/p4scc.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enables you to perform Perforce operations from within IDEs that support the Microsoft SCC API.</description>
+    <summary>p4scc</summary>
+    <releaseNotes>http://www.perforce.com/perforce/r12.1/user/sccpluginnotes.txt</releaseNotes>
+    <copyright />
+    <tags>p4 p4scc perforce scc "visual studio"</tags>
+  </metadata>
+</package>
