@@ -15,8 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-	$urls = ($tags[0].assets | Where-Object {$_.browser_download_url -match "Rubberduck.Setup"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
-    $url32 = $urls | Where-Object {$_ -match 'win32'}
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "Rubberduck.Setup"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     foreach ($tag in $tags) {
         if($tag.tag_name -match $version) {
@@ -29,4 +28,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; Version = $version }
 }
 
-update-package -ChecksumFor 32 -NoCheckChocoVersion
+update-package -ChecksumFor 32
