@@ -98,7 +98,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             }
         } else {
             Write-Output "$search not available on winget"
-            "| $search |  " | Add-Content "$($PSScriptRoot)/Check/Todo.md"
+            "| $search | " | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
