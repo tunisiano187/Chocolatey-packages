@@ -690,7 +690,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -1384,7 +1383,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -2077,7 +2075,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -2769,7 +2766,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -3460,7 +3456,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -4150,7 +4145,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -4839,7 +4833,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -5527,7 +5520,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -6214,7 +6206,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -6900,7 +6891,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -7585,7 +7575,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -8269,7 +8258,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
@@ -8952,7 +8940,6 @@ SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
 google-pinyin 1.0 - Possibly broken
 Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
 SQLMaintenanceSolution 0.6 - Possibly broken
-chainlp 0.40.17 - Possibly broken
 treetrim 1.0.3 - Possibly broken
 SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
 SublimeText2.PackageControl 1.6.3 - Possibly broken
