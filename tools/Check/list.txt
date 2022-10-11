@@ -1,5 +1,3 @@
-SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
-SublimeText2.PackageControl 1.6.3 - Possibly broken
 SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken

@@ -36,3 +36,4 @@
 |p4scc|
 |pavement.standard|
 |chainlp|
+|SharePoint.HiveShortcut.Desktop|
