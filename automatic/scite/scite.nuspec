@@ -4,7 +4,7 @@
   <metadata>
     <id>scite</id>
     <title>SciTE</title>
-    <version>5.3.0</version>
+    <version>5.3.1</version>
     <authors>Neil Hodgson</authors>
     <owners>tunisiano</owners>
     <summary>Lightweight, fast text editor using SCIntilla library</summary>
