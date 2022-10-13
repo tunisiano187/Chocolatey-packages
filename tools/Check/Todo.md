@@ -35,3 +35,4 @@
 | pavement.standard | 
 | chainlp | 
 | SharePoint.HiveShortcut.Desktop | 
+| msinttypes | 

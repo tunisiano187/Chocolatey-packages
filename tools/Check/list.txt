@@ -1,5 +1,3 @@
-msinttypes 0.26 - Possibly broken
-Hexter.Teamcity 7.1.42 - Possibly broken
 mightymoose 1.47.0 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
 Devbox-UnZip 5.52 - Possibly broken
