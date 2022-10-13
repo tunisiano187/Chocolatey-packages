@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>msinttypes</id>
+    <version>0.26</version>
+    <title>msinttypes</title>
+    <authors>Alexander Chemeris</authors>
+    <owners>Kirk Shoop</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+    <projectUrl>http://code.google.com/p/msinttypes/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This project fills the absence of stdint.h and inttypes.h in Microsoft Visual Studio. This files were standartized by ISO/IEC as a part of C99 standard library. If you want to compile or use C99 compliant project with Microsoft Visual Studio, you will likely find that you're missing these headers. Note though, that just adding these header does not make Visual Studio compiler fully C99 compliant.</description>
+    <summary>This project fills the absence of stdint.h and inttypes.h in Microsoft Visual Studio.</summary>
+    <releaseNotes />
+    <copyright>Copyright (c) 2006 Alexander Chemeris</copyright>
+    <tags>msinttypes admin</tags>
+  </metadata>
+</package>
