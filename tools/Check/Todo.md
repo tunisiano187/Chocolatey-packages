@@ -36,3 +36,4 @@
 | chainlp | 
 | SharePoint.HiveShortcut.Desktop | 
 | msinttypes | 
+| mightymoose | 

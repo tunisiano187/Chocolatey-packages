@@ -1,5 +1,3 @@
-mightymoose 1.47.0 - Possibly broken
-Devbox-Sed 4.2.1 - Possibly broken
 Devbox-UnZip 5.52 - Possibly broken
 UAdevelopers.utils 1.9 - Possibly broken
 Devbox-Notepad2 4.2.25 - Possibly broken
