@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>voicemod</id>
-    <version>2.37.0.0</version>
+    <version>2.36.0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/voicemod</packageSourceUrl>
     <owners>tunisiano</owners>
 
@@ -12,7 +12,7 @@
     <projectUrl>https://www.voicemod.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96ccc2ecf9cdc0b75592d3095130de0ec24bf396/icons/voicemod.jpg</iconUrl>
     <copyright>VoiceMod</copyright>
-    <licenseUrl>https://support.voicemod.net/hc/en-us/categories/360002495939-Licenses-and-subscriptions</licenseUrl>
+    <licenseUrl>https://www.voicemod.net/terms-of-use/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://support.voicemod.net/hc/en-us</docsUrl>
     <mailingListUrl>https://www.voicemod.net/blog/</mailingListUrl>
