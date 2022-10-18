@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Devbox-P4Merge</id>
-    <version>131.61.1503</version>
-    <title>Devbox P4Merge</title>
+    <version>2022.2</version>
+    <title>P4Merge</title>
     <authors>Perforce Software Inc.</authors>
     <owners>Michael Field</owners>
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
@@ -16,10 +16,10 @@
       NOTE: Phrase « Devbox » in a name of this package is used as signature to indicate high quality standards. Functionally, the package is the same as any other Chocolatey package.</description>
     <summary>P4Merge: Visual Merge Tool. Provides graphical three-way merging and side-by-side file comparisons.</summary>
     <releaseNotes>Initial release</releaseNotes>
-    <copyright>Copyright © 2013 Perforce. All rights reserved.</copyright>
+    <copyright>Copyright © 2022 Perforce. All rights reserved.</copyright>
     <tags>devbox notepad merge diff git</tags>
     <dependencies>
-      <dependency id="Devbox-Common" />
+      <dependency id="P4Merge" />
     </dependencies>
   </metadata>
 </package>
