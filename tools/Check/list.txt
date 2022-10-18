@@ -1,9 +1,4 @@
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -690,12 +685,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -1382,12 +1372,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -2073,12 +2058,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -2763,12 +2743,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -3452,12 +3427,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -4140,12 +4110,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -4827,12 +4792,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -5513,12 +5473,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -6198,12 +6153,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -6882,12 +6832,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -7565,12 +7510,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -8247,12 +8187,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
@@ -8928,12 +8863,7 @@ SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
 msinttypes 0.26 - Possibly broken
 Hexter.Teamcity 7.1.42 - Possibly broken
 Devbox-Sed 4.2.1 - Possibly broken
-Devbox-UnZip 5.52 - Possibly broken
-UAdevelopers.utils 1.9 - Possibly broken
-Devbox-Notepad2 4.2.25 - Possibly broken
 Devbox-P4Merge 131.61.1503 - Possibly broken
-Devbox-GitFlow 0.0.0 - Possibly broken
-SemanticMerge 0.9.17.0 - Possibly broken
 bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
