@@ -29,7 +29,7 @@ Install-PackageProvider -name winget -Force
 
 # Check if one package is waiting for maintainer action on Chocolatey
 if($Todo.Count -eq 0) {
-    $chocoprofile = "https://chocolatey.org/profiles/tunisiano"
+    $chocoprofile = "https://community.chocolatey.org/profiles/tunisiano"
     $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
     $ToDo=$links
     foreach ($item in $links) {
@@ -37,7 +37,7 @@ if($Todo.Count -eq 0) {
         $version=$item.split('/')[-1]
         [string]$Label = "ToCreateManualy"
         [string]$Title = "($($search)/$($version)) Require maintainer action"
-        [string]$Description = "([$search](https://chocolatey.org/packages/$search/$version)) Waiting for maintainer action"
+        [string]$Description = "([$search](https://community.chocolatey.org/packages/$search/$version)) Waiting for maintainer action"
         if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
             New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             Start-Sleep -Seconds 6

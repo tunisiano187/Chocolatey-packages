@@ -22,4 +22,7 @@
       <dependency id="P4Merge" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
