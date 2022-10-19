@@ -83,6 +83,13 @@ install:
     }
     cup -y chocolatey
     rm "$env:ChocolateyInstall\logs\*.log"
+    
+    Install-Module -Name PowerShellForGitHub
+    $secureString = ("$env:github_api_key" | ConvertTo-SecureString -AsPlainText -Force)
+    $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
+    Set-GitHubAuthentication -Credential $cred
+    $secureString = $null # clear this out now that it's no longer needed
+    $cred = $null # clear this out now that it's no longer needed
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
 - git --version

@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/popcorn-official/popcorn-desktop/releases/latest'
+$Owner = "popcorn-official"
+$repo = "popcorn-desktop"
 
 function global:au_SearchReplace {
     @{
@@ -17,19 +19,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-	$urls = ($tags[0].assets | Where-Object {$_.browser_download_url -match "-Setup.exe$"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "-Setup.exe$"} | Where-Object {$_ -match ".exe$"}
     $url32 = $urls | Where-Object {$_ -match 'win32'}
     $url64 = $urls | Where-Object {$_ -match 'win64'}
 	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    if($tag.tag_name -match $version) {
-        foreach ($tag in $tags) {
-            if($tag.prerelease -match "true") {
-                $clnt = new-object System.Net.WebClient;
-                $clnt.OpenRead("$($url32)").Close();
-                $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-                $version = "$version-pre$($date)"
-            }
+    if($tags.tag_name -match $version) {
+        if($tags.prerelease -match "true") {
+            $clnt = new-object System.Net.WebClient;
+            $clnt.OpenRead("$($url32)").Close();
+            $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
+            $version = "$version-pre$($date)"
         }
     }
     if($version -eq '0.4.6') {
