@@ -26,9 +26,7 @@ function global:au_GetLatest {
 	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     if($tags.tag_name -match $version) {
         if($tags.prerelease -match "true") {
-            $clnt = new-object System.Net.WebClient;
-            $clnt.OpenRead("$($url32)").Close();
-            $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
+            $date = $tags.published_at.ToString("yyyyMMdd")
             $version = "$version-pre$($date)"
         }
     }
