@@ -8,7 +8,7 @@
     <owners>Michael Field</owners>
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
     <projectUrl>http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools</projectUrl>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/devbox-p4merge</packageSourceUrl>
     <iconUrl>https://github.com/michfield/devbox-choco/raw/master/Devbox-P4Merge/Devbox-P4Merge.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Visual merge and diff tool from Perforce - P4Merge - lets you visualize the differences between file versions. Color coding makes it easy to resolve conflicts that result from parallel or concurrent development.
