@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>autocomplete</id>
+    <version>1.3</version>
+    <title>Autocomplete</title>
+    <authors>Anthony Zhang</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://github.com/Uberi/Autocomplete/blob/master/README.md#licence</licenseUrl>
+    <projectUrl>https://github.com/Uberi/Autocomplete</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/805f6090d077c80a291b3b0998f935a7318e8819/icons/autocomplete.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Suggests and completes words as you type! Write faster and more efficiently.
+
+#### Using
+1. Start typing somewhere. After the first few characters, a suggestion box will appear.
+2. Use the Up and Down arrow keys to select an entry if the currently selected one is not the desired word.
+3. Press Enter or Tab to trigger the completion with the currently selected word.
+4. Alternatively, press one of Alt + 1, Alt + 2, ..., Alt + 9, Alt + 0 to trigger completion with the 1st, 2nd, ..., 9th, and 10th word, respectively.</description>
+    <summary>Suggests and completes words as you type</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://github.com/Uberi/Autocomplete/releases/tag/1.3)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2013 Anthony Zhang</copyright>
+    <tags>productivity typing wordlist</tags>
+    <projectSourceUrl>https://github.com/Uberi/Autocomplete</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/autocomplete/1.3</packageSourceUrl>
+    <docsUrl>https://github.com/Uberi/Autocomplete/blob/master/README.md#using</docsUrl>
+    <mailingListUrl>http://www.autohotkey.com/board/topic/60998-autocomplete/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/Uberi/Autocomplete/issues</bugTrackerUrl>
+  </metadata>
+</package>
