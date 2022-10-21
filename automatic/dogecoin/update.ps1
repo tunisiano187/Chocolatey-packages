@@ -5,8 +5,8 @@ $releases = "https://github.com/dogecoin/dogecoin/releases"
 
 function global:au_SearchReplace {
     @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]version\s*=\s*)('.*')"      = "`$1'$($Latest.Version)'"
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
      }
 }

@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://api.github.com/repos/popcorn-official/popcorn-desktop/releases/latest'
+# $releases = 'https://api.github.com/repos/popcorn-official/popcorn-desktop/releases/latest'
 $Owner = "popcorn-official"
 $repo = "popcorn-desktop"
 

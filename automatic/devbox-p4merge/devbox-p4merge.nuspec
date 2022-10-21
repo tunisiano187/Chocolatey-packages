@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Devbox-P4Merge</id>
-    <version>2022.2</version>
+    <version>0.0</version>
     <title>P4Merge</title>
     <authors>Perforce Software Inc.</authors>
     <owners>tunisiano</owners>
@@ -20,7 +20,7 @@
     <copyright>Copyright © 2022 Perforce. All rights reserved.</copyright>
     <tags>devbox notepad merge diff git</tags>
     <dependencies>
-      <dependency id="P4Merge" />
+      <dependency id="P4Merge.install" version="0.0"/>
     </dependencies>
   </metadata>
   <files>

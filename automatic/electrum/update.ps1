@@ -5,9 +5,9 @@ $releases = 'https://download.electrum.org/?C=M;O=D'
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]version\s*=\s*)('.*')"      	= "`$1'$($Latest.Version)'"
-		}
+		"$($Latest.PackageName).nuspec" = @{
+            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+        }
 	}
 }
 
