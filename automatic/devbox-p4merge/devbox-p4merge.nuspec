@@ -20,7 +20,7 @@
     <copyright>Copyright © 2022 Perforce. All rights reserved.</copyright>
     <tags>devbox notepad merge diff git</tags>
     <dependencies>
-      <dependency id="P4Merge.install" version="0.0"/>
+      <dependency id="P4Merge.install" version="0.0" />
     </dependencies>
   </metadata>
   <files>
