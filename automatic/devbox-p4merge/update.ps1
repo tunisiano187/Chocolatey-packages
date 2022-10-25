@@ -8,6 +8,9 @@ function global:au_SearchReplace {
 		"$($Latest.PackageName).nuspec" = @{
             "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
+		"tools\VERIFICATION.txt"      = @{
+			"(?i)(license:).*" 					= "`${1} $($Latest.License)"
+		}
 	}
 }
 
@@ -41,7 +44,7 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
-	Invoke-WebRequest -Uri $url64 -OutFile ".\tools\p4vinst64.exe"
+	#Invoke-WebRequest -Uri $url64 -OutFile ".\tools\p4vinst64.exe"
 
 	$Latest = @{ URL32 = $url64; Version = $version; License = $license }
 	return $Latest
