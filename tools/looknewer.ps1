@@ -46,19 +46,19 @@ if($Todo.Count -eq 0) {
 }
 
 # If no package is waiting
-# Take a package that needs action on the Todo repository (Mostly dtgm packages)
-if($Todo.Count -eq 0) {
-    Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:TEMP)\list.txt"
-    $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
-    $ToDo=$ToDo.Trim()
-}
-
-# If no package is waiting
 # Take a package that is requested on the chocolatey-package-requests
 if($Todo.Count -eq 0) {
     $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
     $ToDo = $ToDo.Title.split(' ')[-1]
 }
+
+## If no package is waiting
+## Take a package that needs action on the Todo repository (Mostly dtgm packages)
+#if($Todo.Count -eq 0) {
+#    Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:TEMP)\list.txt"
+#    $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
+#    $ToDo=$ToDo.Trim()
+#}
 
 # Clean the search item
 $ToDo=$ToDo.trim()
