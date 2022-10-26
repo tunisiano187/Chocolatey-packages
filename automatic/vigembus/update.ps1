@@ -11,12 +11,10 @@ function global:au_SearchReplace {
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
       
-        ".\legal\VERIFICATION.txt" = @{
+        ".\tools\VERIFICATION.txt" = @{
           "(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
-          "(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
-          "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL64)"
+          "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
           "(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
-          "(?i)(\s+checksum64:).*"            = "`${1} $($Latest.Checksum64)"
         }
     }
 }
@@ -34,12 +32,13 @@ function global:au_GetLatest {
     $date = $tags.published_at.ToString("yyyyMMdd")
     $version = "$version-pre$($date)"
   }
-  
-    @{
-        URL32 = $url32
-        Version = $version
-        ReleaseNotes = $tags.html_url
-    }
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ViGEm/ViGEmBus/master/LICENSE" -OutFile ".\tools\LICENSE.txt"
+
+  @{
+      URL32 = $url32
+      Version = $version
+      ReleaseNotes = $tags.html_url
+  }
 }
 
 update -ChecksumFor none
