@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$tags = Invoke-WebRequest 'https://api.github.com/repos/brave/brave-browser/releases' -UseBasicParsing | ConvertFrom-Json
-	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'}
+	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'} | Where-Object {$_ -notmatch 'Arm64'}
 
 	Write-Verbose 'Checking version'
 	$version=($tags[0].name.Split(' ')[1]).replace('v','')
