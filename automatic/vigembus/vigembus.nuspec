@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>vigembus</id>
+    <version>1.17.333</version>
+    <title>Virtual Gamepad Emulation Framework (Install)</title>
+    <authors>Benjamin Höglinger-Stelzer</authors>
+    <owners>jtcmedia</owners>
+    <licenseUrl>https://github.com/ViGEm/ViGEmBus/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://vigem.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/86fbf9b1a55132435480b8333985137c5d0b04cc/icons/vigembus.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description># ViGEm Bus Driver
+
+## About
+
+The `ViGEmBus` driver and `ViGEmClient` libraries represent the core of the Virtual Gamepad Emulation Framework (or `ViGEm` , for short). `ViGEm` aims for a 100% accurate [emulation](&lt;https://en.wikipedia.org/wiki/Emulator&gt;) of well-known gaming peripherals as pure software-based devices at kernel level. As it mimics "the real thing" games and other processes require no additional modification whatsoever to detect `ViGEm`-based devices (no Proxy-DLLs or API-Hooking) and simply work out of the box. While the (now obsolete) [Scarlett.Crush Productions Virtual Bus Driver](&lt;https://github.com/nefarius/ScpVBus&gt;) is the spiritual father of this project, `ViGEm` has been designed and written from the ground up utilizing Microsoft's [Kernel-Mode Driver Framework](https://en.wikipedia.org/wiki/Kernel-Mode_Driver_Framework).
+
+### Emulated devices
+
+Currently supports emulation of the following USB Gamepads:
+
+- [Microsoft Xbox 360 Controller](https://en.wikipedia.org/wiki/Xbox_360_controller)
+- [Sony DualShock 4 Controller](https://en.wikipedia.org/wiki/DualShock#DualShock_4)</description>
+    <summary>Windows kernel-mode driver emulating well-known USB game controllers.</summary>
+    <releaseNotes>https://github.com/ViGEm/ViGEmBus/releases/tag/setup-v1.17.333</releaseNotes>
+    <copyright>Copyright (c) 2016-2021, Nefarius Software Solutions e.U.</copyright>
+    <tags>vigembus virtual gamepad emulation framework xbox dualshock controller admin foss</tags>
+    <projectSourceUrl>https://github.com/ViGEm/ViGEmBus</projectSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/vigembus</packageSourceUrl>
+    <docsUrl>https://forums.vigem.org/</docsUrl>
+    <bugTrackerUrl>https://github.com/ViGEm/ViGEmBus/issues</bugTrackerUrl>
+  </metadata>
+</package>
