@@ -39,3 +39,4 @@
 | mightymoose | 
 | Devbox-P4Merge | 
 | autocomplete | 
+| avgantivirusfree | 
