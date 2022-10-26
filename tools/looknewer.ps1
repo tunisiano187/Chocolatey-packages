@@ -1,4 +1,5 @@
 $ErrorActionPreference = 'Continue';
+$link=''
 
 # Requisites
 Install-Module psgithubsearch -ErrorAction SilentlyContinue
@@ -50,6 +51,7 @@ if($Todo.Count -eq 0) {
 if($Todo.Count -eq 0) {
     $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
     $ToDo = $ToDo.Title.split(' ')[-1]
+    $link = "https://github.com/chocolatey-community/chocolatey-package-requests/issues/$ToDo.number"
 }
 
 ## If no package is waiting
@@ -103,7 +105,7 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) Needs update"
-            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
+            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated $link"
             if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
