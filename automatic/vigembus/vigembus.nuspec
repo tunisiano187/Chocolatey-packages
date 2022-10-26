@@ -31,4 +31,7 @@ Currently supports emulation of the following USB Gamepads:
     <docsUrl>https://forums.vigem.org/</docsUrl>
     <bugTrackerUrl>https://github.com/ViGEm/ViGEmBus/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
