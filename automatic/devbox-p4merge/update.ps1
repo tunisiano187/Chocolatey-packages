@@ -6,7 +6,7 @@ $releases = 'https://cdist2.perforce.com/perforce/'
 function global:au_SearchReplace {
 	@{
 		"$($Latest.PackageName).nuspec" = @{
-            "(\<dependency .+?`"p4merge.install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+            "(\<dependency .+?`"p4merge`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
 		"tools\VERIFICATION.txt"      = @{
 			"(?i)(license:).*" 					= "`${1} $($Latest.License)"
