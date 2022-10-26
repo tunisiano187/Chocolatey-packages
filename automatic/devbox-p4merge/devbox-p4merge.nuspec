@@ -1,15 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-<<<<<<< HEAD
     <id>Devbox-P4Merge</id>
     <version>0.0</version>
     <title>Devbox P4Merge</title>
-=======
-    <id>devbox-p4merge</id>
-    <version>2022.1.1</version>
-    <title>P4Merge</title>
->>>>>>> 0d83687d603143de008721456546d6ef64c7a3e6
     <authors>Perforce Software Inc.</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
@@ -33,11 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>Copyright © 2022 Perforce. All rights reserved.</copyright>
     <tags>devbox notepad merge diff git</tags>
     <dependencies>
-<<<<<<< HEAD
       <dependency id="P4Merge" version="0.0" />
-=======
-      <dependency id="P4Merge.install" version="[2022.1.1]" />
->>>>>>> 0d83687d603143de008721456546d6ef64c7a3e6
     </dependencies>
   </metadata>
   <files>
