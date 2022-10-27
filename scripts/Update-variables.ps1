@@ -63,6 +63,7 @@ function Update-Variable {
   $ps1 = $ps1 -replace '{{PackageName}}','$env:ChocolateyPackageName'
   $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
   $ps1 = $ps1 -replace 'where ', 'Where-Object '
+  $ps1 = $ps1 -replace 'releases"', 'releases/latest"'
   $ps1 = $ps1 | ForEach-Object {$_.TrimEnd()}
 
   $output = ($ps1 | Out-String) -replace '\r\n?',"`n"
