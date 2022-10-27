@@ -5,7 +5,7 @@
     <version>1.17.333</version>
     <title>Virtual Gamepad Emulation Framework (Install)</title>
     <authors>Benjamin Höglinger-Stelzer</authors>
-    <owners>jtcmedia</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/ViGEm/ViGEmBus/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://vigem.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@729ba4177b5bdb8afe331c16cf0fa5729e25c52b/icons/vigembus.png</iconUrl>
