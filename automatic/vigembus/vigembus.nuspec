@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vigembus</id>
-    <version>1.17.333</version>
+    <version>1.21.442.0</version>
     <title>Virtual Gamepad Emulation Framework (Install)</title>
     <authors>Benjamin Höglinger-Stelzer</authors>
     <owners>tunisiano</owners>
@@ -10,20 +10,28 @@
     <projectUrl>https://vigem.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@729ba4177b5bdb8afe331c16cf0fa5729e25c52b/icons/vigembus.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description># ViGEm Bus Driver
+    <description><![CDATA[## ViGEm Bus Driver
 
-## About
+The `ViGEmBus` driver and `ViGEmClient` libraries represent the core of the Virtual Gamepad Emulation Framework (or `ViGEm` , for short). `ViGEm` aims for a 100% accurate [emulation](<https://en.wikipedia.org/wiki/Emulator>) of well-known gaming peripherals as pure software-based devices at kernel level. As it mimics "the real thing" games and other processes require no additional modification whatsoever to detect `ViGEm`-based devices (no Proxy-DLLs or API-Hooking) and simply work out of the box. While the (now obsolete) [Scarlett.Crush Productions Virtual Bus Driver](<https://github.com/nefarius/ScpVBus>) is the spiritual father of this project, `ViGEm` has been designed and written from the ground up utilizing Microsoft's [Kernel-Mode Driver Framework](https://en.wikipedia.org/wiki/Kernel-Mode_Driver_Framework).
 
-The `ViGEmBus` driver and `ViGEmClient` libraries represent the core of the Virtual Gamepad Emulation Framework (or `ViGEm` , for short). `ViGEm` aims for a 100% accurate [emulation](&lt;https://en.wikipedia.org/wiki/Emulator&gt;) of well-known gaming peripherals as pure software-based devices at kernel level. As it mimics "the real thing" games and other processes require no additional modification whatsoever to detect `ViGEm`-based devices (no Proxy-DLLs or API-Hooking) and simply work out of the box. While the (now obsolete) [Scarlett.Crush Productions Virtual Bus Driver](&lt;https://github.com/nefarius/ScpVBus&gt;) is the spiritual father of this project, `ViGEm` has been designed and written from the ground up utilizing Microsoft's [Kernel-Mode Driver Framework](https://en.wikipedia.org/wiki/Kernel-Mode_Driver_Framework).
-
-### Emulated devices
+#### Emulated devices
 
 Currently supports emulation of the following USB Gamepads:
 
 - [Microsoft Xbox 360 Controller](https://en.wikipedia.org/wiki/Xbox_360_controller)
-- [Sony DualShock 4 Controller](https://en.wikipedia.org/wiki/DualShock#DualShock_4)</description>
+- [Sony DualShock 4 Controller](https://en.wikipedia.org/wiki/DualShock#DualShock_4)
+
+### Supported Systems
+
+The driver is built for Windows 10/11, Server 2016, and Server 2019 only (x86 and amd64).
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Windows kernel-mode driver emulating well-known USB game controllers.</summary>
-    <releaseNotes>https://github.com/ViGEm/ViGEmBus/releases/tag/setup-v1.17.333</releaseNotes>
+    <releaseNotes>https://github.com/ViGEm/ViGEmBus/releases/tag/v1.21.442.0</releaseNotes>
     <copyright>Copyright (c) 2016-2021, Nefarius Software Solutions e.U.</copyright>
     <tags>vigembus virtual gamepad emulation framework xbox dualshock controller admin foss</tags>
     <projectSourceUrl>https://github.com/ViGEm/ViGEmBus</projectSourceUrl>
