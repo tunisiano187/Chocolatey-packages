@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url            = 'https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.0_Windows_64bit.exe'
-$checksum       = '15e3f307fade3cf8819e33bd266559756181cd8b31611be341bf55256ecf7afc'
+$url            = 'https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.1_Windows_64bit.exe'
+$checksum       = 'c445aebe9f6a039d24a83bc5c12c922e28735eede7402b9cf9f69f9dfde630fe'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)
 
