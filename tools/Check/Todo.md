@@ -41,3 +41,4 @@
 | autocomplete | 
 | avgantivirusfree | 
 | vigembus | 
+| android-messages-desktop | 
