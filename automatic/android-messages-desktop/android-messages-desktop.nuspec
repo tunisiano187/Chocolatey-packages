@@ -5,7 +5,7 @@
     <version>0.7.1</version>
     <title>Android Messages Desktop (Install)</title>
     <authors>Chris Knepper</authors>
-    <owners>Gabriel Côté-Moisescu</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://github.com/chrisknepper/android-messages-desktop</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7e3045b09810033d13e61a380a2ee4ebe01523c0/icons/android-messages-desktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
