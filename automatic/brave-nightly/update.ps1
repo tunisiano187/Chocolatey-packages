@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 			"(^[$]checksumType32\s*=\s*)('.*')"	= "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
-} 
+}
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest

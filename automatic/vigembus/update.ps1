@@ -10,7 +10,7 @@ function global:au_SearchReplace {
         "$($Latest.PackageName).nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
-      
+
         ".\tools\VERIFICATION.txt" = @{
           "(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
           "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
