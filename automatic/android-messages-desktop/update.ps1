@@ -25,7 +25,7 @@ function global:au_GetLatest {
         $version = "$version-pre$($date)"
     }
 
-    
+
     return @{ URL32 = $url32; Version = $version }
 }
 
