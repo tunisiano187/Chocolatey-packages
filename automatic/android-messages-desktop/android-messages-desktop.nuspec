@@ -18,7 +18,7 @@
 - Update electron from 2.0.2 to 2.0.12</releaseNotes>
     <copyright>Copyright © 2018 Chris Knepper, All rights reserved.</copyright>
     <tags>android messages desktop web messaging sms mms phone</tags>
-    <packageSourceUrl>https://github.com/chrisknepper/android-messages-desktop</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/android-messages-desktop</packageSourceUrl>
     <bugTrackerUrl>https://github.com/chrisknepper/android-messages-desktop/issues</bugTrackerUrl>
   </metadata>
   <files>
