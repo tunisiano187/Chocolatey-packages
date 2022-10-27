@@ -8,7 +8,7 @@
     <owners>jtcmedia</owners>
     <licenseUrl>https://github.com/ViGEm/ViGEmBus/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://vigem.org/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/86fbf9b1a55132435480b8333985137c5d0b04cc/icons/vigembus.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@729ba4177b5bdb8afe331c16cf0fa5729e25c52b/icons/vigembus.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description># ViGEm Bus Driver
 
