@@ -21,4 +21,7 @@
     <packageSourceUrl>https://github.com/chrisknepper/android-messages-desktop</packageSourceUrl>
     <bugTrackerUrl>https://github.com/chrisknepper/android-messages-desktop/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
