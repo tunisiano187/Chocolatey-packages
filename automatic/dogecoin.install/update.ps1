@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://github.com/dogecoin/dogecoin/releases"
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
@@ -17,10 +19,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $installers = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup-'} | Select-Object -First 2 | Sort-Object).href)
-    $url32 = "https://github.com$($installers[1])"
-	$url64 = "https://github.com$($installers[0])"
-	$version = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '/tag/v'} | Select-Object -First 1).href).split('v')[-1]
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $urls = $tags.assets.browser_download_url | Where-Object {$_ -match "-setup-"} | Where-Object {$_ -match ".exe$"}
+    $url32 = $urls | Where-Object {$_ -match 'win32'}
+	$url64 = $urls | Where-Object {$_ -match 'win64'}
+	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
