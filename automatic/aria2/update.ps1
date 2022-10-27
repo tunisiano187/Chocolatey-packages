@@ -21,8 +21,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	$url32 = $tags.assets.browser_download_url | where {$_ -match "32bit"}
-	$url64 = $tags.assets.browser_download_url | where {$_ -match "64bit"}
+	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "32bit"}
+	$url64 = $tags.assets.browser_download_url | Where-Object {$_ -match "64bit"}
 
 	Write-Verbose 'Checking version'
 	$version=$tags.name.Split(' ')[-1]
