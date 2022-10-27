@@ -51,7 +51,7 @@ if($Todo.Count -eq 0) {
 if($Todo.Count -eq 0) {
     $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Select-Object -First 1
     $ToDo = $ToDo.Title.split(' ')[-1]
-    $link = "https://github.com/chocolatey-community/chocolatey-package-requests/issues/$ToDo.number"
+    $link = "[$($ToDo.title)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($ToDo.number))"
 }
 
 ## If no package is waiting
