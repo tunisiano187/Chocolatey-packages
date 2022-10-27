@@ -1,7 +1,9 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/iBotPeaches/Apktool/releases'
+$releases = 'https://github.com/iBotPeaches/Apktool/releases/Latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
@@ -15,11 +17,12 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
-	$tags = Invoke-WebRequest 'https://api.github.com/repos/iBotPeaches/Apktool/releases' -UseBasicParsing | ConvertFrom-Json
-	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".jar"}).browser_download_url
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".jar$"}
+	$url32 = $urls | Where-Object {$_ -match ".jar"}
 
 	Write-Verbose 'Checking version'
-	$version=$tags[0].name.Split(' ')[-1].replace('v','')
+	$version=$tags.name.Split(' ')[-1].replace('v','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
