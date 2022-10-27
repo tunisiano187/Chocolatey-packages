@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-	$installer = ($tags[0].assets | where {$_.browser_download_url -match ".exe$"}).browser_download_url | Sort-Object -Descending
+	$installer = ($tags[0].assets | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url | Sort-Object -Descending
 	$url32 = $installer | Where-Object {$_ -match 'win32'} | Select-Object -First 1
 	$url64 = $installer | Where-Object {$_ -match 'win64'} | Select-Object -First 1
 	Write-Output 'Checking version'
