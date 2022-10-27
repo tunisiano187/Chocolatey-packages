@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 
     Write-Verbose 'Get version'
-    [version]$version = $tags.name.Split(' ')[-1]
+    $version = $tags.name.Split(' ')[-1]
     $folder = "https://bitcoincore.org/bin/$(((Invoke-WebRequest -Uri 'https://bitcoincore.org/bin/' -UseBasicParsing).Links | Where-Object {$_.href -match $version}| Select-Object -Last 1).href)"
 
 	Write-Verbose 'Get files'
