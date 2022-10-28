@@ -2,6 +2,8 @@
 import-module au
 
 $releases = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function Get-Version($name) {
 	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
@@ -27,13 +29,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'gridcoin-'} | Where-Object {$_ -match "-setup.exe"} | Where-Object {$_ -notmatch 'hotfix'} | Where-Object {$_ -notmatch 'sha256'}).href | Select-Object -First 2 | Sort-Object )
-	Write-Output 'Checking version'
-	$version=$installer[0].split('/')[-1].split('-')[1]
-	Write-Output "Version : $version"
-	$url32 = "https://github.com$($installer[0])";
-	$url64 = "https://github.com$($installer[1])";
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "gridcoin-"} | Where-Object {$_ -match "-setup.exe"} | Where-Object {$_ -notmatch 'hotfix'} | Where-Object {$_ -notmatch 'sha256'}
+	$url32 = $urls | Where-Object {$_ -match 'win32'}
+	$url64 = $urls | Where-Object {$_ -match 'win64'}
+	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
+	if($tags.prerelease -match "true") {
+		$date = $tags.published_at.ToString("yyyyMMdd")
+		$version = "$version-pre$($date)"
+	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
