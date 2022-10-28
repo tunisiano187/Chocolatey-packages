@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/Multibit-Legacy/multibit-hd/releases'
+$releases = 'https://github.com/Multibit-Legacy/multibit-hd/releases/latest'
 
 function global:au_SearchReplace {
 	@{

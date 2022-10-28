@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/bitcoin/bitcoin/releases'
+$releases = 'https://github.com/bitcoin/bitcoin/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 

@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://api.github.com/repos/fernandreu/office-ribbonx-editor/releases'
+$releases = 'https://api.github.com/repos/fernandreu/office-ribbonx-editor/releases/latest'
 
 function global:au_SearchReplace {
     @{
