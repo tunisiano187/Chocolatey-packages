@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://github.com/duplicati/duplicati/releases/latest"
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
@@ -14,18 +16,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$tags = Invoke-WebRequest 'https://api.github.com/repos/duplicati/duplicati/releases' -UseBasicParsing | ConvertFrom-Json
-    $url32 = (($tags | Select-Object -First 1).assets | Where-Object {$_ -match '.zip'} | Where-Object {$_ -notmatch '-signatures'} | Select-Object -First 1).browser_download_url
-    $version = ($tags[0].tag_name).split('v|-')[1]
-    if($tags[0].tag_name -match $version) {
-        if($tags[0].prerelease -match "true") {
-            $clnt = new-object System.Net.WebClient;
-            $clnt.OpenRead($url32).Close();
-            $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-            $version = "$version-pre$($date)"
-        }
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+    $url32 = $urls | Where-Object {$_ -notmatch 'signatures'}
+    $version = ($tags.tag_name).split('v|-')[1]
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
     }
-
+    
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }
