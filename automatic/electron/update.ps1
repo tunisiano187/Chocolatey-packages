@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/electron/electron/releases'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
@@ -18,9 +20,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	$tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-	$url32 = ($tags[0].assets).browser_download_url | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-ia32.zip'}
-	$url64 = ($tags[0].assets).browser_download_url | Where-Object {$_ -match 'electron-'} | Where-Object {$_ -match 'win32-x64.zip'}
+	tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "electron-"} | Where-Object {$_ -match ".exe$"}
+	$url32 = $urls | Where-Object {$_ -match 'win32-ia32.zip'}
+	$url64 = $urls | Where-Object {$_ -match 'win32-x64.zip'}
 	Write-Output 'Checking version'
 
 	$version = Get-Version $url64

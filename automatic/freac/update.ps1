@@ -2,6 +2,9 @@
 import-module au
 
 $releases = 'https://api.github.com/repos/enzo1982/freac/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+
 
 function global:au_SearchReplace {
    @{
@@ -12,18 +15,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-    $url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "-windows-x64.zip"}).browser_download_url
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+    $url32 = $urls | where {$_ -match "-windows-x64.zip"}
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    foreach ($tag in $tags) {
-        if($tag.tag_name -match $version) {
-            if($tag.prerelease -match "true") {
-                $clnt = new-object System.Net.WebClient;
-                $clnt.OpenRead("$($url32)").Close();
-                $date = $($clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-                $version = "$version-pre$($date)"
-            }
-        }
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
     }
 
     return @{ URL32 = $url32; Version = $version }
