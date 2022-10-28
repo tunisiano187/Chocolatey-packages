@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
 	$url32 = $urls | Where-Object {$_ -match 'win32'}
 	$url64 = $urls | Where-Object {$_ -match 'win64'}
-	$version = $tags.tag_name -split 'v|/' | select-object -Last 1 -Skip 1
+	$version = $tags.tag_name.replace('v','')
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
@@ -34,4 +34,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update
