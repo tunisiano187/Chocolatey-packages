@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-# $releases = 'https://github.com/brave/brave-browser/releases'
+# $releases = 'https://github.com/brave/brave-browser/releases/latest'
 $Owner = "brave"
 $repo = "brave-browser"
 function global:au_SearchReplace {
