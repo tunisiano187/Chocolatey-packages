@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$url64 = $urls | Where-Object {$_ -match 'win32-x64.zip'}
 	Write-Output 'Checking version'
 
-	$version = Get-Version $url64
+	$version = $tags.tag_name.replace('v','')
 	Write-Output "Version : $version"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
