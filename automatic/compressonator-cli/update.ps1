@@ -17,7 +17,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    $url64 = $tags.assets.browser_download_url | Where-Object {$_.browser_download_url -match ".exe$"} | Where-Object {$_ -match 'CLI'} | Select-Object -First 1
+    $url64 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match 'CLI'} | Select-Object -First 1
     $version = ($tags.tag_name).replace('V','')
 
 
