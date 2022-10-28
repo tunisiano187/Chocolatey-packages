@@ -28,7 +28,7 @@ function global:au_GetLatest {
 
 	$version = Get-Version $url64
 	Write-Output "Version : $version"
-
+	
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
