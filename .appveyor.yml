@@ -180,8 +180,8 @@ build_script:
     git commit -am "next issue"
     Write-Host "updating packages"
     write-host "Forced ? $forced"
-    au/update_all.ps1 -ForcedPackages $forced
     git log -1 --stat
+    au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
 - ps: |
