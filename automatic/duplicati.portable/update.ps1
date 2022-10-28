@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
     $url32 = $urls | Where-Object {$_ -notmatch 'signatures'}
     $version = ($tags.tag_name).split('v|-')[1]
