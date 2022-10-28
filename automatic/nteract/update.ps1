@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/nteract/nteract/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
@@ -12,18 +14,12 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "nteract-Setup"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
-	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    if($tag.tag_name -match $version) {
-        foreach ($tag in $tags) {
-            if($tag.prerelease -match "true") {
-                $clnt = new-object System.Net.WebClient;
-                $clnt.OpenRead("$($url32)").Close();
-                $date = $([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("yyyyMMdd")
-                $version = "$version-pre$($date)"
-            }
-        }
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
+    $version = $tags.tag_name.Replace('v','')
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
     }
 
     return @{ URL32 = $url32; Version = $version }

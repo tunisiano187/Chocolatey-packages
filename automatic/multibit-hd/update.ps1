@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/Multibit-Legacy/multibit-hd/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
@@ -17,15 +19,16 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".exe"} | Where-Object {$_ -notmatch '.asc'} | Select-Object -First 2 | Sort-Object ).href
-	Write-Output 'Checking version'
-	$version=$($installer[0]).split('/')[-1].split('-')[-1].replace('.exe','')
-
-	Write-Output "Version : $version"
-	$url32 = "https://github.com$($installer[1])";
-	$url64 = "https://github.com$($installer[0])";
-
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
+	$url32 = $urls | Where-Object {$_ -notmatch 'x64'}
+	$url64 = $urls | Where-Object {$_ -match 'x64'}
+	$version = $tags.tag_name.Replace('v','')
+	if($tags.prerelease -match "true") {
+		$date = $tags.published_at.ToString("yyyyMMdd")
+		$version = "$version-pre$($date)"
+	}
+	
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
