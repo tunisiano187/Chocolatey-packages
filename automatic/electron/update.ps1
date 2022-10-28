@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
-	tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "electron-"} | Where-Object {$_ -match ".exe$"}
 	$url32 = $urls | Where-Object {$_ -match 'win32-ia32.zip'}
 	$url64 = $urls | Where-Object {$_ -match 'win32-x64.zip'}
