@@ -142,9 +142,9 @@ build_script:
                 return
             }
         }
-        $lastupdated=(git diff --name-only HEAD HEAD~1 | Where-Object {$_ -match "automatic"}).split('/')[1]
+        $lastupdated=git log -1 --stat | Where-Object {$_ -match "automatic"}
         if($lastupdated.Count -ne 0) {
-          $forced = $lastupdated
+          $forced = $lastupdated.split('/')[1]
         }
     }
     Write-Host "Installing requisites"
@@ -180,7 +180,6 @@ build_script:
     git commit -am "next issue"
     Write-Host "updating packages"
     write-host "Forced ? $forced"
-    git log -1 --stat
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
