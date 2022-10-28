@@ -142,6 +142,10 @@ build_script:
                 return
             }
         }
+        $lastupdated=(git diff --name-only HEAD HEAD~1 | Where-Object {$_ -match "automatic"}).split('/')[1]
+        if($lastupdated.Count -gt 0) {
+          $forced = $lastupdated
+        }
     }
     Write-Host "Installing requisites"
     setup/requisites.ps1
