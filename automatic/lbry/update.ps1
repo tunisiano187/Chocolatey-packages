@@ -17,8 +17,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
-	$url32 = $urls | Where-Object {$_ -match 'win32'}
+	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
 	$version = $tags.tag_name.Replace('v','')
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
