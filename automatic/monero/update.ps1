@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://github.com/monero-project/monero/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
@@ -17,17 +19,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$installer = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'monero-'} | Where-Object {$_ -match "-win-"} | Where-Object {$_ -match 'zip'} | Select-Object -First 2 | Sort-Object ).href
-	Write-Output 'Checking version'
-	$version=$($installer[0]).split('/')[-1].split('-')[-1].replace('v','').replace('.zip','')
-
-	Write-Output "Version : $version"
-	$url32 = "$($installer[0])";
-	$url64 = "$($installer[1])";
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$urls = ($tags.body.Split("
+") | Where-Object {$_ -match "-win-"} | Where-Object {$_ -match "https"})
+	$urls = $urls.split('(|)') | Where-Object {$_ -match "http"}
+	$url32 = $urls | Where-Object {$_ -match 'x86'}
+	$url64 = $urls | Where-Object {$_ -match 'x64'}
+	$version = $tags.tag_name.Replace('v','')
+	if($tags.prerelease -match "true") {
+		$date = $tags.published_at.ToString("yyyyMMdd")
+		$version = "$version-pre$($date)"
+	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update
