@@ -21,7 +21,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "electron-"} | Where-Object {$_ -match ".exe$"}
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "electron-"} | Where-Object {$_ -match ".zip$"}
 	$url32 = $urls | Where-Object {$_ -match 'win32-ia32.zip'}
 	$url64 = $urls | Where-Object {$_ -match 'win32-x64.zip'}
 	Write-Output 'Checking version'
