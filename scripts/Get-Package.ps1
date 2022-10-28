@@ -59,6 +59,9 @@ param(
             $icon = "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
             Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile $icon
         }
+        if($nuspec.package.metadata.Version) {
+            $nuspec.package.metadata.Version = "0.0"
+        }
         $packagesourceurl = $($nuspec.package.metadata.packageSourceUrl).split('/')[3]
         if($nuspec.package.metadata.packageSourceUrl -and $nuspec.package.metadata.packageSourceUrl -match $packageName) {
             if($nuspec.package.metadata.packageSourceUrl -match 'github' -or $nuspec.package.metadata.packageSourceUrl -match 'gitlab') {
@@ -70,6 +73,13 @@ param(
                 }
             }
         }
+        $encoding = New-Object System.Text.UTF8Encoding($false)
+        $NuspecPath = "$folder\$packageName\$packageName.nuspec"
+        $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
+        $nuspec = $nuspec -replace '<version>>.*',"<version>0.0</version>"
+        $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
+        [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
+
         $toadd = (get-childitem -path "$folder\$packageName").FullName
         foreach ($file in $toadd) {
             git add $file
