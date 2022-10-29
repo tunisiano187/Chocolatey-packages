@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate { 
   Get-RemoteFiles -Purge -NoSuffix
-  $file = (Get-ChildItem -Path .\tools -Exclude "*.txt" -Exclude "*.ps1" | Select-Object -First 1).FullName
+  $file = (Get-ChildItem -Path .\tools -Exclude *.txt,*.ps1 | Select-Object -First 1).FullName
   if($file.count -gt 0) {
     Install-Module VirusTotalAnalyzer -Force
     Import-Module VirusTotalAnalyzer -NoClobber -Force
