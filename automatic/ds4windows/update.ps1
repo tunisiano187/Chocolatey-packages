@@ -23,7 +23,8 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
   $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-  $url = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+  $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+  $url = $urls | where {$_ -match 'x64'}
   $version = $tags.tag_name.Replace('v','')
   if($tags.prerelease -match "true") {
       $date = $tags.published_at.ToString("yyyyMMdd")
