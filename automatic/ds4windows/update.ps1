@@ -26,7 +26,7 @@ function global:au_BeforeUpdate {
     Import-Module VirusTotalAnalyzer -NoClobber -Force
     $vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $file).data.attributes.reputation
     if ( $vt -gt 5 ) {
-          Write-Host "Ignoring package due to virus total results - $vt positives"
+          Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
           return 'ignore'
     }
   }
