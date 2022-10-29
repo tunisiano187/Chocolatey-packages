@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate {
     Install-Module VirusTotalAnalyzer -Force
     Import-Module VirusTotalAnalyzer -NoClobber -Force
-    $vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $Latest.URL32).data.attributes.reputation
+    $vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
     if ( $vt -gt 5 ) {
         Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
         return 'ignore'
