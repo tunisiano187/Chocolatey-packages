@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>0.0</version>
+    <version>3.1.9</version>
     <title>DS4Windows</title>
     <authors>Travis Nickles, Jays2Kings</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,8 @@
     <projectUrl>https://github.com/Ryochan7/DS4Windows</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f3549c4cf2b68d976e49053568d026f3f58d0529/icons/ds4windows.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description># DS4Windows
+    <description><![CDATA[
+## DS4Windows
 
 Like those other DS4 tools, but sexier.
 
@@ -21,7 +22,7 @@ DualSense, Switch Pro, and JoyCon controllers (**first party hardware only**).
 
 ![DS4Windows Preview](https://raw.githubusercontent.com/Ryochan7/DS4Windows/jay/ds4winwpf_screen_20200412.png)
 
-## Requirements
+### Requirements
 
 - Windows 10 or newer (Thanks Microsoft)
 - [Microsoft .NET 6.0 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime)
@@ -42,11 +43,13 @@ using Microsoft BT stack. Toshiba's adapters currently do not work.
 - Disable **PlayStation Configuration Support** and
 **Xbox Configuration Support** options in Steam
 
-## Maintainer's Note
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>DS4Windows is a portable program that allows you to get the best experience while using a DualShock 4 on your PC. By emulating a Xbox 360 controller, many more games are accessible.</summary>
-    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.1.4</releaseNotes>
+    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/3.1.9</releaseNotes>
     <copyright>Copyright (c) 2019 Travis Nickles</copyright>
     <tags>ds4windows ps4 dualshock controller emulator foss</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ds4windows</packageSourceUrl>
