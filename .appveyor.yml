@@ -75,7 +75,7 @@ install:
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
       'chocolatey' = $chocoVersion
-      'wormies-au-helpers' = '0.3.3'
+      'wormies-au-helpers' = '0.4.1'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
@@ -97,6 +97,7 @@ install:
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     install-module Wormies-AU-Helpers
+    Update-module Wormies-AU-Helpers
     Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force
     Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
