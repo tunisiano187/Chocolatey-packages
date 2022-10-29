@@ -69,14 +69,35 @@ param(
                     $readmelink = (Find-GitHubCode -user $packagesourceurl -Extension 'md' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'readme'}).html_url.replace('blob','raw')
                     Invoke-WebRequest -Uri $readmelink -OutFile "$folder\$packageName\ReadMe.md" -ErrorAction SilentlyContinue
                 } catch {
-                    Write-Output "No Readme fount in $packagesourceurl"
+                    Write-Output "No Readme found in $packagesourceurl"
+                }
+                try {
+                    $LICENSElink = (Find-GitHubCode -user $packagesourceurl -Extension 'txt' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'LICENSE'}).html_url.replace('blob','raw')
+                    Invoke-WebRequest -Uri $LICENSElink -OutFile "$folder\$packageName\tools\LICENSE.txt" -ErrorAction SilentlyContinue
+                } catch {
+                    Write-Output "No LICENSE found in $packagesourceurl"
+                }
+                try {
+                    $VERIFICATIONlink = (Find-GitHubCode -user $packagesourceurl -Extension 'txt' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'VERIFICATION'}).html_url.replace('blob','raw')
+                    Invoke-WebRequest -Uri $VERIFICATIONlink -OutFile "$folder\$packageName\tools\VERIFICATION.txt" -ErrorAction SilentlyContinue
+                } catch {
+                    Write-Output "No VERIFICATION found in $packagesourceurl"
+                }
+                try {
+                    $updatelink = (Find-GitHubCode -user $packagesourceurl -Extension 'ps1' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'update'}).html_url.replace('blob','raw')
+                    $updatefile="$folder\$packageName\update.ps1.bak"
+                    Invoke-WebRequest -Uri $updatelink -OutFile $updatefile -ErrorAction SilentlyContinue
+                    (Get-Content $updatefile) -replace "legal","tools" | Set-Content $updatefile
+
+                } catch {
+                    Write-Output "No update.ps1 found in $packagesourceurl"
                 }
             }
         }
         $encoding = New-Object System.Text.UTF8Encoding($false)
         $NuspecPath = "$folder\$packageName\$packageName.nuspec"
         $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
-        $nuspec = $nuspec -replace '<version>>.*',"<version>0.0</version>"
+        $nuspec = $nuspec -replace '<version>.*',"<version>0.0</version>"
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
         [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
 
