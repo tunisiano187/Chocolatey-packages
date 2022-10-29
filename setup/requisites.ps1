@@ -7,11 +7,11 @@ Write-Output "IE first run welcome screen has been disabled."
 Write-Output 'Setting Windows Update service to Manual startup type.'
 Set-Service -Name wuauserv -StartupType Manual
 
-Write-Output "Set DNS to cloudflare"
+Write-Output "Set DNS to Privacy"
 
 $DNSAddresses = @(
+  ([IPAddress]'9.9.9.9').IPAddressToString
   ([IPAddress]'1.1.1.1').IPAddressToString
-  ([IPAddress]'1.0.0.1').IPAddressToString
   ([IPAddress]'2606:4700:4700::1111').IPAddressToString
   ([IPAddress]'2606:4700:4700::1001').IPAddressToString
 )
