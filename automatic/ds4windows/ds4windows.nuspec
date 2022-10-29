@@ -49,7 +49,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
     <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.1.4</releaseNotes>
     <copyright>Copyright (c) 2019 Travis Nickles</copyright>
     <tags>ds4windows ps4 dualshock controller emulator foss</tags>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ds4windows</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ds4windows</packageSourceUrl>
     <docsUrl>http://ds4windows.com/</docsUrl>
     <bugTrackerUrl>https://github.com/Ryochan7/DS4Windows/issues</bugTrackerUrl>
     <dependencies>
