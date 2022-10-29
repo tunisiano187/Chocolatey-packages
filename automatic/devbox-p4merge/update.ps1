@@ -8,16 +8,7 @@ function global:au_SearchReplace {
 		"$($Latest.PackageName).nuspec" = @{
             "(\<dependency .+?`"p4merge`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
-		"tools\VERIFICATION.txt"      = @{
-			"(?i)(license:).*" 					= "`${1} $($Latest.License)"
-		}
 	}
-}
-
-
-function global:au_BeforeUpdate() {
-	Write-Output "Downloading $($Latest.Version) installer file"
-	Get-RemoteFiles -Purge -NoSuffix
 }
 
 function global:au_GetLatest {

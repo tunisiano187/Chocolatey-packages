@@ -13,6 +13,15 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	Import-Module VirusTotalAnalyzer -NoClobber -Force
+	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
+	if ( $vt -gt 5 ) {
+	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
+	  return 'ignore'
+	}
+}
+
 function global:au_GetLatest {
 	$url32 = "https:$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'PCPE'} | Where-Object {$_.href -notmatch 'pdf'} | Where-Object {$_.href -match 'files'})[0].href)"
 	$version = ($url32.Split('=|&') | Where-Object {$_ -match '.exe'}).replace('PCPE_','').replace('.exe','')

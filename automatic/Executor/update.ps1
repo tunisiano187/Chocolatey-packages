@@ -6,6 +6,12 @@ $releases = "$base/downloadlinks.html"
 
 function global:au_BeforeUpdate {
   $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+  Import-Module VirusTotalAnalyzer -NoClobber -Force
+  $vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
+  if ( $vt -gt 5 ) {
+	Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
+	return 'ignore'
+  }
 }
 
 function global:au_SearchReplace {

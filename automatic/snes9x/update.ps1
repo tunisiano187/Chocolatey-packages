@@ -16,6 +16,15 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	Import-Module VirusTotalAnalyzer -NoClobber -Force
+	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
+	if ( $vt -gt 5 ) {
+	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
+	  return 'ignore'
+	}
+}
+
 function global:au_GetLatest {
 	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'snes9x-'} | Where-Object {$_ -match 'win32'} | Where-Object {$_ -match '.zip'} | Group-Object -Property href | select -First 2).Name)
 	$version=$installer[0].split('-')[1]

@@ -1,6 +1,0 @@
-VERIFICATION
-Verification is intended to assist the Chocolatey moderators and community
-in verifying that this package's contents are trustworthy.
-
-The included 'LICENSE.txt' file have been obtained from:
-license: https://cdist2.perforce.com/perforce/r14.1/doc/user/p4v_license.txt

@@ -16,6 +16,15 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	Import-Module VirusTotalAnalyzer -NoClobber -Force
+	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
+	if ( $vt -gt 5 ) {
+	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
+	  return 'ignore'
+	}
+}
+
 function global:au_GetLatest {
 	$url32 = "https://www.mobatek.net$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Sort-Object | Where-Object {$_.href -notmatch 'Sources'}).href)"
 	$version=$url32.split('/')[-1].split('v')[-1].replace('.exe','')
