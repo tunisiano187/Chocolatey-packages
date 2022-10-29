@@ -42,3 +42,4 @@
 | avgantivirusfree | 
 | vigembus | 
 | android-messages-desktop | 
+| ds4windows | 
