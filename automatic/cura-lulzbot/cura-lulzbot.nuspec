@@ -5,7 +5,7 @@
     <version>3.6.37</version>
     <title>Cura LulzBot Edition (Install)</title>
     <authors>Aleph Objects Inc., David Braam</authors>
-    <owners>LudicrousByte</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.lulzbot.com/cura</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1936eb01583d69fcbbb71e07e7c67ef1bc9a6e80/icons/cura-lulzbot.png</iconUrl>
