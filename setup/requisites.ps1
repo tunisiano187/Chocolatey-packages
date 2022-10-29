@@ -20,3 +20,5 @@ $(Get-DnsClientServerAddress).InterfaceIndex | Get-Unique | Sort-Object | ForEac
         #Set-DnsClientServerAddress -InterfaceIndex $_ -ServerAddresses $DNSAddresses
 }
 $(Get-DnsClientServerAddress).ServerAddresses
+
+Install-Module VirusTotalAnalyzer -Forces

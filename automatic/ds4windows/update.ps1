@@ -18,7 +18,15 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
+function global:au_BeforeUpdate { 
+  Get-RemoteFiles -Purge -NoSuffix
+  $file = (Get-ChildItem -Path .\tools -Filter "*.zip" | Select-Object -First 1).FullName
+  $vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $file).data.attributes.reputation
+  if ( $vt -gt 5 ) {
+          Write-Host "Ignoring package due to virus total results - $vt positives"
+          return 'ignore'
+   }
+}
 
 
 function global:au_GetLatest {
