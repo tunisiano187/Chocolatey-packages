@@ -8,7 +8,7 @@
     <owners>jtcmedia</owners>
     <licenseUrl>https://github.com/Ryochan7/DS4Windows/blob/jay/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/Ryochan7/DS4Windows</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/af4e67282ffe71a9bb9f9d3a8af87d028eb57e0a/icons/ds4windows.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f3549c4cf2b68d976e49053568d026f3f58d0529/icons/ds4windows.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description># DS4Windows
 
