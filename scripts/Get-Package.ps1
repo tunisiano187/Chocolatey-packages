@@ -109,6 +109,7 @@ param(
         foreach ($file in $toadd) {
             git add $file
         }
+        (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
         git commit -m "Package download $packageName"
         try {
             git pull
