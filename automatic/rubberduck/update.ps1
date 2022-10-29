@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/rubberduck-vba/Rubberduck/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
@@ -14,15 +16,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tags = Invoke-WebRequest $releases -UseBasicParsing | ConvertFrom-Json
-	$url32 = ($tags[0].assets | Where-Object {$_.browser_download_url -match "Rubberduck.Setup"} | Where-Object {$_.browser_download_url -match ".exe$"}).browser_download_url
-    $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    foreach ($tag in $tags) {
-        if($tag.tag_name -match $version) {
-            if($tag.prerelease -eq $true) {
-                $version = $url32.Split('/')[-1].replace('.exe','').split('u')[-1].replace('p.','')
-            }
-        }
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
+    $version = $tags.tag_name.Replace('v','')
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
     }
 
     return @{ URL32 = $url32; Version = $version }

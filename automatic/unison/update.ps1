@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://github.com/bcpierce00/unison/releases/latest"
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
@@ -14,10 +16,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url32 = "https://github.com$((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'windows'} | Where-Object {$_ -match '.zip'}).href)[0])"
-
-	$version = $url32.split('/')[-2].replace('v','').Replace('_','-')
-
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+    $url32 = $urls | Where-Object {$_ -match 'windows'} | Select-Object -Last 1
+    $version = $tags.tag_name.Replace('v','')
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
+    }
+    
     $Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }
