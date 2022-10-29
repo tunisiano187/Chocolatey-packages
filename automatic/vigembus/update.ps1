@@ -19,7 +19,7 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { 
+function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
   Import-Module VirusTotalAnalyzer -NoClobber -Force
 	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation

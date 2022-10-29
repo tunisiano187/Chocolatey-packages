@@ -22,12 +22,12 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    
+
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-	
-    $version = $url.Split('/')[-1].split('-') | where {$_ -NotMatch 'Win'} | where {$_ -match '\.'}
-	
+
+    $version = $url.Split('/')[-1].split('-') | Where-Object {$_ -NotMatch 'Win'} | Where-Object {$_ -match '\.'}
+
     @{
         URL = $url
         Version = $version
