@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/ashaduri/gsmartcontrol/releases/latest'
@@ -28,7 +28,7 @@ function global:au_GetLatest {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	}
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
