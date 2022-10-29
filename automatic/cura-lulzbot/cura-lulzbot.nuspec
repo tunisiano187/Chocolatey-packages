@@ -18,7 +18,7 @@ The latest version features an updated user interface, more slicing options, an 
     <copyright>Copyleft 2018 Aleph Objects, Inc.</copyright>
     <tags>cura-lulzbot cura lulzbot foss admin 3d printing</tags>
     <projectSourceUrl>https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot</projectSourceUrl>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/cura-lulzbot</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cura-lulzbot</packageSourceUrl>
     <docsUrl>https://www.lulzbot.com/cura-lulzbot-edition-quick-start-guide</docsUrl>
     <bugTrackerUrl>https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/issues</bugTrackerUrl>
   </metadata>
