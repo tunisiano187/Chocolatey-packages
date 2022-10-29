@@ -9,7 +9,7 @@ function global:au_SearchReplace {
         "$($Latest.PackageName).nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
-      
+
         ".\tools\VERIFICATION.txt" = @{
           "(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
           "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL64)"
@@ -18,7 +18,7 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { 
+function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
   $file = (Get-ChildItem -Path .\tools -Exclude *.txt,*.ps1 | Select-Object -First 1).FullName
   if($file.count -gt 0) {
@@ -36,7 +36,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
   $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
   $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
-  $url = $urls | where {$_ -match 'x64'}
+  $url = $urls | Where-Object {$_ -match 'x64'}
   $version = $tags.tag_name.Replace('v','')
   if($tags.prerelease -match "true") {
       $date = $tags.published_at.ToString("yyyyMMdd")
