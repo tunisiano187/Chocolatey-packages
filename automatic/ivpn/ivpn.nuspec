@@ -13,4 +13,7 @@
     <copyright>2018 IVPN.net</copyright>
     <tags>ivpn vpn network internet openvpn</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

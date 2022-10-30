@@ -102,6 +102,13 @@ param(
         [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
 
         (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
+        if($output -notmatch '<files>') {
+            (Get-Content $NuspecPath) -replace "</metadata>", '</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>' | Set-Content $NuspecPath
+        }
+        (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
         
         $toadd = (get-childitem -path "$folder\$packageName").FullName
         foreach ($file in $toadd) {

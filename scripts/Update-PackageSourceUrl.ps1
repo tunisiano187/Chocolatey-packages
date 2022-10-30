@@ -102,12 +102,6 @@ function Set-NewPackageSourceUrl{
   $url = "https://github.com/${GithubRepository}/tree/master/$PackagesDirectory/$PackageName"
 
   $nuspec = $nuspec -replace '<packageSourceUrl>.*',"<packageSourceUrl>$url</packageSourceUrl>"
-  if($ps1 -notmatch '<files>') {
-    $nuspec = $nuspec -replace "</metadata>", '</metadata>
-    <files>
-      <file src="tools\**" target="tools" />
-    </files>'
-  }
 
   $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
   if ($oldContent -eq $output) {
