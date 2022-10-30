@@ -27,7 +27,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo
 	$url32 = ($tags[0].body.Split('
-') | where {$_ -match '.exe'}).split('(|)')[-2]
+') | Where-Object {$_ -match '.exe'}).split('(|)')[-2]
 	$version = $tags[0].tag_name -split 'v|/' | select-object -Last 1
 	if($tags[0].prerelease -match "true") {
 		$date = $tags[0].published_at.ToString("yyyyMMdd")

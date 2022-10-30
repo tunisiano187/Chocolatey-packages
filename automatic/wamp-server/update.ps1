@@ -38,5 +38,5 @@ function global:au_GetLatest {
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
 }
-cup -y KB2919355
+choco update -y KB2919355
 update -NoCheckChocoVersion
