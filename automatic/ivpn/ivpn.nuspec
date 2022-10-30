@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>IVPN is a premium class VPN service. This installs their Windows Sorftware under the default directory %systemdrive%\Programs\IVPN\ using the NSIS Silent Switch /S. For Pricing, check https://www.ivpn.net/pricing. The software itself is free, but in order to use you have to subscribe to their VPN service.</description>
     <summary>IVPN encrypts your internet activity, shielding you from hackers, ISP's and everyone else who has no business recording what you haven't chosen to share.</summary>
-    <copyright>2018 IVPN.net</copyright>
+    <copyright>IVPN.net</copyright>
     <tags>ivpn vpn network internet openvpn</tags>
   </metadata>
   <files>
