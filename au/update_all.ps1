@@ -64,7 +64,7 @@ $Options = [ordered]@{
 	#	commitStrategy	= 'atomictag'
     #}
     Issues = @{
-        $create = $true
+        BaseBranch = "master"
     }
 
     RunInfo = @{
