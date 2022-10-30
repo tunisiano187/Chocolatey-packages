@@ -30,7 +30,5 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
       <dependency id="P4Merge" version="[2022.1.1]" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files></files>
 </package>
