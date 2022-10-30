@@ -17,3 +17,4 @@ if($search) {
         . $script $search.Tolower()
     }
 }
+if((git checkout | Where-Object {$_ -match ' ahead '}).count -gt 0) { git push }
