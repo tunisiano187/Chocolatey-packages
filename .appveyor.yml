@@ -95,7 +95,7 @@ install:
 - git --version
 - choco --version
 - ps: |
-    git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+    git clone -q https://github.com/tunisiano187/chocolatey-au.git $Env:TEMP/au
     install-module Wormies-AU-Helpers
     Update-module Wormies-AU-Helpers
     Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force

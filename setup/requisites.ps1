@@ -22,4 +22,4 @@ Set-Service -Name wuauserv -StartupType Manual
 #$(Get-DnsClientServerAddress).ServerAddresses
 
 Install-Module VirusTotalAnalyzer -Force
-. "$PSScriptRoot\au_setup.ps1"
+#. "$PSScriptRoot\au_setup.ps1"
