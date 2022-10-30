@@ -101,6 +101,8 @@ param(
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
         [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
 
+        (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
+        
         $toadd = (get-childitem -path "$folder\$packageName").FullName
         foreach ($file in $toadd) {
             git add $file
@@ -109,7 +111,6 @@ param(
         foreach ($file in $toadd) {
             git add $file
         }
-        (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
         git commit -m "Package download $packageName"
         try {
             git pull
