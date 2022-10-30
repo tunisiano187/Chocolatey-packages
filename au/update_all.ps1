@@ -63,6 +63,9 @@ $Options = [ordered]@{
 	#	Force			= $True
 	#	commitStrategy	= 'atomictag'
     #}
+    Issues = @{
+        $create = $true
+    }
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
