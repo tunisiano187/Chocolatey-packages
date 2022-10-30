@@ -23,7 +23,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	cup -y keepass
+	choco update -y keepass
 	$url32 = "https://sourceforge.net/projects/webautotype/files/latest/download"
 	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match "files\/v"}).href[0].split('/')[-2].replace('v','')
 	if($version -eq '6.8.1') {

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://www.filejuggler.com/download/filejuggler.exe'
@@ -23,7 +23,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	cup -y autohotkey
+	choco update -y autohotkey
 	Write-Output 'Check Folder'
 	$File = "$($env:Temp)\Filejuggler.exe"
 	Write-Output 'Download'
