@@ -7,18 +7,18 @@ Write-Output "IE first run welcome screen has been disabled."
 Write-Output 'Setting Windows Update service to Manual startup type.'
 Set-Service -Name wuauserv -StartupType Manual
 
-Write-Output "Set DNS to Privacy"
+#Write-Output "Set DNS to Privacy"
+#
+#$DNSAddresses = @(
+#  ([IPAddress]'9.9.9.9').IPAddressToString
+#  ([IPAddress]'1.1.1.1').IPAddressToString
+#  ([IPAddress]'2606:4700:4700::1111').IPAddressToString
+#  ([IPAddress]'2606:4700:4700::1001').IPAddressToString
+#)
 
-$DNSAddresses = @(
-  ([IPAddress]'9.9.9.9').IPAddressToString
-  ([IPAddress]'1.1.1.1').IPAddressToString
-  ([IPAddress]'2606:4700:4700::1111').IPAddressToString
-  ([IPAddress]'2606:4700:4700::1001').IPAddressToString
-)
-
-$(Get-DnsClientServerAddress).InterfaceIndex | Get-Unique | Sort-Object | ForEach-Object{
-        #Set-DnsClientServerAddress -InterfaceIndex $_ -ServerAddresses $DNSAddresses
-}
-$(Get-DnsClientServerAddress).ServerAddresses
+#$(Get-DnsClientServerAddress).InterfaceIndex | Get-Unique | Sort-Object | ForEach-Object{
+#        #Set-DnsClientServerAddress -InterfaceIndex $_ -ServerAddresses $DNSAddresses
+#}
+#$(Get-DnsClientServerAddress).ServerAddresses
 
 Install-Module VirusTotalAnalyzer -Force

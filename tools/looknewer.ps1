@@ -123,3 +123,6 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
         git push origin master
     }
 }
+if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) { 
+    git push origin master
+}
