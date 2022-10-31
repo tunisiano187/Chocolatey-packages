@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 		}
 		"$($Latest.PackageName).nuspec" = @{
 			"(\<releaseNotes\>).*?(\</releaseNotes\>)" 	= "`${1}$($Latest.ReleaseNotes)`$2"
-			"(\<copyright>\>IVPN.net).*?(\</releaseNotes\>)"	= "`${1}$((Get-Date).year)`$2"
+			"(\<copyright>\>IVPN.net).*?(\</copyright\>)"	= "`${1}$((Get-Date).year)`$2"
 		}
 	}
 }
