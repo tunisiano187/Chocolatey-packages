@@ -1,4 +1,3 @@
-Devbox-ConEmu 0.0.0.20130422 - Possibly broken
 EpsDevTools.Web 0.4.1 - Possibly broken
 cksdev11 1.1.0.0 - Possibly broken
 ProxySwitcher 3.6.1.0 - Possibly broken
