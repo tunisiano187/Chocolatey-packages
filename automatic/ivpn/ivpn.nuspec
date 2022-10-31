@@ -2,14 +2,23 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ivpn</id>
-    <version>0.0</version>
+    <version>3.9.43</version>
     <title>ivpn (Install)</title>
     <authors>IVPN.net</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://ivpn.net</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ivpn</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>IVPN is a premium class VPN service. This installs their Windows Sorftware under the default directory %systemdrive%\Programs\IVPN\ using the NSIS Silent Switch /S. For Pricing, check https://www.ivpn.net/pricing. The software itself is free, but in order to use you have to subscribe to their VPN service.</description>
+    <description><![CDATA[## ivpn
+IVPN for Desktop is the official IVPN app for desktop platforms. Some of the features include: multiple protocols (OpenVPN, WireGuard), Kill-switch, Multi-Hop, Trusted Networks, AntiTracker, Custom DNS, Dark mode, and more.
+IVPN Client app is distributed on the official site www.ivpn.net.
+
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>IVPN encrypts your internet activity, shielding you from hackers, ISP's and everyone else who has no business recording what you haven't chosen to share.</summary>
     <copyright>IVPN.net</copyright>
     <tags>ivpn vpn network internet openvpn</tags>
