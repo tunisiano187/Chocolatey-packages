@@ -81,7 +81,7 @@ $Options = [ordered]@{
                 Port        = $Env:mail_port
                 EnableSsl   = $True
                 Attachments = "$PSScriptRoot\update_info.xml"
-                UserMessage = ''
+                UserMessage = "[Force Test](https://gist.github.com/$Env:gist_id)"
                 SendAlways  = $false                        #Send notifications every time
              }
            } else {}
