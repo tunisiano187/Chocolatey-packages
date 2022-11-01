@@ -9,7 +9,7 @@
         <licenseUrl>http://cksdev.codeplex.com/license</licenseUrl>
         <projectUrl>http://cksdev.codeplex.com/</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <packageSourceUrl></packageSourceUrl>
+        <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cksdev11</packageSourceUrl>
         <description>The current 1.1 release includes the following features:
 Improvements to Quick Deploy - Performance improvements phase one and some minor defect fixes in GACUtil calls.
 Existing VS2010 SPI Providers - Projects with existing CKSDev SPIs now supported.
