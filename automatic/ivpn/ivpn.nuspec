@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ivpn</id>
-    <version>3.9.43</version>
+    <version>3.9.42</version>
     <title>ivpn (Install)</title>
     <authors>IVPN.net</authors>
     <owners>tunisiano</owners>
@@ -25,6 +25,9 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <summary>IVPN encrypts your internet activity, shielding you from hackers, ISP's and everyone else who has no business recording what you haven't chosen to share.</summary>
     <copyright>IVPN.net 2022</copyright>
     <tags>ivpn vpn network internet openvpn</tags>
+    <dependencies>
+      <dependency id="vcredist140" version="14.32.31332" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
