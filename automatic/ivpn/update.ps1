@@ -44,7 +44,7 @@ function global:au_GetLatest {
 	# Cert download
 	$installer = Join-Path $env:TEMP "ivpn.exe"
 	$folderextract = Join-Path $env:TEMP "ivpn"
-	New-Item -Path $folderextract -ItemType Directory
+	New-Item -Path $folderextract -ItemType Directory -Force
 	Invoke-WebRequest -Uri $url32 -OutFile $installer
 	$tools=$(get-childItem -Path "." -Directory -Include "tools").FullName
 	Set-Location $folderextract
