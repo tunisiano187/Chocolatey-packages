@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>cksdev11</id>
+        <version>0.0</version>
+        <title>CKS Dev 11</title>
+        <authors>Wes Hackett (CKSDev Team)</authors>
+        <owners>Max Melcher</owners>
+        <licenseUrl>http://cksdev.codeplex.com/license</licenseUrl>
+        <projectUrl>http://cksdev.codeplex.com/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>The current 1.1 release includes the following features:
+Improvements to Quick Deploy - Performance improvements phase one and some minor defect fixes in GACUtil calls.
+Existing VS2010 SPI Providers - Projects with existing CKSDev SPIs now supported.
+SharePoint 2010 Console project template - Project template for a SharePoint 2010 console application.
+SharePoint 2013 Console project template - Project template for a SharePoint 2013 console application.</description>
+        <summary>This project extends the Visual Studio 2010 and Visual Studio 2012 SharePoint project system with advanced templates and tools.</summary>
+        <releaseNotes>CKSDev 1.1</releaseNotes>
+        <language>en-US</language>
+        <tags>SharePoint, SP2010, SP2013, chocolatey, cksdev, Visual Studio 2010, 2012</tags>
+    </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,1 @@
+Install-ChocolateyVsixPackage "CKSDEV11" http://visualstudiogallery.msdn.microsoft.com/cf1225b4-aa83-4282-b4c6-34feec8fc5ec/file/96582/3/CKS.Dev11.vsix
