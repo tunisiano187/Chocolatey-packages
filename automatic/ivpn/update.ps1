@@ -21,7 +21,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	$Output = New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
+	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
 	Start-Sleep -Seconds 60
 	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
 	if ( $vt -gt 5 ) {

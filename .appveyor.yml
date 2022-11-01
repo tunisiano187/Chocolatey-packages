@@ -179,7 +179,6 @@ build_script:
     Write-Host "Downloading next issue's package"
     scripts/Find-nextissue.ps1
     git commit -am "next issue"
-    git push origin master
     Write-Host "updating packages"
     write-host "Forced ? $forced"
     au/update_all.ps1 -ForcedPackages $forced

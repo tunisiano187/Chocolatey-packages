@@ -113,7 +113,7 @@ param(
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
         }
         (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
-        
+
         $toadd = (get-childitem -path "$folder\$packageName").FullName
         foreach ($file in $toadd) {
             git add $file

@@ -17,3 +17,5 @@ if($search) {
         . $script $search.Tolower()
     }
 }
+try { git push origin master }
+catch { "Nothing to push!" }
