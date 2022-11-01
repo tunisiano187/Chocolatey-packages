@@ -13,5 +13,7 @@ $packageArgs = @{
   checksumType  = $checksumType
   silentArgs   = '/S'
 }
+$cert = (Get-ChildItem -Include "*.crt" -Recurse).FullName
+CertUtil -AddStore TrustedPublisher ($cert);
 
 Install-ChocolateyPackage @packageArgs
