@@ -108,6 +108,10 @@ param(
     <file src="tools\**" target="tools" />
   </files>' | Set-Content $NuspecPath
         }
+        if($output -notmatch "<packageSourceUrl>") {
+            (Get-Content $NuspecPath) -replace "</owners>", '</owners>
+    <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
+        }
         (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
         
         $toadd = (get-childitem -path "$folder\$packageName").FullName
