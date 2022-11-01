@@ -83,7 +83,7 @@ install:
     }
     choco update -y chocolatey
     rm "$env:ChocolateyInstall\logs\*.log"
-    
+
     Install-Module -Name PowerShellForGitHub
     $secureString = ("$env:github_api_key" | ConvertTo-SecureString -AsPlainText -Force)
     $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
