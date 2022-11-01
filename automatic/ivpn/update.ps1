@@ -42,15 +42,13 @@ function global:au_GetLatest {
 	}
 
 	# Cert download
-	$installer = Join-Path $env:TEMP "ivpn.exe"
+	$installer = Join-Path $env:TEMP "ivpn.zip"
 	$folderextract = Join-Path $env:TEMP "ivpn"
 	New-Item -Path $folderextract -ItemType Directory -Force
 	Invoke-WebRequest -Uri $url32 -OutFile $installer
-	$tools=$(get-childItem -Path "." -Directory -Include "tools").FullName
-	Set-Location $folderextract
-	7z.exe x $installer
+	Expand-Archive -Path $installer -DestinationPath $folderextract -Force
 	$certfile = $(Get-ChildItem -Path $folderextract -Include "*.cer" -Recurse).FullName
-	$certfiledest = Join-Path $tools 'cert.cer'
+	$certfiledest = "tools\cert.cer"
 	Copy-Item $certfile $certfiledest -Force
 
 
