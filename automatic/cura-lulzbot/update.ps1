@@ -5,7 +5,7 @@ $releases = 'https://lulzbot.com/support/cura-windows'
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
+            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
@@ -13,7 +13,9 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL).data.attributes.reputation
+	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
+	Start-Sleep -Seconds 60
+	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
 	if ( $vt -gt 5 ) {
 	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
 	  return 'ignore'
@@ -29,7 +31,7 @@ function global:au_GetLatest {
     $version = $url.Split('/')[-1].split('-') | Where-Object {$_ -NotMatch 'Win'} | Where-Object {$_ -match '\.'}
 
     @{
-        URL = $url
+        URL32 = $url
         Version = $version
     }
 }
