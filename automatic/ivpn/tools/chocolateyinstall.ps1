@@ -14,6 +14,12 @@ $packageArgs = @{
   silentArgs   = '/S'
 }
 $cert = (Get-ChildItem -Include "*.crt" -Recurse).FullName
-CertUtil -AddStore TrustedPublisher ($cert);
+try {
+  CertUtil -AddStore TrustedPublisher ($cert);
+}
+catch {
+  "Cert import failed. We'll try to continue anyway"
+}
+
 
 Install-ChocolateyPackage @packageArgs
