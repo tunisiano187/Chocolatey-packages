@@ -13,12 +13,12 @@ $packageArgs = @{
   checksumType  = $checksumType
   silentArgs   = '/S'
 }
-$cert = (Get-ChildItem -Include "*.crt" -Recurse).FullName
 $OSIsServerVersion = if ([Int]3 -eq [Int](Get-CimInstance -Class Win32_OperatingSystem).ProductType) {$True} else {$False}
 if($OSIsServerVersion) {
   Write-Warning "System not supported"
   exit 0
 } else {
-  CertUtil -AddStore TrustedPublisher ($cert);
+  $cert = (Get-ChildItem -Include "*.crt" -Recurse).FullName
+    CertUtil -AddStore TrustedPublisher ($cert);
   Install-ChocolateyPackage @packageArgs
 }
