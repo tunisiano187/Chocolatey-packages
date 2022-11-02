@@ -21,9 +21,11 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
+	$filename = ($Latest.URL32).split('/')[-1]
+	$vtfiletest = Join-Path $env:TEMP $filename
+	New-VirusScan -ApiKey $env:VT_APIKEY -File $vtfiletest
 	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
+	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $vtfiletest).data.attributes.reputation
 	if ( $vt -gt 5 ) {
 	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
 	  return 'ignore'
