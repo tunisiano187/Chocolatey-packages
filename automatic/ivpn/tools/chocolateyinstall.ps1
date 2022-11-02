@@ -14,12 +14,11 @@ $packageArgs = @{
   silentArgs   = '/S'
 }
 $cert = (Get-ChildItem -Include "*.crt" -Recurse).FullName
-try {
+$OSIsServerVersion = if ([Int]3 -eq [Int](Get-CimInstance -Class Win32_OperatingSystem).ProductType) {$True} else {$False}
+if($OSIsServerVersion) {
+  Write-Warning "System not supported"
+  exit 0
+} else {
   CertUtil -AddStore TrustedPublisher ($cert);
+  Install-ChocolateyPackage @packageArgs
 }
-catch {
-  "Cert import failed. We'll try to continue anyway"
-}
-
-
-Install-ChocolateyPackage @packageArgs
