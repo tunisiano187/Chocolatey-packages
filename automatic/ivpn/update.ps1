@@ -23,6 +23,7 @@ function global:au_BeforeUpdate {
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
 	$filename = ($Latest.URL32).split('/')[-1]
 	$vtfiletest = Join-Path $env:TEMP $filename
+	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $vtfiletest
 	New-VirusScan -ApiKey $env:VT_APIKEY -File $vtfiletest
 	Start-Sleep -Seconds 60
 	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $vtfiletest).data.attributes.reputation
