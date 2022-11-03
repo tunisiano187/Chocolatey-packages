@@ -46,3 +46,4 @@
 | ivpn | 
 | cksdev11 | 
 | DeflOpt | 
+| traffic-monitor | 
