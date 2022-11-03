@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName = $env:ChocolateyPackageName
-$fileName32 = 'TrafficMonitor_V1.83_x86.zip'
-$fileName64 = 'TrafficMonitor_V1.83_x64.zip'
+$fileName32 = $(Get-ChildItem -Path $toolsDir -Include "x86.zip").FullName
+$fileName64 = $(Get-ChildItem -Path $toolsDir -Include "x64.zip").FullName
 
 
 $shortcutsPath = [Environment]::GetFolderPath("Programs")
@@ -10,8 +10,8 @@ $shortcutsPath = [Environment]::GetFolderPath("Programs")
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = "$Env:LOCALAPPDATA\"
-  file          = "$toolsDir\$fileName32"
-  file64        = "$toolsDir\$fileName64"
+  file          = "$fileName32"
+  file64        = "$fileName64"
   url64bit      = $url64
   softwareName  = 'traffic-monitor*'
 }

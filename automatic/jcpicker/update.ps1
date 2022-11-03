@@ -14,6 +14,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
+	Write-Output "Downloading jcpicker $($Latest.Version) file"
+	Get-RemoteFiles -Purge -NoSuffix
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
 	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
 	Start-Sleep -Seconds 60
@@ -36,10 +38,5 @@ function global:au_GetLatest {
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
-
-function global:au_BeforeUpdate() {
-	Write-Output "Downloading jcpicker $($Latest.Version) file"
-	Get-RemoteFiles -Purge -NoSuffix
- }
 
  update -ChecksumFor none

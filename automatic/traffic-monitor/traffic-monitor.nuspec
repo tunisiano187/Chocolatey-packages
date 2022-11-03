@@ -22,9 +22,7 @@
 - Historical traffic statistics.</description>
     <summary>TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.</summary>
     <releaseNotes>https://github.com/zhongyang219/TrafficMonitor/releases</releaseNotes>
-    <tags>traffic-monitor</tags>
-    <projectSourceUrl>https://github.com/zhongyang219/TrafficMonitor</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/traffic-monitor</packageSourceUrl>
+    <tags>foss productivity network traffic monitor</tags>
     <docsUrl>https://github.com/zhongyang219/TrafficMonitor/blob/master/README_en-us.md</docsUrl>
     <bugTrackerUrl>https://github.com/zhongyang219/TrafficMonitor/issues</bugTrackerUrl>
   </metadata>
