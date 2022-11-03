@@ -10,7 +10,7 @@ function global:au_SearchReplace {
 		"tools\VERIFICATION.txt" = @{
 			"(^32-Bit\s+:).*"      		= "`${1} $($Latest.URL32)"
 			"(^checksum32\s+:).*" 		= "`${1} $($Latest.Checksum32)"
-			"(^checksum type\s+:).*" 	= "`${1} $($Latest.ChecksumType32)"
+			"(^checksum_type\s+:).*" 	= "`${1} $($Latest.ChecksumType32)"
 			"(^64-Bit\s+:).*"      		= "`${1} $($Latest.URL32)"
 			"(^checksum64\s+:).*" 		= "`${1} $($Latest.Checksum32)"
 		}
