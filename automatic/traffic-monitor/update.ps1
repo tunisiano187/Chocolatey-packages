@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 import-module au
 $releases = 'https://api.github.com/repos/zhongyang219/TrafficMonitor/releases/latest'
@@ -53,7 +53,7 @@ function global:au_GetLatest {
         }
     }
 	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/LICENSE" -OutFile ".\tools\LICENSE.txt"
-    
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
