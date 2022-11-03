@@ -8,11 +8,19 @@ $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 function global:au_SearchReplace {
 	@{
 		"tools\VERIFICATION.txt" = @{
-			"(^32-Bit\s+:).*"      		= "`${1} $($Latest.URL32)"
-			"(^checksum32\s+:).*" 		= "`${1} $($Latest.Checksum32)"
-			"(^checksum_type\s+:).*" 	= "`${1} $($Latest.ChecksumType32)"
-			"(^64-Bit\s+:).*"      		= "`${1} $($Latest.URL32)"
-			"(^checksum64\s+:).*" 		= "`${1} $($Latest.Checksum32)"
+			"(32-Bit\s+:).*"  			= "`${1} $($Latest.URL32)"
+			"(checksum32\s+:).*" 		= "`${1} $($Latest.Checksum32)"
+			"(checksum_type\s+:).*" 	= "`${1} $($Latest.ChecksumType32)"
+			"(64-Bit\s+:).*"      		= "`${1} $($Latest.URL64)"
+			"(checksum64\s+:).*" 		= "`${1} $($Latest.Checksum64)"
+		}
+		"tools\chocolateyinstall.ps1" = @{
+			"(^[$]url32\s*=\s*)('.*')"      	= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum32\s*=\s*)('.*')" 	= "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType32\s*=\s*)('.*')"	= "`$1'$($Latest.checksumType32)'"
+			"(^[$]url64\s*=\s*)('.*')"      	= "`$1'$($Latest.URL64)'"
+			"(^[$]checksum64\s*=\s*)('.*')" 	= "`$1'$($Latest.Checksum64)'"
+			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.checksumType64)'"
 		}
 	}
 }
@@ -20,8 +28,8 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate {
 	Get-RemoteFiles -Purge -NoSuffix
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	$tempfile32 = New-TemporaryFile.Fullname.Replace('.tmp','.exe')
-	$tempfile64 = New-TemporaryFile.Fullname.Replace('.tmp','.exe')
+	$tempfile32 = $(New-TemporaryFile).Fullname.Replace('.tmp','.exe')
+	$tempfile64 = $(New-TemporaryFile).Fullname.Replace('.tmp','.exe')
 	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $tempfile32
 	Invoke-WebRequest -Uri $Latest.URL64 -OutFile $tempfile64
 	New-VirusScan -ApiKey $env:VT_APIKEY -File $tempfile32
