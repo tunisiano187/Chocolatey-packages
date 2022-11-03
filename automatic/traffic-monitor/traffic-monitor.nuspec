@@ -6,7 +6,7 @@
     <title>Traffic Monitor</title>
     <authors>zhongyang219</authors>
     <owners>Yato</owners>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/traffic-monitor</packageSourceUrl>
     <licenseUrl>https://github.com/zhongyang219/TrafficMonitor/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/zhongyang219/TrafficMonitor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -24,7 +24,7 @@
     <releaseNotes>https://github.com/zhongyang219/TrafficMonitor/releases</releaseNotes>
     <tags>traffic-monitor</tags>
     <projectSourceUrl>https://github.com/zhongyang219/TrafficMonitor</projectSourceUrl>
-    <packageSourceUrl>https://github.com/iYato/chocolatey-packages/tree/master/traffic-monitor</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/traffic-monitor</packageSourceUrl>
     <docsUrl>https://github.com/zhongyang219/TrafficMonitor/blob/master/README_en-us.md</docsUrl>
     <bugTrackerUrl>https://github.com/zhongyang219/TrafficMonitor/issues</bugTrackerUrl>
   </metadata>
