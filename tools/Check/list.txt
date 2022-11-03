@@ -1,4 +1,3 @@
-ChocolateyDeploymentUtils 1.0.3 - Possibly broken
 PowerGUIVSX 1.6.1.0 - Possibly broken
 ntstrace 1.0.1.1 - Possibly broken
 DeflOpt 2.0.7 - Possibly broken
