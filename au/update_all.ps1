@@ -64,8 +64,8 @@ $Options = [ordered]@{
 	#	commitStrategy	= 'atomictag'
     #}
     Issues = @{
-        ApiKey      = $Env:github_api_key                   #Your github api key
-        BaseBranch = "master"
+        ApiToken    = $Env:github_api_key                   #Your github api key
+        BaseBranch  = "master"
     }
 
     RunInfo = @{
