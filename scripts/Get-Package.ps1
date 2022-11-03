@@ -94,10 +94,12 @@ param(
                 }
             }
         }
-        $encoding = New-Object System.Text.UTF8Encoding($false)
-        $NuspecPath = "$folder\$packageName\$packageName.nuspec"
-        $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
-        $nuspec = $nuspec -replace '<version>.*',"<version>0.0</version>"
+        if(!$nuspec.package.metadata.packageSourceUrl) {
+            $nuspec.package.metadata.CreateElement("packageSourceUrl")
+        }
+        if(!$nuspec.package.files) {
+            $nuspec.package.CreateElement("files")
+        }
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
         [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
 
