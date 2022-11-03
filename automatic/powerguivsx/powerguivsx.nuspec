@@ -6,7 +6,7 @@
     <title>PowerGUI Visual Studio Extension</title>
     <authors>Adam Driscoll</authors>
     <owners>Anton Vishnyakov</owners>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powerguivsx</packageSourceUrl>
     <licenseUrl>http://powerguivsx.codeplex.com/license</licenseUrl>
     <projectUrl>http://powerguivsx.codeplex.com/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
