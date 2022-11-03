@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+#$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName    = $env:ChocolateyPackageName
 $url32          = 'https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.84/TrafficMonitor_V1.84_x86.zip'
 $checksum32     = ''

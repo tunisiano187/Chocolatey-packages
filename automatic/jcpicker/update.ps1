@@ -17,9 +17,9 @@ function global:au_BeforeUpdate {
 	Write-Output "Downloading jcpicker $($Latest.Version) file"
 	Get-RemoteFiles -Purge -NoSuffix
 	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
+	New-VirusScan -ApiKey $env:VT_APIKEY -File "tools\jcpicker.zip"
 	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
+	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File "tools\jcpicker.zip").data.attributes.reputation
 	if ( $vt -gt 5 ) {
 	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
 	  return 'ignore'
