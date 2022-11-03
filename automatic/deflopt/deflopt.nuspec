@@ -4,7 +4,7 @@
     <id>DeflOpt</id>
     <version>0.0</version>
     <authors>Ben Jos Walbeehm</authors>
-    <owners>zippy1981</owners>
+    <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/deflopt</packageSourceUrl>
     <projectUrl>http://www.walbeehm.com/download/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
