@@ -45,3 +45,4 @@
 | ds4windows | 
 | ivpn | 
 | cksdev11 | 
+| PowerGUIVSX | 
