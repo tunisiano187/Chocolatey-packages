@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>traffic-monitor</id>
+    <version>0.0</version>
+    <title>Traffic Monitor</title>
+    <authors>zhongyang219</authors>
+    <owners>Yato</owners>
+    <packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://github.com/zhongyang219/TrafficMonitor/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/zhongyang219/TrafficMonitor</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.
+
+# Main Features
+
+- Displays the current network transfer speed, CPU and memory usage.
+- Support automatic or manual selection of network connections if there are multiple network adapters.
+- Display the network connection details.
+- Support the window displayed in the taskbar.
+- Support for changing skin and customizing skin.
+- Historical traffic statistics.</description>
+    <summary>TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.</summary>
+    <releaseNotes>https://github.com/zhongyang219/TrafficMonitor/releases</releaseNotes>
+    <tags>traffic-monitor</tags>
+    <projectSourceUrl>https://github.com/zhongyang219/TrafficMonitor</projectSourceUrl>
+    <packageSourceUrl>https://github.com/iYato/chocolatey-packages/tree/master/traffic-monitor</packageSourceUrl>
+    <docsUrl>https://github.com/zhongyang219/TrafficMonitor/blob/master/README_en-us.md</docsUrl>
+    <bugTrackerUrl>https://github.com/zhongyang219/TrafficMonitor/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
