@@ -4,8 +4,8 @@
     <id>DeflOpt</id>
     <version>0.0</version>
     <authors>Ben Jos Walbeehm</authors>
-    <owners>zippy1981</owners>
-    <packageSourceUrl></packageSourceUrl>
+    <owners>tunisiano</owners>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/deflopt</packageSourceUrl>
     <projectUrl>http://www.walbeehm.com/download/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DeflOpt tries to reduce the size of GZIP (extensions .gz and .tgz), PNG, and ZIP files. Regardless of which programs/settings were used to create them, DeflOpt will be able to reduce these files by at least a few bytes more than 95% of the time.</description>
