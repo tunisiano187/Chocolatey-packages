@@ -94,7 +94,8 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             Write-Output "$search v$($winout) available"
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search$($version))) Needs update"
-            [string]$Description = "($search) Outdated and needs to be updated"
+            [string]$Description = "($search) Outdated and needs to be updated
+$link"
             if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
@@ -105,7 +106,8 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             Move-Item "$source-temp" $source -Force
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) Needs update"
-            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated $link"
+            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
+$link"
             if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
