@@ -11,6 +11,6 @@ The installer have been downloaded from GitHub and can be verified like this:
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum_type : 
-  checksum32  : 
-  checksum64  : 
+  checksum_type : sha256
+  checksum32  : 6B5D3091528E39F6F6F64F8725AB8BD4423EB9A6648706D4AD40BBFC7C0E3755
+  checksum64  : 3B2DF6DB0540CAD6F9D5F813D693951AA538F5A6410469737EDB11BEC2A40928
