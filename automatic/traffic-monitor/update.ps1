@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 import-module au
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 $releases = 'https://api.github.com/repos/zhongyang219/TrafficMonitor/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2

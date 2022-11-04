@@ -20,6 +20,7 @@
 .OUTPUTS
     A folder containing the main files and the icon if that's available
 #>
+$ErrorActionPreference = "SilentlyContinue"
 param(
         [Parameter(Mandatory = $true)]
         [string]$packageName,
@@ -94,23 +95,17 @@ param(
                 }
             }
         }
-        if(!$nuspec.package.metadata.packageSourceUrl) {
-            $nuspec.package.metadata.CreateElement("packageSourceUrl")
-        }
-        if(!$nuspec.package.files) {
-            $nuspec.package.CreateElement("files")
-        }
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
         [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
 
         (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
-        if($output -notmatch '<files>') {
+        if(!$nuspec.package.files) {
             (Get-Content $NuspecPath) -replace "</metadata>", '</metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>' | Set-Content $NuspecPath
         }
-        if($output -notmatch "<packageSourceUrl>") {
+        if(!$nuspec.package.metadata.packageSourceUrl) {
             (Get-Content $NuspecPath) -replace "</owners>", '</owners>
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
         }
