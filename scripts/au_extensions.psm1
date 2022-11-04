@@ -8,6 +8,7 @@ $funcs = @(
   'Set-DescriptionFromReadme'
   'Update-ChangelogVersion'
   'Update-OnETagChanged'
+  'Invoke-VirusTotalScan'
 )
 
 $funcs | % {
