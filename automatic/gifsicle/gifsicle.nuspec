@@ -5,7 +5,7 @@
     <version>1.89</version>
     <title>gifsicle (Install)</title>
     <authors>Eddie Kohler</authors>
-    <owners>kkzinger</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/kohler/gifsicle/blob/master/COPYING</licenseUrl>
     <projectUrl>https://www.lcdf.org/gifsicle/</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
