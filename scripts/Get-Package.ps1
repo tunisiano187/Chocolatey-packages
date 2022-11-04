@@ -20,7 +20,7 @@
 .OUTPUTS
     A folder containing the main files and the icon if that's available
 #>
-$ErrorActionPreference = "SilentlyContinue"
+$ErrorActionPreference = "Continue"
 param(
         [Parameter(Mandatory = $true)]
         [string]$packageName,
