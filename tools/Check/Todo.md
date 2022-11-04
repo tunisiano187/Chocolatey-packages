@@ -49,3 +49,4 @@
 | traffic-monitor | 
 | traffic-monitor | 
 | eclipse-classic-juno | 
+| gifsicle | 
