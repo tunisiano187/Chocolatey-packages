@@ -14,7 +14,7 @@
     <releaseNotes>https://www.lcdf.org/gifsicle/changes.html</releaseNotes>
     <tags>gifsicle gif</tags>
     <projectSourceUrl>https://github.com/kohler/gifsicle</projectSourceUrl>
-    <packageSourceUrl>https://github.com/kkzinger/chocolatey-packages.git</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gifsicle</packageSourceUrl>
     <docsUrl>https://www.lcdf.org/gifsicle/man.html</docsUrl>
     <bugTrackerUrl>https://github.com/kohler/gifsicle/issues</bugTrackerUrl>
   </metadata>
