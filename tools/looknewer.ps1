@@ -86,6 +86,7 @@ if($search -eq '') {
         $version = ''
     }
     $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
+    git add 
 }
 
 if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
@@ -93,6 +94,8 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
         if($winout = ($(Find-Package $search).Version)) {
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Output "$search v$($winout) available"
+            $link = "$link
+$search v$($winout) available on Winget"
             $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open | Where-Object {$_.Title -match $ToDo.title} | Select-Object -First 1
             if($Todo) {
                 $ToDo = $ToDo.Title.split(' ')[-1]
