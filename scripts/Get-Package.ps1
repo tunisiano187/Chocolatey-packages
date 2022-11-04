@@ -101,7 +101,7 @@ param(
             $nuspec.package.CreateElement("files")
         }
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
-        [System.IO.File]::WriteAllText("$NuspecPath", $output, $encoding);
+        [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
 
         (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
         if($output -notmatch '<files>') {
