@@ -85,6 +85,7 @@ if($search -eq '') {
         $search = ''
         $version = ''
     }
+    $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
 }
 
 if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
