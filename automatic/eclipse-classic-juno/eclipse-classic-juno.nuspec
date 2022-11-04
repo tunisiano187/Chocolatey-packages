@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>eclipse-classic-juno</id>
+        <version>4.2.2.003</version>
+        <authors>Eclipse Foundation</authors>
+        <projectUrl>http://eclipse.org/eclipse/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>The famed Eclipse IDE (Classic edition)</description>
+    </metadata>
+</package>
