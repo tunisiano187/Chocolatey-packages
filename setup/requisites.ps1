@@ -30,3 +30,4 @@ Install-Module -Name PowerShellForGitHub -Force
     $cred = $null # clear this out now that it's no longer needed
 Set-GitHubConfiguration -DisableTelemetry
 #. "$PSScriptRoot\au_setup.ps1"
+. .\scripts\Invoke-VirusTotalScan.ps1
