@@ -48,3 +48,4 @@
 | DeflOpt | 
 | traffic-monitor | 
 | traffic-monitor | 
+| eclipse-classic-juno | 
