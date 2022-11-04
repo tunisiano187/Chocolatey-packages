@@ -18,4 +18,7 @@
     <docsUrl>https://www.lcdf.org/gifsicle/man.html</docsUrl>
     <bugTrackerUrl>https://github.com/kohler/gifsicle/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
