@@ -49,9 +49,16 @@ if($Todo.Count -eq 0) {
 # If no package is waiting
 # Take a package that is requested on the chocolatey-package-requests
 if($Todo.Count -eq 0) {
-    $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Select-Object -First 1
-    $ToDo = $ToDo.Title.split(' ')[-1]
-    $link = "[$($ToDo.title)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($ToDo.number))"
+    $issues = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
+    foreach ($issue in $issues) {
+        $ToDo = $issue.Title.split(' ')[-1]
+        if(!(Find-GitHubIssue -Type issue -Repo "tunisiano187/chocolatey-packages" -Keywords $ToDo -State closed | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+            $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
+            return
+        } else {
+            $ToDo = ''
+        }
+    }
 }
 
 ## If no package is waiting

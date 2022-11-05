@@ -97,14 +97,13 @@ param(
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
         [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
 
-        (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
-        if(!$nuspec.package.files) {
+        if(!($nuspec -match '<files>')) {
             (Get-Content $NuspecPath) -replace "</metadata>", '</metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>' | Set-Content $NuspecPath
         }
-        if(!$nuspec.package.metadata.packageSourceUrl) {
+        if(!($nuspec.package.metadata.packageSourceUrl)) {
             (Get-Content $NuspecPath) -replace "</owners>", '</owners>
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
         }
