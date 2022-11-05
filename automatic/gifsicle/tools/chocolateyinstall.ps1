@@ -5,10 +5,10 @@ $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.89-win32.zip'
 $checksum32     = ''
-$checksum32Type = ''
+$checksumType32 = ''
 $url64          = 'https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.89-win64.zip'
 $checksum64     = ''
-$checksum64Type = ''
+$checksumType64 = ''
 
 $packageArgs = @{
   packageName   = $packageName
