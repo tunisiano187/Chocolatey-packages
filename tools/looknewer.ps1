@@ -39,7 +39,7 @@ if($Todo.Count -eq 0) {
         [string]$Label = "ToCreateManualy"
         [string]$Title = "($($search)/$($version)) Require maintainer action"
         [string]$Description = "([$search](https://community.chocolatey.org/packages/$search/$version)) Waiting for maintainer action"
-        if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+        if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer")) {
             New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             Start-Sleep -Seconds 6
         }
@@ -105,7 +105,7 @@ $search v$($winout) available on Winget"
             [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search$($version))) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated
 $link"
-            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer")) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
@@ -122,7 +122,7 @@ $link"
             [string]$Title = "($($search)$($version)) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
 $link"
-            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open)) {
+            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer")) {
                 New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
