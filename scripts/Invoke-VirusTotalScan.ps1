@@ -24,7 +24,7 @@ function Invoke-VirusTotalScan ($Package) {
         }
 
         if ($Latest.FileName32) {
-            $file = [IO.Path]::Combine("tools", $Latest.FileName32)
+            $file = (get-ChildItem $Latest.FileName32).FullName
 
             Write-Output "Submitting file $file to VirusTotal"
 
@@ -35,7 +35,7 @@ function Invoke-VirusTotalScan ($Package) {
         }
 
         if ($Latest.FileName64) {
-            $file = [IO.Path]::Combine("tools", $Latest.FileName64)
+            $file = (get-ChildItem $Latest.FileName64).FullName
 
             Write-Output "Submitting file $file to VirusTotal"
 
