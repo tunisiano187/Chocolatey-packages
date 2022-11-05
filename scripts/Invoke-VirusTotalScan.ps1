@@ -62,13 +62,13 @@ function Invoke-VirusTotalScan ($Package) {
             }
         }
         if ($Latest.FileName32 -and !$existingFileName32) {
-            $file=[IO.Path]::Combine("tools", $Latest.FileName32)
-            remove-item $file
+            $file=(get-ChildItem $Latest.FileName32).FullName
+            remove-item $file -Force
             $Latest.Remove("FileName32")
         }
         if ($Latest.FileName64 -and !$existingFileName64) {
-            $file=[IO.Path]::Combine("tools", $Latest.FileName64)
-            remove-item $file
+            $file=(get-ChildItem $Latest.FileName64).FullName
+            remove-item $file -Force
             $Latest.Remove("FileName64")
         }
     }
