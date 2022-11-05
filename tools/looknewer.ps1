@@ -17,7 +17,7 @@ $search = ''
 $version = ''
 
 # Check if there is a waiting issue
-if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open) {
+if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer") {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
     exit 0;
