@@ -51,3 +51,4 @@
 | eclipse-classic-juno | 
 | gifsicle | 
 | aaclr | 
+| aaclr | 
