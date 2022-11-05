@@ -52,7 +52,7 @@ if($Todo.Count -eq 0) {
     $issues = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
     foreach ($issue in $issues) {
         $ToDo = $issue.Title.split(' ')[-1]
-        if(!(Find-GitHubIssue -Type issue -Repo "tunisiano187/chocolatey-packages" -Keywords $ToDo -State closed | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+        if(!(Find-GitHubIssue -Type issue -Repo "tunisiano187/chocolatey-packages" -Keywords $ToDo | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
             $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             return
         } else {
@@ -60,7 +60,10 @@ if($Todo.Count -eq 0) {
         }
     }
 }
-
+if((Find-GitHubIssue -Type issue -Repo "tunisiano187/chocolatey-packages" -Keywords $ToDo | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+    $ToDo=""
+    $link=""
+}
 ## If no package is waiting
 ## Take a package that needs action on the Todo repository (Mostly dtgm packages)
 #if($Todo.Count -eq 0) {
