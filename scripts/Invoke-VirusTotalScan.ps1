@@ -16,6 +16,7 @@ function Invoke-VirusTotalScan ($Package) {
 
     $existingFileName32 = $Latest.FileName32
     $existingFileName64 = $Latest.FileName64
+    $filestocheck = @()
 
     if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
         if (!$existingFileName32 -and !$existingFileName64) {
@@ -28,12 +29,9 @@ function Invoke-VirusTotalScan ($Package) {
             Write-Output "Submitting file $file to VirusTotal"
 
             # Assumes vt-cli Chocolatey package is installed!
-            vt.exe scan file $file --apikey $env:VT_APIKEY
-
-            if (!$existingFileName32) {
-                Remove-Item $file -ErrorAction Ignore
-                $Latest.Remove("FileName32")
-            }
+            #vt.exe scan file $file --apikey $env:VT_APIKEY
+            $test=New-VirusScan -File $file -ApiKey $env:VT_APIKEY
+            $filestocheck+=$file
         }
 
         if ($Latest.FileName64) {
@@ -42,19 +40,34 @@ function Invoke-VirusTotalScan ($Package) {
             Write-Output "Submitting file $file to VirusTotal"
 
             # Assumes vt-cli Chocolatey package is installed!
-            vt.exe scan file $file --apikey $env:VT_APIKEY
-
-            if (!$existingFileName64) {
-                Remove-Item $file -ErrorAction Ignore
-                $Latest.Remove("FileName64")
-            }
+            #vt.exe scan file $file --apikey $env:VT_APIKEY
+            $test=New-VirusScan -File $file -ApiKey $env:VT_APIKEY
+            $filestocheck+=$file
         }
 
         $nupkgFile = Get-ChildItem "*.nupkg" | % {
           Write-Output "Submitting file $file to VirusTotal"
 
           # Assumes vt-cli Chocolatey package is installed!
-          vt.exe scan file $_ --apikey $env:VT_APIKEY
+          #vt.exe scan file $_ --apikey $env:VT_APIKEY
+          $test=New-VirusScan -File $_ -ApiKey $env:VT_APIKEY
+          $filestocheck+=$_
+        }
+        start-sleep -seconds 60
+        foreach ($filetocheck in $filestocheck ) {
+            $test=(Get-VirusReport -ApiKey $ApiKey -File $filetocheck).data.attributes.reputation
+            if($test -gt 4) {
+                Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
+	            return 'ignore'
+            }
+        }
+        if ($Latest.FileName32 -and !$existingFileName32) {
+            remove-item "tools\$($Latest.FileName32)"
+            $Latest.Remove("FileName32")
+        }
+        if ($Latest.FileName64 -and !$existingFileName64) {
+            remove-item "tools\$($Latest.FileName64)"
+            $Latest.Remove("FileName64")
         }
     }
 }

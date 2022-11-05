@@ -28,26 +28,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Get-RemoteFiles -Purge -NoSuffix
-	<# Import-Module VirusTotalAnalyzer -NoClobber -Force
-	$tempfile32 = $(New-TemporaryFile).Fullname.Replace('.tmp','.exe')
-	$tempfile64 = $(New-TemporaryFile).Fullname.Replace('.tmp','.exe')
-	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $tempfile32
-	Invoke-WebRequest -Uri $Latest.URL64 -OutFile $tempfile64
-	New-VirusScan -ApiKey $env:VT_APIKEY -File $tempfile32
-	New-VirusScan -ApiKey $env:VT_APIKEY -File $tempfile64
-
-	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $tempfile32).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $tempfile64).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
- #>}
+}
 
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
