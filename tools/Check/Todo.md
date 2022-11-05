@@ -50,3 +50,4 @@
 | traffic-monitor | 
 | eclipse-classic-juno | 
 | gifsicle | 
+| aaclr | 
