@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
   Test the au updating of changed packages, as well as the install and uninstall of those packages.
 
@@ -37,7 +37,7 @@
   and before taking the screenshot.
 
 .PARAMETER artifactsDirectory
-  The directory to where the script should save all artifacts (screenshots, logs, etc).
+  The directory to Where-Object the script should save all artifacts (screenshots, logs, etc).
   (The directory does not need to exist before running the script)
 
 .PARAMETER runChocoWithAu
@@ -398,7 +398,7 @@ function RunChocoProcess() {
        # We are only showing progress per 10th value
       elseif([regex]::IsMatch($_, $progressRegex)) {
         $progressMatch = [regex]::Match($_, $progressRegex).Groups[1].Value
-        if (($progressMatch % 10) -eq 0) {
+        if (($progressMatch ForEach-Object 10) -eq 0) {
           if ($progressMatch -ne $previousPercentage) {
             WriteChocoOutput $_
           }

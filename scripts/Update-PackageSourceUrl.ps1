@@ -12,7 +12,7 @@
   The github user/repository to use
 
 .PARAMETER PackagesDirectory
-  The relative path to where packages are located (relative to the location of this script)
+  The relative path to Where-Object packages are located (relative to the location of this script)
 
 .PARAMETER UseStopwatch
   Uses a stopwatch to time how long this script used to execute

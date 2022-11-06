@@ -66,7 +66,7 @@ git pull -q origin $Branch
 
 ### Commit
 if  ($commitStrategy -like 'atomic*') {
-    $packages | % {
+    $packages | ForEach-Object {
         Write-Output "Adding update package to git repository: $($_.Name)"
         git add -u $_.Path
         git status
@@ -84,12 +84,12 @@ if  ($commitStrategy -like 'atomic*') {
     }
 }
 else {
-    Write-Output "Adding updated packages to git repository: $( $packages | % Name)"
-    $packages | % { git add -u $_.Path }
+    Write-Output "Adding updated packages to git repository: $( $packages | ForEach-Object Name)"
+    $packages | ForEach-Object { git add -u $_.Path }
     git status
 
     Write-Output "Commiting"
-    $message = "AU: $($packages.Length) updated - $($packages | % Name)"
+    $message = "AU: $($packages.Length) updated - $($packages | ForEach-Object Name)"
     $gist_url = $Info.plugin_results.Gist -split '\n' | select -Last 1
     $snippet_url = $Info.plugin_results.Snippet -split '\n' | select -Last 1
     git commit -m "$message`n[skip ci] $gist_url $snippet_url" --allow-empty

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Check the content of the nuspec for common errror and output them
 
@@ -6,7 +6,7 @@
     Check the nuspec for missing fields, incorrect characters, ... and output them
 
 .PARAMETER folder
-    The folder where the packages are
+    The folder Where-Object the packages are
 
 .OUTPUTS
     The errors or OK

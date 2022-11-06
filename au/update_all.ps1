@@ -28,12 +28,12 @@ $Options = [ordered]@{
     History = @{
         Lines = 120                                         #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
-        Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
+        Path = "$PSScriptRoot\Update-History.md"            #Path Where-Object to save history
     }
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path where to save the report
+        Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path Where-Object to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo          #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
@@ -70,7 +70,7 @@ $Options = [ordered]@{
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
+        Path    = "$PSScriptRoot\update_info.xml"           #Path Where-Object to save the run info
     }
 
     Mail = if ($Env:mail_user) {

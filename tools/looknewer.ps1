@@ -91,7 +91,7 @@ if($search -eq '') {
         $version = ''
     }
     $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
-    git add 
+    git add
 }
 
 if((!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {

@@ -1,7 +1,7 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/bitcoinxt/bitcoinxt/releases'
+$releases = 'https://github.com/bitcoinxt/bitcoinxt/releases/latest'
 
 function global:au_SearchReplace {
 	@{

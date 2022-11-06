@@ -1,4 +1,4 @@
-﻿# Heavily based on <https://github.com/flcdrg/au-packages/blob/8c755c9fadb4c03990e8f22e9689165b068737b3/_scripts/Submit-VirusTotal.ps1>
+# Heavily based on <https://github.com/flcdrg/au-packages/blob/8c755c9fadb4c03990e8f22e9689165b068737b3/_scripts/Submit-VirusTotal.ps1>
 # all ownership and credits goes to flcdrg for this helper code.
 
 <#
@@ -50,7 +50,7 @@ function Invoke-VirusTotalScan ($Package) {
             }
         }
 
-        $nupkgFile = Get-ChildItem "*.nupkg" | % {
+        $nupkgFile = Get-ChildItem "*.nupkg" | ForEach-Object {
           Write-Output "Submitting file $file to VirusTotal"
 
           # Assumes vt-cli Chocolatey package is installed!
