@@ -106,8 +106,8 @@ $search v$($winout) available on Winget"
                 $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             }
             [string]$Label = "ToCreateFrom"
-            [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search$($version))) Needs update"
-            [string]$Description = "($search) Outdated and needs to be updated
+            [string]$Title = "([$($search.split('/')[-2])$($version)](https://chocolatey.org/$search)) Needs update"
+            [string]$Description = "($search.split('/')[-2]) Outdated and needs to be updated
 $link"
             if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
