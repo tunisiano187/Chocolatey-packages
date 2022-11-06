@@ -7,7 +7,7 @@
     <title>lbry (Install)</title>
     <authors>lbry.com</authors>
     <projectUrl>https://lbry.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@497640a941ede7fc49f9e4e8c0a7c220c2b8da16/icons/lbry.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/lbry.png</iconUrl>
     <copyright>lbry.com</copyright>
     <licenseUrl>https://github.com/lbryio/lbry-desktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

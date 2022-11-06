@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/unison</packageSourceUrl>
     <projectUrl>http://www.cis.upenn.edu/~bcpierce/unison/</projectUrl>
     <docsUrl>http://www.cis.upenn.edu/~bcpierce/unison/docs.html</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b11e88b430e3e63ff8c569df0ae116682a05fc9a/icons/unison.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/unison.png</iconUrl>
     <tags>backup sync gtk</tags>
     <copyright>© 1998 Benjamin C. Pierce, 2014 Alan Schmitt</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>

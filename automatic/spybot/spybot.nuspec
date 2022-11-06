@@ -28,7 +28,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/spybot</packageSourceUrl>
     <projectUrl>http://www.safer-networking.org/private/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@74d8afd0d9cf8cecf71b66ed56ddbed7e2e1055d/icons/spybot.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/spybot.png</iconUrl>
     <tags>freeware anti-malware anti-spyware anti-rootkit scanner admin</tags>
     <copyright>© 2000 Safer-Networking Ltd</copyright>
     <licenseUrl>http://www.safer-networking.org/eula-for-private-users/</licenseUrl>

@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/ltGuillaume/Redshift-Tray/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ltGuillaume/Redshift-Tray</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@72e31a13e654321c9c65f282d6d0b1bf3df9024f/icons/rstray.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/rstray.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Redshift Tray
 Redshift Tray (by ltGuillaume) is a no-frills GUI for the excellent screen 

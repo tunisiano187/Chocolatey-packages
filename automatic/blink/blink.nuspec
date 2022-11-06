@@ -28,7 +28,7 @@ Support me on [Patreon](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/blink</packageSourceUrl>
     <projectUrl>http://icanblink.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2f95688034e8dea30ec26633f3105b39711575de/icons/blink.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/blink.png</iconUrl>
     <tags>blink sip phone calls telephony softphone admin</tags>
     <copyright>© AG Projects B.V.</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>

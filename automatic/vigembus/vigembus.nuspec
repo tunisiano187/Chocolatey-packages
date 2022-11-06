@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/ViGEm/ViGEmBus/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://vigem.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@729ba4177b5bdb8afe331c16cf0fa5729e25c52b/icons/vigembus.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/vigembus.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description><![CDATA[## ViGEm Bus Driver
 

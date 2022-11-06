@@ -20,7 +20,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/binance</packageSourceUrl>
     <projectUrl>https://www.binance.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@707318015cd793f52a104b876b5c7dac1badd806/icons/binance.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/binance.png</iconUrl>
     <tags>binance trading</tags>
     <copyright>© Binance</copyright>
     <licenseUrl>https://www.binance.com/en/terms</licenseUrl>

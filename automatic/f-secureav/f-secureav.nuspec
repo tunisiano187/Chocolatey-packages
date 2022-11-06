@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.f-secure.com/en/legal/terms/websites</licenseUrl>
     <projectUrl>https://www.f-secure.com/en/home/products/anti-virus</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b2cac9cb3a1825a28f2efab45c14227afe96893d/icons/f-secureav.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/f-secureav.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[# F-Secure Antivirus
 

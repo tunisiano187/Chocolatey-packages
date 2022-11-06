@@ -6,7 +6,7 @@
     <title>ivpn (Install)</title>
     <authors>IVPN.net</authors>
     <owners>tunisiano</owners>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a73a2f8a9d584fe90f2ed9eb0498df2a5953b023/icons/ivpn.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/ivpn.png</iconUrl>
     <licenseUrl>https://www.ivpn.net/tos/</licenseUrl>
     <projectUrl>https://ivpn.net</projectUrl>
     <releaseNotes>https://github.com/ivpn/desktop-app/releases/tag/v3.9.43</releaseNotes>

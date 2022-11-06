@@ -28,7 +28,7 @@ This software is free for non-profit usage or evaluation. If you earn (or save) 
     <copyright>© 2011 CadSoft</copyright>
     <licenseUrl>http://www.cadsoftusa.com/license-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@900679bce97e998950d8a9766056d5f715a0d863/icons/eagle.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/eagle.png</iconUrl>
     <releaseNotes>
 #### Program
 * [Changelog](http://www.cadsoftusa.com/training-service/release-notes/)
