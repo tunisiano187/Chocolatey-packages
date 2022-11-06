@@ -106,10 +106,9 @@ if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateM
             Write-Output "$search v$($winout) available"
             $link = "$link
 $search v$($winout) available on Winget"
-            $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open | Where-Object {$_.Title -match $ToDo.title} | Select-Object -First 1
-            if($Todo) {
-                $ToDo = $ToDo.Title.split(' ')[-1]
-                $link = "[$($ToDo.title)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($ToDo.number))"
+            $issue = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -Keywords $Todo | Select-Object -First 1
+            if($issue) {
+                $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             }
             [string]$Label = "ToCreateFrom"
             [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search$($version))) Needs update"
@@ -123,10 +122,9 @@ $link"
             "| $search | " | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
-            $ToDo = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open | Where-Object {$_.Title -match $ToDo.title} | Select-Object -First 1
-            if($Todo) {
-                $ToDo = $ToDo.Title.split(' ')[-1]
-                $link = "[$($ToDo.Title)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($ToDo.number))"
+            $issue = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open | Where-Object {$_.Title -match $ToDo} | Select-Object -First 1
+            if($issue) {
+                $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             }
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) Needs update"
