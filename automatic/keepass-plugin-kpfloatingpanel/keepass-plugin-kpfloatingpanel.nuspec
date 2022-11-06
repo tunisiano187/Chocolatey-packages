@@ -24,7 +24,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <projectSourceUrl>https://github.com/mitchcapper/KPFloatingPanel</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mitchcapper/KPFloatingPanel/issues</bugTrackerUrl>
     <docsUrl>https://github.com/mitchcapper/KPFloatingPanel/wiki/</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon keepass-plugin-kpfloatingpanel.png using optipng keepass-plugin-kpfloatingpanel.png size decreased by 349 Byte 4c4af92007bc56f76d7085c74630845f95e4e91d/icons/keepass-plugin-kpfloatingpanel.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon keepass-plugin-kpfloatingpanel.png using optipng 4c4af92007bc56f76d7085c74630845f95e4e91d/icons/keepass-plugin-kpfloatingpanel.png</iconUrl>
     <tags>keepass plugin floating-panel</tags>
     <copyright>© Alexeev Alexander, S², Mitch Capper</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
