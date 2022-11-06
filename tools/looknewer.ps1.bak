@@ -2,19 +2,22 @@ $ErrorActionPreference = 'Continue';
 $link=''
 
 # Requisites
-Install-Module PowerShellForGitHub -ErrorAction SilentlyContinue
-Import-Module PowerShellForGitHub
+Install-Module psgithubsearch -ErrorAction SilentlyContinue
+Import-Module psgithubsearch
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
 }
 [string]$Owner = "tunisiano187"
 [string]$Repository = "Chocolatey-packages"
-
+$UserToken = $env:github_api_key
+$Headers = @{
+    Authorization='token '+$UserToken
+}
 $search = ''
 $version = ''
 
 # Check if there is a waiting issue
-if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer") {
+if(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer") {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
     exit 0;
@@ -23,6 +26,7 @@ if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -La
 Start-Sleep 10;
 
 Install-PackageProvider -name winget -Force
+. $PSScriptRoot\..\scripts\New-Githubissue.ps1
 
 # Check if one package is waiting for maintainer action on Chocolatey
 if($Todo.Count -eq 0) {
@@ -35,8 +39,9 @@ if($Todo.Count -eq 0) {
         [string]$Label = "ToCreateManualy"
         [string]$Title = "($($search)/$($version)) Require maintainer action"
         [string]$Description = "([$search](https://community.chocolatey.org/packages/$search/$version)) Waiting for maintainer action"
-        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
-            New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+        if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer")) {
+            New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
+            Start-Sleep -Seconds 6
         }
     }
 }
@@ -44,10 +49,10 @@ if($Todo.Count -eq 0) {
 # If no package is waiting
 # Take a package that is requested on the chocolatey-package-requests
 if($Todo.Count -eq 0) {
-    $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
+    $issues = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -No assignee -SortBy updated | Where-Object {$_.Labels -match 'maint'} | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
     foreach ($issue in $issues) {
         $ToDo = $issue.Title.split(' ')[-1]
-        if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | ? {$_.title -match "($ToDo)"} | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+        if(!(Find-GitHubIssue -Type issue -Repo "tunisiano187/chocolatey-packages" -Keywords "($ToDo)" | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
             $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             return
         } else {
@@ -55,7 +60,7 @@ if($Todo.Count -eq 0) {
         }
     }
 }
-if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | ? {$_.title -match "($ToDo)"} | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+if((Find-GitHubIssue -Type issue -Repo "tunisiano187/chocolatey-packages" -Keywords $ToDo | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
     $ToDo=""
     $link=""
 }
@@ -72,7 +77,7 @@ $ToDo=$ToDo.trim()
 # Check if there is already a closed issue about this request and avoid search
 if($ToDo.Count -gt 0){
     $search = $ToDo
-    $closed = Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Closed | ? {$_.title -match "($ToDo)"} | ? {$_.created -lt $((Get-Date).AddDays(-90))}
+    $closed = Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State closed -Keywords $search
     if($closed.Count -gt 0) {
         $search = ''
         $version = ''
@@ -94,14 +99,14 @@ if($search -eq '') {
     git add 
 }
 
-if((!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
+if((!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -Labels 'ToCreateManualy' -State open))) {
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
         if($winout = ($(Find-Package $search).Version)) {
             "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Write-Output "$search v$($winout) available"
             $link = "$link
 $search v$($winout) available on Winget"
-            $issue = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -Sort Created | Where-Object {$_.Title -match $Todo} | Select-Object -First 1
+            $issue = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open -Keywords $Todo | Select-Object -First 1
             if($issue) {
                 $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             }
@@ -109,15 +114,15 @@ $search v$($winout) available on Winget"
             [string]$Title = "([$($search)$($version)](https://chocolatey.org/packages/$search$($version))) Needs update"
             [string]$Description = "($search) Outdated and needs to be updated
 $link"
-            if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
-                New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer")) {
+                New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         } else {
             Write-Output "$search not available on winget"
             "| $search | " | Add-Content "$($PSScriptRoot)/Check/Todo.md"
             Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
             Move-Item "$source-temp" $source -Force
-            $issue = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created | Where-Object {$_.Title -match $ToDo} | Select-Object -First 1
+            $issue = Find-GitHubIssue -Type issue -Repo "chocolatey-community/chocolatey-package-requests" -State open | Where-Object {$_.Title -match $ToDo} | Select-Object -First 1
             if($issue) {
                 $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             }
@@ -125,8 +130,8 @@ $link"
             [string]$Title = "($($search)$($version)) Needs update"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
 $link"
-            if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
-                New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+            if (!(Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "-Waiting_maintainer_answer")) {
+                New-GithubIssue -Title $Title -Description $Description -Label $Label -owner $Owner -Repository $Repository -Headers $Headers
             }
         }
     } else {
