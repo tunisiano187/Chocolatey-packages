@@ -7,7 +7,7 @@ if(!(Test-Path Env:github_api_key)) {
 [string]$Repository = "Chocolatey-packages"
 
 Write-Output "Search the next package to import"
-$search = (Find-GitHubIssue -Type issue -Repo "$Owner/$Repository" -State open -Labels "ToCreateManualy" | Sort-Object -Property Number).Title.split('(|)')[1]
+$search = (Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "ToCreateManualy" | Sort-Object -Property IssueNumber).Title.split('(|)')[1]
 if($search) {
     $folder = Join-Path $PSScriptRoot "../automatic/$search"
     if(Test-Path $folder) {
