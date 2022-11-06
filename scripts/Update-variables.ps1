@@ -64,7 +64,7 @@ function Update-Variable {
   $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
   $ps1 = $ps1 -replace 'where ', 'Where-Object '
   $ps1 = $ps1 -replace '% ', 'ForEach-Object '
-  $ps1 = $ps1 -replace 'cup ', 'choco update '
+  $ps1 = $ps1 -replace 'cup ', 'choco upgrade '
   $ps1 = $ps1 -replace 'cinst ', 'choco install '
   $ps1 = $ps1 -replace 'releases"', 'releases/latest"'
   $ps1 = $ps1 -replace "releases'", "releases/latest'"
