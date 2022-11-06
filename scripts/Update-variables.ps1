@@ -59,13 +59,13 @@ function Update-Variable {
 
   $oldContent = ($ps1 | Out-String) -replace '\r\n?',"`n"
 
-  $ps1 = $ps1 -replace "'{{PackageName}}'",'$env:ChocolateyPackageName'
-  $ps1 = $ps1 -replace '{{PackageName}}','$env:ChocolateyPackageName'
-  $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
+  $ps1 = $ps1 -replace "$env:ChocolateyPackageName",'$env:ChocolateyPackageName'
+  $ps1 = $ps1 -replace $env:ChocolateyPackageName,'$env:ChocolateyPackageName'
+  $ps1 = $ps1 -replace 'Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
   $ps1 = $ps1 -replace 'where ', 'Where-Object '
-  $ps1 = $ps1 -replace '% ', 'ForEach-Object '
-  $ps1 = $ps1 -replace 'cup ', 'choco upgrade '
-  $ps1 = $ps1 -replace 'cinst ', 'choco install '
+  $ps1 = $ps1 -replace 'ForEach-Object ', 'ForEach-Object '
+  $ps1 = $ps1 -replace 'choco upgrade ', 'choco upgrade '
+  $ps1 = $ps1 -replace 'choco install ', 'choco install '
   $ps1 = $ps1 -replace 'releases/latest"', 'releases/latest"'
   $ps1 = $ps1 -replace "releases/latest'", "releases/latest'"
   $ps1 = $ps1 | ForEach-Object {$_.TrimEnd()}
