@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/nteract/nteract/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://nteract.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon nteract.portable.png using optipng 71be1b972fd131491a8257c862925b02fdab5485/icons/nteract.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3a7701a39d17b0698b455581200dacd3ee72550c/icons/nteract.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## nteract
 nteract is a literate coding environment that supports Python, R, JavaScript and other

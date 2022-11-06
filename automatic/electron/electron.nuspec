@@ -30,7 +30,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/electron/electron</projectSourceUrl>
     <bugTrackerUrl>https://github.com/electron/electron/issues</bugTrackerUrl>
     <docsUrl>https://www.electronjs.org/fr/docs/latest</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon electron.png using optipng 51dbc6371436268e902dd64c4b089f30f3ba6f1b/icons/electron.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7506c56eb4e327a92d51d0b608dc4af2364f7e61/icons/electron.png</iconUrl>
     <tags>atom web development builder</tags>
     <copyright>GitHub Inc</copyright>
     <licenseUrl>https://raw.githubusercontent.com/electron/electron/main/LICENSE</licenseUrl>

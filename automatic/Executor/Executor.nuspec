@@ -24,7 +24,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectUrl>http://executor.dk/</projectUrl>
     <tags>executor run launcher</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon Executor.png using optipng 1ab1c81c422e73684abed8cda5086a5ddecfef86/icons/Executor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@93a61d9c28fd8fcec3162a6429ee5c0260e07049/icons/Executor.png</iconUrl>
     <releaseNotes>#### Package
     * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
     * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>

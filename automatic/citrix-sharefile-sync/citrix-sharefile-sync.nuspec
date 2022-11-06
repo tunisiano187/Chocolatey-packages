@@ -10,7 +10,7 @@
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/citrix-sharefile-sync</packageSourceUrl>
     <licenseUrl>https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html#ctx-dl-eula-external</licenseUrl>
     <projectUrl>https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/sharefile-sync-for-windows.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon citrix-sharefile-sync.png using optipng 4936af28b6604a793b1af94221cfe68f802cae7b/icons/citrix-sharefile-sync.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@57f289477eebc4b4bd40b54cb8ba5fd8f5c85c70/icons/citrix-sharefile-sync.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

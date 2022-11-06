@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Pulover/PuloversMacroCreator/blob/master/License.txt</licenseUrl>
     <projectUrl>https://www.macrocreator.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon macrocreator.install.png using optipng 9d0d5f9c2783eb6b11b172505a402f590bf75ee4/icons/macrocreator.install.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d6597f4bedcfe45cc046d8747a023768d3c494b3/icons/macrocreator.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## macrocreator.install
 Pulover's Macro Creator is a free automation tool and script generator based on AutoHotkey language. 

@@ -17,7 +17,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon winmerge.png using optipng 5b4c69aa61904f8b06e01ab72e85ca2c97c7b7b8/icons/winmerge.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c50a453e5159f9b856288b523fe2c9e4e2cea0a9/icons/winmerge.png</iconUrl>
     <projectUrl>http://winmerge.org/</projectUrl>
     <projectSourceUrl>https://github.com/winmerge/winmerge</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winmerge</packageSourceUrl>

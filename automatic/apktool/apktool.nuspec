@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/iBotPeaches/Apktool/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>http://ibotpeaches.github.io/Apktool/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon apktool.png using optipng 9bdadcb7b869cd81754ead91abccebccb13f2197/icons/apktool.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@455f0e6e70a9b8154a6a56ce030970bc1ccf40d6/icons/apktool.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## APK Tool
 A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications. It also makes working with an app easier because of the project like file structure and automation of some repetitive tasks like building apk, etc.

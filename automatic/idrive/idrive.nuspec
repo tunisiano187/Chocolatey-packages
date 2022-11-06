@@ -8,7 +8,7 @@
     <authors>idrive.com</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.idrive.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon idrive.png using optipng 49db9404f8803f896669526edeb00dd27b75a587/icons/idrive.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@49db9404f8803f896669526edeb00dd27b75a587/icons/idrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.idrive.com/terms-and-conditions</licenseUrl>
     <description><![CDATA[## Idrive

@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <bugTrackerUrl>https://sourceforge.net/p/scintilla/_list/tickets</bugTrackerUrl>
     <docsUrl>https://www.scintilla.org/SciTEDoc.html</docsUrl>
     <mailingListUrl>https://groups.google.com/g/scite-interest</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon scite.png using optipng 53a069fca4226175a4b2f6d0aa29a6ec98f9f193/icons/scite.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53a069fca4226175a4b2f6d0aa29a6ec98f9f193/icons/scite.png</iconUrl>
     <tags>text editor scintilla admin</tags>
     <copyright>© 1998 Neil Hodgson</copyright>
     <licenseUrl>https://www.scintilla.org/License.txt</licenseUrl>

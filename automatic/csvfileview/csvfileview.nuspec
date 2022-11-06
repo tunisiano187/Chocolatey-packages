@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/csvfileview</packageSourceUrl>
     <projectUrl>https://www.nirsoft.net/utils/csv_file_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon csvfileview.png using optipng d646c5136c7f2dfdbd468858cd6476000aced7b0/icons/csvfileview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@427e56b487883626ee31079e72777afc821fb7b9/icons/csvfileview.png</iconUrl>
     <tags>csv file view convert</tags>
     <copyright>© 2011 NirSoft</copyright>
     <licenseUrl>https://www.nirsoft.net/utils/csv_file_view.html</licenseUrl>

@@ -36,7 +36,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectUrl>http://getmonero.org/</projectUrl>
     <projectSourceUrl>https://github.com/monero-project/bitmonero</projectSourceUrl>
     <bugTrackerUrl>https://github.com/monero-project/bitmonero/issues</bugTrackerUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon monero.png using optipng 4a85936ad778f209c044a2c91f1980fdf34ac662/icons/monero.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3377422a1efeacb74e195349e436a5c1e4d7e2da/icons/monero.png</iconUrl>
     <tags>xmr p2p anonymity cryptonote cryptonight cpu-mining</tags>
     <copyright>Monero Project</copyright>
     <licenseUrl>https://github.com/monero-project/bitmonero#license</licenseUrl>

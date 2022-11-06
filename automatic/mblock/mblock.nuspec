@@ -9,7 +9,7 @@
     <title>mblock (Install)</title>
     <authors>MakeBloc</authors>
     <projectUrl>https://mblock.makeblock.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon mblock.png using optipng c38c2502caabc13208962a34c004e47a76ec9f37/icons/mblock.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c38c2502caabc13208962a34c004e47a76ec9f37/icons/mblock.png</iconUrl>
     <copyright>MakeBlock</copyright>
     <tags>mblock learn codding</tags>
     <summary>Learn to code with blocks</summary>

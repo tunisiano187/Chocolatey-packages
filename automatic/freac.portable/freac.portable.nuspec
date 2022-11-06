@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://www.freac.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon freac.portable.png using optipng 60397327ddb2f270f9cc5f5ab5850e75976dd80c/icons/freac.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@461e6785a1ec340b6fb26052dab10c51cca32e9b/icons/freac.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Freac (Portable)
 Features:

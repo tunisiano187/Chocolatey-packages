@@ -19,7 +19,7 @@ Snes9x is an SNES emulator written in C++ with official ports for Linux, Microso
     <bugTrackerUrl>https://github.com/snes9xgit/snes9x/issues</bugTrackerUrl>
     <docsUrl>https://github.com/snes9xgit/snes9x/wiki</docsUrl>
     <mailingListUrl>http://www.snes9x.com/phpbb3/</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon snes9x.png using optipng c99b5703e4d12bd5c29ba2f28bdd1eff4eaab89d/icons/snes9x.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@61475e7d61446cf0e7b07a134f9cdfb0ef00bd85/icons/snes9x.png</iconUrl>
     <tags>emulator snes gaming</tags>
     <copyright>© Snes9x Team</copyright>
     <licenseUrl>http://www.snes9x.com/privacy.html</licenseUrl>

@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/gridcoin-community/Gridcoin-Research/blob/master/COPYING</licenseUrl>
     <projectUrl>https://gridcoin.us</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon gridcoinwallet.png using optipng c4efd3b02d82d46cd5388e50728d3fe36e2f4332/icons/gridcoinwallet.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@681d63a4890658a3e70989c6389b50483433b162/icons/gridcoinwallet.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## gridcoinwallet
 Gridcoin is a decentralized, open-source, math-based digital asset (cryptocurrency). Gridcoin, 

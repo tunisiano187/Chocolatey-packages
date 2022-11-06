@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/cports.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/cports.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon cports.png using optipng 37090984a13f27499831c6cd4e8dad2c9320bc98/icons/cports.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e7ebe7c31e19117d4e8c047ec0e0e43c5b6fe643/icons/cports.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## cports
 CurrPorts is network monitoring software that displays the list of all currently opened TCP/IP and UDP

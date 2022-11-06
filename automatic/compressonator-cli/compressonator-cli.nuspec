@@ -20,7 +20,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon compressonator-cli.png using optipng ddd28a89667e7a8ad46ef004879ae11611e2c84e/icons/compressonator-cli.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2d71c90ca067eb7aec04a070afa38fbf5eb3ef84/icons/compressonator-cli.png</iconUrl>
     <projectUrl>https://github.com/GPUOpen-Tools/compressonator</projectUrl>
     <projectSourceUrl>https://github.com/GPUOpen-Tools/compressonator</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/compressonator-cli</packageSourceUrl>

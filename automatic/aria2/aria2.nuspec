@@ -41,7 +41,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© Tatsuhiro Tsujikawa</copyright>
     <licenseUrl>https://github.com/tatsuhiro-t/aria2/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon aria2.png using optipng 79aeb71b59aef2db99de21f7fd7d133a17e4c857/icons/aria2.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@920d886548fe48e4c82cb7d57fb2c6a61c1c7df9/icons/aria2.png</iconUrl>
     <releaseNotes>
 #### Program
 * [Changelog](https://github.com/tatsuhiro-t/aria2/releases/)

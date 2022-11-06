@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Ryochan7/DS4Windows/blob/jay/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/Ryochan7/DS4Windows</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ds4windows.png using optipng d2eee7b2ea5204f3b987e927381503dd65c7a97f/icons/ds4windows.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f3549c4cf2b68d976e49053568d026f3f58d0529/icons/ds4windows.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description><![CDATA[
 ## DS4Windows

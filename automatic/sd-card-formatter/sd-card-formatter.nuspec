@@ -9,7 +9,7 @@
     <title>SD Memory Card Formatter (Install)</title>
     <authors>SD Association</authors>
     <projectUrl>https://www.sdcard.org/downloads/formatter/index.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon sd-card-formatter.png using optipng 7d3430012f2a4ec31ee331e2f238729a21db1225/icons/sd-card-formatter.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@61efd756aba3a054da1eb1d494f61487765515ae/icons/sd-card-formatter.png</iconUrl>
     <copyright>Copyright SD Association</copyright>
     <licenseUrl>https://www.sdcard.org/downloads/formatter/eula_windows/index.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

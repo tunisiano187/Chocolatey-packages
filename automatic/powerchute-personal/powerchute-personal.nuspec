@@ -6,7 +6,7 @@
 	<version>3.1.0</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powerchute-personal</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon powerchute-personal.png using optipng 944d03b6c5246f5841cc11298cb504b24e9fd97a/icons/powerchute-personal.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c4b4e27ab28db1e8e6e8fda92d986ca08fde42fc/icons/powerchute-personal.png</iconUrl>
 	<title>PowerChute Personal Edition</title>
 	<authors>APC Schneider</authors>
 	<projectUrl>https://www.apc.com/shop/us/en/categories/power/uninterruptible-power-supply-ups-/ups-management/powerchute-personal-edition/N-1b6nbpp</projectUrl>

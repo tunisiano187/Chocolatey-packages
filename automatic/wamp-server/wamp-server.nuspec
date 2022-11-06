@@ -8,7 +8,7 @@
     <authors>Romain Bourdon</authors>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wamp-server</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon wamp-server.png using optipng e793ae2988b2a19c1c8a899c0094b42d88d35eb3/icons/wamp-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@82bf550ab0db77a7b23de932ad80d95e6747293b/icons/wamp-server.png</iconUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://www.wampserver.com/en/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

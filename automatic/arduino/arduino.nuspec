@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/arduino/Arduino/master/license.txt</licenseUrl>
     <projectUrl>https://www.arduino.cc/en/software</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon arduino.png using optipng 5975b001b0d35b2ec114743da0134845e0470f26/icons/arduino.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1fcd37da23a72b340d22f0ee7081ffc963bbd444/icons/arduino.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[# Arduino
 

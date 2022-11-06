@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/popcorn-official/popcorn-desktop/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/popcorn-official/popcorn-desktop</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon popcorntime.png using optipng 24a58137d2c48cd1646bbede6cf99998a6817868/icons/popcorntime.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@459d7c476f63455bdd404a7c3bf24a89a05536bb/icons/popcorntime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## popcorntime
 Popcorn Time streams movies and TV shows from torrents.
