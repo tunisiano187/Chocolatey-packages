@@ -52,3 +52,4 @@
 | gifsicle | 
 | aaclr | 
 | aaclr | 
+| /packages/traffic-monitor/1.84 | 
