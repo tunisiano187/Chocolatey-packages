@@ -38,7 +38,7 @@
 
 param(
   [string]$Name,
-  [string]$PackagesDirectory = "../automatic",
+  [string]$PackagesDirectory = "..",
   [switch]$UseStopwatch,
   [switch]$Quiet
 )
