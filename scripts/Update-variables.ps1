@@ -9,7 +9,7 @@
   If specified it only updates the package matching the specified name
 
 .PARAMETER PackagesDirectory
-  The relative path to Where-Object packages are located (relative to the location of this script)
+  The relative path to packages folder (relative to the location of this script)
 
 .PARAMETER UseStopwatch
   Uses a stopwatch to time how long this script used to execute
@@ -25,7 +25,7 @@
 .EXAMPLE
   ps> .\Update-Variables.ps1
   Updates all ps1 files with correct environment variables
--    $env:ChocolateyPackageName
+-    {{ PackageName }}
 +    $env:ChocolateyPackageName
 
 .EXAMPLE
@@ -59,13 +59,13 @@ function Update-Variable {
 
   $oldContent = ($ps1 | Out-String) -replace '\r\n?',"`n"
 
-  $ps1 = $ps1 -replace "$env:ChocolateyPackageName",'$env:ChocolateyPackageName'
-  $ps1 = $ps1 -replace $env:ChocolateyPackageName,'$env:ChocolateyPackageName'
-  $ps1 = $ps1 -replace 'Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
-  $ps1 = $ps1 -replace 'Where-Object ', 'Where-Object '
-  $ps1 = $ps1 -replace 'ForEach-Object ', 'ForEach-Object '
-  $ps1 = $ps1 -replace 'choco upgrade ', 'choco upgrade '
-  $ps1 = $ps1 -replace 'choco install ', 'choco install '
+  $ps1 = $ps1 -replace "'{{PackageName}}'",'$env:ChocolateyPackageName'
+  $ps1 = $ps1 -replace '{{PackageName}}','$env:ChocolateyPackageName'
+  $ps1 = $ps1 -replace 'Install-ChocolateyDesktopLink','Install-ChocolateyShortcut -ShortcutFilePath "$($env:USERPROFILE)\Desktop\$($env:ChocolateyPackageName).lnk" -TargetPath'
+  $ps1 = $ps1 -replace 'where ', 'Where-Object '
+  $ps1 = $ps1 -replace '% ', 'ForEach-Object '
+  $ps1 = $ps1 -replace 'cup ', 'choco upgrade '
+  $ps1 = $ps1 -replace 'cinst ', 'choco install '
   $ps1 = $ps1 -replace 'releases/latest"', 'releases/latest"'
   $ps1 = $ps1 -replace "releases/latest'", "releases/latest'"
   $ps1 = $ps1 | ForEach-Object {$_.TrimEnd()}
@@ -86,7 +86,7 @@ if ($UseStopwatch) {
 }
 
 If ($Name) {
-  $packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory/$Name" -Filter "*.ps1"
+  $packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory/$Name" -Filter "*.ps1" -Exclude "Update-variabls.ps1"
 
   foreach ($package in $packages) {
     Update-Variable -Name $package.FullName -Quiet $Quiet

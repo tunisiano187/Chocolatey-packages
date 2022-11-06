@@ -37,7 +37,7 @@
   and before taking the screenshot.
 
 .PARAMETER artifactsDirectory
-  The directory to Where-Object the script should save all artifacts (screenshots, logs, etc).
+  Artifacts's foler (screenshots, logs, etc).
   (The directory does not need to exist before running the script)
 
 .PARAMETER runChocoWithAu

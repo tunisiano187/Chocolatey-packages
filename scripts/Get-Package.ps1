@@ -10,11 +10,11 @@
     the package to download
 
 .PARAMETER folder
-    The folder Where-Object the packages are
+    Package's folder
     Default : ..\automatic\
 
 .PARAMETER iconfolder
-    The folder Where-Object we're adding the icons
+    Icon's folder
     Default : ..\icons\
 
 .OUTPUTS

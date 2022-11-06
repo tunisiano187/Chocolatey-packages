@@ -18,10 +18,10 @@
   The github user/repository to use in the jsdelivr url
 
 .PARAMETER RelativeIconDir
-  The relative path to Where-Object icons are located (relative to the location of this script)
+  The relative path to icons (relative to the location of this script)
 
 .PARAMETER PackagesDirectory
-  The relative path to Where-Object packages are located (relative to the location of this script)
+  The relative path to packages (relative to the location of this script)
 
 .PARAMETER UseStopwatch
   Uses a stopwatch to time how long this script used to execute
@@ -41,7 +41,7 @@
 .OUTPUTS
   The number of packages that was updates,
   if some packages is already up to date, outputs how many.
-  Writes a warning of how many packages Where-Object icons was not found,
+  Writes a warning of how many packages havn't icons found,
   then optionally outputs which packages.
 
 .NOTES

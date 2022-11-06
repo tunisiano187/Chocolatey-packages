@@ -6,7 +6,7 @@
     Check the nuspec for missing fields, incorrect characters, ... and output them
 
 .PARAMETER folder
-    The folder Where-Object the packages are
+    The packages's folder
 
 .OUTPUTS
     The errors or OK

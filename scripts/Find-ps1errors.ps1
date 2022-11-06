@@ -11,7 +11,7 @@
   If specified it only updates the package matching the specified name
 
 .PARAMETER PackagesDirectory
-  The relative path to Where-Object packages are located (relative to the location of this script)
+  The relative path to the packages (relative to the location of this script)
 
 .PARAMETER UseStopwatch
   Uses a stopwatch to time how long this script used to execute
