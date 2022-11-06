@@ -100,8 +100,10 @@ if ($counts.replaced -eq 0 -and !$Quiet) {
   Write-Output "Congratulations, all found ps1 are correct."
 } elseif (!$Quiet) {
   Write-Output "Updated $($counts.replaced) ps1";
+  git commit -m "Updated $($counts.replaced) ps1"
   git push
 } else {
+  git commit -m "Updated $($counts.replaced) ps1"
   git push
 }
 if ($counts.uptodate -eq 1 -and !$Quiet) {
