@@ -1,4 +1,4 @@
-choco upgrade -y checksum keepass optipng 
+choco upgrade -y chocolatey checksum keepass vt-cli
 
 # http://techrena.net/disable-ie-set-up-first-run-welcome-screen/
 New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value 1 -PropertyType "DWord" -Force | Out-Null
@@ -32,4 +32,3 @@ Set-GitHubConfiguration -DisableTelemetry
 #. "$PSScriptRoot\au_setup.ps1"
 import-module "$PSScriptRoot\..\scripts\au_extensions.psm1"
 . .\scripts\Invoke-VirusTotalScan.ps1
-choco install -fy vt-cli
