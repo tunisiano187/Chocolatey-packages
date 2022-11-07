@@ -52,3 +52,4 @@
 | gifsicle | 
 | aaclr | 
 | aaclr | 
+| mactype | 
