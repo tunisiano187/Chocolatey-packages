@@ -49,12 +49,13 @@ if($Todo.Count -eq 0) {
     "Checking on the chocolatey-package-requests"
     $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
     foreach ($issue in $issues) {
-        $ToDo = $issue.Title.split(' ')[-1]
-        if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($ToDo)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) {
-            $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
-            return
-        } else {
-            $ToDo = ''
+        if($link) {
+            $ToDo = $issue.Title.split(' ')[-1]
+            if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($ToDo)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) {
+                $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
+            } else {
+                $ToDo = ''
+            }
         }
     }
 }
