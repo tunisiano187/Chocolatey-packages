@@ -89,7 +89,7 @@ if($search -eq '') {
         $version = ''
     }
     $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
-    git add -A
+    git add -u
 }
 
 "Checking winget"
@@ -136,7 +136,7 @@ $link"
         }
     }
 }
-git add -A
+git add -u
 if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
     git push origin master
 }
