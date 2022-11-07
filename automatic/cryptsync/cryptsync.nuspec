@@ -5,10 +5,10 @@
     <version>1.2.7</version>
     <title>CryptSync</title>
     <authors>Stefan Kueng</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://stefanstools.sourceforge.net/CryptSync.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/9856ff4757b8ace9a7b612e953b068bbe21b211c/icons/cryptsync.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e7ec5ee1534caea2f15cacb2433cb46a1cb8af6/icons/cryptsync.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>CryptSync is a small utility that synchronizes two folders while encrypting the contents in one folder. That means one of the two folders has all files unencrypted (the files you work with) and the other folder has all the files encrypted.
 
@@ -21,6 +21,6 @@ This is best used together with cloud storage tools like SkyDrive, DropBox or Go
     <copyright>© Stefan Kueng</copyright>
     <tags>security encryption synchronization admin</tags>
     <projectSourceUrl>https://sourceforge.net/p/cryptsync-sk/code/HEAD/tree/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/cryptsync/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cryptsync</packageSourceUrl>
   </metadata>
 </package>
