@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://stefanstools.sourceforge.net/CryptSync.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/9856ff4757b8ace9a7b612e953b068bbe21b211c/icons/cryptsync.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e7ec5ee1534caea2f15cacb2433cb46a1cb8af6/icons/cryptsync.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>CryptSync is a small utility that synchronizes two folders while encrypting the contents in one folder. That means one of the two folders has all files unencrypted (the files you work with) and the other folder has all the files encrypted.
 
