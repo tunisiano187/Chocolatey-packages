@@ -21,6 +21,6 @@ This is best used together with cloud storage tools like SkyDrive, DropBox or Go
     <copyright>© Stefan Kueng</copyright>
     <tags>security encryption synchronization admin</tags>
     <projectSourceUrl>https://sourceforge.net/p/cryptsync-sk/code/HEAD/tree/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/cryptsync/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cryptsync</packageSourceUrl>
   </metadata>
 </package>
