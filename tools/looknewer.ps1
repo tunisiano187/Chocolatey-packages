@@ -15,7 +15,7 @@ $version = ''
 
 "Check if there are open issues"
 # Check if there is a waiting issue
-if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open) {
+if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"})) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
 } else {
