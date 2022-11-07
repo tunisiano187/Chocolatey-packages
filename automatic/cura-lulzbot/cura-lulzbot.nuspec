@@ -22,4 +22,7 @@ The latest version features an updated user interface, more slicing options, an 
     <docsUrl>https://www.lulzbot.com/cura-lulzbot-edition-quick-start-guide</docsUrl>
     <bugTrackerUrl>https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

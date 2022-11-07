@@ -23,4 +23,7 @@ This is best used together with cloud storage tools like SkyDrive, DropBox or Go
     <projectSourceUrl>https://sourceforge.net/p/cryptsync-sk/code/HEAD/tree/</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cryptsync</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
