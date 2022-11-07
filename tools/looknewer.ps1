@@ -77,8 +77,8 @@ if($ToDo.Count -gt 0){
 }
 
 # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
-"Checking list.txt file"
 if($search -eq '') {
+    "Checking list.txt file"
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
     $check=(choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}
