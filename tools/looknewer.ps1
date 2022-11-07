@@ -23,7 +23,7 @@ if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -La
 # Wait to avoid api requests limit
 Start-Sleep 10;
 
-Install-PackageProvider -name winget
+$wingetinstall=Install-PackageProvider -name winget
 
 "Checking on Chocolatey profile"
 # Check if one package is waiting for maintainer action on Chocolatey
