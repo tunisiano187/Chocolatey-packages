@@ -15,10 +15,10 @@ $version = ''
 
 "Check if there are open issues"
 # Check if there is a waiting issue
-if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer") {
+if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
-    exit 0;
+    retur
 }
 
 $wingetinstall=Install-PackageProvider -name winget
