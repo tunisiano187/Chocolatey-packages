@@ -58,6 +58,7 @@ if($Todo.Count -eq 0) {
                 [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
 $link"
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                exit 0
             }
         } else {
             "$search already worked on in the last 90 day"
