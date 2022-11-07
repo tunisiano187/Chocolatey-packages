@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Continue';
+$ErrorActionPreference = 'Stop';
 $link=''
 
 # Requisites
@@ -18,7 +18,7 @@ $version = ''
 if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
-    retur
+    exit
 }
 
 $wingetinstall=Install-PackageProvider -name winget
@@ -38,7 +38,7 @@ if($Todo.Count -eq 0) {
         if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
             "Create issue for $search"
             New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
-            exit 0;
+            exit
         }
     }
 }
