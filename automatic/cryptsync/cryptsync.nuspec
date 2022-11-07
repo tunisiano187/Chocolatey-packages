@@ -5,7 +5,7 @@
     <version>1.2.7</version>
     <title>CryptSync</title>
     <authors>Stefan Kueng</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://stefanstools.sourceforge.net/CryptSync.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e7ec5ee1534caea2f15cacb2433cb46a1cb8af6/icons/cryptsync.png</iconUrl>
