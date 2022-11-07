@@ -13,6 +13,7 @@ if(!(Test-Path Env:github_api_key)) {
 $search = ''
 $version = ''
 
+"Check if there are open issues"
 # Check if there is a waiting issue
 if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer") {
     Write-Warning "Some issues are still open"
@@ -24,6 +25,7 @@ Start-Sleep 10;
 
 Install-PackageProvider -name winget
 
+"Checking on Chocolatey profile"
 # Check if one package is waiting for maintainer action on Chocolatey
 if($Todo.Count -eq 0) {
     $chocoprofile = "https://community.chocolatey.org/profiles/tunisiano"
@@ -44,10 +46,11 @@ if($Todo.Count -eq 0) {
 # If no package is waiting
 # Take a package that is requested on the chocolatey-package-requests
 if($Todo.Count -eq 0) {
+    "Checking on the chocolatey-package-requests"
     $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
     foreach ($issue in $issues) {
         $ToDo = $issue.Title.split(' ')[-1]
-        if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | ? {$_.title -match "($ToDo)"} | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+        if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($ToDo)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) {
             $link = "[$($ToDo)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
             return
         } else {
@@ -55,24 +58,17 @@ if($Todo.Count -eq 0) {
         }
     }
 }
-if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | ? {$_.title -match "($ToDo)"} | ? {$_.created -lt $((Get-Date).AddDays(-90))})) {
+if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($ToDo)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) {
     $ToDo=""
     $link=""
 }
-## If no package is waiting
-## Take a package that needs action on the Todo repository (Mostly dtgm packages)
-#if($Todo.Count -eq 0) {
-#    Invoke-WebRequest -uri https://gitlab.com/chocolatey-packages/todo/-/raw/master/README.md -OutFile "$($env:TEMP)\list.txt"
-#    $Todo=$(Get-Content "$($env:TEMP)\list.txt" | Where-Object {$_ -notmatch '#'} | Where-Object {$_ -notmatch 'Count' } | Where-Object {$_ -notmatch '--'} | Select-Object -First 1).split('|')[-2]
-#    $ToDo=$ToDo.Trim()
-#}
 
 # Clean the search item
 $ToDo=$ToDo.trim()
 # Check if there is already a closed issue about this request and avoid search
 if($ToDo.Count -gt 0){
     $search = $ToDo
-    $closed = Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Closed | ? {$_.title -match "($ToDo)"} | ? {$_.created -lt $((Get-Date).AddDays(-90))}
+    $closed = Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Closed | Where-Object {$_.title -match "($ToDo)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))}
     if($closed.Count -gt 0) {
         $search = ''
         $version = ''
@@ -80,6 +76,7 @@ if($ToDo.Count -gt 0){
 }
 
 # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
+"Checking list.txt file"
 if($search -eq '') {
     $source = Join-Path $PSScriptRoot "Check/list.txt"
     $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -91,9 +88,10 @@ if($search -eq '') {
         $version = ''
     }
     $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
-    git add 
+    git add -A
 }
 
+"Checking winget"
 if((!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
     if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
         if($winout = ($(Find-Package $search).Version)) {
@@ -136,12 +134,8 @@ $link"
             Move-Item "$source-temp" $source -Force
         }
     }
-    if($search -ne '') {
-        git add -u :/tools/Check/
-        git commit -m "Package check $search"
-        git push origin master
-    }
 }
+git add -A
 if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
     git push origin master
 }
