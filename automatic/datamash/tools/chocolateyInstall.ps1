@@ -15,6 +15,6 @@ $packageArgs = @{
     url64           = $url64
     checksum64      = $checksum64
     checksumType64  = $checksumType64
-  }
+}
 
 Install-ChocolateyZipPackage @packageArgs
