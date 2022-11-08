@@ -21,7 +21,7 @@ It is designed to be portable and reliable, with strict input validation, and ro
     <copyright>© 2013 Assaf Gordon</copyright>
     <tags>data processing analysis cli</tags>
     <projectSourceUrl>http://git.savannah.gnu.org/gitweb/?p=datamash.git</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/datamash/1.0.6</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/datamash</packageSourceUrl>
     <docsUrl>https://www.gnu.org/software/datamash/#documentation</docsUrl>
     <mailingListUrl>http://savannah.gnu.org/mail/?group=datamash</mailingListUrl>
     <bugTrackerUrl>http://savannah.gnu.org/bugs/?group=datamash</bugTrackerUrl>
