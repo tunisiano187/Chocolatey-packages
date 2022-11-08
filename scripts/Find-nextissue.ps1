@@ -1,3 +1,4 @@
+$ErrorActionPreference = 'SilentlyContinue'
 Install-Module psgithubsearch -ErrorAction SilentlyContinue
 Import-Module psgithubsearch
 if(!(Test-Path Env:github_api_key)) {
@@ -17,5 +18,10 @@ if($search) {
         . $script $search.Tolower()
     }
 }
-try { git push origin master }
-catch { "Nothing to push!" }
+
+try {
+    git push origin master
+}
+catch {
+    "Nothing to push!"
+}

@@ -21,7 +21,7 @@ if(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -La
     exit 0;
 }
 
-$wingetinstall=Install-PackageProvider -name winget
+Install-PackageProvider -name winget
 
 # Check if one package is waiting for maintainer action on Chocolatey
 if($Todo.Count -eq 0) {
