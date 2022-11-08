@@ -26,7 +26,7 @@ function global:au_GetLatest {
     $url32  = "https://download.savannah.gnu.org/releases/datamash/windows-binaries/$($url | Where-Object {$_ -match "32bit.exe"} | Select-Object -First 1)"
     $url64  = "https://download.savannah.gnu.org/releases/datamash/windows-binaries/$($url | Where-Object {$_ -match "64bit.exe"} | Select-Object -First 1)"
 
-    $version = $url32.Split('-') | Where-Object {$_ -Match '\.'} | Where-Object {$_ -notmatch ".exe$"}
+    $version = $url32.Split('-') | Where-Object {$_ -Match '\.'} | Where-Object {$_ -notmatch ".exe$"} | Where-Object {$_ -notmatch "http"}
 
     @{
         URL32   = $url32
