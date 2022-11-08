@@ -5,7 +5,7 @@
     <version>1.0.6</version>
     <title>GNU datamash</title>
     <authors>Assaf Gordon</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://git.savannah.gnu.org/gitweb/?p=datamash.git;a=blob;f=COPYING;hb=HEAD</licenseUrl>
     <projectUrl>https://www.gnu.org/software/datamash/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
