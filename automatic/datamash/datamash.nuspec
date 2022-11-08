@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>datamash</id>
+    <version>1.0.6</version>
+    <title>GNU datamash</title>
+    <authors>Assaf Gordon</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://git.savannah.gnu.org/gitweb/?p=datamash.git;a=blob;f=COPYING;hb=HEAD</licenseUrl>
+    <projectUrl>https://www.gnu.org/software/datamash/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>GNU Datamash is a command-line program which performs basic numeric,textual and statistical operations on input textual data files.
+
+It is designed to be portable and reliable, with strict input validation, and robust operation to aid researchers to easily automate analysis pipelines, without writing code or even short scripts in data processing languages such as `awk`, `Perl`, or `R`.</description>
+    <summary>Basic numeric,textual and statistical operations on input textual data files</summary>
+    <releaseNotes>#### Program
+* [Changelog](http://git.savannah.gnu.org/cgit/datamash.git/tree/NEWS)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2013 Assaf Gordon</copyright>
+    <tags>data processing analysis cli</tags>
+    <projectSourceUrl>http://git.savannah.gnu.org/gitweb/?p=datamash.git</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/datamash/1.0.6</packageSourceUrl>
+    <docsUrl>https://www.gnu.org/software/datamash/#documentation</docsUrl>
+    <mailingListUrl>http://savannah.gnu.org/mail/?group=datamash</mailingListUrl>
+    <bugTrackerUrl>http://savannah.gnu.org/bugs/?group=datamash</bugTrackerUrl>
+  </metadata>
+</package>
