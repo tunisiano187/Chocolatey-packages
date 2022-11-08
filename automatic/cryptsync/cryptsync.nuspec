@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>cryptsync</id>
+    <version>1.2.7</version>
+    <title>CryptSync</title>
+    <authors>Stefan Kueng</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://stefanstools.sourceforge.net/CryptSync.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e7ec5ee1534caea2f15cacb2433cb46a1cb8af6/icons/cryptsync.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CryptSync is a small utility that synchronizes two folders while encrypting the contents in one folder. That means one of the two folders has all files unencrypted (the files you work with) and the other folder has all the files encrypted.
+
+The synchronization works both ways: a change in one folder gets synchronized to the other folder. If a file is added or modified in the unencrypted folder, it gets encrypted. If a file is added or modified in the encrypted folder, it gets decrypted to the other folder.
+
+This is best used together with cloud storage tools like SkyDrive, DropBox or Google Drive.
+
+[Wiki](https://code.google.com/p/gurtle/w/list)</description>
+    <summary>Folder sync tool with encryption</summary>
+    <copyright>© Stefan Kueng</copyright>
+    <tags>security encryption synchronization admin</tags>
+    <projectSourceUrl>https://sourceforge.net/p/cryptsync-sk/code/HEAD/tree/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cryptsync</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
