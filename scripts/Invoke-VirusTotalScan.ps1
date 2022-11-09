@@ -14,9 +14,8 @@ function Invoke-VirusTotalScan ($Package) {
         return
     }
 
-    if((choco search -lo vt-cli | Where-Object {$_ -match 'vt-cli'}).Count -eq 0) {
-        choco install -fy vt-cli
-    }
+    choco install -y vt-cli
+
     $existingFileName32 = $Latest.FileName32
     $existingFileName64 = $Latest.FileName64
 
