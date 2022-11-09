@@ -1,4 +1,5 @@
-choco upgrade -y chocolatey checksum keepass vt-cli
+choco upgrade -y chocolatey checksum
+choco install -y keepass vt-cli
 
 # http://techrena.net/disable-ie-set-up-first-run-welcome-screen/
 New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "DisableFirstRunCustomize" -Value 1 -PropertyType "DWord" -Force | Out-Null
