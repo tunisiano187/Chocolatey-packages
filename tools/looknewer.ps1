@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'SilentlyContinue';
 $link=''
-
+$issue = 0
 # Requisites
 Install-Module PowerShellForGitHub -ErrorAction SilentlyContinue
 Import-Module PowerShellForGitHub
@@ -37,6 +37,7 @@ Install-PackageProvider -name winget
             if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
                 "Create issue for $search"
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                $issue=1
                 exit 0
             }
         }
@@ -44,7 +45,7 @@ Install-PackageProvider -name winget
 
     # If no package is waiting
     # Take a package that is requested on the chocolatey-package-requests
-    if($Todo.Count -eq 0) {
+    if($Todo.Count -eq 0 -and $issue -eq 0) {
         "Checking on the chocolatey-package-requests"
         $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
         foreach ($issue in $issues) {
@@ -57,6 +58,7 @@ Install-PackageProvider -name winget
                     [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
     $link"
                     New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                    $issue=1
                     exit 0
                 }
             } else {
@@ -70,7 +72,7 @@ Install-PackageProvider -name winget
     # Clean the search item
     $ToDo=$ToDo.trim()
     # Check if there is already a closed issue about this request and avoid search
-    if($ToDo.Count -gt 0){
+    if($ToDo.Count -gt 0 -and $issue -eq 0){
         $search = $ToDo
         $closed = Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Closed | Where-Object {$_.title -match "($ToDo)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))}
         if($closed.Count -gt 0) {
@@ -80,7 +82,7 @@ Install-PackageProvider -name winget
     }
 
     # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
-    if($search -eq '') {
+    if($search -eq '' -and $issue -eq 0) {
         "Checking list.txt file"
         $source = Join-Path $PSScriptRoot "Check/list.txt"
         $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -96,7 +98,7 @@ Install-PackageProvider -name winget
     }
 
     "Checking winget"
-    if((!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
+    if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
         if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
                 "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
@@ -113,8 +115,9 @@ Install-PackageProvider -name winget
     $link"
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
                     New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                    $issue=1
                 }
-            } else {
+            } elseif ($issue -eq 0) {
                 Write-Output "$search not available on winget"
                 "| $search | " | Add-Content "$($PSScriptRoot)/Check/Todo.md"
                 Get-Content $source | Select-Object -Skip 1 | set-content "$source-temp"
@@ -129,6 +132,7 @@ Install-PackageProvider -name winget
     $link"
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
                     New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                    $issue=1
                 }
             }
         } else {
