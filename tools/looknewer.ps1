@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'SilentlyContinue';
 $link=''
 
 # Requisites
@@ -37,7 +37,7 @@ Install-PackageProvider -name winget
             if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
                 "Create issue for $search"
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
-                exit
+                exit 0
             }
         }
     }
