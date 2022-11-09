@@ -27,6 +27,8 @@ function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo
 	$url32 = ($tags[0].body.Split('
 ') | Where-Object {$_ -match '.exe'}).split('(|)')[-2]
+	$checksumType32 = "SHA256"
+	$checksum32 = Get-RemoteChecksum -Url $url32 -Algorithm $checksumType32
 	$version = $tags[0].tag_name -split 'v|/' | select-object -Last 1
 	$releaseNotes="https://github.com/$($Owner)/$($repo)/releases/tag/$($tags[0].tag_name)"
 	if($tags[0].prerelease -match "true") {
@@ -34,18 +36,7 @@ function global:au_GetLatest {
 		$version = "$version-pre$($date)"
 	}
 
-<# 	# Cert download
-	$installer = Join-Path $env:TEMP "ivpn.zip"
-	$folderextract = Join-Path $env:TEMP "ivpn"
-	New-Item -Path $folderextract -ItemType Directory -Force
-	Invoke-WebRequest -Uri $url32 -OutFile $installer
-	Expand-Archive -Path $installer -DestinationPath $folderextract -Force
-	$certfile = $(Get-ChildItem -Path $folderextract -Include "*.cer" -Recurse).FullName
-	$certfiledest = "tools\cert.cer"
-	Copy-Item $certfile $certfiledest -Force #>
-
-
-	$Latest = @{ URL32 = $url32; Version = $version; ReleaseNotes = $releaseNotes }
+	$Latest = @{ URL32 = $url32; CHECKSUM32 = $checksum32; CHECKSUMTYPE32 = $checksumType32; Version = $version; ReleaseNotes = $releaseNotes }
 	return $Latest
 }
 
