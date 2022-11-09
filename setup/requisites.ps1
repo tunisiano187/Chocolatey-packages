@@ -32,3 +32,4 @@ Set-GitHubConfiguration -DisableTelemetry
 #. "$PSScriptRoot\au_setup.ps1"
 import-module "$PSScriptRoot\..\scripts\au_extensions.psm1"
 . .\scripts\Invoke-VirusTotalScan.ps1
+RefreshEnv.cmd
