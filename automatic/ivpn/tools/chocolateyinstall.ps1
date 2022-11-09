@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.9.45.exe'
-$checksum     = ''
-$checksumType = ''
+$checksum     = 'e6e3df093c44c83a87cbf538d39983945f9955fadaec3f57a1a23fdfc8fcd678'
+$checksumType = 'SHA256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
