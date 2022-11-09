@@ -19,16 +19,10 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	$filename = ($Latest.URL32).split('/')[-1]
-	$vtfiletest = Join-Path $env:TEMP $filename
-	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $vtfiletest
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $vtfiletest).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
+
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
