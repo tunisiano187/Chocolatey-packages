@@ -53,3 +53,4 @@
 | aaclr | 
 | aaclr | 
 | mactype | 
+| /packages/binance/1.40.0 | 
