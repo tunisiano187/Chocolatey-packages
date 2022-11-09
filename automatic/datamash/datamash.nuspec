@@ -2,23 +2,31 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>datamash</id>
-    <version>1.0.6</version>
+    <version>1.3</version>
     <title>GNU datamash</title>
     <authors>Assaf Gordon</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://git.savannah.gnu.org/gitweb/?p=datamash.git;a=blob;f=COPYING;hb=HEAD</licenseUrl>
     <projectUrl>https://www.gnu.org/software/datamash/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>GNU Datamash is a command-line program which performs basic numeric,textual and statistical operations on input textual data files.
+    <description><![CDATA[## Datamash
+GNU Datamash is a command-line program which performs basic numeric,textual and statistical operations on input textual data files.
 
-It is designed to be portable and reliable, with strict input validation, and robust operation to aid researchers to easily automate analysis pipelines, without writing code or even short scripts in data processing languages such as `awk`, `Perl`, or `R`.</description>
+It is designed to be portable and reliable, with strict input validation, and robust operation to aid researchers to easily automate  
+analysis pipelines, without writing code or even short scripts in data processing languages such as `awk`, `Perl`, or `R`.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Basic numeric,textual and statistical operations on input textual data files</summary>
     <releaseNotes>#### Program
 * [Changelog](https://git.savannah.gnu.org/cgit/datamash.git/tree/NEWS)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 2013 Assaf Gordon</copyright>
+    <copyright>Â© 2022 Assaf Gordon</copyright>
     <tags>data processing analysis cli</tags>
     <projectSourceUrl>http://git.savannah.gnu.org/gitweb/?p=datamash.git</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/datamash</packageSourceUrl>

@@ -1,5 +1,5 @@
-$url32          = 'http://files.housegordon.org/datamash/bin/datamash-1.0.6-windows.zip'
-$checksum32     = '6874c749945acb84ac0fd9b759f382a7fe64dd7b'
+﻿$url32          = 'https://download.savannah.gnu.org/releases/datamash/windows-binaries/datamash-1.3-no-locale-32bit.exe'
+$checksum32     = 'ae6ed021819a4cc2481b4b517c25348df4f8ed15c24ba5ff5f2e7fc1b32b69dc'
 $checksumType32 = 'sha1'
 $url64          = ''
 $checksum64     = ''
