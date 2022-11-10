@@ -4,7 +4,7 @@
   <metadata>
     <id>db-visualizer</id>
     <title>DbVisualizer</title>
-    <version>14.0.1</version>
+    <version>14.0.0</version>
     <authors>DbVis Software</authors>
     <owners>tunisiano</owners>
     <summary>DbVisualizer is the universal database tool for developers, DBAs and analysts.</summary>
@@ -28,8 +28,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="openjdk11" version="11.0.14.1" />
-      <dependency id="jre8" version="8.0.341"></dependency>
+      <dependency id="corretto17jdk"></dependency>
     </dependencies>
   </metadata>
   <files>
