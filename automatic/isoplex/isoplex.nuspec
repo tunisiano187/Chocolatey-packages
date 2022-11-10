@@ -6,6 +6,7 @@
     <title>Isoplex</title>
     <authors>Isohunt</authors>
     <owners>tonigellida</owners>
+    <packageSourceUrl></packageSourceUrl>
     <licenseUrl>http://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://isoplex.isohunt.to</projectUrl>
     <iconUrl>https://cdn.rawgit.com/adgellida/chocolateyautomaticpackages/master/icons/isoplex.png</iconUrl>
