@@ -52,6 +52,7 @@ param(
         }
 
         # read nuspec
+        [xml]$nuspec = New-Object System.Xml.XmlDocument
         [xml]$nuspec = Get-Content "$folder\$packageName\$packageName.nuspec"
 
         # Check if the nuspec has an iconUrl and download the icon to the right folder
@@ -71,6 +72,7 @@ param(
                 } catch {
                     Write-Output "No Readme found in $packagesourceurl"
                 }
+                }
                 try {
                     $LICENSElink = (Find-GitHubCode -user $packagesourceurl -Extension 'txt' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'LICENSE'}).html_url.replace('blob','raw')
                     Invoke-WebRequest -Uri $LICENSElink -OutFile "$folder\$packageName\tools\LICENSE.txt" -ErrorAction SilentlyContinue
@@ -88,11 +90,12 @@ param(
                     $updatefile="$folder\$packageName\update.ps1.bak"
                     Invoke-WebRequest -Uri $updatelink -OutFile $updatefile -ErrorAction SilentlyContinue
                     (Get-Content $updatefile) -replace "legal","tools" | Set-Content $updatefile
-
                 } catch {
                     Write-Output "No update.ps1 found in $packagesourceurl"
                 }
-            }
+        } elseif (!$nuspec.package.metadata.packageSourceUrl) {
+            $child = $xmlDoc.CreateElement("packageSourceUrl")
+            $nuspec.package.metadata.AppendChild($child)
         }
         $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
         [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
