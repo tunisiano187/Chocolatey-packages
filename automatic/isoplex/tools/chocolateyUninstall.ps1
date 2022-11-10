@@ -12,12 +12,12 @@ try {
 	} else {
 		$unpath = "$Env:ProgramFiles\Isoplex\unins000.exe"
 	}
-  
+
 	Uninstall-ChocolateyPackage $packageName $installerType $silentArgs $unpath -validExitCodes $validExitCodes
-    
+
 	Write-ChocolateySuccess $packageName
-	
+
 } catch {
 	Write-ChocolateyFailure $packageName $($_.Exception.Message)
-	throw 
+	throw
 }
