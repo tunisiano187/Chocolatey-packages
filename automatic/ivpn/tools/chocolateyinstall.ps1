@@ -1,6 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
-
-$url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.9.45.exe'
+﻿$url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.9.45.exe'
 $checksum     = 'e6e3df093c44c83a87cbf538d39983945f9955fadaec3f57a1a23fdfc8fcd678'
 $checksumType = 'SHA256'
 
@@ -18,7 +16,5 @@ if($OSIsServerVersion) {
   Write-Warning "System not supported"
   exit 0
 } else {
-  $cert = (Get-ChildItem -Include "*.crt" -Recurse).FullName
-    CertUtil -AddStore TrustedPublisher ($cert);
   Install-ChocolateyPackage @packageArgs
 }
