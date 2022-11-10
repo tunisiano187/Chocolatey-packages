@@ -44,10 +44,10 @@ environment:
 
   #ID of the gist used to save run results
   gist_id: 7032dea203873812b435f152ee3794bf
-  
+
   #ID of the gist used to save test run results
   gist_id_test: 90d63f6b99678e483a3669aaf2b51a1f
-  
+
   #Chocolatey API key - to push updated packages
   api_key:
     secure: aXQkG8BvsO7/zFDzAb7ADCdvottWbXf1sRoC34DUk9RIvzOiIdjprfw39CvNT4WK

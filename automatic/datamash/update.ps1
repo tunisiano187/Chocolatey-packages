@@ -1,4 +1,4 @@
-import-module au
+﻿import-module au
 
 $releases = 'https://download.savannah.gnu.org/releases/datamash/windows-binaries/'
 
