@@ -29,9 +29,8 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$url32 = 'https://annystudio.com/jcpicker.exe'
 
-	$File = "$($env:TEMP)\jcpicker.exe"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$page=Invoke-WebRequest -Uri "https://annystudio.com/software/colorpicker"
+	$version = ($page.Links | Where-Object {$_ -match 'Download free Just'})[0].innerHTML.split(' ') | Where-Object {$_ -match "\."}
 
 	$url32 = 'https://annystudio.com/jcpicker.zip'
 
