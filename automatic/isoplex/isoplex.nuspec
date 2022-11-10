@@ -21,4 +21,7 @@
     <copyright />
     <tags>peer-to-peer movie-catalog torrent-movies isohunt popcorntime</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
