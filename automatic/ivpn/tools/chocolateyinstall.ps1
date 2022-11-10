@@ -13,7 +13,7 @@ $packageArgs = @{
   checksumType  = $checksumType
   silentArgs   = '/S'
 }
-$OSIsServerVersion = if ([Int]3 -eq [Int](Get-CimInstance -Class Win32_OperatingSystem).ProductType) {$True} else {$False}
+$OSIsServerVersion = if (systeminfo | findstr /B /C:"server") {$True} else {$False}
 if($OSIsServerVersion) {
   Write-Warning "System not supported"
   exit 0
