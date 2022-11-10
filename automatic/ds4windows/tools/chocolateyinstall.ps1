@@ -5,13 +5,13 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  FileFullPath64 = gi $toolsPath\*_x64.zip
+  FileFullPath64 = Get-Item $toolsPath\*_x64.zip
   Destination    = $toolsPath
 }
 
-ls $toolsPath\* | ? { $_.PSISContainer } | rm -Recurse -Force #remove older package dirs
+#Get-ChildItem $toolsPath\* | Where-Object { $_.PSISContainer } | Remove-Item -Recurse -Force #remove older package dirs
 Get-ChocolateyUnzip @packageArgs
-rm $toolsPath\*.zip -ea 0
+Remove-Item $toolsPath\*.zip -ea 0
 
 $startupPath = [Environment]::GetFolderPath("Startup")
 $startMenuPath = [Environment]::GetFolderPath("CommonPrograms")
