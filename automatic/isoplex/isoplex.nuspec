@@ -9,7 +9,7 @@
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/isoplex</packageSourceUrl>
     <licenseUrl>http://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://isoplex.isohunt.to</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/adgellida/chocolateyautomaticpackages/master/icons/isoplex.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53022932ac1e8646dc1a78852c79cfc708d0ff4b/icons/isoplex.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A movie searching and streaming application.
 	
