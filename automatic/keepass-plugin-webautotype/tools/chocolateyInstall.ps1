@@ -11,7 +11,7 @@ $packageName    = $env:ChocolateyPackageName
 $typName        = 'WebAutoType.plgx'
 $packageSearch  = 'KeePass Password Safe'
 $url            = 'https://sourceforge.net/projects/webautotype/files/latest/download'
-$checksum       = 'da12776313eaebea1efd88c4343b8a3264102782c6ad3fef70c9f4d486aaa6e7'
+$checksum       = '1d65eb7aa302d11abad00f29343eabaaca937e193ea7b499591f0e1bf5db5bbe'
 $checksumType   = 'sha256'
 
 try {
