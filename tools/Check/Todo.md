@@ -54,3 +54,4 @@
 | aaclr | 
 | mactype | 
 | /packages/binance/1.40.0 | 
+| /packages/keepass-plugin-webautotype/6.8.2 | 
