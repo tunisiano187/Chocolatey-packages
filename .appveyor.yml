@@ -138,7 +138,7 @@ build_script:
         }
         $lastupdated=git log -1 --stat | Where-Object {$_ -match "automatic"}
         if($lastupdated.Count -ne 0 -and ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true')) {
-          $forced = $lastupdated.split('/')
+          $packages = $lastupdated.split('/')
           Write-Host "PUSHING PACKAGES: $packages"
           foreach ($package in $packages) {
               Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
