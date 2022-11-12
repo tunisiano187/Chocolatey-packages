@@ -151,6 +151,8 @@ build_script:
               popd
           }
           return
+        } else {
+          write-host "None Forced"
         }
     }
     Write-Host "Installing requisites"
@@ -185,7 +187,6 @@ build_script:
     scripts/Find-nextissue.ps1
     git commit -am "next issue"
     Write-Host "updating packages"
-    write-host "Forced ? $forced"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
