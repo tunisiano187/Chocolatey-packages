@@ -52,6 +52,7 @@ Install-PackageProvider -name winget
             $search = $issue.Title.split(' ')[-1]
             if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
+                $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
                     [string]$Label = "ToCreateManualy"
                     [string]$Title = "($($search)$($version)) Needs update"
