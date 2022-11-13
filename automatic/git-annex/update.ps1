@@ -14,18 +14,17 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
-}
+#function global:au_AfterUpdate($Package) {
+#	Invoke-VirusTotalScan $Package
+#}
 
 function global:au_GetLatest {
-	#$file = New-TemporaryFile
-	#Invoke-WebRequest -Uri $releases -OutFile $file
-	#$info = Get-Content $file
+	$file = Join-Path $env:TEMP $($releases.Split('/')[-1])
+	Invoke-WebRequest -Uri $releases -OutFile $file
+	$info = Get-Content $file
 	$url32 = $releases.Replace('.info','')
-	#$version = ($info.split(" ") | Where-Object {$_ -match '"[0-9][0-9]'}).split('"') | Where-Object {$_ -match "\."}
-	$version = "10.20221004"
-	#Remove-Item $file
+	$version = ($info.split(" ") | Where-Object {$_ -match '"[0-9][0-9]'}).split('"') | Where-Object {$_ -match "\."}
+	Remove-Item $file
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
