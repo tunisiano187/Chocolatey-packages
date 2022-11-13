@@ -34,13 +34,6 @@ if (! $installPath) {
   $installPath = Get-ChildItemDir "$portPath*"
 }
 if (! $installPath) {
-  Write-Verbose "Searching $env:Path for unregistered install..."
-  $installFullName = (Get-Command keepass -ErrorAction SilentlyContinue).Path
-  if (! $installFullName) {
-    $installPath = Split-Path -parent $installFullName
-  }
-}
-if (! $installPath) {
   Write-Warning "$($packageSearch) not found."
   throw
 }
