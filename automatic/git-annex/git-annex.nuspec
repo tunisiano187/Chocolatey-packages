@@ -34,7 +34,7 @@
     <copyright>© 2012 Joey Hess</copyright>
     <tags>git sync backup filesharing unattended admin</tags>
     <projectSourceUrl>http://git.kitenet.net/?p=git-annex.git</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/git-annex/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/git-annex</packageSourceUrl>
     <docsUrl>http://git-annex.branchable.com/</docsUrl>
     <mailingListUrl>http://git-annex.branchable.com/forum/</mailingListUrl>
     <bugTrackerUrl>http://git-annex.branchable.com/bugs/</bugTrackerUrl>
