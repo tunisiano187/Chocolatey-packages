@@ -43,4 +43,7 @@
       <dependency id="autohotkey.portable" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
