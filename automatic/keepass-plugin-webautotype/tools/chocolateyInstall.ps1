@@ -27,13 +27,13 @@ $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Window
                            $_.DisplayVersion -lt 3.0 } `
            | ForEach-Object {$_.InstallLocation}
 $installPath = $regPath
-if (! $installPath) {
+if ($null -eq $installPath) {
   Write-Verbose "Searching $(Get-ToolsLocation) for portable install..."
   $binRoot = Get-ToolsLocation
   $portPath = Join-Path $binRoot "keepass"
   $installPath = Get-ChildItemDir "$portPath*"
 }
-if (! $installPath) {
+if ($null -eq $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
   $installFullName = (Get-Command keepass -ErrorAction SilentlyContinue).Path
   if ($null -ne $installFullName) {
