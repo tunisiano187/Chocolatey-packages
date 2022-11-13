@@ -36,11 +36,11 @@ if (! $installPath) {
 if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
   $installFullName = (Get-Command keepass -ErrorAction SilentlyContinue).Path
-  if (! $installFullName) {
+  if ($null -ne $installFullName) {
     $installPath = Split-Path -parent $installFullName
   }
 }
-if (! $installPath) {
+if ($null -ne $installPath) {
   Write-Warning "$($packageSearch) not found."
   throw
 }
