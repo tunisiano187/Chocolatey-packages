@@ -5,7 +5,7 @@
     <version>7.20190627</version>
     <title>git-annex</title>
     <authors>Joey Hess</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://git-annex.branchable.com/license/</licenseUrl>
     <projectUrl>https://git-annex.branchable.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e0c48aaa7620075c027a0f6dda3eef9ded2a3503/icons/git-annex.svg</iconUrl>
