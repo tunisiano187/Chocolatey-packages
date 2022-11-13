@@ -53,19 +53,24 @@ Install-PackageProvider -name winget
             if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
-                if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
-                    [string]$Label = "ToCreateManualy"
-                    [string]$Title = "($($search)$($version)) Needs update"
-                    [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
-    $link"
-                    New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
-                    $issue=1
-                    exit 0
+                $excluded = (Get-Content .\Check\exclude.txt | Select-String -Pattern $search).Matches.Success
+                if($excluded){
+                    "$search excluded"
+                } else {
+                    if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
+                        [string]$Label = "ToCreateManualy"
+                        [string]$Title = "($($search)$($version)) update requested"
+                        [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
+        $link"
+                        New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                        $issue=1
+                        exit 0
+                    }
+                } else {
+                    "$search already worked on in the last 90 day"
+                    $search = ""
+                    $ToDo = ''
                 }
-            } else {
-                "$search already worked on in the last 90 day"
-                $search = ""
-                $ToDo = ''
             }
         }
     }
