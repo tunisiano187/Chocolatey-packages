@@ -27,8 +27,8 @@ $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Window
            | ForEach-Object {$_.InstallLocation}
 $installPath = $regPath
 if (! $installPath) {
-  Write-Verbose "Searching $env:ChocolateyBinRoot for portable install..."
-  $binRoot = Get-BinRoot
+  Write-Verbose "Searching $(Get-ToolsLocation) for portable install..."
+  $binRoot = Get-ToolsLocation
   $portPath = Join-Path $binRoot "keepass"
   $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
 }
