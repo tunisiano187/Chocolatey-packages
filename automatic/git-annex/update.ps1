@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$file = ".\git-annex.exe.info"
+	$file = New-TemporaryFile
 	Invoke-WebRequest -Uri $releases -OutFile $file
 	$info = Get-Content $file
 	$url32 = $releases.Replace('.info','')
