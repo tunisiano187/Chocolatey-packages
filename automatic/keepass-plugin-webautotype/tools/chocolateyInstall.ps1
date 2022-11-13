@@ -37,7 +37,7 @@ if (! $installPath) {
   Write-Verbose "Searching $env:Path for unregistered install..."
   $installFullName = (Get-Command keepass -ErrorAction SilentlyContinue).Path
   if (! $installFullName) {
-    $installPath = [io.path]::GetDirectoryName($installFullName)
+    $installPath = Split-Path -parent $installFullName
   }
 }
 if (! $installPath) {
