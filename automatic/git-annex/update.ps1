@@ -19,11 +19,12 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$file = Join-Path $env:TEMP "git-annex.exe.info"
+	$file = ".\git-annex.exe.info"
 	Invoke-WebRequest -Uri $releases -OutFile $file
 	$info = Get-Content $file
 	$url32 = $releases.Replace('.info','')
 	$version = ($info.split(" ") | Where-Object {$_ -match '"[0-9][0-9]'}).split('"') | Where-Object {$_ -match "\."}
+	Remove-Item $file
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
