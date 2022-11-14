@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>git-annex</id>
-    <version>7.20190627</version>
+    <version>10.20221004</version>
     <title>git-annex</title>
     <authors>Joey Hess</authors>
     <owners>tunisiano</owners>
@@ -10,18 +10,25 @@
     <projectUrl>https://git-annex.branchable.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e0c48aaa7620075c027a0f6dda3eef9ded2a3503/icons/git-annex.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>git-annex allows managing files with git, without checking the file contents into git. While that may seem paradoxical, it is useful when dealing with files larger than git can currently easily handle, whether due to limitations in memory, time, or disk space.
+    <description><![CDATA[## git-annex
+git-annex allows managing files with git, without checking the file contents into git. While that may seem paradoxical, it is useful when dealing with files larger than git can currently easily handle, whether due to limitations in memory, time, or disk space.
 
 #### Documentation - User
-* [How it works](http://git-annex.branchable.com/how_it_works/)
-* [Walkthrough](http://git-annex.branchable.com/walkthrough/)
-* [Manual](http://git-annex.branchable.com/git-annex/)
-* [Privacy policy](http://git-annex.branchable.com/privacy/)
+* [How it works](https://git-annex.branchable.com/how_it_works/)
+* [Walkthrough](https://git-annex.branchable.com/walkthrough/)
+* [Manual](https://git-annex.branchable.com/git-annex/)
+* [Privacy policy](https://git-annex.branchable.com/privacy/)
 
 #### Documentation - Technical
-* [Design](http://git-annex.branchable.com/design/)
-* [Internals](http://git-annex.branchable.com/internals/)
-* [Scalability](http://git-annex.branchable.com/scalability/)</description>
+* [Design](https://git-annex.branchable.com/design/)
+* [Internals](https://git-annex.branchable.com/internals/)
+* [Scalability](https://git-annex.branchable.com/scalability/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Allows managing files with Git without checking the file contents into git</summary>
     <releaseNotes>#### Program
 * [News](https://git-annex.branchable.com/news/)
