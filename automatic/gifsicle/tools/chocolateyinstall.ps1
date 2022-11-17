@@ -19,9 +19,9 @@ $packageArgs = @{
   softwareName  = "$($packageName)*"
 
   Checksum      = $checksum32
-  ChecksumType  = $checksum32Type
+  ChecksumType  = $checksumType32
   Checksum64    = $checksum64
-  ChecksumType64= $checksum64Type
+  ChecksumType64= $checksumType64
 
 }
 
