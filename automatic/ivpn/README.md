@@ -4,6 +4,9 @@
 IVPN for Desktop is the official IVPN app for desktop platforms. Some of the features include: multiple protocols (OpenVPN, WireGuard), Kill-switch, Multi-Hop, Trusted Networks, AntiTracker, Custom DNS, Dark mode, and more.
 IVPN Client app is distributed on the official site www.ivpn.net.
 
+### Requirements
+Windows Client, does not run on windows servers.
+
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
