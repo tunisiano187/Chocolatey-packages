@@ -14,9 +14,9 @@ function global:au_SearchReplace {
 	}
 }
 
-#function global:au_AfterUpdate($Package) {
-#	Invoke-VirusTotalScan $Package
-#}
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
 
 function global:au_GetLatest {
 	$file = Join-Path $env:TEMP $($releases.Split('/')[-1])
@@ -30,4 +30,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update
+update -NoCheckChocoVersion

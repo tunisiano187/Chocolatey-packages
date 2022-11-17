@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>git-annex</id>
-    <version>10.20221004</version>
+    <version>10.0</version>
     <title>git-annex</title>
     <authors>Joey Hess</authors>
     <owners>tunisiano</owners>
@@ -32,19 +32,18 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <summary>Allows managing files with Git without checking the file contents into git</summary>
     <releaseNotes>#### Program
 * [News](https://git-annex.branchable.com/news/)
-* [Roadmap](http://git-annex.branchable.com/design/roadmap/)
+* [Roadmap](https://git-annex.branchable.com/design/roadmap/)
 * [Changelog](https://github.com/joeyh/git-annex/blob/master/debian/changelog)
-* [GitHub mirror repo](https://github.com/joeyh/git-annex)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2012 Joey Hess</copyright>
     <tags>git sync backup filesharing unattended admin</tags>
-    <projectSourceUrl>http://git.kitenet.net/?p=git-annex.git</projectSourceUrl>
+    <projectSourceUrl>https://git-annex.branchable.com/recentchanges/</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/git-annex</packageSourceUrl>
-    <docsUrl>http://git-annex.branchable.com/</docsUrl>
-    <mailingListUrl>http://git-annex.branchable.com/forum/</mailingListUrl>
-    <bugTrackerUrl>http://git-annex.branchable.com/bugs/</bugTrackerUrl>
+    <docsUrl>https://git-annex.branchable.com/</docsUrl>
+    <mailingListUrl>https://git-annex.branchable.com/forum/</mailingListUrl>
+    <bugTrackerUrl>https://git-annex.branchable.com/bugs/</bugTrackerUrl>
     <dependencies>
       <dependency id="git" />
       <dependency id="autohotkey.portable" />
