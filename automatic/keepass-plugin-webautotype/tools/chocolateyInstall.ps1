@@ -40,7 +40,7 @@ if ($null -eq $installPath) {
     $installPath = Split-Path -parent $installFullName
   }
 }
-if ($null -ne $installPath) {
+if ($null -eq $installPath) {
   Write-Warning "$($packageSearch) not found."
   throw
 }
