@@ -13,6 +13,10 @@ function global:au_SearchReplace {
 		}
 	}
 }
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest

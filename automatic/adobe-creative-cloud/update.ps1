@@ -14,6 +14,11 @@ function global:au_SearchReplace {
 	}
 }
 
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
+
 function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "adobe-creative-cloud.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
