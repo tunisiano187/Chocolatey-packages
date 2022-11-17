@@ -8,7 +8,7 @@
     Call from global:au_AfterUpdate
 #>
 function Invoke-VirusTotalScan ($Package) {
-
+choco install -y vt-cli
     if (-not (Test-Path env:VT_APIKEY)) {
         Write-Warning "VT_APIKEY not set, skipping submission"
         return
