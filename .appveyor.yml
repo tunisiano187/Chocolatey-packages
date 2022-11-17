@@ -104,6 +104,9 @@ build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
 
+    Write-Host "Installing requisites"
+    setup/requisites.ps1
+    
     . ./scripts/EventLogs.ps1
     Clear-EventLogs
 
@@ -156,8 +159,6 @@ build_script:
           write-host "None Forced"
         }
     }
-    Write-Host "Installing requisites"
-    setup/requisites.ps1
     git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "$env:gitlab_user"
