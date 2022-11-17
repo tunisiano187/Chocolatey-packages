@@ -52,7 +52,7 @@ choco install -y vt-cli
             }
         }
 
-        $nupkgFile = Get-ChildItem "*.nupkg" | % {
+        $nupkgFile = Get-ChildItem "*.nupkg" | ForEach-Object {
           Write-Output "Submitting file $file to VirusTotal"
 
           # Assumes vt-cli Chocolatey package is installed!

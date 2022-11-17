@@ -23,9 +23,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$urls = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Links.href | Where-Object {$_ -match '.zip$'}
-	$url32 = "$releases$($urls | ? {$_ -match 'win32'})"
-	$url64 = "$releases$($urls | ? {$_ -match 'win64'})"
-	$version = $url32.split('-') | ? {$_ -notmatch 'h|z'}
+	$url32 = "$releases$($urls | Where-Object {$_ -match 'win32'})"
+	$url64 = "$releases$($urls | Where-Object {$_ -match 'win64'})"
+	$version = $url32.split('-') | Where-Object {$_ -notmatch 'h|z'}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
