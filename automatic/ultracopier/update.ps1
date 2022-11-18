@@ -38,7 +38,7 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$download_page = [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 Invoke-WebRequest -Uri $releases -UseBasicParsing
 
 	$re  = "ultracopier-windows-x86"
 	$url = $download_page.links | Where-Object href -match $re | Select-Object -First 2 -expand href
