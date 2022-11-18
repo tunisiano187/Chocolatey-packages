@@ -1,9 +1,9 @@
-$packageName = $env:ChocolateyPackageName
+﻿$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
-$url = 'http://sourceforge.net/projects/orwelldevcpp/files/Setup%20Releases/Dev-Cpp%205.11%20TDM-GCC%204.9.2%20Setup.exe/download'
-$checksum = '599853e3331311f9ef81b1e633d7713dd258f81d'
-$checksumType = 'sha1'
+$url = 'https://github.com/Embarcadero/Dev-Cpp/releases/download/v6.3/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup.exe'
+$checksum = '9ea2f0237e5c72d485f9fa29def3f0a11c51f8b252f650be533e09a5e2ada247'
+$checksumType = 'sha256'
 $validExitCodes = @(0)
 
 Install-ChocolateyPackage -PackageName "$packageName" `
