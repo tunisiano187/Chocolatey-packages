@@ -14,31 +14,13 @@ function global:au_SearchReplace {
      }
 }
 
-function global:au_BeforeUpdate {
-	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	$file32 = Join-Path $env:TEMP "$($env:ChocolateyPackageName)32.exe"
-	$file64 = Join-Path $env:TEMP "$($env:ChocolateyPackageName)64.exe"
-	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $file32
-	Invoke-WebRequest -Uri $Latest.URL64 -OutFile $file64
-	New-VirusScan -ApiKey $env:VT_APIKEY -File $file32
-	New-VirusScan -ApiKey $env:VT_APIKEY -File $file64
-	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $file32).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $file64).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
-	Remove-Item $file32
-	Remove-Item $file64
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	$download_page = [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 Invoke-WebRequest -Uri $releases -UseBasicParsing
+	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
 	$re  = "ultracopier-windows-x86"
 	$url = $download_page.links | Where-Object href -match $re | Select-Object -First 2 -expand href
