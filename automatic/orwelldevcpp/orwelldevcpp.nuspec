@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>orwelldevcpp</id>
+    <version>5.11</version>
+    <title>Orwell Dev-C++</title>
+    <authors>Orwell</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://sourceforge.net/p/orwelldevcpp/code/ci/master/tree/COPYING.txt</licenseUrl>
+    <projectUrl>http://orwelldevcpp.blogspot.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/c9f5d2fb09282df62f9720e24b82530de4533216/icons/orwelldevcpp.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Dev-C++ is a free full-featured integrated development environment (IDE) distributed under the GNU General Public License for programming in C and C++. It is written in Delphi and improved fork of Bloodshed Dev-C++.
+
+It is bundled with, and uses, the MinGW or TDM-GCC 64bit port of the GCC as its compiler. Dev-C++ can also be used in combination with Cygwin or any other GCC-based compiler.</description>
+    <summary>A free, portable, fast and simple C/C++ IDE</summary>
+    <releaseNotes>#### Program
+* [Changelog](http://orwelldevcpp.blogspot.com/)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2011 Orwell</copyright>
+    <tags>development ide compiler c++</tags>
+    <projectSourceUrl>http://sourceforge.net/p/orwelldevcpp/code/ci/master/tree/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/orwelldevcpp/5.11</packageSourceUrl>
+    <mailingListUrl>http://sourceforge.net/p/orwelldevcpp/forums/</mailingListUrl>
+    <bugTrackerUrl>http://sourceforge.net/p/orwelldevcpp/tickets/</bugTrackerUrl>
+  </metadata>
+</package>
