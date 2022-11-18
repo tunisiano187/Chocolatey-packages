@@ -22,7 +22,7 @@ It is bundled with, and uses, the MinGW or TDM-GCC 64bit port of the GCC as its 
     <copyright>© 2011 Embarcadero</copyright>
     <tags>development ide compiler c++</tags>
     <projectSourceUrl>https://github.com/Embarcadero/Dev-Cpp</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/orwelldevcpp/5.11</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/embarcaderodevcpp</packageSourceUrl>
     <bugTrackerUrl>https://github.com/Embarcadero/Dev-Cpp/issues</bugTrackerUrl>
   </metadata>
 </package>
