@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls13
 	$urls = (( Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'opus/win'} | Where-Object {$_.href -match '-win'}).href
 	$url32 = $urls | Where-Object {$_ -match 'win32'}
 	$url64 = $urls | Where-Object {$_ -match 'win64'}
