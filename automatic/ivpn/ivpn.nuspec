@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ivpn</id>
-    <version>3.9.43</version>
+    <version>3.9.45</version>
     <title>ivpn (Install)</title>
     <authors>IVPN.net</authors>
     <owners>tunisiano</owners>
@@ -15,6 +15,9 @@
     <description><![CDATA[## ivpn
 IVPN for Desktop is the official IVPN app for desktop platforms. Some of the features include: multiple protocols (OpenVPN, WireGuard), Kill-switch, Multi-Hop, Trusted Networks, AntiTracker, Custom DNS, Dark mode, and more.
 IVPN Client app is distributed on the official site www.ivpn.net.
+
+### Requirements
+Windows Client, does not run on windows servers.
 
 
 ### Package-specific issue
