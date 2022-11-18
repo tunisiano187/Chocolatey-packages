@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt</licenseUrl>
     <projectUrl>https://www.embarcadero.com/free-tools/dev-cpp/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/c9f5d2fb09282df62f9720e24b82530de4533216/icons/orwelldevcpp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4a27fd592f7fe9de4274d4876e196a99f4570a7c/icons/embarcaderodevcpp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Dev-C++ is a free full-featured integrated development environment (IDE) distributed under the GNU General Public License for programming in C and C++. It is written in Delphi and improved fork of Bloodshed Dev-C++.
 
