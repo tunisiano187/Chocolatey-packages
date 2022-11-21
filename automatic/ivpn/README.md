@@ -5,7 +5,7 @@ IVPN for Desktop is the official IVPN app for desktop platforms. Some of the fea
 IVPN Client app is distributed on the official site www.ivpn.net.
 
 ### Requirements
-Windows Client, does not run on windows servers.
+Only runs on Windows Clients (7/8/10/11), does not run on windows servers.
 
 
 ### Package-specific issue
