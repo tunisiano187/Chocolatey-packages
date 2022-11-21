@@ -18,25 +18,12 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL64
-	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL64).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".msi$"}
 	$url32 = $urls | Where-Object {$_ -match 'x86'}
     $url64 = $urls | Where-Object {$_ -match 'x64'}
