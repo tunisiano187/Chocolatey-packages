@@ -31,6 +31,8 @@ function global:au_GetLatest {
 	if($tags.prerelease -match "true" -and $version.ToString() -notmatch 'beta') {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
+	} elseif ($version.ToString() -match 'beta') {
+		$version="$($version.Split('a')[0])a"
 	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
