@@ -28,7 +28,7 @@ function global:au_GetLatest {
 	$url32 = $urls | Where-Object {$_ -match 'x86'}
     $url64 = $urls | Where-Object {$_ -match 'x64'}
 	$version = $tags.tag_name.Replace('v','')
-	if($tags.prerelease -match "true") {
+	if($tags.prerelease -match "true" -and $version.ToString() -notmatch 'beta') {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	}
