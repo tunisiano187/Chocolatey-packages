@@ -32,7 +32,7 @@ function global:au_GetLatest {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	} elseif ($version.ToString() -match 'beta') {
-		$version="$($version.Split('a')[0])a"
+		$version="$($version.Split('a')[0])a$($version.Split('a')[1].replace('.',''))"
 	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
