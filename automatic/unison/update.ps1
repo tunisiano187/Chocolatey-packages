@@ -15,21 +15,8 @@ function global:au_SearchReplace {
      }
 }
 
-function global:au_BeforeUpdate {
-	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL64
-	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL64).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
@@ -46,4 +33,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32

@@ -20,15 +20,8 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate {
-	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
-	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_AfterUpdate  {
@@ -57,7 +50,7 @@ function global:au_GetLatest {
 }
 
 try {
-    update -ChecksumFor 32 -NoCheckChocoVersion
+    update -ChecksumFor 32
 } catch {
     $ignore = "Unable to connect to the remote server"
     if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }

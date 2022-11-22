@@ -20,17 +20,10 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge -NoSuffix
-  $file = (Get-ChildItem -Path .\tools -Exclude *.txt,*.ps1 | Select-Object -First 1).FullName
-  if($file.count -gt 0) {
-    Import-Module VirusTotalAnalyzer -NoClobber -Force
-    New-VirusScan -ApiKey $env:VT_APIKEY -File $file
-	  Start-Sleep -Seconds 60
-	  $vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -File $file).data.attributes.reputation
-    if ( $vt -gt 5 ) {
-          Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-          return 'ignore'
-    }
-  }
+}
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 

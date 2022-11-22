@@ -18,16 +18,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-	Import-Module VirusTotalAnalyzer -NoClobber -Force
-	New-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32
-	Start-Sleep -Seconds 60
-	$vt = (Get-VirusScan -ApiKey $env:VT_APIKEY -Url $Latest.URL32).data.attributes.reputation
-	if ( $vt -gt 5 ) {
-	  Write-Error "Ignoring $($Latest.PackageName) package due to virus total results - $vt positives"
-	  return 'ignore'
-	}
     #Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
     Get-RemoteFiles -Purge
+}
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
