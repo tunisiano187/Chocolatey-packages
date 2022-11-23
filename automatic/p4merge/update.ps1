@@ -20,6 +20,7 @@ function global:au_SearchReplace {
 
 
 function global:au_BeforeUpdate($Package) {
+	Get-RemoteFiles -Purge -NoSuffix
 	Invoke-VirusTotalScan $Package
 }
 
@@ -48,7 +49,7 @@ function global:au_GetLatest {
 		}
     }
 	Invoke-WebRequest -Uri $url64 -OutFile ".\tools\p4vinst64.exe"
-
+	
 	if($version -eq "2022.3") {
 		$version = "2022.3.0.2022112301"
 	}
