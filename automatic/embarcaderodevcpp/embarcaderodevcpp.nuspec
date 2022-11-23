@@ -33,4 +33,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/embarcaderodevcpp</packageSourceUrl>
     <bugTrackerUrl>https://github.com/Embarcadero/Dev-Cpp/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
