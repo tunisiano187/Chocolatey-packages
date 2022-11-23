@@ -13,7 +13,7 @@ $packageArgs = @{
 }
 $OSIsServerVersion = if ((Get-WmiObject -Class Win32_OperatingSystem).ProductType -ne 1) {$True} else {$False}
 if($OSIsServerVersion) {
-  Write-Warning "System not supported"
+  Write-Warning "Only runs on Windows Clients (7/8/10/11), does not run on windows servers."
   exit 0
 } else {
   Install-ChocolateyPackage @packageArgs
