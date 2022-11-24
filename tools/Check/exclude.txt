@@ -5,3 +5,4 @@ pavement.standard
 chainlp
 isoplex
 meson
+speex
