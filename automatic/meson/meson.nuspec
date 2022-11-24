@@ -5,7 +5,7 @@
     <version>0.55.0</version>
     <title>The Meson Build system</title>
     <authors>Jussi Pakkanen</authors>
-    <owners>cansik</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://mesonbuild.com/legal.html</licenseUrl>
     <projectUrl>https://mesonbuild.com/</projectUrl>
     <iconUrl>https://github.com/cansik/chocolatey-packages/blob/master/icons/meson.png?raw=true</iconUrl>
