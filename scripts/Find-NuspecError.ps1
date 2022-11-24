@@ -40,7 +40,7 @@ function Find-NuspecError {
 $nuspecend"
 
         # Check if the files section exists to avoid embedding useless files
-        If(!($filecontent -match 'files')) {
+        If(!($filecontent -match '<files>')) {
             $errormsg = ': missing <files><file src="tools\**" target="tools" /></files>'
             throw "$($nuspec.Name) $($errormsg)"
         }
