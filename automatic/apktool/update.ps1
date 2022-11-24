@@ -28,7 +28,7 @@ function global:au_GetLatest {
 	$url32 = $urls | Where-Object {$_ -match ".jar"}
 
 	Write-Verbose 'Checking version'
-	$version=$tags.name.Split(' ')[-1].replace('v','')
+	$version=$tags.tag_name.Split(' ')[-1].replace('v','')
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
