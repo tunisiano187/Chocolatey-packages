@@ -17,7 +17,7 @@ The main design point of Meson is that every moment a developer spends writing o
     <releaseNotes>https://github.com/mesonbuild/meson/releases/tag/0.55.0</releaseNotes>
     <tags>build system native source multiplatform</tags>
     <projectSourceUrl>https://github.com/mesonbuild/meson</projectSourceUrl>
-    <packageSourceUrl>https://github.com/cansik/chocolatey-packages/tree/master/meson</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/meson</packageSourceUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/mesonbuild</mailingListUrl>
     <bugTrackerUrl>https://github.com/mesonbuild/meson/issues</bugTrackerUrl>
   </metadata>
