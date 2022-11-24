@@ -39,4 +39,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <docsUrl>https://pngquant.org/#manual</docsUrl>
     <bugTrackerUrl>https://github.com/pornel/pngquant/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
 </package>
