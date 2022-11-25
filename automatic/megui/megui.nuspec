@@ -6,8 +6,8 @@
     <title>MeGUI</title>
     <authors>MeGUI</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>http://sourceforge.net/projects/megui/</projectUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <projectUrl>https://en.wikibooks.org/wiki/MeGUI</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ed218ea2f36e4652d9fe828073fade4c0b0d5ceb/icons/megui.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MeGUI is the most comprehensive GUI based ISO MPEG-4 solution. It suports MPEG-4 ASP (xvid), MPEG-4 AVC (x264), AAC, MP2, MP3, Flac, Vorbis, AC3 audio and various common containers support (MP4, MKV, AVI, M2TS).
@@ -19,12 +19,15 @@
 * [Changelog](http://sourceforge.net/p/megui/code/HEAD/tree/megui/trunk/Changelog_full.txt?format)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2005 MeGUI</copyright>
     <language>en-us</language>
     <tags>video conversion transcoding</tags>
-    <projectSourceUrl>http://sourceforge.net/p/megui/code/HEAD/tree/</projectSourceUrl>
+    <projectSourceUrl>https://sourceforge.net/p/megui/code/HEAD/tree/</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/megui/</packageSourceUrl>
-    <bugTrackerUrl>http://sourceforge.net/p/megui/bugs/</bugTrackerUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/megui/bugs/</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
