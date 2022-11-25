@@ -17,11 +17,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-    #Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
-    Get-RemoteFiles -Purge
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -29,6 +24,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+	Invoke-WebRequest -Uri $url32 -OutFile ".\tools\redshift-tray.zip"
 	$version = $tags.tag_name.Replace('v','')
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
@@ -40,4 +36,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update
+update -Debug
