@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installDir = "$(Get-ToolsLocation)\rstray"
-$version    = '2.2.0'
+$installDir = $toolsdir
+$version    = '2.2.2'
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
@@ -11,7 +11,7 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Write-Debug "Installing $version"
-Install-BinFile "rstray" "$installDir\rstray.exe"
+#Write-Debug "Installing $version"
+#Install-BinFile "rstray" "$installDir\rstray.exe"
 
-Remove-Item $toolsDir\*.zip -ea 0
+#Remove-Item $toolsDir\*.zip -ea 0
