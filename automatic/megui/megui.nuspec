@@ -24,7 +24,7 @@
     <language>en-us</language>
     <tags>video conversion transcoding</tags>
     <projectSourceUrl>https://sourceforge.net/p/megui/code/HEAD/tree/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/megui/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/megui</packageSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/megui/bugs/</bugTrackerUrl>
   </metadata>
   <files>
