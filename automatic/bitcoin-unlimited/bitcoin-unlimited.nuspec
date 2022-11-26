@@ -41,7 +41,7 @@ If you support an increase in the blocksize limit by any means -- or just suppor
     <copyright>© 2015 Bitcoin Unlimited</copyright>
     <tags>bitcoin btc wallet crypto currency p2p protocol</tags>
     <projectSourceUrl>https://github.com/BitcoinUnlimited/BitcoinUnlimited</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/bitcoin-unlimited/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bitcoin-unlimited</packageSourceUrl>
     <docsUrl>https://www.bitcoinunlimited.info/faq</docsUrl>
     <mailingListUrl>https://www.bitcoinunlimited.info/contact-us</mailingListUrl>
     <bugTrackerUrl>https://github.com/BitcoinUnlimited/BitcoinUnlimited/issues</bugTrackerUrl>
