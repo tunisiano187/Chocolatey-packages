@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/COPYING</licenseUrl>
     <projectUrl>https://www.bitcoinunlimited.info/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/1ee4d2d9a5c7b19315b9155256d7c87bc5ae8246/icons/bitcoin-unlimited.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e641e03db87441ba9758137ad9cb4bd4a34abaf/icons/bitcoin-unlimited.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Bitcoin Unlimited is an implementation of a full Bitcoin Core node. By running it, you express an interest to the Bitcoin network to make specific changes to the Bitcoin protocol, including changes to Bitcoin's blockchain blocksize.
 
