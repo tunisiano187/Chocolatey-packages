@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>megui</id>
-    <version>1.0.2896</version>
+    <version>1.0.2913</version>
     <title>MeGUI</title>
     <authors>MeGUI</authors>
     <owners>tunisiano</owners>
@@ -10,10 +10,15 @@
     <projectUrl>https://en.wikibooks.org/wiki/MeGUI</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6c821c2cc34348d87f974db1ee5cf7465e4199ac/icons/megui.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>MeGUI is the most comprehensive GUI based ISO MPEG-4 solution. It suports MPEG-4 ASP (xvid), MPEG-4 AVC (x264), AAC, MP2, MP3, Flac, Vorbis, AC3 audio and various common containers support (MP4, MKV, AVI, M2TS).
+    <description><![CDATA[## MeGui
 
-#### Documentation
-* [Wiki](http://sourceforge.net/p/megui/wiki/Home/)</description>
+MeGUI is the most comprehensive GUI based ISO MPEG-4 solution. It suports MPEG-4 ASP (xvid), MPEG-4 AVC (x264), AAC, MP2, MP3, Flac, Vorbis, AC3 audio and various common containers support (MP4, MKV, AVI, M2TS).
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Portable video converter front-end for many free command line tools</summary>
     <releaseNotes>#### Program
 * [Changelog](http://sourceforge.net/p/megui/code/HEAD/tree/megui/trunk/Changelog_full.txt?format)
