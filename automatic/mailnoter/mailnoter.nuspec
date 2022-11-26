@@ -57,4 +57,7 @@ So, as I said: it's a small tool which doesn't do much. But it helps me with gat
     <copyright>© Stefan Kueng</copyright>
     <tags>tray hotkey notes email attachment</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
