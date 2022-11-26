@@ -50,4 +50,7 @@ If you support an increase in the blocksize limit by any means -- or just suppor
       <dependency id="bitcoin-unlimited.install" version="[1.0.2.0]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
