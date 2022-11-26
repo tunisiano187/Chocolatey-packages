@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>https://en.wikibooks.org/wiki/MeGUI</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ed218ea2f36e4652d9fe828073fade4c0b0d5ceb/icons/megui.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6c821c2cc34348d87f974db1ee5cf7465e4199ac/icons/megui.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MeGUI is the most comprehensive GUI based ISO MPEG-4 solution. It suports MPEG-4 ASP (xvid), MPEG-4 AVC (x264), AAC, MP2, MP3, Flac, Vorbis, AC3 audio and various common containers support (MP4, MKV, AVI, M2TS).
 
