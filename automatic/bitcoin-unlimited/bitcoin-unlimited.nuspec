@@ -5,7 +5,7 @@
     <version>1.0.2.0</version>
     <title>Bitcoin Unlimited</title>
     <authors>Bitcoin Unlimited</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/release/COPYING</licenseUrl>
     <projectUrl>https://www.bitcoinunlimited.info/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6e641e03db87441ba9758137ad9cb4bd4a34abaf/icons/bitcoin-unlimited.png</iconUrl>
