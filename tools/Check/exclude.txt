@@ -6,3 +6,5 @@ chainlp
 isoplex
 meson
 speex
+bitcoin-unlimited
+bitcoin-unlimited.install
