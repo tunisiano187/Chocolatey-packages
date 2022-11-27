@@ -9,7 +9,7 @@
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://tools.stefankueng.com/MailNoter.html</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailnoter</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/a52c1ec9a27dc25fecb35edb6e2e2b2c7f656ce2/icons/mailnoter.ico</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a3ba601b90415b82a4cf7fb98979c76b8808955a/icons/mailnoter.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MailNoter is a small tool to help gathering notes from various applications, but specifically from browsers.
 
