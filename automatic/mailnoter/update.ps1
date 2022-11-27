@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	$url32 = "https://sourceforge.net$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href | Select-Object -First 1)"
 	$version = $url32.Split('-').split('&')[-2].Replace('.zip','')
 	$url32 = "https://master.dl.sourceforge.net/project/mailnoter/MailNoter-$version.zip?viasf=1"
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
