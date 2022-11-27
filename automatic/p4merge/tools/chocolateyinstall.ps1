@@ -18,4 +18,4 @@ $packageArgs = @{
   silentArgs   = '/s REMOVEAPPS=P4V,P4ADMIN,P4'
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
