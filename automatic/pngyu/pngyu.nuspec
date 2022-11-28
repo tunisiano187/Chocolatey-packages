@@ -5,9 +5,9 @@
     <version>1.0.1</version>
     <title>Pngyu</title>
     <authors>nukesaq88</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/nukesaq88/Pngyu/blob/8b5600b66c20451606cfa3892af821cf0dc29153/README.md</licenseUrl>
-    <projectUrl>http://nukesaq88.github.io/Pngyu/</projectUrl>
+    <projectUrl>https://nukesaq88.github.io/Pngyu/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/nukesaq88/Pngyu/957c9b03c05b82a3c3cbb1175d2ae4bcd871277e/resource/icon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Pngyu is a simple GUI front-end for [pngquant](https://chocolatey.org/packages/pngquant), a PNG lossy compressor, supporting palleted alpha transparency.
@@ -18,11 +18,14 @@
 * [Release dates](http://nukesaq88.github.io/Pngyu/#ReleaseDate)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© nukesaq88</copyright>
     <tags>png pngquant compress frontend</tags>
     <projectSourceUrl>https://github.com/nukesaq88/Pngyu</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/pngyu/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/pngyu/</packageSourceUrl>
     <bugTrackerUrl>https://github.com/nukesaq88/Pngyu/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
 </package>
