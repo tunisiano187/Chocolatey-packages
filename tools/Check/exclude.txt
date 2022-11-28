@@ -8,5 +8,3 @@ meson
 speex
 bitcoin-unlimited
 bitcoin-unlimited.install
-mailnoter
-hostinfo
