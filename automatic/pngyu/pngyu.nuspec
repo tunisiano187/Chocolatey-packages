@@ -22,7 +22,7 @@
     <copyright>© nukesaq88</copyright>
     <tags>png pngquant compress frontend</tags>
     <projectSourceUrl>https://github.com/nukesaq88/Pngyu</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/pngyu/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pngyu</packageSourceUrl>
     <bugTrackerUrl>https://github.com/nukesaq88/Pngyu/issues</bugTrackerUrl>
   </metadata>
   <files>
