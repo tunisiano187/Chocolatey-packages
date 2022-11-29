@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/nukesaq88/Pngyu/blob/8b5600b66c20451606cfa3892af821cf0dc29153/README.md</licenseUrl>
     <projectUrl>https://nukesaq88.github.io/Pngyu/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/nukesaq88/Pngyu/957c9b03c05b82a3c3cbb1175d2ae4bcd871277e/resource/icon.ico</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@77b5ca184f6b891140ecc7f1970b666ad7b161af/icons/pngyu.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Pngyu is a simple GUI front-end for [pngquant](https://chocolatey.org/packages/pngquant), a PNG lossy compressor, supporting palleted alpha transparency.
 
