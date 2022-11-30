@@ -16,11 +16,11 @@ JDownloader can import CCF, RSDF and the new DLC files.
 
 Note: This is not the official installer. It is unsupported by JDownloader and may break any time. The install directory is different to the official one.</description>
     <summary />
-    <copyright />
-    <tags>beta-version download-manager jdownloader java</tags>
+    <copyright></copyright>
+    <tags>download-manager jdownloader java</tags>
     <packageSourceUrl>https://github.com/aronovgj/choco-auto</packageSourceUrl>
     <dependencies>
-      <dependency id="jre8" />
+      <dependency id="Temurin17jre" />
     </dependencies>
   </metadata>
 </package>
