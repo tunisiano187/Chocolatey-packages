@@ -2,6 +2,7 @@
 
 import-module au
 $releases="https://jdownloader.org/jdownloader2"
+choco upgrade megatools -y
 
 function global:au_SearchReplace {
 	@{
@@ -23,10 +24,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -35,12 +32,17 @@ function global:au_GetLatest {
 	$urls=(Invoke-WebRequest -uri $releases).Links
 	$url32 = ($urls | Where-Object {$_.id -match "windows1"}).href
 	$url64 = ($urls | Where-Object {$_.id -match "windows0"}).href
+	$toolsPath = Join-Path $(Split-Path $MyInvocation.MyCommand.Definition) "tools"
 
-	$File = "$($env:TEMP)\jdownloader.exe"
-	Invoke-WebRequest -Uri $url64 -OutFile $File
+
+	megatools.exe dl $url32
+	megatools.exe dl $url64
+
+	$File = Get-Item $toolsPath\*_x86_jre17.exe
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	$copyright = (Get-Item($File)).VersionInfo.LegalCopyright
-	
+	Move-Item *.exe $toolsPath
+
 	$Latest = @{ URL32 = $url32; Version = $version; Copyright = $copyright }
 	return $Latest
 }

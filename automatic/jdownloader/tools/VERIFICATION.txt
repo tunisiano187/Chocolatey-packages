@@ -2,7 +2,7 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-1.  Download the installer:
+1.  Download the installer (url visible on https://jdownloader.org/jdownloader2):
 
     x32: 
     x64: https://github.com/Ryochan7/DS4Windows/releases/download/v3.1.11/DS4Windows_3.1.11_x64.zip
