@@ -2,7 +2,6 @@
 
 import-module au
 $releases="https://jdownloader.org/jdownloader2"
-choco upgrade megatools -y
 
 function global:au_SearchReplace {
 	@{
