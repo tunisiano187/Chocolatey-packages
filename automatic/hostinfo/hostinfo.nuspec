@@ -15,4 +15,7 @@
     <copyright>© 2004 Jem Berkes</copyright>
     <tags>cli ip address</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
