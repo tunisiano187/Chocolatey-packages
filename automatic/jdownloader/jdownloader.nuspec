@@ -5,7 +5,7 @@
     <version>2.0</version>
     <title>JDownloader</title>
     <authors>AppWork UG</authors>
-    <owners>doc</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>http://jdownloader.org/download/offline</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2776051ab7e1004d1569d657c57ece52fd302351/icons/jdownloader.png</iconUrl>
