@@ -6,9 +6,10 @@ $releases="https://jdownloader.org/jdownloader2"
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+			"(^[$]checksum64\s*=\s*)('.*')" 	= "`$1'$($Latest.Checksum64)'"
+			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
 		".\tools\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
@@ -18,13 +19,9 @@ function global:au_SearchReplace {
 			"(?i)(\s+checksum64:).*"            = "`${1} $($Latest.Checksum64)"
 		}
 		"$($Latest.PackageName).nuspec" = @{
-			"(\<copyright\>).*?(\</copyright\>)" 	= "`${1}$($Latest.Copyright)`$2"
+			"(\<copyright\>).*?(\</copyright\>)"= "`${1}$($Latest.Copyright)`$2"
 		}
 	}
-}
-
-function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
 }
 
 function global:au_AfterUpdate($Package) {
@@ -45,13 +42,18 @@ function global:au_GetLatest {
 
 	$File = Get-Item tools\*-x32_jre17.exe
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$File64 = Get-Item tools\*-x64_jre17.exe
+	$checksumtype = 'SHA256'
+	$checksum32 = (Get-FileHash -Path $File -Algorithm SHA256).hash
+	$checksum64 = (Get-FileHash -Path $File64 -Algorithm SHA256).hash
+
 	if($version -eq '2.0') {
 		$version = "2.0.0.$($revision)"
 	}
 	$copyright = (Get-Item($File)).VersionInfo.LegalCopyright
 
-	$Latest = @{ URL32 = $url32; Version = $version; Copyright = $copyright }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Checksum32 = $checksum32; Checksum64 = $checksum64; ChecksumType32 = $checksumtype; ChecksumType64 = $checksumtype; Version = $version; Copyright = $copyright }
 	return $Latest
 }
 
-update -NoCheckUrl all
+update -ChecksumFor none
