@@ -18,7 +18,7 @@ Note: This is not the official installer. It is unsupported by JDownloader and m
     <summary />
     <copyright></copyright>
     <tags>download-manager jdownloader java</tags>
-    <packageSourceUrl>https://github.com/aronovgj/choco-auto</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jdownloader</packageSourceUrl>
     <dependencies>
       <dependency id="Temurin17jre" />
     </dependencies>
