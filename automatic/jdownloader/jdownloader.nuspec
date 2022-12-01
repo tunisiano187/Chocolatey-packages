@@ -23,4 +23,7 @@ Note: This is not the official installer. It is unsupported by JDownloader and m
       <dependency id="Temurin17jre" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
