@@ -35,6 +35,8 @@ function global:au_GetLatest {
 	$urls=(Invoke-WebRequest -uri $releases).Links
 	$url32 = ($urls | Where-Object {$_.id -match "windows1"}).href
 	$url64 = ($urls | Where-Object {$_.id -match "windows0"}).href
+	$page=Invoke-WebRequest -uri "https://svn.jdownloader.org/build.php"
+	$revision = $page.Content.Split('<|>') | Where-Object {$_ -match '^[0-9]+$'}
 
 	megatools.exe dl $url32
 	megatools.exe dl $url64
@@ -43,10 +45,13 @@ function global:au_GetLatest {
 
 	$File = Get-Item tools\*-x32_jre17.exe
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	if($version -eq '2.0') {
+		$version = "2.0.0.$($revision)"
+	}
 	$copyright = (Get-Item($File)).VersionInfo.LegalCopyright
 
 	$Latest = @{ URL32 = $url32; Version = $version; Copyright = $copyright }
 	return $Latest
 }
 
-update
+update -NoCheckUrl all
