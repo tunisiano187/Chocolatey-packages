@@ -42,7 +42,11 @@ $nuspecend"
         # Check if the files section exists to avoid embedding useless files
         If(!($filecontent -match '<files>')) {
             $errormsg = ': missing <files><file src="tools\**" target="tools" /></files>'
-            throw "$($nuspec.Name) $($errormsg)"
+            (Get-Content $nuspec.FullName) -replace "</metadata>", '</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>' | Set-Content $nuspec.FullName
+            throw "$($nuspec.Name): $($errormsg)"
         }
 
         # Check if the packageSourceURL section exists
