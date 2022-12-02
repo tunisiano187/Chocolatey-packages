@@ -10,3 +10,4 @@ bitcoin-unlimited
 bitcoin-unlimited.install
 solr
 jdownloader
+hostinfo
