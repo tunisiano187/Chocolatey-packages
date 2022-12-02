@@ -31,7 +31,7 @@ function global:au_GetLatest {
         $version='1.0.1.20221128'
     }
 
-    return @{ URL32 = $url32; URL64 = $url64; Version = $version }
+    return @{ URL32 = $url32; Version = $version }
 }
 
-update -NoCheckChocoVersion
+update -NoCheckUrl
