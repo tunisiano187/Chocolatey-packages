@@ -6,6 +6,7 @@
     <title>Host Info</title>
     <authors>Jem Berkes</authors>
     <owners>dtgm</owners>
+    <packageSourceUrl></packageSourceUrl>
     <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.pc-tools.net/win32/hostinfo/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
