@@ -17,3 +17,4 @@ keepass-plugin-autotypecustomfieldpicker
 findthatfont
 findaes
 md5sums
+keepass-plugin-keecloud
