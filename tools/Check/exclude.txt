@@ -12,3 +12,4 @@ solr
 jdownloader
 hostinfo
 filetool
+evimsync
