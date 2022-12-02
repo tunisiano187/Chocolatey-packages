@@ -5,7 +5,7 @@
     <version>1.0.0.0</version>
     <title>KeePass Plugin AutoTypeCustomFieldPicker</title>
     <authors>Bernd Bestel</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker/blob/master/licence.txt</licenseUrl>
     <projectUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
