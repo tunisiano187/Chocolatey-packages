@@ -20,3 +20,4 @@ md5sums
 keepass-plugin-keecloud
 peerblock
 dreampie
+evernote2onenote
