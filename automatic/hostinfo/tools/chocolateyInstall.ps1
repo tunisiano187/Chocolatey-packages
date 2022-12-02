@@ -10,6 +10,6 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -UnzipLocation "$toolsDir" `
                              -Checksum "$checksum" `
                              -ChecksumType "$checksumType"
-                             
+
 Set-Content -Path ("$installFile.gui") `
             -Value $null
