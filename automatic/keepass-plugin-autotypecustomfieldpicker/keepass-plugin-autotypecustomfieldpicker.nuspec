@@ -34,4 +34,7 @@ Just use the new placeholder `{PICKCUSTOMFIELD}` in an Auto-Type sequence. When 
       <dependency id="keepass" version="[2.0, 3.0)" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
