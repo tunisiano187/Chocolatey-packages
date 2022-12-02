@@ -13,3 +13,4 @@ jdownloader
 hostinfo
 filetool
 evimsync
+keepass-plugin-autotypecustomfieldpicker
