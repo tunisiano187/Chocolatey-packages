@@ -11,3 +11,4 @@ bitcoin-unlimited.install
 solr
 jdownloader
 hostinfo
+filetool
