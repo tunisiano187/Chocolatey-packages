@@ -16,3 +16,4 @@ evimsync
 keepass-plugin-autotypecustomfieldpicker
 findthatfont
 findaes
+md5sums
