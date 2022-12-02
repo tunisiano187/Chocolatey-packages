@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href | Select-Object -First 1
 	$ver = $url32.Split('-')[-2]
 	$version = "1.0.$($url32.Split('-')[-2])"
-	$url32 = "https://jztkft.dl.sourceforge.net/project/megui/megui-stable/$ver/MeGUI-$ver-32.zip"
+	$url32 = "https://master.dl.sourceforge.net/project/megui/megui-stable/$ver/MeGUI-$ver-32.zip"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
