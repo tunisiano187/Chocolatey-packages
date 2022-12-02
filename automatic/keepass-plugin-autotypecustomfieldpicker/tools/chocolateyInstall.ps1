@@ -60,7 +60,7 @@ Get-ChocolateyWebFile -PackageName "$packageName" `
 
 if ( Get-Process -Name "KeePass" `
                  -ErrorAction SilentlyContinue ) {
-  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)." 
+  Write-Warning "$($packageSearch) is currently running. Plugin will be available at next restart of $($packageSearch)."
 } else {
   Write-Host "$($packageName) will be loaded the next time KeePass is started."
   Write-Host "Please note this plugin may require additional configuration. Look for a new entry in KeePass' Menu>Tools"
