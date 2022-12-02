@@ -28,7 +28,7 @@ Just use the new placeholder `{PICKCUSTOMFIELD}` in an Auto-Type sequence. When 
     <copyright>© 2013 Bernd Bestel</copyright>
     <tags>keepass plugin customization</tags>
     <projectSourceUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/keepass-plugin-autotypecustomfieldpicker/1.0.0.0</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/keepass-plugin-autotypecustomfieldpicker</packageSourceUrl>
     <bugTrackerUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="keepass" version="[2.0, 3.0)" />
