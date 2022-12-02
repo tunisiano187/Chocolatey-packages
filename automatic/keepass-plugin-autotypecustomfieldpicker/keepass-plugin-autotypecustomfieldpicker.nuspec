@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>keepass-plugin-autotypecustomfieldpicker</id>
+    <version>1.0.0.0</version>
+    <title>KeePass Plugin AutoTypeCustomFieldPicker</title>
+    <authors>Bernd Bestel</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker/blob/master/licence.txt</licenseUrl>
+    <projectUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MicrosoftKeyImporter is a KeePass 2.x plugin to provide support for a placeholder `{PICKCUSTOMFIELD}`.
+
+When auto-typing a sequence containing this placeholder, a window is displayed that allows to pick a custom string field (whose value is then inserted at the placeholder's position).
+
+#### Purpose
+On some sites, particularly banking related sites, there are login forms where you have to enter "The answer for security question 3 out of 5". In KeePass, you probably have stored these answers in custom fields.
+
+With the current `{PICKCHARS}` placeholder you can pick single chars out of a field. But for this use case you need a placeholder for a complete field value.
+
+#### Usage
+Just use the new placeholder `{PICKCUSTOMFIELD}` in an Auto-Type sequence. When you execute such a sequence, a window will popup and let you choose a custom field (just like `{PICKCHARS}` does). The value of the picked custom field will be replaced in the Auto-Type sequence.</description>
+    <summary>KeePass 2 plugin to provide support for a custom placeholder</summary>
+    <releaseNotes>#### Program
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2013 Bernd Bestel</copyright>
+    <tags>keepass plugin customization</tags>
+    <projectSourceUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/keepass-plugin-autotypecustomfieldpicker/1.0.0.0</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/berrnd/KeePassAutoTypeCustomFieldPicker/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="keepass" version="[2.0, 3.0)" />
+    </dependencies>
+  </metadata>
+</package>
