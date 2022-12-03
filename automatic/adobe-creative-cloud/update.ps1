@@ -22,7 +22,10 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$File = Join-Path($(Split-Path $script:MyInvocation.MyCommand.Path)) "adobe-creative-cloud.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
-	$version="5.8.0.592"
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	if($version -lt "5.8.0.592") {
+		$version="5.8.0.$($version.replace('.',''))"
+	}
 
 	$Latest = @{ URL32 = $release; Version = Get-FixVersion $version -OnlyFixBelowVersion $padVersionUnder }
 	return $Latest
