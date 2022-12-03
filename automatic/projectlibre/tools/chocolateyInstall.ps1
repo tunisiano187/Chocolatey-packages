@@ -8,12 +8,12 @@ $packageArgs = @{
     url           = $url
     checksum      = $checksum
     checksumType  = $checksumType
-  
+
     softwareName  = "$($env:ChocolateyPackageName)*"
-  
+
 
     silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
     validExitCodes= @(0)
   }
-  
+
   Install-ChocolateyPackage @packageArgs
