@@ -5,10 +5,10 @@
     <version>1.20</version>
     <title>Powder Player</title>
     <authors>Branza Victor-Alexandru,Luigi Poole,Jean van Kasteel,Ivo Georgiev</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/jaruba/PowderPlayer/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://powder.media/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jaruba/PowderPlayer/8d1880630790c60f5467abb06ae9c93c5af17750/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@edaba8beb57ffc87a84c39ba5e83c431cddc8559/icons/powderplayer.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Torrents have always been the symbol of freedom of information on the internet, our target is ease of access to this sea of information in an ever growing technological world.
 
@@ -24,7 +24,7 @@ Powder is the future of all torrent requirements, it's a hybrid between a Torren
     <copyright>© 2015 Branza Victor-Alexandru, Luigi Poole, Jean van Kasteel, Ivo Georgiev</copyright>
     <tags>torrent streaming video player admin</tags>
     <projectSourceUrl>https://github.com/jaruba/PowderPlayer</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/powderplayer/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powderplayer</packageSourceUrl>
     <docsUrl>https://github.com/jaruba/PowderPlayer/wiki</docsUrl>
     <mailingListUrl>https://gitter.im/jaruba/PowderPlayer</mailingListUrl>
     <bugTrackerUrl>https://github.com/jaruba/PowderPlayer/issues</bugTrackerUrl>
