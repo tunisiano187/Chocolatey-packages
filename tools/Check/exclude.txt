@@ -21,3 +21,4 @@ keepass-plugin-keecloud
 peerblock
 dreampie
 evernote2onenote
+pydiosync
