@@ -32,4 +32,7 @@ Powder is the future of all torrent requirements, it's a hybrid between a Torren
       <dependency id="chocolatey-uninstall.extension" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
