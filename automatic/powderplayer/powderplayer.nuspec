@@ -5,7 +5,7 @@
     <version>1.20</version>
     <title>Powder Player</title>
     <authors>Branza Victor-Alexandru,Luigi Poole,Jean van Kasteel,Ivo Georgiev</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/jaruba/PowderPlayer/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://powder.media/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@edaba8beb57ffc87a84c39ba5e83c431cddc8559/icons/powderplayer.png</iconUrl>
