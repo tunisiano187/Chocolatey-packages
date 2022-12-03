@@ -24,7 +24,7 @@ Powder is the future of all torrent requirements, it's a hybrid between a Torren
     <copyright>© 2015 Branza Victor-Alexandru, Luigi Poole, Jean van Kasteel, Ivo Georgiev</copyright>
     <tags>torrent streaming video player admin</tags>
     <projectSourceUrl>https://github.com/jaruba/PowderPlayer</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/powderplayer/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powderplayer</packageSourceUrl>
     <docsUrl>https://github.com/jaruba/PowderPlayer/wiki</docsUrl>
     <mailingListUrl>https://gitter.im/jaruba/PowderPlayer</mailingListUrl>
     <bugTrackerUrl>https://github.com/jaruba/PowderPlayer/issues</bugTrackerUrl>
