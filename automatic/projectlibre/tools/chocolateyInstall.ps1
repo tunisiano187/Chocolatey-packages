@@ -1,13 +1,13 @@
-$url32          = 'http://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.5.9/projectlibre-1.5.9.msi/download'
-$checksum32     = ''
-$checksumType32 = ''
+$url          = 'http://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.5.9/projectlibre-1.5.9.msi/download'
+$checksum     = ''
+$checksumType = ''
 
 $packageArgs = @{
     packageName   = $env:ChocolateyPackageName
     fileType      = 'EXE'
-    url           = $url32
-    checksum      = $checksum32
-    checksumType  = $checksumType32
+    url           = $url
+    checksum      = $checksum
+    checksumType  = $checksumType
   
     softwareName  = "$($env:ChocolateyPackageName)*"
   
