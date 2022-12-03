@@ -9,7 +9,7 @@ $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
     FileType        = $installerType
     SilentArgs      = $silentArgs
-    
+
     url             = $url32
     checksum        = $checksum32
     checksumType    = $checksumType32
