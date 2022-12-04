@@ -7,15 +7,20 @@ $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      			= "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" 			= "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumtype\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
-		}
 		"$($Latest.PackageName).nuspec" = @{
 			"(\<copyright\>).*?(\</copyright\>)" 	= "`${1}Embarcadero $((Get-Date).year)`$2"
 		}
+		".\tools\VERIFICATION.txt" = @{
+			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
+			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
+			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
+		  }
 	}
+}
+
+function global:au_BeforeUpdate {
+	Get-RemoteFiles -Purge -NoSuffix
+	Invoke-WebRequest -Uri "https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt" .\tools\LICENSE.txt
 }
 
 function global:au_AfterUpdate($Package) {
