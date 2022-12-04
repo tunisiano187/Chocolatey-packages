@@ -1,7 +1,7 @@
-$installerType  = 'exe'
+﻿$installerType  = 'exe'
 $silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-$url32          = 'https://github.com/jaruba/PowderPlayer/releases/download/v1.20/PowderPlayer_v1.20.exe'
-$checksum32     = '7f365e1455e0a25361495ec428431fbf80a12dca20110ed7263f0ea78d00efc1'
+$url32          = 'https://github.com/jaruba/PowderPlayer/releases/download/v1.60/PowderPlayer_v1.60.exe'
+$checksum32     = 'bc5c3347a0b2a01b8c50d37b2898334d7455cb8432e5f6a3dc70d130a6ddb184'
 $checksumType32 = 'sha256'
 $validExitCodes = @(0)
 
