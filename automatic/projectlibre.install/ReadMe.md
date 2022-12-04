@@ -1,6 +1,6 @@
-[![](https://img.shields.io/chocolatey/v/projectlibre?color=green&label=projectlibre)](https://chocolatey.org/packages/projectlibre) [![](https://img.shields.io/chocolatey/dt/projectlibre)](https://chocolatey.org/packages/projectlibre)
+[![](https://img.shields.io/chocolatey/v/projectlibre?color=green&label=projectlibre.install)](https://chocolatey.org/packages/projectlibre.install) [![](https://img.shields.io/chocolatey/dt/projectlibre.install)](https://chocolatey.org/packages/projectlibre.install)
 
-## projectlibre
+## projectlibre.install
 
 ProjectLibre is an open source alternative to Microsoft Project. It has been downloaded over 1,000,000 times in over 210 countries and was won 
 InfoWorld "Best of Open Source" award. ProjectLibre is compatible with Microsoft Project 2003, 2007 and 2010 files. You can simply open them on Linux, Mac OS or Windows. 
