@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>projectlibre.install</id>
+    <version>1.5.9</version>
+    <title>ProjectLibre</title>
+    <authors>ProjectLibre</authors>
+    <owners>tunisiano</owners>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/projectlibre</packageSourceUrl>
+    <licenseUrl>http://www.projectlibre.org/comment/615#comment-615</licenseUrl>
+    <projectUrl>http://www.projectlibre.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2cb1da3c99d50f5e3cf5b6503fcc5060f3ea42c6/icons/projectlibre.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ProjectLibre is an open source alternative to Microsoft Project. It has been downloaded over 1,000,000 times in over 210 countries and was won InfoWorld "Best of Open Source" award. ProjectLibre is compatible with Microsoft Project 2003, 2007 and 2010 files. You can simply open them on Linux, Mac OS or Windows. 
+
+### Features
+ 
+* Compatibility with Microsoft Project 2010
+* User Interface improvement
+* Gantt Chart
+* PERT Chart
+* Network Diagram
+* Earned Value Costing</description>
+    <summary>Open source desktop project management</summary>
+    <copyright>© ProjectLibre</copyright>
+    <tags>project-management task schedule</tags>
+    <dependencies>
+      <dependency id="javaruntime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
