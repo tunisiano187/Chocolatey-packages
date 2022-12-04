@@ -12,4 +12,4 @@ $packageArgs = @{
     UnzipLocation = $toolsDir
   }
 
-  Install-ChocolateyPackage @packageArgs
+  Install-ChocolateyZipPackage @packageArgs
