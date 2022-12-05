@@ -21,4 +21,7 @@
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/ru/</packageSourceUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
