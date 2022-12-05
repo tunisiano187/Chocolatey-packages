@@ -5,7 +5,7 @@
     <version>1.20</version>
     <title>Registry Usage (RU)</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/dn194428</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
