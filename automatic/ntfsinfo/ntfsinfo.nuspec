@@ -15,7 +15,7 @@
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© Mark Russinovich</copyright>
     <tags>ntfs info sysinternals</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/ntfsinfo/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ntfsinfo</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
