@@ -5,7 +5,7 @@
     <version>1.20</version>
     <title>Registry Usage (RU)</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://learn.microsoft.com/fr-fr/sysinternals/license-terms</licenseUrl>
     <projectUrl>https://learn.microsoft.com/fr-fr/sysinternals/downloads/ru</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,7 +15,7 @@
 * Automatically built and uploaded by [tunisiano](https://community.chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© Mark Russinovich</copyright>
     <tags>registry tools sysinternals</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/ru/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ru</packageSourceUrl>
     <mailingListUrl>https://learn.microsoft.com/en-us/answers/products/sysinternals</mailingListUrl>
   </metadata>
   <files>
