@@ -5,7 +5,7 @@
     <version>1.1</version>
     <title>NTFSInfo</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://learn.microsoft.com/fr-fr/sysinternals/license-terms</licenseUrl>
     <projectUrl>https://learn.microsoft.com/fr-fr/sysinternals/downloads/ntfsinfo</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,7 +15,7 @@
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© Mark Russinovich</copyright>
     <tags>ntfs info sysinternals</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/ntfsinfo/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ntfsinfo</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
