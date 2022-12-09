@@ -24,14 +24,11 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <releaseNotes>#### Program
-* [Changelog](http://folding.stanford.edu/home/blog)
-
-#### Package
+    <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright />
-    <tags>freemind diagram mindmap graph visualization admin</tags>
+    <tags>freeplane diagram mindmap graph visualization admin</tags>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
