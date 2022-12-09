@@ -63,10 +63,10 @@ $Options = [ordered]@{
 	#	Force			= $True
 	#	commitStrategy	= 'atomictag'
     #}
-    Issues = @{
-        ApiToken    = $Env:github_api_key                   #Your github api key
-        BaseBranch  = "master"
-    }
+    #Issues = @{
+    #    ApiToken    = $Env:github_api_key                   #Your github api key
+    #    BaseBranch  = "master"
+    #}
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
