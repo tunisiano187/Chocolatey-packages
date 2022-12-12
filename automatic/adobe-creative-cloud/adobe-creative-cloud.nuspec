@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <metadata>
         <id>adobe-creative-cloud</id>
-        <version>5.8.0.592</version>
+        <version>5.8.0.593</version>
         <title>Adobe Creative Cloud Client</title>
         <authors>Adobe</authors>
         <owners>tunisiano</owners>
