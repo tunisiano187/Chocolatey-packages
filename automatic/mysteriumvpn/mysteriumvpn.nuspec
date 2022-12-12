@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>mysteriumvpn</id>
-    <version>10.13.3</version>
+    <version>10.14.2</version>
     <title>MysteriumVPN</title>
     <authors>Mysterium Team</authors>
     <owners>tunisiano</owners>

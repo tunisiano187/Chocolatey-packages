@@ -165,6 +165,9 @@ build_script:
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "$env:gitlab_user"
     git checkout master
+    cd scripts
+    Import-Module .\au_extensions.psm1
+    cd ..
     Write-Host "Checking nuspec errors"
     scripts/Find-NuspecError.ps1
     git commit -am "Nuspec errors"
