@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>movefile</id>
+    <version>1.20</version>
+    <title>MoveFile</title>
+    <authors>Mark Russinovich</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
+    <projectUrl>http://technet.microsoft.com/sysinternals/bb897556</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allows you to schedule move and delete commands for the next reboot.
+
+There are several applications, such as service packs and hotfixes, that must replace a file that's in use and is unable to. Windows therefore provides the MoveFileEx API to rename or delete a file and allows the caller to specify that they want the operation to take place the next time the system boots, before the files are referenced. Session Manager performs this task by reading the registered rename and delete commands from the HKLMSystemCurrentControlSetControlSession ManagerPendingFileRenameOperations value.</description>
+    <summary>Allows you to schedule move and delete commands for the next reboot</summary>
+    <releaseNotes>#### Program
+* [News](http://blogs.technet.com/Sysinternals)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© Mark Russinovich</copyright>
+    <tags>schedule move delete sysinternals</tags>
+  </metadata>
+</package>
