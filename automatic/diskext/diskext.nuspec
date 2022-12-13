@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>diskext</id>
+    <version>1.20</version>
+    <title>DiskExt</title>
+    <authors>Mark Russinovich</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
+    <projectUrl>http://technet.microsoft.com/sysinternals/bb896648</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DiskExt displays volume disk-mappings by demonstrating the use of the IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS command that returns information about what disks the partitions of a volume are located on (multipartition disks can reside on multiple disks) and where on the disk the partitions are located.</description>
+    <summary>Display volume disk-mappings</summary>
+    <releaseNotes>#### Program
+* [News](http://blogs.technet.com/Sysinternals)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© Mark Russinovich</copyright>
+    <tags>disk mapping tools sysinternals</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/diskext/</packageSourceUrl>
+    <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
+  </metadata>
+</package>
