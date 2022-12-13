@@ -22,3 +22,4 @@ peerblock
 dreampie
 evernote2onenote
 pydiosync
+movefile
