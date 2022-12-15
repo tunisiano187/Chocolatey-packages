@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>split</id>
+    <version>1.0</version>
+    <title>File Splitter</title>
+    <authors>Jem Berkes</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://en.wikipedia.org/wiki/Freeware</licenseUrl>
+    <projectUrl>http://www.pc-tools.net/win32/split/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This program will split a large file into a number of smaller sections. You can either specify the desired size of each partition, or give the name of a disk drive onto which multiple partitions will be copied.</description>
+    <summary>Split a large file into several smaller files</summary>
+    <releaseNotes />
+    <copyright>© 2004 Jem Berkes</copyright>
+    <tags>cli file split</tags>
+  </metadata>
+</package>
