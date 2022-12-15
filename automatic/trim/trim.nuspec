@@ -15,4 +15,7 @@
     <copyright>© 2004 Jem Berkes</copyright>
     <tags>cli text file</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
