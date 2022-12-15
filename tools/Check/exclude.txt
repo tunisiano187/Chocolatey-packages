@@ -26,3 +26,4 @@ movefile
 diskext
 pcanyscan
 trim
+split
