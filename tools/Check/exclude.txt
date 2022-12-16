@@ -28,3 +28,4 @@ pcanyscan
 trim
 split
 keepass-plugin-mskeyimporter
+armory
