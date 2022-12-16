@@ -27,3 +27,4 @@ diskext
 pcanyscan
 trim
 split
+keepass-plugin-mskeyimporter
