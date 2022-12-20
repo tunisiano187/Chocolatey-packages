@@ -13,11 +13,7 @@
 
 It is a rewrite of an earlier program by the author called "iniparse", which was written in Object Pascal for MS-DOS and later ported to Windows. initool has a backwards compatible command syntax but its operation differs; rather than modify INI files in place it outputs the modified file text to standard output.</description>
     <summary>Manipulate the contents of INI files from the command line</summary>
-    <releaseNotes>#### Program
-* [Changelog](https://github.com/dbohdan/initool/releases/tag/v0.9.0)
-
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <releaseNotes>[Changelog](https://github.com/dbohdan/initool/releases/tag/v0.9.0)</releaseNotes>
     <copyright>© 2015 Danyil Bohdan</copyright>
     <tags>configuration ini cli</tags>
     <projectSourceUrl>https://github.com/dbohdan/initool</projectSourceUrl>
@@ -25,4 +21,7 @@ It is a rewrite of an earlier program by the author called "iniparse", which was
     <docsUrl>https://github.com/dbohdan/initool#operation</docsUrl>
     <bugTrackerUrl>https://github.com/dbohdan/initool/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
