@@ -38,4 +38,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckUrl
+update -NoCheckUrl -ChecksumFor 32
