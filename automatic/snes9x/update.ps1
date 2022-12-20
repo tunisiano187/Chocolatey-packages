@@ -1,11 +1,13 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'http://www.s9x-w32.de/dl/?C=M;O=D'
+$releases = 'https://api.github.com/repos/snes9xgit/snes9x/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
-	@{
-		'tools/chocolateyInstall.ps1' = @{
+    @{
+        'tools/chocolateyInstall.ps1' = @{
 			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
@@ -13,7 +15,7 @@ function global:au_SearchReplace {
 			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
 			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
-	}
+    }
 }
 
 function global:au_AfterUpdate($Package) {
@@ -21,14 +23,17 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$installer = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'snes9x-'} | Where-Object {$_ -match 'win32'} | Where-Object {$_ -match '.zip'} | Group-Object -Property href | select -First 2).Name)
-	$version=$installer[0].split('-')[1]
-	Write-Output "Version : $version"
-	$url32 = "$("http://www.s9x-w32.de/dl/")$($installer[1])"
-	$url64 = "$("http://www.s9x-w32.de/dl/")$($installer[0])"
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+    $url32 = $urls | Where-Object {$_ -match 'win32'} | Where-Object {$_ -notmatch 'x64'}
+    $url64 = $urls | Where-Object {$_ -match 'win32-x64'}
+    $version = $tags.tag_name.Replace('v','')
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
+    }
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
-	return $Latest
+    return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 
-update
+update-package -ChecksumFor 32 -NoCheckChocoVersion
