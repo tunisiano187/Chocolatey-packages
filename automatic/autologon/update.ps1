@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$ZipFile = Join-Path $tmpPath "autologon.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $ZipFile -UseBasicParsing
 	Expand-Archive $ZipFile -DestinationPath $tmpPath\autologon
-	$File = $(Get-ChildItem autologon.exe -Recurse).FullName
+	$File = $(Get-ChildItem -Directory $tmpPath autologon.exe -Recurse).FullName
 	Write-Output $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
