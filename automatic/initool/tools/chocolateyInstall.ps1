@@ -4,10 +4,13 @@ $checksum32     = ''
 $checksumType32 = ''
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
+$packageArgs = @{
+    packageName   = $packageName
+    unzipLocation = $toolsDir
+    fileType      = 'ZIP'
+    url           = $url32
+    checksum      = $checksum32
+    checksumType  = $checksumType32
+}
 
-
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url32" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum32" `
-                             -ChecksumType "$checksumType32"
+Install-ChocolateyZipPackage @packageArgs
