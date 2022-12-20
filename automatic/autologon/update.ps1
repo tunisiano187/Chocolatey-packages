@@ -19,9 +19,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = $releases
-	$ZipFile = "./autologon.zip"
+	$tmpPath = "$($env:TEMP)\chocolatey\chocolatey\autologon\"
+	New-Item -Path $tmpPath -ItemType Directory
+	$ZipFile = Join-Path $tmpPath "autologon.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $ZipFile -UseBasicParsing
-	Expand-Archive $ZipFile -DestinationPath .\autologon
+	Expand-Archive $ZipFile -DestinationPath $tmpPath\autologon
 	$File = $(Get-ChildItem autologon.exe -Recurse).FullName
 	Write-Output $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion

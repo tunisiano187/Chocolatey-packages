@@ -4,12 +4,7 @@ import-module au
 $url32 = 'https://www.nirsoft.net/utils/chromehistoryview.zip'
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-function Unzip
-{
-    param([string]$zipfile, [string]$outpath)
 
-    [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
-}
 
 function global:au_SearchReplace {
 	@{
@@ -25,11 +20,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "./chromehistoryview.zip"
+	$File = "$($env:TEMP)\chocolatey\chromehistoryview.zip"
+	$tmpPath = "$($env:TEMP)\chocolatey\chomehistoryview"
+	New-Item -Path $tmpPath -ItemType Directory
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
-	Expand-Archive $File -DestinationPath .\chv
+	Expand-Archive $File -DestinationPath $tmpPath
 
-	$version=$(Get-Content .\chv\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[2]
+	$version=$(Get-Content $tmpPath\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[2]
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
