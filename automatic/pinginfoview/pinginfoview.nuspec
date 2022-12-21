@@ -4,7 +4,7 @@
   <metadata>
     <id>pinginfoview</id>
     <title>PingInfoView</title>
-    <version>2.25</version>
+    <version>2.30</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>Ping to multiple host names/IP addresses</summary>

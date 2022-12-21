@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'https://www.nirsoft.net/utils/pinginfoview.zip'
-$checksum = '84137dc7224c38d32b0f60bee9eacb3c194ea9bc99edb66dca443538c4f12dea'
+$checksum = '37317a3d50815ab8c07fd4b7e52d5970873620db661dfade969b5403d43549b4'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "$($packageName).exe"
