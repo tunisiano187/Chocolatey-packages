@@ -10,16 +10,13 @@ industry support, trade volume and liquidity, Litecoin is a proven medium of com
 ### Disk requirements - Litecoin blockchain (public transactional database) size
 * As of 08 March 2018, the total size of the LTC blockchain was __11.36 GB__ 
 
-### Previous version compatibility - Network alerts
-* https://litecoin.info/alerts
-
 ### Litecoin node distribution
 * https://www.litecoinpool.org/pools
 
 #### Community
-* [Forum](https://litecointalk.org/)
+* [Forum](https://litecointalk.io/)
 * [IRC](https://webchat.freenode.net/?channels=litecoin)
-* [Reddit](https://www.reddit.com/r/litecoin)
+* [Reddit](https://www.reddit.com/r/litecoin/)
 * [Twitter](https://twitter.com/LitecoinProject)
 * [Google+](https://plus.google.com/+LitecoinOrg)
 
