@@ -54,4 +54,7 @@ The rest is the same as Bitcoin:
     <mailingListUrl>https://litecointalk.org/</mailingListUrl>
     <bugTrackerUrl>https://github.com/litecoin-project/litecoin/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
