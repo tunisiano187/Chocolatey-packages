@@ -1,8 +1,8 @@
-$packageName    = $env:ChocolateyPackageName
+﻿$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '/S'
-$url            = 'https://download.litecoin.org/litecoin-0.15.1/win/litecoin-0.15.1-win32-setup.exe'
-$checksum       = '97fd13845045475a62e5707ded25d5be75ea1c4d89080418dcba7a670ee46dad'
+$url            = 'https://download.litecoin.org/litecoin-0.21.2.1/win/litecoin-0.21.2.1-win64-setup.exe'
+$checksum       = 'd4462b58811bc35c3160c204cc85e94ebe27e57b816ed5bd607f7e22cf3d4131'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)
 
