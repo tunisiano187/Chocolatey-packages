@@ -5,7 +5,7 @@
     <version>0.15.1</version>
     <title>Litecoin Wallet</title>
     <authors>Litecoin Developers</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://litecoin.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96739764be9642359cf2258622e68f0ce501d87d/icons/litecoin.svg</iconUrl>
