@@ -9,7 +9,7 @@
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://www.feathercoin.com</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/feathercoin</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/30d0a2cb59cc182f37f36b5cac95f2c8af8d5337/icons/feathercoin.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b6887e8182a8af727cf4731f97a351defd12d0cf/icons/feathercoin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Feathercoin is a powerful open source digital currency with monetary properties likened to Bitcoin, Litecoin and a myriad of countless alt coins, but under the hood is something very different. Feathercoin is a highly upgraded and customised piece of software compared to the Bitcoin and Litecoin protocols. Based from btc, ltc evolved, from which ftc was born, with the intent to expand, experiment, and build onto the blockchain technology in a manner open to all for participation. Just over one year on, this has lead to the development of many extraordinary projects but none like NeoScrypt. Through the support of the community and the hard work of Phoenixcoin’s lead developer Ghostlander, we have taken Scrypt where it should have headed years ago now.
 
