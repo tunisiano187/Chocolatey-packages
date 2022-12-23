@@ -36,4 +36,7 @@ Feathercoin is based on NeoScrypt and implements many features not seen in the m
     <copyright>© Feathercoin</copyright>
     <tags>feathercoin ftc wallet cryptocurrency p2p</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
