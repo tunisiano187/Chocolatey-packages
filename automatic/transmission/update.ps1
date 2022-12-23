@@ -25,8 +25,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".msi$"}
-	$url32 = $urls | Where-Object {$_ -match 'x86'}
-    $url64 = $urls | Where-Object {$_ -match 'x64'}
+	$url32 = ($urls | Where-Object {$_ -match 'x86'}).Replace('%2B','+')
+    $url64 = ($urls | Where-Object {$_ -match 'x64'}).Replace('%2B','+')
 	$version = $tags.tag_name.Replace('v','')
 	if($tags.prerelease -match "true" -and $version.ToString() -notmatch 'beta') {
 		$date = $tags.published_at.ToString("yyyyMMdd")
