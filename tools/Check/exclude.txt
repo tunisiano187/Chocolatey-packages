@@ -31,3 +31,4 @@ keepass-plugin-mskeyimporter
 armory
 msigna
 opencodecs
+freearc
