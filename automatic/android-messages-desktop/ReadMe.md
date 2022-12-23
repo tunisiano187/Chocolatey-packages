@@ -1,6 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/android-messages-desktop?color=green&label=android-messages-desktop)](https://chocolatey.org/packages/android-messages-desktop) [![](https://img.shields.io/chocolatey/dt/android-messages-desktop)](https://chocolatey.org/packages/android-messages-desktop)
 
-## Android Messages™ Desktop <a href="#"><img src="https://github.com/chrisknepper/android-messages-desktop/raw/master/resources/icons/48x48.png" alt="Android Messages Desktop logo" title="Android Messages Desktop logo" /></a> 
+## Android Messages™ Desktop 
 
 Run Android Messages as a desktop app, a la iMessage. For those of us that prefer not to have a browser tab always open for this sort of thing.
 
