@@ -36,4 +36,7 @@
       <dependency id="hddguardian.install" version="[0.6.2]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
