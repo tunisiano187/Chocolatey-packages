@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://hddguardian.codeplex.com/license</licenseUrl>
     <projectUrl>http://hddguardian.codeplex.com/</projectUrl>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hddguardian</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/78c71f20caf1e55634919ecd0c08db736d06c978/icons/hddguardian.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>HDD Guardian is a front-end for smartctl, a tool for querying S.M.A.R.T. data of your hard drive. With HDD Guardian you can survey your hard disk health, preventing data loss due to hard drive death.
