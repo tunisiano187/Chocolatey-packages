@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installDir = $toolsdir
-$version    = '2.2.2'
+$version    = '2.2.3'
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
