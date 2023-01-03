@@ -6,8 +6,8 @@
     <title>HDD Guardian (Install)</title>
     <authors>Eruestan</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://hddguardian.codeplex.com/license</licenseUrl>
-    <projectUrl>http://hddguardian.codeplex.com/</projectUrl>
+    <licenseUrl>https://www.majorgeeks.com/files/details/hdd_guardian.html</licenseUrl>
+    <projectUrl>https://www.majorgeeks.com/files/details/hdd_guardian.html</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hddguardian.install</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8e1e2bea691f4812d75a22cd7906acbe687a2812/icons/hddguardian.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -30,7 +30,6 @@
 [Documentation](http://hddguardian.codeplex.com/documentation)
 [Source code repository](http://hddguardian.codeplex.com/SourceControl/latest)</description>
     <summary>Utility to monitor your hard drive(s) and SSD(s) health</summary>
-    <releaseNotes>http://hddguardian.codeplex.com/releases/view/574363</releaseNotes>
     <copyright>© Eruestan</copyright>
     <tags>s.m.a.r.t. gui hardware disk reporting monitoring</tags>
   </metadata>
