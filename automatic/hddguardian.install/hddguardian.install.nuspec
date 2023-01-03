@@ -5,7 +5,7 @@
     <version>0.6.2</version>
     <title>HDD Guardian (Install)</title>
     <authors>Eruestan</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://hddguardian.codeplex.com/license</licenseUrl>
     <projectUrl>http://hddguardian.codeplex.com/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hddguardian.install</packageSourceUrl>
