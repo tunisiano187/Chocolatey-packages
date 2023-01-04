@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>hddguardian.install</id>
-    <version>0.6.2</version>
+    <version>0.7.1</version>
     <title>HDD Guardian (Install)</title>
     <authors>Eruestan</authors>
     <owners>tunisiano</owners>
@@ -11,7 +11,9 @@
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hddguardian.install</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8e1e2bea691f4812d75a22cd7906acbe687a2812/icons/hddguardian.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>HDD Guardian is a front-end for smartctl, a tool for querying S.M.A.R.T. data of your hard drive. With HDD Guardian you can survey your hard disk health, preventing data loss due to hard drive death.
+    <description><![CDATA[## HDD Guardian
+
+HDD Guardian is a front-end for smartctl, a tool for querying S.M.A.R.T. data of your hard drive. With HDD Guardian you can survey your hard disk health, preventing data loss due to hard drive death.
 
 ### Features
 * easy device overview, with temperature, overall health and bad sectors indication
@@ -27,8 +29,14 @@
 * allow to set warnings behaviour
 * support for external (USB) devices, also in docking stations
 
-[Documentation](http://hddguardian.codeplex.com/documentation)
-[Source code repository](http://hddguardian.codeplex.com/SourceControl/latest)</description>
+[Documentation](https://www.majorgeeks.com/files/details/hdd_guardian.html)
+[Source code repository](https://www.majorgeeks.com/files/details/hdd_guardian.html)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Utility to monitor your hard drive(s) and SSD(s) health</summary>
     <copyright>© Eruestan</copyright>
     <tags>s.m.a.r.t. gui hardware disk reporting monitoring</tags>
