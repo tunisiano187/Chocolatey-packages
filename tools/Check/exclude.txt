@@ -32,3 +32,4 @@ armory
 msigna
 opencodecs
 freearc
+plexmediaserver
