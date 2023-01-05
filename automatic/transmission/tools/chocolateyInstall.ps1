@@ -2,11 +2,11 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'
-$url = 'https://github.com/transmission/transmission/releases/download/4.0.0-beta.2/transmission-4.0.0-beta.2%2Brbceb368f1b-x86.msi'
-$checksum = '421e136baee96d526f5f2175cb135de5189bec2254ab79299086855205e99a4f'
+$url = 'https://github.com/transmission/transmission/releases/download/4.0.0-beta.3/transmission-4.0.0-beta.3+r634b1e8fc1-x86.msi'
+$checksum = '0bfa6335852734265eef384a4d8ca7759851b9d04868b1b3a9275c19a8b5021b'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/transmission/transmission/releases/download/4.0.0-beta.2/transmission-4.0.0-beta.2%2Brbceb368f1b-x64.msi'
-$checksum64 = '7c5dffae356230aee7e2828b79bf39460725a67a4eff72a4bfa01809742d10fa'
+$url64 = 'https://github.com/transmission/transmission/releases/download/4.0.0-beta.3/transmission-4.0.0-beta.3+r634b1e8fc1-x64.msi'
+$checksum64 = '755b3e01f7039af7007882cf236330e4d9047bddabddf6e758f16a9a0d102535'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0,3010)
 
