@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ntfsinfo</id>
-    <version>1.2.0.2022120601</version>
+    <version>1.20.0.2022120601</version>
     <title>NTFSInfo</title>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
