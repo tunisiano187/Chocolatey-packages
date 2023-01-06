@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>3.2.0</version>
+    <version>3.1.0</version>
     <title>DS4Windows</title>
     <authors>Travis Nickles, Jays2Kings</authors>
     <owners>tunisiano</owners>
@@ -53,7 +53,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>Copyright (c) 2019 Travis Nickles</copyright>
     <tags>ds4windows ps4 dualshock controller emulator foss</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ds4windows</packageSourceUrl>
-    <docsUrl>http://ds4windows.com/</docsUrl>
+    <docsUrl>https://github.com/Ryochan7/DS4Windows/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/Ryochan7/DS4Windows/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="dotnet-6.0-desktopruntime" version="6.0.7" />
