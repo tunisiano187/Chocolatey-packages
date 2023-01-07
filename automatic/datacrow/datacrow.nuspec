@@ -5,7 +5,7 @@
     <version>4.1.1</version>
     <title>Data Crow</title>
     <authors>Robert Jan van der Waals</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://www.datacrow.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@18cd0e2b12110f4478106d124191e728b08062e6/icons/datacrow.png</iconUrl>
