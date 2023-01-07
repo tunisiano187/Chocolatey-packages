@@ -5,10 +5,10 @@
     <version>4.1.1</version>
     <title>Data Crow</title>
     <authors>Robert Jan van der Waals</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://www.datacrow.net/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/65af4d837052cace9bd15c16658d254fc35d3c1b/icons/datacrow.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@18cd0e2b12110f4478106d124191e728b08062e6/icons/datacrow.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Data Crow is the ultimate media cataloger and media organiser. Always wanted to manage all your collections in one product? You want a product you can customize to your needs? Your search ends here! Using Data Crow allows you to create a huge database containing all your collectables. You can use the excellent online services to retrieve the information instead of typing all the information yourself. Data Crow has a modular setup allowing it to be extended with user created collection modules.
 
@@ -32,7 +32,7 @@ Reporting (based on XLST stylesheets and graphs), loan administration, item impo
     <copyright>© Robert Jan van der Waals</copyright>
     <tags>inventory collection organizer library catalog admin</tags>
     <projectSourceUrl>http://sourceforge.net/p/datacrow/code/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/datacrow/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/datacrow</packageSourceUrl>
     <docsUrl>http://datacrow.cvs.sourceforge.net/viewvc/datacrow/documentation/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/datacrow/discussion/</mailingListUrl>
     <bugTrackerUrl>http://sourceforge.net/p/datacrow/_list/tickets</bugTrackerUrl>
