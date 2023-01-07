@@ -1,6 +1,6 @@
 ﻿$packageName = 'ru'
 $url = 'https://download.sysinternals.com/files/RU.zip'
-$checksum = '22f09a8c29aceda76977b6d9eed1e246e0df9d7ff179c0b51c81a93c8e596da4'
+$checksum = '14ff3824edd2a4b7ca827a8f52142b0f08b7136e061917734dd7465e56dac666'
 $checksumType = 'sha256'
 $url64 = "$url"
 $checksum64 = "$checksum"
