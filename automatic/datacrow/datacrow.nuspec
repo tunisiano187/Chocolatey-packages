@@ -38,7 +38,6 @@ Reporting (based on XLST stylesheets and graphs), loan administration, item impo
     <bugTrackerUrl>http://sourceforge.net/p/datacrow/_list/tickets</bugTrackerUrl>
     <dependencies>
       <dependency id="javaruntime" version="7.0" />
-      <dependency id="chocolatey-fosshub.extension" />
     </dependencies>
   </metadata>
   <files>
