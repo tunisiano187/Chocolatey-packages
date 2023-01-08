@@ -19,7 +19,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = "https://sourceforge.net$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.zip'}).href | Select-Object -First 1)"
 	$version = $url32.Split('_') | Where-Object {$_ -match "[0-9]\."}
-	$url32 = "https://netcologne.dl.sourceforge.net/project/datacrow/files/datacrow_$($version)_windows_installer.zip"
+	$url32 = $releases
+	#$url32 = "https://netcologne.dl.sourceforge.net/project/datacrow/files/datacrow_$($version)_windows_installer.zip"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
