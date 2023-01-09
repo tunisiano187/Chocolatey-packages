@@ -1,8 +1,8 @@
-$packageName = 'datacrow'
+﻿$packageName = 'datacrow'
 $installerType = 'exe'
 $silentArgs = ''
-$url = 'http://www.fosshub.com/genLink/Data-Crow/datacrow_4.1.1_windows_installer.zip'
-$checksum = '4e9dad7d903eecae0c4fdce0a1fdfa24e0374ebb222b1c5dde23506297f6d1a2'
+$url = 'https://sourceforge.net/projects/datacrow/files/latest/download'
+$checksum = '542930397d7b4cdfd112253eb40c2f04d48ef239fc18cb4a1666ee7c9aeacd87'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 

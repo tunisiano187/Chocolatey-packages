@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>datacrow</id>
-    <version>4.1.1</version>
+    <version>4.4</version>
     <title>Data Crow</title>
     <authors>Robert Jan van der Waals</authors>
     <owners>tunisiano</owners>
@@ -10,17 +10,17 @@
     <projectUrl>http://www.datacrow.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@18cd0e2b12110f4478106d124191e728b08062e6/icons/datacrow.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Data Crow is the ultimate media cataloger and media organiser. Always wanted to manage all your collections in one product? You want a product you can customize to your needs? Your search ends here! Using Data Crow allows you to create a huge database containing all your collectables. You can use the excellent online services to retrieve the information instead of typing all the information yourself. Data Crow has a modular setup allowing it to be extended with user created collection modules.
+    <description><![CDATA[## WinDjView
+WinDjView is a fast, compact and powerful DjVu viewer for Windows with tabbed interface, continuous scrolling and advanced printing options. It uses the free [DjVuLibre](http://djvu.sourceforge.net/) library to decode DjVu documents. [DjVu](http://djvu.org/) is a web-centric format and software platform for distributing documents and images.
 
-Data Crow allows you use the standard movie and video (divx, xvid, DVD, Blu-ray, etc), book (and eBooks), images, games and software, music (mp3 and other music files) cataloging modules. Beside these module (which you can change to fit your requirements) you can create new modules (want to catalogue your stamps, equipment, or anything else?).
-The GUI is skinnable.
+[Forum](https://sourceforge.net/p/windjview/discussion/)
+[Source code](https://sourceforge.net/p/windjview/code/)
 
-Data Crow allows you find information on your items through services such as Amazon, Imdb.com , Sourceforge.net , Softpedia, Ofdb, MusicBrainz and many others.
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Reporting (based on XLST stylesheets and graphs), loan administration, item importing and exporting, backup and restore, web service and many other optional features are waiting for you.
-
-[Screenshots](http://www.datacrow.net/#screenshots)
-[FAQ](http://www.datacrow.net/#faq)</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Ultimate media cataloger and media organiser</summary>
     <releaseNotes>#### Program
 * [News](http://www.datacrow.net/#news)
