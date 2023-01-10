@@ -14,7 +14,7 @@ $tempDir = Join-Path $env:Temp "$packageName"
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir) | Out-Null}
 $tempDir = Join-Path $tempDir $env:packageVersion
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir) | Out-Null}
-$zipFile = Join-Path $tempDir 'datacrow_4.1.1_windows_installer.zip'
+$zipFile = Join-Path $tempDir 'datacrow_windows_installer.zip'
 $installFile32 = "$tempDir\setup32bit.exe"
 $installFile64 = "$tempDir\setup64bit.exe"
 
