@@ -1,8 +1,8 @@
 ﻿$packageName = 'datacrow'
 $installerType = 'exe'
 $silentArgs = ''
-$url = 'https://sourceforge.net/projects/datacrow/files/latest/download'
-$checksum = '542930397d7b4cdfd112253eb40c2f04d48ef239fc18cb4a1666ee7c9aeacd87'
+$url = 'https://sourceforge.net/projects/datacrow/files/datacrow_4.4_windows_installer.zip/download'
+$checksum = 'c3e459bf3beffd91f45561dea6e7bb0e1d10c196c6f8f5f19b1200be20157e64'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
