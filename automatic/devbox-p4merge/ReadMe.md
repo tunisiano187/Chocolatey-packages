@@ -1,7 +1,7 @@
 [![](https://img.shields.io/chocolatey/v/devbox-p4merge?color=green&label=p4merge)](https://chocolatey.org/packages/devbox-p4merge) [![](https://img.shields.io/chocolatey/dt/devbox-p4merge)](https://chocolatey.org/packages/devbox-p4merge)
 
 ## Devbox-P4Merge
-Devbox-P4merge superseedsP4Merge
+Devbox-P4merge superseeds P4Merge
 
 P4Merge is a visual diff tool that displays the differences between file versions and helps you 
 to resolve conflicts and merge competing versions into one.
