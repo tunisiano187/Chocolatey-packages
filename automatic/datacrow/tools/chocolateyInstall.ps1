@@ -15,8 +15,7 @@ if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDire
 $tempDir = Join-Path $tempDir $env:packageVersion
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir) | Out-Null}
 $zipFile = Join-Path $tempDir 'datacrow_windows_installer.zip'
-$installFile32 = "$tempDir\setup32bit.exe"
-$installFile64 = "$tempDir\setup64bit.exe"
+$installFile = "$tempDir\install.exe"
 
 Get-ChocolateyWebFile -PackageName "$packageName" `
                       -FileFullPath "$zipFile" `
@@ -29,15 +28,12 @@ Get-ChocolateyUnzip -FileFullPath "$zipFile" `
                     -PackageName "$packageName"
 
 if ((Get-ProcessorBits 64) -and ($env:chocolateyForceX86)) {
-  $installFile = $installFile32
   $silentArgs = $silentArgs32
 }
 if ((Get-ProcessorBits 64) -and (-not($env:chocolateyForceX86))) {
-  $installFile = $installFile64
   $silentArgs = $silentArgs64
 }
 if (-not(Get-ProcessorBits 64)) {
-  $installFile = $installFile32
   $silentArgs = $silentArgs64
 }
 
