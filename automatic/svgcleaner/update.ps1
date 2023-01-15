@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "win32"}
 
 	Write-Verbose 'Checking version'
-	$version=$tags.name.Split(' ')[-1]
+	$version=$tags.name.Split(' ')[-1].replace('v','')
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
