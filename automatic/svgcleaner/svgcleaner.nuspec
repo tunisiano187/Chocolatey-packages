@@ -32,4 +32,7 @@ Important! The internal image viewer in SVG Cleaner uses the QtSvg module for re
     <language>en-us</language>
     <tags>svg optimization gui cli</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
