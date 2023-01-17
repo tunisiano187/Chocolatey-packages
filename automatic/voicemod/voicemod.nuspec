@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>voicemod</id>
-    <version>2.37.2.0</version>
+    <version>2.38.1.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/voicemod</packageSourceUrl>
     <owners>tunisiano</owners>
 

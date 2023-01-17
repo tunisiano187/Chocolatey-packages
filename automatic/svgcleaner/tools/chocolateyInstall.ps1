@@ -1,6 +1,6 @@
-$url            = 'http://sourceforge.net/projects/svgcleaner/files/v0.6.2/SVGCleanerSetup_0.6.2.exe'
-$checksum       = '1373ff21e940a287c60ed24babc260e444388aeb'
-$checksumType   = 'sha1'
+﻿$url            = 'https://github.com/RazrFalcon/svgcleaner-gui/releases/download/v0.9.5/svgcleaner_win32_0.9.5.exe'
+$checksum       = '375be8fc02fa7241626a75523fba79d80e3e466cad9ba0cd6a32f1c8f959600e'
+$checksumType   = 'sha256'
 
 $packageArgs = @{
     packageName   = $env:ChocolateyPackageName
