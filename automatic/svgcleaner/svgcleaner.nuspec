@@ -5,7 +5,7 @@
     <version>0.6.2</version>
     <title>SVG Cleaner</title>
     <authors>Reizner Evgeniy</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://sourceforge.net/projects/svgcleaner/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/svgcleaner</packageSourceUrl>
