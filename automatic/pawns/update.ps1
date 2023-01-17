@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://cdn.pawns.app/download/app/latest/windows/Pawns%20Setup.exe"
@@ -29,11 +29,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url64=$releases
-	
+
     $File = Join-Path $env:TEMP "pawns.exe"
 	Invoke-WebRequest -Uri $url64 -OutFile $File
     $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
-	
+
 	$Latest = @{ URL64 = $url64; Version = $version}
 
     return $Latest

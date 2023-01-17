@@ -8,10 +8,10 @@ $packageArgs = @{
     url           = $url
 
     softwareName  = 'thymiosuite*'
-  
+
     checksum      = $checksum
     checksumType  = $checksumType
-  
+
     validExitCodes= @(0, 3010, 1641)
     silentArgs   = '/S'
   }
