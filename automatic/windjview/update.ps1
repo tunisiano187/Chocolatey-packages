@@ -19,9 +19,13 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup.'} | Where-Object {$_ -match '.exe'} | Where-Object {$_ -match "https"}).href | Select-Object -First 1
 	$version = $url32.Split('-')[-2]
-	if($version -eq '2.1') {
-		$version="2.1.0.20230112"
-	}
+	$current_checksum = (Get-Item $PSScriptRoot\tools\chocolateyInstall.ps1 | Select-String '\bchecksum\b') -split "=|'" | Where-Object {$_ -notmatch " "} | Select-Object -Last 1 -Skip 1
+    if ($current_checksum.Length -ne 64) { throw "Can't find current checksum" }
+    $remote_checksum  = Get-RemoteChecksum $url
+    if ($current_checksum -ne $remote_checksum) {
+		$verdate=get-date -Format "yyymmdd"
+        $version = "$version.$verdate"
+    }
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
