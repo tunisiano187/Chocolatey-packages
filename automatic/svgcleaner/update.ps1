@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://github.com/RazrFalcon/svgcleaner-gui/releases/latest'
+$releases = 'https://api.github.com/RazrFalcon/svgcleaner-gui/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 

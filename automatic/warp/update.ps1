@@ -33,8 +33,9 @@ function global:au_GetLatest {
 
     $File = Join-Path $env:TEMP "warp.msi"
 	Invoke-WebRequest -Uri $url64 -OutFile $File
-    Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
-	$version = Get-Version("warp")
+    #Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
+	#$version = Get-Version("warp")
+	$version=(Get-AppLockerFileInformation -Path $File).Publisher.BinaryVersion.tostring()
 	$checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
 
 	$Latest = @{ URL64 = $url64; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumType}
