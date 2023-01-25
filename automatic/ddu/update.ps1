@@ -33,6 +33,7 @@ function global:au_GetLatest {
 	if($version -eq "18.0.5.4") {
 		$version = '18.0.5.2023082201'
 	}
+	$version = $version.Replace('_setup','')
 
 	$Latest = @{ URL32 = $url32; Referer = $referer; Version = $version }
 	return $Latest
