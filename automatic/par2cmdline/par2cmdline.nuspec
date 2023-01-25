@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>par2cmdline</id>
-    <version>0.6.13</version>
+    <version>0.8.1</version>
     <title>par2cmdline</title>
     <authors>Peter Brian Clements,Marcel Partap,Ike Devolder</authors>
     <owners>tunisiano</owners>
@@ -10,10 +10,18 @@
     <projectUrl>https://github.com/Parchive/par2cmdline</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/par2cmdline</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>par2cmdline is a program for creating and using PAR2 files to detect damage in data files and repair them if necessary. It can be used with any kind of file. PAR2 uses Reed Solomon Coding to perform its calculations.
+    <description><![CDATA[## par2cmdline
+par2cmdline is a program for creating and using PAR2 files to detect damage in data files and repair them if necessary.
+It can be used with any kind of file. PAR2 uses Reed Solomon Coding to perform its calculations.
 
 #### Documentation
-* [Command line usage](https://github.com/Parchive/par2cmdline#using-par2cmdline)</description>
+* [Command line usage](https://github.com/Parchive/par2cmdline#using-par2cmdline)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Parity Archive Volume Set, for checking and repair of files</summary>
     <releaseNotes>#### Program
 * [Changelog](https://github.com/Parchive/par2cmdline/blob/master/ChangeLog)
