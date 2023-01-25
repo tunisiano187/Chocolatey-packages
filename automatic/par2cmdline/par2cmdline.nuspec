@@ -5,7 +5,7 @@
     <version>0.6.13</version>
     <title>par2cmdline</title>
     <authors>Peter Brian Clements,Marcel Partap,Ike Devolder</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Parchive/par2cmdline/blob/master/COPYING</licenseUrl>
     <projectUrl>https://github.com/Parchive/par2cmdline</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/par2cmdline</packageSourceUrl>
