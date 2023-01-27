@@ -33,3 +33,4 @@ msigna
 opencodecs
 freearc
 plexmediaserver
+bitmessage
