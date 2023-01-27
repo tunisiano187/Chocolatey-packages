@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $releases -OutFile $file
 	$info = Get-Content $file
 	$url32 = $releases.Replace('.info','')
-	$version = ($info.split(" ") | Where-Object {$_ -match '"[0-9][0-9]'}).split('"') | Where-Object {$_ -match "\."}
+	$version = ($info.split(" ") | Where-Object {$_ -match '"[0-9][0-9]'}).split('"') | Where-Object {$_ -match "\."} | Where-Object {$_ -notmatch "exe"}
 	Remove-Item $file
 
 	$Latest = @{ URL32 = $url32; Version = $version }
