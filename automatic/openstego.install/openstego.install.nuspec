@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>openstego.install</id>
+    <version>0.6.1</version>
+    <title>OpenStego (Install)</title>
+    <authors>Samir Vaidya</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://sourceforge.net/p/openstego.install/code/HEAD/tree/java/trunk/LICENSE</licenseUrl>
+    <projectUrl>http://www.openstego.info/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/e4c0e97f296e50ecf0a4da8a730764b609a832a9/icons/openstego.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>OpenStego is a steganography application that provides two functionalities: a) Data Hiding: It can hide any data within a cover file (e.g. images). b) Watermarking: Watermarking files (e.g. images) with an invisible signature. It can be used to detect unauthorized file copying.
+
+#### Documentation
+* [Features](http://www.openstego.info/features.html)
+* [Command-line usage](http://www.openstego.info/cmdline.html)
+
+#### Community
+* [Forum](https://sourceforge.net/p/openstego.install/discussion/)</description>
+    <summary>Free steganography solution</summary>
+    <releaseNotes>#### Program
+* [News](https://sourceforge.net/p/openstego.install/news/)
+* [Changelog](http://www.openstego.info/changelog.html)
+* [Known issues](https://sourceforge.net/p/openstego.install/bugs/)
+* [Source code](https://sourceforge.net/p/openstego.install/code/HEAD/tree/java/trunk/)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© Samir Vaidya</copyright>
+    <tags>steganography security encryption</tags>
+    <dependencies>
+      <dependency id="javaruntime" />
+    </dependencies>
+  </metadata>
+</package>
