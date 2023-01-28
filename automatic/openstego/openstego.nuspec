@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/syvaidya/openstego/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.openstego.com/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/openstego</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/e4c0e97f296e50ecf0a4da8a730764b609a832a9/icons/openstego.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@696ef2d9fd437133ee56c3397eec5a17d7497e61/icons/openstego.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>OpenStego is a steganography application that provides two functionalities: a) Data Hiding: It can hide any data within a cover file (e.g. images). b) Watermarking: Watermarking files (e.g. images) with an invisible signature. It can be used to detect unauthorized file copying.
 

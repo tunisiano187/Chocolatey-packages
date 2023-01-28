@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/openstego?color=green&label=openstego)](https://chocolatey.org/packages/openstego) [![](https://img.shields.io/chocolatey/dt/openstego)](https://chocolatey.org/packages/openstego)
+[![](https://img.shields.io/chocolatey/v/openstego?color=green&label=openstego)](https://chocolatey.org/packages/openstego) [![](https://img.shields.io/chocolatey/dt/openstego)](https://chocolatey.org/packages/openstego)
 
 ## OpenStego
 
