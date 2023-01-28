@@ -31,4 +31,7 @@
       <dependency id="openstego.install" version="[0.6.1]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
