@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.0.6.0.exe'
-$checksum       = '390f263a4b65af6a81521e6d5998055e117571de96fe2c25b6ce6b9cab513827'
+$checksum       = '48EBDAF2E7A2EDE56E91E0800F8A1128F0E8883E4D9FEB3D46808D8218DFE8FC'
 $checksumType   = 'sha256'
 $referer        = 'https://www.wagnardsoft.com/forums/viewtopic.php?t=4316&sid=1b09cc3b6e31f7805cc6e0a83cab96a1'
 
