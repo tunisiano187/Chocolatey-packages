@@ -5,7 +5,7 @@
     <version>0.6.1</version>
     <title>OpenStego (Install)</title>
     <authors>Samir Vaidya</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://sourceforge.net/p/openstego.install/code/HEAD/tree/java/trunk/LICENSE</licenseUrl>
     <projectUrl>http://www.openstego.info/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/openstego.install</packageSourceUrl>
