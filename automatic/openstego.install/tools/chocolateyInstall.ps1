@@ -1,6 +1,6 @@
-$url32          = 'http://sourceforge.net/projects/openstego/files/openstego/openstego-0.6.1/Setup-OpenStego-0.6.1.exe/download'
-$checksum32     = 'c343f8dadb6ca89e42a0d43bca36161d95f952a4'
-$checksumType32 = 'sha1'
+﻿$url32          = 'https://github.com/syvaidya/openstego/releases/download/openstego-0.8.6/Setup-OpenStego-0.8.6.exe'
+$checksum32     = '80cfa3fe262219ce5e68d255477042e1473aa3ae97552d7bad8e895c95b44a73'
+$checksumType32 = 'sha256'
 
 $packageArgs = @{
     packageName            = $env:ChocolateyPackageName
