@@ -6,28 +6,24 @@
     <title>OpenStego (Install)</title>
     <authors>Samir Vaidya</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://sourceforge.net/p/openstego.install/code/HEAD/tree/java/trunk/LICENSE</licenseUrl>
-    <projectUrl>http://www.openstego.info/</projectUrl>
+    <licenseUrl>https://github.com/syvaidya/openstego/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://www.openstego.com/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/openstego.install</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f9436bf6a340fad683390adf95b176ec65aa84d/icons/openstego.install.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>OpenStego is a steganography application that provides two functionalities: a) Data Hiding: It can hide any data within a cover file (e.g. images). b) Watermarking: Watermarking files (e.g. images) with an invisible signature. It can be used to detect unauthorized file copying.
 
 #### Documentation
-* [Features](http://www.openstego.info/features.html)
-* [Command-line usage](http://www.openstego.info/cmdline.html)
-
-#### Community
-* [Forum](https://sourceforge.net/p/openstego.install/discussion/)</description>
+* [Features](https://www.openstego.info/features.html)
+* [Command-line usage](https://www.openstego.info/cmdline.html)</description>
     <summary>Free steganography solution</summary>
     <releaseNotes>#### Program
-* [News](https://sourceforge.net/p/openstego.install/news/)
-* [Changelog](http://www.openstego.info/changelog.html)
-* [Known issues](https://sourceforge.net/p/openstego.install/bugs/)
-* [Source code](https://sourceforge.net/p/openstego.install/code/HEAD/tree/java/trunk/)
+* [Changelog](https://github.com/syvaidya/openstego/releases)
+* [Known issues](https://github.com/syvaidya/openstego/issues)
+* [Source code](https://github.com/syvaidya/openstego)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© Samir Vaidya</copyright>
     <tags>steganography security encryption</tags>
     <dependencies>
