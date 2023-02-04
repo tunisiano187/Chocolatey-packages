@@ -8,7 +8,7 @@ $packageArgs = @{
     url                    = $url32
     checksum               = $checksum32
     checksumType           = $checksumType32
-    silentArgs             = '/S'
+    silentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /ALLUSERS'
     validExitCodes         = @(0)
 }
 
