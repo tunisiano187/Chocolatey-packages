@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://home.gna.org/bless/</projectUrl>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bless</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/a138f45d2491ed8aae82ed2287675b945a8af347/icons/bless.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Bless is a high quality, full featured hex editor.  It is written in mono/Gtk# and its primary platform is GNU/Linux. However it should be able to run without problems on every platform that mono and Gtk# run.
