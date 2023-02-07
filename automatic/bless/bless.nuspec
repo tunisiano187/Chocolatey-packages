@@ -52,4 +52,7 @@
       <dependency id="gtksharp" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
