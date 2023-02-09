@@ -34,3 +34,4 @@ opencodecs
 freearc
 plexmediaserver
 bitmessage
+bless
