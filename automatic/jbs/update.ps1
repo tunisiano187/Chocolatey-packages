@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$jbs = (Invoke-WebRequest -Uri $releases -UseBasicParsing)
-	$url32 = ($jbs.Links | Where-Object {$_ -match 'exe'})[0].href
+	$url32 = ($jbs.Links | Where-Object {$_ -match '\.exe'})[0].href
 
 	$File = Join-Path $env:TEMP "SwitcherSetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
