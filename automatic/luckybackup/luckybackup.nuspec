@@ -49,4 +49,7 @@ The current status of the port can be summed up with something like, "It mostly 
     <copyright>© 2008 Loukas Avgeriou</copyright>
     <tags>backup sync rsync qt cli</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
