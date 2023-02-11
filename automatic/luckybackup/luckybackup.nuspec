@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>luckybackup</id>
+    <version>0.4.7.20140107</version>
+    <title>luckyBackup</title>
+    <authors>Loukas Avgeriou</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://luckybackup.sourceforge.net/manual.html#legal</licenseUrl>
+    <projectUrl>http://luckybackup.sourceforge.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/9ff691379e3d4a42006b0456ac331f02174441a3/icons/luckybackup.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>luckyBackup is an application that backs-up and/or synchronizes any directories with the power of rsync.
+
+It is simple to use, fast (transfers over only changes made and not all data), safe (keeps your data safe by checking all declared directories before proceeding in any data manipulation), reliable and fully customizable.
+
+#### [Features](http://luckybackup.sourceforge.net/features.html)
+* Backup
+* Snapshots
+* Sync
+* Filters
+* Remote connections
+* Profiles
+* Scheduling
+* Notification
+
+The current status of the port can be summed up with something like, "It mostly works and there is active development to improve it." The Windows version of luckyBackup is not however 100% functional and there are known (and probably unknown) glitches and bugs with it.
+
+#### [Screenshots](http://luckybackup.sourceforge.net/screenshots.html)
+* [Command Line Interface](http://luckybackup.sourceforge.net/manual.html#terminal)
+* [Graphical User Interface](http://luckybackup.sourceforge.net/manual.html#mainWindow)
+
+#### Documentation
+* [Install notes](http://www.bmtsolutions.us/wiki/doku.php?id=contrib:luckybackup-win)
+* [Manual](http://luckybackup.sourceforge.net/manual.html)
+
+#### Community
+* [Forum](https://sourceforge.net/p/luckybackup/discussion/)</description>
+    <summary>A powerful, fast and reliable backup and sync tool</summary>
+    <releaseNotes>#### Program
+* [News](http://luckybackup.sourceforge.net/news.html)
+* [Changelog](http://luckybackup.sourceforge.net/changelog.html)
+* [Roadmap](http://luckybackup.sourceforge.net/todo.html)
+* [Known issues](http://luckybackup.sourceforge.net/bugs.html)
+* [Source code](http://sourceforge.net/p/luckybackup/code/)
+
+#### Package
+* Automatically generated and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2008 Loukas Avgeriou</copyright>
+    <tags>backup sync rsync qt cli</tags>
+  </metadata>
+</package>
