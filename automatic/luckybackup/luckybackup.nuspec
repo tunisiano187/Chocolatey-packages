@@ -8,6 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://luckybackup.sourceforge.net/manual.html#legal</licenseUrl>
     <projectUrl>http://luckybackup.sourceforge.net/</projectUrl>
+    <packageSourceUrl></packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/9ff691379e3d4a42006b0456ac331f02174441a3/icons/luckybackup.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>luckyBackup is an application that backs-up and/or synchronizes any directories with the power of rsync.
