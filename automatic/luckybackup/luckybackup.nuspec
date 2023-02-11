@@ -5,7 +5,7 @@
     <version>0.4.7.20140107</version>
     <title>luckyBackup</title>
     <authors>Loukas Avgeriou</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://luckybackup.sourceforge.net/manual.html#legal</licenseUrl>
     <projectUrl>http://luckybackup.sourceforge.net/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/luckybackup</packageSourceUrl>
