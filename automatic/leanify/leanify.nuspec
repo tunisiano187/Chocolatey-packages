@@ -5,9 +5,10 @@
     <version>0.4.2</version>
     <title>Leanify</title>
     <authors>JayXon</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/JayXon/Leanify/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/JayXon/Leanify</projectUrl>
+    <packageSourceUrl></packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Leanify is a lightweight lossless file minifier/optimizer. It removes unnecessary data (debug information, comments, metadata, etc.) and recompress the file to reduce file size. It will not reduce image quality at all.
 
@@ -58,9 +59,12 @@
 * [Source code](https://github.com/JayXon/Leanify)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© JayXon</copyright>
     <language>en-us</language>
     <tags>lossless file optimizer cli</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
