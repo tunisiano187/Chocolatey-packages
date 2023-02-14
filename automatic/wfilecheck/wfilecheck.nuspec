@@ -24,7 +24,7 @@ Minimum requirement: Windows XP or later.</description>
     <copyright>© 2013 vampire77</copyright>
     <tags>whirlpool file integrity checksum</tags>
     <projectSourceUrl>http://sourceforge.net/projects/whirlpoolfilech/files/0.4/WFileCheck_source.7z/download</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/wfilecheck/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wfilecheck</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
