@@ -26,4 +26,7 @@ Minimum requirement: Windows XP or later.</description>
     <projectSourceUrl>http://sourceforge.net/projects/whirlpoolfilech/files/0.4/WFileCheck_source.7z/download</projectSourceUrl>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/wfilecheck/</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
