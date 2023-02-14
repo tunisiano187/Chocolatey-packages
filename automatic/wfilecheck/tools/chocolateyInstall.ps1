@@ -1,4 +1,4 @@
-﻿$url            = ''
+$url            = ''
 $checksum       = '6beca15e394d9c2070614145b97a972f9ec0c66d286a62e3120c5772fcd3628e'
 $checksumType   = 'sha256'
 $url64          = ''
@@ -22,7 +22,7 @@ $packageArgs = @{
 
 try {
   Get-ChocolateyWebFile @packageArgs
-  
+
   Set-Content -Path ("$installFile.gui") `
               -Value $null
 } catch {
