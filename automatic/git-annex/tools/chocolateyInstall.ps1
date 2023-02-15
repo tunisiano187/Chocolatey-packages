@@ -2,7 +2,7 @@
 $installerType      = 'exe'
 $silentArgs         = '/S /D=C:\Program Files\Git'
 $url32              = 'https://downloads.kitenet.net/git-annex/windows/current/git-annex-installer.exe'
-$checksum32         = '1990e796cae159bfc30124e5b5ac275ad2df98287e0a7f1fd9872141fa6b6e31'
+$checksum32         = '9601fb9fae6c1effb7a8df6b1a2996653ec0990f78fd482cd3861e938f0874ba'
 $checksumType32     = 'sha256'
 $validExitCodes     = @(0)
 
