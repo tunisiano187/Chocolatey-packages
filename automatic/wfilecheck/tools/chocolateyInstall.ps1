@@ -1,8 +1,8 @@
-$url            = ''
-$checksum       = '6beca15e394d9c2070614145b97a972f9ec0c66d286a62e3120c5772fcd3628e'
+﻿$url            = 'https://sourceforge.net/projects/whirlpoolfilech/files/0.5/WFileCheck32.exe/download'
+$checksum       = 'abc1caf8cbb79595a973044e63c39a785432e4aa93441199ebbd6d397485e0d1'
 $checksumType   = 'sha256'
-$url64          = ''
-$checksum64     = '934087fafb8de7776cc79da395dc4329680fbbb033efea3e415c28bfe90dcdec'
+$url64          = 'https://sourceforge.net/projects/whirlpoolfilech/files/0.5/WFileCheck64.exe/download'
+$checksum64     = '573801efc6a293a91764aa19bf32eac4064687fd83baf254784546289647115f'
 $checksumType64 = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile    = Join-Path $toolsDir "$($packageName).exe"
