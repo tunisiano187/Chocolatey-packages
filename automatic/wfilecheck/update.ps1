@@ -20,6 +20,12 @@ function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 
+function global:au_BeforeUpdate($Package) {
+	if(Test-Path('tools\.exe')) {
+		Remove-Item 'tools\.exe'
+	}
+}
+
 function global:au_GetLatest {
 	$urls = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match '.exe$'}
 	$version = $urls[0].href.split('/') | Where-Object {$_ -match "[0]."}
