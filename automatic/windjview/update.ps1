@@ -23,7 +23,7 @@ function global:au_GetLatest {
     if ($current_checksum.Length -ne 64) { throw "Can't find current checksum" }
     $remote_checksum  = Get-RemoteChecksum $url32
     if ($current_checksum -ne $remote_checksum) {
-		$verdate=get-date -Format "yyyymmdd"
+		$verdate=get-date -Format "yyyyMMdd"
         $version = "$version.$verdate"
     }
 	$version = '2.1.0.20230112'
