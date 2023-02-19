@@ -26,6 +26,7 @@ function global:au_GetLatest {
 		$verdate=get-date -Format "yyyymmdd"
         $version = "$version.$verdate"
     }
+	$version = '2.1.0.20230112'
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
