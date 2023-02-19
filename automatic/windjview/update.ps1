@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$version = $url32.Split('-')[-2]
 	$current_checksum = (Get-Item $PSScriptRoot\tools\chocolateyInstall.ps1 | Select-String '\bchecksum\b') -split "=|'" | Where-Object {$_ -notmatch " "} | Select-Object -Last 1 -Skip 1
     if ($current_checksum.Length -ne 64) { throw "Can't find current checksum" }
-    $remote_checksum  = Get-RemoteChecksum $url
+    $remote_checksum  = Get-RemoteChecksum $url32
     if ($current_checksum -ne $remote_checksum) {
 		$verdate=get-date -Format "yyymmdd"
         $version = "$version.$verdate"
