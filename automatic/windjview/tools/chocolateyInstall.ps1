@@ -1,4 +1,5 @@
-﻿$packageName = 'windjview'
+﻿$ErrorActionPreference = 'Stop'
+$packageName = 'windjview'
 $installerType = 'exe'
 $silentArgs = '/S'
 $url = 'https://sourceforge.net/projects/windjview/files/WinDjView/2.1/WinDjView-2.1-Setup.exe/download'
