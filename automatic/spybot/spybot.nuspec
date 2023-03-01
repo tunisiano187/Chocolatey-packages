@@ -4,7 +4,7 @@
   <metadata>
     <id>spybot</id>
     <title>Spybot</title>
-    <version>2.9.82.0</version>
+    <version>2.9.85.5</version>
     <authors>Safer-Networking Ltd</authors>
     <owners>tunisiano</owners>
     <summary>Detects and removes spyware and rootkits</summary>
