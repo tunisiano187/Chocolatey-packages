@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = "https://ultracopier-fr.first-world.info/telecharger-toutes-les-versions.html"
+$releases = $releases = "https://ultracopier.herman-brule.com/"
 
 function global:au_SearchReplace {
     @{
@@ -21,13 +21,11 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-	$re  = "ultracopier-windows-x86"
-	$url = $download_page.links | Where-Object href -match $re | Select-Object -First 2 -expand href
+	$re  = "-x86-"
+	$url32 = $download_page.Content.Split('"') | Where-Object {$_ -match $re}
 
-	$version = Get-Version $url[0]
-	#$version = $url[0] -split '-' | Select-Object -Last 1 -Skip 1
-	$url32 = $url[0].replace('http:','https:')
-    $url64 = $url[1].replace('http:','https:')
+	$version = $url32.Split('-') | Where-Object {$_ -match '\..\.'} | Where-Object {$_ -notmatch "ultra"}
+	$url64 = $url.Replace('x86','x86_64')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
