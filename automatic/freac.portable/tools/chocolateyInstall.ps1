@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/enzo1982/freac/releases/download/v1.1.6/freac-1.1.6-windows-i686.zip'
-$checksum       = '1093bf498128b4a87abc3c728d2589b5abbaf224f1e9bd0ef46e6c1a245bb810'
+$url            = 'https://github.com/enzo1982/freac/releases/download/v1.1.7/freac-1.1.7-windows-i686.zip'
+$checksum       = 'a4ab14999dffe88b5ec6330f8e6444a3a12eb10ec0373759514ba89ab4bcd3fd'
 $ChecksumType   = 'sha256'
-$url64          = 'https://github.com/enzo1982/freac/releases/download/v1.1.6/freac-1.1.6-windows-i686.zip'
-$checksum64     = '1093bf498128b4a87abc3c728d2589b5abbaf224f1e9bd0ef46e6c1a245bb810'
+$url64          = 'https://github.com/enzo1982/freac/releases/download/v1.1.7/freac-1.1.7-windows-x64.zip'
+$checksum64     = 'ef45665aae6c1c0eb4c0ecd8ecc6bed24f02f3cddf6cfd72d8e5c9bc858bf110'
 $ChecksumType64 = 'sha256'
 
 $packageArgs = @{
