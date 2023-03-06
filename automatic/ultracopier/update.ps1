@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = $releases = "https://ultracopier.herman-brule.com/"
+$releases = "https://ultracopier.herman-brule.com/"
 
 function global:au_SearchReplace {
     @{
@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$url32 = $download_page.Content.Split('"') | Where-Object {$_ -match $re}
 
 	$version = $url32.Split('-') | Where-Object {$_ -match '\..\.'} | Where-Object {$_ -notmatch "ultra"}
-	$url64 = $url.Replace('x86','x86_64')
+	$url64 = $url32.Replace('x86','x86_64')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
