@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$release = 'https://appdownload.deepl.com/windows/full/DeepLSetup.exe'
+$release = 'https://appdownload.deepl.com/windows/0install/DeepLSetup.exe'
 
 function global:au_SearchReplace {
 	@{
