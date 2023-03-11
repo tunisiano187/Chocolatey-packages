@@ -3,16 +3,6 @@ import-module au
 
 $release = 'https://appdownload.deepl.com/windows/0install/DeepLSetup.exe'
 
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -28,12 +18,12 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "DeepLSetup.exe"
-	Invoke-WebRequest -Uri $release -OutFile $File
-	#$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$xml='https://appdownload.deepl.com/windows/0install/deepl.xml'
+	$File = Join-Path $env:TEMP "DeepLSetup.xml"
+	Invoke-WebRequest -Uri $xml -OutFile $File
+	[xml]$ver=Get-Content($File)
 
-	. $File /s
-	$version = Get-Version('deepl')
+	$version=($ver.interface.group.group.implementation | Select-Object -Last 1).version
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
