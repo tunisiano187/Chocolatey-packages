@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>devbox-p4merge</id>
-    <version>2022.3.0.2022112301</version>
+    <version>2023.1</version>
     <title>Devbox P4Merge</title>
     <authors>Perforce Software Inc.</authors>
     <owners>tunisiano</owners>
@@ -12,7 +12,7 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/devbox-p4merge.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Devbox-P4Merge
-Devbox-P4merge superseedsP4Merge
+Devbox-P4merge superseeds P4Merge
 
 P4Merge is a visual diff tool that displays the differences between file versions and helps you 
 to resolve conflicts and merge competing versions into one.
@@ -27,7 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>Copyright © 2022 Perforce. All rights reserved.</copyright>
     <tags>devbox notepad merge diff git</tags>
     <dependencies>
-      <dependency id="P4Merge" version="[2022.3.0.2022112301]" />
+      <dependency id="P4Merge" version="[2023.1]" />
     </dependencies>
   </metadata>
   <files></files>
