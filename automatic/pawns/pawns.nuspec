@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pawns</id>
-    <version>1.19.6</version>
+    <version>1.19.9</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pawns</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>IPRoyal Pawns</title>
