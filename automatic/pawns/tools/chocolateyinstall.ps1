@@ -2,7 +2,7 @@
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url64          = 'https://cdn.pawns.app/download/app/latest/windows/Pawns%20Setup.exe'
-$checksum64     = '3b96a22d20d41525834707c175821d3b0d6947714e0ba62688d35d386e47ea44'
+$checksum64     = '4527721be9479d699d243d90bee3a738e957120045417d9422ead17dc7eb735e'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
