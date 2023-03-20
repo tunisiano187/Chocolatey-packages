@@ -1,7 +1,7 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/bcpierce00/unison/releases/download/v2.53.0/unison-v2.53.0%2Bocaml-4.14.0%2Bx86_64.windows.zip'
-$checksum       = '499b797d11b1b029db1761db819a85c4274be982fb8edddd2289f5fd630402de'
+$url            = 'https://github.com/bcpierce00/unison/releases/download/v2.53.1/unison-v2.53.1%2Bocaml-4.14.0%2Bmingw64c%2Bx86_64.windows.zip'
+$checksum       = 'e19d501f8e5168289efe59c859af7c51f3f460f579caecc0f097fc0ea17dd740'
 $checksumType   = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `
