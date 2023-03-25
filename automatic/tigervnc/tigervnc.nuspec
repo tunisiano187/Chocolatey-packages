@@ -6,7 +6,7 @@
     <title>TigerVNC</title>
     <authors>TigerVNC Team et al.</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
     <projectUrl>http://tigervnc.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8b8c5064bf3c3b02aeb0969a1bb78dca60f19d4b/icons/tigervnc.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
