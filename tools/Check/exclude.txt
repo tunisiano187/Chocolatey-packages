@@ -36,3 +36,4 @@ plexmediaserver
 bitmessage
 bless
 luckybackup
+office365proplus
