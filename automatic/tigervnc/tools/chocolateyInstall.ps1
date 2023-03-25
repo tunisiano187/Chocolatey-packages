@@ -1,4 +1,4 @@
-﻿$packageName    = $env:ChocolateyPackageName
+$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $url32          = 'https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.11.0.exe'
 $url64          = 'https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc64-1.11.0.exe'
@@ -12,15 +12,15 @@ $packageArgs = @{
     packageName     = $packageName
     fileType        = $installerType
     softwareName    = "$packageName*"
-  
+
     checksum        = $checksum32
     checksumType    = $checksumType
     url             = $url32
-  
+
     checksum64      = $checksum64
     checksumType64  = $packageName
     url64bit        = $url64
-  
+
     silentArgs      = $silentArgs
     validExitCodes  = $validExitCodes
 }
