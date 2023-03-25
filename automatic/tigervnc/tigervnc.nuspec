@@ -15,7 +15,7 @@
     <releaseNotes>https://github.com/TigerVNC/tigervnc/releases/tag/v1.11.0</releaseNotes>
     <tags>vnc remote control admin</tags>
     <projectSourceUrl>https://github.com/TigerVNC/tigervnc</projectSourceUrl>
-    <packageSourceUrl>https://github.com/qzo/chocolatey-packages/tree/master/packages/manual/tigervnc_m/tigervnc</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tigervnc</packageSourceUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/tigervnc-users</mailingListUrl>
   </metadata>
   <files>
