@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://sourceforge.net/projects/tigervnc/files/stable/'
+$releases = 'https://sourceforge.net/projects/tigervnc/files/stable'
 
 function global:au_SearchReplace {
 	@{
@@ -21,8 +21,8 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "[0-9].[0-9]"} | Where-Object {$_.href -notmatch 'css'}).href[0].split('/')[-2]
-	$url32 = "https://sourceforge.net/tigervnc/files/stable/$version/tigervnc-$version.exe/download"
-	$url64 = "https://sourceforge.net/tigervnc/files/stable/$version/tigervnc64-$version.exe/download"
+	$url32 = "$releases/$version/tigervnc-$version.exe/download"
+	$url64 = "$releases/$version/tigervnc64-$version.exe/download"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
