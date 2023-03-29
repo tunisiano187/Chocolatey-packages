@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>lastactivityview</id>
-    <version>1.36</version>
+    <version>1.37</version>
     <title>LastActivityView</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>

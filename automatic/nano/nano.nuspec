@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nano</id>
-    <version>7.2.17</version>
+    <version>7.2.25</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
     <owners>tunisiano</owners>
@@ -40,7 +40,7 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
     <docsUrl>https://www.nano-editor.org/docs.php</docsUrl>
     <bugTrackerUrl>https://github.com/lhmouse/nano-win/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="nano-win" version="[7.2.17]" />
+      <dependency id="nano-win" version="[7.2.25]" />
     </dependencies>
   </metadata>
   <files>
