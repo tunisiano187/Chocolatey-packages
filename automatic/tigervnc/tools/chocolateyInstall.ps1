@@ -1,12 +1,18 @@
-$packageName    = $env:ChocolateyPackageName
+﻿$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
-$url32          = 'https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.11.0.exe'
-$url64          = 'https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc64-1.11.0.exe'
-$checksum32     = 'fc7a4b4195870595eb280ccf77a528f8d252c113d469331ebed23b1b591554e5fe7ed6cbf6f1187b315df37efcc867cbb3143fafe4e926a6a79eaa9a7401e3e2'
-$checksum64     = '443fc186837fefcd9b2d50159a82087aeb8dbb28f8bd255c2c724dcc49584615b56bfd42cb86aff1ae151669893617037fa600000449e270955743975d9ce2fe'
-$checksumType   = 'sha512'
+$url32          = 'https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc-1.13.1.exe/download'
+$url64          = 'https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc64-1.13.1.exe/download'
+$checksum32     = '@{Algorithm=SHA256; Hash=60E7E26FA996BE70156747941D7FB92D116D1CCC442614192BB96DF20CA599E6; Path=C:\Users\Admin\AppData\Local\Temp\tigervnc.exe}'
+$checksum64     = '@{Algorithm=SHA256; Hash=536CA6BCF77C8EE3FBFFE294A25269BB9D1D26B038BDB682FD3161E6C7FDA3F3; Path=C:\Users\Admin\AppData\Local\Temp\tigervnc64.exe}'
+$checksumType   = 'SHA256'
 $silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0)
+$options =
+@{
+  Headers = @{
+    UserAgent = 'Wget';
+  }
+}
 
 $packageArgs = @{
     packageName     = $packageName
@@ -16,6 +22,7 @@ $packageArgs = @{
     checksum        = $checksum32
     checksumType    = $checksumType
     url             = $url32
+    options         = $options
 
     checksum64      = $checksum64
     checksumType64  = $packageName
