@@ -1,5 +1,5 @@
-$url            = 'https://jztkft.dl.sourceforge.net/project/megui/megui-stable/2913/MeGUI-2913-32.zip'
-$checksum       = '9ec40f5342593626e1ed5e945ca6fc94499f68dda3ba3775b9fc850a19e13f88'
+﻿$url            = 'https://master.dl.sourceforge.net/project/megui/megui-stable/2933/MeGUI-2933-32.zip'
+$checksum       = 'ff3968adb53bed0da6084e5c7e9e972a7361fa4a204f728e51c28acf3d7cc5ea'
 $checksumType   = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile    = Join-Path $toolsDir "$($packageName).exe"
