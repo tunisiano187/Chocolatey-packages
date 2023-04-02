@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
-$toolsDir	= "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$curDir	= "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir = Join-Path $curDir "tools"
 $releases 	= 'https://sourceforge.net/projects/tigervnc/files/stable'
 $options 	=
 @{
@@ -11,7 +12,7 @@ $options 	=
 
 function global:au_SearchReplace {
 	@{
-		"tools\VERIFICATION.txt"      = @{
+		"legal\VERIFICATION.txt"      = @{
 			"(?i)(link32:).*"        			= "`${1} $($Latest.URL32)"
 			"(?i)(checksum32:).*" 				= "`${1} $($Latest.Checksum32)"
 			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
@@ -31,7 +32,9 @@ function global:au_BeforeUpdate {
 	$cli = New-Object System.Net.WebClient;
     $cli.Headers['User-Agent'] = 'Wget';
     $cli.DownloadFile($Latest.URL32 , $file32)
-	$cli.DownloadFile($Latest.URL64, $file64)
+	$cli = New-Object System.Net.WebClient;
+    $cli.Headers['User-Agent'] = 'Wget';
+    $cli.DownloadFile($Latest.URL64 , $file64)
 
 	$Latest.ChecksumType32 = "SHA256"
 	$Latest.ChecksumType64 = $Latest.ChecksumType32
