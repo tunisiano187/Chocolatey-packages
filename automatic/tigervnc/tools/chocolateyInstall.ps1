@@ -1,35 +1,21 @@
-﻿$packageName    = $env:ChocolateyPackageName
-$installerType  = 'exe'
-$url32          = 'https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc-1.13.1.exe/download'
-$url64          = 'https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc64-1.13.1.exe/download'
-$checksum32     = '60E7E26FA996BE70156747941D7FB92D116D1CCC442614192BB96DF20CA599E6'
-$checksum64     = '536CA6BCF77C8EE3FBFFE294A25269BB9D1D26B038BDB682FD3161E6C7FDA3F3'
-$checksumType   = 'SHA256'
-$silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-$validExitCodes = @(0)
-$options =
-@{
-  Headers = @{
-    UserAgent = 'Wget';
-  }
-}
+$ErrorActionPreference = 'Stop';
+
+$packageName      = $env:ChocolateyPackageName
+$toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file             = Join-Path $toolsDir '/tigervnc.exe'
+$file64           = Join-Path $toolsDir '/tigervnc64.exe'
 
 $packageArgs = @{
-    packageName     = $packageName
-    fileType        = $installerType
-    softwareName    = "$packageName*"
+  packageName     = $packageName
+  unzipLocation   = $toolsDir
+  fileType        = 'EXE'
+  file            = $file
+  file64          = $file64
 
-    checksum        = $checksum32
-    checksumType    = $checksumType
-    url             = $url32
-    options         = $options
+  softwareName    = 'tigervnc*'
 
-    checksum64      = $checksum64
-    checksumType64  = $packageName
-    url64bit        = $url64
-
-    silentArgs      = $silentArgs
-    validExitCodes  = $validExitCodes
+  validExitCodes  = @(0)
+  silentArgs      = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
 
-Install-ChocolateyPackage $packageArgs
+Install-ChocolateyInstallPackage @packageArgs

@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 import-module au
-
-$releases = 'https://sourceforge.net/projects/tigervnc/files/stable'
-$options =
+$toolsDir	= "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$releases 	= 'https://sourceforge.net/projects/tigervnc/files/stable'
+$options 	=
 @{
   Headers = @{
     UserAgent = 'Wget';
@@ -11,19 +11,22 @@ $options =
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url32\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
-			"(^[$]checksum32\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" 		= "`$1'$($Latest.ChecksumType32)'"
-			"(^[$]url64\s*=\s*)('.*')"      		= "`$1'$($Latest.URL64)'"
-			"(^[$]checksum64\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum64)'"
+		"tools\VERIFICATION.txt"      = @{
+			"(?i)(link32:).*"        			= "`${1} $($Latest.URL32)"
+			"(?i)(checksum32:).*" 				= "`${1} $($Latest.Checksum32)"
+			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
+			"(?i)(link64:).*"        			= "`${1} $($Latest.URL64)"
+			"(?i)(checksum64:).*" 				= "`${1} $($Latest.Checksum64)"
+		}
+		"$($Latest.PackageName).nuspec" = @{
+			"(\<releaseNotes\>).*?(\</releaseNotes\>)"		= "https://github.com/TigerVNC/tigervnc/releases/tag/$($Latest.Version)"
 		}
 	}
 }
 
 function global:au_BeforeUpdate {
-	$file32 = Join-Path $env:TEMP "tigervnc.exe"
-	$file64 = Join-Path $env:TEMP "tigervnc64.exe"
+	$file32 = Join-Path $toolsDir "tigervnc.exe"
+	$file64 = Join-Path $toolsDir "tigervnc64.exe"
 
 	$cli = New-Object System.Net.WebClient;
     $cli.Headers['User-Agent'] = 'Wget';
@@ -31,9 +34,9 @@ function global:au_BeforeUpdate {
 	$cli.DownloadFile($Latest.URL64, $file64)
 
 	$Latest.ChecksumType32 = "SHA256"
-	$Latest.ChecksumType64 = "SHA256"
+	$Latest.ChecksumType64 = $Latest.ChecksumType32
 	$Latest.Checksum32 = (Get-FileHash -Path $file32 -Algorithm $Latest.ChecksumType32).Hash
-	$Latest.Checksum64 = (Get-FileHash -Path $file64 -Algorithm $Latest.ChecksumType32).Hash
+	$Latest.Checksum64 = (Get-FileHash -Path $file64 -Algorithm $Latest.ChecksumType64).Hash
 }
 
   function global:au_AfterUpdate($Package) {
@@ -49,4 +52,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckUrl -ChecksumFor none
+update -NoCheckUrl -ChecksumFor none -NoCheckChocoVersion
