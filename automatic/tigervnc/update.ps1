@@ -11,7 +11,7 @@ $options 	=
 
 function global:au_SearchReplace {
 	@{
-		"legal\VERIFICATION.txt"      = @{
+		"tools\VERIFICATION.txt"      = @{
 			"(?i)(link32:).*"        			= "`${1} $($Latest.URL32)"
 			"(?i)(checksum32:).*" 				= "`${1} $($Latest.Checksum32)"
 			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 			"(?i)(checksum64:).*" 				= "`${1} $($Latest.Checksum64)"
 		}
 		"$($Latest.PackageName).nuspec" = @{
-			"(\<releaseNotes\>).*?(\</releaseNotes\>)"		= "https://github.com/TigerVNC/tigervnc/releases/tag/$($Latest.Version)"
+			"(\<releaseNotes\>).*?(\</releaseNotes\>)"		= "`${1}https://github.com/TigerVNC/tigervnc/releases/tag/$($Latest.Version)`$2"
 		}
 	}
 }
