@@ -11,7 +11,7 @@ $options 	=
 
 function global:au_SearchReplace {
 	@{
-		"tools\VERIFICATION.txt"      = @{
+		"legal\VERIFICATION.txt"      = @{
 			"(?i)(link32:).*"        			= "`${1} $($Latest.URL32)"
 			"(?i)(checksum32:).*" 				= "`${1} $($Latest.Checksum32)"
 			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
