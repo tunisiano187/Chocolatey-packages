@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tigervnc</id>
-    <version>1.13.1</version>
+    <version>1.11.1</version>
     <title>TigerVNC</title>
     <authors>TigerVNC Team et al.</authors>
     <owners>tunisiano</owners>
@@ -30,5 +30,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
