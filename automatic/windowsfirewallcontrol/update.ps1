@@ -23,6 +23,9 @@ function global:au_GetLatest {
     $File = Join-Path($(Split-Path $env:TEMP)) "wfcsetup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+    if($version -eq "6.9.2.0") {
+        $version = "6.9.2.2023041201"
+    }
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 
