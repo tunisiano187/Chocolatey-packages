@@ -83,8 +83,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="autohotkey.portable" version="1.1" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
       <dependency id="dotnet4.5" version="4.5" />
     </dependencies>
   </metadata>

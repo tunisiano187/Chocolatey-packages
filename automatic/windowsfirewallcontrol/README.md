@@ -8,8 +8,9 @@ Windows Firewall and provides new extra features which makes Windows Firewall
 better. It runs in the system tray and allows the user to control the native 
 firewall easily without having to waste time by navigating to the specific part 
 of the firewall. This is the best tool to manage the native firewall from 
-Windows 10, 8.1, 8, 7, Server 2016, Server 2012. Windows Firewall Control offers 
-four filtering modes which can be switched with just a mouse click:
+Windows 10, 8.1, 8, 7, Server 2012, Server 2016, Server 2019, Server 2022. 
+Windows Firewall Control offers four filtering modes which can be switched
+with just a mouse click:
 
 High Filtering - All outbound and inbound connections are blocked. This profile 
 blocks all attempts to connect to and from your computer.
