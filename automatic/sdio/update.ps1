@@ -5,11 +5,12 @@ $releases = 'https://www.glenn.delahoy.com/snappy-driver-installer-origin/'
 function global:au_SearchReplace {
    @{
         "tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*.fileName32\s*=\s*)('.*')"  = "`$1'SDIO_R$($Latest.baseVersion).exe'"
-            "(?i)(^\s*.fileName64\s*=\s*)('.*')"  = "`$1'SDIO_x64_R$($Latest.baseVersion).exe'"
-            "(?i)(^\s*.fullVersion\s*=\s*)('.*')" = "`$1'$($Latest.version)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"                = "`$1'$($Latest.URL32)'"
+            "(?i)(^\s*checksum\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*.fileName32\s*=\s*)('.*')"        = "`$1'SDIO_R$($Latest.baseVersion).exe'"
+            "(?i)(^\s*.fileName64\s*=\s*)('.*')"        = "`$1'SDIO_x64_R$($Latest.baseVersion).exe'"
+            "(?i)(^\s*.fullVersion\s*=\s*)('.*')"       = "`$1'$($Latest.version)'"
+            "(?i)(^\s*.SpecificFolder\s*=\s*)('.*')"    = "`$1'SDIO_$($Latest.version)'"
         }
 
         ".\legal\VERIFICATION.txt" = @{

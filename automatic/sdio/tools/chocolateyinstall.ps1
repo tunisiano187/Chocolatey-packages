@@ -7,13 +7,16 @@ if(([int]$os[0] -le [int]6) -and ([int]$os[1] -le [int]3)) {
     exit 0;
 }
 
+$SpecificFolder = ''
+
 $packageArgs = @{
-    packageName   = 'sdio'
-    unzipLocation = $toolsDir
-    fileType      = 'ZIP'
-    url           = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.10.750.zip'
-    checksum      = 'd5fec14ff46791726417882bfedb34562c48f371dcdba72cf975296b5138d236'
-    checksumType  = 'sha256'
+    packageName     = 'sdio'
+    unzipLocation   = $toolsDir
+    fileType        = 'ZIP'
+    SpecificFolder  = $SpecificFolder
+    url             = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.10.750.zip'
+    checksum        = 'd5fec14ff46791726417882bfedb34562c48f371dcdba72cf975296b5138d236'
+    checksumType    = 'sha256'
 }
 
 Remove-Item "$ToolsDir\SDIO_*" -Force -Recurse # Cleanup old versions
