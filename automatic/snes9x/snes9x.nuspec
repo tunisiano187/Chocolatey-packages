@@ -4,7 +4,7 @@
   <metadata>
     <id>snes9x</id>
     <title>Snes9x</title>
-    <version>1.62.3</version>
+    <version>1.62.2</version>
     <authors>Snes9x Team</authors>
     <owners>tunisiano</owners>
     <summary>SNES emulator widely ported to many systems</summary>
@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/snes9x.png</iconUrl>
     <tags>emulator snes gaming</tags>
     <copyright>© Snes9x Team</copyright>
-    <licenseUrl>http://www.snes9x.com/privacy.html</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/snes9xgit/snes9x/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 #### Program
