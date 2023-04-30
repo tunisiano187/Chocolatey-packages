@@ -7,15 +7,15 @@ if(([int]$os[0] -le [int]6) -and ([int]$os[1] -le [int]3)) {
     exit 0;
 }
 
-$SpecificFolder = 'SDIO_1.12.11.751'
+$SpecificFolder = 'SDIO_1.12.12.753'
 
 $packageArgs = @{
     packageName     = 'sdio'
     unzipLocation   = $toolsDir
     fileType        = 'ZIP'
     SpecificFolder  = $SpecificFolder
-    url             = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.11.751.zip'
-    checksum        = '93bedbfd0ee58e8e3fb4bfc5a214c5ba3a07297c81b984c520b631819f0671c3'
+    url             = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.12.753.zip'
+    checksum        = 'c24c4d805947b473c5f9abf3fa3b2168b1aaf8b282d612d004fd60774da49193'
     checksumType    = 'sha256'
 }
 
@@ -27,9 +27,9 @@ if (!(Test-Path -path "$ENV:ALLUSERSPROFILE\SDIO")) {
 }
 
 $shortcutName    = 'Snappy Driver Installer Origin'
-$fileName32      = 'SDIO_R751.exe'
-$fileName64      = 'SDIO_x64_R751.exe'
-$fullVersion     = '1.12.11.751'
+$fileName32      = 'SDIO_R753.exe'
+$fileName64      = 'SDIO_x64_R753.exe'
+$fullVersion     = '1.12.12.753'
 $FileFullpath32  = Join-Path $ToolsDir\SDIO_$fullVersion $fileName32
 $FileFullpath64  = Join-Path $ToolsDir\SDIO_$fullVersion $fileName64
 
