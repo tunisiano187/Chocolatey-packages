@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor.install</id>
-    <version>13.0.1</version>
+    <version>13.0.2</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor.install</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>010 Editor (Install)</title>
