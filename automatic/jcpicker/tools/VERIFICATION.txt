@@ -7,7 +7,7 @@ The latest installers are available here:
 
    
 Direct Download:
-Version        : 5.7
+Version        : 5.8
 URL            : https://annystudio.com/jcpicker.zip
-CheckSum       : 85AF9F9A9BC11D61FB953D35884ECC0690483EA89EB76AE2400F323B95FD433C
+CheckSum       : 30135564FE329A1DA7675642EF7981EF466F37F60C26A203F1E06FFB4A39F9D5
 CheckSumType   : sha256
