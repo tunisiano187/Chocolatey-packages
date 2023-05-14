@@ -4,7 +4,7 @@
   <metadata>
     <id>csvfileview</id>
     <title>CSVFileView</title>
-    <version>2.63</version>
+    <version>2.64</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>CSV/Tab-delimited file viewer and converter for Windows</summary>
