@@ -19,6 +19,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-Setup-'} | Where-Object {$_ -match '.exe'} | Where-Object {$_ -match "https"}).href | Select-Object -First 1
 	$version = ($url32.Split('-|/') | Where-Object {$_ -match ".exe"}).replace('.exe','').replace('u','-u')
+	if($version -eq "1.11.2") {
+		$version = "1.11.2.2023052201"
+	}
 
 	$Latest = @{ URL32 = $url32; Version = $version; FileName32 = "Freeplane.exe" }
 	return $Latest

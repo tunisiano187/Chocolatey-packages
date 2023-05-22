@@ -29,6 +29,9 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright />
     <tags>freeplane diagram mindmap graph visualization admin</tags>
+    <dependencies>
+      <dependency id="liberica17jre" version="[17.0.7]" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
