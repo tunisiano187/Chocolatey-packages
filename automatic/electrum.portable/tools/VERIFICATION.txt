@@ -6,14 +6,14 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://download.electrum.org/4.4.3/electrum-4.4.3-portable.exe
+x86: https://download.electrum.org/4.4.4/electrum-4.4.4-portable.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum32: 9d3716a2d68f39c8522d2ec8f59723cc3543d9efbd038e30d5f06a3fdb2d5ee6
+checksum32: 4f6523fe061a700e2c624995db3619ded8e3f013d3bb74f3f7081b341f03ee59
 
 The included 'LICENSE.txt' file have been obtained from:
 license: https://github.com/spesmilo/electrum/blob/master/LICENCE
