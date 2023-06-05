@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>hass-agent</id>
-    <version>2022.13.0</version>
+    <version>2022.14.0</version>
     <title>Home assistant agent</title>
     <authors>LAB02-Research</authors>
     <owners>tunisiano</owners>
