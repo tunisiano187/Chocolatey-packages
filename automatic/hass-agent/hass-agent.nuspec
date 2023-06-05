@@ -3,12 +3,13 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>hass-agent</id>
-    <version>2022.14.0</version>
+    <version>2022.13.0</version>
     <title>Home assistant agent</title>
     <authors>LAB02-Research</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/LAB02-Research/HASS.Agent/raw/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/LAB02-Research/HASS.Agent</projectUrl>
+    <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Home assistant agent
 HASS.Agent is a Windows-based client (companion) application for Home Assistant, developed in .NET 6.
