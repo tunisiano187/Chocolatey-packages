@@ -43,6 +43,9 @@ jobs:
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
         env:
           au_version: master
+      - name: Install requisites
+        run: |
+          setup/requisites.ps1
       - name: Check update for packages
         run: |
           $ErrorActionPreference = 'Continue'
