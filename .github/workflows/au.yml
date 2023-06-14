@@ -37,7 +37,7 @@ jobs:
       - name: Install AU
         run: |
           git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-          cup -y Wormies-AU-Helpers
+          choco upgrade -y Wormies-AU-Helpers
           Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force
           Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
