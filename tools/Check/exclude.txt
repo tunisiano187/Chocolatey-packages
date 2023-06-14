@@ -38,3 +38,4 @@ bless
 luckybackup
 office365proplus
 advtor
+rehash
