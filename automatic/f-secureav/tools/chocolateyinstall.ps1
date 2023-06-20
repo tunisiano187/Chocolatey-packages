@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $url32          = 'https://download.sp.f-secure.com/SE/Retail/installer/F-SecureNetworkInstaller-AV.exe'
-$checksum32     = '85C792F694B83D0B1E195134F782B7DB3E29CE4234BD86F57A99C7D7F260234B'
+$checksum32     = '9C2CECEAFC1431E277337890CF51A241EAD1371AE08B229F0EEF377AE3DA7610'
 $checksumType32 = 'sha256'
 
 $packageArgs = @{

@@ -8,8 +8,8 @@ if ($psver -ge 3) {
 $packageName = $env:ChocolateyPackageName
 $typName = 'OtpKeyProv'
 $packageSearch = 'KeePass Password Safe'
-$url = '{{DownloadUrl}}'
-$checksum = '{{Checksum}}'
+$url = 'https://keepass.info/extensions/v2/otpkeyprov/OtpKeyProv-2.7.zip'
+$checksum = 'a3e36538b2ee7eb521c903270f436921f177a5f11c5dbe22d185bcecce761481'
 $checksumType = 'sha256'
 try {
 # search registry for location of installed KeePass
