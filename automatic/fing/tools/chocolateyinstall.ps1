@@ -3,7 +3,7 @@ $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
 $url32 = 'https://get.fing.com/fing-desktop-releases/win/Fing.exe'
-$checksum32 = '6c118cb0aa3f4acfbf0ae616ded504be8b54e3eaaeb81624189b66709f262f48'
+$checksum32 = 'bc1d9d3895c32bcb28cf77ebad43c0c8a6b3038680b171bfbf87ccbe367052c0'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 

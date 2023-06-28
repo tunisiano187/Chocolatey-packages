@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>autoruns</id>
-    <version>14.09</version>
+    <version>14.10</version>
     <title>Autoruns</title>
     <authors>Mark Russinovich,Bryce Cogswell</authors>
     <owners>tunisiano</owners>

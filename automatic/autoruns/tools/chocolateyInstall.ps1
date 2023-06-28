@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'https://download.sysinternals.com/files/Autoruns.zip'
-$checksum = 'f82294355e98051aed850e567c676466c16beca333e1fe96fe7cab003e987764'
+$checksum = '23b08e401217555a26e62577e90cef2bf6e53d9fee4e09cd38bd929189f61bfe'
 $checksumType = 'sha256'
 $url64 = "$url"
 $checksum64 = "$checksum"
