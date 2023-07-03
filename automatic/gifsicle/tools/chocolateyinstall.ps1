@@ -3,11 +3,11 @@ $ErrorActionPreference = 'Stop';
 
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.92-win32.zip'
-$checksum32     = '302514ddd303e6f0a5d23157f1d1552b22ab89a80715f9b87807e98d79b5b3e3'
+$url32          = 'https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.94-win32.zip'
+$checksum32     = '79b0d71d4bf9038a456060d4fc9ade176db234c22bbd6c5c46a9cf6bc41377c4'
 $checksumType32 = 'sha256'
-$url64          = 'https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.92-win64.zip'
-$checksum64     = 'de06320f02a1aa5330a084a0d7d1aeae370ec0ce51992bef64881b0ebcabaff9'
+$url64          = 'https://eternallybored.org/misc/gifsicle/releases/gifsicle-1.94-win64.zip'
+$checksum64     = 'b3e3a9e0c8ade061b5b2ef13cad3d4ad57466400552a78ed285ed0c3f97a5141'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
