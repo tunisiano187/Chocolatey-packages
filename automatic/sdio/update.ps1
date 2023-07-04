@@ -7,9 +7,7 @@ function global:au_SearchReplace {
         "tools\chocolateyInstall.ps1" = @{
             "(?i)(^\s*url\s*=\s*)('.*')"                = "`$1'$($Latest.URL32)'"
             "(?i)(^\s*checksum\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*checksumtype\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum3Type2)'"
-            "(?i)(^\s*.fileName32\s*=\s*)('.*')"        = "`$1'SDIO_R$($Latest.baseVersion).exe'"
-            "(?i)(^\s*.fullVersion\s*=\s*)('.*')"       = "`$1'$($Latest.version)'"
+            "(?i)(^\s*checksumtype\s*=\s*)('.*')"           = "`$1'$($Latest.ChecksumType32)'"
             "(?i)(^\s*.SpecificFolder\s*=\s*)('.*')"    = "`$1'SDIO_$($Latest.version)'"
         }
 
