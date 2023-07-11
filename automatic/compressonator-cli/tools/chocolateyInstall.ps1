@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName    = 'Compressonator-cli'
-$url64          = 'https://github.com/GPUOpen-Tools/compressonator/releases/download/V4.3.206/CompressonatorCLI_x64_4.3.206.exe'
-$checksum64     = '15513ad190cf92b149c343193bd7c96c07307a4d6c4d71c516c906d039e1d638'
+$url64          = 'https://github.com/GPUOpen-Tools/compressonator/releases/download/V4.4.19/CompressonatorCLI_x64_4.4.19.exe'
+$checksum64     = '3912a715138deba05d79c99045c8b4c12d685042fd4cec58df493102cb814827'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{

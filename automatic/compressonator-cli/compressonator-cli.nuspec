@@ -4,7 +4,7 @@
   <metadata>
     <id>compressonator-cli</id>
     <title>Compressonator CLI</title>
-    <version>4.3.206</version>
+    <version>4.4.19</version>
     <authors>GPUOpen initiative</authors>
     <owners>tunisiano</owners>
     <summary>Compressonator is a set of tools to allow artists and developers to more easily create compressed texture assets or model mesh optimizations and easily visualize the quality impact of various compression and rendering technologies</summary>
