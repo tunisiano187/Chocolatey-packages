@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>cura-lulzbot</id>
-    <version>3.6.37</version>
+    <version>3.6.40</version>
     <title>Cura LulzBot Edition (Install)</title>
     <authors>Aleph Objects Inc., David Braam</authors>
     <owners>tunisiano</owners>
@@ -10,9 +10,16 @@
     <projectUrl>https://www.lulzbot.com/cura</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/cura-lulzbot.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Cura LulzBot Edition is a Free Software program that both prepares your files for printing (by converting your model into GCODE), and also allows you to control the operation of your LulzBot 3D printer.
+    <description><![CDATA[## cura-lulzbot
+Cura LulzBot Edition is a Free Software program that both prepares your files for printing (by converting your model into GCODE), and also allows you to control the operation of your LulzBot 3D printer.
 
-The latest version features an updated user interface, more slicing options, an updated slicing engine, and better print quality than ever before. Keep Cura LulzBot Edition updated to have the latest pre-set Cura print profiles, developed and tested by the LulzBot team to ensure the best performance out of your LulzBot!</description>
+The latest version features an updated user interface, more slicing options, an updated slicing engine, and better print quality than ever before. Keep Cura LulzBot Edition updated to have the latest pre-set Cura print profiles, developed and tested by the LulzBot team to ensure the best performance out of your LulzBot!
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Cura LE is a Free Software program for LulzBot 3D printers.</summary>
     <releaseNotes>* [Releases](https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/-/releases)</releaseNotes>
     <copyright>Copyleft 2018 Aleph Objects, Inc.</copyright>
