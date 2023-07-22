@@ -1,7 +1,9 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://files.lhmouse.com/nano-win/'
+$releases = 'https://api.github.com/repos/mysteriumnetwork/mysterium-vpn-desktop/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
@@ -18,14 +20,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	Write-Verbose 'Get files'
-	$filename = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Links.href | Where-Object {$_ -match '\.7z'} | Sort-Object | Select-Object -Last 1
-	Write-Verbose 'Checking version'
-	$fileversion_regex = '(?<=v)[0-9\.\-]+[0-9](?!=\[0-9])'
-	$version = ($filename | Select-String -Pattern $fileversion_regex).Matches.Value -replace '-','.'
-
-	$url32 = $releases + $filename
-	Write-Verbose "Version : $version"
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
+	$version = $tags.tag_name.Replace('v','')
+	if($tags.prerelease -match "true") {
+		$date = $tags.published_at.ToString("yyyyMMdd")
+		$version = "$version-pre$($date)"
+	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
