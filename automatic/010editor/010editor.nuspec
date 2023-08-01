@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor</id>
-    <version>13.0.2</version>
+    <version>14.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>010 Editor</title>
@@ -34,7 +34,7 @@ https://www.sweetscape.com/010editor/release_notes.html
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="010editor.install" version="[13.0.2]" />
+      <dependency id="010editor.install" version="[14.0]" />
     </dependencies>
   </metadata>
   <files>

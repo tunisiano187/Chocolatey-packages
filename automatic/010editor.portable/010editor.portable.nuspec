@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>010editor.portable</id>
-    <version>13.0.2</version>
+    <version>14.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/010editor.portable</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>010 Editor  (Portable)</title>

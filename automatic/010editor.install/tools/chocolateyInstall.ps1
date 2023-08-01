@@ -2,8 +2,8 @@
 
 $url32       = 'https://www.sweetscape.com/download/010EditorWin32Installer.exe'
 $url64       = 'https://www.sweetscape.com/download/010EditorWin64Installer.exe'
-$checksum32  = '30f21ab0d744b37951b7406aee84d7e2f236d4e2d1e7dcf50d750638408461b2'
-$checksum64  = 'c85695071e530d1bc86d116fe8f674d1089ae222659055bafab650280427a1ee'
+$checksum32  = '11d96fa10df0f8e6add3509e03b963c398a190890f0ea45d8e56c4dd77cbeaa9'
+$checksum64  = '9f926af3bc49df3ab3b2fa8e9cf97caf018081df277c25ee37fab8c2fdd974ba'
 
 $packageArgs = @{
   packageName   = '010editor.install'
