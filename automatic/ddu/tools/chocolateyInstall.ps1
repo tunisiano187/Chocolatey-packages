@@ -21,8 +21,3 @@ Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\*.exe"
 Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\DDU*" -Recurse
 
 Install-ChocolateyZipPackage @packageArgs
-$toshort=(Get-ChildItem -Folder $toolsdir -Recurse -Include *uninstaller.exe).FullName
-
-$link=join-path $env:ProgramData "Microsoft/Windows/Start Menu/Programs/"
-$link = Join-Path $link "DisplayDriverUninstaller.lnk"
-Install-ChocolateyShortcut -ShortcutFilePath $link -TargetPath $toshort -PinToTaskbar
