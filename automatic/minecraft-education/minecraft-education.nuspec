@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>minecraft-education</id>
-    <version>1.19.53.0</version>
+    <version>1.20.1200.0</version>
     <title>Minecraft Education</title>
     <authors>Microsoft</authors>
     <owners>tunisiano</owners>
