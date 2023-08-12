@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>initool</id>
-    <version>0.11.0</version>
+    <version>0.12.0</version>
     <title>initool</title>
     <authors>D. Bohdan</authors>
     <owners>tunisiano</owners>
@@ -22,8 +22,8 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Manipulate the contents of INI files from the command line</summary>
-    <releaseNotes>[Changelog](https://github.com/dbohdan/initool/releases/tag/v0.11.0)</releaseNotes>
-    <copyright>© 2023 D. Bohdan</copyright>
+    <releaseNotes>[Changelog](https://github.com/dbohdan/initool/releases/tag/v0.12.0)</releaseNotes>
+    <copyright> Â© 2023 D. Bohdan</copyright>
     <tags>configuration ini cli</tags>
     <projectSourceUrl>https://github.com/dbohdan/initool</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/initool</packageSourceUrl>
