@@ -1,0 +1,22 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link found at https://github.com/jitsi/jitsi-meet-electron/releases
+It has been built using Appveyor.
+You can find the package source at https://github.com/cmorty/au-packages/tree/master/jitsi-meet-electron
+As well as the build logs: https://gist.github.com/cmorty/554cd2b607b7bf0a288341da3b311ca1
+
+To verify the package you need to
+1. Download the Oneclick installer from the following
+    URL: https://github.com/jitsi/jitsi-meet-electron/releases/download/v2022.8.1/jitsi-meet.exe
+2. Unzip it running
+    7z x jitsi-meet.exe
+    The program is in the "$PLUGINSDIR" folder containing the app-32.7z and app-64.7z
+3. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum32: 8BC1EE77FD86EBB374EB13072AA21EC0F7228DD354263D34CCFC394E7417D42C
+  checksum64: 4378881880BFED386F26AB3DA5EBE0EC31D96C5CE338DB07AB6D4AB628424087

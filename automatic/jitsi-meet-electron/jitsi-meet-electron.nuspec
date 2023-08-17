@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jitsi-meet-electron</id>
+    <version>2022.8.1</version>
+    <title>Jitsi Meet Electron</title>
+    <authors>Jitsi Meet Electron community</authors>
+    <owners>cmorty</owners>
+    <licenseUrl>https://github.com/jitsi/jitsi-meet-electron/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jitsi/jitsi-meet-electron</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jitsi/jitsi-meet-electron/c1746ecdb5b83a423e56ddf5c7347a0020a6ec27/resources/icons/icon_128x128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>## Features
+
+- Works with any Jitsi Meet deployment
+- Local settings
+- Builtin auto-updates
+- Remote control
+- Always-On-Top window
+
+## Package information
+
+This will not use the installer, which installs jitsi-meet only for the current used.
+Instead Chocolatey's means of installing a zip-package are used.
+Thus the package will be installed for all users and requires administrative rights to update.
+
+This is an automatic package that will update itself as soon as a new version is released.
+It is therefore suggested to use `choco-upgrade-all-at-startup` or `choco-upgrade-all-at`, to make sure you always have the latest version.
+
+![screenshot](https://raw.githubusercontent.com/jitsi/jitsi-meet-electron/master/screenshot.png)</description>
+    <summary>Desktop application for Jitsi Meet built with Electron.</summary>
+    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2022.8.1</releaseNotes>
+    <copyright />
+    <tags>jitsi webinar webcam meeting electron</tags>
+    <projectSourceUrl>https://github.com/jitsi/jitsi-meet-electron</projectSourceUrl>
+    <packageSourceUrl>https://github.com/cmorty/au-packages/</packageSourceUrl>
+    <docsUrl>https://github.com/jitsi/jitsi-meet-electron</docsUrl>
+    <bugTrackerUrl>https://github.com/jitsi/jitsi-meet-electron/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>
