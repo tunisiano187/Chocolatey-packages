@@ -1,4 +1,4 @@
-﻿import-module au
+import-module au
 
 $domain   = 'https://github.com'
 $ghproj = 'jitsi/jitsi-meet-electron'
@@ -72,7 +72,7 @@ function global:au_GetLatest {
       $date = $tags.published_at.ToString("yyyyMMdd")
       $version = "$version-pre$($date)"
   }
-  
+
   $releaseNotesUrl = $tags.html_url
 
   @{
