@@ -1,7 +1,7 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/okibcn/nano-for-windows/releases/download/v7.2-22.1/nano-for-windows_win64_v7.2-22.1.zip'
-$checksum       = 'ce50a799a5fae37ac36ff2d7f3680968ca4af11a808edad96bcce746c13ccd20'
+$url            = 'https://files.lhmouse.com/nano-win/nano-win_10191_v7.2-36-g639dc4989.7z'
+$checksum       = 'da4bc890e59255445e1ee0c2c0e256a019ed6429b572c2e07b50e016f9067ce1'
 $checksumtype   = 'sha256'
 
 $packageArgs = @{
