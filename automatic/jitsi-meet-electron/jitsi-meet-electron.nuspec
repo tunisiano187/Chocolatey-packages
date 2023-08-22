@@ -8,7 +8,7 @@
     <owners>cmorty</owners>
     <licenseUrl>https://github.com/jitsi/jitsi-meet-electron/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/jitsi/jitsi-meet-electron</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/jitsi/jitsi-meet-electron/c1746ecdb5b83a423e56ddf5c7347a0020a6ec27/resources/icons/icon_128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6942fff188a6185233115b576b7eade39ae355de/icons/jitsi-meet-electron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>## Features
 
