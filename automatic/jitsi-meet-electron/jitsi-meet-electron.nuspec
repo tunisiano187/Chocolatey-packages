@@ -5,10 +5,10 @@
     <version>2022.8.1</version>
     <title>Jitsi Meet Electron</title>
     <authors>Jitsi Meet Electron community</authors>
-    <owners>cmorty</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/jitsi/jitsi-meet-electron/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/jitsi/jitsi-meet-electron</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/jitsi/jitsi-meet-electron/c1746ecdb5b83a423e56ddf5c7347a0020a6ec27/resources/icons/icon_128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6942fff188a6185233115b576b7eade39ae355de/icons/jitsi-meet-electron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>## Features
 
@@ -33,7 +33,7 @@ It is therefore suggested to use `choco-upgrade-all-at-startup` or `choco-upgrad
     <copyright />
     <tags>jitsi webinar webcam meeting electron</tags>
     <projectSourceUrl>https://github.com/jitsi/jitsi-meet-electron</projectSourceUrl>
-    <packageSourceUrl>https://github.com/cmorty/au-packages/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jitsi-meet-electron</packageSourceUrl>
     <docsUrl>https://github.com/jitsi/jitsi-meet-electron</docsUrl>
     <bugTrackerUrl>https://github.com/jitsi/jitsi-meet-electron/issues</bugTrackerUrl>
     <dependencies>
