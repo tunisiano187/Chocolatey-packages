@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$File = "$($env:Temp)\Filejuggler.exe"
 	Write-Output 'Download'
 	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).ProductVersion
+	[version]$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).ProductVersion
 	Write-Output "Version : $version"
 	$url32 = $release
 	$Latest = @{ URL32 = $url32; Version = $version }
