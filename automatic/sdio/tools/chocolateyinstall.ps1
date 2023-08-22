@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$checksumType   = ''
-$checksum       = ''
-$url            = ''
+$checksumType   = 'sha256'
+$checksum       = '7cfa2c8231f31a895161341cd5a7d0182fd780d204bbbf4bc52455b94f8acbdd'
+$url            = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.15.756.zip'
 
 $packageArgs = @{
     packageName   = 'sdio'
