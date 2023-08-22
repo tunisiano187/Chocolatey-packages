@@ -40,4 +40,7 @@ It is therefore suggested to use `choco-upgrade-all-at-startup` or `choco-upgrad
       <dependency id="chocolatey-core.extension" version="1.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
