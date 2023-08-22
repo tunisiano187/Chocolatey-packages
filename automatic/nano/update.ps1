@@ -15,8 +15,7 @@ function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$filename = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Links.href | Where-Object {$_ -match '\.7z'} | Sort-Object | Select-Object -Last 1
 	Write-Verbose 'Checking version'
-	$fileversion_regex = '(?<=v)[0-9\.\-]+[0-9](?!=\[0-9])'
-	$version = ($filename | Select-String -Pattern $fileversion_regex).Matches.Value -replace '-','.'
+	$version = (choco search nano-win | Where-Object {$_ -match 'nano-win'}).split(' ') | Where-Object {$_ -match '\.'}
 
 	$url32 = $releases + $filename
 	Write-Verbose "Version : $version"
