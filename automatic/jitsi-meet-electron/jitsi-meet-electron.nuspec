@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>jitsi-meet-electron</id>
-    <version>2022.8.1</version>
+    <version>2023.7.2</version>
     <title>Jitsi Meet Electron</title>
     <authors>Jitsi Meet Electron community</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/jitsi/jitsi-meet-electron</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6942fff188a6185233115b576b7eade39ae355de/icons/jitsi-meet-electron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>## Features
+    <description><![CDATA[## Features
 
 - Works with any Jitsi Meet deployment
 - Local settings
@@ -27,9 +27,10 @@ Thus the package will be installed for all users and requires administrative rig
 This is an automatic package that will update itself as soon as a new version is released.
 It is therefore suggested to use `choco-upgrade-all-at-startup` or `choco-upgrade-all-at`, to make sure you always have the latest version.
 
-![screenshot](https://raw.githubusercontent.com/jitsi/jitsi-meet-electron/master/screenshot.png)</description>
+![screenshot](https://raw.githubusercontent.com/jitsi/jitsi-meet-electron/master/screenshot.png)
+]]></description>
     <summary>Desktop application for Jitsi Meet built with Electron.</summary>
-    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2022.8.1</releaseNotes>
+    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2023.7.2</releaseNotes>
     <copyright />
     <tags>jitsi webinar webcam meeting electron</tags>
     <projectSourceUrl>https://github.com/jitsi/jitsi-meet-electron</projectSourceUrl>
