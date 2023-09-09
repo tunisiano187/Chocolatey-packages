@@ -4,7 +4,7 @@
   <metadata>
     <id>keepass-plugin-webautotype</id>
     <title>KeePass Plugin WebAutoType</title>
-    <version>6.8.2</version>
+    <version>6.9.0</version>
     <authors>Alex Vallat</authors>
     <owners>tunisiano</owners>
     <summary>Adds support to KeePass AutoType for URL matching</summary>
