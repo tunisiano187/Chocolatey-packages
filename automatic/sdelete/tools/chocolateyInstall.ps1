@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName      = $env:ChocolateyPackageName
 $url              = 'https://download.sysinternals.com/files/SDelete.zip'
-$checksum         = '49cfc704a431d0f4557d06561310ade7ba78b84c389a99cbe0fac83410f6b255'
+$checksum         = '197921ca6f32b532ff4ae161e862079f151a21280960375437f322903aee7fe7'
 $checksumType     = 'sha256'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
