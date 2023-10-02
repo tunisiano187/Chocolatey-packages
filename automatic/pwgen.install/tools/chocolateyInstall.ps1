@@ -1,7 +1,7 @@
 ﻿# generated vars
 $packageName = $env:ChocolateyPackageName
 $url = 'https://sourceforge.net/projects/pwgen-win/files/latest/download'
-$checksum = '1f2b69e69bf45b14759241baba76fa291b4cdbe5821cdd7a0deeebad2ca1bc10'
+$checksum = '05e503d88509102bea59c9e90d763f12b7d693a22064a19f6c17a57557db2fdf'
 
 # static vars
 $checksumType = 'sha256'
