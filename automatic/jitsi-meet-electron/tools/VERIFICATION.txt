@@ -9,7 +9,7 @@ As well as the build logs: https://gist.github.com/cmorty/554cd2b607b7bf0a288341
 
 To verify the package you need to
 1. Download the Oneclick installer from the following
-    URL: https://github.com/jitsi/jitsi-meet-electron/releases/download/v2023.9.1/jitsi-meet.exe
+    URL: https://github.com/jitsi/jitsi-meet-electron/releases/download/v2023.10.0/jitsi-meet.exe
 2. Unzip it running
     7z x jitsi-meet.exe
     The program is in the "$PLUGINSDIR" folder containing the app-32.7z and app-64.7z
@@ -18,5 +18,5 @@ To verify the package you need to
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: A0E456154DAFBE81921D004620ED708C695A7188910FE511343BB9B3B831856D
-  checksum64: 41D203096A6B18BCE0EBA1678C97A0D8E33228AB927E950E5B86A64F06026046
+  checksum32: CFBACB23A8E92CFEB39451BE0EE25902F93E92DD1AB037697C03823D568636BE
+  checksum64: C75B818021B00515DC5522BAC4CAD10662B82E1E52C9030ED81930529A236B4F
