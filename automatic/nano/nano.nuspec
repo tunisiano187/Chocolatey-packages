@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>nano</id>
-    <version>7.2.36</version>
+    <id>nano-win</id>
+    <version>0.0</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://github.com/lhmouse/nano-win/blob/master/COPYING</licenseUrl>
-    <projectUrl>https://github.com/lhmouse/nano-win</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec9700d9c083614a05a4c771f5ec93d188168d8f/icons/nano.svg</iconUrl>
+    <licenseUrl>https://github.com/okibcn/nano-for-windows/blob/releases/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/okibcn/nano-for-windows</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ad64ecd44f231b4d32b01c4d4670e34dade550d8/icons/nano-win.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## nano
 Nano is ANOther editor.  The nano project was started because of a few "problems" with the wonderfully easy-to-use and friendly Pico text editor.
@@ -28,22 +28,19 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
 ]]></description>
     <summary>Free replacement for the Pico text editor, while possibly adding new features</summary>
     <releaseNotes>#### Program
-* [Release log](https://github.com/lhmouse/nano-win/tags)
-* [Changelog](https://github.com/lhmouse/nano-win/commits/master)
+* [Releases](https://github.com/okibcn/nano-for-windows/releases)
+* [Changelog](https://github.com/okibcn/nano-for-windows/tree/master)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© GNU Project</copyright>
     <tags>gnu text editor</tags>
-    <projectSourceUrl>https://github.com/lhmouse/nano-win/commits/master</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nano</packageSourceUrl>
+    <projectSourceUrl>https://github.com/okibcn/nano-for-windows/tree/master</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nano-win</packageSourceUrl>
     <docsUrl>https://www.nano-editor.org/docs.php</docsUrl>
-    <bugTrackerUrl>https://github.com/lhmouse/nano-win/issues</bugTrackerUrl>
-    <dependencies>
-      <dependency id="nano-win" version="[7.2.36]" />
-    </dependencies>
+    <bugTrackerUrl>https://github.com/okibcn/nano-for-windows/issues</bugTrackerUrl>
   </metadata>
   <files>
-    <file src="nano.nuspec" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
