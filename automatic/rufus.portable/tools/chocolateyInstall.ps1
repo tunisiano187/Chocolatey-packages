@@ -1,7 +1,7 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 
-$url            = 'https://github.com/pbatard/rufus/releases/download/v4.2/rufus-4.2p.exe'
-$checksum       = 'c8420cf0f9f5e9a413865a34d998c6e56617cece45b2fb9f92dc28615bcc0ed7'
+$url            = 'https://github.com/pbatard/rufus/releases/download/v4.3/rufus-4.3p.exe'
+$checksum       = '9158fed9fb694bc7f7c0520205c101defdffe225a4c1f9af1a3c62314d51fdca'
 $checksumType   = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile    = Join-Path $toolsDir "rufusp.exe"
