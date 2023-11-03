@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vigembus</id>
-    <version>1.21.442.0</version>
+    <version>1.22.0</version>
     <title>Virtual Gamepad Emulation Framework (Install)</title>
     <authors>Benjamin Höglinger-Stelzer</authors>
     <owners>tunisiano</owners>
@@ -31,7 +31,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Windows kernel-mode driver emulating well-known USB game controllers.</summary>
-    <releaseNotes>https://github.com/ViGEm/ViGEmBus/releases/tag/v1.21.442.0</releaseNotes>
+    <releaseNotes>https://github.com/nefarius/ViGEmBus/releases/tag/v1.22.0</releaseNotes>
     <copyright>Copyright (c) 2016-2021, Nefarius Software Solutions e.U.</copyright>
     <tags>vigembus virtual gamepad emulation framework xbox dualshock controller admin foss</tags>
     <projectSourceUrl>https://github.com/ViGEm/ViGEmBus</projectSourceUrl>
