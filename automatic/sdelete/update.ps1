@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete'
@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$File = $(Get-ChildItem Sdelete.exe -Recurse).FullName
 	Write-Output $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-	
+
     if($version -eq '2.05') {
         $version = "2.05.0.20231106"
     }
