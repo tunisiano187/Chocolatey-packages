@@ -2,7 +2,7 @@
 $installerType = 'exe'
 $silentArgs = '/S'
 $url32 = 'https://github.com/geany/geany/releases/download/2.0.0/geany-2.0_setup.exe'
-$checksum32 = 'c23139d7b15f9716a09b46efaceb60532458fbc08f78374987ab8602875d5a40'
+$checksum32 = 'fdc3e8d183533ae0c87ff3c2b035166e6a4d31379a2014320abd552d5558d8e9'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
