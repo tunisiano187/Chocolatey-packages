@@ -25,7 +25,10 @@ function global:au_GetLatest {
 	$File = $(Get-ChildItem Sdelete.exe -Recurse).FullName
 	Write-Output $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-
+	
+    if($version -eq '2.05') {
+        $version = "2.05.0.20231106"
+    }
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
