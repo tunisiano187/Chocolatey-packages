@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'https://download.sysinternals.com/files/Sysmon.zip'
-$checksum = '9a13dca821162fb6d01058823645b610bed058d9cb8084f81cbc9a612d49fd9d'
+$checksum = '07494561f31ca00975b3f677e7d061d0a823bb63ded56cf163528c8a6aeb9216'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
