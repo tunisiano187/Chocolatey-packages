@@ -6,7 +6,7 @@ Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is no
 Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
 
 ## Attention ! 
-This software is detected as vis by many sources, the developper say to add an exception to your antivirus.
+This software is detected as virus by many sources, the developper say to add an exception to your antivirus.
 [Virus related issue](https://www.getmonero.org/get-started/faq/#antivirus)
 
 ### Community
