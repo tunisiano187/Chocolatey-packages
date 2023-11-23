@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vigembus</id>
-    <version>1.22.0</version>
+    <version>1.21.0</version>
     <title>Virtual Gamepad Emulation Framework (Install)</title>
     <authors>Benjamin Höglinger-Stelzer</authors>
     <owners>tunisiano</owners>
@@ -36,7 +36,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>vigembus virtual gamepad emulation framework xbox dualshock controller admin foss</tags>
     <projectSourceUrl>https://github.com/ViGEm/ViGEmBus</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vigembus</packageSourceUrl>
-    <docsUrl>https://forums.vigem.org/</docsUrl>
     <bugTrackerUrl>https://github.com/ViGEm/ViGEmBus/issues</bugTrackerUrl>
   </metadata>
   <files>
