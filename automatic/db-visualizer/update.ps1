@@ -27,8 +27,8 @@ function global:au_GetLatest {
 		$links = "https://www.dbvis.com$links"
 	}
 	$version = $links.split('-')[-1].replace('x64_','').replace('.exe','').replace('_','.')
-	if($version -eq '14.0.1') {
-		$version = '14.0.1.22111001'
+	if($version -eq '23.2.5') {
+		$version = '23.2.5.2023112601'
 	}
 
 	$url64 = $links
