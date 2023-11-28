@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ivpn</id>
-    <version>3.13.1</version>
+    <version>3.13.3</version>
     <title>ivpn (Install)</title>
     <authors>IVPN.net</authors>
     <owners>tunisiano</owners>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/ivpn.png</iconUrl>
     <licenseUrl>https://www.ivpn.net/tos/</licenseUrl>
     <projectUrl>https://ivpn.net</projectUrl>
-    <releaseNotes>https://github.com/ivpn/desktop-app/releases/tag/v3.13.1</releaseNotes>
+    <releaseNotes>https://github.com/ivpn/desktop-app/releases/tag/v3.13.3</releaseNotes>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ivpn</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## ivpn
