@@ -1,5 +1,5 @@
-﻿$url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.13.3.exe'
-$checksum     = 'a3897d2cfa69a4b1457070d9e0732abf01c7c56e3ed555dd3735f7a5b2658756'
+﻿$url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.13.4.exe'
+$checksum     = '5adc35afa14f582cdad0adba5963cd321d54c56e8065626c705c9eaed0157e47'
 $checksumType = 'SHA256'
 
 $packageArgs = @{
