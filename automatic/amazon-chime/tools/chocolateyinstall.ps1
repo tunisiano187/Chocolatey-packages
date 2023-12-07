@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 $url            = 'https://clients.chime.aws/win/latest'
-$checksum       = 'accfab77ead2df15a9238860e1bc5c1e82829ad773fdb303a50686ad090a33db'
+$checksum       = '45ca4b26102aae98c8f190c21ab566b5c660a9e316b43ff9df96f968c0ab5f85'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
