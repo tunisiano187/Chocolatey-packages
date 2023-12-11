@@ -20,7 +20,7 @@ function global:au_GetLatest {
 
     $url = $download_page.links | Where-Object href -match '.exe$' | Where-Object href -notmatch 'BETA' | Select-Object -First 1 -expand href
 
-    $version = $url.Split('/')[-1].split('-') | Where-Object {$_ -NotMatch 'Win'} | Where-Object {$_ -match '\.'}
+    $version = $url.Split('/')[-1].split('-') | Where-Object {$_ -NotMatch 'Win'} | Where-Object {$_ -match '\.'} | Where-Object {$_ -notmatch 'exe'}
 
     @{
         URL32 = $url

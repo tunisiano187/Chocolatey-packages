@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
 	$url32 = $urls | Where-Object {$_ -match 'win32'}
 	$url64 = $urls | Where-Object {$_ -match 'win64'}
-	$version = $tags.tag_name.Replace('v','')
+	$version = $tags.tag_name.Replace('v','').Replace('-','.')
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
