@@ -15,7 +15,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$version = $((choco search nano-win -s https://community.chocolatey.org/api/v2) | Where-Object {$_ -match "nano-win"}).split(' ') | Where-Object {$_ -match "\."}
-	
+
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
