@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $xml -OutFile $File
 	[xml]$ver=Get-Content($File)
 
-	$version=($ver.interface.group.group.implementation | Select-Object -Last 1).version
+	$version=($ver.interface.group.group.group.implementation | Select-Object -Last 1).version
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest

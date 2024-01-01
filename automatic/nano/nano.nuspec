@@ -44,6 +44,6 @@ nano aims to solve these problems by emulating the functionality of Pico as clos
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="nano.nuspec" />
   </files>
 </package>

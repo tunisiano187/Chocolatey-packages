@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>3.2.21</version>
+    <version>3.3.3</version>
     <title>DS4Windows</title>
     <authors>Travis Nickles, Jays2Kings</authors>
     <owners>tunisiano</owners>
@@ -49,7 +49,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>DS4Windows is a portable program that allows you to get the best experience while using a DualShock 4 on your PC. By emulating a Xbox 360 controller, many more games are accessible.</summary>
-    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/3.2.21</releaseNotes>
+    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/3.3.3</releaseNotes>
     <copyright>Copyright (c) 2019 Travis Nickles</copyright>
     <tags>ds4windows ps4 dualshock controller emulator foss</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ds4windows</packageSourceUrl>
