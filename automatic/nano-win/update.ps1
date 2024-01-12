@@ -18,10 +18,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
-}
-
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
