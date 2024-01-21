@@ -1,6 +1,6 @@
 ﻿$packageName    = 'apktool'
-$url            = 'https://github.com/iBotPeaches/Apktool/releases/download/v2.9.2/apktool_2.9.2.jar'
-$checksum       = '831f0ffc97b6f20f511d6183cbf6785464d341aacb0fb7e6f22ef0c7b228911a'
+$url            = 'https://github.com/iBotPeaches/Apktool/releases/download/v2.9.3/apktool_2.9.3.jar'
+$checksum       = '7956eb04194300ce0d0a84ad18771eebc94b89fb8d1ddcce8ea4c056818646f4'
 $checksumType   = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile    = Join-Path $toolsDir "apktool.jar"
