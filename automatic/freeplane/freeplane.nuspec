@@ -30,7 +30,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright />
     <tags>freeplane diagram mindmap graph visualization admin</tags>
     <dependencies>
-      <dependency id="liberica17jre" version="17.0.8" />
+      <dependency id="corretto11jdk" version="17.0.8" />
     </dependencies>
   </metadata>
   <files>

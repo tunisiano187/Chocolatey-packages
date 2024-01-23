@@ -9,6 +9,9 @@ function global:au_SearchReplace {
 			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
+		"$($Latest.PackageName).nuspec" = @{
+			"(\<dependency .+?`"corretto11jdk`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.CorrettoVersion)]`""
+		}
 	}
 }
 
@@ -22,8 +25,9 @@ function global:au_GetLatest {
 	if($version -eq "1.11.2") {
 		$version = "1.11.2.2023052201"
 	}
+	$CorrettoVersion = $(choco search corretto11jdk | Where-Object {$_ -match 'corretto11jdk'}).split(' ')[1]
 
-	$Latest = @{ URL32 = $url32; Version = $version; FileName32 = "Freeplane.exe" }
+	$Latest = @{ URL32 = $url32; Version = $version; FileName32 = "Freeplane.exe"; CorrettoVersion = $CorrettoVersion }
 	return $Latest
 }
 
