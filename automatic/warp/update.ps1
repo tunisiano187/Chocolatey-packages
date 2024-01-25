@@ -13,9 +13,9 @@ function Get-Version($name) {
 	return $version_file
 }
 
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
-}
+#function global:au_AfterUpdate($Package) {
+#	Invoke-VirusTotalScan $Package
+#}
 
 function global:au_SearchReplace {
 	@{
