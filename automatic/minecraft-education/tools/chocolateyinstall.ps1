@@ -11,7 +11,7 @@ $packageArgs = @{
   fileType        = 'exe'
   url             = $url
 
-  silentArgs      = "/qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
+  silentArgs      = "/qn /exenoui /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
   validExitCodes  = @(0, 1603, 3010, 1641, 1622)
 
   softwareName    = "$packageName*"
