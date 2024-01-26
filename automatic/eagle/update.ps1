@@ -13,16 +13,12 @@ function global:au_SearchReplace {
      }
 }
 
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
-}
-
 function global:au_GetLatest {
-    import-module Wormies-AU-Helpers
-	$url64 = Get-RedirectedUrl $release
-	$version = $url64.split("_")[2]
+    Invoke-WebRequest -Uri $url -OutFile "$env:temp/eagle.exe" -UseBasicParsing
 
-	$Latest = @{ URL64 = $url64; Version = $version }
+	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$env:temp/eagle.exe").ProductVersion
+
+	$Latest = @{ URL64 = $release; Version = $version }
     return $Latest
 }
 
