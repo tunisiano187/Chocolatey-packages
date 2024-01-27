@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$release = 'http://fold.it/portal/files/app/Foldit-win_x86.exe'
+$release = 'https://files.ipd.uw.edu/pub/foldit/Foldit-win_x64.exe'
 
 function Get-Version($name) {
 	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
