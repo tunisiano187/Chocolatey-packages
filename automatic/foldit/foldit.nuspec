@@ -4,12 +4,14 @@
   <metadata>
     <id>foldit</id>
     <title>Foldit</title>
-    <version>0.0.20190903</version>
+    <version>0.0.20220915</version>
     <authors>UW Center for Game Science</authors>
     <owners>tunisiano</owners>
     <summary>Solve puzzles for science research</summary>
-    <description>
-Foldit is an online game in which humans try to solve one of the hardest computational problems in biology: protein folding. You don't need to know anything about biology to play the game, although a little background will help. Most of the players of Foldit are not biologists.
+    <description><![CDATA[## foldingathome
+Foldit is an online game in which humans try to solve one of the hardest computational problems 
+in biology: protein folding. You don't need to know anything about biology to play the game, 
+although a little background will help. Most of the players of Foldit are not biologists.
 
 [Science behind Foldit](http://fold.it/portal/info/about)
 
@@ -22,7 +24,12 @@ Foldit is an online game in which humans try to solve one of the hardest computa
 * [Forum](http://fold.it/portal/forum/5)
 * [Facebook](https://www.facebook.com/folditgame)
 * [Twitter](https://twitter.com/foldit)
-    </description>
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/foldit</packageSourceUrl>
     <projectUrl>http://fold.it/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/foldit.png</iconUrl>
