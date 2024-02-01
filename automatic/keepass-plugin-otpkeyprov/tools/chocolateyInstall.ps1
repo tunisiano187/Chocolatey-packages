@@ -32,7 +32,7 @@ if (! $installPath) {
   $installPath = Get-ChildItemDir $portPath* -ErrorAction SilentlyContinue
 }
 if (! $installPath) {
-  Write-Verbose "$($packageSearch) not found in $($env:ChocolateyBinRoot)"
+  Write-Verbose "$($packageSearch) not found in $portPath"
   throw "$($packageSearch) location could not be found."
 }
 $pluginPath = (Get-ChildItemDir $installPath\Plugin*).FullName
