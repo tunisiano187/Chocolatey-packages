@@ -4,7 +4,7 @@
   <metadata>
     <id>foldit</id>
     <title>Foldit</title>
-    <version>0.0.20220915</version>
+    <version>0.0.2</version>
     <authors>UW Center for Game Science</authors>
     <owners>tunisiano</owners>
     <summary>Solve puzzles for science research</summary>
@@ -35,7 +35,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/foldit.png</iconUrl>
     <tags>citizen-science biology protein-folding game puzzle admin</tags>
     <copyright>© Center for Game Science at University of Washington</copyright>
-    <licenseUrl>http://fold.it/portal/legal</licenseUrl>
+    <licenseUrl>https://fold.it/legal</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Program
 * [News](http://fold.it/portal/blog)
