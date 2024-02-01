@@ -24,7 +24,7 @@ $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Window
                            $_.DisplayVersion -lt 3.0 } `
            | ForEach-Object {$_.InstallLocation}
 $installPath = $regPath
-# search $env:ChocolateyBinRoot for portable install
+# search for portable install
 if (! $installPath) {
   Write-Verbose "$($packageSearch) not found installed."
   $binRoot = Get-BinRoot
