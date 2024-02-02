@@ -1,4 +1,5 @@
-﻿# powershell v2 compatibility
+﻿$ErrorAction = Stop
+# powershell v2 compatibility
 $psVer = $PSVersionTable.PSVersion.Major
 if ($psver -ge 3) {
   function Get-ChildItemDir {Get-ChildItem -Directory $args}

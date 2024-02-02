@@ -3,7 +3,7 @@
   <metadata>
     <id>keepass-plugin-otpkeyprov</id>
     <title>KeePass Plugin OtpKeyProv</title>
-    <version>2.7</version>
+    <version>2.6</version>
     <authors>Dominik Reichl</authors>
     <owners>tunisiano</owners>
     <summary>Key provider based on one-time passwords</summary>
@@ -30,9 +30,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© 2011 Dominik Reichl</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>#### Package
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="[2.29, 3.0)" />
     </dependencies>
