@@ -1,4 +1,4 @@
-﻿$ErrorAction = Stop
+﻿$ErrorActionPreference = 'Stop'
 # powershell v2 compatibility
 $psVer = $PSVersionTable.PSVersion.Major
 if ($psver -ge 3) {
