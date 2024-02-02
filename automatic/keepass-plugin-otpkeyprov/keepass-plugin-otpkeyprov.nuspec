@@ -24,7 +24,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/keepass-plugin-otpkeyprov</packageSourceUrl>
     <projectUrl>http://keepass.info/plugins.html#otpkeyprov</projectUrl>
-    <projectSourceUrl>http://keepass.info/extensions/v2/otpkeyprov/OtpKeyProv-{{PackageVersion}}-Source.zip</projectSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@03577a911ccf66d47e8616f1cd7b37882ee203d7/icons/keepass-plugin-otpkeyprov.png</iconUrl>
     <tags>keepass plugin security otp</tags>
     <copyright>© 2011 Dominik Reichl</copyright>

@@ -2,8 +2,8 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $checksumType   = 'sha256'
-$checksum       = 'e3fcdbf052b1c977e190c7cda932f4a72c952ee62554b50956fb7b7282a8066b'
-$url            = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.19.760.zip'
+$checksum       = 'a7182bea784afe2a74d8aa3701fdbc6f06946ce4e50948b3b4b5d0d067b5755b'
+$url            = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.20.761.zip'
 
 $packageArgs = @{
     packageName   = 'sdio'
@@ -16,23 +16,3 @@ $packageArgs = @{
 
 Remove-Item "$ToolsDir\SDIO_*" -Force -Recurse # Cleanup old versions
 Install-ChocolateyZipPackage @packageArgs
-
-if (!(Test-Path -path "$ENV:ALLUSERSPROFILE\SDIO")) {
-    New-Item "$ENV:ALLUSERSPROFILE\SDIO" -ItemType Directory
-}
-
-$shortcutName    = 'Snappy Driver Installer Origin'
-$baseVersion     = '707'
-$fileName32      = 'SDIO_R707.exe'
-$fileName64      = 'SDIO_x64_R707.exe'
-$fullVersion     = '1.5.8.707'
-$FileFullpath32  = Join-Path $ToolsDir\SDIO_$fullVersion $fileName32
-$FileFullpath64  = Join-Path $ToolsDir\SDIO_$fullVersion $fileName64
-
-if (Get-OSArchitectureWidth -eq 64) {
-    Install-ChocolateyShortcut -targetPath $FileFullpath64 -WorkingDirectory "%ALLUSERSPROFILE%\SDIO" -shortcutFilePath "$env:Public\Desktop\$shortcutName.lnk"
-    Install-ChocolateyShortcut -targetPath $FileFullpath64 -WorkingDirectory "%ALLUSERSPROFILE%\SDIO" -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\$shortcutName.lnk"
-} else {
-    Install-ChocolateyShortcut -targetPath $FileFullpath32 -WorkingDirectory "%ALLUSERSPROFILE%\SDIO" -shortcutFilePath "$env:Public\Desktop\$shortcutName.lnk"
-    Install-ChocolateyShortcut -targetPath $FileFullpath32 -WorkingDirectory "%ALLUSERSPROFILE%\SDIO" -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\$shortcutName.lnk"
-}
