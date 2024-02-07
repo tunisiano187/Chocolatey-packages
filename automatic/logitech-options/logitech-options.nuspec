@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>logitech-options</id>
+    <version>10.10.58</version>
+    <title>Logitech Options (Install)</title>
+    <authors>Logitech</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.logitech.com/en-us/tos/terms.html</licenseUrl>
+    <projectUrl>https://support.logitech.com/en_us/software/options</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/logitech-options/logitech-options_icon.png</iconUrl>
+    <description>---
+
+### [choco://logitech-options](choco://logitech-options)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+### Logitech Options software lets you customize your device's settings as follows:
+
+* Change function key shortcuts
+* Customize mouse buttons
+* Adjust point and scroll behavior
+* Enable and disable touchpad gestures
+* Get on-screen notifications when your device's battery runs low or when you press a lock key	
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/logitech-options/readme.md)**
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Logitech Options software lets you customize your device settings.</summary>
+    <copyright>© Logitech. All rights reserved</copyright>
+    <tags>logitech options keyboard mouse utility</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/logitech-options</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
+    </dependencies>
+  </metadata>
+</package>
