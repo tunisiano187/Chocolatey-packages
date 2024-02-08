@@ -40,4 +40,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
       <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
