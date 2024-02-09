@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>logitech-options</id>
-    <version>10.10.58</version>
+    <version>0.0</version>
     <title>Logitech Options (Install)</title>
     <authors>Logitech</authors>
     <owners>tunisiano</owners>
