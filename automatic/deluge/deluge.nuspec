@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://git.deluge-torrent.org/deluge/tree/LICENSE</licenseUrl>
     <projectUrl>https://deluge-torrent.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/6be10c8d26c1effea0e7ae55c8d72d99b4b14c43/icons/deluge.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@92c5d5b8ae1220b2d37d826754440269ae7056c9/icons/deluge.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Deluge is a [full-featured](https://dev.deluge-torrent.org/wiki/About#Whataboutfeatures) ​BitTorrent client for Linux, OS X, Unix and Windows. Deluge uses ​[libtorrent](https://www.libtorrent.org/) in its backend and features multiple user-interfaces including: GTK+, web and console. It has been designed using the client server model with a daemon process that handles all the bittorrent activity. The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.
 
@@ -28,7 +28,7 @@ Deluge is ​Free Software and is licensed under the ​GNU General Public Licen
     <copyright>© 2009 Deluge Team</copyright>
     <tags>torrent p2p encryption python admin</tags>
     <projectSourceUrl>https://git.deluge-torrent.org/deluge</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/deluge/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/deluge</packageSourceUrl>
     <docsUrl>https://dev.deluge-torrent.org/wiki</docsUrl>
     <mailingListUrl>https://forum.deluge-torrent.org/</mailingListUrl>
     <bugTrackerUrl>https://dev.deluge-torrent.org/roadmap</bugTrackerUrl>
