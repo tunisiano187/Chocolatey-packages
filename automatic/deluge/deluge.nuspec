@@ -36,4 +36,7 @@ Deluge is ​Free Software and is licensed under the ​GNU General Public Licen
       <dependency id="vcredist2008" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
