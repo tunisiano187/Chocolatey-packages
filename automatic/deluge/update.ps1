@@ -2,6 +2,7 @@
 import-module au
 
 $releases = "https://ftp.osuosl.org/pub/deluge/windows/?C=M;O=D"
+$release = "https://ftp.osuosl.org/pub/deluge/windows/"
 
 function global:au_SearchReplace {
     @{
@@ -23,8 +24,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $webpage = Invoke-WebRequest -Uri $releases
 	$Files = $webpage.Links | Where-Object { $_.href -match '.exe$'} | Where-Object { $_.href -notmatch 'lt2'} | Select-Object -First 2
-    $url32 = $Files.href | Where-Object {$_ -match "win32"}
-    $url64 = $Files.href | Where-Object {$_ -match "win64"}
+    $url32 = "$($release)$($Files.href | Where-Object {$_ -match "win32"})"
+    $url64 = "$($release)$($Files.href | Where-Object {$_ -match "win64"})"
 
     $version = $url32.Split('-')[1]
 
