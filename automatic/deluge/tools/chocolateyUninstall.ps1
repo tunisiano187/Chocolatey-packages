@@ -1,4 +1,4 @@
-$packageName = 'deluge'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
 $validExitCodes = @(0)
