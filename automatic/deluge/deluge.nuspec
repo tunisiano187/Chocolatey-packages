@@ -28,7 +28,7 @@ Deluge is ​Free Software and is licensed under the ​GNU General Public Licen
     <copyright>© 2009 Deluge Team</copyright>
     <tags>torrent p2p encryption python admin</tags>
     <projectSourceUrl>https://git.deluge-torrent.org/deluge</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/deluge/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/deluge</packageSourceUrl>
     <docsUrl>https://dev.deluge-torrent.org/wiki</docsUrl>
     <mailingListUrl>https://forum.deluge-torrent.org/</mailingListUrl>
     <bugTrackerUrl>https://dev.deluge-torrent.org/roadmap</bugTrackerUrl>
