@@ -4,7 +4,7 @@
   <metadata>
     <id>sysmon</id>
     <title>Sysmon</title>
-    <version>15.12</version>
+    <version>15.14</version>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
     <summary>Monitors and reports key system activity via the Windows event log</summary>
