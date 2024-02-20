@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	#	$version = "24.1.2.11804"
 	#}
 
-	choco install -y 0install 
+	choco install -y 0install
 	0install update https://appdownload.deepl.com/windows/0install/deepl.xml
 	$version = $((.\0install update https://appdownload.deepl.com/windows/0install/deepl.xml).split(' ') | Where-Object {$_ -match '\('}).replace('(','').replace(')','')
 
