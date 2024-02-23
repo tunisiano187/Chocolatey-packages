@@ -12,9 +12,9 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-	$url32 = "https://sourceforge.net/projects/pwgen-win/files/latest/download"
-	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "Tech\/"} | Where-Object {$_.href -notmatch 'css'}).href[0].split('/')[-2]
-
+	$choc=$(choco search pwgen.install | Where-Object {$_ -match "pwgen.install"})
+	$version = $choc.Split(" ")[1]
+	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
