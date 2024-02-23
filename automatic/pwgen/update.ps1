@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$choc=$(choco search pwgen.install | Where-Object {$_ -match "pwgen.install"})
 	$version = $choc.Split(" ")[1]
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
