@@ -6,10 +6,12 @@
     <title>paraview (Install)</title>
     <authors>Kitware, Inc.</authors>
     <owners>Kitware, Inc.</owners>
-    <projectUrl>https://www.kitware.com/platforms/#paraview</projectUrl>
+    <projectUrl>https://www.paraview.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/hirtanak/scripts/master/paraviewloggo.gif</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>OpenSource post viewer for CAE
+    <docsUrl>https://www.paraview.org/resources/</docsUrl>
+	  <licenseUrl>https://www.paraview.org/license/</licenseUrl>
+	  <description>OpenSource post viewer for CAE
     
     paraview description. https://www.paraview.org/
 
@@ -17,7 +19,10 @@
 
     `cinst -y praview -s`</description>
     <summary>OpenSource post viewer for CAE</summary>
-    <copyright>Copyright (c) 2005-2017 National Technology and Engineering Solutions of Sandia, LLC (NTESS), Kitware Inc. Sandia National Laboratories</copyright>
+    <copyright>Copyright (c) 2005-2024 National Technology and Engineering Solutions of Sandia, LLC (NTESS), Kitware Inc. Sandia National Laboratories</copyright>
     <tags>Kitware paraview postviewer opencae</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
 </package>
