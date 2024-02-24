@@ -11,7 +11,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.paraview.org/resources/</docsUrl>
 	  <licenseUrl>https://www.paraview.org/license/</licenseUrl>
-	  <description>OpenSource post viewer for CAE
+	  <packageSourceUrl></packageSourceUrl>
+    <description>OpenSource post viewer for CAE
     
     paraview description. https://www.paraview.org/
 
