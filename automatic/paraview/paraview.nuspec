@@ -5,7 +5,7 @@
     <version>5.6.1</version>
     <title>paraview (Install)</title>
     <authors>Kitware, Inc.</authors>
-    <owners>Kitware, Inc.</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://www.paraview.org/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/hirtanak/scripts/master/paraviewloggo.gif</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
