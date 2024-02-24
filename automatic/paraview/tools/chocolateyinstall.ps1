@@ -8,8 +8,8 @@ $packageArgs = @{
   fileType      = 'MSI'
   url           = $url
   softwareName  = 'paraview*' 
-  checksum      = '7E755DC7E6D3F0A4DC130BEC8D2C512E2A5A9457E3A02AFFD934CE56B650C9C0'
-  checksumType  = 'sha256' 
+  checksum      = $checksum
+  checksumType  = $checksumType
   
   silentArgs    = "/S"
   validExitCodes= @(0, 3010, 1641)
