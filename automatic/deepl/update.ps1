@@ -18,6 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
+	$url = $release
 	$File = Join-Path $env:TEMP "DeepLSetup.xml"
 	Invoke-WebRequest -Uri $xml -OutFile $File
 	[xml]$ver=Get-Content($File)
@@ -27,7 +28,7 @@ function global:au_GetLatest {
 
 	$version=($ver.interface.group.group.group.implementation).version | Sort-Object { $_ -as [version] } | Select-Object -Last 1
 
-	$Latest = @{ URL32 = $release; Version = $version }
+	$Latest = @{ URL32 = $url; Version = $version }
 	return $Latest
 }
 
