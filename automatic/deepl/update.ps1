@@ -27,10 +27,11 @@ function global:au_GetLatest {
 	#}
 
 	choco install -y 0install
+	refreshenv
 	0install update https://appdownload.deepl.com/windows/0install/deepl.xml
-	$version = $((.\0install update https://appdownload.deepl.com/windows/0install/deepl.xml).split(' ') | Where-Object {$_ -match '\('}).replace('(','').replace(')','')
+	$version = $((0install update https://appdownload.deepl.com/windows/0install/deepl.xml).split(' ') | Where-Object {$_ -match '\('}).replace('(','').replace(')','')
 
-	$version=($ver.interface.group.group.group.implementation | Select-Object -Last 1).version
+	#$version=($ver.interface.group.group.group.implementation | Select-Object -Last 1).version
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
