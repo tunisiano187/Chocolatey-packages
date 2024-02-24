@@ -18,20 +18,14 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	#$xml='https://appdownload.deepl.com/windows/0install/deepl.xml'
-	#$File = Join-Path $env:TEMP "DeepLSetup.xml"
-	#Invoke-WebRequest -Uri $xml -OutFile $File
-	#[xml]$ver=Get-Content($File)
-	#if($version -eq "24.1.1.11641") {
-	#	$version = "24.1.2.11804"
-	#}
+	$File = Join-Path $env:TEMP "DeepLSetup.xml"
+	Invoke-WebRequest -Uri $xml -OutFile $File
+	[xml]$ver=Get-Content($File)
+	if($version -eq "24.1.1.11641") {
+		$version = "24.1.2.11804"
+	}
 
-	choco install -y 0install
-	refreshenv
-	0install update https://appdownload.deepl.com/windows/0install/deepl.xml
-	$version = $((0install update https://appdownload.deepl.com/windows/0install/deepl.xml).split(' ') | Where-Object {$_ -match '\('}).replace('(','').replace(')','')
-
-	#$version=($ver.interface.group.group.group.implementation | Select-Object -Last 1).version
+	$version=($ver.interface.group.group.group.implementation).version | Sort-Object { $_ -as [version] } | Select-Object -Last 1
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
