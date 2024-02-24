@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url = $release
 	$File = Join-Path $env:TEMP "DeepLSetup.xml"
-	Invoke-WebRequest -Uri $url -OutFile $File
+	Invoke-WebRequest -Uri "https://appdownload.deepl.com/windows/0install/deepl.xml" -OutFile $File
 	[xml]$ver=Get-Content($File)
 	if($version -eq "24.1.1.11641") {
 		$version = "24.1.2.11804"
