@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.paraview.org/resources/</docsUrl>
 	  <licenseUrl>https://www.paraview.org/license/</licenseUrl>
-	  <packageSourceUrl></packageSourceUrl>
+	  <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/paraview</packageSourceUrl>
     <description>OpenSource post viewer for CAE
     
     paraview description. https://www.paraview.org/
