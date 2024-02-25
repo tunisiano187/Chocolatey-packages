@@ -11,7 +11,7 @@ $packageArgs = @{
   checksum      = $checksum
   checksumType  = $checksumType
 
-  silentArgs    = "/S"
+  silentArgs    = "/quiet /qn /norestart"
   validExitCodes= @(0, 3010, 1641)
 }
 
