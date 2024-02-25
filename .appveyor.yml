@@ -227,3 +227,4 @@ notifications:
 
 cache:
   - '%nupkg_cache_path% -> .appveyor.yml'
+  - C:\Users\appveyor\AppData\Local\Temp\chocolatey\chocoInstall -> appveyor.yml
