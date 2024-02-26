@@ -86,7 +86,7 @@ install:
       if ($_.Key -eq 'chocolatey') { choco update $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
       else { choco install $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
     }
-    choco update -y chocolatey
+    choco upgrade -y chocolatey
     rm "$env:ChocolateyInstall\logs\*.log"
 
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
