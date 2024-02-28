@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$url32 = 'https://client-dl.packetstream.io/dist/windows_386/PacketStreamInstaller.exe'
+$url32 = 'https://s3-us-west-2.amazonaws.com/packetstream-releases/latest/PacketStream.exe'
 
 function global:au_SearchReplace {
 	@{
