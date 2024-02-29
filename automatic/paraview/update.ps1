@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$folder = ((Invoke-WebRequest -Uri $releases).Links | Where-Object {$_ -match 'v[0-9].'} | Select-Object -Last 1).href
 	$file = ((Invoke-WebRequest -Uri "$releases$folder" ).Links | Where-Object {$_ -match ".msi"} | Select-Object -Last 1).href
 	$url = "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=$folder&type=binary&os=Windows&downloadFile=$file"
-	[version]$version=$folder.replace('v','').replace('/','')
+	$version=$folder.replace('v','').replace('/','')
 
 	$Latest = @{ URL32 = $url; Version = $version }
 	return $Latest
