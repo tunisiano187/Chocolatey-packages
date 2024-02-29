@@ -30,7 +30,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "PacketStream.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	Start-Process -FilePath $File -ArgumentList "/S" -Wait
+	Start-Process -FilePath $File -ArgumentList "/S"
 	$version=Get-Version("PacketStream*")
 
 	$Latest = @{ URL32 = $url32; Version = $version }
