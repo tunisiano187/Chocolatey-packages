@@ -15,4 +15,9 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1641)
 }
 
-Install-ChocolateyPackage @packageArgs
+if($windowsEdition -match "Windows 11" -or $windowsEdition -match "Windows 10" -or $windowsEdition -match "Windows 8" -or $windowsEdition -match "Windows 7") {
+  Install-ChocolateyPackage @packageArgs
+} else {
+  Write-Warning "System not supported, client required"
+  exit 0;
+}
