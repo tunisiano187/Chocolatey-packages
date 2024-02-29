@@ -4,7 +4,7 @@
   <metadata>
     <id>dogecoin.portable</id>
     <title>Dogecoin Core Wallet (Portable)</title>
-    <version>1.14.6</version>
+    <version>1.14.7</version>
     <authors>Jackson Palmer</authors>
     <owners>tunisiano</owners>
     <summary>Cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW)</summary>
