@@ -22,8 +22,10 @@ function global:au_GetLatest {
 	$file = ((Invoke-WebRequest -Uri "$releases$folder" ).Links | Where-Object {$_ -match ".msi"} | Select-Object -Last 1).href
 	$url = "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=$folder&type=binary&os=Windows&downloadFile=$file"
 	$version=$folder.replace('v','').replace('/','')
+	$checksumType = 'sha256'
+	$checksum = Get-RemoteChecksum($url,$checksumType)
 
-	$Latest = @{ URL32 = $url; Version = $version }
+	$Latest = @{ URL32 = $url; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType }
 	return $Latest
 }
 
