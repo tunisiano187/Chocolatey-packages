@@ -3,16 +3,6 @@ import-module au
 
 $release = 'https://files.ipd.uw.edu/pub/foldit/Foldit-win_x64.exe'
 
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
