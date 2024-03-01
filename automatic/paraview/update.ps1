@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$folder = ((Invoke-WebRequest -Uri $releases).Links | Where-Object {$_ -match 'v[0-9].'} | Select-Object -Last 1).href
 	$file = ((Invoke-WebRequest -Uri "$releases$folder" ).Links | Where-Object {$_ -match ".msi"} | Select-Object -Last 1).href
-	$url = "https://www.paraview.org/files/$folder/$file"
+	$url = "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=$folder&type=binary&os=Windows&downloadFile=$file"
 	$version=$folder.replace('v','').replace('/','')
 	$checksumType = 'sha256'
 	$checksum = Get-RemoteChecksum($url,$checksumType)
