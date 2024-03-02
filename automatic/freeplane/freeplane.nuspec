@@ -3,7 +3,7 @@
   <metadata>
     <id>freeplane</id>
     <title>Freeplane</title>
-    <version>1.11.8</version>
+    <version>1.11.11</version>
     <authors>Dimitry Polivaev,Volker Börchers</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
@@ -30,7 +30,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright />
     <tags>freeplane diagram mindmap graph visualization admin</tags>
     <dependencies>
-      <dependency id="corretto11jdk" version="17.0.8" />
+      <dependency id="corretto11jdk" version="[11.0.22.71]" />
     </dependencies>
   </metadata>
   <files>
