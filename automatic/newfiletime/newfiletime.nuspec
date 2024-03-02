@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>newfiletime</id>
+    <version>6.88</version>
+    <title>NewFileTime</title>
+    <authors>Nenad Hrg</authors>
+    <owners>Echizen Ryoma</owners>
+    <licenseUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime/Eula</licenseUrl>
+    <projectUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime</projectUrl>
+    <iconUrl>http://www.softwareok.com/img/ico/NewFileTime.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system. 
+
+Several files and/or folders can be modified at the same time. You can add files simply via Drag and Drop or by import from a folder. In any case, it opens in different ways to bring you quickly to the job at hand. You can make files proportionally younger or older, or you can set a specific date/time. 
+
+With this utility everyone can have the ability to make quick corrections to the creation, last access and modification dates/times of the files or folders on their PC. NewFileTime does not have to be installed and can be executed easily from the desktop. Portable use is also possible.</description>
+    <summary>NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system.</summary>
+    <releaseNotes>http://www.softwareok.com/?seite=Microsoft/NewFileTime/History</releaseNotes>
+    <tags>newfiletime filetime time</tags>
+    <packageSourceUrl>https://github.com/echizenryoma/Chocolatey-Package/tree/master/newfiletime</packageSourceUrl>
+  </metadata>
+</package>
