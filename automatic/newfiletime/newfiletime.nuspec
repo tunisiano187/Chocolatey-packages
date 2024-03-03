@@ -20,4 +20,7 @@ With this utility everyone can have the ability to make quick corrections to the
     <tags>newfiletime filetime time</tags>
     <packageSourceUrl>https://github.com/echizenryoma/Chocolatey-Package/tree/master/newfiletime</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
