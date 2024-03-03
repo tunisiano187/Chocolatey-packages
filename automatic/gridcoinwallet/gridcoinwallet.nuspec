@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gridcoinwallet</id>
-    <version>5.4.5.0</version>
+    <version>5.4.6.0</version>
     <title>Gridcoin Wallet</title>
     <authors>Gridcoin Developers</authors>
     <owners>tunisiano</owners>
