@@ -8,7 +8,7 @@
     <owners>Echizen Ryoma</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime</projectUrl>
-    <iconUrl>http://www.softwareok.com/img/ico/NewFileTime.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cf0b2c1a14c6fa58fe3bacfa81d2aa89b4d55286/icons/newfiletime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system. 
 
