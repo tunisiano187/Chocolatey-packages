@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $releases -OutFile $LocalFile
 	Expand-Archive -Path $LocalFile -DestinationPath $LocalTempPath
 	$File = Join-Path -Path $LocalTempPath -ChildPath "NewFileTime.exe"
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$version=([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).replace(', ','.')
 	$url32 = $releases
 	$checksumType = 'sha256'
 	$checksum32 = Get-FileHash -Path $LocalFile -Algorithm $checksumType
