@@ -18,7 +18,7 @@ With this utility everyone can have the ability to make quick corrections to the
     <summary>NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system.</summary>
     <releaseNotes>http://www.softwareok.com/?seite=Microsoft/NewFileTime/History</releaseNotes>
     <tags>newfiletime filetime time</tags>
-    <packageSourceUrl>https://github.com/echizenryoma/Chocolatey-Package/tree/master/newfiletime</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/newfiletime</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
