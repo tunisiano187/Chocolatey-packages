@@ -40,3 +40,7 @@ office365proplus
 advtor
 rehash
 amazingmarvin
+libffcall
+Kaspersky Free
+Swish
+cameyo
