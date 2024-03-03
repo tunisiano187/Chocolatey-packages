@@ -27,9 +27,11 @@ function global:au_GetLatest {
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	$url32 = $releases
 	$checksumType = 'sha256'
-	$checksum32 = Get-RemoteChecksum($url32,$checksumType)
-	$checksum64 = Get-RemoteChecksum("https://www.softwareok.com/Download/NewFileTime_x64.zip",$checksumType)
-	$checksumExtra = Get-RemoteChecksum("https://www.softwareok.com/Download/NewFileTime_Unicode.zip",$checksumType)
+	$checksum32 = Get-FileHash -Path $LocalFile -Algorithm $checksumType
+	Invoke-WebRequest -Uri "https://www.softwareok.com/Download/NewFileTime_x64.zip" -OutFile $LocalFile
+	$checksum64 = Get-FileHash -Path $LocalFile -Algorithm $checksumType
+	Invoke-WebRequest -Uri "https://www.softwareok.com/Download/NewFileTime_Unicode.zip" -OutFile $LocalFile
+	$checksumExtra = Get-FileHash -Path $LocalFile -Algorithm $checksumType
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum32; Checksum64 = $checksum64; ChecksumExtra = $checksumExtra }
 	return $Latest
