@@ -5,7 +5,7 @@
     <version>6.88</version>
     <title>NewFileTime</title>
     <authors>Nenad Hrg</authors>
-    <owners>Echizen Ryoma</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cf0b2c1a14c6fa58fe3bacfa81d2aa89b4d55286/icons/newfiletime.png</iconUrl>
