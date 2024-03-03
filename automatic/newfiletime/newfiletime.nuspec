@@ -5,10 +5,10 @@
     <version>6.88</version>
     <title>NewFileTime</title>
     <authors>Nenad Hrg</authors>
-    <owners>Echizen Ryoma</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime</projectUrl>
-    <iconUrl>http://www.softwareok.com/img/ico/NewFileTime.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cf0b2c1a14c6fa58fe3bacfa81d2aa89b4d55286/icons/newfiletime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system. 
 
@@ -18,7 +18,7 @@ With this utility everyone can have the ability to make quick corrections to the
     <summary>NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system.</summary>
     <releaseNotes>http://www.softwareok.com/?seite=Microsoft/NewFileTime/History</releaseNotes>
     <tags>newfiletime filetime time</tags>
-    <packageSourceUrl>https://github.com/echizenryoma/Chocolatey-Package/tree/master/newfiletime</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/newfiletime</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
