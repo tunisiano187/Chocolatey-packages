@@ -47,7 +47,7 @@ Install-PackageProvider -name winget
     # Take a package that is requested on the chocolatey-package-requests
     if($Todo.Count -eq 0 -and $issue -eq 0) {
         "Checking on the chocolatey-package-requests"
-        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created-asc -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
+        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
