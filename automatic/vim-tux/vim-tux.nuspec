@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>vim-tux</id>
+    <version>9.0.1872</version>
+    <title>Vim Tux</title>
+    <authors>TuxProject.de, Vim Team</authors>
+    <owners>pauby, LinkSatonaka</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/vim/vim/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://tuxproject.de/projects/vim/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/pauby/ChocoPackages@c134fd7/icons/vim-tux.svg</iconUrl>
+    <description>A highly configurable text editor for efficiently creating and changing any kind of text (tux build).
+
+Vanilla build of vim, compiled with all features enabled. 'Right click &gt; edit with vim' support included. Vim and gVim launchers are added to PATH
+
+## Package Parameters
+
+The following package parameters can be set:
+
+* `/InstallPopUp` - Install into the context menu "Edit with gVim", powered by `GVimExt.dll`.
+* `/RestartExplorer` - Kill explorer.exe before each update to free up the in-use `GVimExt.dll`.
+* `/NoCreateBatFiles` - Do not create batch files in `C:\Windows` (vim.bat, vimdiff.bat, etc).
+
+Please visit the [official site](https://tuxproject.de/projects/vim/) for more information.
+Build provided by TuxProject.de - consider donating to help support their server costs.
+
+## Notes
+
+* This is an automatically updated package. If you find it is out of date by more than a week, please contact the maintainer(s), to let the know the package is no longer updating, using:
+    * The 'Contact Maintainers' link on the package page, or
+    * The 'Package Source' link on the package page and raising an issue.
+* Maintainers are not notified of Disqus comments on the package page.</description>
+    <summary>A highly configurable text editor for efficiently creating and changing any kind of text (tux build). Vanilla build of vim, compiled with all features enabled. 'Right click &gt; edit with vim' support included. Vim and gVim launchers are added to PATH.</summary>
+    <releaseNotes>https://www.vim.org/download.php</releaseNotes>
+    <copyright>2023 Vim Team</copyright>
+    <tags>vim-tux vim editor tux admin</tags>
+    <projectSourceUrl>https://github.com/vim/vim</projectSourceUrl>
+    <packageSourceUrl>https://github.com/pauby/chocopackages/tree/master/automatic/vim-tux</packageSourceUrl>
+    <docsUrl>https://www.vim.org/docs.php</docsUrl>
+    <mailingListUrl>http://www.vim.org/maillist.php</mailingListUrl>
+    <dependencies>
+      <dependency id="vim-tux.install" version="9.0.1872" />
+    </dependencies>
+  </metadata>
+</package>
