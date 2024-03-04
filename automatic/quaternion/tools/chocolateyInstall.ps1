@@ -7,6 +7,6 @@ $packageArgs = @{
   destination    = "$toolsDir"
 }
 
-Expand-Archive -Path $file -DestinationPath $toolsDir
+Expand-Archive -Path $file -DestinationPath $toolsDir -Force -ErrorAction SilentlyContinue
 
 #Remove-Item $toolsDir\*.zip -ea 0
