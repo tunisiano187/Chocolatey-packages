@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	$LocalFile = Join-Path -Path $LocalTempPath -ChildPath "NewFileTime.zip"
 	New-Item -ItemType Directory -Path $LocalTempPath -Force
 	Invoke-WebRequest -Uri $releases -OutFile $LocalFile
-	Expand-Archive -Path $LocalFile -DestinationPath $LocalTempPath
+	Expand-Archive -Path $LocalFile -DestinationPath $LocalTempPath -Force
 	$File = Join-Path -Path $LocalTempPath -ChildPath "NewFileTime.exe"
 	$version=([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).replace(', ','.')
 	$url32 = $releases
