@@ -19,4 +19,7 @@ Most of talking around Quaternion happens in Matrix room: #quaternion:matrix.org
     <projectSourceUrl>https://github.com/Fxrh/Quaternion</projectSourceUrl>
     <packageSourceUrl>https://github.com/xdimquax/choco</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
