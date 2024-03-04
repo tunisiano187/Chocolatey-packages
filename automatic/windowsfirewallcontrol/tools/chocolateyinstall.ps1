@@ -2,7 +2,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url            = 'https://www.binisoft.org/download/wfc6setup.exe'
-$checksum       = 'cf5ec3ba3ca300bc4bb844446e26c4b921cf1097c7c387b37a8c23df37dfcf31'
+$checksum       = 'accb7d4ccd9e6c5c1988c1bfe8015b2e459e52b3f8a965bd086a4746000524e6'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
