@@ -27,14 +27,14 @@ function global:au_GetLatest {
 	$version=([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).replace(', ','.')
 	$url32 = $releases
 	$checksumType = 'sha256'
-	$checksum32 = Get-FileHash -Path $LocalFile -Algorithm $checksumType
+	$checksum32 = (Get-FileHash -Path $LocalFile -Algorithm $checksumType).Hash
 	Invoke-WebRequest -Uri "https://www.softwareok.com/Download/NewFileTime_x64.zip" -OutFile $LocalFile
-	$checksum64 = Get-FileHash -Path $LocalFile -Algorithm $checksumType
+	$checksum64 = (Get-FileHash -Path $LocalFile -Algorithm $checksumType).Hash
 	Invoke-WebRequest -Uri "https://www.softwareok.com/Download/NewFileTime_Unicode.zip" -OutFile $LocalFile
-	$checksumExtra = Get-FileHash -Path $LocalFile -Algorithm $checksumType
+	$checksumExtra = (Get-FileHash -Path $LocalFile -Algorithm $checksumType).Hash
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum32; Checksum64 = $checksum64; ChecksumExtra = $checksumExtra }
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
