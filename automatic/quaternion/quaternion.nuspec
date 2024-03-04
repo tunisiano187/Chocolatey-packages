@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>quaternion</id>
+    <version>0.0.9.3</version>
+    <title>Quaternion</title>
+    <authors>Quaternion team</authors>
+    <owners>dimqua</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <projectUrl>https://github.com/Fxrh/Quaternion</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/xdimquax/choco/testing/icons/quaternion.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Quaternion is a cross-platform Qt5-based desktop IM client for Matrix, a reference desktop application using [libqmatrixclient SDK](https://matrix.org/docs/projects/sdk/libqmatrixclient.html).
+
+Most of talking around Quaternion happens in Matrix room: #quaternion:matrix.org. Welcome, and have fun!</description>
+    <summary>An IM client for the Matrix protocol.</summary>
+    <releaseNotes>[Changelog](https://github.com/Fxrh/Quaternion/releases)</releaseNotes>
+    <tags>qt qt5 matrix quaternion cross-platform</tags>
+    <projectSourceUrl>https://github.com/Fxrh/Quaternion</projectSourceUrl>
+    <packageSourceUrl>https://github.com/xdimquax/choco</packageSourceUrl>
+  </metadata>
+</package>
