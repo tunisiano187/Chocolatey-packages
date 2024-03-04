@@ -44,3 +44,4 @@ libffcall
 Kaspersky Free
 Swish
 cameyo
+vim-tux
