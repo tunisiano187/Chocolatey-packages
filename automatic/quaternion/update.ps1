@@ -7,7 +7,7 @@ $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
-		"tools\VERIFICATION.txt"      = @{
+		"legal\VERIFICATION.txt"      = @{
 			"(?i)(32-bit:).*"        				= "`${1} $($Latest.URL32)"
 			"(?i)(checksum32 =).*" 				= "`${1} $($Latest.Checksum32)"
 		}
