@@ -17,7 +17,7 @@ Most of talking around Quaternion happens in Matrix room: #quaternion:matrix.org
     <releaseNotes>[Changelog](https://github.com/Fxrh/Quaternion/releases)</releaseNotes>
     <tags>qt qt5 matrix quaternion cross-platform</tags>
     <projectSourceUrl>https://github.com/Fxrh/Quaternion</projectSourceUrl>
-    <packageSourceUrl>https://github.com/xdimquax/choco</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/quaternion</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
