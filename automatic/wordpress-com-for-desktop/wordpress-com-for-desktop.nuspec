@@ -20,7 +20,7 @@
     <copyright>© Automattic Inc.</copyright>
     <tags>admin electron wordpress blog editor</tags>
     <projectSourceUrl>https://github.com/Automattic/wp-calypso</projectSourceUrl>
-    <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/wordpress-com-for-desktop</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wordpress-com-for-desktop</packageSourceUrl>
     <bugTrackerUrl>https://github.com/Automattic/wp-calypso/issues</bugTrackerUrl>
   </metadata>
   <files>
