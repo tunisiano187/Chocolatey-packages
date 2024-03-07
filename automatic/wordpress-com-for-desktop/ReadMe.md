@@ -1,17 +1,12 @@
-[![](https://img.shields.io/chocolatey/v/nano?color=green&label=nano)](https://chocolatey.org/packages/nano) [![](https://img.shields.io/chocolatey/dt/nano)](https://chocolatey.org/packages/nano)
+[![](https://img.shields.io/chocolatey/v/wordpress-com-for-desktop?color=green&label=wordpress-com-for-desktop)](https://chocolatey.org/packages/wordpress-com-for-desktop) [![](https://img.shields.io/chocolatey/dt/wordpress-com-for-desktop)](https://chocolatey.org/packages/wordpress-com-for-desktop)
 
-## nano
-Nano is ANOther editor.  The nano project was started because of a few "problems" with the wonderfully easy-to-use and friendly Pico text editor.
-
-First and foremost was its license: the Pine suite does not use the GPL or a GPL-friendly license, and has unclear restrictions on
-redistribution.  Because of this, Pine and Pico are not included with many GNU/Linux distributions.  Also, other features (like go-to-line-number or search-and-replace) were unavailable until recently or require a command-line flag.  Yuck.
-
-nano aims to solve these problems by emulating the functionality of Pico as closely as possible while addressing the problems above and providing other extra functionality.
-
-* [Screenshots](https://www.nano-editor.org/screenshots.php)
-* [FAQ](https://www.nano-editor.org/dist/latest/faq.html)
-* [Manual](https://www.nano-editor.org/docs.php)
+## Wordpress-com-for-desktop
+### Features
+* A control panel for all your WordPress sites
+* Focus on your content
+* Speed is a feature
+* Not one size fits all
 
 #### Mailing lists
-* [Info-nano](https://lists.gnu.org/mailman/listinfo/info-nano) - announcements
-* [Help-nano](https://lists.gnu.org/mailman/listinfo/help-nano) - help
+* [Info-wordpress-com-for-desktop](https://lists.gnu.org/mailman/listinfo/info-wordpress-com-for-desktop) - announcements
+* [Help-wordpress-com-for-desktop](https://lists.gnu.org/mailman/listinfo/help-wordpress-com-for-desktop) - help
