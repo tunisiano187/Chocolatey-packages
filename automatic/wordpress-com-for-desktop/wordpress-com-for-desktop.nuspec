@@ -23,4 +23,7 @@
     <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/wordpress-com-for-desktop</packageSourceUrl>
     <bugTrackerUrl>https://github.com/Automattic/wp-calypso/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
