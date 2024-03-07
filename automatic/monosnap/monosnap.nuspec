@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>monosnap</id>
+    <version>4.1.16</version>
+    <title>Monosnap</title>
+    <authors>Monosnap</authors>
+    <owners>Sanshiro</owners>
+    <projectUrl>https://monosnap.com/welcome</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/TakataSanshiro/Chocolatey-Packages@master/automatic/monosnap/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Monosnap is a perfect screenshot tool for Windows
+Capture:
+* Capture full screen, just part of the screen, or a selected window
+* Make your crop area pixel perfect with our 8x magnifier
+* Customize screenshoting hotkeys
+
+Annotate and Edit:
+* Highlight important details with pen, text, arrows and shapes
+* Hide private information with our blur tool
+
+Save and share:
+* Login to get free cloud storage space
+* Upload your snapshot to our storage in one click
+* Or save it to your local folder and copy it to clipboard
+
+#### This is an auto update application
+* It's moved to webinstaller and It'll install the latest version automatically.</description>
+    <summary>Monosnap is a perfect screenshot tool for Windows</summary>
+    <copyright>Monosnap</copyright>
+    <tags>admin screenshot</tags>
+    <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/monosnap</packageSourceUrl>
+  </metadata>
+</package>
