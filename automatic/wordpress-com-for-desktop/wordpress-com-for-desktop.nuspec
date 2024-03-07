@@ -8,7 +8,7 @@
     <owners>Sanshiro</owners>
     <licenseUrl>https://github.com/Automattic/wp-calypso/blob/trunk/LICENSE.md</licenseUrl>
     <projectUrl>https://developer.wordpress.com/calypso/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/Automattic/wp-desktop@329205c3/resource/app-icon/icon_512x512.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@78f2166bc0915722924abc223f6291d7466f5a47/icons/wordpress-com-for-desktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>## Features
 * A control panel for all your WordPress sites
