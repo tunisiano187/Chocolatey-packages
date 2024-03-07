@@ -5,7 +5,7 @@
     <version>6.15.0</version>
     <title>WordPress.com Desktop (Calypso)</title>
     <authors>Automattic Inc.</authors>
-    <owners>Sanshiro</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Automattic/wp-calypso/blob/trunk/LICENSE.md</licenseUrl>
     <projectUrl>https://developer.wordpress.com/calypso/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@78f2166bc0915722924abc223f6291d7466f5a47/icons/wordpress-com-for-desktop.png</iconUrl>
