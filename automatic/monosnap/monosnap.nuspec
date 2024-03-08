@@ -29,7 +29,7 @@ Save and share:
     <summary>Monosnap is a perfect screenshot tool for Windows</summary>
     <copyright>Monosnap</copyright>
     <tags>admin screenshot</tags>
-    <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/monosnap</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/monosnap</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
