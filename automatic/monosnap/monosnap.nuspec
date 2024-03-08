@@ -7,7 +7,7 @@
     <authors>Monosnap</authors>
     <owners>Sanshiro</owners>
     <projectUrl>https://monosnap.com/welcome</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/TakataSanshiro/Chocolatey-Packages@master/automatic/monosnap/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2a8434d33ce20267cd33a54ecd538a94dd3063a8/icons/monosnap.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Monosnap is a perfect screenshot tool for Windows
 Capture:
