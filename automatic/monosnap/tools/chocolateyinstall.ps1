@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url          = ''
-$checksum     = ''
-$checksumType = ''
+$url          = 'https://static.monosnap.com/windows/MonosnapSetup.exe'
+$checksum     = '2331279833e97ac40ad10a14cd2ee73da2ad2e106566b25c26b8a168a4d0f77e'
+$checksumType = 'sha256'
 
 $packageArgs = @{
   packageName    = 'monosnap'

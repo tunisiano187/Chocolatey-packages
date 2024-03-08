@@ -2,14 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>monosnap</id>
-    <version>4.1.16</version>
+    <version>5.1.10</version>
     <title>Monosnap</title>
     <authors>Monosnap</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://monosnap.com/welcome</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2a8434d33ce20267cd33a54ecd538a94dd3063a8/icons/monosnap.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Monosnap is a perfect screenshot tool for Windows
+    <description><![CDATA[## monosnap
+Monosnap is a perfect screenshot tool for Windows
 Capture:
 * Capture full screen, just part of the screen, or a selected window
 * Make your crop area pixel perfect with our 8x magnifier
@@ -25,7 +26,13 @@ Save and share:
 * Or save it to your local folder and copy it to clipboard
 
 #### This is an auto update application
-* It's moved to webinstaller and It'll install the latest version automatically.</description>
+* It's moved to webinstaller and It'll install the latest version automatically.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Monosnap is a perfect screenshot tool for Windows</summary>
     <copyright>Monosnap</copyright>
     <tags>admin screenshot</tags>
