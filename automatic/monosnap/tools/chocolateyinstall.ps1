@@ -16,6 +16,6 @@ $packageArgs = @{
   toolsDir       = $toolsDir
 }
 
-Start-Process "$toolsDir\stop-process.ps1"
+Start-Process powershell.exe -ArgumentList "-file $toolsDir\stop-process.ps1"
 
 Install-ChocolateyPackage @packageArgs
