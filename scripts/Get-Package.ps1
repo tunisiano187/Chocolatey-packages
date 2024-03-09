@@ -124,6 +124,7 @@ param(
         git commit -m "Package download $packageName"
         try {
             git push origin master
+            Write-Output "Pushed"
         } catch {
             write-output "nothing to push"
         }
