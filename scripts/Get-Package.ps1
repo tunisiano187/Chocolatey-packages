@@ -112,7 +112,7 @@ param(
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
         }
         (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
-
+        git pull
         $toadd = (get-childitem -path "$folder\$packageName").FullName
         foreach ($file in $toadd) {
             git add $file
@@ -123,7 +123,6 @@ param(
         }
         git commit -m "Package download $packageName"
         try {
-            git pull
             git push origin master
         } catch {
             write-output "nothing to push"
