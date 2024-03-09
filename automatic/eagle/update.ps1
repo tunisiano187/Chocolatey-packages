@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    Invoke-WebRequest -Uri $url -OutFile "$env:temp/eagle.exe" -UseBasicParsing
+    Invoke-WebRequest -Uri $release -OutFile "$env:temp/eagle.exe" -UseBasicParsing
 
 	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$env:temp/eagle.exe").ProductVersion
 
