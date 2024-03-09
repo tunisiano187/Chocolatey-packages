@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>quaternion</id>
-    <version>0.0.9.3</version>
+    <version>0.0</version>
     <title>Quaternion</title>
     <authors>Quaternion team</authors>
     <owners>tunisiano</owners>
@@ -20,6 +20,8 @@ Most of talking around Quaternion happens in Matrix room: #quaternion:matrix.org
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/quaternion</packageSourceUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\chocolateyInstall.ps1" target="tools" />
+    <file src="tools\quaternion_windows.zip" target="tools" />
+    <file src="legal\**" target="tools" />
   </files>
 </package>
