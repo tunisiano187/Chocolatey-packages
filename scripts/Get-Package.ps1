@@ -48,7 +48,8 @@ param(
         # copy required files in the new folder
         Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
         if(Test-Path "$nupkg\tools") {
-            Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Force
+            Remove-Item -Path "$nupkg\tools" -Include "*.exe"
+            Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.zip" -Force
         }
 
         # read nuspec
