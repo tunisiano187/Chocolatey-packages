@@ -5,7 +5,7 @@
     <version>0.0</version>
     <title>Intel® RealSense™ SDK 2.0</title>
     <authors>Sergey Dorodnicov,Mark Horn,Reagan Lopez,Itay Carpis</authors>
-    <owners>Mario Costa</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/IntelRealSense/librealsense/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://realsense.intel.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0eb18e882b7ce66b7fa5027a9e2757ecdc72af0a/icons/realsense-sdk2.png</iconUrl>
