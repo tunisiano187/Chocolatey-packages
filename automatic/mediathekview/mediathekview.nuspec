@@ -5,7 +5,7 @@
     <id>MediathekView</id>
     <version>14.0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mediathekview</packageSourceUrl>
-    <owners>AdmiringWorm, W.Xaver</owners>
+    <owners>tunisiano</owners>
     <title>MediathekView</title>
     <authors>W.Xaver</authors>
     <projectUrl>https://mediathekview.de/</projectUrl>
