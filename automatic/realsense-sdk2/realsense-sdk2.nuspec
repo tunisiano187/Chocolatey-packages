@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>realsense-sdk2</id>
+    <version>2.29.0</version>
+    <title>Intel® RealSense™ SDK 2.0</title>
+    <authors>Sergey Dorodnicov,Mark Horn,Reagan Lopez,Itay Carpis</authors>
+    <owners>Mario Costa</owners>
+    <licenseUrl>https://github.com/IntelRealSense/librealsense/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://realsense.intel.com/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/IntelRealSense/librealsense/master/doc/img/realsense.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Intel® RealSense™ SDK 2.0 is a cross-platform library for Intel® RealSense™ depth cameras (D400 series and the SR300).
+
+The SDK allows depth and color streaming, and provides intrinsic and extrinsic calibration information. The library also offers synthetic streams (pointcloud, depth aligned to color and vise-versa), and a built-in support for record and playback of streaming sessions.
+#### Optional Components
+ * `tools` - Intel RealSense Viewer and Quality Tool
+ * `dev` - C / C++ Developer Package
+ * `cv` - OpenCV examples
+ * `py` - Python 2.7 / 3.6 Developer Package
+ * `net` - .NET Developer Package
+ * `matlab` - Matlab Developer Package
+ * `pdb` - Debug Symbols
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NoIcons` - install quick lauch icon
+ * `/Components` - list of components optional components to install.
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `--params '"/NoIcons /Components:tools,dev"'`
+
+**Please Note**: This is an automatically updated package. If you find it is 
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
+    <summary>Intel® RealSense™ SDK 2.0 and Tools (for Windows)</summary>
+    <releaseNotes>https://github.com/IntelRealSense/librealsense/releases/tag/v2.29.0</releaseNotes>
+    <tags>realsense depth-camera sdk</tags>
+    <projectSourceUrl>https://github.com/IntelRealSense/librealsense</projectSourceUrl>
+    <packageSourceUrl>https://github.com/mjscosta/au-packages/tree/master/realsense-sdk2</packageSourceUrl>
+    <docsUrl>https://github.com/IntelRealSense/librealsense/tree/master/doc</docsUrl>
+    <mailingListUrl>https://communities.intel.com/community/tech/realsense</mailingListUrl>
+    <bugTrackerUrl>https://github.com/IntelRealSense/librealsense/issues</bugTrackerUrl>
+  </metadata>
+</package>
