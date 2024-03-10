@@ -5,7 +5,7 @@
     <id>eagle</id>
     <title>EAGLE</title>
     <version>9.6.2</version>
-    <authors>CadSoft</authors>
+    <authors>Autodesk</authors>
     <owners>tunisiano</owners>
     <summary>Easy to use, yet powerful tool for designing printed circuit boards (PCBs)</summary>
     <description>
@@ -21,18 +21,13 @@ The program consists of three main modules: Layout Editor, Schematic Editor, and
 This software is free for non-profit usage or evaluation. If you earn (or save) money by using the Freeware version of EAGLE Light, you have to [register it](http://www.cadsoftusa.com/shop/pricing/).  For limitations, see http://www.cadsoftusa.com/download-eagle/freeware/
     </description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/eagle</packageSourceUrl>
-    <projectUrl>http://www.cadsoftusa.com/download-eagle/freeware/</projectUrl>
-    <docsUrl>http://www.cadsoftusa.com/downloads/documentation</docsUrl>
-    <mailingListUrl>http://www.cadsoftusa.com/community/</mailingListUrl>
+    <projectUrl>https://www.autodesk.com/products/eagle/overview</projectUrl>
     <tags>ide cad layout pcb eda freeware</tags>
-    <copyright>© 2011 CadSoft</copyright>
-    <licenseUrl>http://www.cadsoftusa.com/license-agreement/</licenseUrl>
+    <copyright>© Autodesk</copyright>
+    <licenseUrl>https://www.autodesk.com/company/legal-notices-trademarks</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/eagle.png</iconUrl>
     <releaseNotes>
-#### Program
-* [Changelog](http://www.cadsoftusa.com/training-service/release-notes/)
-
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
