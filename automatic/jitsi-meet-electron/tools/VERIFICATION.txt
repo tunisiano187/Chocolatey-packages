@@ -3,9 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 The installer have been downloaded from their official download link found at https://github.com/jitsi/jitsi-meet-electron/releases
-It has been built using Appveyor.
-You can find the package source at https://github.com/cmorty/au-packages/tree/master/jitsi-meet-electron
-As well as the build logs: https://gist.github.com/cmorty/554cd2b607b7bf0a288341da3b311ca1
+You can find the package source at https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jitsi-meet-electron
 
 To verify the package you need to
 1. Download the Oneclick installer from the following
