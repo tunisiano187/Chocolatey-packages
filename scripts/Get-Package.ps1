@@ -123,6 +123,8 @@ param(
         }
         git commit -m "Package download $packageName"
         try {
+            git config --global credential.helper store
+            Set-Content -Path "$HOME\.git-credentials" -Value "https://$($env:github_api_key):x-oauth-basic@github.com`n" -NoNewline
             git push origin master
             Write-Output "Pushed"
         } catch {
