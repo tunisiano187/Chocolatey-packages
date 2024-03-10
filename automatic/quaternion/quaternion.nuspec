@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>https://github.com/Fxrh/Quaternion</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/xdimquax/choco/testing/icons/quaternion.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@62eb920872c11666a38c437537e2c115af3b57f7/icons/quaternion.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Quaternion is a cross-platform Qt5-based desktop IM client for Matrix, a reference desktop application using [libqmatrixclient SDK](https://matrix.org/docs/projects/sdk/libqmatrixclient.html).
 
