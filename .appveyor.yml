@@ -30,6 +30,9 @@ environment:
   gitter_webhook:
     secure: SuvLP4KrBXFvRRG7tcBiTUJvh8urQl3gOu4WYjLO9ZEXX0wZB3CwmIx1VnoA4I009yKsuPdPZ1P6NTuE7Vt9Cg==
 
+  # Hash
+  hash_algo: sha256
+  
   # VT API Key
   VT_APIKEY:
     secure: L/54pv851SIun4fRQsrx3kbmvBjuPRYE0bwuH/tDwSZCDbqSsHFE2udKIXnGLNL9AFRz9bBLJmVPUqXabn3tBqO45DJpCq0XjUSDDseoBCg=

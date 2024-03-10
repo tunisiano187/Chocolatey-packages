@@ -13,13 +13,20 @@ function global:au_SearchReplace {
      }
 }
 
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
+
 function global:au_GetLatest {
-    Invoke-WebRequest -Uri $release -OutFile "$env:temp/eagle.exe" -UseBasicParsing
+    $of = "$env:temp/eagle.exe"
+    Invoke-WebRequest -Uri $release -OutFile $of -UseBasicParsing
 
-	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$env:temp/eagle.exe").ProductVersion
+	[Version]$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($of).ProductVersion.trim()
+    $checksumtype = $env:hash_algo
+    $checksum = Get-FileHash -Path $of -Algorithm $env:hash_algo
 
-	$Latest = @{ URL64 = $release; Version = $version }
+	$Latest = @{ URL64 = $release; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumtype }
     return $Latest
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none -NoCheckUrl
