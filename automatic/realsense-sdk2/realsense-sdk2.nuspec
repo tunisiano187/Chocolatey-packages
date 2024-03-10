@@ -43,4 +43,7 @@ let them know the package is no longer updating correctly.</description>
     <mailingListUrl>https://communities.intel.com/community/tech/realsense</mailingListUrl>
     <bugTrackerUrl>https://github.com/IntelRealSense/librealsense/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
