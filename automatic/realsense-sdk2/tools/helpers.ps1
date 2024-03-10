@@ -10,15 +10,15 @@ function Get-InstallComponents( [HashTable]$pp )
 
 function Get-InstallOptions( [HashTable]$pp )
 {
-    
+
     if ($pp.Full -And $pp.Components) {
         throw "Invalid argument /Components used with /Full, please use only one"
     }
-    
-    if ($pp.NoIcons) { 
+
+    if ($pp.NoIcons) {
         $res += '/NOICONS', '/TASKS=""'
-    } 
-    
+    }
+
     if ($pp.Full) {
         $res += "/TYPE=full"
     }

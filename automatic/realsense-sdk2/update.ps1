@@ -27,7 +27,7 @@ function global:au_GetLatest {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	}
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
