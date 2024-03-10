@@ -38,6 +38,8 @@ param(
         }
 
     }
+    Install-Module PSGithubSearch
+    Import-Module PSGithubSearch
     # Try to download the nupkg
     Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.zip"
     if(Test-Path "$nupkg.zip") {
@@ -146,11 +148,11 @@ param(
             git remote set-url origin $RepoURL
 
             ### Ensure local is up-to-date to avoid conflicts
-            Write-Host "Executing git pull"
+            Write-Output "Executing git pull"
             git checkout -q $Branch
             git pull -q origin $Branch
             ### Push
-            Write-Host "Pushing changes"
+            Write-Output "Pushing changes"
             git push -q
             git remote set-url origin $origin
         } catch {
