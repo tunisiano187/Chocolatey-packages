@@ -113,7 +113,7 @@ param(
             (Get-Content $NuspecPath) -replace "</owners>", '</owners>
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
         }
-        (Get-Content $NuspecPath) -replace '<version>.*',"<version>0.0</version>" | Set-Content $NuspecPath
+        Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
         git pull
         $toadd = (get-childitem -path "$folder\$packageName").FullName
         foreach ($file in $toadd) {
