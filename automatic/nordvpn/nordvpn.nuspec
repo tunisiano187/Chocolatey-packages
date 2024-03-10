@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>nordvpn</id>
+    <version>6.40.5</version>
+    <title>NordVPN</title>
+    <authors>Nord</authors>
+    <owners>AdmiringWorm, Sanshiro</owners>
+    <licenseUrl>https://nordvpn.com/terms-of-service/</licenseUrl>
+    <projectUrl>https://nordvpn.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/AdmiringWorm/chocolatey-packages@25a4543b38acaadc800639b203a00610ff05bf77/automatic/nordvpn/icons/128x128.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>**Enjoy secure and private access to the Internet**
+
+With NordVPN, encrypt your online activity to protect your private data from hackers or snoopy advertisers. Enjoy global connectivity along with high-performance speed and secure access to streaming websites, censored content and social networks.
+
+**Security**
+Online security is the biggest challenge in today's interconnected world, so it's important to take it seriously. With NordVPN, you can choose from Double VPN combinations to encrypt your Internet traffic, protect yourself from snoopy advertisers with the CyberSec technology, and do it witht he most advanced security technologies available today.
+
+## Features
+
+- **Military-grade encyrption:** Secure your Internet traffic with cutting-edge encryption technologies.
+- **CyberSec:** Shield yourself from intrusive advertisements and malicious online threats.
+- **Double VPN:** Encrypt your Internet traffic twice to create an extra layer of online privacy.
+- See [here](https://nordvpn.com/features/) for more features.</description>
+    <summary>Protect your privacy and security online with just a few clicks.</summary>
+    <copyright>Copyright © 2012-2018 NordVPN.com</copyright>
+    <tags>nordvpn vpn privacy security trial</tags>
+    <packageSourceUrl>https://github.com/admiringworm/chocolatey-packages/tree/master/automatic/nordvpn</packageSourceUrl>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.8.0.0" />
+      <dependency id="vcredist140" version="14.29.30133" />
+    </dependencies>
+  </metadata>
+</package>
