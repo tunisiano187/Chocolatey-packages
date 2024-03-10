@@ -151,7 +151,7 @@ param(
             git pull -q origin $Branch
             ### Push
             Write-Host "Pushing changes"
-            git push -q 
+            git push -q
             git remote set-url origin $origin
         } catch {
             write-output "nothing to push"
