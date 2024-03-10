@@ -1,0 +1,8 @@
+[Setup]
+Lang=default
+Dir=%InstallationPath%
+Group=Free Pascal
+NoIcons=1
+SetupType=full
+Components=base,binutils,docs,ide,utils,make,demo,gdb,units,examples
+Tasks=
