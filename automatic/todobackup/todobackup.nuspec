@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>todobackup</id>
+    <version>2022.20211220</version>
+    <title>EaseUS Todo Backup Free</title>
+    <authors>EaseUS</authors>
+    <owners>Ginko</owners>
+    <projectUrl>https://www.easeus.fr/</projectUrl>
+    <iconUrl>http://pikky.net/sGn.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Free backup software for personal users to protect important data by backing it up automatically. The software can create a data backup, disk, partition or the entire system; restore this data, disk, partition or system (even on different hardware); Clone a disk or partition to create a bootable disk allowing the restoration of previously saved data.A system requiring reinstallation can be easily restored by selecting the created image.</description>
+    <summary>Free backup software for personal users to protect important data by backing it up automatically.</summary>
+    <tags>todo easeus backup</tags>
+    <projectSourceUrl>https://www.easeus.fr/</projectSourceUrl>
+    <packageSourceUrl>https://www.easeus.fr/</packageSourceUrl>
+  </metadata>
+</package>
