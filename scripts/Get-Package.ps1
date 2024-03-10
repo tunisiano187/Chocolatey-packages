@@ -123,10 +123,36 @@ param(
         }
         git commit -m "Package download $packageName"
         try {
-            git config --global credential.helper store
-            Set-Content -Path "$HOME\.git-credentials" -Value "https://$($env:github_api_key):x-oauth-basic@github.com`n" -NoNewline
-            git push origin master
-            Write-Output "Pushed"
+            $PushURL = $env:gitlab_PushURL
+
+            $origin  = git config --get remote.origin.url
+            ### Construct RepoURL to be set as new origin
+            $RepoURL = (
+                $PushURL.split('://')[0] `
+                + "://" `
+                + $env:gitlab_user `
+                + ":" `
+                + $env:gitlab_api_key `
+                + "@" `
+                + $PushURL.TrimStart(
+                    $(
+                        $PushURL.split('://')[0] `
+                        + "://"
+                    )
+                )
+            )
+
+            ### Set new push URL
+            git remote set-url origin $RepoURL
+
+            ### Ensure local is up-to-date to avoid conflicts
+            Write-Host "Executing git pull"
+            git checkout -q $Branch
+            git pull -q origin $Branch
+            ### Push
+            Write-Host "Pushing changes"
+            git push -q 
+            git remote set-url origin $origin
         } catch {
             write-output "nothing to push"
         }
