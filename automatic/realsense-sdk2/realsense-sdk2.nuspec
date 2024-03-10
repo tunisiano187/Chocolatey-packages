@@ -38,7 +38,7 @@ let them know the package is no longer updating correctly.</description>
     <releaseNotes>https://github.com/IntelRealSense/librealsense/releases/tag/v2.29.0</releaseNotes>
     <tags>realsense depth-camera sdk</tags>
     <projectSourceUrl>https://github.com/IntelRealSense/librealsense</projectSourceUrl>
-    <packageSourceUrl>https://github.com/mjscosta/au-packages/tree/master/realsense-sdk2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/realsense-sdk2</packageSourceUrl>
     <docsUrl>https://github.com/IntelRealSense/librealsense/tree/master/doc</docsUrl>
     <mailingListUrl>https://communities.intel.com/community/tech/realsense</mailingListUrl>
     <bugTrackerUrl>https://github.com/IntelRealSense/librealsense/issues</bugTrackerUrl>
