@@ -15,9 +15,9 @@ function global:au_SearchReplace {
 	}
 }
 
-#function global:au_AfterUpdate($Package) {
-#	Invoke-VirusTotalScan $Package
-#}
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
 
 function global:au_GetLatest {
 	$File = "$env:TEMP\freepascal.xml"
@@ -33,4 +33,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-#update -ChecksumFor 32
+update -ChecksumFor 32

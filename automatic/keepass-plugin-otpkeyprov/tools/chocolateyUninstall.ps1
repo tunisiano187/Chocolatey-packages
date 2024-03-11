@@ -8,7 +8,6 @@ if ($psver -ge 3) {
 }
 $packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
-try {
 # search registry for installed KeePass
 $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
                                     'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
@@ -39,7 +38,4 @@ Remove-Item -Path $installFile* `
 if ( Get-Process -Name "KeePass" `
                  -ErrorAction SilentlyContinue ) {
   Write-Warning "$($packageSearch) is running. $($packageName) will be removed at next restart of $($packageSearch)."
-}
-} catch {
-  throw $_.Exception
 }

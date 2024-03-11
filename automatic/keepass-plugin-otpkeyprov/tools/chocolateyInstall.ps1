@@ -12,7 +12,6 @@ $packageSearch = 'KeePass Password Safe'
 $url = 'https://keepass.info/extensions/v2/otpkeyprov/OtpKeyProv-2.7.zip'
 $checksum = 'a3e36538b2ee7eb521c903270f436921f177a5f11c5dbe22d185bcecce761481'
 $checksumType = 'sha256'
-try {
 # search registry for location of installed KeePass
 $regPath = Get-ItemProperty -Path @('HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
                                     'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
@@ -61,6 +60,4 @@ if ( Get-Process -Name "KeePass" `
 } else {
   Write-Output "$($packageName) will be loaded the next time KeePass is started."
   Write-Output "Please note this plugin may require additional configuration. Look for a new entry in KeePass' Menu>Tools"
-}} catch {
-  throw $_.Exception
 }

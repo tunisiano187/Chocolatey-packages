@@ -5,7 +5,7 @@
     <version>3.0.4</version>
     <title>Free Pascal</title>
     <authors>Free Pascal team</authors>
-    <owners>echizenryoma</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://wiki.lazarus.freepascal.org/licensing</licenseUrl>
     <projectUrl>http://www.jrsoftware.org/isinfo.php</projectUrl>
     <iconUrl>https://www.freepascal.org/pic/logo.gif</iconUrl>
@@ -16,9 +16,12 @@
     <copyright>© 1993 Free Pascal team</copyright>
     <tags>freepascal pascal</tags>
     <projectSourceUrl>https://www.freepascal.org/down/source/sources.var</projectSourceUrl>
-    <packageSourceUrl>https://github.com/AdmiringWorm/chocolatey-packages/tree/master/automatic/freepascal</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freepascal</packageSourceUrl>
     <docsUrl>https://www.freepascal.org/docs.var</docsUrl>
     <mailingListUrl>https://www.freepascal.org/maillist.var</mailingListUrl>
     <bugTrackerUrl>https://bugs.freepascal.org</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
