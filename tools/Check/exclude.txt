@@ -48,3 +48,4 @@ vim-tux
 nordvpn
 todobackup
 pascal
+pan
