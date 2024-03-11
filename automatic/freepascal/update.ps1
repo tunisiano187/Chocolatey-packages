@@ -27,9 +27,9 @@ function global:au_GetLatest {
 	$url32 = $links.Split('<|>') | Where-Object {$_ -match 'win32.exe'}
 	$links=$xml | Where-Object {$_ -match 'win64.exe'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
 	$url64 = $links.Split('<|>') | Where-Object {$_ -match 'win64.exe'}
-	$version = (Get-Version $url).Version
+	$version = (Get-Version $url32).Version
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version; }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }
 
