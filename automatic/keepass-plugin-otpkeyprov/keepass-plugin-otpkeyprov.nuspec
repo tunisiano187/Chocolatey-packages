@@ -3,7 +3,7 @@
   <metadata>
     <id>keepass-plugin-otpkeyprov</id>
     <title>KeePass Plugin OtpKeyProv</title>
-    <version>2.6</version>
+    <version>2.7</version>
     <authors>Dominik Reichl</authors>
     <owners>tunisiano</owners>
     <summary>Key provider based on one-time passwords</summary>
