@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>pan</id>
+    <version>0.140.216</version>
+    <title>Pan Newsreader</title>
+    <authors>Charles Kerr,Christophe Lambin,Matt Eagleson</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://gnu.org/licenses/gpl.html</licenseUrl>
+    <projectUrl>http://pan.rebelbase.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/3717a8f7533acd783ca2ab96d6e9a57a0ceb264a/icons/pan.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pan is a Usenet newsreader that's good at both text and binaries. It supports offline reading, scoring and killfiles, yEnc, NZB, binary uploading, PGP handling, multiserver, and secure connections. It's also the only Unix newsreader to get a perfect score on the Good Net-Keeping Seal of Approval evaluations. It runs on Unix and Unix-like operating systems, Mac OS X, and Windows.
+
+The 2006 redesign and rewrite of Pan has made Pan significantly faster, cut its memory footprint by 85% in large newsgroups, and added NZB and multiserver support. See its announcement for details.</description>
+    <summary>GNOME Newsreader</summary>
+    <releaseNotes>https://git.gnome.org/browse/pan2/plain/ChangeLog</releaseNotes>
+    <copyright>© http://pan.rebelbase.com/contact/</copyright>
+    <tags>gtk usenet newsreader nzb</tags>
+    <dependencies>
+      <dependency id="gtk-runtime" />
+    </dependencies>
+  </metadata>
+</package>
