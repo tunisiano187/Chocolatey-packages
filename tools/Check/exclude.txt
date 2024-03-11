@@ -47,3 +47,4 @@ cameyo
 vim-tux
 nordvpn
 todobackup
+pascal
