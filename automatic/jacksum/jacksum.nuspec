@@ -6,8 +6,9 @@
     <title>Jacksum</title>
     <authors>Johann N. Löfflmann</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.jonelo.de/java/jacksum/index.html#Copyright</licenseUrl>
-    <projectUrl>http://www.jonelo.de/java/jacksum/index.html</projectUrl>
+    <licenseUrl>https://jacksum.net/en/legal/copyright.html</licenseUrl>
+    <projectUrl>https://jacksum.net/en/index.html</projectUrl>
+    <projectSourceUrl>https://github.com/jonelo/jacksum</projectSourceUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/c3c386b0203f4620cd15b5f8eb5468538364987e/icons/jacksum.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Jacksum is a free and platform independent software for computing and verifying checksums, CRCs and message digests (known as hash values and fingerprints). "Jacksum" is a synthetic word made of **JA**va and Chec**KSUM**.
@@ -20,12 +21,11 @@ Jacksum has opened it's source code and it is released under the terms of the GN
 
 Jacksum is **platform independent**, because it is written entirely in the Java programming language, the software runs on any platform having a Java Runtime Environment.
 
-Jacksum has multiple interfaces. It can be used on the command line, at your file browser/manager, and it can be found as engine also in many other [software projects](http://www.jonelo.de/java/jacksum/index.html#Incorporation).
+Jacksum has multiple interfaces. It can be used on the command line, at your file browser/manager, and it can be found as engine also in many other software projects.
 		
-[Features](http://www.jonelo.de/java/jacksum/index.html#Features)
-[Frequently Asked Questions (FAQ)](http://www.jonelo.de/java/jacksum/index.html#FAQ)
-[Manual](http://www.jonelo.de/java/jacksum/index.html#manual)
-[Source code repository](http://sourceforge.net/projects/jacksum/files/)</description>
+[Features](https://jacksum.net/en/features.html)
+[Frequently Asked Questions (FAQ)](https://jacksum.net/en/faq.html)
+[Manual](https://jacksum.net/en/manpage.html)</description>
     <summary>Cross platform checksum utility of 58 hashes</summary>
     <releaseNotes>http://www.jonelo.de/java/jacksum/index.html#History</releaseNotes>
     <copyright>© Johann N. Löfflmann</copyright>
@@ -34,4 +34,7 @@ Jacksum has multiple interfaces. It can be used on the command line, at your fil
       <dependency id="javaruntime" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
