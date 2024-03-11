@@ -21,4 +21,7 @@ The 2006 redesign and rewrite of Pan has made Pan significantly faster, cut its 
       <dependency id="gtk-runtime" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
