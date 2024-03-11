@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ekeyfinder</id>
+    <version>0.1.7</version>
+    <title>Enchanted Keyfinder</title>
+    <authors>Sam Gleske</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <projectUrl>http://ekeyfinder.sourceforge.net</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/1d5cfc768ddad168d71e005f7b855dd1a7a25830/icons/ekeyfinder.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enchanted Keyfinder is a Magical Jelly Bean Keyfinder (MJB KF) fork from the open source version of MJB KF. 
+
+* Works on Windows 9X, ME, NT/2K/XP, Vista/Win7, Office 2007, and various other software programs.
+* MS Office 2010 key recovery is experimental
+* Change Windows Registration information and Product Key
+* Portable, settings saved in an INI file
+* An optional config file for software serial lookups
+* Export found keys to csv, html, ini, or txt.
+* Load a registry hive backup
+* Can check for program and config file updates
+* Command line options
+* No software installation</description>
+    <summary>Retrieves the product key used to install Windows from your registry or from an unbootable Windows installationc</summary>
+    <releaseNotes>http://sourceforge.net/projects/ekeyfinder/files/v0.1%20Beta/</releaseNotes>
+    <copyright>© Sam Gleske</copyright>
+    <tags>key license recover</tags>
+  </metadata>
+</package>
