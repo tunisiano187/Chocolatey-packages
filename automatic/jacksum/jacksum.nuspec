@@ -9,6 +9,7 @@
     <licenseUrl>https://jacksum.net/en/legal/copyright.html</licenseUrl>
     <projectUrl>https://jacksum.net/en/index.html</projectUrl>
     <projectSourceUrl>https://github.com/jonelo/jacksum</projectSourceUrl>
+    <packageSourceUrl></packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/c3c386b0203f4620cd15b5f8eb5468538364987e/icons/jacksum.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Jacksum is a free and platform independent software for computing and verifying checksums, CRCs and message digests (known as hash values and fingerprints). "Jacksum" is a synthetic word made of **JA**va and Chec**KSUM**.
