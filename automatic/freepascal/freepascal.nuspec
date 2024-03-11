@@ -21,4 +21,7 @@
     <mailingListUrl>https://www.freepascal.org/maillist.var</mailingListUrl>
     <bugTrackerUrl>https://bugs.freepascal.org</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
