@@ -49,3 +49,4 @@ nordvpn
 todobackup
 pascal
 pan
+riecoin
