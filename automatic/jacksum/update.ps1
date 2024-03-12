@@ -24,7 +24,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo
-	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"} | select-object -First 1
 	$version = $tags[0].tag_name -split 'v|/' | select-object -Last 1
 	$releaseNotes="https://github.com/$($Owner)/$($repo)/releases/tag/$($tags[0].tag_name)"
 	if($tags[0].prerelease -match "true") {
