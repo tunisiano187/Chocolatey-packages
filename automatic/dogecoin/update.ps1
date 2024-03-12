@@ -14,11 +14,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    [version]$version = $tags.name.Split(' ')[-1]
+    $choc=$(choco search dogecoin.install | Where-Object {$_ -match "dogecoin.install"})
+	$version = $choc.Split(" ")[1]
 
-	$Latest = @{ Version = $version }
-    return $Latest
+    return @{
+        Version = $version
+    }
 }
 
 update -ChecksumFor none

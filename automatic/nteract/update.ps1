@@ -14,15 +14,12 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
-    $version = $tags.tag_name.Replace('v','')
-    if($tags.prerelease -match "true") {
-        $date = $tags.published_at.ToString("yyyyMMdd")
-        $version = "$version-pre$($date)"
-    }
+    $choc=$(choco search nteract.install | Where-Object {$_ -match "nteract.install"})
+	$version = $choc.Split(" ")[1]
 
-    return @{ URL32 = $url32; Version = $version }
+    return @{
+        Version = $version
+    }
 }
 
-update-package -ChecksumFor 32 -NoCheckChocoVersion
+update-package -ChecksumFor 32 -NoCheckUrl
