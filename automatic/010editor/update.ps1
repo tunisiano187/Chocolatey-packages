@@ -13,22 +13,12 @@ function global:au_SearchReplace {
     }
 }
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
-    $download_page64 = Invoke-WebRequest -UseBasicParsing -Uri $releases64
-
-    $re    = '\.exe$'
-    $url   = ($download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href).Replace("../","")
-    $url64   = ($download_page64.links | Where-Object href -match $re | Select-Object -First 1 -expand href).Replace("../","")
-
-    $tempfile = New-TemporaryFile
-    Invoke-WebRequest -Uri $version_url -UseBasicParsing -OutFile $tempfile
-    $version = $(Get-Content $tempfile | Where-Object {$_ -match 'h1'}).split(' ')[-1].split('<')[0]
+    $choc=$(choco search 010editor.install | Where-Object {$_ -match "010editor.install"})
+	$version = $choc.Split(" ")[1]
 
     return @{
-        URL32 = $domain + $url
-        URL64 = $domain + $url64
         Version = $version
     }
 }
 
-update -ChecksumFor none -NoCheckUrl -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckUrl -NoCheckChocoVersion 
