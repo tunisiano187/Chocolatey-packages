@@ -1,4 +1,4 @@
-﻿import-module au
+import-module au
 
 $domain   = 'https://www.sweetscape.com/'
 $version_url = 'https://www.sweetscape.com/010editor/latest_version.html'
@@ -21,4 +21,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor none -NoCheckUrl -NoCheckChocoVersion 
+update -ChecksumFor none -NoCheckUrl -NoCheckChocoVersion
