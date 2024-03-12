@@ -32,9 +32,6 @@ Example: `choco install --package-parameters="'/InstallDir:C:\Program Files\Medi
 [Software Changelog](https://mediathekview.de/changelog/)
 [Package Changelog](https://github.com/AdmiringWorm/chocolatey-packages/blob/master/automatic/mediathekview/Changelog.md)
     </releaseNotes>
-    <dependencies>
-      <dependency id="adoptopenjdkjre" version="12.0.0.33" />
-    </dependencies>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
