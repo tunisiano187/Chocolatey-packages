@@ -21,12 +21,6 @@ Finding the algorithm(s) that generated a certain hash value
 Investigate polynomials of CRCs
 Investigate parameters of HMACs
 
-### Audience
-Jacksum is for users with security in mind, advanced users, sysadmins, students of informatics, computer scientists, 
-cybersecurity engineers, forensics engineers, penetration testers, white hat hackers, reverse engineers, CRC researchers, 
-etc. Jacksum is for professionals, but since HashGarten uses Jacksum as a program library, Jacksum is also available for 
-users whose preferred user interface is a graphical interface and not the terminal.
-
 
 ### Algorithm Support
 Jacksum supports 489 hash functions, both cryptographic and non-cryptographic hash function sets, including CRCs and classic checksums:
@@ -52,47 +46,6 @@ combination with a secret shared key.
 
 Jacksum supports the "Rocksoft (tm) Model CRC Algorithm" to describe CRCs, so additional 1.0399*10^267 customized 
 CRCs can be used.
-
-
-### User Interfaces
-Jacksum provides a command line interface (CLI), and an application programming interface (API). A graphical user 
-interface (GUI) is provided by HashGarten which is a subproject of the Jacksum project. Also, there are file browser 
-integrations (FBI) available to integrate Jacksum and HashGarten into your preferred file browser such as Finder on 
-macOS, Windows Explorer on Microsoft Windows or Caja, Dolphin, elementary Files, Konqueror, Krusader, Nemo, GNOME 
-Nautilus, ROX-Filter, SpaceFM, Thunar, Xfe, or zzzFM on GNU/Linux.
-
-
-### More features
-Jacksum can recursively compute hashes with multiple algorithms simultaneously. Jacksum takes advantage of modern 
-multi-processor/multi-core environments, and saves time by hashing multiple files in parallel.
-
-Jacksum can perform a verification of hashes against a set of known hashes, and it can detect matching, non-matching, 
-missing, and new files.
-
-Output can occur in predefined standard formats (BSD-, GNU/Linux-, or Solaris style, SFV or FCIV) or in a user-defined 
-format which is highly customizable, including many encodings for representing hash values, including binary, decimal, 
-octal, hexadecimal with lowercase or uppercase letters, Base16, Base32 with and without padding, Base32hex with and 
-without padding, Base64 with and without padding, Base64url with and without padding, BubbleBabble, and z-base-32.
-
-Input data can come from files, standard input stream (stdin), or provided directly by command line arguments.
-
-Jacksum supports many charsets for reading and writing files properly, and it comes with full support for all common 
-Unicode aware charsets such as UTF-8, UTF-16, UTF-16BE, UTF-16LE, UTF-32, UTF-32BE, UTF-32LE, GB18030, etc.
-
-With Jacksum you can also find the algorithm used to calculate a checksum, CRC, hash or find files that match a given 
-hash value.
-
-Jacksum provides many interfaces actually. Jacksum is a command line tool, and it can be integrated in your file browser. 
-Jacksum can also be used as a runtime library in your own projects by using its API. Jacksum keeps the binary small, 
-because it bundles only what it really needs to do the job.
-
-Jacksum has opened it's source code and it is released under the terms of the GNU GPL 3 or later. Jacksum is OSI Certified 
-Open Source Software. OSI Certified is a certification mark of the Open Source Initiative.  Jacksum is Free Software 
-according the strong conditions of the Free Software Foundation.
-
-Jacksum  is a synthetic word made of JAva and ChecKSUM, because Jacksum is written entirely in the Java programming language. 
-Therefore the software runs cross platform, e. g. on any platform having a Java Runtime Environment including GNU/Linux, 
-Microsoft Windows and macOS. without recompilation.
 
 
 ### Package-specific issue
