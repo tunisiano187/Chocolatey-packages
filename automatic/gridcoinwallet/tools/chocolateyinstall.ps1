@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url32		      = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/download/5.4.6.0/gridcoin-5.4.6-win32-setup.exe'
-$checksum32	    = 'e73e0eedebccebad4fa40b6b739d8bc33e134959f14386a7a105b353f28da2aa'
+$url32		      = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/download/5.4.7.0/gridcoin-5.4.7-win32-setup.exe'
+$checksum32	    = '917cff8c83dd7849be7b17542a5cf3775f73179dafca5663785ad919b7ded899'
 $checksumType32 = 'sha256'
-$url64		      = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/download/5.4.6.0/gridcoin-5.4.6-win64-setup.exe'
-$checksum64     = '68921443938df926daac89d749fd3554d0c1041343f3beebfea7faee5a70d98a'
+$url64		      = 'https://github.com/gridcoin-community/Gridcoin-Research/releases/download/5.4.7.0/gridcoin-5.4.7-win64-setup.exe'
+$checksum64     = '69d2424e0fe24c4ce733d6f857c2ce9d898ad1f43215003cf41885c2dec1aa51'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
