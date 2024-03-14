@@ -26,7 +26,6 @@ function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url32      = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base +  '/' + $_ } | Select-Object -First 1
 
-	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	[XML]$feed	= $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml')).Content
 	$version 	= $feed.rss.channel.item[0].title.split(' ')[-1].trim()
 
