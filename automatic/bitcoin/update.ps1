@@ -18,7 +18,7 @@ if ($MyInvocation.InvocationName -ne '.') {
 function global:au_GetLatest {
     $choc=$(choco search bitcoin.install | Where-Object {$_ -match "bitcoin.install"})
 	$version = $choc.Split(" ")[1]
-    
+
     return @{
         Version = $version
     }
