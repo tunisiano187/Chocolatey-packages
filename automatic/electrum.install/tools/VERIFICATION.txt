@@ -6,14 +6,14 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://download.electrum.org/4.5.3/electrum-4.5.3-setup.exe
+x86: https://download.electrum.org/4.5.4/electrum-4.5.4-setup.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum32: f54959655345839fb63e19b4b63a924956ce539164a2719f7e40a698f9a9a895
+checksum32: cf78f0c671dc3241ff4a80b745ac306516379c95c8924d159846c8163f5f362d
 
 The included 'LICENSE.txt' file have been obtained from:
 https://github.com/spesmilo/electrum/blob/master/LICENCE
