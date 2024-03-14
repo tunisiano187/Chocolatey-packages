@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nuclear</id>
@@ -41,7 +41,7 @@ It's also focusing more on audio. Imagine Spotify which you don't have to pay fo
     <copyright></copyright>
     <tags>nuclear music-player electron stream youtube music windows streaming admin</tags>
     <projectSourceUrl>https://github.com/nukeop/nuclear</projectSourceUrl>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/nuclear</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nuclear</packageSourceUrl>
     <docsUrl>https://nukeop.gitbook.io/nuclear/</docsUrl>
     <mailingListUrl>https://twitter.com/nuclear_player</mailingListUrl>
     <bugTrackerUrl>https://github.com/nukeop/nuclear/issues</bugTrackerUrl>
