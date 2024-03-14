@@ -5,7 +5,7 @@
     <version>7.58.2812</version>
     <title>TheSage English Dictionary and Thesaurus</title>
     <authors>Sequence Publishing</authors>
-    <owners>JourneyOver</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.sequencepublishing.com/1/thesage.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fbc8423ace0ee2944593a231d1d887371aceb988/icons/tsedat.png</iconUrl>
