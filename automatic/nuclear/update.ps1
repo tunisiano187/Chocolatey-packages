@@ -19,13 +19,13 @@ function global:au_BeforeUpdate($Package) {
     $licenseData = "https://raw.githubusercontent.com/nukeop/nuclear/master/LICENSE"
     $licenseFile = "$PSScriptRoot\legal\LICENSE.txt"
     if (Test-Path $licenseFile) { Remove-Item -Force $licenseFile }
-  
+
     Invoke-WebRequest -Uri $licenseData -UseBasicParsing -OutFile "$licenseFile"
     $Latest.LicenseUrl = $licenseData
-  
+
     Get-RemoteFiles -Purge -NoSuffix
 }
-  
+
 function global:au_AfterUpdate($Package) {
     Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
     Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes

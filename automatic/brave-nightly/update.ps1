@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'} | Where-Object {$_ -notmatch 'Arm64'}
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	
+
 	Write-Verbose 'Checking version'
 	$version=($tags.name.Split(' ')[1]).replace('v','')
 

@@ -29,7 +29,7 @@ function global:au_GetLatest {
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "32bit"}
 	$url64 = $tags.assets.browser_download_url | Where-Object {$_ -match "64bit"}
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	
+
 	Write-Verbose 'Checking version'
 	$version=$tags.name.Split(' ')[-1]
 	if($tags.prerelease -match "true") {

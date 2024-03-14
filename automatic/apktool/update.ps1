@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".jar$"}
 	$url32 = $urls | Where-Object {$_ -match ".jar"}
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	
+
 	Write-Verbose 'Checking version'
 	$version=$tags.tag_name.Split(' ')[-1].replace('v','')
 

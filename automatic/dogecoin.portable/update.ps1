@@ -29,7 +29,7 @@ function global:au_GetLatest {
 	$url64 = $urls | Where-Object {$_ -match 'win64'}
 	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     Update-Metadata -key "releaseNotes" -value $tags.html_url
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
 }
