@@ -32,6 +32,7 @@ function global:au_GetLatest {
   $regex = '\.exe$'
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match $regex}
   $url32 = $urls | Where-Object {$_ -match 'x86'}
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = ($url32 -split '/' | select-object -Last 1 -Skip 1).Replace('v','')
   if($tags.prerelease -match "true") {
     $date = $tags.published_at.ToString("yyyyMMdd")

@@ -16,7 +16,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $choc=$(choco search dogecoin.install | Where-Object {$_ -match "dogecoin.install"})
 	$version = $choc.Split(" ")[1]
-
+    Update-Metadata -key "releaseNotes" -value $tags.html_url
+	
     return @{
         Version = $version
     }

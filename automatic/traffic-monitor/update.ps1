@@ -39,6 +39,7 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url
     $url32 = $urls | Where-Object {$_ -match 'x86.zip'}
     $url64 = $urls | Where-Object {$_ -match 'x64.zip'}
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Tolower().replace('v','')
     if($tags.tag_name -match $version) {
         if($tags.prerelease -match "true") {

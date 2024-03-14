@@ -23,6 +23,7 @@ function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "HASS.Agent.Installer.exe$"}
 	$version = $tags.name
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"

@@ -13,7 +13,6 @@ function global:au_SearchReplace {
 			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
 		}
 		"$($Latest.PackageName).nuspec" = @{
-			"(\<releaseNotes\>).*?(\</releaseNotes\>)" 	= "`${1}$($Latest.ReleaseNotes)`$2"
 			"(\<copyright\>).*?(\</copyright\>)" 	= "`${1}IVPN.net $((Get-Date).year)`$2"
 		}
 	}
@@ -30,7 +29,7 @@ function global:au_GetLatest {
 	$checksumType32 = "SHA256"
 	$checksum32 = Get-RemoteChecksum -Url $url32 -Algorithm $checksumType32
 	$version = $tags[0].tag_name -split 'v|/' | select-object -Last 1
-	$releaseNotes="https://github.com/$($Owner)/$($repo)/releases/tag/$($tags[0].tag_name)"
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	if($tags[0].prerelease -match "true") {
 		$date = $tags[0].published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"

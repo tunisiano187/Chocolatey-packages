@@ -21,7 +21,8 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    $url64 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match 'CLI'} | Select-Object -First 1
+    Update-Metadata -key "releaseNotes" -value $tags.html_url
+	$url64 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match 'CLI'} | Select-Object -First 1
     $version = ($tags.tag_name).replace('V','')
 
 

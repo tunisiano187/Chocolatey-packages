@@ -27,6 +27,7 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".msi$"} | Where-Object {$_ -notmatch 'qt5'}
 	$url32 = ($urls | Where-Object {$_ -match 'x86'}).Replace('%2B','+')
     $url64 = ($urls | Where-Object {$_ -match 'x64'}).Replace('%2B','+')
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','')
 	if($tags.prerelease -match "true" -and $version.ToString() -notmatch 'beta') {
 		$date = $tags.published_at.ToString("yyyyMMdd")

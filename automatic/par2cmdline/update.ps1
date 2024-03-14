@@ -27,6 +27,7 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
     $url32 = $urls | Where-Object {$_ -match 'x86'}
     $url64 = $urls | Where-Object {$_ -match 'x64'}
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
     if($tags.tag_name -match $version) {
         if($tags.prerelease -match "true") {

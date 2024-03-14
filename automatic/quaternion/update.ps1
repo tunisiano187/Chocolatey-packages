@@ -23,6 +23,7 @@ function global:au_GetLatest {
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
 	Invoke-WebRequest -Uri $url32 -OutFile ".\tools\quaternion_windows.zip"
 	$checksum32 = (Get-FileHash -Path ".\tools\quaternion_windows.zip" -Algorithm "sha256").Hash
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','')
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")

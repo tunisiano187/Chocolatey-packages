@@ -27,6 +27,7 @@ function global:au_GetLatest {
     $urls = $tags.assets.browser_download_url | Where-Object {$_ -match "-setup-"} | Where-Object {$_ -match ".exe$"}
     $url32 = $urls | Where-Object {$_ -match 'win32'}
 	$url64 = $urls | Where-Object {$_ -match 'win64'}
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
