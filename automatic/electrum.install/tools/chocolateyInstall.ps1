@@ -7,13 +7,10 @@ $checksum = 'cf78f0c671dc3241ff4a80b745ac306516379c95c8924d159846c8163f5f362d'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "electrum.exe"
-
-Install-ChocolateyInstallPackage    -PackageName "$packageName" `
-                                    -FileType "$installerType" `
-                                    -SilentArgs "$silentArgs" `
-                                    -File "$installFile" `
-                                    -ValidExitCodes $validExitCodes `
-                                    -Checksum "$checksum" `
-                                    -ChecksumType "$checksumType"
+Install-ChocolateyPackage -PackageName "$packageName" `
+                          -FileType "$installerType" `
+                          -SilentArgs "$silentArgs" `
+                          -Url "$url" `
+                          -ValidExitCodes $validExitCodes `
+                          -Checksum "$checksum" `
+                          -ChecksumType "$checksumType"
