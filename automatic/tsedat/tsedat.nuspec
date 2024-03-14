@@ -35,4 +35,7 @@ TheSage can look up words directly from almost any program (IE, Word, Firefox, O
     <docsUrl>https://www.sequencepublishing.com/1/thesage/documentation.html</docsUrl>
     <mailingListUrl>https://www.sequencepublishing.com/1/about.html</mailingListUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
