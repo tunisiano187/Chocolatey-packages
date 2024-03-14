@@ -20,7 +20,6 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases
 	$url32 = ($page.links | Where-Object { $_.href -match 'exe$'}).href | Select-Object -First 1
-	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version=$url32.Split('-') | Where-Object {$_ -Match '\.'} | Where-Object {$_ -notmatch ".exe$"} | Where-Object {$_ -notmatch '\/'}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
