@@ -5,7 +5,7 @@
     <version>0.6.30.20231220</version>
     <title>Nuclear</title>
     <authors>https://github.com/nukeop/nuclear/graphs/contributors</authors>
-    <owners>JourneyOver</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/nukeop/nuclear/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://nuclear.js.org/</projectUrl>
