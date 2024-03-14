@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tsedat</id>
@@ -31,7 +31,7 @@ TheSage can look up words directly from almost any program (IE, Word, Firefox, O
 * If you have any requests or issues with this package please make an issue [here](https://github.com/tunisiano187/chocolatey-packages/issues) instead of "Contact Maintainers"</releaseNotes>
     <copyright>Copyright © 2001-2019 by Sequence Publishing. All Rights Reserved.</copyright>
     <tags>tsedat TheSage English Dictionary Thesaurus One-click lookup wildcard-search anagram concordancer speech pronunciation word-lists admin</tags>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/tsedat</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tsedat</packageSourceUrl>
     <docsUrl>https://www.sequencepublishing.com/1/thesage/documentation.html</docsUrl>
     <mailingListUrl>https://www.sequencepublishing.com/1/about.html</mailingListUrl>
   </metadata>
