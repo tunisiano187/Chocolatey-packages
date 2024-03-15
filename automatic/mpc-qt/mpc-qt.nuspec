@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mpc-qt</id>
     <version>23.12.0</version>
     <title>MPC QT</title>
     <authors>https://github.com/mpc-qt/mpc-qt/graphs/contributors</authors>
-    <owners>JourneyOver</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/mpc-qt/mpc-qt/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/mpc-qt/mpc-qt</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@1fc1b0a8ac2d3aa2681449ba5b8911320499d596/automatic/mpc-qt/icons/64x64.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bb35034884db23ddebfbf7df9b7332b700f19bba/icons/mpc-qt.png</iconUrl>
     <description>Media Player Classic Qute Theater (mpc-qt) is a clone of Media Player Classic (mpc-hc) reimplemented in Qt. It aims to reproduce most of the interface and functionality of mpc-hc while using libmpv to play video instead of DirectShow.
 
 ## Features
@@ -29,7 +29,7 @@
 * If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
     <copyright></copyright>
     <tags>media-player libmpv mpc-qt mpc-hc cross-platform clone mpv</tags>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/mpc-qt</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mpc-qt</packageSourceUrl>
     <docsUrl>https://github.com/mpc-qt/mpc-qt/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/mpc-qt/mpc-qt/issues</bugTrackerUrl>
   </metadata>
