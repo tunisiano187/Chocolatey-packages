@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://api.github.com/repos/dbohdan/initool/releases/latest'

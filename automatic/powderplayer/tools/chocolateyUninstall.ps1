@@ -1,4 +1,4 @@
-$packageName = 'powderplayer'
+﻿$packageName = 'powderplayer'
 $softwareName = "Powder Player*"
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
