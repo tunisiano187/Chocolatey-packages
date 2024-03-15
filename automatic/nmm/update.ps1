@@ -42,7 +42,7 @@ function global:au_GetLatest {
 		$version = "$version-pre$($date)"
 	}
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; ReleaseUri = $tags.html_url }
 	return $Latest
 }
 

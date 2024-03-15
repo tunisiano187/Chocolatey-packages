@@ -33,4 +33,7 @@
     <docsUrl>https://github.com/mpc-qt/mpc-qt/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/mpc-qt/mpc-qt/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
