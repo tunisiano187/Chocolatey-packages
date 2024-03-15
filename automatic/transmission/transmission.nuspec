@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/transmission/transmission/blob/master/COPYING</licenseUrl>
     <projectUrl>https://transmissionbt.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@58a6d860646264781f989d7ec9cda64c6fff0572/icons/transmission.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/transmission.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Transmission Torrent Client
 Transmission is a cross-platform BitTorrent client that is open source, easy, powerful, and lean.

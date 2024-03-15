@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://git-annex.branchable.com/license/</licenseUrl>
     <projectUrl>https://git-annex.branchable.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e0c48aaa7620075c027a0f6dda3eef9ded2a3503/icons/git-annex.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/git-annex.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## git-annex
 git-annex allows managing files with git, without checking the file contents into git. While that may seem paradoxical, it is useful when dealing with files larger than git can currently easily handle, whether due to limitations in memory, time, or disk space.

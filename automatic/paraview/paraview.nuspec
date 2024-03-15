@@ -7,7 +7,7 @@
     <authors>Kitware, Inc.</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.paraview.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6ebb09cea741de4128a8ce883505091404205e1c/icons/paraview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/paraview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.paraview.org/resources/</docsUrl>
 	  <licenseUrl>https://www.paraview.org/license/</licenseUrl>

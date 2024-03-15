@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/syvaidya/openstego/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.openstego.com/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/openstego.install</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f9436bf6a340fad683390adf95b176ec65aa84d/icons/openstego.install.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/openstego.install.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## OpenStego
 

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt</licenseUrl>
     <projectUrl>https://www.embarcadero.com/free-tools/dev-cpp/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4a27fd592f7fe9de4274d4876e196a99f4570a7c/icons/embarcaderodevcpp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/embarcaderodevcpp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Embarcadero Dev-C++
 A fast, portable, simple, and free C/C++ IDE. Dev C++ has been downloaded over 67,796,885 times since 2000.

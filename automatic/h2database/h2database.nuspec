@@ -9,7 +9,7 @@
     <licenseUrl>http://www.h2database.com/html/license.html</licenseUrl>
     <projectUrl>http://www.h2database.com/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/h2database</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/h2database.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/h2database.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description><![CDATA[## H2Database
 H2 is the Java SQL database which is very fast, open source, JDBC API, embeddable and small footprint.

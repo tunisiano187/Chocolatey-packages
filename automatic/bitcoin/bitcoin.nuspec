@@ -71,7 +71,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/bitcoin/bitcoin</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bitcoin/bitcoin/issues</bugTrackerUrl>
     <mailingListUrl>https://sourceforge.net/p/bitcoin/mailman/</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@97fb13fc99efb8a58a431402f7710535d8db0cd3/icons/bitcoin.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/bitcoin.svg</iconUrl>
     <tags>bitcoin btc blockchain wallet crypto currency p2p</tags>
     <copyright>© 2009 Bitcoin Project</copyright>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>

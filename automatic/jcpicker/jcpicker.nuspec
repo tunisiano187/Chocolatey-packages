@@ -20,7 +20,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jcpicker</packageSourceUrl>
     <projectUrl>http://annystudio.com/software/colorpicker/</projectUrl>
     <docsUrl>http://annystudio.com/software/colorpicker/#jcp-manual</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/jcpicker.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/jcpicker.png</iconUrl>
     <tags>color picker portable</tags>
     <copyright>© 2003 Anny</copyright>
     <licenseUrl>https://wikipedia.org/wiki/Freeware</licenseUrl>
