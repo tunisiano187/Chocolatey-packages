@@ -5,7 +5,7 @@
     <version>0.86.0</version>
     <title>Nexus Mod Manager</title>
     <authors>https://github.com/Nexus-Mods/Nexus-Mod-Manager/graphs/contributors</authors>
-    <owners>JourneyOver, Der Archivar</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.nexusmods.com/mods/modmanager</projectUrl>
