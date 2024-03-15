@@ -27,6 +27,10 @@ $packageArgs = @{
 	silentArgs   = '/S'
 }
 
-Start-Process powershell.exe -ArgumentList "-file $toolsDir\stop-process.ps1"
+$ahkFile = Join-Path $toolsDir "chocolateyInstall.ahk"
+$ahkExe = 'AutoHotKey.exe'
+$ahkRun = "$Env:Temp\$(Get-Random).ahk"
+Copy-Item $ahkFile "$ahkRun" -Force
+Start-Process $ahkExe $ahkRun
 
 Install-ChocolateyInstallPackage @packageArgs
