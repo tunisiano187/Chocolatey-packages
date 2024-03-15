@@ -70,7 +70,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© Johann N. Löfflmann</copyright>
     <tags>file checksum java commandline</tags>
     <dependencies>
-      <dependency id="javaruntime" Version="(7,)" />
+      <dependency id="javaruntime" version="(7,)" />
     </dependencies>
   </metadata>
   <files>
