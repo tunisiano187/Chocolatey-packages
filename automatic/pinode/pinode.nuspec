@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>pinode</id>
-	<version>0.4.5</version>
+	<version>0.4.9</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pinode</packageSourceUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/pinode.png</iconUrl>
