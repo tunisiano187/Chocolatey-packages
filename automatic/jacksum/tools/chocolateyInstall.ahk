@@ -1,12 +1,12 @@
-#SingleInstance Force  ; Force l'exécution d'une seule instance du script
+#SingleInstance Force  ; Limit to only one run
 
-SetTitleMatchMode(2)  ; Assure une correspondance partielle du titre de la fenêtre
+SetTitleMatchMode(2)  ; accept incomplete title
 
-WinWait("Jacksum")  ; Attends qu'une fenêtre avec "Jacksum" dans le titre s'ouvre
-WinWaitActive("Jacksum")  ; Attends que la fenêtre soit active
+WinWait("Jacksum")  ; wait for a window with "Jacksum" in the title to open
+WinWaitActive("Jacksum")  ; wait for the window to be active
 
-ControlClick("OK", "Jacksum")  ; Clique sur le bouton OK
+ControlClick("OK", "Jacksum")  ; Clic on OK
 
-WinWaitClose("Jacksum")  ; Attends que la fenêtre se ferme
+WinWaitClose("Jacksum")  ; Wait for window to close
 
-ExitApp  ; Termine le script une fois la fenêtre fermée
+ExitApp  ; end the script
