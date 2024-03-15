@@ -83,9 +83,4 @@ function global:au_GetLatest {
   }
 }
 
-try {
-  update -ChecksumFor none
-} catch {
-  $ignore = 'Unable to connect to the remote server'
-  if ($_ -match $ignore) { Write-Host $ignore; 'ignore' }  else { throw $_ }
-}
+update -ChecksumFor none

@@ -1,4 +1,4 @@
-function Get-InstallComponents( [HashTable]$pp )
+function Get-InstallComponent( [HashTable]$pp )
 {
     if($pp.Components){
         $res += $pp.Components
@@ -8,7 +8,7 @@ function Get-InstallComponents( [HashTable]$pp )
     return '/COMPONENTS="{0}"' -f ($res -join ",")
 }
 
-function Get-InstallOptions( [HashTable]$pp )
+function Get-InstallOption( [HashTable]$pp )
 {
 
     if ($pp.Full -And $pp.Components) {

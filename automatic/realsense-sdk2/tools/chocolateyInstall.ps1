@@ -19,7 +19,7 @@ $packageArgs = @{
     checksumType = $checksumType
     silentArgs   = "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/NOCANCEL", "/SP-",
                    "/LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).Install.log`"",
-                   (Get-InstallComponents $pp), (Get-InstallOptions $pp)
+                   (Get-InstallComponent $pp), (Get-InstallOption $pp)
     validExitCodes= @(0)
 }
 
