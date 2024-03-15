@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>nmm</id>
+    <version>0.86.0</version>
+    <title>Nexus Mod Manager</title>
+    <authors>https://github.com/Nexus-Mods/Nexus-Mod-Manager/graphs/contributors</authors>
+    <owners>JourneyOver, Der Archivar</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://www.nexusmods.com/mods/modmanager</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/nmm/icons/256x256.png</iconUrl>
+    <description>The Nexus Mod Manager (NMM) is a free and open source piece of software that allows you to download, install, update and manage your mod files through an easy to use interface. It integrates with the Nexus sites to provide you with a fast, efficient and much less hassled modding experience.
+
+## Features
+
+- **1-click download, 1-click install**
+
+  - One click on the site starts your download direct into NMM.
+  - One click in the manager then installs the file into your game and activates it.
+  - No faffing about with zip programs, no hassle.
+
+- **Built in download manager**
+
+  - The mod manager comes with full download pause and resume functionality.
+  - Stop your downloads and start them again later from the same place.
+  - Never receive an incomplete download again.
+
+- **Mod manager**
+
+  Enable or disable the files you would like loaded into your game through the easy to use mod management system, allowing you to try different configurations and profiles quickly and easily.
+
+- **Clean mod installs**
+
+  Files are installed cleanly and if a mod can't finish installing for any reason the mod manager will clean up the files correctly after itself
+
+- **Open source**
+
+  Completely free and completely open source, released under a copyleft GPL license, you can be sure that the mod manager is safe to use and free of adware, spyware and viruses
+
+- **No advertising**
+
+  The Mod Manager is completely free of advertisements</description>
+    <summary>The Nexus Mod Manager (NMM) is a free and open source piece of software that allows you to download, install, update and manage your mod files through an easy to use interface. It integrates with the Nexus sites to provide you with a fast, efficient and much less hassled modding experience.</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases)
+
+#### Package
+* Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+    <copyright>Copyright © 2020 Robin Scott. All rights reserved.</copyright>
+    <tags>nmm nexus mod mods manager nexusmodmanager nexus-mod-manager modmanager mod-manager nexusmods modding admin</tags>
+    <projectSourceUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager</projectSourceUrl>
+    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/nmm</packageSourceUrl>
+    <docsUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.1" />
+    </dependencies>
+  </metadata>
+</package>
