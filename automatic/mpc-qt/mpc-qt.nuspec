@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mpc-qt</id>
@@ -29,7 +29,7 @@
 * If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
     <copyright></copyright>
     <tags>media-player libmpv mpc-qt mpc-hc cross-platform clone mpv</tags>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/mpc-qt</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mpc-qt</packageSourceUrl>
     <docsUrl>https://github.com/mpc-qt/mpc-qt/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/mpc-qt/mpc-qt/issues</bugTrackerUrl>
   </metadata>
