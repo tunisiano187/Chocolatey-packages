@@ -119,12 +119,18 @@ if(Test-Path "$nupkg.zip") {
     $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
     [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
 
-    if(!($nuspec -match '<files>')) {
-        (Get-Content $NuspecPath) -replace "</metadata>", '</metadata>
-  <files>
+    # Check if the element <files> exist in the nuspec
+if (!($nuspecContent.Contains("<files>"))) {
+    # Add <files>...</files>
+    $nuspecContent = $nuspecContent -replace '</package>', '  <files>
     <file src="tools\**" target="tools" />
-  </files>' | Set-Content $NuspecPath
-    }
+  </files>
+</package>'
+
+    # Save the update
+    Set-Content -Path $nuspecPath.FullName -Value $nuspecContent
+    Write-Output "The lines <files>...</files> have been added to the nuspec."
+}
     if(!($nuspec.package.metadata.packageSourceUrl)) {
         (Get-Content $NuspecPath) -replace "</owners>", '</owners>
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath

@@ -18,15 +18,15 @@ function Find-NuspecError {
 
     $folder = "$PSScriptRoot/$($folder)"
 
-    # Update to the latest official xml
-    choco new test --outputdirectory $env:TEMP\Chocolatey\
-    $nuspecofficel = Get-Content -Path "$env:TEMP\Chocolatey\test\test.nuspec"
-    $nuspecstart = $nuspecofficel.Where({$_ -match "<metadata>"},'until') | Where-Object {$_ -notmatch "^\s*#"} | ForEach-Object {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | ForEach-Object {
-        if(($_ -notmatch '\*') -and (($_ -match '<package') -or ($_ -match 'Ω') -or ($_ -match '<?xml')))
-        {
-            $_
-        }
-    }
+    ## Update to the latest official xml
+    #choco new test --outputdirectory $env:TEMP\Chocolatey\
+    #$nuspecofficel = Get-Content -Path "$env:TEMP\Chocolatey\test\test.nuspec"
+    #$nuspecstart = $nuspecofficel.Where({$_ -match "<metadata>"},'until') | Where-Object {$_ -notmatch "^\s*#"} | ForEach-Object {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | ForEach-Object {
+    #    if(($_ -notmatch '\*') -and (($_ -match '<package') -or ($_ -match 'Ω') -or ($_ -match '<?xml')))
+    #    {
+    #        $_
+    #    }
+    #}
 
     $nuspecs = Get-ChildItem -Path $folder -Filter *.nuspec -Recurse
 
@@ -34,10 +34,10 @@ function Find-NuspecError {
         [xml]$content = Get-Content $nuspec.FullName
         $filecontent = Get-Content $nuspec.FullName
 
-        # Get the latest official xml informations
-        $nuspecend = $filecontent.Where({$_ -match "<metadata>"},'skipuntil') | Select-Object -Skip 1
-        $filecontent = "$nuspecstart
-$nuspecend"
+#        # Get the latest official xml informations
+#        $nuspecend = $filecontent.Where({$_ -match "<metadata>"},'skipuntil') | Select-Object -Skip 1
+#        $filecontent = "$nuspecstart
+#$nuspecend"
 
         # Check if the files section exists to avoid embedding useless files
         If(!($filecontent -match '<files>')) {
@@ -59,6 +59,17 @@ $nuspecend"
             throw "$($nuspec.Name): Description in French should be in english"
         }
 
+    }
+    if (!($filecontent.Contains("<files>"))) {
+        # Add <files>...</files>
+        $filecontent = $filecontent -replace '</package>', '  <files>
+        <file src="tools\**" target="tools" />
+      </files>
+    </package>'
+    
+        # Save the update
+        Set-Content -Path $nuspec.FullName -Value $filecontent
+        Write-Output "The lines <files>...</files> have been added to the nuspec."
     }
 }
 
