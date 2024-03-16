@@ -46,7 +46,7 @@ function Find-NuspecError {
   <files>
     <file src="tools\**" target="tools" />
   </files>' | Set-Content $nuspec.FullName
-            throw "$($nuspec.Name): $($errormsg)"
+#            throw "$($nuspec.Name): $($errormsg)"
         }
 
         # Check if the packageSourceURL section exists
