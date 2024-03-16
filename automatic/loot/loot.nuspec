@@ -5,7 +5,7 @@
     <version>0.22.3</version>
     <title>LOOT: The Load Order Optimisation Tool</title>
     <authors>WrinklyNinja</authors>
-    <owners>JourneyOver, Der Archivar</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/loot/loot/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://loot.github.io/</projectUrl>
