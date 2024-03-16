@@ -28,10 +28,10 @@ LOOT is intended to make using mods easier, and mod users should still possess a
 #### Package
 * Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
 * If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
-    <copyright>© WrinklyNinja</copyright>
+    <copyright>ï¿½ WrinklyNinja</copyright>
     <tags>loot loadorder load order optimisation tool load-order mod mods modmanager mod-manager modding skyrim oblivion fallout tes elder scrolls tesiv tesv fallout3 fallout4 fo</tags>
     <projectSourceUrl>https://github.com/loot/loot</projectSourceUrl>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/loot</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/loot</packageSourceUrl>
     <docsUrl>https://loot.github.io/docs</docsUrl>
     <mailingListUrl>https://www.afkmods.com/index.php?/topic/5042-relz-loot-load-order-optimisation-tool</mailingListUrl>
     <bugTrackerUrl>https://github.com/loot/loot/issues</bugTrackerUrl>
