@@ -32,9 +32,11 @@ Install-Module -Name PowerShellForGitHub -Force
 Set-GitHubConfiguration -DisableTelemetry
 #. "$PSScriptRoot\au_setup.ps1"
 import-module ".\scripts\au_extensions.psm1"
+Write-Output "Installing Update-Metadata.ps1"
 $moduleWormiesPath = "$Env:ProgramFiles\WindowsPowerShell\Modules\Wormies-AU-Helpers\public\Update-Metadata.ps1"
 $moduleWormiesPath = Resolve-Path $moduleWormiesPath
 Copy-Item scripts/Update-Metadata.ps1 $moduleWormiesPath
 
 . .\scripts\Invoke-VirusTotalScan.ps1
+Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 RefreshEnv.cmd

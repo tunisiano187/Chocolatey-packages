@@ -176,6 +176,9 @@ build_script:
     cd scripts
     Import-Module .\au_extensions.psm1
     cd ..
+    $moduleWormiesPath = "$Env:ProgramFiles\WindowsPowerShell\Modules\Wormies-AU-Helpers\public\Update-Metadata.ps1"
+    $moduleWormiesPath = Resolve-Path $moduleWormiesPath
+    Copy-Item scripts/Update-Metadata.ps1 $moduleWormiesPath
     Write-Host "Checking nuspec errors"
     scripts/Find-NuspecError.ps1
     git commit -am "Nuspec errors"
