@@ -6,7 +6,7 @@
     <id>mo2</id>
     <version>2.5.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mo2</packageSourceUrl>
-    <owners>JourneyOver</owners>
+    <owners>tunisiano</owners>
     <title>Mod Organizer 2</title>
     <authors>https://github.com/ModOrganizer2/modorganizer/graphs/contributors</authors>
     <projectUrl>https://www.nexusmods.com/skyrimspecialedition/mods/6194/</projectUrl>
