@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>duckietv</id>
+    <version>1.1.5</version>
+    <title>DuckieTV</title>
+    <authors>SchizoDuckie</authors>
+    <owners>JourneyOver</owners>
+    <licenseUrl>https://github.com/SchizoDuckie/DuckieTV/blob/angular/LICENSE.md</licenseUrl>
+    <projectUrl>http://schizoduckie.github.io/DuckieTV/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/JourneyOver/chocolatey-packages/575bc31abcf0249da6533821231a854255a2cc4e/icons/duckietv.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DuckieTV is an application that takes care of TV-Show addicts by providing a personalized TV-Show calendar. DuckieTV makes sure the information is always up-to-date and gives you an integrated blocking-resistant torrent search to help you get to the right download as easy as possible.
+
+With the integrated DuckieTorrent client you can connect DuckieTV to your local Torrent client and be updated on the download progress without switching applications. Support is available for clients of BiglyBT, Deluge, Ktorrent, qBittorrent, rTorrent, Tixati, Transmission, µTorrent/BitTorrent and Vuze.
+
+As of v0.60 DuckieTV also is also finally becoming a worthy SickBeard competitor by introducing an automatic downloading of shows that have aired and translations into 15 languages (English, Deutch, Español, Français, Italiano, 日本, 한국어, Nederlands, Norsk bokmål, Português, Русский, Română, Slovenščina, Svenska, 简体中文).
+
+![screenshot](https://raw.githubusercontent.com/JourneyOver/chocolatey-packages/master/readme_imgs/duckietv.png)</description>
+    <summary>DuckieTV is the TV-Show calendar you've been waiting for. A personalized calendar that tracks the shows you like that can search on multiple torrent sites</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://github.com/SchizoDuckie/DuckieTV/releases)
+
+#### Package
+* Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)</releaseNotes>
+    <copyright />
+    <tags>tv series-database calendar angularjs javascript episodes search-engine torrent-client remote-control angular nwjs qbittorrent series trakt automation utorrent js admin</tags>
+    <projectSourceUrl>https://github.com/SchizoDuckie/DuckieTV</projectSourceUrl>
+    <packageSourceUrl>https://github.com/JourneyOver/chocolatey-packages/tree/master/automatic/duckietv</packageSourceUrl>
+    <docsUrl>https://github.com/SchizoDuckie/DuckieTV/wiki</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/duckietv/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/SchizoDuckie/DuckieTV/issues</bugTrackerUrl>
+  </metadata>
+</package>
