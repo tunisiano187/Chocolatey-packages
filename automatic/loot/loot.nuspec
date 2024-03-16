@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>loot</id>
+    <version>0.22.3</version>
+    <title>LOOT: The Load Order Optimisation Tool</title>
+    <authors>WrinklyNinja</authors>
+    <owners>JourneyOver, Der Archivar</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/loot/loot/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://loot.github.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/loot/icons/256x256.png</iconUrl>
+    <description>LOOT is a plugin load order optimisation tool for TES IV: Oblivion, TES V: Skyrim, TES V: Skyrim Special Edition, Skyrim VR, Fallout 3, Fallout: New Vegas, Fallout 4 and Fallout 4 VR. It is designed to assist mod users in avoiding detrimental conflicts, by automatically calculating a load order that satisfies all plugin dependencies and maximises each plugin's impact on the user's game.
+
+LOOT also provides some load order error checking, including checks for requirements, incompatibilities and cyclic dependencies. In addition, it provides a large number of plugin-specific usage notes, bug warnings and Bash Tag suggestions.
+
+Although LOOT is able to calculate the correct load order positions for the vast majority of mods without any user input, some plugins are designed to load at certain positions in a load order, and LOOT may be unable to determine this from the plugins themselves. As such, LOOT provides a mechanism for supplying additional plugin metadata so that it may sort them correctly.
+
+LOOT is intended to make using mods easier, and mod users should still possess a working knowledge of mod load ordering. See [Introduction To Load Orders](https://loot.github.io/docs/help/Introduction-To-Load-Orders) for an overview.
+
+## Community
+
+- [Discord](https://loot.github.io/discord/)</description>
+    <summary>A load order optimisation tool for the Elder Scrolls (Oblivion and later) and Fallout (3 and later) games.</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://loot.readthedocs.io/en/0.22.3/app/changelog.html)
+
+#### Package
+* Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+    <copyright>© WrinklyNinja</copyright>
+    <tags>loot loadorder load order optimisation tool load-order mod mods modmanager mod-manager modding skyrim oblivion fallout tes elder scrolls tesiv tesv fallout3 fallout4 fo</tags>
+    <projectSourceUrl>https://github.com/loot/loot</projectSourceUrl>
+    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/loot</packageSourceUrl>
+    <docsUrl>https://loot.github.io/docs</docsUrl>
+    <mailingListUrl>https://www.afkmods.com/index.php?/topic/5042-relz-loot-load-order-optimisation-tool</mailingListUrl>
+    <bugTrackerUrl>https://github.com/loot/loot/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="vcredist140" version="14.36.32532" />
+    </dependencies>
+  </metadata>
+</package>
