@@ -36,6 +36,7 @@ Write-Output "Installing Update-Metadata.ps1"
 $moduleWormiesPath = "$Env:ProgramFiles\WindowsPowerShell\Modules\Wormies-AU-Helpers\public\Update-Metadata.ps1"
 $moduleWormiesPath = Resolve-Path $moduleWormiesPath
 Copy-Item scripts/Update-Metadata.ps1 $moduleWormiesPath
+. $moduleWormiesPath
 
 . .\scripts\Invoke-VirusTotalScan.ps1
 Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
