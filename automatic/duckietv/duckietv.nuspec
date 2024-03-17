@@ -5,7 +5,7 @@
     <version>1.1.5</version>
     <title>DuckieTV</title>
     <authors>SchizoDuckie</authors>
-    <owners>JourneyOver</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/SchizoDuckie/DuckieTV/blob/angular/LICENSE.md</licenseUrl>
     <projectUrl>http://schizoduckie.github.io/DuckieTV/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b5153fc7fba001672049a6ee8acd721ce53761b7/icons/duckietv.png</iconUrl>
