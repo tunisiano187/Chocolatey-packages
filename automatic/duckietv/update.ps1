@@ -18,6 +18,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate($Package) {
+  $licenseData = Get-GithubRepositoryLicense $Owner $repo
   $Latest.LicenseUrl = $licenseData.html_url
 }
 
@@ -35,7 +36,7 @@ function global:au_GetLatest {
 	[version]$version = "$(($tags.tag_name.Split('-') | Select-Object -Last 1) -replace '....(?!$)','$0.')"
   $versioncomplete = "$($version.ToString())-nightly"
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $versioncomplete; ReleaseUri = $release.latest.ReleaseUrl }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $versioncomplete; ReleaseUri = $tags.html_url }
 	return $Latest
 }
 
