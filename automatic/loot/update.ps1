@@ -35,7 +35,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "win64\.exe$"} | Select-Object -First 1
-	[version]$version = $tags.tag_name.Replace('v','')
+	[version]$version = $tags.tag_name.Replace('v','').trim()
 	Update-Metadata -key "releaseNotes" -value $("[Changelog](https://loot.readthedocs.io/en/0.22.3/app/changelog.html)").Replace('0.22.3',$version)
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
