@@ -60,17 +60,6 @@ function Find-NuspecError {
         }
 
     }
-    if (!($filecontent.Contains("<files>"))) {
-        # Add <files>...</files>
-        $filecontent = $filecontent -replace '</package>', '  <files>
-        <file src="tools\**" target="tools" />
-      </files>
-    </package>'
-    
-        # Save the update
-        Set-Content -Path $nuspec.FullName -Value $filecontent
-        Write-Output "The lines <files>...</files> have been added to the nuspec."
-    }
 }
 
 Find-NuspecError

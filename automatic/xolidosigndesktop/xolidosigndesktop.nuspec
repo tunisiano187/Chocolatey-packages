@@ -34,10 +34,4 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
   <files>
     <file src="tools\*" target="tools" />
   </files>
-  <files>
-        <file src="tools\**" target="tools" />
-      </files>
-      <files>
-        <file src="tools\**" target="tools" />
-      </files>
-    </package>
+</package>
