@@ -31,4 +31,7 @@ As of v0.60 DuckieTV also is also finally becoming a worthy SickBeard competitor
     <mailingListUrl>https://www.reddit.com/r/duckietv/</mailingListUrl>
     <bugTrackerUrl>https://github.com/SchizoDuckie/DuckieTV/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
