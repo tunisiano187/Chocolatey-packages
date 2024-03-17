@@ -51,4 +51,7 @@ https://github.com/dsccommunity/xPSDesiredStateConfiguration/releases/latest
       <files>
         <file src="tools\**" target="tools" />
       </files>
+      <files>
+        <file src="tools\**" target="tools" />
+      </files>
     </package>
