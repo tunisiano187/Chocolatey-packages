@@ -8,7 +8,7 @@
     <owners>JourneyOver</owners>
     <licenseUrl>https://github.com/SchizoDuckie/DuckieTV/blob/angular/LICENSE.md</licenseUrl>
     <projectUrl>http://schizoduckie.github.io/DuckieTV/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/JourneyOver/chocolatey-packages/575bc31abcf0249da6533821231a854255a2cc4e/icons/duckietv.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b5153fc7fba001672049a6ee8acd721ce53761b7/icons/duckietv.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DuckieTV is an application that takes care of TV-Show addicts by providing a personalized TV-Show calendar. DuckieTV makes sure the information is always up-to-date and gives you an integrated blocking-resistant torrent search to help you get to the right download as easy as possible.
 
