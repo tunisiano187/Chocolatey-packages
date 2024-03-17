@@ -32,9 +32,10 @@ function global:au_GetLatest {
   $url32 = $urls | Where-Object {$_ -match 'windows-x32'}
   $url64 = $urls | Where-Object {$_ -match 'windows-x64'}
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	[version]$version = $($tags.tag_name.Split('-') | Select-Object -Last 1) -replace '....(?!$)','$0.'
+	[version]$version = "$(($tags.tag_name.Split('-') | Select-Object -Last 1) -replace '....(?!$)','$0.')"
+  $versioncomplete = "$($version.ToString())-nightly"
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version; ReleaseUri = $release.latest.ReleaseUrl }
+	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $versioncomplete; ReleaseUri = $release.latest.ReleaseUrl }
 	return $Latest
 }
 
