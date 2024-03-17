@@ -1,6 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
+choco upgrade -y autohotkey
 
 $releases = 'https://downloads.kitenet.net/git-annex/windows/current/git-annex-installer.exe.info'
 
@@ -30,4 +31,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update
