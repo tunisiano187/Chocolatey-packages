@@ -26,7 +26,7 @@ As of v0.60 DuckieTV also is also finally becoming a worthy SickBeard competitor
     <copyright />
     <tags>tv series-database calendar angularjs javascript episodes search-engine torrent-client remote-control angular nwjs qbittorrent series trakt automation utorrent js admin</tags>
     <projectSourceUrl>https://github.com/SchizoDuckie/DuckieTV</projectSourceUrl>
-    <packageSourceUrl>https://github.com/JourneyOver/chocolatey-packages/tree/master/automatic/duckietv</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duckietv</packageSourceUrl>
     <docsUrl>https://github.com/SchizoDuckie/DuckieTV/wiki</docsUrl>
     <mailingListUrl>https://www.reddit.com/r/duckietv/</mailingListUrl>
     <bugTrackerUrl>https://github.com/SchizoDuckie/DuckieTV/issues</bugTrackerUrl>
