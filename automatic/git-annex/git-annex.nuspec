@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>git-annex</id>
-    <version>10.20231228</version>
+    <version>10.20240130</version>
     <title>git-annex</title>
     <authors>Joey Hess</authors>
     <owners>tunisiano</owners>
