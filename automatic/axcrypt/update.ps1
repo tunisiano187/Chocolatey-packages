@@ -1,6 +1,6 @@
 ﻿import-module au
 
-$releases = 'https://account.axcrypt.net/download/axcrypt-2-setup.exe'
+$release = 'https://account.axcrypt.net/download/axcrypt-2-setup.exe'
 
 function global:au_SearchReplace {
 	@{
