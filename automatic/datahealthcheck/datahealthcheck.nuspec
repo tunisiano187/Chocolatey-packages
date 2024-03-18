@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>datahealthcheck</id>
+    <version>1.7.1</version>
+    <title>DataHealthCheck</title>
+    <authors>cryptogeek</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://github.com/cryptogeek/DataHealthCheck</licenseUrl>
+    <projectUrl>https://cryptogeek.ninja/DataHealthCheck</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/09316ad79e51dabb6a71adcb83d4a81886ebe2df/icons/datahealthcheck.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DataHealthCheck is a portable app to check your files for corruption or display their md5/sha1 hash. 
+
+It is faster than other apps because it checks for corrupted files and update hashes of changed files in one pass.
+
+[Screenshots](https://github.com/cryptogeek/DataHealthCheck#screenshots)</description>
+    <summary>Check your files for corruption or display their md5/sha1 hash</summary>
+    <releaseNotes>### Program
+[Changelog](https://cryptogeek.ninja/DataHealthCheck)
+
+### Package
+Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2014 cryptogeek</copyright>
+    <tags>checksum file integrity</tags>
+    <projectSourceUrl>https://github.com/cryptogeek/DataHealthCheck/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/datahealthcheck/1.7.1</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/cryptogeek/DataHealthCheck/issues/</bugTrackerUrl>
+  </metadata>
+</package>
