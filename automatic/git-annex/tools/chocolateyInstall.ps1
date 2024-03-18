@@ -6,10 +6,13 @@ $checksum32         = '50910d2aab0131bdfa2145caecb842afc14d5110e1a3ca68a29e80cdd
 $checksumType32     = 'sha256'
 $validExitCodes     = @(0)
 
-$scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$ahkExe = 'AutoHotKey'
-$ahkFile = Join-Path $scriptPath "chocolateyInstall.ahk"
-Start-Process $ahkExe $ahkFile
+$scriptPath     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$ahkFile        = Join-Path $scriptPath "chocolateyInstall.ahk"
+$ahkExe         = 'AutoHotKey'
+$ahkRun         = "$Env:Temp\$(Get-Random).ahk"
+
+Copy-Item $ahkFile "$ahkRun" -Force
+Start-Process $ahkExe $ahkRun
 
 Install-ChocolateyPackage -PackageName "$packageName" `
                           -FileType "$installerType" `
