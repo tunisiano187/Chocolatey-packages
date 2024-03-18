@@ -1,10 +1,10 @@
-ï»¿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>axcrypt</id>
     <version>2.1.1647</version>
     <title>AxCrypt</title>
-    <authors>Svante Seleborg, Zebastian Victorin, MÃ¥ns Hansson, Linda Olander, Mattias Tall, Alejandro Serratosa, Juliette Dreyer</authors>
+    <authors>Svante Seleborg, Zebastian Victorin, Måns Hansson, Linda Olander, Mattias Tall, Alejandro Serratosa, Juliette Dreyer</authors>
     <owners>JourneyOver</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
@@ -35,10 +35,13 @@ AxCrypt is used to share and work with stored documents and e-mail attachments, 
 #### Package
 * Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
 * If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
-    <copyright>Copyright Â© 2021 AxCrypt AB, All rights reserved.</copyright>
+    <copyright>Copyright © 2021 AxCrypt AB, All rights reserved.</copyright>
     <tags>axcrypt AxCrypt cloud storage crypt password freemium admin</tags>
     <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/axcrypt</packageSourceUrl>
     <docsUrl>https://www.axcrypt.net/information/guides/get-started</docsUrl>
     <mailingListUrl>https://www.axcrypt.net/forums/</mailingListUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
