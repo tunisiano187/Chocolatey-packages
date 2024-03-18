@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
     <projectUrl>https://www.axcrypt.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/axcrypt/icons/128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e85a71ddba3826ef6f79c0b2127000c6bc2c4ab0/icons/axcrypt.png</iconUrl>
     <description>AxCrypt is a highly secure data encryption app that provides AES-128/256 file encryption and compression for Windows. It has a simple interface and works with a single double-click to automatically decrypt and open documents. It has seamless integration with Windows Explorer with no configuration required.
 
 AxCrypt is used to share and work with stored documents and e-mail attachments, in a secure manner. If your documents reside on a document sharing service or file server, AxCrypt is well suited and is able to seamlessly integrate, and makes both sharing and storing sensitive data a simple task.
