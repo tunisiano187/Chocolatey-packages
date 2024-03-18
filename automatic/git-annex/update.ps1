@@ -27,8 +27,8 @@ function global:au_GetLatest {
 	$url32 = $releases.Replace('.info','')
 	$version = ($info.split(" ") | Where-Object {$_ -match '"[0-9][0-9]'}).split('"') | Where-Object {$_ -match "\."} | Where-Object {$_ -notmatch "exe"}
 	Remove-Item $file
-	$checksumType32     = 'sha256'
-	$checksum32 = Get-RemoteChecksum -Algorithm $checksumType32 -Url $Package.URL32
+	$checksumType32 = 'sha256'
+	$checksum32 = Get-RemoteChecksum -Algorithm $checksumType32 -Url $url32
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum32; ChecksumType32 = $checksumType32 }
 	return $Latest
