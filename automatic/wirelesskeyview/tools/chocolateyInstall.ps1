@@ -37,7 +37,7 @@ if ($bitWidth -eq 64 -and $url64 -ne $null -and $url64 -ne '') {
 
 $fileDirectory = $([System.IO.Path]::GetDirectoryName($zipFile))
 if (!(Test-Path($fileDirectory))) {
-  [System.IO.Directory]::CreateDirectory($fileDirectory) | Out-Null  
+  [System.IO.Directory]::CreateDirectory($fileDirectory) | Out-Null
 }
 
 $forceX86 = $env:chocolateyForceX86
