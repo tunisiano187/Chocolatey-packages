@@ -5,7 +5,7 @@
     <version>1.72</version>
     <title>WirelessKeyView</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/wireless_key.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/wireless_key.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2e444bbba98b0f13b043d862a28b0cc81a367557/icons/wirelesskeyview.png</iconUrl>
