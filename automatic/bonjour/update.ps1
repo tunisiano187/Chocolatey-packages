@@ -24,7 +24,8 @@ function global:au_GetLatest {
 	Write-Output 'Download'
 	Set-Location $env:TEMP
 	$exeFile = Join-Path $env:TEMP $install_fname
-	Invoke-WebRequest -Uri $url32 -OutFile $exeFile
+	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
 	7z.exe x $exeFile
 	7z.exe x "$(get-location)\bonjour*.msi"
