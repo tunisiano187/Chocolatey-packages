@@ -19,7 +19,7 @@ You can also export your wireless keys into a file and import these keys into an
     <releaseNotes>[What's New?](http://www.nirsoft.net/utils/wireless_key.html)</releaseNotes>
     <copyright>© 2006 NirSoft</copyright>
     <tags>wireless network security wep wpa key password</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/wirelesskeyview/1.72</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wirelesskeyview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
