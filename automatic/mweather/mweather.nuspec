@@ -26,4 +26,7 @@ reports directly from the Internet.</description>
       <dependency id="mweather.install" version="[1.73]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
