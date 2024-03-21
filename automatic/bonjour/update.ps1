@@ -8,6 +8,8 @@ function global:au_SearchReplace {
 		'tools/chocolateyInstall.ps1' = @{
 			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
 		}
 	}
 }
@@ -33,6 +35,9 @@ function global:au_GetLatest {
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
 	Set-Location $startdir
+	if($version -eq "3.1.0.2"){
+		$version = "3.1.0.3"
+	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
