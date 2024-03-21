@@ -5,7 +5,7 @@
     <version>1.73</version>
     <title>MetarWeather</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/mweather.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/mweather.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f2393205e61444d0ae3c84e16dbc553111a6f81e/icons/mweather.png</iconUrl>
