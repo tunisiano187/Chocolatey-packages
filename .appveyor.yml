@@ -77,6 +77,7 @@ install:
     $chocoVersion = if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
+      '7zip.install' = '24.1.0-beta'
       'chocolatey' = $chocoVersion
       'wormies-au-helpers' = '0.4.1'
       'checksum' = '0.3.1'
