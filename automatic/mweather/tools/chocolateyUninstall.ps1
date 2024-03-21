@@ -9,7 +9,7 @@ $warningPreference = "Continue"
 $chocoLib = Join-Path $env:ChocolateyInstall "lib"
 if (Test-Path -PathType Container (Join-Path $chocoLib 'mweather.*')) {
   Write-Warning "Uninstall NOT complete."
-  Write-Host 
+  Write-Host
 @"
   This package is a metapackage; a chocolatey feature not yet fully implemented.
   To retain future compatibility this package does not uninstall the dependent
