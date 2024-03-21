@@ -35,7 +35,7 @@ function global:au_GetLatest {
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
 	Set-Location $startdir
-	if($version -eq "3.1.0.2"){
+	if($version -eq "3.1.0.1"){
 		$version = "3.1.0.3"
 	}
 
