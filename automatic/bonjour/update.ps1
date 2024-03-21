@@ -9,9 +9,15 @@ function global:au_SearchReplace {
 			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 			"(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+			"(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
+}
+
+function global:au_BeforeUpdate($Package) {
+	$Latest.ChecksumType32 = $Latest.ChecksumType64 = "SHA256"
+	$Latest.Checksum32 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType32 -Url $Latest.URL32
+	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType32 -Url $Latest.URL64
 }
 
 function global:au_AfterUpdate($Package) {
@@ -43,4 +49,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckChocoVersion
