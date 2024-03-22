@@ -22,7 +22,7 @@ reports directly from the Internet.</description>
 * Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
     <copyright>© 2003 NirSoft</copyright>
     <tags>decoder decode weather report stations world html xml freeware admin</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mweather.install/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mweather.install</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
