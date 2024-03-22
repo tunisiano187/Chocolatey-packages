@@ -19,8 +19,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "mweather_setup.zip"
+	if(!(Test-Path -Path $File)) {
+		Remove-Item -Path $File
+	}
 	Invoke-WebRequest -Uri 'https://www.nirsoft.net/utils/mweather.zip' -OutFile $File
-	Expand-Archive -Path $File -DestinationPath "$env:TEMP\MWeather"
+	Expand-Archive -Path $File -DestinationPath "$env:TEMP\MWeather" -Force
 	$inf = Get-Content -Path "$env:TEMP\MWeather\mweather.txt"
 	$version=($inf | Where-Object {$_ -match 'MetarWeather v'}).split('v') | Select-Object -Last 1
 
