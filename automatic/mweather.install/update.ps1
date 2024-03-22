@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://www.nirsoft.net/utils/mweather_setup.exe'
@@ -31,4 +31,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32 
+update -ChecksumFor 32
