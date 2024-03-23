@@ -54,3 +54,4 @@ ekeyfinder
 datahealthcheck
 serviwin
 wirelesskeyview
+xmeters
