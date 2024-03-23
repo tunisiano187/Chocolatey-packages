@@ -26,7 +26,7 @@ Install-PackageProvider -name winget
     if($Todo.Count -eq 0) {
         "Checking on Chocolatey community profile"
         $chocoprofile = "https://community.chocolatey.org/profiles/tunisiano"
-        $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
+        $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"} | Where-Object {$_.outerHTML -notmatch "bonjour"}).href 
         $ToDo=$links
         foreach ($item in $links) {
             $search=$item.split('/')[-2]
@@ -47,7 +47,7 @@ Install-PackageProvider -name winget
     # Take a package that is requested on the chocolatey-package-requests
     if($Todo.Count -eq 0 -and $issue -eq 0) {
         "Checking on the chocolatey-package-requests"
-        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'}
+        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
