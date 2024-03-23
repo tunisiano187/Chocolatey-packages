@@ -16,4 +16,7 @@
     <releaseNotes />
     <tags>linux getopt gnuwin32</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
