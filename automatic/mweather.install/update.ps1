@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "mweather_setup.zip"
+	$File = Join-Path $env:TEMP "mweather_setup.exe"
 	if(!(Test-Path -Path $File)) {
 		Remove-Item -Path $File
 	}
