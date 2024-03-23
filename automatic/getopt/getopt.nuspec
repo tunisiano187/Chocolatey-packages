@@ -5,7 +5,7 @@
     <version>2.14.1</version>
     <title>Util Linux getopt</title>
     <authors>gnuwin32</authors>
-    <owners>d.hilgarth</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
     <projectUrl>http://sourceforge.net/projects/gnuwin32/files/util-linux/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/getopt</packageSourceUrl>
