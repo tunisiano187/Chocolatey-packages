@@ -13,6 +13,10 @@ if(!(Test-Path Env:github_api_key)) {
 $search = ''
 $version = ''
 
+# Sort Exclude file
+$excludefile = '.\tools\Check\exclude.txt'
+Get-Content $excludefile | Sort-Object | Set-Content $excludefile
+
 "Check if there are open issues"
 # Check if there is a waiting issue
 if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"})) {

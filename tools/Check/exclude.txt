@@ -56,3 +56,4 @@ serviwin
 wirelesskeyview
 xmeters
 avirafreeantivirus
+sikulix
