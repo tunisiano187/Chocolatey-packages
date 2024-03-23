@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "mweather_setup.zip"
-	if(!(Test-Path -Path $File)) {
+	if(Test-Path -Path $File) {
 		Remove-Item -Path $File
 	}
 	Invoke-WebRequest -Uri 'https://www.nirsoft.net/utils/mweather.zip' -OutFile $File
