@@ -8,6 +8,7 @@
     <owners>d.hilgarth</owners>
     <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
     <projectUrl>http://sourceforge.net/projects/gnuwin32/files/util-linux/</projectUrl>
+    <packageSourceUrl></packageSourceUrl>
     <iconUrl>https://secure.gravatar.com/avatar/3a65f68772ccdeed1ca0869bdf9c7e80?r=pg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Puts the Util Linux getopt.exe in the path along with all required dependencies.</description>
