@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>XMeters</id>
+    <version>1.0.103.0</version>
+    <title>XMeters</title>
+    <authors>entropy6</authors>
+    <owners>boubou</owners>
+    <projectUrl>https://entropy6.com/xmeters/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/boubou/chocolatey/25086f8aa671f2188c9b1fe5d0499fb371a9cd7f/packages/icons/XMeters.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>XMeters is a Free Taskbar System Monitoring Tool and Stats for Windows PC that provides configurable system statistics including CPU Monitoring, Storage Monitoring, Network Monitoring, Memory Monitoring, Customizable Colors and Configurable Meter Types, more right in your system tray. What are you waiting for? XMeters is free for personal use. Download it now!
+
+Features and Highlights
+
+Real-time System Monitoring
+Display a live view of your most important system information at all times.
+
+Completely Customizable
+Change the look of XMeters to match your workspace.
+
+Designed for Performance
+X Meters is designed to be as lightweight and battery-friendly as possible.
+
+Note: In addition to the free version features, the professional version offers a fully configurable refresh rate.</description>
+    <summary>CPU Monitoring, Storage Monitoring, Network Monitoring, Memory Monitoring</summary>
+    <releaseNotes>Whats new in this version:
+
+XMeters 1.0.103
+- Change log not available for this version
+
+
+XMeters 1.0.102
+- Change log not available for this version
+
+
+XMeters 1.0.101
+- Change log not available for this version
+
+
+XMeters 1.0.98
+- Change log not available for this version
+
+
+XMeters 1.0.96
+- Change log not available for this version</releaseNotes>
+    <copyright>Copyright entropy6 2017</copyright>
+    <tags>Taskbar System Monitoring Tool Stats Windows</tags>
+    <packageSourceUrl>https://github.com/boubou/chocolatey/blob/master/xmeters</packageSourceUrl>
+    <docsUrl>https://entropy6.com/xmeters/help/</docsUrl>
+    <bugTrackerUrl>https://entropy6.com/xmeters/contact/</bugTrackerUrl>
+  </metadata>
+</package>
