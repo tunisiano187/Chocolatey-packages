@@ -57,3 +57,4 @@ vim-tux
 wirelesskeyview
 xfinder
 xmeters
+getopt
