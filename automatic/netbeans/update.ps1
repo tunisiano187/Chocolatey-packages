@@ -39,7 +39,8 @@ function global:au_GetLatest {
 	$ReleasePage = [Uri]::new([Uri]::new($releases), $ReleasePage).ToString()
 	$Page = Invoke-WebRequest -Uri $ReleasePage -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
 	$Links = ($Page.Links | Where-Object {$_ -match "exe"}).href
-	$release = $Links | Where-Object {$_ -match "exe$"}
+	$closestrelease = $Links | Where-Object {$_ -match "exe$"}
+	$release = ((Invoke-WebRequest -Uri $closestrelease).Links | Where-Object {$_.href -match "exe$"} | Select-Object -First 1).href
 	$ChecksumLink = ($Links | Where-Object {$_ -match "exe."} | Where-Object {$_ -notmatch "asc"})
 	$ChecksumType = $ChecksumLink.split(".")[-1]
 	$Checksum = (invoke-WebRequest -Uri $ChecksumLink).content.split(' ')[0]
