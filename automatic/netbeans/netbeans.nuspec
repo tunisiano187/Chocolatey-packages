@@ -35,4 +35,7 @@ And it install GlassFish Server runtimes.
       <dependency id="corretto21jdk" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
