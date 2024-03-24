@@ -147,7 +147,7 @@ if (!($nuspecContent.Contains("<files>"))) {
     Write-Output "List files to add to git"
     $toadd = (get-childitem -path "$folder\$packageName").FullName
     foreach ($file in $toadd) {
-        if($file -notmatch "exe" -and $file -notmatch "zip") {
+        if($file -notmatch "exe" -and $file -notmatch "zip" -and $file -notmatch "msi") {
             git add $file
         }
     }
