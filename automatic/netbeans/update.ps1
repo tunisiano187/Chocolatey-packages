@@ -21,10 +21,10 @@ function global:au_BeforeUpdate($Package) {
 	$licenseData = Get-GithubRepositoryLicense $Owner $repo
 	$licenseFile = "$PSScriptRoot\legal\LICENSE.txt"
 	if (Test-Path $licenseFile) { Remove-Item -Force $licenseFile }
-
+  
 	Invoke-WebRequest -Uri $licenseData.download_url -UseBasicParsing -OutFile "$licenseFile"
 	$Latest.LicenseUrl = $licenseData.html_url
-
+  
 	Get-RemoteFiles -Purge -NoSuffix
   }
 
@@ -38,7 +38,7 @@ function global:au_GetLatest {
 	$ReleasePage = ($Page.Links | Where-Object {$_ -match "download/n"}).href
 	$ReleasePage = [Uri]::new([Uri]::new($releases), $ReleasePage).ToString()
 	$Page = Invoke-WebRequest -Uri $ReleasePage -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$Links = ($Page.Links | Where-Object {$_ -match "exe"}).href
+	$Links = ($Page.Links | Where-Object {$_ -match "exe"}).href 
 	$release = $Links | Where-Object {$_ -match "exe$"}
 	$ChecksumLink = ($Links | Where-Object {$_ -match "exe."} | Where-Object {$_ -notmatch "asc"})
 	$ChecksumType = $ChecksumLink.split(".")[-1]
@@ -46,8 +46,11 @@ function global:au_GetLatest {
 
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-
-	[version]$version=$release.Split('/') | Where-Object {$_ -match "[0-9][0-9]"} | Where-Object {$_ -notmatch 'exe'}
+	
+	$version=$release.Split('/') | Where-Object {$_ -match "[0-9][0-9]"} | Where-Object {$_ -notmatch 'exe'}
+	if($version -notmatch '\.') {
+		$version+=".0"
+	}
 
 	$Latest = @{ URL64 = $release; Checksum64 = $Checksum; ChecksumType64 = $ChecksumType; Version = $version }
 	return $Latest
