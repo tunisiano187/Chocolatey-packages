@@ -1,20 +1,24 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$toolsDir = Split-Path $MyInvocation.MyCommand.Definition
-
-$packageName	= 'netbeans'
+$url			= ''
+$checksum		= ''
+$checksumType	= ''
 $fileType		= 'exe'
-$filePath		= Get-Item $toolsDir\*.exe
 $softwareName	= 'NetBeans*'
 $silentArgs		= '--silent'
 
 $packageArgs = @{
-	PackageName    	= $packageName
-	FileType       	= $fileType
-	File           	= $filePath
-	SoftwareName	= $softwareName
-	SilentArgs		= $silentArgs
+    packageName     = $env:ChocolateyPackageName
+    fileType      	= $fileType
+    url           	= $url
+
+    softwareName  	= $softwareName
+
+    checksum      	= $checksum
+    checksumType  	= $checksumType
+
+    silentArgs   	= $silentArgs
 	ValidExitCodes	= @(0)
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs

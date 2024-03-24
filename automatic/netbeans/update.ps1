@@ -8,27 +8,13 @@ $repo = $github.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt" = @{
-			"(?i)(^\s*url(32)?\:\s*).*"         = "`${1}<$($Latest.URL64)>"
-			"(?i)(^\s*checksum(32)?\:\s*).*"    = "`${1}$($Latest.Checksum64)"
-			"(?i)(^\s*checksum\s*type\:\s*).*"  = "`${1}$($Latest.ChecksumType64)"
-			"(?i)(^\s*license\:\s*).*"  		= "`${1}$($Latest.LicenseUrl)"
-		  }
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+		}
 	}
 }
-
-function global:au_BeforeUpdate($Package) {
-	$licenseData = Get-GithubRepositoryLicense $Owner $repo
-	$licenseFile = "$PSScriptRoot\legal\LICENSE.txt"
-	if (Test-Path $licenseFile) { Remove-Item -Force $licenseFile }
-
-	Invoke-WebRequest -Uri $licenseData.download_url -UseBasicParsing -OutFile "$licenseFile"
-	$Latest.LicenseUrl = $licenseData.html_url
-
-	$Filename = ($Latest.URL64).Split('/')[-1]
- 	$File = "$PSScriptRoot\tools\$filename"
-	invoke-WebRequest -Uri $Latest.URL64 -OutFile $File
-  }
 
 function global:au_AfterUpdate($Package) {
 	Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
