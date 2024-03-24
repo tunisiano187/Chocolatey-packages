@@ -28,7 +28,7 @@ And it install GlassFish Server runtimes.
     <copyright>NetBeans IDE and NetBeans Platform are based on software from netbeans.org, which has been dual licensed under the Common Development and Distribution License (CDDL) and the GNU General Public License version 2 with Classpath exception. For more information, please visit www.netbeans.org.</copyright>
     <tags>netbeans java ide development admin</tags>
     <projectSourceUrl>https://github.com/apache/netbeans/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/ComFreek/chocolatey-packages/tree/master/netbeans</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/netbeans</packageSourceUrl>
     <docsUrl>https://netbeans.apache.org/tutorial/main/kb/index.html</docsUrl>
     <bugTrackerUrl>https://github.com/apache/netbeans/issues</bugTrackerUrl>
     <dependencies>
