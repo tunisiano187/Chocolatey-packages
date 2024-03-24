@@ -5,7 +5,7 @@
     <version>8.2.20171030</version>
     <title>NetBeans IDE (complete)</title>
     <authors>Apache</authors>
-    <owners>Akipe ComFreek murray</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://netbeans.org/about/legal/product-licences.html</licenseUrl>
     <projectUrl>https://netbeans.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@aa8fcef136c98421c2c3cef613895720688c88b7/icons/netbeans.png</iconUrl>
