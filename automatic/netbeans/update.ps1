@@ -24,8 +24,10 @@ function global:au_BeforeUpdate($Package) {
 
 	Invoke-WebRequest -Uri $licenseData.download_url -UseBasicParsing -OutFile "$licenseFile"
 	$Latest.LicenseUrl = $licenseData.html_url
-
-	Get-RemoteFiles -Purge -NoSuffix
+	
+	$Filename = ($Latest.URL64).Split('/')[-1]
+ 	$File = "$PSScriptRoot\tools\$filename"
+	invoke-WebRequest -Uri $Latest.URL64 -OutFile $File
   }
 
 function global:au_AfterUpdate($Package) {
@@ -57,4 +59,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none
