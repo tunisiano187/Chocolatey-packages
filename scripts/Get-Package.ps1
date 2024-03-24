@@ -26,6 +26,7 @@ param(
     [string]$folder = 'automatic\',
     [string]$iconfolder = 'icons\'
 )
+$ErrorActionPreference = "Stop";
 
 $nupkg = "$env:TEMP/$($packageName)"
 $icon = "$iconfolder\$packageName"
@@ -50,7 +51,6 @@ if(Test-Path "$nupkg.zip") {
     # Expand file
     Expand-Archive -Path "$nupkg.zip" -DestinationPath $nupkg -Force
     Remove-Item "$nupkg.zip" -Force
-    Get-ChildItem -Path $nupkg | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
     New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder" -Force
 
     # copy required files in the new folder
@@ -58,6 +58,7 @@ if(Test-Path "$nupkg.zip") {
 
     if(Test-Path "$nupkg\tools") {
         Remove-Item -Path "$nupkg\tools" -Include "*.exe"
+        Get-ChildItem -Path "$nupkg\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
         Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.zip" -Force
     }
 
