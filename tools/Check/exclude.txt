@@ -19,6 +19,7 @@ filetool
 findaes
 findthatfont
 freearc
+getopt
 hostinfo
 isoplex
 jdownloader
@@ -57,4 +58,3 @@ vim-tux
 wirelesskeyview
 xfinder
 xmeters
-getopt
