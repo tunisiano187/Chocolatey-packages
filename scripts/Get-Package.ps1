@@ -140,7 +140,7 @@ if (!($nuspecContent.Contains("<files>"))) {
     }
     Write-Output "Set version to 0.0"
     Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
-    
+
     Write-Output "git pull"
     git pull
 
