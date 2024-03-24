@@ -17,7 +17,6 @@ function global:au_SearchReplace {
 }
 
 function global:au_AfterUpdate($Package) {
-	Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
 	Invoke-VirusTotalScan $Package
 }
 
