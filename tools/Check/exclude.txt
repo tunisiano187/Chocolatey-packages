@@ -58,3 +58,4 @@ vim-tux
 wirelesskeyview
 xfinder
 xmeters
+jdk8
