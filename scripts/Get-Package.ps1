@@ -50,6 +50,7 @@ if(Test-Path "$nupkg.zip") {
     # Expand file
     Expand-Archive -Path "$nupkg.zip" -DestinationPath $nupkg -Force
     Remove-Item "$nupkg.zip" -Force
+    Remove-Item -Path $nupkg -Include '*.exe' -Recurse
     New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder" -Force
 
     # copy required files in the new folder
