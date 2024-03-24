@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>netbeans</id>
+    <version>8.2.20171030</version>
+    <title>NetBeans IDE (complete)</title>
+    <authors>Oracle Corporation</authors>
+    <owners>Akipe ComFreek murray</owners>
+    <licenseUrl>https://netbeans.org/about/legal/product-licences.html</licenseUrl>
+    <projectUrl>https://netbeans.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/Akipe/chocolatey-packages/20dde5eb/icons/netbeans/netbeans.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NetBeans is an integrated development environment for programming in Java and many other languages.
+
+This package corresponds to the complete bundle, which includes this languages :
+
+- Java SE
+- Java EE
+- HTML5/JavaScript
+- PHP
+- C/C++
+
+And it install GlassFish Server runtimes.
+
+![screenshot](https://cdn.rawgit.com/Akipe/chocolatey-packages/92815e35/icons/netbeans/netbeans-screenshot.png)</description>
+    <summary>An open source IDE that support different language and technologies.</summary>
+    <releaseNotes>https://netbeans.org/community/releases/index.html</releaseNotes>
+    <copyright>NetBeans IDE and NetBeans Platform are based on software from netbeans.org, which has been dual licensed under the Common Development and Distribution License (CDDL) and the GNU General Public License version 2 with Classpath exception. For more information, please visit www.netbeans.org.</copyright>
+    <tags>netbeans java ide development admin</tags>
+    <projectSourceUrl>https://netbeans.org/community/sources/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/ComFreek/chocolatey-packages/tree/master/netbeans</packageSourceUrl>
+    <docsUrl>https://netbeans.org/kb/index.html</docsUrl>
+    <mailingListUrl>https://netbeans.org/community/lists/</mailingListUrl>
+    <bugTrackerUrl>https://netbeans.org/community/issues.html</bugTrackerUrl>
+    <dependencies>
+      <dependency id="jdk8" version="8.0.152" />
+    </dependencies>
+  </metadata>
+</package>
