@@ -22,6 +22,7 @@ freearc
 getopt
 hostinfo
 isoplex
+jdk8
 jdownloader
 Kaspersky Free
 keepass-plugin-autotypecustomfieldpicker
@@ -58,4 +59,3 @@ vim-tux
 wirelesskeyview
 xfinder
 xmeters
-jdk8
