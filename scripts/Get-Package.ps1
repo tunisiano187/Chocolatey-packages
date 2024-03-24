@@ -26,7 +26,7 @@ param(
     [string]$folder = 'automatic\',
     [string]$iconfolder = 'icons\'
 )
-$ErrorActionPreference = "Stop";
+#$ErrorActionPreference = "Stop";
 
 $nupkg = "$env:TEMP/$($packageName)"
 $icon = "$iconfolder\$packageName"
@@ -123,7 +123,7 @@ if(Test-Path "$nupkg.zip") {
 
     # Check if the element <files> exist in the nuspec
 if (!($nuspecContent.Contains("<files>"))) {
-    # Add <files>...</files>
+    Write-Output 'Add <files>...</files>'
     $nuspecContent = $nuspecContent -replace '</package>', '  <files>
     <file src="tools\**" target="tools" />
   </files>
@@ -134,14 +134,22 @@ if (!($nuspecContent.Contains("<files>"))) {
     Write-Output "The lines <files>...</files> have been added to the nuspec."
 }
     if(!($nuspec.package.metadata.packageSourceUrl)) {
+        Write-Output "add packageSourceUrl"
         (Get-Content $NuspecPath) -replace "</owners>", '</owners>
     <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
     }
+    Write-Output "Set version to 0.0"
     Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
+    
+    Write-Output "git pull"
     git pull
+
+    Write-Output "List files to add to git"
     $toadd = (get-childitem -path "$folder\$packageName").FullName
     foreach ($file in $toadd) {
-        git add $file
+        if($file -notmatch "exe" -and $file -notmatch "zip") {
+            git add $file
+        }
     }
     $toadd = (get-childitem -path $iconfolder).FullName
     foreach ($file in $toadd) {
