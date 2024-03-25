@@ -1,0 +1,1 @@
+Install-ChocolateyZipPackage 'selfssl7' 'http://www.iisinformation.com/wp-content/uploads/2010/05/SelfSSL7.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

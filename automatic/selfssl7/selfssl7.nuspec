@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SelfSSL7</id>
+    <version>1.0.1</version>
+    <title>SelfSSL7.exe for IIS</title>
+    <authors>Thomas Deml</authors>
+    <owners>Thomas Deml</owners>
+    <projectUrl>http://blogs.iis.net/thomad/archive/2010/04/16/setting-up-ssl-made-easy.aspx</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SelfSSL7 creates self-signed certificates with:
+one or more configurable common name
+a configurable expiration date
+a configurable key size
+SelfSSL7 also allows you to add a SSL bindings in IIS. Configurable are:
+the site name SSL is to be configured on
+the IP address
+the port</description>
+    <summary>Installs SelfSSL7.exe tool</summary>
+    <tags>Thomas Deml, iis, selfssl7</tags>
+  </metadata>
+</package>
