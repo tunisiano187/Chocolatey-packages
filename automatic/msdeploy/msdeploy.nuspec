@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>msdeploy</id>
+    <version>2.10.1</version>
+    <title>Web Deploy 2.10 for IIS</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=25230</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Web Deployment Tool simplifies the migration, management and deployment of IIS Web servers, Web applications and Web sites. Administrators can use command-line scripting with the Web Deployment Tool to synchronize IIS 6.0 and IIS 7.0 servers or to migrate an IIS 6.0 server to IIS 7.0. The Web Deployment Tool also enables administrators and delegated users to use IIS Manager to deploy ASP.NET and PHP applications to an IIS 7.0 server.</description>
+    <summary>Installs Web Deploy 2.10 for IIS</summary>
+    <tags>Microsoft, IIS, Web Deploy</tags>
+  </metadata>
+</package>
