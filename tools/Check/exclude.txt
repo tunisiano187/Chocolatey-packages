@@ -61,3 +61,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+sqlserver2012express
