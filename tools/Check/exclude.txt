@@ -63,3 +63,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+msdeploy
