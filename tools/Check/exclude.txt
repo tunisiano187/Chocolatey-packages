@@ -60,3 +60,4 @@ vim-tux
 wirelesskeyview
 xfinder
 xmeters
+windows
