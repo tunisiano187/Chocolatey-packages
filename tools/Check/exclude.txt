@@ -57,7 +57,7 @@ Swish
 todobackup
 trim
 vim-tux
+windows
 wirelesskeyview
 xfinder
 xmeters
-windows
