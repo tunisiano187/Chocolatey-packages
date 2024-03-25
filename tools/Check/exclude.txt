@@ -15,6 +15,7 @@ dreampie
 ekeyfinder
 evernote2onenote
 evimsync
+fastest-mouse-clicker
 filetool
 findaes
 findthatfont
@@ -59,4 +60,3 @@ vim-tux
 wirelesskeyview
 xfinder
 xmeters
-fastest-mouse-clicker
