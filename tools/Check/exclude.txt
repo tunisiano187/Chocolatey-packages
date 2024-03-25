@@ -53,6 +53,7 @@ sikulix
 solr
 speex
 split
+sqlserver2012express
 Swish
 todobackup
 trim
@@ -61,4 +62,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-sqlserver2012express
