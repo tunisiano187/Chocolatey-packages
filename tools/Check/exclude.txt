@@ -48,6 +48,7 @@ plexmediaserver
 pydiosync
 rehash
 riecoin
+selfssl7
 serviwin
 sikulix
 solr
@@ -62,4 +63,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-selfssl7
