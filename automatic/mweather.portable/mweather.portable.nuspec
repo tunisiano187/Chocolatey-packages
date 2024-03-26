@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>mweather.portable</id>
+    <version>1.76</version>
+    <title>MetarWeather (Portable)</title>
+    <authors>Nir Sofer</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/mweather.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/mweather.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/1dab7f5c3ff7222e6bcd842c5316a414d57f31c8/icons/mweather.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The MetarWeather utility decodes METAR weather reports from around the world, 
+and displays them in a simple weather report table.
+
+You can save the weather report into text, HTML or XML files.
+
+MetarWeather can decode METAR reports from a text file, or download the latest
+reports directly from the Internet.</description>
+    <summary>decode METAR world weather reports</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2003 NirSoft</copyright>
+    <tags>decoder decode weather report stations world html xml freeware</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mweather.portable/</packageSourceUrl>
+  </metadata>
+</package>
