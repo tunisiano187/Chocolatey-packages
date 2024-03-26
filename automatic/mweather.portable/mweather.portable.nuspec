@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://www.nirsoft.net/utils/mweather.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/mweather.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/1dab7f5c3ff7222e6bcd842c5316a414d57f31c8/icons/mweather.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@38a2f374068f16d34510724659ec417753e9a76b/icons/mweather.portable.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The MetarWeather utility decodes METAR weather reports from around the world, 
 and displays them in a simple weather report table.
