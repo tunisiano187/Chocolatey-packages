@@ -24,4 +24,7 @@ reports directly from the Internet.</description>
     <tags>decoder decode weather report stations world html xml freeware</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mweather.portable/</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
