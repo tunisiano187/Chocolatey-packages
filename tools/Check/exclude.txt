@@ -46,6 +46,7 @@ pascal
 pavement.standard
 pcanyscan
 peerblock
+pencil 
 plexmediaserver
 pydiosync
 rehash
@@ -66,4 +67,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-pencil 
