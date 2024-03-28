@@ -64,3 +64,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+jdk11
