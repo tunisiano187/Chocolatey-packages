@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jdk11</id>
+    <version>11.0.2.9</version>
+    <title>Java SE</title>
+    <authors>Sun Microsystems/Oracle Corporation</authors>
+    <owners>oota_ken</owners>
+    <licenseUrl>http://www.oracle.com/technetwork/java/javase/terms/license/index.html</licenseUrl>
+    <projectUrl>http://www.oracle.com/technetwork/java/javase/downloads/index.html</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/50fd97744110dcbce1acde889c0870599c9d5584/icons/java.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>By default this package installs JDK with source codes(zip).
+
+If you don't want to install source codes
+```
+choco install jdk11 -params "source=false"
+```
+If you want auto update
+```
+choco install jdk11 -params "static=false"
+```
+If you want to specfiy install directory (you need \\\\ for escape)
+```
+choco install jdk11 -params 'installdir=c:\\java11'
+```</description>
+    <summary>The Java Development Kit (JDK) version 11.0.2.9</summary>
+    <releaseNotes>Java SE Development Kit 11.0.2 build 9
+
+      changes:
+      -11.0.2.9</releaseNotes>
+    <tags>java jdk admin</tags>
+    <packageSourceUrl>https://chocolatey.org/packages/jdk11/</packageSourceUrl>
+  </metadata>
+</package>
