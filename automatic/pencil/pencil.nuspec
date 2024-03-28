@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>pencil</id>
+    <version>3.1.1</version>
+    <title>Pencil</title>
+    <authors>Evolus</authors>
+    <owners>chocolatey-community,Andrei Bejenaru</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/evolus/pencil/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>http://pencil.evolus.vn/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@84de0b5c5cabccb49ac162656ad38a42e5007428/icons/pencil.png</iconUrl>
+    <description>Pencil is an open-source GUI prototyping tool that's available for ALL platforms.
+Pencil is built for the purpose of providing a free and open-source GUI prototyping tool that people can easily install and use to create mockups in popular desktop platforms.
+
+## Features
+
+* Easy GUI Prototyping: Various built-in shapes collection are available for drawing different types of user interface ranging from desktop to mobile platforms. Pencil is shipped with Android and iOS UI stencils pre-installed.
+* Built-in Shape Collections: Built-in collections include general-purpose shapes, flowchart elements, desktop/web UI shapes, Android and iOS GUI shapes, and many other collections created by the community.
+* Diagram Drawing Support: Pencil supports connectors which can be used to "wire" shapes together in a diagram. A collection of flowchart shapes are also available for drawing diagrams.
+* Exporting to Different Output Formats: Pencil supports outputing the drawing document into different types of formats such as image files, HTML pages and document formats including OpenOffice/LibreOffice text documents, SVG and PDF.
+* Easily Find Cliparts from the Internet: Pencil has a clipart browser tool that integrates with OpenClipart.org.
+* Inter-page linking: Elements in a drawing can be linked to a specific page in the same document. This helps user define the UI flow when creating application or website mockups.</description>
+    <summary>An open-source GUI prototyping tool that's available for ALL platforms.</summary>
+    <releaseNotes>https://github.com/evolus/pencil/blob/master/RELEASE/RELEASE-NOTE-311.md</releaseNotes>
+    <copyright>Copyright (c) Evolus Co., Ltd. All rights reserved.</copyright>
+    <tags>pencil drawing stencil templates mockups prototypes admin foss cross-platform</tags>
+    <projectSourceUrl>https://github.com/evolus/pencil</projectSourceUrl>
+    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-packages/tree/master/automatic/pencil</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/evolus/pencil/issues</bugTrackerUrl>
+  </metadata>
+</package>
