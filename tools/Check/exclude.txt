@@ -23,6 +23,7 @@ freearc
 getopt
 hostinfo
 isoplex
+jdk11
 jdk8
 jdownloader
 Kaspersky Free
@@ -64,4 +65,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-jdk11
