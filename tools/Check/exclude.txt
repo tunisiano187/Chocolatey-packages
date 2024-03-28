@@ -67,3 +67,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+kubernetes-cli
