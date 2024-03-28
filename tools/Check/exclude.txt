@@ -53,6 +53,7 @@ riecoin
 selfssl7
 serviwin
 sikulix
+snapgene-viewer
 solr
 speex
 split
@@ -65,4 +66,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-snapgene-viewer
