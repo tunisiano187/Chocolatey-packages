@@ -65,3 +65,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+snapgene-viewer
