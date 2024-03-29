@@ -18,7 +18,7 @@ function Exclude-Package {
 
     Write-Output "Repository : $Repository"
 
-    Install-Module psgithubsearch -ErrorAction SilentlyContinue
+    Install-Module psgithubsearch -Force
     Import-Module psgithubsearch
     if(!(Test-Path Env:github_api_key)) {
         $Env:github_api_key   = $Github_personal_token          #Github personal access token
