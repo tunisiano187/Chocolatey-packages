@@ -19,18 +19,14 @@ function Exclude-Package {
     Write-Output "Repository : $Repository"
 
     Install-Module -Name PowerShellForGitHub -Force
-    $secureString = ("$env:github_api_key" | ConvertTo-SecureString -AsPlainText -Force)
+    Import-Module PowerShellForGitHub
+    $secureString = ("$env:GITHUB_TOKEN" | ConvertTo-SecureString -AsPlainText -Force)
     $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
     Set-GitHubAuthentication -Credential $cred
     $secureString = $null # clear this out now that it's no longer needed
     $cred = $null # clear this out now that it's no longer needed
     Set-GitHubConfiguration -DisableTelemetry
 
-    Import-Module PowerShellForGitHub
-    if(!(Test-Path Env:GITHUB_TOKEN)) {
-        $Env:GITHUB_TOKEN   = $Github_personal_token          #Github personal access token
-    }
-    
     [string]$Owner = "tunisiano187"
     [string]$Repository = "Chocolatey-packages"
 
