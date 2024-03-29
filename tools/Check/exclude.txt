@@ -70,3 +70,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+hp-ilo-cmdlets
