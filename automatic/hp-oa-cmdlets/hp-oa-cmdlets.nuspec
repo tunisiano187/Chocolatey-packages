@@ -5,7 +5,7 @@
     <version>1.1.0.701</version>
     <title>HP Onboard Administrator Cmdlets for Windows PowerShell</title>
     <authors>Hewlett Packard Enterprise</authors>
-    <owners>Sebastian Werner</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://www.hp.com/go/powershell</projectUrl>
     <iconUrl>https://cdn.rawgit.com/fiveninezero/chocolatey-packages/master/icons/hp-oa-cmdlets.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
