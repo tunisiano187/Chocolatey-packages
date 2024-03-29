@@ -18,6 +18,9 @@ function Exclude-Package {
 
     Write-Output "Repository : $Repository"
 
+    git config --global user.email "helpdesk.choc@gmail.com"
+    git config --global user.name "Tunisiano187"
+
     Install-Module -Name PowerShellForGitHub -Force
     Import-Module PowerShellForGitHub
     $secureString = ("$env:GITHUB_TOKEN" | ConvertTo-SecureString -AsPlainText -Force)
