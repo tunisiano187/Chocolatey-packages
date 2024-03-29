@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>netbeans</id>
-    <version>8.2.20171030</version>
+    <version>21.0</version>
     <title>NetBeans IDE (complete)</title>
     <authors>Apache</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,8 @@
     <projectUrl>https://netbeans.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@aa8fcef136c98421c2c3cef613895720688c88b7/icons/netbeans.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>NetBeans is an integrated development environment for programming in Java and many other languages.
+    <description><![CDATA[## Apache Netbeans
+NetBeans is an integrated development environment for programming in Java and many other languages.
 
 This package corresponds to the complete bundle, which includes this languages :
 
@@ -22,7 +23,11 @@ This package corresponds to the complete bundle, which includes this languages :
 
 And it install GlassFish Server runtimes.
 
-![screenshot](https://cdn.rawgit.com/Akipe/chocolatey-packages/92815e35/icons/netbeans/netbeans-screenshot.png)</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>An open source IDE that support different language and technologies.</summary>
     <releaseNotes>https://github.com/apache/netbeans/releases</releaseNotes>
     <copyright>NetBeans IDE and NetBeans Platform are based on software from netbeans.org, which has been dual licensed under the Common Development and Distribution License (CDDL) and the GNU General Public License version 2 with Classpath exception. For more information, please visit www.netbeans.org.</copyright>
