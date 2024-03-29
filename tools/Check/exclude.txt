@@ -64,9 +64,9 @@ sqlserver2012express
 Swish
 todobackup
 trim
+vcexpress2010
 vim-tux
 windows
 wirelesskeyview
 xfinder
 xmeters
-vcexpress2010
