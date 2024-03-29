@@ -46,6 +46,7 @@ function Exclude-Package {
         Remove-Item -Path $folder -Recurse -Force -ErrorAction Continue
         Remove-Item -Path "../icons/$extract.*" -ErrorAction Continue
       }
+      Add-Content -Path "../tools/Check/exclude.txt" -Value $title
       Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
       git commit -am  "[skip ci] exclude $title"
 
