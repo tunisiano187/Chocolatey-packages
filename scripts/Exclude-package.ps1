@@ -1,20 +1,10 @@
 ﻿<#
 .SYNOPSIS
-  Updates nuspec file description from README.md
+  Remove Package from folder
 
 .DESCRIPTION
-  This script should be called in au_AfterUpdate to put the text in the README.md
-  into description tag of the Nuspec file. The current description will be replaced.
-  Function will throw an error if README.md is not found.
+  This script should be called by Github action on Issue editing to remove a package.
 
-.PARAMETER SkipFirst
-  Number of start lines to skip from the README.md, by default 0.
-
-.PARAMETER SkipLast
-  Number of end lines to skip from the README.md, by default 0.
-
-.EXAMPLE
-  function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 }
 #>
 function Exclude-Package {
     param(
@@ -25,10 +15,20 @@ function Exclude-Package {
         [Parameter(Mandatory = $false)]
         [string]$repository
     )
-    Write-Host "number : $issueNumber"
-    Write-Host "Title : $title"
-    $extract = $($title.split('(|)')[1])
-    Write-Host "Extract : $extract"
+    Write-Output "number : $issueNumber"
+    Write-Output "Repository : $repository"
+    Write-Output "Title : $title"
+    $extract = $title.Split('(')[1].split(')')[0]
+    Write-Output "Extract : $extract"
     $folder = Join-Path $PSScriptRoot "../automatic/$extract"
-    Write-Host "Test : $(Test-Path -Path $folder)"
+    Write-Output "Does the Folder exists ? : $(Test-Path -Path $folder)"
+    if(!$title.ToLower -match "exclude") {
+      Write-Output "Not an Exclude request"
+    } else {
+      if($(Test-Path -Path $folder)) {
+        Remove-Item -Path $folder -Recurse -Force -ErrorAction Continue
+        Remove-Item -Path "../icons/$extract.*" -ErrorAction Continue
+      }
+      Update-GitHubIssue -OwnerName tunisiano187 -RepositoryName chocolatey-packages -Issue $issueNumber -State Closed
+    }
 }
