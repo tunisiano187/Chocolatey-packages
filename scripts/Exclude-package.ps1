@@ -13,10 +13,20 @@ function Exclude-Package {
         [Parameter(Mandatory = $true)]
         [string]$title,
         [Parameter(Mandatory = $false)]
-        [string]$repository
+        [string]$Repository
     )
+
+    Write-Output "Repository : $Repository"
+
+    Install-Module psgithubsearch -ErrorAction SilentlyContinue
+    Import-Module psgithubsearch
+    if(!(Test-Path Env:github_api_key)) {
+        $Env:github_api_key   = $Github_personal_token          #Github personal access token
+    }
+    [string]$Owner = "tunisiano187"
+    [string]$Repository = "Chocolatey-packages"
+
     Write-Output "number : $issueNumber"
-    Write-Output "Repository : $repository"
     Write-Output "Title : $title"
     $extract = $title.Split('(')[1].split(')')[0]
     Write-Output "Extract : $extract"
@@ -29,6 +39,6 @@ function Exclude-Package {
         Remove-Item -Path $folder -Recurse -Force -ErrorAction Continue
         Remove-Item -Path "../icons/$extract.*" -ErrorAction Continue
       }
-      Update-GitHubIssue -OwnerName tunisiano187 -RepositoryName chocolatey-packages -Issue $issueNumber -State Closed
+      Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
     }
 }
