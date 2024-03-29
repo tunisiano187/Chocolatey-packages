@@ -19,7 +19,7 @@ function Exclude-Package {
     )
     Write-Output $actor
     if($actor -ne 'tunisiano187') {
-      throw "User cannot run this"
+      throw "User $actor cannot run this"
     }
     $ErrorActionPreference = 'Stop';
 
