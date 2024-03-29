@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/kubernetes/kompose/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://kompose.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@e4e529ccc804ac6fac259a658e395e38b42b24f3/icons/kubernetes-kompose.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@047ea91f97175c3914b687197129c2402e23e232/icons/kubernetes-kompose.png</iconUrl>
     <description>## Kubernetes + Compose = Kompose
 Kompose is a conversion tool for Docker Compose to container orchestrators such as Kubernetes (or OpenShift).
 It takes a Docker Compose file and translates it into Kubernetes resources.
