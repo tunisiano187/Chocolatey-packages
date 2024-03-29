@@ -13,8 +13,13 @@ function Exclude-Package {
         [Parameter(Mandatory = $true)]
         [string]$title,
         [Parameter(Mandatory = $false)]
-        [string]$Repository
+        [string]$Repository,
+        [Parameter(Mandatory = $false)]
+        [string]$actor
     )
+    if($actor -ne 'tunisiano187') {
+      throw "User cannot run this"
+    }
     $ErrorActionPreference = 'Stop';
 
     Write-Output "Repository : $Repository"
