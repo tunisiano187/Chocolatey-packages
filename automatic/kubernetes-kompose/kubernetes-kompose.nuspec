@@ -5,7 +5,7 @@
     <version>1.32.0</version>
     <title>Kompose: Go from Docker Compose to Kubernetes</title>
     <authors>Kubernetes authors</authors>
-    <owners>chocolatey-community,Andrei Bejenaru</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/kubernetes/kompose/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://kompose.io/</projectUrl>
