@@ -9,7 +9,7 @@ jobs:
     if: ${{ github.event.issue.state == 'open' }}
     runs-on: windows-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.AU_GITHUB_API_KEY }}
 
     steps:
       - uses: actions/checkout@v2.2.0
