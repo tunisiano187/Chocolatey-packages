@@ -44,7 +44,7 @@ function Exclude-Package {
         Remove-Item -Path "../icons/$extract.*" -ErrorAction Continue
       }
       Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
-      git commit -am  "exclude $title"
-      
+      git commit -am  "[skip ci] exclude $title"
+
     }
 }
