@@ -30,6 +30,7 @@ Kaspersky Free
 keepass-plugin-autotypecustomfieldpicker
 keepass-plugin-keecloud
 keepass-plugin-mskeyimporter
+kubernetes-cli
 libffcall
 luckybackup
 md5sums
@@ -67,4 +68,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-kubernetes-cli
