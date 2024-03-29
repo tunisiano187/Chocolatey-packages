@@ -15,7 +15,7 @@ $version = ''
 
 # Sort Exclude file
 $excludefile = '.\tools\Check\exclude.txt'
-Get-Content $excludefile | Sort-Object | Set-Content $excludefile
+Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $excludefile
 
 "Check if there are open issues"
 # Check if there is a waiting issue
