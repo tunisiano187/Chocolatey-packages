@@ -52,6 +52,6 @@ function Exclude-Package {
       Add-Content -Path "tools/Check/exclude.txt" -Value $title
       Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
       git commit -am  "[skip ci] exclude $title"
-
+      git push
     }
 }
