@@ -69,3 +69,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+vcexpress2010
