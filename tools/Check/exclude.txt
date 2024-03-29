@@ -68,3 +68,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+kubernetes-kompose
