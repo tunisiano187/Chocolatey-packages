@@ -49,9 +49,9 @@ function Exclude-Package {
       }
       Get-Location
       Get-ChildItem
-      Add-Content -Path "tools/Check/exclude.txt" -Value $title
+      Add-Content -Path "tools/Check/exclude.txt" -Value $extract
       Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
-      git commit -am  "[skip ci] exclude $title"
+      git commit -am  "[skip ci] exclude $extract"
       git push
     }
 }

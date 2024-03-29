@@ -71,4 +71,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-exclude (hp-oa-cmdlets) update
+hp-oa-cmdlets
