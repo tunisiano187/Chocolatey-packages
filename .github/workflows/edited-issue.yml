@@ -9,7 +9,7 @@ jobs:
     if: ${{ github.event.issue.state == 'open' }}
     runs-on: windows-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.AU_GITHUB_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v2.2.0
@@ -21,3 +21,7 @@ jobs:
         run: |
           Import-Module "${{ github.workspace }}\scripts\edit.psm1"
           Exclude-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}"
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
