@@ -72,3 +72,4 @@ wirelesskeyview
 xfinder
 xmeters
 hp-oa-cmdlets
+hp-oa-cmdlets
