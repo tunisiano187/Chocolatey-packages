@@ -39,13 +39,14 @@ function Exclude-Package {
     $extract = $title.Split('(')[1].split(')')[0]
     Write-Output "Extract : $extract"
     $folder = Join-Path $PSScriptRoot "../automatic/$extract"
+    $foldericons = Join-Path $PSScriptRoot "../icons"
     Write-Output "Does the Folder exists ? : $(Test-Path -Path $folder)"
     if(!$title.ToLower -match "exclude") {
       Write-Output "Not an Exclude request"
     } else {
       if($(Test-Path -Path $folder)) {
         Remove-Item -Path $folder -Recurse -Force -ErrorAction Continue
-        Remove-Item -Path "../icons/$extract.*" -ErrorAction Continue
+        Remove-Item -Path "$foldericons/$extract.*" -ErrorAction Continue
       }
       Get-Location
       Get-ChildItem
