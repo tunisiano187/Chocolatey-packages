@@ -16,4 +16,7 @@
     <packageSourceUrl>https://github.com/TheWeirdMachine/chocolatey-packages</packageSourceUrl>
     <docsUrl>http://h17007.www1.hp.com/us/en/enterprise/servers/solutions/info-library/index.aspx?cat=scripting_tools_powershell#.U6OAv3ZpdV0</docsUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
