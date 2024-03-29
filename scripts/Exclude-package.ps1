@@ -17,6 +17,7 @@ function Exclude-Package {
         [Parameter(Mandatory = $false)]
         [string]$actor
     )
+    Write-Output $actor
     if($actor -ne 'tunisiano187') {
       throw "User cannot run this"
     }
