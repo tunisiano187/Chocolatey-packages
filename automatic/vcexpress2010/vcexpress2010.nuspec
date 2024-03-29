@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VCExpress2010</id>
+    <version>0.1.0.20140915</version>
+    <title>Visual C++ Express 2010</title>
+    <authors>Microsoft</authors>
+    <owners>Yong Fu</owners>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <projectUrl>http://www.visualstudio.com/downloads/download-visual-studio-vs</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2013WindowsDesktop/vs.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Visual C++ Express 2010 is a free tool to C++ creates applications on Windows.</description>
+    <summary>Visual C++ Express 2010</summary>
+    <tags>Microsoft Visual C++ Express 2010 Windows Desktop IDE</tags>
+  </metadata>
+</package>
