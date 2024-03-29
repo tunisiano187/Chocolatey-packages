@@ -22,6 +22,7 @@ findthatfont
 freearc
 getopt
 hostinfo
+hp-ilo-cmdlets
 isoplex
 jdk11
 jdk8
@@ -70,4 +71,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-hp-ilo-cmdlets
