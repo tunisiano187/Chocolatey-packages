@@ -21,7 +21,9 @@ function Exclude-Package {
         [Parameter(Mandatory = $true, ParameterSetName = "issue")]
         [long]$issueNumber,
         [Parameter(Mandatory = $true)]
-        [string]$title
+        [string]$title,
+        [Parameter(Mandatory = $false)]
+        [string]$repository
     )
     Write-Host "number : $issueNumber"
     Write-Host "Title : $title"
