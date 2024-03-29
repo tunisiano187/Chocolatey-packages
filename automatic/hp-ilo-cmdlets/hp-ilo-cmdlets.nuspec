@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>hp-ilo-cmdlets</id>
+    <version>1.4.0.1</version>
+    <title>HP iLO Cmdlets for Windows PowerShell</title>
+    <authors>Hewlett Packard Enterprise</authors>
+    <owners>Sebastian Werner</owners>
+    <projectUrl>http://www.hp.com/go/powershell</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/TheWeirdMachine/chocolatey-packages/4acdca8e/icons/hp-ilo-cmdlets.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Scripting Tools for Windows PowerShell : iLO Cmdlets use provides a set of utilities that allow users to configure and manage iLO on HPE ProLiant Gen7, Gen8 or Gen9 servers. It is designed for IT experts with experience in PowerShell scripting and configuring HPE ProLiant server hardware.</description>
+    <summary>HP iLO Cmdlets for Windows PowerShell</summary>
+    <tags>HP iLO PowerShell admin</tags>
+    <packageSourceUrl>https://github.com/TheWeirdMachine/chocolatey-packages</packageSourceUrl>
+    <docsUrl>http://h17007.www1.hp.com/us/en/enterprise/servers/solutions/info-library/index.aspx?cat=scripting_tools_powershell#.U6OAv3ZpdV0</docsUrl>
+  </metadata>
+</package>
