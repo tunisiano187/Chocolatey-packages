@@ -72,3 +72,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+hp-bios-cmdlets
