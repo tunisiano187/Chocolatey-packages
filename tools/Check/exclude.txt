@@ -13,6 +13,7 @@ datahealthcheck
 diskext
 dragondisk
 dreampie
+dupeguru-me
 ekeyfinder
 evernote2onenote
 evimsync
@@ -75,4 +76,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-dupeguru-me
