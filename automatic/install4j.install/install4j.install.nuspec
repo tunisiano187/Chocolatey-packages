@@ -5,7 +5,7 @@
     <version>7.0.11</version>
     <title>install4j (Install)</title>
     <authors>Dr Ingo Kegel</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.ej-technologies.com/buy/install4j/install4j_license.html</licenseUrl>
     <projectUrl>http://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7c2e6cb671a96a33eab0c19223d1f5aac75b3dc0/icons/install4j.install.png</iconUrl>
