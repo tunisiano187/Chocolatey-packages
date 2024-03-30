@@ -76,3 +76,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+hdparm
