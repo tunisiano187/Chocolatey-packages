@@ -18,7 +18,7 @@ function Exclude-Package {
         [string]$actor
     )
     Write-Output $actor
-    if($actor -ne 'tunisiano187') {
+    if($actor -ne 'tunisiano187' -or $title -notmatch 'exclude') {
       throw "User $actor cannot run this"
     }
     $ErrorActionPreference = 'Stop';
