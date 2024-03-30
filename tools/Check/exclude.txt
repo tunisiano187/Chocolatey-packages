@@ -77,3 +77,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+install4j.install
