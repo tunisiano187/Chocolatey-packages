@@ -5,10 +5,10 @@
     <version>6.72</version>
     <title>NewsBin</title>
     <authors>DJI</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.newsbin.com/license.php</licenseUrl>
     <projectUrl>http://www.newsbin.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/18cb8dc097f5ce53195cbdb0c11c788f3cced423/icons/newsbin.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/18cb8dc097f5ce53195cbdb0c11c788f3cced423/icons/newsbin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Newsbin is a NNTP client. A connection to a NNTP service is required.
 
@@ -20,10 +20,10 @@
 * [Changelog](http://www.newsbin.com/freetrial.php)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© DJI Interprises, LLC</copyright>
     <tags>nntp client shareware trial admin</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/newsbin/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/newsbin/</packageSourceUrl>
     <docsUrl>http://help.newsbin.com/index.php</docsUrl>
     <mailingListUrl>http://forums.newsbin.com/</mailingListUrl>
     <bugTrackerUrl>http://forums.newsbin.com/viewforum.php?f=37</bugTrackerUrl>
