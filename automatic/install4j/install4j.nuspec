@@ -44,4 +44,7 @@
       <dependency id="install4j.install" version="[7.0.4]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
