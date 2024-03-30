@@ -74,3 +74,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+librecrypt
