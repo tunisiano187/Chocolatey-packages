@@ -1,7 +1,7 @@
-$packageName = 'install4j.install'
-$packageSearch = "install4j.install 7.0.11"
-$installerType = 'exe'
-$silentArgs = '-q'
+$packageName    = $env:ChocolateyPackageName
+$packageSearch  = "install4j.install"
+$installerType  = 'exe'
+$silentArgs     = '-q'
 $validExitCodes = @(0)
 Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
                           'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',

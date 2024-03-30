@@ -6,8 +6,8 @@
     <title>install4j (Install)</title>
     <authors>Dr Ingo Kegel</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://www.ej-technologies.com/buy/install4j/install4j_license.html</licenseUrl>
-    <projectUrl>http://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
+    <licenseUrl>https://www.ej-technologies.com/static/buy/install4j/install4j_license.html</licenseUrl>
+    <projectUrl>https://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7c2e6cb671a96a33eab0c19223d1f5aac75b3dc0/icons/install4j.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>install4j is a powerful multi-platform Java installer builder that generates native installers and application launchers for Java applications.
@@ -38,8 +38,8 @@
     <copyright>© 2001 ej-technologies GmbH</copyright>
     <tags>trial java installation builder admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/install4j.install</packageSourceUrl>
-    <docsUrl>http://resources.ej-technologies.com/install4j/help/doc/</docsUrl>
-    <bugTrackerUrl>http://ej-technologies.com/support/bugReport</bugTrackerUrl>
+    <docsUrl>https://www.ej-technologies.com/resources/install4j/help/doc/main/introduction.html</docsUrl>
+    <bugTrackerUrl>https://www.ej-technologies.com/support/bugReport</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
