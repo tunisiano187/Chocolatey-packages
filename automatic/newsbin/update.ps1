@@ -18,8 +18,9 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases).Links | Where-Object {$_.href -match "download.php?"} | Select-Object -First 1).href
-	$version=get-version $url32
+	$releasepage = ((Invoke-WebRequest -Uri $releases).Links | Where-Object {$_.href -match "download.php?"} | Select-Object -First 1).href
+	$version=get-version $releasepage
+	$url32 = $releasepage.Replace('&amp;','&')
 	
 	$Latest = @{ URL32 = $url32; Version = $version}
 	return $Latest
