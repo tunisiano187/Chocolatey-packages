@@ -23,6 +23,7 @@ findaes
 findthatfont
 freearc
 getopt
+hdparm
 hostinfo
 hp-bios-cmdlets
 hp-ilo-cmdlets
@@ -76,4 +77,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-hdparm
