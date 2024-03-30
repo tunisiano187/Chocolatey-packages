@@ -37,6 +37,7 @@ keepass-plugin-mskeyimporter
 kubernetes-cli
 kubernetes-kompose
 libffcall
+librecrypt
 luckybackup
 md5sums
 meson
@@ -74,4 +75,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-librecrypt
