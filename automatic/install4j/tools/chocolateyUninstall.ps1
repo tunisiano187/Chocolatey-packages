@@ -1,4 +1,4 @@
-﻿# powershell v2 compatibility
+# powershell v2 compatibility
 $psVer = $PSVersionTable.PSVersion.Major
 if ($psver -ge 3) {
   function Get-ChildItemDir {Get-ChildItem -Directory $args}
@@ -10,7 +10,7 @@ $warningPreference = "Continue"
 $chocoLib = Join-Path $env:ChocolateyInstall "lib"
 if (Test-Path -PathType Container (Join-Path $chocoLib 'install4j.*')) {
   Write-Warning "Uninstall NOT complete."
-  Write-Host 
+  Write-Host
 @"
   This package is a metapackage; a chocolatey feature not yet fully implemented.
   To retain future compatibility this package does not uninstall the dependent
