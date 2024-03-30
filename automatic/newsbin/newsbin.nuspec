@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.newsbin.com/license.php</licenseUrl>
     <projectUrl>http://www.newsbin.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/18cb8dc097f5ce53195cbdb0c11c788f3cced423/icons/newsbin.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@df2880dfb8f3b79ad6cc54067475070351e0191b/icons/newsbin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Newsbin is a NNTP client. A connection to a NNTP service is required.
 
