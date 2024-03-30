@@ -23,7 +23,7 @@
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© DJI Interprises, LLC</copyright>
     <tags>nntp client shareware trial admin</tags>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/newsbin/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/newsbin</packageSourceUrl>
     <docsUrl>http://help.newsbin.com/index.php</docsUrl>
     <mailingListUrl>http://forums.newsbin.com/</mailingListUrl>
     <bugTrackerUrl>http://forums.newsbin.com/viewforum.php?f=37</bugTrackerUrl>
