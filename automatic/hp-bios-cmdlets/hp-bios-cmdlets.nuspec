@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>hp-bios-cmdlets</id>
+    <version>1.1.0.101</version>
+    <title>HP BIOS Cmdlets for Windows PowerShell</title>
+    <authors>Hewlett Packard Enterprise</authors>
+    <owners>Sebastian Werner</owners>
+    <projectUrl>http://www.hp.com/go/powershell</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/fiveninezero/chocolatey-packages/master/icons/hp-bios-cmdlets.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Scripting Tools for Windows PowerShell (x64): BIOS cmdlets provides a set of utilities that allow users to configure and manage HPE ProLiant Gen8 and Gen9 server BIOS. It is designed for IT experts with experience in PowerShell scripting and configuring HPE ProLiant server hardware.</description>
+    <summary>HP BIOS Cmdlets for Windows PowerShell</summary>
+    <tags>HP BIOS PowerShell admin</tags>
+    <packageSourceUrl>https://github.com/TheWeirdMachine/chocolatey-packages</packageSourceUrl>
+    <docsUrl>http://h17007.www1.hp.com/us/en/enterprise/servers/solutions/info-library/index.aspx?cat=scripting_tools_powershell#.U6OAv3ZpdV0</docsUrl>
+  </metadata>
+</package>
