@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/install4j?color=green&label=install4j)](https://chocolatey.org/packages/install4j) [![](https://img.shields.io/chocolatey/dt/install4j)](https://chocolatey.org/packages/install4j)
+[![](https://img.shields.io/chocolatey/v/install4j?color=green&label=install4j)](https://chocolatey.org/packages/install4j) [![](https://img.shields.io/chocolatey/dt/install4j)](https://chocolatey.org/packages/install4j)
 
 ## install4j
 
