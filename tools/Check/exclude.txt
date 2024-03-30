@@ -23,6 +23,7 @@ freearc
 getopt
 hostinfo
 hp-ilo-cmdlets
+hp-oa-cmdlets
 isoplex
 jdk11
 jdk8
@@ -71,5 +72,3 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-hp-oa-cmdlets
-hp-oa-cmdlets
