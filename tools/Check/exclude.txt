@@ -75,3 +75,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+dupeguru-me
