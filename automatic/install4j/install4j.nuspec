@@ -37,7 +37,7 @@
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2001 ej-technologies GmbH</copyright>
     <tags>trial java installation builder</tags>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/install4j/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/install4j</packageSourceUrl>
     <docsUrl>http://resources.ej-technologies.com/install4j/help/doc/</docsUrl>
     <bugTrackerUrl>http://ej-technologies.com/support/bugReport</bugTrackerUrl>
     <dependencies>
