@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.newsbin.com/freetrial.php'
@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$url32 = $releasepage.Replace('&amp;','&')
 	$checksumType = "SHA512"
 	$checksum = Get-RemoteChecksum -Url $url32 -Algorithm $checksumType
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType}
 	return $Latest
 }
