@@ -68,6 +68,7 @@ solr
 speex
 split
 sqlserver2012express
+storjshare
 Swish
 todobackup
 trim
@@ -77,4 +78,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
-storjshare
+zimbra-desktop
