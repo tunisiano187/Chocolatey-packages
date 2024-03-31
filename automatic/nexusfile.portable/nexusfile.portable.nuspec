@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>nexusfile.portable</id>
+    <version>5.3.3.5532</version>
+    <title>Nexus File (Portable)</title>
+    <authors>JungHoon Noh</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
+    <projectUrl>http://www.xiles.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/09cd515153eed9aaa929eaf022889bcb8419d601/icons/nexusfile.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NexusFile is a dual pane file manager.
+It looks simple but has powerful features. Archive, FTP, Advanced Rename and many more functions.
+You can customize its look with skin and list color setting.
+Also you can customize shortcuts.
+
+Freeware; fully functional for personal or commercial use.</description>
+    <summary>Dual pane file manager</summary>
+    <releaseNotes />
+    <copyright>© 2015 xiles</copyright>
+    <tags>file manager</tags>
+  </metadata>
+</package>
