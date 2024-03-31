@@ -21,8 +21,12 @@ Freeware; fully functional for personal or commercial use.</description>
     <packageSourceUrl></packageSourceUrl>
     <copyright>© 2015 xiles</copyright>
     <tags>file manager</tags>
+    <packageSourceUrl></packageSourceUrl>
     <dependencies>
       <dependency id="nexusfile.install" version="[5.3.3.5532]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="nexusfile.nuspec" />
+  </files>
 </package>
