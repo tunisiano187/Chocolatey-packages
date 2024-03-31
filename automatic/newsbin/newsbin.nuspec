@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>newsbin</id>
-    <version>6.72</version>
+    <version>6.82</version>
     <title>NewsBin</title>
     <authors>DJI</authors>
     <owners>tunisiano</owners>
@@ -10,11 +10,18 @@
     <projectUrl>http://www.newsbin.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@df2880dfb8f3b79ad6cc54067475070351e0191b/icons/newsbin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Newsbin is a NNTP client. A connection to a NNTP service is required.
+    <description><![CDATA[## Newsbin
+Newsbin is a NNTP client. A connection to a NNTP service is required.
 
 #### Shareware
 * [15 day trial](https://www.newsbin.com/trialkey.php)
-* [Buy](http://www.newsbin.com/buy.php)</description>
+* [Buy](https://www.newsbin.com/buy.php)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Commercial NNTP download client</summary>
     <releaseNotes>#### Program
 * [Changelog](http://www.newsbin.com/freetrial.php)
