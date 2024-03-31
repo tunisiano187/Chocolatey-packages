@@ -1,8 +1,8 @@
-$packageName = 'zimbra-desktop'
-$packageSearch = "Zimbra Desktop"
-$fileType = 'msi'
-$silentArgs = '/quiet /qn /norestart'
-$validExitCodes = @(0)
+$packageName        = 'zimbra-desktop'
+$packageSearch      = "Zimbra Desktop"
+$fileType           = 'msi'
+$silentArgs         = '/quiet /qn /norestart'
+$validExitCodes     = @(0)
 
 Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*',
                           'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
