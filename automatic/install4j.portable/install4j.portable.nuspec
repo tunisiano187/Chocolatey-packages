@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>install4j.portable</id>
-    <version>7.0.11</version>
+    <version>10.0.7</version>
     <title>install4j (Portable)</title>
     <authors>Dr Ingo Kegel</authors>
     <owners>tunisiano</owners>
@@ -10,24 +10,32 @@
     <projectUrl>http://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@57fe834d2e9c2b35dff3620cb0820b1de9a61efd/icons/install4j.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>install4j is a powerful multi-platform Java installer builder that generates native installers and application launchers for Java applications.
+    <description><![CDATA[## install4j
+
+install4j is a powerful multi-platform Java installer builder that generates native installers and application launchers for Java applications.
 
 #### Documentation
-* [Features](http://www.ej-technologies.com/products/install4j/features.html)
-* [FAQ](http://www.ej-technologies.com/buy/install4j/faq.html)
-* [API](https://resources.ej-technologies.com/install4j/help/api/overview-summary.html)
-* [Compare editions](http://www.ej-technologies.com/products/install4j/editions.html)
-* [Open source license](http://www.ej-technologies.com/buy/install4j/openSource/enter)
+* [Features](https://www.ej-technologies.com/products/install4j/features.html)
+* [FAQ](https://www.ej-technologies.com/buy/install4j/faq.html)
+* [API](https://www.ej-technologies.com/resources/install4j/help/api/index.html)
+* [Compare editions](https://www.ej-technologies.com/products/install4j/editions.html)
+* [Open source license](https://www.ej-technologies.com/buy/install4j/openSource/)
 
 #### Community
-* [StackOverflow](http://stackoverflow.com/questions/tagged/install4j)
+* [StackOverflow](https://stackoverflow.com/questions/tagged/install4j)
 * [Twitter](https://twitter.com/IngoKegel)
-* [3rd-party extensions](http://www.ej-technologies.com/products/install4j/extensions.html)
+* [3rd-party extensions](https://www.ej-technologies.com/products/install4j/extensions.html)
 
 #### Commercial software
 * This package installs a 90 day trial of either Multi-Platform or Windows Edition.
 * Trial begins once activated after initial execution.
-* Internet connection required for trial activation (alternatively, request an [activation key via email](http://www.ej-technologies.com/download/install4j/trial))</description>
+* Internet connection required for trial activation (alternatively, request an [activation key via email](https://www.ej-technologies.com/download/install4j/trial))
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Multi-Platform Java Installer Builder</summary>
     <releaseNotes>#### Program
 * [Blog](http://blog.ej-technologies.com/search/label/install4j)
