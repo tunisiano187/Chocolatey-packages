@@ -77,3 +77,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+storjshare
