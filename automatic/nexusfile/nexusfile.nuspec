@@ -5,7 +5,7 @@
     <version>5.3.3.5532</version>
     <title>Nexus File</title>
     <authors>JungHoon Noh</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.xiles.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a19d4c203bf97eeb2aaf2ea101a62fd347436d3a/icons/nexusfile.png</iconUrl>
