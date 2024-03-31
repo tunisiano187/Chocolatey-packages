@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.xiles.net/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/09cd515153eed9aaa929eaf022889bcb8419d601/icons/nexusfile.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@98ef55c281f18b080878ab1dbb6d10f494708251/icons/nexusfile.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NexusFile is a dual pane file manager.
 It looks simple but has powerful features. Archive, FTP, Advanced Rename and many more functions.
