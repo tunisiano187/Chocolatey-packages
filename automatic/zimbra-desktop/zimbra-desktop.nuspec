@@ -5,7 +5,7 @@
     <version>7.3.1</version>
     <title>Zimbra Desktop</title>
     <authors>Zimbra Inc</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.zimbra.com/license/</licenseUrl>
     <projectUrl>http://www.zimbra.com/downloads/zimbra-desktop</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@220f036e51bc263b316f5ed7526af90412e76f34/icons/zimbra-desktop.png</iconUrl>
