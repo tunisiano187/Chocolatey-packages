@@ -44,4 +44,7 @@ Zimbra Desktop supports the following account types:
       <dependency id="javaruntime" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
