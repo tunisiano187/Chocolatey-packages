@@ -20,7 +20,7 @@ Freeware; fully functional for personal or commercial use.</description>
     <releaseNotes />
     <copyright>© 2015 xiles</copyright>
     <tags>file manager</tags>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nexusfile.install</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
