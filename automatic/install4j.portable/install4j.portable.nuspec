@@ -41,4 +41,7 @@
     <docsUrl>http://resources.ej-technologies.com/install4j/help/doc/</docsUrl>
     <bugTrackerUrl>http://ej-technologies.com/support/bugReport</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
