@@ -78,3 +78,4 @@ windows
 wirelesskeyview
 xfinder
 xmeters
+zimbra-desktop
