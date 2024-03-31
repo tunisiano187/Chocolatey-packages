@@ -38,7 +38,7 @@ Zimbra Desktop supports the following account types:
     <copyright>© Zimbra Inc</copyright>
     <tags>collaboration task schedule admin</tags>
     <projectSourceUrl>https://wiki.zimbra.com/wiki/Building_Zimbra_using_Git</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/zimbra-desktop</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/zimbradesktop</packageSourceUrl>
     <bugTrackerUrl>https://bugzilla.zimbra.com/describecomponents.cgi?product=ZD</bugTrackerUrl>
   </metadata>
   <files>
