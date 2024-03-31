@@ -18,6 +18,7 @@ Also you can customize shortcuts.
 Freeware; fully functional for personal or commercial use.</description>
     <summary>Dual pane file manager</summary>
     <releaseNotes />
+    <packageSourceUrl></packageSourceUrl>
     <copyright>© 2015 xiles</copyright>
     <tags>file manager</tags>
     <dependencies>
