@@ -22,4 +22,7 @@ Freeware; fully functional for personal or commercial use.</description>
     <tags>file manager</tags>
     <packageSourceUrl></packageSourceUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
