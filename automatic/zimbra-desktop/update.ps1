@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://www.zimbra.com/zimbra-desktop-download/"
@@ -24,7 +24,7 @@ function global:au_GetLatest {
     $File = Join-Path $env:TEMP "chocolatey/zimbra-desktop.$($ChecksumType)"
     Invoke-WebRequest -Uri ($release | Where-Object {$_ -match "sha"}) -OutFile $File
     $Checksum = (Get-Content $File).Split(' ')[0]
-	
+
     $version=Get-Version $url32
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $Checksum; ChecksumType32 = $ChecksumType }
