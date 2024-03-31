@@ -25,4 +25,7 @@ Freeware; fully functional for personal or commercial use.</description>
       <dependency id="nexusfile.install" version="[5.3.3.5532]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
