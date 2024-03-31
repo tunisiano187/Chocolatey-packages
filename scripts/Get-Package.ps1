@@ -53,15 +53,7 @@ if(Test-Path "$nupkg.zip") {
     Remove-Item "$nupkg.zip" -Force
     New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder" -Force
 
-    # copy required files in the new folder
-    Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
-
-    if(Test-Path "$nupkg\tools") {
-        Remove-Item -Path "$nupkg\tools" -Include "*.exe"
-        Get-ChildItem -Path "$nupkg\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
-        Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.zip" -Force
-    }
-
+    $nuspecPath = "$folder\$packageName\$packageName.nuspec"
     # read nuspec
     [xml]$nuspec = New-Object System.Xml.XmlDocument
     [xml]$nuspec = Get-Content "$folder\$packageName\$packageName.nuspec"
@@ -140,6 +132,15 @@ if (!($nuspecContent.Contains("<files>"))) {
     }
     Write-Output "Set version to 0.0"
     Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
+
+    # copy required files in the new folder
+    Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
+
+    if(Test-Path "$nupkg\tools") {
+        Remove-Item -Path "$nupkg\tools" -Include "*.exe"
+        Get-ChildItem -Path "$nupkg\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
+        Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.zip" -Force
+    }
 
     Write-Output "git pull"
     git pull
