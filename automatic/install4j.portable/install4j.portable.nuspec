@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://www.ej-technologies.com/buy/install4j/install4j_license.html</licenseUrl>
     <projectUrl>http://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/87f66d5e71c4db36c6ba759cb8bdc143c8bfd743/icons/install4j.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@57fe834d2e9c2b35dff3620cb0820b1de9a61efd/icons/install4j.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>install4j is a powerful multi-platform Java installer builder that generates native installers and application launchers for Java applications.
 
