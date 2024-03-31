@@ -1,8 +1,8 @@
-$packageName = 'zimbra-desktop'
+﻿$packageName = 'zimbra-desktop'
 $installerType = 'msi'
 $silentArgs = '/quiet /qn /norestart'
-$url = 'https://s3.amazonaws.com/files.zimbra.com/downloads/zdesktop/7.3.1/b13063/zdesktop_7_3_1_ga_b13063_20170628044139_win32.msi'
-$checksum = '09c4d465a6b90032d649e18646a2484f'
+$url = 'https://files.zimbra.com/downloads/zxui/4.36.0/Zimbra_Desktop_4.36.0_90a2ecb8c_20240205134908.exe'
+$checksum = 'e014d1d71fb5b8cef990d720861f5f70a3bd0a029f538127799ab727a6f6a354'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
