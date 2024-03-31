@@ -5,7 +5,7 @@
     <version>5.3.3.5532</version>
     <title>Nexus File (Install)</title>
     <authors>JungHoon Noh</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.xiles.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@98ef55c281f18b080878ab1dbb6d10f494708251/icons/nexusfile.install.png</iconUrl>
