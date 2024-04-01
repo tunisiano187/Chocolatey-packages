@@ -4,18 +4,18 @@ import-module au
 function global:au_SearchReplace {
 	@{
 		"$($Latest.PackageName).nuspec" = @{
-            "(\<dependency .+?`"nano-win`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+            "(\<dependency .+?`"nexusfile`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
 	}
 }
 
 
 function global:au_GetLatest {
-	$version = $((choco search nano-win -s https://community.chocolatey.org/api/v2) | Where-Object {$_ -match "nano-win"}).split(' ') | Where-Object {$_ -match "\."}
+	$version = $((choco search nexusfile.install -s https://community.chocolatey.org/api/v2) | Where-Object {$_ -match "nexusfile.install"}).split(' ') | Where-Object {$_ -match "\."}
 
 
 	$Latest = @{ Version = $version }
 	return $Latest
 }
 
-update -NoCheckChocoVersion -ChecksumFor none
+update -ChecksumFor none
