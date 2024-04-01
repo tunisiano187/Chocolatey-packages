@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $releases -OutFile $File
 	$pageContent = Get-Content $File
 	$url = "https://s3.ap-northeast-2.amazonaws.com/net.xiles.public/download/$(($pageContent | Where-Object {$_ -match "file"}).split("'") | Where-Object {$_ -match "zip"} | Where-Object {$_ -notmatch "beta"} | Select-Object -First 1)"
-	
+
 	$version = Get-Version $url
 	#$checksumType = "SHA512"
 	#$checksum = Get-RemoteChecksum -Url $url -Algorithm $checksumType
