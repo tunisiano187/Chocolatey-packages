@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $releases -OutFile $File
 	$pageContent = Get-Content $File
 	$url = ($pageContent | Where-Object {$_ -match "file"} | Where-Object {$_ -match "_setup_"} | Where-Object {$_ -match "exe"}).split("'") | Where-Object {$_ -match "_setup_"} | Where-Object {$_ -notmatch "beta"} | Select-Object -First 1
-	
+
 	$version = Get-Version $url
 	#$checksumType = "SHA512"
 	#$checksum = Get-RemoteChecksum -Url $url -Algorithm $checksumType
