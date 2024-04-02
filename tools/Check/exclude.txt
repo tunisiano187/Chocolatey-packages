@@ -79,3 +79,4 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
+dropit
