@@ -30,7 +30,7 @@
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 1998 TheBrain Technologies LP</copyright>
     <tags>mindmap brainstorm concept-map file-management admin</tags>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/thebrain/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thebrain</packageSourceUrl>
     <docsUrl>https://www.thebrain.com/support/docs/</docsUrl>
     <mailingListUrl>http://forums.thebrain.com/</mailingListUrl>
     <bugTrackerUrl>http://forums.thebrain.com/?forum=92203</bugTrackerUrl>
