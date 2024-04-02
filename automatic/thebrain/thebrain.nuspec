@@ -5,10 +5,10 @@
     <version>9.000</version>
     <title>TheBrain</title>
     <authors>TheBrain Technologies LP</authors>
-    <owners>dtgm</owners>
-    <licenseUrl>http://www.thebrain.com/about/legal/terms/</licenseUrl>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.thebrain.com/about/legal/terms/</licenseUrl>
     <projectUrl>https://www.thebrain.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ecf22130c4f5a79fff92f1a40a252c557f72cd71/icons/thebrain.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/ecf22130c4f5a79fff92f1a40a252c557f72cd71/icons/thebrain.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Organize and find everything the way you think.
 
@@ -27,10 +27,10 @@
 * [Changelog](http://assets.thebrain.com/documents/TheBrain%208.0%20Release%20Notes.pdf) (PDF)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 1998 TheBrain Technologies LP</copyright>
     <tags>mindmap brainstorm concept-map file-management admin</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/thebrain/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/thebrain/</packageSourceUrl>
     <docsUrl>https://www.thebrain.com/support/docs/</docsUrl>
     <mailingListUrl>http://forums.thebrain.com/</mailingListUrl>
     <bugTrackerUrl>http://forums.thebrain.com/?forum=92203</bugTrackerUrl>
@@ -38,4 +38,7 @@
       <dependency id="thebrain.install" version="[9.000]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="*.nuspec" />
+  </files>
 </package>
