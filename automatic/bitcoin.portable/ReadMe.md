@@ -27,7 +27,7 @@ the rare event a Bitcoin protocol update has been mandated, called a "hard fork"
 that utilizes the Bitcoin blockchain must be upgraded by a certain date.
 
 #### Disk Requirements
-As of 15 February 2020, the total size of the BTC blockchain is 263.14 GB
+As of 01 April 2024, the total size of the BTC blockchain is nearly 600 GB
 Size increases based on quantity of transactions ([growth chart](https://blockchain.info/charts/blocks-size))   
 Blockchain is slowly downloaded only when Bitcoin Core is running and connected to network
 Blockchain default location is %AppData%\Bitcoin\data
