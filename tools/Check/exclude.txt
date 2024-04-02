@@ -13,6 +13,7 @@ datahealthcheck
 diskext
 dragondisk
 dreampie
+dropit
 dupeguru-me
 ekeyfinder
 evernote2onenote
@@ -79,4 +80,3 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
-dropit
