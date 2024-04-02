@@ -1,6 +1,6 @@
 ﻿$packageName = 'mweather.portable'
 $url = 'https://www.nirsoft.net/utils/mweather.zip'
-$checksum = 'd6db1ef17909bee1c5694051311ae7a62dc729aa3dcec39d76d3cf2d4cb4fb3e'
+$checksum = '00dfe305eb9e7a0b363e084891030f2639a9a857203028829f2943f4863db657'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installFile = Join-Path $toolsDir "mweather.exe"
