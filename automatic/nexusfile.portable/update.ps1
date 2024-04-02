@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "$env:TEMP/chocolatey/nexusfile.install.html"
+	$File = "$env:TEMP/chocolatey/nexusfile.portable.html"
 	Invoke-WebRequest -Uri $releases -OutFile $File
 	$pageContent = Get-Content $File
 	$url = "https://s3.ap-northeast-2.amazonaws.com/net.xiles.public/download/$(($pageContent | Where-Object {$_ -match "file"}).split("'") | Where-Object {$_ -match "zip"} | Where-Object {$_ -notmatch "beta"} | Select-Object -First 1)"
