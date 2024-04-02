@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nexusfile.install</id>
-    <version>5.3.3.5532</version>
+    <version>5.4.1</version>
     <title>Nexus File (Install)</title>
     <authors>JungHoon Noh</authors>
     <owners>tunisiano</owners>
@@ -10,12 +10,19 @@
     <projectUrl>http://www.xiles.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@98ef55c281f18b080878ab1dbb6d10f494708251/icons/nexusfile.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>NexusFile is a dual pane file manager.
+    <description><![CDATA[## NexusFile
+NexusFile is a dual pane file manager.
 It looks simple but has powerful features. Archive, FTP, Advanced Rename and many more functions.
 You can customize its look with skin and list color setting.
 Also you can customize shortcuts.
 
-Freeware; fully functional for personal or commercial use.</description>
+Freeware; fully functional for personal or commercial use.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Dual pane file manager</summary>
     <releaseNotes />
     <copyright>© 2015 xiles</copyright>
