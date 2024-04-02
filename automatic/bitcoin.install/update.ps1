@@ -28,10 +28,10 @@ function global:au_GetLatest {
 
     Write-Verbose 'Get version'
     [version]$version = $tags.name.Split(' ')[-1]
-    $folder = "https://bitcoincore.org/bin/$(((Invoke-WebRequest -Uri 'https://bitcoincore.org/bin/' -UseBasicParsing).Links | Where-Object {$_.href -match $version} | Where-Object {$_.href -notmatch "unsigned" } | Select-Object -Last 1).href)"
+    $folder = "https://bitcoincore.org/bin/$(((Invoke-WebRequest -Uri 'https://bitcoincore.org/bin/' -UseBasicParsing).Links | Where-Object {$_.href -match $version} | Select-Object -Last 1).href)"
 
 	Write-Verbose 'Get files'
-	$file = $(((Invoke-WebRequest -Uri $folder -UseBasicParsing).Links | Where-Object {$_.href -match ".exe"}).href)
+	$file = $(((Invoke-WebRequest -Uri $folder -UseBasicParsing).Links | Where-Object {$_.href -match ".exe"} | Where-Object {$_.href -notmatch "unsigned" }).href)
     $url64 = "$folder$file"
 
     return @{ URL64 = $url64; Version = $version }
