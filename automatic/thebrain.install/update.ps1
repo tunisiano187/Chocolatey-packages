@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://thebrain.com/download'
@@ -21,7 +21,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'DirectDownload'} | Where-Object {$_ -match "Download for Windows"} ).href)[0]
 	$ReleasesNotes = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Release notes'} ).href)
-	
+
 	$version = Get-Version $ReleasesNotes.Replace('-','.')
 
 	$Latest = @{ URL32 = $url32; Version = $version; ReleaseNotes = $ReleasesNotes }
