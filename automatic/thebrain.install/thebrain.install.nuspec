@@ -38,4 +38,7 @@
       <dependency id="javaruntime" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
