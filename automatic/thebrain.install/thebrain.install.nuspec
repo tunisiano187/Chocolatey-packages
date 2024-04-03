@@ -5,7 +5,7 @@
     <version>9.100</version>
     <title>TheBrain (Install)</title>
     <authors>TheBrain Technologies LP</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.thebrain.com/about/legal/terms/</licenseUrl>
     <projectUrl>https://www.thebrain.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ecf22130c4f5a79fff92f1a40a252c557f72cd71/icons/thebrain.png</iconUrl>
