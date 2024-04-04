@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>netbeans</id>
-    <version>21.0</version>
+    <version>20.0</version>
     <title>NetBeans IDE (complete)</title>
     <authors>Apache</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://netbeans.org/about/legal/product-licences.html</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/apache/netbeans/master/LICENSE</licenseUrl>
     <projectUrl>https://netbeans.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@aa8fcef136c98421c2c3cef613895720688c88b7/icons/netbeans.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
