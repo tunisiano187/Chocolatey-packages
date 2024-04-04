@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.thebrain.com/about/legal/terms/</licenseUrl>
     <projectUrl>https://www.thebrain.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ecf22130c4f5a79fff92f1a40a252c557f72cd71/icons/thebrain.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ee1a81695a00f66907378d6a60219ae6cb6cafcf/icons/thebrain.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## TheBrain
 
