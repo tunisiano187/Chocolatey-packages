@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>thebrain</id>
-    <version>9.100.0</version>
+    <version>9.000.0</version>
     <title>TheBrain</title>
     <authors>TheBrain Technologies LP</authors>
     <owners>tunisiano</owners>
@@ -39,7 +39,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© 1998 TheBrain Technologies LP</copyright>
     <tags>mindmap brainstorm concept-map file-management admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thebrain</packageSourceUrl>
-    <docsUrl>https://www.thebrain.com/support/docs/</docsUrl>
+    <docsUrl>https://www.thebrain.com/support/tutorials</docsUrl>
     <mailingListUrl>http://forums.thebrain.com/</mailingListUrl>
     <bugTrackerUrl>http://forums.thebrain.com/?forum=92203</bugTrackerUrl>
     <dependencies>
