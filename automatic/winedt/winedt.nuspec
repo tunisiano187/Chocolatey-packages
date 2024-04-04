@@ -36,4 +36,7 @@ WinEdt may be used for a __31 day__ trial period to evaluate the software. All f
     <docsUrl>https://www.winedt.com/doc/QuickGuide.pdf</docsUrl>
     <mailingListUrl>https://github.com/WinEdt-Team/WinEdt-Support/discussions</mailingListUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
