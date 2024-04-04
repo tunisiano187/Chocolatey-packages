@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = $env:ChocolateyPackageName
-$url = 'https://github.com/jonelo/jacksum-fbi-windows/releases/download/v2.6.0/jacksum-3.7.0-hashgarten-0.15.0-windows-explorer-integration-2.6.0.zip'
+$url = 'https://github.com/jonelo/jacksum-fbi-windows/releases/download/v2.7.0/jacksum-3.7.0-hashgarten-0.16.0-windows-file-explorer-integration-2.7.0.zip'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$checksum = '36b95119c3c87fb1ede8d4a664f3ca46739192662a96a4de07e39a1b24bff7d5'
+$checksum = '458b306e300954feddfda399cc820384f917b387d8d817e4540af8f731e1a33e'
 $checksumType = 'sha256'
 
 $packageArgs = @{
