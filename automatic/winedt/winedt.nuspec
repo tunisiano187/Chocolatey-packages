@@ -32,7 +32,7 @@ WinEdt may be used for a __31 day__ trial period to evaluate the software. All f
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 1993 Aleksander Simonic</copyright>
     <tags>tex latex editor trial shareware nagscreen admin</tags>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/winedt/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winedt</packageSourceUrl>
     <docsUrl>https://www.winedt.com/doc/QuickGuide.pdf</docsUrl>
     <mailingListUrl>https://github.com/WinEdt-Team/WinEdt-Support/discussions</mailingListUrl>
   </metadata>
