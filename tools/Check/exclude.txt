@@ -80,3 +80,4 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
+gamedownloader
