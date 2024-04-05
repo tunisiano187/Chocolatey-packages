@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>gamedownloader</id>
+    <version>4.0.20150329</version>
+    <title>Game Downloader</title>
+    <authors>dev-fire</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <projectUrl>http://dev-fire-gd.sourceforge.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/d1e037cc7c943fda29b9067b3b1c3229d99402ff/icons/gamedownloader.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Game Downloader is a portable and open source download client, which interacts with a server side library for downloading numerous games. With the help of this utility, you can download more than 200 games, by simply selecting a game category then selecting any game from the available list. This makes it easy to obtain games, without having to manually search and download the game via a browser.
+
+#### Features
+* Over 300+ games to download.
+* Games are added or updated frequently.
+* Customizable user friendly features.
+* Small and Portable.
+
+[Source code](http://sourceforge.net/projects/dev-fire-gd/files/Game%20Downloader%204.0/)</description>
+    <summary>Download client with a server side library of games</summary>
+    <releaseNotes>[What's new](http://dev-fire-gd.sourceforge.net/news.html)
+[New Games](http://dev-fire-gd.sourceforge.net/new.html)
+[Updated Games](http://dev-fire-gd.sourceforge.net/updated.html)</releaseNotes>
+    <copyright>© dev-fire</copyright>
+    <tags>game downloads digital-distribution content-delivery game-store</tags>
+    <dependencies>
+      <dependency id="gamedownloader.install" version="[4.0.20150329]" />
+    </dependencies>
+  </metadata>
+</package>
