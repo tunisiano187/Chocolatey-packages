@@ -23,6 +23,7 @@ filetool
 findaes
 findthatfont
 freearc
+gamedownloader
 getopt
 hdparm
 hostinfo
@@ -80,4 +81,3 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
-gamedownloader
