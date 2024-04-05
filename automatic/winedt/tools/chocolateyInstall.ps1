@@ -1,8 +1,8 @@
-$packageName    = $env:ChocolateyPackageName
+﻿$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '/S'
-$url            = 'http://www.winedt.com/download/winedt103-32.exe'
-$checksum       = 'e40d10105eed97e518c04c1ce29e6dfb1cf70e389d46567feb08b05424a4dc2a'
+$url            = 'https://www.winedt.com/download/winedt11.exe'
+$checksum       = '0353ea1e5010a38c6bf8e2d5ed4cf9b935f81e11a96679c5cad69d5c51573e2a'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)
 

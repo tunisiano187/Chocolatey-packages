@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>winedt</id>
-    <version>10.3</version>
+    <version>11.1</version>
     <title>WinEdt</title>
     <authors>Aleksander Simonic</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,8 @@
     <projectUrl>https://www.winedt.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/d5d78fc17432924a78acf27a880cceec5b1982df/icons/winedt.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WinEdt is a powerful and versatile text editor for Windows, with a strong predisposition towards the creation of [La]TeX documents. Do not, however, mistake WinEdt itself for a TeX system!
+    <description><![CDATA[## WinEdt
+WinEdt is a powerful and versatile text editor for Windows, with a strong predisposition towards the creation of [La]TeX documents. Do not, however, mistake WinEdt itself for a TeX system!
 
 As an editor WinEdt allows you to exploit its intuitive (customizable) predefined interface and graphic controls. If you are not too keen on the mouse interface, don't worry: WinEdt also offers the means to customize its keyboard interface, allowing you to use double keystroke shortcuts that can be associated with any menu item...
 
@@ -22,7 +23,13 @@ WinEdt's Menu contains plenty of useful commands, and many are associated with S
 
 ### Trial software ([nagscreen](https://en.wikipedia.org/wiki/Shareware#Nagware))
 
-WinEdt may be used for a __31 day__ trial period to evaluate the software. All features are available during the trial period. Once the trial period has elapsed, WinEdt will begin issuing warning messages reminding you that the registration is overdue. Such warnings will not cause any damage to your documents; however, they will likely prove rather annoying and distracting. If you are using WinEdt for serious work you are advised to [obtain a license](https://www.winedt.com/registration.html#tables) prior to the end of your trial period to avoid unwanted distractions.</description>
+WinEdt may be used for a __31 day__ trial period to evaluate the software. All features are available during the trial period. Once the trial period has elapsed, WinEdt will begin issuing warning messages reminding you that the registration is overdue. Such warnings will not cause any damage to your documents; however, they will likely prove rather annoying and distracting. If you are using WinEdt for serious work you are advised to [obtain a license](https://www.winedt.com/registration.html#tables) prior to the end of your trial period to avoid unwanted distractions.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Powerful and versatile text editor with a strong predisposition towards the creation of LaTeX documents</summary>
     <releaseNotes>#### Program
 * [News](https://www.winedt.com/news.html)
