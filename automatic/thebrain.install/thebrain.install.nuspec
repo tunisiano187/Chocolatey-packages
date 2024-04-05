@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>thebrain.install</id>
-    <version>14.0</version>
+    <version>0.0</version>
     <title>TheBrain (Install)</title>
     <authors>TheBrain Technologies LP</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://www.thebrain.com/about/legal/terms/</licenseUrl>
+    <licenseUrl>https://www.thebrain.com/about/legal/terms/</licenseUrl>
     <projectUrl>https://www.thebrain.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ee1a81695a00f66907378d6a60219ae6cb6cafcf/icons/thebrain.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -36,8 +36,8 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>mindmap brainstorm concept-map file-management admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thebrain.install</packageSourceUrl>
     <docsUrl>https://www.thebrain.com/support/tutorials</docsUrl>
-    <mailingListUrl>http://forums.thebrain.com/</mailingListUrl>
-    <bugTrackerUrl>http://forums.thebrain.com/?forum=92203</bugTrackerUrl>
+    <mailingListUrl>https://forums.thebrain.com/</mailingListUrl>
+    <bugTrackerUrl>https://forums.thebrain.com/?forum=92203</bugTrackerUrl>
     <dependencies>
       <dependency id="javaruntime" />
     </dependencies>
