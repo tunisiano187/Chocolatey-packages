@@ -28,4 +28,7 @@
     <mailingListUrl>https://forum.gdevelop.io/</mailingListUrl>
     <bugTrackerUrl>https://github.com/4ian/GDevelop/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
