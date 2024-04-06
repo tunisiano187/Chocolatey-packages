@@ -62,6 +62,8 @@ if(Test-Path "$nupkg.zip") {
     if($nuspec.package.metadata.iconUrl) {
         $icon = "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
         Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile $icon
+    } else {
+        Write-Output "Icon not found in the Nuspec"
     }
 
     # Check if the nuspec has a version and set it to 0.0
