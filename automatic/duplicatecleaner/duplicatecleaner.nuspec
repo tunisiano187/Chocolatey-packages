@@ -24,4 +24,7 @@ This package installs the free, non-commercial usage version.</description>
       <dependency id="dotnet3.5" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
