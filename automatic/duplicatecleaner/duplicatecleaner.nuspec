@@ -19,7 +19,7 @@ This package installs the free, non-commercial usage version.</description>
     <releaseNotes>http://www.digitalvolcano.co.uk/dcchangelog.html</releaseNotes>
     <copyright>© DigitalVolcano Software</copyright>
     <tags>file-duplicates deduplication admin</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/duplicatecleaner/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duplicatecleaner</packageSourceUrl>
     <dependencies>
       <dependency id="dotnet3.5" />
     </dependencies>
