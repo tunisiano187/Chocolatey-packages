@@ -1,5 +1,5 @@
-﻿$packageName = 'duplicatecleaner'
-$installerType = 'exe'	
+$packageName = 'duplicatecleaner'
+$installerType = 'exe'
 $silentArgs = '/S'
 $url = 'http://www.digitalvolcano.co.uk/download/DuplicateCleaner_setup.exe'
 $checksum = ''
