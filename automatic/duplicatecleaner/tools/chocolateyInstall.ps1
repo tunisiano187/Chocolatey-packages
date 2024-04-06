@@ -1,5 +1,5 @@
 $packageName        = $env:ChocolateyPackageName
-$silentArgs         = '/S'
+$silentArgs         = "/quiet /qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
 $url                = 'http://www.digitalvolcano.co.uk/download/DuplicateCleaner_setup.exe'
 $checksum           = ''
 $checksumType       = 'md5'
