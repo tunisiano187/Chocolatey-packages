@@ -5,7 +5,7 @@
     <version>4.0.94</version>
     <title>GDevelop</title>
     <authors>Florian Rival</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/4ian/GDevelop/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://gdevelop.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3751b29b696a5cdfdc716a6cac1e92de73ab09b2/icons/gdevelop.png</iconUrl>
