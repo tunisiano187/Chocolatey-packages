@@ -5,7 +5,7 @@
     <version>4.1.0</version>
     <title>Duplicate Cleaner</title>
     <authors>DigitalVolcano Software</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.digitalvolcano.co.uk/dcpurchase.html</licenseUrl>
     <projectUrl>http://www.digitalvolcano.co.uk/duplicatecleaner.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f782e9a976592d6a8e172bf28073de77b3972b73/icons/duplicatecleaner.png</iconUrl>
