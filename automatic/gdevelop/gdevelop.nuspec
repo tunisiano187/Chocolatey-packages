@@ -5,10 +5,10 @@
     <version>4.0.94</version>
     <title>GDevelop</title>
     <authors>Florian Rival</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/4ian/GDevelop/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://gdevelop.io/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/1e10706b59b5ad94d558b41eb85aa082eb098191/icons/gdevelop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3751b29b696a5cdfdc716a6cac1e92de73ab09b2/icons/gdevelop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>GDevelop is a full featured, open source game development software, allowing to create HTML5 and native games without needing any knowledge in a specific programming language. All the game logic is made thanks to an intuitive and powerful event based system.
 
@@ -23,9 +23,12 @@
     <copyright>© Florian Rival</copyright>
     <tags>game development ide html5 javascript visual programming admin</tags>
     <projectSourceUrl>https://github.com/4ian/GDevelop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/gdevelop/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gdevelop</packageSourceUrl>
     <docsUrl>https://wiki.gdevelop.io/gdevelop5/</docsUrl>
     <mailingListUrl>https://forum.gdevelop.io/</mailingListUrl>
     <bugTrackerUrl>https://github.com/4ian/GDevelop/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
