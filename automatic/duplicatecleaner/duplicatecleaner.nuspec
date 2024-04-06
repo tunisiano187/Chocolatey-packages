@@ -7,7 +7,7 @@
     <authors>DigitalVolcano Software</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://www.digitalvolcano.co.uk/dcpurchase.html</licenseUrl>
-    <projectUrl>http://www.digitalvolcano.co.uk/duplicatecleaner.html</projectUrl>
+    <projectUrl>https://www.digitalvolcano.co.uk/duplicatecleaner.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f782e9a976592d6a8e172bf28073de77b3972b73/icons/duplicatecleaner.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Duplicate Cleaner is a useful program to help you organize the contents of your home hard drive or corporate network. You'd be surprised just how many redundant or duplicate files you could find forgotten in an obscure documents folder.
@@ -21,7 +21,7 @@ This package installs the free, non-commercial usage version.</description>
     <tags>file-duplicates deduplication admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duplicatecleaner</packageSourceUrl>
     <dependencies>
-      <dependency id="dotnet3.5" />
+      <dependency id="dotnet" version="[4.7.2,)"/>
     </dependencies>
   </metadata>
   <files>
