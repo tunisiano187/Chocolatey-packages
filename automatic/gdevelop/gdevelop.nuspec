@@ -23,7 +23,7 @@
     <copyright>© Florian Rival</copyright>
     <tags>game development ide html5 javascript visual programming admin</tags>
     <projectSourceUrl>https://github.com/4ian/GDevelop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/gdevelop/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gdevelop</packageSourceUrl>
     <docsUrl>https://wiki.gdevelop.io/gdevelop5/</docsUrl>
     <mailingListUrl>https://forum.gdevelop.io/</mailingListUrl>
     <bugTrackerUrl>https://github.com/4ian/GDevelop/issues</bugTrackerUrl>
