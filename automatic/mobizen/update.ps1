@@ -26,4 +26,9 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+try {
+    update -ChecksumFor 32
+} catch {
+    $ignore = "The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel."
+    if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}

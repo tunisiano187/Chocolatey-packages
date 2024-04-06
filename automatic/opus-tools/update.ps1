@@ -32,4 +32,9 @@ function global:au_GetLatest {
 	}
 }
 
-update -NoCheckChocoVersion
+try {
+    update
+} catch {
+    $ignore = "The request was aborted: Could not create SSL/TLS secure channel."
+    if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}

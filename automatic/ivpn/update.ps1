@@ -39,4 +39,9 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+try {
+    update
+} catch {
+    $ignore = "You cannot call a method on a null-valued expression."
+    if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}
