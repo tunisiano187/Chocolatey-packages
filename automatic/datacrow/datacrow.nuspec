@@ -32,7 +32,7 @@ Reporting (based on XLST stylesheets and graphs), loan administration, item impo
     <copyright>© Robert Jan van der Waals</copyright>
     <tags>inventory collection organizer library catalog admin</tags>
     <projectSourceUrl>http://sourceforge.net/p/datacrow/code/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/datacrow/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/datacrow</packageSourceUrl>
     <docsUrl>http://datacrow.cvs.sourceforge.net/viewvc/datacrow/documentation/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/datacrow/discussion/</mailingListUrl>
     <bugTrackerUrl>http://sourceforge.net/p/datacrow/_list/tickets</bugTrackerUrl>
