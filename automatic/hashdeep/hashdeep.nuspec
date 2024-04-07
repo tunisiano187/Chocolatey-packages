@@ -5,7 +5,7 @@
     <version>4.4</version>
     <title>hashdeep</title>
     <authors>Jesse Kornblum</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/jessek/hashdeep/blob/master/COPYING</licenseUrl>
     <projectUrl>https://github.com/jessek/hashdeep</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -43,7 +43,10 @@ Note: append `64` to above commands to execute the 64-bit version</description>
     <copyright>© Jesse Kornblum</copyright>
     <tags>checksum file md5deep cli</tags>
     <projectSourceUrl>https://github.com/jessek/hashdeep</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/hashdeep/4.4</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hashdeep</packageSourceUrl>
     <bugTrackerUrl>https://github.com/jessek/hashdeep/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
