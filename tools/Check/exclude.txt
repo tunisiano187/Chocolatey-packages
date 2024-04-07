@@ -31,6 +31,7 @@ hp-bios-cmdlets
 hp-ilo-cmdlets
 hp-oa-cmdlets
 isoplex
+izpack
 jdk11
 jdk8
 jdownloader
@@ -81,4 +82,3 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
-izpack
