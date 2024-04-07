@@ -30,8 +30,13 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "PacketStream.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	
+	$pageContent = Invoke-WebRequest -Uri "https://packetstream.software.informer.com/"
+	$regexPattern = 'PacketStream \s*(\d+(\.\d+)*)'
+	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 
+	$version = $versionMatch.Matches[0].Groups[1].Value
+	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

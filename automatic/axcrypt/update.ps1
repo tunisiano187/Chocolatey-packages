@@ -30,4 +30,9 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+try {
+  update -ChecksumFor none
+} catch {
+  $ignore = "409 (Conflict)"
+  if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}
