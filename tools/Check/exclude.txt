@@ -81,3 +81,4 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
+izpack
