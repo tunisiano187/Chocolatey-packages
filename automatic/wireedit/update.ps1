@@ -17,6 +17,7 @@ function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 function global:au_GetLatest {
+    . ../../scripts/Get-UserAgent.ps1
 	$url32="https://omnipacket.com/$(((Invoke-WebRequest -Uri $releases -UserAgent "$(Get-UserAgent)" -UseBasicParsing).Links | Where-Object {$_ -match '.msi'} | Where-Object {$_ -match 'WireEdit'}).href)"
 
     $version = $url32.Split("-")[-1].replace('.msi','')
