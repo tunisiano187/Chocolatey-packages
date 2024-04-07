@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gdevelop</id>
-    <version>4.0.94</version>
+    <version>5.3.198</version>
     <title>GDevelop</title>
     <authors>Florian Rival</authors>
     <owners>tunisiano</owners>
@@ -10,9 +10,16 @@
     <projectUrl>https://gdevelop.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3751b29b696a5cdfdc716a6cac1e92de73ab09b2/icons/gdevelop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>GDevelop is a full featured, open source game development software, allowing to create HTML5 and native games without needing any knowledge in a specific programming language. All the game logic is made thanks to an intuitive and powerful event based system.
+    <description><![CDATA[## GDevelop
+GDevelop is a full featured, open source game development software, allowing to create HTML5 and native games without needing any knowledge in a specific programming language. All the game logic is made thanks to an intuitive and powerful event based system.
 
-[Wiki](https://wiki.gdevelop.io/gdevelop5/)</description>
+[Wiki](https://wiki.gdevelop.io/gdevelop5/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Open source, cross-platform game creator designed to be used by everyone - no programming skills required</summary>
     <releaseNotes>#### Program
 * [Roadmap](https://trello.com/b/qf0lM7k8/gdevelop-roadmap)
