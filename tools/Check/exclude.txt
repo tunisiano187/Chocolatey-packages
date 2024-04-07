@@ -25,6 +25,7 @@ findthatfont
 freearc
 gamedownloader
 getopt
+hashdeep
 hdparm
 hostinfo
 hp-bios-cmdlets
@@ -82,4 +83,3 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
-hashdeep
