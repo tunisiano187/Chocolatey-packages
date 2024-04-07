@@ -44,7 +44,7 @@ To install the Chinese (NHocr) language pack:
     <copyright>© 2012 Christopher Brochtrup</copyright>
     <tags>img2ocr tesseract nhocr leptonica screencapture</tags>
     <projectSourceUrl>https://sourceforge.net/projects/capture2text/files/Capture2Text/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/capture2text/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/capture2text</packageSourceUrl>
     <docsUrl>https://sourceforge.net/projects/capture2text/files/Capture2Text/Capture2Text_v4.6.1/#readme</docsUrl>
   </metadata>
   <files>
