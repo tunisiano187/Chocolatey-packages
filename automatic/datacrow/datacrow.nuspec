@@ -41,4 +41,7 @@ Reporting (based on XLST stylesheets and graphs), loan administration, item impo
       <dependency id="chocolatey-fosshub.extension" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
