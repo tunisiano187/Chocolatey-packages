@@ -33,6 +33,6 @@ function global:au_GetLatest {
 try {
   update -ChecksumFor none
 } catch {
-  $ignore = "409 (Conflict)"
+  $ignore = "Chocolatey v2.2.2 Attempting to push axcrypt.2.1.1647.nupkg to https://push.chocolatey.org An error has occurred. It's possible the package version already exists on the repository or a nuspec element is invalid. See error below... Response status code does not indicate success: 409 (Conflict)."
   if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
 }
