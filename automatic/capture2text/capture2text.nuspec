@@ -5,10 +5,10 @@
     <version>4.6.1</version>
     <title>Capture2Text</title>
     <authors>Christopher Brochtrup</authors>
-    <owners>dtgm</owners>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
-    <projectUrl>http://capture2text.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/9bb7a03ef89b88cdde3ab746d3a4c97c9cd0581b/icons/capture2text.png</iconUrl>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <projectUrl>https://capture2text.sourceforge.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/9bb7a03ef89b88cdde3ab746d3a4c97c9cd0581b/icons/capture2text.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Capture2Text enables users to quickly OCR a small portion of the screen and, by default, save the result to the clipboard. Capture2Text can OCR 50+ languages. By default only the following languages are installed:
 
@@ -37,14 +37,14 @@ To install the Chinese (NHocr) language pack:
 [FAQ](http://capture2text.sourceforge.net/#troubleshooting)</description>
     <summary>Quickly OCR part of the screen and save resulting text to clipboard</summary>
     <releaseNotes>#### Program
-* [Changelog](http://sourceforge.net/projects/capture2text/files/Capture2Text/#readme)
+* [Changelog](https://sourceforge.net/projects/capture2text/files/Capture2Text/#readme)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2012 Christopher Brochtrup</copyright>
     <tags>img2ocr tesseract nhocr leptonica screencapture</tags>
-    <projectSourceUrl>http://sourceforge.net/projects/capture2text/files/Capture2Text/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/capture2text/</packageSourceUrl>
-    <docsUrl>http://sourceforge.net/projects/capture2text/files/Capture2Text/Capture2Text_v4.6.1/#readme</docsUrl>
+    <projectSourceUrl>https://sourceforge.net/projects/capture2text/files/Capture2Text/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/capture2text/</packageSourceUrl>
+    <docsUrl>https://sourceforge.net/projects/capture2text/files/Capture2Text/Capture2Text_v4.6.1/#readme</docsUrl>
   </metadata>
 </package>
