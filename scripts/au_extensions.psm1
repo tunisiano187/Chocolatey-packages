@@ -10,6 +10,7 @@ $funcs = @(
   'Update-OnETagChanged'
   'Invoke-VirusTotalScan'
   'Get-GithubRepositoryLicense'
+  'Get-UserAgent'
 )
 
 $funcs | % {
