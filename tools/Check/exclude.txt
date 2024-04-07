@@ -82,3 +82,4 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
+hashdeep
