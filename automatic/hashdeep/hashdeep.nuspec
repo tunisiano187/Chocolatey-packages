@@ -46,4 +46,7 @@ Note: append `64` to above commands to execute the 64-bit version</description>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/hashdeep/4.4</packageSourceUrl>
     <bugTrackerUrl>https://github.com/jessek/hashdeep/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
