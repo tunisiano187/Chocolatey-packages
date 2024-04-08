@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>capture2text</id>
-    <version>4.6.1</version>
+    <version>4.6.3</version>
     <title>Capture2Text</title>
     <authors>Christopher Brochtrup</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,8 @@
     <projectUrl>https://capture2text.sourceforge.net/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/9bb7a03ef89b88cdde3ab746d3a4c97c9cd0581b/icons/capture2text.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Capture2Text enables users to quickly OCR a small portion of the screen and, by default, save the result to the clipboard. Capture2Text can OCR 50+ languages. By default only the following languages are installed:
+    <description><![CDATA[## Capture2Text
+Capture2Text enables users to quickly OCR a small portion of the screen and, by default, save the result to the clipboard. Capture2Text can OCR 50+ languages. By default only the following languages are installed:
 
 * English
 * French
@@ -34,7 +35,13 @@ To install the Chinese (NHocr) language pack:
 2. Open it with 7-Zip and copy `PLM-zh_CN.dic` and `cctable-zh_CN` to `$Env:ChocolateyInstall\lib\capture2text\Capture2Text\Utils\nhocr\Dic`
 3. Restart Capture2Text
 
-[FAQ](http://capture2text.sourceforge.net/#troubleshooting)</description>
+[FAQ](https://capture2text.sourceforge.net/#troubleshooting)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Quickly OCR part of the screen and save resulting text to clipboard</summary>
     <releaseNotes>#### Program
 * [Changelog](https://sourceforge.net/projects/capture2text/files/Capture2Text/#readme)
