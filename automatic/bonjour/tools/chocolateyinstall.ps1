@@ -8,17 +8,33 @@ $url64            = 'https://www.apple.com/itunes/download/win64'
 $checksum64       = '541c30b2d72705afe75649f97e3daf677b8576e6e73d6f78f7265a0ded61011f'
 $checksumType64   = 'SHA256'
 
+$toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$fileFullPath     = "$toolsDir\itunes.zip"
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType		= "msi"
-
+  FileFullPath  = $fileFullPath
+  
   url           = $url
-  checksum      = $checksum
+  Checksum      = $checksum
   checksumType  = $checksumType
 
   url64bit      = $url64
   checksum64    = $checksum64
   checksumType64= $checksumType64
+
+}
+
+Get-ChocolateyWebFile @packageArgs
+Get-ChocolateyUnzip -fileFullPath $fileFullPath -destination $toolsDir
+
+$bonjour = (Get-ChildItem -Path $toolsDir -Filter "Bonjour*.msi").FullName
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType		  = "msi"
+
+  file          = $bonjour
 
   silentArgs	= "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 }
