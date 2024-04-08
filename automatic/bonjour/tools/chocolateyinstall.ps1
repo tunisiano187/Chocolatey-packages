@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $url              = 'https://www.apple.com/itunes/download/win32'
 $checksum         = 'cd6891afada9f940bc551a215a6c40f51a93b140026375bd30b1ee686dc73bd2'
