@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>capture2text</id>
-    <version>4.6.3</version>
+    <version>4.6.0</version>
     <title>Capture2Text</title>
     <authors>Christopher Brochtrup</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>https://capture2text.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a6172182de77c2748787b62e62b97d887668d841/icons/capture2text.png</iconUrl>
+    <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Capture2Text
 Capture2Text enables users to quickly OCR a small portion of the screen and, by default, save the result to the clipboard. Capture2Text can OCR 50+ languages. By default only the following languages are installed:
