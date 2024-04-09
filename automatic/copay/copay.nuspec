@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://github.com/bitpay/copay/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://copay.io/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/bitpay/copay/320de62f137715d238b7cf1c25dcd73efd6e4e09/public/img/icons/icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3358141dcd81e220e99ea8170852005c940f787f/icons/copay.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Copay is an easy-to-use, open-source, multiplatform, multisignature, secure bitcoin wallet platform for both individuals and companies. Copay uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
