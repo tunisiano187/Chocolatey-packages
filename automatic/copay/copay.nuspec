@@ -27,7 +27,7 @@ Manage shared funds with friends and coworkers. Share a wallet with your child a
     <copyright>© 2016 BitPay</copyright>
     <tags>bitcoin btc cryptocurrency blockchain wallet multisig admin</tags>
     <projectSourceUrl>https://github.com/bitpay/copay/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/copay/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/copay</packageSourceUrl>
     <docsUrl>https://github.com/bitpay/copay/wiki/</docsUrl>
     <bugTrackerUrl>https://github.com/bitpay/copay/issues/</bugTrackerUrl>
     <dependencies>
