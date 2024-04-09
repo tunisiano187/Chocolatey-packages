@@ -54,12 +54,13 @@ if(Test-Path "$nupkg.zip") {
     New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder" -Force
 
     $nuspecPath = "$folder\$packageName\$packageName.nuspec"
+    Write-Output "Path of the future nuspec : $($nuspecPath)"
     # read nuspec
     [xml]$nuspec = New-Object System.Xml.XmlDocument
     [xml]$nuspec = Get-Content "$folder\$packageName\$packageName.nuspec"
 
     # Check if the nuspec has an iconUrl and download the icon to the right folder
-    
+
     if($nuspec.package.metadata.iconUrl) {
         $icon = "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
         Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile $icon

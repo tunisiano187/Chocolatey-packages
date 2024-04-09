@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>copay</id>
+    <id>bitpay-wallet</id>
     <version>4.6.2</version>
-    <title>Copay</title>
+    <title>BitPay Wallet</title>
     <authors>BitPay</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/bitpay/copay/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://copay.io/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/bitpay/copay/320de62f137715d238b7cf1c25dcd73efd6e4e09/public/img/icons/icon.png</iconUrl>
@@ -23,15 +23,12 @@ Manage shared funds with friends and coworkers. Share a wallet with your child a
 * [Terms of Use](https://copay.io/disclaimer)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2016 BitPay</copyright>
     <tags>bitcoin btc cryptocurrency blockchain wallet multisig admin</tags>
     <projectSourceUrl>https://github.com/bitpay/copay/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/copay/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/copay/</packageSourceUrl>
     <docsUrl>https://github.com/bitpay/copay/wiki/</docsUrl>
     <bugTrackerUrl>https://github.com/bitpay/copay/issues/</bugTrackerUrl>
-    <dependencies>
-      <dependency id="chocolatey-uninstall.extension" />
-    </dependencies>
   </metadata>
 </package>
