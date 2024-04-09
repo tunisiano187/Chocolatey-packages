@@ -31,4 +31,7 @@ Manage shared funds with friends and coworkers. Share a wallet with your child a
     <docsUrl>https://github.com/bitpay/copay/wiki/</docsUrl>
     <bugTrackerUrl>https://github.com/bitpay/copay/issues/</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
