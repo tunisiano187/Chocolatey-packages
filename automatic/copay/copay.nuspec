@@ -5,7 +5,7 @@
     <version>4.6.2</version>
     <title>Copay</title>
     <authors>BitPay</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/bitpay/copay/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://copay.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3358141dcd81e220e99ea8170852005c940f787f/icons/copay.png</iconUrl>
