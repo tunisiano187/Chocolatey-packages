@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>capture2text</id>
-    <version>4.6.0</version>
+    <version>4.6.3</version>
     <title>Capture2Text</title>
     <authors>Christopher Brochtrup</authors>
     <owners>tunisiano</owners>
