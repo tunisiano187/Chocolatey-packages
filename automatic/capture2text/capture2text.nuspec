@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>https://capture2text.sourceforge.net/</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cb0cfb1bd655cf4588f767af5bc4374d17b3832e/icons/capture2text.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Capture2Text
 Capture2Text enables users to quickly OCR a small portion of the screen and, by default, save the result to the clipboard. Capture2Text can OCR 50+ languages. By default only the following languages are installed:
