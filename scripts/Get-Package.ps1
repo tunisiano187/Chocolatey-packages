@@ -23,12 +23,12 @@
 param(
     [Parameter(Mandatory = $true)]
     [string]$packageName,
-    [string]$folder = 'automatic\',
-    [string]$iconfolder = 'icons\'
+    [string]$folder = 'automatic',
+    [string]$iconfolder = 'icons'
 )
 #$ErrorActionPreference = "Stop";
 
-$nupkg = "$env:TEMP/$($packageName)"
+$nupkg = "$env:TEMP\$($packageName)"
 $icon = "$iconfolder\$packageName"
 
 if(Test-Path "$folder\$packageName\") {
