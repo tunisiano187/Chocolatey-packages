@@ -34,4 +34,7 @@ Manage shared funds with friends and coworkers. Share a wallet with your child a
       <dependency id="chocolatey-uninstall.extension" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
