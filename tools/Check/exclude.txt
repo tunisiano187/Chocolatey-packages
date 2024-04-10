@@ -84,3 +84,4 @@ xfinder
 xmeters
 zimbra-desktop
 copay
+bitpay-wallet
