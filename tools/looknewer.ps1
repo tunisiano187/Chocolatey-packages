@@ -30,7 +30,7 @@ Install-PackageProvider -name winget
     if($Todo.Count -eq 0) {
         "Checking on Chocolatey community profile"
         $chocoprofile = "https://community.chocolatey.org/profiles/tunisiano"
-        $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"} | Where-Object {$_.outerHTML -notmatch "bonjour"}).href 
+        $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"}).href
         $ToDo=$links
         foreach ($item in $links) {
             $search=$item.split('/')[-2]
