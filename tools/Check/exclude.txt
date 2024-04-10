@@ -83,3 +83,4 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
+copay
