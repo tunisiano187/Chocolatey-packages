@@ -6,9 +6,11 @@ avirafreeantivirus
 bitcoin-unlimited
 bitcoin-unlimited.install
 bitmessage
+bitpay-wallet
 bless
 cameyo
 chainlp
+copay
 datahealthcheck
 diskext
 dragondisk
@@ -83,5 +85,3 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
-copay
-bitpay-wallet
