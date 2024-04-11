@@ -1,0 +1,17 @@
+﻿name: Check exception
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  CheckpackageRequest:
+    runs-on: windows-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2.2.0
+      - name: Check exception
+        run: |
+          . "${{ github.workspace }}\scripts\Find-nextissue.ps1"
