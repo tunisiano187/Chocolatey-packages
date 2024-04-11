@@ -23,6 +23,7 @@ function global:au_GetLatest {
 	$ReleasesNotes = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Release notes'} ).href)
 
 	$version = Get-Version $ReleasesNotes.Replace('-','.')
+	$url32 = Get-RedirectedUrl $url32
 
 	$Latest = @{ URL32 = $url32; Version = $version; ReleaseNotes = $ReleasesNotes }
 	return $Latest
