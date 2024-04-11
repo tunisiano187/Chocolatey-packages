@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	choco update -y autohotkey
+	choco ipgrade -y autohotkey
 	Write-Output 'Check Folder'
 	$File = "$($env:Temp)\Filejuggler.exe"
 	Write-Output 'Download'
