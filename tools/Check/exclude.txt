@@ -89,3 +89,4 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
+videocacheview
