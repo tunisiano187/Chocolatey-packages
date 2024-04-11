@@ -29,7 +29,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <copyright>© Alexeev Alexander, S², Mitch Capper</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>#### Program
-* [Changelog](https://github.com/mitchcapper/KPFloatingPanel/releases/tag/{{PackageVersion}})
+* [Changelog](https://github.com/mitchcapper/KPFloatingPanel/releases)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

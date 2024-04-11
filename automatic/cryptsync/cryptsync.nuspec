@@ -29,7 +29,9 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>security encryption synchronization admin</tags>
     <projectSourceUrl>https://sourceforge.net/p/cryptsync-sk/code/HEAD/tree/</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cryptsync</packageSourceUrl>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

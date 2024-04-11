@@ -25,8 +25,8 @@
 * [Changelog](https://github.com/mpc-qt/mpc-qt/releases)
 
 #### Package
-* Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
-* If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/tunisiano/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
     <copyright></copyright>
     <tags>media-player libmpv mpc-qt mpc-hc cross-platform clone mpv</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mpc-qt</packageSourceUrl>
