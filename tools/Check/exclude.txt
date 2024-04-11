@@ -83,7 +83,7 @@ vcexpress2010
 vim-tux
 windows
 wirelesskeyview
+xdel
 xfinder
 xmeters
 zimbra-desktop
-xdel
