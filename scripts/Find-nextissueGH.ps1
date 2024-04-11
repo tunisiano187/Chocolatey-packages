@@ -6,7 +6,7 @@ function Find-nextissueGH {
         [string]$actor
     )
 
-    if($actor -ne 'tunisiano187' -or $title -notmatch 'update requested') {
+    if($actor -ne 'tunisiano187' -or $packageName -notmatch 'update requested') {
         throw "User $actor cannot run this"
     }
     $ErrorActionPreference = 'Continue'
