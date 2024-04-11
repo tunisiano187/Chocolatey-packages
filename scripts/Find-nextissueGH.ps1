@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Continue'
-function Find-NuspecError {
+function Find-nextissueGH {
     param(
         [Parameter(Mandatory = $true)]
         [string]$packageName
