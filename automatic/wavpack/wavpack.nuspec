@@ -31,4 +31,7 @@ WavPack employs only well known, public domain techniques (i.e., linear predicti
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/wavpack/4.80.0</packageSourceUrl>
     <docsUrl>http://www.wavpack.com/downloads.html#documentation</docsUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
