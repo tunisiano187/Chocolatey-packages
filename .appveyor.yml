@@ -202,9 +202,9 @@ build_script:
     Write-host "Check broken package"
     tools/looknewer.ps1
     git commit -am "Broken packages"
-    Write-Host "Downloading next issue's package"
-    scripts/Find-nextissue.ps1
-    git commit -am "next issue"
+    #Write-Host "Downloading next issue's package"
+    #scripts/Find-nextissue.ps1
+    #git commit -am "next issue"
     Write-Host "updating packages"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
