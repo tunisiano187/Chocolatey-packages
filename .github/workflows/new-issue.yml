@@ -15,4 +15,4 @@ jobs:
       - name: Get new package
         run: |
           Import-Module "${{ github.workspace }}\scripts\new.psm1"
-          Find-nextissueGH.ps1 -packageName "${{ github.event.issue.title }}"
+          Find-nextissueGH -packageName "${{ github.event.issue.title }}"
