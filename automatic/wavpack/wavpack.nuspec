@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>wavpack</id>
-    <version>4.80.0</version>
+    <version>0.0</version>
     <title>WavPack</title>
     <authors>WavPack</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.opus-codec.org/license/</licenseUrl>
-    <projectUrl>http://www.wavpack.com/</projectUrl>
+    <licenseUrl>https://www.opus-codec.org/license/</licenseUrl>
+    <projectUrl>https://www.wavpack.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/e613051da04b6f33809e8e260da4443f62a340dc/icons/wavpack.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>WavPack is a completely open audio compression format providing lossless, high-quality lossy, and a unique hybrid compression mode. Although the technology is loosely based on previous versions of WavPack, the new version 4 format has been designed from the ground up to offer unparalleled performance and functionality.
@@ -18,11 +18,11 @@ The hybrid mode provides all the advantages of lossless compression with an addi
 
 WavPack employs only well known, public domain techniques (i.e., linear prediction with LMS adaptation, Elias and Golomb codes) in its implementation. Methods and algorithms that have ever been patented (e.g., arithmetic coding, LZW compression) are specifically avoided. This ensures that WavPack encoders and decoders will remain open and royalty-free.
 
-[Manual](http://www.wavpack.com/wavpack_doc.html)
-[Forum](http://www.hydrogenaud.io/forums/index.php?showforum=68)
+[Manual](https://www.wavpack.com/wavpack_doc.html)
+[Forum](https://hydrogenaud.io/index.php/board,68.0.html)
 
-[Software support](http://www.wavpack.com/index.html#Software)
-[Hardware support](http://www.wavpack.com/index.html#Hardware)</description>
+[Software support](https://www.wavpack.com/index.html#Software)
+[Hardware support](https://www.wavpack.com/index.html#Hardware)</description>
     <summary>Hybrid lossless audio compression</summary>
     <releaseNotes>[Changelog](http://www.wavpack.com/changelog.txt)</releaseNotes>
     <copyright>© WavPack</copyright>
