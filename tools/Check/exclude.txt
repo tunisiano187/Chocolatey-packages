@@ -19,6 +19,7 @@ dreampie
 dropit
 dupeguru-me
 ekeyfinder
+ekiga
 evernote2onenote
 evimsync
 fastest-mouse-clicker
@@ -87,4 +88,3 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
-ekiga
