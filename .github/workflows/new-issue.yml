@@ -1,4 +1,4 @@
-﻿name: Check exception
+﻿name: Get new package
 
 on:
   issues:
@@ -12,6 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2.2.0
-      - name: Check exception
+      - name: Get new package
         run: |
+          Import-Module "${{ github.workspace }}\scripts\new.psm1"
           . "${{ github.workspace }}\scripts\Find-nextissueGH.ps1" -packageName "${{ github.event.issue.title }}"

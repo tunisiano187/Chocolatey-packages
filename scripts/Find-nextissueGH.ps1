@@ -4,7 +4,7 @@ param(
     [string]$packageName
 )
 
-Install-Module psgithubsearch -ErrorAction SilentlyContinue
+Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
 Import-Module psgithubsearch
 
 [string]$Owner = "tunisiano187"
