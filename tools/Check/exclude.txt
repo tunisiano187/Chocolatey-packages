@@ -11,6 +11,7 @@ bless
 cameyo
 chainlp
 copay
+datacleaner
 datahealthcheck
 diskext
 dragondisk
@@ -85,4 +86,3 @@ wirelesskeyview
 xfinder
 xmeters
 zimbra-desktop
-datacleaner
