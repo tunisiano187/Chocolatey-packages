@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$File = "$($env:TEMP)\thebrain.ps1"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version; ReleaseNotes = $ReleasesNotes }
 	return $Latest
 }
