@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate($Package) {
-  $licenseData = Get-GithubRepositoryLicense $Owner $repo
+  $licenseData = get-githubLicense -OwnerName $Owner -RepositoryName $repo
   $Latest.LicenseUrl = $licenseData.html_url
 }
 
