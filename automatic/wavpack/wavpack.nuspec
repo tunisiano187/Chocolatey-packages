@@ -5,7 +5,7 @@
     <version>0.0</version>
     <title>WavPack</title>
     <authors>WavPack</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.opus-codec.org/license/</licenseUrl>
     <projectUrl>https://www.wavpack.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/e613051da04b6f33809e8e260da4443f62a340dc/icons/wavpack.png</iconUrl>
