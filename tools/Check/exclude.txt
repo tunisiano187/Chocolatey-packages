@@ -87,3 +87,4 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
+ekiga
