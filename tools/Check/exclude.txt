@@ -88,3 +88,4 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
+kvrt
