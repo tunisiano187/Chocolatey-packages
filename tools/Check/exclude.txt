@@ -46,6 +46,7 @@ keepass-plugin-keecloud
 keepass-plugin-mskeyimporter
 kubernetes-cli
 kubernetes-kompose
+kvrt
 libffcall
 librecrypt
 luckybackup
@@ -88,4 +89,3 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
-kvrt
