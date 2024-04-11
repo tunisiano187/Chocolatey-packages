@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>xdel</id>
+    <version>5.3.0</version>
+    <title>Xdel</title>
+    <authors>Hermann Schinagl</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://schinagl.priv.at/nt/xdel/license.txt</licenseUrl>
+    <projectUrl>http://schinagl.priv.at/nt/xdel/xdel.html</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The NTFS filesystem of NT4/W2K/WXP supports the junction/symbolic link functionality. Deleting subdirectories recursivley can be done by various of tools, but only xdel is aware of junctions/symbolic link, and instead of crawling recursivley down a junction/symbolic link, xdel simply unlinks the junction/symbolic link, and so does no harm to contents chained into a hierarchy via junctions/symbolic link.
+
+Furthermore xdel.exe properly deletes very long pathnames with more than 256 characters. 
+
+#### Manual
+
+`xdel.exe` is a typical command line utility.
+
+Recursivly delete directory hierarchies. e.g.:
+
+    `xdel x:\dir\dir2`
+
+In the above example the directories and files below `x:\dir\dir2` are deleted.</description>
+    <summary>Delete subdirectories recursivley with support for junction/symbolic links</summary>
+    <releaseNotes>#### Program
+* Stable: The 5.3 version is stable enough to satisfy most needs.
+* No development: Currently no development activity on this utility.
+* [Changelog](http://schinagl.priv.at/nt/xdel/xdel.html)
+
+#### Package
+* Automatically generated and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 1990 Hermann Schinagl</copyright>
+    <tags>cli hardlink freeware</tags>
+    <dependencies>
+      <dependency id="vcredist2005" version="8.0.50727.763" />
+    </dependencies>
+  </metadata>
+</package>
