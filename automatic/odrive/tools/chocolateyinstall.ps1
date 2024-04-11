@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $url			= 'https://www.odrive.com/downloaddesktop?platform=win'
-$checksum		= '039ef99655f128fa944779fd4e9299e8fb911e376b72e6d69c23dae7bf328f8f'
+$checksum		= '115cc9f6c710de41875b96c5555a4059280b81850067b50dbab5f114954c99c0'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
