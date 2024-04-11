@@ -82,6 +82,7 @@ Swish
 todobackup
 trim
 vcexpress2010
+videocacheview
 vim-tux
 windows
 wirelesskeyview
@@ -89,4 +90,3 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
-videocacheview
