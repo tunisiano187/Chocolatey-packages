@@ -28,7 +28,7 @@ WavPack employs only well known, public domain techniques (i.e., linear predicti
     <copyright>© WavPack</copyright>
     <tags>cli audio compression archive</tags>
     <projectSourceUrl>http://www.wavpack.com/downloads.html#sources</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/wavpack/4.80.0</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wavpack</packageSourceUrl>
     <docsUrl>http://www.wavpack.com/downloads.html#documentation</docsUrl>
   </metadata>
   <files>
