@@ -1,15 +1,17 @@
-$ErrorActionPreference = 'Continue'
 function Find-nextissueGH {
     param(
         [Parameter(Mandatory = $true)]
-        [string]$packageName
+        [string]$packageName,
+        [Parameter(Mandatory = $true)]
+        [string]$actor
     )
 
+    if($actor -ne 'tunisiano187' -or $title -notmatch 'exclude') {
+        throw "User $actor cannot run this"
+    }
+    $ErrorActionPreference = 'Continue'
     Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
     Import-Module psgithubsearch
-
-    [string]$Owner = "tunisiano187"
-    [string]$Repository = "Chocolatey-packages"
 
     Write-Output "Search the next package to import"
     $search = $packageName
