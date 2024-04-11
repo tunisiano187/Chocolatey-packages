@@ -21,10 +21,12 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'DirectDownload'} | Where-Object {$_ -match "Download for Windows"} ).href)[0]
 	$ReleasesNotes = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Release notes'} ).href)
-
-	$version = Get-Version $ReleasesNotes.Replace('-','.')
 	$url32 = Get-RedirectedUrl $url32
 
+	$File = "$($env:TEMP)\thebrain.ps1"
+	Invoke-WebRequest -Uri $url32 -OutFile $File
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	
 	$Latest = @{ URL32 = $url32; Version = $version; ReleaseNotes = $ReleasesNotes }
 	return $Latest
 }
