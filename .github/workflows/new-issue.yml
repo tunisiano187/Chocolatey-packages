@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v2.2.0
       - name: Check exception
         run: |
-          . "${{ github.workspace }}\scripts\Find-nextissue.ps1"
+          . "${{ github.workspace }}\scripts\Find-nextissueGH.ps1" -packageName ${{ github.event.issue.title }}
