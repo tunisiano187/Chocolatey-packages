@@ -14,7 +14,7 @@ function Find-nextissueGH {
     Import-Module psgithubsearch
 
     Write-Output "Search the next package to import"
-    $search = $packageName
+    $search = $packageName.split('(|)')[1]
     if($search) {
         $folder = Join-Path $PSScriptRoot "../automatic/$search"
         if(Test-Path $folder) {
