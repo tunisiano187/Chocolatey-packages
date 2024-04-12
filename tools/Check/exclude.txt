@@ -44,6 +44,7 @@ Kaspersky Free
 keepass-plugin-autotypecustomfieldpicker
 keepass-plugin-keecloud
 keepass-plugin-mskeyimporter
+keepass-plugin-trayrecent
 kubernetes-cli
 kubernetes-kompose
 kvrt
@@ -90,4 +91,3 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
-keepass-plugin-trayrecent
