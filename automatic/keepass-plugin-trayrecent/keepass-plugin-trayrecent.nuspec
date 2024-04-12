@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>keepass-plugin-trayrecent</id>
+    <version>0.0.2</version>
+    <title>Keepass Plugin TrayRecentFiles</title>
+    <authors>Fábio Beirão</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles#disclaimer</licenseUrl>
+    <projectUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TrayRecentFiles is a KeePass 2.x plugin that lists your recent files directly in the system tray icon menu.
+
+This plug-in will add the (exact) same "Open Recent" menu to your systray KeePass icon.
+
+I believe this is a very useful plugin for people who use more than one KeePass databases on a daily basis (such as me).</description>
+    <summary>Plugin for KeePass 2.x to list your recent files directly on your systray icon</summary>
+    <releaseNotes>#### Program
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2015 Fábio Beirão</copyright>
+    <tags>keepass plugin traymenu</tags>
+    <projectSourceUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles</projectSourceUrl>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/keepass-plugin-trayrecent/0.0.2</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="keepass" version="[2.0, 3.0)" />
+    </dependencies>
+  </metadata>
+</package>
