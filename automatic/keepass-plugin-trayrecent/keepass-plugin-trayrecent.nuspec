@@ -5,7 +5,7 @@
     <version>0.0.2</version>
     <title>Keepass Plugin TrayRecentFiles</title>
     <authors>Fábio Beirão</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles#disclaimer</licenseUrl>
     <projectUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
