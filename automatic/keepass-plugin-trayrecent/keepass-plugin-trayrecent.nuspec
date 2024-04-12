@@ -22,7 +22,7 @@ I believe this is a very useful plugin for people who use more than one KeePass 
     <copyright>© 2015 Fábio Beirão</copyright>
     <tags>keepass plugin traymenu</tags>
     <projectSourceUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/keepass-plugin-trayrecent/0.0.2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/keepass-plugin-trayrecent</packageSourceUrl>
     <bugTrackerUrl>https://github.com/fdbeirao/KeePassTrayRecentFiles/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="keepass" version="[2.0, 3.0)" />
