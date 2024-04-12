@@ -28,4 +28,7 @@ I believe this is a very useful plugin for people who use more than one KeePass 
       <dependency id="keepass" version="[2.0, 3.0)" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
