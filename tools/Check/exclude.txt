@@ -90,3 +90,4 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
+keepass-plugin-trayrecent
