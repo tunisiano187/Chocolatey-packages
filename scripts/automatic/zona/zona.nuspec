@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>zona</id>
+    <version>2.0.3.3</version>
+    <title>Zona</title>
+    <authors>zona.ru</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
+    <projectUrl>http://zona.ru/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/d1e037cc7c943fda29b9067b3b1c3229d99402ff/icons/zona.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Torrent streaming media player. Closed source fork of [popcorntime](https://chocolatey.org/packages/popcorntime).
+
+#### Community
+* [Facebook](http://www.facebook.com/appzona)
+* [Twitter](http://twitter.com/zonateam)</description>
+    <summary>Torrent streaming media player</summary>
+    <releaseNotes>#### Program
+* [Changelog](http://zona.ru/changelog.html)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2011 Zona Team</copyright>
+    <tags>p2p torrent streaming video-on-demand media-catalog popcorntime admin</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/zona/</packageSourceUrl>
+    <docsUrl>http://zona.ru/faq.html</docsUrl>
+    <dependencies>
+      <dependency id="javaruntime" />
+      <dependency id="autohotkey.portable" />
+    </dependencies>
+  </metadata>
+</package>
