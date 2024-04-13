@@ -22,6 +22,7 @@ function Find-nextissueGH {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
         } elseif ($search -ne '') {
             $script = Join-Path $PSScriptRoot "Get-Package.ps1"
+            "Running $($script) $($search.Tolower())"
             . $script $search.Tolower()
         }
     }
