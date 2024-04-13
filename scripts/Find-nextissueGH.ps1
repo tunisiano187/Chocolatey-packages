@@ -13,6 +13,7 @@ function Find-nextissueGH {
     Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
     Import-Module psgithubsearch
 
+    "packageName : $packageName"
     $search = $packageName.split('(|)')[1]
     "Package to import : $search"
 
@@ -25,6 +26,8 @@ function Find-nextissueGH {
             "Running $($script) $($search.Tolower())"
             . $script $search.Tolower()
         }
+    } else {
+        "Nothing found"
     }
 
     try {
