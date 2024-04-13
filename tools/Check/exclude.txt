@@ -91,3 +91,4 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
+lili
