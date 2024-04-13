@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>searchmyfiles</id>
+    <version>2.92</version>
+    <title>SearchMyFiles</title>
+    <authors>Nir Sofer</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.nirsoft.net/utils/search_my_files.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/search_my_files.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/searchmyfiles.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SearchMyFiles is an alternative to the standard "Search For Files And Folders" module of Windows.
+
+It allows you to easily search files in your system by wildcard, by last modified/created/last accessed time, by file attributes, by file content (text or binary search), and by the file size.
+
+SearchMyFiles allows you to make a very accurate search that cannot be done with Windows search. For Example: You can search all files created in the last 10 minutes with size between 500 and 700 bytes.
+
+After you made a search, you can select one or more files, and save the list into text/html/csv/xml file, or copy the list to the clipboard.</description>
+    <summary>Alternative to Windows Search For Files + Duplicates Search</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+    <copyright>© 2009 NirSoft</copyright>
+    <tags>files folders wildcard duplicate</tags>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/searchmyfiles/</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
