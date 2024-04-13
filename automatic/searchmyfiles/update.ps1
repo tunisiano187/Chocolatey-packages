@@ -23,6 +23,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/searchmyfiles.zip"
 	$url64 = "https://www.nirsoft.net/utils/searchmyfiles-x64.zip"
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/searchmyfiles.zip"
+	Invoke-WebRequest -Uri $url64 -OutFile "tools/searchmyfiles-x64.zip"
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/search_my_files.html"
 	$regexPattern = 'SearchMyFiles v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
