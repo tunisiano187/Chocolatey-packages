@@ -14,7 +14,7 @@ function Find-nextissueGH {
     Import-Module psgithubsearch
 
     "packageName : $packageName"
-    $search = $packageName.split('(|)')[1]
+    $search = $packageName -split '\(|\)' | Select-Object -Index 1
     "Package to import : $search"
 
     if($search) {
