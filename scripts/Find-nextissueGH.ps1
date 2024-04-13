@@ -9,7 +9,7 @@ function Find-nextissueGH {
     if($actor -ne 'tunisiano187' -or $packageName -notmatch 'update requested') {
         throw "User $actor cannot run this"
     }
-    $ErrorActionPreference = 'Continue'
+    $ErrorActionPreference = 'Stop'
     Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
     Import-Module psgithubsearch
 

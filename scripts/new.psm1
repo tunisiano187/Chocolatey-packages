@@ -6,6 +6,7 @@
 # to be named using the same name.
 $funcs = @(
   'Find-nextissueGH'
+  'Update-Metadata'
 )
 
 $funcs | % {
