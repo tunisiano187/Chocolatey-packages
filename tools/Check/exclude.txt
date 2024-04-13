@@ -92,3 +92,4 @@ xfinder
 xmeters
 zimbra-desktop
 lili
+hte
