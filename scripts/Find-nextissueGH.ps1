@@ -13,15 +13,15 @@ function Find-nextissueGH {
     Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
     Import-Module psgithubsearch
 
-    Write-Output "Search the next package to import"
     $search = $packageName.split('(|)')[1]
+    "Package to import : $search"
+
     if($search) {
         $folder = Join-Path $PSScriptRoot "../automatic/$search"
         if(Test-Path $folder) {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
         } elseif ($search -ne '') {
             $script = Join-Path $PSScriptRoot "Get-Package.ps1"
-            $search
             . $script $search.Tolower()
         }
     }
