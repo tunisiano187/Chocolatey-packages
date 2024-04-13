@@ -49,9 +49,9 @@ Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packa
 
 if(Test-Path "$nupkg.zip") {
     # Expand file
-    Expand-Archive -Path "$nupkg.zip" -DestinationPath $nupkg -Force
-    Remove-Item "$nupkg.zip" -Force
     New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder" -Force
+    Expand-Archive -Path "$nupkg.zip" -DestinationPath "$folder\$packageName" -Force
+    Remove-Item "$nupkg.zip" -Force
 
     $nuspecPath = "$folder\$packageName\$packageName.nuspec"
     Write-Output "Path of the future nuspec : $($nuspecPath)"
