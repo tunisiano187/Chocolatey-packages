@@ -26,7 +26,15 @@ param(
     [string]$folder = 'automatic',
     [string]$iconfolder = 'icons'
 )
-#$ErrorActionPreference = "Stop";
+$ErrorActionPreference = "Stop";
+
+$folder=Join-Path $PSScriptRoot $folder
+if ($folder -match "scripts") {
+    $folder = $folder -replace "\\scripts", ""
+}
+
+$parentfolder = $folder -replace "\\[^\\]+$", ""
+$iconfolder = Join-Path $parentfolder $iconfolder
 
 $nupkg = "$env:TEMP\$($packageName)"
 $icon = "$iconfolder\$packageName"
@@ -67,7 +75,7 @@ if(Test-Path "$nupkg.zip") {
     } else {
         Write-Output "Icon not found in the Nuspec"
     }
-    if(!Test-Path $icon) {
+    if(!(Test-Path $icon)) {
         $pageContent = Invoke-WebRequest -Uri "https://community.chocolatey.org/packages/$($packageName)"
         $regexPattern = '(?<=&lt;iconUrl&gt;).*?(?=&lt;/iconurl&gt;)'
         $urlMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
@@ -123,6 +131,7 @@ if(Test-Path "$nupkg.zip") {
     }
 
     $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
+    $encoding = New-Object System.Text.UTF8Encoding($false)
     [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
 
     # Check if the element <files> exist in the nuspec
