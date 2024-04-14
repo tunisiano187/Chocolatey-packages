@@ -93,3 +93,4 @@ xmeters
 zimbra-desktop
 lili
 hte
+zona
