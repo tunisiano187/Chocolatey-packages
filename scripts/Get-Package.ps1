@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Download and prepare to add a package in the automatic folder
 
@@ -11,14 +11,22 @@
 
 .PARAMETER folder
     The folder where the packages are
-    Default : ..\automatic\
+    Default : automatic\
 
 .PARAMETER iconfolder
     The folder where we're adding the icons
-    Default : ..\icons\
+    Default : icons\
 
 .OUTPUTS
     A folder containing the main files and the icon if that's available
+
+.DEVELOPMENT informations
+    Vars
+
+    $nupkg : Temp path ($env:TEMP\packageName)
+    $work... : vars for the working environment directories and files
+    $workcontent... : vars containing the files content
+
 #>
 param(
     [Parameter(Mandatory = $true)]
@@ -26,19 +34,20 @@ param(
     [string]$folder = 'automatic',
     [string]$iconfolder = 'icons'
 )
-#$ErrorActionPreference = "Stop";
+
+$ErrorActionPreference = "Stop";
 
 $folder=Join-Path $PSScriptRoot $folder
 if ($folder -match "scripts") {
     $folder = $folder -replace "\\scripts", ""
 }
 
-$parentfolder = $folder -replace "\\[^\\]+$", ""
-$iconfolder = Join-Path $parentfolder $iconfolder
+$parentfolder   = $folder -replace "\\[^\\]+$", ""
+$iconfolder     = Join-Path $parentfolder $iconfolder
 
-$nupkg = "$env:TEMP\$($packageName)"
-$icon = "$iconfolder\$packageName"
-$nuspecPath = "$folder\$packageName\$packageName.nuspec"
+$icon           = "$iconfolder\$packageName"
+$nuspecPath     = "$folder\$packageName\$packageName.nuspec"
+$PackageFolder  = "$folder\$packageName\"
 
 if(Test-Path "$folder\$packageName\") {
     $replace = Read-Host -Prompt "the package already exist in the destination folder, do you want to replace it ? Y/[N]"
@@ -50,176 +59,156 @@ if(Test-Path "$folder\$packageName\") {
     }
 }
 
-Install-Module PSGithubSearch
-Import-Module PSGithubSearch
+try {
+    Import-Module PSGithubSearch
+}
+catch {
+    Install-Module PSGithubSearch
+    Import-Module PSGithubSearch
+}
 
+# Preparing the work Folder
+$workfolder         = Join-Path -Path $env:TEMP -ChildPath "Scripts\WorkDir"
+$WorkNuspec         = Join-Path -Path $workfolder -ChildPath "$packageName.nuspec"
+$nupkgZip           = Join-Path -Path $env:TEMP -ChildPath "Scripts\$packageName.zip"
+
+
+New-Item -ItemType Directory -Path $workfolder -Force
 # Try to download the nupkg
-Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packageName)" -OutFile "$nupkg.zip"
+Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packageName)" -OutFile $nupkgZip
 
-if(Test-Path "$nupkg.zip") {
-    # Expand file
-    New-Item -ItemType Directory -Name $packageName.ToLower() -Path "$folder" -Force
-    Expand-Archive -Path "$nupkg.zip" -DestinationPath "$folder\$packageName" -Force
-    Remove-Item "$nupkg.zip" -Force
+if(!(Test-Path $nupkgZip)) {
+    Throw "Unable to download $packageName from the community repository";
+}
 
-    $nuspecPath = "$folder\$packageName\$packageName.nuspec"
-    Write-Output "Path of the future nuspec : $($nuspecPath)"
-    # read nuspec
-    [xml]$nuspec = New-Object System.Xml.XmlDocument
-    [xml]$nuspec = Get-Content "$folder\$packageName\$packageName.nuspec"
+# Expand file To work folder and remove the temp file
+Expand-Archive -Path $nupkgZip -DestinationPath $workfolder -Force
+Remove-Item $nupkgZip -Force
 
-    # Check if the nuspec has an iconUrl and download the icon to the right folder
+# Check if nuspec is present
+if(!(Test-Path $workNuspec)) {
+    Throw "Unable to find $workNuspec";
+}
 
-    if($nuspec.package.metadata.iconUrl) {
-        $icon = "$iconfolder\$packageName.$(($nuspec.package.metadata.iconUrl).split('.')[-1])"
-        Invoke-WebRequest -Uri $nuspec.package.metadata.iconUrl -OutFile $icon
-    } else {
-        Write-Output "Icon not found in the Nuspec"
+# Loading Nuspec to var
+[xml]$WorkContentNuspec = New-Object System.Xml.XmlDocument
+[xml]$WorkContentNuspec = Get-Content $workNuspec
+
+# Check if the nuspec has an iconUrl and download the icon directly to the right folder
+if($WorkContentNuspec.package.metadata.iconUrl) {
+    $iconfile = "$icon.$(($WorkContentNuspec.package.metadata.iconUrl).split('.')[-1])"
+    Invoke-WebRequest -Uri $WorkContentNuspec.package.metadata.iconUrl -OutFile $iconfile
+} else {
+    Write-Output "Icon not found in the Nuspec"
+}
+
+# Check if the icon is present and download it directly from the community repository if not
+if(!(Test-Path $icon)) {
+    $pageContent = Invoke-WebRequest -Uri "https://community.chocolatey.org/packages/$($packageName)"
+    $regexPattern = '(?<=&lt;iconUrl&gt;).*?(?=&lt;/iconurl&gt;)'
+    $urlMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
+    if ($urlMatch.Matches.Count -gt 0) {
+        Invoke-WebRequest -Uri $urlMatch.Matches[0].Value -OutFile "$icon.$(($urlMatch.Matches[0].Value).split('.')[-1])"
     }
-    if(!(Test-Path $icon)) {
-        $pageContent = Invoke-WebRequest -Uri "https://community.chocolatey.org/packages/$($packageName)"
-        $regexPattern = '(?<=&lt;iconUrl&gt;).*?(?=&lt;/iconurl&gt;)'
-        $urlMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
-        if ($urlMatch.Matches.Count -gt 0) {
-            Invoke-WebRequest -Uri $urlMatch.Matches[0].Value -OutFile "$iconfolder\$packageName.$(($urlMatch.Matches[0].Value).split('.')[-1])"
-        }
+}
+
+## Check if the nuspec has a version and set it to 0.0
+#if($WorkContentNuspec.package.metadata.Version) {
+#    Update-Metadata -NuspecFile $workNuspec -key "version" -value "0.0"
+#}
+
+# Check if the packageSourceUrl is set and is a Github repository
+if($WorkContentNuspec.package.metadata.packageSourceUrl) {
+    $PackageSourceUrl = $WorkContentNuspec.package.metadata.packageSourceUrl
+}
+if($PackageSourceUrl -match "://github.com") {
+    $GHRawUrl = $PackageSourceUrl -replace "github.com","raw.githubusercontent.com"
+    
+    # Download the update.ps1 file if it is available
+    try {
+        Invoke-WebRequest -Uri "$GHRawUrl/update.ps1" -OutFile "$workfolder\update.ps1.old"
     }
-
-    # Check if the nuspec has a version and set it to 0.0
-    if($nuspec.package.metadata.Version) {
-        $nuspec.package.metadata.Version = "0.0"
-    }
-
-    $packagesourceurl = $($nuspec.package.metadata.packageSourceUrl).split('/')[3]
-
-    if($nuspec.package.metadata.packageSourceUrl -and $nuspec.package.metadata.packageSourceUrl -match $packageName) {
-        if($nuspec.package.metadata.packageSourceUrl -match 'github' -or $nuspec.package.metadata.packageSourceUrl -match 'gitlab') {
-
-            try {
-                $readmelink = (Find-GitHubCode -user $packagesourceurl -Extension 'md' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'readme'}).html_url.replace('blob','raw')
-                Invoke-WebRequest -Uri $readmelink -OutFile "$folder\$packageName\ReadMe.md" -ErrorAction SilentlyContinue
-            } catch {
-                Write-Output "No Readme found in $packagesourceurl"
-            }
-
-            try {
-                $LICENSElink = (Find-GitHubCode -user $packagesourceurl -Extension 'txt' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'LICENSE'}).html_url.replace('blob','raw')
-                Invoke-WebRequest -Uri $LICENSElink -OutFile "$folder\$packageName\tools\LICENSE.txt" -ErrorAction SilentlyContinue
-            } catch {
-                Write-Output "No LICENSE found in $packagesourceurl"
-            }
-
-            try {
-                $VERIFICATIONlink = (Find-GitHubCode -user $packagesourceurl -Extension 'txt' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'VERIFICATION'}).html_url.replace('blob','raw')
-                Invoke-WebRequest -Uri $VERIFICATIONlink -OutFile "$folder\$packageName\tools\VERIFICATION.txt" -ErrorAction SilentlyContinue
-            } catch {
-                Write-Output "No VERIFICATION found in $packagesourceurl"
-            }
-
-            try {
-                $updatelink = (Find-GitHubCode -user $packagesourceurl -Extension 'ps1' -Keywords $packageName -ErrorAction SilentlyContinue | Where-Object {$_ -imatch 'update'}).html_url.replace('blob','raw')
-                $updatefile="$folder\$packageName\update.ps1.bak"
-                Invoke-WebRequest -Uri $updatelink -OutFile $updatefile -ErrorAction SilentlyContinue
-                (Get-Content $updatefile) -replace "legal","tools" | Set-Content $updatefile
-            } catch {
-                Write-Output "No update.ps1 found in $packagesourceurl"
-            }
-        }
-    } elseif (!$nuspec.package.metadata.packageSourceUrl) {
-        # Add packageSourceUrl element if missing
-            $child = $xmlDoc.CreateElement("packageSourceUrl")
-            $nuspec.package.metadata.AppendChild($child)
+    catch {
+        "No update.ps1 file available"
     }
 
-    "Savig nuspec to $folder\$packageName\$packageName.nuspec"
+    # Download the Readme file if it is available
+    try {
+        Invoke-WebRequest -Uri "$GHRawUrl/ReadMe.md" -OutFile "$workfolder\ReadMe.md"
+    }
+    catch {
+        "No ReadMe.md file available"
+    }
+} # elseif (!$WorkContentNuspec.package.metadata.packageSourceUrl) {
+    # Add packageSourceUrl element if missing
+#        $child = $xmlDoc.CreateElement("packageSourceUrl")
+#        $WorkContentNuspec.package.metadata.AppendChild($child)
+#}
 
-    $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
-    $encoding = New-Object System.Text.UTF8Encoding $true
-    [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", [char]0xFEFF + $output, $encoding);
+# Preparing the destination Folder
+New-Item -ItemType Directory -Path "$folder\$packageName" -Force
+"Saving nuspec to $folder\$packageName\$packageName.nuspec"
 
-    "Check if the element <files> exist in the nuspec"
-    $nuspecContent = $nuspec
-if (!($nuspecContent -match "<files>")) {
+$WorkContentNuspec.Save($nuspecPath)
+
+"Check if the element <files> exist in the nuspec"
+if (!($WorkContentNuspec -match "<files>")) {
     Write-Output 'Add <files>...</files>'
     (Get-Content $NuspecPath) -replace "</package>", '  <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>' | Set-Content $NuspecPath
-    
-    # Save the update
-    Set-Content -Path $nuspecPath -Value $nuspecContent.OuterXml
-    Write-Output "The lines <files>...</files> have been added to the nuspec."
 }
 
-    if(!($nuspec.package.metadata.packageSourceUrl)) {
-        Write-Output "add packageSourceUrl"
-        (Get-Content $NuspecPath) -replace "</owners>", '</owners>
-    <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
-    }
-    Write-Output "Set version to 0.0"
-    Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
+"Check if the element <packageSourceUrl> exist in the nuspec"
+if(!($WorkContentNuspec.package.metadata.packageSourceUrl)) {
+    Write-Output "add packageSourceUrl"
+    (Get-Content $NuspecPath) -replace "</owners>", '</owners>
+<packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
+}
 
-    "copy required files in the new folder"
-    Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
+# "Set version to 0.0"
+#Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
 
-    if(Test-Path "$nupkg\tools") {
-        Remove-Item -Path "$nupkg\tools" -Include "*.exe"
-        Get-ChildItem -Path "$nupkg\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
-        Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.zip" -Force
-    }
+# Moving files to the final destination
 
-    "Removing unneeded files"
-    Remove-Item -Path "$folder\$packageName\_rels" -Recurse -Force
-    Remove-Item -Path "$folder\$packageName\package" -Recurse -Force
-    Remove-Item -Path "$folder\$packageName\[Content_Types].xml" -Force
+if(Test-Path "$workfolder\tools") {
+    Remove-Item -Path "$workfolder\tools" -Include "*.exe"
+    Get-ChildItem -Path "$workfolder\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
+    New-Item -ItemType Directory -Path "$PackageFolder\tools" -Force
+    Move-Item -Path "$workfolder\tools" -Destination "$PackageFolder\tools" -Exclude "*.zip" -Force
+}
 
-    Write-Output "git pull"
-    git pull
+if(Test-Path "$workfolder\update.ps1") {
+    Move-Item -Path "$workfolder\update.ps1.old" -Destination "$PackageFolder\update.ps1.old"
+}
 
-    Write-Output "List files to add to git"
-    $toadd = (get-childitem -path "$folder\$packageName").FullName
-    foreach ($file in $toadd) {
-        if($file -notmatch "exe" -and $file -notmatch "zip" -and $file -notmatch "msi") {
-            git add $file
-        }
-    }
-    $toadd = (get-childitem -path $iconfolder).FullName
-    foreach ($file in $toadd) {
+if(Test-Path "$workfolder\Readme.md") {
+    Move-Item -Path "$workfolder\Readme.md" -Destination "$PackageFolder\Readme.md"
+}
+
+"git pull"
+git pull
+
+"List files to add to git"
+$toadd = (get-childitem -path "$folder\$packageName").FullName
+foreach ($file in $toadd) {
+    if($file -notmatch "exe" -and $file -notmatch "zip" -and $file -notmatch "msi") {
         git add $file
     }
-    git commit -m "Package download $packageName"
-    try {
-        $PushURL = $env:gitlab_PushURL
+}
+$toadd = (get-childitem -path $iconfolder).FullName
+foreach ($file in $toadd) {
+    git add $file
+}
+git commit -m "Package download $packageName
+[skip ci]"
 
-        $origin  = git config --get remote.origin.url
-        ### Construct RepoURL to be set as new origin
-        $RepoURL = (
-            $PushURL.split('://')[0] `
-            + "://" `
-            + $env:gitlab_user `
-            + ":" `
-            + $env:gitlab_api_key `
-            + "@" `
-            + $PushURL.TrimStart(
-                $(
-                    $PushURL.split('://')[0] `
-                    + "://"
-                )
-            )
-        )
+try {
+    git config --global user.email "helpdesk.choc@gmail.com"
+    git config --global user.name "Tunisiano187"
 
-        ### Set new push URL
-        git remote set-url origin $RepoURL
-
-        ### Ensure local is up-to-date to avoid conflicts
-        Write-Output "Executing git pull"
-        git checkout -q $Branch
-        git pull -q origin $Branch
-        ### Push
-        Write-Output "Pushing changes"
-        git push -q
-        git remote set-url origin $origin
-    } catch {
-        write-output "nothing to push"
-    }
+    git push
+} catch {
+    write-output "nothing to push"
 }
