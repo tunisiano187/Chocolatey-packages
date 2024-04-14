@@ -38,6 +38,7 @@ $iconfolder = Join-Path $parentfolder $iconfolder
 
 $nupkg = "$env:TEMP\$($packageName)"
 $icon = "$iconfolder\$packageName"
+$nuspecPath = "$folder\$packageName\$packageName.nuspec"
 
 if(Test-Path "$folder\$packageName\") {
     $replace = Read-Host -Prompt "the package already exist in the destination folder, do you want to replace it ? Y/[N]"
@@ -130,22 +131,26 @@ if(Test-Path "$nupkg.zip") {
             $nuspec.package.metadata.AppendChild($child)
     }
 
-    $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
-    $encoding = New-Object System.Text.UTF8Encoding($false)
-    [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", $output, $encoding);
+    "Savig nuspec to $folder\$packageName\$packageName.nuspec"
 
-    # Check if the element <files> exist in the nuspec
-if (!($nuspecContent.Contains("<files>"))) {
+    $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
+    $encoding = New-Object System.Text.UTF8Encoding $true
+    [System.IO.File]::WriteAllText("$folder\$packageName\$packageName.nuspec", [char]0xFEFF + $output, $encoding);
+
+    "Check if the element <files> exist in the nuspec"
+    $nuspecContent = $nuspec
+if (!($nuspecContent -match "<files>")) {
     Write-Output 'Add <files>...</files>'
-    $nuspecContent = $nuspecContent -replace '</package>', '  <files>
+    (Get-Content $NuspecPath) -replace "</package>", '  <files>
     <file src="tools\**" target="tools" />
   </files>
-</package>'
-
+</package>' | Set-Content $NuspecPath
+    
     # Save the update
-    Set-Content -Path $nuspecPath.FullName -Value $nuspecContent
+    Set-Content -Path $nuspecPath -Value $nuspecContent.OuterXml
     Write-Output "The lines <files>...</files> have been added to the nuspec."
 }
+
     if(!($nuspec.package.metadata.packageSourceUrl)) {
         Write-Output "add packageSourceUrl"
         (Get-Content $NuspecPath) -replace "</owners>", '</owners>
@@ -154,7 +159,7 @@ if (!($nuspecContent.Contains("<files>"))) {
     Write-Output "Set version to 0.0"
     Update-Metadata -NuspecFile $NuspecPath -key "version" -value "0.0"
 
-    # copy required files in the new folder
+    "copy required files in the new folder"
     Copy-Item -Path "$nupkg\$packageName.nuspec" -Destination "$folder\$packageName\" -Recurse
 
     if(Test-Path "$nupkg\tools") {
@@ -162,6 +167,11 @@ if (!($nuspecContent.Contains("<files>"))) {
         Get-ChildItem -Path "$nupkg\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
         Move-Item -Path "$nupkg\tools" -Destination "$folder\$packageName\" -Exclude "*.zip" -Force
     }
+
+    "Removing unneeded files"
+    Remove-Item -Path "$folder\$packageName\_rels" -Recurse -Force
+    Remove-Item -Path "$folder\$packageName\package" -Recurse -Force
+    Remove-Item -Path "$folder\$packageName\[Content_Types].xml" -Force
 
     Write-Output "git pull"
     git pull
