@@ -26,7 +26,7 @@ param(
     [string]$folder = 'automatic',
     [string]$iconfolder = 'icons'
 )
-$ErrorActionPreference = "Stop";
+#$ErrorActionPreference = "Stop";
 
 $folder=Join-Path $PSScriptRoot $folder
 if ($folder -match "scripts") {
