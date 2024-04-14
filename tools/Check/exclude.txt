@@ -94,3 +94,4 @@ zimbra-desktop
 lili
 hte
 zona
+emulationstation
