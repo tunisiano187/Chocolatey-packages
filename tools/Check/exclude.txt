@@ -95,3 +95,4 @@ lili
 hte
 zona
 emulationstation
+emulationstation.install
