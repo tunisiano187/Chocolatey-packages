@@ -201,13 +201,13 @@ $toadd = (get-childitem -path $iconfolder).FullName
 foreach ($file in $toadd) {
     git add $file
 }
+git config user.email "helpdesk.choc@gmail.com"
+git config user.name "Tunisiano187"
+
 git commit -m "Package download $packageName
 [skip ci]"
 
 try {
-    git config --global user.email "helpdesk.choc@gmail.com"
-    git config --global user.name "Tunisiano187"
-
     git push
 } catch {
     write-output "nothing to push"
