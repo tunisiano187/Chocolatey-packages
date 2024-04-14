@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?><coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"><dc:creator>zona.ru</dc:creator><dc:description>Torrent streaming media player. Closed source fork of [popcorntime](https://chocolatey.org/packages/popcorntime).
+
+#### Community
+* [Facebook](http://www.facebook.com/appzona)
+* [Twitter](http://twitter.com/zonateam)</dc:description><dc:identifier>zona</dc:identifier><version>2.0.3.3</version><keywords>p2p torrent streaming video-on-demand media-catalog popcorntime admin</keywords><dc:title>Zona</dc:title><lastModifiedBy>choco, Version=0.10.14.0, Culture=neutral, PublicKeyToken=79d02ea9cad655eb;Microsoft Windows NT 10.0.17763.0;.NET Framework 4</lastModifiedBy></coreProperties>
