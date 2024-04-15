@@ -108,7 +108,7 @@ if(!(Test-Path $icon)) {
     $regexPattern = '(?<=&lt;iconUrl&gt;).*?(?=&lt;/iconurl&gt;)'
     $urlMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
     if ($urlMatch.Matches.Count -gt 0) {
-        Invoke-WebRequest -Uri $urlMatch.Matches[0].Value -OutFile "$icon.$(($urlMatch.Matches[0].Value).split('.')[-1])"
+        Invoke-WebRequest -Uri $urlMatch.Matches[0].Value -OutFile "$icon.$(($urlMatch.Matches[0].Value).split('.')[-1])" -ErrorAction Continue
     }
 }
 
