@@ -100,3 +100,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+sagethumbs
