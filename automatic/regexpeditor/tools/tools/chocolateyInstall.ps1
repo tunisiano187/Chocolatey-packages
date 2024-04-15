@@ -23,11 +23,11 @@ try {
   if (Test-Path ($batchStartJar)) {Remove-Item $batchStartJar -force}
 '@echo off
 set batDir=%~dp0%
-where javaw
-if %ErrorLevel% neq 0 (
+Where-Object javaw
+if %ErrorLevelForEach-Object neq 0 (
   echo WARNING: javaw was not found!
   if "%Java_Home%" neq "" (
-    echo ERROR: %%JAVA_HOME%% not set. Please set this variable to the directory containing javaw.exe
+    echo ERROR: %%JAVA_HOME%ForEach-Object not set. Please set this variable to the directory containing javaw.exe
     pause
     exit /b 1
   )
