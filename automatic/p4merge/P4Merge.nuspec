@@ -6,7 +6,7 @@
 	<version>2024.1</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/p4merge</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon p4merge.png using pngquant a900da85b5ae92a06009fb5b35b3253720ca2206/icons/p4merge.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a900da85b5ae92a06009fb5b35b3253720ca2206/icons/p4merge.png</iconUrl>
 	<title>P4Merge, the Perforce Visual Merge Tool</title>
 	<authors>Perforce Software, Inc.</authors>
 	<projectUrl>https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge</projectUrl>

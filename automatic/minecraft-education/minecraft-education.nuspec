@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.microsoft.com/servicesagreement</licenseUrl>
     <projectUrl>https://education.minecraft.net/get-started/download</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon minecraft.png using pngquant 5eb42fd961932f174bba394cb2cbff74b650ad15/icons/minecraft.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@5eb42fd961932f174bba394cb2cbff74b650ad15/icons/minecraft.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Minecraft education
 Minecraft is a game about breaking and placing blocks. At first, people built structures to protect against nocturnal

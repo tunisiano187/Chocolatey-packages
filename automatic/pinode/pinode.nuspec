@@ -6,7 +6,7 @@
 	<version>0.4.10</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pinode</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon pinode.png using pngquant 0b5a8f94de3b943557dad3b2979127dd1a1cfdbd/icons/pinode.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0b5a8f94de3b943557dad3b2979127dd1a1cfdbd/icons/pinode.png</iconUrl>
 	<title>PiNode</title>
 	<authors>SocialChain Inc.</authors>
 	<projectUrl>https://minepi.com/</projectUrl>

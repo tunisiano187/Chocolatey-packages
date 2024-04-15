@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.ej-technologies.com/static/buy/install4j/install4j_license.html</licenseUrl>
     <projectUrl>https://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon install4j.install.png using pngquant 95ae833045ae7be2d7a3c310df53e9de7094a25d/icons/install4j.install.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@95ae833045ae7be2d7a3c310df53e9de7094a25d/icons/install4j.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## install4j
 

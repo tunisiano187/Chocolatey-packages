@@ -18,7 +18,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/filejuggler</packageSourceUrl>
     <projectUrl>http://www.filejuggler.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon filejuggler.png using pngquant 4dbd96e4209a011aed19deca9423e9e93f0f69ac/icons/filejuggler.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4dbd96e4209a011aed19deca9423e9e93f0f69ac/icons/filejuggler.png</iconUrl>
     <tags>FileJuggler File Juggler organisation organization admin trial</tags>
     <copyright>Simon</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -7,7 +7,7 @@
     <authors>Monosnap</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://monosnap.com/welcome</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon monosnap.png using pngquant 2a8434d33ce20267cd33a54ecd538a94dd3063a8/icons/monosnap.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2a8434d33ce20267cd33a54ecd538a94dd3063a8/icons/monosnap.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## monosnap
 Monosnap is a perfect screenshot tool for Windows

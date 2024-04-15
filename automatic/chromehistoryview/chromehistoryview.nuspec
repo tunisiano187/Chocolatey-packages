@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/chrome_history_view.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/chrome_history_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon chromehistoryview.png using pngquant 4a07dc7f28e9a9f6dd1bed1ca17de005663ce8e3/icons/chromehistoryview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4a07dc7f28e9a9f6dd1bed1ca17de005663ce8e3/icons/chromehistoryview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## ChromeHistoryView
 ChromeHistoryView is a small utility that reads the history data file of Google Chrome 

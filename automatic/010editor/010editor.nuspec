@@ -12,7 +12,7 @@
     <copyright>2020 SweetScape Software Inc.</copyright>
     <licenseUrl>https://www.sweetscape.com/010editor/manual/License.htm</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon 010editor.png using pngquant fbc6ec739046bf8f1a7e85a68d1496b0ef6435f2/icons/010editor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fbc6ec739046bf8f1a7e85a68d1496b0ef6435f2/icons/010editor.png</iconUrl>
     <docsUrl>https://www.sweetscape.com/010editor/manual/</docsUrl>
     <tags>010editor admin editor hex file binary template script trial</tags>
     <summary>010 Editor is a hex and process editor that allows exploration of data using binary templates and interaction with data via scripts</summary>
