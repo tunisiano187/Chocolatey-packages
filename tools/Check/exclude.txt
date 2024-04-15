@@ -13,6 +13,7 @@ chainlp
 copay
 datacleaner
 datahealthcheck
+diskdump
 diskext
 dragondisk
 dreampie
@@ -20,6 +21,8 @@ dropit
 dupeguru-me
 ekeyfinder
 ekiga
+emulationstation
+emulationstation.install
 evernote2onenote
 evimsync
 fastest-mouse-clicker
@@ -35,6 +38,7 @@ hostinfo
 hp-bios-cmdlets
 hp-ilo-cmdlets
 hp-oa-cmdlets
+hte
 isoplex
 izpack
 jdk11
@@ -50,6 +54,7 @@ kubernetes-kompose
 kvrt
 libffcall
 librecrypt
+lili
 luckybackup
 md5sums
 meson
@@ -91,9 +96,4 @@ xdel
 xfinder
 xmeters
 zimbra-desktop
-lili
-hte
 zona
-emulationstation
-emulationstation.install
-diskdump
