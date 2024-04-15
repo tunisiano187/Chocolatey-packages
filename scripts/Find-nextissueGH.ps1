@@ -6,9 +6,6 @@ function Find-nextissueGH {
         [string]$actor
     )
 
-    if($actor -ne 'tunisiano187' -or $packageName -notmatch 'update requested') {
-        throw "User $actor cannot run this"
-    }
     #$ErrorActionPreference = 'Stop'
     Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
     Import-Module psgithubsearch
@@ -16,6 +13,11 @@ function Find-nextissueGH {
     "packageName : $packageName"
     $search = $packageName -split '\(|\)' | Select-Object -Index 1
     "Package to import : $search"
+
+    if($actor -ne 'tunisiano187' -or $packageName -notmatch 'update requested') {
+        "Not running the get-package script"
+        $search = $null
+    }
 
     if($search) {
         $folder = Join-Path $PSScriptRoot "../automatic/$search"
@@ -26,8 +28,6 @@ function Find-nextissueGH {
             "Running $($script) $($search.Tolower())"
             . $script $search.Tolower()
         }
-    } else {
-        "Nothing found"
     }
 
     try {
