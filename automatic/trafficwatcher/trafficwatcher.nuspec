@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>trafficwatcher</id>
+    <version>2.0.1</version>
+    <title>TrafficWatcher</title>
+    <authors>Stefan Kueng</authors>
+    <owners>dtgm</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://stefanstools.sourceforge.net/trafficWatcher.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/5814765f80add6789905178b9c1e8c7b5453bffe/icons/trafficwatcher.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>trafficWatcher is a small tool to monitor your network activity.
+
+Unlike other tools, trafficWatcher can differentiate between traffic inside your LAN and the traffic that reaches the internet. It shows the current up and download speed in a small icon in the system tray.  More detailed traffic information can be shown in the dialog.  The options page allows to set the network card to use and the max speed you expect.
+
+[Source code](https://sourceforge.net/p/trafficwatcher/code/HEAD/tree/trunk/)</description>
+    <summary>Small tool to monitor your network activity</summary>
+    <releaseNotes />
+    <copyright>© Stefan Kueng</copyright>
+    <tags>network bandwidth monitor</tags>
+    <dependencies>
+      <dependency id="winpcap" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
