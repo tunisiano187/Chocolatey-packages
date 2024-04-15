@@ -123,7 +123,7 @@ if($WorkContentNuspec.package.metadata.packageSourceUrl) {
 }
 if($PackageSourceUrl -match "://github.com") {
     $GHRawUrl = $PackageSourceUrl -replace "github.com","raw.githubusercontent.com"
-    
+
     # Download the update.ps1 file if it is available
     try {
         Invoke-WebRequest -Uri "$GHRawUrl/update.ps1" -OutFile "$workfolder\update.ps1.old"
@@ -185,6 +185,11 @@ if(Test-Path "$workfolder\update.ps1") {
 
 if(Test-Path "$workfolder\Readme.md") {
     Move-Item -Path "$workfolder\Readme.md" -Destination "$PackageFolder\Readme.md"
+} else {
+    $TemplateFolder = Join-Path $($parentfolder "scripts/templates")
+    $TemplateReadMe = Join-Path $TemplateFolder "README.md"
+    $ReadmeContent = Get-Content $TemplateReadMe
+    "File $TemplateReadMe exist ? $(Test-Path $TemplateReadMe)"
 }
 
 "git pull"
