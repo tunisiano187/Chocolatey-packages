@@ -98,3 +98,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+pulse
