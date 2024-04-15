@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/search_my_files.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/search_my_files.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon searchmyfiles.png using pngquant a555b64c625fd943b1491eaf849f4fc86dda6409/icons/searchmyfiles.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a555b64c625fd943b1491eaf849f4fc86dda6409/icons/searchmyfiles.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## SearchMyFiles
 SearchMyFiles is an alternative to the standard "Search For Files And Folders" module of Windows.

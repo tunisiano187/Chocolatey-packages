@@ -9,7 +9,7 @@
     <title>MediathekView</title>
     <authors>W.Xaver</authors>
     <projectUrl>https://mediathekview.de/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon mediathekview.png using pngquant 538e4b7270e2c579b46c65e43bc641ad65077485/icons/mediathekview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@538e4b7270e2c579b46c65e43bc641ad65077485/icons/mediathekview.png</iconUrl>
     <copyright>© 2016-2017 Copyright by MediathekView Team</copyright>
     <licenseUrl>https://github.com/mediathekview/MediathekView/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

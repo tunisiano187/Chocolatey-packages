@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.ej-technologies.com/static/buy/install4j/install4j_license.html</licenseUrl>
     <projectUrl>https://www.ej-technologies.com/products/install4j/overview.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon install4j.png using pngquant 8d63b6874e2e55d8dead94bd32a802c9b7b401aa/icons/install4j.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8d63b6874e2e55d8dead94bd32a802c9b7b401aa/icons/install4j.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>install4j is a powerful multi-platform Java installer builder that generates native installers and application launchers for Java applications.
 

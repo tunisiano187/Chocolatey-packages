@@ -30,7 +30,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/KN4CK3R/KeePassQuickUnlock</projectSourceUrl>
     <bugTrackerUrl>https://github.com/KN4CK3R/KeePassQuickUnlock/issues</bugTrackerUrl>
     <docsUrl>https://github.com/KN4CK3R/KeePassQuickUnlock/wiki/</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon keepass-plugin-quickunlock.png using pngquant 874c7c65502853cab9d5bbed58a4663313517d42/icons/keepass-plugin-quickunlock.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@874c7c65502853cab9d5bbed58a4663313517d42/icons/keepass-plugin-quickunlock.png</iconUrl>
     <tags>foss keepass plugin password unlock</tags>
     <copyright>© 2016 KN4CK3R</copyright>
     <licenseUrl>https://github.com/KN4CK3R/KeePassQuickUnlock/blob/master/LICENSE</licenseUrl>

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/IntelRealSense/librealsense/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://realsense.intel.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon realsense-sdk2.png using pngquant 9133e90cda081e4905b6c2d830c890a282ce5cb8/icons/realsense-sdk2.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9133e90cda081e4905b6c2d830c890a282ce5cb8/icons/realsense-sdk2.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Intel® RealSense™ SDK 2.0 is a cross-platform library for Intel® RealSense™ depth cameras (D400 series and the SR300).
 

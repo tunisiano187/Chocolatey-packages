@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime/Eula</licenseUrl>
     <projectUrl>http://www.softwareok.com/?seite=Microsoft/NewFileTime</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon newfiletime.png using pngquant f59b34591858e92f4cf32aeb9368965d22637563/icons/newfiletime.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f59b34591858e92f4cf32aeb9368965d22637563/icons/newfiletime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## NewFileTime
 NewFileTime is a small portable but effective tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on your Windows system. 

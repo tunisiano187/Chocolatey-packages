@@ -9,7 +9,7 @@
     <title>geany-plugins (Install)</title>
     <authors>Geany Team</authors>
     <projectUrl>https://plugins.geany.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon geany-plugins.png using pngquant 0c4813ac1787fa88d3e85b01209fbc751301b81e/icons/geany-plugins.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0c4813ac1787fa88d3e85b01209fbc751301b81e/icons/geany-plugins.png</iconUrl>
     <copyright>Geany Teams</copyright>
     <licenseUrl>https://plugins.geany.org/licensing.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

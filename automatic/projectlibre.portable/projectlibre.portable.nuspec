@@ -9,7 +9,7 @@
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/projectlibre.portable</packageSourceUrl>
     <licenseUrl>http://www.projectlibre.org/comment/615#comment-615</licenseUrl>
     <projectUrl>http://www.projectlibre.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon projectlibre.png using pngquant dfd9973f9640d2718452afc1c08d7e8150a284ca/icons/projectlibre.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@dfd9973f9640d2718452afc1c08d7e8150a284ca/icons/projectlibre.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## projectlibre.portable
 

@@ -15,7 +15,7 @@ For every log line created by USBLogView, the following information is displayed
     </description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/usblogview</packageSourceUrl>
     <projectUrl>https://www.nirsoft.net/utils/usb_log_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon usblogview.png using pngquant 61d2bf2c141d90eb6a371145fa6a7b1330b369f8/icons/usblogview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@61d2bf2c141d90eb6a371145fa6a7b1330b369f8/icons/usblogview.png</iconUrl>
     <tags>freeware utility usb log record plug unplug</tags>
     <copyright>NirSoft</copyright>
     <licenseUrl>https://www.nirsoft.net/utils/usb_log_view.html</licenseUrl>
