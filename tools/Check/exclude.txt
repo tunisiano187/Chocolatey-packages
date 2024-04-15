@@ -102,3 +102,4 @@ zimbra-desktop
 zona
 sagethumbs
 keepass-plugin-traytotp
+regexpeditor
