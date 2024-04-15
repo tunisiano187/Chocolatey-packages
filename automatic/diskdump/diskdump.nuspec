@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>diskdump</id>
+    <version>0.1.0</version>
+    <title>DiskDump</title>
+    <authors>Tom Bramer</authors>
+    <owners>dtgm</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://www.programmingunlimited.net/siteexec/content.cgi?page=dd</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/db586c7ffab25ce8531568b349e1e206e4696b4e/icons/diskdump.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DiskDump is a simple application I created some time ago to assist with dealing with a faulty hard disk. DiskDump not only saves the raw contents of a disk drive, but it also calculates the checksum of each block and stores it in a seperate file. This allows the image to be verified on a block-by-block basis.
+
+The CRC algorithm used is CRC32.
+
+Note that this is a very quickly written program. It may (and probably does) have issues. However, it worked for my purposes. This software only reads from disks, so it should be relatively safe, but as with anything else here, there is no warranty on anything that I have here.
+
+DiskDump should work on Windows 2000 and newer systems. It requires MFC42.DLL (highly unlikely that one wouldn't have that though).</description>
+    <summary>Save the raw contents and calculate the CRC32 checksum of each block on a disk drive</summary>
+    <releaseNotes />
+    <copyright>© 2007 Tom Bramer</copyright>
+    <tags>disk recovery raw</tags>
+    <projectSourceUrl>http://www.programmingunlimited.net/files/diskdump-v0.1.0.zip</projectSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
