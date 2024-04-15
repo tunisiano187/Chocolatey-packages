@@ -6,8 +6,8 @@
     <title>Driver Genius</title>
     <authors>Driver-Soft Inc</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.driver-soft.com/license.html</licenseUrl>
-    <projectUrl>http://www.driver-soft.com/product.html</projectUrl>
+    <licenseUrl>https://www.driver-soft.com/license.html</licenseUrl>
+    <projectUrl>https://www.driver-soft.com/product.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/408ded4dd91e2df4543abc86857677fb7e10c0d3/icons/drivergenius.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Driver Genius is a professional driver management tool that features both driver management and hardware diagnostics.
@@ -28,15 +28,11 @@
 #### Commercial software
 This package installs the Free version. [Additional features](http://www.driver-soft.com/order.html) may be acquired by purchasing a license.</description>
     <summary>Professional driver management tool and hardware diagnostics</summary>
-    <releaseNotes>#### Program
-* [Changelog](http://www.driver-soft.com/download.html)
-
-#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <releaseNotes>https://www.driver-soft.com/download.html</releaseNotes>
     <copyright>© 2002 Driver-Soft Inc</copyright>
     <tags>freeware driver manager admin</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/drivergenius/</packageSourceUrl>
-    <docsUrl>http://www.driver-soft.com/userguide.html</docsUrl>
+    <docsUrl>https://www.driver-soft.com/userguide.html</docsUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
