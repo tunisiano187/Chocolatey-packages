@@ -101,3 +101,4 @@ xmeters
 zimbra-desktop
 zona
 sagethumbs
+keepass-plugin-traytotp
