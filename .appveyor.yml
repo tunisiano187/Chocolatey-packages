@@ -192,7 +192,7 @@ build_script:
     scripts/Update-Variables.ps1
     git commit -am "ps1 vars"
     Write-Host "updating IconUrl in nuspec"
-    scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch -Optimize
+    scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     git commit -am "Updating icons"
     Write-Host "updating owners in nuspec"
     import-module Wormies-AU-Helpers
