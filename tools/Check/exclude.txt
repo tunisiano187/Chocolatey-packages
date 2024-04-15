@@ -72,6 +72,7 @@ pcanyscan
 peerblock
 pencil 
 plexmediaserver
+pngoo
 pydiosync
 rehash
 riecoin
@@ -97,4 +98,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-pngoo
