@@ -43,7 +43,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>
     <projectSourceUrl>https://github.com/Wagnard/display-drivers-uninstaller</projectSourceUrl>
     <projectUrl>https://www.wagnardsoft.com/display-driver-uninstaller-ddu</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ddu.png using pngquant ddu.png size decreased by 750 Byte a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ddu.png using pngquant a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
     <tags>driver uninstaller nvidia ati</tags>
     <copyright>© Ghislain Harvey</copyright>
     <licenseUrl>https://github.com/Wagnard/display-drivers-uninstaller/blob/WPF/LICENSE.md</licenseUrl>

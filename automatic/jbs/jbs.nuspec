@@ -19,7 +19,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <projectUrl>https://johnsad.ventures/software/backgroundswitcher/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jbs</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon jbs.png using pngquant jbs.png size decreased by 2 KB d4959c21f2baa847510c1f4c1bf4603be39204a3/icons/jbs.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon jbs.png using pngquant d4959c21f2baa847510c1f4c1bf4603be39204a3/icons/jbs.png</iconUrl>
     <tags>jbs john background switcher</tags>
     <copyright>John Conners</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

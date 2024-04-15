@@ -6,7 +6,7 @@
     <title>ivpn (Install)</title>
     <authors>IVPN.net</authors>
     <owners>tunisiano</owners>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ivpn.png using pngquant ivpn.png size decreased by 164 Byte 452173452462dd29a279c73e4cae2a259fe113a6/icons/ivpn.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ivpn.png using pngquant 452173452462dd29a279c73e4cae2a259fe113a6/icons/ivpn.png</iconUrl>
     <licenseUrl>https://www.ivpn.net/tos/</licenseUrl>
     <projectUrl>https://ivpn.net</projectUrl>
     <releaseNotes>https://github.com/ivpn/desktop-app/releases/tag/v3.14.2</releaseNotes>

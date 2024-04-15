@@ -7,7 +7,7 @@
     <title>lbry (Install)</title>
     <authors>lbry.com</authors>
     <projectUrl>https://lbry.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon lbry.png using pngquant lbry.png size decreased by 35 Byte c3d472f75cf9e4ba131bbc581e7c307000afca50/icons/lbry.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon lbry.png using pngquant c3d472f75cf9e4ba131bbc581e7c307000afca50/icons/lbry.png</iconUrl>
     <copyright>lbry.com</copyright>
     <licenseUrl>https://github.com/lbryio/lbry-desktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.newsbin.com/license.php</licenseUrl>
     <projectUrl>http://www.newsbin.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon newsbin.png using pngquant newsbin.png size decreased by 2 KB 3b17683a6ce367f353ad9ec169b1ec16825ccf54/icons/newsbin.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon newsbin.png using pngquant 3b17683a6ce367f353ad9ec169b1ec16825ccf54/icons/newsbin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Newsbin
 Newsbin is a NNTP client. A connection to a NNTP service is required.

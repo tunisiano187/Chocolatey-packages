@@ -37,7 +37,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <projectSourceUrl>https://github.com/bitcoin-solutions/multibit-hd</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bitcoin-solutions/multibit-hd/issues</bugTrackerUrl>
     <docsUrl>https://multibit.org/help/hd0.4/contents.html</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon multibit-hd.png using pngquant multibit-hd.png size decreased by 2 KB 541bad96522938e4679436b55f3f76fbfabdc11a/icons/multibit-hd.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon multibit-hd.png using pngquant 541bad96522938e4679436b55f3f76fbfabdc11a/icons/multibit-hd.png</iconUrl>
     <tags>fee-to-send cryptocurrency bitcoin blockchain digital-wallet admin</tags>
     <copyright>© 2013 Bitcoin Solutions Ltd</copyright>
     <licenseUrl>https://github.com/Multibit-Legacy/multibit-hd/raw/develop/LICENSE</licenseUrl>

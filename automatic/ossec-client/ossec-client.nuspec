@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.ossec.net/about.html</licenseUrl>
     <projectUrl>http://www.ossec.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ossec-client.png using pngquant ossec-client.png size decreased by 2 KB e429a5f1a086fa32094ac16d234cd91cbe65b7fc/icons/ossec-client.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon ossec-client.png using pngquant e429a5f1a086fa32094ac16d234cd91cbe65b7fc/icons/ossec-client.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## ossec-client
 OSSEC is a scalable, multi-platform, open source Host-based Intrusion Detection System (HIDS). 

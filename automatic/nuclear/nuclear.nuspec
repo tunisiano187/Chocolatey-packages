@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/nukeop/nuclear/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://nuclear.js.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon nuclear.png using pngquant nuclear.png size decreased by 2 KB ce4f0721fbf4d0fbb23009e9167463a26beca37a/icons/nuclear.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon nuclear.png using pngquant ce4f0721fbf4d0fbb23009e9167463a26beca37a/icons/nuclear.png</iconUrl>
     <description>nuclear is a free music streaming program that pulls content from free sources all over the internet.
 
 If you know [mps-youtube](https://github.com/mps-youtube/mps-youtube), this is a similar music player but with a GUI.

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://wikipedia.org/wiki/Freeware</licenseUrl>
     <projectUrl>http://www.xiles.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon nexusfile.install.png using pngquant nexusfile.install.png size decreased by 2 KB 4822578d6fe7fa187f44cd85056621d9d3bf0eb7/icons/nexusfile.install.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon nexusfile.install.png using pngquant 4822578d6fe7fa187f44cd85056621d9d3bf0eb7/icons/nexusfile.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## NexusFile
 NexusFile is a dual pane file manager.

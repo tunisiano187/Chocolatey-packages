@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://foldingathome.org/support/faq/opensource/</licenseUrl>
     <projectUrl>https://foldingathome.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon fah.png using pngquant fah.png size decreased by 2 KB 4efd362a31fda5a574728747348f295c2469bedf/icons/fah.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon fah.png using pngquant 4efd362a31fda5a574728747348f295c2469bedf/icons/fah.png</iconUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fah</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## foldingathome

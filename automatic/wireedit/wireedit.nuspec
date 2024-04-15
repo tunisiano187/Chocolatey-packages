@@ -10,7 +10,7 @@
     <authors>Omnipacket</authors>
     <licenseUrl>https://web.archive.org/web/20190618053217/https://wireedit.com/current/WireEditEULA.pdf</licenseUrl>
     <projectUrl>https://omnipacket.com/wireedit</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon wireedit.png using pngquant wireedit.png size decreased by 641 Byte cf55f495f4162e0d7219c9bf689af98a2f29da29/icons/wireedit.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon wireedit.png using pngquant cf55f495f4162e0d7219c9bf689af98a2f29da29/icons/wireedit.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Wire Edit
 WireEdit allows you to edit any packet at any later from L1 to L7 with just a few mouse 

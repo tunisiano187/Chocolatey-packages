@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>http://rufus.akeo.ie/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon rufus.portable.png using pngquant rufus.portable.png size decreased by 2 KB 50f7d3ac78231f075b6ab46586e4994dd2358258/icons/rufus.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon rufus.portable.png using pngquant 50f7d3ac78231f075b6ab46586e4994dd2358258/icons/rufus.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Rufus (portable)
 Rufus is a utility that helps format and create bootable USB flash drives, such as USB

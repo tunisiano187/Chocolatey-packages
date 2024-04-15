@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/computer_activity_view.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/computer_activity_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon lastactivityview.png using pngquant lastactivityview.png size decreased by 2 KB b663be900e88573c6561dfdb1ed884d7739ddbc4/icons/lastactivityview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon lastactivityview.png using pngquant b663be900e88573c6561dfdb1ed884d7739ddbc4/icons/lastactivityview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Last Activity View
 LastActivityView is a tool for Windows operating system that collects information from various sources
