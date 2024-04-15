@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/mysteriumnetwork/mysterium-vpn-desktop/master/LICENSE</licenseUrl>
     <projectUrl>https://mysteriumvpn.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/mysteriumvpn.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon mysteriumvpn.png using pngquant mysteriumvpn.png size decreased by 99 Byte 9ce764c7238e9e939e70bce486326434f976c1fd/icons/mysteriumvpn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Mysterium VPN
 ### Censorship free internet for all

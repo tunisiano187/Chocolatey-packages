@@ -8,7 +8,7 @@
     <authors>Xolido</authors>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/xolidosigndesktop</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/xolidosigndesktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon xolidosigndesktop.png using pngquant xolidosigndesktop.png size decreased by 205 Byte 24f3b8d979dccf6da094d8076d6b96cf8a6c7a88/icons/xolidosigndesktop.png</iconUrl>
     <projectUrl>http://www.xolido.com/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Xolido Sign Desktop

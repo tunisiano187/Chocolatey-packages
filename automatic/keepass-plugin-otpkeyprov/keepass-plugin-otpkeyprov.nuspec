@@ -24,7 +24,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/keepass-plugin-otpkeyprov</packageSourceUrl>
     <projectUrl>http://keepass.info/plugins.html#otpkeyprov</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@03577a911ccf66d47e8616f1cd7b37882ee203d7/icons/keepass-plugin-otpkeyprov.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon keepass-plugin-otpkeyprov.png using pngquant keepass-plugin-otpkeyprov.png size decreased by 727 Byte 9aadb348225d7e0821ca5c77e4ae6139c6b2bff7/icons/keepass-plugin-otpkeyprov.png</iconUrl>
     <tags>keepass plugin security otp</tags>
     <copyright>© 2011 Dominik Reichl</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>

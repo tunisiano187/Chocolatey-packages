@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://pwgen-win.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@080f0cad06895abcc028aa9595bde1f2c269bad8/icons/pwgen.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon pwgen.png using pngquant pwgen.png size decreased by 549 Byte 803a328433aa1c5c5ef843d7631c561922069dc7/icons/pwgen.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## pwgen
 PWGen is a professional password generator capable of creating large amounts of cryptographically-secure passwords

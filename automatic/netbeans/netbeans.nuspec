@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/apache/netbeans/master/LICENSE</licenseUrl>
     <projectUrl>https://netbeans.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@aa8fcef136c98421c2c3cef613895720688c88b7/icons/netbeans.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon netbeans.png using pngquant f7f1b311d560153a1aaa96d9da7499d71e6eaaf4/icons/netbeans.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Apache Netbeans
 NetBeans is an integrated development environment for programming in Java and many other languages.

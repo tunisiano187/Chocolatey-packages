@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Automattic/wp-calypso/blob/trunk/LICENSE.md</licenseUrl>
     <projectUrl>https://developer.wordpress.com/calypso/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/wordpress-com-for-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon wordpress-com-for-desktop.png using pngquant wordpress-com-for-desktop.png size decreased by 2 KB 6eda178b3ed3e4e4755f6be97d3f94c05f6c4397/icons/wordpress-com-for-desktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>## Features
 * A control panel for all your WordPress sites

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/4ian/GDevelop/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://gdevelop.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3751b29b696a5cdfdc716a6cac1e92de73ab09b2/icons/gdevelop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon gdevelop.png using pngquant gdevelop.png size decreased by 2 KB 688683f98a63e9ef7639346e810f3ad4cc0556b6/icons/gdevelop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## GDevelop
 GDevelop is a full featured, open source game development software, allowing to create HTML5 and native games without needing any knowledge in a specific programming language. All the game logic is made thanks to an intuitive and powerful event based system.

@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/hddguardian?color=green&label=hddguardian)](https://chocolatey.org/packages/hddguardian) [![](https://img.shields.io/chocolatey/dt/hddguardian)](https://chocolatey.org/packages/hddguardian)
+[![](https://img.shields.io/chocolatey/v/hddguardian?color=green&label=hddguardian)](https://chocolatey.org/packages/hddguardian) [![](https://img.shields.io/chocolatey/dt/hddguardian)](https://chocolatey.org/packages/hddguardian)
 
 ## HDD Guardian
 

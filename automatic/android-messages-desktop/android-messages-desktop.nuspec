@@ -7,7 +7,7 @@
     <authors>Chris Knepper</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://github.com/chrisknepper/android-messages-desktop</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/android-messages-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon android-messages-desktop.png using pngquant android-messages-desktop.png size decreased by 2 KB 0f42427cb52c5fa2e148cc5dddb543c1fbcbe262/icons/android-messages-desktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Run Android Messages as a desktop app, a la iMessage. For those of us that prefer not to have a browser tab always open for this sort of thing.
 

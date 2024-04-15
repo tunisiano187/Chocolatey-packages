@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/bb963902</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/autoruns.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon autoruns.jpg using jpegoptim autoruns.jpg size decreased by 2 KB c28ed7a992e803ef5283f815dd05553a26200690/icons/autoruns.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Autoruns
 See what programs are configured to startup automatically when your system boots and you login. 

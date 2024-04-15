@@ -24,7 +24,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pinginfoview</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/multiple_ping_tool.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b5451f5535441441b6685829be512247d51de194/icons/pinginfoview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon pinginfoview.png using pngquant pinginfoview.png size decreased by 4 Byte 49796edd6656666be6777786f68d1ca40be93809/icons/pinginfoview.png</iconUrl>
     <tags>ping ip address host</tags>
     <copyright>© 2008 NirSoft</copyright>
     <licenseUrl>http://www.nirsoft.net/utils/multiple_ping_tool.html</licenseUrl>

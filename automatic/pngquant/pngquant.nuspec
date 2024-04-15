@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/pornel/pngquant/blob/master/COPYRIGHT</licenseUrl>
     <projectUrl>https://pngquant.org/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cea86a9e25c293ccdea98beddf7e15d3ce40c682/icons/pngquant.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon pngquant.png using pngquant cf55c5a8e8a9a3aa227f9c26c8328d5cccd31c20/icons/pngquant.png</iconUrl>
     <description><![CDATA[## pngquant
 pngquant is a command-line conversion utility and library to quantize (lossy compression) and
 dither truecolor PNG images, especially those with a full alpha channel, down to 8-bit (or smaller)
