@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>searchmyfiles</id>
-    <version>3.25</version>
+    <version>3.24</version>
     <title>SearchMyFiles</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
@@ -32,7 +32,8 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/searchmyfiles</packageSourceUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\*.zip" target="tools" />
+    <file src="tools\*.ps1" target="tools" />
     <file src="legal\**" target="legal" />
   </files>
 </package>
