@@ -5,7 +5,7 @@
     <version>2.0</version>
     <title>Regular Expression Editor</title>
     <authors>Tobias Budde</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/regexpeditor</packageSourceUrl>
     <licenseUrl>https://sourceforge.net/p/regexpeditor/code/ci/master/tree/license</licenseUrl>
     <projectUrl>http://regexpeditor.sourceforge.net/</projectUrl>
