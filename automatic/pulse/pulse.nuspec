@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pulse</packageSourceUrl>
     <licenseUrl>https://source.ind.ie/project/pulse/tree/master#license</licenseUrl>
     <projectUrl>https://ind.ie/pulse/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/341e0a0169c6f598cdb86b184b666d5108117790/icons/pulse.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@Optimizing the icon pulse.png using pngquant pulse.png size decreased by 2 KB 57f3e55433894129e536a6c0a5fb3295dd14a1e9/icons/pulse.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Synchronise your files without also sharing them with a stranger in the cloud.  Pulse is a low-level synchronisation engine for developers and technically-savvy users. If the thought of opening up a Terminal window makes you feel queasy, wait for Heartbeat.
 
