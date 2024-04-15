@@ -99,3 +99,4 @@ xmeters
 zimbra-desktop
 zona
 pulse
+trafficwatcher
