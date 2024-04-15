@@ -73,6 +73,7 @@ peerblock
 pencil 
 plexmediaserver
 pngoo
+pulse
 pydiosync
 rehash
 riecoin
@@ -87,6 +88,7 @@ sqlserver2012express
 storjshare
 Swish
 todobackup
+trafficwatcher
 trim
 vcexpress2010
 videocacheview
@@ -98,5 +100,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-pulse
-trafficwatcher
