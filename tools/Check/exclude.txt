@@ -103,3 +103,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+twisted
