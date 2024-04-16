@@ -5,7 +5,7 @@
     <version>15.4.0</version>
     <title>Twisted</title>
     <authors>Glyph Lefkowitz</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://twistedmatrix.com/trac/export/43938/trunk/LICENSE</licenseUrl>
     <projectUrl>http://twistedmatrix.com/trac/wiki/TwistedProject</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6ab75f769fa0bc65c97768c9846916676478d8fa/icons/twisted.svg</iconUrl>
