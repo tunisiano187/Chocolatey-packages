@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>whoiscl</id>
+    <version>1.90</version>
+    <title>WhoisCL</title>
+    <authors>Nir Sofer</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/whoiscl.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/whoiscl.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/whoiscl.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WhoisCL is a simple command-line utility that allows you to easily get information about a registered domain.
+
+It automatically connect to the right WHOIS server, according to the top-level domain name, and retrieve the WHOIS record of the domain.
+
+It supports both generic domains and country code domains.</description>
+    <summary>WHOIS command line tool</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2005 NirSoft</copyright>
+    <tags>cli whois record retrieve</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/whoiscl/</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
