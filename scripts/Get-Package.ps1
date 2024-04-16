@@ -97,7 +97,12 @@ if(!(Test-Path $workNuspec)) {
 # Check if the nuspec has an iconUrl and download the icon directly to the right folder
 if($WorkContentNuspec.package.metadata.iconUrl) {
     $iconfile = "$icon.$(($WorkContentNuspec.package.metadata.iconUrl).split('.')[-1])"
-    Invoke-WebRequest -Uri $WorkContentNuspec.package.metadata.iconUrl -OutFile $iconfile
+    try {
+        Invoke-WebRequest -Uri $WorkContentNuspec.package.metadata.iconUrl -OutFile $iconfile
+    }
+    catch {
+        "Unable to download picture from $($WorkContentNuspec.package.metadata.iconUrl)"
+    }
 } else {
     Write-Output "Icon not found in the Nuspec"
 }
