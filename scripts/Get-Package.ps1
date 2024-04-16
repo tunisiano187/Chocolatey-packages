@@ -113,7 +113,12 @@ if(!(Test-Path $icon)) {
     $regexPattern = '(?<=&lt;iconUrl&gt;).*?(?=&lt;/iconurl&gt;)'
     $urlMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
     if ($urlMatch.Matches.Count -gt 0) {
-        Invoke-WebRequest -Uri $urlMatch.Matches[0].Value -OutFile "$icon.$(($urlMatch.Matches[0].Value).split('.')[-1])" -ErrorAction Continue
+        try {
+            Invoke-WebRequest -Uri $urlMatch.Matches[0].Value -OutFile "$icon.$(($urlMatch.Matches[0].Value).split('.')[-1])"
+        }
+        catch {
+            "Unable to download picture from $($urlMatch.Matches[0].Value)"
+        }
     }
 }
 
