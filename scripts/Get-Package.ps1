@@ -144,10 +144,10 @@ if($PackageSourceUrl -match "://github.com") {
 
     # Download the Readme file if it is available
     try {
-        Invoke-WebRequest -Uri "$GHRawUrl/ReadMe.md" -OutFile "$workfolder\ReadMe.md"
+        Invoke-WebRequest -Uri "$GHRawUrl/README.md" -OutFile "$workfolder\README.md"
     }
     catch {
-        "No ReadMe.md file available"
+        "No README.md file available"
     }
 } # elseif (!$WorkContentNuspec.package.metadata.packageSourceUrl) {
     # Add packageSourceUrl element if missing
@@ -193,13 +193,17 @@ if(Test-Path "$workfolder\update.ps1") {
     Move-Item -Path "$workfolder\update.ps1.old" -Destination "$PackageFolder\update.ps1.old"
 }
 
-if(Test-Path "$workfolder\Readme.md") {
-    Move-Item -Path "$workfolder\Readme.md" -Destination "$PackageFolder\Readme.md"
+if(Test-Path "$workfolder\README.md") {
+    Move-Item -Path "$workfolder\README.md" -Destination "$PackageFolder\README.md"
 } else {
     $TemplateFolder = Join-Path $parentfolder 'scripts/templates'
     $TemplateReadMe = Join-Path $TemplateFolder "README.md"
     $ReadmeContent = Get-Content $TemplateReadMe
     "File $TemplateReadMe exist ? $(Test-Path $TemplateReadMe)"
+    $ReadmeContent = $ReadmeContent -replace "pkgid",$packageName.ToLower()
+    $ReadmeContent = $ReadmeContent -replace "PKGTITLE",$WorkContentNuspec.package.metadata.title
+    $ReadmeContent = $ReadmeContent -replace "PKGDesc",$WorkContentNuspec.package.metadata.description
+    Set-Content -Path "$PackageFolder\README.md" -Value $ReadmeContent
 }
 
 "git pull"
