@@ -105,3 +105,4 @@ zimbra-desktop
 zona
 twisted
 sketchupviewer
+padmanager
