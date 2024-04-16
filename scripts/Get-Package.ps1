@@ -186,7 +186,7 @@ if(Test-Path "$workfolder\update.ps1") {
 if(Test-Path "$workfolder\Readme.md") {
     Move-Item -Path "$workfolder\Readme.md" -Destination "$PackageFolder\Readme.md"
 } else {
-    $TemplateFolder = Join-Path $($parentfolder) "scripts/templates"
+    $TemplateFolder = Join-Path $parentfolder 'scripts/templates'
     $TemplateReadMe = Join-Path $TemplateFolder "README.md"
     $ReadmeContent = Get-Content $TemplateReadMe
     "File $TemplateReadMe exist ? $(Test-Path $TemplateReadMe)"
