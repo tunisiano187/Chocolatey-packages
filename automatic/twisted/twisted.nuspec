@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://twistedmatrix.com/trac/export/43938/trunk/LICENSE</licenseUrl>
     <projectUrl>http://twistedmatrix.com/trac/wiki/TwistedProject</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/eb824d7a427a4db7174b3d26161fc65642a670ed/icons/twisted.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6ab75f769fa0bc65c97768c9846916676478d8fa/icons/twisted.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Twisted is a networking engine written in Python, supporting numerous protocols. It contains a web server, numerous chat clients, chat servers, mail servers, and more.  Twisted is made up of a number of modules for many different purposes, including the following:
 
