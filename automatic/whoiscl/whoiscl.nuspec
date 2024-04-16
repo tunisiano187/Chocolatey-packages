@@ -5,7 +5,7 @@
     <version>1.90</version>
     <title>WhoisCL</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/whoiscl.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/whoiscl.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/whoiscl.png</iconUrl>
