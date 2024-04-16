@@ -55,7 +55,7 @@ There are many official [Twisted subprojects](http://twistedmatrix.com/trac/wiki
     <copyright>© 2001-2015 Twisted Matrix Laboratories</copyright>
     <tags>framework network protocol</tags>
     <projectSourceUrl>http://twistedmatrix.com/trac/browser/trunk</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/twisted/15.4.0</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/twisted</packageSourceUrl>
     <docsUrl>http://twistedmatrix.com/documents/current/core/</docsUrl>
   </metadata>
   <files>
