@@ -49,6 +49,7 @@ keepass-plugin-autotypecustomfieldpicker
 keepass-plugin-keecloud
 keepass-plugin-mskeyimporter
 keepass-plugin-trayrecent
+keepass-plugin-traytotp
 kubernetes-cli
 kubernetes-kompose
 kvrt
@@ -75,8 +76,10 @@ plexmediaserver
 pngoo
 pulse
 pydiosync
+regexpeditor
 rehash
 riecoin
+sagethumbs
 selfssl7
 serviwin
 sikulix
@@ -100,6 +103,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-sagethumbs
-keepass-plugin-traytotp
-regexpeditor
