@@ -6,7 +6,7 @@
   This script should be called by Github action on Issue editing to remove a package.
 
 #>
-function Exclude-Package {
+function Block-Package {
     param(
         [Parameter(Mandatory = $true, ParameterSetName = "issue")]
         [long]$issueNumber,
@@ -18,7 +18,7 @@ function Exclude-Package {
         [string]$actor
     )
     Write-Output $actor
-    if($actor -ne 'tunisiano187' -or $title -notmatch 'exclude') {
+    if($actor -ne 'tunisiano187' -or ($title.ToLower() -notmatch 'exclude' -or $title.ToLower() -notmatch 'block')) {
       throw "User $actor cannot run this"
     }
     $ErrorActionPreference = 'Stop';

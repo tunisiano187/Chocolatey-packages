@@ -6,10 +6,10 @@
 # to be named using the same name.
 $funcs = @(
   'New-GithubIssue'
-  'Exclude-package'
+  'Block-package'
 )
 
-$funcs | % {
+$funcs | ForEach-Object {
   if (Test-Path "$PSScriptRoot\$_.ps1") {
     . "$PSScriptRoot\$_.ps1"
     if (Get-Command $_ -ea 0) {
