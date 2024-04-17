@@ -107,3 +107,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+nxt
