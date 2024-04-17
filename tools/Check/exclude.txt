@@ -66,6 +66,7 @@ nordvpn
 office365proplus
 opencodecs
 p4scc
+padmanager
 pan
 pascal
 pavement.standard
@@ -83,6 +84,7 @@ sagethumbs
 selfssl7
 serviwin
 sikulix
+sketchupviewer
 snapgene-viewer
 solr
 speex
@@ -93,9 +95,11 @@ Swish
 todobackup
 trafficwatcher
 trim
+twisted
 vcexpress2010
 videocacheview
 vim-tux
+whoiscl
 windows
 wirelesskeyview
 xdel
@@ -103,7 +107,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-twisted
-sketchupviewer
-padmanager
-whoiscl
