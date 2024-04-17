@@ -5,7 +5,7 @@
     <version>1.11.5</version>
     <title>Nxt Client</title>
     <authors>Nxt Organization</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://bitbucket.org/JeanLucPicard/nxt/raw/master/LICENSE.txt</licenseUrl>
     <projectUrl>http://nxt.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@34d11c15e0a01327ac810145460484a15a9967b8/icons/nxt.png</iconUrl>
