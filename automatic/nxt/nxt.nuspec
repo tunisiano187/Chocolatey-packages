@@ -52,7 +52,7 @@ If you have difficulty remembering secure passwords, consider using secure passw
     <copyright>© 2013 The Nxt Core Developers</copyright>
     <tags>p2p cryptocurrency proof-of-stake</tags>
     <projectSourceUrl>https://bitbucket.org/JeanLucPicard/nxt/src</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/nxt/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nxt</packageSourceUrl>
     <bugTrackerUrl>https://bitbucket.org/JeanLucPicard/nxt/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="javaruntime" />
