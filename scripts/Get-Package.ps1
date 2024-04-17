@@ -196,6 +196,7 @@ if(Test-Path "$workfolder\update.ps1") {
 if(Test-Path "$workfolder\README.md") {
     Move-Item -Path "$workfolder\README.md" -Destination "$PackageFolder\README.md"
 } else {
+    Install-Module wormies-au-helpers -Force
     $TemplateFolder = Join-Path $parentfolder 'scripts/templates'
     $TemplateReadMe = Join-Path $TemplateFolder "README.md"
     $ReadmeContent = Get-Content $TemplateReadMe
@@ -203,6 +204,12 @@ if(Test-Path "$workfolder\README.md") {
     $ReadmeContent = $ReadmeContent -replace "pkgid",$packageName.ToLower()
     $ReadmeContent = $ReadmeContent -replace "PKGTITLE",$WorkContentNuspec.package.metadata.title
     $ReadmeContent = $ReadmeContent -replace "PKGDesc",$WorkContentNuspec.package.metadata.description
+    $pattern = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+    $linksfrom = [regex]::Matches($ReadmeContent, $pattern) | ForEach-Object { $_.Value }
+    foreach ($link in $linksfrom) {
+        $ReadmeContent = $ReadmeContent -replace $link,$(Get-RedirectedUrl $link -ErrorAction Continue)
+    }
+
     Set-Content -Path "$PackageFolder\README.md" -Value $ReadmeContent
 }
 
