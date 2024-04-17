@@ -59,10 +59,12 @@ lili
 luckybackup
 md5sums
 meson
+mooncoin
 movefile
 msdeploy
 msigna
 nordvpn
+nxt
 office365proplus
 opencodecs
 p4scc
@@ -107,5 +109,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-nxt
-mooncoin
