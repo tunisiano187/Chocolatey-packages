@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>soundvolumeview</id>
+    <version>1.86</version>
+    <title>SoundVolumeView</title>
+    <authors>Nir Sofer</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/sound_volume_view.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/sound_volume_view.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/soundvolumeview.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SoundVolumeView is a simple tool for Windows Vista/7/8/2008 that displays general information and current volume level for all active sound components on your system, and allows you to mute and unmute them instantly. 
+
+SoundVolumeView also allows you to save a sound profile into a file, containing the current volume level and the mute/unmute state of all sound components, as well as the default sound devices, and then later, load the same file to restore exactly the same volume levels and settings.
+
+There is also extensive command-line support, which allows you to save/load profiles, change current volume of every sound component, and mute/unmute  every sound component, without displaying any user interface.</description>
+    <summary>View/change sound levels and save/load sound level profiles on Windows Vista/ from UI and command-line</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2013 NirSoft</copyright>
+    <tags>volume display mute profile cli</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/soundvolumeview/</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
