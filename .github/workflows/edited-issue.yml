@@ -16,4 +16,4 @@ jobs:
       - name: Check exception
         run: |
           Import-Module "${{ github.workspace }}\scripts\edit.psm1"
-          Exclude-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}" -actor "${{ github.event.issue.user.login }}"
+          Block-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}" -actor "${{ github.event.issue.user.login }}"
