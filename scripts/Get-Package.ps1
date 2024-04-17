@@ -207,7 +207,7 @@ if(Test-Path "$workfolder\README.md") {
     $pattern = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     $linksfrom = [regex]::Matches($ReadmeContent, $pattern) | ForEach-Object { $_.Value }
     foreach ($link in $linksfrom) {
-        $ReadmeContent = $ReadmeContent -replace $link,$(Get-RedirectedUrl $link -ErrorAction Continue)
+        $ReadmeContent = $ReadmeContent -replace $link,$(Get-RedirectedUrl $link -ErrorAction Continue).AbsoluteUri
     }
 
     Set-Content -Path "$PackageFolder\README.md" -Value $ReadmeContent
