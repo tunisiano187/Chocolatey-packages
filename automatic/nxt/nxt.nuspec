@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://bitbucket.org/JeanLucPicard/nxt/raw/master/LICENSE.txt</licenseUrl>
     <projectUrl>http://nxt.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ec964ef16307dd212f9a58c5ca64795488fba3f0/icons/nxt.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@34d11c15e0a01327ac810145460484a15a9967b8/icons/nxt.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Nxt Client is an open source peer-to-peer cryptocurrency and payment network launched in November 2013 by anonymous software developer BCNext. It uses proof-of-stake to reach consensus for transactions - as such there is a static money supply and no mining as with Bitcoin.
 
