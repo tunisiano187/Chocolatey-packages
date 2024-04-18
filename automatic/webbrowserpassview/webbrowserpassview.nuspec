@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://www.nirsoft.net/utils/web_browser_password.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/web_browser_password.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/webbrowserpassview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@846e63e2b1585fd53c5958ef11d214e3c8caa011/icons/webbrowserpassview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>WebBrowserPassView is a password recovery tool that reveals the passwords stored by the following Web browsers:
 
