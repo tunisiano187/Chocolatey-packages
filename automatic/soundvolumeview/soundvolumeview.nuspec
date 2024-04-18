@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/sound_volume_view.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/sound_volume_view.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/soundvolumeview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fd4f44e3f4177edceebb8baf09b8cb4d2deb3a78/icons/soundvolumeview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## SoundVolumeView
 
