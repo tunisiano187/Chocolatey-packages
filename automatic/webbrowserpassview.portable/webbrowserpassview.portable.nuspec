@@ -20,7 +20,7 @@ This tool can be used to recover your lost/forgotten password of any Website, in
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2011 NirSoft</copyright>
     <tags>browser password recover lost ie firefox opera chrome facebook</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/chocolatey-packages/tree/master/automatic/webbrowserpassview.portable/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/webbrowserpassview.portable</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
