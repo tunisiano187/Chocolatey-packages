@@ -5,7 +5,7 @@
     <version>1.85</version>
     <title>WebBrowserPassView (Portable)</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/web_browser_password.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/web_browser_password.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8871d979680dec767712ee0201b9564841c0bd65/icons/webbrowserpassview.portable.png</iconUrl>
