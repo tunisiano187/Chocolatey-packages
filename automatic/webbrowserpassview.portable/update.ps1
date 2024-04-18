@@ -22,14 +22,18 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/webbrowserpassview.zip"
+	$strHeader = @{
+		"referer"="https://www.nirsoft.net/utils/web_browser_password.html"
+	}
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/webbrowserpassview.zip" -UserAgent $(Get-UserAgent) -Headers $strHeader
+	$checksum = (Get-FileHash -Path "tools/webbrowserpassview.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/web_browser_password.html"
 	$regexPattern = 'WebBrowserPassView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") NirSoft"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
 	return $Latest
 }
 

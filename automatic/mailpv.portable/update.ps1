@@ -21,7 +21,7 @@ function global:au_GetLatest {
 		"referer"="https://www.nirsoft.net/utils/mailpv.html"
 	}
 	Invoke-WebRequest -Uri $url32 -OutFile "tools/mailpv.zip" -UserAgent $(Get-UserAgent) -Headers $strHeader
-	$checksum = Get-FileHash -Path "tools/mailpv.zip" -Algorithm $env:ChocolateyChecksumType
+	$checksum = (Get-FileHash -Path "tools/mailpv.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/mailpv.html"
 	$regexPattern = 'PassView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
