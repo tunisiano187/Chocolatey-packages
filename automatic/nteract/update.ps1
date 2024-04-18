@@ -1,9 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://api.github.com/repos/nteract/nteract/releases/latest'
-$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
-$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+$packageName = 'nteract.install'
 
 function global:au_SearchReplace {
     @{
@@ -14,7 +12,7 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-    $choc=$(choco search nteract.install | Where-Object {$_ -match "nteract.install"})
+    $choc=$(choco search $packageName | Where-Object {$_ -match $packageName})
 	$version = $choc.Split(" ")[1]
 
     return @{
