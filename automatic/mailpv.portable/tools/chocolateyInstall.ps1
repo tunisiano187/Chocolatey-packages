@@ -1,27 +1,16 @@
-﻿$packageName = 'mailpv.portable'
-$url = 'http://www.nirsoft.net/toolsdownload/mailpv.zip'
-$checksum = 'f6ec2fb60d5fb109b56c39d637599f3dd71f96e27ae4d33e46557c2d02a88504'
-$checksumType = 'sha256'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "mailpv.exe"
+﻿$ErrorActionPreference = 'Stop'
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file32         = "$(Join-Path $toolsDir -ChildPath 'mailpv.zip')"
 
-$chocTempDir = Join-Path $Env:Temp "chocolatey"
-$tempDir = Join-Path $chocTempDir "$packageName"
-if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-$zipFile = Join-Path $tempDir "$($packageName).zip"
+$unzipArgs = @{
+    PackageName     = $env:ChocolateyPackageName
+    FileFullPath    = $file32
+    Destination     = $toolsDir
+}
 
-$referer = "http://www.nirsoft.net/utils/"
-$wc = New-Object System.Net.WebClient
-$wc.Headers.Add("Referer", $referer)
-$wc.DownloadFile($url, $zipFile)
+Get-ChocolateyUnzip @unzipArgs
 
-Get-ChecksumValid -File "$zipFile" `
-                  -Checksum "$checksum" `
-                  -ChecksumType "$checksumType"
-
-Get-ChocolateyUnzip -FileFullPath "$zipFile" `
-                    -Destination "$toolsDir" `
-                    -PackageName "$packageName"
+$installFile    = (get-childitem -Filter "*.exe" -Recurse).FullName
 
 Set-Content -Path ("$installFile.gui") `
             -Value $null

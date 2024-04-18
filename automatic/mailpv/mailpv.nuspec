@@ -6,8 +6,8 @@
     <title>Mail PassView</title>
     <authors>Nir Sofer</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.nirsoft.net/utils/mailpv.html</licenseUrl>
-    <projectUrl>http://www.nirsoft.net/utils/mailpv.html</projectUrl>
+    <licenseUrl>https://www.nirsoft.net/utils/mailpv.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/mailpv.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/mailpv.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Mail PassView is a small password-recovery tool that reveals the passwords and other account details for the following email clients:
@@ -27,7 +27,7 @@
 *  Gmail - If the password is saved by Gmail Notifier application, Google Desktop, or by Google Talk.</description>
     <summary>Password recovery for Outlook, Outlook Express, Thunderbird, Windows Mail, and more...</summary>
     <releaseNotes>#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2003 NirSoft</copyright>
     <tags>recover mail email gmail password lost crack outlook express microsoft incredimail eudora</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mailpv/</packageSourceUrl>
@@ -36,6 +36,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="mailpv.nuspec" />
   </files>
 </package>
