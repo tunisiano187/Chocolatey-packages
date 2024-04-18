@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>webbrowserpassview.portable</id>
-    <version>1.85</version>
+    <version>1.84</version>
     <title>WebBrowserPassView (Portable)</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
@@ -24,5 +24,6 @@ This tool can be used to recover your lost/forgotten password of any Website, in
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
