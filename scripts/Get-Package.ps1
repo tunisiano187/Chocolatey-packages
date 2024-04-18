@@ -186,7 +186,7 @@ if(Test-Path "$workfolder\tools") {
     Remove-Item -Path "$workfolder\tools" -Include "*.exe"
     Get-ChildItem -Path "$workfolder\tools" | Where-Object {$_.Length -gt 1mb} | Remove-Item -Force -Recurse
     New-Item -ItemType Directory -Path "$PackageFolder\tools" -Force
-    Move-Item -Path "$workfolder\tools" -Destination "$PackageFolder\tools" -Exclude "*.zip" -Force
+    Move-Item -Path "$workfolder\tools" -Destination "$PackageFolder" -Exclude "*.zip" -Force
 }
 
 if(Test-Path "$workfolder\update.ps1") {
