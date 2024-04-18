@@ -12,7 +12,7 @@ x86: https://www.nirsoft.net/utils/searchmyfiles.zip
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksum type: sha256
+checksumtype: sha256
 checksum: D5B1FF964D478171A353CD787141AD7B6F679BC0070A142237C0BFC2D6793D6F
 
 The license is available here:
