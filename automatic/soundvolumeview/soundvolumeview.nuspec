@@ -5,7 +5,7 @@
     <version>1.86</version>
     <title>SoundVolumeView</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/sound_volume_view.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/sound_volume_view.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/soundvolumeview.png</iconUrl>
