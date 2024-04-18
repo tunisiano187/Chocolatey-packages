@@ -5,10 +5,10 @@
     <version>1.86</version>
     <title>Mail PassView</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/mailpv.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/mailpv.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/mailpv.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b1edf5a40e8601557a6626a2996e0a90f2be6717/icons/mailpv.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Mail PassView is a small password-recovery tool that reveals the passwords and other account details for the following email clients:
 
@@ -30,7 +30,7 @@
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2003 NirSoft</copyright>
     <tags>recover mail email gmail password lost crack outlook express microsoft incredimail eudora</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mailpv/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailpv</packageSourceUrl>
     <dependencies>
       <dependency id="mailpv.install" version="[1.86]" />
     </dependencies>
