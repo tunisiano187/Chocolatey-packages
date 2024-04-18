@@ -25,7 +25,8 @@ function global:au_GetLatest {
 	$strHeader = @{
 		"referer"="https://www.nirsoft.net/utils/web_browser_password.html"
 	}
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/webbrowserpassview.zip" -UserAgent $([Microsoft.PowerShell.Commands.PSUserAgent]::Chrome) -Headers $strHeader
+	. ../../scripts/Get-UserAgent.ps1
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/webbrowserpassview.zip" -UserAgent $(Get-UserAgent) -Headers $strHeader
 	$checksum = (Get-FileHash -Path "tools/webbrowserpassview.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/web_browser_password.html"
 	$regexPattern = 'WebBrowserPassView v(\d+(\.\d+)*)'
