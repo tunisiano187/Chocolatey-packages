@@ -40,4 +40,5 @@ Copy-Item scripts/Update-Metadata.ps1 $moduleWormiesPath
 
 . .\scripts\Invoke-VirusTotalScan.ps1
 Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
+$env:ChocolateyChecksumType = "SHA512"
 RefreshEnv.cmd
