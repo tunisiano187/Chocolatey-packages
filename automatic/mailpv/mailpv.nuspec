@@ -5,7 +5,7 @@
     <version>1.86</version>
     <title>Mail PassView</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/mailpv.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/mailpv.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b1edf5a40e8601557a6626a2996e0a90f2be6717/icons/mailpv.png</iconUrl>
