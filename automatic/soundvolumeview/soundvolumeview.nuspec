@@ -19,7 +19,7 @@ There is also extensive command-line support, which allows you to save/load prof
     <releaseNotes>https://www.nirsoft.net/utils/sound_volume_view.html</releaseNotes>
     <copyright>© 2013 NirSoft</copyright>
     <tags>volume display mute profile cli</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/soundvolumeview/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/soundvolumeview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
