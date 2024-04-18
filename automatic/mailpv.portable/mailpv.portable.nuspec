@@ -30,7 +30,7 @@
 * Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
     <copyright>Â© 2024 NirSoft</copyright>
     <tags>recover mail email gmail password lost crack outlook express microsoft incredimail eudora</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mailpv.portable/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailpv.portable</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
