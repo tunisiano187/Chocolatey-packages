@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mailpv.portable</id>
-    <version>1.92</version>
+    <version>1.91</version>
     <title>Mail PassView (Portable)</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
@@ -41,6 +41,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailpv.portable</packageSourceUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
