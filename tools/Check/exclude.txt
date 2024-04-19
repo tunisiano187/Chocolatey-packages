@@ -102,6 +102,7 @@ vcexpress2010
 videocacheview
 vim-tux
 webbrowserpassview
+webbrowserpassview.portable
 whoiscl
 windows
 wirelesskeyview
@@ -110,4 +111,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-webbrowserpassview.portable
