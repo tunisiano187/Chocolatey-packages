@@ -18,7 +18,7 @@ You can easily select one or more items from the cache list, and then extract th
     <summary>View the cache files of Firefox/Mozilla browsers</summary>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 2007 NirSoft</copyright>
+    <copyright>Â© 2024 NirSoft</copyright>
     <tags>mozilla cache extract web browser</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mozillacacheview</packageSourceUrl>
   </metadata>
