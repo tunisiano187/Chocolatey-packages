@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>islc</id>
+    <title>Intelligent standby list cleaner (ISLC)</title>
+    <version>0.0</version>
+    <authors>Ghislain Harvey,Shady757</authors>
+    <owners>tunisiano</owners>
+    <summary>Utility to clear the memory standby list according to the configured options parameter you set.</summary>
+    <description><![CDATA[## Display Driver Uninstaller
+Display Driver Uninstaller is a driver removal utility that can help you completely 
+remove Graphics Processing Unit (GPU) display card drivers and packages (AMD/NVIDIA) 
+from your system without leaving leftovers behind; including registry keys, folders 
+and files, services, and the driver store.
+
+The AMD/NVIDIA video drivers can normally be uninstalled from the Windows Control 
+panel, this driver uninstaller program was designed to be used in cases where the 
+standard driver uninstall fails, or whenever you need to thoroughly delete NVIDIA 
+and ATI video card drivers.
+
+The current effect after you use this driver removal will be similar as if its the 
+first time you install a new driver just like a fresh, clean install of Windows. 
+As with any tool of this kind, we recommend creating a new system restore point 
+before using it, so that you can revert your system at any time if you run into 
+problems.
+
+#### Usage
+* The tool can be used in Normal mode but for absolute stability when using DDU, Safe 
+Mode is always recommended.
+* Make a backup or a system restore. (but it should normally be pretty safe.)
+
+#### Community
+* [Forum - NVIDIA](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379506/)
+* [Forum - AMD](https://forums.guru3d.com/threads/display-driver-uninstaller-thread.379505/)
+* [Twitter](https://twitter.com/Wagnard)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>
+    <projectUrl>https://www.wagnardsoft.com/ISLCw</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
+    <tags>cache standby list cleaner</tags>
+    <copyright>© Ghislain Harvey</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <mailingListUrl>https://www.wagnardsoft.com/forums/viewforum.php?f=18</mailingListUrl>
+    <releaseNotes>https://www.wagnardsoft.com/ISLCw</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
