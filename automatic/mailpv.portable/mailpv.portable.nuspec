@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mailpv.portable</id>
-    <version>1.92</version>
+    <version>1.91</version>
     <title>Mail PassView (Portable)</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://www.nirsoft.net/utils/mailpv.html</licenseUrl>
-    <projectUrl>http://www.nirsoft.net/utils/mailpv.html</projectUrl>
+    <licenseUrl>https://www.nirsoft.net/utils/mailpv.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/mailpv.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c80d918cd02f525ecd3c11fa955d2b67818891c9/icons/mailpv.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Mail PassView (Portable)
@@ -35,7 +35,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Password recovery for Outlook, Outlook Express, Thunderbird, Windows Mail, and more...</summary>
     <releaseNotes>#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>Â© 2024 NirSoft</copyright>
     <tags>recover mail email gmail password lost crack outlook express microsoft incredimail eudora</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailpv.portable</packageSourceUrl>
