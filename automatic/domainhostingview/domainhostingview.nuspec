@@ -6,8 +6,8 @@
     <title>DomainHostingView</title>
     <authors>Nir Sofer</authors>
     <owners>dtgm</owners>
-    <licenseUrl>http://www.nirsoft.net/utils/domain_hosting_view.html</licenseUrl>
-    <projectUrl>http://www.nirsoft.net/utils/domain_hosting_view.html</projectUrl>
+    <licenseUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/domainhostingview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DomainHostingView is a utility for Windows that collects extensive information about a domain by using a series of DNS and WHOIS queries,
@@ -18,7 +18,7 @@ The information displayed by the report of DomainHostingView includes:
 the hosting company or data center that hosts the Web server, mail server, and domain name server (DNS) of the specified domain, the created/changed/expire date of the domain, domain owner, domain registrar that registered the domain, list of all DNS records, and more...</description>
     <summary>Show domain hosting information</summary>
     <releaseNotes>#### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2011 NirSoft</copyright>
     <tags>web hosting report whois company owner registrar information dns</tags>
     <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/domainhostingview/</packageSourceUrl>

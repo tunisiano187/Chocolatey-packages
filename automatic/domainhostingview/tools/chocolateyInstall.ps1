@@ -1,15 +1,16 @@
-$packageName = 'domainhostingview'
-$url = 'http://www.nirsoft.net/utils/domainhostingview.zip'
-$checksum = '19840123792425409b10d6259cb6c22cbbb3a6e1e1cc8b909926a71268a77fe9'
-$checksumType = 'sha256'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "$($packageName).exe"
+$ErrorActionPreference = 'Stop'
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file32         = "$(Join-Path $toolsDir -ChildPath 'domainhostingview.zip')"
 
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType"
+$unzipArgs = @{
+    PackageName     = $env:ChocolateyPackageName
+    FileFullPath    = $file32
+    Destination     = $toolsDir
+}
+
+Get-ChocolateyUnzip @unzipArgs
+
+$installFile    = (get-childitem -Filter "*.exe" -Recurse).FullName
 
 Set-Content -Path ("$installFile.gui") `
             -Value $null
