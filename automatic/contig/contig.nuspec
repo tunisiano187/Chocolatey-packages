@@ -5,7 +5,7 @@
     <version>1.80</version>
     <title>Contig</title>
     <authors>Mark Russinovich</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/bb897428</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -37,10 +37,10 @@ __-v__  Verbose</description>
 * [News](http://blogs.technet.com/Sysinternals)
 
 #### Package
-* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 1998-2012 Mark Russinovich</copyright>
     <tags>defragment disk sysinternals cli</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/contig/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano/chocolatey-packages/tree/master/automatic/contig/</packageSourceUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
   </metadata>
   <files>
