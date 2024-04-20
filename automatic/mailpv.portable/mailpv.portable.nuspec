@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mailpv.portable</id>
-    <version>1.91</version>
+    <version>1.92</version>
     <title>Mail PassView (Portable)</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>

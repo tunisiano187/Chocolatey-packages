@@ -14,8 +14,8 @@ x64: https://www.nirsoft.net/utils/soundvolumeview-x64.zip
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: B085054E5C8C73C0BEDC2F239BAB5E2D75BD2E2209780C353DFCD4C7A5F41B5D
-checksum64: 2B20CABAE2168A81501000510C45E2AE0B13FF97EDF8B31AC984D384628AD986
+checksum: 
+checksum64: 
 
 The license is available here:
 https://www.nirsoft.net/utils/sound_volume_view.html
