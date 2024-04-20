@@ -1,15 +1,16 @@
-$packageName = 'mozillacacheview'
-$url = 'http://www.nirsoft.net/utils/mozillacacheview.zip'
-$checksum = '0af82e8000371171b6e40a07e9c3424256650baae617ad108d248ddcf2dc01de'
-$checksumType = 'sha256'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installFile = Join-Path $toolsDir "$($packageName).exe"
+$ErrorActionPreference = 'Stop'
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file32         = "$(Join-Path $toolsDir -ChildPath 'mozillacacheview.zip')"
 
-Install-ChocolateyZipPackage -PackageName "$packageName" `
-                             -Url "$url" `
-                             -UnzipLocation "$toolsDir" `
-                             -Checksum "$checksum" `
-                             -ChecksumType "$checksumType"
+$unzipArgs = @{
+    PackageName     = $env:ChocolateyPackageName
+    FileFullPath    = $file32
+    Destination     = $toolsDir
+}
+
+Get-ChocolateyUnzip @unzipArgs
+
+$installFile    = (get-childitem -Filter "*.exe" -Recurse).FullName
 
 Set-Content -Path ("$installFile.gui") `
             -Value $null
