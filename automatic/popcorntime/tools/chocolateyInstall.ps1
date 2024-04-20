@@ -1,7 +1,7 @@
 ﻿$packageName = 'popcorntime'
 $installerType = 'exe'
-$url64 = 'https://github.com/popcorn-official/popcorn-desktop/releases/download/v0.5.0/Popcorn-Time-0.5.0-win64-0.44.5-Setup.exe'
-$checksum64 = 'b781fa573f6366e1e1428e0f3b21efd22b94e3a96db753488b73132a9db72e11'
+$url64 = 'https://github.com/popcorn-official/popcorn-desktop/releases/download/v0.5.1/Popcorn-Time-0.5.1-win64-0.44.5-Setup.exe'
+$checksum64 = '1276272082e670c73b8c7bd2d7256301098ef428cc55a0a16bd53e1728e57720'
 $checksumType64 = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
