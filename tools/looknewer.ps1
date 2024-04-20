@@ -40,7 +40,7 @@ Install-PackageProvider -name winget
             [string]$Description = "([$search](https://community.chocolatey.org/packages/$search/$version)) Waiting for maintainer action"
             if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
                 "Create issue for $search"
-                New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description
                 $issue=1
                 exit 0
             }
