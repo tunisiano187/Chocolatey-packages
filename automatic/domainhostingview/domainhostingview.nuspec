@@ -5,10 +5,10 @@
     <version>1.82</version>
     <title>DomainHostingView</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/domainhostingview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@88a9c1a39f8c216d6fbdb748248a5eb511b5605f/icons/domainhostingview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DomainHostingView is a utility for Windows that collects extensive information about a domain by using a series of DNS and WHOIS queries,
 and generates HTML report that can be displayed in any Web browser.
@@ -21,7 +21,7 @@ the hosting company or data center that hosts the Web server, mail server, and d
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2011 NirSoft</copyright>
     <tags>web hosting report whois company owner registrar information dns</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/domainhostingview/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/domainhostingview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
