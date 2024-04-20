@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/islc</packageSourceUrl>
     <projectUrl>https://www.wagnardsoft.com/ISLCw</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e7e225aab0460490193077974049b7562b3d90ef/icons/islc.png</iconUrl>
     <tags>cache standby list cleaner</tags>
     <copyright>© Ghislain Harvey</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
