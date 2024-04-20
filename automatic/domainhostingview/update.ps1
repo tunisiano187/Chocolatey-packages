@@ -6,8 +6,6 @@ function global:au_SearchReplace {
 		"legal\VERIFICATION.txt"      = @{
 			"(?i)(x86:).*"        				= "`${1} $($Latest.URL32)"
 			"(?i)(checksum:).*" 				= "`${1} $($Latest.Checksum32)"
-			"(?i)(x64:).*"        				= "`${1} $($Latest.URL64)"
-			"(?i)(checksum64:).*" 				= "`${1} $($Latest.Checksum64)"
 		}
 	}
 }
@@ -25,8 +23,8 @@ function global:au_GetLatest {
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") NirSoft"
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -NoCheckChocoVersion
+update -ChecksumFor 32
