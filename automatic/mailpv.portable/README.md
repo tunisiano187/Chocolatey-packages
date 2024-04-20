@@ -17,6 +17,13 @@ Mail PassView is a small password-recovery tool that reveals the passwords and o
 *  Yahoo! Mail - If the password is saved in Yahoo! Messenger application.
 *  Hotmail/MSN mail - If the password is saved in MSN/Windows/Live Messenger application.
 *  Gmail - If the password is saved by Gmail Notifier application, Google Desktop, or by Google Talk.
+ 
+## Known Problems
+### False Alert Problems: 
+Some Antivirus programs detect Mail PassView utility as infected with Trojan/Virus. Click here to read more about false alerts in Antivirus programs
+If your Antivirus software shows a false alert, you can use the following article that explains how to send a report about a false positive issue to your Antivirus company:
+Dealing with False Positives: [Reporting Issues to Antivirus Vendors](https://www.av-comparatives.org/dealing-with-false-positives-reporting-issues-to-antivirus-vendors/)
+
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
