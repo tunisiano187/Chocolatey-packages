@@ -5,7 +5,7 @@
     <version>1.82</version>
     <title>DomainHostingView</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@88a9c1a39f8c216d6fbdb748248a5eb511b5605f/icons/domainhostingview.png</iconUrl>
