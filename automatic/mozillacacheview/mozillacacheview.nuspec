@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>mozillacacheview</id>
+    <version>1.81</version>
+    <title>MozillaCacheView</title>
+    <authors>Nir Sofer</authors>
+    <owners>dtgm</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/mozilla_cache_viewer.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/mozilla_cache_viewer.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/mozillacacheview.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MozillaCacheView is a small utility that reads the cache folder of Firefox/Mozilla/Netscape Web browsers, and displays the list of all files currently stored in the cache.
+
+For each cache file, the following information is displayed: URL, Content type, File size, Last modified time, Last fetched time, Expiration time, Fetch count, Server name, and more.
+
+You can easily select one or more items from the cache list, and then extract the files to another folder, or copy the URLs list to the clipboard.</description>
+    <summary>View the cache files of Firefox/Mozilla browsers</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© 2007 NirSoft</copyright>
+    <tags>mozilla cache extract web browser</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/mozillacacheview/</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
