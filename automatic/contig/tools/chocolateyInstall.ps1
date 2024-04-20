@@ -1,4 +1,4 @@
-﻿$packageName  = 'contig'
+$packageName  = 'contig'
 $url          = 'https://download.sysinternals.com/files/Contig.zip'
 $checksum     = '1c176a2dbe80e60941f8e00926828158df1bf94530ce936fe5bb84a477355b5b'
 $checksumType = 'sha256'
@@ -9,7 +9,7 @@ Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -UnzipLocation "$toolsDir" `
                              -Checksum "$checksum" `
                              -ChecksumType "$checksumType"
-                            
+
 Write-Verbose "Accepting license..."
 $regRoot = 'HKCU:\Software\Sysinternals'
 $regPkg = 'C'
