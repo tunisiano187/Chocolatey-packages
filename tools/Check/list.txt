@@ -1,4 +1,3 @@
-1c-barcode-printing 8.0.14.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 1c-barcode-scanner 8.0.8.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 1c-its 8.3.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 3dmark 2.6.6238 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)

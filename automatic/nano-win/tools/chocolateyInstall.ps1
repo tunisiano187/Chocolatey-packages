@@ -1,4 +1,4 @@
-$url            = 'https://github.com/okibcn/nano-for-windows/releases/download/v7.2-22.1/nano-for-windows_win32_v7.2-22.1.zip'
+﻿$url            = 'https://github.com/okibcn/nano-for-windows/releases/download/v7.2-22.1/nano-for-windows_win32_v7.2-22.1.zip'
 $checksum       = '0ac8fa4fc97f5b9eaf16d5b561c4b5df5d923deb29d5a8f21265e58dfaf2513d'
 $checksumType   = 'sha256'
 $url64          = 'https://github.com/okibcn/nano-for-windows/releases/download/v7.2-22.1/nano-for-windows_win64_v7.2-22.1.zip'
