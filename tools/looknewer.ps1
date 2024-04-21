@@ -86,7 +86,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
     }
 
     # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
-    if($search -eq '' -and $issue -eq 0) {
+    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
         "Checking list.txt file"
         $source = Join-Path $PSScriptRoot "Check/list.txt"
         $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -164,11 +164,5 @@ $link"
     git add -u
     if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
         git push origin master
-    } else {
-        choco search -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "Possibly broken" -and (!((Get-Content $($PSScriptRoot)\Check\exclude.txt | Select-String -Pattern $search).Matches.Success))} | Set-Content -Path $($PSScriptRoot)\Check\list.txt
-        git add -u
-        if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
-            git push origin master
-        }
-    }
+    } 
 }
