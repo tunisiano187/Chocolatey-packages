@@ -5,10 +5,10 @@
     <version>1.75</version>
     <title>SysExporter</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/sysexp.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/sysexp.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/sysexp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@103bfd86b2771a00143226e145adfc21efe9fa27/icons/sysexp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>SysExporter utility allows you to grab the data stored in standard list-views, tree-views, list boxes, combo boxes, text-boxes, and WebBrowser/HTML controls from almost any application running on your system, and export it to text, HTML or XML file.
 
@@ -26,7 +26,7 @@ Here's some examples for data that you can export with SysExporter:
     <releaseNotes>[What's New?](http://www.nirsoft.net/utils/sysexp.html)</releaseNotes>
     <copyright>© 2003 NirSoft</copyright>
     <tags>data visualizer lists</tags>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/sysexp/1.75</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sysexp</packageSourceUrl>
     <dependencies>
       <dependency id="sysexp.install" version="[1.75]" />
     </dependencies>
