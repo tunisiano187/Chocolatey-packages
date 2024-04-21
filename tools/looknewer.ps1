@@ -86,7 +86,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
     }
 
     # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
-    if($null -eq $search -or $search -eq '' -or $issue -eq 0) {
+    if($search -eq '' -and $issue -eq 0) {
         "Checking list.txt file"
         $source = Join-Path $PSScriptRoot "Check/list.txt"
         $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -99,10 +99,20 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         }
         $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
         git add -u
+        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
+            [string]$Label = "ToCreateManualy"
+            [string]$Title = "($($search)$($version)) update requested"
+            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
+$link"
+            New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+            $issue=1
+            exit 0
+        } else {
+            "$search already worked on in the last 90 day"
+            $search = ""
+            $ToDo = ''
+        }
     }
-
-    choco search -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "Possibly broken" -and (!((Get-Content $($PSScriptRoot)\Check\exclude.txt | Select-String -Pattern $search).Matches.Success))} | Set-Content -Path $($PSScriptRoot)\Check\list.txt
-
 
     "Comparing to winget"
     if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
@@ -154,5 +164,11 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
     git add -u
     if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
         git push origin master
+    } else {
+        choco search -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "Possibly broken" -and (!((Get-Content $($PSScriptRoot)\Check\exclude.txt | Select-String -Pattern $search).Matches.Success))} | Set-Content -Path $($PSScriptRoot)\Check\list.txt
+        git add -u
+        if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
+            git push origin master
+        }
     }
 }
