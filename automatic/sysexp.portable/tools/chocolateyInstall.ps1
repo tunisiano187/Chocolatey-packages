@@ -11,8 +11,3 @@ $unzipArgs = @{
 }
 
 Get-ChocolateyUnzip @unzipArgs
-
-$installFile    = (get-childitem -Filter "*.exe" -Recurse).FullName
-
-Set-Content -Path ("$installFile.gui") `
-            -Value $null
