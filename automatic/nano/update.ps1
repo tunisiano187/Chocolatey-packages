@@ -4,7 +4,7 @@ import-module au
 function global:au_SearchReplace {
 	@{
 		"$($Latest.PackageName).nuspec" = @{
-            "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+            "(\<dependency .+?`"nano-win`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
 	}
 }
