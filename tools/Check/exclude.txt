@@ -115,3 +115,4 @@ routerpassview
 dnsquerysniffer
 audioswitcher
 myuninst
+audioswitcher
