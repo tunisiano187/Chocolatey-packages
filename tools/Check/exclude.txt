@@ -114,3 +114,4 @@ zona
 routerpassview
 dnsquerysniffer
 audioswitcher
+myuninst
