@@ -120,3 +120,4 @@ dnsquerysniffer
 audioswitcher
 myuninst
 audioswitcher
+office2019proplus
