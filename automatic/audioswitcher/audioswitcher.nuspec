@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>https://github.com/xenolightning/AudioSwitcher/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://audioswit.ch/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/ddf3e8934b6374c8806b58de6ab5995158cd1d81/icons/audioswitcher.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f4b776609dd7fc7b01e8c11b2006d881955fa853/icons/audioswitcher.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Easily switch the default audio device, input or output, on any Windows PC (Vista and above).
 
