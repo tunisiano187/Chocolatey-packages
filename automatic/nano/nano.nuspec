@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nano</id>
-    <version>7.2.22.1</version>
+    <version>7.2.36.20230412</version>
     <title>GNU nano</title>
     <authors>Chris Allegretta</authors>
     <owners>tunisiano</owners>
@@ -45,7 +45,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <docsUrl>https://www.nano-editor.org/docs.php</docsUrl>
     <bugTrackerUrl>https://github.com/okibcn/nano-for-windows/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="nano-win" version="[0.0]" />
+      <dependency id="nano-win" version="[7.2.36.20230412]" />
     </dependencies>
   </metadata>
   <files>
