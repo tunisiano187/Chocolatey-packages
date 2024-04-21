@@ -88,7 +88,7 @@ Install-PackageProvider -name winget
     }
 
     # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
-    if($search -eq '' -and $issue -eq 0) {
+    if($null -eq $search -or $search -eq '' -or $issue -eq 0) {
         "Checking list.txt file"
         $source = Join-Path $PSScriptRoot "Check/list.txt"
         $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -103,7 +103,7 @@ Install-PackageProvider -name winget
         git add -u
     }
 
-    "Checking winget"
+    "Comparing to winget"
     if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
         if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
