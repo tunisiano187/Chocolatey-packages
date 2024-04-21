@@ -28,7 +28,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
     if($Todo.Count -eq 0) {
         "Checking on Chocolatey community profile"
         $chocoprofile = "https://community.chocolatey.org/profiles/tunisiano"
-        $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"} | Where-Object {$_.outerHTML -notmatch "capture2text"} | Where-Object {$_.outerHTML -notmatch "winedt"} | Where-Object {$_.outerHTML -notmatch "thebrain.install"} | Where-Object {$_.outerHTML -notmatch "gdevelop"}).href 
+        $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -match "maintainer"} | Where-Object {$_.outerHTML -notmatch "capture2text"} | Where-Object {$_.outerHTML -notmatch "winedt"} | Where-Object {$_.outerHTML -notmatch "thebrain.install"} | Where-Object {$_.outerHTML -notmatch "gdevelop"}).href
         $ToDo=$links
         foreach ($item in $links) {
             $search=$item.split('/')[-2]
@@ -93,6 +93,9 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         $check=(choco search $search) | Where-Object {$_ -match $search} | Where-Object {$_ -match 'broken'}
         get-content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
+        git add -u
+        git commit -m "remove first line"
+        git push
         if(($check.Count -gt 0) -or (Test-Path("$($PSScriptRoot)/../automatic/$search"))) {
             $search = ''
             $version = ''
@@ -116,7 +119,7 @@ $link"
 
     "Comparing to winget"
     if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
-        Install-PackageProvider -name winget
+        Install-PackageProvider -Name winget
         if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
                 "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
@@ -164,5 +167,5 @@ $link"
     git add -u
     if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
         git push origin master
-    } 
+    }
 }
