@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/sysexp.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/sysexp.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/tunisiano/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/sysexp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@906e3aa8b733c5e01597060b8d5f2b1432d97378/icons/sysexp.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>SysExporter utility allows you to grab the data stored in standard list-views, tree-views, list boxes, combo boxes, text-boxes, and WebBrowser/HTML controls from
 almost any application running on your system, and export it to text, HTML or XML file.
