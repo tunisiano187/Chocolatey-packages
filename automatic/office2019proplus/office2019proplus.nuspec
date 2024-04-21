@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>office2019proplus</id>
+    <version>2019.1808</version>
+    <title>Microsoft Office 2019 ProPlus</title>
+    <authors>Microsoft</authors>
+    <owners>Fabio Tarascio</owners>
+    <licenseUrl>https://docs.microsoft.com/en-us/DeployOffice/vlactivation/plan-volume-activation-of-office?toc=/deployoffice/office2019/toc.json</licenseUrl>
+    <projectUrl>http://office.microsoft.com/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/ftarascio/chocolatey-packages/34d60f3d/icons/Office2019.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Office 2019 Pro Plus requires Windows 10 or Windows Server 2019!
+     
+    ## Package parameters
+* `/ConfigPath` - (optional) Full path to custom install configuration.
+Example: `choco install office2019proplus --params '/ConfigPath:c:\myConfig.xml'`
+
+* `/Language` - (optional) The installation language. Defaults to match your OS language. [List of possible languages](https://docs.microsoft.com/en-us/deployoffice/overview-of-deploying-languages-in-office-365-proplus#languages-culture-codes-and-companion-proofing-languages)
+Example: `choco install office2019proplus --params '/Language:de-de'`
+
+Get the latest versions of your familiar Office programs, such as Word, Excel and PowerPoint, and more, all in one convenient
+subscription. This will download and silently install the entire Office 2019 Professional Plus edition. A license is required
+and you will be prompted to enter your account information upon first launching the software after install.</description>
+    <summary>Office 2019 Professional Plus</summary>
+    <releaseNotes>https://docs.microsoft.com/en-us/officeupdates/update-history-office-2019</releaseNotes>
+    <copyright>Microsoft</copyright>
+    <tags>Office2019ProPlus Office MicrosoftOffice MSOffice</tags>
+    <packageSourceUrl>https://github.com/ftarascio/chocolatey-packages</packageSourceUrl>
+    <docsUrl>https://support.office.com/</docsUrl>
+    <mailingListUrl>https://answers.microsoft.com/en-us</mailingListUrl>
+    <bugTrackerUrl>https://support.office.com/en-us/home/contact?contactUsExperienceEntryPointAssetId=S.HP.Main</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
