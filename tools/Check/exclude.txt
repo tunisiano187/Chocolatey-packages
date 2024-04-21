@@ -68,6 +68,7 @@ msigna
 myuninst
 nordvpn
 nxt
+office2019proplus
 office365proplus
 opencodecs
 p4scc
@@ -115,9 +116,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-routerpassview
-dnsquerysniffer
-audioswitcher
-myuninst
-audioswitcher
-office2019proplus
