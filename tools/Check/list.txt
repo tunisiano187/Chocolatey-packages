@@ -1,668 +1,99 @@
-MsSqlServer2012ExpressAdv 11.0.2100.60 - Possibly broken
-munin-node 1.6.1.20130823 - Possibly broken
-thegiant.tools 1.3 - Possibly broken
-mysql-32bit 5.6.15 - Possibly broken
-iscommandlineapp 1.0.0 [Approved] - Possibly broken
-SourcePreviewHandler 1.0.15 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-stduviewer 1.6.294 - Possibly broken
-SoftwareCreations.devbox 0.04 - Possibly broken
-PSWinUpdate 1.5.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-todoist-outlook 2.7.8 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-jivkok.boxstarter1 1.0.0.4 - Possibly broken
-VS2013SDK 1.0 - Possibly broken
-secondstrategy.baseline.utilities 2013.10.10 - Possibly broken
-thegiant.freshinstall 1.2 - Possibly broken
-VisualStudioExpress2013WindowsDesktop 12.0.21005.1 - Possibly broken
-git-helper 1.5 - Possibly broken
-argouml 0.34.1 - Possibly broken
-sqlio 1.0 - Possibly broken
-github-build-from-label 1.1 - Possibly broken
-pathmanager.portable 1.1.1 - Possibly broken
-syncback 7.6.36.0 [Approved] - Possibly broken
-maxmind-geoip-dat 1.0.0.121720133 - Possibly broken
-Hexter.octopus.tentacle 1.6.3.1724 - Possibly broken
-tfsSidekicks2013 5.0 - Possibly broken
-SQL2012.LocalDB 11.0.2100.61 - Possibly broken
-PowerShellExtension.SQL2012 11.0.2100.60 - Possibly broken
-meinberg-ntp 4.2.8.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-pokerth 1.1.1 - Possibly broken
-electrum-dash 2.4.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-aws-sdk-net 2.0.5.0 - Possibly broken
-kareemsultan.desktop 1.8 - Possibly broken
-wot 1.12.2014 - Possibly broken
-brogue 1.7.3 - Possibly broken
-sharpdevelop 4.4.1 - Possibly broken
-flashdevelop 5.3.3.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-windowclippings 3.1.131 - Possibly broken
-VisualHG 1.1.6.0 - Possibly broken
-VisualStudioTFSExpress2012 1.1.3 - Possibly broken
-VisualStudioExpress2008 9.0 - Possibly broken
-sharecoin 0.1.0 [Approved] - Possibly broken
-pygtk-all-in-one_win32_py2.7 2.24.2.2014021601 - Possibly broken
-mongodb.core.2.2 2.2.7.2014021906 - Possibly broken
-mailboxlogparser 1.0 - Possibly broken
-GitSvnExternals 1.1.0.7 - Possibly broken
-secure-file 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-firessh 0.94.10 [Approved] - Possibly broken
-kopano-deskapp-nightly 2.4.5 [Approved] - Possibly broken
-PoshInternals 1.0.0.20 - Possibly broken
-sharebylink 0.4.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nanumfont 3.0 - Possibly broken
-ColorDesker 2.2.611.1122 - Possibly broken
-love 0.10.2 [Approved] - Possibly broken
-tivo-desktop.install 2.8.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-R.Latest 1.1 - Possibly broken
-node-webkit-0.9.2 0.9.2 - Possibly broken
-dfu-util 0.7.1 - Possibly broken
-tivo-desktop 2.8.3 [Approved] - Possibly broken
-sparkcore-build 0.3 - Possibly broken
-nateon 5.1.5.0 - Possibly broken
-calcheck 2.2 - Possibly broken
-appfabric 1.1 - Possibly broken
-copy 1.43.0290 - Possibly broken
-ultimate-settings-panel-lite 5.1 [Approved] - Possibly broken
-concert.env 1.0.20140417 - Possibly broken
-concerteenv 1.2.0 - Possibly broken
-PowerDelivery-VSExtension-2010 1.0.2 - Possibly broken
-change-dns-servers 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-kill-frozen-programs 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-free-pst-reader 4.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-technicians-toolbox 1.2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-f-secureis 2.6.303.0 - Possibly broken
-svchost-lookup-tool 1.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-f-secureav 2.6.303.0 - Possibly broken
-xamarin-ios-simulator 0.10.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xamarin-profiler 0.38.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-visualstudio2013-modelingsdk 1.0.0 - Possibly broken
-GMac.Teamcity 8.1.2 - Possibly broken
-focuswriter 1.5.1 - Possibly broken
-EntityFrameworkPowerTools-VS2013 0.9.0.0 - Possibly broken
-DSC.DscResourceDesigner 1.1.1 - Possibly broken
-time.txt.install 2.2.1 - Possibly broken
-quickstart.DefaultInstall 1.0.0 - Possibly broken
-vagrant_plugins 1.0.0.1 - Possibly broken
-chef_development 1.0.0.4 - Possibly broken
-VS2013.2 1.0.1 - Possibly broken
-openni-x64 2.2.0.33 - Possibly broken
-herdprotect 1.0.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-glfw3 3.0.4.2 - Possibly broken
-MongoDBForTango 1.0 - Possibly broken
-killprocess 2.44 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-GoServer 14.1.0.18882 - Possibly broken
-check-mk 1.2.4 - Possibly broken
-splunkforwarder 6.5.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-aviraiss 14.0.5.450 - Possibly broken
-WordViewer 1.0.1 - Possibly broken
-sanerpersonal 1.1 - Possibly broken
-arduinoidegalileo 1.0.2 - Possibly broken
-MeatPlay 0.0.2 - Possibly broken
-fileseek 5.2.1 - Possibly broken
-open-visual-traceroute 1.7.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tux-paint-stamps 2018.09.01 [Approved] - Possibly broken
-tangible-t4-vs2013 2.3.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-BR.AdobeReaderFR 11.0.09 - Possibly broken
-WinCyApk 0.0.2 - Possibly broken
-qt-sdk-windows-x64-msvc2010_opengl 5.3.2 - Possibly broken
-linqpad2 2.45.05 - Possibly broken
-avgpctuneup 15.0.1001.105 - Possibly broken
-streaming-video-downloader 7.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-pctransfree 9.10 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-blogspot-image-downloader 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-qt-vs-addin5 1.2.3 - Possibly broken
-karen 3.6.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-qt-creator-x64 3.2.1 - Possibly broken
-msbuild.awstasks 1.2 - Possibly broken
-widelands 18.0 - Possibly broken
-qt-sdk-windows-x64-msvc2012 5.3.2 - Possibly broken
-visualstudio2013-update2 1.0.5 - Possibly broken
-bluetoothlogview 1.12 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-bowery-agent 3.1.0 - Possibly broken
-qt-sdk-windows-x86-mingw_opengl 5.3.2 - Possibly broken
-frozenbytes.essentials 1.07 - Possibly broken
-linqpad2.install 2.45.05 - Possibly broken
-qt-sdk-windows-x64-mingw_seh 5.3.2 - Possibly broken
-qt-sdk-windows-x86-msvc2010_opengl 5.3.2 - Possibly broken
-workcad 2.0.0.35 - Possibly broken
-ceed 0.8.0 - Possibly broken
-deimos-driver 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-AzureBuildSDKvs2013 2.4.0 - Possibly broken
-ICSharp 0.1 - Possibly broken
-sundance 4.5.0.2 - Possibly broken
-ocaml-ocpwin64 4.00.1.20141010 - Possibly broken
-Silverlight3SDK 3.0 - Possibly broken
-HexEdit 2.0.6.49 - Possibly broken
-jivkok.tools 1.1.0.7 - Possibly broken
-kss 12.0.1.340 - Possibly broken
-avast-is-trial 12.3.2279 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-avirafreeantivirus 14.0.6.552 - Possibly broken
-dahua-web-plugin 3.1.0.486876 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-qt-sdk-windows-x86-msvc2012_opengl 5.3.1 - Possibly broken
-VS2013.3 1.0.2 - Possibly broken
-MicrosoftSecurityEssentials 4.5.0216.0 [Approved] - Possibly broken
-xamarin-component 1.1.0.42 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-Thoughtworks.Go.Server 14.2.0.0 - Possibly broken
-freemind 1.0.1 - Possibly broken
-reportviewer2012 11.0.3452.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ares 2.4.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-solfege 3.22.2.1 - Possibly broken
-tfs2013powertools 12.1.00402.0 - Possibly broken
-python.x86 3.4.1.20140609 [Approved] - Possibly broken
-WinCy 1.0.0 - Possibly broken
-downloadapp 1.7.0.190 - Possibly broken
-CodeAuditor 14.0.0 - Possibly broken
-sandboxie 5.31.4 [Approved] - Possibly broken
-sandboxie.install 5.31.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-Nancy.Blog 0.1.0.0 - Possibly broken
-aeroadmin.portable 3.0.2037 - Possibly broken
-rmprepusb 2.1.722 - Possibly broken
-netscan 6.2.1.20161101 [Approved] - Possibly broken
-driveletterview 1.45 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-steamcmd 3.65.77.95 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-visipics 1.31.1 [Approved] - Possibly broken
-gdevelop 4.0.94 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sketchupviewer 17.0.18899 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-DSC.Networking 2.1.1.1 - Possibly broken
-DSC.PSDesiredStateConfiguration 3.0.2.0 - Possibly broken
-DSC.PowerShellCommunity 1.175.1 - Possibly broken
-allow-block-remove-firewall 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-simply-weather 0.2.2 - Possibly broken
-Excel.Viewer 12.0.6219.1000 - Possibly broken
-MsSqlServer2012ExpressWithReporting 11.00.3000.20140928 - Possibly broken
-datastax.community 2.1.0 - Possibly broken
-ost2pst-wizard 4.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-postgresql93 9.3.5.1 - Possibly broken
-smlnj 110.77 - Possibly broken
-qt-sdk-windowsrt-x86 5.3.2 - Possibly broken
-qt-sdk 1.6.0.5 - Possibly broken
-mediacoder 0.8.32 - Possibly broken
-PowerDelivery-VSExtension-2013 1.0.4 - Possibly broken
-ipfilter-updater 2.2.2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-scala.portable 2.11.4 [Approved] - Possibly broken
-Microsoft-Band-Sync 1.3.1021.3 [Approved] - Possibly broken
-ChocolateyExplorer 0.2.2.111 [Approved] - Possibly broken
-supraball 0.2.10.1 [Approved] - Possibly broken
-ardev 0.3.0.0 - Possibly broken
-artools 0.3.0.0 - Possibly broken
-iepv.install 1.40 [Approved] - Possibly broken
-mwrock.DefaultInstall 1.0.0 - Possibly broken
-hadouken 4.6.0 - Possibly broken
-frozenbytes.dev.essentials 1.01 - Possibly broken
-frozenbytes.extras 1.03 - Possibly broken
-frozenbytes.vs2012.extensions 1.03 - Possibly broken
-xamarin-studio 5.5.2.2014102200 - Possibly broken
-VerizonMessagePlus 1.0.0.1 - Possibly broken
-frozenbytes.baseline.dev.sdks 1.0.5 - Possibly broken
-frozenbytes.baseline.dev.vs 1.0.5 - Possibly broken
-mullvad-app 2019.8 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-BingBar 7.3.126 - Possibly broken
-frozenbytes.repos 1.03 - Possibly broken
-3dslicer 4.10.2.28257 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-appcrashview 1.31 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ConsoleZ.Settings 1.0.0.20141027 [Approved] - Possibly broken
-mipony 2.2.1 [Approved] - Possibly broken
-win-youtube-dl 1.1.0 [Approved] - Possibly broken
-mro 1.12.20141201 [Approved] - Possibly broken
-mousecontroller 1.7.1.20141201 [Approved] - Possibly broken
-flare 0.19.20141201 [Approved] - Possibly broken
-snaplr 0.1 [Approved] - Possibly broken
-heroesofnewerth 3.5.8 [Approved] - Possibly broken
-easytag 2.4.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tbox 1.33.0.1 [Approved] - Possibly broken
-Devbox-Clink 0.4.2.14045 [Approved] - Possibly broken
-Devbox-RapidEE 0.0.0.20141226 [Approved] - Possibly broken
-dd 0.5 [Approved] - Possibly broken
-bugShooting 2.12.4.744 [Approved] - Possibly broken
-systemninja.install 3.1.6 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-roomeqwizard 5.18 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-higan 1.0.096 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dink-smallwood 1.4.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-artmoney.install 7.44 [Approved] - Possibly broken
-tfsSidekicks2015 6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-phalcon 2.0.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-visualstudio2013testagents 12.0.21005.20160105 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-phalanger-4.0-tools 1.16.7925 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-confuser 1.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-lua51 5.1.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-python-wxwidgets 2.8.12.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xbmc 13.2.0.20160121 [Approved] - Possibly broken
-bigstash 1.5.1 [Approved] - Possibly broken
-coapp 1.23.521.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-keepass-plugin-qrcodegen 2.0.12 [Approved] - Possibly broken
-keepass-plugin-favicon 1.9.0 [Approved] - Possibly broken
-pipelist 1.01 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-wizemo 3.51 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-icecast 2.4.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-deviceioview 1.05 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ssdt12 12.0.50512.0 [Approved] - Possibly broken
-padgen 3.1.1.51 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xenko 3.1.0.1 [Approved] - Possibly broken
-karaf 4.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-keepass-plugin-cw3import 2.10 [Approved] - Possibly broken
-smsniff 2.27 [Approved] - Possibly broken
-myhotkey 4.0.0.20170311 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-boot2docker 1.6.2 [Approved] - Possibly broken
-datamash 1.0.6 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-imagesprites 1.2.34 [Approved] - Possibly broken
-checkstyle 6.18 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-SketchUpPro.install 2013.1.0.20160526 [Approved] - Possibly broken
-NetfoxDetective 0.9.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xml-copy-editor 1.2.1.3 [Approved] - Possibly broken
-PasS 1.5.2 [Approved] - Possibly broken
-crossftp 1.96.4 [Approved] - Possibly broken
-totalcommanderpowerpack 2.0 [Approved] - Possibly broken
-pan 0.140.216 [Approved] - Possibly broken
-tcptrace 0.8.1.717 [Approved] - Possibly broken
-proxytrace 0.1.2.23 [Approved] - Possibly broken
-lha 1.14 [Approved] - Possibly broken
-dbforge-sql 4.0.52 [Approved] - Possibly broken
-shairport4w 1.0.8.3 [Approved] - Possibly broken
-z3 4.3.2 [Approved] - Possibly broken
-monitorinfoview 1.21 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-gamevox 1.0 [Approved] - Possibly broken
-rpc 6.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-SnippingToolPlusPlus 6.4.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-bitcoin-unlimited 1.0.2.0 [Approved] - Possibly broken
-tidytabs.portable 1.3.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tidytabs.install 1.3.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-peerblock 1.2.0.693 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-logparser.lizardgui 6.8 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-todolist 7.0.12.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-DebugView 4.81.0.20160210 [Approved] - Possibly broken
-automation-spy 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-amazon-music-chrome 1.4 [Approved] - Possibly broken
-xsd2code 3.4.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-unxUtils 1.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-arduinoide 1.6.1 [Approved] - Possibly broken
-sqlserverdatatools2012 11.1.50226 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-myrulib 0.29.16 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-cctray 1.8.5.20150314 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-metropolislauncher 1.2.0 [Approved] - Possibly broken
-snake-java 1.7.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-010editor.install 8.0.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-lingering-object-liquidator 2.0.19 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tcplogview 1.30 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-donkeykongjr 2012.03.20 [Approved] - Possibly broken
-mspacman 2012.06.20 [Approved] - Possibly broken
-mspacmannes 2012.07.08 [Approved] - Possibly broken
-pacman-revenge 2017.05.18 [Approved] - Possibly broken
-scramble 2010.09.16 [Approved] - Possibly broken
-spaceinvaders 2013.08.01 [Approved] - Possibly broken
-superpacman 2014.10.12 [Approved] - Possibly broken
-maltego 4.1.0.10552 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-VS2013Agents 1.5.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-invokemsbuild 1.5.17 [Approved] - Possibly broken
-logstash-contrib 1.4.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ucon 1.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-wul 1.32 [Approved] - Possibly broken
-osmc-installer 130.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-connectwise-manage-client 2017.03 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-lissi-csp 2.0.0.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-rutoken-web-tool 1.4.0.42 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-colorconsole 2.51 [Approved] - Possibly broken
-sylpheed 3.7.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sylpheed.portable 3.7.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-whoistd 2.36 [Approved] - Possibly broken
-myhomelib 2.2.0.822 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mkey 1.3.5.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-myhomelib.portable 2.2.0.822 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-restart-to-uefi 1.0.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-app-shop 1.0.31 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-volley 0.7.6 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ftdi-drivers 2.12.28 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-1c-barcode-scanner 8.0.8.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sprut-universal-update 2.72.60 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-cryptopro-pdf 2.0.0811 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dropboxifier 0.1.8 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-robocode 1.9.2.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-bless 0.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-subtitleworkshop.portable 6.0.131121 [Approved] - Possibly broken
-sourcetree-disableautoupdate 1.0.0 [Approved] - Possibly broken
-spf13-vim 3.0.3 [Approved] - Possibly broken
-filealyzer 2.0.5.57 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-packer-post-processor-vagrant-vmware-ovf 0.2.1.20150603 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-winmerge-jp 2.14.0.77 [Approved] - Possibly broken
-kav 15.0.2.361 [Approved] - Possibly broken
-keepass-plugin-traytotp 2.0.0.5 [Approved] - Possibly broken
-keepass-plugin-osk 1.2 [Approved] - Possibly broken
-webbrowserpassview 1.85 [Approved] - Possibly broken
-keepass-plugin-qualitycolumn 1.2 [Approved] - Possibly broken
-webbrowserpassview.portable 1.85 [Approved] - Possibly broken
-truecrypt 7.1.20150620 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-keepass-plugin-truecryptmount 2.3 [Approved] - Possibly broken
-docash-vega-firmware 29.20171109 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-avd-nativeapp 4.1.19 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-oda-file-converter 19.12.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-skyfonts 5.9.5.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mpw 2.7.10 [Approved] - Possibly broken
-psshutdown 2.52 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-Boxstarter.WindowsUpdate 1.1.0 [Approved] - Possibly broken
-qpmx 1.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-pdf2svg 0.2.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-polipo 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-superantispyware 6.0.1204 [Approved] - Possibly broken
-io.js 3.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-AnkhSvn 2.5.12703 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-pyhoca-gui 0.5.0.4001 [Approved] - Possibly broken
-avginternetsecurity 15.0.6125 [Approved] - Possibly broken
-RoboForm 8.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sharepoint.2013.sdk 15.4711.1001 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-npackd-cli 1.20.5 [Approved] - Possibly broken
-npackd 1.20.5 [Approved] - Possibly broken
-presonusuniversalcontrol 1.7.2 [Approved] - Possibly broken
-mweather 1.73 [Approved] - Possibly broken
-sitecoreshipfunctions 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-curse-voice 1.0 [Approved] - Possibly broken
-skype-utility-project 1.4.0 [Approved] - Possibly broken
-kontur-addtotrusted 2.0.19.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-linqpad4.AnyCPU.portable 4.57.02 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-eveonline 0.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-jtrim 1.53 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-B4J 7.80 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-keepass-plugin-keepasshttp 1.8.4.2 [Approved] - Possibly broken
-albumstomp 2.14 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-server-jre 8.0.192 [Approved] - Possibly broken
-1c-its 8.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-visualstudio2017-performancetools 15.0.28010.0 [Approved] - Possibly broken
-turbo 1.0.0.20151117 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-KB2999226 1.0.20181019 [Approved] - Possibly broken
-grep 2.1032 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-gdiview 1.25 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dtc-msys2 1.4.7 [Approved] - Possibly broken
-jboss-as 7.1.1 [Approved] - Possibly broken
-ncrunch.vs2013 0.0.0.0 [Approved] - Possibly broken
-DotNet4.6-TargetPack 4.6.00081.20150925 [Approved] - Possibly broken
-axis2-war 1.6.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-netpass.portable 1.40 [Approved] - Possibly broken
-geforce-game-ready-driver-win7 378.92 [Approved] - Possibly broken
-geforce-game-ready-driver-win10 378.92 [Approved] - Possibly broken
-windows-sdk-10 10.1.10586.15 [Approved] - Possibly broken
-sqlstudio 13.0.16100.1 [Approved] - Possibly broken
-lua52 5.2.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-apimonitor 2.13.0.20160115 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ispy 6.5.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-global 6.5.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-vlc-skin-editor 0.8.5 [Approved] - Possibly broken
-brainsimulator 0.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-readyshare-vault 1.0.50.500 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-basilisk.portable 2019.10.31 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-WinBOLT 3.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-exceptionless-elasticsearch 2.2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dbgview 4.81 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mozillacacheview 1.81 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-exifdataview 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-systemninja 3.1.6 [Approved] - Possibly broken
-TestDriven.Net 3.9.2905 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-poshadmin 1.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-scite4autohotkey 3.0.06.20170428 [Approved] - Possibly broken
-staruml2 2.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-processhacker 2.39 [Approved] - Possibly broken
-processhacker.install 2.39 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-netscan32 5.4.9.20160330 [Approved] - Possibly broken
-netscan64 5.4.9.20160330 [Approved] - Possibly broken
-toastify 1.8.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-s3put 3.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-hfsexplorer 0.23.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-peach 3.1.53 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mbsa 2.3.2211 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tktz 0.6.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-chocomon 1.0.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sematadatastore 1.0.42.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-netbeans-jee 8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-NAnt 0.92.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-CrashPlanPRO 4.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-luke.portable 6.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-aspnetmvc2 2.0.60926.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-docear.install 1.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-docear.portable 1.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-eviacam 2.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-veeam-endpoint-backup-free 1.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-doxygen.portable 1.8.11 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-freecommander-xe 2016.715 [Approved] - Possibly broken
-biblioteq 2016.03.03 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-findandreplace 2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-treesheets 2015.9.13 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-VirtualCloneDrive 5.5.0.20160317 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-instantbird 1.5.0.20170718 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-openrct2 0.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mssqlexpress2014sp1wt 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-OffCAT 2.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-visionapp 9.0.5222 [Approved] - Possibly broken
-taskbarhider 1.2 [Approved] - Possibly broken
-linqpad4.install 4.58.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-bitcoin-unlimited.portable 1.0.2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-010editor.portable 8.0.0.20170515 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-envelope-printer 2.0.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-registry-compressor 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ad-acl-scanner 5.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sysexp 1.75 [Approved] - Possibly broken
-keepass-plugin-kpfloatingpanel 7.0 [Approved] - Possibly broken
-kptransfer 3.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-wirelessconnectioninfo 1.12 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-azure-documentdb-emulator 1.11.136.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-google-books-downloader 2.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xrecode3.portable 1.54 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-fastglacier 3.4.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-vcredist-all 1.0.0 [Approved] - Possibly broken
-dumpedid 1.06 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-SkypeForBusinessBasic 11107.33602 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-miktex.portable 2.9.6942 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-foldersizes 9.0.252 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-visual-studio-2015-tools-for-unity 3.3.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xournal 0.4.8 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ssip 1.3.0.20170918 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-de4dot 0.0.0.15 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-amsexplorer 4.3.4.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-passwordscan.portable 1.42 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-jhead 3.04 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-winlldpservice 17.10.20.2236 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xna 4.0.20823.2017102101 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-winsys 2018.12.16.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-xavtool 1.2.1 [Approved] - Possibly broken
-netbeans-web 8.2 [Approved] - Possibly broken
-blinkys-scary-school 2013.07.30 [Approved] - Possibly broken
-cass 3.0.2 [Approved] - Possibly broken
-Noto 0.20171025 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-meteor 0.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-shamela 3.64 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-winmerge-7z 0028.465.920 [Approved] - Possibly broken
-linqpad5.AnyCPU.portable 5.26.01 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-passwordscan 1.42 [Approved] - Possibly broken
-passwordscan.install 1.42 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mzcv 1.56 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-advanced-bat-to-exe-converter 4.11 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-video-repair-software 3.1.0.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-whois 1.20 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nk2edit 3.35 [Approved] - Possibly broken
-fonts-ricty-diminished 4.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-freepascal 3.0.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-source-han-serif-cn 1.001 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-source-han-sans-cn 2.000 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-libreoffice 5.4.4.20180111 [Approved] - Possibly broken
-libreoffice-oldstable 5.3.7.20180111 [Approved] - Possibly broken
-sprut-sms-client 3.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-resonic.install 0.9.1.1690 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-install4j 7.0.4 [Approved] - Possibly broken
-chromium-stable 64.0.3282.168 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-snapgene-viewer 4.2.11.20190125 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-psi.portable 1.4 [Approved] - Possibly broken
-cryptopro-csp 4.0.9842.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-RegScanner 2.30 [Approved] - Possibly broken
-dnsdataview 1.56 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mellowplayer 3.5.90 [Approved] - Possibly broken
-3dmark 2.6.6238 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-resonic 0.9.1.1690 [Approved] - Possibly broken
-mpack 1.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-mainca 2012.07.20 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-usblogon 1.8.1.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-comodo-cocc 6.17.11191.18031 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-comodo-remote 6.17.11326.18031 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 1c-barcode-printing 8.0.14.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-SakuraEditor 2.3.2.0 [Approved] - Possibly broken
-keepass-plugin-keechallenge 1.5.20180413 [Approved] - Possibly broken
-multimonitortool 1.95 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dotTrace-memory 4.2 [Approved] - Possibly broken
-BoxCryptorClassic 1.7.409.20180501 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-kafka 1.1.0 [Approved] - Possibly broken
-crealogix-paymaker-office 5.0.8.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-taskfactory 2018.2.4.503 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ipevo-presenter 6.8.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-outlyer-agent 1.5.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-gramps 5.0.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-parsec-cloud 0.12.0 [Approved] - Possibly broken
-klatexformula 4.0.0 [Approved] - Possibly broken
-drivergenius 19.0.0.145 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-google-play-music-manager 1.0.457.379602 [Approved] - Possibly broken
-hppark 1.8.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-hp-universal-print-driver-ps 6.8.0.24296 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-hp-universal-print-driver-pcl 6.8.0.24296 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-capture2text 4.6.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ost2 2.13.0.28 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-winxcorners 1.1.0.320190708 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-git-annex 7.20190627 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dashlane-chrome 1.0.0 [Approved] - Possibly broken
-utorrent-webui 0.388 [Approved] - Possibly broken
-ipnetinfo 1.85 [Approved] - Possibly broken
-ipnetinfo.install 1.85 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ipnetinfo.portable 1.85 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-cubepdfutility 0.5.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-cubepdf 1.0.0.200 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-sql-multi-select 4.3.0.142 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-unifiedremote 3.7.0.2352 [Approved] - Possibly broken
-natron.install 2.3.14.20190807 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-electrum-ltc.install 3.3.8.1 [Approved] - Possibly broken
-rambox-os-nightly 0.5.19 [Approved] - Possibly broken
-bulkrenameutility.install 3.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-browsinghistoryview 2.21 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-bulkrenameutility.portable 3.1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-chromecookiesview 1.56 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-colorconsole.install 4.03 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dialupass 3.60 [Approved] - Possibly broken
-schemacrawler 15.06.01 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-gcloudsdk 0.0.0.20190318 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-atubecatcher 3.8.9622 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-bibletime 2.11.2 [Approved] - Possibly broken
-bitrix24 7.0.44.42 [Approved] - Possibly broken
-intel-me-drivers 1909.12.0.1236 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-windows-adk-all 10.0.18362.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-protectmychoices-chrome 1.2.4 [Approved] - Possibly broken
+1c-barcode-scanner 8.0.8.4 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+1c-its 8.3.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+3dmark 2.6.6238 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+7-taskbar-tweaker 5.8.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+aaclr 1.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+acardaoutboundagent 7.4.0.298801 [Approved] - Possibly broken
+acardaoutboundsolo 7.4.0.298801 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+Accents 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+accessdirector 2.5.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+acronis-drive-monitor 1.0.566 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+adguard-chrome 3.0.13 [Approved] - Possibly broken
+adiirc 3.3.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 adobeshockwaveplayer 12.3.4.204 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-iis-compression 1.0.3219 [Approved] - Possibly broken
-joytokey 6.2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-addo 0.9.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-rammap 1.52 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-outlookattachview 3.16 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-outlookstatview 2.17 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-usbdeview 2.80 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-vmmap 3.25 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-wakemeonlan 1.84 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-whoistd.install 2.41 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-winlogonview 1.32 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-zona 2.0.3.3 [Approved] - Possibly broken
-visualbcd 0.9.3.1020190427 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-nextiva 22.6.3.64 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-FileTypesMan 1.85 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-folderchangesview 2.27 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-rakudostar 2019.03.01 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-brutaldoom-scythe2 2.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-brutaldoom-dtwid 1.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-brutaldoom-goingdown 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-brutaldoom-d2reload 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-brutaldoom-epic2 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-brutaldoom-hellbound 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-countrytraceroute 1.30 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-hitmanpro 3.8.14.304 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-opentyrian 2.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-dar 2.6.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-colorconsole.portable 4.03 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-desktop-tech 0.13.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-ipinfooffline 1.50 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-networkinterfacesview 1.15 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-pinginfoview 1.85 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-regscanner.install 2.35 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-searchmyfiles 2.92 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-soundvolumeview 1.86 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-kvrt 2019.06.24.1824 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-odrive.install 1.0.6590 [Approved] - Possibly broken
-dbachecks 2.0.4 [Approved] - Possibly broken
-redis 2.4.6.1 [Approved] - Possibly broken
-SQL2012.ClrTypes 2011.110.3000.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-psexec 2.20.20180914 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-pip 1.2.0 [Approved] - Possibly broken
-PowerGUI 3.8.0.129 [Approved] - Possibly broken
-freefilesync 10.2.0.20180914 [Approved] - Possibly broken
-emsisoft-anti-malware 11.0.0.5958 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-netfx-4.6.1-devpack 4.6.01055.00 [Approved] - Possibly broken
-kubernetes-node 1.11.3 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-CrystalReports2008Runtime 12.4.1 - Possibly broken
-vb5runtime 5.0 [Approved] - Possibly broken
-psping 2.10 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-iis-externalcache 1.1.20151123 [Approved] - Possibly broken
-vim-x86.install 7.4.1825 [Approved] - Possibly broken
-datacrow 4.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-RSSOwl 2.2.1.20160620 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-cmder.portable 1.1.4.102 [Approved] - Possibly broken
-simpleprogramdebugger 1.05 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-tfsSidekicks 2.4.0 - Possibly broken
-mailpv.portable 1.86 [Approved] - Possibly broken
-ChirpyVSI 2.0.0.4 - Possibly broken
-iepv 1.35 [Approved] - Possibly broken
-xnews 5.4.25 - Possibly broken
-hydrairc 0.3.165.1 - Possibly broken
-digsby 0.91.30192 [Approved] - Possibly broken
-docash-vega-driver 3.3.2011.11 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-Shotty 2.0.2 - Possibly broken
-wpfinspector 0.9.9 - Possibly broken
-cassinidev 3.5.1.8 - Possibly broken
-wubi 12.04.20120921 - Possibly broken
-sd-card-formatter 5.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-shazzam 1.3 - Possibly broken
-officeribboneditor 4.4.2 - Possibly broken
-Snipe 1.0.2.0 - Possibly broken
-mobalivecd 2.1 - Possibly broken
-kaxaml 1.8 - Possibly broken
-git-flow-dependencies 0.2 - Possibly broken
-h2database 1.3.169 - Possibly broken
-PeStudio 4.5 [Approved] - Possibly broken
-instanteyedropper.app 1.75 [Approved] - Possibly broken
-sqldiagmanager 10.5.1.202 - Possibly broken
-SelfSSL7 1.0.1 - Possibly broken
-vibrancegui 2.0.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-regexpixie 1.0.0 - Possibly broken
-deskspace 1.5.8.13 [Approved] - Possibly broken
-WebFlipScreenSaver 0.2.0.1 - Possibly broken
-apache-cassandra 3.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-virtuawin 4.4 - Possibly broken
+ad-tidy-free 2.1.7 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+advancedsystemtweaker 2.0.0.20141128 [Approved] - Possibly broken
+aeroadmin.portable 3.0.2037 - Possibly broken
+agentsvn 2.56.20 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+albumstomp 2.14.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+alcohol52-free 2.0.3.9326 [Approved] - Possibly broken
+allbrowsers 1.0.0 - Possibly broken
+amazingmarvin 1.41.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+amule 2.3.1 [Approved] - Possibly broken
+amule.install 2.3.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+AnkhSvn 2.5.12703 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+anvide-seal-folder 5.30.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+anyvideoconverter 6.0.0 [Approved] - Possibly broken
+apache-cassandra 3.7.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+apacheds 2.0.0.19 [Approved] - Possibly broken
+appfabric 1.1.0 - Possibly broken
+app-shop 1.0.31 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+arcanist 2017.8.0 [Approved] - Possibly broken
+ardev 0.3.0 - Possibly broken
+arduinoide 1.6.1 [Approved] - Possibly broken
+arduinoidegalileo 1.0.2 - Possibly broken
+argouml 0.34.1 - Possibly broken
+artmoney.install 7.44.0 [Approved] - Possibly broken
+artools 0.3.0 - Possibly broken
+aspnetmvc2 2.0.60926 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+atubecatcher 3.8.9622 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+automation-spy 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+avast-premier-trial 12.3.2279 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+avd-nativeapp 4.1.19 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+AvgAntivirusBusiness 2013.3349.0 - Possibly broken
+avginternetsecurity 15.0.6125 [Approved] - Possibly broken
+avgpctuneup 15.0.1001.105 - Possibly broken
+avirafreeantivirus 14.0.6.552 - Possibly broken
+aviraiss 14.0.5.450 - Possibly broken
+awssdk-tools 1.0.0 - Possibly broken
+axis2-war 1.6.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+azclient 0.5.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+AzureBuildSDKvs2013 2.4.0 - Possibly broken
+azure-documentdb-emulator 1.11.136.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+azurestorageemulator 4.4.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+backupper-server 5.3.0 [Approved] - Possibly broken
+balsamiqmockups.install 1.0.8 [Approved] - Possibly broken
+barryschiffer-netscaler-script 2.5.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+basilisk.portable 2019.10.31 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+Batik 1.7.0 - Possibly broken
 Batte.LoadOuts.Dev 1.0.5 - Possibly broken
-MSAccess2010-redist 1.0 - Possibly broken
-xCmd 1.12.0 - Possibly broken
-itag 0.483 - Possibly broken
-sugarsync 1.9.71.1 - Possibly broken
-TortoiseGit.latest 1.7.15 - Possibly broken
-sqlbpa.2012 12.0.0.1 - Possibly broken
-indihiang 1.0.0.1 - Possibly broken
-Fitbit.Ultra 2.1.0.8 - Possibly broken
-bzeditor 1.7.6 - Possibly broken
-astah 6.6.4 - Possibly broken
-cksdevserver 2.4.0.0 - Possibly broken
-couchdb 1.2.0 - Possibly broken
-VS2012SDK 1.0 - Possibly broken
-multiavchd 4.1 - Possibly broken
-SickBeard 2012.11.04.1 - Possibly broken
-tfsSidekicks2012 4.5 - Possibly broken
-pavement.dev 1.0.1 - Possibly broken
-kareemsultan.developer.toolkit.dotnet 1.3 - Possibly broken
-SQL2008R2.CmdLine 10.50.1600.1 - Possibly broken
-google-pinyin 1.0 - Possibly broken
-Dogtail.VS2012.2.CTP 11.2.13054.3 - Possibly broken
-SQLMaintenanceSolution 0.6 - Possibly broken
-treetrim 1.0.3 - Possibly broken
-SharePoint.HiveShortcut.Desktop 1.0.0.0 - Possibly broken
-SublimeText2.PackageControl 1.6.3 - Possibly broken
-SublimeText2.app 2.0.1.22171 [Approved] - Possibly broken
-msinttypes 0.26 - Possibly broken
-Hexter.Teamcity 7.1.42 - Possibly broken
-Devbox-Sed 4.2.1 - Possibly broken
-Devbox-P4Merge 131.61.1503 - Possibly broken
-bistudio 8.3.9 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
-0.2.6 [Approved] - Possibly broken
-SolarWinds-Permissions-Analyzer 0.0
+battoexeconverter 3.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+belvedere 0.7.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+berrybrew 1.2.6 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bigstash 1.5.1 [Approved] - Possibly broken
+BingBar 7.3.126 - Possibly broken
+bitcoin-unlimited 1.0.2 [Approved] - Possibly broken
+bitcoin-unlimited.portable 1.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bitdefender-usb-immunizer 2.0.1.901 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bitkinex 3.2.3.20130823 - Possibly broken
+bless 0.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+blobby2 1.0.3 - Possibly broken
+blogspot-image-downloader 1.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bluegriffon 3.1.0 [Approved] - Possibly broken
+bluetoothlogview 1.12.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bonobo-git-server 6.5.0 [Approved] - Possibly broken
+boot2docker 1.6.2 [Approved] - Possibly broken
+bowery-agent 3.1.0 - Possibly broken
+BoxCryptorClassic 1.7.409.20180501 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+Boxstarter.WindowsUpdate 1.1.0 [Approved] - Possibly broken
+BR.AdobeReaderFR 11.0.9 - Possibly broken
+brainsimulator 0.6.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+brogue 1.7.3 - Possibly broken
+brutaldoom-d2reload 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+brutaldoom-dtwid 1.1.1 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+brutaldoom-epic2 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+brutaldoom-goingdown 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+brutaldoom-kamasutra 3.9.5 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+brutaldoom-scythe2 2.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+btprox 1.5.0.1 [Approved] - Possibly broken
+btprox.install 1.5.0.1 [Approved] - Possibly broken
+buckaroo 2.2.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bugShooting 2.12.4.744 [Approved] - Possibly broken
+bulkrenameutility.install 3.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bulkrenameutility.portable 3.1.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bytecoin 1.1.8 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+bzflag 2.4.10 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+calcheck 2.2.0 - Possibly broken
+cameyo 3.1.1446 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
+camunda-bpm-tomcat 7.11.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)

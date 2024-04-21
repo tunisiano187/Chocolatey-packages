@@ -24,8 +24,6 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
     Write-Warning "Not checking for broken packages"
 } else {
 
-Install-PackageProvider -name winget
-
     # Check if one package is waiting for maintainer action on Chocolatey
     if($Todo.Count -eq 0) {
         "Checking on Chocolatey community profile"
@@ -103,8 +101,12 @@ Install-PackageProvider -name winget
         git add -u
     }
 
+    choco search -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "Possibly broken" -and (!((Get-Content $($PSScriptRoot)\Check\exclude.txt | Select-String -Pattern $search).Matches.Success))} | Set-Content -Path $($PSScriptRoot)\Check\list.txt
+
+
     "Comparing to winget"
     if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
+        Install-PackageProvider -name winget
         if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
                 "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
