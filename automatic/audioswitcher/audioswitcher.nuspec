@@ -24,7 +24,7 @@ I designed this application to be incredibly small and lightweight. There is no 
     <copyright>© 2015 Forty One Limited</copyright>
     <tags>audio device manager</tags>
     <projectSourceUrl>https://github.com/xenolightning/AudioSwitcher/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/audioswitcher/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/audioswitcher</packageSourceUrl>
     <docsUrl>https://github.com/xenolightning/AudioSwitcher_v1/wiki</docsUrl>
     <mailingListUrl>https://twitter.com/xenolightning</mailingListUrl>
     <bugTrackerUrl>https://github.com/xenolightning/AudioSwitcher_v1/issues</bugTrackerUrl>
