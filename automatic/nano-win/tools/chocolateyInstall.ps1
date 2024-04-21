@@ -24,7 +24,7 @@ Install-ChocolateyZipPackage @packageArgs
 
 # initialise .nanorc profile
 # referenced: https://github.com/okibcn/Bucket/blob/master/bucket/nano.json
-$installDir = "$env:ChocolateyInstall/lib/nano-win/tools" 
+$installDir = "$env:ChocolateyInstall/lib/nano-win/tools"
 $installDir = $installDir -replace '\\','/'
 
 if (-not (Test-Path ~/.nanorc)){
