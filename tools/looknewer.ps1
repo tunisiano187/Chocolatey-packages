@@ -94,14 +94,14 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         get-content $source | Select-Object -Skip 1 | set-content "$source-temp"
         Move-Item "$source-temp" $source -Force
         git add -u
-        git commit -m "remove first line"
+        git commit -m "remove first line
+[skip ci]"
         git push
         if(($check.Count -gt 0) -or (Test-Path("$($PSScriptRoot)/../automatic/$search"))) {
             $search = ''
             $version = ''
         }
         $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
-        git add -u
         if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer") -and $search -ne '') {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) update requested"
