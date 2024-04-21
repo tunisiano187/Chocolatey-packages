@@ -21,3 +21,16 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
+
+# initialise .nanorc profile
+# referenced: https://github.com/okibcn/Bucket/blob/master/bucket/nano.json
+$installDir = "$env:ChocolateyInstall/lib/nano-win/tools" 
+$installDir = $installDir -replace '\\','/'
+
+if (-not (Test-Path ~/.nanorc)){
+   Move-Item "$installDir/.nanorc" ~/.nanorc
+   Add-Content ~/.nanorc "include `"$installDir/syntax/*.nanorc`""}
+else {Copy-Item ~/.nanorc "$installDir/.nanorc.bak"} # backup the original file
+(Get-Content ~/.nanorc) -replace '(@PKGDATADIR@)', "$installDir/syntax" | Set-Content ~/.nanorc
+(Get-Content ~/.nanorc) -replace '(/usr/share/nano)', "$installDir/syntax" | Set-Content ~/.nanorc
+(Get-Content ~/.nanorc) -replace '(pkg_.*-w64-mingw32.share.nano)', 'syntax' | Set-Content ~/.nanorc
