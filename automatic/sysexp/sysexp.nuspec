@@ -5,7 +5,7 @@
     <version>1.75</version>
     <title>SysExporter</title>
     <authors>Nir Sofer</authors>
-    <owners>dtgm</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/sysexp.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/sysexp.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@103bfd86b2771a00143226e145adfc21efe9fa27/icons/sysexp.png</iconUrl>
