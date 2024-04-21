@@ -99,7 +99,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         }
         $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
         git add -u
-        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
+        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer") -and $search -ne '') {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) update requested"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
