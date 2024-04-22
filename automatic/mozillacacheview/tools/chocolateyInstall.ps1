@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file32         = "$(Join-Path $toolsDir -ChildPath 'mozillacacheview.zip')"
+$file32         = "$(Join-Path $toolsDir -ChildPath 'mzcacheview.zip')"
 
 $unzipArgs = @{
     PackageName     = $env:ChocolateyPackageName
