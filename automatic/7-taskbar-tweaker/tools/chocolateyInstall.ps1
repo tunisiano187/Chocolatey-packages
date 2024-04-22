@@ -1,6 +1,6 @@
 $url            = 'http://rammichael.com/downloads/7tt_setup.exe'
-$checksum       = ""
-$checksumType   = ""
+$checksum       = ''
+$checksumType   = ''
 
 $packageArgs = @{
     packageName   = $env:ChocolateyPackageName
