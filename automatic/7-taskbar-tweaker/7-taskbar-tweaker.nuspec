@@ -17,7 +17,7 @@ The tweaker is designed for Windows 7 and Windows 8.</description>
     <releaseNotes>http://rammichael.com/downloads/7tt_setup.exe?changelog</releaseNotes>
     <copyright />
     <tags>taskbar tweaker 7+ admin</tags>
-    <packageSourceUrl>https://github.com/aronovgj/choco-auto</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/7-taskbar-tweaker</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
