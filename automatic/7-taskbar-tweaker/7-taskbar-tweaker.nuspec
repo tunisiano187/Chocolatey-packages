@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>7-taskbar-tweaker</id>
+    <version>5.8</version>
+    <title>7+ Taskbar Tweaker</title>
+    <authors>RaMMicHaeL</authors>
+    <owners>doc</owners>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://rammichael.com/7-taskbar-tweaker</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/34f87e5f6b8aadb5586cf6a7fcc1eef446688ddc/icons/7-taskbar-tweaker.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>7+ Taskbar Tweaker allows you to configure various aspects of the Windows taskbar.
+Most of the configuration options it provides can’t be tweaked using the taskbar properties or the registry.
+The tweaker is designed for Windows 7 and Windows 8.</description>
+    <summary>7+ Taskbar Tweaker allows you to configure various aspects of the Windows taskbar.</summary>
+    <releaseNotes>http://rammichael.com/downloads/7tt_setup.exe?changelog</releaseNotes>
+    <copyright />
+    <tags>taskbar tweaker 7+ admin</tags>
+    <packageSourceUrl>https://github.com/aronovgj/choco-auto</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
