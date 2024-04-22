@@ -19,7 +19,7 @@ Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $ex
 
 "Check if there are open issues"
 # Check if there is a waiting issue
-if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"})) {
+if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"})) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
 } else {
@@ -73,7 +73,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         }
     }
 
-    if($Todo.Count -eq 0 -and $issue -eq 0) {
+    if($issue -eq 0) {
         "Checking on the chocolatey-package-requests"
         $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFP'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
         foreach ($issue in $issues) {
