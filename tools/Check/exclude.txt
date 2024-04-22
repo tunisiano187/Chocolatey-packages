@@ -116,3 +116,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+aaclr
