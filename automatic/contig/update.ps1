@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = "https://download.sysinternals.com/files/Contig.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile "tools/Contig.zip"
-	$checksum32 = Get-FileHash -Path "tools/Contig.zip" -Algorithm $env:ChocolateyChecksumType
+	$checksum32 = (Get-FileHash -Path "tools/Contig.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	Expand-Archive -Path "tools/Contig.zip" -DestinationPath "$($env:TEMP)\contig\"
 	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$($env:TEMP)\contig\Contig.exe").FileVersion
     Remove-Item -Path "tools/Contig.zip" -Force
@@ -28,4 +28,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
