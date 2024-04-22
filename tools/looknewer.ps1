@@ -97,12 +97,12 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         git commit -m "remove first line
 [skip ci]"
         git push
-        if(($check.Count -gt 0) -or (Test-Path("$($PSScriptRoot)/../automatic/$search"))) {
+        if(($check.Count -eq 0) -or (Test-Path("$($PSScriptRoot)/../automatic/$search"))) {
             $search = ''
             $version = ''
         }
         $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
-        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer") -and $search -ne '') {
+        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer" | Where-Object {$_ -notmatch "Set-GitHubConfiguration"}) -and $search -ne '') {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) update requested"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
