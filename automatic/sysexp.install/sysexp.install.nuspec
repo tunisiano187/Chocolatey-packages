@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sysexp.install</id>
-    <version>1.76</version>
+    <version>1.77</version>
     <title>SysExporter (Install)</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.nirsoft.net/utils/sysexp.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8b5c994c017953f579969336375258b53279ccdf/icons/sysexp.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>SysExporter utility allows you to grab the data stored in standard list-views, tree-views, list boxes, combo boxes, text-boxes, and WebBrowser/HTML controls from
+    <description><![CDATA[## SysExporter (Install)
+
+SysExporter utility allows you to grab the data stored in standard list-views, tree-views, list boxes, combo boxes, text-boxes, and WebBrowser/HTML controls from
 almost any application running on your system, and export it to text, HTML or XML file.
 
 Here's some examples for data that you can export with SysExporter:
@@ -22,7 +24,13 @@ Here's some examples for data that you can export with SysExporter:
 * The Registry values displayed in the right pane of the Registry Editor.
 * The data displayed by SysInternals utilities (Registry Monitor, File Monitor, Process Explorer, and others.) 
 * The text inside a standard message-box of Windows.
-* The HTML inside any instance of Internet Explorer.</description>
+* The HTML inside any instance of Internet Explorer.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Grab data from list-view, tree-view, combo box, WebBrowser control, and text-box.</summary>
     <releaseNotes>https://www.nirsoft.net/utils/sysexp.html</releaseNotes>
     <copyright>© 2003 NirSoft</copyright>

@@ -6,14 +6,14 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://www.nirsoft.net/utils/searchmyfiles.zip
+x86: https://www.nirsoft.net/utils/mzcacheview.zip
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: D5B1FF964D478171A353CD787141AD7B6F679BC0070A142237C0BFC2D6793D6F
+checksum: @{Algorithm=SHA512; Hash=E87AFE586AE9E18DB7F286D72270A908072CDFAC51944F2DC65C8DE63B8090C2974C63ADA67A0BB57CAF6AA19AAA296A3D97DE57A55D4AB19FF03478FDF43FDF; Path=C:\projects\chocolatey-packages\automatic\mozillacacheview\tools\mzcacheview.zip}
 
 The license is available here:
 https://www.nirsoft.net/utils/mozilla_cache_viewer.html

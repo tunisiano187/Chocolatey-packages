@@ -1,7 +1,7 @@
-$packageName  = 'contig'
+﻿$packageName  = 'contig'
 $url          = 'https://download.sysinternals.com/files/Contig.zip'
-$checksum     = '1c176a2dbe80e60941f8e00926828158df1bf94530ce936fe5bb84a477355b5b'
-$checksumType = 'sha256'
+$checksum     = '@{Algorithm=SHA512; Hash=096BC2017604D2091C96ED050F776B93B9EAD1D6852944E1C3A4C5F7E59BD5FF4272CA40C3B75BCC1B4612D998355C9337E2194DB72443FCF7E8A64C1EC76E5B; Path=C:\projects\chocolatey-packages\automatic\contig\tools\Contig.zip}'
+$checksumType = 'SHA512'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `

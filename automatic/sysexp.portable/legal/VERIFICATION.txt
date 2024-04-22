@@ -6,7 +6,7 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://www.nirsoft.net/utils/soundvolumeview.zip
+x86: https://www.nirsoft.net/utils/sysexp.zip
 x64: https://www.nirsoft.net/utils/soundvolumeview-x64.zip
 
 2. You can use one of the following methods to obtain the checksum(s):

@@ -1,7 +1,7 @@
-$packageName    = 'sysexp.install'
+﻿$packageName    = 'sysexp.install'
 $installerType  = 'exe'
-$url            = 'http://www.nirsoft.net/utils/sysexp_setup.exe'
-$checksum       = '9bde68193cab12c7f41288e575f906992e27b279e3087e2cfe665159875d887e'
+$url            = 'https://www.nirsoft.net/utils/sysexp_setup.exe'
+$checksum       = '9a38499ac2ecb2ce0851aad0018c5bc517fb635dbc01899973f4cb798cdb4cd4'
 $checksumType   = 'sha256'
 $silentArgs     = '/S'
 $validExitCodes = @(0)
