@@ -73,6 +73,32 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open|Wh
         }
     }
 
+    if($Todo.Count -eq 0 -and $issue -eq 0) {
+        "Checking on the chocolatey-package-requests"
+        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFP'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
+        foreach ($issue in $issues) {
+            $search = $issue.Title.split(' ')[-1]
+            "Checking $search"
+            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content .\tools\Check\exclude.txt | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
+                $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
+                $link
+                if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
+                    [string]$Label = "ToCreateManualy"
+                    [string]$Title = "($($search)$($version)) package requested"
+                    [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
+    $link"
+                    New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
+                    $issue=1
+                    exit 0
+                } else {
+                    "$search already worked on in the last 90 day"
+                    $search = ""
+                    $ToDo = ''
+                }
+            }
+        }
+    }
+
     # Clean the search item
     $ToDo=$ToDo.trim()
     # Check if there is already a closed issue about this request and avoid search
