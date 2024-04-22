@@ -22,7 +22,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $url32 = $releases
 
-	$File = "$($env:TEMP\7tt_setup.exe)"
+	$File = "$($env:TEMP)\7tt_setup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
     $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
