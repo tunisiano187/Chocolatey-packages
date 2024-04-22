@@ -5,7 +5,7 @@
     <id>yandex-browser</id>
     <version>0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/Yandex-browser</packageSourceUrl>
-    <owners>__REPLACE_YOUR_NAME__</owners>
+    <owners>tunisiano</owners>
 
     <title>Yandex-browser (Install)</title>
     <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
