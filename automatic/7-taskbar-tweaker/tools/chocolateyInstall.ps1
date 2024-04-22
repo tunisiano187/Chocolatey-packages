@@ -1,5 +1,15 @@
-$packageName = '7-taskbar-tweaker'
-$fileType = 'exe'
-$silentArgs = '/S'
-$url = 'http://rammichael.com/downloads/7tt_setup.exe'
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url -Checksum 4aa13d0fa8f746299f08c54997f581e5f9ad881be3b5e932004658ed624defcc -ChecksumType 'sha256'
+$url            = 'http://rammichael.com/downloads/7tt_setup.exe'
+$checksum       = ""
+$checksumType   = ""
+
+$packageArgs = @{
+    packageName   = $env:ChocolateyPackageName
+    fileType      = 'EXE'
+    Url           = $url
+    checksum      = $checksum
+    checksumType  = $checksumType
+    softwareName  = 'Arduino*'
+    silentArgs    = '/S'
+}
+
+Install-ChocolateyPackage @packageArgs
