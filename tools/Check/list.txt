@@ -1,4 +1,3 @@
-aaclr 1.0.2 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 acardaoutboundagent 7.4.0.298801 [Approved] - Possibly broken
 acardaoutboundsolo 7.4.0.298801 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 Accents 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)

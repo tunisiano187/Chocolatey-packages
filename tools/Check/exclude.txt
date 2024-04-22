@@ -1,3 +1,4 @@
+aaclr
 adblockplusie
 advtor
 amazingmarvin
@@ -116,4 +117,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-aaclr
