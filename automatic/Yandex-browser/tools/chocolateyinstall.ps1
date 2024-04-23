@@ -15,7 +15,7 @@ $packageArgs = @{
   checksumType  = $checksumType
 
   silentArgs    = "--silent"
-  #validExitCodes= @(0) #please insert other valid exit codes here
+  validExitCodes= @(0,1,3) #please insert other valid exit codes here
 }
 
 Install-ChocolateyPackage @packageArgs
