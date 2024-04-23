@@ -1,0 +1,2 @@
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+Get-ChocolateyWebFile -PackageName 'accents' -FileFullPath "$toolsDir\Accents.exe" -Url 'http://www.donationcoder.com/Software/Skrommel/Accents/Accents.exe' -Checksum 'DDEAF6F425BCE2303A3F25183192F4FCA34CE8BDCAE2E4F473B1DE05C0AF1556' -ChecksumType 'sha256'
