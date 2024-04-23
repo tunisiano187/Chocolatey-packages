@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Accents</id>
+    <version>1.0</version>
+    <title>Accents</title>
+    <authors>1 Hour Software by Skrommel</authors>
+    <owners>joachim.schmidt557</owners>
+    <projectUrl>http://www.donationcoder.com/Software/Skrommel/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/joachimschmidt557/ChocolateyPackages/90da799f/icons/Accents.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Press a key three times or more to apply accents.
+    - Change accents using Settings in the tray menu
+    - Doesn't work properly with shifted keys while CapsLock is on</description>
+    <summary>Press a key three times or more to apply accents.</summary>
+    <releaseNotes>v1.0: Added accents to non-alphabet characters.</releaseNotes>
+    <copyright>2007 1 Hour Software by Skrommel</copyright>
+    <tags>accents admin</tags>
+    <projectSourceUrl>http://www.donationcoder.com/Software/Skrommel/Accents/Accents.ahk</projectSourceUrl>
+    <packageSourceUrl>https://github.com/joachimschmidt557/ChocolateyPackages/tree/master/accents</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
