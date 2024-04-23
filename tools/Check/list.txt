@@ -1,4 +1,3 @@
-Accents 1.0.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 accessdirector 2.5.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 acronis-drive-monitor 1.0.566 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 adguard-chrome 3.0.13 [Approved] - Possibly broken
