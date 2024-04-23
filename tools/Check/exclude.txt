@@ -118,3 +118,4 @@ xmeters
 zimbra-desktop
 zona
 acardaoutboundsolo
+Accents
