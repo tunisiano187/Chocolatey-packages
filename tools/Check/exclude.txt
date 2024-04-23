@@ -1,4 +1,6 @@
 aaclr
+acardaoutboundsolo
+Accents
 adblockplusie
 advtor
 amazingmarvin
@@ -117,5 +119,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-acardaoutboundsolo
-Accents
