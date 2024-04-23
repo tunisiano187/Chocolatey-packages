@@ -14,17 +14,26 @@ function Find-nextissueGH {
     $search = $packageName -split '\(|\)' | Select-Object -Index 1
     "Package to import : $search"
 
-    if($actor -ne 'tunisiano187' -or $packageName -notmatch 'update requested') {
+    if($actor -ne 'tunisiano187' -or ($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested")) {
         "Not running the get-package script"
         $search = $null
     }
 
-    if($search) {
-        $folder = Join-Path $PSScriptRoot "../automatic/$search"
+    $folder = Join-Path $PSScriptRoot "../automatic/$search"
+
+    if($search -and $packageName -match "update requested") {
         if(Test-Path $folder) {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
         } elseif ($search -ne '') {
             $script = Join-Path $PSScriptRoot "Get-Package.ps1"
+            "Running $($script) $($search.Tolower())"
+            . $script $search.Tolower()
+        }
+    } elseif($search -and $packageName -match "package requested") {
+        if(Test-Path $folder) {
+            Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
+        } elseif ($search -ne '') {
+            $script = Join-Path $PSScriptRoot "New-Package.ps1"
             "Running $($script) $($search.Tolower())"
             . $script $search.Tolower()
         }
