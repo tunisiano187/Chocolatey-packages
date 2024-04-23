@@ -2,8 +2,8 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>yandex-browser</id>
-    <version>0.0</version>
+    <id>Yandex-browser</id>
+    <version>24.4.1.901</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/Yandex-browser</packageSourceUrl>
     <owners>tunisiano</owners>
 
@@ -19,7 +19,14 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>yandex browser</tags>
     <summary>The quick and secure browser from Yandex for computers. Webpages load quickly on slow connections, you are protected from viruses and scammers, and fast search.</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <description><![CDATA[## Yandex Browser
+Download a fast and secure browser
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
