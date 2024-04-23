@@ -58,13 +58,14 @@ if(Test-Path "$folder\$packageName\") {
     }
 }
 
-New-Item -ItemType Directory -Path $PackageFolder -Force
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+choco new $packageName -a --version 0.0 maintainername="'tunisiano'" --outputdirectory $folder
 
 Install-Module wormies-au-helpers -Force
 $TemplateFolder = Join-Path $parentfolder 'scripts/templates'
 $TemplateReadMe = Join-Path $TemplateFolder "README.md"
 $ReadmeContent = Get-Content $TemplateReadMe
-"File $TemplateReadMe exist ? $(Test-Path $TemplateReadMe)"
 $ReadmeContent = $ReadmeContent -replace "pkgid",$packageName.ToLower()
 
 Set-Content -Path "$PackageFolder\README.md" -Value $ReadmeContent
