@@ -77,7 +77,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         "Checking For RFP on the chocolatey-package-requests git"
         $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFP'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
         foreach ($issue in $issues) {
-            $search = $issue.Title.split(' ')[-1]
+            $search = ($issue.Title.split('-')[-1]).replace(" ","-")
             "Checking $search"
             if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content .\tools\Check\exclude.txt | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
