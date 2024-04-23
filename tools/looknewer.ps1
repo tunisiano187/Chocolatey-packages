@@ -73,8 +73,8 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         }
     }
 
-    if($search -eq "") {
-        "Checking on the chocolatey-package-requests"
+    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
+        "Checking For RFP on the chocolatey-package-requests git"
         $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFP'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
