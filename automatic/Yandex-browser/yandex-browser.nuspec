@@ -12,7 +12,7 @@
     
     <projectUrl>https://browser.yandex.com/</projectUrl>
     
-    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/yandex-browser.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/icons/yandex-browser.PNG</iconUrl>
     <copyright>2024 Yandex</copyright>
     
     <licenseUrl>https://yandex.com/legal/browser_agreement/</licenseUrl>
