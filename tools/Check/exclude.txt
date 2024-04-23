@@ -122,3 +122,4 @@ zona
 acardaoutboundsolo
 Accents
 Notes
+Kaspersky-Free
