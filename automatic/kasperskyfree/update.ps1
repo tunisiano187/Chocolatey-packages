@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$releases="https://trial.s.kaspersky-labs.com/registered/w0wci3bxizuuge8wzc3j/"
 	$release=(Invoke-WebRequest -uri $releases).Links
-	$version=$release.href | foreach{$_.split('_')[-1].replace('/','') } | Sort-Object | Select-Object -Last 1
+	$version=$release.href | ForEach-Object{$_.split('_')[-1].replace('/','') } | Sort-Object | Select-Object -Last 1
 	$folder = "$releases$($release.href | Where-Object {$_ -match $version})"
 	$url32 = "$folder$(((Invoke-WebRequest -Uri $folder).Links | Where-Object {$_.href -match "exe"}).href)"
 
