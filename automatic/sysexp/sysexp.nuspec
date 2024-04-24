@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sysexp</id>
-    <version>1.76.0</version>
+    <version>1.77.0</version>
     <title>SysExporter</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
@@ -36,7 +36,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>data visualizer lists</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sysexp</packageSourceUrl>
     <dependencies>
-      <dependency id="sysexp.install" version="[1.76.0]" />
+      <dependency id="sysexp.install" version="[1.77.0]" />
     </dependencies>
   </metadata>
   <files>
