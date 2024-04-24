@@ -7,6 +7,7 @@ amazingmarvin
 armory
 audioswitcher
 avirafreeantivirus
+Bear-Notes
 bitcoin-unlimited
 bitcoin-unlimited.install
 bitmessage
@@ -50,6 +51,7 @@ jdk11
 jdk8
 jdownloader
 Kaspersky Free
+Kaspersky-Free
 keepass-plugin-autotypecustomfieldpicker
 keepass-plugin-keecloud
 keepass-plugin-mskeyimporter
@@ -58,6 +60,7 @@ keepass-plugin-traytotp
 kubernetes-cli
 kubernetes-kompose
 kvrt
+Lando
 libffcall
 librecrypt
 lili
@@ -70,6 +73,7 @@ msdeploy
 msigna
 myuninst
 nordvpn
+Notes
 nxt
 office2019proplus
 office365proplus
@@ -119,9 +123,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-acardaoutboundsolo
-Accents
-Notes
-Kaspersky-Free
-Bear-Notes
-Lando
