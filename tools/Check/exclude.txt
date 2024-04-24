@@ -123,3 +123,4 @@ acardaoutboundsolo
 Accents
 Notes
 Kaspersky-Free
+Bear-Notes
