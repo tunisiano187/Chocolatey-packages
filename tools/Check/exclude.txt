@@ -29,6 +29,7 @@ ekeyfinder
 ekiga
 emulationstation
 emulationstation.install
+enjarify
 evernote2onenote
 evimsync
 fastest-mouse-clicker
@@ -66,6 +67,7 @@ libffcall
 librecrypt
 lili
 luckybackup
+ManuelBastioniLAB
 md5sums
 meson
 mooncoin
@@ -124,5 +126,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-enjarify
-ManuelBastioniLAB
