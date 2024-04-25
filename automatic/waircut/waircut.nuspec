@@ -10,7 +10,7 @@
     <title>waircut (Install)</title>
     <authors>patcherr</authors>
     <projectUrl>https://sourceforge.net/projects/waircut/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/waircut.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9138adc6c0a769c4225cded5e067459a9ffb137e/icons/waircut.png</iconUrl>
     <copyright>Year Software Vendor</copyright>
 
     <docsUrl>https://sourceforge.net/p/waircut/wiki/</docsUrl>
