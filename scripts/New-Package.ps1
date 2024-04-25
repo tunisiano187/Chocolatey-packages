@@ -62,7 +62,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 choco new $packageName -a --version 0.0 maintainername="'tunisiano'" --outputdirectory $folder
 
-Install-Module wormies-au-helpers -Force
+choco install wormies-au-helpers -y
 $TemplateFolder = Join-Path $parentfolder 'scripts/templates'
 $TemplateReadMe = Join-Path $TemplateFolder "README.md"
 $ReadmeContent = Get-Content $TemplateReadMe
