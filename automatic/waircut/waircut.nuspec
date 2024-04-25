@@ -4,7 +4,7 @@
   <metadata>
     <id>waircut</id>
     <version>0.0</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/waircut</packageSourceUrl>
     <owners>tunisiano</owners>
 
     <title>waircut (Install)</title>
