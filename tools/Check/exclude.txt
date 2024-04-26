@@ -116,8 +116,10 @@ twisted
 vcexpress2010
 videocacheview
 vim-tux
+Waircut
 webbrowserpassview
 webbrowserpassview.portable
+Webmin
 whoiscl
 windows
 wirelesskeyview
@@ -126,5 +128,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Waircut
-Webmin
