@@ -9,9 +9,10 @@ function Find-nextissueGH {
     #$ErrorActionPreference = 'Stop'
     Install-Module psgithubsearch -ErrorAction SilentlyContinue -Force
     Import-Module psgithubsearch
+    Write-output $PSVersionTable
 
     "packageName : $packageName"
-    $search = $packageName -replace 'RFP - ','' | -replace 'RFM - ',''
+    $search = $packageName.substring(6)
     "Package to import : $search"
 
     if($actor -ne 'tunisiano187' -or ($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested")) {
