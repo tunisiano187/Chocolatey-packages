@@ -58,6 +58,7 @@ function Block-Package {
       Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
       git commit -am  "Exclude $extract
 [skip ci]"
+      git pull
       git push
     }
 }
