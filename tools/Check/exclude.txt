@@ -130,3 +130,4 @@ xmeters
 zimbra-desktop
 zona
 Ardour
+AMD-Graphics-Driver
