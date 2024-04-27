@@ -59,6 +59,7 @@ keepass-plugin-keecloud
 keepass-plugin-mskeyimporter
 keepass-plugin-trayrecent
 keepass-plugin-traytotp
+KTechLab
 kubernetes-cli
 kubernetes-kompose
 kvrt
@@ -128,4 +129,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-KTechLab
