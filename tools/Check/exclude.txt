@@ -129,3 +129,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+Ardour
