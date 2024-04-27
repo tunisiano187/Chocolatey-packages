@@ -11,7 +11,7 @@ function Find-nextissueGH {
     Import-Module psgithubsearch
 
     "packageName : $packageName"
-    $search = $packageName -split '\(|\)' | Select-Object -Index 1
+    $search = $packageName -replace 'RFP - ','' | -replace 'RFM - ',''
     "Package to import : $search"
 
     if($actor -ne 'tunisiano187' -or ($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested")) {
