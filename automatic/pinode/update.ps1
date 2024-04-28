@@ -2,21 +2,15 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://node.minepi.com/node/'
-$license = "https://github.com/minepi-finance/PI/blob/master/LICENSE"
 
 function global:au_SearchReplace {
 	@{
-		".\legal\VERIFICATION.txt" = @{
-			"(?i)(\s+x86:).*"                   = "`${1} $($Latest.URL64)"
-			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL64)"
-			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum64)"
-		  }
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+		}
 	}
-}
-
-function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
-	Invoke-WebRequest -Uri $license -OutFile ".\legal\LICENSE.txt"
 }
 
 function global:au_AfterUpdate($Package) {
