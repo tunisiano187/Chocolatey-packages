@@ -134,3 +134,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+acronis-drive-monitor
