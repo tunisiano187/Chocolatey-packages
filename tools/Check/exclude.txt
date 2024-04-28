@@ -82,6 +82,7 @@ nordvpn
 Notes
 nxt
 Oculus-Rift-
+Oculus-Rift-(CV1)-software
 office2019proplus
 office365proplus
 opencodecs
@@ -132,5 +133,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Oculus-Rift-(CV1)-software
-Oculus-Rift-
