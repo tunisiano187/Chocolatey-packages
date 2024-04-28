@@ -12,8 +12,10 @@ function Find-nextissueGH {
     Write-output $PSVersionTable
 
     "packageName : $packageName"
-    if($search -match "exclude") {
-       $search = $packageName.substring(6)
+    if($packageName -match "exclude") {
+        $search = $packageName.substring(6)
+    } else {
+        $search = $packageName
     }
     "Package to import : $search"
 
