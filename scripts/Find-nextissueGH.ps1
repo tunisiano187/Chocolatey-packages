@@ -23,6 +23,7 @@ function Find-nextissueGH {
     $folder = Join-Path $PSScriptRoot "../automatic/$search"
 
     if($search -and $packageName -match "update requested") {
+        $folder = Join-Path $PSScriptRoot "../automatic/$search"
         if(Test-Path $folder) {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
         } elseif ($search -ne '') {
