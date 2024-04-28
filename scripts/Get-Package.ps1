@@ -50,7 +50,7 @@ $nuspecPath     = "$folder\$packageName\$packageName.nuspec"
 $PackageFolder  = "$folder\$packageName\"
 
 if(Test-Path "$folder\$packageName\") {
-    $replace = Read-Host -Prompt "the package already exist in the destination folder, do you want to replace it ? Y/[N]"
+    $replace = Read-Output -Prompt "the package already exist in the destination folder, do you want to replace it ? Y/[N]"
     if($replace.ToLower() -eq "y") {
         Remove-Item "$folder\$packageName\" -Force -Recurse
         Remove-Item "$nupkg.zip" -Force
@@ -75,7 +75,13 @@ $nupkgZip           = Join-Path -Path $env:TEMP -ChildPath "Scripts\$packageName
 
 New-Item -ItemType Directory -Path $workfolder -Force
 # Try to download the nupkg
-Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packageName)" -OutFile $nupkgZip
+try {
+    Invoke-WebRequest -Uri "https://community.chocolatey.org/api/v2/package/$($packageName)" -OutFile $nupkgZip
+}
+catch {
+    Write-Output "An error occurred:"
+    Write-Output $_
+}
 
 if(!(Test-Path $nupkgZip)) {
     Throw "Unable to download $packageName from the community repository";
