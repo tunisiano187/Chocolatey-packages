@@ -132,4 +132,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Oculus-Rift-
+Oculus-Rift-(CV1)-software
