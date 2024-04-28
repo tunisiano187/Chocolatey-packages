@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>acronis-drive-monitor</id>
+    <version>1.0.566</version>
+    <title>Acronis Drive Monitor</title>
+    <authors>Acronis</authors>
+    <owners>chtof</owners>
+    <projectUrl>https://kb.acronis.com/content/58078</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/manual/acronis-drive-monitor/acronis-drive-monitor.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Acronis Drive Monitor is a free, downloadable software application developed by Acronis to monitor server, workstation and PC hard disk drives.
+
+## Features
+- Automatically checks for disk problems
+Works on any Windows PC, workstation or server.
+- Weekly status reports
+Shows the electromechanical health of all your drives in one report.
+- Monitors Event logs
+Flags events that may indicate that data is in danger so you can back it up.
+- Can support RAID drives too
+Scripting allows you to monitor RAID controllers not using S.M.A.R.T. monitoring technology. An Acronis forum acts as a clearinghouse for users to share scripts.
+- Three kinds of support
+Acronis forum, Acronis knowledge base with dozens of articles and built-in help are available for this easy-to-use software application.
+- Receive alerts immediately
+Sends an email and displays a message on the Windows taskbar when it uncovers a disk-related problem.
+
+![screenshot](https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/manual/acronis-drive-monitor/screenshot.png)</description>
+    <summary>Acronis Drive Monitor is a free, downloadable software application developed by Acronis to monitor server, workstation and PC hard disk drives.</summary>
+    <copyright>Copyright © Acronis, 2000-2010. All rights reserved.</copyright>
+    <tags>acronis-drive-monitor acronis drive monitor disk</tags>
+    <packageSourceUrl>https://github.com/chtof/chocolatey-packages/tree/master/manual/acronis-drive-monitor</packageSourceUrl>
+    <docsUrl>http://www.acronis.com/en-us/download/docs/adm/userguide/</docsUrl>
+    <mailingListUrl>https://forum.acronis.com</mailingListUrl>
+    <bugTrackerUrl>https://kb.acronis.com</bugTrackerUrl>
+    <dependencies>
+      <dependency id="autohotkey.install" version="1.1.30.03" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
