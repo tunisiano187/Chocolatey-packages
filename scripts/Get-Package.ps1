@@ -37,6 +37,11 @@ param(
 
 $ErrorActionPreference = "Stop";
 
+"Get-package : Package Name : $packageName"
+if($null -eq $packageName) {
+    throw "Package Name empty"
+}
+
 $folder=Join-Path $PSScriptRoot $folder
 if ($folder -match "scripts") {
     $folder = $folder -replace "\\scripts", ""
