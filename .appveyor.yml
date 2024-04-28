@@ -207,6 +207,9 @@ build_script:
     Write-host "Check broken package"
     tools/looknewer.ps1
     git commit -am "Broken packages"
+    Write-host "Check broken package"
+    scripts/Remove-Nocheck.ps1
+    git commit -am "Broken packages"
     Write-Host "updating packages"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
