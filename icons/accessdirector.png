@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<META charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="./js/jquery-3.4.1.min.js" type="8168e6d61f8891872cbc8767-text/javascript"></script>
+<script src="./owl/owl.carousel.min.js" type="8168e6d61f8891872cbc8767-text/javascript"></script>
+<link rel="stylesheet" href="./owl/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="./owl/assets/owl.theme.green.min.css">
+
+<script type="8168e6d61f8891872cbc8767-text/javascript">
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel(
+      {
+        loop: true,
+        margin: 30,
+        dots: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 3
+          }
+        }
+      }
+    );
+    $.ajax({
+      //url: "http://blog.thomasmarcussen.com/feed/",
+      url: "load_rss.php",
+      dataType: "html",
+      processData: false,
+      cache: false,
+      success: function (data, status, xhr) {
+        data = data.replace("Error in my_thread_global_end(): 1 threads didn't exit", "");
+
+        $("#rss").html(data);
+      }
+    });
+    $.ajax({
+      //url: "http://blog.thomasmarcussen.com/feed/",
+      url: "load_videos.php",
+      /*dataType: "html",*/
+      /*processData: false,*/
+      /*cache: false,*/
+      success: function (data) {
+        var data = JSON.parse(data);
+        //data = data.replace("Error in my_thread_global_end(): 1 threads didn't exit","");
+        //alert(data.videos);
+        if (data.videos) {
+          $("#videos ul").html(data.videos);
+        }
+
+        //$("#rss").html(data);
+      }
+    });
+
+
+  });
+</script>
+<style>
+  .twitter-center {
+    margin: 0 auto;
+    width: 330px;
+  }
+
+  .timeline-header {
+    border: 1px solid #E8E8E8;
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+    border-radius: 5px;
+    background-color: #fff;
+
+    height: 19px;
+    padding: 12px;
+    position: relative;
+    width: 300px;
+    margin-left: 2px;
+    /*margin-bottom: -2px;*/
+    font-family: "Helvetica Neue", ​Arial, ​sans-serif;
+  }
+
+  .header-black {
+    background-color: #333333;
+    border-color: #444444;
+  }
+
+
+  .summary {
+
+    margin: 0 0 0 0px;
+    text-align: left;
+    line-height: 5px;
+    vertical-align: baseline;
+  }
+
+  .summary .header-link {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .summary .link-black {
+    color: #CFCFCF;
+  }
+
+  .header-link:hover {
+    text-decoration: underline;
+  }
+
+  .follow-button:link, .follow-button:visited {
+    background-color: #EEEEEE;
+    background-image: linear-gradient(#FFFFFF, #DEDEDE);
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 11px/18px 'Helvetica Neue', Arial, sans-serif;
+    padding: 0 5px 0 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    position: absolute;
+    right: 10px;
+  }
+
+  .follow-button:active, .follow-button:focus, .follow-button:hover {
+    background-color: #D9D9D9;
+    background-image: linear-gradient(#F8F8F8, #D9D9D9);
+    border-color: #BBBBBB;
+    box-shadow: none;
+    color: #333333;
+    text-decoration: none;
+  }
+
+  .ic-twitter-badge {
+    display: block;
+    height: 15px;
+    /*margin: 0 3px 0 0;*/
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 18px;
+    background-image: url("data:image/png;base64,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");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 177px 191px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: -20px -161px;
+    background-clip: border-box;
+    background-origin: padding-box;
+  }
+
+  .ic-button-bird {
+    line-height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 16px;
+    margin: 0 3px 0 0;
+    width: 16px;
+    background-image: url("data:image/png;base64,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");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 177px 191px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: -73px -160px;
+  }
+
+
+  .hdn_lnk {
+    display: block;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+</style>
+</head>
+<body style>
+<div id="main">
+<div id="msheader">
+
+<div id="page-title">
+<h2>Technology Architect</h2>
+</div>
+<div class="external">
+<a href="https://www.youtube.com/channel/UCVbam08Lr3w4g1DG4X2L90w" class="youtube" target="_blank"></a>
+<a href="https://blog.thomasmarcussen.com/feed" class="rss" target="_blank"></a>
+<a href="https://dk.linkedin.com/in/thomasmarcussen/" class="social fb" target="_blank"></a>
+<a href="https://twitter.com/intent/tweet?text=Stop%20by%20for%20news%20from%20@MarcussenThomas%20http%3A%2F%2Fwww.thomasmarcussen.com%20Latest%20blog%20posts%20@%20https://blog.thomasmarcussen.com" class="social tw" target="_blank"></a>
+</div>
+</div>
+<div id="hero">
+<img class="bg" src="assets/hero_large.jpg" />
+<a href="private.php" class="hdn_lnk"></a>
+<footer>
+<aside>
+<h2>Thomas Marcussen</h2>
+</aside>
+</footer>
+</div>
+<nav>
+<ul></ul>
+</nav>
+<article>
+<div class="left-main">
+<section id="news" class="light">
+<header>
+<ul>
+<li><span>Full Name</span>
+<h4>Thomas Marcussen</h4>
+</li>
+<li><span>Work</span>
+<h4>Independent Contractor</h4>
+</li>
+<li><span>Phone</span>
+<h4>+45 81 81 84 81</h4>
+</li>
+<li><span>Residence</span>
+<h4>Denmark</h4>
+</li>
+<li><span>Title</span>
+<h4>Technology Architect</h4>
+</li>
+<li><span>Certifications</span>
+<h4>MCP, MCSE, MCTS, MCITP, MCT, MVP</h4>
+</li>
+</ul>
+</header>
+<p class="info">
+Thomas Marcussen is Technology Architect & Evangelist, Microsoft MVP & Microsoft Certified Trainer,
+specializing in infrastructure, systems management, Microsoft Intune/Autopilot/M365, Microsoft Endpoint
+Configuration Manager, and Windows 365.
+</p>
+<h3>Hot off the press</h3>
+<div id="rss">
+</div>
+<h3 class="header1">Sessions available</h3>
+<div class="section-block">
+<script type="8168e6d61f8891872cbc8767-text/javascript" src="https://sessionize.com/api/speaker/sessions/ce15a013-667d-472a-84b1-0741f2729412/1x0x3fb393x"></script>
+</div>
+<div id="linkedin">
+<div class="owl-carousel owl-theme">
+</div>
+</div>
+<ul id="assets">
+<li class="press">
+<a href="https://blog.thomasmarcussen.com/" target="_blank">
+<div></div>
+<footer>
+<h6>Blog</h6> <span>Get the latests insights</span>
+</footer>
+</a>
+</li>
+<li class="assets">
+<a href="downloads.php">
+<div></div>
+<footer>
+<h6>Download center</h6> <span>Download software to feel better</span>
+</footer>
+</a>
+</li>
+<li class="assets2">
+<a href="https://onedrive.live.com/?cid=a8d5db3210cef86c&id=A8D5DB3210CEF86C!16648&authkey=!AOGo1tUw6t-5eBc" target="_blank">
+<div></div>
+<footer>
+<h6>Archive</h6> <span>Stuff in OneDrive</span>
+</footer>
+</a>
+<li class="twitter">
+<a href="https://twitter.com/marcussenThomas" target="_blank">
+<div></div>
+<footer>
+<h6>Twitter</h6> <span>Follow Thomas on Twitter</span>
+</footer>
+</a>
+</li>
+</ul>
+</section>
+<section id="videos">
+<h2>Videos</h2>
+<ul>
+<li>
+<div class="video-container ">
+<iframe width="560" height="315" src="//www.youtube.com/embed/JZPXWU5BRRM?rel=0" frameborder="0"></iframe>
+</div>
+<span><b>Access Director</b> - Twins</span>
+</li>
+<li>
+<div class="video-container ">
+<iframe width="560" height="315" src="//www.youtube.com/embed/5rxAIkm9Nqk?rel=0" frameborder="0"></iframe>
+</div>
+<span><b>Access Director</b> - Super Mario Bros</span>
+</li>
+<li>
+<div class="video-container ">
+<iframe width="560" height="315" src="//www.youtube.com/embed/-ZrL_rbqYlI?rel=0" frameborder="0"></iframe>
+</div>
+<span><b>ATEA Essentials</b> - Admin Access Integration</span>
+</li>
+<li>
+<div class="video-container ">
+<iframe width="560" height="315" src="//www.youtube.com/embed/lESuYzpJJdE?rel=0" frameborder="0"></iframe>
+</div>
+<span><b>ATEA Essentials</b> - Installing Software Bundle</span>
+</li>
+<li>
+<div class="video-container ">
+<iframe width="560" height="315" src="//www.youtube.com/embed/Xf0QdKkWJdI?rel=0" frameborder="0"></iframe>
+</div>
+<span><b>ATEA Essentials</b> - Deploying Application</span>
+</li>
+</ul>
+</section>
+<section id="meet" class="light">
+<h2>Twitter</h2>
+<div id="twitter-feeds">
+<div class="twitter-left">
+<div class="timeline-header">
+<h1 class="summary">
+<a title="Search for #MSIgnite on Twitter" href="https://twitter.com/search/?q=%23MSIgnite" class="header-link">#MsIgnite</a>
+<a title="Twitter" href="https://twitter.com" class="ic-twitter-badge"></a>
+</h1>
+</div>
+<a class="twitter-timeline" width="325" height="800" href="https://twitter.com/search?q=%23MSIgnite" data-chrome="noheader" data-widget-id="464444766088744961">Tweets
+about "#MsIgnite"</a>
+<script type="8168e6d61f8891872cbc8767-text/javascript">!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = p + "://platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              }(document, "script", "twitter-wjs1");</script>
+</div>
+<div class="twitter-right">
+<div class="timeline-header">
+<h1 class="summary">
+<a title="Tweets from WindowsInsiders" href="https://twitter.com/search/?q=%23WindowsInsiders" class="header-link">#WindowsInsiders</a>
+<a title="Follow CuragoDK on Twitter" href="https://twitter.com/CuragoDK" class="follow-button profile">
+<i class="ic-button-bird"></i>Follow
+</a>
+</h1>
+</div>
+<a class="twitter-timeline" href="https://twitter.com/hashtag/Windows" data-widget-id="727147551057690625">#Windows
+Tweets</a>
+<a href="https://twitter.com/intent/tweet?button_hashtag=Windows&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #Windows</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8" type="8168e6d61f8891872cbc8767-text/javascript"></script>
+</div>
+<div class="twitter-center">
+<div class="timeline-header header-black">
+<h1 class="summary">
+<a title="Tweets from Thomas Marcussen" href="https://twitter.com/MarcussenThomas" class="header-link link-black">@MarcussenThomas</a>
+<a title="Follow Thomas Marcussen on Twitter" href="https://twitter.com/MarcussenThomas" class="follow-button profile">
+<i class="ic-button-bird"></i>Follow
+</a>
+</h1>
+</div>
+<a class="twitter-timeline" width="325" height="800" href="https://twitter.com/MarcussenThomas" data-chrome="noheader" data-widget-id="464429010571628544">Tweets
+by @MarcussenThomas</a>
+<script type="8168e6d61f8891872cbc8767-text/javascript">!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = p + "://platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+              }(document, "script", "twitter-wjs2");</script>
+</div>
+<div class="clearboth"></div>
+</div>
+</section>
+<div class="divider quote" style="background-image:url(assets/quote.jpg)"></div>
+<section id="photos">
+<h2>Photos</h2>
+<ul>
+<li class><a href="./photos/01_th_big.jpg" target="_blank"><img src="./photos/01_th.jpg" alt></a></li><li class><a href="./photos/02_th_big.jpg" target="_blank"><img src="./photos/02_th.jpg" alt></a></li><li class><a href="./photos/03_th_big.jpg" target="_blank"><img src="./photos/03_th.jpg" alt></a></li><li class><a href="./photos/04_th_big.jpg" target="_blank"><img src="./photos/04_th.jpg" alt></a></li><li class><a href="./photos/05_th_big.jpg" target="_blank"><img src="./photos/05_th.jpg" alt></a></li><li class><a href="./photos/06_th_big.jpg" target="_blank"><img src="./photos/06_th.jpg" alt></a></li> 
+</ul>
+</section>
+</div>
+<div class="right-main">
+<div class="side-block">
+<figure class="wp-block-image size-full"><a href="https://blog.thomasmarcussen.com/wp-content/uploads/2022/11/ThomasMarcussen.jpg" class="customize-unpreviewable"><img loading="lazy" decoding="async" width="300" height="300" src="https://blog.thomasmarcussen.com/wp-content/uploads/2022/11/ThomasMarcussen.jpg" alt class="wp-image-1350" srcset="https://i0.wp.com/blog.thomasmarcussen.com/wp-content/uploads/2022/11/ThomasMarcussen.jpg?w=300&amp;ssl=1 300w, https://i0.wp.com/blog.thomasmarcussen.com/wp-content/uploads/2022/11/ThomasMarcussen.jpg?resize=150%2C150&amp;ssl=1 150w" sizes="(max-width: 300px) 100vw, 300px"></a></figure>
+<figure class="wp-block-image size-full"><a href="https://blog.thomasmarcussen.com/wp-content/uploads/2022/11/mvp.png" class="customize-unpreviewable"><img loading="lazy" decoding="async" width="300" height="122" src="https://blog.thomasmarcussen.com/wp-content/uploads/2022/11/mvp.png" alt class="wp-image-1356"></a></figure>
+<h2>Recent posts</h2>
+<ul><li><a target="_blank" href="https://blog.thomasmarcussen.com/windows-365-boot-and-windows-365-switch-latest-features/">Windows 365 Boot and Windows 365 Switch: Latest Features</a> April 09, 2024 </li><li><a target="_blank" href="https://blog.thomasmarcussen.com/unleashing-the-power-of-device-management-with-intune-and-declarative-management/">Unleashing The Power of Device Management with Intune and Declarative Management</a> March 26, 2024 </li><li><a target="_blank" href="https://blog.thomasmarcussen.com/troubleshooting-tenant-attach-and-device-action-issues/">Troubleshooting Tenant Attach and Device Action Issues</a> February 20, 2024 </li><li><a target="_blank" href="https://blog.thomasmarcussen.com/windows-365-cloud-pc-and-microsoft-dev-box-a-detailed-comparison/">Windows 365 Cloud PC and Microsoft Dev Box - A Detailed Comparison</a> February 13, 2024 </li><li><a target="_blank" href="https://blog.thomasmarcussen.com/microsoft-intune-management-and-security/"><strong>Microsoft Intune: Management and Security</strong></a> February 08, 2024 </li></ul> <h2>Categories</h2>
+<ul><li><a href="https://blog.thomasmarcussen.com/category/3dprint/">3DPrint</a></li><li><a href="https://blog.thomasmarcussen.com/category/active-directory/">Active Directory</a></li><li><a href="https://blog.thomasmarcussen.com/category/azure/">Azure</a></li><li><a href="https://blog.thomasmarcussen.com/category/azure-virtual-desktop/">Azure Virtual Desktop</a></li><li><a href="https://blog.thomasmarcussen.com/category/basic-bytes/">Basic Bytes</a></li><li><a href="https://blog.thomasmarcussen.com/category/certification/">Certification</a></li><li><a href="https://blog.thomasmarcussen.com/category/configmgr/">ConfigMgr</a></li><li><a href="https://blog.thomasmarcussen.com/category/debian/">Debian</a></li><li><a href="https://blog.thomasmarcussen.com/category/deployment/">Deployment</a></li><li><a href="https://blog.thomasmarcussen.com/category/endpoint-manager/">Endpoint Manager</a></li><li><a href="https://blog.thomasmarcussen.com/category/exchange/">Exchange</a></li><li><a href="https://blog.thomasmarcussen.com/category/hyper-v/">Hyper-V</a></li><li><a href="https://blog.thomasmarcussen.com/category/mac-os-x/">Mac OS X</a></li><li><a href="https://blog.thomasmarcussen.com/category/mdt/">MDT</a></li><li><a href="https://blog.thomasmarcussen.com/category/microsoft-intune/">Microsoft Intune</a></li><li><a href="https://blog.thomasmarcussen.com/category/microsoft365/">Microsoft365</a></li><li><a href="https://blog.thomasmarcussen.com/category/misc/">Misc</a></li><li><a href="https://blog.thomasmarcussen.com/category/msix/">MSiX</a></li><li><a href="https://blog.thomasmarcussen.com/category/office365/">Office365</a></li><li><a href="https://blog.thomasmarcussen.com/category/powershell/">Powershell</a></li><li><a href="https://blog.thomasmarcussen.com/category/security/">Security</a></li><li><a href="https://blog.thomasmarcussen.com/category/tools/">Tools</a></li><li><a href="https://blog.thomasmarcussen.com/category/windows/">Windows</a></li><li><a href="https://blog.thomasmarcussen.com/category/windows-11/">Windows 11</a></li><li><a href="https://blog.thomasmarcussen.com/category/windows-365/">Windows 365</a></li><li><a href="https://blog.thomasmarcussen.com/category/windows-autopatch/">Windows Autopatch</a></li><li><a href="https://blog.thomasmarcussen.com/category/windows-autopilot/">Windows Autopilot</a></li><li><a href="https://blog.thomasmarcussen.com/category/windows-server/">Windows Server</a></li></ul> </div>
+</div>
+<div class="clearboth"></div>
+</article>
+<div id="ms-footer" class="clearfix">
+<div class="external">
+<a href="https://www.youtube.com/channel/UCVbam08Lr3w4g1DG4X2L90w" class="youtube" target="_blank"></a>
+<a href="https://blog.thomasmarcussen.com/feed/" class="rss" target="_blank"></a>
+<a href="https://dk.linkedin.com/in/thomasmarcussen/" class="social fb" target="_blank"></a>
+<a href="https://twitter.com/intent/tweet?text=Stop%20by%20for%20news%20from%20@MarcussenThomas%20-%20http%3A%2F%2Fwww.thomasmarcussen.com%20-%20Latest%20blog%20posts%20available%20at%20https://blog.thomasmarcussen.com/" class="social tw" target="_blank"></a>
+</div>
+<ul>
+<li><a href="contact.php">Contact Me</a>
+</li>
+<li>©2019 ThomasMarcussen.com</li>
+</ul>
+</div>
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8168e6d61f8891872cbc8767-|49" defer></script></body>
+</html>
