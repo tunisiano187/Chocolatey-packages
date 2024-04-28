@@ -4,6 +4,8 @@ Accents
 adblockplusie
 advtor
 amazingmarvin
+AMD-Graphics-Driver
+Ardour
 armory
 audioswitcher
 avirafreeantivirus
@@ -79,6 +81,7 @@ myuninst
 nordvpn
 Notes
 nxt
+Oculus-Rift-
 office2019proplus
 office365proplus
 opencodecs
@@ -129,7 +132,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Ardour
-AMD-Graphics-Driver
-Oculus-Rift-
-Oculus-Rift-
