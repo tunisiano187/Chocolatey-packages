@@ -13,9 +13,9 @@ function Find-nextissueGH {
 
     "packageName : $packageName"
     if($packageName -match "exclude") {
-        $search = $packageName.substring(6)
+        $search = $packageName.substring(6).Split('(')[1].split(')')[0]
     } else {
-        $search = $packageName
+        $search = $packageName.Split('(')[1].split(')')[0]
     }
     "Package to import : $search"
 
@@ -27,7 +27,6 @@ function Find-nextissueGH {
     $folder = Join-Path $PSScriptRoot "../automatic/$search"
 
     if($search -and $packageName -match "update requested") {
-        $folder = Join-Path $PSScriptRoot "../automatic/$search"
         if(Test-Path $folder) {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
         } elseif ($search -ne '') {
