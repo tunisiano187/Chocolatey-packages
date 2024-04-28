@@ -6,7 +6,7 @@ $license = "https://github.com/minepi-finance/PI/blob/master/LICENSE"
 
 function global:au_SearchReplace {
 	@{
-		".\tools\VERIFICATION.txt" = @{
+		".\legal\VERIFICATION.txt" = @{
 			"(?i)(\s+x86:).*"                   = "`${1} $($Latest.URL64)"
 			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL64)"
 			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum64)"
