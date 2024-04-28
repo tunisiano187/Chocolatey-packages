@@ -1,13 +1,13 @@
-﻿# IMPORTANT: Before releasing this package, copy/paste the next 2 lines into PowerShell to remove all comments from this file:
+# IMPORTANT: Before releasing this package, copy/paste the next 2 lines into PowerShell to remove all comments from this file:
 #   $f='c:\path\to\thisFile.ps1'
-#   gc $f | ? {$_ -notmatch "^\s*#"} | % {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
+#   gc $f | ? {$_ -notmatch "^\s*#"} | ForEach-Object {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
 
 # 1. See the _TODO.md that is generated top level and read through that
 # 2. Follow the documentation below to learn how to create a package for the package type you are creating.
 # 3. In Chocolatey scripts, ALWAYS use absolute paths - $toolsDir gets you to the package's tools directory.
 $ErrorActionPreference = 'Stop' # stop on all errors
 #Items that could be replaced based on what you call chocopkgup.exe with
-#{{PackageName}} - Package Name (should be same as nuspec file and folder) |/p
+#$env:ChocolateyPackageName - Package Name (should be same as nuspec file and folder) |/p
 #{{PackageVersion}} - The updated version | /v
 #{{DownloadUrl}} - The url for the native file | /u
 #{{PackageFilePath}} - Downloaded file if including it in package | /pp
@@ -25,7 +25,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 #$fileLocation = Join-Path $toolsDir 'NAME_OF_EMBEDDED_INSTALLER_FILE'
 # If embedding binaries increase total nupkg size to over 1GB, use share location or download from urls
 #$fileLocation = '\\SHARE_LOCATION\to\INSTALLER_FILE'
-# Community Repo: Use official urls for non-redist binaries or redist where total package size is over 200MB
+# Community Repo: Use official urls for non-redist binaries or redist Where-Object total package size is over 200MB
 # Internal/Organization: Download from internal location (internet sources are unreliable)
 $url        = '{{DownloadUrl}}' # download url, HTTPS preferred
 $url64      = '{{DownloadUrlx64}}' # 64bit URL here (HTTPS preferred) or remove - if installer contains both (very rare), use $url
