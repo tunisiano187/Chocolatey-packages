@@ -33,7 +33,7 @@ function Find-nextissueGH {
         } elseif ($search -ne '') {
             $script = Join-Path $PSScriptRoot "Get-Package.ps1"
             "Running $($script) $($search.Tolower())"
-            . $script $search.Tolower()
+            . $script "$($search.Tolower())"
         }
     } elseif($search -and $packageName -match "package requested") {
         if(Test-Path $folder) {
@@ -41,7 +41,7 @@ function Find-nextissueGH {
         } elseif ($search -ne '') {
             $script = Join-Path $PSScriptRoot "New-Package.ps1"
             "Running $($script) $($search.Tolower())"
-            . $script $search.Tolower()
+            . $script "$($search.Tolower())"
         }
     }
 
