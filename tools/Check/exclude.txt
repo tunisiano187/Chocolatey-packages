@@ -137,3 +137,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+advancedsystemtweaker
