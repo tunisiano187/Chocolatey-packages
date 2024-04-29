@@ -10,8 +10,10 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/Ryochan7/DS4Windows/releases/download/v3.3.3/DS4Windows_3.3.3_x64.zip
+        Get-RemoteChecksum url
 
 3.  Compare to Checksum:
 
     checksum32: CF5619BCB51B82E4E1765276E9F67FB1E2D23DFF968A653657ACF35BAFFF8BF4
+
+License file downloaded from : https://raw.githubusercontent.com/minepi-finance/PI/master/LICENSE

@@ -5,12 +5,16 @@ $releases = 'https://node.minepi.com/node/'
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+		"legal\VERIFICATION.txt"      = @{
+			"(?i)(x86:).*"        				= "`${1} $($Latest.URL32)"
+			"(?i)(checksum32:).*" 				= "`${1} $($Latest.Checksum32)"
 		}
 	}
+}
+
+function global:au_BeforeUpdate {
+	Get-RemoteFiles -Purge -NoSuffix
+	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/minepi-finance/PI/master/LICENSE" -OutFile "legal/LICENSE.txt"
 }
 
 function global:au_AfterUpdate($Package) {
