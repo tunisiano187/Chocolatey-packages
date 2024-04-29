@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>adguard-chrome</id>
+    <version>3.0.13</version>
+    <title>AdGuard for Chrome</title>
+    <authors>www.adguard.com</authors>
+    <owners>paradonym</owners>
+<packageSourceUrl></packageSourceUrl>
+    <projectUrl>https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg</projectUrl>
+    <iconUrl>https://lh3.googleusercontent.com/HyqJ3X2XyTVD9dy0z-N0uy41q0Ee6uGoqCNmpKWmXLzgidcr5T20LhmDyOV-3At1DAy-g1BHzA=w128-h128-e365</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of AdGuard for Chrome](https://lh3.googleusercontent.com/XjPwnJbKGMdwK-1csA0PkYTS7PoXNOlfWUR9wWaagp7hesiiYlUGFu_kwSO_V64tVtaQoOWC=w640-h400-e365)	
+	
+AdGuard is the best way to get rid of intrusive ads and online tracking, and to protect your computer from malware. Make your web surfing faster, safer and more comfortable with AdGuard!
+
+Thanks to bcurran3 for helping me with the scripts with /packages/feedly-chrome.
+
+####PACKAGING NOTE: This installs no software. It installs a registry key for the extension that Chrome will see and then ask you for permission to enable the extension if you are in Chrome or on the next run. Chrome will install the latest version of the extension. The mentioned version is the version at time of packaging, you can ignore it. Chrome will handle updates to the extension.</description>
+    <summary>AdGuard Chrome extension</summary>
+    <releaseNotes>initial chocolatey package release</releaseNotes>
+    <tags>AdGuard chrome extension</tags>
+    <dependencies>
+      <dependency id="googlechrome" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
