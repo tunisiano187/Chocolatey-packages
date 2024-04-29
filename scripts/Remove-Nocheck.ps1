@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-  Updates templates variables to environment ones in ps1
+  Remove -NoCheckChocoVersion in update.ps1 that aren't commited for more than 30 commits
 
 .DESCRIPTION
-  It updates the package ps1 files with the correct environment variables.
+  Remove -NoCheckChocoVersion in update.ps1
 
 .PARAMETER Name
   If specified it only updates the package matching the specified name
@@ -23,15 +23,7 @@
   if some packages is already up to date, outputs how many.
 
 .EXAMPLE
-  ps> .\Update-Variables.ps1
-  Updates all ps1 files with correct environment variables
--    {{PackageName}}
-+    $env:ChocolateyPackageName
-
-.EXAMPLE
-  ps> .\Updates-Variables.ps1 -Name "bitvise-ssh-server" -UseStopwatch
-  ps> .\Updates-Variables.ps1 -UseStopwatch
-  While also updating the ps1 files this will also output the time it took for the script to finish
+  ps> .\Remove-Nockeck.ps1
   output> "Time Used: 00:00:27.4720531"
 
   #>
@@ -45,7 +37,7 @@ $counts.replaced = 0
 
 $encoding = New-Object System.Text.UTF8Encoding($false)
 
-function Update-Variable {
+function Update-File {
     param(
       [string]$PS1Path
     )
@@ -72,10 +64,26 @@ if ($UseStopwatch) {
     $stopWatch.Start();
 }
 
-$packages = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory" -Filter "update.ps1" -Recurse | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-5)};
+# List update.ps1 files
+# Set the path to the folder containing the update.ps1 files
+$folder_path = "folder_path"
 
-foreach ($package in $packages) {
-    Update-Variable $package.FullName
+# Retrieve the list of update.ps1 files containing the string -NoCheckChocoVersion
+$files = Get-ChildItem -Path $folder_path -Filter "update.ps1" -Recurse | Where-Object { $_ | Select-String -Pattern "-NoCheckChocoVersion" }
+
+foreach ($file in $files) {
+    # Get the relative path of the file for Git
+    $relativePath = $file.FullName.Replace((Get-Location).Path + "\", "")
+
+    # Get the number of commits where the file has been modified
+    $commitCount = git rev-list HEAD -n 30 -- $relativePath | Measure-Object | Select-Object -ExpandProperty Count
+
+    if ($commitCount -eq 0) {
+        Write-Output "$($file.FullName) contains -NoCheckChocoVersion but has not been modified in the last 30 commits. The -NoCheckChocoVersion part will be removed."
+
+        # Read the content of the file
+        Update-File
+    }
 }
 
 if ($UseStopwatch) {
