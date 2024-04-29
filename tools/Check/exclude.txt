@@ -5,6 +5,7 @@ accessdirector
 acronis-drive-monitor
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advtor
 amazingmarvin
 AMD-Graphics-Driver
@@ -136,4 +137,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-ad-tidy-free
