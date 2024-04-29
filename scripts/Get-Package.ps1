@@ -42,6 +42,7 @@ if($null -eq $packageName) {
     throw "Package Name empty"
 }
 
+git branch $packageName
 $folder=Join-Path $PSScriptRoot $folder
 if ($folder -match "scripts") {
     $folder = $folder -replace "\\scripts", ""
@@ -219,8 +220,6 @@ if(Test-Path "$workfolder\README.md") {
     Set-Content -Path "$PackageFolder\README.md" -Value $ReadmeContent
 }
 
-"git pull"
-git pull
 
 "List files to add to git"
 $toadd = (get-childitem -path "$folder\$packageName").FullName
