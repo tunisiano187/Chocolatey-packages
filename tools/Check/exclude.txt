@@ -4,6 +4,7 @@ Accents
 accessdirector
 acronis-drive-monitor
 adblockplusie
+adguard-chrome
 advtor
 amazingmarvin
 AMD-Graphics-Driver
@@ -135,4 +136,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-adguard-chrome
