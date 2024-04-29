@@ -18,10 +18,13 @@ function Find-nextissueGH {
         $search = $packageName.Split('(')[1].split(')')[0]
     }
     "Package to import : $search"
-
-    if($actor -ne 'tunisiano187' -or ($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested")) {
+    if($actor -ne 'tunisiano187') {
+        exit 0
+    }
+    if($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested") {
         "Not running the get-package script"
         $search = $null
+        exit 0
     }
 
     $folder = Join-Path $PSScriptRoot "../automatic/$search"
