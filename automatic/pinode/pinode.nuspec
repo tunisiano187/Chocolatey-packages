@@ -31,7 +31,7 @@ https://minepi.com/#download
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
 	<dependencies>
-	  <dependency id="vcredist2017" version="14.16.27027.20190415" />
+	  <dependency id="vcredist2017" version="[14.16.27027.20190415,)" />
     </dependencies>
   </metadata>
   <files>

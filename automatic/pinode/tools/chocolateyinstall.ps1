@@ -12,7 +12,7 @@ $packageArgs = @{
   softwareName    = 'Pi Network*'
 
   validExitCodes= @(0, 3010, 1641)
-  silentArgs   = '/S'
+  silentArgs      = '/S'
 }
 
 Install-ChocolateyInstallPackage @packageArgs
