@@ -5,7 +5,7 @@
     <version>3.0.13</version>
     <title>AdGuard for Chrome</title>
     <authors>www.adguard.com</authors>
-    <owners>paradonym</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/adguard-chrome</packageSourceUrl>
     <projectUrl>https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg</projectUrl>
     <iconUrl>https://lh3.googleusercontent.com/HyqJ3X2XyTVD9dy0z-N0uy41q0Ee6uGoqCNmpKWmXLzgidcr5T20LhmDyOV-3At1DAy-g1BHzA=w128-h128-e365</iconUrl>
