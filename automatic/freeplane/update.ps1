@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 		"$($Latest.PackageName).nuspec" = @{
-			"(\<dependency .+?`"corretto11jdk`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.CorrettoVersion)]`""
+			"(\<dependency .+?`"corretto11jdk`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.CorrettoVersion))`""
 		}
 	}
 }
