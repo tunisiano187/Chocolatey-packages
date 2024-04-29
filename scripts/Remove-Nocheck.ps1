@@ -40,6 +40,8 @@ param(
     [string]$PackagesDirectory = "../automatic",
     [switch]$UseStopwatch
 )
+$counts = @{}
+$counts.replaced = 0
 
 $encoding = New-Object System.Text.UTF8Encoding($false)
 
@@ -83,12 +85,12 @@ if ($UseStopwatch) {
     }
 }
 if ($counts.replaced -eq 0 -and !$Quiet) {
-  Write-Output "Congratulations, all found ps1 are correct."
+  Write-Output "Congratulations, all $($counts.uptodate) ps1 are correct."
 } elseif (!$Quiet) {
   Write-Output "Updated $($counts.replaced) ps1";
-}
-if ($counts.uptodate -eq 1 -and !$Quiet) {
-  Write-Output "$($counts.uptodate) ps1 was already up to date.";
-} elseif ($counts.uptodate -gt 1 -and !$Quiet) {
-  Write-Output "$($counts.uptodate) ps1 were already up to date.";
+  if ($counts.uptodate -eq 1 -and !$Quiet) {
+    Write-Output "$($counts.uptodate) ps1 was already up to date.";
+  } elseif ($counts.uptodate -gt 1 -and !$Quiet) {
+    Write-Output "$($counts.uptodate) ps1 were already up to date.";
+  }
 }
