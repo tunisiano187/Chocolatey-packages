@@ -57,7 +57,7 @@ If you are unsure, the false positives seems to be resolved after a few weeks, y
     <releaseNotes>https://adiirc.com/download.php?v=3.1</releaseNotes>
     <copyright>Copyright © 2005-2018, Per Amundsen</copyright>
     <tags>adiirc irc chat</tags>
-    <packageSourceUrl>https://github.com/aborazmeh/ChocolateyPackages/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/adiirc</packageSourceUrl>
     <docsUrl>https://dev.adiirc.com/projects/adiirc/wiki</docsUrl>
     <mailingListUrl>https://dev.adiirc.com/projects/adiirc/boards</mailingListUrl>
     <bugTrackerUrl>https://dev.adiirc.com/projects/adiirc/issues</bugTrackerUrl>
