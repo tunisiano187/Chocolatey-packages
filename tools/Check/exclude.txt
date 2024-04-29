@@ -2,6 +2,7 @@ aaclr
 acardaoutboundsolo
 Accents
 accessdirector
+acronis-drive-monitor
 adblockplusie
 advtor
 amazingmarvin
@@ -134,4 +135,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-acronis-drive-monitor
