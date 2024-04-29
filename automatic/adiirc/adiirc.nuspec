@@ -61,8 +61,12 @@ If you are unsure, the false positives seems to be resolved after a few weeks, y
     <docsUrl>https://dev.adiirc.com/projects/adiirc/wiki</docsUrl>
     <mailingListUrl>https://dev.adiirc.com/projects/adiirc/boards</mailingListUrl>
     <bugTrackerUrl>https://dev.adiirc.com/projects/adiirc/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="dotnet4.5" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+dotnet4.5
