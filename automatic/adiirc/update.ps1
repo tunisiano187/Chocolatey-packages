@@ -1,4 +1,4 @@
-﻿import-module au
+import-module au
 
 $domain     = 'https://www.adiirc.com'
 $releases   = 'https://www.adiirc.com/download.php'
@@ -22,13 +22,13 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri $releases
-    
+
     $urls = $download_page.Links.href | Where-Object {$_ -match "exe$"} | Select-Object -First 2
     $url64 = $urls | Where-Object {$_ -match "64"}
     $url = $urls | Where-Object {$_ -notmatch $url64}
-    
+
 	  $version = (Get-Version ($download_page.Links.href | Where-Object {$_ -match "download.php\?v="} | Select-Object -First 1)).Version
-	
+
     return @{
         URL32 = $domain + $url
         URL64 = $domain + $url64
