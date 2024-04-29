@@ -8,7 +8,7 @@
     <owners>Abdurrahman Aborazmeh</owners>
     <licenseUrl>http://www.linfo.org/freeware.html</licenseUrl>
     <projectUrl>https://www.adiirc.com</projectUrl>
-    <iconUrl>https://dev.adiirc.com/favicon.ico</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9255dfe32042bcf0251fd593c0bfb3d1c3baa07c/icons/adiirc.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>AdiIRC is a **freeware** [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat "Internet Relay Chat") client with multiserver support and a highly customizable interface. It offers all the standard IRC features including private chats, basic Identd features, system information, SSL, IPv6, chat logging and DCC Chat/Transfers. It also offers now playing support for various media players, advanced scripting, themes, MTS themes, plugins, and dockable/undockable activity monitors that lets you monitor many channels at once. The program stores all it`s settings in text files and does not require an installation.
 
