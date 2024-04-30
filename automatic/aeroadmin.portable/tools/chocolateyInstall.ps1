@@ -5,7 +5,7 @@ $checksumType   = ''
 $fileFullPath = "$(split-path -parent $PSCommandPath)\AeroAdmin.exe"
 
 $packageArgs = @{
-    packageName     = $env:ChocolateyPackageName
+    packageName     = $packageName
     fileType        = 'EXE'
     url             = $url
 
