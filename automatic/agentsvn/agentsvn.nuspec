@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>agentsvn</id>
+    <version>2.56.20.0</version>
+    <title>AgentSVN</title>
+    <authors>Jussi Jumppanen</authors>
+    <owners>Xidicone P/L</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>http://www.zeusedit.com/agent/bin/license.txt</licenseUrl>
+    <projectUrl>http://www.zeusedit.com/agent/index.html</projectUrl>
+    <iconUrl>http://www.zeusedit.com/agent/images/agent_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Agent SVN is a commercial package that allows any MS-SCCI compatible IDE to use Subversion as it's source control provider.
+
+The plug-in allows the IDE to seamlessly integrate with Subversion, such that IDE actions like adding, renaming, moving or removing files are automatically reflected in the Subversion repository.
+
+The status of project files is tracked, not only local changes, but for changes made by other users.
+
+It offers the option of using Subversion locks on check out or to run lock free and when locks are used they are fully managed by the plug-in.
+
+The plug-in has been tested with all versions of Visual Studio up to and including VS2015.
+
+### Commercial software
+
+This is trial software that will require the purchase of an activation key. The trial period is 45 days and over that period the software is fully functional.</description>
+    <summary>Agent SVN - Subversion MS-SCCI Plug-in</summary>
+    <copyright>© 2016 Xidicone P/L</copyright>
+    <tags>admin trial agentsvn ide ms-scci revision-control scm subversion svn vcs version-control visualstudio</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
