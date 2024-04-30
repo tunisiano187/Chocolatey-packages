@@ -6,7 +6,7 @@
     <title>AgentSVN</title>
     <authors>Jussi Jumppanen</authors>
     <owners>Xidicone P/L</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/agentsvn</packageSourceUrl>
     <licenseUrl>http://www.zeusedit.com/agent/bin/license.txt</licenseUrl>
     <projectUrl>http://www.zeusedit.com/agent/index.html</projectUrl>
     <iconUrl>http://www.zeusedit.com/agent/images/agent_icon.png</iconUrl>
