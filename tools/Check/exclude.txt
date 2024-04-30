@@ -6,6 +6,7 @@ acronis-drive-monitor
 adblockplusie
 adguard-chrome
 ad-tidy-free
+advancedsystemtweaker
 advtor
 amazingmarvin
 AMD-Graphics-Driver
@@ -137,4 +138,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-advancedsystemtweaker
