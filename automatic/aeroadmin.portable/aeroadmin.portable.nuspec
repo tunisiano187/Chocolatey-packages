@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>aeroadmin.portable</id>
-    <version>3.0.2037</version>
+    <version>3.6.1.2</version>
     <title>AeroAdmin (Portable)</title>
     <authors>Aeroadmin</authors>
     <owners>tunisiano</owners>
@@ -10,8 +10,16 @@
     <projectUrl>https://www.aeroadmin.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9b8a8de748990fc78bb9dbf1f2da32e3096308bd/icons/aeroadmin.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>AeroAdmin is a powerful multitask remote desktop software. No installation, no configuration, works behind NAT.
-| Please install with Chocolatey (https://www.chocolatey.org).</description>
+    <description><![CDATA[## AeroAdmin (Portable)
+
+Free Remote Desktop Software
+Remote Desktop Connection over Internet
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>AeroAdmin remote desktop software</summary>
     <tags>aeroadmin portable remote access aeroadmin rdp desktop</tags>
   </metadata>

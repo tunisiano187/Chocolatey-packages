@@ -1,7 +1,7 @@
 ﻿$packageName    = $env:ChocolateyPackageName
-$url            = 'http://www.aeroadmin.com/AeroAdmin_v3.0b.exe'
-$checksum       = ''
-$checksumType   = ''
+$url            = 'https://ulm.aeroadmin.com/AeroAdmin.exe'
+$checksum       = 'ee54577067550559c4711c9e5e10435807f9deee9a5adb4409cb60a6b0108700'
+$checksumType   = 'sha256'
 $fileFullPath = "$(split-path -parent $PSCommandPath)\AeroAdmin.exe"
 
 $packageArgs = @{
