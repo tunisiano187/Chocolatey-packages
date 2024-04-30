@@ -2,8 +2,8 @@
 
 ## AeroAdmin (Portable)
 
-AeroAdmin is a powerful multitask remote desktop software. No installation, no configuration, works behind NAT.
-| Please install with Chocolatey (http://www.chocolatey.org).
+Free Remote Desktop Software
+Remote Desktop Connection over Internet
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
