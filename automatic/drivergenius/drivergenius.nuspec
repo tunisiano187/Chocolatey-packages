@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.driver-soft.com/license.html</licenseUrl>
     <projectUrl>https://www.driver-soft.com/product.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@691428794b516d85a316e3a7031aaa79c5e1ec6a/icons/drivergenius.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9b8a8de748990fc78bb9dbf1f2da32e3096308bd/icons/drivergenius.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Driver Genius is a professional driver management tool that features both driver management and hardware diagnostics.
 
