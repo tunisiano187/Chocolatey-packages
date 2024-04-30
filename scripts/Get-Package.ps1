@@ -42,6 +42,7 @@ if($null -eq $packageName) {
     throw "Package Name empty"
 }
 
+git pull
 git branch $packageName
 $folder=Join-Path $PSScriptRoot $folder
 if ($folder -match "scripts") {
