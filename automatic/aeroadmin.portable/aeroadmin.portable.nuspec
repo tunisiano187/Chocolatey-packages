@@ -8,7 +8,7 @@
     <owners>Colin Rosario</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/aeroadmin.portable</packageSourceUrl>
     <projectUrl>http://www.aeroadmin.com</projectUrl>
-    <iconUrl>https://cloud.githubusercontent.com/assets/8528320/4104684/68346002-3194-11e4-8e10-74859d24e7db.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@886b25bf01849f98c80ef690af8f65b967b99831/icons/aeroadmin.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>AeroAdmin is a powerful multitask remote desktop software. No installation, no configuration, works behind NAT.
 | Please install with Chocolatey (http://www.chocolatey.org).</description>
