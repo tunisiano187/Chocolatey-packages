@@ -16,6 +16,6 @@
     <tags>aeroadmin portable remote access aeroadmin rdp desktop</tags>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\*.ps1" target="tools" />
   </files>
 </package>
