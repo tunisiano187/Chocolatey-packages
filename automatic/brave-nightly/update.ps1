@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 }
 function global:au_GetLatest {
 	Write-Verbose 'Get files'
-	$page = Invoke-WebRequest -Uri "https://github.com/brave/brave-browser/releases"
+	$page = Invoke-WebRequest -Uri "https://github.com/brave/brave-browser/tags"
 	$tag = ($page.Links | Where-Object {$_.href -match "tag/v"} | Select-Object -First 1).href.split('/')[-1]
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'} | Where-Object {$_ -notmatch 'Arm64'}
