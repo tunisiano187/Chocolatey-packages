@@ -6,7 +6,7 @@
     <version>1.11.13</version>
     <authors>Dimitry Polivaev,Volker Börchers</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
+    <licenseUrl>https://github.com/freeplane/freeplane/blob/1.11.x/license.txt</licenseUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freeplane</packageSourceUrl>
     <projectUrl>https://sourceforge.net/projects/freeplane/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@83762a6cbbc4e6c9f7dc6a97c15ba1bc4129d583/icons/freeplane.png</iconUrl>
