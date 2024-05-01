@@ -6,9 +6,9 @@
     <version>1.11.13</version>
     <authors>Dimitry Polivaev,Volker Börchers</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
+    <licenseUrl>https://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freeplane</packageSourceUrl>
-    <projectUrl>http://freeplane.sourceforge.net/wiki/index.php/Home</projectUrl>
+    <projectUrl>https://sourceforge.net/projects/freeplane/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@83762a6cbbc4e6c9f7dc6a97c15ba1bc4129d583/icons/freeplane.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Open source mind mapping program</summary>
@@ -29,9 +29,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright />
     <tags>freeplane diagram mindmap graph visualization admin</tags>
-    <dependencies>
-      <dependency id="corretto11jdk" version="[11.0.22.71,)" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
