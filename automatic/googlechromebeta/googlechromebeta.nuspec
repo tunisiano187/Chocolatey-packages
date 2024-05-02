@@ -20,7 +20,7 @@ Chrome is a fast, simple, and secure web browser, built for the modern web.
 - This package always installs the latest version of Google Chrome Beta, regardless of the version specified in the package. Google does not officially offer older versions of Chrome for download. Because of this you may get checksum mismatch between the time Google releases a new installer, and the package is automatically updated.
 - **If the package is out of date please check [Version History](#versionhistory) for the latest submitted version. If you have a question, please ask it in [Chocolatey Community Package Discussions](https://github.com/chocolatey-community/chocolatey-packages/discussions) or raise an issue on the [Chocolatey Community Packages Repository](https://github.com/chocolatey-community/chocolatey-packages/issues) if you have problems with the package. Disqus comments will generally not be responded to.**
 ]]></description>
-    <packageSourceUrl>https://github.com/chocolatey-community/chocolatey-packages/tree/master/automatic/googlechromebeta</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/googlechromebeta</packageSourceUrl>
     <tags>google chrome beta web internet browser admin</tags>
   </metadata>
   <files>
