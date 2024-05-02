@@ -9,7 +9,7 @@
     <authors>Google LLC.</authors>
     <projectUrl>https://www.google.com/chrome/browser/</projectUrl>
     <licenseUrl>https://www.google.it/intl/en/chrome/browser/privacy/eula_text.html</licenseUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@edba4a5849ff756e767cba86641bea97ff5721fe/icons/chrome.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7103860186df338a1d32bfd2c898ef07fb628ec2/icons/googlechromebeta.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[
 Chrome is a fast, simple, and secure web browser, built for the modern web.
