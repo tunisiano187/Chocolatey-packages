@@ -21,12 +21,17 @@ function global:au_GetLatest {
 	Write-Verbose 'Get files'
 	$page = Invoke-WebRequest -Uri "https://github.com/brave/brave-browser/tags"
 	$tag = ($page.Links | Where-Object {$_.href -match "tag/v"} | Select-Object -First 1).href.split('/')[-1]
-	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
-	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'} | Where-Object {$_ -notmatch 'Arm64'}
-	Update-Metadata -key "releaseNotes" -value $tags.html_url
+	try {
+		$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
+		$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'} | Where-Object {$_ -notmatch 'Arm64'}
+		Update-Metadata -key "releaseNotes" -value $tags.html_url
 
-	Write-Verbose 'Checking version'
-	$version=($tags.name.Split(' ')[1]).replace('v','')
+		Write-Verbose 'Checking version'
+		$version=($tags.name.Split(' ')[1]).replace('v','')
+	}
+	catch {
+		$version = "0.0"
+	}
 
 	if($tags.prerelease -eq $true) {
 		$version = "$version-nightly"
