@@ -16,6 +16,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate($Package) {
   Get-RemoteFiles -Purge -NoSuffix
+  Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
 }
 
 function global:au_AfterUpdate($Package) {
