@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>airshipper</id>
+    <version>0.0</version>
+    <packageSourceUrl></packageSourceUrl>
+    <owners>__REPLACE_YOUR_NAME__</owners>
+
+    <title>airshipper (Install)</title>
+    <authors>Veloren Contributors</authors>
+    
+    <projectUrl>https://veloren.net/</projectUrl>
+    <licenseUrl>https://veloren.net/</licenseUrl>
+    <iconUrl>https://veloren.net/processed_images/logo.02fa03cf3cbdeed1.png</iconUrl>
+    <projectSourceUrl>https://gitlab.com/veloren</projectSourceUrl>
+    <mailingListUrl>https://discord.gg/veloren-community-449602562165833758</mailingListUrl>
+    <bugTrackerUrl>https://gitlab.com/veloren/airshipper/-/issues</bugTrackerUrl>
+    <tags>airshipper veloren launcher</tags>
+    <summary>Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren up to date. Due to our frequent updates it is the recommended way of installing Veloren.</summary>
+    <description>TBF </description>
+    <releaseNotes>https://gitlab.com/veloren/airshipper/-/compare?from=master&to=master</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

@@ -1,0 +1,26 @@
+﻿VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download
+location on <https://www.axcrypt.net/download>
+and can be verified by doing the following:
+
+1. Download the following:
+
+  url: <https://account.axcrypt.net/download/axcrypt-2-setup.exe>
+
+2. You can obtain the checksum using one of the following methods:
+  - Use powershell function 'Get-FileHash'
+  - Use Chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum: 0FDD4FB7AB6A8C05389D80DC71C72EFD43F4107BB11BC44D135CE80A30AC9175
+
+Using AU:
+
+  Get-RemoteChecksum
+
+The file 'LICENSE.txt' is obtained from:
+  <https://gitlab.com/veloren/airshipper/-/raw/master/LICENSE?ref_type=heads>
