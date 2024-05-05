@@ -27,4 +27,9 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+try {
+	update -ChecksumFor 32 -NoCheckChocoVersion
+} catch {
+	$ignore = "Chocolatey v2.2.2 Attempting to push Yandex-browser.24.4.2.885.nupkg to https://push.chocolatey.org Response status code does not indicate success: 403 (Forbidden)."
+	if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}
