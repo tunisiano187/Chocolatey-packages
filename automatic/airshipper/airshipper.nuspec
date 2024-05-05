@@ -4,7 +4,7 @@
   <metadata>
     <id>airshipper</id>
     <version>0.0</version>
-    <packageSourceUrl></packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/airshipper</packageSourceUrl>
     <owners>__REPLACE_YOUR_NAME__</owners>
 
     <title>airshipper (Install)</title>
