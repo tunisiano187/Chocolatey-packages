@@ -5,13 +5,14 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'https://www.zeusedit.com/agent/bin/asvn32-v276.zip'
 $checksum32     = ''
 $checksumType   = ''
-$url64          = 'https://www.zeusedit.com/agent/bin/asvn64-v276.zip'
+$url64          = 'https://www.zeusedit.com/agent/bin/asvn32-v276.zip'
 $checksum64     = ''
 
 $packageArgs = @{
     packageName     = $packageName
     fileType        = 'EXE'
     softwareName    = "$($packageName)*"
+    unzipLocation   = $toolsDir
 
     checksum        = $checksum32
     checksumType    = $checksumType
