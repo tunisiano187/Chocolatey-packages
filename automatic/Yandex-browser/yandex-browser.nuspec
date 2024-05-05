@@ -12,7 +12,7 @@
     
     <projectUrl>https://browser.yandex.com/</projectUrl>
     
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cddf87cd80855bccdaea1a18f396b08f48a22459/icons/Yandex-browser.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fbea2745f6f520f41e66ba320a5c594219fdeef9/icons/Yandex-browser.png</iconUrl>
     <copyright>2024 Yandex</copyright>
     
     <licenseUrl>https://yandex.com/legal/browser_agreement/</licenseUrl>
