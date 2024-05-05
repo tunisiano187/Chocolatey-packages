@@ -33,7 +33,8 @@ function global:au_GetLatest {
 		$version = "0.0"
 	}
 
-	if($tags.prerelease -eq $true) {
+	if($version -eq "0.0") {}
+	elseif($tags.prerelease -eq $true) {
 		$version = "$version-nightly"
 	} elseif ($url32 -match 'Nightly') {
 		$version = "$version-nightly"
@@ -46,4 +47,9 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32
+try {
+	update -ChecksumFor 32
+} catch {
+	$ignore = "URL syntax is invalid:"
+	if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}
