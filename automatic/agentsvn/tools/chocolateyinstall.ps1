@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'; # stop on all errors
+$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -29,7 +29,7 @@ $packageArgs = @{
     packageName     = $packageName
     fileType        = 'EXE'
     softwareName    = "$($packageName)*"
-    
+
     file            = $File
 
     silentArgs      = '/sp- /silent /norestart /suppressmsgboxes'
