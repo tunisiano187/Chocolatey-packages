@@ -34,4 +34,9 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 
-update
+try {
+	update
+} catch {
+	$ignore = '403 (Forbidden)'
+	if ($_ -match $ignore) { Write-Output $_; 'ignore' } else { throw $_ }
+}

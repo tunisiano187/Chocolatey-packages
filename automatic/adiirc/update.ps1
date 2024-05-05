@@ -36,4 +36,9 @@ function global:au_GetLatest {
     }
 }
 
-update
+try {
+	update
+} catch {
+	$ignore = '403 (Forbidden)'
+	if ($_ -match $ignore) { Write-Output $_; 'ignore' } else { throw $_ }
+}
