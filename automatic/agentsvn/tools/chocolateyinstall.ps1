@@ -1,10 +1,11 @@
-$ErrorActionPreference = 'Stop'; # stop on all errors
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
-$packageName    = 'agentsvn'
-$url32          = 'http://www.zeusedit.com/agent/bin/asvn-v256.exe'
+$packageName    = $env:ChocolateyPackageName
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url32          = 'https://www.zeusedit.com/agent/bin/asvn32-v276.zip'
 $checksum32     = ''
 $checksumType   = ''
-$url64          = 'http://www.zeusedit.com/agent/bin/asvn-v256.exe'
+$url64          = 'https://www.zeusedit.com/agent/bin/asvn64-v276.zip'
 $checksum64     = ''
 
 $packageArgs = @{
