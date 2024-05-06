@@ -14,11 +14,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate($Package) {
-  Get-RemoteFiles -Purge -NoSuffix
-  Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
-}
-
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
@@ -33,9 +28,13 @@ function global:au_GetLatest {
     	$date = $tags.published_at.ToString("yyyyMMdd")
     	$version = "$version-pre$($date)"
 	}
+	Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
+	$File = "tools\$($url32 -split "/" | Select-Object -Last 1)"
+	Invoke-WebRequest -Uri $url32 -OutFile $File
+	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 
-  	$Latest = @{ URL32 = $url32; Version = $version }
+  	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 	return $Latest
 }
 
-update
+update -ChecksumFor none
