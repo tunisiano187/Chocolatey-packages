@@ -5,7 +5,7 @@
     <id>airshipper</id>
     <version>0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/airshipper</packageSourceUrl>
-    <owners>__REPLACE_YOUR_NAME__</owners>
+    <owners>tunisiano</owners>
 
     <title>airshipper (Install)</title>
     <authors>Veloren Contributors</authors>
@@ -19,7 +19,7 @@
     <tags>airshipper veloren launcher</tags>
     <summary>Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren up to date. Due to our frequent updates it is the recommended way of installing Veloren.</summary>
     <description>TBF </description>
-    <releaseNotes>https://gitlab.com/veloren/airshipper/-/compare?from=master&to=master</releaseNotes>
+    <releaseNotes>https://gitlab.com/veloren/airshipper/-/compare?from=master</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
