@@ -1,4 +1,4 @@
-﻿VERIFICATION
+VERIFICATION
 
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
@@ -9,14 +9,14 @@ and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://account.axcrypt.net/download/axcrypt-2-setup.exe>
+  url: <https://github.com/veloren/Airshipper/releases/download/v0.11.0/airshipper-windows.msi>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
-  checksum type: sha256
-  checksum: 0FDD4FB7AB6A8C05389D80DC71C72EFD43F4107BB11BC44D135CE80A30AC9175
+  checksum type: SHA512
+  checksum: 5356609DB144374D7F88BDADB853DABB3DAD737D84F8477370D1B70FE6CF106A6200F8D04D2B79A0B649B63B676D03EE509D1845B818135E26915AEE6AF82264
 
 Using AU:
 
