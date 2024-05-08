@@ -64,7 +64,7 @@
     <copyright>Copyright © 2007-2024 Szymon Stefanek</copyright>
     <tags>kvirc irc chat</tags>
     <projectSourceUrl>https://github.com/kvirc/KVIrc</projectSourceUrl>
-    <packageSourceUrl>https://github.com/aborazmeh/ChocolateyPackages/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/kvirc.beta</packageSourceUrl>
     <docsUrl>http://www.kvirc.net/doc/</docsUrl>
     <mailingListUrl>http://lists.omnikron.net/mailman/listinfo/kvirc/</mailingListUrl>
     <bugTrackerUrl>https://github.com/kvirc/KVIrc/issues</bugTrackerUrl>
