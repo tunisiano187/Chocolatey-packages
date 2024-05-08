@@ -5,7 +5,7 @@
     <version>4.2.0</version>
     <title>KVIrc.beta</title>
     <authors>Szymon Stefanek</authors>
-    <owners>Abdurrahman Aborazmeh</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
     <projectUrl>http://nightly.kvirc.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8874bcd7964d7460ab7bd3410a8275e813a3d9ee/icons/kvirc.png</iconUrl>
