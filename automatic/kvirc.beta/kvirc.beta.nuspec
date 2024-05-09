@@ -2,7 +2,7 @@
 <package xmlns="https://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
-    <version>0.0</version>
+    <version>5.2.2-dev-2024-05-09-git-200e7bc</version>
     <title>KVIrc.beta</title>
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>
