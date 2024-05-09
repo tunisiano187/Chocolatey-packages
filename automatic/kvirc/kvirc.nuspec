@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="https://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
     <version>5.2.2</version>
@@ -7,12 +7,12 @@
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
-    <projectUrl>http://www.kvirc.net/</projectUrl>
+    <projectUrl>https://www.kvirc.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8874bcd7964d7460ab7bd3410a8275e813a3d9ee/icons/kvirc.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## KVIrc
 
-KVIrc is a [free](http://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](http://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
+KVIrc is a [free](https://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](https://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
 
 **Features**
 
@@ -73,8 +73,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>kvirc irc chat</tags>
     <projectSourceUrl>https://github.com/kvirc/KVIrc</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/kvirc</packageSourceUrl>
-    <docsUrl>http://www.kvirc.net/doc/</docsUrl>
-    <mailingListUrl>http://lists.omnikron.net/mailman/listinfo/kvirc/</mailingListUrl>
+    <docsUrl>https://www.kvirc.net/doc/</docsUrl>
     <bugTrackerUrl>https://github.com/kvirc/KVIrc/issues</bugTrackerUrl>
   </metadata>
   <files>

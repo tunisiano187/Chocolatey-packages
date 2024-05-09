@@ -2,7 +2,7 @@
 
 ## KVIrc
 
-KVIrc is a [free](http://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](http://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
+KVIrc is a [free](https://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](https://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
 
 **Features**
 
