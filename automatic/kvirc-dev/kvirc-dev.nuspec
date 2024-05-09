@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
-    <version>4.2.0</version>
-    <title>KVIrc.beta</title>
+    <version>0.0</version>
+    <title>KVIrc-dev</title>
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>

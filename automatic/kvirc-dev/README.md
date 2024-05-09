@@ -1,4 +1,4 @@
-[![](https://img.shields.io/chocolatey/v/kvirc?color=green&label=kvirc)](https://chocolatey.org/packages/kvirc) [![](https://img.shields.io/chocolatey/dt/kvirc)](https://chocolatey.org/packages/kvirc)
+[![](https://img.shields.io/chocolatey/v/kvirc-dev?color=green&label=kvirc-dev)](https://chocolatey.org/packages/kvirc-dev) [![](https://img.shields.io/chocolatey/dt/kvirc-dev)](https://chocolatey.org/packages/kvirc-dev)
 
 ## KVIrc
 
