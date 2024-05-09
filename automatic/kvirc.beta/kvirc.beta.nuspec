@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
     <projectUrl>https://nightly.kvirc.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8874bcd7964d7460ab7bd3410a8275e813a3d9ee/icons/kvirc.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@19a033ad4e72a04f6210b2d4c479e6665daae5ac/icons/kvirc.beta.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>KVIrc is a [free](https://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](https://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
 
