@@ -12,7 +12,7 @@
     <description>Create beautiful albums faster and easier than ever before.</description>
     <summary>Create beautiful albums faster and easier than ever before.</summary>
     <tags>albumstomp</tags>
-    <packageSourceUrl>https://github.com/bc3tech/chocolatey/tree/master/AlbumStomp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/albumstomp</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
