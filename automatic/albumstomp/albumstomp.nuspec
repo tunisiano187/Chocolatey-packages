@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>albumstomp</id>
+    <version>2.14</version>
+    <title>AlbumStomp (Install)</title>
+    <authors>StompSoftware</authors>
+    <owners>bc3tech</owners>
+    <projectUrl>https://stompsoftware.com/albumstomp2-features/</projectUrl>
+    <iconUrl>https://stompsoftware.com/wp-content/uploads/2018/09/logoas.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Create beautiful albums faster and easier than ever before.</description>
+    <summary>Create beautiful albums faster and easier than ever before.</summary>
+    <tags>albumstomp</tags>
+    <packageSourceUrl>https://github.com/bc3tech/chocolatey/tree/master/AlbumStomp</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
