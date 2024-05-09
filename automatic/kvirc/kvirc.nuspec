@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
-    <version>4.2.0</version>
+    <version>5.2.2</version>
     <title>KVIrc</title>
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>http://www.kvirc.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8874bcd7964d7460ab7bd3410a8275e813a3d9ee/icons/kvirc.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>KVIrc is a [free](http://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](http://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
+    <description><![CDATA[## KVIrc
+
+KVIrc is a [free](http://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](http://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
 
 **Features**
 
@@ -20,7 +22,7 @@
     - Built-in help browser
     - Themes support (all configurable by GUI or scripting)
     - Pseudo-transparency support (up to the desktop on KDE)
-    - Drag &amp; Drop toolbar editing
+    - Drag & Drop toolbar editing
     - Activity Notifier Pop-Up
     - Status bar with Applet support
     - Unread text mark
@@ -58,7 +60,13 @@
         - scriptable toolbars
         - Perl support
         - Ability to translate scripts (by the means of the tr() function)
-    - Objects support in scripting language: yes, now you can do OOP</description>
+    - Objects support in scripting language: yes, now you can do OOP
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>KVIrc is a free portable IRC client based on the excellent Qt GUI toolkit.</summary>
     <releaseNotes>https://raw.githubusercontent.com/kvirc/KVIrc/master/RELEASES</releaseNotes>
     <copyright>Copyright © 2007-2018 Szymon Stefanek</copyright>
