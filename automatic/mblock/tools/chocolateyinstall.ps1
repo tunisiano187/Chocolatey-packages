@@ -10,7 +10,7 @@ $options =
 @{
   Headers = @{
     Cookie = 'requiredinfo=info';
-    Referer = 'https://somelocation.com/';
+    Referer = $referer;
   }
 }
 

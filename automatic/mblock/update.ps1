@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	$url32 = "https://dl.makeblock.com/mblock5/win32/V$version.exe"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Referer = $releases }
 	return $Latest
 }
 
