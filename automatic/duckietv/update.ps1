@@ -1,6 +1,6 @@
-﻿import-module au
+import-module au
 
-$releases = 'https://github.com/DuckieTV/Nightlies/releases'
+$releases = 'https://github.com/DuckieTV/Nightlies/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 1
 
@@ -39,7 +39,7 @@ function global:au_GetLatest {
   if($tags.prerelease) {
     $versioncomplete = "$($version.ToString())-nightly"
   }
-  
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $versioncomplete; ReleaseUri = $tags.html_url }
 	return $Latest
 }
