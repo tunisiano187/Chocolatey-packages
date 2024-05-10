@@ -139,4 +139,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-alcohol52-free
