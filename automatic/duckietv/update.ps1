@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/DuckieTV/Nightlies/releases'
+$releases = 'https://github.com/DuckieTV/Nightlies/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 1
 
