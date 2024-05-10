@@ -10,7 +10,6 @@ $checksumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
 $bits = Get-ProcessorBits
-$fileLocation = "$env:ChocolateyInstall\lib\$packageName\tools\DuckieTV-$env:ChocolateyPackageVersion-windows-x$bits.exe"
 
 $packageArgs = @{
   packageName    = $packageName
@@ -23,6 +22,8 @@ $packageArgs = @{
   checksumType   = $checksumType
   checksumType64 = $checksumType
 }
+
+$fileLocation = Get-ChildItem -Path $toolsDir -Filter "*.exe"
 
 Install-ChocolateyZipPackage @packageArgs
 
