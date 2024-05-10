@@ -1,6 +1,6 @@
-[![](https://img.shields.io/chocolatey/v/mo2?color=green&label=mo2)](https://chocolatey.org/packages/mo2) [![](https://img.shields.io/chocolatey/dt/mo2)](https://chocolatey.org/packages/mo2)
+[![](https://img.shields.io/chocolatey/v/duckietv?color=green&label=duckietv)](https://chocolatey.org/packages/duckietv) [![](https://img.shields.io/chocolatey/dt/duckietv)](https://chocolatey.org/packages/duckietv)
 
-## Mod Organizer 2
+## DuckieTV
 DuckieTV is an application that takes care of TV-Show addicts by providing a personalized TV-Show calendar. DuckieTV makes sure the information is always up-to-date and gives you an integrated blocking-resistant torrent search to help you get to the right download as easy as possible.
 
 With the integrated DuckieTorrent client you can connect DuckieTV to your local Torrent client and be updated on the download progress without switching applications. Support is available for clients of BiglyBT, Deluge, Ktorrent, qBittorrent, rTorrent, Tixati, Transmission, µTorrent/BitTorrent and Vuze.
