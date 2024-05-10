@@ -1,8 +1,8 @@
 ﻿import-module au
 
-$releases = 'https://github.com/DuckieTV/Nightlies/releases/latest'
-$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
-$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+$releases = 'https://github.com/DuckieTV/Nightlies/releases'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 1
 
 
 function global:au_SearchReplace {
@@ -24,15 +24,17 @@ function global:au_BeforeUpdate($Package) {
 
 function global:au_AfterUpdate($Package) {
   Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
+  Update-Metadata -key "releaseNotes" -value $Latest.ReleaseUri
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+  $page = Invoke-WebRequest -Uri $releases
+	$tag = ($page.Links | Where-Object {$_.href -match "tag"} | Select-Object -First 2 -Skip 1).href.split('/')[-1]
+  $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
   $url32 = $urls | Where-Object {$_ -match 'windows-x32'}
   $url64 = $urls | Where-Object {$_ -match 'windows-x64'}
-	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	[version]$version = "$(($tags.tag_name.Split('-') | Select-Object -Last 1) -replace '....(?!$)','$0.')"
   $versioncomplete = "$($version.ToString())-nightly"
 
