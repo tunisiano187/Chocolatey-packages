@@ -9,6 +9,7 @@ ad-tidy-free
 advancedsystemtweaker
 advtor
 alcohol52-free
+allbrowsers
 amazingmarvin
 AMD-Graphics-Driver
 Ardour
@@ -139,4 +140,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-allbrowsers
