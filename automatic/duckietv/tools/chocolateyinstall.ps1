@@ -9,7 +9,6 @@ $checksum64 = '8ff301be601c25ec73d88bebbeec8c7273af0d9f6bfd8af7f476998d0ea32b89'
 $checksumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
-$bits = Get-ProcessorBits
 
 $packageArgs = @{
   packageName    = $packageName
@@ -23,7 +22,7 @@ $packageArgs = @{
   checksumType64 = $checksumType
 }
 
-$fileLocation = Get-ChildItem -Path $toolsDir -Filter "*.exe"
+$fileLocation = (Get-ChildItem -Path $toolsDir -Filter "*.exe").FullName
 
 Install-ChocolateyZipPackage @packageArgs
 
