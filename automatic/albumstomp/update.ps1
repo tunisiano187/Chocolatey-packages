@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://www.stompsoftware.com/downloads/'
@@ -19,11 +19,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = 'https://stompsoftware.com/downloadfiles/albumstomp/SetupAlbumStompV2.exe'
-	
+
 	$pageContent = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$regexPattern = 'Version (\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
-	
+
 	$version=$versionMatch.Matches[1].Groups[1].Value
 
 	$Latest = @{ URL32 = $url32; Version = $version }
