@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url            = 'https://dl.makeblock.com/mblock5/win32/V5.4.0.exe'
-$checksum       = 'c583bd8db64287fdebdad9a9a6d71e41938dfb0e1155d0f87675b809430aa6aa'
+$url            = 'https://dl.makeblock.com/mblock5/win32/V5.4.3.exe'
+$checksum       = 'a83bba255d2d6e424f058c38a204f273a4f40bcac38c8283f551a7056b605640'
 $checksumType   = 'sha256'
-$referer        = 'https://www.mblock.cc/en/download/'
+$referer        = ''
 
 
 # Add referer
