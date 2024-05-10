@@ -16,6 +16,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$choc=$(choco search install4j.install | Where-Object {$_ -match "install4j"})
 	$version = $choc.Split(" ")[1]
+	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") ej-technologies GmbH"
 
 	$Latest = @{ Version = $version }
 	return $Latest
