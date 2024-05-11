@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop' # stop on all errors
+$ErrorActionPreference = 'Stop' # stop on all errors
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -23,7 +23,7 @@ $packageArgs = @{
   checksumType64= $checksumType #default is checksumType
 
   validExitCodes= @(0, 3010, 1641)
-  
+
   silentArgs   = '/S'           # NSIS
 }
 
