@@ -19,7 +19,10 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.7z'}).href | Select-Object -First 1
 	$ver = $url32.Split('/')[-2]
-	$version = "1.0.$($ver.Split('-')[-2])"
+	if($ver -match "&") {
+		$ver = $ver -split '&' | Select-Object -First 1
+	}
+	$version = "1.0.$($ver)"
 	$url32 = "https://master.dl.sourceforge.net/project/megui/megui-stable/$ver/MeGUI-$ver-32.7z"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
