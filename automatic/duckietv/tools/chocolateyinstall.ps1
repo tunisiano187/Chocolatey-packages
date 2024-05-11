@@ -22,14 +22,15 @@ $packageArgs = @{
   checksumType64 = $checksumType
 }
 
-$fileLocation = (Get-ChildItem -Path $toolsDir -Filter "*.exe").FullName
-
 Install-ChocolateyZipPackage @packageArgs
+
+$fileLocation = (Get-ChildItem -Path $toolsDir -Filter "*.exe" ).FullName
+$fileLocation
 
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'EXE'
-  file           = $fileLocation
+  File           = $fileLocation
   silentArgs     = $silentArgs
   validExitCodes = $validExitCodes
   softwareName   = 'DuckieTV*'

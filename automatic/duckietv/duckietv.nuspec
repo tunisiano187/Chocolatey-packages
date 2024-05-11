@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>duckietv</id>
-    <version>2024.511.1132</version>
+    <version>0.0</version>
     <title>DuckieTV</title>
     <authors>SchizoDuckie</authors>
     <owners>tunisiano</owners>
