@@ -28,6 +28,7 @@ function global:au_GetLatest {
 	$url64 = $urls | Where-Object {$_ -match "x64"}
 	$version = $tags.tag_name.Replace('v','')
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
+	Update-Metadata -key "licenseUrl" -value $(Get-GithubRepositoryLicense $Owner $repo)
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
