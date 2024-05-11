@@ -19,7 +19,6 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Get-RemoteFiles -Purge -NoSuffix
-	Invoke-WebRequest -Uri "https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt" .\tools\LICENSE.txt
 }
 
 function global:au_AfterUpdate($Package) {
