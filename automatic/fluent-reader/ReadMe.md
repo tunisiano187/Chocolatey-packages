@@ -4,9 +4,7 @@
 
 ## Features
 
-<p align="center">
-  <img src="https://github.com/yang991178/fluent-reader/raw/master/docs/imgs/screenshot.jpg">
-</p>
+![ScreenShot](https://cdn.jsdelivr.net/gh/yang991178/fluent-reader@master/docs/imgs/screenshot.jpg)
 
 - A modern UI inspired by Fluent Design System with full dark mode support.
 - Read locally or sync with self-hosted services compatible with Fever or Google Reader API.
