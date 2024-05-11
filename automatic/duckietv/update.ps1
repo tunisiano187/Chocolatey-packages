@@ -36,6 +36,7 @@ function global:au_GetLatest {
   $url32 = $urls | Where-Object {$_ -match 'windows-x32'}
   $url64 = $urls | Where-Object {$_ -match 'windows-x64'}
 	[version]$version = "$(($tags.tag_name.Split('-') | Select-Object -Last 1) -replace '....(?!$)','$0.')"
+  $versioncomplete = $version
   if($tags.prerelease) {
     $versioncomplete = "$($version.ToString())-nightly"
   }
