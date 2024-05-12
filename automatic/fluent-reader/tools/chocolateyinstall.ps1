@@ -11,20 +11,20 @@ $checksumType = 'sha256'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE' #only one of these: exe, msi, msu
+  fileType      = 'EXE' 
   url           = $url
   url64bit      = $url64
 
-  softwareName  = 'fluent-reader*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+  softwareName  = 'fluent-reader*' 
 
-  checksum      = $checksum32
-  checksumType  = $checksumType #default is md5, can also be sha1, sha256 or sha512
+  checksum      = $checksum
+  checksumType  = $checksumType 
   checksum64    = $checksum64
-  checksumType64= $checksumType #default is checksumType
+  checksumType64= $checksumType 
 
   validExitCodes= @(0, 3010, 1641)
 
-  silentArgs   = '/S'           # NSIS
+  silentArgs   = '/S'           
 }
 
 Install-ChocolateyPackage @packageArgs

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fluent-reader</id>
-    <version>1.1.4</version>
+    <version>0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fluent-reader</packageSourceUrl>
     
     <owners>tunisiano</owners>
