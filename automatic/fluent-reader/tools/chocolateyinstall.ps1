@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop' # stop on all errors
+$ErrorActionPreference = 'Stop' # stop on all errors
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -11,20 +11,20 @@ $checksumType = 'sha256'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE' 
+  fileType      = 'EXE'
   url           = $url
   url64bit      = $url64
 
-  softwareName  = 'fluent-reader*' 
+  softwareName  = 'fluent-reader*'
 
   checksum      = $checksum
-  checksumType  = $checksumType 
+  checksumType  = $checksumType
   checksum64    = $checksum64
-  checksumType64= $checksumType 
+  checksumType64= $checksumType
 
   validExitCodes= @(0, 3010, 1641)
 
-  silentArgs   = '/S'           
+  silentArgs   = '/S'
 }
 
 Install-ChocolateyPackage @packageArgs
