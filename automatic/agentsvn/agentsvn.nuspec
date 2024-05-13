@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>agentsvn</id>
-    <version>2.56.20.0</version>
+    <version>2.76</version>
     <title>AgentSVN</title>
     <authors>Jussi Jumppanen</authors>
     <owners>tunisiano</owners>
@@ -11,7 +11,9 @@
     <projectUrl>http://www.zeusedit.com/agent/index.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9b8a8de748990fc78bb9dbf1f2da32e3096308bd/icons/agentsvn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Agent SVN is a commercial package that allows any MS-SCCI compatible IDE to use Subversion as it's source control provider.
+    <description><![CDATA[## AgentSVN
+
+Agent SVN is a commercial package that allows any MS-SCCI compatible IDE to use Subversion as it's source control provider.
 
 The plug-in allows the IDE to seamlessly integrate with Subversion, such that IDE actions like adding, renaming, moving or removing files are automatically reflected in the Subversion repository.
 
@@ -23,7 +25,13 @@ The plug-in has been tested with all versions of Visual Studio up to and includi
 
 ### Commercial software
 
-This is trial software that will require the purchase of an activation key. The trial period is 45 days and over that period the software is fully functional.</description>
+This is trial software that will require the purchase of an activation key. The trial period is 45 days and over that period the software is fully functional.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Agent SVN - Subversion MS-SCCI Plug-in</summary>
     <copyright>© 2016 Xidicone P/L</copyright>
     <tags>admin trial agentsvn ide ms-scci revision-control scm subversion svn vcs version-control visualstudio</tags>
