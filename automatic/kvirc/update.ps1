@@ -24,9 +24,11 @@ function global:au_GetLatest {
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | select-object -First 1
 	$version = ($tags.tag_name -split 'v|/' | Where-Object { $_ -match "."}).Trim()
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	if($tags[0].prerelease -match "true") {
-		$date = $tags[0].published_at.ToString("yyyyMMdd")
-		$version = "$version-pre$($date)"
+	$url32beta = "https://nightly.kvirc.net$((Invoke-WebRequest -Uri "https://nightly.kvirc.net/win-x86_64/").Links.href | Where-Object {$_ -match ".exe$"} | select-object -Last 1)"
+	$versionbeta = ($url32beta -split '/' | Select-Object -Last 1).replace('KVIrc-','').replace('.exe','')
+	if($versionbeta -ge $version) {
+		$version = $versionbeta
+		$url32 = $url32beta
 	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
