@@ -30,6 +30,7 @@ function global:au_GetLatest {
         $version = "0.0"
     }
     $url64 = $url32 -replace "asvn32","asvn64"
+    Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") Xidicone P/L"
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
