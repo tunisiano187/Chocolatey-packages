@@ -140,4 +140,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-amazingmarvin
