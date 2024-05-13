@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>kvirc</id>
-    <version>0.0</version>
+    <version>5.2.4</version>
     <title>KVIrc</title>
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>

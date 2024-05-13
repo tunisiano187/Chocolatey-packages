@@ -1,6 +1,6 @@
 [Setup]
 Lang=default
-Dir=%InstallationPath%
+Dir=C:\tools\freepascal
 Group=Free Pascal
 NoIcons=1
 SetupType=full
