@@ -5,7 +5,7 @@
     <version>2.00.20</version>
     <title>Tdarr Updater (Portable)</title>
     <authors>HaveAGitGat</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://home.tdarr.io/eula</licenseUrl>
     <projectUrl>https://tdarr.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0b0569488a4d4299a3f057b0a7d4ef85a6be96f9/icons/tdarr-updater.png</iconUrl>
