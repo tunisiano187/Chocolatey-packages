@@ -1,9 +1,0 @@
-﻿=================================== Tdarr_Updater ===================================
-
-bcurran3 downloads and packages the included .ZIP for Tdarr_Updater from the link on 
-the developer's website:
-https://docs.tdarr.io/docs/installation/windows-linux-macos
-which points to:
-https://f000.backblazeb2.com/file/tdarrs/versions/2.00.15/win32_x64/Tdarr_Updater.zip
-
-=================================== Tdarr_Updater ===================================

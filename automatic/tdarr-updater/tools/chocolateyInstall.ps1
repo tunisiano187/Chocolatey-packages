@@ -14,9 +14,10 @@ Remove-Item "$toolsDir\*.zip" -EA SilentlyContinue | Out-Null
 
 Start-ChocolateyProcessAsAdmin -ExeToRun "$env:ProgramFiles\Tdarr\Tdarr_Updater.exe"
 
-Get-ChildItem -Path $env:ProgramFiles\Tdarr -Recurse | Where {
- $_.Extension -eq '.exe'} | % {
- New-Item $($_.FullName + '.ignore') -Force -ItemType file
+Get-ChildItem -Path $env:ProgramFiles\Tdarr -Recurse | Where-Object {
+  $_.Extension -eq '.exe'
+} | ForEach-Object {
+  New-Item $($_.FullName + '.ignore') -Force -ItemType file
 } | Out-Null
 
 Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\Tdarr_Updater.lnk" -targetPath "$env:ProgramFiles\Tdarr\Tdarr_Updater.exe" -WorkingDirectory "$env:ProgramFiles\Tdarr" -RunAsAdmin
