@@ -103,6 +103,7 @@ peerblock
 pencil 
 plexmediaserver
 pngoo
+profile
 pulse
 pydiosync
 regexpeditor
@@ -140,4 +141,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-profile
