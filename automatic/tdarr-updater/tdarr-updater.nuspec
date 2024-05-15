@@ -50,7 +50,7 @@ Designed to work alongside applications like Sonarr/Radarr and built with the ai
     <copyright>HaveAGitGat</copyright>
     <tags>tdarr video transcode transcoding remux automation handbrake ffmpeg haveagitgat binary portable</tags>
     <projectSourceUrl>https://github.com/HaveAGitGat/Tdarr</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tdarr-updater</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tdarr-updater</packageSourceUrl>
     <docsUrl>https://docs.tdarr.io/docs/installation/windows-linux-macos</docsUrl>
     <bugTrackerUrl>https://github.com/HaveAGitGat/Tdarr/issues</bugTrackerUrl>
   </metadata>
