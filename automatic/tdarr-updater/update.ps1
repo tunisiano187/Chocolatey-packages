@@ -13,10 +13,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -24,9 +20,12 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 		= (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'win32_x64/Tdarr_Updater.zip'}).href)
 	$version 	= Get-Version $url32
+	$File		= "tools\Tdarr_Updater.zip"
+	Invoke-WebRequest -Uri $url32 -OutFile $File
+	$checksum	= (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
