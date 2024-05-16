@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AnkhSvn</id>
+    <version>2.5.12703</version>
+    <authors>Bert Huijben</authors>
+    <owners>zippy1981</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>http://ankhsvn.open.collab.net/ankhsvn/license</licenseUrl>
+    <projectUrl>http://ankhsvn.open.collab.net/ankhsvn</projectUrl>
+    <iconUrl>http://ankhsvn.open.collab.net/images/ankhsvn-logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AnkhSVN is a Subversion Source Control Provider for Microsoft Visual Studio 2005, 2008, 2010, 2012 and 2013.</description>
+    <copyright>Copyright © 2003-2015 The AnkhSVN Team</copyright>
+    <tags>svn VisualStudio SCM</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
