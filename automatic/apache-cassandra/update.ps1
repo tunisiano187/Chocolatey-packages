@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://cassandra.apache.org/_/download.html'
@@ -19,6 +19,8 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$url32 = ($page.Links | Where-Object {$_.href -match ".tar.gz$"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
+	$page = Invoke-WebRequest -Uri $url32 -UseBasicParsing
 	$url32 = ($page.Links | Where-Object {$_.href -match ".tar.gz$"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
 	$checksumurl = ($page.Links | Where-Object {$_.href -match ".tar.gz.sha"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
 	$checksumType = ($checksumurl.split('.'))[-1]
