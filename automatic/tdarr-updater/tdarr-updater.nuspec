@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tdarr-updater</id>
-    <version>2.17.1</version>
+    <version>0.0</version>
     <title>Tdarr Updater (Portable)</title>
     <authors>HaveAGitGat</authors>
     <owners>tunisiano</owners>
@@ -58,5 +58,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
