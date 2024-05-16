@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>apache-cassandra</id>
+    <version>3.7</version>
+    <title>cassandra</title>
+    <authors>Apache</authors>
+    <owners>Marc Magnin @ Digitalis.io</owners>
+<packageSourceUrl></packageSourceUrl>
+    <projectUrl>http://cassandra.apache.org/</projectUrl>
+    <iconUrl>http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/279px-Cassandra_logo.svg.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Apache cassandra 3.7</description>
+    <releaseNotes>Extraction path: C:/Cassandra</releaseNotes>
+    <tags>Cassandra Java</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
