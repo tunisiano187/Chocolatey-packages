@@ -1,4 +1,4 @@
 $packageName = 'Cassandra'
 $installDir = (Get-ToolsLocation +"/$packageName")
 
-Remove-Item -Recurse -Force $installDir 
+Remove-Item -Recurse -Force $installDir
