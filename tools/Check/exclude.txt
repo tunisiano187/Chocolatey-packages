@@ -143,3 +143,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+packages
