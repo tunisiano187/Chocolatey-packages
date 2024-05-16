@@ -9,7 +9,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 
 ---
 
-![Screenshot of tdarr-updater](https://cdn.staticaly.com/gh/tunisiano187/ChocolateyPackages/master/tdarr-updater/tdarr-updater_screenshot.png)
+![Screenshot of tdarr-updater](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@master/automatic/tdarr-updater/tdarr-updater_screenshot.png?raw=true)
 
 
 **Tdarr Updater** will automatically download and extract the latest version of Tdarr V2: Distributed Transcoding System; server and node.
