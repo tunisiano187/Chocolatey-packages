@@ -92,8 +92,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -notmatch "Deprecated"} | Where-Object {$_.outerHTML -notmatch "Retired"} | Where-Object {$_.href -match '/packages/'}).href
         $ToDo=$links
         foreach ($item in $links) {
-            $search=$item.split('/')[-2]
-            $version=$item.split('/')[-1]
+            $search=$item.split('/')[-1]
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)) update requested"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
