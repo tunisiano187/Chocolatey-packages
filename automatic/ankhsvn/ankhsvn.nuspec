@@ -5,7 +5,7 @@
     <version>2.5.12703</version>
     <authors>Bert Huijben</authors>
     <owners>zippy1981</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ankhsvn</packageSourceUrl>
     <licenseUrl>http://ankhsvn.open.collab.net/ankhsvn/license</licenseUrl>
     <projectUrl>http://ankhsvn.open.collab.net/ankhsvn</projectUrl>
     <iconUrl>http://ankhsvn.open.collab.net/images/ankhsvn-logo.png</iconUrl>
