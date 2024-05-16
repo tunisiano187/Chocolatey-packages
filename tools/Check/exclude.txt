@@ -142,3 +142,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+anvide-seal-folder
