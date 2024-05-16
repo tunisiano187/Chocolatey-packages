@@ -88,7 +88,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
 
     # if the search var is empty, search on the needs_new_maintainer profile
     if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
-        $chocoprofile = "https://community.chocolatey.org/profiles/needs_new_maintainer"
+        $chocoprofile = $link = "https://community.chocolatey.org/profiles/needs_new_maintainer"
         $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -notmatch "Deprecated"} | Where-Object {$_.outerHTML -notmatch "Retired"} | Where-Object {$_.href -match '/packages/'}).href
         $ToDo=$links
         foreach ($item in $links) {
@@ -96,7 +96,8 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
             $version=$item.split('/')[-1]
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)) update requested"
-            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated"
+            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
+            $link"
             if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
                 "Create issue for $search"
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description
