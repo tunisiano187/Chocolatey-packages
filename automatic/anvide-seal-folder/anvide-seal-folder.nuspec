@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>anvide-seal-folder</id>
+    <version>5.30</version>
+    <title>Anvide Seal Folder</title>
+    <authors>Anvide Labs</authors>
+    <owners>Sasha Chernykh</owners>
+    <licenseUrl>http://anvidelabs.org/asfhelp/lic.html</licenseUrl>
+    <projectUrl>http://anvidelabs.org/programms/asf/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/Kristinita/SashaChocolatey/master/icons/Anvide-Seal-Folder.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Anvide Seal Folder — a program to protect folders password instant. It will reliably hide sensitive data on hard drives and removable media. For each folder, you can set a separate password. No need to install a special driver. There is no need to keep it constantly running. It has a convenient and user-friendly interface. For advanced users available work from the command line.</description>
+    <summary>Anvide Seal Folder — a program to protect folders password instant.</summary>
+    <releaseNotes>* Fixed a critical bug in the encryption engine.
+		* Added Esperanto translation (many thanks BornToNight).
+		* Small changes in the interface.</releaseNotes>
+    <copyright>Copyright © 2016 Anvide Labs</copyright>
+    <tags>anvide-seal-folder password-folder security crypto admin</tags>
+    <packageSourceUrl>https://github.com/Kristinita/SashaChocolatey/tree/master/packages/Anvide Seal Folder</packageSourceUrl>
+    <docsUrl>http://anvidelabs.org/asfhelp/index.html</docsUrl>
+    <mailingListUrl>http://anvidelabs.org/feedback/</mailingListUrl>
+    <bugTrackerUrl>http://anvidelabs.org/feedback/</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
