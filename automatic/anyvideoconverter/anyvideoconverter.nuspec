@@ -34,7 +34,7 @@ This free YouTube Downloader lets you download videos from YouTube and save them
     <releaseNotes />
     <copyright>AnvSoft Co, Ltd. - All rights reserved</copyright>
     <tags>anyvideoconverter video conversion converter avi flv mov mp4 mpg admin</tags>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/anyvideoconverter</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
