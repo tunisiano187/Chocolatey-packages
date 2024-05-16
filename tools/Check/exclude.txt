@@ -141,4 +141,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Oculus-Rift-
