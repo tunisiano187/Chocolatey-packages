@@ -1,7 +1,19 @@
-﻿$packageName = 'anyvideoconverter'
-$installerType = 'exe'
-$url = 'http://www.any-video-converter.com/avc-free.exe'
-$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-$validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
+﻿$ErrorActionPreference = 'Stop';
 
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
+$url            = ''
+$checksum       = ''
+$checksumType   = ''
+
+
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  fileType      = 'exe'
+  url           = $url
+  softwareName  = 'Any Video Converter*'
+  checksum      = $checksum
+  checksumType  = $checksumType
+  validExitCodes= @(0, 3010, 1641)
+  silentArgs   = '/S'
+}
+
+Install-ChocolateyPackage @packageArgs
