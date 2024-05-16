@@ -5,7 +5,7 @@
     <version>6.0.0</version>
     <title>Any Video Converter Free Edition</title>
     <authors>AnvSoft Co, Ltd.</authors>
-    <owners>Rob Reynolds</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://www.any-video-converter.com/en8/for_video_free/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c47bda4585289aeedf529b7168f33a0bad560ec9/icons/anyvideoconverter.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
