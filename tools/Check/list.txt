@@ -1,4 +1,3 @@
-anvide-seal-folder 5.30.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 anyvideoconverter 6.0.0 [Approved] - Possibly broken
 apache-cassandra 3.7.0 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
 apacheds 2.0.0.19 [Approved] - Possibly broken

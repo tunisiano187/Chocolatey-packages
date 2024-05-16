@@ -12,6 +12,7 @@ alcohol52-free
 allbrowsers
 amazingmarvin
 AMD-Graphics-Driver
+AnkhSvn
 Ardour
 armory
 audioswitcher
@@ -141,4 +142,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-AnkhSvn
