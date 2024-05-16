@@ -13,6 +13,7 @@ allbrowsers
 amazingmarvin
 AMD-Graphics-Driver
 AnkhSvn
+anvide-seal-folder
 Ardour
 armory
 audioswitcher
@@ -142,4 +143,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-anvide-seal-folder
