@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tdarr-updater</id>
-    <version>2.00.20</version>
+    <version>2.17.1</version>
     <title>Tdarr Updater (Portable)</title>
     <authors>HaveAGitGat</authors>
     <owners>tunisiano</owners>
@@ -10,14 +10,16 @@
     <projectUrl>https://tdarr.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0b0569488a4d4299a3f057b0a7d4ef85a6be96f9/icons/tdarr-updater.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
+    <description><![CDATA[## Tdarr Updater (Portable)
+
+---
 
 ### [choco://tdarr-updater](choco://tdarr-updater)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
 ---
 
-![Screenshot of tdarr-updater](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/tdarr-updater/tdarr-updater_screenshot.png)
+![Screenshot of tdarr-updater](https://cdn.staticaly.com/gh/tunisiano187/ChocolateyPackages/master/tdarr-updater/tdarr-updater_screenshot.png)
 
 
 **Tdarr Updater** will automatically download and extract the latest version of Tdarr V2: Distributed Transcoding System; server and node.
@@ -36,15 +38,15 @@ Designed to work alongside applications like Sonarr/Radarr and built with the ai
 (More information on the website)
 
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/tdarr-updater/readme.md)**
-
-	
-
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>Installer/Updater for Tdarr V2: Distributed Transcoding System</summary>
     <releaseNotes>https://github.com/HaveAGitGat/Tdarr/tree/master/updater</releaseNotes>
     <copyright>HaveAGitGat</copyright>
