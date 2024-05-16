@@ -20,9 +20,9 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url32 = ($page.Links | Where-Object {$_.href -match ".tar.gz$"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
+	$checksumurl = ($page.Links | Where-Object {$_.href -match ".tar.gz.sha"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
 	$page = Invoke-WebRequest -Uri $url32 -UseBasicParsing
 	$url32 = ($page.Links | Where-Object {$_.href -match ".tar.gz$"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
-	$checksumurl = ($page.Links | Where-Object {$_.href -match ".tar.gz.sha"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
 	$checksumType = ($checksumurl.split('.'))[-1]
 	$checksum = (Invoke-WebRequest -Uri $checksumurl).Content.trim()
 	$version = $url32.split('/') | Where-Object {$_ -Match "[0-9].[0-9]"} | Where-Object {$_ -notmatch 'tar'}
