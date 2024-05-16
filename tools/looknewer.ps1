@@ -49,7 +49,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
     # Take a package that is requested on the chocolatey-package-requests
     if($Todo.Count -eq 0 -and $issue -eq 0) {
         "Checking on the chocolatey-package-requests"
-        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
+        $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFM'} | Where-Object {$_.Title -notmatch 'Oculus'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
