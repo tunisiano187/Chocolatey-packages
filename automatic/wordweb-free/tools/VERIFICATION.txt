@@ -1,0 +1,5 @@
+﻿========================= WordWeb free =========================
+
+bcurran3 downloads and packages the executable for WordWeb free from the developer's site at: https://wordweb.info/cgi-bin/geoip/wordweb.exe
+
+========================= WordWeb free =========================

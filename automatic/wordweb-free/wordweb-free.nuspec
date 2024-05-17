@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wordweb-free</id>
+    <version>10.33</version>
+    <title>WordWeb Free (Install)</title>
+    <authors>WordWeb Software</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://wordweb.info/free/licence5.html</licenseUrl>
+    <projectUrl>https://wordweb.info/free/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/wordweb-free/wordweb-free_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://wordweb-free](choco://wordweb-free)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of WordWeb](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/wordweb-free/wordweb-free_screenshot.png)
+
+### WordWeb Free version
+
+* One-click lookup in any almost any Windows program
+* Hundreds of thousands of definitions and synonyms
+* The latest international English words
+* Works offline, or reference to Wikipedia and web references
+
+The program has a full dictionary and thesaurus for American, British, Canadian, Australian, Indian, and global English.
+
+Get WordWeb Pro to add full audio and many additional features, including the option to add Oxford, Chambers and Collins dictionaries.
+
+WordWeb free version is fully functional, and free if you satisfy the licensing conditions. All users may also try out the free version and then buy [WordWeb Pro](http://wordweb.info/).
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/wordweb-free/readme.md)**
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Windows dictionary and thesaurus</summary>
+    <releaseNotes>https://wordweb.info/users.html</releaseNotes>
+    <copyright>Copyright © WordWeb Software</copyright>
+    <tags>wordweb dictionary thesaurus binary</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/wordweb-free</packageSourceUrl>
+    <docsUrl>https://wordweb.info/more.html</docsUrl>
+    <mailingListUrl>https://wordweb.info/newsletter.html</mailingListUrl>
+    <bugTrackerUrl>https://wordweb.info/users.html</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
