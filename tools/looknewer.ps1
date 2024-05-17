@@ -53,7 +53,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
-            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content .\tools\Check\exclude.txt | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
+            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content .\tools\Check\exclude.txt | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
