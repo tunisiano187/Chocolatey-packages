@@ -16,7 +16,13 @@ $version = ''
 # Sort Exclude file
 $excludefile = '.\tools\Check\exclude.txt'
 if(!(Test-Path $excludefile)) {
+    Write-Debug "File does not exist at $excludefile"
     $excludefile = '..\tools\Check\exclude.txt'
+    if(!(Test-Path $excludefile)) {
+        Write-Debug "File does not exist at $excludefile"
+    }
+} else {
+    Write-Debug "$excludefile OK"
 }
 Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $excludefile
 
