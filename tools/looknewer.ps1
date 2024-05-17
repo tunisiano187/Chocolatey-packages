@@ -10,6 +10,9 @@ if(!(Test-Path Env:github_api_key)) {
 [string]$Owner = "tunisiano187"
 [string]$Repository = "Chocolatey-packages"
 
+git config --global user.email "helpdesk.choc@gmail.com"
+git config --global user.name "tunisiano187"
+
 $search = ''
 $version = ''
 
