@@ -13,20 +13,23 @@ if(!(Test-Path Env:github_api_key)) {
 $search = ''
 $version = ''
 
+Write-Output "Current location : $(Get-Location)"
+
 # Sort Exclude file
 $excludefile = '.\tools\Check\exclude.txt'
 if(!(Test-Path $excludefile)) {
-    Write-Debug "File does not exist at $excludefile"
+    Write-Output "File does not exist at $excludefile"
     $excludefile = '..\tools\Check\exclude.txt'
     if(!(Test-Path $excludefile)) {
-        Write-Debug "File does not exist at $excludefile"
+        Write-Output "File does not exist at $excludefile"
     }
 } else {
-    Write-Debug "$excludefile OK"
+    Write-Output "$excludefile OK"
 }
 Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $excludefile
 
 "Check if there are open issues"
+
 # Check if there is a waiting issue
 if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"})) {
     Write-Warning "Some issues are still open"
