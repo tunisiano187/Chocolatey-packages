@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
+ad-tidy-free
 adblockplusie
 adguard-chrome
-ad-tidy-free
 advancedsystemtweaker
 advtor
 alcohol52-free
@@ -58,6 +58,7 @@ hp-bios-cmdlets
 hp-ilo-cmdlets
 hp-oa-cmdlets
 hte
+ietab-chrome
 isoplex
 izpack
 jdk11
@@ -144,7 +145,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-ietab-chrome
-ietab-chrome
-ietab-chrome
-ietab-chrome
