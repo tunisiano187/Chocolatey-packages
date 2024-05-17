@@ -60,7 +60,7 @@ DriverMax automatically tests each new driver before installing it on your PC, e
     <summary>DriverMax - Update, backup and restore outdated, missing or faulty drivers</summary>
     <copyright>Copyright by Innovative Solutions. All Rights Reserved.</copyright>
     <tags>innovativesolutions drivermax drivers updater system utility</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/drivermax</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/drivermax</packageSourceUrl>
     <dependencies>
       <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
     </dependencies>
