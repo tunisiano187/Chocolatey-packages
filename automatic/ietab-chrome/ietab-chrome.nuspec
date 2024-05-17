@@ -35,7 +35,7 @@ IE Tab exactly emulates IE by using the IE rendering engine directly within Chro
     <summary>IE Tab for Chrome extension</summary>
     <releaseNotes>updated to new install method</releaseNotes>
     <tags>ie tab ietab chrome extension</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ietab-chrome</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ietab-chrome</packageSourceUrl>
     <dependencies>
       <dependency id="googlechrome" />
     </dependencies>

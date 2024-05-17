@@ -44,7 +44,7 @@ WordWeb free version is fully functional, and free if you satisfy the licensing 
     <releaseNotes>https://wordweb.info/users.html</releaseNotes>
     <copyright>Copyright © WordWeb Software</copyright>
     <tags>wordweb dictionary thesaurus binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/wordweb-free</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wordweb-free</packageSourceUrl>
     <docsUrl>https://wordweb.info/more.html</docsUrl>
     <mailingListUrl>https://wordweb.info/newsletter.html</mailingListUrl>
     <bugTrackerUrl>https://wordweb.info/users.html</bugTrackerUrl>
