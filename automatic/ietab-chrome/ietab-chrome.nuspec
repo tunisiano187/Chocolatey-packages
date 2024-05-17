@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ietab-chrome</id>
+    <version>10.1.11.1</version>
+    <title>IE Tab for Chrome</title>
+    <authors>ietab.net</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd</projectUrl>
+    <iconUrl>https://lh3.googleusercontent.com/_UAdMqAA6PRbpL7ozSL3dH34l3uNYzOlX8uJ7lsz2TAfRzHNI9FHYuCNHhTfaXhmnnc1mNmHbg=s26-h26-e365-rw</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of IE Tab for Chrome](https://lh3.googleusercontent.com/jBcRJhr62UYVgLkFZUsOlHwk0EiHdBC75QcWJrbHUMb-CR7jDnauqS7uY4clY-w6-wyHl6wE_g=s640-h400-e365-rw)	
+	
+###Display web pages using IE within Chrome. Use Java, Silverlight, ActiveX, Sharepoint, and more. A "Top 10" extension since 2009!
+.
+Top 10 Chrome extension since 2009!
+
+-- WINDOWS ONLY -- WINDOWS ONLY --
+
+IE Tab exactly emulates IE by using the IE rendering engine directly within Chrome.  This will enable you to use ActiveX controls and test your web pages with different versions of IE (IE6, IE7, IE8, or IE9).
+
+-- FEATURES --
+
+* Create a list of URLs that will automatically open in IE Tab
+
+* Group Policy support for enterprise deployments
+
+* Securely use the old IE rendering engine
+
+* Edit Sharepoint documents instead of opening read-only
+
+* Use Java, Silverlight, and ActiveX in Chrome seamlessly
+	
+####PACKAGING NOTE: This installs no software. It installs a registry key for the extention that Chrome will see and then ask you for permission to enable the extention if you are in Chrome or on the next run. Chrome will install the latest version of the extention. The mentioned version is the version at time of packaging, you can ignore it. Chrome will handle updates to the extention.</description>
+    <summary>IE Tab for Chrome extension</summary>
+    <releaseNotes>updated to new install method</releaseNotes>
+    <tags>ie tab ietab chrome extension</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ietab-chrome</packageSourceUrl>
+    <dependencies>
+      <dependency id="googlechrome" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
