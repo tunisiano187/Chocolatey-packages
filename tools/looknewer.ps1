@@ -62,7 +62,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
-            if(($issue.number -ne '683') -and !((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
+            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
@@ -106,8 +106,8 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
             [string]$Title = "($($search)) update requested"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
             $link"
-            if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
-                "Create issue for $search"
+            if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success))) {
+                "Creating issue for $search"
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description
                 $issue=1
                 exit 0
