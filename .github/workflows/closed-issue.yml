@@ -1,18 +1,18 @@
-﻿name: Check exception
+﻿name: Get new request
 
 on:
   issues:
     types: [closed]
 
 jobs:
-  validation:
+  search:
     runs-on: windows-latest
     env:
       Github_personal_token: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v2.2.0
-      - name: Check exception
+      - name: Check requests
         run: |
           Import-Module "${{ github.workspace }}\scripts\closed.psm1"
           & "${{ github.workspace }}\tools\looknewer.ps1"
