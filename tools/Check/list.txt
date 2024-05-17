@@ -1,4 +1,3 @@
-ietab-chrome 0.0 - Todo
 wordweb-free 0.0 - Todo
 pelles-c 0.0 - Todo
 performancetest 0.0 - Todo
