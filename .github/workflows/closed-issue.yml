@@ -8,7 +8,7 @@ jobs:
   search:
     runs-on: windows-latest
     env:
-      Github_personal_token: ${{ secrets.GITHUB_TOKEN }}
+      Github_personal_token: ${{ secrets.AU_GITHUB_API_KEY }}
 
     steps:
       - uses: actions/checkout@v2.2.0
@@ -16,7 +16,7 @@ jobs:
         run: |
           Install-Module PowerShellForGitHub -Force -ErrorAction SilentlyContinue
           Import-Module PowerShellForGitHub
-          $tokenEncrypted = ConvertTo-SecureString -String ${{ secrets.GITHUB_TOKEN }} -AsPlainText -Force
+          $tokenEncrypted = ConvertTo-SecureString -String ${{ secrets.AU_GITHUB_API_KEY }} -AsPlainText -Force
           $cred = New-Object System.Management.Automation.PSCredential "anything", $tokenEncrypted
           Set-GitHubAuthentication -Credential $cred
           $cred = $null
@@ -27,8 +27,3 @@ jobs:
           Set-GitHubConfiguration -DisableTelemetry
           Set-Location ${{ github.workspace }}
           & ".\tools\looknewer.ps1"
-      - name: Get new package
-        run: |
-          Import-Module "${{ github.workspace }}\scripts\new.psm1"
-          Set-Location ${{ github.workspace }}
-          Find-nextissueGH -packageName "${{ github.event.issue.title }}" -actor "tunisiano187"
