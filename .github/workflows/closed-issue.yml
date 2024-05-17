@@ -14,10 +14,13 @@ jobs:
       - uses: actions/checkout@v2.2.0
       - name: Authenticate with GitHub
         run: |
+          Install-Module PowerShellForGitHub -ErrorAction SilentlyContinue
+          Import-Module PowerShellForGitHub
           $env:GITHUB_TOKEN = "${{ secrets.GITHUB_TOKEN }}"
           Set-GitHubAuthentication -Token $env:GITHUB_TOKEN
         shell: pwsh
       - name: Check requests
         run: |
+          Import-Module PowerShellForGitHub
           Set-GitHubConfiguration -DisableTelemetry
           & "${{ github.workspace }}\tools\looknewer.ps1"

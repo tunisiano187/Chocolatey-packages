@@ -2,7 +2,7 @@ $ErrorActionPreference = 'SilentlyContinue';
 $link=''
 $issue = 0
 # Requisites
-Install-Module PowerShellForGitHub -Force -ErrorAction SilentlyContinue
+Install-Module PowerShellForGitHub -ErrorAction SilentlyContinue
 Import-Module PowerShellForGitHub
 if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
