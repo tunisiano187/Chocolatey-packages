@@ -25,4 +25,5 @@ jobs:
         run: |
           Import-Module PowerShellForGitHub
           Set-GitHubConfiguration -DisableTelemetry
-          & "${{ github.workspace }}\tools\looknewer.ps1"
+          Set-Location ${{ github.workspace }}
+          & ".\tools\looknewer.ps1"

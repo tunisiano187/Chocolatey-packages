@@ -15,6 +15,9 @@ $version = ''
 
 # Sort Exclude file
 $excludefile = '.\tools\Check\exclude.txt'
+if(!(Test-Path $excludefile)) {
+    $excludefile = '..\tools\Check\exclude.txt'
+}
 Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $excludefile
 
 "Check if there are open issues"
@@ -53,7 +56,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
-            if(($issue.number -ne '683') -and !((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content .\tools\Check\exclude.txt | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
+            if(($issue.number -ne '683') -and !((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
@@ -144,7 +147,7 @@ $link"
         foreach ($issue in $issues) {
             $search = ($issue.Title.split('-')[-1]).trim().replace(" ","-")
             "Checking $search"
-            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content .\tools\Check\exclude.txt | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
+            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
