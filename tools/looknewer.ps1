@@ -181,7 +181,7 @@ $link"
     "Comparing to winget"
     if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
         Install-PackageProvider -Name winget
-        if(!(Test-Path "$($automatic/$search") -or ($version -ne '')) {
+        if(!(Test-Path "$($automatic/$search)") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
                 "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
                 Write-Output "$search v$($winout) available"
