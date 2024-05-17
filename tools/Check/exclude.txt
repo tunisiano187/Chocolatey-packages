@@ -144,3 +144,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+ietab-chrome
