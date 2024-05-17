@@ -96,6 +96,7 @@ office2019proplus
 office365proplus
 opencodecs
 p4scc
+packages
 padmanager
 pan
 pascal
@@ -143,4 +144,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-packages
