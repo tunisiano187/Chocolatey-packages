@@ -10,7 +10,7 @@ $packageArgs = @{
   validExitCodes = @(0)
   silentArgs     = '-s1'
   softwareName   = 'WordWeb'
-  }
+}
   
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item $toolsDir\*.exe -force | Out-Null

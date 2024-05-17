@@ -50,6 +50,7 @@ WordWeb free version is fully functional, and free if you satisfy the licensing 
     <bugTrackerUrl>https://wordweb.info/users.html</bugTrackerUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

@@ -9,7 +9,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 
 ---
 
-![Screenshot of WordWeb](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/wordweb-free/wordweb-free_screenshot.png)
+![Screenshot of WordWeb](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec0f59d437170c116f45e543371279c6793d5cb1/automatic/wordweb-free/wordweb-free_screenshot.png)
 
 ### WordWeb Free version
 
@@ -22,16 +22,7 @@ The program has a full dictionary and thesaurus for American, British, Canadian,
 
 Get WordWeb Pro to add full audio and many additional features, including the option to add Oxford, Chambers and Collins dictionaries.
 
-WordWeb free version is fully functional, and free if you satisfy the licensing conditions. All users may also try out the free version and then buy [WordWeb Pro](http://wordweb.info/).
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/wordweb-free/readme.md)**
-	
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
+WordWeb free version is fully functional, and free if you satisfy the licensing conditions. All users may also try out the free version and then buy [WordWeb Pro](https://wordweb.info/).
 
 ---
 
