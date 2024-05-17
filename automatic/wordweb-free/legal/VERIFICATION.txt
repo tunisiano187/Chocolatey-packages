@@ -6,14 +6,14 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-link32: https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc-1.13.1.exe/download
+link32: https://wordweb.info/cgi-bin/geoip/wordweb.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksumtype: SHA256
-checksum32: 60E7E26FA996BE70156747941D7FB92D116D1CCC442614192BB96DF20CA599E6
+checksumtype: sha256
+checksum32: E4B3D7241460ABD07F5A8C7B09704AF6EA3B99742F1A194B66FC73222E76C214
 
 The included 'LICENSE.txt' file have been obtained from:
 license: https://wordweb.info/free/licence5.html
