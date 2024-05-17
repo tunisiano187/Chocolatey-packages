@@ -56,7 +56,7 @@ The install builder for Windows is originally based on NSIS from Nullsoft.
     <releaseNotes>http://www.smorgasbordet.com/pellesc/</releaseNotes>
     <copyright>Copyright Pelle Orinius</copyright>
     <tags>pelles c programming language compiler ide binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/pelles-c</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pelles-c</packageSourceUrl>
     <docsUrl>http://wiki.pellesc.de/</docsUrl>
     <mailingListUrl>http://forum.pellesc.de/</mailingListUrl>
   </metadata>
