@@ -13,10 +13,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -27,8 +23,11 @@ function global:au_GetLatest {
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	$url32 = ($page.Links | Where-Object {$_.href -match ".exe$"}).href
+	$file = "tools/$($url32.split("/")[-1])"
+	Invoke-WebRequest -Uri $url32 -OutFile $file
+	$checksum = (Get-FileHash -Path $file -Algorithm $env:ChocolateyChecksumType).Hash
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 	return $Latest
 }
 
