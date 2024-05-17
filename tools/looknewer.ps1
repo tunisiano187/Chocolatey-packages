@@ -15,8 +15,9 @@ $version = ''
 
 Write-Output "Current location : $(Get-Location)"
 
+$automatic = Join-Path $PWD 'automatic'
 # Sort Exclude file
-$excludefile = '.\tools\Check\exclude.txt'
+$excludefile = (Get-ChildItem '.\tools\Check\exclude.txt').FullName
 if(!(Test-Path $excludefile)) {
     Write-Output "File does not exist at $excludefile"
     $excludefile = '..\tools\Check\exclude.txt'
@@ -65,7 +66,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         foreach ($issue in $issues) {
             $search = $issue.Title.split(' ')[-1]
             "Checking $search"
-            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "automatic/$search"))) {
+            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository | Where-Object {$_.title -match "($search)"} | Where-Object {$_.href -notmatch "https://github.com/chocolatey-community/chocolatey-package-requests/issues/683"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "$automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
@@ -130,7 +131,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         git commit -m "remove first line
 [skip ci]"
         git push
-        if(($check.Count -eq 0) -or (Test-Path("$($PSScriptRoot)/../automatic/$search"))) {
+        if(($check.Count -eq 0) -or (Test-Path("$automatic/$search"))) {
             $search = ''
             $version = ''
         }
@@ -157,7 +158,7 @@ $link"
             $search = ($issue.Title.split('-')[-1]).trim().replace(" ","-")
             "Checking $search"
             "does $excludefile exists : $(Test-Path($excludefile))"
-            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Closed | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "../automatic/$search"))) {
+            if(!((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Closed | Where-Object {$_.title -match "($search)"} | Where-Object {$_.created -lt $((Get-Date).AddDays(-90))})) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success)) -AND (!(Test-Path "$automatic/$search"))) {
                 $link = "[$($search)](https://github.com/chocolatey-community/chocolatey-package-requests/issues/$($issue.number))"
                 $link
                 if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer")) {
@@ -180,7 +181,7 @@ $link"
     "Comparing to winget"
     if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
         Install-PackageProvider -Name winget
-        if(!(Test-Path "$($PSScriptRoot)/../automatic/$search") -or ($version -ne '')) {
+        if(!(Test-Path "$($automatic/$search") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
                 "|$search|" | Add-Content "$($PSScriptRoot)/Check/Todo.md"
                 Write-Output "$search v$($winout) available"
