@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>drivermax</id>
+    <version>16.11.0.3</version>
+    <title>DriverMax (Install)</title>
+    <authors>Innovative Solutions</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.drivermax.com/terms_and_conditions.htm</licenseUrl>
+    <projectUrl>http://www.drivermax.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bcurran3/ChocolateyPackages/drivermax/drivermax_icon.png</iconUrl>
+    <description>---
+
+### [choco://drivermax](choco://drivermax)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+
+![Screenshot of DriverMax](http://www.innovative-sol.com/assets/images/Screenshots/dmx/drivermax-1.PNG)
+
+## Keep your drivers up to date
+
+Update, backup and restore outdated, missing or faulty drivers for more than 2,300,000 devices 
+Get your Nvidia, Intel, Microsoft and Realtek drivers with DriverMax 9
+
+## Easy automated update
+DriverMax supports automated installs, scheduled scans, and full device driver backups. It can be set to check for driver updates and download them for you at any time of any day, week, or month. You can find driver updates for 32-bit and 64-bit versions of Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista, and Windows XP.
+
+## Increased PC productivity
+Drivers are components that enable the proper functioning of the internal hardware or devices that are connected to the computer. DriverMax reduces system freezes and malfunctions, making for a better performance of your PC by serving you only with the best latest updates.
+
+## Latest version for more than 2,300,000 devices
+DriverMax analyzes your existing drivers and provides the latest versions for over 2,300,000 devices. An intelligent and unique online self-learning technology ensures that only the most appropriate and recent versions are installed.
+
+## Maximum security for your updates
+DriverMax automatically tests each new driver before installing it on your PC, ensuring its proper functioning. In addition, it backs up the current drivers and creates a system restore point, allowing a quick rollback of the installation. All controllers are scanned thoroughly for viruses and threats before they are provided to users.
+
+**For Windows 10/8.1/8/7/Vista/XP, Windows Server all editions**
+
+![alt text](http://www.drivermax.com/images/microsoft-certified.png)
+![alt text](http://www.drivermax.com/images/softpedia.png)
+![alt text](http://www.drivermax.com/images/cnet-rating.png)
+
+[Free versus paid/PRO comparison](http://www.drivermax.com/download.htm)
+
+**SOCIAL MEDIA:**
+[Facebook](https://www.facebook.com/DriverMax-Software-Community-133223258991/) | [Google+](https://plus.google.com/u/0/105403154521904418668)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/drivermax/readme.md)**
+
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>DriverMax - Update, backup and restore outdated, missing or faulty drivers</summary>
+    <copyright>Copyright by Innovative Solutions. All Rights Reserved.</copyright>
+    <tags>innovativesolutions drivermax drivers updater system utility</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/drivermax</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
