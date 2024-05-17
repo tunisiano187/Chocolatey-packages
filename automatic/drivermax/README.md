@@ -10,7 +10,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 ---
 
 
-![Screenshot of DriverMax](http://www.innovative-sol.com/assets/images/Screenshots/dmx/drivermax-1.PNG)
+![Screenshot of DriverMax](https://www.innovative-sol.com/assets/images/Screenshots/dmx/drivermax-1.PNG)
 
 ## Keep your drivers up to date
 
@@ -31,24 +31,14 @@ DriverMax automatically tests each new driver before installing it on your PC, e
 
 **For Windows 10/8.1/8/7/Vista/XP, Windows Server all editions**
 
-![alt text](http://www.drivermax.com/images/microsoft-certified.png)
-![alt text](http://www.drivermax.com/images/softpedia.png)
-![alt text](http://www.drivermax.com/images/cnet-rating.png)
+![alt text](https://www.drivermax.com/images/microsoft-certified.png)
+![alt text](https://www.drivermax.com/images/softpedia.png)
+![alt text](https://www.drivermax.com/images/cnet-rating.png)
 
-[Free versus paid/PRO comparison](http://www.drivermax.com/download.htm)
+[Free versus paid/PRO comparison](https://www.drivermax.com/download.htm)
 
 **SOCIAL MEDIA:**
 [Facebook](https://www.facebook.com/DriverMax-Software-Community-133223258991/) | [Google+](https://plus.google.com/u/0/105403154521904418668)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/drivermax/readme.md)**
-
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
