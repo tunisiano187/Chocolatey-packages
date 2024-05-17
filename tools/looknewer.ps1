@@ -134,7 +134,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         git commit -m "remove first line
 [skip ci]"
         git push
-        if(($check.Count -eq 0) -or (Test-Path("$automatic/$search"))) {
+        if(((Test-Path("$automatic/$search"))) {
             $search = ''
             $version = ''
         }
