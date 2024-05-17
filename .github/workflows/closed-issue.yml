@@ -16,8 +16,9 @@ jobs:
         run: |
           Install-Module PowerShellForGitHub -Force -ErrorAction SilentlyContinue
           Import-Module PowerShellForGitHub
-          $env:GITHUB_TOKEN = "${{ secrets.GITHUB_TOKEN }}"
-          Set-GitHubAuthentication -Token $env:GITHUB_TOKEN
+          $cred = New-Object System.Management.Automation.PSCredential "anything", ${{ secrets.GITHUB_TOKEN }}
+          Set-GitHubAuthentication -Credential $cred
+          $cred = $null
         shell: pwsh
       - name: Check requests
         run: |
