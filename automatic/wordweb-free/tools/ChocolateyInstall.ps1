@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir       = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageName    = 'wordweb-free'
-$url            = "$toolsDir\wordweb10.exe"
+$file            = (Get-ChildItem -Path $toolsDir -Filter "*.exe")
 
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'EXE'
-  file           = $url
+  file           = $file
   validExitCodes = @(0)
   silentArgs     = '-s1'
   softwareName   = 'WordWeb'
