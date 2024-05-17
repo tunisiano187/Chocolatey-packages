@@ -145,3 +145,4 @@ xmeters
 zimbra-desktop
 zona
 ietab-chrome
+ietab-chrome
