@@ -110,7 +110,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
             [string]$Title = "($($search)) update requested"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
             $link"
-            if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open) -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success))) {
+            if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open) -and (!((Get-Content $excludefile | Select-String -match $search).Matches.Success)) -and (!Test-Path "$automatic/$search")) {
                 "Creating issue for $search"
                 New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description
                 $issue=1
