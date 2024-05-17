@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir       = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageName    = 'wordweb-free'
-$file            = (Get-ChildItem -Path $toolsDir -Filter "*.exe")
+$file            = (Get-ChildItem -Path $toolsDir -Filter "*.exe").FullName
 
 $packageArgs = @{
   packageName    = $packageName
