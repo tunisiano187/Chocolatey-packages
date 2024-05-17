@@ -12,7 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2.2.0
+      - name: Authenticate with GitHub
+        run: |
+          $env:GITHUB_TOKEN = "${{ secrets.GITHUB_TOKEN }}"
+          Set-GitHubAuthentication -Token $env:GITHUB_TOKEN
+        shell: pwsh
       - name: Check requests
         run: |
-          # Import-Module "${{ github.workspace }}\scripts\closed.psm1"
+          Set-GitHubConfiguration -DisableTelemetry
           & "${{ github.workspace }}\tools\looknewer.ps1"
