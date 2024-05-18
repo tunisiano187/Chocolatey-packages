@@ -12,7 +12,7 @@ in verifying that this package's contents are trustworthy.
     - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum:83651C49954634BB7B3560A8DF7D43ECBDDCFD30019164B133BBD6CE86519E4C
+  checksum: 83651C49954634BB7B3560A8DF7D43ECBDDCFD30019164B133BBD6CE86519E4C
 
 Using AU:
 
