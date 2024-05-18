@@ -9,13 +9,6 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 
 ---
 
----
-
-### [choco://performancetest](choco://performancetest)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 
 ![Screenshot of PerformanceTest](https://www.passmark.com/source/img_posts/cpu_test.jpg)
 	
@@ -76,19 +69,11 @@ The application includes the following additional features:
 * The ability to compare the performance of your computer to multiple 'Baseline' computers at the one time.
 * Flexible license, move the software
 
-**Platforms:** XP SP3, Vista, Server 2003, 2008, 2012, 2016, Windows 7, Windows 8, Windows 10
+**Platforms:** XP SP3, Vista, Server 2003, 2008, 2012, 2016, Windows 7, Windows 8, Windows 10, Windows 11
 
 **Requirements:** Pentium4 CPU or better, DirectX 9 or higher video, 2GB RAM, 300MB of free disk space. (DX12 video card recomended)
 
 **Free 30 day evaluation, then US$29.00 to purchase.**
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/performancetest/readme.md)**
-    
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
