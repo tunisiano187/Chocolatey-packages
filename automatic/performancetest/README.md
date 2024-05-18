@@ -10,7 +10,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 ---
 
 
-![Screenshot of PerformanceTest](https://www.passmark.com/source/img_posts/cpu_test.jpg)
+![Screenshot of PerformanceTest](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3daee90dac41f77e1b3bb9c372412810693455cc/automatic/performancetest/cpu_test.jpg)
 	
 Fast, easy to use, PC speed testing and benchmarking. PassMark PerformanceTest allows you to objectively benchmark a PC using a variety of different speed tests and compare the results to other computers.
 
