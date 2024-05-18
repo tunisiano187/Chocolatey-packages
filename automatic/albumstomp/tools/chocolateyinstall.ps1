@@ -1,7 +1,7 @@
-$ErrorActionPreference = 'Stop'; # stop on all errors
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $url                = 'https://stompsoftware.com/downloadfiles/albumstomp/SetupAlbumStompV2.exe'
-$checksum           = ''
-$checksumType       = ''
+$checksum           = 'e6da1083635df601b5eb841de879a2286efef0982bc4d9c3183f4f2126fd0a9c'
+$checksumType       = 'sha256'
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
