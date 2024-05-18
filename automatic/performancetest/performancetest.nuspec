@@ -94,7 +94,7 @@ The application includes the following additional features:
     <releaseNotes>https://www.passmark.com/products/performancetest/history.php</releaseNotes>
     <copyright>Copyright © PassMark® Software</copyright>
     <tags>passmark performancetest benchmark benchmarking trial</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/performancetest</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/performancetest</packageSourceUrl>
     <docsUrl>https://www.passmark.com/support/performancetest/index.htm</docsUrl>
     <mailingListUrl>https://www.passmark.com/forum/performancetest</mailingListUrl>
   </metadata>
