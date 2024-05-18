@@ -6,9 +6,9 @@ $releases = "https://wampserver.aviatechno.net/"
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
-            "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-			"(^[$]checksum64Type\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+            "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
         }
      }
 }
