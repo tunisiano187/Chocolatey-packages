@@ -5,14 +5,14 @@ in verifying that this package's contents are trustworthy.
 
 1. Download the following:
 
-  url: <https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases/download/0.86.0/NMM-0.86.0.exe>
+  url: <https://github.com/loot/loot/releases/download/0.22.4/loot_0.22.4-win64.exe>
 
   2. You can obtain the checksum using one of the following methods:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum:DECDF3C5CB518D8A7EC703BF229CF486AB97EA6FAAE3ECEE116247340CE3BDF9
+  checksum:83651C49954634BB7B3560A8DF7D43ECBDDCFD30019164B133BBD6CE86519E4C
 
 Using AU:
 
