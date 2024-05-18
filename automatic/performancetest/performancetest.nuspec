@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.passmark.com/legal/disclaimer.htm</licenseUrl>
     <projectUrl>https://www.passmark.com/products/pt.htm</projectUrl>
-    <iconUrl>https://www.passmark.com/source/img_posts/pt_download.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@497f30ef7f7edaf8fd76ca01c30f55248f52e426/icons/performancetest.png</iconUrl>
     <description>---
 
 ### [choco://performancetest](choco://performancetest)
