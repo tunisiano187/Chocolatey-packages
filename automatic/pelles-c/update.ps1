@@ -13,10 +13,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate($Package) {
-	Get-RemoteFiles -Purge -NoSuffix
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -28,7 +24,8 @@ function global:au_GetLatest {
 	$regexPattern = "The current version is <b>(\d+\.\d+)</b>"
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/setup.exe"
+	
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
