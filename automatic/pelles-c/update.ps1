@@ -14,7 +14,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate($Package) {
-	Invoke-WebRequest -Uri $Latest.URL32 -OutFile "tools/setup.exe"
+	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+	Invoke-WebRequest -Uri $Latest.URL32 -OutFile "tools/setup.exe" -UserAgent $userAgent
 }
 
 function global:au_AfterUpdate($Package) {
