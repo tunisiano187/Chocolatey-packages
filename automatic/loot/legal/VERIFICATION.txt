@@ -19,4 +19,4 @@ Using AU:
   Get-RemoteChecksum
 
 The file 'license.txt' is obtained from:
-  <https://github.com/Nexus-Mods/Nexus-Mod-Manager/blob/master/LICENSE>
+  <https://github.com/loot/loot/blob/master/LICENSE>
