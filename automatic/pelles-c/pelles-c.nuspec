@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://www.smorgasbordet.com/pellesc/termsofuse.htm</licenseUrl>
     <projectUrl>http://www.smorgasbordet.com/pellesc/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/pelles-c/pelles-c_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@66305967ad62ff0228e151e89cb6a361e3300d0a/icons/pelles-c.png</iconUrl>
     <description>---
 
 ### [choco://pelles-c](choco://pelles-c)
