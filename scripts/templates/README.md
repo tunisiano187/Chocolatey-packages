@@ -2,6 +2,13 @@
 
 ## PKGTITLE
 
+---
+
+### [choco://pkgid](choco://pkgid)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
 PKGDesc
 
 ---
