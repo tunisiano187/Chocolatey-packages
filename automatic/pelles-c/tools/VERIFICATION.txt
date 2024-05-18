@@ -1,6 +1,0 @@
-﻿==================== Pelles C ====================
-
-bcurran3 downloads and packages the included installer for Pelles C from the developer's website at:
-http://www.smorgasbordet.com/pellesc/
-
-==================== Pelles C ====================

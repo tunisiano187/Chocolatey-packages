@@ -9,7 +9,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 
 ---
 
-![Screenshot of Pelles-C](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/pelles-c/pelles-c_screenshot.png)
+![Screenshot of Pelles-C](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@66305967ad62ff0228e151e89cb6a361e3300d0a/automatic/pelles-c/pelles-c_screenshot.png)
 	
 Pelles C is a complete development kit for Windows. It contains among other things an optimizing C compiler, a macro assembler, a linker, a resource compiler, a message compiler, a code signing utility, a make utility and an install builder. 
 
@@ -36,14 +36,6 @@ The install builder for Windows is originally based on NSIS from Nullsoft.
 * Support for custom controls in the dialog editor.
 * Support for custom project wizards.
 * Pelles C is freeware. 	
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/pelles-c/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
