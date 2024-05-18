@@ -22,9 +22,12 @@ function global:au_GetLatest {
     if ($url32 -match "(\d+\.\d+\.\d+)_x64\.exe") {
         $version = $matches[1]
     }
+    if($version -eq '3.3.5') {
+        $version = $version + ".2024051801"
+    }
 
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
