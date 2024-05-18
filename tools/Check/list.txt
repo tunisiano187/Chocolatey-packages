@@ -1,4 +1,3 @@
-wsl-debiangnulinux 0.0 - Todo
 advanced-codecs 0.0 - Todo
 skype-chrome 0.0 - Todo
 windows-iso-downloader 0.0 - Todo
