@@ -1,7 +1,7 @@
 import-module au
 
 $releases = 'http://www.smorgasbordet.com/pellesc/download.htm'
-$baseurl = 'http://www.smorgasbordet.com/pellesc/'
+$baseurl = 'http://www.smorgasbordet.com/pellesc'
 
 function global:au_SearchReplace {
 	@{
@@ -23,7 +23,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32 = $page.Links.href | Where-Object {$_ -match ".exe$"} | Select-Object -First 1
+	$url32 = "$baseurl/$($page.Links.href | Where-Object {$_ -match ".exe$"} | Select-Object -First 1)"
 	Update-Metadata -key "releaseNotes" -value $($page.Links.href | Where-Object {$_ -match "changes_"} | Select-Object -First 1)
 	$regexPattern = "The current version is <b>(\d+\.\d+)</b>"
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
