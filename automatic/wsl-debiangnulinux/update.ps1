@@ -14,7 +14,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate($Package) {
-  Get-RemoteFiles -Purge -NoSuffix
+	$tmpfile = Join-Path $env:TEMP "chocolatey\wsl-debiangnulinux.zip"
+	$unzipfolder = Join-Path $env:TEMP "chocolatey\wsl-debiangnulinux"
+	New-Item -Path $unzipfolder -ItemType Directory -Force
+	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $tmpfile
+	Expand-Archive -Path $tmpfile -DestinationPath $unzipfolder
+	$file = (Get-ChildItem -Path $unzipfolder -Filter "*x64.appx").FullName
+	$Latest.Checksum32 = (Get-FileHash -Path $file -Algorithm $env:ChocolateyChecksumType).Hash
+	$Latest.ChecksumType32 = $env:ChocolateyChecksumType
+	Move-Item $file "tools\"
 }
 
 function global:au_AfterUpdate($Package) {

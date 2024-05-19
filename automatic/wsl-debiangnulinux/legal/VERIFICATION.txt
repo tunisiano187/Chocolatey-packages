@@ -8,6 +8,8 @@ The installer have been downloaded from the official mirror and can be verified 
 
 link: https://wordweb.info/cgi-bin/geoip/wordweb.exe
 
+Then unzip it and check the file including AMD64
+
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
