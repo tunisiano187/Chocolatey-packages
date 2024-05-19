@@ -1,32 +1,64 @@
 $ErrorActionPreference = 'Stop'
+# https://aka.ms/wsl-debian-gnulinux
 $packageName    = 'wsl-debiangnulinux'
+$bits         = Get-ProcessorBits
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://aka.ms/wsl-debian-gnulinux'
-$checksum       = '02CC1CE48E2FC21331B6FAA2AF44F22FBB9E9C219EAF74202970164BE6E3D3D8'
 $unzipLocation  = "$toolsDir\unzipped"
-$exe            = 'debian.exe'
+$shortcutName   = 'Debian.lnk'
+$exe            = "debian.exe"
+$appx           = 'DistroLauncher-Appx_1.12.1.0_x64.appx'
 
-New-Item $unzipLocation -type directory | out-null
+if (!($bits -eq 64)){
+    Write-Host "  **  This package is for 64 bit versions of Windows only. Aborting..." -Foreground Red
+	throw
+	}
 
-$packageArgs = @{
-  packageName    = $packageName
-  unzipLocation  = $unzipLocation
-  fileType       = 'ZIP'
-  url            = $url
-  checksum       = $checksum
-  checksumType   = 'sha256'
+New-Item $unzipLocation -type directory | Out-Null
+New-Item "$toolsDir\distro" -type directory | Out-Null
+
+function Delete-UnnecessaryFiles{
+ Remove-Item "$toolsDir\*.AppxBundle" -Force -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\unzipped" -Force -Recurse -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\AppxMetadata" -Recurse -Force  -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\Assets" -Recurse -Force -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\*.gz" -Force -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\*.p7x" -Force -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\*.pri" -Force -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\*.xml" -Force -EA SilentlyContinue | Out-Null
+ Remove-Item "$toolsDir\distro\debian.exe.ignore" -Force -EA SilentlyContinue | Out-Null
+ }
+
+Get-ChocolateyUnzip -FileFullPath "$toolsDir\*.AppxBundle" -Destination "$unzipLocation"
+$Upgrade = (Test-Path "$ENV:ChocolateyInstall\lib\$packageName\tools\distro\$exe")
+
+if ($Upgrade){
+	Get-ChocolateyUnzip -FileFullPath "$unzipLocation\$appx" -Destination "$unzipLocation"
+    Write-Host "  ** Existing version of Debian found." -Foreground Magenta
+    Write-Host "  ** Upgrading launcher and system packages." -Foreground Magenta
+	copy "$unzipLocation\$exe" to "$toolsDir\distro" -Force
+    Set-Location $ChocolateyInstall\lib\$packageName\tools\distro
+	debian run apt update
+	debian run apt upgrade
+    Delete-UnnecessaryFiles
+    return
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip -FileFullPath "$unzipLocation\$appx" -Destination "$toolsDir\distro"
 
 $packageArgs = @{
   packageName    = $packageName
   softwareName   = ''
   fileType       = 'EXE'
   silentArgs     = 'install --root'
-  file           = "$unzipLocation\$exe"
-  validExitCodes = @(0)
+  file           = "$toolsDir\distro\$exe"
+  validExitCodes = @(0,1)
   }
 
 Install-ChocolateyInstallPackage @packageArgs
 wslconfig /list
+
+Install-ChocolateyShortcut -shortcutFilePath "$ENV:Public\Desktop\$shortcutName" -targetPath "$toolsDir\distro\$exe" -WorkingDirectory "$toolsDir\distro"
+Install-ChocolateyShortcut -shortcutFilePath "$ENV:ProgramData\Microsoft\Windows\Start Menu\Programs\$shortcutName" -targetPath "$toolsDir\distro\$exe" -WorkingDirectory "$toolsDir\distro"
+Delete-UnnecessaryFiles
+$WhoAmI=whoami
+icacls.exe "$toolsDir\distro" /grant $WhoAmI":"'(OI)(CI)'F /T | Out-Null

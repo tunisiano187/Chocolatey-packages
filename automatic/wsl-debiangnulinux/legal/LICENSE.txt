@@ -1,0 +1,21 @@
+﻿==================== Debian for Windows Subsystem for Linux ====================
+
+https://www.debian.org/legal/licenses/
+
+(partial)
+
+License information
+This page presents the opinion of some debian-legal contributors on how certain licenses follow the Debian Free Software Guidelines (DFSG). Most of these opinions were formed in discussions on the debian-legal mailing list in response to questions from potential package maintainers or licensors. We welcome enquiries from maintainers considering particular licenses, but we encourage most maintainers to use one of the common licenses: GPL, LGPL, modified BSD, or Artistic.
+
+Software packaged for Debian is normally classified into one of four categories. There is free software (main), non-free software (non-free), free software which depends on some non-free software (contrib) and software which cannot be redistributed (not included). Debian Policy section 2 explains exactly how the DFSG are applied to the archive. If in doubt, maintainers are asked to email debian-legal about licenses, including the text of any new license into the body of the email. You may find it helpful to search the list archives for the name of the license before emailing lists with questions about it. If you still email questions, please link to some of the previous relevant discussions.
+
+debian-legal is advisory. The actual decision-makers are the ftpmasters and the package maintainers. However, if one cannot convince most of the generally liberal debian-legal contributors, it's probably not clear that the software follows the DFSG.
+
+Because the actual decision-makers are the ftpmasters and the package maintainers, it is a very good idea to check the ftpmasters REJECT FAQ and search site:packages.debian.org for any license that you doubt, to look for other examples of its handling for debian. (The search works because package copyright files are published on packages.debian.org as plain text.)
+
+Other lists are maintained by the Free Software Foundation (FSF) and the Open Source Initiative (OSI). Please note however, that the Debian project decides on particular packages rather than licenses in abstract, and the lists are general explanations. It is possible to have a package containing software under a "free" license with some other aspect that makes it non-free. Sometimes, debian-legal comments on a license in abstract, not applied to any particular software. While these discussion can suggest possible problems, often no firm answers can be reached until some specific software is examined.
+
+You may contact debian-legal if you have questions or comments about these summaries.
+
+
+==================== Debian for Windows Subsystem for Linux ====================
