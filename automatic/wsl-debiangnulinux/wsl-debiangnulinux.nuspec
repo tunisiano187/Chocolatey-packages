@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.debian.org/license</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/windows/features</projectUrl>
-    <iconUrl>https://www.debian.org/logos/openlogo-100.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b2a32e034a7f1b700a714aee98bd52eb7f32977c/icons/wsl-debiangnulinux.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>###This packages installs Debian GNU/Linux 9 (stretch) for Windows Subsystem for Linux.
 	
