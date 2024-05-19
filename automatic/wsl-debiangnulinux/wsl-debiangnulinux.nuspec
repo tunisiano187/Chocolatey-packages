@@ -5,7 +5,7 @@
     <version>9.0.0.020180923</version>
     <title>Debian GNU/Linux 9 (stretch) for Windows Subsystem for Linux (Install)</title>
     <authors>Software in the Public Interest, Inc. and others</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.debian.org/license</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/windows/features</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b2a32e034a7f1b700a714aee98bd52eb7f32977c/icons/wsl-debiangnulinux.png</iconUrl>
