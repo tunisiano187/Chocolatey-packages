@@ -145,3 +145,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+wsl-debiangnulinux
