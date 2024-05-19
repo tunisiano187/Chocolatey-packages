@@ -1,7 +1,8 @@
+solarwinds-take-control-viewer 0.0 - Todo
 advanced-codecs 0.0 - Todo
-skype-chrome 0.0 - Todo
 windows-iso-downloader 0.0 - Todo
 adwcleaner 0.0 - Todo
+vnc-connect 0.0 - Todo
 apacheds 2.0.0.19 [Approved] - Possibly broken
 appfabric 1.1.0 - Possibly broken
 app-shop 1.0.31 [Approved] Downloads cached for licensed users - Possibly broken for FOSS users (due to original download location changes by vendor)
