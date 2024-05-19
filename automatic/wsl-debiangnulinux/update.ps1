@@ -34,7 +34,7 @@ function global:au_GetLatest {
 	$json = Invoke-RestMethod -Uri $releases -Method Get
 	$Debian = $json.Distributions | Where-Object {$_.Name -eq 'Debian'}
 	$url = $Debian.Amd64PackageUrl
-	
+
 	$page = Invoke-WebRequest -Uri "https://apps.microsoft.com/detail/9msvkqc78pk6?hl=en-us&gl=US"
 	$regexPattern = 'Debian release (\d+(\.\d+)*)(.*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
@@ -45,7 +45,7 @@ function global:au_GetLatest {
 	}
 	$title = $title.Replace('_num_',$($versionMatch.Matches[0].Groups[1].Value)).Replace('_name_',$name)
 	Update-Metadata -key 'title' -value $title
-	
+
 	$Latest = @{ URL32 = $url; Version = $version }
 	return $Latest
 }
