@@ -21,7 +21,7 @@
     <releaseNotes>https://docs.microsoft.com/en-us/windows/wsl/release-notes</releaseNotes>
     <copyright>Copyright © SPI and others</copyright>
     <tags>wsl debian gnu stretch linux</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/wsl-debiangnulinux</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wsl-debiangnulinux</packageSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/windows/wsl/about</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/WSL/issues</bugTrackerUrl>
     <dependencies>
