@@ -1,4 +1,3 @@
-solarwinds-take-control-viewer 0.0 - Todo
 advanced-codecs 0.0 - Todo
 windows-iso-downloader 0.0 - Todo
 adwcleaner 0.0 - Todo

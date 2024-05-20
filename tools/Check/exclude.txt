@@ -140,9 +140,9 @@ Webmin
 whoiscl
 windows
 wirelesskeyview
+wsl-debiangnulinux
 xdel
 xfinder
 xmeters
 zimbra-desktop
 zona
-wsl-debiangnulinux
