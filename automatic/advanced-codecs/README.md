@@ -1,17 +1,10 @@
 [![](https://img.shields.io/chocolatey/v/advanced-codecs?color=green&label=advanced-codecs)](https://chocolatey.org/packages/advanced-codecs) [![](https://img.shields.io/chocolatey/dt/advanced-codecs)](https://chocolatey.org/packages/advanced-codecs)
 
-## Shark007's 64bit ADVANCED Codecs (Portable)
+## Shark007's 64bit Codecs (Portable)
 
 ---
 
----
-
-### [choco://advanced-codecs](choco://advanced-codecs)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-## 64bit ADVANCED Codecs for Windows
+## 64bit Codecs for Windows
 	
 ![Screen shot of Settings Application](https://cdn.jsdelivr.net/gh/bcurran3/ChocolateyPackages/advanced-codecs/advanced-codecs_screenshot.png)
 
@@ -59,15 +52,6 @@ If you ever find yourself broken, simply press the [RESET ALL] button to return 
 **BONUS** Simple commandline features and a builtin, intelligent, Auto Update feature.
 
 [SETUP AND USAGE](https://shark007.net/forum/Thread-Setup-and-usage)
-
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/advanced-codecs/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
