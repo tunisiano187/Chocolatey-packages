@@ -53,7 +53,7 @@ When users have technical issues that require your expert attention, your remote
     <releaseNotes>https://status.n-able.com/release-notes/</releaseNotes>
     <copyright>© N-able</copyright>
     <tags>solarwinds solarwindsmsp nable remote take control support tool</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/solarwinds-take-control-viewer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/solarwinds-take-control-viewer</packageSourceUrl>
     <docsUrl>https://documentation.n-able.com/remote-management/userguide/Content/take_control.htm</docsUrl>
     <mailingListUrl>https://success.n-able.com/</mailingListUrl>
     <dependencies>
