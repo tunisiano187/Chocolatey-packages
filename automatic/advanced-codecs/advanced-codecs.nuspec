@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>advanced-codecs</id>
+    <version>18.2.3</version>
+    <title>Shark007's 64bit ADVANCED Codecs (Portable)</title>
+    <authors>Shark007</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://shark007.net/disclaimer.html</licenseUrl>
+    <projectUrl>https://shark007.net/x64components1.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bcurran3/ChocolateyPackages/advanced-codecs/advanced-codecs_icon.png</iconUrl>
+    <description>---
+
+### [choco://advanced-codecs](choco://advanced-codecs)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+## 64bit ADVANCED Codecs for Windows
+	
+![Screen shot of Settings Application](https://cdn.jsdelivr.net/gh/bcurran3/ChocolateyPackages/advanced-codecs/advanced-codecs_screenshot.png)
+
+## Portable, self updating, codec solutions.
+
+
+**Installer releases have been discontinued.**
+
+Installers are well known for putting things onto your system that you didnt want.
+To illiminate the installer, I have created a 100%, portable, self updating, codec package.
+
+**32bit releases have been discontinued.**
+
+64bit codecs are best used for video playback when using a 64bit player.
+32bit codecs for use with video editing software are available from here.
+If you want to take control of playback on your system, you've come to the right place.
+
+**Anything that the 'Movies &amp; TV app' fails to play, will be able to play in WMP using my codecs.
+All you need to do is check the box, [x] WMP suggested settings. See image below for more info.**
+
+**I have implemented an Auto-Update feature** that will allow users to update the included Settings Application and the distributed codecs directly from within the GUI without the need to download full codec releases. This new feature will be controlled by the existing checkbox on the Help tab and run solely off of my own servers.
+Donations to assist with hosting fees are appreciated, Thank you.
+
+**The Save and Restore settings feature** is automated and also controlled by the commandline.
+To have your settings restored automatically during an upgrade, all you need to do is [Save ALL Settings]
+The checkboxes involved are correctly set by default to allow automatic upgrade settings restoration.
+
+**Recently,** there has been a major re-write of the GUI itself and the filters they control. Support for MKV on the xbox360 was dropped along with the removal of several deprecated codecs and the SetACL dependency.
+I hope you enjoy these new releases and can find the time to send a small donation in support of continued maintenance into the future.
+
+**Top 10 features of the recent Settings Application rewrite:**
+
+1. Remove all unnecessary code associated with the deprecated codec removal
+2. Re-organize the entire layout to be more intuitive, user friendly and visually appealing
+3. Allow the user to click anywhere on the App to relocate the Settings Application on the screen
+4. Add an Always On Top feature to keep the Settings Application in view
+5. Activate the previous instance ot the Settings Application when trying to open a new instance
+6. Require Administrative privileges upon startup eliminating the need to rightclick
+7. Current codec setup can be propagated to All user accounts with the click of a button.
+8. Colorize and capitalize important functions to promote their significance
+9. Automatically resize the App relative to the display resolution and use high quality text
+10. Add a Save | Restore settings feature to seamlessly return to a previous setup
+All functions are performed instantaneously. The moment you select something, the action is performed.
+If you ever find yourself broken, simply press the [RESET ALL] button to return to a just installed state.
+**BONUS** Simple commandline features and a builtin, intelligent, Auto Update feature.
+
+[SETUP AND USAGE](https://shark007.net/forum/Thread-Setup-and-usage)
+
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/advanced-codecs/readme.md)**
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>64bit ADVANCED Codecs for Windows is an audio and video codec package which contains a full suite of all the best codecs available.</summary>
+    <releaseNotes>(unofficial) https://www.videohelp.com/software/Win7codecs/version-history</releaseNotes>
+    <tags>shark007 codecs codec audio video multimedia ffdshow ffmpeg icaros lav amr mpc ofr divx mka ape flac evo flv m4b mkv ogg ogv ogm rmvb h264 h265 avi wmv rm mpg mp4 xvid y4m binary embedded</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/advanced-codecs</packageSourceUrl>
+    <docsUrl>https://shark007.net/forum/Thread-Setup-and-usage</docsUrl>
+    <mailingListUrl>https://shark007.net/forum/</mailingListUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
