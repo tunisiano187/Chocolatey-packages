@@ -14,7 +14,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$choc=$(choco search install4j.install | Where-Object {$_ -match "install4j"})
+	$choc=$(choco search install4j.install -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "install4j.install"})
 	$version = $choc.Split(" ")[1]
 	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") ej-technologies GmbH"
 
