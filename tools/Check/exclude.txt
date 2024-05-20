@@ -120,6 +120,7 @@ serviwin
 sikulix
 sketchupviewer
 snapgene-viewer
+solarwinds-take-control-viewer
 solr
 speex
 split
@@ -146,4 +147,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-solarwinds-take-control-viewer
