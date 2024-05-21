@@ -34,32 +34,7 @@ Advanced configurable tests
 * Advanced Visualized Physics
 * Advanced DirectCompute
 
-PassMark Rating and comparable baselines
-
-In addition to the standard tests, there are 5 summary results plus the overall "PassMark Rating" result. The benchmark results are presented as easy to read charts so that you don't need to spend hours studying the number to know the result.
-
-A major advantage is the support for built-in baseline results which allows you to compare computer systems (a baseline is a standard set of results from another computer). These baseline results can be used to determine how fast your computer is in comparison with other computer systems.
-
 PerformanceTest comes with six baseline results as well as the ability to search and download thousands more from our online database of user submission.
-
-Additional Features
-
-The application includes the following additional features:
-
-* Comprehensive online help
-* Supports hyper-threading, and multiple CPUs testing
-* Detailed disk speed graphs
-* Supports printing results
-* The ability to save your benchmark results to disk as a new baseline
-* A customizable "Notes" field for storing your own information along with the saved Benchmark result.
-* Support for copying the results to other applications (eg. MS-Word)
-* Export results to HTML, text, GIF, and BMP formats
-* Single test execution, execution of a test suite or execution of all tests with a single mouse click.
-* A summary 'Mark' figure for each test suite plus the calculation of the PassMark Rating figure.
-* An easy to use point and click interface
-* A summary system information screen including CPU type, CPU speed, Total RAM, Video Hardware, Cluster size, etc..
-* The ability to compare the performance of your computer to multiple 'Baseline' computers at the one time.
-* Flexible license, move the software
 
 **Platforms:** XP SP3, Vista, Server 2003, 2008, 2012, 2016, Windows 7, Windows 8, Windows 10, Windows 11
 
