@@ -36,7 +36,7 @@ In the past, Microsoft provided disk images for many of their products through t
     <releaseNotes>https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool?showall=&amp;start=1</releaseNotes>
     <copyright>Copyright © HeiDoc.net</copyright>
     <tags>microsoft windows office iso</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/windows-iso-downloader</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windows-iso-downloader</packageSourceUrl>
     <mailingListUrl>https://heidoc.net/mailman/listinfo/win-iso_heidoc.net</mailingListUrl>
     <bugTrackerUrl>https://www.wincert.net/forum/index.php?/forum/227-windows-iso-downloader/</bugTrackerUrl>
     <dependencies>
