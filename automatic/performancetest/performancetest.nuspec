@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>performancetest</id>
-    <version>11.0.1006</version>
+    <version>11.0.1014.0</version>
     <title>PassMark PerformanceTest (Install)</title>
     <authors>PassMark® Software</authors>
     <owners>tunisiano</owners>
@@ -10,15 +10,9 @@
     <licenseUrl>https://www.passmark.com/legal/disclaimer.htm</licenseUrl>
     <projectUrl>https://www.passmark.com/products/pt.htm</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@497f30ef7f7edaf8fd76ca01c30f55248f52e426/icons/performancetest.png</iconUrl>
-    <description>---
+    <description><![CDATA[## PassMark PerformanceTest (Install)
 
-### [choco://performancetest](choco://performancetest)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-
-![Screenshot of PerformanceTest](https://www.passmark.com/source/img_posts/cpu_test.jpg)
+![Screenshot of PerformanceTest](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3daee90dac41f77e1b3bb9c372412810693455cc/automatic/performancetest/cpu_test.jpg)
 	
 Fast, easy to use, PC speed testing and benchmarking. PassMark PerformanceTest allows you to objectively benchmark a PC using a variety of different speed tests and compare the results to other computers.
 
@@ -50,46 +44,27 @@ Advanced configurable tests
 * Advanced Visualized Physics
 * Advanced DirectCompute
 
-PassMark Rating and comparable baselines
-
-In addition to the standard tests, there are 5 summary results plus the overall "PassMark Rating" result. The benchmark results are presented as easy to read charts so that you don't need to spend hours studying the number to know the result.
-
-A major advantage is the support for built-in baseline results which allows you to compare computer systems (a baseline is a standard set of results from another computer). These baseline results can be used to determine how fast your computer is in comparison with other computer systems.
-
 PerformanceTest comes with six baseline results as well as the ability to search and download thousands more from our online database of user submission.
 
-Additional Features
-
-The application includes the following additional features:
-
-* Comprehensive online help
-* Supports hyper-threading, and multiple CPUs testing
-* Detailed disk speed graphs
-* Supports printing results
-* The ability to save your benchmark results to disk as a new baseline
-* A customizable "Notes" field for storing your own information along with the saved Benchmark result.
-* Support for copying the results to other applications (eg. MS-Word)
-* Export results to HTML, text, GIF, and BMP formats
-* Single test execution, execution of a test suite or execution of all tests with a single mouse click.
-* A summary 'Mark' figure for each test suite plus the calculation of the PassMark Rating figure.
-* An easy to use point and click interface
-* A summary system information screen including CPU type, CPU speed, Total RAM, Video Hardware, Cluster size, etc..
-* The ability to compare the performance of your computer to multiple 'Baseline' computers at the one time.
-* Flexible license, move the software
-
-**Platforms:** XP SP3, Vista, Server 2003, 2008, 2012, 2016, Windows 7, Windows 8, Windows 10
+**Platforms:** XP SP3, Vista, Server 2003, 2008, 2012, 2016, Windows 7, Windows 8, Windows 10, Windows 11
 
 **Requirements:** Pentium4 CPU or better, DirectX 9 or higher video, 2GB RAM, 300MB of free disk space. (DX12 video card recomended)
 
-**Free 30 day evaluation, then US$29.00 to purchase.**
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/performancetest/readme.md)**
-    
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+### [choco://performancetest](choco://performancetest)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----</description>
+---
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>PerformanceTest - Easy PC Benchmarking</summary>
     <releaseNotes>https://www.passmark.com/products/performancetest/history.php</releaseNotes>
     <copyright>Copyright © PassMark® Software</copyright>
