@@ -1,6 +1,6 @@
 $currentDir = Get-Location                                  # Store location
 
-Set-Location "$env:ChocolateyToolsLocation\hashcat-4.1.0\"  # Change to install-dir
+Set-Location "$env:ChocolateyToolsLocation\hashcat\"        # Change to install-dir
 
 $argumentsString = $args -join ' '                          # Join arguments to a string
 
