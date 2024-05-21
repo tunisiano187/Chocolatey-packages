@@ -1,0 +1,7 @@
+VERIFICATION
+1. Download Hashcat v4.1.0 from https://hashcat.net/hashcat/
+2. Use 7zip to unpack the files
+3. Remove the .sh and .bin files in the extracted folder.
+4. Compute the checksum of the files in the extracted folder.
+5. Compute the checksum of the files in the tools/hashcat-4.1.0-folder of this package. 
+6. Compare checksums - They should match.
