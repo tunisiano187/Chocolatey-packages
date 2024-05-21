@@ -2,14 +2,6 @@
 
 ## PassMark PerformanceTest (Install)
 
----
-
-### [choco://performancetest](choco://performancetest)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-
 ![Screenshot of PerformanceTest](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3daee90dac41f77e1b3bb9c372412810693455cc/automatic/performancetest/cpu_test.jpg)
 	
 Fast, easy to use, PC speed testing and benchmarking. PassMark PerformanceTest allows you to objectively benchmark a PC using a variety of different speed tests and compare the results to other computers.
@@ -73,7 +65,11 @@ The application includes the following additional features:
 
 **Requirements:** Pentium4 CPU or better, DirectX 9 or higher video, 2GB RAM, 300MB of free disk space. (DX12 video card recomended)
 
-**Free 30 day evaluation, then US$29.00 to purchase.**
+
+---
+
+### [choco://performancetest](choco://performancetest)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
 ---
 
