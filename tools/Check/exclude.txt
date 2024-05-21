@@ -6,6 +6,7 @@ acronis-drive-monitor
 adblockplusie
 adguard-chrome
 ad-tidy-free
+advanced-codecs
 advancedsystemtweaker
 advtor
 alcohol52-free
@@ -147,4 +148,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-advanced-codecs
