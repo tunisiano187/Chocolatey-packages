@@ -5,7 +5,7 @@
     <version>4.1.0</version>
     <title>Hashcat (Install)</title>
     <authors>Jens "atom" Steube</authors>
-    <owners>Henriette &amp; Sturla</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://hashcat.net/hashcat/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3260bb55e7e447f3f8ddce27b442118283dc327/icons/hashcat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
