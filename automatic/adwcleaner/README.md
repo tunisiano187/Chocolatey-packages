@@ -4,15 +4,7 @@
 
 ---
 
----
-
-### [choco://adwcleaner](choco://adwcleaner)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-	
-![AdwCleaner screenshot](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/adwcleaner/adwcleaner_screenshot.png)	
+![AdwCleaner screenshot](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4f8d9eeaaac95fc3932bf0c438d5ff33c6f11526/automatic/adwcleaner/adwcleaner_screenshot.png)	
 
 ## Fast results. Powerful cleaning.
 
@@ -35,16 +27,6 @@ Scans your computer in seconds. Clean your computer in less time than it takes t
 ### Installs…nothing
 
 Doesn’t use much memory or processor power, and there’s nothing to install. Just download, launch, and click to scan. It’s that simple.	
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/adwcleaner/readme.md)**
-
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 

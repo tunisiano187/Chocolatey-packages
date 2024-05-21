@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName       = 'adwcleaner' 
-$toolsDir          = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-#$url               = 'https://downloads.malwarebytes.com/file/adwcleaner'
-$url               = 'https://adwcleaner.malwarebytes.com/adwcleaner?channel=release'
-$checksum          = '1F544DA66675521A649E632108F86AFB351AD336BD34B7B5C3D290827EBEEF54'
-$shortcutName      = 'AdwCleaner.lnk'
-$portableEXE       = "adwcleaner_$ENV:packageVersion.exe"
+$packageName        = 'adwcleaner' 
+$toolsDir           = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url                = 'https://adwcleaner.malwarebytes.com/adwcleaner?channel=release'
+$checksum           = '1F544DA66675521A649E632108F86AFB351AD336BD34B7B5C3D290827EBEEF54'
+$checksumType       = 'sha256'
+$shortcutName       = 'AdwCleaner.lnk'
+$portableEXE        = "adwcleaner_$ENV:packageVersion.exe"
 
 $packageArgs = @{
   packageName   = $packageName
@@ -14,7 +14,7 @@ $packageArgs = @{
   FileFullPath  = "$toolsDir\$portableEXE"
   softwareName  = ''
   checksum      = $checksum
-  checksumType  = 'sha256'
+  checksumType  = $checksumType
 }
  
 Get-ChocolateyWebFile @packageArgs
