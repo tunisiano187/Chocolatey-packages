@@ -1,4 +1,3 @@
-adwcleaner 0.0 - Todo
 vnc-connect 0.0 - Todo
 apacheds 2.0.0.19 [Approved] - Possibly broken
 appfabric 1.1.0 - Possibly broken
