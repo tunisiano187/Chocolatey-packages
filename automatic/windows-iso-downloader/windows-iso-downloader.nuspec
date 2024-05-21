@@ -5,7 +5,7 @@
     <version>8.46.0.0154</version>
     <title>Microsoft Windows and Office ISO Download Tool (Portable)</title>
     <authors>Jan Krohn</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/windows-iso-downloader/windows-iso-downloader_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
