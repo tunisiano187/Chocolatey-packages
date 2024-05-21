@@ -7,7 +7,7 @@
     <authors>Jens "atom" Steube</authors>
     <owners>Henriette &amp; Sturla</owners>
     <projectUrl>https://hashcat.net/hashcat/</projectUrl>
-    <iconUrl>https://hashcat.net/s/i/hashcat-icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3260bb55e7e447f3f8ddce27b442118283dc327/icons/hashcat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description># Hashcat
       The world's fastest password cracker. 
