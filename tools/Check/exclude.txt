@@ -148,3 +148,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+windows-iso-downloader
