@@ -28,7 +28,7 @@
     <copyright>2015-2017 Jens Steube</copyright>
     <tags>hashcat password-cracker password-recovery hashcat-legacy oclHashcat atomcrack Dr.Hash free Open-Source Multi-OS Multi-Platform Multi-Hash Multi-Device benchmarking MD5 SHA1 SHA-256 SHA-512 DES 3DES WPA WPA2 bcrypt scrypt admin</tags>
     <projectSourceUrl>https://github.com/hashcat/hashcat/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/hashcat/hashcat</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hashcat</packageSourceUrl>
     <docsUrl>https://github.com/hashcat/hashcat/tree/master/docs</docsUrl>
     <bugTrackerUrl>https://github.com/hashcat/hashcat/issues</bugTrackerUrl>
     <dependencies>
