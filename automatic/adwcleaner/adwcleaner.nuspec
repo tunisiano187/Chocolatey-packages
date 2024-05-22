@@ -5,7 +5,7 @@
     <version>8.4.0</version>
     <title>AdwCleaner (Portable)</title>
     <authors>Malwarebytes</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.malwarebytes.com/adwcleaner/eula/</licenseUrl>
     <projectUrl>https://www.malwarebytes.com/adwcleaner/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/adwcleaner/adwcleaner_icon.png</iconUrl>
