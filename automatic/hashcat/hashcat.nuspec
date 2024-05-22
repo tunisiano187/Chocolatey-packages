@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>hashcat</id>
-    <version>6.2.6</version>
+    <version>6.2.0</version>
     <title>Hashcat (Install)</title>
     <authors>Jens "atom" Steube</authors>
     <owners>tunisiano</owners>
@@ -53,6 +53,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
