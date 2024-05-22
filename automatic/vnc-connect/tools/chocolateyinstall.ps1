@@ -1,4 +1,4 @@
-﻿# download page without login - https://realvnc.com/en/connect/download/vnc/
+# download page without login - https://realvnc.com/en/connect/download/vnc/
 $ErrorActionPreference = 'Stop'
 $packageName    = 'vnc-connect'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -11,13 +11,13 @@ $checksum       = '225A601E9BBE5A1B32892FF6EF96787D19E44F5A8E667138B40BAA6024B2B
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $extractDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
   checksumType  = 'sha256'
 }
 
-Install-ChocolateyZipPackage @packageArgs 
+Install-ChocolateyZipPackage @packageArgs
 
 if ($bits -eq 64)
    {
@@ -34,7 +34,7 @@ $packageArgs = @{
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'VNC Server*'
 }
- 
+
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item $extractDir -Recurse -Force | Out-Null

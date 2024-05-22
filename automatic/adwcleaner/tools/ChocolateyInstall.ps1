@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName        = 'adwcleaner' 
+$ErrorActionPreference = 'Stop'
+$packageName        = 'adwcleaner'
 $toolsDir           = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url                = 'https://adwcleaner.malwarebytes.com/adwcleaner?channel=release'
 $checksum           = '1F544DA66675521A649E632108F86AFB351AD336BD34B7B5C3D290827EBEEF54'
@@ -16,7 +16,7 @@ $packageArgs = @{
   checksum      = $checksum
   checksumType  = $checksumType
 }
- 
+
 Get-ChocolateyWebFile @packageArgs
 
 Install-BinFile -Name adwcleaner -Path "$toolsDir\$portableEXE"
