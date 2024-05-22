@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/Ryochan7/DS4Windows/releases/download/v3.1.11/DS4Windows_3.1.11_x64.zip
+    x32: https://github.com/hashcat/hashcat/releases/download/v6.2.6/hashcat-6.2.6.7z
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/Ryochan7/DS4Windows/releases/download/v3.1.11/DS4Windows_3.1.11_x64.zip
+        Get-RemoteChecksum https://github.com/hashcat/hashcat/releases/download/v6.2.6/hashcat-6.2.6.7z
 
 3.  Compare to Checksum:
 
-    checksum32: 343F507682F5F0D799C99135DA1E812E1FB972CE6CCC27ACC7304FD1D5C99A24
+    checksum32: @{Algorithm=SHA256; Hash=96697E9EF6A795D45863C91D61BE85A9F138596E3151E7C2CD63CCF48AAA8783; Path=C:\projects\chocolatey-packages\automatic\hashcat\tools\hashcat.7z}

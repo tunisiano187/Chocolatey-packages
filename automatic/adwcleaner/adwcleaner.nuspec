@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>adwcleaner</id>
-    <version>8.4.0</version>
+    <version>8.4.2.0</version>
     <title>AdwCleaner (Portable)</title>
     <authors>Malwarebytes</authors>
     <owners>tunisiano</owners>
@@ -10,15 +10,11 @@
     <projectUrl>https://www.malwarebytes.com/adwcleaner/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/adwcleaner/adwcleaner_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://adwcleaner](choco://adwcleaner)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+    <description><![CDATA[## AdwCleaner (Portable)
 
 ---
 
-	
-![AdwCleaner screenshot](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/adwcleaner/adwcleaner_screenshot.png)	
+![AdwCleaner screenshot](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4f8d9eeaaac95fc3932bf0c438d5ff33c6f11526/automatic/adwcleaner/adwcleaner_screenshot.png)	
 
 ## Fast results. Powerful cleaning.
 
@@ -42,15 +38,18 @@ Scans your computer in seconds. Clean your computer in less time than it takes t
 
 Doesn’t use much memory or processor power, and there’s nothing to install. Just download, launch, and click to scan. It’s that simple.	
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/adwcleaner/readme.md)**
-
-    
-
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+#### [choco://adwcleaner](choco://adwcleaner)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>Anti-Adware/Toolbar/PUP/Hijacker search and delete tool</summary>
     <releaseNotes>https://toolslib.net/downloads/viewdownload/1-adwcleaner/history/</releaseNotes>
     <copyright>© Malwarebytes</copyright>

@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName        = 'adwcleaner'
 $toolsDir           = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url                = 'https://adwcleaner.malwarebytes.com/adwcleaner?channel=release'
-$checksum           = '1F544DA66675521A649E632108F86AFB351AD336BD34B7B5C3D290827EBEEF54'
+$url                = 'https://downloads.malwarebytes.com/file/adwcleaner'
+$checksum           = '91068efbef44f8ceedbbbdfeea8959633c4ecc9100c3ba08b2603d7c5d59ac22'
 $checksumType       = 'sha256'
 $shortcutName       = 'AdwCleaner.lnk'
 $portableEXE        = "adwcleaner_$ENV:packageVersion.exe"
