@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 import-module au
 
-$release = 'https://downloads.malwarebytes.com/file/adwcleaner'
+$release = 'https://downloads.malwarebytes.com/file/adwcleaner?channel=release'
 
 function global:au_SearchReplace {
 	@{
