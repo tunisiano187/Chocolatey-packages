@@ -84,7 +84,7 @@ Support business and compliance objectives with audit and security functionality
     <releaseNotes>https://www.realvnc.com/docs/desktop-release-notes.html</releaseNotes>
     <copyright>Copyright © RealVNC Limited. All rights reserved.</copyright>
     <tags>realvnc vnc connect remote control</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/vnc-connect</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vnc-connect</packageSourceUrl>
     <docsUrl>https://help.realvnc.com/</docsUrl>
     <mailingListUrl>https://www.realvnc.com/en/news/</mailingListUrl>
     <bugTrackerUrl>https://help.realvnc.com/hc/en-us/community/topics</bugTrackerUrl>
