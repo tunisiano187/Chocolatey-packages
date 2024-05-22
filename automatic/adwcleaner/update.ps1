@@ -21,10 +21,12 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP $($release -split "/" | Select-Object -Last 1)
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType)
 	Remove-Item $File -Force
+	Remove-Item "tools/*.exe"
 
-	$Latest = @{ URL32 = $release; Version = $version }
+	$Latest = @{ URL32 = $release; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckChocoVersion
