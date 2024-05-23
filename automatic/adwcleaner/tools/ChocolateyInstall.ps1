@@ -2,7 +2,7 @@
 $packageName        = 'adwcleaner'
 $toolsDir           = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url                = 'https://downloads.malwarebytes.com/file/adwcleaner'
-$checksum           = '@{Algorithm=SHA256; Hash=91068EFBEF44F8CEEDBBBDFEEA8959633C4ECC9100C3BA08B2603D7C5D59AC22; Path=C:\Users\appveyor\AppData\Local\Temp\1\adwcleaner}'
+$checksum           = '91068EFBEF44F8CEEDBBBDFEEA8959633C4ECC9100C3BA08B2603D7C5D59AC22'
 $checksumType       = 'sha256'
 $shortcutName       = 'AdwCleaner.lnk'
 $portableEXE        = "adwcleaner.exe"
