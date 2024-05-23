@@ -25,7 +25,10 @@ function global:au_GetLatest {
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/setup.exe" -UserAgent $userAgent
+	$Headers = @{
+		"referer"=$releases
+	}
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/setup.exe" -UserAgent $userAgent -Headers $Headers
 	$checksum = (Get-FileHash -Path "tools/setup.exe" -Algorithm $env:ChocolateyChecksumType).Hash
 	$checksumType = $env:ChocolateyChecksumType
 
