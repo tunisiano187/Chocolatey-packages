@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType)
 	Remove-Item $File -Force
-	Remove-Item "tools/*.exe"
+	Remove-Item "tools/*.exe" -ErrorAction SilentlyContinue
 
 	$Latest = @{ URL32 = $release; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
 	return $Latest
