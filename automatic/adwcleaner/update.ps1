@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP $($release -split "/" | Select-Object -Last 1)
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
-	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType)
+	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 	Remove-Item $File -Force
 	Remove-Item "tools/*.exe" -ErrorAction SilentlyContinue
 
