@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/apacheds</packageSourceUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>http://directory.apache.org/apacheds/</projectUrl>
-    <iconUrl>https://directory.apache.org/images/server-icon_128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@388d721ef315622f07209687018cf30cb3bc53cb/icons/apacheds.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>ApacheDS is a LDAP and Kerberos server. It is possible to connect to this server by using `Apache Directory Studio` and connecting to localhost port `10389`, username `uid=admin,ou=system` and password `secret`.
 
