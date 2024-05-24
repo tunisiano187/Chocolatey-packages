@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
-ad-tidy-free
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -15,6 +15,7 @@ amazingmarvin
 AMD-Graphics-Driver
 AnkhSvn
 anvide-seal-folder
+apacheds
 Ardour
 armory
 audioswitcher
@@ -149,4 +150,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-apacheds
