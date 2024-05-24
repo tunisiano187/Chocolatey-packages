@@ -30,7 +30,7 @@ function global:au_GetLatest {
 	if ($page -match $regex) {
 		$url32 = $matches[1]
 	}
-	
+
 	$version=$(Get-Version $url32).Version
 
 	$Latest = @{ URL32 = $url32; Version = $version }
