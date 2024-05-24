@@ -2,17 +2,7 @@
 
 ## VNC Connect (Install)
 
----
-
----
-
-### [choco://vnc-connect](choco://vnc-connect)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-
-![Screen shot of VNC Connect Viewer](https://cdn.jsdelivr.net/gh/bcurran3/ChocolateyPackages/vnc-connect/vnc-viewer_screenshot.png)
+![Screen shot of VNC Connect Viewer](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c4fa29e2c27cb9c5a6be573f470cfe8553be0cbb/automatic/vnc-connect/vnc-viewer_screenshot.png)
 
 ### VNC Connect business benefits
 
@@ -66,14 +56,6 @@ Support business and compliance objectives with audit and security functionality
 
 **CLIENT SOFTARE:**
 [Windows Client](https://chocolatey.org/packages/vnc-viewer) | [Android App](http://play.google.com/store/apps/details?id=com.realvnc.viewer.android) | [iOS App](https://itunes.apple.com/us/app/vnc-viewer/id352019548?mt=8) | [Chrome Extension](https://chocolatey.org/packages/vnc-viewer-chrome/1.2.2.15132) | [macOS Client](https://www.realvnc.com/download/viewer/macos/) | [Linux Client](https://www.realvnc.com/download/viewer/linux/)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/vnc-connect/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 

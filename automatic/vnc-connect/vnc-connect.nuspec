@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vnc-connect</id>
-    <version>7.7.0</version>
-    <title>VNC Connect (Install)</title>
+    <version>0.0.0</version>
+    <title>VNC Server (Install)</title>
     <authors>RealVNC Limited.</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
