@@ -6,7 +6,7 @@
     <title>ApacheDS</title>
     <authors>Apache</authors>
     <owners>Utrecht</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/apacheds</packageSourceUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>http://directory.apache.org/apacheds/</projectUrl>
     <iconUrl>https://directory.apache.org/images/server-icon_128x128.png</iconUrl>
