@@ -5,7 +5,7 @@
     <version>2.0.0.19</version>
     <title>ApacheDS</title>
     <authors>Apache</authors>
-    <owners>Utrecht</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/apacheds</packageSourceUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>http://directory.apache.org/apacheds/</projectUrl>
