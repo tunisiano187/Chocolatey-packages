@@ -1,10 +1,11 @@
 [![](https://img.shields.io/chocolatey/v/streamloader?color=green&label=streamloader)](https://chocolatey.org/packages/streamloader) [![](https://img.shields.io/chocolatey/dt/streamloader)](https://chocolatey.org/packages/streamloader)
 
-## PKGTITLE
+## StreamLoader
 
 ---
 
-PKGDesc
+With X-StreamLoader you can open and record your favorite live streams or Online videos (VOD) in a Mediaplayer like VLC on PC, Tablet or Notebook only with some few clicks.
+X-StreamLoader supports a lot of Stream/Videoplatforms like Twitch, Youtube, Smashcast and many more.
 
 ---
 
