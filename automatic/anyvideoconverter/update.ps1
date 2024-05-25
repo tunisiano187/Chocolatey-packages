@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.any-video-converter.com/avc-free.exe'
+$releases = 'https://www.any-video-converter.com/avc-free.exe'
 
 
 function global:au_SearchReplace {
