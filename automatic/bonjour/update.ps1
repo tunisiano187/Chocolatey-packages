@@ -44,7 +44,7 @@ function global:au_GetLatest {
 	Write-Output "Version : $version"
 	Set-Location $startdir
 	if($version -eq "3.1.0.1"){
-		$version = "3.1.0.3"
+		$version = "3.1.0.4"
 	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
