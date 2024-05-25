@@ -16,20 +16,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
