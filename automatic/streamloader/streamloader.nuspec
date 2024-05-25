@@ -11,7 +11,7 @@
     <authors>X-StreamLoader</authors>
     <projectUrl>https://xstreamloader.techweb.at/en/download.html</projectUrl>
     
-    <iconUrl>http://rawcdn.githack.com/tunisiano187/master/icons/streamloader.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3a89a4106d99a0ad9f647fd38ac65e11c8e74c0/icons/streamloader.png</iconUrl>
     <copyright>X-StreamLoader</copyright>
     <docsUrl>https://xstreamloader.techweb.at/en/faq.html</docsUrl>
     
