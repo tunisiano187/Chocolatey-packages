@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $url              = 'https://www.apple.com/itunes/download/win32'
-$checksum         = 'cd6891afada9f940bc551a215a6c40f51a93b140026375bd30b1ee686dc73bd2'
+$checksum         = '145a32239b2da5048920f46367fdc672daa91c66cbfbff039678b0e878791d3f'
 $checksumType     = 'SHA256'
 
 $url64            = 'https://www.apple.com/itunes/download/win64'
-$checksum64       = '541c30b2d72705afe75649f97e3daf677b8576e6e73d6f78f7265a0ded61011f'
+$checksum64       = '9cbaef01a8e2be6f4aa68768484268def7ca71491b71e56b435d4878da3232fd'
 $checksumType64   = 'SHA256'
 
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
