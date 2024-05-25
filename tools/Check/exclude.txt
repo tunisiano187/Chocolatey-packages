@@ -29,6 +29,7 @@ bless
 cameyo
 chainlp
 copay
+CyberGhost-VPN
 datacleaner
 datahealthcheck
 diskdump
@@ -150,4 +151,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-CyberGhost-VPN

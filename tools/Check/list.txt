@@ -1,4 +1,3 @@
-pelles-c 0.0 - New maintainer
 wsl-debiangnulinux 0.0 - New maintainer
 advanced-codecs 0.0 - New maintainer
 skype-chrome 0.0 - New maintainer
