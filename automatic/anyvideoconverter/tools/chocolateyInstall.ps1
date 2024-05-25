@@ -12,7 +12,7 @@ $packageArgs = @{
   softwareName  = 'Any Video Converter*'
   checksum      = $checksum
   checksumType  = $checksumType
-  validExitCodes= @(0, 3010, 1641)
+  validExitCodes= @(0, 3010, 1641, -1073741819)
   silentArgs   = '/S'
 }
 
