@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$checksum = (Invoke-WebRequest -Uri $checksumurl).Content.trim()
 	$version = $url32.split('/') | Where-Object {$_ -Match "[0-9].[0-9]"} | Where-Object {$_ -notmatch 'tar'}
 
-	$Latest = @{ URL32 = $url32; Version = $version; checksum = $checksum; checksumType = $checksumType }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType }
 	return $Latest
 }
 
