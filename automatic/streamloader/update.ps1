@@ -25,6 +25,12 @@ function global:au_GetLatest {
         $downloadUrl = $matches[0].Value
     }
     $url = Get-RedirectedUrl "https://xstreamloader.techweb.at/$($downloadUrl)"
+    $File = (Join-Path $env:TEMP "chocolatey\$($url.Split('/')[-1])").Replace('.zip','.rar')
+    $Folder = Join-Path $env:TEMP "chocolatey\streamloader\"
+    $parameter = @('x', "$File", "$Folder", "-y")
+    7z @parameter
+    $File = Join-Path $Folder "X-StreamLoader.exe"
+    $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
     return @{ URL32 = $url; Version = $version }
 }
