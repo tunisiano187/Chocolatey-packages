@@ -122,6 +122,7 @@ selfssl7
 serviwin
 sikulix
 sketchupviewer
+skype-chrome
 snapgene-viewer
 solarwinds-take-control-viewer
 solr
@@ -151,4 +152,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-skype-chrome
