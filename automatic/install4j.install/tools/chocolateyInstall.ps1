@@ -2,7 +2,7 @@
 $installerType  = 'exe'
 $silentArgs     = '-q'
 $url            = 'https://download.ej-technologies.com/install4j/install4j_windows-x64_10_0_8.exe'
-$checksum       = 'e72c7a97cbd8941c90b84ad5d49a66f72b1584334aa27f1fd098ad2306b7335a'
+$checksum       = '934a636a9c238697ed0f02b0a74d8455b802574cdf8a2b954e62610747e0cb1d'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)
 
