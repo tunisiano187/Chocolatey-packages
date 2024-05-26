@@ -28,11 +28,12 @@ function Find-nextissueGH {
     }
 
     $folder = Join-Path $PSScriptRoot "../automatic/$search"
-
+    $excludefile = Join-Path $PSScriptRoot "../tools/Check/exclude.txt"
+    "Checking $excludefile"
     if($search -and $packageName -match "update requested") {
         if(Test-Path $folder) {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
-        } elseif ($search -ne '') {
+        } elseif ($search -ne '' -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success))) {
             $script = Join-Path $PSScriptRoot "Get-Package.ps1"
             "Running $($script) $($search.Tolower())"
             . $script "$($search.Tolower())"
@@ -40,7 +41,7 @@ function Find-nextissueGH {
     } elseif($search -and $packageName -match "package requested") {
         if(Test-Path $folder) {
             Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
-        } elseif ($search -ne '') {
+        } elseif ($search -ne '' -and (!((Get-Content $excludefile | Select-String -Pattern $search).Matches.Success))) {
             $script = Join-Path $PSScriptRoot "New-Package.ps1"
             "Running $($script) $($search.Tolower())"
             . $script "$($search.Tolower())"
