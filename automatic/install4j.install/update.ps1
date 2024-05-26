@@ -24,8 +24,9 @@ function global:au_GetLatest {
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	#$checksumType = "SHA512"
-	#$checksum = Get-RemoteChecksum -Url $url -Algorithm $checksumType
+	if($version -eq "10.0.8") {
+		$version = "10.0.8.20240525"
+	}
 	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") ej-technologies GmbH"
 
 	$Latest = @{ URL32 = $url; Version = $version}
