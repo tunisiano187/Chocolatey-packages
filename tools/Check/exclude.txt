@@ -152,3 +152,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+pelles-c-sdk
