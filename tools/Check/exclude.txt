@@ -153,3 +153,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+logitech-media-server
