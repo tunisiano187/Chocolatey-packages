@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>http://www.smorgasbordet.com/pellesc/termsofuse.htm</licenseUrl>
     <projectUrl>http://www.smorgasbordet.com/pellesc</projectUrl>
-    <iconUrl>http://www.smorgasbordet.com/pellesc/images/pellesc_box.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@59f2510d62e234168a44aa5f52f36130f0cb3017/icons/pelles-c-sdk.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Pelles-C](http://www.smorgasbordet.com/pellesc/images/screen1.png)
 	
