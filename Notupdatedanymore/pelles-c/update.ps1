@@ -28,7 +28,7 @@ function global:au_GetLatest {
 	$Headers = @{
 		"referer"=$releases
 	}
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/setup.exe" -UserAgent $userAgent -Headers $Headers
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/setup.exe" -Headers $Headers
 	$checksum = (Get-FileHash -Path "tools/setup.exe" -Algorithm $env:ChocolateyChecksumType).Hash
 	$checksumType = $env:ChocolateyChecksumType
 
