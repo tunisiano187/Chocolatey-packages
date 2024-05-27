@@ -43,7 +43,7 @@ PACKAGING NOTE: Uninstall via Control Panel.</description>
     <releaseNotes />
     <copyright>Copyright © Pelle Orinius 1999-2015</copyright>
     <tags>pelles c programming language compiler ide sdk admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/pelles-c.install</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pelles-c-sdk</packageSourceUrl>
     <docsUrl>http://wiki.pellesc.de/</docsUrl>
     <mailingListUrl>http://forum.pellesc.de/</mailingListUrl>
     <dependencies>
