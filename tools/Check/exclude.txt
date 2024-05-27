@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
-ad-tidy-free
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -122,6 +122,7 @@ selfssl7
 serviwin
 sikulix
 sketchupviewer
+skype-chrome
 snapgene-viewer
 solarwinds-take-control-viewer
 solr
@@ -151,4 +152,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-skype-chrome

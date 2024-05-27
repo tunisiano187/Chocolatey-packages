@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>idrive</id>
-    <version>6.7.4.50</version>
+    <version>6.7.4.55</version>
     <title>idrive (Install)</title>
     <authors>idrive.com</authors>
     <owners>tunisiano</owners>
