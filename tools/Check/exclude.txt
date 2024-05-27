@@ -107,6 +107,7 @@ pascal
 pavement.standard
 pcanyscan
 peerblock
+pelles-c-sdk
 pencil 
 plexmediaserver
 pngoo
@@ -152,4 +153,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-pelles-c-sdk
