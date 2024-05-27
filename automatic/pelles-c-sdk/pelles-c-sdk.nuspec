@@ -5,7 +5,7 @@
     <version>8.00.0.0</version>
     <title>Pelles C Add-In SDK (Install)</title>
     <authors>Pelle Orinius</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.smorgasbordet.com/pellesc/termsofuse.htm</licenseUrl>
     <projectUrl>http://www.smorgasbordet.com/pellesc</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@59f2510d62e234168a44aa5f52f36130f0cb3017/icons/pelles-c-sdk.png</iconUrl>
