@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'https://ftp.binance.com/electron-desktop/windows/production/binance-setup.exe'
-$checksum = 'dd9563a485164b1bcadff2a61252b0d50ef543c6cad180e187d903f329a5f4e3'
+$checksum = '50074fc7148396b1f17ec7eb63d4ec21ac3600b6d17822fb830fcec72292f6c1'
 $checksumType = 'sha256'
 $silentArgs = '/S'
 $validExitCodes = @(0)
