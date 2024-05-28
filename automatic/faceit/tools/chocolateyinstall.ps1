@@ -2,8 +2,8 @@
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url            = 'https://faceit-client.faceit-cdn.net/release/FACEIT-setup-latest.exe'
-$checksum       = '@{Algorithm=SHA256; Hash=5B493E0BA1FB34AA0638592C81A4F719ACD91FF6558D75B239D7D0A2D2EF99A1; Path=C:\Users\appveyor\AppData\Local\Temp\1\FACEIT-setup-latest.exe}'
-$checksumType   = 'sha256'
+$checksum       = '5B493E0BA1FB34AA0638592C81A4F719ACD91FF6558D75B239D7D0A2D2EF99A1'
+$checksumType   = 'SHA256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
