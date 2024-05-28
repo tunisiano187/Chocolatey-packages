@@ -4,7 +4,7 @@
   <metadata>
     <id>samsung-dex</id>
     <version>0.0</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/samsung-dex</packageSourceUrl>
     <owners>tunisiano</owners>
 
     <title>samsung-dex (Install)</title>
