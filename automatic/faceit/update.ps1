@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "FACEIT-setup-latest.exe"
 	Invoke-WebRequest -Uri $release -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
-	$checksum = Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType
+	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 
 	$Latest = @{ URL32 = $release; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
 	return $Latest
