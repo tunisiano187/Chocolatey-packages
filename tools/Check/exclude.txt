@@ -82,6 +82,7 @@ Lando
 libffcall
 librecrypt
 lili
+logitech-media-server
 luckybackup
 ManuelBastioniLAB
 md5sums
@@ -153,4 +154,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-logitech-media-server
