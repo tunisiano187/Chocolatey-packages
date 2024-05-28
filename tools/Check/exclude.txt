@@ -154,3 +154,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+solarwinds-take-control-viewer
