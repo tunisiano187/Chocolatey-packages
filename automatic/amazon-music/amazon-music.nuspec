@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>amazon-music</id>
+    <version>7.13.0.2210</version>
+    <title>Amazon Music (Install)</title>
+    <authors>Amazon Digital Services LLC</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://goo.gl/p9o41Q</licenseUrl>
+    <projectUrl>https://music.amazon.com/help/apps</projectUrl>
+    <iconUrl>https://images-na.ssl-images-amazon.com/images/I/71VdVNOOaZL._SX425_.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://amazon-music](choco://amazon-music)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+#### With the Amazon Music app, you can play and download your music, export downloads to iTunes and Windows Media Player, shop the Amazon Digital Music Store, and access Prime Music (if you're an eligible Prime member).
+
+# music
+
+* Any way you want it.
+* Amazon Music Unlimited: Stream tens of millions of songs, including new releases from today's most popular artists.
+* Prime Music: A growing selection of 2 million songs included with your Amazon Prime membership.
+* Play music on all your favorite devices and download to play offline.
+
+* Lets you play, manage and download all your music with ease and convenience.
+* With Prime Music, members can enjoy a growing selection of two million songs, playlists, and stations - always ad-free and included with your Prime membership.
+* With Amazon Music Unlimited – unlock even more. Listen to tens of millions of songs with weekly new releases.
+* Amazon Music for PC is fast. It'll get you from launch to play in seconds.
+* Amazon Music for PC detects and adds new music to your library even if you bought it from iTunes or ripped a CD. Your music library will always be organized and up-to-date.
+* System Requirements: Windows 7 and later
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/amazon-music/readme.md)**
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Amazon Music for PC and Mac is a free desktop application you can use to play, download, and manage your digital music directly on your computer.</summary>
+    <copyright>Amazon</copyright>
+    <tags>amazon music streaming player</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/amazon-music</packageSourceUrl>
+    <docsUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740</docsUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
