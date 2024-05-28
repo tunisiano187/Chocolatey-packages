@@ -10,13 +10,7 @@
     <projectUrl>https://music.amazon.com/help/apps</projectUrl>
     <iconUrl>https://images-na.ssl-images-amazon.com/images/I/71VdVNOOaZL._SX425_.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://amazon-music](choco://amazon-music)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
+    <description>
 #### With the Amazon Music app, you can play and download your music, export downloads to iTunes and Windows Media Player, shop the Amazon Digital Music Store, and access Prime Music (if you're an eligible Prime member).
 
 # music

@@ -4,13 +4,6 @@
 
 ---
 
----
-
-### [choco://amazon-music](choco://amazon-music)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 #### With the Amazon Music app, you can play and download your music, export downloads to iTunes and Windows Media Player, shop the Amazon Digital Music Store, and access Prime Music (if you're an eligible Prime member).
 
 # music
@@ -26,15 +19,6 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 * Amazon Music for PC is fast. It'll get you from launch to play in seconds.
 * Amazon Music for PC detects and adds new music to your library even if you bought it from iTunes or ripped a CD. Your music library will always be organized and up-to-date.
 * System Requirements: Windows 7 and later
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/amazon-music/readme.md)**
-	
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
