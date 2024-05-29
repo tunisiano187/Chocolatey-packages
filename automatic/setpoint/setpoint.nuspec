@@ -34,7 +34,7 @@ SetPoint lets you customize your mouse buttons, keyboard F-keys and hot-keys, co
     <summary>SetPoint lets you customize your mouse, keyboard, touchpad and number pad settings in Windows.</summary>
     <copyright>© Logitech. All rights reserved.</copyright>
     <tags>logitech setpoint mouse utility util</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/setpoint</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/setpoint</packageSourceUrl>
     <mailingListUrl>https://support.logitech.com/en_us/software/setpoint#</mailingListUrl>
   </metadata>
   <files>
