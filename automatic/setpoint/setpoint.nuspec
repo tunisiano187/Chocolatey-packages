@@ -5,7 +5,7 @@
     <version>6.90.66</version>
     <title>Logitech SetPoint (Install)</title>
     <authors>Logitech</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.logitech.com/en-us/tos.html</licenseUrl>
     <projectUrl>https://support.logitech.com/en_us/software/setpoint</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/setpoint/setpoint_icon.png</iconUrl>
