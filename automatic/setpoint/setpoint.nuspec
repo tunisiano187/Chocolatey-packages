@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>setpoint</id>
+    <version>6.90.66</version>
+    <title>Logitech SetPoint (Install)</title>
+    <authors>Logitech</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.logitech.com/en-us/tos.html</licenseUrl>
+    <projectUrl>http://support.logitech.com/en_us/software/setpoint</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/setpoint/setpoint_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://setpoint](choco://setpoint)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Logitech SetPoint](https://secure.logitech.com/assets/33024/9/m570-image.jpg)
+	
+SetPoint lets you customize your mouse buttons, keyboard F-keys and hot-keys, control tracking speed, and configure other device-specific settings. It can also notify you of your device's battery status, and whether Caps Lock and Num Lock are on.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/setpoint/readme.md)**
+
+
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>SetPoint lets you customize your mouse, keyboard, touchpad and number pad settings in Windows.</summary>
+    <copyright>© Logitech. All rights reserved.</copyright>
+    <tags>logitech setpoint mouse utility util</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/setpoint</packageSourceUrl>
+    <docsUrl>http://support.logitech.com/en_us/article/44525?product=a0qi00000069vBvAAI</docsUrl>
+    <mailingListUrl>http://support.logitech.com/en_us/software/setpoint#</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
