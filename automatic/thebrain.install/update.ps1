@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$ReleasesNotes = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Release notes'} ).href)
 	$url32 = Get-RedirectedUrl $url32
 
-	$File = "$($env:TEMP)\thebrain.ps1"
+	$File = "$($env:TEMP)\thebrain.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
