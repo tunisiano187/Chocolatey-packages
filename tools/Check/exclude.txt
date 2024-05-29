@@ -156,3 +156,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+ultimate-settings-panel
