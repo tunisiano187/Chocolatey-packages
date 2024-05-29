@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
-ad-tidy-free
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -28,6 +28,7 @@ bitpay-wallet
 bless
 cameyo
 chainlp
+chrome-remote-desktop-chrome
 copay
 CyberGhost-VPN
 datacleaner
@@ -154,4 +155,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-chrome-remote-desktop-chrome
