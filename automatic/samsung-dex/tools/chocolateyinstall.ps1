@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url          = '{{DownloadUrl}}'
-$checksum     = ''
-$checksumType = '{{ChecksumType}}'
+$url          = 'https://downloadcenter.samsung.com/content/SW/202405/20240521131259562/SamsungDeXSetupWin.exe'
+$checksum     = 'f7a07a73cd8e73ad6a8bf4a6abee6217d6c583b2e37657cab17bc53e4ad31dd3'
+$checksumType = 'sha256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
