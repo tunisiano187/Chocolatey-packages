@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ultimate-settings-panel</id>
+    <version>6.7</version>
+    <title>Ultimate Settings Panel (Install)</title>
+    <authors>A.J. Armstrong</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>https://blog.techygeekshome.info/ultimate-settings-panel-homepage/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/ultimate-settings-panel/ultimate-settings-panel_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://ultimate-settings-panel](choco://ultimate-settings-panel)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Ultimate Settings Panel](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/ultimate-settings-panel/ultimate-settings-panel_screenshot.png)
+
+### Windows based all in one settings and configuration solution
+
+An all-in-one settings and configuration solution for a multitude of configuration options in Windows, Office, Powershell, and popular internet browsers. The latest release now has 15 different configuration tabs including Windows 10 and a total of 295 configuration items spanning across all versions of Windows, Powershell, Outlook, Server Administration, Google Chrome, Firefox, Internet Explorer and even some telnet tricks!
+
+One of the great features of Ultimate Settings Panel is the ability to have a massive range of computing options all in one easy-to-use utility.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/ultimate-settings-panel/readme.md)**
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Ultimate Settings Panel is an all in one settings solution for a multitude of configuration options in Windows 7, 8.1 and 10, Microsoft Office, Windows Server and System Center Configuration Manager.</summary>
+    <copyright>A.J. Armstrong / techygeekshome.info</copyright>
+    <tags>techygeekshome ultimate settings panel system utility configuration control binary</tags>
+    <projectSourceUrl>https://github.com/techygeekshome/Ultimate-Settings-Panel</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ultimate-settings-panel</packageSourceUrl>
+    <docsUrl>https://blog.techygeekshome.info/ultimate-settings-panel-homepage/ultimate-settings-panel-instructions/</docsUrl>
+    <mailingListUrl>http://blog.techygeekshome.info/forums/forum/ultimate-settings-panel-support/</mailingListUrl>
+    <bugTrackerUrl>https://blog.techygeekshome.info/contact/</bugTrackerUrl>
+    <dependencies>
+      <dependency id="dotnet4.5.2" version="4.5.2.20140902" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

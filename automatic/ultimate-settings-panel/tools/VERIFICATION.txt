@@ -1,0 +1,8 @@
+﻿==================== Ultimate Settings Panel ====================
+
+bcurran3 downloads and packages the included .ZIP for Ultimate Settings Panel from the developer's SourceForge website. 
+
+The direct download link can be found at:
+https://sourceforge.net/projects/ultimatesettingspanelpro/
+
+==================== Ultimate Settings Panel ====================

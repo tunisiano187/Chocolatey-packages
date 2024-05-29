@@ -1,0 +1,12 @@
+==================== Ultimate Settings Panel ====================
+
+From https://blog.techygeekshome.info/wpdm-package/ultimate-settings-panel-pro/
+in the Download section it states:
+
+License
+This utility is free to use for both personal and commercial use.
+
+Distribution
+You are free to distribute this utility in its original form. No amendments or installation wrapping with PuP is permitted.
+
+==================== Ultimate Settings Panel ====================
