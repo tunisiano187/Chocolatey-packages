@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>raidar</id>
+    <version>6.5</version>
+    <title>RAIDar (Portable)</title>
+    <authors>NETGEAR</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>http://kb.netgear.com/app/answers/detail/a_id/20684</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/8d3bb634/raidar/raidar_icon.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+###[choco://raidar](choco://raidar)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+RAIDar is a software application that you use to discover ReadyDATA systems on the network. RAIDar is included on the Resource CD that came with your system. It includes versions for Windows, Mac, and Linux operating systems. RAIDar is also available at www.netgear.com/readydata.
+
+RAIDar displays the discovered ReadyDATA units with their status LED icons. The volume, disk, UPS, and fan LED icons are not operational for the ReadyDATA.
+
+![Screenshot of NETGEAR RAIDar] (http://www.downloads.netgear.com/files/answer_media/media/images/ReadyDATA%20OS%201%20SW/RAIDarII%20Mod.PNG)
+
+You can use the following buttons to learn more about the ReadyDATA units on the network:
+
+* Setup. Launches Dashboard for the highlighted ReadyDATA.
+* Browse. Displays the shares available on the highlighted system (LUNs are not displayed). This feature works on a Windows platform only.
+* Rescan. Updates the list of ReadyDATA systems on the network, and updates the status of each system that is discovered.
+* Locate. Nonfunctional button.
+* About. Displays RAIDar information.
+* Help. Displays the help screen.
+* Exit. Closes RAIDar.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/raidar/readme.md)**
+
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>RAIDar is used to discover NETGEAR Storage on your local network.</summary>
+    <releaseNotes>https://kb.netgear.com/000059431/ReadyNAS-RAIDar-6-5</releaseNotes>
+    <copyright>Copyright NETGEAR</copyright>
+    <tags>netgear nas raidar portable</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/raidar</packageSourceUrl>
+    <docsUrl>http://kb.netgear.com/app/answers/detail/a_id/22765/~/basic-setup-with-raidar</docsUrl>
+    <bugTrackerUrl>https://kb.netgear.com/000038668/ReadyNAS-RAIDar-6-3</bugTrackerUrl>
+    <dependencies>
+      <dependency id="javaruntime" version="8.0" />
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
