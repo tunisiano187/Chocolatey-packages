@@ -5,7 +5,7 @@
     <version>6.9.5.2966</version>
     <title>Trojan Remover (Trial) (Install)</title>
     <authors>Simply Super Software</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://www.simplysup.com/tremover/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/trojan-remover/trojan-remover_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
