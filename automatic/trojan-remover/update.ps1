@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$File = Join-Path $PSScriptRoot "tools\trjsetup.exe"
 
 	Invoke-WebRequest -Uri $url -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.Trim()
 
 	$Latest = @{ URL32 = $url; Version = $version }
 	return $Latest
