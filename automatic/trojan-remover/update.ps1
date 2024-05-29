@@ -5,7 +5,7 @@ $releases = 'https://www.simplysup.com/tremover/download_full.html'
 
 function global:au_SearchReplace {
 	@{
-		"tools\VERIFICATION.txt" = @{
+		"legal\VERIFICATION.txt" = @{
 			"(url32\s+:).*"  			= "`${1} $($Latest.URL32)"
 			"(checksum32\s+:).*" 		= "`${1} $($Latest.Checksum32)"
 			"(checksumtype\s+:).*" 		= "`${1} $($Latest.ChecksumType32)"
