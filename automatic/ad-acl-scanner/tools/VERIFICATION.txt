@@ -1,8 +1,0 @@
-﻿==================== AD ACL Scanner ====================
-
-bcurran3 downloaded and packaged the included AD ACL Scanner script from the developer's website. 
-
-The direct download link can be found at:
-https://github.com/canix1/ADACLScanner
-
-==================== AD ACL Scanner ====================

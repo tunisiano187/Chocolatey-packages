@@ -3,15 +3,7 @@
 ## AD ACL Scanner (Script)
 
 ---
-
----
-
-### [choco://ad-acl-scanner](choco://ad-acl-scanner)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Screenshot of AD ACL Scanner](https://cdn.staticaly.com/gh/canix1/ADACLScanner/master/src/ADACLScan6.0.png)	
+![Screenshot of AD ACL Scanner](https://cdn.jsdelivr.net/gh/canix1/ADACLScanner@master/src/ADACLScan6.0.png?raw=true)	
 
 
 #### Features
@@ -54,19 +46,9 @@ It has the following features:
 
 ### System requirements
 
-* Powershell 2.0 or above
+* Powershell 3.0 or above
 * PowerShell using a single-threaded apartment
 * Some functions requires Microsoft .NET Framework version 4.0
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/ad-acl-scanner/readme.md)**
-
-	
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 

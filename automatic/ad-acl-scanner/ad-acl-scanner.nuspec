@@ -17,7 +17,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 
 ---
 
-![Screenshot of AD ACL Scanner](https://cdn.staticaly.com/gh/canix1/ADACLScanner/master/src/ADACLScan6.0.png)	
+![Screenshot of AD ACL Scanner](https://cdn.jsdelivr.net/gh/canix1/ADACLScanner@master/src/ADACLScan6.0.png)	
 
 
 #### Features
@@ -83,7 +83,7 @@ It has the following features:
     <bugTrackerUrl>https://github.com/canix1/ADACLScanner/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="dotnet4.0" version="4.0" />
-      <dependency id="powershell" version="2.0" />
+      <dependency id="powershell" version="3.0" />
     </dependencies>
   </metadata>
   <files>
