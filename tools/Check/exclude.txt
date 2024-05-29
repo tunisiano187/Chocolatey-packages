@@ -11,6 +11,7 @@ advancedsystemtweaker
 advtor
 alcohol52-free
 allbrowsers
+allwemo
 amazingmarvin
 AMD-Graphics-Driver
 AnkhSvn
@@ -155,4 +156,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-allwemo
