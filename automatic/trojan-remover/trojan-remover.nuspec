@@ -5,7 +5,7 @@
     <version>6.9.5.2966</version>
     <title>Trojan Remover (Trial) (Install)</title>
     <authors>Simply Super Software</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://www.simplysup.com/tremover/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/trojan-remover/trojan-remover_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -51,7 +51,7 @@ The registration fee for Trojan Remover is US$24.95. This fee covers all databas
     <summary>Trojan Remover aids in the removal of Malware - Trojan Horses, Worms, Adware, Spyware - when standard anti-virus software either fails to detect them or fails to effectively eliminate them. Standard antivirus programs are good at detecting this Malware, but not always so good at effectively removing it.</summary>
     <copyright>Copyright (C) Simply Super Software All Rights Reserved</copyright>
     <tags>trojan remover malware adware worms spyware virus trial notsilent binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/trojan-remover</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/trojan-remover</packageSourceUrl>
     <docsUrl>http://simplysup.com/tremover/faq.html</docsUrl>
     <bugTrackerUrl>http://www.simplysup.com/tremover/changes.html</bugTrackerUrl>
   </metadata>
