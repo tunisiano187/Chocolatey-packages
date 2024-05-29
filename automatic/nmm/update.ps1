@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate($Package) {
 	. ..\..\scripts\Get-GithubRepositoryLicense.ps1
-	$licenseData = Get-GithubRepositoryLicense $repoUser $repoName
+	$licenseData = Get-GithubRepositoryLicense $Owner $repo
 	$licenseFile = "$PSScriptRoot\legal\LICENSE.txt"
 	if (Test-Path $licenseFile) { Remove-Item -Force $licenseFile }
 
