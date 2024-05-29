@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases
 	$url = $page.Links.href | Where-Object {$_ -match "exe$"} | Select-Object -First 1
 	$File = Join-Path $PSScriptRoot "tools\trjsetup.exe"
-	
+
 	Invoke-WebRequest -Uri $url -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
 
