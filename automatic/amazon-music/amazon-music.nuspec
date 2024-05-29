@@ -5,7 +5,7 @@
     <version>7.13.0.2210</version>
     <title>Amazon Music (Install)</title>
     <authors>Amazon Digital Services LLC</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://goo.gl/p9o41Q</licenseUrl>
     <projectUrl>https://music.amazon.com/help/apps</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d070656e2bed6a2b71f6a9afe7fd723a28820296/icons/amazon-music.png</iconUrl>
