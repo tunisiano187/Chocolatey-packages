@@ -78,7 +78,7 @@ It has the following features:
     <copyright>Robin Granberg</copyright>
     <tags>ad active directory acl scanner powershell server</tags>
     <projectSourceUrl>https://github.com/canix1/ADACLScanner</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ad-acl-scanner</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ad-acl-scanner</packageSourceUrl>
     <docsUrl>https://github.com/canix1/ADACLScanner/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/canix1/ADACLScanner/issues</bugTrackerUrl>
     <dependencies>
