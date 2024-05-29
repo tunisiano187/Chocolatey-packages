@@ -155,3 +155,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+allwemo
