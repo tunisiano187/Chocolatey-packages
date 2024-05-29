@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $processor = Get-WmiObject Win32_Processor
 $is64bit = $processor.AddressWidth -eq 64
 if ($is64bit) {
@@ -7,9 +7,9 @@ if ($is64bit) {
   $unpath = "${Env:ProgramFiles}\Trojan Remover\unins000.exe"
   }
 $packageName = 'trojan-remover'
-$softwareName = 'Trojan Remover*' 
-$installerType = 'EXE' 
-$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' 
+$softwareName = 'Trojan Remover*'
+$installerType = 'EXE'
+$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0)
 
 Uninstall-ChocolateyPackage $packageName $installerType `
