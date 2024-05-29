@@ -1,4 +1,3 @@
-raidar 0.0 - New maintainer
 evernote-chrome 0.0 - New maintainer
 bills-jammin-jukebox 0.0 - New maintainer
 captureflux 0.0 - New maintainer
