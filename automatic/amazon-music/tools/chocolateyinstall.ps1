@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName  = $env:ChocolateyPackageName
-$url          = 'https://amazon.com/images/G/01/digital/music/morpho/installers/20200905/0031046272/AmazonMusicInstaller.exe'
-$checksum     = '73A2946C961D01B23FCE6BFF0FA26B71D47F00CFF32B7C7BB2BED3ABD72AA2E4'
-$checksumType = 'sha256'
+$url          = 'https://d2j9xt6n9dg5d3.cloudfront.net/win/24780926_1c962c14fdc55b2e347aeb3c3ffc5ee6/AmazonMusicInstaller.exe'
+$checksum     = ''
+$checksumType = ''
 
 $packageArgs = @{
   packageName   = $packageName
