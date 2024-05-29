@@ -1,0 +1,15 @@
+﻿------------------------------ AllWemo ------------------------------
+
+The included MSI binary included in this package went through through the following process to be obtained:
+* AllWemo_setup_x_xx.zip was  originally downloaded from developers site at https://ea.im/p/?r=AllWemo
+* AllWemo_setup_x_xx.exe was extracted from AllWemo_setup_x_xx.zip.
+* AllWemo_setup_x_xx.exe was checked for silent install options. Running setup.exe /? shows silent install options but they don't function. It is assumed by the packager that those are being shown by the underlying MSI package but not passed through by the wrapper.
+* AllWemo_setup_x_xx.exe was run and the AllWemo.msi was copied from the temp dir mid-process to then be included in this package.
+* AllWemo.msi installs silently perfectly fine using normal MSI install functions.
+* AllWemo distribution rights (allowed) are covered in LICENSE.txt
+
+Checksums are not provided by the developer.
+https://ea.im/p/?r=AllWemo
+
+------------------------------ AllWemo ------------------------------
+
