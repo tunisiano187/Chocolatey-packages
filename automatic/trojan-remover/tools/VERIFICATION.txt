@@ -1,7 +1,0 @@
-========================= Trojan Remover =========================
-
-bcurran3 downloads and packages the executable for Trojan Remover 
-from the developer's site at:
-https://www.simplysup.com/tremover/download.html
-
-========================= Trojan Remover =========================
