@@ -1,4 +1,3 @@
-trojan-remover 0.0 - New maintainer
 allwemo 0.0 - New maintainer
 ad-acl-scanner 0.0 - New maintainer
 ultimate-settings-panel 0.0 - New maintainer
