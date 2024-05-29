@@ -38,7 +38,7 @@
     <summary>Amazon Music for PC and Mac is a free desktop application you can use to play, download, and manage your digital music directly on your computer.</summary>
     <copyright>Amazon</copyright>
     <tags>amazon music streaming player</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/amazon-music</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/amazon-music</packageSourceUrl>
     <docsUrl>https://www.amazon.com/gp/help/customer/display.html?nodeId=201377740</docsUrl>
     <dependencies>
       <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
