@@ -1,0 +1,37 @@
+========================= Trojan Remover =========================
+
+(From the installer)
+
+SOFTWARE LICENCE AGREEMENT AND WARRANTY DISCLAIMER
+Please read this licence agreement before loading this software program (hereinafter The Program) onto your computer. If you do not accept the terms of this agreement do not install The Program. 
+This is a legally binding agreement between you and Simply Super Software. By installing and/or using The Program, you are agreeing to become bound by the terms of this agreement.
+
+Licence Grant
+Simply Super Software grants you a nonexclusive licence to:
+Load The Program onto your computer's storage device from the media provided.
+Allow others to run The Program, unless or until requested by SSS not to do so.
+
+You may not:
+Remove or alter any Simply Super Software copyright notices from any components of The Program.
+Sublicense, rent or lease all or part of The Program.
+Use The Program with the intent to violate any licensing agreements or contracts.
+Modify, adapt, translate, create derivative works, decompile, disassemble, or otherwise reverse engineer or attempt to reverse engineer or derive source code from all or any portion of The Program or anything incorporated therein or permit or encourage any third party to do so.
+
+Violation of the above-stated rules may result in temporary or permanent revocation of this licence.
+
+Copyright and Other Restrictions
+The Program is owned by Simply Super Software and is protected by the copyright laws of England and Wales and international treaty provisions.  Simply Super Software retains all rights not expressly granted. None of the components of The Program (including the documentation) may be copied, removed or altered, in whole or part, for any unauthorised use.
+
+Disclaimer of Warranty
+Simply Super Software DISCLAIMS ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, WITH RESPECT TO THE PROGRAM.  THE END-USER ASSUMES ALL RISK AS TO THE SUITABILITY, QUALITY, AND PERFORMANCE OF THE PROGRAM.  IN NO EVENT WILL Simply Super Software BE LIABLE TO THE END-USER FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL OR EXEMPLARY DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF DATA OR BUSINESS INFORMATION, AND THE LIKE) ARISING OUT OF THE USE OF OR INABILITY TO USE THE PROGRAM OR ACCOMPANYING WRITTEN MATERIALS, EVEN IF SSS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+Simply Super Software's LIABILITY TO THE END-USER (IF ANY) FOR ACTUAL DIRECT DAMAGES FOR ANY CAUSE WHATSOEVER, AND REGARDLESS OF THE FORM OF THE ACTION, WILL BE LIMITED TO, AND IN NO EVENT SHALL EXCEED, THE AMOUNT (IF ANY) ORIGINALLY PAID TO Simply Super Software FOR THE LICENCE OF THE SOFTWARE.
+
+Simply Super Software does not warrant that The Program will satisfy the requirements of your computer system, or that The Program or its documentation are without defect or error, or that the operation of The Program will be uninterrupted.
+
+General
+This Agreement constitutes the entire Agreement between you and Simply Super Software. It is governed by the laws of England and Wales.
+
+
+
+========================= Trojan Remover =========================
