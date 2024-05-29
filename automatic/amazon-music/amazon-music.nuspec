@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://goo.gl/p9o41Q</licenseUrl>
     <projectUrl>https://music.amazon.com/help/apps</projectUrl>
-    <iconUrl>https://images-na.ssl-images-amazon.com/images/I/71VdVNOOaZL._SX425_.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d070656e2bed6a2b71f6a9afe7fd723a28820296/icons/amazon-music.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
 #### With the Amazon Music app, you can play and download your music, export downloads to iTunes and Windows Media Player, shop the Amazon Digital Music Store, and access Prime Music (if you're an eligible Prime member).
