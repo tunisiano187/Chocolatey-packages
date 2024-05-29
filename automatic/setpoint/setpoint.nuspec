@@ -7,7 +7,7 @@
     <authors>Logitech</authors>
     <owners>bcurran3</owners>
     <licenseUrl>https://www.logitech.com/en-us/tos.html</licenseUrl>
-    <projectUrl>http://support.logitech.com/en_us/software/setpoint</projectUrl>
+    <projectUrl>https://support.logitech.com/en_us/software/setpoint</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/setpoint/setpoint_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
@@ -35,8 +35,7 @@ SetPoint lets you customize your mouse buttons, keyboard F-keys and hot-keys, co
     <copyright>© Logitech. All rights reserved.</copyright>
     <tags>logitech setpoint mouse utility util</tags>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/setpoint</packageSourceUrl>
-    <docsUrl>http://support.logitech.com/en_us/article/44525?product=a0qi00000069vBvAAI</docsUrl>
-    <mailingListUrl>http://support.logitech.com/en_us/software/setpoint#</mailingListUrl>
+    <mailingListUrl>https://support.logitech.com/en_us/software/setpoint#</mailingListUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

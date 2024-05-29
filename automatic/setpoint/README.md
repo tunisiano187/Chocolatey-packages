@@ -3,28 +3,9 @@
 ## Logitech SetPoint (Install)
 
 ---
-
----
-
-### [choco://setpoint](choco://setpoint)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of Logitech SetPoint](https://secure.logitech.com/assets/33024/9/m570-image.jpg)
 	
 SetPoint lets you customize your mouse buttons, keyboard F-keys and hot-keys, control tracking speed, and configure other device-specific settings. It can also notify you of your device's battery status, and whether Caps Lock and Num Lock are on.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/setpoint/readme.md)**
-
-
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
