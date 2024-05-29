@@ -4,13 +4,6 @@
 
 ---
 
----
-
-### [choco://trojan-remover](choco://trojan-remover)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of Trojan Remover](http://www.simplysup.com/tremover/images/screen1_small.png)
 ![Screenshot of Trojan Remover](http://www.simplysup.com/tremover/images/scanshot_small.png)	
 
@@ -34,15 +27,6 @@ Trojan Remover scans ALL the files loaded at boot time for Adware, Spyware, Remo
 This essential security utility is available for you to try out FREE. Download a fully-working evaluation copy today. The program will work for 30 days before you need to decide whether you would like to register it.
 
 The registration fee for Trojan Remover is US$24.95. This fee covers all database updates and future program updates for 1 year from the date of registration. The fee for renewals in subsequent years is currently set at US$17.95 per year. You can install Trojan Remover on up to 3 additional computers, for no extra charge. EU residents will also have to pay VAT at the standard rate applicable in their country.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/trojan-remover/readme.md)**
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
