@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$json = Invoke-RestMethod -Method Get -Uri $release
 	$url = $json.Native.installer_url
 	$version=$json.Native.version
-	$File = "tools\$($url -split "/" | Select-Object -Last 1)"
+	$File = Join-Path $env:TEMP $($url -split "/" | Select-Object -Last 1)
 	Invoke-WebRequest -Uri $url -OutFile $File
 	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 
