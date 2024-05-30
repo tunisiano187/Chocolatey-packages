@@ -4,13 +4,6 @@
 
 ---
 
----
-
-###[choco://orangec](choco://orangec)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol  support](https://chocolatey.org/packages/choco-protocol-support)
-
----
-	
 The Orange C/C++ Compiler is new work which includes an optimizing compiler, a tool chain, and an IDE.  The compiler itself uses various standard techniques, as well as some interesting techniques mentioned in literature.
 
 This compiler has support for the various C standards through C11, and full support for C++ 14.  The IDE for the compiler is a full featured C/C++ language IDE including a colorizing editor with code completion, integrated make facility, debugger, and a WIN32 resource editor.  
@@ -22,14 +15,6 @@ Continuous integration for the project is being done at https://ci.appveyor.com/
 An interesting variation on this compiler is the MSIL version which can generate either DLL or EXE files for .net. 
 
 This compiler will run on WIN32 and also on DOS, and generate 32-bit programs for both.   However, unlike in CC386, the DOS version is the same build as the WIN32 version, and relies on Japheth's HXDOS extender to operate in DOS.  But it will still build traditional DPMI targets e.g. for DOS32A and other extenders; the only feature missing that the DOS version of CC386 had is support for far pointers.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/orangec/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 ---
 
