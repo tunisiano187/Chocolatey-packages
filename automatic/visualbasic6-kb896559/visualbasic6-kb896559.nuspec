@@ -35,7 +35,7 @@ Mainstream Support for Microsoft Visual Basic 6.0 ended on March 31, 2005. Howev
     <summary>Update for the Microsoft Visual Basic 6.0 Common Controls: mscomctl.ocx and comctl32.ocx.</summary>
     <copyright>Microsoft</copyright>
     <tags>visual basic controls mscomctl.ocx comctl32.ocx</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/visualbasic6-kb896559</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/visualbasic6-kb896559</packageSourceUrl>
     <dependencies>
       <dependency id="autohotkey" />
     </dependencies>

@@ -26,7 +26,7 @@ A software to preview a live video stream, record it in direct-to-disk or grab i
     <summary>CaptureFlux to preview a live video or audio stream, record it in direct-to-disk or grab images from the stream</summary>
     <copyright>Paul Glagla</copyright>
     <tags>captureflux dv digital video capture digitize firewire 1394 portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/captureflux</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/captureflux</packageSourceUrl>
     <docsUrl>http://paul.glagla.free.fr/captureflux_en.htm</docsUrl>
   </metadata>
   <files>

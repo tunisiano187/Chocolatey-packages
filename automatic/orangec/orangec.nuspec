@@ -41,7 +41,7 @@ This compiler will run on WIN32 and also on DOS, and generate 32-bit programs fo
     <copyright>LADSoft</copyright>
     <tags>orangec compiler c c++ foss cross-platform</tags>
     <projectSourceUrl>https://github.com/LADSoft/OrangeC/tree/master/src</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/orangec</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/orangec</packageSourceUrl>
     <docsUrl>https://orangec.readthedocs.io/en/latest/Tools/</docsUrl>
     <bugTrackerUrl>https://github.com/LADSoft/OrangeC/issues</bugTrackerUrl>
   </metadata>
