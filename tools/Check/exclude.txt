@@ -158,3 +158,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+evernote-chrome
