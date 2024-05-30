@@ -1,4 +1,3 @@
-bills-jammin-jukebox 0.0 - New maintainer
 captureflux 0.0 - New maintainer
 orangec 0.0 - New maintainer
 visualbasic6-kb896559 0.0 - New maintainer

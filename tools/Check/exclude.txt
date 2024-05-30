@@ -22,6 +22,7 @@ armory
 audioswitcher
 avirafreeantivirus
 Bear-Notes
+bills-jammin-jukebox
 bitcoin-unlimited
 bitcoin-unlimited.install
 bitmessage
@@ -47,6 +48,7 @@ emulationstation
 emulationstation.install
 enjarify
 evernote2onenote
+evernote-chrome
 evimsync
 fastest-mouse-clicker
 filetool
@@ -158,5 +160,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-evernote-chrome
-bills-jammin-jukebox
