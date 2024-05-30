@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
+ad-tidy-free
 adblockplusie
 adguard-chrome
-ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -47,8 +47,8 @@ ekiga
 emulationstation
 emulationstation.install
 enjarify
-evernote2onenote
 evernote-chrome
+evernote2onenote
 evimsync
 fastest-mouse-clicker
 filetool
