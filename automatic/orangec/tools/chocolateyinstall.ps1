@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installer     = (Get-ChildItem -Path $toolsDir -Filter "*.exe").FullName
 
@@ -7,9 +7,9 @@ $packageArgs = @{
   fileType      = 'EXE'
   file          = $installer
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  softwareName  = 'Orange C Version*' 
+  softwareName  = 'Orange C Version*'
 }
-  
+
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item $toolsDir\*.exe -Force | Out-Null
 Remove-Item $toolsDir\*.ignore -Force | Out-Null
