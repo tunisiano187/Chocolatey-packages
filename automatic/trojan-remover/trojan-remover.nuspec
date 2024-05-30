@@ -7,7 +7,7 @@
     <authors>Simply Super Software</authors>
     <owners>tunisiano</owners>
     <projectUrl>http://www.simplysup.com/tremover/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/trojan-remover/trojan-remover_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@587374f8cded83571fbcf7c1130e3beaf82e2283/icons/trojan-remover.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
