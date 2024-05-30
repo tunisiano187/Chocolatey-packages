@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>bills-jammin-jukebox</id>
+    <version>6.1.20161009</version>
+    <title>Bill's Jammin Jukebox (Install)</title>
+    <authors>Bill Findeisen</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://opensource.org/licenses/gpl-2.0.php</licenseUrl>
+    <projectUrl>https://kenai.com/projects/bjj</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![alt text](http://i1-win.softpedia-static.com/screenshots/Bills-Jammin-Jukebox_3.png)
+
+![alt text](http://img.informer.com/screenshots/2841/2841704_2_3.png)
+![alt text](http://img.informer.com/screenshots/2841/2841704_3_3.png)
+
+
+A 100% Java front to SlimDevices SqueezeCenter (Logitech Media Server) and the open source Music Player Daemon (MPD)
+
+Bills Jammin Jukebox is a graphical user interface that uses the MPD or the SqueezeCenter server to manage songs. The program allows you to enter the server credentials and to configure the settings.
+
+
+You can use the app to control the server applications from a remote location with minimum effort.
+
+####Requirements:
+Java 
+
+####Operating system:
+Windows 10, Windows 8, Windows 7, Windows Vista, Windows XP, Windows 2000, Windows 98
+
+#####PACKAGING NOTES: Binary file included as it is no longer available via Google Code.</description>
+    <summary>A music manager used to manage music through either the Music Player Daemon or SlimDevices SqueezeCenter (Logitech Media Server).</summary>
+    <releaseNotes>added checksum</releaseNotes>
+    <tags>bills jammin jukebox bjj music manager slimdevices squeezeenter logitech media server lms squeezebox mpd java admin</tags>
+    <projectSourceUrl>https://kenai.com/projects/bjj/sources</projectSourceUrl>
+    <docsUrl>https://kenai.com/projects/bjj/pages/Home</docsUrl>
+    <mailingListUrl>https://kenai.com/projects/bjj/lists</mailingListUrl>
+    <bugTrackerUrl>https://kenai.com/bugzilla/buglist.cgi?product=bjj</bugTrackerUrl>
+    <dependencies>
+      <dependency id="javaruntime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
