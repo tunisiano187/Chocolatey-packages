@@ -5,7 +5,7 @@
     <version>6.0.2800.1107</version>
     <title>Microsoft Visual Basic 6.0 Common Controls (Install)</title>
     <authors>Microsoft</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=10019</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/mylogos/ocx_icon.png</iconUrl>

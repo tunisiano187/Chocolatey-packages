@@ -5,7 +5,7 @@
     <version>6.0.42.1</version>
     <title>Orange C/C++ Compiler (Install)</title>
     <authors>David Lindauer</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/LADSoft/OrangeC/tree/master/license</licenseUrl>
     <projectUrl>http://ladsoft.tripod.com/orange_c_compiler.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@071838d22d7166dc6432824e246b07fab49ef254/icons/orangec.png</iconUrl>
