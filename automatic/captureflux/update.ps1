@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP $($url32.Split('/')[-1])
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	Expand-Archive -Path $File -DestinationPath $ExtractFolder
-	$checksum = Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType
+	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 	$File = (Get-ChildItem -Path $ExtractFolder -Filter "*.exe").FullName
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 
