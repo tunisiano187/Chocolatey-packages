@@ -159,3 +159,4 @@ xmeters
 zimbra-desktop
 zona
 evernote-chrome
+bills-jammin-jukebox
