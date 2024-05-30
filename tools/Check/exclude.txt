@@ -117,6 +117,7 @@ pngoo
 profile
 pulse
 pydiosync
+raidar
 regexpeditor
 rehash
 riecoin
@@ -157,4 +158,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-raidar
