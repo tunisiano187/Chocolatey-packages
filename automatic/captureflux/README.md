@@ -16,7 +16,6 @@ A software to preview a live video stream, record it in direct-to-disk or grab i
 * You may "inlay" the date and time into the video frames, either the current date and time, or if it's a DV stream, the datecode, ie the date and time when the video has been shot. The font, the position etc.. of the inlay is adjustable. You may even set it to appear automatically at every scene change for a given duration. You may also modify the datecode before displaying or capturing it, for instance if you have missed a time difference.
 * You may launch several instances of CaptureFlux simultaneously, each one with a capture device, even if some devices are of the same type, for instance are DV cameras (each one gets a rank number to distinguish them).
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/captureflux/readme.md)**
 
 ---
 
