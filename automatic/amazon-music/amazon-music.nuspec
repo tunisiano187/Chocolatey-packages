@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>amazon-music</id>
-    <version>7.13.0.2210</version>
+    <version>9.5.2.2478</version>
     <title>Amazon Music (Install)</title>
     <authors>Amazon Digital Services LLC</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,10 @@
     <projectUrl>https://music.amazon.com/help/apps</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d070656e2bed6a2b71f6a9afe7fd723a28820296/icons/amazon-music.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
+    <description><![CDATA[## Amazon Music (Install)
+
+---
+
 #### With the Amazon Music app, you can play and download your music, export downloads to iTunes and Windows Media Player, shop the Amazon Digital Music Store, and access Prime Music (if you're an eligible Prime member).
 
 # music
@@ -27,14 +30,18 @@
 * Amazon Music for PC detects and adds new music to your library even if you bought it from iTunes or ripped a CD. Your music library will always be organized and up-to-date.
 * System Requirements: Windows 7 and later
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/amazon-music/readme.md)**
-	
-
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+#### [choco://amazon-music](choco://amazon-music)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>Amazon Music for PC and Mac is a free desktop application you can use to play, download, and manage your digital music directly on your computer.</summary>
     <copyright>Amazon</copyright>
     <tags>amazon music streaming player</tags>

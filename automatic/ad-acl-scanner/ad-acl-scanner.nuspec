@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ad-acl-scanner</id>
-    <version>6.8</version>
+    <version>7.9</version>
     <title>AD ACL Scanner (Script)</title>
     <authors>Robin Granberg</authors>
     <owners>tunisiano</owners>
@@ -10,14 +10,10 @@
     <projectUrl>https://github.com/canix1/ADACLScanner</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2dc06e3a49487a193dd5f2bde31965fd45373c34/icons/ad-acl-scanner.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://ad-acl-scanner](choco://ad-acl-scanner)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+    <description><![CDATA[## AD ACL Scanner (Script)
 
 ---
-
-![Screenshot of AD ACL Scanner](https://cdn.jsdelivr.net/gh/canix1/ADACLScanner@master/src/ADACLScan6.0.png)	
+![Screenshot of AD ACL Scanner](https://cdn.jsdelivr.net/gh/canix1/ADACLScanner@master/src/ADACLScan6.0.png?raw=true)	
 
 
 #### Features
@@ -60,19 +56,22 @@ It has the following features:
 
 ### System requirements
 
-* Powershell 2.0 or above
+* Powershell 3.0 or above
 * PowerShell using a single-threaded apartment
 * Some functions requires Microsoft .NET Framework version 4.0
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/ad-acl-scanner/readme.md)**
-
-	
-
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+#### [choco://ad-acl-scanner](choco://ad-acl-scanner)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>A tool with GUI used to create reports of access control lists (DACLs) and system access control lists (SACLs) in Active Directory .</summary>
     <releaseNotes>https://github.com/canix1/ADACLScanner/wiki/History</releaseNotes>
     <copyright>Robin Granberg</copyright>

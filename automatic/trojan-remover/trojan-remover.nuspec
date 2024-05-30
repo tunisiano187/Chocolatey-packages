@@ -2,17 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>trojan-remover</id>
-    <version>6.9.5.2966</version>
+    <version>6.9.6.0</version>
     <title>Trojan Remover (Trial) (Install)</title>
     <authors>Simply Super Software</authors>
     <owners>tunisiano</owners>
     <projectUrl>http://www.simplysup.com/tremover/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@587374f8cded83571fbcf7c1130e3beaf82e2283/icons/trojan-remover.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://trojan-remover](choco://trojan-remover)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+    <description><![CDATA[## Trojan Remover (Trial) (Install)
 
 ---
 
@@ -40,14 +37,18 @@ This essential security utility is available for you to try out FREE. Download a
 
 The registration fee for Trojan Remover is US$24.95. This fee covers all database updates and future program updates for 1 year from the date of registration. The fee for renewals in subsequent years is currently set at US$17.95 per year. You can install Trojan Remover on up to 3 additional computers, for no extra charge. EU residents will also have to pay VAT at the standard rate applicable in their country.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/trojan-remover/readme.md)**
-    
-
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+#### [choco://trojan-remover](choco://trojan-remover)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>Trojan Remover aids in the removal of Malware - Trojan Horses, Worms, Adware, Spyware - when standard anti-virus software either fails to detect them or fails to effectively eliminate them. Standard antivirus programs are good at detecting this Malware, but not always so good at effectively removing it.</summary>
     <copyright>Copyright (C) Simply Super Software All Rights Reserved</copyright>
     <tags>trojan remover malware adware worms spyware virus trial notsilent binary</tags>
