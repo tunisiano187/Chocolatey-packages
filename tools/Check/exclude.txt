@@ -146,6 +146,7 @@ ultimate-settings-panel
 vcexpress2010
 videocacheview
 vim-tux
+visualbasic6-kb896559
 Waircut
 webbrowserpassview
 webbrowserpassview.portable
@@ -160,4 +161,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-visualbasic6-kb896559
