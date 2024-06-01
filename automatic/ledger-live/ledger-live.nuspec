@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://shop.ledger.com/pages/ledger-live-terms-of-use/</licenseUrl>
     <projectUrl>https://www.ledger.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/RalfEs73/chocolatey-packages/3da2f876a97ce12d9b86a80cc7619e83dc9efa91/ledger-live/icon/Icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a932f190c1bac9c4401503b43e3444352d396536/icons/ledger-live.png</iconUrl>
     <description>Ledger Live is a cryptocurrency Hardware Wallet Client.
 	If this package isn't up-to-date for some days, please [create an issue](https://github.com/RalfEs73/chocolatey-packages/issues/new/choose).</description>
     <summary>Ledger Live Wallet</summary>
