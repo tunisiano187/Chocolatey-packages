@@ -2,13 +2,12 @@
 
 ## CaptureFlux (Portable)
 
----
 
 ![Screenshot of CaptureFlux](http://paul.glagla.free.fr/images/capture52en_1.jpg)
 
 A software to preview a live video stream, record it in direct-to-disk or grab images from the stream.
 
-###Additional Features:
+### Additional Features:
 * You may preview in full screen or in a window a video stream coming from a DV camcorder via firewire, an analogic video card, a Usb webcam. It is even possible with some MovieBoxes from Pinnacle. Naturally, if there is an audio stream, you may listen to it.
 * You may capture this stream to the hard-disk in the native format, in DV (Pal or NTSC), or in Windows Media Video (Wmv). The capture may be scheduled at any future date and time.
 * You may change the audio stream, for instance take the stream from a sound card (Line in or Microphone) to replace the audio in a DV stream. There is even a feature to fix the audio/video sync issues when capturing from a video device and a different audio device. The audio may be advanced or delayed to reduce a constant gap.
@@ -17,8 +16,6 @@ A software to preview a live video stream, record it in direct-to-disk or grab i
 * You may launch several instances of CaptureFlux simultaneously, each one with a capture device, even if some devices are of the same type, for instance are DV cameras (each one gets a rank number to distinguish them).
 
 
----
-
 #### [choco://captureflux](choco://captureflux)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
@@ -26,5 +23,3 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
-
----
