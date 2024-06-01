@@ -39,7 +39,7 @@ ___</description>
     <releaseNotes>https://docs.vmware.com/en/VMware-vSphere/6.0/rn/vsphere-vcenter-server-60u3h-release-notes.html</releaseNotes>
     <copyright>Copyright © VMware, Inc. All rights reserved.</copyright>
     <tags>vmware vsphere client virtual machine virtualization esxi</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/vmwarevsphereclient/vmwarevsphereclient_6.0.0.9103891</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vmwarevsphereclient</packageSourceUrl>
     <docsUrl>https://docs.vmware.com/en/VMware-vSphere/6.0/vsphere-esxi-vcenter-server-60-client-administration-guide.pdf</docsUrl>
     <dependencies>
       <dependency id="dotnet3.5" />
