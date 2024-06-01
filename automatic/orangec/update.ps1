@@ -38,4 +38,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; Version = $version; ReleaseUri = $tags.html_url; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
