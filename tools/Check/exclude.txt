@@ -161,3 +161,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+vmwarevsphereclient
