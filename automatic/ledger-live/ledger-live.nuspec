@@ -5,7 +5,7 @@
     <version>2.77.2</version>
     <title>Ledger Live (Install)</title>
     <authors>Ledger SAS</authors>
-    <owners>RalfEs</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://shop.ledger.com/pages/ledger-live-terms-of-use/</licenseUrl>
     <projectUrl>https://www.ledger.com/</projectUrl>
