@@ -15,7 +15,7 @@
     <summary>Ledger Live Wallet</summary>
     <tags>ledger-live hardwarewallet cryptocurrency</tags>
     <projectSourceUrl>https://github.com/LedgerHQ/ledger-live-desktop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/RalfEs73/chocolatey-packages/tree/master/ledger-live</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ledger-live</packageSourceUrl>
     <bugTrackerUrl>https://github.com/LedgerHQ/ledger-live-desktop/issues</bugTrackerUrl>
   </metadata>
   <files>
