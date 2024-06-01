@@ -25,7 +25,7 @@ function global:au_GetLatest {
     $url32 = $urls | Where-Object {$_ -notmatch 'signatures'}
     $version = ($tags.tag_name).split('v|-')[1]
     if($version -match '_') {
-        $version = $version.split('_','')[0]
+        $version = $version.split('_')[0]
     }
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 
