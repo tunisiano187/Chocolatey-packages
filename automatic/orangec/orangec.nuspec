@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>orangec</id>
-    <version>6.73.1</version>
+    <version>6.73.0</version>
     <title>Orange C/C++ Compiler (Install)</title>
     <authors>David Lindauer</authors>
     <owners>tunisiano</owners>
@@ -48,6 +48,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <bugTrackerUrl>https://github.com/LADSoft/OrangeC/issues</bugTrackerUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
