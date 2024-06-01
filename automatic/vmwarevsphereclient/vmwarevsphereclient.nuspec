@@ -5,7 +5,7 @@
     <version>6.0.0.9103891</version>
     <title>VMware vSphere Client</title>
     <authors>VMware, Inc.</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <projectUrl>https://www.vmware.com/products/vsphere/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/vmwarevsphereclient/vmwarevsphereclient_icon.png</iconUrl>
