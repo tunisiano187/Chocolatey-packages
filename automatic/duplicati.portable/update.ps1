@@ -24,6 +24,8 @@ function global:au_GetLatest {
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
     $url32 = $urls | Where-Object {$_ -notmatch 'signatures'}
     $version = ($tags.tag_name).split('v|-')[1]
+    $version = $version.replace('_','-')
+    
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 
 	$Latest = @{ URL32 = $url32; Version = $version }
