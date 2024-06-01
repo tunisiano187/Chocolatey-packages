@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>captureflux</id>
-    <version>6.0.5</version>
+    <version>6.2.0.55</version>
     <title>CaptureFlux (Portable)</title>
     <authors>Paul Glagla</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,11 @@
     <projectUrl>http://paul.glagla.free.fr/captureflux_en.htm</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/captureflux/CaptureFlux_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of CaptureFlux](http://paul.glagla.free.fr/images/capture52en_1.jpg)
+    <description><![CDATA[## CaptureFlux (Portable)
+
+---
+
+![Screenshot of CaptureFlux](http://paul.glagla.free.fr/images/capture52en_1.jpg)
 
 A software to preview a live video stream, record it in direct-to-disk or grab images from the stream.
 
@@ -22,7 +26,19 @@ A software to preview a live video stream, record it in direct-to-disk or grab i
 * You may "inlay" the date and time into the video frames, either the current date and time, or if it's a DV stream, the datecode, ie the date and time when the video has been shot. The font, the position etc.. of the inlay is adjustable. You may even set it to appear automatically at every scene change for a given duration. You may also modify the datecode before displaying or capturing it, for instance if you have missed a time difference.
 * You may launch several instances of CaptureFlux simultaneously, each one with a capture device, even if some devices are of the same type, for instance are DV cameras (each one gets a rank number to distinguish them).
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/captureflux/readme.md)**</description>
+
+---
+
+#### [choco://captureflux](choco://captureflux)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>CaptureFlux to preview a live video or audio stream, record it in direct-to-disk or grab images from the stream</summary>
     <copyright>Paul Glagla</copyright>
     <tags>captureflux dv digital video capture digitize firewire 1394 portable</tags>
