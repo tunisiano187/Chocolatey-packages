@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Where-Object {$_.Tag_Name -match "live-desktop"} | Select-Object -First 1
 	$version = $tags.tag_name.Split('@')[-1]
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	
+
 	# Get the link to download the file
 	$releases = 'https://download.live.ledger.com/'
 	$Page = Invoke-WebRequest -Uri $releases
