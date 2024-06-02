@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.drivermax.com/terms_and_conditions.htm</licenseUrl>
     <projectUrl>https://www.drivermax.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bcurran3/ChocolateyPackages/drivermax/drivermax_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/drivermax.png</iconUrl>
     <description>---
 
 ### [choco://drivermax](choco://drivermax)

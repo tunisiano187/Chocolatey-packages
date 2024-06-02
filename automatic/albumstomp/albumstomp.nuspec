@@ -7,7 +7,7 @@
     <authors>StompSoftware</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://stompsoftware.com/albumstomp2-features/</projectUrl>
-    <iconUrl>https://stompsoftware.com/wp-content/uploads/2018/09/logoas.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/albumstomp.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AlbumStomp (Install)
 

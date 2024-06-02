@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/amazon-chime?color=green&label=amazon-chime)](https://chocolatey.org/packages/amazon-chime) [![](https://img.shields.io/chocolatey/dt/amazon-chime)](https://chocolatey.org/packages/amazon-chime)
+[![](https://img.shields.io/chocolatey/v/amazon-chime?color=green&label=amazon-chime)](https://chocolatey.org/packages/amazon-chime) [![](https://img.shields.io/chocolatey/dt/amazon-chime)](https://chocolatey.org/packages/amazon-chime)
 
 ## Airshipper Veloren
 Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren up to date. Due to our frequent updates it is the recommended way of installing Veloren.

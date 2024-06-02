@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.digitalvolcano.co.uk/dcpurchase.html</licenseUrl>
     <projectUrl>https://www.digitalvolcano.co.uk/duplicatecleaner.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/f782e9a976592d6a8e172bf28073de77b3972b73/icons/duplicatecleaner.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/duplicatecleaner.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[# Duplicate Cleaner
 

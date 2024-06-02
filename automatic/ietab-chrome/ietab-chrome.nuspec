@@ -7,7 +7,7 @@
     <authors>ietab.net</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd</projectUrl>
-    <iconUrl>https://lh3.googleusercontent.com/_UAdMqAA6PRbpL7ozSL3dH34l3uNYzOlX8uJ7lsz2TAfRzHNI9FHYuCNHhTfaXhmnnc1mNmHbg=s26-h26-e365-rw</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/ietab-chrome.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of IE Tab for Chrome](https://lh3.googleusercontent.com/jBcRJhr62UYVgLkFZUsOlHwk0EiHdBC75QcWJrbHUMb-CR7jDnauqS7uY4clY-w6-wyHl6wE_g=s640-h400-e365-rw)	
 	
