@@ -59,6 +59,7 @@ gamedownloader
 getopt
 hashdeep
 hdparm
+hexamail-pop3-downloader
 highlight
 hostinfo
 hp-bios-cmdlets
@@ -162,4 +163,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-hexamail-pop3-downloader
