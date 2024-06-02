@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>beebeep</id>
+    <version>5.8.6</version>
+    <title>beeBEEP (Portable)</title>
+    <authors>Marco Mastroddi</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://sourceforge.net/p/beebeep/code/HEAD/tree/LICENSE.txt</licenseUrl>
+    <projectUrl>http://beebeep.sourceforge.net/</projectUrl>
+    <iconUrl>https://briian.com/wp-content/uploads/2016/05/BeeBEEP-200.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://beebeep](choco://beebeep)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of beeBEEP](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/beebeep/beebeep_screenshot.jpg)
+
+### What is BeeBEEP?
+
+BeeBEEP is an open source, peer to peer, lan messenger developed by Marco Mastroddi. You can talk and share files with all the people inside your local area network such of an office, home or internet cafe. You don't need a server, just download, unzip and start it. Simple, fast and secure.
+
+#### Main Features:
+* Free: BeeBEEP is free and always will be.
+* Multiple OS: there are releases for Windows, MacOSX, Linux, OS/2 and eComStation.
+* Easy to use: BeeBEEP is a serverless application. Download, unzip and start.
+* Secure: encryption based on Rijndael Algorithm (AES).
+* Instant Messaging: chat with all people connected, group or single user.
+* Groups: create your favorite group of people.
+* P2P: send or share your files and folders (also by drag and drop).
+* Offline messages: messages will be delivered to offline users when they will be online.
+* Message History: all messages can be saved.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/beebeep/readme.md)**
+
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>BeeBEEP is an open source, peer to peer, secure LAN messenger.</summary>
+    <releaseNotes>https://sourceforge.net/p/beebeep/code/HEAD/tree/CHANGELOG.txt</releaseNotes>
+    <copyright>© Marco Mastroddi</copyright>
+    <tags>beebeep IM chat messenger portable</tags>
+    <projectSourceUrl>https://sourceforge.net/p/beebeep/code/HEAD/tree/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/beebeep</packageSourceUrl>
+    <docsUrl>http://beebeep.sourceforge.net/help.php</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/beebeep/tickets/</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
