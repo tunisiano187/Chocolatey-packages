@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>amazon-photos</id>
+    <version>5.8.3.230</version>
+    <title>Amazon Photos (Install)</title>
+    <authors>Amazon.com</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.amazon.com/gp/help/customer/display.html/?nodeId=201376540</licenseUrl>
+    <projectUrl>https://www.amazon.com/photos</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/amazon-photos/amazon-photos_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>___
+[choco://amazon-photos](choco://amazon-photos)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+___
+
+Amazon Photos: Amazon Photos offers unlimited full-resolution online photo storage, and 5 GB free video storage, to Prime members, who can save and share their photos on desktop, mobile, and tablet. Share unlimited photo storage with up to 5 people. Share photos with anybody, Prime member or not, with Groups. With the Amazon Photos mobile and web apps, photo backup has never been easier. Use the iOS or Android mobile apps to auto-save your photos, then safely delete them from your phone to free up space on your device. Upload photos from your desktop computer, and store them all safely with the Amazon Photos desktop app. Access your photos and videos anywhere, across desktop, mobile, and tablet.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/amazon-photos/readme.md)**
+	
+
+___
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+___</description>
+    <summary>Unlimited full-resolution photo storage with Prime</summary>
+    <copyright>(C) Amazon.com Inc.</copyright>
+    <tags>amazon photos</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/amazon-photos</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+      <dependency id="dotnet4.6.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
