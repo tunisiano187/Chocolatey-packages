@@ -47,7 +47,7 @@ BeeBEEP is an open source, peer to peer, lan messenger developed by Marco Mastro
     <copyright>© Marco Mastroddi</copyright>
     <tags>beebeep IM chat messenger portable</tags>
     <projectSourceUrl>https://sourceforge.net/p/beebeep/code/HEAD/tree/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/beebeep</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/beebeep</packageSourceUrl>
     <docsUrl>http://beebeep.sourceforge.net/help.php</docsUrl>
     <bugTrackerUrl>https://sourceforge.net/p/beebeep/tickets/</bugTrackerUrl>
     <dependencies>
