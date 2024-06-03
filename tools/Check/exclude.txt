@@ -163,3 +163,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+amazon-photos
