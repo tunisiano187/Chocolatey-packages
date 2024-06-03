@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://sourceforge.net/p/beebeep/code/HEAD/tree/LICENSE.txt</licenseUrl>
     <projectUrl>http://beebeep.sourceforge.net/</projectUrl>
-    <iconUrl>https://briian.com/wp-content/uploads/2016/05/BeeBEEP-200.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2169f2cea99978e27b93d7b33c036858801c771d/icons/beebeep.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
