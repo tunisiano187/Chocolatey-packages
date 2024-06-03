@@ -1,6 +1,0 @@
-============================== BeeBeep ==============================
- 
-bcurran3 downloads and packages the zip for BeeBeep from:
-http://beebeep.sourceforge.net/download.php
- 
-============================== BeeBeep ==============================
