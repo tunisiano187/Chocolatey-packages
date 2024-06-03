@@ -13,6 +13,7 @@ alcohol52-free
 allbrowsers
 allwemo
 amazingmarvin
+amazon-photos
 AMD-Graphics-Driver
 AnkhSvn
 anvide-seal-folder
@@ -163,4 +164,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-amazon-photos
