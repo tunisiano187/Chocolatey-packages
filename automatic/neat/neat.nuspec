@@ -5,7 +5,7 @@
     <version>5.7.1.20190403</version>
     <title>Neat 5 for Windows (Install)</title>
     <authors>The Neat Company</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://web.archive.org/web/20110612061347/http://neatco.com/our-company/policies.aspx</licenseUrl>
     <projectUrl>https://web.archive.org/web/20130208072345/http://www.neat.com/products/neat-pc</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/neat/neat_icon.png</iconUrl>
