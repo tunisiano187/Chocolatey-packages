@@ -45,7 +45,7 @@ The Neat Company [announced](http://www.neat.com/helpcenter/ending-support-of-le
     <summary>Neat 5 for Windows - scanning software for NeatReceipts, NeatDesk, and NeatConnect scanners</summary>
     <copyright>The Neat Company</copyright>
     <tags>neat scan scanner scanning neatdesk</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/neat</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/neat</packageSourceUrl>
     <docsUrl>https://s3.amazonaws.com/neat-marketing/UserGuides/Neat5ForPCUserGuideMarch2012.pdf</docsUrl>
     <dependencies>
       <dependency id="dotnet3.5" version="3.5" />
