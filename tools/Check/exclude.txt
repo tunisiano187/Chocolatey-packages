@@ -164,3 +164,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+neat
