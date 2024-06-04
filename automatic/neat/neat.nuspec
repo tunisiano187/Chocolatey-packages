@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>neat</id>
+    <version>5.7.1.20190403</version>
+    <title>Neat 5 for Windows (Install)</title>
+    <authors>The Neat Company</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://web.archive.org/web/20110612061347/http://neatco.com/our-company/policies.aspx</licenseUrl>
+    <projectUrl>https://web.archive.org/web/20130208072345/http://www.neat.com/products/neat-pc</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/neat/neat_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+###[choco://neat](choco://neat)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Neat 5 for Windows](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/neat/neat_screenshot.png)
+
+Neat 5 for Windows is the legacy digital filing system (scanning software) used by The Neat Company's line of NeatReceipts, NeatDesk, and NeatConnect scanners; it works with other brand scanners as well.
+
+The Neat Company [announced](http://www.neat.com/helpcenter/ending-support-of-legacy-desktop/) March 1, 2016 the software had reached End of Life (EOL) in favor of The Neat Company's cloud-powered subscription based software.
+
+[Neat 5 Scanning Into Neat](https://www.youtube.com/watch?v=zKQpWpcRYfo) video overview.
+	
+####These are the required specifications for installation:
+
+* Microsoft® Windows 7, 8.1 or 10 (32 or 64-bit) If using Windows 10 also install the 5.7.1 update.
+* Pentium® IV 2.0+ GHz or faster (Dual Core recommended)
+* 1 GB RAM; 2 GB highly recommended
+* 1 GB of available disk space for installation, 1 GB recommended for user data
+* Available USB port	
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/neat/readme.md)**
+
+
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Neat 5 for Windows - scanning software for NeatReceipts, NeatDesk, and NeatConnect scanners</summary>
+    <copyright>The Neat Company</copyright>
+    <tags>neat scan scanner scanning neatdesk</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/neat</packageSourceUrl>
+    <docsUrl>https://s3.amazonaws.com/neat-marketing/UserGuides/Neat5ForPCUserGuideMarch2012.pdf</docsUrl>
+    <dependencies>
+      <dependency id="dotnet3.5" version="3.5" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
