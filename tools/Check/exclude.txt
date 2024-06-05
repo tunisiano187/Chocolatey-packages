@@ -165,3 +165,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+autobootdisk
