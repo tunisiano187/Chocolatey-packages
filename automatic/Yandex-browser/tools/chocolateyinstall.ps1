@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 
-$url          = 'https://cachev2-ams03.cdn.yandex.net/download.cdn.yandex.net/browser/int/24_4_3_1011_58103/en/Yandex.exe'
-$checksum     = 'c7efc179ab82cac40a5a04dc362f2423a41bd7ddb9acd37522eec5b3b6e16ba5'
+$url          = 'https://cachev2-kiv03.cdn.yandex.net/download.cdn.yandex.net/browser/int/24_4_5_486_59156/en/Yandex.exe'
+$checksum     = '6ebd898f37224607ab05376e195113fbd1cb441a201d58713b8ac51b0c1d4cab'
 $checksumType = 'sha256'
 
 $packageArgs = @{
