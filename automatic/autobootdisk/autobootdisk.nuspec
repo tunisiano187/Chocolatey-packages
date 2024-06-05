@@ -36,7 +36,7 @@
     <releaseNotes>https://bluskript.wixsite.com/autobootdisk/blog</releaseNotes>
     <copyright>© BY AUTOBOOTDISK</copyright>
     <tags>autobootdisk linux distributions download bootable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/autobootdisk</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/autobootdisk</packageSourceUrl>
     <docsUrl>https://bluskript.wixsite.com/autobootdisk/faq</docsUrl>
     <bugTrackerUrl>https://github.com/EvilSourcerer/AutoBootDisk/issues</bugTrackerUrl>
   </metadata>
