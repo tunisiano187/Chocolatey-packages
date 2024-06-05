@@ -7,7 +7,7 @@
     <authors>EvilSourcerer/bluskript</authors>
     <owners>bcurran3</owners>
     <projectUrl>https://www.simpodex.com/autobootdisk.php</projectUrl>
-    <iconUrl>https://static.wixstatic.com/media/e32f91_d682104e1540477694df191c63c796fd~mv2.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@453e2afdbd5307af4b29ebdb0cbe7c7b8ff53456/icons/autobootdisk.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of AutoBootDisk](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/autobootdisk/autobootdisk_screenshot.png)
 
