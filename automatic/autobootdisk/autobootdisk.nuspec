@@ -5,7 +5,7 @@
     <version>5.7</version>
     <title>AutoBootDisk (Install)</title>
     <authors>EvilSourcerer/bluskript</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://www.simpodex.com/autobootdisk.php</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@453e2afdbd5307af4b29ebdb0cbe7c7b8ff53456/icons/autobootdisk.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
