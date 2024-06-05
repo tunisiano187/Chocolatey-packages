@@ -98,6 +98,7 @@ movefile
 msdeploy
 msigna
 myuninst
+neat
 nordvpn
 Notes
 nxt
@@ -164,4 +165,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-neat
