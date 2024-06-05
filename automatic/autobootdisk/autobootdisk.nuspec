@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>autobootdisk</id>
+    <version>5.7</version>
+    <title>AutoBootDisk (Install)</title>
+    <authors>EvilSourcerer/bluskript</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>https://www.simpodex.com/autobootdisk.php</projectUrl>
+    <iconUrl>https://static.wixstatic.com/media/e32f91_d682104e1540477694df191c63c796fd~mv2.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of AutoBootDisk](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/autobootdisk/autobootdisk_screenshot.png)
+
+###AutoBootDisk
+
+​No more prolonged Google Searches.
+
+​No more annoying waits.
+
+​Everything is in one application.
+
+​Clean UI
+
+​AutoBootDisk is a new alternative bootable USB Loader program. It is 1.5 times faster than UNetbootin. This program also supports automatic updates, so any bugs get patched automatically.
+
+###​Features
+* Automatic Updates
+* Automatic Downloader with 78 Linux Distributions Supported, and a custom section if you don't find your distribution in the list.
+* Clean GUI
+* Faster than Rufus, UNetbootin, Universal USB Installer, or the Windows 7 USB Download Tool
+
+[Supported Linux Distributions](https://bluskript.wixsite.com/autobootdisk/supported-linux-distributions)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/autobootdisk/readme.md)**</description>
+    <summary>Create Bootable USB Automagically using this simple tool. It is programmed in Visual C# .NET framework, and automatically downloads and installs Linux Distributions.</summary>
+    <releaseNotes>https://bluskript.wixsite.com/autobootdisk/blog</releaseNotes>
+    <copyright>© BY AUTOBOOTDISK</copyright>
+    <tags>autobootdisk linux distributions download bootable</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/autobootdisk</packageSourceUrl>
+    <docsUrl>https://bluskript.wixsite.com/autobootdisk/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/EvilSourcerer/AutoBootDisk/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
