@@ -47,7 +47,7 @@ ___</description>
     <summary>Unlimited Secure Storage from Amazon</summary>
     <copyright>(C) Amazon.com Inc.</copyright>
     <tags>amazon amazondrive amazonclouddrive cloud drive</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/amazondrive</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/amazondrive</packageSourceUrl>
     <dependencies>
       <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
       <dependency id="dotnet4.6.1" />
