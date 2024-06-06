@@ -15,6 +15,6 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
+Install-ChocolateyPackage @packageArgs
 Start-WaitandStop "Amazon Music Helper"
 Start-WaitandStop "Amazon Music"
-Install-ChocolateyPackage @packageArgs
