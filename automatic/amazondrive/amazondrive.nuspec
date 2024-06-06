@@ -5,7 +5,7 @@
     <version>5.6.0.102</version>
     <title>Amazon Photos (Install)</title>
     <authors>Amazon.com</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.amazon.com/gp/help/customer/display.html/?nodeId=201376540</licenseUrl>
     <projectUrl>https://www.amazon.com/clouddrive</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4dd40ba80f99b79f1101a318bb4cf6b2644611da/icons/amazondrive.png</iconUrl>
