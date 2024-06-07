@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>Yandex-browser</id>
-    <version>24.4.5.486</version>
+    <version>24.4.5.499</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/Yandex-browser</packageSourceUrl>
     <owners>tunisiano</owners>
 
