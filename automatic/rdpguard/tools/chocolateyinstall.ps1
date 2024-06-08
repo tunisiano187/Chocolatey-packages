@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'rdpguard'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://rdpguard.com/download/rdpguard-5-4-9.exe'
@@ -7,7 +7,7 @@ $checksumType   = ''
 
 $packageArgs = @{
   packageName   = $packageName
-  unzipLocation = $toolsDir  
+  unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url
   validExitCodes= @(0)
