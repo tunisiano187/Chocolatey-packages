@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ntttcp</id>
+    <version>5.33</version>
+    <title>Microsoft NT TCP Testing Tool (NTTTCP) 5.33 (Portable)</title>
+    <authors>Microsoft</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>https://gallery.technet.microsoft.com/NTttcp-Version-528-Now-f8b12769</projectUrl>
+    <iconUrl>https://assets.onestore.ms/cdnfiles/onestorerolling-1509-17011/shell/v1_2/images/logo/microsoft.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Used to profile and measure Windows networking performance, NTttcp is one of the primary tools Microsoft engineering teams leverage to validate network function and utility.
+
+For more information about specific parameters and options, please run the tool without arguments to display all supported options.
+
+**PACKAGING NOTE:** Documentation and EULA can be found extracted in the package's tools directory.</description>
+    <summary>NTttcp Utility: Profile and Measure Windows Networking Performance</summary>
+    <copyright>Microsoft</copyright>
+    <tags>microsoft ntttcp networking scale testing portable</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ntttcp</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
