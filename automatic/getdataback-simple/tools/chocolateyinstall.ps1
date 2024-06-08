@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'getdataback-simple'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www.runtime.org/gdbprosetup.exe'
@@ -7,7 +7,7 @@ $checksumType   = ''
 
 $packageArgs = @{
   packageName    = $packageName
-  unzipLocation  = $toolsDir  
+  unzipLocation  = $toolsDir
   fileType       = 'EXE'
   url            = $url
   validExitCodes = @(0)
