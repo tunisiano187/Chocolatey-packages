@@ -2,11 +2,6 @@
 
 ## GetDataBack Pro (Trial)(Install)
 
-___
-### [choco://getdataback-simple](choco://getdataback-simple)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
-
 ![Screenshot of GetDataBack Simple](http://www.runtime.org/images/gdbsim1.gif) ![Screenshot of GetDataBack Simple 2](http://www.runtime.org/images/gdbsim2.gif)	
 
 ### GetDataBack Pro Data Recovery
@@ -27,14 +22,6 @@ Our flagship product GetDataBack Pro is the most powerful Data Recovery software
 * Free to try
 * Free lifetime updates with purchase
 * Run GetDataBack from the Runtime Live CD or a WinPE Boot Medium
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/getdataback-simple/readme.md)**
-	
-
-___
-
-Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
-___
 
 #### [choco://getdataback-simple](choco://getdataback-simple)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
