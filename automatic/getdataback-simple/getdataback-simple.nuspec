@@ -45,7 +45,7 @@ ___</description>
     <summary>GetDataBack Simple - The simplest Data Recovery Software ever.</summary>
     <copyright>(c) Runtime Software</copyright>
     <tags>runtime getdataback simple data recovery utility ntfs fat12 fat16 fat32 exfat ext ext2 ext3 ext4 trial</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/getdataback-simple</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/getdataback-simple</packageSourceUrl>
     <docsUrl>https://www.runtime.org/data-recovery-documentation.htm</docsUrl>
   </metadata>
   <files>
