@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "chocolatey\gdbprosetup.exe"
 	Invoke-WebRequest -Uri $releases -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.Trim()
 
 	$Latest = @{ URL32 = $releases; Version = $version }
 	return $Latest
