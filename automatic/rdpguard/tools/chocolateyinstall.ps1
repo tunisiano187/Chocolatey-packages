@@ -3,6 +3,7 @@ $packageName    = 'rdpguard'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://rdpguard.com/download/rdpguard-5-4-9.exe'
 $checksum       = '9B3F4AF1B626CA6FE7B9FD2771DC718C7DA858CAE50BEB0644E4E05744215B26'
+$checksumType   = ''
 
 $packageArgs = @{
   packageName   = $packageName
@@ -13,7 +14,7 @@ $packageArgs = @{
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   softwareName  = 'RdpGuard*'
   checksum      = $checksum
-  checksumType  = 'sha256' 
+  checksumType  = $checksumType
 }
 
 Install-ChocolateyPackage @packageArgs

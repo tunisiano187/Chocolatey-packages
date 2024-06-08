@@ -2,11 +2,6 @@
 
 ## RdpGuard (Trial Install)
 
-___
-[choco://rdpguard](choco://rdpguard)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
-
 ![Screenshot of RdpGuard](https://rdpguard.com/images/index-screenshot.png)	
 
 ###What is RdpGuard and How does it Work?
@@ -31,13 +26,6 @@ For Windows XP, Vista, 7, 8, 8.1, 10 and Windows Server 2003 (R2), 2008 (R2), 20
 
 **SOCIAL MEDIA:**
 [Facebook](https://www.facebook.com/RdpGuard) | [Twitter](https://twitter.com/rdpguard) | [Google+](https://plus.google.com/+RdpGuard)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/rdpguard/readme.md)**
-	
-
-___
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-___
 
 #### [choco://rdpguard](choco://rdpguard)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
