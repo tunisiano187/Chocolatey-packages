@@ -21,8 +21,9 @@ function global:au_GetLatest {
     $File = Join-Path $env:TEMP "chocolatey\AmazonPhotosSetup.exe"
     Invoke-WebRequest -uri $releases -OutFile $File
     $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
+    $checksum = Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType
 
-    return @{ URL32 = $releases; Version = $version }
+    return @{ URL32 = $releases; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 }
 
-update
+update -ChecksumFor none
