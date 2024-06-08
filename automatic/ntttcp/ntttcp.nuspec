@@ -17,7 +17,7 @@ For more information about specific parameters and options, please run the tool 
     <summary>NTttcp Utility: Profile and Measure Windows Networking Performance</summary>
     <copyright>Microsoft</copyright>
     <tags>microsoft ntttcp networking scale testing portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ntttcp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ntttcp</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -50,7 +50,7 @@ ___</description>
     <releaseNotes>https://rdpguard.com/news.aspx</releaseNotes>
     <copyright>Copyright © NetSDK Software, LLC. All rights reserved.</copyright>
     <tags>netsdk rdpguard server security rdp sql ftp smtp iis mysql mssql ms-sql rd intrusion prevention trial</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/rdpguard</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rdpguard</packageSourceUrl>
     <docsUrl>https://rdpguard.com/help.aspx</docsUrl>
   </metadata>
   <files>
