@@ -5,7 +5,7 @@
     <version>5.4.9</version>
     <title>RdpGuard (Trial Install)</title>
     <authors>NetSDK Software</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://netsdk.com/terms.html</licenseUrl>
     <projectUrl>https://rdpguard.com/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/rdpguard/rdpguard_icon.png</iconUrl>

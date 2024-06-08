@@ -5,7 +5,7 @@
     <version>5.33</version>
     <title>Microsoft NT TCP Testing Tool (NTTTCP) 5.33 (Portable)</title>
     <authors>Microsoft</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://gallery.technet.microsoft.com/NTttcp-Version-528-Now-f8b12769</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@520e2897eee772d189b20511bde2d6823191b446/icons/ntttcp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
