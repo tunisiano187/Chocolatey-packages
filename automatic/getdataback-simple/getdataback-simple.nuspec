@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>getdataback-simple</id>
+    <version>5.56</version>
+    <title>GetDataBack Pro (Trial)(Install)</title>
+    <authors>Runtime Software</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>https://www.runtime.org/data-recovery-software.htm</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/getdataback-simple/GetDataBackSimple_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>___
+### [choco://getdataback-simple](choco://getdataback-simple)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+___
+
+![Screenshot of GetDataBack Simple](http://www.runtime.org/images/gdbsim1.gif) ![Screenshot of GetDataBack Simple 2](http://www.runtime.org/images/gdbsim2.gif)	
+
+### GetDataBack Pro Data Recovery
+
+Our flagship product GetDataBack Pro is the most powerful Data Recovery software. Lightning fast, for NTFS, FAT, exFAT, EXT, HFS+, and APFS. Recover your lost data now!
+
+### GetDataBack Pro Highlights
+* Recover ALL your drive's data
+* Restore file names and directory structure
+* Safe, read-only design
+* Intuitive user interface
+* Lightning fast operation
+* Supports all hard drives, SSD, flash cards, USB
+* Native 64-bit application under 64-bit Windows
+* Recovery of very large drives
+* New, redesigned and rewritten, using the newest technologies
+* Supports NTFS, FAT12, FAT16, FAT32, exFAT, EXT, EXT2, EXT3, EXT4, HFS+, APFS
+* Free to try
+* Free lifetime updates with purchase
+* Run GetDataBack from the Runtime Live CD or a WinPE Boot Medium
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/getdataback-simple/readme.md)**
+	
+
+___
+
+Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
+___</description>
+    <summary>GetDataBack Simple - The simplest Data Recovery Software ever.</summary>
+    <copyright>(c) Runtime Software</copyright>
+    <tags>runtime getdataback simple data recovery utility ntfs fat12 fat16 fat32 exfat ext ext2 ext3 ext4 trial</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/getdataback-simple</packageSourceUrl>
+    <docsUrl>https://www.runtime.org/data-recovery-documentation.htm</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
