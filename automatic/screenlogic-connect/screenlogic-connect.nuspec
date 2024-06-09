@@ -43,7 +43,7 @@ integrated home automation solution including audio, security, climate, irrigati
     <releaseNotes>https://www.pentair.com/content/dam/extranet/product-related/software/ScreenLogicUpdate-Basic-3_v2.pdf</releaseNotes>
     <copyright>(C) Pentair</copyright>
     <tags>pentair screenlogic screenlogic2 pool home automation</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/screenlogic-connect</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/screenlogic-connect</packageSourceUrl>
     <docsUrl>https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/manuals/automation/screenlogic2/screenlogic2-interface-installation-users-guide-english.pdf</docsUrl>
   </metadata>
   <files>
