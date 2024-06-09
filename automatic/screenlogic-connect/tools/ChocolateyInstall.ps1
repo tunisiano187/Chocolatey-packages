@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'screenlogic-connect'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www.pentair.com/content/dam/extranet/nam/pentair-pool/residential/software-firmware/screenlogic/setup.exe'
@@ -17,7 +17,7 @@ Get-ChocolateyWebFile @packageArgs
 
 $packageArgs = @{
   packageName    = $packageName
-  unzipLocation  = $toolsDir  
+  unzipLocation  = $toolsDir
   fileType       = 'EXE'
   url            = $url
   validExitCodes = @(0,1)
