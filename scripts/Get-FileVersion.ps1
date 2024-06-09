@@ -15,20 +15,25 @@
     The version of the file if it is available.
 
 #>
-function Get-RedirectedUrl {
+function Get-FileVersion {
     param(
         [uri]$url,
-        [path]$File
+        [string]$File,
+        [string]$checksumType = "SHA512"
     )
+    if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
 
     if($null -ne $url) {
         $tempFile = New-TemporaryFile
         Invoke-WebRequest -Uri $url -OutFile $tempFile
-        $result = $tempFile.VersionInfo.ProductVersion
+        [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+        $checksum = (Get-FileHash -Path $tempFile -Algorithm $checksumType).Hash
         Remove-Item -Path $tempFile -Force
     } else {
-        $result=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+        [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+        $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
 
+    $result = @{Version = $version; CHECKSUM = $checksum; ChecksumType = $checksumType}
     return $result
 }
