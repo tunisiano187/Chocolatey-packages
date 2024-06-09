@@ -5,7 +5,7 @@
     <version>5.2.738.0020220206</version>
     <title>Pentair ScreenLogic Connect (Install)</title>
     <authors>Pentair</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.pentair.com/legal/terms-of-use.html</licenseUrl>
     <projectUrl>https://www.pentair.com/en/knowledge-base/pool-spa-equipment/pentair-pool-and-spa-software-downloads/screenlogic-update.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/screenlogic-connect/screenlogic-connect_icon.png</iconUrl>
