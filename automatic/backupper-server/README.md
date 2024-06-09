@@ -2,11 +2,6 @@
 
 ## AOMEI Backupper Server (Install)
 
-***	
-[choco://backupper-server](choco://backupper-server)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-***	
-
 ![Screenshot of AOMEI Backupper Sserver](http://www.backup-utility.com/icon/aomei-backupper-server-screenshot.jpg)
 
 AOMEI Backupper Server, especially designed for small and medium sized business, is not only data protection and disaster recovery solutions, but also disk partition cloning software. With simple and easy-to-use interface, anyone even non-technical users can protect all of critical business data in minutes without having to be an expert. Besides, our stable and robust server backup software is able to backup your physical and virtual server without interrupting or shutting down Windows and other running applications.
@@ -30,12 +25,6 @@ What does Backupper Server include?
 * Event-Triggered Scheduling Backups: automatically perform backup tasks in real-time based on user logon, user logoff, system startup and system shutdown.
 
 30 day free trial. $199.00 to purchase. [Compare editions](http://www.backup-utility.com/edition-comparison.html)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/backupper-server/readme.md)**
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
 
 #### [choco://backupper-server](choco://backupper-server)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
