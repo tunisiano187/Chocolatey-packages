@@ -5,7 +5,7 @@
     <version>5.3.0</version>
     <title>AOMEI Backupper Server (Install)</title>
     <authors>AOMEI</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.backup-utility.com/terms.html</licenseUrl>
     <projectUrl>http://www.backup-utility.com/server.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@de4558eaf4cc29a3834373cb548e345ebeedfc18/icons/backupper-server.png</iconUrl>
