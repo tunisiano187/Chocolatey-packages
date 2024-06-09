@@ -27,6 +27,7 @@ function global:au_GetLatest {
     $url = Get-RedirectedUrl "https://xstreamloader.techweb.at/$($downloadUrl)"
     $File = (Join-Path $env:TEMP "chocolatey\$($url.Split('/')[-1])").Replace('.zip','.rar')
     $Folder = Join-Path $env:TEMP "chocolatey\streamloader\"
+    Invoke-WebRequest -Uri $url -OutFile $File
     $parameter = @('x', "$File", "-o$Folder", "-y")
     7z @parameter
     $File = Join-Path $Folder "X-StreamLoader.exe"
