@@ -48,7 +48,7 @@ What does Backupper Server include?
     <releaseNotes>http://www.backup-utility.com/changelog.html</releaseNotes>
     <copyright>Copyright © AOMEI</copyright>
     <tags>aomei backupper backup clone restore trial</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/backupper-server</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/backupper-server</packageSourceUrl>
     <docsUrl>http://www.backup-utility.com/help/index.html</docsUrl>
     <mailingListUrl>http://www.aomeitech.com/forum/</mailingListUrl>
     <bugTrackerUrl>http://www.backup-utility.com/changelog.html</bugTrackerUrl>
