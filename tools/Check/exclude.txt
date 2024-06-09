@@ -168,3 +168,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+mrboom
