@@ -167,3 +167,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+Golem-Brass-Beta
