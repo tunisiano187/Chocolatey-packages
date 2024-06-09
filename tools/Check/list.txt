@@ -1,4 +1,3 @@
-backupper-server 0.0 - New maintainer
 screenlogic-connect 0.0 - New maintainer
 mrboom 0.0 - New maintainer
 futuremark-systeminfo 0.0 - New maintainer
