@@ -8,9 +8,9 @@ $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(^[$]url32\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+            "(^[$]url(32)\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum(32)\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumType(32)\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
         }
     }
 }
