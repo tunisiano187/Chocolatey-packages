@@ -23,6 +23,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
   $page = Invoke-WebRequest -Uri $release
   $url32 = "https://www.ubackup.com$($page.Links.href | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match "Server"} | Select-Object -First 1)"
+  . ..\..\scripts\Get-FileVersion.ps1
   $FileVersion = Get-FileVersion $url32
 
   $Latest = @{ URL32 = $url32; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType = $FileVersion.ChecksumType }
