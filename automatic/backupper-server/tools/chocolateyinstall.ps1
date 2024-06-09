@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'backupper-server'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www2.aomeisoftware.com/download/adb/ABServer.exe'
@@ -13,11 +13,11 @@ $packageArgs = @{
   packageName   = $packageName
   fileType      = 'EXE'
   url           = $url
-  softwareName  = 'AOMEI Backupper Server*' 
-  checksum      = $checksum 
-  checksumType  = 'sha256'  
-  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'  
-  validExitCodes= @(0,1)  
+  softwareName  = 'AOMEI Backupper Server*'
+  checksum      = $checksum
+  checksumType  = 'sha256'
+  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  validExitCodes= @(0,1)
   }
 
 Install-ChocolateyPackage @packageArgs
