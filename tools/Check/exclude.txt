@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
-ad-tidy-free
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -13,8 +13,8 @@ alcohol52-free
 allbrowsers
 allwemo
 amazingmarvin
-amazon-photos
 amazondrive
+amazon-photos
 AMD-Graphics-Driver
 AnkhSvn
 anvide-seal-folder
@@ -50,8 +50,8 @@ ekiga
 emulationstation
 emulationstation.install
 enjarify
-evernote-chrome
 evernote2onenote
+evernote-chrome
 evimsync
 fastest-mouse-clicker
 filetool
@@ -60,6 +60,7 @@ findthatfont
 freearc
 gamedownloader
 getopt
+Golem-Brass-Beta
 hashdeep
 hdparm
 hexamail-pop3-downloader
@@ -167,4 +168,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Golem-Brass-Beta
