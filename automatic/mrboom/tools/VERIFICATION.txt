@@ -1,0 +1,9 @@
+﻿===================================== Mr.Boom ================================
+
+bcurran3 downloads and packages the included .ZIP for Mr.Boom from the
+developer's GH repo.
+
+The direct download link can be found at:
+https://github.com/Javanaise/mrboom-libretro/releases
+
+===================================== Mr.Boom ================================
