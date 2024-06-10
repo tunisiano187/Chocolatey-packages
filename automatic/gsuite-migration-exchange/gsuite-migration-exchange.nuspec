@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://gsuite.google.com/terms/standard_terms.html</licenseUrl>
     <projectUrl>https://tools.google.com/dlpage/exchangemigration</projectUrl>
-    <iconUrl>https://4.bp.blogspot.com/-Pp8TROoyTwc/VeXXFhKQwWI/AAAAAAAACPo/b2g71CJ_Hj8/s1600/inline-googles-new-logo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@303788d9f3bfc3cc3caf1524718ce9ccb6be04c9/icons/gsuite-migration-exchange.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>___
 ###[choco://gsuite-migration-exchange](choco://gsuite-migration-exchange)
