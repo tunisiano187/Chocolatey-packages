@@ -30,4 +30,9 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+try {
+  update -ChecksumFor none
+} catch {
+  $ignore = "Response status code does not indicate success"
+  if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}
