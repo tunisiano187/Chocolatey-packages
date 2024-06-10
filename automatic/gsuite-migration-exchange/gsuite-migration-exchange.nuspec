@@ -5,7 +5,7 @@
     <version>5.1.20.0</version>
     <title>G Suite Migration for Microsoft® Exchange (Install)</title>
     <authors>Google</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://gsuite.google.com/terms/standard_terms.html</licenseUrl>
     <projectUrl>https://tools.google.com/dlpage/exchangemigration</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7f8c0609503ea33dace5243aea843b28d1c531bf/icons/gsuite-migration-exchange.png</iconUrl>

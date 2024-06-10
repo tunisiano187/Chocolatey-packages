@@ -5,7 +5,7 @@
     <version>5.1.176</version>
     <title>SeaTools for Windows (Install)</title>
     <authors>Seagate Technology</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.seagate.com/legal-privacy/terms-and-conditions/</licenseUrl>
     <projectUrl>https://www.seagate.com/support/downloads/seatools/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/seatools/seatools_icon.png</iconUrl>
