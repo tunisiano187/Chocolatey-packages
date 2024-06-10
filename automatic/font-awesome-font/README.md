@@ -2,10 +2,6 @@
 
 ## Font Awesome (Font) (Install)
 
-___
-### [choco://font-awesome-font](choco://font-awesome-font)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
 Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
 
 ### One Font, 675 Icons
@@ -43,14 +39,6 @@ To use on the desktop or for a complete set of vectors, check out the cheatsheet
 ### Accessibility-minded
 
 Font Awesome loves screen readers and helps make your icons accessible on the web.	
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/font-awesome-font/readme.md)**
-    
-
-___
-
-Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
-___
 
 #### [choco://font-awesome-font](choco://font-awesome-font)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)

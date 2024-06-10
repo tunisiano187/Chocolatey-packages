@@ -1,8 +1,0 @@
-﻿============================== Font Awesome ==============================
-
-bcurran3 downloads and packages the included .ZIP for Font Awesome Free from the developer's website. 
-
-The direct download link can be found at:
-https://fontawesome.com/how-to-use/on-the-desktop/setup/getting-started
-
-============================== Font Awesome ==============================
