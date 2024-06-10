@@ -98,6 +98,7 @@ md5sums
 meson
 mooncoin
 movefile
+mrboom
 msdeploy
 msigna
 myuninst
@@ -168,4 +169,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-mrboom
