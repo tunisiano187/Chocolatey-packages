@@ -64,7 +64,7 @@ ___</description>
     <copyright>© Fonticons, Inc.</copyright>
     <tags>font awesome otf opentype binary</tags>
     <projectSourceUrl>https://github.com/FortAwesome/Font-Awesome</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/font-awesome-font</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/font-awesome-font</packageSourceUrl>
     <docsUrl>http://fontawesome.io/get-started/</docsUrl>
     <mailingListUrl>http://fontawesome.io/community/</mailingListUrl>
     <bugTrackerUrl>https://github.com/FortAwesome/Font-Awesome/issues</bugTrackerUrl>
