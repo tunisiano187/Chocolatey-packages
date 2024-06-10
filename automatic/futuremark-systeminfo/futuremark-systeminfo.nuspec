@@ -6,7 +6,7 @@
     <title>Futuremark SystemInfo (Install)</title>
     <authors>Futuremark</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/futuremark-systeminfo</packageSourceUrl>
     <licenseUrl>https://benchmarks.ul.com/terms-and-conditions</licenseUrl>
     <projectUrl>https://benchmarks.ul.com/systeminfo</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/futuremark-systeminfo/futuremark-systeminfo_icon.png</iconUrl>
