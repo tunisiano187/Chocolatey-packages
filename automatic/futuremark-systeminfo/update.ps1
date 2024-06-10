@@ -23,7 +23,7 @@ function global:au_GetLatest {
 
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	$url32 = get-redirectedUrl "https://benchmarks.ul.com/downloads/systeminfo/latest"
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
