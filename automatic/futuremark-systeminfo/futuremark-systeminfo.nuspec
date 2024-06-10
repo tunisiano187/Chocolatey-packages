@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/futuremark-systeminfo</packageSourceUrl>
     <licenseUrl>https://benchmarks.ul.com/terms-and-conditions</licenseUrl>
     <projectUrl>https://benchmarks.ul.com/systeminfo</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/futuremark-systeminfo/futuremark-systeminfo_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0d46ba326febbfb5ce0fd9fcdfebdd5173fcb25c/icons/futuremark-systeminfo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>SystemInfo is a component used in many of our benchmarks to identify the hardware in your system. It does not collect any personally identifiable information. SystemInfo updates do not affect benchmark scores but you may need the latest version in order to obtain a valid score.
 
