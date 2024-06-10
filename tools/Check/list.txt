@@ -1,4 +1,3 @@
-font-awesome-font 0.0 - New maintainer
 gsuite-migration-exchange 0.0 - New maintainer
 seatools 0.0 - New maintainer
 network-inventory-advisor 0.0 - New maintainer
