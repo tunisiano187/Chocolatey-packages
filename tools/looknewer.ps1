@@ -229,6 +229,7 @@ $link"
         }
     }
     git add -u
+    git pull
     if((git commit -m "Package check $search" | Where-Object {$_ -match 'git push'}).count -gt 0) {
         git push origin master
     }
