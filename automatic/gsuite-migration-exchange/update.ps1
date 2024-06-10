@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$regexPattern = 'Release notes for (\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	
+
 	$url32 = "https://dl.google.com/exchangemigration/googleworkspacemigration.msi"
 	$checksumType32 = 'sha256'
 	$checksum32 = Get-RemoteChecksum -Algorithm $checksumType32 -Url $url32
