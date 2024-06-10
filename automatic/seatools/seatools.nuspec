@@ -45,7 +45,7 @@ SeaTools for Windows is a comprehensive, easy-to-use diagnostic tool that helps 
     <summary>SeaTools for Windows does diagnostics on your Seagate brand hard drives (and others!).</summary>
     <copyright>Seagate Technology</copyright>
     <tags>seagate seatools hdd hard disk diag diagnostics utility</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/seatools</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/seatools</packageSourceUrl>
     <docsUrl>https://www.seagate.com/files/www-content/support-content/downloads/seatools/_shared/downloads/100869623_B.pdf</docsUrl>
   </metadata>
   <files>
