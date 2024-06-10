@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://wiki.lazarus.freepascal.org/licensing</licenseUrl>
     <projectUrl>http://www.jrsoftware.org/isinfo.php</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/freepascal.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/freepascal.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## freepascal
 Free Pascal is a 32, 64 and 16 bit professional Pascal compiler. 

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/canix1/ADACLScanner/blob/master/license.md</licenseUrl>
     <projectUrl>https://github.com/canix1/ADACLScanner</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2dc06e3a49487a193dd5f2bde31965fd45373c34/icons/ad-acl-scanner.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/ad-acl-scanner.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AD ACL Scanner (Script)
 

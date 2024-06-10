@@ -7,7 +7,7 @@
     <authors>Microsoft</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://gallery.technet.microsoft.com/NTttcp-Version-528-Now-f8b12769</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@520e2897eee772d189b20511bde2d6823191b446/icons/ntttcp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/ntttcp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Used to profile and measure Windows networking performance, NTttcp is one of the primary tools Microsoft engineering teams leverage to validate network function and utility.
 

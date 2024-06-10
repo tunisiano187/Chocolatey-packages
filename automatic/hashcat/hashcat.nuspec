@@ -7,7 +7,7 @@
     <authors>Jens "atom" Steube</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://hashcat.net/hashcat/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3260bb55e7e447f3f8ddce27b442118283dc327/icons/hashcat.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/hashcat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Hashcat (Install)
 
