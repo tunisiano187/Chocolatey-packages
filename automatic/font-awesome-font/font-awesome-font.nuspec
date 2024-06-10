@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>font-awesome-font</id>
+    <version>5.13.0</version>
+    <title>Font Awesome (Font) (Install)</title>
+    <authors>Dave Gandy</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://fontawesome.io/license/</licenseUrl>
+    <projectUrl>http://fontawesome.io/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/font-awesome-font/font-awesome-font_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>___
+### [choco://font-awesome-font](choco://font-awesome-font)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+___
+Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+
+### One Font, 675 Icons
+
+In a single collection, Font Awesome is a pictographic language of web-related actions.
+
+### No JavaScript Required
+
+Fewer compatibility concerns because Font Awesome doesn't require JavaScript.
+
+### Infinite Scalability
+
+Scalable vector graphics means every icon looks awesome at any size.
+
+### Free, as in Speech
+
+Font Awesome is completely free for commercial use. Check out the license.
+
+### CSS Control
+
+Easily style icon color, size, shadow, and anything that's possible with CSS.
+
+### Perfect on Retina Displays
+
+Font Awesome icons are vectors, which mean they're gorgeous on high-resolution displays.
+
+### Plays Well with Others
+
+Originally designed for Bootstrap, Font Awesome works great with all frameworks.
+
+### Desktop Friendly
+
+To use on the desktop or for a complete set of vectors, check out the cheatsheet.
+
+### Accessibility-minded
+
+Font Awesome loves screen readers and helps make your icons accessible on the web.	
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/font-awesome-font/readme.md)**
+    
+
+___
+
+Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
+___</description>
+    <summary>Font Awesome - The iconic font and CSS framework</summary>
+    <releaseNotes>https://fontawesome.com/changelog/latest</releaseNotes>
+    <copyright>© Fonticons, Inc.</copyright>
+    <tags>font awesome otf opentype binary</tags>
+    <projectSourceUrl>https://github.com/FortAwesome/Font-Awesome</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/font-awesome-font</packageSourceUrl>
+    <docsUrl>http://fontawesome.io/get-started/</docsUrl>
+    <mailingListUrl>http://fontawesome.io/community/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/FortAwesome/Font-Awesome/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-font-helpers.extension" version="0.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
