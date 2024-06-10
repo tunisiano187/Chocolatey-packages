@@ -2,17 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>getdataback-simple</id>
-    <version>5.56</version>
+    <version>5.71</version>
     <title>GetDataBack Pro (Trial)(Install)</title>
     <authors>Runtime Software</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.runtime.org/data-recovery-software.htm</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/getdataback-simple/GetDataBackSimple_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>___
-### [choco://getdataback-simple](choco://getdataback-simple)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
+    <description><![CDATA[## GetDataBack Pro (Trial)(Install)
 
 ![Screenshot of GetDataBack Simple](http://www.runtime.org/images/gdbsim1.gif) ![Screenshot of GetDataBack Simple 2](http://www.runtime.org/images/gdbsim2.gif)	
 
@@ -35,13 +32,14 @@ Our flagship product GetDataBack Pro is the most powerful Data Recovery software
 * Free lifetime updates with purchase
 * Run GetDataBack from the Runtime Live CD or a WinPE Boot Medium
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/getdataback-simple/readme.md)**
-	
+#### [choco://getdataback-simple](choco://getdataback-simple)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-___
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
-___</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>GetDataBack Simple - The simplest Data Recovery Software ever.</summary>
     <copyright>(c) Runtime Software</copyright>
     <tags>runtime getdataback simple data recovery utility ntfs fat12 fat16 fat32 exfat ext ext2 ext3 ext4 trial</tags>

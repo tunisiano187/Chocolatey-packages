@@ -2,18 +2,29 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ntttcp</id>
-    <version>5.33</version>
+    <version>5.40</version>
     <title>Microsoft NT TCP Testing Tool (NTTTCP) 5.33 (Portable)</title>
     <authors>Microsoft</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://gallery.technet.microsoft.com/NTttcp-Version-528-Now-f8b12769</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/ntttcp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Used to profile and measure Windows networking performance, NTttcp is one of the primary tools Microsoft engineering teams leverage to validate network function and utility.
+    <description><![CDATA[## Microsoft NT TCP Testing Tool (NTTTCP) 5.33 (Portable)
+
+Used to profile and measure Windows networking performance, NTttcp is one of the primary tools Microsoft engineering teams leverage to validate network function and utility.
 
 For more information about specific parameters and options, please run the tool without arguments to display all supported options.
 
-**PACKAGING NOTE:** Documentation and EULA can be found extracted in the package's tools directory.</description>
+**PACKAGING NOTE:** Documentation and EULA can be found extracted in the package's tools directory.
+
+#### [choco://ntttcp](choco://ntttcp)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>NTttcp Utility: Profile and Measure Windows Networking Performance</summary>
     <copyright>Microsoft</copyright>
     <tags>microsoft ntttcp networking scale testing portable</tags>

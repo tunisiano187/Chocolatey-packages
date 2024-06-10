@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rdpguard</id>
-    <version>5.4.9</version>
+    <version>9.4.5</version>
     <title>RdpGuard (Trial Install)</title>
     <authors>NetSDK Software</authors>
     <owners>tunisiano</owners>
@@ -10,10 +10,7 @@
     <projectUrl>https://rdpguard.com/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/rdpguard/rdpguard_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>___
-[choco://rdpguard](choco://rdpguard)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
+    <description><![CDATA[## RdpGuard (Trial Install)
 
 ![Screenshot of RdpGuard](https://rdpguard.com/images/index-screenshot.png)	
 
@@ -40,12 +37,14 @@ For Windows XP, Vista, 7, 8, 8.1, 10 and Windows Server 2003 (R2), 2008 (R2), 20
 **SOCIAL MEDIA:**
 [Facebook](https://www.facebook.com/RdpGuard) | [Twitter](https://twitter.com/rdpguard) | [Google+](https://plus.google.com/+RdpGuard)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/rdpguard/readme.md)**
-	
+#### [choco://rdpguard](choco://rdpguard)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-___
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-___</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>RdpGuard - Intrusion prevention system for your Windows Server</summary>
     <releaseNotes>https://rdpguard.com/news.aspx</releaseNotes>
     <copyright>Copyright © NetSDK Software, LLC. All rights reserved.</copyright>

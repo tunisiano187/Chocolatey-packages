@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'rdpguard'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://rdpguard.com/download/rdpguard-5-4-9.exe'
-$checksum       = '9B3F4AF1B626CA6FE7B9FD2771DC718C7DA858CAE50BEB0644E4E05744215B26'
-$checksumType   = ''
+$url            = 'https://rdpguard.com/download/rdpguard-9-4-5.exe'
+$checksum       = '6e2c154bbfe08df93a8e271f41754c22500de4b266e8f4032da13203d66ae451'
+$checksumType   = 'sha256'
 
 $packageArgs = @{
   packageName   = $packageName
