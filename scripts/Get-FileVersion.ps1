@@ -26,11 +26,21 @@ function Get-FileVersion {
     if($null -ne $url) {
         $tempFile = New-TemporaryFile
         Invoke-WebRequest -Uri $url -OutFile $tempFile
-        [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+        try {
+            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+        }
+        catch {
+            $version=$null
+        }
         $checksum = (Get-FileHash -Path $tempFile -Algorithm $checksumType).Hash
         Remove-Item -Path $tempFile -Force
     } else {
-        [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+        try {
+            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+        }
+        catch {
+            $version=$null
+        }
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
 
