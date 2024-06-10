@@ -8,13 +8,7 @@ The most recent versions of our currently supported benchmarks will prompt you t
 
 Note that Windows XP, 3DMark06, and PCMark05 are no longer supported by Futuremark. SystemInfo functionality on Windows XP is provided as-is without guarantees. From version 4.29 onwards, SystemInfo requires Windows XP Service Pack 3. If you wish to run 3DMark06 and PCMark05 on Windows XP SP2 or older, you should use SystemInfo 4.28.	
 
-####All Futuremark benchmarks on Windows 10 require Futuremark SystemInfo 4.40 or later to be installed.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/futuremark-systeminfo/readme.md)**
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
+#### All Futuremark benchmarks on Windows 10 require Futuremark SystemInfo 4.40 or later to be installed.
 
 #### [choco://futuremark-systeminfo](choco://futuremark-systeminfo)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)

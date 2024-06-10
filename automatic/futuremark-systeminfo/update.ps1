@@ -1,0 +1,31 @@
+import-module au
+
+$releases = 'https://benchmarks.ul.com/systeminfo'
+
+function global:au_SearchReplace {
+	@{
+		'.\legal\VERIFICATION.txt' = @{
+			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
+			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
+			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
+		}
+	}
+}
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
+
+function global:au_GetLatest {
+	$pageContent = Invoke-WebRequest -Uri $releases
+	$regexPattern = 'SystemInfo \s*(\d+(\.\d+)*)</h2>'
+	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
+
+	$version = $versionMatch.Matches[0].Groups[1].Value
+	$url32 = get-redirectedUrl "https://benchmarks.ul.com/downloads/systeminfo/latest"
+	
+	$Latest = @{ URL32 = $url32; Version = $version }
+	return $Latest
+}
+
+update
