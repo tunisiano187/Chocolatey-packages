@@ -4,10 +4,10 @@ $releases = 'https://benchmarks.ul.com/systeminfo'
 
 function global:au_SearchReplace {
 	@{
-		'.\legal\VERIFICATION.txt' = @{
-			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
-			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
-			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
+		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]Url(32)?\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum(32)?\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType(32)?\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
