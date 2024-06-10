@@ -32,9 +32,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; Version = $version }
 }
 
-try {
-	update -ChecksumFor 32
-} catch {
-	$ignore = "Response status code does not indicate success"
-	if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
-}
+update -ChecksumFor 32

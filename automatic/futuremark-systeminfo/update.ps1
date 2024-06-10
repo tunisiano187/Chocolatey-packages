@@ -28,9 +28,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-try {
-	update
-} catch {
-	$ignore = "Response status code does not indicate success"
-	if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
-}
+update
