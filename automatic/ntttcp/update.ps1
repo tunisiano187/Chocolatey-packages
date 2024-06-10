@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module au
+Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $releases = 'https://api.github.com/repos/microsoft/ntttcp/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
@@ -22,6 +23,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
     $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -notmatch "64"}
+    $FileInfos = Get-FileVersion -url $url32
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','')
     if($tags.prerelease -match "true") {
@@ -29,7 +31,7 @@ function global:au_GetLatest {
         $version = "$version-pre$($date)"
     }
 
-    return @{ URL32 = $url32; Version = $version }
+    return @{ URL32 = $url32; Version = $version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
