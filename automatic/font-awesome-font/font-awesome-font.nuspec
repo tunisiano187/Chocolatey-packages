@@ -5,7 +5,7 @@
     <version>5.13.0</version>
     <title>Font Awesome (Font) (Install)</title>
     <authors>Dave Gandy</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://fontawesome.io/license/</licenseUrl>
     <projectUrl>http://fontawesome.io/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/font-awesome-font/font-awesome-font_icon.png</iconUrl>
