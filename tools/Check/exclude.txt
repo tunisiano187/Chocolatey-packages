@@ -169,4 +169,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-gsuite-migration-exchange
