@@ -26,17 +26,22 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "-desktop.zip$"}
+
+	$File = "tools\$($url32.Split('/')[-1])"
+	Invoke-WebRequest -Uri $url32 -OutFile $File
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion -File $File
 	$version = $tags.tag_name.Replace('v','')
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	. ..\..\scripts\Get-GithubRepositoryLicense.ps1
-	Update-Metadata -key "licenseUrl" -value $(Get-GithubRepositoryLicense $Owner $repo)
+	Update-Metadata -key "licenseUrl" -value $(Get-GithubRepositoryLicense $Owner $repo).download_url
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	}
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.CHECKSUM; ChecksumType32 = $FileVersion.ChecksumType }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
