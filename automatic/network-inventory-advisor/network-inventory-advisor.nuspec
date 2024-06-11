@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.network-inventory-advisor.com/help/end-user-license-agreement/</licenseUrl>
     <projectUrl>http://www.network-inventory-advisor.com/pc-inventory.html</projectUrl>
-    <iconUrl>https://www.network-inventory-advisor.com/help/wp-content/uploads/2012/07/nia_395.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@06240411c504f969020884c682c23ca2294f22ed/icons/network-inventory-advisor.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>___
 [choco://network-inventory-advisor](choco://network-inventory-advisor)
