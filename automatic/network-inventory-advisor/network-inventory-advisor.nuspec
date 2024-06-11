@@ -5,7 +5,7 @@
     <version>5.0.155</version>
     <title>Network Inventory Advisor (Install)</title>
     <authors>ClearApps</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.network-inventory-advisor.com/help/end-user-license-agreement/</licenseUrl>
     <projectUrl>http://www.network-inventory-advisor.com/pc-inventory.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@06240411c504f969020884c682c23ca2294f22ed/icons/network-inventory-advisor.jpg</iconUrl>
