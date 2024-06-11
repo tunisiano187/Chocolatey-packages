@@ -4,13 +4,13 @@
 
 ![Screenshot of RdpGuard](https://rdpguard.com/images/index-screenshot.png)	
 
-###What is RdpGuard and How does it Work?
+### What is RdpGuard and How does it Work?
 
 RdpGuard is a host-based intrusion prevention system (HIPS) that protects your Windows Server from brute-force attacks on various protocols and services (RDP, FTP, SMTP, MySQL, MS-SQL, IIS Web Login, ASP.NET Web Forms, MS Exchange, RD Web Access, etc).
 
 It monitors the logs on your server and detects failed logon attempts. If the number of failed logon attempts from a single IP address reaches a set limit, the attacker's IP address will be blocked for a specified period of time.
 
-###Why do you need it?
+### Why do you need it?
 
 Many Windows Server machines are under constant attack. Network scanners and RDP brute-force tools work 24/7. Eventually they may find a password to access your server! Moreover, RDP brute-force attacks abuse server resources (CPU, RAM, Disk Space and Network Bandwidth).
 
@@ -22,9 +22,9 @@ RdpGuard works as a Windows Service. Your Windows Server will be protected even 
 
 For Windows XP, Vista, 7, 8, 8.1, 10 and Windows Server 2003 (R2), 2008 (R2), 2012 (R2), 2016
 
-**You can download RdpGuard and try it for free for 30 days. If you wish to continue to use RdpGuard, you need to purchase the License. ($79.95)**
+#### You can download RdpGuard and try it for free for 30 days. If you wish to continue to use RdpGuard, you need to purchase the License.
 
-**SOCIAL MEDIA:**
+#### SOCIAL MEDIA:
 [Facebook](https://www.facebook.com/RdpGuard) | [Twitter](https://twitter.com/rdpguard) | [Google+](https://plus.google.com/+RdpGuard)
 
 #### [choco://rdpguard](choco://rdpguard)
