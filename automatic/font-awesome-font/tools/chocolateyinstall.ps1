@@ -1,14 +1,14 @@
 $ErrorActionPreference = 'Stop'
 $packageName = 'font-awesome-font'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url         = "$toolsDir\fontawesome-free-$ENV:ChocolateyPackageVersion-desktop.zip"
+$file         = "$toolsDir\fontawesome-free-$ENV:ChocolateyPackageVersion-desktop.zip"
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   fileType      = 'ZIP'
-  url           = $url
-  }
+  file          = $file
+}
 
 Install-ChocolateyZIPPackage @packageArgs
 
