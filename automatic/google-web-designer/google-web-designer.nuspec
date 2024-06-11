@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>google-web-designer</id>
+    <version>5.0.4.0226</version>
+    <title>Google Web Designer (Install)</title>
+    <authors>Google Inc.</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://www.google.com/accounts/TOS</licenseUrl>
+    <projectUrl>https://www.google.com/webdesigner/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/google-web-designer/google-web-designer_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+###[choco://google-web-designer](choco://google-web-designer)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Google Web Designer](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/google-web-designer/google-web-designer_screenshot.png)
+
+###Bring ideas to life across screens
+
+Create engaging, interactive HTML5-based designs and motion graphics that can run on any device.	
+
+###One idea. Any screen.
+
+It doesn’t matter how brilliant your work is if people can’t see it. Now everything you create is accessible on any screen – desktop, tablet or mobile – without compatibility issues.
+
+###Focus on design
+
+Let us handle the HTML5 and CSS3 so you’re free to focus on what you love to do: creating gorgeous visual experiences. A full design suite lets you easily bring any vision to life.
+
+###Amplify with code
+
+If you’re feeling more hands-on, all the code behind your designs is hand-editable, so you’re never locked out of your own work. Your ideas are now amplified by code – not restricted by it.
+
+[Features](https://www.google.com/webdesigner/features/)
+[Showcase](https://www.google.com/webdesigner/showcase/)
+[Blog](https://webdesigner.googleblog.com/)
+[YouTube](https://www.youtube.com/user/GoogleWebDesigner)
+[Google+](https://plus.google.com/+googlewebdesigner)
+[Twitter](https://twitter.com/GoogleWDesigner)
+[Certification](https://getstudiocert.appspot.com/gwd)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/google-web-designer/readme.md)**
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Google Web Designer empowers creative professionals to create cutting-edge advertising as well as engaging web content - for free.</summary>
+    <releaseNotes>https://support.google.com/webdesigner/answer/9177115</releaseNotes>
+    <copyright>Google Inc.</copyright>
+    <tags>google web designer notsilent</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/google-web-designer</packageSourceUrl>
+    <docsUrl>https://support.google.com/webdesigner/#topic=3249465</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/gwdbeta</mailingListUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
