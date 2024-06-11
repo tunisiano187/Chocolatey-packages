@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'network-inventory-advisor'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'http://dl.network-inventory-advisor.com/network_inventory_advisor.exe'
@@ -14,7 +14,7 @@ $packageArgs = @{
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   softwareName   = 'Network Inventory Advisor*'
   checksum       = $checksum
-  checksumType   = $checksumType  
+  checksumType   = $checksumType
 }
 
 Install-ChocolateyPackage @packageArgs
