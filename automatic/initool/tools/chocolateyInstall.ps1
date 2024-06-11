@@ -1,6 +1,6 @@
 ﻿$packageName    = 'initool'
-$url32          = 'https://github.com/dbohdan/initool/releases/download/v0.17.0/initool-v0.17.0-f503d7b-win32.zip'
-$checksum32     = 'e5837a8895b8ad247f52736b43bddda0d87a54c2de119e1d08547e5eaed50e50'
+$url32          = 'https://github.com/dbohdan/initool/releases/download/v0.18.0/initool-v0.18.0-fc0c3b1-win32.zip'
+$checksum32     = 'b3bcc11faaf1adb708d5cc764a200d9c4247a1efbbb0e68ab23f4115bdc9b71a'
 $checksumType32 = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
