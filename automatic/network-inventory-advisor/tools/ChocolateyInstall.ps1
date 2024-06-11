@@ -3,6 +3,7 @@ $packageName    = 'network-inventory-advisor'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'http://dl.network-inventory-advisor.com/network_inventory_advisor.exe'
 $checksum       = '3493772963AB178185996176A1557E9527EDFE0201887F281414D063C723450E'
+$checksumType   = 'sha256'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -13,7 +14,7 @@ $packageArgs = @{
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   softwareName   = 'Network Inventory Advisor*'
   checksum       = $checksum
-  checksumType   = 'sha256'   
+  checksumType   = $checksumType  
 }
 
 Install-ChocolateyPackage @packageArgs

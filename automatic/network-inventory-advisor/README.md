@@ -2,37 +2,25 @@
 
 ## Network Inventory Advisor (Install)
 
-___
-[choco://network-inventory-advisor](choco://network-inventory-advisor)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
-
 ![Screenshot of Network Inventory Advisor](http://www.network-inventory-advisor.com/images/screenshots/soft-hard-inventory.png)
 
-###Free Asset Management Software!
+### Free Asset Management Software!
 
 **Network Inventory Advisor is free for everyone to test it out at 25-node networks within 2 weeks.** Numerous expert-level features of our PC inventory software also include additional features. [Pricing](https://www.network-inventory-advisor.com/pricing.html) starts at $89 for 25 nodes - $989 for Unlimited nodes.
 
-###Software and hardware inventory
+### Software and hardware inventory
 
 In-depth network inventory is simpler with our agent-free solution. Network Inventory Advisor generates flexible reports for effective hardware & software inventory of networks that include Windows, Macs, Linux and other network and standalone devices.
 
 Our computer inventory software perfectly scans networks of any size reporting on all software & allows to view devices on network. All collected data is stored in a central place that can be easily shared, exported or transferred.
 
-###All-in-one network inventory
+### All-in-one network inventory
 
 All your PC inventory reports are in one place now! [Network scanning tool](https://www.network-inventory-advisor.com/network-inventory-scanner.html) features several types of scanning to ensure fast & reliable computer inventory: agent-free scan using WMI, special agent utility & Logon Script integration. Our PC inventory software uses unique [network discovery](https://www.network-inventory-advisor.com/network-discovery-tool.html) techniques to automatically find all your Windows nodes, Macs, Linux machines & SNMP network devices (v1/v2c supported).
 
 With every scan your network is analyzed & summarized in detailed report with statistics on OS, devices, storage, etc. Network Inventory Advisor is the perfect all-in-one network inventory tool for configuration, IT accounting and network security management.
 
 [MORE INFO ON WEBSITE](https://www.network-inventory-advisor.com/pc-inventory.html)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/network-inventory-advisor/readme.md)**
-    
-
-___
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-___
 
 #### [choco://network-inventory-advisor](choco://network-inventory-advisor)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
