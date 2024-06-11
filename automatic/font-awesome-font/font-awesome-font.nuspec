@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>font-awesome-font</id>
-    <version>5.13.0</version>
+    <version>6.5.2</version>
     <title>Font Awesome (Font) (Install)</title>
     <authors>Dave Gandy</authors>
     <owners>tunisiano</owners>
@@ -10,10 +10,8 @@
     <projectUrl>https://fontawesome.com/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/font-awesome-font/font-awesome-font_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>___
-### [choco://font-awesome-font](choco://font-awesome-font)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-___
+    <description><![CDATA[## Font Awesome (Font) (Install)
+
 Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
 
 ### One Font, 675 Icons
@@ -52,13 +50,14 @@ To use on the desktop or for a complete set of vectors, check out the cheatsheet
 
 Font Awesome loves screen readers and helps make your icons accessible on the web.	
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/font-awesome-font/readme.md)**
-    
+#### [choco://font-awesome-font](choco://font-awesome-font)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-___
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
-___</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Font Awesome - The iconic font and CSS framework</summary>
     <releaseNotes>https://fontawesome.com/changelog/latest</releaseNotes>
     <copyright>© Fonticons, Inc.</copyright>

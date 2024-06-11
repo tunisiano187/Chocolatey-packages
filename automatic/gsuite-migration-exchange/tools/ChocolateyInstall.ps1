@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'gsuite-migration-exchange'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://dl.google.com/exchangemigration/GSuiteMigration.msi'
-$checksum       = '495B0B7D4574B17F28D6A2086D783289B549B3449B63C20BE9590A6AF5A0617E'
+$url            = 'https://dl.google.com/exchangemigration/googleworkspacemigration.msi'
+$checksum       = '0ff4c72cca6abfd3a1e3f49ede1bd670243144acacd2d24b4fdaa9d46979f1c2'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
