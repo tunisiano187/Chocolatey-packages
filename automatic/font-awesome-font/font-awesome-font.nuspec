@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>font-awesome-font</id>
-    <version>6.5.2</version>
+    <version>0.0</version>
     <title>Font Awesome (Font) (Install)</title>
     <authors>Dave Gandy</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://fontawesome.io/license/</licenseUrl>
+    <licenseUrl>https://fontawesome.io/license/</licenseUrl>
     <projectUrl>https://fontawesome.com/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/font-awesome-font/font-awesome-font_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

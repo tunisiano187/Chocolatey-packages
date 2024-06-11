@@ -10,7 +10,7 @@ $packageArgs = @{
   file          = $file
 }
 
-Install-ChocolateyZIPPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 foreach ($otf in $((Get-ChildItem -Path $toolsDir -Filter "*.otf" -Recurse).FullName)) {
   Install-ChocolateyFont $otf
