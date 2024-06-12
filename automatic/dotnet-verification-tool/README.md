@@ -14,28 +14,6 @@ http://support.microsoft.com/kb/2698555
 http://go.microsoft.com/fwlink/?LinkID=246062
 Additional support can be obtained by visiting the .NET Framework setup forum at http://social.msdn.microsoft.com/Forums/en-US/netfxsetup/threads.
 
-Supported products
-
-The .NET Framework setup verification tool supports verifying the following products:
-
-.NET Framework 1.0
-.NET Framework 1.1
-.NET Framework 1.1 SP1
-.NET Framework 2.0
-.NET Framework 2.0 SP1
-.NET Framework 2.0 SP2
-.NET Framework 3.0
-.NET Framework 3.0 SP1
-.NET Framework 3.0 SP2
-.NET Framework 3.5
-.NET Framework 3.5 SP1
-.NET Framework 4 Client
-.NET Framework 4 Full
-.NET Framework 4.5
-.NET Framework 4.5.1
-.NET Framework 4.5.2
-.NET Framework 4.6
-.NET Framework 4.6.1
 By default, the .NET Framework setup verification tool will only list versions of the .NET Framework that it detects are installed on the computer that it is being run on.  As a result, the tool will not list all of the above versions of the .NET Framework.  This product filtering can be overridden by running the .NET Framework setup verification tool with the following command line switch:
 
 netfx_setupverifier.exe /q:a /c:”setupverifier2.exe /a”
