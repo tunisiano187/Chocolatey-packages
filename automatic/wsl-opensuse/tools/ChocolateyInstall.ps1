@@ -1,4 +1,4 @@
-﻿# openSUSE-42 doesn't support being silently installed. This script kludges it.
+# openSUSE-42 doesn't support being silently installed. This script kludges it.
 $ErrorActionPreference = 'Stop'
 $packageName    = 'wsl-opensuse'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -6,21 +6,21 @@ $url            = 'https://aka.ms/wsl-opensuse-42'
 $checksum       = '7E8D474A53631C4843C7F209E3530B777A40F6DA12B9C91AEA418071D76DCA02'
 $unzipLocation  = "$toolsDir\wslfiles"
 
-# When Chocolatey moves the package files in the lib directory to lib-bkp upon upgrade it will cause a 
-# disconnection between WSL and the registered location of the WSL distribution files. 
-# It was considered to unregister the distribution and reinstall, but anything created, installed, or upgraded 
-# in the current distribution's filesystem would be lost. Decided: Best to abort. 
+# When Chocolatey moves the package files in the lib directory to lib-bkp upon upgrade it will cause a
+# disconnection between WSL and the registered location of the WSL distribution files.
+# It was considered to unregister the distribution and reinstall, but anything created, installed, or upgraded
+# in the current distribution's filesystem would be lost. Decided: Best to abort.
 if (Test-Path $env:ChocolateyInstall\lib-bkp\$packageName){
    Write-Warning "  * Upgrades are not supported. Please uninstall and reinstall the package."
    Write-Warning "  * Consider pinning this package to avoid attempted package updates and preserve your configuration:"
    Write-Warning "  * ""choco pin add -n=$packageName"""
    throw
-  } 
+  }
 
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $unzipLocation
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   url            = $url
   checksum       = $checksum
   checksumType   = 'sha256'
@@ -48,12 +48,12 @@ if (Test-Path $unzipLocation\rootfs)
            Start-Sleep -Seconds 15
 		   $LoopMePlease++
 # break out of the loop after 15 minutes in case of error
-		   if ($LoopMePlease -gt 60) { 
+		   if ($LoopMePlease -gt 60) {
 			  $SomethingWentWrong=$true
 	          Write-Warning "Something went wrong. Possibly openSUSE-42 already installed or corrupt."
 			  wslconfig /list
 		      break
-			 } 
+			 }
           }
     } else {
 	  Write-Warning "Something went wrong. Possibly you haven't rebooted since enabling WSL."
