@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dotnet-verification-tool</id>
+    <version>4.6.01528.0</version>
+    <title>.NET Framework Setup Verification Tool (Portable)</title>
+    <authors>Microsoft</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <projectUrl>https://blogs.msdn.microsoft.com/astebner/2008/10/13/net-framework-setup-verification-tool-users-guide/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>##.NET Framework Setup Verification Tool User’s Guide
+
+###Introduction
+
+This .NET Framework setup verification tool is designed to automatically perform a set of steps to verify the installation state of one or more versions of the .NET Framework on a computer.  It will verify the presence of files, directories, registry keys and values for the .NET Framework.  It will also verify that simple applications that use the .NET Framework can be run correctly.
+
+If the verification tool finds any issues, there is a .NET Framework Repair Tool that can be found at the following locations:
+
+http://support.microsoft.com/kb/2698555
+http://go.microsoft.com/fwlink/?LinkID=246062
+Additional support can be obtained by visiting the .NET Framework setup forum at http://social.msdn.microsoft.com/Forums/en-US/netfxsetup/threads.
+
+Supported products
+
+The .NET Framework setup verification tool supports verifying the following products:
+
+.NET Framework 1.0
+.NET Framework 1.1
+.NET Framework 1.1 SP1
+.NET Framework 2.0
+.NET Framework 2.0 SP1
+.NET Framework 2.0 SP2
+.NET Framework 3.0
+.NET Framework 3.0 SP1
+.NET Framework 3.0 SP2
+.NET Framework 3.5
+.NET Framework 3.5 SP1
+.NET Framework 4 Client
+.NET Framework 4 Full
+.NET Framework 4.5
+.NET Framework 4.5.1
+.NET Framework 4.5.2
+.NET Framework 4.6
+.NET Framework 4.6.1
+By default, the .NET Framework setup verification tool will only list versions of the .NET Framework that it detects are installed on the computer that it is being run on.  As a result, the tool will not list all of the above versions of the .NET Framework.  This product filtering can be overridden by running the .NET Framework setup verification tool with the following command line switch:
+
+netfx_setupverifier.exe /q:a /c:”setupverifier2.exe /a”</description>
+    <summary>This .NET Framework setup verification tool is designed to automatically perform a set of steps to verify the installation state of one or more versions of the .NET Framework on a computer.</summary>
+    <releaseNotes />
+    <tags>.NET Framework setup and deployment Diagnosing Essentials for troubleshooting Pages Setup Issues admin</tags>
+    <docsUrl>https://blogs.msdn.microsoft.com/astebner/2008/10/13/net-framework-setup-verification-tool-users-guide/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
