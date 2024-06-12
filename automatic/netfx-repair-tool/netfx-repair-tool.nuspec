@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=30135</projectUrl>
-    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/icons/dotnet.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@31b5264b9cdd4797552ba261bb52fc9cc06e828f/icons/netfx-repair-tool.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This tool troubleshoots common issues with the setup of Microsoft .NET Framework or with updates to Microsoft .NET Framework setup installation. Additionally, this tool tries to resolve these issues by applying known fixes or by repairing the installed product. 
 
