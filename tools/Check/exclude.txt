@@ -172,3 +172,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+serva
