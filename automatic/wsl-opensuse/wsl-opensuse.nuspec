@@ -5,7 +5,7 @@
     <version>42.2.0.020181002</version>
     <title>openSUSE 42.2 (Malachite) for Windows Subsystem for Linux (Install)</title>
     <authors>SUSE</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.suse.com/company/legal/</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/windows/features</projectUrl>
     <iconUrl>https://cdn.rawgit.com/bcurran3/ChocolateyPackages/master/wsl-opensuse/suse_logo_w-tag_color.jpg</iconUrl>
