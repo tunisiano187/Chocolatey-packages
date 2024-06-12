@@ -21,7 +21,7 @@
     <releaseNotes>https://docs.microsoft.com/en-us/windows/wsl/release-notes</releaseNotes>
     <copyright>© SUSE, All Rights Reserved</copyright>
     <tags>wsl suse opensuse malachite linux notsilent</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/wsl-opensuse</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wsl-opensuse</packageSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/windows/wsl/about</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/WSL/issues</bugTrackerUrl>
     <dependencies>
