@@ -1,4 +1,3 @@
-wsl-opensuse 0.0 - New maintainer
 tonido-drive 0.0 - New maintainer
 netfx-repair-tool 0.0 - New maintainer
 dotnet-verification-tool 0.0 - New maintainer
