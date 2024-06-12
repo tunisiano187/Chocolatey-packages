@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'network-inventory-advisor'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'http://dl.network-inventory-advisor.com/network_inventory_advisor.exe'
-$checksum       = '3493772963AB178185996176A1557E9527EDFE0201887F281414D063C723450E'
+$url            = 'https://www.network-inventory-advisor.com/download/network_inventory_advisor.exe'
+$checksum       = '564140bddcdbe58b9bfd7680f1745b33ba75318317a6e7a3be086cf79978aa0a'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
