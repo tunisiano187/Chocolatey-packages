@@ -6,8 +6,6 @@ This tool troubleshoots common issues with the setup of Microsoft .NET Framework
 
 Note: The current version of the tool supports repairing the .NET Framework 4.6.1, 4.6, 4.5.2, 4.5.1, 4.5, 4.0 and 3.5 SP1 (includes .NET 3.0 SP2 and .NET 2.0 SP2).
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/netfx-repair-tool/readme.md)**
-
 #### [choco://netfx-repair-tool](choco://netfx-repair-tool)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 

@@ -3,6 +3,7 @@ $packageName  = 'netfx-repair-tool'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://download.microsoft.com/download/2/B/D/2BDE5459-2225-48B8-830C-AE19CAF038F1/NetFxRepairTool.exe'
 $checksum     = '3B33161BB43F7508439C588D39692F8D225FC6864E09A2922DFC01366A7528DB'
+$checksumType = 'sha256'
 $portableEXE  = "$toolsDir\NetFxRepairTool.exe"
 $ShortcutName = 'Microsoft .NET Framework Repair Tool.lnk'
 
@@ -13,7 +14,7 @@ $packageArgs = @{
   FileFullPath  = $portableEXE
   softwareName  = ''
   checksum      = $checksum
-  checksumType  = 'sha256'
+  checksumType  = $checksumType
 }
 
 
