@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>netfx-repair-tool</id>
+    <version>4.6.1535.020180101</version>
+    <title>Microsoft .NET Framework Repair Tool</title>
+    <authors>Microsoft</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=30135</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/icons/dotnet.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This tool troubleshoots common issues with the setup of Microsoft .NET Framework or with updates to Microsoft .NET Framework setup installation. Additionally, this tool tries to resolve these issues by applying known fixes or by repairing the installed product. 
+
+Note: The current version of the tool supports repairing the .NET Framework 4.6.1, 4.6, 4.5.2, 4.5.1, 4.5, 4.0 and 3.5 SP1 (includes .NET 3.0 SP2 and .NET 2.0 SP2).
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/netfx-repair-tool/readme.md)**</description>
+    <summary>Microsoft .NET Framework Repair Tool fixes common issues with .NET Framework installations.</summary>
+    <releaseNotes>https://support.microsoft.com/en-us/help/2698555/microsoft--net-framework-repair-tool-is-available</releaseNotes>
+    <tags>netfxrepairtool microsoft framework netfx dotnet .net repair tool KB2698555</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/netfx-repair-tool</packageSourceUrl>
+    <docsUrl>https://support.microsoft.com/en-us/kb/2698555</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
