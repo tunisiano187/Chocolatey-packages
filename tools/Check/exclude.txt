@@ -147,6 +147,7 @@ sqlserver2012express
 storjshare
 Swish
 todobackup
+tonido-drive
 trafficwatcher
 trim
 twisted
@@ -171,4 +172,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-tonido-drive
