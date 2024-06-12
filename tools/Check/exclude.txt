@@ -171,3 +171,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+tonido-drive
