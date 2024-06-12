@@ -18,8 +18,8 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $release
-	$url32 = $page.Links.href | Where-Object {$_ -match ".zip$"} | Select-Object -First 1
+	$page = Invoke-WebRequest -Uri $release -UseBasicParsing
+	$url32 = $page.Links.href | Where-Object {$_ -match "verifier_new.zip$"} | Select-Object -First 1
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileInfo = Get-FileVersion $url32
 
