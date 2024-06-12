@@ -18,7 +18,7 @@ Note: The current version of the tool supports repairing the .NET Framework 4.6.
     <summary>Microsoft .NET Framework Repair Tool fixes common issues with .NET Framework installations.</summary>
     <releaseNotes>https://support.microsoft.com/en-us/help/2698555/microsoft--net-framework-repair-tool-is-available</releaseNotes>
     <tags>netfxrepairtool microsoft framework netfx dotnet .net repair tool KB2698555</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/netfx-repair-tool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/netfx-repair-tool</packageSourceUrl>
     <docsUrl>https://support.microsoft.com/en-us/kb/2698555</docsUrl>
   </metadata>
   <files>
