@@ -2,13 +2,6 @@
 
 ## Google Workspace Sync for Microsoft Outlook (GWSMO / GSSMO) (Install)
 
----
-
-### [choco://gsuite-sync-outlook](choco://gsuite-sync-outlook)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 You can set up Google Workspace Sync for Microsoft Outlook (GWSMO) for users in your organization so they can synchronize their email, calendar, and contact data between Google Workspace and Microsoft Outlook. Before you begin, make sure you meet the system requirements.
 
 #### System requirements: 
@@ -23,14 +16,6 @@ For Outlook:
 * Outlook 2003 SP or 2007 SP2 (or SP1 with hotfix)—Microsoft no longer supports Outlook 2003 and 2007. We recommend upgrading to a supported version of Outlook.
 * Outlook 2010, 2013, 2016, 2019, and 2021 (32 and 64-bit).
 * Outlook from Microsoft 365 desktop app (not web version)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gsuite-sync-outlook/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://gsuite-sync-outlook](choco://gsuite-sync-outlook)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
