@@ -1,6 +1,7 @@
 ﻿name: Get new request
 
 on:
+  workflow_dispatch:
   issues:
     types: [closed]
 
