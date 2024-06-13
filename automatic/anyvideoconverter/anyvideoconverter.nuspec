@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>anyvideoconverter</id>
-    <version>4.0.0</version>
+    <version>9.0.0</version>
     <title>Any Video Converter Free Edition</title>
     <authors>AnvSoft Co, Ltd.</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c47bda4585289aeedf529b7168f33a0bad560ec9/icons/anyvideoconverter.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>https://www.any-video-converter.com/en8/for_video_free/whatnew.html</releaseNotes>
-    <description>Any Video Converter – Best free video converter for converting videos between any formats freely!
+    <description><![CDATA[## Any Video Converter Free Edition
+
+Any Video Converter – Best free video converter for converting videos between any formats freely!
 
 __All-in-One Free Video Converter__
 
@@ -30,7 +32,17 @@ Any Video Converter Freeware is also a free video to audio converter that can ex
 
 __Free YouTube Video Downloader__
 
-This free YouTube Downloader lets you download videos from YouTube and save them as MP3, MP4, WMV, MPEG, MKV, WebM, ASF, M2TS, DVD and other formats.</description>
+This free YouTube Downloader lets you download videos from YouTube and save them as MP3, MP4, WMV, MPEG, MKV, WebM, ASF, M2TS, DVD and other formats.
+
+---
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
     <summary>Any Video Converter – Best free video converter for converting videos between any formats freely!</summary>
     <copyright>AnvSoft Co, Ltd. - All rights reserved</copyright>
     <tags>anyvideoconverter video conversion converter avi flv mov mp4 mpg admin</tags>
