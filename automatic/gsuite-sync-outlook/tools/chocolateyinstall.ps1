@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'gsuite-sync-outlook'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://dl.google.com/google-apps-sync/enterprise_gsync.msi'
@@ -9,10 +9,10 @@ $checksumType   = 'sha256'
 
 $packageArgs = @{
   packageName    = $packageName
-  fileType       = 'MSI' 
+  fileType       = 'MSI'
   url            = $url
   url64          = $url64
-  softwareName   = 'Google Apps Sync*' 
+  softwareName   = 'Google Apps Sync*'
   checksum       = $checksum
   checksum64     = $checksum64
   checksumType   = $checksumType
