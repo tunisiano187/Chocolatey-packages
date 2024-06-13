@@ -173,3 +173,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+desktop-notifications-for-android-chrome
