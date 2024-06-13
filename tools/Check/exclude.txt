@@ -38,6 +38,7 @@ copay
 CyberGhost-VPN
 datacleaner
 datahealthcheck
+desktop-notifications-for-android-chrome
 diskdump
 diskext
 dnsquerysniffer
@@ -173,4 +174,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-desktop-notifications-for-android-chrome
