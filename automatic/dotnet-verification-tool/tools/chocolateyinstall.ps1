@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName    = 'dotnet-verification-tool' 
+$ErrorActionPreference = 'Stop'
+$packageName    = 'dotnet-verification-tool'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/08/99/90/04/netfx_setupverifier_new_2015_12_18.zip'
 $checksum       = '360D78D359F54C09A87CBB044D83E6ADD256AFD14DA278FE023BE59237F9486C'
@@ -8,7 +8,7 @@ $checksumType   = 'sha256'
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
   checksumType  = $checksumType
