@@ -174,3 +174,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+lan-speed-test.portable
