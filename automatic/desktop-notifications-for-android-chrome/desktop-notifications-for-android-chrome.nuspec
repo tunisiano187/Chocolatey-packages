@@ -5,7 +5,7 @@
     <version>4.5.2</version>
     <title>Desktop Notifications for Android for Chrome</title>
     <authors>https://notifications.hcilab.org</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://chrome.google.com/webstore/detail/desktop-notifications-for/giicnncicnopjohcpamieklkiacdoeni/</projectUrl>
     <iconUrl>https://notifications.hcilab.org/images/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
