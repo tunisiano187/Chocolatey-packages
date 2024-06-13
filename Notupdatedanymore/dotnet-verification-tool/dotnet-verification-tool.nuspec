@@ -6,7 +6,7 @@
     <title>.NET Framework Setup Verification Tool (Portable)</title>
     <authors>Microsoft</authors>
     <owners>tunisiano</owners>
-<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dotnet-verification-tool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dotnet-verification-tool</packageSourceUrl>
     <projectUrl>https://blogs.msdn.microsoft.com/astebner/2008/10/13/net-framework-setup-verification-tool-users-guide/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>##.NET Framework Setup Verification Tool User’s Guide

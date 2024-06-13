@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $release -UseBasicParsing
 	$url32 = $page.Links.href | Where-Object {$_ -match "verifier_new.zip$"} | Select-Object -First 1
 	. ..\..\scripts\Get-FileVersion.ps1
-	$FileInfo = Get-FileVersion $url32
+	$FileInfo = Get-FileVersion -url $url32
 
 	$Latest = @{ URL32 = $url32; Version = $FileInfo.Version; Checksum32 = $FileInfo.CHECKSUM; ChecksumType32 = $FileInfo.ChecksumType }
 	return $Latest
