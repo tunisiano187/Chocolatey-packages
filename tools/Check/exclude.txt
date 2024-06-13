@@ -175,3 +175,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+urban-terror
