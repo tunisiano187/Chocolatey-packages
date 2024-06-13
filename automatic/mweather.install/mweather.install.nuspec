@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.nirsoft.net/utils/mweather.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/mweather.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b212e718e338f62ef85d64499017431a4804950c/icons/mweather.install.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53ccf04e0621fce53cfb96004ffcd1d080ad2155/icons/mweather.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## MetarWeather
 The MetarWeather utility decodes METAR weather reports from around the world, 
