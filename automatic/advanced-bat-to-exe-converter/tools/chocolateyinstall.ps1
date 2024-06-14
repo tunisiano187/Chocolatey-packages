@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkExe         = 'AutoHotKey'
 $ahkFile        = "$toolsDir\AB2ECInstall.ahk"
@@ -13,5 +13,5 @@ $packageArgs = @{
   file           = "$toolsDir\advbattoexeconverter.exe"
   validExitCodes = @(0)
   }
-  
+
 Install-ChocolateyInstallPackage @packageArgs
