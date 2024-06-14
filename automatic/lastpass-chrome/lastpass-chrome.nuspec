@@ -50,7 +50,7 @@ Only you know your master password, and only you can access your vault. Your mas
 **[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/lastpass-chrome/readme.md)**</description>
     <summary>LastPass remembers all your passwords, so you don't have to.</summary>
     <tags>lastpass passwords chrome extension</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/lastpass-chrome</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/lastpass-chrome</packageSourceUrl>
     <dependencies>
       <dependency id="googlechrome" />
     </dependencies>
