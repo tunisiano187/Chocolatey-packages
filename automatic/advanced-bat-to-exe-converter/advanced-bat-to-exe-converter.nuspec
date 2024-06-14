@@ -4,7 +4,7 @@
   <metadata>
     <id>advanced-bat-to-exe-converter</id>
     <version>4.23</version>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/advanced-bat-to-exe-converter</packageSourceUrl>
     <title>Advanced BAT to EXE Converter (Install)</title>
     <authors>Brandon Dargo</authors>
@@ -75,7 +75,7 @@ No adware or bloatware in this free software download!
 </description>
     <releaseNotes>https://www.battoexeconverter.com/Download-Pro/</releaseNotes>
     <dependencies>
-      <dependency id="autohotkey" version="1.1.27"/>
+      <dependency id="autohotkey" version="1.1.27" />
     </dependencies>
   </metadata>
   <files>
