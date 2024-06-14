@@ -1,6 +1,0 @@
-﻿==================== Advanced BAT to EXE Converter ====================
-
-bcurran3 downloads and packages the executable for Advanced BAT to EXE Converter from:
-https://www.battoexeconverter.com/downloads/advbattoexeconverter.exe
-
-==================== Advanced BAT to EXE Converter ====================
