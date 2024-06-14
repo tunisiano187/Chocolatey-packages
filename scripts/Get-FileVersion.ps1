@@ -24,7 +24,7 @@ function Get-FileVersion {
     if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
 
     if($null -ne $url) {
-        $tempFile = New-TemporaryFile
+        $tempFile = Join-Path $env:TEMP $url.split('/')[-1]
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
