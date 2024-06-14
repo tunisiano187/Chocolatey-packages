@@ -17,14 +17,15 @@
 #>
 function Get-FileVersion {
     param(
-        [uri]$url,
+        [string]$url,
         [string]$File,
-        [string]$checksumType = "SHA512"
+        [string]$checksumType = "SHA512",
+        [switch]$keep
     )
     if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
 
     if($null -ne $url) {
-        $tempFile = Join-Path $env:TEMP $url.split('/')[-1]
+        $tempFile = Join-Path $env:TEMP $($url.split('/')[-1])
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
@@ -33,7 +34,10 @@ function Get-FileVersion {
             $version=$null
         }
         $checksum = (Get-FileHash -Path $tempFile -Algorithm $checksumType).Hash
-        Remove-Item -Path $tempFile -Force
+        if(! $keep) {
+            Remove-Item -Path $tempFile -Force
+            $tempFile = "Removed"
+        }
     } else {
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
@@ -44,6 +48,6 @@ function Get-FileVersion {
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
 
-    $result = @{Version = $version; CHECKSUM = $checksum; ChecksumType = $checksumType}
+    $result = @{Version = $version; CHECKSUM = $checksum; ChecksumType = $checksumType; TempFile = $tempFile}
     return $result
 }
