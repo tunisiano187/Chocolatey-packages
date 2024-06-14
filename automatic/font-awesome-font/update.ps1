@@ -28,9 +28,9 @@ function global:au_GetLatest {
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "-desktop.zip$"}
 
 	$File = "tools\$($url32.Split('/')[-1])"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
 	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion -File $File
+	$FileVersion = Get-FileVersion -url $url32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination $File
 	$version = $tags.tag_name.Replace('v','')
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	. ..\..\scripts\Get-GithubRepositoryLicense.ps1
