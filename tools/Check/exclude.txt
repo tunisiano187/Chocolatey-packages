@@ -176,3 +176,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+lastpass-chrome
