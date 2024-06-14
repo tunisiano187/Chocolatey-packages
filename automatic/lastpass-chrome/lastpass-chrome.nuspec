@@ -5,7 +5,7 @@
     <version>4.3.0</version>
     <title>LastPass: Free Password Manager for Chrome</title>
     <authors>lastpass.com</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.logmeininc.com/legal/terms-and-conditions</licenseUrl>
     <projectUrl>https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6198f3fbff1a4160b3d28653e2b7ba512a243e97/icons/lastpass-chrome.png</iconUrl>
