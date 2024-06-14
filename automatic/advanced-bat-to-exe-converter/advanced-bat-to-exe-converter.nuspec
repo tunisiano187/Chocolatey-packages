@@ -5,7 +5,7 @@
     <id>advanced-bat-to-exe-converter</id>
     <version>4.23</version>
     <owners>bcurran3</owners>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/advanced-bat-to-exe-converter</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/advanced-bat-to-exe-converter</packageSourceUrl>
     <title>Advanced BAT to EXE Converter (Install)</title>
     <authors>Brandon Dargo</authors>
     <projectUrl>https://www.battoexeconverter.com/</projectUrl>
