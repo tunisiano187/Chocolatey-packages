@@ -3,9 +3,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
+ad-tidy-free
 adblockplusie
 adguard-chrome
-ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -13,8 +13,8 @@ alcohol52-free
 allbrowsers
 allwemo
 amazingmarvin
-amazondrive
 amazon-photos
+amazondrive
 AMD-Graphics-Driver
 AnkhSvn
 anvide-seal-folder
@@ -51,8 +51,8 @@ ekiga
 emulationstation
 emulationstation.install
 enjarify
-evernote2onenote
 evernote-chrome
+evernote2onenote
 evimsync
 fastest-mouse-clicker
 filetool
@@ -89,8 +89,9 @@ KTechLab
 kubernetes-cli
 kubernetes-kompose
 kvrt
-Lando
 lan-speed-test.portable
+Lando
+lastpass-chrome
 libffcall
 librecrypt
 lili
