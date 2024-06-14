@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>vhdattach</id>
+    <version>4.21</version>
+    <title>VHD Attach (Install)</title>
+    <authors>Josip Medved</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://github.com/medo64/VhdAttach/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://www.medo64.com/vhdattach/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/vhdattach/vhdattach_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+###[choco://vhdattach](choco://vhdattach)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of VHD Attach](https://www.medo64.com/content/media/vhdattach350.png)	
+
+This is small tool that adds Attach and Detach option to contextual (aka right-click) menu of Virtual disk (vhd) files. That enables those operations to be done without trip to Disk Management console. Detach option is available on hard drive contextual menu also (if selected in options).
+
+If so desired you can also use this program to attach various virtual disks upon system start-up. It is your choice whether this will be done in full-access or read-only mode.
+
+Additionally program can be used as classic utility in order to see various information about virtual disk, even without attaching it.
+
+Do notice that this program only works with Windows 7, Windows Server 2008 R2, and above. Older operating systems are not supported. And yes, it does work on Windows 10.
+
+P.S. If you are using Windows 8 or Windows Server 8 you can also mount ISO images and new VHDX virtual disks.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/vhdattach/readme.md)**
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>VHD Attach is small tool that adds Attach and Detach option to the contextual menu of VHD files.</summary>
+    <releaseNotes>https://www.medo64.com/vhdattach/history/</releaseNotes>
+    <copyright>Copyright (c) Josip Medved</copyright>
+    <tags>jmedved vhd attach virtual drive</tags>
+    <projectSourceUrl>https://github.com/medo64/VhdAttach</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/vhdattach</packageSourceUrl>
+    <docsUrl>https://www.medo64.com/vhdattach/faq/</docsUrl>
+    <mailingListUrl>https://github.com/medo64/VhdAttach/subscription</mailingListUrl>
+    <bugTrackerUrl>https://github.com/medo64/VhdAttach/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
