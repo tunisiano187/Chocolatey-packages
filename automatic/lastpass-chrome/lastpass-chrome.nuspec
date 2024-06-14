@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.logmeininc.com/legal/terms-and-conditions</licenseUrl>
     <projectUrl>https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd</projectUrl>
-    <iconUrl>https://pbs.twimg.com/profile_images/694907106378403841/dWFswB9p_400x400.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6198f3fbff1a4160b3d28653e2b7ba512a243e97/icons/lastpass-chrome.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of LastPass for Chrome](https://lh3.googleusercontent.com/6RuueVSa2Pm-DYp0exddGE5-9vjcJ-W2uWKaNpdn3Ipuut-249p4GXvH2XievpdvK11l9SWTXw=w640-h400-e365)	
 	
