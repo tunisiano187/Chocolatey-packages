@@ -5,7 +5,7 @@
     <version>4.21</version>
     <title>VHD Attach (Install)</title>
     <authors>Josip Medved</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/medo64/VhdAttach/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://www.medo64.com/vhdattach/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/vhdattach/vhdattach_icon.png</iconUrl>
