@@ -5,7 +5,7 @@
     <version>4.2.4</version>
     <title>File System Security PowerShell Module (Install)</title>
     <authors>Raimund Andrée</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
     <projectUrl>https://gallery.technet.microsoft.com/scriptcenter/1abd77a5-9c0b-4a2b-acef-90dbb2b84e85</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ce53394c2059dda092258d9fc236d91f2067adbc/icons/ntfssecurity-psmodule.png</iconUrl>
