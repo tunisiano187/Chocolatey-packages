@@ -39,7 +39,7 @@ For documentation please refer to:
     <copyright>Raimund Andrée</copyright>
     <tags>randree nttfssecurity security ntfs permissions powershell</tags>
     <projectSourceUrl>https://github.com/raandree/NTFSSecurity</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ntfssecurity-psmodule</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ntfssecurity-psmodule</packageSourceUrl>
     <docsUrl>https://blogs.technet.microsoft.com/fieldcoding/2014/12/05/ntfssecurity-tutorial-1-getting-adding-and-removing-permissions/</docsUrl>
     <mailingListUrl>https://gallery.technet.microsoft.com/scriptcenter/1abd77a5-9c0b-4a2b-acef-90dbb2b84e85/view/Discussions</mailingListUrl>
     <bugTrackerUrl>https://github.com/raandree/NTFSSecurity/issues</bugTrackerUrl>
