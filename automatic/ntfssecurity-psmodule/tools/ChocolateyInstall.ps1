@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = 'ntfssecurity-psmodule'
 
 $PSversion = $PSVersionTable.PSVersion.Major
@@ -13,8 +13,8 @@ if ($PSversion -lt "5")
 # Will fail if packageVersion is a revised version not matching module version, i.e. x.x.x.0020180101
 if (Get-Module -ListAvailable -Name NTFSSecurity -ErrorAction SilentlyContinue){
      Update-Module "NTFSSecurity" -RequiredVersion "$env:packageVersion" -Force
-   } else {   
+   } else {
      Get-PackageProvider -Name NuGet -Force
      Install-Module -Name NTFSSecurity -Scope AllUsers -RequiredVersion $env:packageVersion -AllowClobber -Force
      Import-Module NTFSSecurity
-   }   
+   }
