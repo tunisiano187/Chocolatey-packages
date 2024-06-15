@@ -177,3 +177,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+weather-chrome
