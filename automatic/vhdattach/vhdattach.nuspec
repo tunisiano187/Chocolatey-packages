@@ -42,7 +42,7 @@ P.S. If you are using Windows 8 or Windows Server 8 you can also mount ISO image
     <copyright>Copyright (c) Josip Medved</copyright>
     <tags>jmedved vhd attach virtual drive</tags>
     <projectSourceUrl>https://github.com/medo64/VhdAttach</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/vhdattach</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vhdattach</packageSourceUrl>
     <docsUrl>https://www.medo64.com/vhdattach/faq/</docsUrl>
     <mailingListUrl>https://github.com/medo64/VhdAttach/subscription</mailingListUrl>
     <bugTrackerUrl>https://github.com/medo64/VhdAttach/issues</bugTrackerUrl>
