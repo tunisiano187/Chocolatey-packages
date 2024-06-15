@@ -20,11 +20,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases
-	
+
 	$url32 = "$domain$(($page.Links | Where-Object {$_.href -match '.exe$'}).href)"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileInfos = Get-FileVersion -url $url32 -keep
-	
+
 	$Latest = @{ URL32 = $url32; Version = $FileInfos.Version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
 	return $Latest
 }
