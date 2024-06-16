@@ -59,6 +59,7 @@ fastest-mouse-clicker
 filetool
 findaes
 findthatfont
+free-ost-reader
 freearc
 gamedownloader
 getopt
@@ -183,4 +184,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-free-ost-reader

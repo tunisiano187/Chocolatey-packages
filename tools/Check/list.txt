@@ -1,4 +1,3 @@
-free-pst-reader 0.0 - New maintainer
 google-dictionary-chrome 0.0 - New maintainer
 dell-platform-tags-utility 0.0 - New maintainer
 gsuite-migration-outlook 0.0 - New maintainer
