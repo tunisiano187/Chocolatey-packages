@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName= 'universal-firmware-updater' 
+$ErrorActionPreference = 'Stop'
+$packageName= 'universal-firmware-updater'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'http://download.wdc.com/fwupdater/Win/WDFirmwareUpdater.zip'
 $checksum   = '989B4B8E960476C325292175B540EA9D03CAC40EE27EF25EA205375A01F5AD74'
@@ -7,10 +7,10 @@ $checksum   = '989B4B8E960476C325292175B540EA9D03CAC40EE27EF25EA205375A01F5AD74'
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256' 
+  checksumType  = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs
