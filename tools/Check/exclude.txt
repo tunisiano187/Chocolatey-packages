@@ -38,6 +38,7 @@ copay
 CyberGhost-VPN
 datacleaner
 datahealthcheck
+dell-platform-tags-utility
 desktop-notifications-for-android-chrome
 diskdump
 diskext
@@ -186,4 +187,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-dell-platform-tags-utility
