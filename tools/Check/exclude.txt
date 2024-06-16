@@ -180,3 +180,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+ost2pst-wizard
