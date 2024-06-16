@@ -1,0 +1,46 @@
+[![](https://img.shields.io/chocolatey/v/free-ost-reader?color=green&label=free-ost-reader)](https://chocolatey.org/packages/free-ost-reader) [![](https://img.shields.io/chocolatey/dt/free-ost-reader)](https://chocolatey.org/packages/free-ost-reader)
+
+## Free OST Reader (Install)
+
+![Screenshot of Free OST Reader](http://ost2pstware.com/img/guide/v4.png)
+	
+###Salient Features of the Software
+
+* An easy to use tool to View Outlook Offline mailbox data files* 
+* Preview Option available for both Messages and Attachments
+* Displays all items such as task, journals, calendars etc., perfectly
+* Opens orphan .ost data files of Outlook
+* Reads both ANSI and UNICODE .ost data file format
+* Provides View of all types of OST file - Encrypted, Highly Encrypted, and Compressed	
+
+###Free OST Viewer Tool
+It is completely freeware, without paying a single buck you can use the tool to view and read Outlook offline mailbox data files. You don't need to waste money on expensive software just simply download for free and access your OST files.
+
+###Display Proper Information
+Advantage of using OST Viewer is it help you to read all important informations related to your files in a proper way. Every minute detail is showed to you without creating any complexity to understand the data. It is a completely full featured program.
+
+###Easily runs without Outlook
+The special feature of this OST Viewer program is that you can get access to your OST file at the situations when you don't have Outlook installed on your system. Also, OST Reader made browsing of Outlook offline data files possible even when exchange server is down.
+
+###Retain Folder structure
+You will not face any difficulty using this OST Viewer utility. It will give you view of Outlook offline Mailbox data files as same as in Outlook. You will see same folder and sub folder structure, even the message formatting is not affected. All read and unread message status is maintained.
+
+###Preview Option - Dual
+You can easily get preview of any messages or attachments in the same screen in a proper manner. There are two sections: One displays all items of selected folder the other shows you preview. It contains two tabs one to preview selected message other shows its attachment
+
+###Supported by Windows
+It is windows based software. You can download it on any version of Windows Operating System. It runs perfectly on Windows 10, Windows 8.1 Windows 7, Windows XP, Windows Vista and all previous version
+
+###Simple GUI
+Its graphical user interface is created very simple. Any kind of computer user can use the tool comfortably without requiring any assistance to run the free OST viewer. To open OST file without Outlook you just need to click on Add file and browse OST file, software will load all data of selected OST file
+
+###Opens Orphan OST
+It is a special program developed to open and read OST files without Outlook. There are many situations when you can't access OST files such as at down time of Exchange Server, or MS Outlook not installed or when OST becomes orphan. In such cases you can easily open and explore OST files using OST Viewer
+
+#### [choco://free-ost-reader](choco://free-ost-reader)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
