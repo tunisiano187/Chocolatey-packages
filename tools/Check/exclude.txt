@@ -185,3 +185,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+google-dictionary-chrome
