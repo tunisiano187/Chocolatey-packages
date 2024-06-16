@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>performance-monitor</id>
+    <version>4.1.3.20170523</version>
+    <title>Performance Monitor (Install)</title>
+    <authors>Lorenzi Davide</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>http://www.hexagora.com/en_dw_davperf.asp</projectUrl>
+    <iconUrl>http://www.hexagora.com/files/en_dw_davperf_slidepic1.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of Performance Monitor](http://www.hexagora.com/files/en_dw_davperf_extension2ext_11.png)
+
+Performance Monitor is a small program that shows you the CPU, Memory, Disk and Network utilization under Windows NT platforms (2000, XP, Vista, Win 7, etc...).
+It's composed by four fully configurable small graphs and it can work in the tray area also.
+The windows are fully anchorable.
+PerfMon can become transparent and permits you to forward left-mouse clicks so you can place it anywhere.
+You can also change the program priority (saving CPU work) and its size (for big monitor resolutions ;-))
+
+Usage:
+• Right click for options
+• Drag a single panel to move it
+• Drag a single panel with the CTRL Key down to move all attached panels ;-)</description>
+    <summary />
+    <releaseNotes />
+    <copyright>Copyright © 2002-17 by Lorenzi Davide</copyright>
+    <tags>performance montior cpu memory disk network utility admin</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/performance-monitor</packageSourceUrl>
+    <mailingListUrl>http://www.hexagora.com/forum/active.asp</mailingListUrl>
+    <bugTrackerUrl>http://www.hexagora.com/en_dw_davperf.asp</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
