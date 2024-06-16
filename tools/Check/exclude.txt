@@ -46,6 +46,7 @@ dragondisk
 dreampie
 dropit
 dupeguru-me
+ebay-chrome
 ekeyfinder
 ekiga
 emulationstation
@@ -179,4 +180,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-ebay-chrome
