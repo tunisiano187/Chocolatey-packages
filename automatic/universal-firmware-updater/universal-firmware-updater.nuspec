@@ -7,7 +7,7 @@
     <authors>Western Digital</authors>
     <owners>bcurran3</owners>
     <projectUrl>http://support.wdc.com/downloads.aspx?lang=en</projectUrl>
-    <iconUrl>http://support.wdc.com/images/wdlogo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b5a1d6273555bf913292ef24223103ce5812fa88/icons/universal-firmware-updater.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screen shot of Western Digital Universal Firmware Updater for Windows](http://support.wdc.com/images/kb/smartware/continue_to_update_windows.png)
 
