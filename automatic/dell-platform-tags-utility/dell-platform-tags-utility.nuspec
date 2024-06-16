@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>dell-platform-tags-utility</id>
+    <version>4.0.30.0</version>
+    <title>Dell Platform Tags Utility (Portable)</title>
+    <authors>Dell Inc.</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.dell.com/learn/us/en/solutions/software-license-agreements?s=corp</licenseUrl>
+    <projectUrl>https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=jh25y</projectUrl>
+    <iconUrl>https://si.cdn.dell.com/images/global/brand/ui/logo-wt-bl.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package provides Dell Platform Tags Utility and is supported on OptiPlex, XPS Notebook, Tablet, Precision and Latitude running the following Operating Systems: Windows 7, Windows 8, Windows 8.1, Windows10 and DOS	
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/dell-platform-tags-utility/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>Dell Platform Tags Utility allows you to view and edit Owner and System asset tags on Dell computers.</summary>
+    <releaseNotes>Fixes and Enhancements
+Fixes:
+Fixed CPU exception issue when SMM Security Mitigation is enabled</releaseNotes>
+    <copyright>(C) Copyright Dell Inc.</copyright>
+    <tags>dell platform tags utility system asset management portable</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/dell-platform-tags-utility</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
