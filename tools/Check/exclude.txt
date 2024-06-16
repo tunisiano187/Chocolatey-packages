@@ -182,3 +182,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+performance-monitor
