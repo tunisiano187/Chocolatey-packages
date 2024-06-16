@@ -66,6 +66,7 @@ gamedownloader
 getopt
 go-contact-sync-mod
 Golem-Brass-Beta
+google-dictionary-chrome
 google-web-designer
 hashdeep
 hdparm
@@ -185,4 +186,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-google-dictionary-chrome
