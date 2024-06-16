@@ -1,14 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/warzone2100?color=green&label=warzone2100)](https://chocolatey.org/packages/warzone2100) [![](https://img.shields.io/chocolatey/dt/warzone2100)](https://chocolatey.org/packages/warzone2100)
 
 ## Warzone 2100 (Install)
-
----
-
-### [choco://warzone2100](choco://warzone2100)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of Warzone 2100](https://wz2100.net/static/img/wz2100-CAM_3A50.png)
 	
 ## Welcome to Warzone 2100!
@@ -19,15 +11,6 @@ The game offers campaign, multi-player, and single-player skirmish modes. An ext
 
 Warzone 2100 was originally developed as a commercial game by Pumpkin Studios and published in 1999, and was released as open source by them in 2004, for the community to continue working on it.	
 	
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/warzone2100/readme.md)**	
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
-
 #### [choco://warzone2100](choco://warzone2100)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
