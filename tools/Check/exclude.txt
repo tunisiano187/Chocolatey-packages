@@ -184,3 +184,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+free-pst-reader
