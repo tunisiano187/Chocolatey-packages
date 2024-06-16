@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>warzone2100</id>
+    <version>4.1.3</version>
+    <title>Warzone 2100 (Install)</title>
+    <authors>buginator, cypr, sendai, the_cybersphinx, vexed-1</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://github.com/Warzone2100/warzone2100/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://wz2100.net/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/warzone2100/warzone2100_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://warzone2100](choco://warzone2100)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Warzone 2100](https://wz2100.net/static/img/wz2100-CAM_3A50.png)
+	
+## Welcome to Warzone 2100!
+
+In Warzone 2100, you command the forces of The Project in a battle to rebuild the world after mankind has almost been destroyed by nuclear missiles.
+
+The game offers campaign, multi-player, and single-player skirmish modes. An extensive tech tree with over 400 different technologies, combined with the unit design system, allows for a wide variety of possible units and tactics.
+
+Warzone 2100 was originally developed as a commercial game by Pumpkin Studios and published in 1999, and was released as open source by them in 2004, for the community to continue working on it.	
+	
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/warzone2100/readme.md)**	
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Warzone 2100 - RTS game with the theme of Strategy by Design</summary>
+    <releaseNotes>http://wz2100.net/news/</releaseNotes>
+    <copyright>Eidos, in collaboration with Pumpkin Studios</copyright>
+    <tags>warzone warzone2100 rts game crossplatform embedded binary</tags>
+    <projectSourceUrl>https://github.com/Warzone2100/warzone2100</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/warzone2100</packageSourceUrl>
+    <docsUrl>http://betaguide.wz2100.net/</docsUrl>
+    <mailingListUrl>http://forums.wz2100.net/</mailingListUrl>
+    <bugTrackerUrl>http://developer.wz2100.net/wiki/BugReporting</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
