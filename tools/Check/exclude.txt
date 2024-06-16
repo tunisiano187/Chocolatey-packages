@@ -62,6 +62,7 @@ findthatfont
 freearc
 gamedownloader
 getopt
+go-contact-sync-mod
 Golem-Brass-Beta
 google-web-designer
 hashdeep
@@ -181,4 +182,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-go-contact-sync-mod
