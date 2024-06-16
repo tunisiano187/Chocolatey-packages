@@ -60,6 +60,7 @@ filetool
 findaes
 findthatfont
 free-ost-reader
+free-pst-reader
 freearc
 gamedownloader
 getopt
@@ -184,4 +185,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-free-pst-reader
