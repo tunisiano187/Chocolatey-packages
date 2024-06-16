@@ -5,7 +5,7 @@
     <version>4.0.117.10</version>
     <title>G Suite Migration for Microsoft Outlook® (GSMMO) (Install)</title>
     <authors>Google</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://gsuite.google.com/terms/standard_terms.html</licenseUrl>
     <projectUrl>https://tools.google.com/dlpage/outlookmigration</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@275edd92d25f7d0b51bc4e32bbb002a4f31cb7d3/icons/gsuite-migration-outlook.png</iconUrl>

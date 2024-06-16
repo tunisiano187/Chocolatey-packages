@@ -5,7 +5,7 @@
     <version>4.0.1.4</version>
     <title>Western Digital Universal Firmware Updater for Windows (Install)</title>
     <authors>Western Digital</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://support.wdc.com/downloads.aspx?lang=en</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b5a1d6273555bf913292ef24223103ce5812fa88/icons/universal-firmware-updater.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
