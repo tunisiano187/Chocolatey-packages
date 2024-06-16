@@ -178,3 +178,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+ntfssecurity-psmodule
