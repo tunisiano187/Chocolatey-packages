@@ -181,3 +181,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+go-contact-sync-mod
