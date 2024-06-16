@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ost2pst-wizard</id>
+    <version>4.2</version>
+    <title>OST2PST Wizard (Trial) (Install)</title>
+    <authors>OST2PSTWARE</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://ost2pstware.com/eula.html</licenseUrl>
+    <projectUrl>http://ost2pstware.com/converter/</projectUrl>
+    <iconUrl>http://ost2pstware.com/img/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of OST2PST Wizard](http://ost2pstware.com/img/guide/step4.png)
+	
+###The Key features of this software are listed below:
+
+Migrate OST to other formats such as PSTformatshtml formatsetc.
+Provides preview of OST data files
+User can specify storage location of resultant file
+Recovers highly corrupted OST file by transforming OST to PST or to other formats.
+Apply naming convention to save the Output file
+Restoration of permanently deleted OST Mailbox data.
+
+###Convert OST file
+OST2PST is a specialised program to migrate OST data files into PST files. It provides you an option to add OST file and then migrate OST to PST in just one click. The result generated can be saved at preferred location.
+
+###Restore deleted OST data
+This multitasker tool also manages your deleted files. OST2PST Converter, can easily restore all your permanently deleted items or files. Both soft and hard deleted items can be re-obtained by converting OST to Outlook PST or other file formats.
+
+###Change OST to Other formats
+This software has multiple features, it can convert OST to PST, formatshtml formats format. This one tool can perform conversion of OST files in more than 2 file formats. You can select any of these format to recover and migrate OST data to required file format.
+
+###Maintains folder structure
+OST2PST Converter software migrate OST to PST,formatshtml formats etc., retaining the data consistency. This means it maintains all hierarchical folder structure in the resultant output file. It create PST file with the same sequence of folder and sub folder as it was in source corrupted OST file
+
+###Recover Corrupt OST
+Using OST2PST tool you can easily recover your OST files. It converts highly corrupted outlook offline folder data (.OST files) into healthy state PST files. Thus it safeguards and recovers your important information stored in corrupted OST files
+
+###Supports all Outlook Version
+This software is designed to work efficiently with all version of Outlook. It can easily convert OST to PST file of updated version of Outlook. It will generate error free output and gives satisfactory result to end user
+
+###Preview Option
+You can view your OST file before starting the conversion process. After adding the required file, you can select any of the item or folder to get a preview of it. You can see the preview of ost mails along with attachments.
+
+###Saving Options
+It offers you multiple saving options. You can specify location to save resultant file as desirable, you can also apply naming convention while converting ost to other format except pst. It's a all in one converter.
+
+###Standard License
+* $49
+* Suitable for Personal use only
+* Valid for 2 Machines
+* Save OST to PST, EML, EMLX
+
+###Pro License
+* $99
+* Multiple Saving Options
+* Save OST to PST, EML, EMLX, MSG, PDF, HTML, MBOX, MHT</description>
+    <summary>A perfect tool developed to save OST to PST files</summary>
+    <releaseNotes />
+    <copyright>Copyright (C) 2014 - 2016, OST2PSTware.com</copyright>
+    <tags>ost2pstware ost2pst ost pst converter outlook exchange trial admin</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ost2pst-wizard</packageSourceUrl>
+    <docsUrl>http://ost2pstware.com/converter/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
