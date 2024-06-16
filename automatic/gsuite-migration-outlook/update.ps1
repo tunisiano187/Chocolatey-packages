@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 import-module au
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
-$releases = 'https://support.google.com/a/answer/153463'
+$releases = 'https://support.google.com/a/answer/1283788'
 
 function global:au_SearchReplace {
 	@{
@@ -27,8 +27,8 @@ function global:au_GetLatest {
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
-	$url32 = "https://dl.google.com/google-apps-sync/enterprise_gsync.msi"
-	$url64 = "https://dl.google.com/dl/google-apps-sync/x64/enterprise_gsync.msi"
+	$url32 = "https://dl.google.com/outlookmigration/enterprise_outlookmigration.msi"
+	$url64 = "https://dl.google.com/dl/outlookmigration/x64/enterprise_outlookmigration.msi"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileInfo = Get-FileVersion $url32
 	$FileInfo64 = Get-FileVersion $url64
