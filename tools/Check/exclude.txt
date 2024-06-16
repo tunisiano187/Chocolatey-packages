@@ -129,6 +129,7 @@ pcanyscan
 peerblock
 pelles-c-sdk
 pencil 
+performance-monitor
 plexmediaserver
 pngoo
 profile
@@ -182,4 +183,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-performance-monitor
