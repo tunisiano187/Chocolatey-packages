@@ -1,0 +1,10 @@
+==================== GO Contact Sync Mod ====================
+
+GO Contact Sync Mod license is stated as Artistic License, GNU General Public License version 3.0 (GPLv3) on it's project page at https://sourceforge.net/projects/googlesyncmod/
+
+The BPLv3 license can be viewed at https://www.gnu.org/licenses/gpl-3.0.en.html
+
+The pertinent part is:
+"Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things."
+
+==================== GO Contact Sync Mod ====================

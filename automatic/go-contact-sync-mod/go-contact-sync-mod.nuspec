@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>go-contact-sync-mod</id>
+    <version>4.1.33</version>
+    <title>GO Contact Sync Mod</title>
+    <authors>WebGear Ltd, New Zealand + Create Software + Stru.be + saller.NET + Big-R</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://googlesyncmod.sourceforge.net/</licenseUrl>
+    <projectUrl>https://googlesyncmod.sourceforge.io/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/go-contact-sync-mod/go-contact-sync-mod_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://go-contact-sync-mod](choco://go-contact-sync-mod)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+
+![Screenshot of program interface](https://a.fsdn.com/con/app/proj/googlesyncmod/screenshots/GCSMScreenshot.PNG)
+
++++ NEWS +++
+The newest versions of Google APIs client Library for .NET dropped support for .NET 4.0. 
+Minimum requirement for GO Contact Sync Mod (starting with v3.10.0) is .NET 4.5 which is not working on Windows XP.
+
+-----------------------------------------------------
+GO Contact Sync Mod synchronizes your Microsoft Outlook contacts with your Google Mail address book, including pictures, categories and notes.
+Since version 3.7.0 it also syncs your Outlook Calendar Appointments on demand to Google Calendar. This Mod fork adds many enhancements and bug fixes to the obviously dead project 'Go Contact Sync'.
+
+Please find some guidelines how to sync your mobile phone contacts with Google Contacts here: http://www.google.com/mobile/sync
+
+### Features
+
+* Full support of OAuth2 - no need for your password!
+* Outlook Contacts sync
+* Outlook Calendar Appointments sync
+* Automatic syncing
+* Contact Pictures support
+* Categories support
+* Supports Outlook 2003, 2007, 2010, 2013 and 2016 (32 and 64 bit)
+* No Support for Outlook Express
+* Select Outlook folder to sync
+* Sync with multiple GoogleMail accounts
+	
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/go-contact-sync-mod/readme.md)**
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>GO Contact Sync Mod is an open source tool to synchronize your Microsoft Outlook contacts with Google Mail</summary>
+    <releaseNotes>https://sourceforge.net/projects/googlesyncmod/files/Releases/3.10.29/</releaseNotes>
+    <tags>GO Contact Sync Mod Outlook Gmail Google email e-mail synchronization binary</tags>
+    <projectSourceUrl>https://sourceforge.net/p/googlesyncmod/code/HEAD/tree/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/go-contact-sync-mod</packageSourceUrl>
+    <docsUrl>http://googlesyncmod.sourceforge.net/</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/googlesyncmod/mailman/?source=navbar</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/googlesyncmod/bugs/</bugTrackerUrl>
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

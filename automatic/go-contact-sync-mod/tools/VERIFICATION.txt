@@ -1,0 +1,7 @@
+==================== GO Contact Sync Mod ====================
+
+bcurran3 downloads and packages the executable for GO Contact Sync Mod from the it's SOURCEFORGE distribution point of https://sourceforge.net/projects/googlesyncmod/files/Releases/
+
+Checksums can be verified by clicking the program version folder and then the (i)/View details next to the filename
+
+==================== GO Contact Sync Mod ====================
