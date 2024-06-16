@@ -40,7 +40,7 @@ Warzone 2100 was originally developed as a commercial game by Pumpkin Studios an
     <copyright>Eidos, in collaboration with Pumpkin Studios</copyright>
     <tags>warzone warzone2100 rts game crossplatform embedded binary</tags>
     <projectSourceUrl>https://github.com/Warzone2100/warzone2100</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/warzone2100</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/warzone2100</packageSourceUrl>
     <docsUrl>http://betaguide.wz2100.net/</docsUrl>
     <mailingListUrl>http://forums.wz2100.net/</mailingListUrl>
     <bugTrackerUrl>http://developer.wz2100.net/wiki/BugReporting</bugTrackerUrl>
