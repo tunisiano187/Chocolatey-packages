@@ -42,7 +42,7 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
     <releaseNotes>https://support.google.com/a/users/answer/1283788</releaseNotes>
     <copyright>Google</copyright>
     <tags>gsmmo gammo gsuite google migration outlook</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/gsuite-migration-outlook</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gsuite-migration-outlook</packageSourceUrl>
     <docsUrl>https://support.google.com/a/answer/176213</docsUrl>
     <bugTrackerUrl>https://support.google.com/a/users/answer/1283788</bugTrackerUrl>
   </metadata>

@@ -44,7 +44,7 @@ My Book Duo, My Book, My Book, My Book for Mac, My Book Pro, My Book Duo, My Pas
     <summary>Updates the firmware on Western Digital hard drives.</summary>
     <copyright>Copyright (C) 2002-2015, Western Digital</copyright>
     <tags>western digital wd hdd firmware updater</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/universal-firmware-updater</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/universal-firmware-updater</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
