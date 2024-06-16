@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>universal-firmware-updater</id>
+    <version>4.0.1.4</version>
+    <title>Western Digital Universal Firmware Updater for Windows (Install)</title>
+    <authors>Western Digital</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>http://support.wdc.com/downloads.aspx?lang=en</projectUrl>
+    <iconUrl>http://support.wdc.com/images/wdlogo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screen shot of Western Digital Universal Firmware Updater for Windows](http://support.wdc.com/images/kb/smartware/continue_to_update_windows.png)
+
+This Universal Firmware Updater automatically detects and installs the latest firmware update available for your hard drive.
+
+####Supported Operating Systems
+
+* Windows XP
+* Windows Vista
+* Windows 7
+* Windows 8
+* Windows 8.1
+
+
+####Instructions
+1. Disconnect all other external drives from the computer except for one My Book or My Passport.
+2. Download WDFirmwareUpdater.zip to your desktop.
+3. Extract the file using an extraction utility.
+4. Once extracted, double-click on the file named WDFirmwareUpdater.exe.
+5. Click "Continue."
+6. Click "Accept" on EULA.
+7. Please wait a few minutes until the required update modules are downloaded.
+8. If the drive displayed is the correct drive, click "Update Firmware."
+9. Please wait a few minutes while your drive's firmware is updated.
+10. Click "Exit."
+11. Please remove the USB and power cable. Wait 10 seconds and then connect the power cable and USB cable.
+12. Reboot your computer.
+
+####Applicable Products
+
+My Book Duo, My Book, My Book, My Book for Mac, My Book Pro, My Book Duo, My Passport Ultra, My Passport SSD, My Passport, My Passport Ultra (WD Backup), My Passport Ultra Metal
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/universal-firmware-updater/readme.md)**</description>
+    <summary>Updates the firmware on Western Digital hard drives.</summary>
+    <copyright>Copyright (C) 2002-2015, Western Digital</copyright>
+    <tags>western digital wd hdd firmware updater</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/universal-firmware-updater</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
