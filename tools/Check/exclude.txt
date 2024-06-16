@@ -186,3 +186,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+dell-platform-tags-utility
