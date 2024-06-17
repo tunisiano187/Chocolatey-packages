@@ -11,7 +11,7 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
 * Perform a user driven individual migration
 * Selectively migrate email, calendar or contacts (or any combination thereof)	
 
-###System Requirements
+### System Requirements
 * Google Apps Free Edition 
 * G Suite 
 * G Suite for Education 
