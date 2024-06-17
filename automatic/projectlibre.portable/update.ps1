@@ -20,7 +20,7 @@ function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href | Select-Object -First 1
 	$version = $url32.Split('/')[-2]
 
-	$url32 = "https://kumisystems.dl.sourceforge.net/project/projectlibre/ProjectLibre/$version/projectlibre-$version.zip"
+	$url32 = Get-RedirectedUrl "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/projectlibre-$version.zip/download"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
