@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName  = 'video-repair-software'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://grauonline.de/download/videorepair.zip'
@@ -10,7 +10,7 @@ $exe          = 'videorepair\gs.exe'
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   url            = $url
   checksum       = $checksum
   checksumType   = 'sha256'
