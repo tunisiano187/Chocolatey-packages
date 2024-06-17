@@ -187,3 +187,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+universal-firmware-updater
