@@ -24,7 +24,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href | Select-Object -First 1
 	$version = $url32.Split('/')[-2]
-	
+
 	$url32 = Get-RedirectedUrl "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/projectlibre-$version.exe/download"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
