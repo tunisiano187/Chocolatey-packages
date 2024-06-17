@@ -2,7 +2,7 @@
 
 ## advanced-bat-to-exe-converter
 
-![Advanced BAT to EXE Converter screenshot](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/advanced-bat-to-exe-converter/advanced-bat-to-exe-converter_screenshot.png)
+![Advanced BAT to EXE Converter screenshot](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f5d14a75e75813ceeb55153d011b09b399d960a/automatic/advanced-bat-to-exe-converter/advanced-bat-to-exe-converter_screenshot.png)
 
 Advanced BAT to EXE Converter is the best choice to compile your Batch Files to .EXE for distributing commercially.  Advanced BAT to EXE Converter not only encrypts your code, but also creates an actual native Windows .EXE program.  These .EXE do not require any pre-installed software to function and can be digitally signed. 
 
