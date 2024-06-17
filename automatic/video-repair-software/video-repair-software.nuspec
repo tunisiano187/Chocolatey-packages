@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>http://grauonline.de/cms2/?page_id=59</licenseUrl>
     <projectUrl>http://grauonline.de/cms2/?page_id=5</projectUrl>
-    <iconUrl>http://grauonline.de/cms2/wp-content/uploads/2013/12/videorepair_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1917dd34a87dde2a4001ccb43c4e532394a09d46/icons/video-repair-software.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
