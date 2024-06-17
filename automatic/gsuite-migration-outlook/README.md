@@ -6,7 +6,7 @@
 
 Now you can migrate email, contacts and calendar data from Microsoft Outlook® profiles and PST files to G Suite.
 
-###Feature Overview
+### Feature Overview
 
 * Perform a user driven individual migration
 * Selectively migrate email, calendar or contacts (or any combination thereof)	
@@ -28,8 +28,6 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
 * Microsoft Outlook 2010® (32 and 64 bit) 
 * Microsoft Outlook 2013® (32 and 64 bit) 
 * Microsoft Outlook 2016® (32 and 64 bit)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gsuite-migration-outlook/readme.md)**
 
 #### [choco://gsuite-migration-outlook](choco://gsuite-migration-outlook)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
