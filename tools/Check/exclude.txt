@@ -165,6 +165,7 @@ trafficwatcher
 trim
 twisted
 ultimate-settings-panel
+universal-firmware-updater
 urban-terror
 vcexpress2010
 videocacheview
@@ -187,4 +188,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-universal-firmware-updater
