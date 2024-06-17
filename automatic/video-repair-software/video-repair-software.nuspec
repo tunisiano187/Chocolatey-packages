@@ -67,7 +67,7 @@ LICENSE cost 29 EUR for 5 video repairs or 99 EUR for single use unlimited video
     <summary>Do-It-Yourself Video Repair Tool (VRT)</summary>
     <copyright>Copyright Grau GmbH</copyright>
     <tags>grau video repair ac1 mpg2 mpg4 mp4 mp4v dvc dvpp dvhp xdvc xd5d xd5e h264 avc apch apcn apcs apco ap4h portable trial</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/video-repair-software</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/video-repair-software</packageSourceUrl>
     <docsUrl>http://grauonline.de/cms2/?page_id=111</docsUrl>
   </metadata>
   <files>
