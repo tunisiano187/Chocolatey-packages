@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gsuite-migration-outlook</id>
-    <version>4.0.0.10</version>
+    <version>4.3.14.0</version>
     <title>G Suite Migration for Microsoft Outlook® (GSMMO) (Install)</title>
     <authors>Google</authors>
     <owners>tunisiano</owners>
@@ -10,11 +10,13 @@
     <projectUrl>https://tools.google.com/dlpage/outlookmigration</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@275edd92d25f7d0b51bc4e32bbb002a4f31cb7d3/icons/gsuite-migration-outlook.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of G Suite Migration for Microsoft Outlook in progress](https://tools.google.com/dlpage/res/outlookmigration/gammo-output.gif)
+    <description><![CDATA[## G Suite Migration for Microsoft Outlook® (GSMMO) (Install)
+
+![Screenshot of G Suite Migration for Microsoft Outlook in progress](https://tools.google.com/dlpage/res/outlookmigration/gammo-output.gif)
 
 Now you can migrate email, contacts and calendar data from Microsoft Outlook® profiles and PST files to G Suite.
 
-###Feature Overview
+### Feature Overview
 
 * Perform a user driven individual migration
 * Selectively migrate email, calendar or contacts (or any combination thereof)	
@@ -37,7 +39,14 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
 * Microsoft Outlook 2013® (32 and 64 bit) 
 * Microsoft Outlook 2016® (32 and 64 bit)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gsuite-migration-outlook/readme.md)**</description>
+#### [choco://gsuite-migration-outlook](choco://gsuite-migration-outlook)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>GSMMO - a tool to migrate Microsoft Outlook data to G Suite.</summary>
     <releaseNotes>https://support.google.com/a/users/answer/1283788</releaseNotes>
     <copyright>Google</copyright>

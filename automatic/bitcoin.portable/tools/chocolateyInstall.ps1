@@ -1,7 +1,7 @@
 ﻿$packageName = $env:ChocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = 'https://bitcoincore.org/bin/bitcoin-core-27.0/bitcoin-27.0-win64.zip'
-$checksum64 = 'ca75babeaa3fb75f5a166f544adaa93fd7c1f06cf20d4e2c8c2a8b010f4c7603'
+$url64 = 'https://bitcoincore.org/bin/bitcoin-core-27.1/bitcoin-27.1-win64.zip'
+$checksum64 = '9719871a2c9a45c741e33d670d2319dcd3f8f52a6059e9c435a9a2841188b932'
 $checksumType64 = 'sha256'
 
 Install-ChocolateyZipPackage -PackageName "$packageName" `

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>advanced-bat-to-exe-converter</id>
-    <version>4.0</version>
+    <version>4.61</version>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/advanced-bat-to-exe-converter</packageSourceUrl>
     <title>Advanced BAT to EXE Converter (Install)</title>
@@ -16,15 +16,9 @@
     <docsUrl>https://www.battoexeconverter.com/#BatchFileCommands</docsUrl>
     <tags>dargo advanced bat exe converter programming dos command prompt batch binary</tags>
     <summary>Advanced BAT to EXE Converter is the best choice to compile your Batch Files to .EXE for distributing commercially.</summary>
-    <description>
----
+    <description><![CDATA[## advanced-bat-to-exe-converter
 
-### [choco://advanced-bat-to-exe-converter](choco://advanced-bat-to-exe-converter)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Advanced BAT to EXE Converter screenshot](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/advanced-bat-to-exe-converter/advanced-bat-to-exe-converter_screenshot.png)
+![Advanced BAT to EXE Converter screenshot](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f5d14a75e75813ceeb55153d011b09b399d960a/automatic/advanced-bat-to-exe-converter/advanced-bat-to-exe-converter_screenshot.png)
 
 Advanced BAT to EXE Converter is the best choice to compile your Batch Files to .EXE for distributing commercially.  Advanced BAT to EXE Converter not only encrypts your code, but also creates an actual native Windows .EXE program.  These .EXE do not require any pre-installed software to function and can be digitally signed. 
 
@@ -63,16 +57,18 @@ Advanced BAT to EXE Converter has been updated often since 2003. We have spent t
 
 No adware or bloatware in this free software download!
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/advanced-bat-to-exe-converter/readme.md)**
-	
-
 ---
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+#### [choco://amazon-music](choco://amazon-music)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 
 ---
-
-</description>
+]]></description>
     <releaseNotes>https://www.battoexeconverter.com/Download-Pro/</releaseNotes>
     <dependencies>
       <dependency id="autohotkey" version="1.1.27" />

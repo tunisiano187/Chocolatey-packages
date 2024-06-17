@@ -8,14 +8,14 @@ location on and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/canix1/ADACLScanner/releases/download/7.9/ADACLScan.ps1>
+  url: <https://www.battoexeconverter.com/downloads/advbattoexeconverter.exe>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: 66394A80A432C978A64D6A490D5C155AECDAAC53BAE5024B00BC5517F445B537
+  checksum: AF09248CB756488850F9E6F9A7A00149005BF47A9B2087B792FF6BD937297FFB
 
 Using AU:
 

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gdevelop</id>
-    <version>5.3.201</version>
+    <version>5.4.203</version>
     <title>GDevelop</title>
     <authors>Florian Rival</authors>
     <owners>tunisiano</owners>
