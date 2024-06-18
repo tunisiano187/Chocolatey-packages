@@ -6,11 +6,11 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-url32: https://simplysup.co.uk/download/dl/trjsetup_full.exe
+url32: https://www.medo64.com/download/vhdattach422.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksumtype: 
-checksum32: 
+checksumtype: sha256
+checksum32: 013510C10844652EC37B587A714B922E425DC979EBE33621A45125B4FC31284F
