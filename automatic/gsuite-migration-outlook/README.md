@@ -8,26 +8,26 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
 
 ### Feature Overview
 
-* Perform a user driven individual migration
-* Selectively migrate email, calendar or contacts (or any combination thereof)	
+- Perform a user driven individual migration
+- Selectively migrate email, calendar or contacts (or any combination thereof)	
 
 ### System Requirements
-* Google Apps Free Edition 
-* G Suite 
-* G Suite for Education 
-* G Suite for Government
+- Google Apps Free Edition 
+- G Suite 
+- G Suite for Education 
+- G Suite for Government
 
-* Windows XP (32 bit) SP3 
-* Windows Vista (32 and 64 bit) SP1 
-* Windows 7 (32 and 64 bit) 
-* Windows 8 (32 and 64 bit) 
-* Windows 10 (32 and 64 bit)
+- Windows XP (32 bit) SP3 
+- Windows Vista (32 and 64 bit) SP1 
+- Windows 7 (32 and 64 bit) 
+- Windows 8 (32 and 64 bit) 
+- Windows 10 (32 and 64 bit)
 
-* Microsoft Outlook 2003® SP3 
-* Microsoft Outlook 2007® SP2 
-* Microsoft Outlook 2010® (32 and 64 bit) 
-* Microsoft Outlook 2013® (32 and 64 bit) 
-* Microsoft Outlook 2016® (32 and 64 bit)
+- Microsoft Outlook 2003® SP3 
+- Microsoft Outlook 2007® SP2 
+- Microsoft Outlook 2010® (32 and 64 bit) 
+- Microsoft Outlook 2013® (32 and 64 bit) 
+- Microsoft Outlook 2016® (32 and 64 bit)
 
 #### [choco://gsuite-migration-outlook](choco://gsuite-migration-outlook)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)

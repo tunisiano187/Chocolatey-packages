@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gsuite-migration-outlook</id>
-    <version>4.3.23.0</version>
+    <version>4.3.0.0</version>
     <title>G Suite Migration for Microsoft Outlook® (GSMMO) (Install)</title>
     <authors>Google</authors>
     <owners>tunisiano</owners>
