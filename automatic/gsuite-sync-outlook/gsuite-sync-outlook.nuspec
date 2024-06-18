@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gsuite-sync-outlook</id>
-    <version>4.3.53.0</version>
+    <version>4.3.64.0</version>
     <title>Google Workspace Sync for Microsoft Outlook (GWSMO / GSSMO) (Install)</title>
     <authors>Google</authors>
     <owners>tunisiano</owners>
@@ -10,12 +10,7 @@
     <projectUrl>https://tools.google.com/dlpage/gssmo</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9699ecdf161c9e3515b0899b77ae675c6ea0a34a/icons/gsuite-sync-outlook.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://gsuite-sync-outlook](choco://gsuite-sync-outlook)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## Google Workspace Sync for Microsoft Outlook (GWSMO / GSSMO) (Install)
 
 You can set up Google Workspace Sync for Microsoft Outlook (GWSMO) for users in your organization so they can synchronize their email, calendar, and contact data between Google Workspace and Microsoft Outlook. Before you begin, make sure you meet the system requirements.
 
@@ -32,13 +27,14 @@ For Outlook:
 * Outlook 2010, 2013, 2016, 2019, and 2021 (32 and 64-bit).
 * Outlook from Microsoft 365 desktop app (not web version)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gsuite-sync-outlook/readme.md)**
+#### [choco://gsuite-sync-outlook](choco://gsuite-sync-outlook)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>GWSMO - synchronize your Google Account with Outlook</summary>
     <releaseNotes>https://support.google.com/a/answer/153463</releaseNotes>
     <copyright>Google</copyright>

@@ -2,9 +2,9 @@
 $installerType  = 'EXE'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://dl.google.com/outlookmigration/enterprise_outlookmigration.msi'
-$checksum       = 'BA711B01AE6763EFE9527928607B68BD35B9E623D57A6CE71E5C28380772AF87'
+$checksum       = '9314162D813C3644AC546ED0265BCBC1A1B878329B1B2A7E669FA993A1AAA6B3'
 $url64          = 'https://dl.google.com/dl/outlookmigration/x64/enterprise_outlookmigration.msi'
-$checksum64     = '445915E25EA46F7FB14FF64116FBFD754F08BCFB945902A81C04BD6BD7C0DC9B'
+$checksum64     = '32DFEAB7715B8D0CA823E77B7BBC3DFEB59D48FD21BB06FF6109E578DB0AF515'
 $checksumType   = 'sha256'
 $silentArgs     = '/silent /installsource silent /install'
 $validExitCodes = @(0)
