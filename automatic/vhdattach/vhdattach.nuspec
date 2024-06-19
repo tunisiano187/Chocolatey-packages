@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vhdattach</id>
-    <version>4.0</version>
+    <version>4.22.7260.27233</version>
     <title>VHD Attach (Install)</title>
     <authors>Josip Medved</authors>
     <owners>tunisiano</owners>

@@ -4,7 +4,7 @@
   <metadata>
     <id>audacious</id>
     <title>Audacious</title>
-    <version>4.4-beta1</version>
+    <version>4.4</version>
     <authors>John Lindgren</authors>
     <owners>tunisiano</owners>
     <summary>Advanced lightweight audio player</summary>
