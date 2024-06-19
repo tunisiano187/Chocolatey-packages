@@ -13,10 +13,12 @@ function Unzip
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-		}
+		".\legal\VERIFICATION.txt" = @{
+			"(?i)(^\s*location on\:?\s*)\<.*\>" = "`${1}<$($Latest.URL32)>"
+			"(?i)(^\s*url(32)?\:\s*).*"         = "`${1}<$($Latest.URL32)>"
+			"(?i)(^\s*checksum(32)?\:\s*).*"    = "`${1}$($Latest.Checksum32)"
+    		"(?i)(^\s*checksum\s*type\:\s*).*" = "`${1}$($Latest.ChecksumType32)"
+        }
 	}
 }
 
@@ -25,7 +27,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "./pinginfoview.zip"
+	$File = "tools/pinginfoview.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\piv
 

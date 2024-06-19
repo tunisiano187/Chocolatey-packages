@@ -4,7 +4,7 @@
   <metadata>
     <id>pinginfoview</id>
     <title>PingInfoView</title>
-    <version>3.10</version>
+    <version>3.0</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>Ping to multiple host names/IP addresses</summary>
@@ -35,6 +35,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
