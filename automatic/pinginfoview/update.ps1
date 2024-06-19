@@ -30,11 +30,12 @@ function global:au_GetLatest {
 	$File = "tools/pinginfoview.zip"
 	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive $File -DestinationPath .\piv
+	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType)
 
 	$version=$(Get-Content .\piv\readme.txt | Where-Object {$_ -match '\* Version'})[0].split(' ')[2]
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckChocoVersion
