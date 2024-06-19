@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$File        = Join-path $toolsDir "vhdattach.exe"
+$File        = (Get-ChildItem -Path $toolsDir -Filter "*.exe").FullName
 
 $packageArgs = @{
   packageName    = $packageName

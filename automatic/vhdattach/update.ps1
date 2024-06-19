@@ -24,7 +24,7 @@ function global:au_GetLatest {
 	$url32 = "$domain$(($page.Links | Where-Object {$_.href -match '.exe$'}).href)"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileInfos = Get-FileVersion -url $url32 -keep
-	Move-Item -Path $FileInfos.TempFile -Destination "tools\vhdattach.exe"
+	Move-Item -Path $FileInfos.TempFile -Destination "tools\$($url32.Split("/")[-1])"
 
 	$Latest = @{ URL32 = $url32; Version = $FileInfos.Version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
 	return $Latest
