@@ -54,7 +54,7 @@ So, as I said: it's a small tool which doesn't do much. But it helps me with gat
 
 [Source code](https://sourceforge.net/p/mailnoter/code/HEAD/tree/)</description>
     <summary>Capture web content and email it</summary>
-    <releaseNotes />
+    <releaseNotes></releaseNotes>
     <copyright>© Stefan Kueng</copyright>
     <tags>tray hotkey notes email attachment</tags>
   </metadata>
