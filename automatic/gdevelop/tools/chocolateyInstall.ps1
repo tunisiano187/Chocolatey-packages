@@ -1,8 +1,8 @@
 ﻿$packageName        = $env:ChocolateyPackageName
 $installerType      = 'exe'
 $silentArgs         = '/S'
-$url                = 'https://github.com/4ian/GDevelop/releases/download/v5.4.203/GDevelop-5-Setup-5.4.203.exe'
-$checksum           = 'f0f0be85cee3d0ef248cb582a67d8a3ea9a6991110582b0d206b31eea51fee1f'
+$url                = 'https://github.com/4ian/GDevelop/releases/download/v5.4.204/GDevelop-5-Setup-5.4.204.exe'
+$checksum           = 'c81cb6e9a1fa1f8be804ed9443280a62d1079e8b65766fbf22b7c29e507081f8'
 $checksumType       = 'sha256'
 $validExitCodes     = @(0)
 
