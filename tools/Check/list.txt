@@ -1,4 +1,3 @@
-video-repair-software 0.0 - New maintainer
 8gadgetpack 0.0 - New maintainer
 feedly-chrome 0.0 - New maintainer
 pushbullet-chrome 0.0 - New maintainer
