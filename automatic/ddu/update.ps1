@@ -30,8 +30,8 @@ function global:au_GetLatest {
 
 	$version=$url32.split('/')[-1].ToLower().split('v')[-1].replace('.exe','')
 	#$version = Get-Version $url32
-	if($version -eq "18.0.6.6") {
-		$version = '18.0.6.2023081001'
+	if($version -eq "18.0.7.7") {
+		$version = '18.0.7.2024062101'
 	}
 	$version = $version.Replace('_setup','')
 
