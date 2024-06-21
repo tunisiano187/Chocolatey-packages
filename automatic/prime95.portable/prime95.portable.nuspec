@@ -56,7 +56,7 @@ The [Prime95 Wikipedia page](https://en.wikipedia.org/wiki/Prime95#Use_for_stres
     <copyright>Copyright (C) Mersenne Research, Inc.</copyright>
     <tags>prime95 stress test burn-in portable</tags>
     <projectSourceUrl>http://www.mersenne.org/ftp_root/gimps/p95v303b6.source.zip</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/prime95.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/prime95.portable</packageSourceUrl>
     <docsUrl>http://www.mersenne.org/download/#newusers</docsUrl>
     <mailingListUrl>http://www.mersenneforum.org/</mailingListUrl>
     <bugTrackerUrl>http://www.mersenne.org/download/whatsnew.txt</bugTrackerUrl>
