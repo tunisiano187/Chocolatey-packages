@@ -1,14 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/prime95.portable?color=green&label=prime95.portable)](https://chocolatey.org/packages/prime95.portable) [![](https://img.shields.io/chocolatey/dt/prime95.portable)](https://chocolatey.org/packages/prime95.portable)
 
 ## Prime95 (Portable)
-
----
-
-### [choco://prime95.portable](choco://prime95.portable)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of Prime95](https://upload.wikimedia.org/wikipedia/commons/c/c0/Prime95_screenshot.png)	
 ### CPU Stress / Torture Testing
 Prime95 has been a popular choice for stress / torture testing a CPU since it's introduction, especially with overclockers and system builders. Since the software makes heavy use of the processor's integer and floating point instructions, it feeds the processor a consistent and verifiable workload to test the stability of the CPU and the L1/L2/L3 processor cache. Additionally, it uses all of the cores of a multi-CPU / multi-core system to ensure a high-load stress test environment.
@@ -34,15 +26,6 @@ The [Prime95 Wikipedia page](https://en.wikipedia.org/wiki/Prime95#Use_for_stres
 1. Download the software and unzip the files to your desired location. (Chocolatey does that for you!)
 2. Run the Prime95 executable and select "Just Stress Testing" when asked.
 3. The default options are sufficient to do a well balanced stress test on the system.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/prime95.portable/readme.md)**
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://prime95.portable](choco://prime95.portable)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
