@@ -189,3 +189,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+feedly-chrome
