@@ -188,3 +188,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+8gadgetpack
