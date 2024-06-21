@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName  = 'prime95.portable'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://www.mersenne.org/ftp_root/gimps/p95v303b6.win32.zip'
-$checksum     = 'CA712CEB3C3A9642ACB6C6A45B9F3164A1F0AAEC72DAB4E47083AB07916B03F4'
+$url          = 'https://www.mersenne.org/download/software/v30/30.19/p95v3019b20.win32.zip'
+$checksum     = 'a77c9297bd80dffcb7e2e7e6e89db674126c06a2fe8e769dcec06da2e66e8516'
 $checksumType = 'sha256'
-$url64        = 'http://www.mersenne.org/ftp_root/gimps/p95v303b6.win64.zip'
-$checksum64   = '533EDA6A585CD047B3D41FBA85BD52798AD6F4D8572B25A5F01FFDAAE11509DA'
+$url64        = 'https://www.mersenne.org/download/software/v30/30.19/p95v3019b20.win64.zip'
+$checksum64   = 'd9475f2ff3f4a6a701abc49a86a66126cb48abd10bda6fa87039d98fa8756bca'
 $ExeFile      = 'prime95.exe'
 $ShortcutName = 'Prime95'
 

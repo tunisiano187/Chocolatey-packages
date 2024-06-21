@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>prime95.portable</id>
-    <version>30.3.6</version>
+    <version>30.19</version>
     <title>Prime95 (Portable)</title>
     <authors>George Woltman</authors>
     <owners>tunisiano</owners>
@@ -10,13 +10,7 @@
     <projectUrl>http://www.mersenne.org/download/</projectUrl>
     <iconUrl>http://www.mersenne.org/images/logo.gif</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://prime95.portable](choco://prime95.portable)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
+    <description><![CDATA[## Prime95 (Portable)
 ![Screenshot of Prime95](https://upload.wikimedia.org/wikipedia/commons/c/c0/Prime95_screenshot.png)	
 ### CPU Stress / Torture Testing
 Prime95 has been a popular choice for stress / torture testing a CPU since it's introduction, especially with overclockers and system builders. Since the software makes heavy use of the processor's integer and floating point instructions, it feeds the processor a consistent and verifiable workload to test the stability of the CPU and the L1/L2/L3 processor cache. Additionally, it uses all of the cores of a multi-CPU / multi-core system to ensure a high-load stress test environment.
@@ -43,14 +37,14 @@ The [Prime95 Wikipedia page](https://en.wikipedia.org/wiki/Prime95#Use_for_stres
 2. Run the Prime95 executable and select "Just Stress Testing" when asked.
 3. The default options are sufficient to do a well balanced stress test on the system.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/prime95.portable/readme.md)**
-    
+#### [choco://prime95.portable](choco://prime95.portable)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Free Mersenne Prime Search Software - Prime95</summary>
     <releaseNotes>https://www.mersenne.org/download/whatsnew_303b6.txt</releaseNotes>
     <copyright>Copyright (C) Mersenne Research, Inc.</copyright>
