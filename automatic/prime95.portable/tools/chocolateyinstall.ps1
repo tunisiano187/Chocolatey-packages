@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName  = 'prime95.portable' 
+$ErrorActionPreference = 'Stop'
+$packageName  = 'prime95.portable'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://www.mersenne.org/ftp_root/gimps/p95v303b6.win32.zip'
 $checksum     = 'CA712CEB3C3A9642ACB6C6A45B9F3164A1F0AAEC72DAB4E47083AB07916B03F4'
@@ -12,13 +12,13 @@ $ShortcutName = 'Prime95'
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   url64         = $url64
   checksum      = $checksum
   checksumType  = $checksumType
   checksum64    = $checksum64
-  checksumType64= $checksumType 
+  checksumType64= $checksumType
 }
 
 Install-ChocolateyZipPackage @packageArgs
