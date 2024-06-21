@@ -1,11 +1,11 @@
 ﻿$packageName        = $env:ChocolateyPackageName
 $installerType      = 'msi'
 $silentArgs         = '/quiet /qn /norestart'
-$url32              = 'https://github.com/stefankueng/CryptSync/releases/download/1.4.6/CryptSync-1.4.6.msi'
-$Checksum32         = '8b514dcaee8e65743d9dd2c37927398afc38a8c890d9eda9c4e10228823b459c'
+$url32              = 'https://github.com/stefankueng/CryptSync/releases/download/1.4.7/CryptSync-1.4.7.msi'
+$Checksum32         = '2ed8f661db09e3381dfb69159ba933db5c9940978f5fa9d4de8f2b6d209b6df3'
 $checksumType32     = 'sha256'
-$url64              = 'https://github.com/stefankueng/CryptSync/releases/download/1.4.6/CryptSync64-1.4.6.msi'
-$checksum64         = 'b0ae9ef5fc2e6e2c5308741209dbbf0aa32088d62f8d8c92f334466a86b70634'
+$url64              = 'https://github.com/stefankueng/CryptSync/releases/download/1.4.7/CryptSync64-1.4.7.msi'
+$checksum64         = '390d37ac61c3434501983b96c55e74f34e4cff39d6251ccf216f22ca9f699a24'
 $checksumType64     = 'sha256'
 $validExitCodes     = @(0)
 

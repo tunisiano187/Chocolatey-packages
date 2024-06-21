@@ -4,7 +4,7 @@
   <metadata>
     <id>islc</id>
     <title>Intelligent standby list cleaner (ISLC)</title>
-    <version>1.0.3.2</version>
+    <version>1.0.3.3</version>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
     <summary>Utility to clear the memory standby list according to the configured options parameter you set.</summary>
