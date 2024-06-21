@@ -58,6 +58,7 @@ evernote-chrome
 evernote2onenote
 evimsync
 fastest-mouse-clicker
+feedly-chrome
 filetool
 findaes
 findthatfont
@@ -189,4 +190,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-feedly-chrome
