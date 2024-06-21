@@ -117,7 +117,16 @@ if($WorkContentNuspec.package.metadata.iconUrl) {
         "Unable to download picture from $($WorkContentNuspec.package.metadata.iconUrl)"
     }
 } else {
-    Write-Output "Icon not found in the Nuspec"
+    if($WorkContentNuspec.package.metadata.iconUrl -match "bcurran3") {
+        try {
+            $iconbcurran = ($WorkContentNuspec.package.metadata.iconUrl).replace('master','master/_NO_LONGER_MAINTAINED_')
+            Invoke-WebRequest -Uri $iconbcurran -OutFile $iconfile
+        }
+        catch {
+            "Unable to download picture from $($WorkContentNuspec.package.metadata.iconUrl)"
+        }
+    }
+        Write-Output "Icon not found in the Nuspec"
 }
 
 # Check if the icon is present and download it directly from the community repository if not
