@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'backupper-server'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://www2.aomeisoftware.com/download/adb/ABServer.exe'
-$checksum       = '8E98F3979DAEC0B834DC0426A7DBF4581F13D7058112EAAB1E27AF3DFF8BA03D'
+$url            = 'https://www.ubackup.com/ss/download/adb/ABServerTrial.exe'
+$checksum       = '1AF99FF249FEC1715B07B8049A59402457F11918541F6451FD20397F6E8349BF'
 $checksumType   = 'sha256'
 
 if (!(Get-IsWinServer)) {

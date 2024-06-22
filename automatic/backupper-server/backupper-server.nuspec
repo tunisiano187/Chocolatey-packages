@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>backupper-server</id>
-    <version>5.3.0</version>
+    <version>7.3.5.0</version>
     <title>AOMEI Backupper Server (Install)</title>
     <authors>AOMEI</authors>
     <owners>tunisiano</owners>
@@ -10,10 +10,7 @@
     <projectUrl>http://www.backup-utility.com/server.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@de4558eaf4cc29a3834373cb548e345ebeedfc18/icons/backupper-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>***	
-[choco://backupper-server](choco://backupper-server)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-***	
+    <description><![CDATA[## AOMEI Backupper Server (Install)
 
 ![Screenshot of AOMEI Backupper Sserver](http://www.backup-utility.com/icon/aomei-backupper-server-screenshot.jpg)
 
@@ -39,11 +36,14 @@ What does Backupper Server include?
 
 30 day free trial. $199.00 to purchase. [Compare editions](http://www.backup-utility.com/edition-comparison.html)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/backupper-server/readme.md)**
+#### [choco://backupper-server](choco://backupper-server)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>The Easiest Data Backup and Disaster Recovery Solution for Windows Server Machines</summary>
     <releaseNotes>http://www.backup-utility.com/changelog.html</releaseNotes>
     <copyright>Copyright © AOMEI</copyright>
