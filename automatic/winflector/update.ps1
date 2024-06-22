@@ -18,7 +18,8 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $link = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.outerHTML -match "Server and client"} | Select-Object -First 1)
+    $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $link = ($page.Links | Where-Object {$_.outerHTML -match "Server and client"} | Select-Object -First 1)
 	$url32="https://www.winflector.com/$($link.href)"
 
     $regexPattern = 'Server and client package \((\d+(\.\d+)*)'
