@@ -24,7 +24,7 @@ What does Backupper Server include?
 * Hot Backup: A technology enables to take a backup without interrupting or shutting down Windows and other running applications.
 * Event-Triggered Scheduling Backups: automatically perform backup tasks in real-time based on user logon, user logoff, system startup and system shutdown.
 
-30 day free trial. $199.00 to purchase. [Compare editions](http://www.backup-utility.com/edition-comparison.html)
+30 day free trial. [Compare editions](http://www.backup-utility.com/edition-comparison.html)
 
 #### [choco://backupper-server](choco://backupper-server)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
