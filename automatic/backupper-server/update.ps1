@@ -12,10 +12,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate($Package) {
-  Get-RemoteFiles -Purge -NoSuffix
-}
-
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
@@ -30,4 +26,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
