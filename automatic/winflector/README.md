@@ -2,7 +2,7 @@
 
 ## Winflector (Install)
 
-![Screenshot of Winflector](http://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
+![Screenshot of Winflector](https://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
 
 Winflector is innovative, secure and easy to use software, which allows effective sharing and remote execution of choosen applications through local and wide area networks. Its basic features include:
 
