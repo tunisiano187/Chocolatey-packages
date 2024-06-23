@@ -6,8 +6,8 @@
     <title>Winflector Client / Winflector Virtual Terminal(Install)</title>
     <authors>Era Software SC, OTC S.A.</authors>
     <owners>bcurran3</owners>
-    <licenseUrl>http://www.winflector.com/english/free-license.html</licenseUrl>
-    <projectUrl>http://www.winflector.com/</projectUrl>
+    <licenseUrl>https://www.winflector.com/english/free-license.html</licenseUrl>
+    <projectUrl>https://www.winflector.com/</projectUrl>
     <iconUrl>http://www.winflector.com/img/winflector.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Winflector](http://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
@@ -40,16 +40,13 @@ This is a fully functional version of Winflector software for two concurrent wor
 **Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
 ***</description>
     <summary>Winflector terminal software client</summary>
-    <releaseNotes>http://www.winflector.com/english/support/versions.html</releaseNotes>
+    <releaseNotes>https://www.winflector.com/english/support/versions.html</releaseNotes>
     <copyright>© Era Software SC, © OTC S.A.</copyright>
     <tags>winflector remote application execution terminal server rdp</tags>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/winflector-client</packageSourceUrl>
-    <docsUrl>http://www.winflector.com/english/support/documentation_s.html</docsUrl>
+    <docsUrl>https://www.winflector.com/english/support/documentation_s.html</docsUrl>
     <mailingListUrl>https://www.winflector.com/store/forum</mailingListUrl>
-    <bugTrackerUrl>http://www.winflector.com/english/support/report-problem.html</bugTrackerUrl>
-    <dependencies>
-      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
-    </dependencies>
+    <bugTrackerUrl>https://www.winflector.com/english/support/report-problem.html</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

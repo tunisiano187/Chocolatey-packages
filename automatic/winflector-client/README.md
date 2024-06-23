@@ -2,7 +2,7 @@
 
 ## Winflector Client / Winflector Virtual Terminal(Install)
 
-![Screenshot of Winflector](http://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
+![Screenshot of Winflector](https://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
 
 Winflector is innovative, secure and easy to use software, which allows effective sharing and remote execution of choosen applications through local and wide area networks. Its basic features include:
 
@@ -25,12 +25,6 @@ Remote desktop is a good solution when one wishes to remotely administrate the c
 This is a fully functional version of Winflector software for two concurrent workstations for free.
 
 [Winflector Server](https://chocolatey.org/packages/winflector)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/winflector-client/readme.md)**
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
 
 #### [choco://winflector-client](choco://winflector-client)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
