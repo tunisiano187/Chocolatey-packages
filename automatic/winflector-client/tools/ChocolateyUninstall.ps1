@@ -1,8 +1,8 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $packageName    = 'winflector-client'
 $softwareName   = 'Windows Driver Package - Era software*'
-$installerType  = 'EXE' 
-$silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' 
+$installerType  = 'EXE'
+$silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0, 3010, 1605, 1614, 1641)
 $file           = "$env:appdata\Winflector\uninst\unins000.exe"
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -16,4 +16,4 @@ Start-Process $ahkExe $ahkFile
                                 -SilentArgs "$silentArgs" `
                                 -ValidExitCodes $validExitCodes `
                                 -File "$file"
- 
+
