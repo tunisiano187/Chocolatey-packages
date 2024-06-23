@@ -154,6 +154,7 @@ sikulix
 sketchupviewer
 skype-chrome
 snapgene-viewer
+softsqueeze
 solarwinds-take-control-viewer
 solr
 speex
@@ -190,4 +191,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-softsqueeze
