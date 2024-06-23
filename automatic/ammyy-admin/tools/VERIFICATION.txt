@@ -1,0 +1,7 @@
+﻿==================== Ammyy Admin ====================
+
+bcurran3 downloads and packages the executable for Ammyy Admin from http://www.ammyy.com/en/ (using Internet Explorer).
+
+The SHA256 checksum for AA_v3.exe can be found in ChocolateyInstall.ps1
+
+==================== Ammyy Admin ====================
