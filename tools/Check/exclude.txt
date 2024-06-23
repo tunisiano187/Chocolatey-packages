@@ -190,3 +190,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+softsqueeze
