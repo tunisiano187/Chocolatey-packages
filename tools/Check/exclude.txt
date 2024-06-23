@@ -191,3 +191,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+ammyy-admin
