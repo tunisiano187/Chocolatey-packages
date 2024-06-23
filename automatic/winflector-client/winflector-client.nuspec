@@ -5,7 +5,7 @@
     <version>3.9.6.2</version>
     <title>Winflector Client / Winflector Virtual Terminal(Install)</title>
     <authors>Era Software SC, OTC S.A.</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.winflector.com/english/free-license.html</licenseUrl>
     <projectUrl>https://www.winflector.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@12595237fb94de3615ee4799a1e757485c8a0416/icons/winflector-client.png</iconUrl>
