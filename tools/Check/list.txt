@@ -1,4 +1,3 @@
-eduactiv8 0.0 - New maintainer
 netdrive 0.0 - New maintainer
 netstat-agent.portable 0.0 - New maintainer
 netstat-agent 0.0 - New maintainer

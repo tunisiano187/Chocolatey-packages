@@ -185,6 +185,7 @@ whoiscl
 windows
 windows-iso-downloader
 wirelesskeyview
+wsl-alpine
 wsl-debiangnulinux
 wsl-opensuse
 xdel
@@ -192,4 +193,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-wsl-alpine
