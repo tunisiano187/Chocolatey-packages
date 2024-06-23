@@ -4,9 +4,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
-ad-tidy-free
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -14,9 +14,10 @@ alcohol52-free
 allbrowsers
 allwemo
 amazingmarvin
-amazon-photos
 amazondrive
+amazon-photos
 AMD-Graphics-Driver
+ammyy-admin
 AnkhSvn
 anvide-seal-folder
 apacheds
@@ -54,17 +55,17 @@ ekiga
 emulationstation
 emulationstation.install
 enjarify
-evernote-chrome
 evernote2onenote
+evernote-chrome
 evimsync
 fastest-mouse-clicker
 feedly-chrome
 filetool
 findaes
 findthatfont
+freearc
 free-ost-reader
 free-pst-reader
-freearc
 gamedownloader
 getopt
 go-contact-sync-mod
@@ -97,8 +98,8 @@ KTechLab
 kubernetes-cli
 kubernetes-kompose
 kvrt
-lan-speed-test.portable
 Lando
+lan-speed-test.portable
 lastpass-chrome
 libffcall
 librecrypt
@@ -191,4 +192,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-ammyy-admin
