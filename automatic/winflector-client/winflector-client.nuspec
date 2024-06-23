@@ -43,7 +43,7 @@ This is a fully functional version of Winflector software for two concurrent wor
     <releaseNotes>https://www.winflector.com/english/support/versions.html</releaseNotes>
     <copyright>© Era Software SC, © OTC S.A.</copyright>
     <tags>winflector remote application execution terminal server rdp</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/winflector-client</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winflector-client</packageSourceUrl>
     <docsUrl>https://www.winflector.com/english/support/documentation_s.html</docsUrl>
     <mailingListUrl>https://www.winflector.com/store/forum</mailingListUrl>
     <bugTrackerUrl>https://www.winflector.com/english/support/report-problem.html</bugTrackerUrl>
