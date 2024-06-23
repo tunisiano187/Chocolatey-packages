@@ -1,0 +1,10 @@
+﻿==================== eduActiv8 ====================
+
+bcurran3 downloads and packages the included .ZIP for eduActiv8 from the developer's website. 
+
+The direct download link can be found at:
+https://github.com/imiolek-ireneusz/eduActiv8/releases
+
+SHA256 checksums for this .ZIP is listed in the ChocolateyInstall.ps1 file
+
+==================== eduActiv8 ====================
