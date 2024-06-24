@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = 'eduactiv8'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url         = "$toolsDir\eduactiv8-3.80.411-win.zip"
@@ -11,9 +11,9 @@ $ProgramEXE  = 'eduActiv8.exe'
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   url            = $url
-  checksum       = $checksum 
+  checksum       = $checksum
   checksumType   = 'sha256'
 }
 
