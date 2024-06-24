@@ -33,7 +33,7 @@ Sadly the attempt to build eduActiv8 for Android has been dropped due to an inab
     <releaseNotes>https://github.com/imiolek-ireneusz/eduActiv8/releases</releaseNotes>
     <copyright>Ireneusz Imiolek</copyright>
     <tags>eduactiv8 kids educational game foss cross-platform binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/eduactiv8</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/eduactiv8</packageSourceUrl>
     <docsUrl>https://raw.githubusercontent.com/imiolek-ireneusz/eduActiv8/master/README.txt</docsUrl>
     <bugTrackerUrl>https://github.com/imiolek-ireneusz/eduActiv8/issues</bugTrackerUrl>
   </metadata>
