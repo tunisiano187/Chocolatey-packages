@@ -87,7 +87,7 @@ Microsoft Windows 10, Windows 8, Windows 8.1, Windows 7, Windows Vista, Windows 
     <releaseNotes>https://accounts.bdrive.com/product_history/NetDrive3/</releaseNotes>
     <copyright>Copyright © Bdrive Inc.</copyright>
     <tags>netdrive net drive amazon box dropbox ftp google hubic onedrive openstack owncloud webdav android airdrive trial</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/netdrive</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/netdrive</packageSourceUrl>
     <docsUrl>https://www.netdrive.net/support/</docsUrl>
     <mailingListUrl>https://discourse.bdrive.com/c/netdrive3</mailingListUrl>
     <dependencies>
