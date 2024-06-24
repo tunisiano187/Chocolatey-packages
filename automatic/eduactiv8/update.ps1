@@ -5,10 +5,10 @@ $releases = 'https://sourceforge.net/projects/eduactiv8/rss?path=/Windows'
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+		"legal\VERIFICATION.txt"      = @{
+			"(?i)(x86:).*"        				= "`${1} $($Latest.URL32)"
+			"(?i)(checksum:).*" 				= "`${1} $($Latest.Checksum32)"
+			"(?i)(^\s*checksum\s*type\:\s*).*" 	= "`${1}$($Latest.ChecksumType32)"
 		}
 	}
 }
@@ -24,8 +24,10 @@ function global:au_GetLatest {
 	$links=$xml | Where-Object {$_ -match 'win.zip/download'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
 	$url32 = Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match 'win.zip/download'})
 	$version = (Get-Version $url32).Version
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.CHECKSUM; ChecksumType32 = $FileVersion.ChecksumType }
 	return $Latest
 }
 
