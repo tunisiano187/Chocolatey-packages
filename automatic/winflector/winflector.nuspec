@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>winflector</id>
-    <version>4.0.1.0</version>
+    <version>4.0.0.0</version>
     <title>Winflector (Install)</title>
     <authors>OTC S.A.</authors>
     <owners>tunisiano</owners>
@@ -53,7 +53,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <mailingListUrl>https://www.winflector.com/store/forum</mailingListUrl>
     <bugTrackerUrl>http://www.winflector.com/english/support/report-problem.html</bugTrackerUrl>
     <dependencies>
-      <dependency id="autohotkey" />
+      <dependency id="autohotkey" version="1.1.37.01"/>
     </dependencies>
   </metadata>
   <files>

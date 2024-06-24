@@ -3,7 +3,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
  
 ;BlockInput On 
-WinWaitActive, Setup,Would you like to enable Winflector server in Windows Firewall?, 60 
+WinWaitActive, Setup,Would you like to enable Winflector server in Windows Firewall?, 120 
 WinActivate
 Send !y
 

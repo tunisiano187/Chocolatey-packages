@@ -9,7 +9,7 @@ $checksumType   = 'sha256'
 $silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0, 3010, 1641)
 $ahkExe         = 'AutoHotKey'
-$ahkFile        = "$toolsDir\WinflectorInstall.ahk"
+$ahkFile        = Join-Path $toolsDir "WinflectorInstall.ahk"
 
 Start-Process $ahkExe $ahkFile
 
