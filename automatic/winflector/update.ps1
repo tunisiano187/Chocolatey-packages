@@ -22,13 +22,12 @@ function global:au_GetLatest {
     $link = ($page.Links | Where-Object {$_.outerHTML -match "Server and client"} | Select-Object -First 1)
 	$url32="https://www.winflector.com/$($link.href)"
 
-    $regexPattern = 'Server and client package \((\d+(\.\d+)*)'
-	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	$version = $versionMatch.Matches[0].Groups[1].Value
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion = Get-FileVersion $url32
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $FileVersion.Version; Checksum32 = $FileVersion.CHECKSUM; ChecksumType32 = $FileVersion.ChecksumType }
 
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
