@@ -38,6 +38,7 @@ Sadly the attempt to build eduActiv8 for Android has been dropped due to an inab
     <bugTrackerUrl>https://github.com/imiolek-ireneusz/eduActiv8/issues</bugTrackerUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
