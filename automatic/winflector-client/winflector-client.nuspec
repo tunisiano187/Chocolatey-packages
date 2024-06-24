@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>winflector-client</id>
-    <version>3.9.6.2</version>
+    <version>4.0.1.0</version>
     <title>Winflector Client / Winflector Virtual Terminal(Install)</title>
     <authors>Era Software SC, OTC S.A.</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.winflector.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@12595237fb94de3615ee4799a1e757485c8a0416/icons/winflector-client.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of Winflector](http://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
+    <description><![CDATA[## Winflector Client / Winflector Virtual Terminal(Install)
+
+![Screenshot of Winflector](https://www.winflector.com/uploads/images/Gallery/Sv_add_user_EN/3580/sv_003.png)
 
 Winflector is innovative, secure and easy to use software, which allows effective sharing and remote execution of choosen applications through local and wide area networks. Its basic features include:
 
@@ -34,11 +36,14 @@ This is a fully functional version of Winflector software for two concurrent wor
 
 [Winflector Server](https://chocolatey.org/packages/winflector)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/winflector-client/readme.md)**
+#### [choco://winflector-client](choco://winflector-client)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Winflector terminal software client</summary>
     <releaseNotes>https://www.winflector.com/english/support/versions.html</releaseNotes>
     <copyright>© Era Software SC, © OTC S.A.</copyright>
