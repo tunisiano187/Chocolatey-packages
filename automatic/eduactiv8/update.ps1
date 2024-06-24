@@ -25,10 +25,11 @@ function global:au_GetLatest {
 	$url32 = Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match 'win.zip/download'})
 	$version = (Get-Version $url32).Version
 	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32
+	$FileVersion = Get-FileVersion $url32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\eduactiv8-$($version)-win.zip"
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.CHECKSUM; ChecksumType32 = $FileVersion.ChecksumType }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
