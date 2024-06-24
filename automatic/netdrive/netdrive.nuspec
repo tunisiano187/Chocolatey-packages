@@ -6,7 +6,7 @@
     <title>NetDrive (Install) (Trial)</title>
     <authors>Bdrive Inc.</authors>
     <owners>bcurran3</owners>
-    <licenseUrl>http://www.netdrive.net/wiki/netdrive/eula/</licenseUrl>
+    <licenseUrl>https://www.netdrive.net/wiki/netdrive/eula/</licenseUrl>
     <projectUrl>https://www.netdrive.net/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/netdrive/NetDrive_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -91,7 +91,7 @@ Microsoft Windows 10, Windows 8, Windows 8.1, Windows 7, Windows Vista, Windows 
     <docsUrl>https://www.netdrive.net/support/</docsUrl>
     <mailingListUrl>https://discourse.bdrive.com/c/netdrive3</mailingListUrl>
     <dependencies>
-      <dependency id="vcredist2015" version="14.0.24215.20170201" />
+      <dependency id="vcredist2017" />
     </dependencies>
   </metadata>
   <files>

@@ -2,13 +2,6 @@
 
 ## NetDrive (Install) (Trial)
 
----
-
-### [choco://netdrive](choco://netdrive)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of NetDrive](https://www.netdrive.net/static/netdrive_www/images/nd3_ui_A.png)
 
 ## NetDrive 3 - The Network Drive for Windows
@@ -65,16 +58,6 @@ NetDrive supports secure file transfer by SFTP (SSH File Transfer protocol) . Un
 Microsoft Windows 10, Windows 8, Windows 8.1, Windows 7, Windows Vista, Windows Server 2008/2012/2016.
 
 #### You can freely download and install NetDrive on your computer for evaluation during the 7-day trial period.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/netdrive/readme.md)**	
-
-
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://netdrive](choco://netdrive)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
