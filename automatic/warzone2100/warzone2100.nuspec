@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Warzone2100/warzone2100/blob/master/COPYING</licenseUrl>
     <projectUrl>https://wz2100.net/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/warzone2100/warzone2100_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@64e2652339e7576f1c1d8727c7e409b02001d487/icons/warzone2100.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
