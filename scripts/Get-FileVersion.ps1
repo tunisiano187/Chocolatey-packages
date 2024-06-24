@@ -26,6 +26,9 @@ function Get-FileVersion {
 
     if($null -ne $url) {
         $tempFile = Join-Path $env:TEMP $($url.split('/')[-1])
+        if($tempFile -match '?') {
+            $tempFile = $tempFile.Split('?')[0]
+        }
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
