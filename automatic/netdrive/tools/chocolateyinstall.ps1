@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'netdrive'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://files.bdrive.com/netdrive/builds/93a0373f1b1e4dd1afbd93bd5eb202a3/NetDrive3-3.16.589.msi'
@@ -16,4 +16,4 @@ $packageArgs = @{
   checksumType   = $checksumType
 }
 
-Install-ChocolateyPackage @packageArgs  
+Install-ChocolateyPackage @packageArgs
