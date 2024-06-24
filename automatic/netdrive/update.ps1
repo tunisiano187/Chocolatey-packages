@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
 	$url = ($page.Links | Where-Object {$_ -match ".exe"} | Select-Object -First 1).href.replace('.exe','.msi').replace('_Setup','')
-	$version=$url.split('/')[-1].split('v')[-1].replace('.exe','')
+	$version=$url.split('/')[-1].split('v|-')[-1].replace('.exe','')
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $url
 
