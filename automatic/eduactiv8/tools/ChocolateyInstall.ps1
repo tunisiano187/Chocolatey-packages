@@ -10,7 +10,7 @@ $ProgramEXE  = 'eduActiv8.exe'
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   File           = $File
 }
 
