@@ -22,7 +22,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $releases -OutFile $File
 	$xml = Get-Content $File
 	$links=$xml | Where-Object {$_ -match 'win.zip/download'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
-	$url32 = (Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match 'win.zip/download'})).split('?')[0]
+	$url32 = Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match 'win.zip/download'})
 	$version = (Get-Version $url32).Version
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $url32 -keep
