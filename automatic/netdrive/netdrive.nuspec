@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.netdrive.net/wiki/netdrive/eula/</licenseUrl>
     <projectUrl>https://www.netdrive.net/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/netdrive/NetDrive_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7ff9558718e762819c428be30aefa2f0f7ce3124/icons/netdrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## NetDrive (Install) (Trial)
 
