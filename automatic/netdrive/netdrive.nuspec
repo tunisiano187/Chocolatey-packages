@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>netdrive</id>
-    <version>3.16.589</version>
+    <version>3.17.960</version>
     <title>NetDrive (Install) (Trial)</title>
     <authors>Bdrive Inc.</authors>
     <owners>tunisiano</owners>
@@ -10,12 +10,7 @@
     <projectUrl>https://www.netdrive.net/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/netdrive/NetDrive_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://netdrive](choco://netdrive)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## NetDrive (Install) (Trial)
 
 ![Screenshot of NetDrive](https://www.netdrive.net/static/netdrive_www/images/nd3_ui_A.png)
 
@@ -74,15 +69,14 @@ Microsoft Windows 10, Windows 8, Windows 8.1, Windows 7, Windows Vista, Windows 
 
 #### You can freely download and install NetDrive on your computer for evaluation during the 7-day trial period.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/netdrive/readme.md)**	
+#### [choco://netdrive](choco://netdrive)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>NetDrive - Access your cloud storage as if it is a local drive.</summary>
     <releaseNotes>https://accounts.bdrive.com/product_history/NetDrive3/</releaseNotes>
     <copyright>Copyright © Bdrive Inc.</copyright>
