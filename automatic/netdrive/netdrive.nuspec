@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>netdrive</id>
-    <version>3.17.960</version>
+    <version>3.16.960</version>
     <title>NetDrive (Install) (Trial)</title>
     <authors>Bdrive Inc.</authors>
     <owners>tunisiano</owners>
