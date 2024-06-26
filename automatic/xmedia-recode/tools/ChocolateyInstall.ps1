@@ -1,7 +1,7 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $TodaysVersion = ($ENV:ChocolateyPackageVersion -replace '[.]','')
- 
+
 $packageArgs = @{
   packageName    = "$ENV:ChocolateyPackageName"
   fileType       = 'EXE'
@@ -10,7 +10,7 @@ $packageArgs = @{
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
 }
- 
+
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item "$toolsDir\*.exe" -ErrorAction SilentlyContinue | Out-Null
