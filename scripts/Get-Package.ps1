@@ -120,7 +120,7 @@ if($WorkContentNuspec.package.metadata.iconUrl) {
     if($WorkContentNuspec.package.metadata.iconUrl -match "bcurran3") {
         try {
             $iconbcurran = ($WorkContentNuspec.package.metadata.iconUrl).replace('/master','@master/_NO_LONGER_MAINTAINED_').replace('staticaly.com','jsdelivr.net')
-            Invoke-WebRequest -Uri $$icon= -OutFile $iconfile
+            Invoke-WebRequest -Uri $iconbcurran -OutFile $iconfile
         }
         catch {
             "Unable to download picture from $($iconbcurran)"
