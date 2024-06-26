@@ -8,7 +8,7 @@
     <owners>angga, bcurran3</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.xmedia-recode.de/en/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/xmedia-recode/xmedia-recode_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6dbe86522737f35faf37e32cd9540c81008d2922/icons/xmedia-recode.png</iconUrl>
     <description>---
 
 ### [choco://xmedia-recode](choco://xmedia-recode)
