@@ -5,7 +5,7 @@
     <version>3.5.8.4</version>
     <title>XMedia Recode (Install)</title>
     <authors>Sebastian Dörfler</authors>
-    <owners>angga, bcurran3</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.xmedia-recode.de/en/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6dbe86522737f35faf37e32cd9540c81008d2922/icons/xmedia-recode.png</iconUrl>
