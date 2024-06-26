@@ -18,7 +18,7 @@ function Block-Package {
         [string]$actor
     )
     Write-Output $actor
-    if(($actor -ne 'tunisiano187' -and $actor -ne 'github-actions[bot]') -or ($title.ToLower() -notmatch 'exclude' -and $title.ToLower() -notmatch 'block')) {
+    if(($actor -ne 'tunisiano187' -and $actor -ne 'github-actions[bot]') -or (($title.ToLower() -notmatch 'exclude' -or $title.ToLower() -notmatch 'remove') -and $title.ToLower() -notmatch 'block')) {
       throw "User $actor cannot run this"
     }
     $ErrorActionPreference = 'Stop';
@@ -54,7 +54,9 @@ function Block-Package {
         Remove-Item -Path $folder -Recurse -Force -ErrorAction Continue
         Remove-Item -Path "$foldericons/$extract.*" -ErrorAction Continue
       }
-      Add-Content -Path "tools/Check/exclude.txt" -Value $extract
+      if($title.ToLower() -match 'exclude') {
+        Add-Content -Path "tools/Check/exclude.txt" -Value $extract
+      }
       Update-GitHubIssue -OwnerName $Owner -RepositoryName $repository -Issue $issueNumber -State Closed
       git commit -am  "Exclude $extract
 [skip ci]"
