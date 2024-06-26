@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName = 'drobo-dashboard' 
+$ErrorActionPreference = 'Stop'
+$packageName = 'drobo-dashboard'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkExe      = 'AutoHotKey'
 $url         = 'https://files.drobo.com/webrelease/dashboard/drobodashboardinstaller_3.5.0.exe'
@@ -14,25 +14,25 @@ If ($PreviouslyInstalled -eq $True){
 
     $packageArgs = @{
       packageName   = $packageName
-      fileType      = 'MSI' 
+      fileType      = 'MSI'
       silentArgs    = '{863885B3-7C05-421C-8817-568712778745}'
-      softwareName  = 'Drobo Dashboard' 
+      softwareName  = 'Drobo Dashboard'
     }
 
-    $ahkFile = "$toolsDir\drobo-dashboard_uninstall.ahk" 
-    Start-Process $ahkExe $ahkFile 
+    $ahkFile = "$toolsDir\drobo-dashboard_uninstall.ahk"
+    Start-Process $ahkExe $ahkFile
     Uninstall-ChocolateyPackage @packageArgs
 }
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE' 
+  fileType      = 'EXE'
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256'  
+  checksumType  = 'sha256'
   silentArgs    = ''
-  softwareName  = 'Drobo Dashboard' 
+  softwareName  = 'Drobo Dashboard'
   }
 
 $ahkFile = "$toolsDir\drobo-dashboard_install.ahk"

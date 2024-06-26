@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32        = 'https://files.teamspeak-services.com/releases/server/3.13.6/teamspeak3-server_win32-3.13.6.zip'
 $checksum32   = 'f52cddfd2f1297756afa12d758718b3ee34b88c0e7962fb75985877f480e0d71'
@@ -16,15 +16,15 @@ if ((Get-OSArchitectureWidth -eq 64) -and ($env:chocolateyForceX86 -ne $true))
     }
 
 $packageArgs = @{
-  packageName    = 'teamspeak-server' 
+  packageName    = 'teamspeak-server'
   unzipLocation  = $toolsDir
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   url            = $url32
   checksum       = $checksum32
   checksumType   = $checksumType
-  url64          = $url64 
+  url64          = $url64
   checksum64     = $checksum64
-  checksumType64 = $checksumType  
+  checksumType64 = $checksumType
 }
 
 Install-ChocolateyZipPackage @packageArgs
