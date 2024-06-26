@@ -5,7 +5,7 @@
     <version>3.13.6</version>
     <title>TeamSpeak Server</title>
     <authors>TeamSpeak Systems GmbH</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.teamspeak.com/en/features/licensing/</licenseUrl>
     <projectUrl>https://www.teamspeak.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1b4b81e18dd7d68b08dcde91bd061dbc3690ab88/icons/teamspeak-server.png</iconUrl>

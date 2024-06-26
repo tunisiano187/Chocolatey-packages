@@ -5,7 +5,7 @@
     <version>3.5.0</version>
     <title>Drobo Dashboard (Install)</title>
     <authors>Drobo, Inc</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://www.drobo.com/terms/</licenseUrl>
     <projectUrl>http://www.drobo.com/docs/start-drobo/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/drobo-dashboard/drobo-dashboard_icon.png</iconUrl>
