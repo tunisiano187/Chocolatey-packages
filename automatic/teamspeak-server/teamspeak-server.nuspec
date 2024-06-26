@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.teamspeak.com/en/features/licensing/</licenseUrl>
     <projectUrl>https://www.teamspeak.com</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/teamspeak-server/teamspeak-server_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1b4b81e18dd7d68b08dcde91bd061dbc3690ab88/icons/teamspeak-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TeamSpeak offers the ideal tool for online gaming, education and training, internal business communication, and staying in touch with friends and family. Our primary focus is delivering a solution that is easy to use, with high security standards, excellent voice quality, and low system and bandwidth usage. Featuring a client-server architecture, TeamSpeak is literally capable of handling up to thousands of simultaneous users.
 
