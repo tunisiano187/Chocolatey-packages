@@ -51,12 +51,6 @@ Keep your eyes on the action with the official TeamSpeak in-game overlay brought
 **CLIENT SOFTWARE:**
 [Android](https://play.google.com/store/apps/details?id=com.teamspeak.ts3client) | [iOS](https://itunes.apple.com/app/teamspeak-3/id577628510) | [Windows](https://chocolatey.org/packages/teamspeak) | [macOS](http://www.teamspeak.com/downloads.html#client) | [Linux](http://www.teamspeak.com/downloads.html#client)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/teamspeak-server/readme.md)**
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
-
 #### [choco://teamspeak-server](choco://teamspeak-server)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
