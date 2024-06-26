@@ -67,7 +67,7 @@ WebM to AVI, WebM to MP4, WebM to MKV, WebM to MOV, WebM to OGM
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/xmedia-recode</packageSourceUrl>
     <docsUrl>https://www.xmedia-recode.de/en/help/</docsUrl>
     <dependencies>
-      <dependency id="vcredist2017" version="14.16.27033" />
+      <dependency id="vcredist140" version="14.40.33810" />
     </dependencies>
   </metadata>
   <files>
