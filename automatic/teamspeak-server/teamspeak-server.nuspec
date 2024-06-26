@@ -67,7 +67,7 @@ Keep your eyes on the action with the official TeamSpeak in-game overlay brought
     <summary>TeamSpeak is VoIP software designed with security in mind, featuring crystal clear voice quality, scalabilty up to thousands of simultaneous users and endless customization options. Packed with powerful features and incredible performance, TeamSpeak is your Swiss Army Knife of voice communication.</summary>
     <copyright>© TeamSpeak Systems GmbH. All rights reserved.</copyright>
     <tags>teamspeak server team speak ts3 ts voip discord mumble ventrilo portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/teamspeak-server</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/teamspeak-server</packageSourceUrl>
     <docsUrl>https://teamspeak.com/en/support/get-started/</docsUrl>
     <mailingListUrl>https://forum.teamspeak.com/</mailingListUrl>
     <bugTrackerUrl>https://forum.teamspeak.com/forums/120-Bug-Reports-EN-DE</bugTrackerUrl>

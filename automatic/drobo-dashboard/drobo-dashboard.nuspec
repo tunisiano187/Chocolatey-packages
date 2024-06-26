@@ -41,7 +41,7 @@ SUPPORTED OPERATING SYSTEMS
     <releaseNotes>http://files.drobo.com/webrelease/dashboard/Release-Notes-dashboard-3.4.2.pdf</releaseNotes>
     <copyright>Copyright Drobo, Inc, All Rights Reserved</copyright>
     <tags>drobo dashboard nas notsilent</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/drobo-dashboard</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/drobo-dashboard</packageSourceUrl>
     <docsUrl>https://myproducts.drobo.com/AA-00903</docsUrl>
     <mailingListUrl>https://drobocommunity.m-ize.com/</mailingListUrl>
     <dependencies>
