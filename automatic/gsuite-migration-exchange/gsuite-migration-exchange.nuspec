@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://gsuite.google.com/terms/standard_terms.html</licenseUrl>
     <projectUrl>https://tools.google.com/dlpage/exchangemigration</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7f8c0609503ea33dace5243aea843b28d1c531bf/icons/gsuite-migration-exchange.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e8e9dc1db0530fbd0d7bbf9a802ebad161079794/icons/gsuite-migration-exchange.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## G Suite Migration for Microsoft® Exchange (Install)
 

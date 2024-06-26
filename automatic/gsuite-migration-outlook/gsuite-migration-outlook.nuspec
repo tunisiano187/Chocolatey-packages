@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://gsuite.google.com/terms/standard_terms.html</licenseUrl>
     <projectUrl>https://tools.google.com/dlpage/outlookmigration</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@275edd92d25f7d0b51bc4e32bbb002a4f31cb7d3/icons/gsuite-migration-outlook.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e8e9dc1db0530fbd0d7bbf9a802ebad161079794/icons/gsuite-migration-outlook.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## G Suite Migration for Microsoft Outlook® (GSMMO) (Install)
 

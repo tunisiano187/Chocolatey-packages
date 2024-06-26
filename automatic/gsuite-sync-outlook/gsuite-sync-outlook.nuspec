@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://workspace.google.com/terms/standard_terms.html</licenseUrl>
     <projectUrl>https://tools.google.com/dlpage/gssmo</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9699ecdf161c9e3515b0899b77ae675c6ea0a34a/icons/gsuite-sync-outlook.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e8e9dc1db0530fbd0d7bbf9a802ebad161079794/icons/gsuite-sync-outlook.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Google Workspace Sync for Microsoft Outlook (GWSMO / GSSMO) (Install)
 
