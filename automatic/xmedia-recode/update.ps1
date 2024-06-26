@@ -32,7 +32,7 @@ function global:au_GetLatest {
 	$url64 = "https://www.xmedia-recode.de/download/XMediaRecode$($versionfile)_x64_setup.exe"
 	$FileVersion64 = Get-FileVersion $url64 -keep
 	Move-Item $FileVersion64.TempFile -Destination "tools\XMediaRecode$($versionfile)_x64_setup.exe"
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Checksum32 = $FileVersion32.Checksum; ChecksumType32 = $FileVersion32.ChecksumType; Checksum64 = $FileVersion64.Checksum; ChecksumType64 = $FileVersion64.ChecksumType; Version = $version }
 	return $Latest
 }
