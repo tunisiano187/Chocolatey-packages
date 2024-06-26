@@ -1,0 +1,6 @@
+﻿==================== XMedia Recode ====================
+
+bcurran3 downloads and packages the executable for Xmedia Recode from the developer's site at:
+https://www.xmedia-recode.de/en/download.html
+
+==================== XMedia Recode ====================
