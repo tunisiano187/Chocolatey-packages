@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>eduactiv8</id>
-    <version>3.80.411</version>
+    <version>4.21.7</version>
     <title>eduActiv8 (Portable)</title>
     <authors>Ireneusz Imiolek</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.eduactiv8.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e8e9dc1db0530fbd0d7bbf9a802ebad161079794/icons/eduactiv8.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of eduActiv8](https://www.eduactiv8.org/wp-content/uploads/2017/09/cross_platform-1.jpg)
+    <description><![CDATA[## eduActiv8 (Portable)
+
+![Screenshot of eduActiv8](https://www.eduactiv8.org/wp-content/uploads/2017/09/cross_platform-1.jpg)
 
 ###eduActiv8 – Educational Activities for Kids
 
@@ -28,7 +30,16 @@ Sadly the attempt to build eduActiv8 for Android has been dropped due to an inab
 
 ***
 **Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***</description>
+***
+
+#### [choco://eduactiv8](choco://eduactiv8)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>iimiolek eduActiv8 (formerly pySioGame) is a free cross-platform Open Source educational program for children.</summary>
     <releaseNotes>https://github.com/imiolek-ireneusz/eduActiv8/releases</releaseNotes>
     <copyright>Ireneusz Imiolek</copyright>

@@ -6,15 +6,15 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-x32: https://wordweb.info/cgi-bin/geoip/wordweb.exe
-x64: https://wordweb.info/cgi-bin/geoip/wordweb.exe
+x32: https://www.xmedia-recode.de/download/XMediaRecode3597_setup.exe
+x64: https://www.xmedia-recode.de/download/XMediaRecode3597_x64_setup.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksum32: E4B3D7241460ABD07F5A8C7B09704AF6EA3B99742F1A194B66FC73222E76C214
-checksum64: E4B3D7241460ABD07F5A8C7B09704AF6EA3B99742F1A194B66FC73222E76C214
+checksum32: CB2FF2A6AC53793F43E74A0C7BA119B878747D1A89EA2A392B51E515187E1BD2
+checksum64: AF8BF7CFFE39F9C0CD2D571F9F18AACD9E2748F4C256C4C19757E3A096E19B25
 checksumtype: sha256
 
 The included 'LICENSE.txt' file have been obtained from:

@@ -2,20 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>xmedia-recode</id>
-    <version>3.5.8.4</version>
+    <version>3.5.9.7</version>
     <title>XMedia Recode (Install)</title>
     <authors>Sebastian Dörfler</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.xmedia-recode.de/en/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6dbe86522737f35faf37e32cd9540c81008d2922/icons/xmedia-recode.png</iconUrl>
-    <description>---
-
-### [choco://xmedia-recode](choco://xmedia-recode)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
+    <description><![CDATA[## XMedia Recode (Install)
 ![XMedia Recode Screenshot](https://cdn.staticaly.com/gh/anggaaja/chocolatey/master/xmedia-recode/assets/xmedia-recodescreenshot.png)
 	
 XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, H.265, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
@@ -52,14 +46,14 @@ WebM to AVI, WebM to MP4, WebM to MKV, WebM to MOV, WebM to OGM
 * DirectX: DirectX 9
 * Nvidia CUDA: Nvidia GPU driver 347.09 or higher
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/xmedia-recode/readme.md)**
-   
+#### [choco://xmedia-recode](choco://xmedia-recode)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>XMedia Recode is a free All-In-One video converter and audio converter tool</summary>
     <releaseNotes>https://www.xmedia-recode.de/en/version.php</releaseNotes>
     <copyright>Copyright © Sebastian Dörfler</copyright>
