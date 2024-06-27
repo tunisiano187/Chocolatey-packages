@@ -6,7 +6,7 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://gigenet.dl.sourceforge.net/project/eduactiv8/Windows/eduactiv8-4.21.07.win.zip?viasf=1
+x86: https://netactuate.dl.sourceforge.net/project/eduactiv8/Windows/eduactiv8-4.21.07.win.zip?viasf=1
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
