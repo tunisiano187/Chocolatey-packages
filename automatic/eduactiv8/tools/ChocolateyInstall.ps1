@@ -8,10 +8,9 @@ $ProgramEXE  = 'eduActiv8.exe'
 
 
 $packageArgs = @{
-  packageName    = $packageName
-  unzipLocation  = $toolsDir
-  fileType       = 'ZIP'
-  File           = $File
+  PackageName     = $packageName
+  Destination     = $toolsDir
+  FileFullPath    = $File
 }
 
 Install-ChocolateyZipPackage @packageArgs
