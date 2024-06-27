@@ -7,7 +7,7 @@
     <authors>Kenneth Skovhede and Rene Stach</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/duplicati/duplicati/blob/master/LICENSE.txt</licenseUrl>
-    <projectUrl>http://www.duplicati.com/</projectUrl>
+    <projectUrl>https://duplicati.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a56eb2ffd17681ec3c31e4c6ac5e423b76cadcfc/icons/duplicati.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Duplicati.portable
@@ -84,7 +84,6 @@ https://github.com/duplicati/duplicati/blob/master/changelog.txt
     <projectSourceUrl>https://github.com/duplicati/duplicati</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duplicati.portable</packageSourceUrl>
     <docsUrl>https://github.com/duplicati/duplicati/wiki</docsUrl>
-    <mailingListUrl>https://groups.google.com/forum/#!forum/duplicati</mailingListUrl>
     <bugTrackerUrl>https://github.com/duplicati/duplicati/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="dotnet4.5" />
