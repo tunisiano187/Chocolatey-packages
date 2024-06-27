@@ -37,12 +37,6 @@ Rent a TeamSpeak Server from an Authorized TeamSpeak Host Provider (ATHP) or hos
 #### MOBILE CONNECTIVITY
 Stay connected when you're on the go. With our mobile TeamSpeak apps for Android and iOS, you can access your servers and data at all times.
 
-#### SECURITY
-AES based encryption can optionally be enabled for the entire server or specific channels on the server. Additionally, to avoid potential threats arising from weak usernames and passwords, TeamSpeak uses public-private key authentication.
-
-#### IN-GAME OVERLAY
-Keep your eyes on the action with the official TeamSpeak in-game overlay brought to you by Overwolf. Quickly access TeamSpeak voice controls, see who's talking, and receive notifications and messages where you need it most.
-
 ...and more.
 
 **SOCIAL MEDIA:**
