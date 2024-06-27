@@ -1,0 +1,8 @@
+﻿==================== GCompris ====================
+
+bcurran3 downloaded and packaged the included .EXEs for GCompris from the developer's website. 
+
+The direct download links are at:
+https://gcompris.net/downloads-en.html
+
+==================== GCompris ====================
