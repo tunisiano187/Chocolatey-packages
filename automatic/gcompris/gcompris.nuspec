@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>https://gcompris.net/index-en.html</projectUrl>
-    <iconUrl>https://gcompris.net/middleGComprisLogo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@104b39f7c667d4babadc37b77f40b102baacf48a/icons/gcompris.png</iconUrl>
     <description>---
 
 ### [choco://gcompris](choco://gcompris)
