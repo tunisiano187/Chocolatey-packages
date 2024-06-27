@@ -18,7 +18,7 @@ function Block-Package {
         [string]$actor
     )
     Write-Output $actor
-    if(($actor -ne 'tunisiano187' -and $actor -ne 'github-actions[bot]') -or (($title.ToLower() -notmatch 'exclude' -or $title.ToLower() -notmatch 'remove') -and $title.ToLower() -notmatch 'block')) {
+    if(($actor -ne 'tunisiano187' -and $actor -ne 'github-actions[bot]') -or ($title.ToLower() -notmatch 'exclude' -and $title.ToLower() -notmatch 'remove' -and $title.ToLower() -notmatch 'block')) {
       throw "User $actor cannot run this"
     }
     $ErrorActionPreference = 'Stop';
