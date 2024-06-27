@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>teamspeak-server</id>
-    <version>3.13.6</version>
+    <version>3.13.7</version>
     <title>TeamSpeak Server</title>
     <authors>TeamSpeak Systems GmbH</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.teamspeak.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1b4b81e18dd7d68b08dcde91bd061dbc3690ab88/icons/teamspeak-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>TeamSpeak offers the ideal tool for online gaming, education and training, internal business communication, and staying in touch with friends and family. Our primary focus is delivering a solution that is easy to use, with high security standards, excellent voice quality, and low system and bandwidth usage. Featuring a client-server architecture, TeamSpeak is literally capable of handling up to thousands of simultaneous users.
+    <description><![CDATA[## TeamSpeak Server
+
+TeamSpeak offers the ideal tool for online gaming, education and training, internal business communication, and staying in touch with friends and family. Our primary focus is delivering a solution that is easy to use, with high security standards, excellent voice quality, and low system and bandwidth usage. Featuring a client-server architecture, TeamSpeak is literally capable of handling up to thousands of simultaneous users.
 
 ### How it Works
 Host your own TeamSpeak Server or rent one from an Authorized TeamSpeak Host Provider (ATHP). Share your TeamSpeak Server address with friends, teammates, or anyone you want to chat with. Using the free desktop client, they connect to your TeamSpeak Server using the address you provide them. Start talking. It's that easy!
@@ -45,12 +47,6 @@ Rent a TeamSpeak Server from an Authorized TeamSpeak Host Provider (ATHP) or hos
 #### MOBILE CONNECTIVITY
 Stay connected when you're on the go. With our mobile TeamSpeak apps for Android and iOS, you can access your servers and data at all times.
 
-#### SECURITY
-AES based encryption can optionally be enabled for the entire server or specific channels on the server. Additionally, to avoid potential threats arising from weak usernames and passwords, TeamSpeak uses public-private key authentication.
-
-#### IN-GAME OVERLAY
-Keep your eyes on the action with the official TeamSpeak in-game overlay brought to you by Overwolf. Quickly access TeamSpeak voice controls, see who's talking, and receive notifications and messages where you need it most.
-
 ...and more.
 
 **SOCIAL MEDIA:**
@@ -59,11 +55,14 @@ Keep your eyes on the action with the official TeamSpeak in-game overlay brought
 **CLIENT SOFTWARE:**
 [Android](https://play.google.com/store/apps/details?id=com.teamspeak.ts3client) | [iOS](https://itunes.apple.com/app/teamspeak-3/id577628510) | [Windows](https://chocolatey.org/packages/teamspeak) | [macOS](http://www.teamspeak.com/downloads.html#client) | [Linux](http://www.teamspeak.com/downloads.html#client)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/teamspeak-server/readme.md)**
+#### [choco://teamspeak-server](choco://teamspeak-server)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>TeamSpeak is VoIP software designed with security in mind, featuring crystal clear voice quality, scalabilty up to thousands of simultaneous users and endless customization options. Packed with powerful features and incredible performance, TeamSpeak is your Swiss Army Knife of voice communication.</summary>
     <copyright>© TeamSpeak Systems GmbH. All rights reserved.</copyright>
     <tags>teamspeak server team speak ts3 ts voip discord mumble ventrilo portable</tags>
