@@ -65,7 +65,7 @@ Timothée &amp; Johnny
     <copyright>Copyright Timothée Giet and others.</copyright>
     <tags>gcompris kids educational game foss cross-platform binary</tags>
     <projectSourceUrl>http://gcompris.net/download/qt/src/gcompris-qt-0.91.tar.xz</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/gcompris</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gcompris</packageSourceUrl>
     <docsUrl>https://gcompris.net/wiki/Manual</docsUrl>
     <mailingListUrl>https://mail.kde.org/mailman/listinfo/gcompris-devel</mailingListUrl>
   </metadata>
