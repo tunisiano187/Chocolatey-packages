@@ -23,7 +23,7 @@ function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
     $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
     Update-Metadata -key "releaseNotes" -value $tags.html_url
-	$version = $tags.tag_name.Replace('v','')
+	$version = $tags.tag_name.Replace('v','').Split('-') | Where-Object {$_ -match '\.'}
     if($tags.prerelease -match "true") {
         $date = $tags.published_at.ToString("yyyyMMdd")
         $version = "$version-pre$($date)"
