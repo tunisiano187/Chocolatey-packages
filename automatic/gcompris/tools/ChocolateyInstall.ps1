@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'gcompris'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -11,6 +11,6 @@ $packageArgs = @{
   validExitCodes = @(0,1)
   softwareName   = 'GCompris Educational Software'
 }
- 
+
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item "$toolsDir\*.exe" -EA SilentlyContinue | Out-Null

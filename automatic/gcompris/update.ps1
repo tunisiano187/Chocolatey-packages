@@ -26,10 +26,10 @@ function global:au_GetLatest {
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion32 = Get-FileVersion $url32 -keep
 	$FileVersion64 = Get-FileVersion $url64 -keep
-	
+
 	Move-Item -Path $FileVersion32.TempFile -Destination 'tools/gcompris-qt-win32-gcc.exe'
 	Move-Item -Path $FileVersion64.TempFile -Destination 'tools/gcompris-qt-win64-gcc.exe'
-	
+
 	$Latest = @{ URL32 = $url32; Checksum32 = $FileVersion32.CHECKSUM; ChecksumType32 = $FileVersion32.ChecksumType; URL64 = $url64; Checksum64 = $FileVersion64.CHECKSUM; ChecksumType64 = $FileVersion64.ChecksumType; Version = $version }
 	return $Latest
 }
