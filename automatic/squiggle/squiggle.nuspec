@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>squiggle</id>
+    <version>3.4.4.0020180331</version>
+    <title>Squiggle (Install)</title>
+    <authors>Muhammad Hasan Khan</authors>
+    <owners>bcurran3</owners>
+    <projectUrl>https://github.com/hasankhan/Squiggle</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/squiggle/Squiggle_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of Squiggle](https://raw.githubusercontent.com/hasankhan/Squiggle/master/Home_Screenshot.png)
+
+Squiggle is a free server-less peer to peer LAN messenger.
+Just download and run it and you're ready to talk to everyone on your LAN.
+
+####Key Features:
+* Server-less peer to peer LAN chat, No installation required. Just download, unzip and run
+* Group chat, Broadcast chat and Private chat
+* Bridge for connecting two LANs across subnets or WAN.
+* Supports localization i.e. you can replace the translation file to use Squiggle in your native language.
+* Fast (multiple) file transfer
+* Spell Check, Buzz, Emoticons, Audio Alerts, Tray Popups
+* Contact groups, Display message, Display Pic, Chat commands, Message aliases
+* Chat history, Status history
+* Voice Chat
+
+Server-less LAN Chat software that is easy to use and has a nice UI.
+
+SOCIAL MEDIA: [Twitter](https://twitter.com/overroot)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/squiggle/readme.md)**</description>
+    <summary>A free open source LAN Messenger</summary>
+    <releaseNotes>https://github.com/hasankhan/Squiggle/releases</releaseNotes>
+    <copyright>Copyright (C) 2010 Overroot Inc. All rights reserved.</copyright>
+    <tags>squiggle chat IM messenger</tags>
+    <projectSourceUrl>https://github.com/hasankhan/Squiggle</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/squiggle</packageSourceUrl>
+    <docsUrl>https://github.com/hasankhan/Squiggle/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/hasankhan/Squiggle/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
