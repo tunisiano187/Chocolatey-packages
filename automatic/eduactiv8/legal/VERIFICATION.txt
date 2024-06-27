@@ -6,14 +6,14 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://www.nirsoft.net/utils/searchmyfiles.zip
+x86: https://gigenet.dl.sourceforge.net/project/eduactiv8/Windows/eduactiv8-4.21.07.win.zip?viasf=1
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: D5B1FF964D478171A353CD787141AD7B6F679BC0070A142237C0BFC2D6793D6F
+checksum: 40CFDA726CF2A11A4E1EE533A182395A91D72102F36E999BF85BBA56C279B0E1
 
 The license is available here:
 https://github.com/imiolek-ireneusz/eduActiv8/blob/master/LICENSE
