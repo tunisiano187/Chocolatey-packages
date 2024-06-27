@@ -16,12 +16,6 @@ The program runs on Windows™, MacOS™, and Linux.
 
 Sadly the attempt to build eduActiv8 for Android has been dropped due to an inability to provide a 64-bit version of this software which is going to be a requirement from the next year (unfortunately the support for software used to package eduActiv8 for Android has ended a long time ago), but there are works underway to use another game engine in order to redesign some of the activities and publish them for mobiles to support the development of this project.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/eduactiv8/readme.md)**
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
-
 #### [choco://eduactiv8](choco://eduactiv8)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 

@@ -13,7 +13,7 @@ $packageArgs = @{
   FileFullPath    = $File
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\$Shortcut" -targetPath "$extractDir\$ProgramEXE" -WorkingDirectory "$extractDir"
 Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\$Shortcut" -targetPath "$extractDir\$ProgramEXE" -WorkingDirectory "$extractDir"
