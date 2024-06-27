@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>unifying-fut</id>
+    <version>3.2.276959</version>
+    <title>Logitech Firmware Update Tool (Portable)</title>
+    <authors>Logitech</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.logitech.com/en-us/tos/terms.html</licenseUrl>
+    <projectUrl>https://support.logi.com/hc/en-us/articles/360035037273</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/unifying-fut/unifying-fut_icon.png</iconUrl>
+    <description>---
+
+### [choco://unifying-fut](choco://unifying-fut)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+	The Firmware Update Tool, allows you to update your Logitech wireless receivers and selected keyboards to the latest firmware.
+	
+	[Supported device list](https://support.logi.com/hc/en-us/articles/4473639459607)
+
+	**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/unifying-fut/readme.md)**
+
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Updates the firmware on your Unifying receiver and some devices.</summary>
+    <copyright>Copyright Logitech</copyright>
+    <tags>logitech unifying software mouse util utility fw firmware</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/unifying-fut</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
