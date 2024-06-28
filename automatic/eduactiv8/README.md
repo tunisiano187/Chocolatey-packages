@@ -4,7 +4,7 @@
 
 ![Screenshot of eduActiv8](https://www.eduactiv8.org/wp-content/uploads/2017/09/cross_platform-1.jpg)
 
-###eduActiv8 – Educational Activities for Kids
+### eduActiv8 – Educational Activities for Kids
 
 eduActiv8 (formerly pySioGame) is a free cross-platform Open Source educational program for children.
 
