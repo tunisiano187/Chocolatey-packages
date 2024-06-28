@@ -1,4 +1,3 @@
-samsung-kies 0.0 - New maintainer
 kcast 0.0 - New maintainer
 setacl 0.0 - New maintainer
 osfmount 0.0 - New maintainer
