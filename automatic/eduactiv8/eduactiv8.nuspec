@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>eduactiv8</id>
-    <version>4.21.6</version>
+    <version>4.21.7</version>
     <title>eduActiv8 (Portable)</title>
     <authors>Ireneusz Imiolek</authors>
     <owners>tunisiano</owners>
@@ -14,7 +14,7 @@
 
 ![Screenshot of eduActiv8](https://www.eduactiv8.org/wp-content/uploads/2017/09/cross_platform-1.jpg)
 
-###eduActiv8 – Educational Activities for Kids
+### eduActiv8 – Educational Activities for Kids
 
 eduActiv8 (formerly pySioGame) is a free cross-platform Open Source educational program for children.
 
