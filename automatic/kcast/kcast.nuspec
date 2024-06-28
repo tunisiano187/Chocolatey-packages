@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>kcast</id>
+    <version>3.2.0.0</version>
+    <title>Kcast (Install)</title>
+    <authors>Kitco Metals Inc.</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://www.kitco.com/termsofuse/</licenseUrl>
+    <projectUrl>http://applications.kitco.com/supportcenter/taskbar</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/kcast/kcast_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of Kcast](http://applications.kitco.com/supportcenter/images/ss_taskbar.jpg)
+
+###Get live precious metal prices on your PC taskbar 
+Now with oil, base metals, currencies, indices and multilingual support
+	
+**Kcast for Windows**, a powerful, easy-to-use program, displays live precious metal prices on your computer’s taskbar, showing you vital information at a glance. It even gives you historical charts from as far back as 10 years ago. With **Kcast for Windows**, you’re in the know and in control.
+
+##Key Features of Kcast for Windows 7 and 8:
+
+* Live quotes and charts for copper, nickel, aluminum, zinc, lead, uranium, oil, seven market indices, five gold indices, a base metal index, and 14 currencies
+* Precious metal quotes available in 14 currencies
+* Choice of three units of measure for precious and base metal quotes
+* Customizable application tray icons
+* Font size adjustable up to 125% for improved legibility
+* Available in English, French, Traditional Chinese and Simplified Chinese
+* Live prices for gold, silver, platinum, palladium and rhodium on your taskbar
+* Charts for gold, silver, platinum, palladium and rhodium
+* Data from [Kitco.com](http://kitco.com), the world’s number one precious metals website
+* 24-hour, 30-day, 60-day, six-month*, one-year, five-year* and 10-year* charts
+* Display current prices, update times, bid and ask prices*, price changes* and percent price changes*
+* User-adjustable refresh rates and time zone options (GMT or local time, NY time also available on Windows 7 and 8 versions)
+* Direct links to main pages on [www.kitco.com](http://www.kitco.com)
+	
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/kcast/readme.md)**</description>
+    <summary>Kcast lets you view live sport prices for precious metals on your taskbar.</summary>
+    <copyright>Kitco Metals Inc.</copyright>
+    <tags>kcast taskbar gold silver metal market prices indices quotes charts precious metals</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/kcast</packageSourceUrl>
+    <docsUrl>http://www.kitco.com/kcastwindows7/en/referenceguide.pdf</docsUrl>
+    <mailingListUrl>https://gold-forum.kitco.com/</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
