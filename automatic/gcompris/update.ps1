@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$urls = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "-gcc.exe$"}).href
 	$url32 = $urls | Where-Object {$_ -match "32"}
 	$url64 = $urls | Where-Object {$_ -match "64"}
-	$version = (Get-Version $url32)
+	$version = (Get-Version $url32).Version
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion32 = Get-FileVersion $url32 -keep
 	$FileVersion64 = Get-FileVersion $url64 -keep
