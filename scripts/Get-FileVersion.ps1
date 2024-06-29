@@ -32,9 +32,16 @@ function Get-FileVersion {
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
         }
         catch {
             $version=$null
+        }
+        try {
+            $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
+        }
+        catch {
+            $FileSize=$null
         }
         $checksum = (Get-FileHash -Path $tempFile -Algorithm $checksumType).Hash
         if(! $keep) {
@@ -51,6 +58,6 @@ function Get-FileVersion {
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
 
-    $result = @{Version = $version; CHECKSUM = $checksum; ChecksumType = $checksumType; TempFile = $tempFile}
+    $result = @{Version = $version; Checksum = $checksum; ChecksumType = $checksumType; TempFile = $tempFile; FileSize = $FileSize}
     return $result
 }
