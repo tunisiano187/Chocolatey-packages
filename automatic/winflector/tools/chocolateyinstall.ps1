@@ -11,17 +11,25 @@ $validExitCodes = @(0, 3010, 1641)
 $ahkExe         = 'AutoHotKey'
 $ahkFile        = Join-Path $toolsDir "WinflectorInstall.ahk"
 
+$packageArgs = @{
+  packageName   = $packageName
+  url           = $url
+  FileFullPath  = "$toolsDir\winflector.exe"
+  checksum      = $checksum
+  checksumType  = $checksumType
+}
+
+Get-ChocolateyWebFile @packageArgs
+
 Start-Process $ahkExe $ahkFile
 
 $packageArgs = @{
   packageName   = $packageName
   fileType      = $installerType
-  url           = $url
+  file          = "$toolsDir\winflector.exe"
   validExitCodes= $validExitCodes
   silentArgs    = $silentArgs
   softwareName  = $softwareName
-  checksum      = $checksum
-  checksumType  = $checksumType
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
