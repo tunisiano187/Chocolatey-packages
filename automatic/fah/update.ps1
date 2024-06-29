@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	$json = $page.Content | convertfrom-json
 	$url32 = $json[0].groups.files.url
 	$version = $json[0].groups.files.version -join "."
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
