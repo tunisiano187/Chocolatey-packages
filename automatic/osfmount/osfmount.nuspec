@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>osfmount</id>
+    <version>3.1.1002</version>
+    <title>OSFMount (Install)</title>
+    <authors>PassMark® Software Pty Ltd</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>http://www.osforensics.com/tools/mount-disk-images.html</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/osfmount/osfmount_icon.jpg</iconUrl>
+    <description>---
+
+### [choco://osfmount](choco://osfmount)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of OSFMount](https://www.osforensics.com/img/osfmount-mainscreenshot%201.png)
+
+OSFMount is a free utility designed for use with [PassMark OSForensics](https://www.osforensics.com/index.html)™
+
+## Overview
+
+OSFMount allows you to mount local disk image files (bit-for-bit copies of an entire disk or disk partition) in Windows as a physical disk or a logical drive letter. You can then analyze the disk image file with [PassMark OSForensics](https://www.osforensics.com/index.html)™ by using the physical disk name (eg. \\.\PhysicalDrive1) or logical drive letter (eg. Z:).
+
+By default, the image files are mounted as read only so that the original image files are not altered.
+
+OSFMount supports mounting disk image files as read/write in "write cache" mode. This stores all writes to a "write cache" (or "delta") file which preserves the integriy of the original disk image file.
+
+OSFMount also supports the creation of RAM disks, basically a disk mounted into RAM. This generally has a large speed benefit over using a hard disk. As such this is useful with applications requiring high speed disk access, such a database applications, games (such as game cache files) and browsers (cache files). A second benefit is security, as the disk contents are not stored on a physical hard disk (but rather in RAM) and on system shutdown the disk contents are not persistent. At the time of writing, we believe this is the fastest RAM drive software available.
+
+OSFMount supports mounting images of CDs in .ISO format , which can be useful when a particular CD is used often and the speed of access is important.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/osfmount/readme.md)**
+  
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>OSFMount - Mount dd image files in Windows</summary>
+    <copyright>Copyright (C) PassMark Software</copyright>
+    <tags>osfmount virtual disk mount img dd bin iso oon nrg sdi aff afm afd vmdk e01 s01 vhd binary</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/osfmount</packageSourceUrl>
+    <mailingListUrl>http://www.passmark.com/forum/osforensics-osfmount-osfclone</mailingListUrl>
+    <bugTrackerUrl>http://www.osforensics.com/tools/mount-disk-images.html</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
