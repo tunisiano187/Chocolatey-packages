@@ -1,4 +1,3 @@
-openhab 0.0 - New maintainer
 real-netstat 0.0 - New maintainer
 open-mahjong-java 0.0 - New maintainer
 moboplay 0.0 - New maintainer
