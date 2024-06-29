@@ -16,6 +16,7 @@
     The Hash
     The algorythm used
     The File Size in MB
+    The File Name
 #>
 function Get-FileVersion {
     param(
@@ -28,6 +29,15 @@ function Get-FileVersion {
 
     if($null -ne $url) {
         $tempFile = Join-Path $env:TEMP $($url.split('/')[-1])
+        import-module C:\ProgramData\chocolatey\helpers\chocolateyInstaller.psm1 -ErrorAction SilentlyContinue -Force
+        try {
+            $FileName = Get-WebFileName -url $url -defaultName $($url.split('/')[-1])
+            $tempFile = Join-Path $env:TEMP $FileName
+        }
+        catch {
+            $FileName = $null
+        }
+
         if($tempFile -match '\?') {
             $tempFile = $tempFile.Split('?')[0]
         }
@@ -60,6 +70,6 @@ function Get-FileVersion {
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
 
-    $result = @{Version = $version; Checksum = $checksum; ChecksumType = $checksumType; TempFile = $tempFile; FileSize = $FileSize}
+    $result = @{Version = $version; Checksum = $checksum; ChecksumType = $checksumType; TempFile = $tempFile; FileSize = $FileSize; FileName = $FileName}
     return $result
 }
