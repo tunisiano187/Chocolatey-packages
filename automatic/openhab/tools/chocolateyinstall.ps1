@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName   = 'openhab' 
+$ErrorActionPreference = 'Stop'
+$packageName   = 'openhab'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ExeFile       = 'start.bat'
 $ShortcutName  = 'openHAB.lnk'
@@ -36,7 +36,7 @@ Install-ChocolateyShortcut -shortcutFilePath "$toolsDir\openHAB\$ShortcutName4" 
 Install-ChocolateyShortcut -shortcutFilePath "$toolsDir\openHAB\$ShortcutName5" -targetPath "https://community.openhab.org/" -IconLocation "$toolsDir\openHAB.ico"
 Install-ChocolateyShortcut -shortcutFilePath "$toolsDir\openHAB\$ShortcutName6" -targetPath "$toolsDir\runtime\bin\client.bat" -WorkingDirectory "$toolsDir\runtime\bin" -IconLocation "$toolsDir\openHAB.ico"
 New-Item "$toolsDir\userdata\logs" -ItemType Directory -EA SilentlyContinue
-Install-ChocolateyShortcut -shortcutFilePath "$toolsDir\openHAB\$ShortcutName7" -targetPath "$toolsDir\userdata\logs" -IconLocation "$toolsDir\openHAB.ico" 
+Install-ChocolateyShortcut -shortcutFilePath "$toolsDir\openHAB\$ShortcutName7" -targetPath "$toolsDir\userdata\logs" -IconLocation "$toolsDir\openHAB.ico"
 
 $WhoAmI=whoami
 icacls.exe $toolsDir /grant $WhoAmI":"'(OI)(CI)'F /T | out-null
