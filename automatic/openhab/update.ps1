@@ -1,8 +1,9 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://www.openhab.org/download/'
-
+$releases = 'https://github.com/openhab/openhab-distro/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 function global:au_SearchReplace {
 	@{
 		"legal\VERIFICATION.txt"      = @{
@@ -18,17 +19,18 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32 = ($page.Links | Where-Object {$_.href -match ".zip$"}).href
-	$version = (Get-Version $url32).Version
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination "toolsdir\$($url32.Split('/')[-1])"
-
-	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") NirSoft"
-
-	$Latest = @{ URL32 = $url32; Checksum32 = $FileVersion.CHECKSUM; ChecksumType32 = $FileVersion.ChecksumType; Version = $version }
+	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+	$version = $tags.tag_name.Replace('v','')
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
+	Update-Metadata -key "licenseUrl" -value $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url)
+	if($tags.prerelease -match "true") {
+	    $date = $tags.published_at.ToString("yyyyMMdd")
+	    $version = "$version-pre$($date)"
+	}
+	
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -NoCheckUrl -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor 32
