@@ -17,6 +17,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://www.osforensics.com/downloads/osfmount.exe"
+	. ..\..\scripts\Get-FileVersion.ps1
 	$FileInfos = Get-FileVersion $url32 -keep
 	Move-Item -Path $FileInfos.TempFile -Destination "tools\osfmount.exe"
 
