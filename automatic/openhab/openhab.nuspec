@@ -59,7 +59,7 @@ Nonetheless, this only applies to the setup and configuration of the system, whi
     <copyright>Copyright © by the openHAB Community and the openHAB Foundation e.V.</copyright>
     <tags>openhab home automation smart java binary foss cross-platform</tags>
     <projectSourceUrl>https://github.com/openhab/openhab-distro</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/openhab</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/openhab</packageSourceUrl>
     <docsUrl>http://docs.openhab.org/</docsUrl>
     <mailingListUrl>https://community.openhab.org/</mailingListUrl>
     <bugTrackerUrl>https://github.com/openhab/openhab-distro/issues</bugTrackerUrl>
