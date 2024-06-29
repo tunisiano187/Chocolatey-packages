@@ -123,7 +123,7 @@ if($WorkContentNuspec.package.metadata.iconUrl) {
             Invoke-WebRequest -Uri $iconbcurran -OutFile $iconfile
         }
         catch {
-            "Unable to download picture from $($iconbcurran)"
+            "Unable to download picture from corrected url : $($iconbcurran)"
         }
     }
         Write-Output "Icon not found in the Nuspec"
