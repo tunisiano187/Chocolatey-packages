@@ -6,7 +6,7 @@
     <title>Real NetStat (Trial) (Install)</title>
     <authors>Flexbyte Software</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/real-netstat</packageSourceUrl>
     <projectUrl>http://netstatagent.com/real-netstat/</projectUrl>
     <iconUrl>http://netstatagent.com/images/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
