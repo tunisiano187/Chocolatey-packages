@@ -43,7 +43,7 @@ OSFMount supports mounting images of CDs in .ISO format , which can be useful wh
     <summary>OSFMount - Mount dd image files in Windows</summary>
     <copyright>Copyright (C) PassMark Software</copyright>
     <tags>osfmount virtual disk mount img dd bin iso oon nrg sdi aff afm afd vmdk e01 s01 vhd binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/osfmount</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/osfmount</packageSourceUrl>
     <mailingListUrl>https://forums.passmark.com/osforensics-osfmount-osfclone</mailingListUrl>
     <dependencies>
       <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
