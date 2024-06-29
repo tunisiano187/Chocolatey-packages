@@ -5,7 +5,7 @@
     <version>3.1.0</version>
     <title>openHAB</title>
     <authors>openHAB Community and the openHAB Foundation</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/openhab/openhab-distro/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://www.openhab.org/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/openhab/openhab_icon.png</iconUrl>
