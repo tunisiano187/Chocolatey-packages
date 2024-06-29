@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	$url32 = "https://www.osforensics.com/downloads/osfmount.exe"
 	$FileInfos = Get-FileVersion $url32 -keep
 	Move-Item -Path $FileInfos.TempFile -Destination "tools\osfmount.exe"
-	
+
 	$Latest = @{ URL32 = $url32; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType; Version = $FileInfos.Version }
 	return $Latest
 }
