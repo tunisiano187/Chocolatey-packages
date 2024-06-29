@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/real-netstat</packageSourceUrl>
     <projectUrl>http://netstatagent.com/real-netstat/</projectUrl>
-    <iconUrl>http://netstatagent.com/images/logo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96cf59cbad55f213dbe834a58e3bcd4116130be2/icons/real-netstat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Real NetStat] (http://www.netstatagent.com/images/real-netstat/real-netstat-connections.png)
 
