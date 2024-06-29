@@ -13,7 +13,9 @@
 
 .OUTPUTS
     The version of the file if it is available.
-
+    The Hash
+    The algorythm used
+    The File Size in MB
 #>
 function Get-FileVersion {
     param(
