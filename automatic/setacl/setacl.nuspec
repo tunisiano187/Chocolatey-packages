@@ -51,7 +51,7 @@ If you need [support](https://helgeklein.com/support/), a question in the forums
     <releaseNotes>https://helgeklein.com/setacl/changelog/</releaseNotes>
     <copyright>Helge Klein</copyright>
     <tags>acl setacl</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/setacl</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/setacl</packageSourceUrl>
     <docsUrl>https://helgeklein.com/setacl/documentation/</docsUrl>
     <bugTrackerUrl>https://helgeklein.com/setacl/faq/</bugTrackerUrl>
     <dependencies>
