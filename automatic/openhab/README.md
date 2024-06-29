@@ -2,12 +2,6 @@
 
 ## openHAB
 
----
-### [choco://openhab](choco://openhab)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of openHAB](https://www.openhab.org/faa4c619ae9c16f8e98ef67151476221.png)
 	
 ### Introduction
@@ -40,12 +34,6 @@ Nonetheless, this only applies to the setup and configuration of the system, whi
 
 **CLIENTS:**
 [Android App](https://play.google.com/store/apps/details?id=org.openhab.habdroid) | [iOS App](https://itunes.apple.com/us/app/openhab/id492054521?mt=8) | [Windows App](https://www.microsoft.com/en-us/p/openhab/9nmq39ctwxgt)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/openhab/readme.md)**
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
 
 #### [choco://openhab](choco://openhab)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)

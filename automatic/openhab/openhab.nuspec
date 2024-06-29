@@ -64,7 +64,7 @@ Nonetheless, this only applies to the setup and configuration of the system, whi
     <mailingListUrl>https://community.openhab.org/</mailingListUrl>
     <bugTrackerUrl>https://github.com/openhab/openhab-distro/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="javaruntime" />
+      <dependency id="zulu17" />
     </dependencies>
   </metadata>
   <files>

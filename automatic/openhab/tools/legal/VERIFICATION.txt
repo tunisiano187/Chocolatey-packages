@@ -1,5 +1,0 @@
-﻿==================== openHAB  ====================
-
-bcurran3 downloads and packages the openHAB Stable Runtme distributable from https://www.openhab.org/download/
-
-==================== openHAB  ====================
