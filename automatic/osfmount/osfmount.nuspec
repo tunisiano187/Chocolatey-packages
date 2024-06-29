@@ -7,7 +7,7 @@
     <authors>PassMark® Software Pty Ltd</authors>
     <owners>bcurran3</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectUrl>http://www.osforensics.com/tools/mount-disk-images.html</projectUrl>
+    <projectUrl>https://www.osforensics.com/tools/mount-disk-images.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/osfmount/osfmount_icon.jpg</iconUrl>
     <description>---
 
@@ -44,8 +44,7 @@ OSFMount supports mounting images of CDs in .ISO format , which can be useful wh
     <copyright>Copyright (C) PassMark Software</copyright>
     <tags>osfmount virtual disk mount img dd bin iso oon nrg sdi aff afm afd vmdk e01 s01 vhd binary</tags>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/osfmount</packageSourceUrl>
-    <mailingListUrl>http://www.passmark.com/forum/osforensics-osfmount-osfclone</mailingListUrl>
-    <bugTrackerUrl>http://www.osforensics.com/tools/mount-disk-images.html</bugTrackerUrl>
+    <mailingListUrl>https://forums.passmark.com/osforensics-osfmount-osfclone</mailingListUrl>
     <dependencies>
       <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
     </dependencies>

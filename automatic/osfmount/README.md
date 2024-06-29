@@ -2,13 +2,6 @@
 
 ## OSFMount (Install)
 
----
-
-### [choco://osfmount](choco://osfmount)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of OSFMount](https://www.osforensics.com/img/osfmount-mainscreenshot%201.png)
 
 OSFMount is a free utility designed for use with [PassMark OSForensics](https://www.osforensics.com/index.html)™
@@ -24,15 +17,6 @@ OSFMount supports mounting disk image files as read/write in "write cache" mode.
 OSFMount also supports the creation of RAM disks, basically a disk mounted into RAM. This generally has a large speed benefit over using a hard disk. As such this is useful with applications requiring high speed disk access, such a database applications, games (such as game cache files) and browsers (cache files). A second benefit is security, as the disk contents are not stored on a physical hard disk (but rather in RAM) and on system shutdown the disk contents are not persistent. At the time of writing, we believe this is the fastest RAM drive software available.
 
 OSFMount supports mounting images of CDs in .ISO format , which can be useful when a particular CD is used often and the speed of access is important.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/osfmount/readme.md)**
-  
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://osfmount](choco://osfmount)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)

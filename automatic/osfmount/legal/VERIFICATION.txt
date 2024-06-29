@@ -1,0 +1,23 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download
+location on <https://www.osforensics.com/tools/mount-disk-images.html>
+and can be verified by doing the following:
+
+1. Download the following:
+
+  x86: <https://github.com/LADSoft/OrangeC/releases/download/Orange-C-v6.73.1/WindowsInstaller6738.exe>
+
+  2. You can obtain the checksum using one of the following methods:
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum: 107B6C28562B090211CA999F9CD64B059948064D4DC282A8AF1A5A0869465833
+
+Using AU:
+
+  Get-RemoteChecksum
