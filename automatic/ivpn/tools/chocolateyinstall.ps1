@@ -1,6 +1,6 @@
-﻿$url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.14.2.exe'
-$checksum     = '78e363c6405134ab4424650f2d0435c5a2f4120fcd1b0d4ce062fcd3f6dc471a'
-$checksumType = 'SHA256'
+﻿$url          = 'https://repo.ivpn.net/windows/bin/IVPN-Client-v3.14.14.exe'
+$checksum     = '2DD2511FACB200B644DAE3946305C801A0A5C00EB971A7DF0F1F1157457D9ABA'
+$checksumType = 'sha256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
