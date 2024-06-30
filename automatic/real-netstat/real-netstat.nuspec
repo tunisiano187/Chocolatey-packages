@@ -7,7 +7,7 @@
     <authors>Flexbyte Software</authors>
     <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/real-netstat</packageSourceUrl>
-    <projectUrl>http://netstatagent.com/real-netstat/</projectUrl>
+    <projectUrl>https://netstatagent.com/real-netstat/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96cf59cbad55f213dbe834a58e3bcd4116130be2/icons/real-netstat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Real NetStat] (http://www.netstatagent.com/images/real-netstat/real-netstat-connections.png)
@@ -37,7 +37,7 @@ By combining the functionality of command-line netstat.exe utility, Real Netstat
     <releaseNotes />
     <copyright>© 2004-2016 Copyright by Flexbyte Software. All rights reserved.</copyright>
     <tags>flexbyte real netstat network utility admin</tags>
-    <bugTrackerUrl>http://www.netstatagent.com/support/</bugTrackerUrl>
+    <bugTrackerUrl>https://netstatagent.com/support/</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
