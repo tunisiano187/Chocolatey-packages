@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://creativecommons.org/licenses/by-nc/2.0/</licenseUrl>
     <projectUrl>https://hyrules.github.io/WinHue3/</projectUrl>
-    <iconUrl>http://www.philips.ca/c-dam/corporate/homepage-articles/master/HUE/hue_still.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bceed1f84a4c1f61540ec7ca5f629d19532d1c51/icons/winhue.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>(Officially WinHue 3 RC5)
 	
