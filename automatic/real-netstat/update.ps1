@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	$url32 = "https://netstatagent.com/files/netagent-setup.exe"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $url32
-	
+
 	$Latest = @{ URL32 = $url32; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $FileVersion.Version }
 	return $Latest
 }
