@@ -54,7 +54,7 @@ WinHue also has a fully-featured console application bundled with the installer.
     <releaseNotes>https://github.com/Hyrules/WinHue3/releases</releaseNotes>
     <tags>hyrules winhue hue phillips light smarthome automation</tags>
     <projectSourceUrl>https://github.com/Hyrules/WinHue3</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/winhue</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winhue</packageSourceUrl>
     <docsUrl>https://github.com/Hyrules/WinHue3/wiki/Basic%20Usage</docsUrl>
     <bugTrackerUrl>https://github.com/Hyrules/WinHue3/issues</bugTrackerUrl>
     <dependencies>
