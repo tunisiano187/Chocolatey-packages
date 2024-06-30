@@ -5,7 +5,7 @@
     <version>3.0.3028.0</version>
     <title>WinHue (Install)</title>
     <authors>Pascal Pharand</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://creativecommons.org/licenses/by-nc/2.0/</licenseUrl>
     <projectUrl>https://hyrules.github.io/WinHue3/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bceed1f84a4c1f61540ec7ca5f629d19532d1c51/icons/winhue.jpg</iconUrl>
