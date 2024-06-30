@@ -14,10 +14,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
-  }
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -25,6 +21,9 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32 -keep
+	Move-Item $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
 	$version = $tags.tag_name.Replace('v','').Replace('.M','-M')
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	Update-Metadata -key "licenseUrl" -value $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url)
@@ -34,8 +33,8 @@ function global:au_GetLatest {
 	}
 
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
