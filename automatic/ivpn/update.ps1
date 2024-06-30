@@ -24,24 +24,18 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | select-object -First 1
-	$url32 = ($tags.body.Split('
-') | Where-Object {$_ -match '.exe'}).split('(|)')[-2]
-	$checksumType32 = "SHA256"
-	$checksum32 = Get-RemoteChecksum -Url $url32 -Algorithm $checksumType32
-	$version = $tags.tag_name -split 'v|/' | select-object -Last 1
-	Update-Metadata -key "releaseNotes" -value $tags.html_url
+	$page = Invoke-WebRequest -Uri "https://www.ivpn.net/en/apps-windows/" -UseBasicParsing
+	$url32 = ($page.Links | Where-Object {$_.href -match ".exe$"} | Select-Object -First 1).href
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32
+	$version = ($url32 -split 'v|/' | select-object -Last 1).trim('.exe')
 	if($tags[0].prerelease -match "true") {
 		$date = $tags[0].published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	}
 
-	$Latest = @{ URL32 = $url32; CHECKSUM32 = $checksum32; CHECKSUMTYPE32 = $checksumType32; Version = $version }
+	$Latest = @{ URL32 = $url32; CHECKSUM32 = $FileVersion.Checksum; CHECKSUMTYPE32 = $FileVersion.ChecksumType; Version = $version }
 	return $Latest
 }
 
-try {
-    update
-} catch {
-    $ignore = "You cannot call a method on a null-valued expression."
-    if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
-}
+update
