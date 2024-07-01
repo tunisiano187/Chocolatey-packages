@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>openhab</id>
-    <version>3.1.0</version>
+    <version>4.2.0-M4</version>
     <title>openHAB</title>
     <authors>openHAB Community and the openHAB Foundation</authors>
     <owners>tunisiano</owners>
@@ -10,11 +10,7 @@
     <projectUrl>http://www.openhab.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b4c61ae82c52784a09855c1e0e8bf42ab918cdc9/icons/openhab.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-### [choco://openhab](choco://openhab)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## openHAB
 
 ![Screenshot of openHAB](https://www.openhab.org/faa4c619ae9c16f8e98ef67151476221.png)
 	
@@ -49,11 +45,14 @@ Nonetheless, this only applies to the setup and configuration of the system, whi
 **CLIENTS:**
 [Android App](https://play.google.com/store/apps/details?id=org.openhab.habdroid) | [iOS App](https://itunes.apple.com/us/app/openhab/id492054521?mt=8) | [Windows App](https://www.microsoft.com/en-us/p/openhab/9nmq39ctwxgt)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/openhab/readme.md)**
+#### [choco://openhab](choco://openhab)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>openHAB - a vendor and technology agnostic open source automation software for your home</summary>
     <releaseNotes>https://github.com/openhab/openhab-distro/releases</releaseNotes>
     <copyright>Copyright © by the openHAB Community and the openHAB Foundation e.V.</copyright>

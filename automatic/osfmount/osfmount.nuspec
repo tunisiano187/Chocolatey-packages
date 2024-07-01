@@ -2,19 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>osfmount</id>
-    <version>3.1.1002</version>
+    <version>3.1.1003.0</version>
     <title>OSFMount (Install)</title>
     <authors>PassMark® Software Pty Ltd</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.osforensics.com/tools/mount-disk-images.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/osfmount/osfmount_icon.jpg</iconUrl>
-    <description>---
-
-### [choco://osfmount](choco://osfmount)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## OSFMount (Install)
 
 ![Screenshot of OSFMount](https://www.osforensics.com/img/osfmount-mainscreenshot%201.png)
 
@@ -32,14 +27,14 @@ OSFMount also supports the creation of RAM disks, basically a disk mounted into 
 
 OSFMount supports mounting images of CDs in .ISO format , which can be useful when a particular CD is used often and the speed of access is important.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/osfmount/readme.md)**
-  
+#### [choco://osfmount](choco://osfmount)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>OSFMount - Mount dd image files in Windows</summary>
     <copyright>Copyright (C) PassMark Software</copyright>
     <tags>osfmount virtual disk mount img dd bin iso oon nrg sdi aff afm afd vmdk e01 s01 vhd binary</tags>

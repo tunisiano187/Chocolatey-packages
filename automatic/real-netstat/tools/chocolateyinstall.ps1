@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageName    = 'real-netstat'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'http://netstatagent.com/files/realnetstat-setup.exe'
-$checksum       = ''
+$url            = 'https://netstatagent.com/files/netagent-setup.exe'
+$checksum       = 'D6AF04B6315BD5FA6E4F434F32EA228B9F6C699BB9104E9D64AEBC9EC38D39CA'
 $checksumType   = 'sha256'
 
 $packageArgs = @{

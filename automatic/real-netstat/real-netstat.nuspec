@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>real-netstat</id>
-    <version>3.1</version>
+    <version>3.6</version>
     <title>Real NetStat (Trial) (Install)</title>
     <authors>Flexbyte Software</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://netstatagent.com/real-netstat/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@96cf59cbad55f213dbe834a58e3bcd4116130be2/icons/real-netstat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of Real NetStat] (http://www.netstatagent.com/images/real-netstat/real-netstat-connections.png)
+    <description><![CDATA[## Real NetStat (Trial) (Install)
+
+![Screenshot of Real NetStat] (http://www.netstatagent.com/images/real-netstat/real-netstat-connections.png)
 
 ##Real NetStat 3.1 - The Powerful Alternative Tool To NetStat.exe Command
 
@@ -32,7 +34,16 @@ By combining the functionality of command-line netstat.exe utility, Real Netstat
 * Provides you with ability to configure special rules to close unwanted connections, terminate the process, play the sound alert and run the third party software like console 'ping.exe' or 'tracert.exe';
 * Shows all available information like the remote address of connection, hostname, local and remote ports, the owning process, the process folder, DLL modules used by process and etc;
 * Built-in powerful log manager to view, delete or clear connection logs;
-* Saves the report to HTML files.</description>
+* Saves the report to HTML files.
+
+#### [choco://real-netstat](choco://real-netstat)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Real NetStat 3.1 - The Powerful Alternative Tool To NetStat.exe Command</summary>
     <releaseNotes />
     <copyright>© 2004-2016 Copyright by Flexbyte Software. All rights reserved.</copyright>

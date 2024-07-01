@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gcompris</id>
-    <version>3.2.0</version>
+    <version>4.1</version>
     <title>GCompris (Install)</title>
     <authors>wkendrick</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>https://gcompris.net/index-en.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@104b39f7c667d4babadc37b77f40b102baacf48a/icons/gcompris.png</iconUrl>
-    <description>---
+    <description><![CDATA[## GCompris (Install)
+
+---
 
 ### [choco://gcompris](choco://gcompris)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
@@ -50,7 +52,7 @@ We hope that this move will make it easier for all the children in the world to 
 
 Thank you all,
 
-Timothée &amp; Johnny
+Timothée & Johnny
 
 **[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gcompris/readme.md)**
     
@@ -59,7 +61,16 @@ Timothée &amp; Johnny
 
 **Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
 
----</description>
+---
+
+#### [choco://gcompris](choco://gcompris)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</summary>
     <releaseNotes>https://gcompris.net/index-en.html</releaseNotes>
     <copyright>Copyright Timothée Giet and others.</copyright>
