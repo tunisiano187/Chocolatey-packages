@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$regexPattern = '<span>V([\d\.]+)</span>'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
