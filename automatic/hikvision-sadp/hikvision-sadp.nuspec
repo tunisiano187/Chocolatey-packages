@@ -34,7 +34,7 @@ information of the devices using this software.
     <summary>SADP searches for and configures Hikvision devices on your local network.</summary>
     <copyright>COPYRIGHT Hangzhou Hikvision Digital Technology Co., Ltd.</copyright>
     <tags>hikvision sadp sadptool</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/hikvision-sadp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hikvision-sadp</packageSourceUrl>
     <docsUrl>https://us.hikvision.com/sites/default/files/sadp.3.0.1.4.win32.user_manual.pdf</docsUrl>
   </metadata>
   <files>
