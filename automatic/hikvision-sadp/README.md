@@ -2,27 +2,11 @@
 
 ## Hikvision Search Active Devices Protocol (Install)
 
----
-
-###[choco://hikvision-sadp](choco://hikvision-sadp)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-###Software Description:
+### Software Description:
 Search Active Devices Protocol software is user-friendly and installation-free online
 device search tool. It searches the active online devices within your subnet and
 displays the information of the devices. You can also modify the basic network
 information of the devices using this software.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/hikvision-sadp/readme.md)**
-	
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://hikvision-sadp](choco://hikvision-sadp)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
