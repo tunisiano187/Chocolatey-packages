@@ -1,14 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/gcompris?color=green&label=gcompris)](https://chocolatey.org/packages/gcompris) [![](https://img.shields.io/chocolatey/dt/gcompris)](https://chocolatey.org/packages/gcompris)
 
 ## GCompris (Install)
-
----
-
-### [choco://gcompris](choco://gcompris)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of GCompris](https://gcompris.net/screenshots_qt/small/root.png)
 
 GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.
@@ -43,15 +35,6 @@ We hope that this move will make it easier for all the children in the world to 
 Thank you all,
 
 Timothée & Johnny
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gcompris/readme.md)**
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://gcompris](choco://gcompris)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
