@@ -76,6 +76,7 @@ hashdeep
 hdparm
 hexamail-pop3-downloader
 highlight
+hikvision-sadp
 hostinfo
 hp-bios-cmdlets
 hp-ilo-cmdlets
@@ -193,4 +194,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-hikvision-sadp
