@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gcompris</id>
-    <version>4.1</version>
+    <version>4.0</version>
     <title>GCompris (Install)</title>
     <authors>wkendrick</authors>
     <owners>tunisiano</owners>
@@ -81,6 +81,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <mailingListUrl>https://mail.kde.org/mailman/listinfo/gcompris-devel</mailingListUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
