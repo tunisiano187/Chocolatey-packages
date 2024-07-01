@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.hikvision.com/en/Auxiliary-column/General-Terms-of-Use</licenseUrl>
     <projectUrl>https://www.hikvision.com/en/Support/Downloads/Tools</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/hikvision-sadp/hikvision-sadp_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a0db3f400e4be2725afa31baf984562ef86b4141/icons/hikvision-sadp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
