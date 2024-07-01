@@ -2,7 +2,7 @@
 
 ## openHAB
 
-![Screenshot of openHAB](https://www.openhab.org/faa4c619ae9c16f8e98ef67151476221.png)
+![Screenshot of openHAB](https://next.openhab.org/assets/img/suggestions.1f3817a2.png)
 	
 ### Introduction
 
@@ -29,10 +29,10 @@ openHAB is highly flexible and customizable, but this comes at a cost. You have 
 
 Nonetheless, this only applies to the setup and configuration of the system, which is usually done by a single person in the household, while all other family members are merely using the system. And here is where openHAB shines: It is very stable, has apps for all different end devices, allows voice interaction, etc, so once installed, it has a very high WAF.
 
-**SOCIAL MEDIA:**
+#### SOCIAL MEDIA:
 [Facebook](https://www.facebook.com/openHAB-153141161476518/) | [Twitter](https://twitter.com/openHAB) | [Google+](https://plus.google.com/u/0/+OpenhabOrg) | [YouTube](https://www.youtube.com/playlist?list=PLGlxCdrGUagz6lfgo9SlNLhdwI4la_VSv)
 
-**CLIENTS:**
+#### CLIENTS:
 [Android App](https://play.google.com/store/apps/details?id=org.openhab.habdroid) | [iOS App](https://itunes.apple.com/us/app/openhab/id492054521?mt=8) | [Windows App](https://www.microsoft.com/en-us/p/openhab/9nmq39ctwxgt)
 
 #### [choco://openhab](choco://openhab)
