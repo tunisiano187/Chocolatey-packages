@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>real-netstat</id>
-    <version>3.5</version>
+    <version>3.6</version>
     <title>Real NetStat (Trial) (Install)</title>
     <authors>Flexbyte Software</authors>
     <owners>tunisiano</owners>
@@ -14,7 +14,7 @@
 
 ![Screenshot of Real NetStat] (http://www.netstatagent.com/images/real-netstat/real-netstat-connections.png)
 
-##Real NetStat 3.1 - The Powerful Alternative Tool To NetStat.exe Command
+## Real NetStat 3.1 - The Powerful Alternative Tool To NetStat.exe Command
 
 Each time when you open a web site in your browser or download files there are TCP/UDP connections are established between your computer and the remote host. Other software also can receive or send information to the Internet. But how can you get the list of all available connections on your computer?
 
