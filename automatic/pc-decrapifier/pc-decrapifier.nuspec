@@ -3,10 +3,10 @@
   <metadata>
     <id>pc-decrapifier</id>
     <version>3.0.1.20161106</version>
-    <title>The PC Decrapifier</title>
+    <title>The PC Decrapifier (Discontinued)</title>
     <authors>pcdecrapifier.com</authors>
     <owners>tunisiano</owners>
-<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pc-decrapifier</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pc-decrapifier</packageSourceUrl>
     <projectUrl>https://www.pcdecrapifier.com/</projectUrl>
     <iconUrl>https://d3342og8rhzilt.cloudfront.net/assets/pc-decrapifier-logo-3726730c47740a1a5cb08e05a63d93df.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -27,12 +27,12 @@ Nothing is removed without your approval. We show you the list before anything i
 Decide what to remove based on our community of PC Decrapifier users.
 ####Just download and run it. There is no installer. There's no UNinstaller. It's all self-contained.</description>
     <summary>The PC Decrapifier ...it's like TP for your PC</summary>
-    <releaseNotes>added checksums</releaseNotes>
+    <releaseNotes>Discontinued</releaseNotes>
     <copyright>Copyright © 2007 — 2016 pcdecrapifier.com</copyright>
     <tags>pcdecrapifier decrapifier system cleanup</tags>
     <docsUrl>https://www.pcdecrapifier.com/faq</docsUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="*.nuspec" />
   </files>
 </package>
