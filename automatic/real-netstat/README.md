@@ -10,7 +10,7 @@ Each time when you open a web site in your browser or download files there are T
 
 The answer is to run a command line tool known as netstat.exe. But is it really comfortably to run every time the console and enter the options you want only to print a list of TCP/UDP connections?
 
-##Real NetStat solves this issue!
+## Real NetStat solves this issue!
 
 We offer an advanced but still quite simple in use the program for monitoring Internet connections. Real Netstat and its intuitive and easy-to-use GUI make life simpler and easier not only for network administrators, but for anyone Windows user.
 
