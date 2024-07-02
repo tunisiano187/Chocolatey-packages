@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pc-decrapifier</packageSourceUrl>
     <projectUrl>https://www.pcdecrapifier.com/</projectUrl>
-    <iconUrl>https://d3342og8rhzilt.cloudfront.net/assets/pc-decrapifier-logo-3726730c47740a1a5cb08e05a63d93df.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c7b2e3d9c6ac3e844195270048971efead10597e/icons/pc-decrapifier.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of PC Decrapifier](https://d3342og8rhzilt.cloudfront.net/assets/pcdc-2-d129042923fc81ca07365939d5213bc6.png)
 
