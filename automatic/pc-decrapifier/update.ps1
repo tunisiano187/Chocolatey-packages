@@ -1,6 +1,10 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
+function global:au_SearchReplace {
+	
+}
+
 function global:au_GetLatest {
 	$version = "3.0.1.20240702"
 
@@ -9,4 +13,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckUrl
