@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ru</id>
-    <version>1.20.0.2022120601</version>
+    <version>3.29.1</version>
     <title>Registry Usage (RU)</title>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
