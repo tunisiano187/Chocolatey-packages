@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>mossawir-lan-messenger</id>
+    <version>3.0</version>
+    <title>Mossawir LAN Messenger (Install)</title>
+    <authors>Mossawir Ahmed</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://sourceforge.net/directory/os:windows/license:afl/</licenseUrl>
+    <projectUrl>https://sourceforge.net/projects/mossawirlanmsg/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of Mossawir LAN Messenger](https://fsdn.com/con/app/proj/mossawirlanmsg/screenshots/s1.jpg)
+
+###Description
+
+Mossawir Lan Messegner 3.0 is peer-to-peer messaging application for intra-network communication and does not require a server.
+
+###Features
+
+* Chatting
+* File Transfering
+* Grouping
+* Private Messege Sending
+* Automatically Detecting On LAN (User Discovery)
+* Availability Status Update
+* Maintain History
+* and many more
+
+####PACKAGING NOTE: Uninstall is NOT silent.</description>
+    <summary>Mossawir Network Messenger is a LAN messaging and chat program which allows messages to be sent between users on a network peer-to-peer with no need for a server.</summary>
+    <releaseNotes />
+    <copyright>Copyright © Mossawir Dot Ahmed</copyright>
+    <tags>mossawir lan messenger im chat notsilent admin</tags>
+    <projectSourceUrl>https://sourceforge.net/p/mossawirlanmsg/code/ref/master/</projectSourceUrl>
+    <mailingListUrl>https://sourceforge.net/p/mossawirlanmsg/discussion/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/mossawirlanmsg/tickets/</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

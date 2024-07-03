@@ -1,4 +1,3 @@
-mossawir-lan-messenger 0.0 - New maintainer
 donkeykong 0.0 - New maintainer
 tcc 0.0 - New maintainer
 take-command 0.0 - New maintainer
