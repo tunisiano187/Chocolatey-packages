@@ -6,7 +6,7 @@
     <title>Mossawir LAN Messenger (Install)</title>
     <authors>Mossawir Ahmed</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mossawir-lan-messenger</packageSourceUrl>
     <licenseUrl>https://sourceforge.net/directory/os:windows/license:afl/</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/mossawirlanmsg/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
