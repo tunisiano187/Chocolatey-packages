@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 import-module au
 
 function global:au_SearchReplace {
-	
+
 }
 
 function global:au_GetLatest {
