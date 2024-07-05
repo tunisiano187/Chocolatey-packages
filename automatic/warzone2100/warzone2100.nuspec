@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>warzone2100</id>
-    <version>4.1.3</version>
+    <version>4.5.0</version>
     <title>Warzone 2100 (Install)</title>
     <authors>buginator, cypr, sendai, the_cybersphinx, vexed-1</authors>
     <owners>tunisiano</owners>
@@ -10,13 +10,7 @@
     <projectUrl>https://wz2100.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e8e9dc1db0530fbd0d7bbf9a802ebad161079794/icons/warzone2100.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://warzone2100](choco://warzone2100)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
+    <description><![CDATA[## Warzone 2100 (Install)
 ![Screenshot of Warzone 2100](https://wz2100.net/static/img/wz2100-CAM_3A50.png)
 	
 ## Welcome to Warzone 2100!
@@ -27,14 +21,14 @@ The game offers campaign, multi-player, and single-player skirmish modes. An ext
 
 Warzone 2100 was originally developed as a commercial game by Pumpkin Studios and published in 1999, and was released as open source by them in 2004, for the community to continue working on it.	
 	
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/warzone2100/readme.md)**	
-    
+#### [choco://warzone2100](choco://warzone2100)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Warzone 2100 - RTS game with the theme of Strategy by Design</summary>
     <releaseNotes>http://wz2100.net/news/</releaseNotes>
     <copyright>Eidos, in collaboration with Pumpkin Studios</copyright>
