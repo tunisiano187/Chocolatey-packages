@@ -1,1 +1,0 @@
-﻿Get-Process -Name "Android Messages" -ErrorAction SilentlyContinue | Stop-Process
