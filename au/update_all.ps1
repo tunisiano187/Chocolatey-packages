@@ -9,6 +9,7 @@ $Options = [ordered]@{
     Threads    = 5                                          #Number of background jobs to use
     Push       = $Env:au_Push -eq 'true'                    #Push to chocolatey
     PluginPath = ''                                         #Path to user plugins
+    au_test_groups =  4                                     # Use 1 to test all, or N to split testing into N groups
 
     RepeatOn      = @(                                      #Error message parts on which to repeat package updater
       'Could not create SSL/TLS secure channel'             # https://github.com/chocolatey/chocolatey-coreteampackages/issues/718
