@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.mersenne.org/legal/#EULA</licenseUrl>
     <projectUrl>http://www.mersenne.org/download/</projectUrl>
-    <iconUrl>http://www.mersenne.org/images/logo.gif</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4fc4049b3051be3359ab2b86795759e87b4c7500/icons/prime95.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Prime95 (Portable)
 ![Screenshot of Prime95](https://upload.wikimedia.org/wikipedia/commons/c/c0/Prime95_screenshot.png)	

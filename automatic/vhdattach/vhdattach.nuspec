@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/medo64/VhdAttach/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://www.medo64.com/vhdattach/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/vhdattach/vhdattach_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4fc4049b3051be3359ab2b86795759e87b4c7500/icons/vhdattach.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## VHD Attach (Install)
 
