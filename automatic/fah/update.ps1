@@ -1,17 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://download.foldingathome.org/releases.py?release=public&platform=Win32'
-
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
+$releases = 'https://download.foldingathome.org/releases/public/fah-client/meta.json'
 
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
@@ -29,8 +19,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$json = $page.Content | convertfrom-json
-	$url32 = $json[0].groups.files.url
-	$version = $json[0].groups.files.version -join "."
+	$url32 = "https://download.foldingathome.org/releases/public/fah-client/$($json[0].package)"
+	$version = (Get-Version $url32).Version
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

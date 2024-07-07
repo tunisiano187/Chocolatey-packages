@@ -38,7 +38,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Distributed computing project to understand protein folding</summary>
     <releaseNotes>#### Program
-* [News](http://folding.stanford.edu/home/blog)
+* [News](https://github.com/FoldingAtHome/fah-client-bastet/discussions)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
