@@ -19,7 +19,6 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-	Get-RemoteFiles -Purge -NoSuffix
 	Invoke-WebRequest -Uri "https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt" .\tools\LICENSE.txt
 }
 
@@ -36,9 +35,12 @@ function global:au_GetLatest {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
 	}
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32 -keep
+	Move-Item $FileVersion.TempFile -Destination "tools\$($url32.Split('/')[-1])"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckChocoVersion
