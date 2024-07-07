@@ -30,7 +30,7 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
 - Microsoft Outlook 2016® (32 and 64 bit)
 
 #### [choco://gsuite-migration-outlook](choco://gsuite-migration-outlook)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
