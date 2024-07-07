@@ -10,16 +10,12 @@ function global:au_SearchReplace {
 		"$($Latest.PackageName).nuspec" = @{
 			"(\<copyright\>).*?(\</copyright\>)" 	= "`${1}Embarcadero $((Get-Date).year)`$2"
 		}
-		".\tools\VERIFICATION.txt" = @{
+		".\legal\VERIFICATION.txt" = @{
 			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
 			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
 			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
 		  }
 	}
-}
-
-function global:au_BeforeUpdate {
-	Invoke-WebRequest -Uri "https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt" .\tools\LICENSE.txt
 }
 
 function global:au_AfterUpdate($Package) {
@@ -38,6 +34,7 @@ function global:au_GetLatest {
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $url32 -keep
 	Move-Item $FileVersion.TempFile -Destination "tools\$($url32.Split('/')[-1])"
+	Invoke-WebRequest -Uri "https://github.com/Embarcadero/Dev-Cpp/blob/master/COPYING.txt" .\legal\LICENSE.txt
 
 	$Latest = @{ URL32 = $url32; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $version }
 	return $Latest
