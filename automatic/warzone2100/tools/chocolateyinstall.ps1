@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName  = 'warzone2100'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32        = 'https://github.com/Warzone2100/warzone2100/releases/download/4.5.0/warzone2100_win_x86_installer.exe'
-$checksum32   = '9e522ffc52208448c918242da9ff52d9de4d245bb534b36380d9238fcb9ec641'
-$url64        = 'https://github.com/Warzone2100/warzone2100/releases/download/4.5.0/warzone2100_win_x64_installer.exe'
-$checksum64   = '2627753b2b54bb583a773e505dcdd9bcd0c0eea40bd49d07ee3df6398969fa4c'
+$url32        = 'https://github.com/Warzone2100/warzone2100/releases/download/4.5.1/warzone2100_win_x86_installer.exe'
+$checksum32   = '8d86be237857c76fe6212e7be0f6a7dd93163f285401391cc6258818ca44b9d7'
+$url64        = 'https://github.com/Warzone2100/warzone2100/releases/download/4.5.1/warzone2100_win_x64_installer.exe'
+$checksum64   = 'e5b4a7b201973b750b0b30c4b3fa96a623b185745763709eff8b1a930b91ab1e'
 $checksumType = 'sha256'
 
 $packageArgs = @{
