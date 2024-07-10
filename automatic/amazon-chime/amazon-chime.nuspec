@@ -9,7 +9,7 @@
     <title>amazon-chime (Install)</title>
     <authors>Amazon</authors>
     <projectUrl>https://aws.amazon.com/chime/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@154fe8b396b7b8fbc8e1096fcaa9481821f52c01/icons/amazon-chime.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0dc5f283c0b6fc9d9096a55ee3efb08e01ef1f2c/icons/amazon-chime.png</iconUrl>
     <copyright>Amazon</copyright>
     <licenseUrl>https://aws.amazon.com/service-terms/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

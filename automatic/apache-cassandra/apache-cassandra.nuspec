@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/apache-cassandra</packageSourceUrl>
     <projectUrl>http://cassandra.apache.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@154fe8b396b7b8fbc8e1096fcaa9481821f52c01/icons/apache-cassandra.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0dc5f283c0b6fc9d9096a55ee3efb08e01ef1f2c/icons/apache-cassandra.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## cassandra
 
