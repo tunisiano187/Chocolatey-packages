@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 . ..\..\scripts\Get-FileVersion.ps1
 
@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$Fileinfos = Get-FileVersion -url $release
-	
+
 	$Latest = @{ URL32 = $release; Checksum32 = $Fileinfos.Checksum; ChecksumType32 = $Fileinfos.ChecksumType; Version = $Fileinfos.Version }
 	return $Latest
 }
