@@ -1,1 +1,0 @@
-﻿Remove-Item "$(Get-ToolsLocation)\hashcat*" -recurse
