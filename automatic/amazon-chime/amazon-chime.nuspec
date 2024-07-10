@@ -4,7 +4,7 @@
   <metadata>
     <id>amazon-chime</id>
     <version>5.23.31911</version>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/amazon-chime</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/amazon-chime</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>amazon-chime (Install)</title>
     <authors>Amazon</authors>
