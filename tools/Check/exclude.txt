@@ -111,6 +111,7 @@ ManuelBastioniLAB
 md5sums
 meson
 mooncoin
+mossawir-lan-messenger
 movefile
 mrboom
 msdeploy
@@ -194,4 +195,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-mossawir-lan-messenger
