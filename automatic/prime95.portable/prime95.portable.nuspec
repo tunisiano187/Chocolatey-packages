@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>prime95.portable</id>
-    <version>30.19</version>
+    <version>30.1</version>
     <title>Prime95 (Portable)</title>
     <authors>George Woltman</authors>
     <owners>tunisiano</owners>
@@ -53,7 +53,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/prime95.portable</packageSourceUrl>
     <docsUrl>http://www.mersenne.org/download/#newusers</docsUrl>
     <mailingListUrl>http://www.mersenneforum.org/</mailingListUrl>
-    <bugTrackerUrl>http://www.mersenne.org/download/whatsnew.txt</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

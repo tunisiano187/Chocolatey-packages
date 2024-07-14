@@ -23,6 +23,8 @@ function global:au_GetLatest {
     $page = Invoke-WebRequest -Uri $releases
     $url32 = $page.Links.href | Where-Object {$_ -match '.win32.zip$'} | Select-Object -First 1
     $url64 = $page.Links.href | Where-Object {$_ -match '.win64.zip$'} | Select-Object -First 1
+    $bugtracker = "https://www.mersenne.org/download/$($page.Links.href | Where-Object {$_ -match 'whatsnew'} | Select-Object -First 1)"
+    Update-Metadata -key "releaseNotes" -value $bugtracker
     $version = ($url32.split('/')[-2])
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
