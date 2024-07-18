@@ -195,3 +195,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+nexusfile
