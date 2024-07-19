@@ -118,6 +118,7 @@ msdeploy
 msigna
 myuninst
 neat
+nexusfile
 nordvpn
 Notes
 ntfssecurity-psmodule
@@ -195,4 +196,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-nexusfile
