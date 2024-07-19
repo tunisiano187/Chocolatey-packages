@@ -27,7 +27,7 @@ function Get-FileVersion {
     )
     if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
 
-    if($null -ne $url) {
+    if($url.Trim().Length -gt 0) {
         $tempFile = Join-Path $env:TEMP $($url.split('/')[-1])
         import-module C:\ProgramData\chocolatey\helpers\chocolateyInstaller.psm1 -ErrorAction SilentlyContinue -Force
         try {
@@ -43,11 +43,20 @@ function Get-FileVersion {
         }
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
-            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
-            $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
+            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
         }
         catch {
-            $version=$null
+            try {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            }
+            catch {
+                try {
+                    $version = (Get-Version $url).Version
+                }
+                catch {
+                    $version=$null
+                }
+            }
         }
         try {
             $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
@@ -62,10 +71,20 @@ function Get-FileVersion {
         }
     } else {
         try {
-            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
         }
         catch {
-            $version=$null
+            try {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            }
+            catch {
+                try {
+                    $version = (Get-Version $url).Version
+                }
+                catch {
+                    $version=$null
+                }
+            }
         }
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
