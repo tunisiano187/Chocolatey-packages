@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>thebrain</id>
-    <version>14.0.49</version>
+    <version>14.0.101</version>
     <title>TheBrain</title>
     <authors>TheBrain Technologies LP</authors>
     <owners>tunisiano</owners>
@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <mailingListUrl>https://forums.thebrain.com/</mailingListUrl>
     <bugTrackerUrl>https://forums.thebrain.com/?forum=92203</bugTrackerUrl>
     <dependencies>
-      <dependency id="thebrain.install" version="[14.0.49]" />
+      <dependency id="thebrain.install" version="[14.0.101]" />
     </dependencies>
   </metadata>
   <files>
