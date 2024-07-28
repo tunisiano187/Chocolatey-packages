@@ -8,7 +8,7 @@
     <owners>dtgm</owners>
     <licenseUrl>http://www.nirsoft.net/utils/mailpv.html</licenseUrl>
     <projectUrl>http://www.nirsoft.net/utils/mailpv.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/mailpv.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@965ed565a8cccf8cf318b57dd3c849f258fd38f6/icons/mailpv.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Mail PassView is a small password-recovery tool that reveals the passwords and other account details for the following email clients:
 
