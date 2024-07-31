@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 import-module au
 $curDir	= "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $toolsDir = Join-Path $curDir "tools"
-$releases 	= 'https://sourceforge.net/projects/tigervnc/files/stable'
+$releases 	= 'https://sourceforge.net/projects/tigervnc/rss?path=/stable'
 $options 	=
 @{
   Headers = @{
@@ -47,9 +47,15 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "[0-9].[0-9]"} | Where-Object {$_.href -notmatch 'css'}).href[0].split('/')[-2]
-	$url32 = "https://sourceforge.net/projects/tigervnc/files/stable/$version/tigervnc-$version.exe/download"
-	$url64 = "https://sourceforge.net/projects/tigervnc/files/stable/$version/tigervnc64-$version.exe/download"
+	$File = "$env:TEMP\tigervnc.xml"
+	Invoke-WebRequest -Uri $releases -OutFile $File
+	$xml = Get-Content $File
+	$links=$xml | Where-Object {$_ -match '.exe/download'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
+	$url32 = Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match '.exe/download'})
+	$version = (Get-Version $url32).Version
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\tigervnc-$($version)-win.zip"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version; Options = $options }
 	return $Latest
