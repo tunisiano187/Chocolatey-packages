@@ -18,7 +18,7 @@ Optionally, you can also close one or more opened files, or close the process th
     <summary>View opened/locked files in your system (sharing violation issues)</summary>
     <copyright>© NirSoft</copyright>
     <tags>unlock files handle</tags>
-    <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/ofview</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ofview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
