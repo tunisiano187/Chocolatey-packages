@@ -90,7 +90,7 @@ install:
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { choco update $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
-      else { choco install $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
+      else { choco install -y $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
     }
     choco upgrade -y chocolatey
     rm "$env:ChocolateyInstall\logs\*.log"
