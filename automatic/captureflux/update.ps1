@@ -22,6 +22,9 @@ function global:au_GetLatest {
 	$url32 = "https://paulglagla.com/$($page.Links.href | Where-Object {$_ -match "zip$"} | Select-Object -First 1)"
 
 	$ExtractFolder = Join-Path $env:TEMP "Chocolatey/captureflux"
+	if(Test-Path $ExtractFolder) {
+		Remove-Item -Path $ExtractFolder -Recurse -Force
+	}
 	$File = Join-Path $env:TEMP $($url32.Split('/')[-1])
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	Expand-Archive -Path $File -DestinationPath $ExtractFolder
