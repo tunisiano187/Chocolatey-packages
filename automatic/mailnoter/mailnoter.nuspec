@@ -6,7 +6,7 @@
     <title>MailNoter</title>
     <authors>Stefan Kueng</authors>
     <owners>dtgm</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailnoter</packageSourceUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://stefanstools.sourceforge.net/MailNoter.html</projectUrl>
     <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/a52c1ec9a27dc25fecb35edb6e2e2b2c7f656ce2/icons/mailnoter.ico</iconUrl>
