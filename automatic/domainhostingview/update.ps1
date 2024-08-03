@@ -16,8 +16,8 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/domainhostingview.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/domainhostingview.zip"
-	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/domain_hosting_view.html"
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/domainhostingview.zip" -UseBasicParsing
+	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/domain_hosting_view.html" -UseBasicParsing
 	$regexPattern = 'DomainHostingView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value

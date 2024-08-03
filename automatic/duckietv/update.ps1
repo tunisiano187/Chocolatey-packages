@@ -29,7 +29,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-  $page = Invoke-WebRequest -Uri $releases
+  $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$tag = ($page.Links | Where-Object {$_.href -match "tag"} | Select-Object -First 2 -Skip 1).href.split('/')[-1]
   $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
