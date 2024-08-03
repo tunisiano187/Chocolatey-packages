@@ -44,5 +44,4 @@
         - upload/
     expire_in: 1 week
   tags:
-    - shared-windows
-    - windows
+    - saas-windows-medium-amd64
