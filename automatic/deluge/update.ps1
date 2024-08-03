@@ -22,7 +22,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $webpage = Invoke-WebRequest -Uri $releases
+    $webpage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$Files = $webpage.Links | Where-Object { $_.href -match '.exe$'} | Where-Object { $_.href -notmatch 'lt2'} | Select-Object -First 2
     $url32 = "$($release)$($Files.href | Where-Object {$_ -match "win32"})"
     $url64 = "$($release)$($Files.href | Where-Object {$_ -match "win64"})"

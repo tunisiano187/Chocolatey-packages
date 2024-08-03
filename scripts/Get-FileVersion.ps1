@@ -41,7 +41,7 @@ function Get-FileVersion {
         if($tempFile -match '\?') {
             $tempFile = $tempFile.Split('?')[0]
         }
-        Invoke-WebRequest -Uri $url -OutFile $tempFile
+        Invoke-WebRequest -Uri $url -OutFile $tempFile -UseBasicParsing
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
         }

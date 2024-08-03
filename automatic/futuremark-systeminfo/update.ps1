@@ -17,7 +17,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$pageContent = Invoke-WebRequest -Uri $releases
+	$pageContent = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$regexPattern = 'SystemInfo \s*(\d+(\.\d+)*)</h2>'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 

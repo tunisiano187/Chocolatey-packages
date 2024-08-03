@@ -18,14 +18,10 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $of = "$env:temp/eagle.exe"
-    Invoke-WebRequest -Uri $release -OutFile $of -UseBasicParsing
-
-	[Version]$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($of).ProductVersion.trim()
-    $checksumtype = $env:hash_algo
-    $checksum = Get-FileHash -Path $of -Algorithm $env:hash_algo
-
-	$Latest = @{ URL64 = $release; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumtype }
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion = Get-FileVersion $release
+    
+	$Latest = @{ URL64 = $release; Version = $FileVersion.Version; Checksum64 = $FileVersion.Checksum; ChecksumType64 = $FileVersion.ChecksumType }
     return $Latest
 }
 
