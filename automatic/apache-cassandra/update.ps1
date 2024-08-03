@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $url32 -UseBasicParsing
 	$url32 = ($page.Links | Where-Object {$_.href -match ".tar.gz$"} | Where-Object {$_.href -notmatch 'beta'} | Select-Object -First 1).href
 	$checksumType = ($checksumurl.split('.'))[-1]
-	$checksum = (Invoke-WebRequest -Uri $checksumurl).Content.trim()
+	$checksum = (Invoke-WebRequest -Uri $checksumurl -UseBasicParsing).Content.trim()
 	$version = $url32.split('/') | Where-Object {$_ -Match "[0-9].[0-9]"} | Where-Object {$_ -notmatch 'tar'}
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $checksumType }
