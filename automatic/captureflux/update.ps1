@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url32 = "https://paulglagla.com/$($page.Links.href | Where-Object {$_ -match "zip$"} | Select-Object -First 1)"
 
 	$ExtractFolder = Join-Path $env:TEMP "Chocolatey/captureflux"
@@ -26,7 +26,7 @@ function global:au_GetLatest {
 		Remove-Item -Path $ExtractFolder -Recurse -Force
 	}
 	$File = Join-Path $env:TEMP $($url32.Split('/')[-1])
-	Invoke-WebRequest -Uri $url32 -OutFile $File
+	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 	Expand-Archive -Path $File -DestinationPath $ExtractFolder
 	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 	$File = (Get-ChildItem -Path $ExtractFolder -Filter "*.exe").FullName
