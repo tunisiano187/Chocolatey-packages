@@ -196,3 +196,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+mailnoter
