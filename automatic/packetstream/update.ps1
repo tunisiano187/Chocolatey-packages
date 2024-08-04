@@ -29,9 +29,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "PacketStream.exe"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
+	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
 
-	$pageContent = Invoke-WebRequest -Uri "https://packetstream.software.informer.com/"
+	$pageContent = Invoke-WebRequest -Uri "https://packetstream.software.informer.com/" -UseBasicParsing
 	$regexPattern = 'PacketStream \s*(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 

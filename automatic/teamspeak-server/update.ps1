@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$urls = ($page.Links | Where-Object {$_ -match ".zip"} | Where-Object {$_ -match "win"}).href
 	$url32 = $urls | Where-Object {$_ -match "win32"}
 	$url64 = $urls | Where-Object {$_ -match "win64"}

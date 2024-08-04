@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
 	$url32 = "$domain$(($page.Links | Where-Object {$_.href -match '.exe$'}).href)"
 	. ..\..\scripts\Get-FileVersion.ps1

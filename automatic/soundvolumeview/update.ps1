@@ -20,8 +20,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/soundvolumeview.zip"
 	$url64 = "https://www.nirsoft.net/utils/soundvolumeview-x64.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/soundvolumeview.zip"
-	Invoke-WebRequest -Uri $url64 -OutFile "tools/soundvolumeview-x64.zip"
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/soundvolumeview.zip" -UseBasicParsing
+	Invoke-WebRequest -Uri $url64 -OutFile "tools/soundvolumeview-x64.zip" -UseBasicParsing
 	$Checksum32 = (Get-FileHash -Path "tools/soundvolumeview.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	$Checksum64 = (Get-FileHash -Path "tools/soundvolumeview-x64.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/sound_volume_view.html"

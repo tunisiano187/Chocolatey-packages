@@ -17,7 +17,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/sysexp_setup.exe"
-	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/sysexp.html"
+	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/sysexp.html" -UseBasicParsing
 	$regexPattern = 'SysExporter v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value

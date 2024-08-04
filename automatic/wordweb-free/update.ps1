@@ -18,13 +18,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$regexPattern = 'WordWeb (\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	$url32 = ($page.Links | Where-Object {$_.href -match ".exe$"}).href
 	$file = "tools/$($url32.split("/")[-1])"
-	Invoke-WebRequest -Uri $url32 -OutFile $file
+	Invoke-WebRequest -Uri $url32 -OutFile $file -UseBasicParsing
 	$checksum = (Get-FileHash -Path $file -Algorithm $env:ChocolateyChecksumType).Hash
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }

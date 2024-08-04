@@ -18,11 +18,11 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url = $page.Links.href | Where-Object {$_ -match "exe$"} | Select-Object -First 1
 	$File = Join-Path $PSScriptRoot "tools\trjsetup.exe"
 
-	Invoke-WebRequest -Uri $url -OutFile $File
+	Invoke-WebRequest -Uri $url -OutFile $File -UseBasicParsing
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.Trim()
 
 	$Latest = @{ URL32 = $url; Version = $version }

@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $page = (Invoke-WebRequest -Uri $releases).Content
+    $page = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
     $regex = 'dl\.php\?id=\d+'
     $matches = [regex]::Matches($page , $regex)
     if ($matches.Count -gt 0) {
@@ -27,7 +27,7 @@ function global:au_GetLatest {
     $url = Get-RedirectedUrl "https://xstreamloader.techweb.at/$($downloadUrl)"
     $File = (Join-Path $env:TEMP "chocolatey\$($url.Split('/')[-1])").Replace('.zip','.rar')
     $Folder = Join-Path $env:TEMP "chocolatey\streamloader\"
-    Invoke-WebRequest -Uri $url -OutFile $File
+    Invoke-WebRequest -Uri $url -OutFile $File -UseBasicParsing
     $parameter = @('x', "$File", "-o$Folder", "-y")
     7z @parameter
     $File = Join-Path $Folder "X-StreamLoader.exe"

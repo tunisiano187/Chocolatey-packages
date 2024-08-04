@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $page = Invoke-WebRequest -Uri $releases
+    $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $url32 = $page.Links.href | Where-Object {$_ -match '.win32.zip$'} | Select-Object -First 1
     $url64 = $page.Links.href | Where-Object {$_ -match '.win64.zip$'} | Select-Object -First 1
     $bugtracker = "https://www.mersenne.org/download/$($page.Links.href | Where-Object {$_ -match 'whatsnew'} | Select-Object -First 1)"

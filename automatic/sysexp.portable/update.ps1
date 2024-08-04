@@ -19,8 +19,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/sysexp.zip"
 	$url64 = "https://www.nirsoft.net/utils/soundvolumeview-x64.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/sysexp.zip"
-	Invoke-WebRequest -Uri $url64 -OutFile "tools/sysexp-x64.zip"
+	Invoke-WebRequest -Uri $url32 -OutFile "tools/sysexp.zip" -UseBasicParsing
+	Invoke-WebRequest -Uri $url64 -OutFile "tools/sysexp-x64.zip" -UseBasicParsing
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/sysexp.html"
 	$regexPattern = 'SysExporter v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches

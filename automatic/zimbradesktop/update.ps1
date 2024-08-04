@@ -18,11 +18,11 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$release = ((Invoke-WebRequest -Uri $releases).Links | Where-Object {$_.href -match ".exe"}).href
+	$release = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".exe"}).href
     $url32 = $release | Where-Object {$_ -match "exe$"}
     $ChecksumType = ($release | Where-Object {$_ -match "sha"}).split('.')[-1]
     $File = Join-Path $env:TEMP "chocolatey/zimbra-desktop.$($ChecksumType)"
-    Invoke-WebRequest -Uri ($release | Where-Object {$_ -match "sha"}) -OutFile $File
+    Invoke-WebRequest -Uri ($release | Where-Object {$_ -match "sha"}) -OutFile $File -UseBasicParsing
     $Checksum = (Get-Content $File).Split(' ')[0]
 
     $version=Get-Version $url32
