@@ -50,7 +50,7 @@ GM7 03/06/12
     <summary>PJ Crossley's remake of the classic Donkey Kong game.</summary>
     <copyright>PJ Crossley</copyright>
     <tags>pjcrossley donkey kong donkeykong retro game portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/donkeykong</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/donkeykong</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
