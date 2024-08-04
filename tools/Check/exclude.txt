@@ -107,6 +107,7 @@ librecrypt
 lili
 logitech-media-server
 luckybackup
+mailnoter
 ManuelBastioniLAB
 md5sums
 meson
@@ -196,4 +197,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-mailnoter
