@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://www.autodesk.com/eagle-download-win'
@@ -20,7 +20,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     . ..\..\scripts\Get-FileVersion.ps1
     $FileVersion = Get-FileVersion $release
-    
+
 	$Latest = @{ URL64 = $release; Version = $FileVersion.Version; Checksum64 = $FileVersion.Checksum; ChecksumType64 = $FileVersion.ChecksumType }
     return $Latest
 }
