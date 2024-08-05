@@ -6,16 +6,16 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-link32: https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc-1.13.1.exe/download
-link64: https://sourceforge.net/projects/tigervnc/files/stable/1.13.1/tigervnc64-1.13.1.exe/download
+link32: https://netactuate.dl.sourceforge.net/project/tigervnc/stable/1.14.0/tigervnc-1.14.0.exe?viasf=1
+link64: https://pilotfiber.dl.sourceforge.net/project/tigervnc/stable/1.14.0/tigervnc64-1.14.0.exe?viasf=1
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksumtype: SHA256
-checksum32: 60E7E26FA996BE70156747941D7FB92D116D1CCC442614192BB96DF20CA599E6
-checksum64: 536CA6BCF77C8EE3FBFFE294A25269BB9D1D26B038BDB682FD3161E6C7FDA3F3
+checksumtype: sha256
+checksum32: BB1FD4888C9E1D29213F9883910862D16C87B0D4820BF634B332788487A91D02
+checksum64: System.Collections.Hashtable
 
 The included 'LICENSE.txt' file have been obtained from:
 license: https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
