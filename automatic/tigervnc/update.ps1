@@ -41,7 +41,7 @@ function global:au_GetLatest {
 	Move-Item -Path $FileVersion.TempFile -Destination "tools\tigervnc.exe"
 	$FileVersion64 = Get-FileVersion $url64 -keep
 	Move-Item -Path $FileVersion64.TempFile -Destination "tools\tigervnc64.exe"
-	
+
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Checksum64 = $FileVersion64; ChecksumType64 = $FileVersion64.ChecksumType64 }
 	return $Latest
 }
