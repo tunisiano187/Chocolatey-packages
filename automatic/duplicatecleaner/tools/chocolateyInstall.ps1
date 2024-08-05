@@ -1,7 +1,7 @@
 ﻿$packageName        = $env:ChocolateyPackageName
 $silentArgs         = "/quiet /qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
 $url                = 'https://www.digitalvolcano.co.uk/download/DuplicateCleaner-Setup-5.msi'
-$checksum           = 'c95a74e8fbd4a941496e9b87d553c4ace75585307b5a9a76fe43bc8f9622dc10'
+$checksum           = 'a094b8832205a8959d423b08cdfbc67fbbb0dffd04913be54f47b78c7f70ec4e'
 $checksumType       = 'sha256'
 $validExitCodes     = @(0)
 
