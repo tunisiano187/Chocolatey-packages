@@ -19,15 +19,10 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	choco update -y autohotkey
-	Write-Output 'Check Folder'
-	$File = "$($env:Temp)\Filejuggler.exe"
-	Write-Output 'Download'
-	Invoke-WebRequest -Uri $release -OutFile $File
-	[version]$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).ProductVersion
-	Write-Output "Version : $version"
-	$url32 = $release
-	$Latest = @{ URL32 = $url32; Version = $version }
+	. ..\..\Scripts\Get-FileVersion.ps1
+	$FileInfos = Get-FileVersion -url $release
+	$Latest = @{ URL32 = $release; Checksum32 = $FileInfos.Checksum32; ChecksumType32 = $FileInfos.ChecksumType32; Version = $FileInfos.Version }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
