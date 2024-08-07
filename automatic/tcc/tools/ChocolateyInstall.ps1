@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = 'tcc'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url         = "$toolsDir\tcc.exe"
@@ -11,6 +11,6 @@ $packageArgs = @{
   silentArgs   = '/quiet'
   softwareName = "TCC $MajorVer"
   }
-  
+
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item $url -Force -ErrorAction SilentlyContinue | Out-Null
