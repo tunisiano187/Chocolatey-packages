@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://jpsoft.com/license.html</licenseUrl>
     <projectUrl>https://jpsoft.com/products/tcc-cmd-prompt.html</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/tcc/tcc_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4f343ed841f51a0b7497895b8beb62a324aa1194/icons/tcc.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
