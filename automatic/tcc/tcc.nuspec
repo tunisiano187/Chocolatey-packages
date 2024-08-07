@@ -45,7 +45,7 @@ ___</description>
     <releaseNotes>https://jpsoft.com/help/whats-new-in-version-25.htm</releaseNotes>
     <copyright>Copyright © Rex Conn and JP Software Inc.</copyright>
     <tags>jpsoft tcc tccle 4nt cmd command prompt cli trial binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tcc</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tcc</packageSourceUrl>
     <docsUrl>https://jpsoft.com/help/tcc.htm</docsUrl>
     <mailingListUrl>https://jpsoft.com/forums/</mailingListUrl>
   </metadata>
