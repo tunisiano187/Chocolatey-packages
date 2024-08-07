@@ -50,6 +50,7 @@ ___</description>
     <mailingListUrl>https://jpsoft.com/forums/</mailingListUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

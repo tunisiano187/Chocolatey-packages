@@ -23,6 +23,7 @@ function Get-FileVersion {
         [string]$url,
         [string]$File,
         [string]$checksumType = "SHA512",
+        [string]$useragent = "Chocolatey",
         [switch]$keep
     )
     if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
@@ -41,7 +42,7 @@ function Get-FileVersion {
         if($tempFile -match '\?') {
             $tempFile = $tempFile.Split('?')[0]
         }
-        Invoke-WebRequest -Uri $url -OutFile $tempFile -UseBasicParsing
+        Invoke-WebRequest -Uri $url -OutFile $tempFile -UserAgent $useragent -UseBasicParsing
         try {
             [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
         }
