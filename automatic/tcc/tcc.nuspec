@@ -5,7 +5,7 @@
     <version>25.0.20.0</version>
     <title>Take Command Console (Trial) (Install)</title>
     <authors>JP Software</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>http://jpsoft.com/license.html</licenseUrl>
     <projectUrl>https://jpsoft.com/products/tcc-cmd-prompt.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/tcc/tcc_icon.png</iconUrl>
