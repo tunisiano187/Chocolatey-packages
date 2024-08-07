@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
-$url = 'https://github.com/snes9xgit/snes9x/releases/download/1.62.3/snes9x-1.62.3-win32.zip'
-$checksum = '70e520d81e2f92ee77070e3b8c61ffec42e7dee7f49bea40c8ae5e83fa934e66'
+$url = 'https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-win32.zip'
+$checksum = '71b364acfc9377b3d94bcdd7f7cfafe7f26b94ba44f9024b72adc9d7b9dbf275'
 $checksumType = 'sha256'
-$url64 = 'https://github.com/snes9xgit/snes9x/releases/download/1.62.3/snes9x-1.62.3-win32-x64.zip'
-$checksum64 = 'a681e000c2b215878bd55151c8633d24beb423d10b45bb7dcd9e522fbeb4ea2a'
+$url64 = 'https://github.com/snes9xgit/snes9x/releases/download/1.63/snes9x-1.63-win32-x64.zip'
+$checksum64 = 'e2bd103819051eae57d163cdbbf6b3b92db73fdd4a6a0ee6a939e507eaa95db8'
 $checksumType64 = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 

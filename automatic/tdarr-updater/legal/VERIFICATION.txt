@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from the GitHub mirror and can be verified like this:
+
+1. Download the following installer(s):
+
+x86: https://f000.backblazeb2.com/file/tdarrs/versions/2.17.01/win32_x64/Tdarr_Updater.zip
+
+2. You can use one of the following methods to obtain the checksum(s):
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+checksum type: sha256
+checksum: B35A906C2005A5BCA5A04871296E85CA1FF42F7BBD32187EAE3285E61927A19E
+
+The license is available here:
+https://home.tdarr.io/eula

@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>paraview</id>
-    <version>5.1</version>
+    <version>5.13</version>
     <title>paraview (Install)</title>
     <authors>Kitware, Inc.</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.paraview.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6ebb09cea741de4128a8ce883505091404205e1c/icons/paraview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@48eae6e8a7f9c9f6d8922d1c5e1700c3f1188f10/icons/paraview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.paraview.org/resources/</docsUrl>
 	  <licenseUrl>https://www.paraview.org/license/</licenseUrl>

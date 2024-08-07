@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>nteract.install</id>
+    <version>0.28.0</version>
+    <title>nteract (Install)</title>
+    <authors>nteract contributors</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://github.com/nteract/nteract/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://nteract.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ebd68a75f4c7c2caafc871e27fefd737cae44614/icons/nteract.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## nteract (Install)
+nteract is a literate coding environment that supports Python, R, JavaScript and other Jupyter kernels. 
+It wraps up the best of the web based Jupyter notebook and embeds it as a desktop application that allows
+you to open notebooks natively on your system.
+
+Use either with Python v2 or Python v3, standalone or within Anaconda/Miniconda distributions. This package 
+also tries to enable the default IPython kernel for your system:
+
+ * `python -m pip install ipykernel` or `conda install ipykernel`
+ * `python -m ipykernel install --user`
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>nteract is a desktop application that allows you to develop rich documents that contain prose, executable code (in almost any language!), and images. Whether you're a developer, data scientist, researcher, or journalist, nteract helps you write your next code-driven story.</summary>
+    <releaseNotes>#### Software
+https://github.com/nteract/nteract/releases/
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nteract.install</packageSourceUrl>
+    <copyright>(c) 2017 nteract</copyright>
+    <tags>nteract python jupyter notebook scientific numerical computation data analysis analytics statistics visualization plot graph chart admin foss</tags>
+    <projectSourceUrl>https://github.com/nteract/nteract</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/nteract/nteract/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

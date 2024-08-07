@@ -20,7 +20,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
-	$url64 = "https://download.kde.org/stable/digikam/$($version)/digiKam-$($version)-Win64.exe"
+	$url64 = ((Invoke-WebRequest -Uri "$($releases)$($version)/" -UseBasicParsing).Links | Where-Object {$_.href -match 'Qt6-Win64.exe'}).href | Select-Object -First 1
+	$url64 = "$($releases)$($version)/$($url64)"
 
 	$Latest = @{ URL64 = $url64; Version = $version }
 	return $Latest

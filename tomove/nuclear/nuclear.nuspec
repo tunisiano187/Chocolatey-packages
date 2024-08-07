@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>nuclear</id>
+    <version>0.6.30.20231220</version>
+    <title>Nuclear</title>
+    <authors>https://github.com/nukeop/nuclear/graphs/contributors</authors>
+    <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/nukeop/nuclear/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://nuclear.js.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ce4f0721fbf4d0fbb23009e9167463a26beca37a/icons/nuclear.png</iconUrl>
+    <description>nuclear is a free music streaming program that pulls content from free sources all over the internet.
+
+If you know [mps-youtube](https://github.com/mps-youtube/mps-youtube), this is a similar music player but with a GUI.
+It's also focusing more on audio. Imagine Spotify which you don't have to pay for and with a bigger library.
+
+## Features
+
+- Searching for and playing music from youtube (including integration with playlists), bandcamp (including albums), and soundcloud
+- Searching for related songs in youtube
+- Downloading from youtube
+- Searching for albums (powered by last.fm and musicbrainz), album view, automatic song lookup based on artist and track name (in progress, can be dodgy sometimes)
+- Song queue, which can be exported as a playlist
+- Loading saved playlists (stored in json files)
+- Scrobbling to last.fm (along with updating the 'now playing' status)
+- Newest releases with reviews - tracks and albums
+- Browsing by genre
+
+## Community
+
+- [Mastodon](https://mstdn.io/@nuclear)
+- [Twitter](https://twitter.com/nuclear_player)</description>
+    <summary>Nuclear is a free music streaming program that pulls content from free sources all over the internet.</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://github.com/nukeop/nuclear/releases)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/tunisiano/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+    <copyright></copyright>
+    <tags>nuclear music-player electron stream youtube music windows streaming admin</tags>
+    <projectSourceUrl>https://github.com/nukeop/nuclear</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nuclear</packageSourceUrl>
+    <docsUrl>https://nukeop.gitbook.io/nuclear/</docsUrl>
+    <mailingListUrl>https://twitter.com/nuclear_player</mailingListUrl>
+    <bugTrackerUrl>https://github.com/nukeop/nuclear/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

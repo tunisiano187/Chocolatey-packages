@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>drivergenius</id>
+    <version>19.0.0.145</version>
+    <title>Driver Genius</title>
+    <authors>Driver-Soft Inc</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.driver-soft.com/license.html</licenseUrl>
+    <projectUrl>https://www.driver-soft.com/product.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9b8a8de748990fc78bb9dbf1f2da32e3096308bd/icons/drivergenius.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Driver Genius is a professional driver management tool that features both driver management and hardware diagnostics.
+
+#### Features
+* Find the latest drivers for your computer. One click to update all drivers silently.
+* Automatically check for driver updates, make your drivers are always up to date.
+* Quickly backup all drivers in your computer. Free to backup all drivers now!
+* Package all drivers to an executable auto installer. One click to restore all drivers.
+* Remove invalid or useless drivers, improve system performance and stability.
+* New system information tool. Detailed hardware inventory.
+* Hardware temperature monitor. Protect your CPU, GPU and HDD.
+
+#### Documentation
+* [FAQ](http://www.driver-soft.com/faq.html)
+* [Driver database](http://www.driver-soft.com/drivers.html)
+
+#### Commercial software
+This package installs the Free version. [Additional features](http://www.driver-soft.com/order.html) may be acquired by purchasing a license.</description>
+    <summary>Professional driver management tool and hardware diagnostics</summary>
+    <releaseNotes>https://www.driver-soft.com/download.html</releaseNotes>
+    <copyright>© 2002 Driver-Soft Inc</copyright>
+    <tags>freeware driver manager admin</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/drivergenius</packageSourceUrl>
+    <docsUrl>https://www.driver-soft.com/userguide.html</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

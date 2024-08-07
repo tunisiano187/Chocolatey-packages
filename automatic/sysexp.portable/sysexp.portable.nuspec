@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>sysexp.portable</id>
+    <version>1.77</version>
+    <title>SysExporter (Portable)</title>
+    <authors>Nir Sofer</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.nirsoft.net/utils/sysexp.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/sysexp.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@906e3aa8b733c5e01597060b8d5f2b1432d97378/icons/sysexp.portable.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## SysExporter (Portable)
+
+SysExporter utility allows you to grab the data stored in standard list-views, tree-views, list boxes, combo boxes, text-boxes, and WebBrowser/HTML controls from
+almost any application running on your system, and export it to text, HTML or XML file.
+
+Here's some examples for data that you can export with SysExporter:
+
+* The files list inside archive file (.zip, .rar, and so on) as displayed by WinZip or 7-Zip File Manager. 
+* The files list inside a folder.
+* The event log of Windows.
+* The list of emails and contacts in Outlook Express. 
+* The Registry values displayed in the right pane of the Registry Editor.
+* The data displayed by SysInternals utilities (Registry Monitor, File Monitor, Process Explorer, and others.) 
+* The text inside a standard message-box of Windows.
+* The HTML inside any instance of Internet Explorer.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Grab data from list-view, tree-view, combo box, WebBrowser control, and text-box.</summary>
+    <releaseNotes>https://www.nirsoft.net/utils/sysexp.html</releaseNotes>
+    <copyright>© 2003 NirSoft</copyright>
+    <tags>data visualizer lists</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sysexp.portable</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

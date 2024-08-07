@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>datacrow</id>
+    <version>4.1.1</version>
+    <title>Data Crow</title>
+    <authors>Robert Jan van der Waals</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <projectUrl>http://www.datacrow.net/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/datacrow.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Data Crow is the ultimate media cataloger and media organiser. Always wanted to manage all your collections in one product? You want a product you can customize to your needs? Your search ends here! Using Data Crow allows you to create a huge database containing all your collectables. You can use the excellent online services to retrieve the information instead of typing all the information yourself. Data Crow has a modular setup allowing it to be extended with user created collection modules.
+
+Data Crow allows you use the standard movie and video (divx, xvid, DVD, Blu-ray, etc), book (and eBooks), images, games and software, music (mp3 and other music files) cataloging modules. Beside these module (which you can change to fit your requirements) you can create new modules (want to catalogue your stamps, equipment, or anything else?).
+The GUI is skinnable.
+
+Data Crow allows you find information on your items through services such as Amazon, Imdb.com , Sourceforge.net , Softpedia, Ofdb, MusicBrainz and many others.
+
+Reporting (based on XLST stylesheets and graphs), loan administration, item importing and exporting, backup and restore, web service and many other optional features are waiting for you.
+
+[Screenshots](http://www.datacrow.net/#screenshots)
+[FAQ](http://www.datacrow.net/#faq)</description>
+    <summary>Ultimate media cataloger and media organiser</summary>
+    <releaseNotes>#### Program
+* [News](http://www.datacrow.net/#news)
+* [Roadmap](http://www.datacrow.net/#roadmap)
+* [Changelog](http://www.datacrow.net/changelog.txt)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)</releaseNotes>
+    <copyright>© Robert Jan van der Waals</copyright>
+    <tags>inventory collection organizer library catalog admin</tags>
+    <projectSourceUrl>http://sourceforge.net/p/datacrow/code/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/datacrow</packageSourceUrl>
+    <docsUrl>http://datacrow.cvs.sourceforge.net/viewvc/datacrow/documentation/</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/datacrow/discussion/</mailingListUrl>
+    <bugTrackerUrl>http://sourceforge.net/p/datacrow/_list/tickets</bugTrackerUrl>
+    <dependencies>
+      <dependency id="javaruntime" version="7.0" />
+      <dependency id="chocolatey-fosshub.extension" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

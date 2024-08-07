@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>searchmyfiles</id>
+    <version>3.25.0</version>
+    <title>SearchMyFiles</title>
+    <authors>Nir Sofer</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.nirsoft.net/utils/search_my_files.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/search_my_files.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a555b64c625fd943b1491eaf849f4fc86dda6409/icons/searchmyfiles.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## SearchMyFiles
+SearchMyFiles is an alternative to the standard "Search For Files And Folders" module of Windows.
+
+It allows you to easily search files in your system by wildcard, by last modified/created/last accessed time, by file attributes, by file content (text or binary search), and by the file size.
+
+SearchMyFiles allows you to make a very accurate search that cannot be done with Windows search. For Example: You can search all files created in the last 10 minutes with size between 500 and 700 bytes.
+
+After you made a search, you can select one or more files, and save the list into text/html/csv/xml file, or copy the list to the clipboard.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Alternative to Windows Search For Files + Duplicates Search</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+    <copyright>© 2009 NirSoft</copyright>
+    <tags>files folders wildcard duplicate</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/searchmyfiles</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\*.zip" target="tools" />
+    <file src="tools\*.ps1" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

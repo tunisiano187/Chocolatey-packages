@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>mweather.portable</id>
+    <version>1.78</version>
+    <title>MetarWeather (Portable)</title>
+    <authors>Nir Sofer</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/mweather.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/mweather.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53ccf04e0621fce53cfb96004ffcd1d080ad2155/icons/mweather.portable.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## MetarWeather (Portable)
+The MetarWeather utility decodes METAR weather reports from around the world, 
+and displays them in a simple weather report table.
+
+You can save the weather report into text, HTML or XML files.
+
+MetarWeather can decode METAR reports from a text file, or download the latest
+reports directly from the Internet.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>decode METAR world weather reports</summary>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+    <copyright>© 2003 NirSoft</copyright>
+    <tags>decoder decode weather report stations world html xml freeware</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mweather.portable</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

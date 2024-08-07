@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>faceit</id>
-    <version>1.33.0</version>
+    <version>2.0.14</version>
     <title>Faceit</title>
     <authors>Faceit</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://www.faceit.com/en/fit/terms</licenseUrl>
+    <licenseUrl>https://corporate.faceit.com/terms-conditions/</licenseUrl>
     <projectUrl>https://www.faceit.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/faceit.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1a61d726b0254763c0a9630d2a71f885d9b6c5fd/icons/faceit.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description><![CDATA[## FaceIt
 With Faceit Client you can easily join Faceit servers.

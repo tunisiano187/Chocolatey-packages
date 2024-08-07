@@ -1,0 +1,23 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download
+location on <https://www.osforensics.com/tools/mount-disk-images.html>
+and can be verified by doing the following:
+
+1. Download the following:
+
+  x86: https://www.osforensics.com/downloads/osfmount.exe
+
+  2. You can obtain the checksum using one of the following methods:
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+
+  checksumtype: sha256
+  checksum: 9FE0738B7C2D29A7414E67F53AEA359F3801D1C37B44F1B4FED5D02CB7536369
+
+Using AU:
+
+  Get-RemoteChecksum

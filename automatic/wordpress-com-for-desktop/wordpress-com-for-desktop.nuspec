@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wordpress-com-for-desktop</id>
+    <version>6.15.0</version>
+    <title>WordPress.com Desktop (Calypso)</title>
+    <authors>Automattic Inc.</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://github.com/Automattic/wp-calypso/blob/trunk/LICENSE.md</licenseUrl>
+    <projectUrl>https://developer.wordpress.com/calypso/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6eda178b3ed3e4e4755f6be97d3f94c05f6c4397/icons/wordpress-com-for-desktop.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>## Features
+* A control panel for all your WordPress sites
+* Focus on your content
+* Speed is a feature
+* Not one size fits all</description>
+    <summary>A desktop app that gives WordPress a permanent home in your taskbar.</summary>
+    <releaseNotes>https://github.com/Automattic/wp-calypso/releases</releaseNotes>
+    <copyright>© Automattic Inc.</copyright>
+    <tags>admin electron wordpress blog editor</tags>
+    <projectSourceUrl>https://github.com/Automattic/wp-calypso</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wordpress-com-for-desktop</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/Automattic/wp-calypso/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

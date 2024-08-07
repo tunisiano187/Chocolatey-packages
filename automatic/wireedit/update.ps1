@@ -17,7 +17,8 @@ function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 function global:au_GetLatest {
-	$url32="https://omnipacket.com/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.msi'} | Where-Object {$_ -match 'WireEdit'}).href)"
+    . ../../scripts/Get-UserAgent.ps1
+	$url32="https://omnipacket.com/$(((Invoke-WebRequest -Uri $releases -UserAgent "$(Get-UserAgent)" -UseBasicParsing).Links | Where-Object {$_ -match '.msi'} | Where-Object {$_ -match 'WireEdit'}).href)"
 
     $version = $url32.Split("-")[-1].replace('.msi','')
 
@@ -26,4 +27,9 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor 32
+try {
+    update -ChecksumFor 32
+} catch {
+    $ignore = "Unable to connect to the remote server"
+    if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
+}

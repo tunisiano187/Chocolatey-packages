@@ -51,9 +51,7 @@
 | eclipse-classic-juno | 
 | gifsicle | 
 | aaclr | 
-| aaclr | 
 | mactype | 
-| /packages/binance/1.40.0 | 
-| /packages/keepass-plugin-webautotype/6.8.2 | 
-| /packages/keepass-plugin-webautotype/6.8.2 | 
-| /packages/keepass-plugin-webautotype/6.8.2 /packages/binance/1.41.0 | 
+| keepass-plugin-webautotype |
+| binance | 
+| airshipper | 

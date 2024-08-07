@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>zimbradesktop</id>
+    <version>4.38.0</version>
+    <title>Zimbra Desktop</title>
+    <authors>Zimbra Inc</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.zimbra.com/product/licenses-and-terms-of-use/</licenseUrl>
+    <projectUrl>https://www.zimbra.com/zimbra-desktop-download/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c1b26c605a64153d8f186f9fe68085242e308a1f/icons/zimbradesktop.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Zimbra Desktop
+Zimbra Desktop client lets you manage your various email accounts in one desktop tool. You can store and synch your email, calendar, contacts, files and documents between the servers and your computer, making them locally accessible when working off line. When you re-connect, all your data automatically syncs between the servers and your computer. Zimbra mail, Yahoo! mail, Gmail, Microsoft Outlook and any other work or personal email account that uses POP or IMAP can be set up in Zimbra Desktop. Each account is separately maintained. When you receive new email messages in any of your accounts, and you have Internet access, the messages are automatically downloaded to your Zimbra Desktop.
+
+The installer package has the following components:
+
+* Zimbra Desktop application
+* A built-in web interface
+* A mini Zimbra server
+* Java framework
+
+Zimbra Desktop supports the following account types:
+
+* Zimbra (for use with Zimbra Collaboration Suite or Zimbra Appliance)
+* Gmail
+* Yahoo! Mail
+* Microsoft Exchange (via IMAP)
+* Other email services using POP3 or IMAP4 access
+
+[Forum](https://forums.zimbra.org/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Open source desktop project management</summary>
+    <releaseNotes>#### Program
+* [Release notes]()
+* [Roadmap](https://pm.zimbra.com/)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+    <copyright>© Zimbra Inc</copyright>
+    <tags>collaboration task schedule admin</tags>
+    <projectSourceUrl>https://wiki.zimbra.com/wiki/Building_Zimbra_using_Git</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/zimbradesktop</packageSourceUrl>
+    <bugTrackerUrl>https://bugzilla.zimbra.com/describecomponents.cgi?product=ZD</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

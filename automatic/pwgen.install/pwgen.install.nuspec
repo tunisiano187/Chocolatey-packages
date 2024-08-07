@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>pwgen.install</id>
-    <version>3.5.4</version>
+    <version>3.5.5</version>
     <title>PWGen (Install)</title>
     <authors>Christian Thoeing</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://pwgen-win.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f8e96804cb48990b337280eec62b5027577b649/icons/pwgen.install.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c4d7d241131862850debf2f87429beeb1ea6e189/icons/pwgen.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## pwgen.install
 PWGen is a professional password generator capable of creating large amounts of cryptographically-secure passwords

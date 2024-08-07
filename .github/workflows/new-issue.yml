@@ -1,0 +1,19 @@
+﻿name: Get new package
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  CheckpackageRequest:
+    runs-on: windows-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2.2.0
+      - name: Get new package
+        run: |
+          Import-Module "${{ github.workspace }}\scripts\new.psm1"
+          Set-Location ${{ github.workspace }}
+          Find-nextissueGH -packageName "${{ github.event.issue.title }}" -actor "${{ github.event.issue.user.login }}"

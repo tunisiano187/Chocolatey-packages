@@ -9,7 +9,7 @@
     <licenseUrl>http://www.perforce.com/downloads/terms-use</licenseUrl>
     <projectUrl>http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/devbox-p4merge</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/devbox-p4merge.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@83a28f14024eb3d7bd3564fa48beec0f647c2d05/icons/devbox-p4merge.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Devbox-P4Merge
 Devbox-P4merge superseeds P4Merge

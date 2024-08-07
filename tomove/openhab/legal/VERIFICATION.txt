@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from the GitHub mirror and can be verified like this:
+
+1. Download the following installer(s):
+
+x86: https://github.com/openhab/openhab-distro/releases/download/4.2.0.M4/openhab-4.2.0.M4.zip
+
+2. You can use one of the following methods to obtain the checksum(s):
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+checksumtype: sha256
+checksum: 4D63A6E3E82A74C318C8840F10D305D1CE04357610A4A6E464EF129DF8CB4E61
+
+The license is available here:
+https://github.com/openhab/openhab-distro/blob/master/LICENSE

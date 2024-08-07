@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>pinode</id>
-	<version>0.4.5</version>
+	<version>0.4.11.2024042801</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pinode</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/pinode.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0b5a8f94de3b943557dad3b2979127dd1a1cfdbd/icons/pinode.png</iconUrl>
 	<title>PiNode</title>
 	<authors>SocialChain Inc.</authors>
 	<projectUrl>https://minepi.com/</projectUrl>
@@ -31,7 +31,7 @@ https://minepi.com/#download
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
 	<dependencies>
-	  <dependency id="vcredist2017" version="14.16.27027.20190415" />
+	  <dependency id="vcredist2017" version="[14.16.27027.20190415,)" />
     </dependencies>
   </metadata>
   <files>

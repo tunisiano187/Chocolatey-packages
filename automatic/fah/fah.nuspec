@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fah</id>
-    <version>7.6.20</version>
+    <version>8.3.11</version>
     <title>Folding@home</title>
     <authors>Pande Lab</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://foldingathome.org/support/faq/opensource/</licenseUrl>
     <projectUrl>https://foldingathome.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/fah.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4efd362a31fda5a574728747348f295c2469bedf/icons/fah.png</iconUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fah</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## foldingathome
@@ -34,11 +34,11 @@ This program does not slow your computer down and only uses unused computer powe
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Distributed computing project to understand protein folding</summary>
     <releaseNotes>#### Program
-* [News](http://folding.stanford.edu/home/blog)
+* [News](https://github.com/FoldingAtHome/fah-client-bastet/discussions)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

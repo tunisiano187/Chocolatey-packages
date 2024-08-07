@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $release = 'https://www.autodesk.com/eagle-download-win'
@@ -13,13 +13,16 @@ function global:au_SearchReplace {
      }
 }
 
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
+
 function global:au_GetLatest {
-    Invoke-WebRequest -Uri $url -OutFile "$env:temp/eagle.exe" -UseBasicParsing
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion = Get-FileVersion $release
 
-	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$env:temp/eagle.exe").ProductVersion
-
-	$Latest = @{ URL64 = $release; Version = $version }
+	$Latest = @{ URL64 = $release; Version = $FileVersion.Version; Checksum64 = $FileVersion.Checksum; ChecksumType64 = $FileVersion.ChecksumType }
     return $Latest
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none -NoCheckUrl

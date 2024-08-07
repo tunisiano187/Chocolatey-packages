@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from the GitHub mirror and can be verified like this:
+
+1. Download the following installer(s):
+
+x86: https://pilotfiber.dl.sourceforge.net/project/eduactiv8/Windows/eduactiv8-4.21.07.win.zip?viasf=1
+
+2. You can use one of the following methods to obtain the checksum(s):
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+checksum type: sha256
+checksum: 40CFDA726CF2A11A4E1EE533A182395A91D72102F36E999BF85BBA56C279B0E1
+
+The license is available here:
+https://github.com/imiolek-ireneusz/eduActiv8/blob/master/LICENSE

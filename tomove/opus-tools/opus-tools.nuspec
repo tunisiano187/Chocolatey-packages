@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>opus-tools</id>
+    <title>Opus Tools</title>
+    <version>0.2.0.20221010</version>
+    <authors>Mozilla,Xiph.Org</authors>
+    <owners>tunisiano</owners>
+    <summary>Command-line utilities to encode, inspect, and decode .opus files</summary>
+    <description><![CDATA[## Opus-tools
+Opus is a totally open, royalty-free, highly versatile audio codec. Opus is unmatched for interactive
+speech and music transmission over the Internet, but is also intended for storage and streaming
+applications. It is standardized by the Internet Engineering Task Force (IETF) as RFC 6716 which
+incorporated technology from Skype's SILK codec and Xiph.Org's CELT codec.
+
+[FAQ](https://wiki.xiph.org/OpusFAQ)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/opus-tools</packageSourceUrl>
+    <projectUrl>http://www.opus-codec.org/</projectUrl>
+    <projectSourceUrl>https://github.com/xiph/opus-tools</projectSourceUrl>
+    <tags>audio codec speech cli</tags>
+    <copyright>© Opus</copyright>
+    <licenseUrl>https://www.opus-codec.org/license/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/opus-tools.svg</iconUrl>
+    <releaseNotes>#### Software
+[What's New](https://www.opus-codec.org/downloads/)
+[Changelog](https://github.com/xiph/opus-tools/releases)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" exclude="tools/*.zip" />
+  </files>
+</package>

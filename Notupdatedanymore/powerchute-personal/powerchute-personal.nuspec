@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+	<id>powerchute-personal</id>
+	<version>3.1.0</version>
+	<owners>tunisiano</owners>
+	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powerchute-personal</packageSourceUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/powerchute-personal.png</iconUrl>
+	<title>PowerChute Personal Edition</title>
+	<authors>APC Schneider</authors>
+	<projectUrl>https://www.apc.com/shop/us/en/categories/power/uninterruptible-power-supply-ups-/ups-management/powerchute-personal-edition/N-1b6nbpp</projectUrl>
+	<copyright>APC, Inc.</copyright>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<docsUrl>https://www.apc.com/us/en/download/range/61934-PowerChute+Personal+Edition/doc-group-type/10574147182-User+Guides/?appSource=APC</docsUrl>
+	<tags>powerchute APC power supply ups admin</tags>
+	<summary>power and energy management features for home computers and battery backups..</summary>
+	<description><![CDATA[## Powerchute personal edition
+Easy-to-use, safe system shutdown software with power and energy management features for home 
+computers and battery backups.   
+
+PowerChute Personal Edition software provides safe system shutdown in the event of an extended 
+power outage or computer power problem, preventing potential data corruption. Designed for 
+exceptional usability, it provides first-time users with optimal PC power protection based on 
+APC industry-leading power management expertise. Users also have the option to tailor 
+PowerChute settings for their individual circumstances. Energy cost and CO2 monitoring provides 
+users with a greater understanding of the energy consumed by protected equipment and energy plans 
+enable cost savings. Note: Features vary by Back-UPS model and by operating system.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+	<releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+   </files>
+</package>
+

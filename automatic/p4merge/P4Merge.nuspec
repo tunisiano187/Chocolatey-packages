@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>p4merge</id>
-	<version>2023.4</version>
+	<version>2024.2</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/p4merge</packageSourceUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/p4merge.png</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a900da85b5ae92a06009fb5b35b3253720ca2206/icons/p4merge.png</iconUrl>
 	<title>P4Merge, the Perforce Visual Merge Tool</title>
 	<authors>Perforce Software, Inc.</authors>
 	<projectUrl>https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge</projectUrl>

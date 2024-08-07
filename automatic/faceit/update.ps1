@@ -1,5 +1,6 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
+. ..\..\scripts\Get-FileVersion.ps1
 
 $release = 'https://faceit-client.faceit-cdn.net/release/FACEIT-setup-latest.exe'
 
@@ -18,12 +19,10 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "FACEIT-setup-latest.exe"
-	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$Fileinfos = Get-FileVersion -url $release
 
-	$Latest = @{ URL32 = $release; Version = $version }
+	$Latest = @{ URL32 = $release; Checksum32 = $Fileinfos.Checksum; ChecksumType32 = $Fileinfos.ChecksumType; Version = $Fileinfos.Version }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor none -NoCheckChocoVersion

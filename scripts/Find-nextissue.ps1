@@ -9,12 +9,21 @@ if(!(Test-Path Env:github_api_key)) {
 
 Write-Output "Search the next package to import"
 $search = (Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "ToCreateManualy" | Sort-Object -Property IssueNumber).Title.split('(|)')[1]
-if($search) {
+if($search -and $packageName -match "update requested") {
     $folder = Join-Path $PSScriptRoot "../automatic/$search"
     if(Test-Path $folder) {
         Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
     } elseif ($search -ne '') {
         $script = Join-Path $PSScriptRoot "Get-Package.ps1"
+        "Running $($script) $($search.Tolower())"
+        . $script $search.Tolower()
+    }
+} elseif($search -and $packageName -match "package requested") {
+    if(Test-Path $folder) {
+        Write-Warning "Package already in the folder, the package $search needs to be finished and the issue closed"
+    } elseif ($search -ne '') {
+        $script = Join-Path $PSScriptRoot "New-Package.ps1"
+        "Running $($script) $($search.Tolower())"
         . $script $search.Tolower()
     }
 }

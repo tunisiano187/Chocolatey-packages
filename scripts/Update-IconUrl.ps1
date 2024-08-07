@@ -342,6 +342,9 @@ function Update-IconUrl{
     $extension = 'png'
     $iconNameWithExtension = "$possibleName.$extension";
     $commitHash = Test-Icon -Name $possibleName -Extension $extension -IconDir $IconDir -Optimize $Optimize -PackageName $Name;
+    if($commitHash -match "size") {
+      $commitHash = Test-Icon -Name $possibleName -Extension $extension -IconDir $IconDir -PackageName $Name;
+    }
     return;
   }
   $resolvedPath = Resolve-Path $IconDir/$iconNameWithExtension -Relative;

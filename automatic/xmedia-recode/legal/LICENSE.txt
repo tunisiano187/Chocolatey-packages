@@ -1,0 +1,29 @@
+==================== XMedia Recode ====================
+
+Below is a Google Translate English version of the C:\Program Files (x86)\XMedia Recode\license.txt which can be found post install:
+
+
+The author assumes NO LIABILITY for damages of any kind
+Sort of files or hardware by this program
+could be caused.
+
+Installations and use of the software are free
+both in the private and in the commercial environment.
+If they want to support the project financially, then
+please contact the author directly.
+Private non-commercial distribution of the program
+on data media is allowed.
+Non-commercial mirroring on www and ftp servers
+of schools, colleges, associations and nonprofit
+Organizations are allowed.
+Reflection of the program on homepages of
+Private individuals or businesses are previously mine
+to have it approved.
+The commercial exploitation and distribution of the program
+is only permitted with the express permission of the author.
+
+
+FFmpeg is licensed under LGPL and GPL
+Source Code: http://ffmpeg.org/download.html
+
+==================== XMedia Recode ====================

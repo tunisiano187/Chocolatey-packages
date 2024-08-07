@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>odrive</id>
+    <version>1.6452.0.7272</version>
+    <title>odrive (Install)</title>
+    <authors>ODrive.com</authors>
+    <owners>tunisiano</owners>
+    <projectUrl>https://www.odrive.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@91de6bb352bfbebfad65c5286215dd6c57c09b02/icons/odrive.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://docs.odrive.com/docs/odrive-terms-of-service</licenseUrl>
+    <description><![CDATA[## Odrive
+universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>universal sync client. It makes any cloud storage unified, synchronized, shareable, and encrypted.</summary>
+    <copyright>Copyright 2017, ODrive Inc.</copyright>
+    <tags>odrive cloud admin</tags>
+    <releaseNotes>#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/odrive</packageSourceUrl>
+    <dependencies>
+      <dependency id="KB2919355" version="1.0.20160915" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

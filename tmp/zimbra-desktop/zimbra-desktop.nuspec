@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>zimbra-desktop</id>
+    <version>7.3.2</version>
+    <title>[Deprecated] Zimbra Desktop</title>
+    <authors>Zimbra Inc</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.zimbra.com/product/licenses-and-terms-of-use/</licenseUrl>
+    <projectUrl>https://www.zimbra.com/zimbra-desktop-download/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@220f036e51bc263b316f5ed7526af90412e76f34/icons/zimbra-desktop.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Zimbra Desktop client lets you manage your various email accounts in one desktop tool. You can store and synch your email, calendar, contacts, files and documents between the servers and your computer, making them locally accessible when working off line. When you re-connect, all your data automatically syncs between the servers and your computer. Zimbra mail, Yahoo! mail, Gmail, Microsoft Outlook and any other work or personal email account that uses POP or IMAP can be set up in Zimbra Desktop. Each account is separately maintained. When you receive new email messages in any of your accounts, and you have Internet access, the messages are automatically downloaded to your Zimbra Desktop.
+
+*** This version as been deprecated as the versionning as changed, this package will install it's replacement one.
+
+The installer package has the following components:
+
+* Zimbra Desktop application
+* A built-in web interface
+* A mini Zimbra server
+* Java framework
+
+Zimbra Desktop supports the following account types:
+
+* Zimbra (for use with Zimbra Collaboration Suite or Zimbra Appliance)
+* Gmail
+* Yahoo! Mail
+* Microsoft Exchange (via IMAP)
+* Other email services using POP3 or IMAP4 access
+
+[Forum](https://forums.zimbra.org/)</description>
+    <summary>Open source desktop project management</summary>
+    <releaseNotes>not updated anymore</releaseNotes>
+    <copyright>© Zimbra Inc</copyright>
+    <tags>collaboration task schedule admin</tags>
+    <projectSourceUrl>https://wiki.zimbra.com/wiki/Building_Zimbra_using_Git</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/tmp/zimbra-desktop</packageSourceUrl>
+    <bugTrackerUrl>https://bugzilla.zimbra.com/describecomponents.cgi?product=ZD</bugTrackerUrl>
+    <dependencies>
+      <dependency id="zimbradesktop" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="zimbra-desktop.nuspec" />
+  </files>
+</package>

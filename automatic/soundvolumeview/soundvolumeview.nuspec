@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>soundvolumeview</id>
+    <version>2.46</version>
+    <title>SoundVolumeView</title>
+    <authors>Nir Sofer</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.nirsoft.net/utils/sound_volume_view.html</licenseUrl>
+    <projectUrl>https://www.nirsoft.net/utils/sound_volume_view.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fd4f44e3f4177edceebb8baf09b8cb4d2deb3a78/icons/soundvolumeview.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## SoundVolumeView
+
+SoundVolumeView is a simple tool for Windows Vista/7/8/2008 that displays general information and current volume level for all active sound components on your system, and allows you to mute and unmute them instantly. 
+
+SoundVolumeView also allows you to save a sound profile into a file, containing the current volume level and the mute/unmute state of all sound components, as well as the default sound devices, and then later, load the same file to restore exactly the same volume levels and settings.
+
+There is also extensive command-line support, which allows you to save/load profiles, change current volume of every sound component, and mute/unmute  every sound component, without displaying any user interface.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>View/change sound levels and save/load sound level profiles on Windows Vista/ from UI and command-line</summary>
+    <releaseNotes>https://www.nirsoft.net/utils/sound_volume_view.html</releaseNotes>
+    <copyright>© 2013 NirSoft</copyright>
+    <tags>volume display mute profile cli</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/soundvolumeview</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

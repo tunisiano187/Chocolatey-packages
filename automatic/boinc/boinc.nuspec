@@ -3,13 +3,13 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>boinc</id>
-    <version>7.24.1</version>
+    <version>8.0.2</version>
     <title>BOINC</title>
     <authors>University of California</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_limit%C3%A9e_GNU</licenseUrl>
     <projectUrl>https://boinc.berkeley.edu/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/boinc.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@45918f207b86b04d904f330eb4dbaf1bf777c7f2/icons/boinc.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Boinc
 Berkeley Open Infrastructure for Network Computing (BOINC) uses the idle time on your computer (Windows, Mac, Linux, or Android) to cure diseases, study global warming, discover pulsars, and do many other types of scientific research.

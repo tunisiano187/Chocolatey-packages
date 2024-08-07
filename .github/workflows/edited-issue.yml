@@ -1,0 +1,19 @@
+﻿name: Check exception
+
+on:
+  issues:
+    types: [edited]
+
+jobs:
+  validation:
+    if: ${{ github.event.issue.state == 'open' }}
+    runs-on: windows-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2.2.0
+      - name: Check exception
+        run: |
+          Import-Module "${{ github.workspace }}\scripts\edit.psm1"
+          Block-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}" -actor "${{ github.event.issue.user.login }}"

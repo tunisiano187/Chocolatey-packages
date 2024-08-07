@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rufus.portable</id>
-    <version>4.4</version>
+    <version>4.5</version>
     <title>Rufus (Portable)</title>
     <authors>Pete "Akeo" Batard</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>http://rufus.akeo.ie/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/rufus.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@50f7d3ac78231f075b6ab46586e4994dd2358258/icons/rufus.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Rufus (portable)
 Rufus is a utility that helps format and create bootable USB flash drives, such as USB

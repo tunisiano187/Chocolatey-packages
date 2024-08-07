@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/'
+$releases = 'https://sourceforge.net/projects/pwgen-win/rss?path=/Password%20Tech'
 
 function global:au_SearchReplace {
 	@{
@@ -18,11 +18,15 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = "https://sourceforge.net/projects/pwgen-win/files/latest/download"
-	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "Tech\/"} | Where-Object {$_.href -notmatch 'css'}).href[0].split('/')[-2]
+	$File = "$env:TEMP\pwgen.install.xml"
+	Invoke-WebRequest -Uri $releases -OutFile $File
+	$xml = Get-Content $File
+	$links=$xml | Where-Object {$_ -match 'Setup.exe/download'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
+	$url32 = $links.Split('<|>') | Where-Object {$_ -match 'download'}
+	$version = (Get-Version $url32).Version
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 32 -NoCheckChocoVersion

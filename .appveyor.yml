@@ -4,7 +4,7 @@ version: '{build}'
 pull_requests:
   do_not_increment_build_number: true
 max_jobs: 1
-#build_cloud: D-W-CLERF
+#build_cloud: V-10-MAYNV
 image: Visual Studio 2022
 # History plugin requires complete log
 #clone_depth: 5
@@ -30,6 +30,9 @@ environment:
   gitter_webhook:
     secure: SuvLP4KrBXFvRRG7tcBiTUJvh8urQl3gOu4WYjLO9ZEXX0wZB3CwmIx1VnoA4I009yKsuPdPZ1P6NTuE7Vt9Cg==
 
+  # Hash
+  hash_algo: sha256
+  
   # VT API Key
   VT_APIKEY:
     secure: L/54pv851SIun4fRQsrx3kbmvBjuPRYE0bwuH/tDwSZCDbqSsHFE2udKIXnGLNL9AFRz9bBLJmVPUqXabn3tBqO45DJpCq0XjUSDDseoBCg=
@@ -53,14 +56,14 @@ environment:
     secure: aXQkG8BvsO7/zFDzAb7ADCdvottWbXf1sRoC34DUk9RIvzOiIdjprfw39CvNT4WK
 
   #Chocolatey version we want to use when checking for updates (usually latest).
-  choco_version: '2.2.2'
-  choco_version_pr: '2.1.0' # Should be kept to the version available one year ago
+  choco_version: '2.3.0'
+  choco_version_pr: '2.2.0' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
   #Gitlab informations
   gitlab_user: tunisiano187   # GitLab username to use for the push
   gitlab_api_key:
-    secure: xn8YPH4im1DX1Fu4IsaT+16dMibfpbkfNM8Llj9q2mA=   # GitLab API key associated with gitlab_user
+    secure: /Y5grZ+4FFm0+dOyuSD9zBah6vtE26U/505yI3Vnw4Y=   # GitLab API key associated with gitlab_user
   gitlab_PushURL: https://gitlab.com/chocolatey-packages/automatic-updating.git   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://git.example.org/jekotia/au.git
   gitlab_commit_strategy: atomictag
 
@@ -74,17 +77,20 @@ install:
     $chocoVersion = if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
+      '7zip.install' = '24.7.0'
       'chocolatey' = $chocoVersion
       'wormies-au-helpers' = '0.4.1'
       'checksum' = '0.3.1'
-      'keepass.install' = '2.56.0'
+      'keepass.install' = '2.57.0'
       'vt-cli' = '1.0.0'
       'autohotkey' = '1.1.37.1'
+      'pngquant' = '3.0.3'
+      'jpegoptim' =  '1.5.5.1'
 
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { choco update $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
-      else { choco install $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
+      else { choco install -y $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
     }
     choco upgrade -y chocolatey
     rm "$env:ChocolateyInstall\logs\*.log"
@@ -146,6 +152,7 @@ build_script:
         }
         $lastupdated=git log -1 --stat | Where-Object {$_ -match "automatic"} | Where-Object {$_ -notmatch "'automatic"}
         if($lastupdated.Count -ne 0 -and ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true')) {
+          $Env:au_Push = "false"
           $packages = $lastupdated.split('/').split(' ')
           Write-Host "PUSHING PACKAGES: $packages"
           foreach ($line in $packages) {
@@ -166,13 +173,17 @@ build_script:
           write-host "None Forced"
         }
     }
-    git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
+    #git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
+    git remote set-url origin https://$($env:github_api_key):x-oauth-basic@github.com/tunisiano187/Chocolatey-packages.git
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "$env:gitlab_user"
     git checkout master
     cd scripts
     Import-Module .\au_extensions.psm1
     cd ..
+    $moduleWormiesPath = "$Env:ProgramFiles\WindowsPowerShell\Modules\Wormies-AU-Helpers\public\Update-Metadata.ps1"
+    $moduleWormiesPath = Resolve-Path $moduleWormiesPath
+    Copy-Item scripts/Update-Metadata.ps1 $moduleWormiesPath
     Write-Host "Checking nuspec errors"
     scripts/Find-NuspecError.ps1
     git commit -am "Nuspec errors"
@@ -183,7 +194,7 @@ build_script:
     scripts/Update-Variables.ps1
     git commit -am "ps1 vars"
     Write-Host "updating IconUrl in nuspec"
-    scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch -Optimize
+    scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Chocolatey-packages" -UseStopwatch
     git commit -am "Updating icons"
     Write-Host "updating owners in nuspec"
     import-module Wormies-AU-Helpers
@@ -192,12 +203,15 @@ build_script:
     Write-Host "Updating Packages.md"
     scripts/ListPackages.ps1
     git commit -am "List packages"
-    Write-host "Check broken package"
-    tools/looknewer.ps1
-    git commit -am "Broken packages"
     Write-Host "Downloading next issue's package"
     scripts/Find-nextissue.ps1
     git commit -am "next issue"
+    Write-host "Check broken package"
+    tools/looknewer.ps1
+    git commit -am "Broken packages"
+    Write-host "Remove NoCheckChocoVersion"
+    scripts/Remove-Nocheck.ps1
+    git commit -am "Remove NoCheckChocoVersion"
     Write-Host "updating packages"
     au/update_all.ps1 -ForcedPackages $forced
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
@@ -214,6 +228,7 @@ on_finish:
       'eventlogs.txt'
     )
     $paths | ? { Test-Path $_ } | % { Push-AppveyorArtifact $_ }
+    Remove-Item -Path $env:TEMP -Recurse -Force -ErrorAction SilentlyContinue
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 notifications:

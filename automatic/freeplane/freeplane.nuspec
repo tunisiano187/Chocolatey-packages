@@ -3,13 +3,13 @@
   <metadata>
     <id>freeplane</id>
     <title>Freeplane</title>
-    <version>1.11.8</version>
+    <version>1.11.14</version>
     <authors>Dimitry Polivaev,Volker Börchers</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>http://en.wikipedia.org/wiki/GNU_General_Public_License</licenseUrl>
+    <licenseUrl>https://github.com/freeplane/freeplane/blob/1.11.x/license.txt</licenseUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freeplane</packageSourceUrl>
-    <projectUrl>http://freeplane.sourceforge.net/wiki/index.php/Home</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/freeplane.png</iconUrl>
+    <projectUrl>https://sourceforge.net/projects/freeplane/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@83762a6cbbc4e6c9f7dc6a97c15ba1bc4129d583/icons/freeplane.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Open source mind mapping program</summary>
     <description><![CDATA[## freeplane
@@ -29,11 +29,9 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <copyright />
     <tags>freeplane diagram mindmap graph visualization admin</tags>
-    <dependencies>
-      <dependency id="corretto11jdk" version="17.0.8" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

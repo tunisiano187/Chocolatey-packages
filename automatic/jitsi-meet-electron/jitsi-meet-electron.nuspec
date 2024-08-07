@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>jitsi-meet-electron</id>
-    <version>2024.1.0</version>
+    <version>2024.6.0</version>
     <title>Jitsi Meet Electron</title>
     <authors>Jitsi Meet Electron community</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/jitsi/jitsi-meet-electron/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/jitsi/jitsi-meet-electron</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6942fff188a6185233115b576b7eade39ae355de/icons/jitsi-meet-electron.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8a9810879bfc7f7e7e2b9a1119a610397a87032d/icons/jitsi-meet-electron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Features
 
@@ -30,7 +30,7 @@ It is therefore suggested to use `choco-upgrade-all-at-startup` or `choco-upgrad
 ![screenshot](https://raw.githubusercontent.com/jitsi/jitsi-meet-electron/master/screenshot.png)
 ]]></description>
     <summary>Desktop application for Jitsi Meet built with Electron.</summary>
-    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2024.1.0</releaseNotes>
+    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2024.6.0</releaseNotes>
     <copyright />
     <tags>jitsi webinar webcam meeting electron</tags>
     <projectSourceUrl>https://github.com/jitsi/jitsi-meet-electron</projectSourceUrl>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>tsedat</id>
+    <version>7.60.2814</version>
+    <title>TheSage English Dictionary and Thesaurus</title>
+    <authors>Sequence Publishing</authors>
+    <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://www.sequencepublishing.com/1/thesage.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2e6d2310037771baf3806a6214c72741183ec44b/icons/tsedat.png</iconUrl>
+    <description><![CDATA[## TheSage English Dictionary and Thesaurus
+TheSage's English Dictionary and Thesaurus is a professional software package that integrates a complete dictionary and multifaceted thesaurus of the English language into a single and powerful language reference system.
+TheSage can look up words directly from almost any program (IE, Word, Firefox, Outlook, Thunderbird, etc...).
+
+## Features
+
+- Comprehensive Dictionary - Multiple detailed definitions (+210,000)
+- Complete Thesaurus - Nearly 1,400,000 relationships between definitions (synonyms, antonyms, hypernyms, hyponyms, meronyms, holonyms,...)
+- Example Sentences - A large collection that already includes approximately 50,000 examples of usage.
+- Pronunciations - +70,000 phonetic transcriptions.
+- Information Integration - Each definition has its own specific thesaurus.
+- Cross-Referencing - Any and all displayed words are clickable, triggering a new lookup.
+- Wildcard Search - Match single/multiple characters as well as filter by single/groups of vowels and consonants.
+- Anagram Search - Only valid English words are returned.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>TheSage is a comprehensive English dictionary and thesaurus that provides a number of useful and in some cases unusual search tools.</summary>
+    <releaseNotes>#### Program
+* [Changelog](https://www.sequencepublishing.com/1/thesage_news/changelog.txt)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/tunisiano187/chocolatey-packages/issues) instead of "Contact Maintainers"</releaseNotes>
+    <copyright>Copyright © 2001-2019 by Sequence Publishing. All Rights Reserved.</copyright>
+    <tags>tsedat TheSage English Dictionary Thesaurus One-click lookup wildcard-search anagram concordancer speech pronunciation word-lists admin</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tsedat</packageSourceUrl>
+    <docsUrl>https://www.sequencepublishing.com/1/thesage/documentation.html</docsUrl>
+    <mailingListUrl>https://www.sequencepublishing.com/1/about.html</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -68,7 +68,8 @@ function global:au_GetLatest {
   $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
   $url = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
   $version = $tags.tag_name.Replace('v','')
-  if($tags.prerelease -match "true") {
+  Update-Metadata -key "releaseNotes" -value $tags.html_url
+	if($tags.prerelease -match "true") {
       $date = $tags.published_at.ToString("yyyyMMdd")
       $version = "$version-pre$($date)"
   }
@@ -82,9 +83,4 @@ function global:au_GetLatest {
   }
 }
 
-try {
-  update -ChecksumFor none
-} catch {
-  $ignore = 'Unable to connect to the remote server'
-  if ($_ -match $ignore) { Write-Host $ignore; 'ignore' }  else { throw $_ }
-}
+update -ChecksumFor none

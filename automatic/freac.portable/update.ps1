@@ -28,7 +28,8 @@ function global:au_GetLatest {
     $url32 = $urls | Where-Object {$_ -match 'i686'}
     $url64 = $urls | Where-Object {$_ -match 'x64'}
     $version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    if($tags.prerelease -match "true") {
+    Update-Metadata -key "releaseNotes" -value $tags.html_url
+	if($tags.prerelease -match "true") {
         $date = $tags.published_at.ToString("yyyyMMdd")
         $version = "$version-pre$($date)"
     }

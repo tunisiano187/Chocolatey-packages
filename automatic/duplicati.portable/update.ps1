@@ -21,16 +21,16 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
-	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match "win-x64-gui.zip$"}
     $url32 = $urls | Where-Object {$_ -notmatch 'signatures'}
     $version = ($tags.tag_name).split('v|-')[1]
-    if($tags.prerelease -match "true") {
-        $date = $tags.published_at.ToString("yyyyMMdd")
-        $version = "$version-pre$($date)"
+    if($version -match '_') {
+        $version = $version.split('_')[0]
     }
+    Update-Metadata -key "releaseNotes" -value $tags.html_url
 
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 32 -NoCheckChocoVersion

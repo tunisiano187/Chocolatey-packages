@@ -26,9 +26,14 @@ function global:au_BeforeUpdate {
 	}
 }
 
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
+}
+
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".plgx$"}
+	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")

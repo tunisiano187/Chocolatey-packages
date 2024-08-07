@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>warp</id>
-    <version>24.2.69.0</version>
+    <version>24.6.473.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/warp</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>WARP (Install)</title>
     <authors>Cloudflare</authors>
     <projectUrl>https://one.one.one.one/beta</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b4df9311b469fb69a14368d665a21a70f9cdef0c/icons/warp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@29a1cd66005ba7c74b4b7692158870dcddfb13ec/icons/warp.png</iconUrl>
     <copyright>Cloudflare</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://support.cloudflarewarp.com/hc/en-us/articles/360051891814-Beta-Install-Instructions</docsUrl>

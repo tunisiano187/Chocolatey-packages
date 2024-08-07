@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>duplicatecleaner</id>
+    <version>5.23</version>
+    <title>Duplicate Cleaner</title>
+    <authors>DigitalVolcano Software</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>http://www.digitalvolcano.co.uk/dcpurchase.html</licenseUrl>
+    <projectUrl>https://www.digitalvolcano.co.uk/duplicatecleaner.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/duplicatecleaner.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[# Duplicate Cleaner
+
+Duplicate Cleaner is a useful program to help you organize the contents of your home hard drive or corporate network. You'd be surprised just how many redundant or duplicate files you could find forgotten in an obscure documents folder.
+
+Duplicate Cleaner will deep scan for all types of files - photos, music, films, video, Word documents, PowerPoint presentations, text files - you name it, if it appears twice on your computer then Duplicate Cleaner will find it. Once these files are found you are provided with helpful tools to enable you to select which copies to delete or move.These files can be deleted to the recycle bin or moved elsewhere.
+
+This package installs the free, non-commercial usage version.
+
+### Package-specific issue
+
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Find duplicate files by content, name, or date and find similar images and music by tags</summary>
+    <releaseNotes>http://www.digitalvolcano.co.uk/dcchangelog.html</releaseNotes>
+    <copyright>© DigitalVolcano Software</copyright>
+    <tags>file-duplicates deduplication admin</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duplicatecleaner</packageSourceUrl>
+    <dependencies>
+      <dependency id="dotnet" version="[4.7.2,)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

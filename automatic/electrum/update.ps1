@@ -10,13 +10,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Verbose 'Check Version'
-	$version = $(choco search electrum.install | Where-Object {$_ -match 'electrum'}).split(' ')[1]
-	Write-Verbose "Version : $version"
-	$url32 = "https://download.electrum.org/$($version)/electrum-$($version)-setup.exe"
+	$choc=$(choco search electrum.install | Where-Object {$_ -match "electrum.install"})
+	$version = $choc.Split(" ")[1]
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+    return @{
+        Version = $version
+    }
 }
 
 update -ChecksumFor None

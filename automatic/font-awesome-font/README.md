@@ -1,0 +1,49 @@
+[![](https://img.shields.io/chocolatey/v/font-awesome-font?color=green&label=font-awesome-font)](https://chocolatey.org/packages/font-awesome-font) [![](https://img.shields.io/chocolatey/dt/font-awesome-font)](https://chocolatey.org/packages/font-awesome-font)
+
+## Font Awesome (Font) (Install)
+
+Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+
+### One Font, 675 Icons
+
+In a single collection, Font Awesome is a pictographic language of web-related actions.
+
+### No JavaScript Required
+
+Fewer compatibility concerns because Font Awesome doesn't require JavaScript.
+
+### Infinite Scalability
+
+Scalable vector graphics means every icon looks awesome at any size.
+
+### Free, as in Speech
+
+Font Awesome is completely free for commercial use. Check out the license.
+
+### CSS Control
+
+Easily style icon color, size, shadow, and anything that's possible with CSS.
+
+### Perfect on Retina Displays
+
+Font Awesome icons are vectors, which mean they're gorgeous on high-resolution displays.
+
+### Plays Well with Others
+
+Originally designed for Bootstrap, Font Awesome works great with all frameworks.
+
+### Desktop Friendly
+
+To use on the desktop or for a complete set of vectors, check out the cheatsheet.
+
+### Accessibility-minded
+
+Font Awesome loves screen readers and helps make your icons accessible on the web.	
+
+#### [choco://font-awesome-font](choco://font-awesome-font)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)

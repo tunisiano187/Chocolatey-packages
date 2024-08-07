@@ -4,7 +4,7 @@
   <metadata>
     <id>dogecoin</id>
     <title>Dogecoin Core Wallet</title>
-    <version>1.14.6</version>
+    <version>1.14.7</version>
     <authors>Jackson Palmer</authors>
     <owners>tunisiano</owners>
     <summary>Cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW)</summary>
@@ -32,7 +32,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/dogecoin/dogecoin</projectSourceUrl>
     <bugTrackerUrl>https://github.com/dogecoin/dogecoin/issues</bugTrackerUrl>
     <docsUrl>http://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/dogecoin.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3f07f11d33584886889acdc3cd890260dfbddba/icons/dogecoin.png</iconUrl>
     <tags>ltc doge p2p cryptocurrency</tags>
     <copyright>© 2012 The Ðogecoin Project</copyright>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
@@ -47,7 +47,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="dogecoin.install" version="1.14.2" />
+      <dependency id="dogecoin.install" version="[1.14.7]" />
     </dependencies>
   </metadata>
   <files>

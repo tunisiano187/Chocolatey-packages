@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>cura-lulzbot</id>
-    <version>4.13.5</version>
+    <version>4.13.10</version>
     <title>Cura LulzBot Edition (Install)</title>
     <authors>Aleph Objects Inc., David Braam</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.lulzbot.com/cura</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/cura-lulzbot.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f30d3bec126b2fc0293888cd41e0d5af952159d7/icons/cura-lulzbot.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description><![CDATA[## cura-lulzbot
 Cura LulzBot Edition is a Free Software program that both prepares your files for printing (by converting your model into GCODE), and also allows you to control the operation of your LulzBot 3D printer.

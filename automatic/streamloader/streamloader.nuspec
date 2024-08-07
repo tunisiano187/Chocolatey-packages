@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>streamloader</id>
+    <version>0.0</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/streamloader</packageSourceUrl>
+    <owners>tunisiano</owners>
+    
+    <title>streamloader (Portable)</title>
+    <authors>X-StreamLoader</authors>
+    <projectUrl>https://xstreamloader.techweb.at/en/download.html</projectUrl>
+    
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/streamloader.png</iconUrl>
+    <copyright>X-StreamLoader</copyright>
+    <docsUrl>https://xstreamloader.techweb.at/en/faq.html</docsUrl>
+    
+    <tags>streamloader youtube twitch</tags>
+    <summary>Watch Twitch, Beam, Smashcast streams, Youtube videos and many more in Mediaplayer</summary>
+    <description>__REPLACE__MarkDown_Okay 
+
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+</description>
+    <releaseNotes>https://xstreamloader.techweb.at/en/changelog.html</releaseNotes>
+    <dependencies>
+      <dependency id="streamlink" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

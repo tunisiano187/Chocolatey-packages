@@ -25,7 +25,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = 'https://annystudio.com/jcpicker.exe'
 
-	$page=Invoke-WebRequest -Uri "https://annystudio.com/software/colorpicker"
+	$page=Invoke-WebRequest -Uri "https://annystudio.com/software/colorpicker" -UseBasicParsing
 	$version = ($page.Links | Where-Object {$_ -match 'Download free Just'})[0].innerHTML.split(' ') | Where-Object {$_ -match "\."}
 
 	$url32 = 'https://annystudio.com/jcpicker.zip'

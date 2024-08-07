@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wordweb-free</id>
+    <version>10.40</version>
+    <title>WordWeb Free (Install)</title>
+    <authors>WordWeb Software</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://wordweb.info/free/licence5.html</licenseUrl>
+    <projectUrl>https://wordweb.info/free/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53ccf04e0621fce53cfb96004ffcd1d080ad2155/icons/wordweb-free.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## WordWeb Free (Install)
+
+---
+
+### [choco://wordweb-free](choco://wordweb-free)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of WordWeb](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ec0f59d437170c116f45e543371279c6793d5cb1/automatic/wordweb-free/wordweb-free_screenshot.png)
+
+### WordWeb Free version
+
+* One-click lookup in any almost any Windows program
+* Hundreds of thousands of definitions and synonyms
+* The latest international English words
+* Works offline, or reference to Wikipedia and web references
+
+The program has a full dictionary and thesaurus for American, British, Canadian, Australian, Indian, and global English.
+
+Get WordWeb Pro to add full audio and many additional features, including the option to add Oxford, Chambers and Collins dictionaries.
+
+WordWeb free version is fully functional, and free if you satisfy the licensing conditions. All users may also try out the free version and then buy [WordWeb Pro](https://wordweb.info/).
+
+---
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+
+---
+]]></description>
+    <summary>Windows dictionary and thesaurus</summary>
+    <releaseNotes>https://wordweb.info/users.html</releaseNotes>
+    <copyright>Copyright © WordWeb Software</copyright>
+    <tags>wordweb dictionary thesaurus binary</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wordweb-free</packageSourceUrl>
+    <docsUrl>https://wordweb.info/more.html</docsUrl>
+    <mailingListUrl>https://wordweb.info/newsletter.html</mailingListUrl>
+    <bugTrackerUrl>https://wordweb.info/users.html</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

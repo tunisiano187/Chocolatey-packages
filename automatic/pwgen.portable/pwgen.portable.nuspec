@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>pwgen.portable</id>
-    <version>3.5.4</version>
+    <version>3.5.5</version>
     <title>PWGen (Portable)</title>
     <authors>Christian Thoeing</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://pwgen-win.sourceforge.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@595751da43aa06ad643d31276e4ea93cb633a631/icons/pwgen.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7690579c4afa63a715b623c986c8adbd44be89de/icons/pwgen.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## pwgen.portable
 PWGen is a professional password generator capable of creating large amounts of cryptographically-secure passwords

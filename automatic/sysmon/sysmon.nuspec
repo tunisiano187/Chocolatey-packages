@@ -4,7 +4,7 @@
   <metadata>
     <id>sysmon</id>
     <title>Sysmon</title>
-    <version>15.14</version>
+    <version>15.15</version>
     <authors>Mark Russinovich</authors>
     <owners>tunisiano</owners>
     <summary>Monitors and reports key system activity via the Windows event log</summary>
@@ -17,7 +17,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sysmon</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/sysmon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ad762a6859829c753d21159e92a9aee0302aa1b/icons/sysmon.png</iconUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/dn798348</projectUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
     <tags>freeware eventlog monitor tools sysinternals</tags>

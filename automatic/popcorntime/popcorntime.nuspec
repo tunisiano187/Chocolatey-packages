@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>popcorntime</id>
-    <version>0.5.0</version>
+    <version>0.5.1</version>
     <title>Popcorn Time</title>
     <authors>Popcorn Time developers</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/popcorn-official/popcorn-desktop/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/popcorn-official/popcorn-desktop</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7cc8d197a0daa3297060d92a75902352d1cce156/icons/popcorntime.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f1aa262450705100c95b41eb76bc89c517825bdd/icons/popcorntime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## popcorntime
 Popcorn Time streams movies and TV shows from torrents.

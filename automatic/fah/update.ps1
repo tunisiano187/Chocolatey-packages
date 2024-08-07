@@ -1,17 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://download.foldingathome.org/releases/public/release/fah-installer/windows-10-32bit/'
-
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
-}
+$releases = 'https://download.foldingathome.org/releases/public/fah-client/meta.json'
 
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
@@ -27,21 +17,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	Write-Output 'Check Folder'
-	$version_folder = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match '^v\d+([.]\d+)?'} | ForEach-Object {($_.href -replace '[^.\d]', '')} | Measure-Object -Max).Maximum
-	$installer = "$($releases)v$($version_folder)/latest.exe"
-	$working_dir = "."
-	$install_fname = 'folding_installer.exe'
-	Write-Output 'Download'
-	Invoke-WebRequest -Uri $installer -OutFile "$working_dir\$install_fname"
-	Write-Output 'Install'
-	. $working_dir/$install_fname /S
-	$version=Get-Version('folding')
-	Write-Output "Version : $version"
-	$url32 = "$($releases)v$($version_folder)/fah-installer_$($version)_x86.exe"
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$json = $page.Content | convertfrom-json
+	$url32 = "https://download.foldingathome.org/releases/public/fah-client/$($($json | Where-Object {$_.package -match ".exe"} | Select-Object -First 1).package)"
+	$version = (Get-Version $url32).Version
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
