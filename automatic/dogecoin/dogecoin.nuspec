@@ -4,7 +4,7 @@
   <metadata>
     <id>dogecoin</id>
     <title>Dogecoin Core Wallet</title>
-    <version>1.14.7</version>
+    <version>1.14.8</version>
     <authors>Jackson Palmer</authors>
     <owners>tunisiano</owners>
     <summary>Cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW)</summary>
@@ -47,7 +47,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="dogecoin.install" version="[1.14.7]" />
+      <dependency id="dogecoin.install" version="[1.14.8]" />
     </dependencies>
   </metadata>
   <files>
