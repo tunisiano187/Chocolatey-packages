@@ -8,7 +8,7 @@ if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
 }
 [string]$Owner = "tunisiano187"
-[string]$Repository = "Chocolatey-packages"
+[string]$Repository = "choco-packages"
 
 git config --global user.email "helpdesk.choc@gmail.com"
 git config --global user.name "tunisiano187"
@@ -35,7 +35,7 @@ Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $ex
 "Check if there are open issues"
 
 # Check if there is a waiting issue
-if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"})) {
+if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"} | Where-Object {$_.title -notmatch "Dependency Dashboard"})) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
 } else {
@@ -138,7 +138,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
             $search = ''
             $version = ''
         }
-        $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/Chocolatey-packages/master/tools/Check/list.txt)"
+        $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/choco-packages/master/tools/Check/list.txt)"
         if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer" | Where-Object {$_ -notmatch "Set-GitHubConfiguration"}) -and $search -ne '') {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) update requested"
