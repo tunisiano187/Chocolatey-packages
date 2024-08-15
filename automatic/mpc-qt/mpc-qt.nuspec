@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mpc-qt</id>
-    <version>24.06</version>
+    <version>24.05</version>
     <title>MPC QT</title>
     <authors>https://github.com/mpc-qt/mpc-qt/graphs/contributors</authors>
     <owners>tunisiano</owners>
@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <bugTrackerUrl>https://github.com/mpc-qt/mpc-qt/issues</bugTrackerUrl>
   </metadata>
   <files>
-    <file src="legal\**" target="lagal" />
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
