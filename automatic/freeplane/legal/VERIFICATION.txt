@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/Ryochan7/DS4Windows/releases/download/v3.1.11/DS4Windows_3.1.11_x64.zip
+    x32: https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.2.exe/download
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/Ryochan7/DS4Windows/releases/download/v3.1.11/DS4Windows_3.1.11_x64.zip
+        Get-RemoteChecksum https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.2.exe/download
 
 3.  Compare to Checksum:
 
-    checksum32: 343F507682F5F0D799C99135DA1E812E1FB972CE6CCC27ACC7304FD1D5C99A24
+    checksum32: 32b5d7de7e22692134a0ec3f284579a8d0fd87faa21d103ad5fd24a742f35215
