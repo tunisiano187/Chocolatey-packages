@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.2.exe/download
+    x32: https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.3.exe/download
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.2.exe/download
+        Get-RemoteChecksum https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.3.exe/download
 
 3.  Compare to Checksum:
 
-    checksum32: 32b5d7de7e22692134a0ec3f284579a8d0fd87faa21d103ad5fd24a742f35215
+    checksum32: 69c35bd0687d1721fed4a78df0f48b8639aacc29b6720547fde4b1136365fc72
