@@ -1,14 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file32         = "$(Join-Path $toolsDir -ChildPath 'ofview.zip')"
+$file64         = "$(Join-Path $toolsDir -ChildPath 'ofview-x64.zip')"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  url            = 'https://www.nirsoft.net/utils/ofview.zip'
-  url64          = 'https://www.nirsoft.net/utils/ofview-x64.zip'
-  checksum       = 'b6725c9c17610d386c071b4b51e1ce28dfd435b72f6e38cbe1c868874be60662'
-  checksum64     = '8d7f840ee5182ac8ab2011b93a8d961bbbcb67b6ed74e217e68547eb17411a7b'
-  checksumType   = 'sha256'
-  checksumType64 = 'sha256'
-  unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-  softwareName   = 'OpenedFilesView'
+  file           = $file32
+  file64         = $file64
+  unzipLocation  = $toolsDir
 }
-Install-ChocolateyZipPackage @packageArgs
+
+Install-ChocolateyUnzip @packageArgs

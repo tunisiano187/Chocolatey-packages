@@ -8,9 +8,6 @@ For each opened file, additional information is displayed: handle value, read/wr
 
 Optionally, you can also close one or more opened files, or close the process that opened these files.
 
-#### [choco://ofview](choco://ofview)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
