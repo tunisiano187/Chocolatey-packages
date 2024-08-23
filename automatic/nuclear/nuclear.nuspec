@@ -2,15 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>nuclear</id>
-    <version>0.6.30.20231220</version>
+    <version>0.6.38-pre20240819</version>
     <title>Nuclear</title>
     <authors>https://github.com/nukeop/nuclear/graphs/contributors</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://github.com/nukeop/nuclear/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/nukeop/nuclear/master/LICENSE</licenseUrl>
     <projectUrl>https://nuclear.js.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ce4f0721fbf4d0fbb23009e9167463a26beca37a/icons/nuclear.png</iconUrl>
-    <description>nuclear is a free music streaming program that pulls content from free sources all over the internet.
+    <description><![CDATA[## nuclear
+nuclear is a free music streaming program that pulls content from free sources all over the internet.
 
 If you know [mps-youtube](https://github.com/mps-youtube/mps-youtube), this is a similar music player but with a GUI.
 It's also focusing more on audio. Imagine Spotify which you don't have to pay for and with a bigger library.
@@ -30,14 +31,15 @@ It's also focusing more on audio. Imagine Spotify which you don't have to pay fo
 ## Community
 
 - [Mastodon](https://mstdn.io/@nuclear)
-- [Twitter](https://twitter.com/nuclear_player)</description>
-    <summary>Nuclear is a free music streaming program that pulls content from free sources all over the internet.</summary>
-    <releaseNotes>#### Program
-* [Changelog](https://github.com/nukeop/nuclear/releases)
+- [Twitter](https://twitter.com/nuclear_player)
 
-#### Package
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* If you have any requests or issues with this package please make an issue [here](https://github.com/tunisiano/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Nuclear is a free music streaming program that pulls content from free sources all over the internet.</summary>
+    <releaseNotes>https://github.com/nukeop/nuclear/releases/tag/v0.6.38</releaseNotes>
     <copyright></copyright>
     <tags>nuclear music-player electron stream youtube music windows streaming admin</tags>
     <projectSourceUrl>https://github.com/nukeop/nuclear</projectSourceUrl>
