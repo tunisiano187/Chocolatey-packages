@@ -1,4 +1,4 @@
-﻿VERIFICATION
+VERIFICATION
 
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
@@ -9,14 +9,14 @@ and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/nukeop/nuclear/releases/download/v0.6.30/nuclear.Setup.0.6.30.exe>
+  url: <https://github.com/nukeop/nuclear/releases/download/v0.6.38/nuclear.Setup.0.6.38.exe>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
-  checksum type: sha256
-  checksum:709921D6A9B704722C9D3F6AE634E3607E390763B397BCF7BE12EE37EEDF7426
+  checksum type: SHA512
+  checksum:C56EFF98983B44337EEF347ABF493FF5B49C51A7ABFFD45E6C0768F19FA1E823EA869E9FE5C3E2C546DCC761EA8430A1A8CCB76A14748D94CA252433105116A4
 
 Using AU:
 

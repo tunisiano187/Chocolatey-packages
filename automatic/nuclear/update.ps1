@@ -22,8 +22,6 @@ function global:au_BeforeUpdate($Package) {
 
     Invoke-WebRequest -Uri $licenseData -UseBasicParsing -OutFile "$licenseFile"
     $Latest.LicenseUrl = $licenseData
-
-    Get-RemoteFiles -Purge -NoSuffix
 }
 
 function global:au_AfterUpdate($Package) {
@@ -41,8 +39,11 @@ function global:au_GetLatest {
         $date = $tags.published_at.ToString("yyyyMMdd")
         $version = "$version-pre$($date)"
     }
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion = Get-FileVersion $url32 -keep
+    Move-Item -Path $FileVersion.TempFile -Destination "tools\$($Filename.Filename)"
 
-    return @{ URL32 = $url32; Version = $version; ReleaseNotes = $releasenotes }
+    return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; ReleaseNotes = $releasenotes }
 }
 
-update-package -ChecksumFor 32
+update-package -ChecksumFor none
