@@ -199,3 +199,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+plantronicshub
