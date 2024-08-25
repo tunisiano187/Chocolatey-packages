@@ -1,7 +1,0 @@
-﻿============================= Take Command ==============================
-
-bcurran3 downloads and packages the included .EXE for Take Command from the developer's website. 
-
-The direct download link can be found at: https://jpsoft.com/products/take-command.html
-
-============================= Take Command ==============================

@@ -200,3 +200,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+take-command
