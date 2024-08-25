@@ -104,7 +104,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
 
     "Checking New maintainer's profile"
     # if the search var is empty, search on the needs_new_maintainer profile
-    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
+    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.title -notmatch "Dependency Dashboard"})) {
         $chocoprofile = $link = "https://community.chocolatey.org/profiles/needs_new_maintainer"
         $links = ((Invoke-WebRequest -Uri $chocoprofile -UseBasicParsing).links | Where-Object {$_.outerHTML -notmatch "Deprecated"} | Where-Object {$_.outerHTML -notmatch "Retired"} | Where-Object {$_.href -match '/packages/'}).href
         $ToDo=$links
@@ -124,7 +124,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
     }
 
     # if the search var is empty, search in the list.txt file (obtained by seaching for [outdated] term)
-    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
+    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.title -notmatch "Dependency Dashboard"})) {
         "Checking list.txt file"
         $source = Join-Path $PSScriptRoot "Check/list.txt"
         $search = (Get-Content $source | Select-Object -First 1).split(' ')[0]
@@ -140,7 +140,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
             $version = ''
         }
         $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/choco-packages/master/tools/Check/list.txt)"
-        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer" | Where-Object {$_ -notmatch "Set-GitHubConfiguration"}) -and $search -ne '') {
+        if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer" | Where-Object {$_.title -notmatch "Dependency Dashboard"} | Where-Object {$_ -notmatch "Set-GitHubConfiguration"}) -and $search -ne '') {
             [string]$Label = "ToCreateManualy"
             [string]$Title = "($($search)$($version)) update requested"
             [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
@@ -155,7 +155,7 @@ $link"
         }
     }
 
-    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
+    if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.title -notmatch "Dependency Dashboard"})) {
         "Checking For RFP on the chocolatey-package-requests git"
         $issues = Get-GitHubIssue -OwnerName chocolatey-community -RepositoryName chocolatey-package-requests -State Open -AssigneeType None -Sort Created -Label "Status: Available For Maintainer(s)" | Where-Object {$_.Title -match 'RFP'} | Where-Object {$_.IssueNumber -notmatch '683'} | Where-Object {$_.IssueNumber -notmatch '736'} | Where-Object {$_.user.login -notmatch 'tunisiano187'} | Sort-Object "IssueNumber"
         foreach ($issue in $issues) {
@@ -183,7 +183,7 @@ $link"
     }
 
     "Comparing to winget"
-    if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open))) {
+    if($issue -eq 0 -and (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Label "ToCreateManualy" -State Open | Where-Object {$_.title -notmatch "Dependency Dashboard"}))) {
         Install-PackageProvider -Name winget
         if(!(Test-Path "$($automatic/$search)") -or ($version -ne '')) {
             if($winout = ($(Find-Package $search).Version)) {
