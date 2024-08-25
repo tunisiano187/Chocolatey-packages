@@ -8,7 +8,7 @@ if(!(Test-Path Env:github_api_key)) {
     $Env:github_api_key   = $Github_personal_token          #Github personal access token
 }
 [string]$Owner = "tunisiano187"
-[string]$Repository = "choco-packages"
+[string]$Repository = "chocolatey-packages"
 
 git config --global user.email "helpdesk.choc@gmail.com"
 git config --global user.name "tunisiano187"
