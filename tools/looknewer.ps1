@@ -102,6 +102,7 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         }
     }
 
+    "Checking New maintainer's profile"
     # if the search var is empty, search on the needs_new_maintainer profile
     if(!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open)) {
         $chocoprofile = $link = "https://community.chocolatey.org/profiles/needs_new_maintainer"
