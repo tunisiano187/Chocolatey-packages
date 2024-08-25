@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>take-command</id>
+    <version>25.0.20.0</version>
+    <title>Take Command (30-Day Trial) (Install)</title>
+    <authors>JP Software</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://jpsoft.com/license.html</licenseUrl>
+    <projectUrl>https://jpsoft.com/products/take-command.html</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/take-command/take-command_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+###[choco://take-command](choco://take-command)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+	
+![Screenshot of Take Command] (https://jpsoft.com/images/takecommand.jpg)
+
+###Enhancing the Windows Command Prompt and Batch Scripting
+
+####Take Command organizes your Windows command prompts
+
+Take Command is a comprehensive interactive GUI and Windows command line toolkit that makes your Windows command prompts easier to use and far more powerful. Take Command includes optional Windows Explorer integration, tabbed console windows, and major enhancements to standard Windows CMD commands such as COPY, DEL, FOR, MOVE, REN, SET, and START And it and adds 200+ new commands, command line syntax coloring, vastly improved command line editing, programmable tab filename and directory completion, and thousands of other features.
+ 
+
+In addition, Take Command is a powerful batch file programming tool, including an integrated IDE with a sophisticated editor and batch debugger. Take Command offers extensions such as DO loops, SWITCH statements, error and exception handling, system monitoring and event triggers, third-party plugins, and more than 690 built-in variables and functions.
+
+NEW COPY $99.95 UPGRADE $49.95
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/take-command/readme.md)**
+
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Take Command is a comprehensive interactive GUI and command line environment</summary>
+    <releaseNotes>https://jpsoft.com/help/whats-new-in-version-25.htm</releaseNotes>
+    <copyright>Copyright © JP Software, All Rights Reserved</copyright>
+    <tags>jpsoftware jpsoft take command prompt cmd cli shell trial binary</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/take-command</packageSourceUrl>
+    <docsUrl>https://jpsoft.com/help/index.htm?overview.htm</docsUrl>
+    <mailingListUrl>https://jpsoft.com/forums/</mailingListUrl>
+    <bugTrackerUrl>https://jpsoft.com/forums/forums/announcements.17/</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
