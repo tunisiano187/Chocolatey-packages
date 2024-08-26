@@ -5,7 +5,7 @@
     <version>21.10.0.21332</version>
     <title>N-able Recovery Console (Install)</title>
     <authors>N-able</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.n-able.com/legal/software-services-agreement</licenseUrl>
     <projectUrl>https://www.n-able.com/products/backup</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_icon.png</iconUrl>
