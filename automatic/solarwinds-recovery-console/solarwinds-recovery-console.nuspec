@@ -44,7 +44,7 @@ SpeedVault, a local cache capability, gives you the option to help recover data 
     <releaseNotes>https://status.n-able.com/release-notes/</releaseNotes>
     <copyright>© N-able MSP</copyright>
     <tags>solarwinds solarwindsmsp nable msp backup recovery console</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/solarwinds-recovery-console</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/solarwinds-recovery-console</packageSourceUrl>
     <docsUrl>https://documentation.n-able.com/backup/userguide/documentation/Content/advanced-recovery/recovery-console/home.htm</docsUrl>
     <mailingListUrl>https://success.n-able.com/#!/feedtype=RECENT_REPLY&amp;dc=RemoteManagement&amp;criteria=ALLQUESTIONS</mailingListUrl>
     <dependencies>
