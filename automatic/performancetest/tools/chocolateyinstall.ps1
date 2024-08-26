@@ -2,7 +2,7 @@
 $packageName    = 'performancetest'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www.passmark.com/downloads/petst.exe'
-$checksum       = '07562cb368e5ca9b212a4dee6d80f63f13fb73049d08df6d6f70f083c3025d76'
+$checksum       = '4cf7a8d21632d0757d80aae40469b6df279167a76250c6d10f5d856151b53b67'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
