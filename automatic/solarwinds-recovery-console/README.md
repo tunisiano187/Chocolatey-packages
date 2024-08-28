@@ -1,15 +1,6 @@
 [![](https://img.shields.io/chocolatey/v/solarwinds-recovery-console?color=green&label=solarwinds-recovery-console)](https://chocolatey.org/packages/solarwinds-recovery-console) [![](https://img.shields.io/chocolatey/dt/solarwinds-recovery-console)](https://chocolatey.org/packages/solarwinds-recovery-console)
 
 ## N-able Recovery Console (Install)
-
----
-
-### [choco://solarwinds-recovery-console](choco://solarwinds-recovery-console)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-
 ![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
 
 ### Your customers count on you.
@@ -22,16 +13,6 @@ The SolarWinds Backup management console is unique. The customizable dashboard p
 Increase your efficiency using deduplication - the full dataset for any system is backed up only once. Every backup afterward is incremental, updating only what’s changed—minimizing bandwidth usage and optimizing storage for your clients. 
 
 SpeedVault, a local cache capability, gives you the option to help recover data in minutes and meet, or better yet, exceed your Recovery Time Objectives (RTO). 
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/solarwinds-recovery-console/readme.md)**
-
-**NOTE: This will be deprecated and replaced with nable-recovery-console**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://solarwinds-recovery-console](choco://solarwinds-recovery-console)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
