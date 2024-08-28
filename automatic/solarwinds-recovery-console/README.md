@@ -1,7 +1,7 @@
 [![](https://img.shields.io/chocolatey/v/solarwinds-recovery-console?color=green&label=solarwinds-recovery-console)](https://chocolatey.org/packages/solarwinds-recovery-console) [![](https://img.shields.io/chocolatey/dt/solarwinds-recovery-console)](https://chocolatey.org/packages/solarwinds-recovery-console)
 
 ## N-able Recovery Console (Install)
-![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
+![Screenshot of SolarWinds Recovery Console](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/automatic/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
 
 ### Your customers count on you.
 ### You can count on us. 
