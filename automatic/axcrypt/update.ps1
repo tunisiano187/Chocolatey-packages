@@ -1,4 +1,4 @@
-﻿import-module Chocolatey-AU
+﻿import-module au
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $release = 'https://account.axcrypt.net/download/axcrypt-2-setup.exe'
