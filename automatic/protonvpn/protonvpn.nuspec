@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>protonvpn</id>
+    <version>3.3.0</version>
+    <title>ProtonVPN</title>
+    <authors>ProtonVPN AG</authors>
+    <owners>Sanshiro</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://protonvpn.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/TakataSanshiro/Chocolatey-Packages@master/automatic/protonvpn/protonvpn.png</iconUrl>
+    <description>## Unique Features for a more secure VPN
+Unlike other VPN services, ProtonVPN is designed with security as the main focus, drawing upon the lessons we have learned from working with journalists and activists in the field.
+* SECURE CORE
+* PERFECT FORWARD SECRECY
+* SWISS BASED
+* NO LOGS
+* TOR VPN
+* P2P Support
+* Unlimited Bandwidth
+* 10Gbit Servers
+* Up to 10 Devices
+* Professional Support
+
+## Notes
+Starting in version 3.0.0 of this package, 32bit installation is no longer supported and will fail the installation.
+If 32bit support is needed, the last package version supporting this is [2.4.1](https://community.chocolatey.org/packages/protonvpn/2.4.1)
+
+This package update to GitHub releases only. 2.4.2, 2.4.3 are not on GitHub releases.</description>
+    <summary>SECURE INTERNET ANYWHERE. EASY TO USE VPN FOR EVERYONE.</summary>
+    <copyright>ProtonVPN AG</copyright>
+    <tags>admin vpn tor security privacy multi-platform</tags>
+    <projectSourceUrl>https://github.com/ProtonVPN/win-app</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/protonvpn</packageSourceUrl>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.8.0.20190930" />
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
