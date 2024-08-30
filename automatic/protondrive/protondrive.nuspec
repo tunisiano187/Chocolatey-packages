@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>protondrive</id>
-    <version>3.3.0</version>
+    <version>0.0</version>
     <title>ProtonDrive</title>
     <authors>ProtonVPN AG</authors>
     <owners>Sanshiro</owners>
