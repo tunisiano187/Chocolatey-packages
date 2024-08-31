@@ -44,7 +44,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * If you have any requests or issues with this package please make an issue [here](https://github.com/tunisiano/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
     <copyright>Copyright © 2024 AxCrypt AB, All rights reserved.</copyright>
     <tags>axcrypt AxCrypt cloud storage crypt password freemium admin</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/axcrypt</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/axcrypt</packageSourceUrl>
     <docsUrl>https://www.axcrypt.net/information/guides/get-started</docsUrl>
     <mailingListUrl>https://www.axcrypt.net/forums/</mailingListUrl>
   </metadata>

@@ -4,7 +4,7 @@
   <metadata>
     <id>airshipper</id>
     <version>0.11.0</version>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/airshipper</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/airshipper</packageSourceUrl>
     <owners>tunisiano</owners>
 
     <title>airshipper (Install)</title>
