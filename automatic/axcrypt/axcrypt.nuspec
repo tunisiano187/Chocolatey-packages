@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>axcrypt</id>
-    <version>2.1.1675.0</version>
+    <version>2.1.1692.0</version>
     <title>AxCrypt</title>
     <authors>Svante Seleborg, Zebastian Victorin, Måns Hansson, Linda Olander, Mattias Tall, Alejandro Serratosa, Juliette Dreyer</authors>
     <owners>tunisiano</owners>
@@ -31,9 +31,9 @@ AxCrypt is used to share and work with stored documents and e-mail attachments, 
 `*` Some features are only available in AxCrypt Premium.
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>AxCrypt is a simple file encryption software for Windows. It integrates seamlessly with your workflow to encrypt, decrypt, store, send and work with files.</summary>
     <releaseNotes>#### Program
