@@ -5,7 +5,7 @@
     <version>2023.10.20</version>
     <title>HDHomeRun View (Install)</title>
     <authors>SiliconDust</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.silicondust.com/support/downloads/gpl/</licenseUrl>
     <projectUrl>https://www.silicondust.com/products/software/</projectUrl>
@@ -56,7 +56,7 @@ Also includes the HDHomeRun Setup and HDHomeRun Config programs.
 Firmware Changelog: https://www.silicondust.com/support/downloads/firmware-changelog/</releaseNotes>
     <copyright>SiliconDust</copyright>
     <tags>silicondust hdhomerun stream dvr plex atsc tv</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/hdhomerun-view</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hdhomerun-view</packageSourceUrl>
     <docsUrl>https://www.silicondust.com/support/instructions/</docsUrl>
     <mailingListUrl>https://www.silicondust.com/forum/index.php</mailingListUrl>
     <dependencies>

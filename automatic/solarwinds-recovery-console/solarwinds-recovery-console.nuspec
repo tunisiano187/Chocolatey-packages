@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.n-able.com/legal/software-services-agreement</licenseUrl>
     <projectUrl>https://www.n-able.com/products/backup</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f1a43e58b925c8a93e06e99da9f01ba3cc953259/icons/solarwinds-recovery-console.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
