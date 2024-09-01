@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>solarwinds-recovery-console</id>
-    <version>21.10.0.21332</version>
+    <version>21.10.0</version>
     <title>N-able Recovery Console (Install)</title>
     <authors>N-able</authors>
     <owners>tunisiano</owners>
