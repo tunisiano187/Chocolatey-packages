@@ -36,6 +36,7 @@ bless
 cameyo
 chainlp
 chrome-remote-desktop-chrome
+CoolReader
 copay
 CyberGhost-VPN
 datacleaner
@@ -201,4 +202,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-CoolReader
