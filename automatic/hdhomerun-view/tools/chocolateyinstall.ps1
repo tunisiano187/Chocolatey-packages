@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $url            = 'https://download.silicondust.com/hdhomerun/hdhomerun_windows.exe'
 $checksum       = 'CD35D3CCAC3B7ADCFF88BB14D34D4F55074B52043C8DE7A2525525C0C72BA871'
 
@@ -10,10 +10,10 @@ $packageArgs = @{
   silentArgs    = '/quiet /qn /norestart'
   softwareName  = 'HDHomeRun*'
   checksum      = $checksum
-  checksumType  = 'sha256' 
+  checksumType  = 'sha256'
 }
 
-Install-ChocolateyPackage @packageArgs  
+Install-ChocolateyPackage @packageArgs
 
 # UPDATE INSTRUCTIONS:
 # Update checksum
