@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>hdhomerun-view</id>
+    <version>2023.10.20</version>
+    <title>HDHomeRun View (Install)</title>
+    <authors>SiliconDust</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.silicondust.com/support/downloads/gpl/</licenseUrl>
+    <projectUrl>https://www.silicondust.com/products/software/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/hdhomerun-view/hdhomerun-view_icon.png</iconUrl>
+    <description>---
+
+### [choco://hdhomerun-view](choco://hdhomerun-view)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of HDHomeRun View](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/hdhomerun-view/hdhomerun-view_screenshot.png)
+
+### HDHomeRun VIEW app
+
+Live TV can be viewed with our own HDHomeRun View app (which is supported on Windows / Mac or Android devices such as phones, tablets, Kindle Fire, FireTV Box, Nvidia Shield and other supported Android TV devices).
+
+Launch the HDHomeRun VIEW application. It should start playing live TV automatically. Click anywhere, tap the screen, press space/up/down, or start typing a search term to bring up the channel list and our patented Channel Slice guide viewer.
+
+### Supported Hardware
+
+* HDHomeRun PRIME (HDHR3-CC)
+* HDHomeRun CONNECT (HDHR4-2US/2DT)
+* HDHomeRun EXTEND (HDTC-2US-M)
+* HDHomeRun EXPAND (HDHR3-4DC)
+
+Also includes the HDHomeRun Setup and HDHomeRun Config programs.
+
+**SOCIAL MEDIA:**
+[Facebook](https://www.facebook.com/HDHomeRun) | [Twitter](https://twitter.com/HDHomeRun_US) | [YouTube](https://www.youtube.com/channel/UCY-ctaERYcqfPTCoTWDJkyQ) | [Instagram](https://www.instagram.com/hdhomerun_by_silicondust/) | [Google+](https://plus.google.com/explore/HDHomeRun) | [LinkedIn](https://www.linkedin.com/company/2381133/)
+
+**OTHER PLATFORMS:**
+[Android App](https://play.google.com/store/apps/details?id=com.silicondust.view) | [iOS App](https://itunes.apple.com/us/app/hdhomerun/id949582631) | [Windows App](https://www.microsoft.com/en-us/store/p/hdhomerun/9nblggh58vwk) | [Mac Program](http://download.silicondust.com/hdhomerun/hdhomerun_mac.dmg) | [Linux Source](https://www.silicondust.com/support/linux/)
+
+**RELATED PACKAGES**
+[HDHomeRun Viewer for Plex ](https://chocolatey.org/packages/hdhomerunviewer-plex) | [HDGrandSlam for Plex ](https://chocolatey.org/packages/hdgrandslam-plex)
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/hdhomerun-view/readme.md)**
+
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>HDHomeRun View is a program to view live TV on your PC streamed from SiliconDust HDHomeRun tuners.</summary>
+    <releaseNotes>Software Changelog: https://www.silicondust.com/support/downloads/software-changelog/
+Firmware Changelog: https://www.silicondust.com/support/downloads/firmware-changelog/</releaseNotes>
+    <copyright>SiliconDust</copyright>
+    <tags>silicondust hdhomerun stream dvr plex atsc tv</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/hdhomerun-view</packageSourceUrl>
+    <docsUrl>https://www.silicondust.com/support/instructions/</docsUrl>
+    <mailingListUrl>https://www.silicondust.com/forum/index.php</mailingListUrl>
+    <dependencies>
+      <dependency id="vcredist140" version="14.30.30704" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
