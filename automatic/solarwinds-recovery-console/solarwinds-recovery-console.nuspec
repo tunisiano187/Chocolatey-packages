@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>solarwinds-recovery-console</id>
-    <version>21.10.0</version>
+    <version>23.12.0.24080</version>
     <title>N-able Recovery Console (Install)</title>
     <authors>N-able</authors>
     <owners>tunisiano</owners>
@@ -10,15 +10,8 @@
     <projectUrl>https://www.n-able.com/products/backup</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f1a43e58b925c8a93e06e99da9f01ba3cc953259/icons/solarwinds-recovery-console.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://solarwinds-recovery-console](choco://solarwinds-recovery-console)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-
-![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
+    <description><![CDATA[## N-able Recovery Console (Install)
+![Screenshot of SolarWinds Recovery Console](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/automatic/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
 
 ### Your customers count on you.
 ### You can count on us. 
@@ -31,15 +24,14 @@ Increase your efficiency using deduplication - the full dataset for any system i
 
 SpeedVault, a local cache capability, gives you the option to help recover data in minutes and meet, or better yet, exceed your Recovery Time Objectives (RTO). 
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/solarwinds-recovery-console/readme.md)**
+#### [choco://solarwinds-recovery-console](choco://solarwinds-recovery-console)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-**NOTE: This will be deprecated and replaced with nable-recovery-console**
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
     <summary>Get More Done with Automation without Learning a New Scripting Language</summary>
     <releaseNotes>https://status.n-able.com/release-notes/</releaseNotes>
     <copyright>© N-able MSP</copyright>
