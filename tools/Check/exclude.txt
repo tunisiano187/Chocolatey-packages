@@ -201,3 +201,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+CoolReader
