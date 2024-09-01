@@ -2,14 +2,7 @@
 
 ## HDHomeRun View (Install)
 
----
-
-### [choco://hdhomerun-view](choco://hdhomerun-view)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Screenshot of HDHomeRun View](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/hdhomerun-view/hdhomerun-view_screenshot.png)
+![Screenshot of HDHomeRun View](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@309652b7129eb3de995652c6dbfde2b0cd498936/automatic/hdhomerun-view/hdhomerun-view_screenshot.png)
 
 ### HDHomeRun VIEW app
 
@@ -34,15 +27,6 @@ Also includes the HDHomeRun Setup and HDHomeRun Config programs.
 
 **RELATED PACKAGES**
 [HDHomeRun Viewer for Plex ](https://chocolatey.org/packages/hdhomerunviewer-plex) | [HDGrandSlam for Plex ](https://chocolatey.org/packages/hdgrandslam-plex)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/hdhomerun-view/readme.md)**
-
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://hdhomerun-view](choco://hdhomerun-view)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
