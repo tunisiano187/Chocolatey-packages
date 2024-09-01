@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>frink</id>
+    <version>2023.01.31</version>
+    <title>Frink (Portable)</title>
+    <authors>Alan Eliasen</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://frinklang.org/</licenseUrl>
+    <projectUrl>https://frinklang.org/</projectUrl>
+    <iconUrl>https://m.media-amazon.com/images/I/51J1TtPZ3NL.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Frink is a practical calculating tool and programming language designed to make physical calculations simple, to help ensure that answers come out right, and to make a tool that's really useful in the real world. It tracks units of measure (feet, meters, kilograms, watts, etc.) through all calculations, allowing you to mix units of measure transparently, and helps you easily verify that your answers make sense. It also contains a large data file of physical quantities, freeing you from having to look them up, and freeing you to make effortless calculations without getting bogged down in the mechanics.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/frink/readme.md)**</description>
+    <summary>Frink is a practical calculating tool and programming language designed to make physical calculations simple.</summary>
+    <copyright>Alan Eliasen</copyright>
+    <tags>frink</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/frink</packageSourceUrl>
+    <dependencies>
+      <dependency id="javaruntime" version="8.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
