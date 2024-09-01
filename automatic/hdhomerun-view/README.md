@@ -2,7 +2,7 @@
 
 ## HDHomeRun View (Install)
 
-![Screenshot of HDHomeRun View](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/hdhomerun-view/hdhomerun-view_screenshot.png)
+![Screenshot of HDHomeRun View](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@309652b7129eb3de995652c6dbfde2b0cd498936/automatic/hdhomerun-view/hdhomerun-view_screenshot.png)
 
 ### HDHomeRun VIEW app
 
