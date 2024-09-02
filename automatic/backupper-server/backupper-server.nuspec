@@ -48,7 +48,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>https://www.ubackup.com/changelog.html</releaseNotes>
     <copyright>Copyright © AOMEI</copyright>
     <tags>aomei backupper backup clone restore trial</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/backupper-server</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/backupper-server</packageSourceUrl>
     <docsUrl>https://www.ubackup.com/help/</docsUrl>
     <mailingListUrl>https://www.aomeitech.com/forum/</mailingListUrl>
     <bugTrackerUrl>https://www.ubackup.com/changelog.html</bugTrackerUrl>

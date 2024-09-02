@@ -16,7 +16,7 @@
     <summary>Frink is a practical calculating tool and programming language designed to make physical calculations simple.</summary>
     <copyright>Alan Eliasen</copyright>
     <tags>frink</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/frink</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/frink</packageSourceUrl>
     <dependencies>
       <dependency id="javaruntime" version="8.0.0" />
     </dependencies>
