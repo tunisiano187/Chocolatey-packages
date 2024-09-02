@@ -4,8 +4,6 @@
 
 Frink is a practical calculating tool and programming language designed to make physical calculations simple, to help ensure that answers come out right, and to make a tool that's really useful in the real world. It tracks units of measure (feet, meters, kilograms, watts, etc.) through all calculations, allowing you to mix units of measure transparently, and helps you easily verify that your answers make sense. It also contains a large data file of physical quantities, freeing you from having to look them up, and freeing you to make effortless calculations without getting bogged down in the mechanics.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/frink/readme.md)**
-
 #### [choco://frink](choco://frink)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
