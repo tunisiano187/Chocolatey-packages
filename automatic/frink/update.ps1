@@ -26,8 +26,11 @@ function global:au_GetLatest {
 	$recentDate = $dates | Select-Object -First 1
 	$version = $recentDate.Replace("-",".")
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	  . ..\..\scripts\Get-FileVersion.ps1
+	  $FileVersion = Get-FileVersion $url32
+
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType32 }
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
