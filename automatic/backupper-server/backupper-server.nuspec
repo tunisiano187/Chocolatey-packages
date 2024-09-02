@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.ubackup.com/terms.html</licenseUrl>
     <projectUrl>http://www.backup-utility.com/server.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@825d679a1dbdb711c3e9c7d978fb2e4cd1595a5a/icons/backupper-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e37d2b5270aafc17990a612e4504f1229e706148/icons/backupper-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AOMEI Backupper Server (Install)
 

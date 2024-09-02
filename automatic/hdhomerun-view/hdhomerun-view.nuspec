@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.silicondust.com/support/downloads/gpl/</licenseUrl>
     <projectUrl>https://www.silicondust.com/products/software/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/hdhomerun-view/hdhomerun-view_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@309652b7129eb3de995652c6dbfde2b0cd498936/icons/hdhomerun-view.png</iconUrl>
     <description>---
 
 ### [choco://hdhomerun-view](choco://hdhomerun-view)
