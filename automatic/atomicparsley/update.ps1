@@ -35,7 +35,7 @@ function global:au_GetLatest {
 	$FileVersion = Get-FileVersion $url32 -keep
 	Move-Item -Path $FileVersion.TempFile -Destination $File
 
-  	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+  	$Latest = @{ URL32 = $url32; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
 	return $Latest
 }
 
