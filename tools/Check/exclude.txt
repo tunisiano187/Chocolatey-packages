@@ -202,3 +202,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+homeassistant
