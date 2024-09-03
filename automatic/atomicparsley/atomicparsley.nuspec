@@ -46,6 +46,7 @@ With the exception of artwork, all iTunes-style tags support only 1 piece of met
     <bugTrackerUrl>https://github.com/wez/atomicparsley/issues</bugTrackerUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

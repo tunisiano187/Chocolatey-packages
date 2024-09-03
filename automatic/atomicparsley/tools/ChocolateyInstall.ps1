@@ -4,8 +4,8 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = 'atomicparsley'
   unzipLocation = $toolsDir
-  fileType      = 'ZIP' 
-  url           = "$toolsDir\AtomicParsleyWindows.zip"
+  fileType      = 'ZIP'
+  file          = "$toolsDir\AtomicParsleyWindows.zip"
 }
 
 Install-ChocolateyZipPackage @packageArgs
