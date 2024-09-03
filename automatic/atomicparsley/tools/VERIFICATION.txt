@@ -1,0 +1,6 @@
+﻿==================== AtomicParsley ====================
+
+bcurran3 downloaded the packaged binary from the developer's site at:
+https://github.com/wez/atomicparsley/releases
+
+==================== AtomicParsley ====================
