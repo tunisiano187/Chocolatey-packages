@@ -5,7 +5,7 @@
     <version>20200701.154658.0</version>
     <title>AtomicParsley (Portable)</title>
     <authors>BStory, puck_lock</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/wez/atomicparsley/blob/master/COPYING</licenseUrl>
     <projectUrl>https://github.com/wez/atomicparsley</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/atomicparsley/atomicparsley_icon.png</iconUrl>
