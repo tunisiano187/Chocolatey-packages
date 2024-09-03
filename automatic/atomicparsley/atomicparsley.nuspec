@@ -40,7 +40,7 @@ With the exception of artwork, all iTunes-style tags support only 1 piece of met
     <releaseNotes>https://github.com/wez/atomicparsley/releases</releaseNotes>
     <tags>atomicparsley metadata editor portable</tags>
     <projectSourceUrl>https://github.com/wez/atomicparsley</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/atomicparsley</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/atomicparsley</packageSourceUrl>
     <docsUrl>http://atomicparsley.sourceforge.net/documents.html</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/atomicparsley/discussion/</mailingListUrl>
     <bugTrackerUrl>https://github.com/wez/atomicparsley/issues</bugTrackerUrl>
