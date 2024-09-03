@@ -1,8 +1,0 @@
-﻿==================== HFSExplorer ====================
-
-bcurran3 downloaded and packaged the included .EXE for HFSExplorer from the developer's SourceForge page. 
-
-The direct download link can be found at:
-https://sourceforge.net/projects/catacombae/files/HFSExplorer/0.23.1/hfsexplorer-0.23.1-setup.exe
-
-==================== HFSExplorer ====================
