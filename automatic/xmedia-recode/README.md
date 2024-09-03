@@ -1,7 +1,7 @@
 [![](https://img.shields.io/chocolatey/v/xmedia-recode?color=green&label=xmedia-recode)](https://chocolatey.org/packages/xmedia-recode) [![](https://img.shields.io/chocolatey/dt/xmedia-recode)](https://chocolatey.org/packages/xmedia-recode)
 
 ## XMedia Recode (Install)
-![XMedia Recode Screenshot](https://cdn.staticaly.com/gh/anggaaja/chocolatey/master/xmedia-recode/assets/xmedia-recodescreenshot.png)
+![XMedia Recode Screenshot](https://www.xmedia-recode.de/en/media/image1.jpg)
 	
 XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, H.265, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
 
