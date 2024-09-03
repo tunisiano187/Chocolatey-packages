@@ -79,6 +79,7 @@ hdparm
 hexamail-pop3-downloader
 highlight
 hikvision-sadp
+homeassistant
 hostinfo
 hp-bios-cmdlets
 hp-ilo-cmdlets
@@ -202,4 +203,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-homeassistant
