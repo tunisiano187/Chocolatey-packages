@@ -79,6 +79,7 @@ install:
     @{
       '7zip.install' = '24.7.0'
       'chocolatey' = $chocoVersion
+      'chocolatey-misc-helpers.extension' = '0.0.4'
       'wormies-au-helpers' = '0.4.1'
       'checksum' = '0.3.1'
       'keepass.install' = '2.57.0'
