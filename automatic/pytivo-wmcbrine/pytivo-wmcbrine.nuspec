@@ -5,7 +5,7 @@
     <version>2018.05.09</version>
     <title>PyTivo-wmcbrine (Install)</title>
     <authors>pyTivo was created by Jason Michalski ("armooo"). Contributors include Kevin R. Keegan, William McBrine, and Terry Mound ("wgw").</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://github.com/wmcbrine/pytivo</projectUrl>
     <iconUrl>https://pbs.twimg.com/profile_images/278393246/pytivo_400x400.gif</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
