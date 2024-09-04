@@ -1,4 +1,4 @@
-﻿$packageName  = 'pytivo-wmcbrine' 
+$packageName  = 'pytivo-wmcbrine'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://github.com/wmcbrine/pytivo/archive/master.zip'
 $checksum     = 'B7AAFF318F2D7471CC550ADB11FBF89AC333FFB4C559F7E3F48611D40D870387'
@@ -7,10 +7,10 @@ $ShortcutName = 'PyTiVo (wmcbrine).lnk'
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256'   
+  checksumType  = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs
