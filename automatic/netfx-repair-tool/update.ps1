@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$release = 'https://www.microsoft.com/en-us/download/details.aspx?id=30135'
+$release = 'https://aka.ms/DotnetRepairTool'
 
 function global:au_SearchReplace {
 	@{
@@ -18,8 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $release
-	$url32 = $page.Links.href | Where-Object {$_ -match ".exe$"} | Select-Object -First 1
+	$url32 = Get-RedirectedUrl $release
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileInfo = Get-FileVersion $url32
 
