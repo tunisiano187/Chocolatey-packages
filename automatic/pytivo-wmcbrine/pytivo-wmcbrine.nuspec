@@ -28,7 +28,7 @@ This is the wmcbrine fork.
     <summary>pyTivo lets you stream most videos from your PC to your unhacked TiVo.</summary>
     <tags>pytivo wmcbrine tivo home theater video streaming server</tags>
     <projectSourceUrl>https://github.com/wmcbrine/pytivo</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/pytivo-wmcbrine</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pytivo-wmcbrine</packageSourceUrl>
     <docsUrl>http://pytivo.sourceforge.net/wiki/index.php/Windows_Install</docsUrl>
     <dependencies>
       <dependency id="python2" version="[2.5, 3.0)" />
