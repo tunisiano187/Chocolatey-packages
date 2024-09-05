@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/wez/atomicparsley/blob/master/COPYING</licenseUrl>
     <projectUrl>https://github.com/wez/atomicparsley</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/atomicparsley/atomicparsley_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7b48c7c5b29d0441ef8ccd402fd43e5bc662ff2c/icons/atomicparsley.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
