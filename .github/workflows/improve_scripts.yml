@@ -1,0 +1,28 @@
+﻿name: Package improver
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  updater:
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 100
+
+      - name: Configure git client
+        run: |
+          git config --global user.email "helpdesk.choc@gmail.com"
+          git config --global user.name "Tunisiano"
+          git config --global core.safecrlf false
+          git checkout master
+
+      - name: Checking nuspec errors
+        run: |
+          scripts\checks.ps1
