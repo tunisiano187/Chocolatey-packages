@@ -1,4 +1,4 @@
-﻿$packageName = 'pacman-revenge' 
+$packageName = 'pacman-revenge'
 $Shortcut    = 'Pacman The Ghosts Revenge.lnk'
 
 remove-item "$env:Public\Desktop\$Shortcut" -Force -ErrorAction 'SilentlyContinue'
