@@ -10,7 +10,7 @@
     <authors>Alexandru Dicu</authors>
     <licenseUrl>https://www.binisoft.org/eula</licenseUrl>
     <projectUrl>https://www.binisoft.org</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/windowsfirewallcontrol.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/windowsfirewallcontrol.png</iconUrl>
     <tags>windowsfirewallcontrol Windows Firewall Control WFC binisoft malwarebytes</tags>
     <summary>Windows Firewall Control is a powerful tool which extends the functionality of Windows Firewall and provides new extra features which makes Windows Firewall better. </summary>
     <description><![CDATA[## Windows Firewall Control - Managing Windows Firewall is now easier than ever

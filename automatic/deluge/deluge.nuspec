@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://git.deluge-torrent.org/deluge/tree/LICENSE</licenseUrl>
     <projectUrl>https://deluge-torrent.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/deluge.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/deluge.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## deluge
 Deluge is a [full-featured](https://dev.deluge-torrent.org/wiki/About#Whataboutfeatures) ​BitTorrent client for Linux, OS X, Unix and Windows. 

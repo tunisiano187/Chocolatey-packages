@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.winedt.com/registration.html</licenseUrl>
     <projectUrl>https://www.winedt.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/winedt.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/winedt.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## WinEdt
 WinEdt is a powerful and versatile text editor for Windows, with a strong predisposition towards the creation of [La]TeX documents. Do not, however, mistake WinEdt itself for a TeX system!
