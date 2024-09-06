@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
     <tags>foss nightly cross-platform admin brave brave-browser bravebrowser web browser web-browser chromium adblock adblocker privacy</tags>
     <projectSourceUrl>https://github.com/brave/brave-browser</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/brave-nightly</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/brave-nightly</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

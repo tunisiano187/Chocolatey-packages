@@ -45,7 +45,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© 2001 ej-technologies GmbH</copyright>
     <tags>trial java installation builder</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/install4j.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/install4j.portable</packageSourceUrl>
     <docsUrl>http://resources.ej-technologies.com/install4j/help/doc/</docsUrl>
     <bugTrackerUrl>http://ej-technologies.com/support/bugReport</bugTrackerUrl>
   </metadata>
