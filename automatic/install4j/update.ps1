@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module Chocolatey
+import-module AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 function global:au_SearchReplace {
