@@ -8,7 +8,7 @@
     <title>IPRoyal Pawns</title>
     <authors>IPRoyal</authors>
     <projectUrl>https://dashboard.pawns.app/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/pawns.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/pawns.png</iconUrl>
     <copyright>IPRoyal</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://pawns.app/blog/</docsUrl>
