@@ -21,7 +21,7 @@ VLC needs to be restarted to change to skins mode.</description>
     <summary>Skins (themes) for VLC</summary>
     <releaseNotes>According to the download notes "This pack is updated daily" but all files are from 2011/02/03.</releaseNotes>
     <tags>vlc skins admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/vlc-skins</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vlc-skins</packageSourceUrl>
     <docsUrl>https://wiki.videolan.org/Skins/</docsUrl>
     <mailingListUrl>https://forum.videolan.org/viewforum.php?f=15</mailingListUrl>
     <dependencies>
