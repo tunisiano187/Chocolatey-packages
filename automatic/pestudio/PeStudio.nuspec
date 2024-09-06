@@ -19,7 +19,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>PeStudio is a utility for inspecting PE formatted binaries</summary>
     <licenseUrl>https://www.winitor.com/tools/pestudio/changes.log</licenseUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/pestudio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/pestudio.png</iconUrl>
     <releaseNotes>#### Software
 * [Changelog](https://www.winitor.com/tools/pestudio/changes.log)
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/jitsi-meet-electron.png" width="48" height="48"/> [Jitsi Meet Electron](https://github.com/jitsi/jitsi-meet-electron)
+# <img src="https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/jitsi-meet-electron.png" width="48" height="48"/> [Jitsi Meet Electron](https://github.com/jitsi/jitsi-meet-electron)
 
 ## Features
 

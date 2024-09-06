@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.zimbra.com/product/licenses-and-terms-of-use/</licenseUrl>
     <projectUrl>https://www.zimbra.com/zimbra-desktop-download/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/zimbradesktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/zimbradesktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Zimbra Desktop
 Zimbra Desktop client lets you manage your various email accounts in one desktop tool. You can store and synch your email, calendar, contacts, files and documents between the servers and your computer, making them locally accessible when working off line. When you re-connect, all your data automatically syncs between the servers and your computer. Zimbra mail, Yahoo! mail, Gmail, Microsoft Outlook and any other work or personal email account that uses POP or IMAP can be set up in Zimbra Desktop. Each account is separately maintained. When you receive new email messages in any of your accounts, and you have Internet access, the messages are automatically downloaded to your Zimbra Desktop.
