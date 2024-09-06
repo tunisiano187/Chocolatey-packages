@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>super-mario-bros-java</id>
+    <version>2017.05.06</version>
+    <title>Super Mario Bros Java (Portable)</title>
+    <authors>Amit Ranaware</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://sourceforge.net/directory/os:windows/license:osi-approved-open-source/open-software-license/</licenseUrl>
+    <projectUrl>https://sourceforge.net/projects/super-mario-bros-java/</projectUrl>
+    <iconUrl>https://a.fsdn.com/allura/p/super-mario-bros-java/icon</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of Super Mario Bros Java](https://a.fsdn.com/con/app/proj/super-mario-bros-java/screenshots/1(1).png)	
+
+###Buttons:
+* Z = Fire / Speed
+* X = Jump
+* Arrow Left = Go Left
+* Arrow Right = Go Right
+* Arrow Down = Crouch / Go inside Pump(Downwards)
+* T = Take ScreenShot
+* I = Info
+
+All Levels(except cloud ones) with Sound,
+(cheats - one of Keyboard button will activate star)
+Disable sound if Game is lagging,
+require min. Java 1.4 , after GamePad Patch will requir
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/super-mario-bros-java/readme.md)**</description>
+    <summary>Super Mario Bros written in Java</summary>
+    <tags>aryan55 super mario bros game java portable</tags>
+    <projectSourceUrl>https://sourceforge.net/projects/super-mario-bros-java/files/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/super-mario-bros-java</packageSourceUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/super-mario-bros-java/tickets/</bugTrackerUrl>
+    <dependencies>
+      <dependency id="javaruntime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
