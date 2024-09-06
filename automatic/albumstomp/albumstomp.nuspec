@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>albumstomp</id>
+    <version>2.40</version>
+    <title>AlbumStomp (Install)</title>
+    <authors>StompSoftware</authors>
+    <owners>tunisiano</owners>
+    <projectUrl>https://stompsoftware.com/albumstomp2-features/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@50fde2ea33f9f3277b4cdae4abd95b438dc8f6e5/icons/albumstomp.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## AlbumStomp (Install)
+
+Create beautiful albums faster and easier than ever before.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Create beautiful albums faster and easier than ever before.</summary>
+    <tags>albumstomp</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/albumstomp</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
