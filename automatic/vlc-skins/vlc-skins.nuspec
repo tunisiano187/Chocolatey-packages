@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>vlc-skins</id>
+    <version>2017.01.13</version>
+    <title>VLC Skins (Install)</title>
+    <authors>Various</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.videolan.org/legal.html</licenseUrl>
+    <projectUrl>https://www.videolan.org/vlc/skins.html</projectUrl>
+    <iconUrl>https://rawgit.com/chocolatey/chocolatey-coreteampackages/3952380efd0776bea6d964ed4e28efa979b434d2/icons/vlc.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>How to use these skins?
+Skins do not work on Mac OS X!
+Put the downloaded VLT files in the following folder:
+On Windows: the skins folder in the VLC installation directory (e.g. C:\Program Files\VideoLAN\VLC\skins)
+On Linux/Unix: ~/.local/share/vlc/skins2
+
+Then open your VLC settings and change your interface from native to skins. You can choose your desired skin already there or change it when you are in the skins mode by rightclicking somewhere on the skin and going to Interface&gt;Choose Skin.
+VLC needs to be restarted to change to skins mode.</description>
+    <summary>Skins (themes) for VLC</summary>
+    <releaseNotes>According to the download notes "This pack is updated daily" but all files are from 2011/02/03.</releaseNotes>
+    <tags>vlc skins admin</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/vlc-skins</packageSourceUrl>
+    <docsUrl>https://wiki.videolan.org/Skins/</docsUrl>
+    <mailingListUrl>https://forum.videolan.org/viewforum.php?f=15</mailingListUrl>
+    <dependencies>
+      <dependency id="vlc" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

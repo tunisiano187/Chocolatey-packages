@@ -1,0 +1,15 @@
+﻿VideoLAN's webpage at https://www.videolan.org/legal.html has the redistribution rights defined in this section quoted from the page:
+
+"May I redistribute a piece of VideoLAN software?
+Yes, you may distribute an original or a modified version of a piece of VideoLAN software as long as you comply with its license terms.
+Most pieces of software from VideoLAN are licensed under the GNU General Public License Version 2 (referred herein as GPL).
+You will find a license file named COPYING in all our products.
+Note: You do not need to ask VideoLAN the permission to distribute VideoLAN software!
+
+How do I redistribute a piece of VideoLAN software?
+You should refer to the GPL license to do so, and notably its 3rd paragraph.
+One of the easiest way to conform to the GPL is to accompany the product you want to distribute with its sources.
+For example, if you plan to distribute the latest binary version of VLC on a DVD-ROM, you should also include the VLC source code and the source code for the underlying included libraries on the same media."
+
+GNU General Public License Version 2 can be found here:
+https://www.gnu.org/licenses/gpl-2.0.html

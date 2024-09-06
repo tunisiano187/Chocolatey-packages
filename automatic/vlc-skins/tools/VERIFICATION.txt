@@ -1,0 +1,6 @@
+﻿VERIFICATION
+
+Binary .ZIP included in this package was downloaded by the packager, bcurran3. SHA1 signatures were manually created and put in the package .nuspec file. No signatures are posted by the author/website.
+
+
+
