@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/DuckieTV/Nightlies/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>http://schizoduckie.github.io/DuckieTV/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/duckietv.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/duckietv.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## DuckieTV
 DuckieTV is an application that takes care of TV-Show addicts by providing a personalized TV-Show calendar. DuckieTV makes sure the information is always up-to-date and gives you an integrated blocking-resistant torrent search to help you get to the right download as easy as possible.

@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/Nexus-Mods/Nexus-Mod-Manager/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.nexusmods.com/mods/modmanager</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/nmm.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/nmm.png</iconUrl>
     <description><![CDATA[## The Nexus Mod Manager (NMM)
 The Nexus Mod Manager (NMM) is a free and open source piece of software that allows you to download, install, update and manage your mod files through an easy to use interface. It integrates with the Nexus sites to provide you with a fast, efficient and much less hassled modding experience.
 

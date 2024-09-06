@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.nirsoft.net/utils/opened_files_view.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/opened_files_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/ofview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4d4c2d70e723c4a532ddd8089f7258674e9dc73f/icons/ofview.png</iconUrl>
     <description>OpenedFilesView displays the list of all opened files on your system.
 
 For each opened file, additional information is displayed: handle value, read/write/delete access, file position, the process that opened the file, and more...
