@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://wordweb.info/free/licence5.html</licenseUrl>
     <projectUrl>https://wordweb.info/free/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@53ccf04e0621fce53cfb96004ffcd1d080ad2155/icons/wordweb-free.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/wordweb-free.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## WordWeb Free (Install)
 

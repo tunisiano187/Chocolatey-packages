@@ -33,7 +33,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/electrum</packageSourceUrl>
     <projectUrl>https://electrum.org</projectUrl>
     <projectSourceUrl>https://github.com/spesmilo/electrum</projectSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c09beeb5d983b7be1b77408bceb31d8e95b6c9a5/icons/electrum.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/electrum.png</iconUrl>
     <tags>bitcoin btc blockchain wallet cryptocurrency</tags>
     <copyright>© 2012 Electrum</copyright>
     <licenseUrl>https://raw.githubusercontent.com/spesmilo/electrum/master/LICENCE</licenseUrl>

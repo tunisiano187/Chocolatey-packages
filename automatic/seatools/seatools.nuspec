@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.seagate.com/legal-privacy/terms-and-conditions/</licenseUrl>
     <projectUrl>https://www.seagate.com/support/downloads/seatools/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b9650b812e8f6e56460322197ca6e14739ab0e1d/icons/seatools.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/seatools.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 

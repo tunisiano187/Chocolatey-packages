@@ -8,7 +8,7 @@
     <authors>Romain Bourdon</authors>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wamp-server</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@09dcc733052a7af6597bec7bb19c890a59ba6c9d/icons/wamp-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/wamp-server.png</iconUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://www.wampserver.com/en/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

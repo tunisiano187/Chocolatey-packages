@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Automattic/wp-calypso/blob/trunk/LICENSE.md</licenseUrl>
     <projectUrl>https://developer.wordpress.com/calypso/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6eda178b3ed3e4e4755f6be97d3f94c05f6c4397/icons/wordpress-com-for-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/wordpress-com-for-desktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>## Features
 * A control panel for all your WordPress sites

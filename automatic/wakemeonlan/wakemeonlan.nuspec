@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wakemeonlan</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/wake_on_lan.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@35558df303fa947a0da268304a6fe6cb3e67e803/icons/wakemeonlan.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/wakemeonlan.png</iconUrl>
     <tags>wol network remote magic-packet cli</tags>
     <copyright>© 2011 NirSoft</copyright>
     <licenseUrl>http://www.nirsoft.net/utils/wake_on_lan.html</licenseUrl>

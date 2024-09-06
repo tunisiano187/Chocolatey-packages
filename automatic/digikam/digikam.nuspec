@@ -32,7 +32,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© 2020 digiKam team</copyright>
     <licenseUrl>https://gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/digikam.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/digikam.svg</iconUrl>
     <releaseNotes>
 #### Program
 * [Roadmap](https://www.digikam.org/about/releaseplan)
