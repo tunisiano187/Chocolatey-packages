@@ -10,7 +10,7 @@
     <title>pslab-desktop (Install)</title>
     <authors>FOSSASIA</authors>
     <projectUrl>https://github.com/fossasia/pslab-desktop</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/pslab-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/pslab-desktop.png</iconUrl>
     <copyright>https://github.com/fossasia/pslab-desktop</copyright>
     
     <licenseUrl>https://github.com/fossasia/pslab-desktop/blob/development/LICENSE</licenseUrl>

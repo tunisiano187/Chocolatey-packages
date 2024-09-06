@@ -8,7 +8,7 @@
     <title>WARP (Install)</title>
     <authors>Cloudflare</authors>
     <projectUrl>https://one.one.one.one/beta</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/warp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/warp.png</iconUrl>
     <copyright>Cloudflare</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://support.cloudflarewarp.com/hc/en-us/articles/360051891814-Beta-Install-Instructions</docsUrl>

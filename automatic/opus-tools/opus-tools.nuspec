@@ -27,7 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© Opus</copyright>
     <licenseUrl>https://www.opus-codec.org/license/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/opus-tools.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/opus-tools.svg</iconUrl>
     <releaseNotes>#### Software
 [What's New](https://www.opus-codec.org/downloads/)
 [Changelog](https://github.com/xiph/opus-tools/releases)

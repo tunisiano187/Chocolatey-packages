@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/nukeop/nuclear/master/LICENSE</licenseUrl>
     <projectUrl>https://nuclear.js.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/nuclear.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6254eadc35038892f7f26733cb67f7141c6eb51b/icons/nuclear.png</iconUrl>
     <description><![CDATA[## nuclear
 nuclear is a free music streaming program that pulls content from free sources all over the internet.
 
