@@ -20,7 +20,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Create beautiful albums faster and easier than ever before.</summary>
     <tags>albumstomp</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/albumstomp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/albumstomp</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
