@@ -1,4 +1,4 @@
-﻿#https://www.videolan.org/vlc/download-skins2-go.php?url=vlc-skins.zip
+#https://www.videolan.org/vlc/download-skins2-go.php?url=vlc-skins.zip
 $packageName    = 'vlc-skins'
 $installerType  = 'zip'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -18,5 +18,5 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-Remove-Item $url 
-				  
+Remove-Item $url
+
