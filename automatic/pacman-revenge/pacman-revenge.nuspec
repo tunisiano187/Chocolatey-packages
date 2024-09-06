@@ -33,7 +33,7 @@ Since you need to get all pills to finish a level your only chance is to grab th
     <summary>PJ Crossley's remake of the classic Pacman game.</summary>
     <copyright>PJ Crossley</copyright>
     <tags>pjcrossley pacman retro game portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/pacman-revenge</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pacman-revenge</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
