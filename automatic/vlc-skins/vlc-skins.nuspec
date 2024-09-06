@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.videolan.org/legal.html</licenseUrl>
     <projectUrl>https://www.videolan.org/vlc/skins.html</projectUrl>
-    <iconUrl>https://rawgit.com/chocolatey/chocolatey-coreteampackages/3952380efd0776bea6d964ed4e28efa979b434d2/icons/vlc.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bd24a958627b8a078a3c55dd57008780f42294fd/icons/vlc-skins.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>How to use these skins?
 Skins do not work on Mac OS X!
