@@ -26,7 +26,7 @@ This software is free for non-profit usage or evaluation. If you earn (or save) 
     <copyright>© Autodesk</copyright>
     <licenseUrl>https://www.autodesk.com/company/legal-notices-trademarks</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/eagle.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2d609f7e3fdba59bee54e7e9113c485e7603dd9d/icons/eagle.png</iconUrl>
     <releaseNotes>
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)

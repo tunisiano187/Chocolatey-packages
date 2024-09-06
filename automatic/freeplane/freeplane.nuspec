@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/freeplane/freeplane/blob/1.11.x/license.txt</licenseUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freeplane</packageSourceUrl>
     <projectUrl>https://sourceforge.net/projects/freeplane/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/freeplane.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@83762a6cbbc4e6c9f7dc6a97c15ba1bc4129d583/icons/freeplane.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Open source mind mapping program</summary>
     <description><![CDATA[## freeplane

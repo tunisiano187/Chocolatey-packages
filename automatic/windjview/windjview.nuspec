@@ -9,7 +9,7 @@
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/windjview/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windjview</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/windjview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9032014b234d834d1283c46bf1c5540927199788/icons/windjview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## WinDjView
 WinDjView is a fast, compact and powerful DjVu viewer for Windows with tabbed interface, continuous scrolling and advanced printing options. It uses the free [DjVuLibre](http://djvu.sourceforge.net/) library to decode DjVu documents. [DjVu](http://djvu.org/) is a web-centric format and software platform for distributing documents and images.

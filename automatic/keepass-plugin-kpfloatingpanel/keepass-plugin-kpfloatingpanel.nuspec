@@ -24,7 +24,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
     <projectSourceUrl>https://github.com/mitchcapper/KPFloatingPanel</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mitchcapper/KPFloatingPanel/issues</bugTrackerUrl>
     <docsUrl>https://github.com/mitchcapper/KPFloatingPanel/wiki/</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/keepass-plugin-kpfloatingpanel.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@61bbc80b1b144484675dcdecece7b970c869ffc4/icons/keepass-plugin-kpfloatingpanel.png</iconUrl>
     <tags>keepass plugin floating-panel</tags>
     <copyright>© Alexeev Alexander, S², Mitch Capper</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

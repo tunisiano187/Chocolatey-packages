@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/mpc-qt/mpc-qt/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/mpc-qt/mpc-qt</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/mpc-qt.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@cc92803aa341418e3249209d3118a4629b3a9967/icons/mpc-qt.png</iconUrl>
     <description><![CDATA[## MPC QT (mpc-qt)
 Media Player Classic Qute Theater (mpc-qt) is a clone of Media Player Classic (mpc-hc) reimplemented in Qt. It aims to reproduce most of the interface and 
 functionality of mpc-hc while using libmpv to play video instead of DirectShow.

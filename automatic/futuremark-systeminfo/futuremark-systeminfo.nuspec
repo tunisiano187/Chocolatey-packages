@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/futuremark-systeminfo</packageSourceUrl>
     <licenseUrl>https://benchmarks.ul.com/terms-and-conditions</licenseUrl>
     <projectUrl>https://benchmarks.ul.com/systeminfo</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/futuremark-systeminfo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0d46ba326febbfb5ce0fd9fcdfebdd5173fcb25c/icons/futuremark-systeminfo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Futuremark SystemInfo (Install)
 

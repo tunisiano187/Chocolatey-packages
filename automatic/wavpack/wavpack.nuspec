@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.opus-codec.org/license/</licenseUrl>
     <projectUrl>https://www.wavpack.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/wavpack.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/wavpack.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>WavPack is a completely open audio compression format providing lossless, high-quality lossy, and a unique hybrid compression mode. Although the technology is loosely based on previous versions of WavPack, the new version 4 format has been designed from the ground up to offer unparalleled performance and functionality.
 

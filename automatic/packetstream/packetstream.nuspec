@@ -9,7 +9,7 @@
     <title>packetstream (Install)</title>
     <authors>Packetstream.io</authors>
     <projectUrl>https://packetstream.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/packetstream.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ff2a603e8a06e9677be5f83c53a80f0b7ae3f89d/icons/packetstream.png</iconUrl>
     <copyright>PacketStream.io</copyright>
     <docsUrl>https://packetstream.io/support/faq</docsUrl>
     <tags>packetstream earn bandwidth</tags>

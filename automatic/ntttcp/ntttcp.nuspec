@@ -7,7 +7,7 @@
     <authors>Microsoft</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://github.com/microsoft/ntttcp</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/ntttcp.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/ntttcp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes></releaseNotes>
     <description><![CDATA[## Microsoft NT TCP Testing Tool (NTTTCP) 5.33 (Portable)

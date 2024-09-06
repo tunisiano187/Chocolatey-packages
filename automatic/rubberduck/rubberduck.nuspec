@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/retailcoder/Rubberduck/blob/master/license</licenseUrl>
     <projectUrl>https://github.com/retailcoder/Rubberduck/releases</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/rubberduck.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4923a72d91eb84e4de97b4a9019b6a3628172668/icons/rubberduck.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Rubberduck
 Rubberduck is an add-in for the Microsoft Office Visual Basic Applications (VBA) editor (VBE).

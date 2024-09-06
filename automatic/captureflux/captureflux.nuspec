@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://paul.glagla.free.fr/captureflux_en.htm</licenseUrl>
     <projectUrl>http://paul.glagla.free.fr/captureflux_en.htm</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/captureflux.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a58926b3d1f98857d0cf629249b5686bd5f2e3cd/icons/captureflux.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## CaptureFlux (Portable)
 

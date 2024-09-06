@@ -17,7 +17,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/winmerge.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@63d0da8ee5209ca91b1d04e1ebbfe3a08f39ad40/icons/winmerge.png</iconUrl>
     <projectUrl>http://winmerge.org/</projectUrl>
     <projectSourceUrl>https://github.com/winmerge/winmerge</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winmerge</packageSourceUrl>

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://wiki.creativecommons.org/Public_domain</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/whirlpoolfilech/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/wfilecheck.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c9900d54ac150dad1b54cc16f4899d5ea9d988bc/icons/wfilecheck.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This file integrity checker uses Alternate Data Streams to store the hashes of your files. So, it only works on NTFS volumes. With that, you can rename, copy or move your files (to another NTFS volume) without losing the hashes, and without needing to do anything else.
 

@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <bugTrackerUrl>https://github.com/snes9xgit/snes9x/issues</bugTrackerUrl>
     <docsUrl>https://github.com/snes9xgit/snes9x/wiki</docsUrl>
     <mailingListUrl>http://www.snes9x.com/phpbb3/</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/snes9x.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a7134e3c0d6a1b54cc7e4bb6a1f04764f4a56643/icons/snes9x.png</iconUrl>
     <tags>emulator snes gaming</tags>
     <copyright>© Snes9x Team</copyright>
     <licenseUrl>https://raw.githubusercontent.com/snes9xgit/snes9x/master/LICENSE</licenseUrl>

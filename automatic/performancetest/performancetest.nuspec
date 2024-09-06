@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.passmark.com/legal/disclaimer.htm</licenseUrl>
     <projectUrl>https://www.passmark.com/products/pt.htm</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/performancetest.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@497f30ef7f7edaf8fd76ca01c30f55248f52e426/icons/performancetest.png</iconUrl>
     <description><![CDATA[## PassMark PerformanceTest (Install)
 
 ![Screenshot of PerformanceTest](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3daee90dac41f77e1b3bb9c372412810693455cc/automatic/performancetest/cpu_test.jpg)

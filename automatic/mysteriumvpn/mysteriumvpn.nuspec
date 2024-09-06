@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/mysteriumnetwork/mysterium-vpn-desktop/master/LICENSE</licenseUrl>
     <projectUrl>https://mysteriumvpn.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/mysteriumvpn.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9ce764c7238e9e939e70bce486326434f976c1fd/icons/mysteriumvpn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Mysterium VPN
 ### Censorship free internet for all
