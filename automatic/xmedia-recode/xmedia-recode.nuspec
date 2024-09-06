@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>xmedia-recode</id>
-    <version>3.6.0.0</version>
+    <version>3.6.0.1</version>
     <title>XMedia Recode (Install)</title>
     <authors>Sebastian Dörfler</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://www.xmedia-recode.de/en/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@6dbe86522737f35faf37e32cd9540c81008d2922/icons/xmedia-recode.png</iconUrl>
     <description><![CDATA[## XMedia Recode (Install)
-![XMedia Recode Screenshot](https://cdn.staticaly.com/gh/anggaaja/chocolatey/master/xmedia-recode/assets/xmedia-recodescreenshot.png)
+![XMedia Recode Screenshot](https://www.xmedia-recode.de/en/media/image1.jpg)
 	
 XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, H.265, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
 
