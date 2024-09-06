@@ -32,7 +32,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/foldit</packageSourceUrl>
     <projectUrl>http://fold.it/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/foldit.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/foldit.png</iconUrl>
     <tags>citizen-science biology protein-folding game puzzle admin</tags>
     <copyright>© Center for Game Science at University of Washington</copyright>
     <licenseUrl>https://fold.it/legal</licenseUrl>

@@ -32,7 +32,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/dogecoin/dogecoin</projectSourceUrl>
     <bugTrackerUrl>https://github.com/dogecoin/dogecoin/issues</bugTrackerUrl>
     <docsUrl>http://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/dogecoin.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/dogecoin.png</iconUrl>
     <tags>ltc doge p2p cryptocurrency</tags>
     <copyright>© 2012 The Ðogecoin Project</copyright>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>

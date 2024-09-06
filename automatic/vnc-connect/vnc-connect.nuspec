@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.realvnc.com/legal/</licenseUrl>
     <projectUrl>https://www.realvnc.com/products/vnc/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/vnc-connect.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/vnc-connect.png</iconUrl>
     <description><![CDATA[## VNC Connect (Install)
 
 ![Screen shot of VNC Connect Viewer](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c4fa29e2c27cb9c5a6be573f470cfe8553be0cbb/automatic/vnc-connect/vnc-viewer_screenshot.png)
