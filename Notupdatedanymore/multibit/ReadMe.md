@@ -1,4 +1,4 @@
-﻿[![](https://img.shields.io/chocolatey/v/multibit?color=green&label=multibit)](https://chocolatey.org/packages/multibit) [![](https://img.shields.io/chocolatey/dt/multibit)](https://chocolatey.org/packages/multibit)
+[![](https://img.shields.io/chocolatey/v/multibit?color=green&label=multibit)](https://chocolatey.org/packages/multibit) [![](https://img.shields.io/chocolatey/dt/multibit)](https://chocolatey.org/packages/multibit)
 
 ## Multibit
 MultiBit is a Simplified Payment Verification (SPV) Bitcoin desktop client.

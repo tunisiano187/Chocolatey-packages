@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.teamspeak.com/en/features/licensing/</licenseUrl>
     <projectUrl>https://www.teamspeak.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1b4b81e18dd7d68b08dcde91bd061dbc3690ab88/icons/teamspeak-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/teamspeak-server.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## TeamSpeak Server
 

@@ -12,7 +12,7 @@
     <authors>Haoyuan Liu</authors>
     
     <projectUrl>https://hyliu.me/fluent-reader/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@896b3633043d588c069590e19cc93d3834c07bb1/icons/fluent-reader.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/fluent-reader.png</iconUrl>
     
     <licenseUrl>https://raw.githubusercontent.com/yang991178/fluent-reader/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

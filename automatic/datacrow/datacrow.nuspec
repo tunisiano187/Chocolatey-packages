@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>http://www.datacrow.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/datacrow.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/datacrow.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Data Crow is the ultimate media cataloger and media organiser. Always wanted to manage all your collections in one product? You want a product you can customize to your needs? Your search ends here! Using Data Crow allows you to create a huge database containing all your collectables. You can use the excellent online services to retrieve the information instead of typing all the information yourself. Data Crow has a modular setup allowing it to be extended with user created collection modules.
 

@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/domain_hosting_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@88a9c1a39f8c216d6fbdb748248a5eb511b5605f/icons/domainhostingview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/domainhostingview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DomainHostingView is a utility for Windows that collects extensive information about a domain by using a series of DNS and WHOIS queries,
 and generates HTML report that can be displayed in any Web browser.

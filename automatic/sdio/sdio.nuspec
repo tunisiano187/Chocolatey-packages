@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://sourceforge.net/p/snappy-driver-installer-origin/code/HEAD/tree/trunk/resources/gpl-3.0.txt?format=raw</licenseUrl>
     <projectUrl>https://sourceforge.net/p/snappy-driver-installer-origin</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@40c3a3d4bd00e678297a08100b604627ecdaffcf/icons/sdio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9491881f98837a048cd79c620b9c5ae3124f7db5/icons/sdio.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Snappy Driver Installer Origin (SDIO)
 Snappy Driver Installer Origin is a fork of Snappy Driver Installer starting at version `r541`. The old project is no longer in the hands of the original developers, is no longer open source and is not safe to use.
