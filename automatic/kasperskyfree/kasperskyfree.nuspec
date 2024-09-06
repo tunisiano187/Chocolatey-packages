@@ -10,7 +10,7 @@
     <title>kasperskyfree (Install)</title>
     <authors>Kaspersky Labs</authors>
     <projectUrl>https://www.kaspersky.com/free-cloud-antivirus</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/kasperskyfree.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/kasperskyfree.png</iconUrl>
     <copyright>Year Software Vendor</copyright>
     <licenseUrl>https://www.kaspersky.com/end-user-license-agreement</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

@@ -8,7 +8,7 @@
     <authors>ODrive.com</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.odrive.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ac4386bc41259e5af38cbaa0cc6126b037c6d7f/icons/odrive.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@632a6cb75508e235c7b8d4f8603a6a80ddce0c2c/icons/odrive.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://docs.odrive.com/docs/odrive-terms-of-service</licenseUrl>
     <description><![CDATA[## Odrive
