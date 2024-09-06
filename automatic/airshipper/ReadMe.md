@@ -5,7 +5,7 @@ Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren u
 
 Veloren is a multiplayer voxel RPG written in Rust. It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft.
 
-![Beautiful town](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@master/automatic/airshipper/screenshot_1683454504978.png) | Taken by @ogzzmert
+![Beautiful town](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@master/automatic/airshipper/screenshot_1683454504978.png) | Taken by @ogzzmert
 
 Veloren is fully open-source, licensed under GPL 3. It uses original graphics, music and other assets created by its community. Being contributor-driven, its development community and user community is one and the same: developers, players, artists and musicians come together to develop the game.
 
