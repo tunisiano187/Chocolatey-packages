@@ -13,27 +13,17 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_BeforeUpdate($Package) {
-  Get-RemoteFiles -Purge -NoSuffix
-}
-
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "axcrypt.exe"
-	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
-  Remove-Item -Force $File
+	. ..\..\scripts\Get-FileVersion.ps1
+  $FileVersion = Get-FileVersion $release -keep
+  Move-Item -Path $FileVersion.TempFile -Destination "tools/$($FileVersion.FileName)"
 
-  $Latest = @{ URL32 = $release; Version = $version }
+  $Latest = @{ URL32 = $release; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $FileVersion.Version }
 	return $Latest
 }
 
-try {
-  update -ChecksumFor none -NoCheckChocoVersion
-} catch {
-  $ignore = "Chocolatey v2.2.2 Attempting to push axcrypt.2.1.1647.nupkg to https://push.chocolatey.org An error has occurred. It's possible the package version already exists on the repository or a nuspec element is invalid. See error below... Response status code does not indicate success: 409 (Conflict)."
-  if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
-}
+update -ChecksumFor none -NoCheckChocoVersion
