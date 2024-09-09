@@ -4,11 +4,10 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = 'atomicparsley'
   unzipLocation = $toolsDir
-  fileType      = 'ZIP'
-  file          = "$toolsDir\AtomicParsleyWindows.zip"
+  FileFullPath  = "$toolsDir\AtomicParsleyWindows.zip"
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 Move-Item -Path "$toolsDir\Release\*.exe" -Destination "$toolsDir"
 Remove-Item "$toolsDir\Release" -EA SilentlyContinue | Out-Null
 Remove-Item "$toolsDir\*.zip" -EA SilentlyContinue | Out-Null

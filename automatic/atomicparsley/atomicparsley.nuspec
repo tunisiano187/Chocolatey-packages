@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>atomicparsley</id>
-    <version>20240608.83822.1</version>
+    <version>20240608.0.0</version>
     <title>AtomicParsley (Portable)</title>
     <authors>BStory, puck_lock</authors>
     <owners>tunisiano</owners>
