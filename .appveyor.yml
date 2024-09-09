@@ -204,9 +204,6 @@ build_script:
     Write-Host "Updating Packages.md"
     scripts/ListPackages.ps1
     git commit -am "List packages"
-    Write-Host "Downloading next issue's package"
-    scripts/Find-nextissue.ps1
-    git commit -am "next issue"
     Write-host "Check broken package"
     tools/looknewer.ps1
     git commit -am "Broken packages"
