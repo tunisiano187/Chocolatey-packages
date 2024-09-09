@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   issues:
     types: [closed]
+  schedule:
+    - cron: "10 8 * * *"
 
 jobs:
   search:
