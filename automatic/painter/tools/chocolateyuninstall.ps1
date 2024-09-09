@@ -1,4 +1,4 @@
-﻿$packageName = 'painter' 
+$packageName = 'painter'
 $Shortcut    = 'Painter.lnk'
 
 remove-item "$env:Public\Desktop\$Shortcut" -Force -ErrorAction 'SilentlyContinue'
