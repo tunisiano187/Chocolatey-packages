@@ -29,6 +29,7 @@ VLC needs to be restarted to change to skins mode.</description>
     </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
