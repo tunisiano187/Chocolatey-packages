@@ -29,7 +29,7 @@ function global:au_GetLatest {
 		Move-Item -Path $FileInfos.TempFile -Destination "tools\$($FileInfos.FileName)"
 		$version = $FileInfos.Version
 	}
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
 	return $Latest
 }
