@@ -27,7 +27,9 @@ function global:au_GetLatest {
 		$version = "0.0"
 	} else {
 		Move-Item -Path $FileInfos.TempFile -Destination "tools\$($FileInfos.FileName)"
-		$version = $FileInfos.Version
+		$response = Invoke-WebRequest -Uri $url -Method Head
+		$FileDate = [datetime]::Parse($response.Headers["Last-Modified"])
+		$version = "{0:0000}.{1:00}.{2:00}" -f $FileDate.Year, $FileDate.Month, $FileDate.Day
 	}
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
