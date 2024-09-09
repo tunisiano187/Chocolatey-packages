@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>atomicparsley</id>
-    <version>20200701.154658.0</version>
+    <version>20240608.83822.1</version>
     <title>AtomicParsley (Portable)</title>
     <authors>BStory, puck_lock</authors>
     <owners>tunisiano</owners>
@@ -10,12 +10,7 @@
     <projectUrl>https://github.com/wez/atomicparsley</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7b48c7c5b29d0441ef8ccd402fd43e5bc662ff2c/icons/atomicparsley.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-
-### [choco://atomicparsley](choco://atomicparsley)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## AtomicParsley (Portable)
 
 ### AtomicParsley is a lightweight command line program for reading, parsing and setting metadata into MPEG-4 files supporting these styles of metadata:
 
@@ -28,14 +23,14 @@ The MPEG-4 container is based on Apple's Quicktime .mov container (just more san
 
 With the exception of artwork, all iTunes-style tags support only 1 piece of metadata - you can't have for example 3 title tags. 3gp assets and copyright notices support multiple tags, but they must differ in the language setting for that tag. You can have for example 3 title tags, but 1 in english, 1 in spanish, 1 in undefined. All iTunes-style text metadata is always in UTF-8; 3gp assets and copyright notices can be in set in UTF-8 or UTF-16. All strings are converted internally to UTF-8, converting as necessary. On *nix platforms, input is in UTF-8; the native Windows port supports full UTF-16 input.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/atomicparsley/readme.md)**
-    
+#### [choco://atomicparsley](choco://atomicparsley)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>AtomicParsley is a lightweight command line program that can read and set iTunes-style metadata tags in MPEG-4 files and 3gp assets in 3GPP/3GPP2 files.</summary>
     <releaseNotes>https://github.com/wez/atomicparsley/releases</releaseNotes>
     <tags>atomicparsley metadata editor portable</tags>
