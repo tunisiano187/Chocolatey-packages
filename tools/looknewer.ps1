@@ -142,8 +142,8 @@ if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | 
         $link = "From [list.txt](https://raw.githubusercontent.com/tunisiano187/choco-packages/master/tools/Check/list.txt)"
         if (!(Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open -Label "-Waiting_maintainer_answer" | Where-Object {$_.title -notmatch "Dependency Dashboard"} | Where-Object {$_ -notmatch "Set-GitHubConfiguration"}) -and $search -ne '') {
             [string]$Label = "ToCreateManualy"
-            [string]$Title = "($($search)$($version)) update requested"
-            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) Outdated and needs to be updated
+            [string]$Title = "($($search)) update requested"
+            [string]$Description = "([$search](https://chocolatey.org/packages/$search)) version $($version) Outdated and needs to be updated
 $link"
             New-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -Title $Title -Body $Description -Label $Label
             $issue=1
