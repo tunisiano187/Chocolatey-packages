@@ -30,7 +30,7 @@ p=pause
     <summary>PJ Crossley's remake of the classic Painter game.</summary>
     <copyright>PJ Crossley</copyright>
     <tags>pjcrossley painter retro game portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/painter</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/painter</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
