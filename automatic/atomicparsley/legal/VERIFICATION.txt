@@ -14,8 +14,8 @@ location and can be verified by doing the following:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
-  checksum type: sha256
-  checksum: CC7C5A7DCABA28869F3819E4A57F382DC0FF307B7B013F9BFFD028605AE6F52D
+  checksum type: SHA512
+  checksum: 102DC097CB96630076124068DDBB6C7967741E2DB468815A9952A5BF3D8E4EB6957A591EAE365714FE0AC215E69EE86553DEB18E280F2AFEB79D25D55EC83912
 
 Using AU:
 

@@ -30,7 +30,7 @@ function global:au_GetLatest {
     	$version = "$version-pre$($date)"
 	}
 	Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
-	$File = "tools\$($url32 -split "/" | Select-Object -Last 1)"
+	$File = "tools\AtomicParsleyWindows.zip"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $url32 -keep
 	Move-Item -Path $FileVersion.TempFile -Destination $File
