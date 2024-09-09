@@ -18,11 +18,10 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = $releases
 	. ..\..\scripts\Get-FileVersion.ps1
-	$FileInfos = Get-FileVersion -url $url32 -keep
-	$fileContent = Get-Content -Path $FileInfos.TempFile
-	if ($fileContent -contains $checksum) {
+	$FileInfos = Get-FileVersion -url $releases -keep
+	$fileContent = Get-Content -Path '.\legal\VERIFICATION.txt'
+	if ($fileContent -match $FileInfos.checksum) {
 		Write-Debug "Checksum $checksum match, won't be updating the file"
 		$version = "0.0"
 	} else {
@@ -32,7 +31,7 @@ function global:au_GetLatest {
 		$version = "{0:0000}.{1:00}.{2:00}" -f $FileDate.Year, $FileDate.Month, $FileDate.Day
 	}
 
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
+	$Latest = @{ URL32 = $releases; Version = $version; Checksum32 = $FileInfos.CHECKSUM; ChecksumType32 = $FileInfos.ChecksumType }
 	return $Latest
 }
 
