@@ -173,6 +173,7 @@ storjshare
 Swish
 take-command
 tcc
+tivotogo-plex
 todobackup
 tonido-drive
 trafficwatcher
@@ -203,4 +204,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-tivotogo-plex
