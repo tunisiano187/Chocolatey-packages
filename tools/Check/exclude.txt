@@ -204,3 +204,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+painter
