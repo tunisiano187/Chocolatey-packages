@@ -1,0 +1,16 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from the official mirror and can be verified like this:
+
+1. Download the following installer(s):
+
+url32: https://www.medo64.com/download/vhdattach422.exe
+
+2. You can use one of the following methods to obtain the checksum(s):
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+checksumtype: sha256
+checksum32: 013510C10844652EC37B587A714B922E425DC979EBE33621A45125B4FC31284F
