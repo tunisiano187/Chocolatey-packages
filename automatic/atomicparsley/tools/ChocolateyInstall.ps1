@@ -9,5 +9,7 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 Move-Item -Path "$toolsDir\Release\*.exe" -Destination "$toolsDir"
-Remove-Item "$toolsDir\Release" -ErrorAction SilentlyContinue -Force | Out-Null
+if(Test-Path "$toolsDir\Release") {
+  Remove-Item "$toolsDir\Release" -ErrorAction SilentlyContinue -Force | Out-Null
+}
 Remove-Item "$toolsDir\*.zip" -ErrorAction SilentlyContinue -Force | Out-Null
