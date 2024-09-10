@@ -206,3 +206,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+burgertime
