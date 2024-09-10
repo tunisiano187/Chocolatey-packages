@@ -207,3 +207,4 @@ xmeters
 zimbra-desktop
 zona
 burgertime
+superpacman
