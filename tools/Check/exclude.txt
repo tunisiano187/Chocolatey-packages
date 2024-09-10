@@ -208,3 +208,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+monkeyacademy
