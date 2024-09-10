@@ -1,4 +1,4 @@
-﻿$packageName = 'snake' 
+$packageName = 'snake'
 $Shortcut    = 'Snake.lnk'
 
 remove-item "$env:Public\Desktop\$Shortcut" -Force -ErrorAction 'SilentlyContinue'
