@@ -33,6 +33,7 @@ bitcoin-unlimited.install
 bitmessage
 bitpay-wallet
 bless
+burgertime
 cameyo
 chainlp
 chrome-remote-desktop-chrome
@@ -172,6 +173,7 @@ speex
 split
 sqlserver2012express
 storjshare
+superpacman
 Swish
 take-command
 tcc
@@ -206,5 +208,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-burgertime
-superpacman
