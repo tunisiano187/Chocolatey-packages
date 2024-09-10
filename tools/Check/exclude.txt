@@ -205,3 +205,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+snake
