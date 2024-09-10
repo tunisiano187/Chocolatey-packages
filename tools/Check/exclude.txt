@@ -208,4 +208,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-superpacman

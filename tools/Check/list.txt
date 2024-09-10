@@ -1,4 +1,3 @@
-monkeyacademy 0.0 - New maintainer
 millipede 0.0 - New maintainer
 crosextrafonts-carlito-font 0.0 - New maintainer
 pacman 0.0 - New maintainer
