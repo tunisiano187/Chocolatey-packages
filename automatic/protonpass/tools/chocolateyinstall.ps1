@@ -1,7 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-#$url        = ''
-$url64      = 'https://proton.me/download/PassDesktop/win32/x64/ProtonPass_Setup_1.16.7.exe'
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+#$url           = ''
+$url64          = 'https://proton.me/download/PassDesktop/win32/x64/ProtonPass_Setup_1.16.7.exe'
+$checksum64     = ''
+$checksumType64 = ''
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -14,8 +16,8 @@ $packageArgs = @{
   softwareName  = 'Proton Pass*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   #checksum      = '{{Checksum}}'
   #checksumType  = '{{ChecksumType}}' #default is md5, can also be sha1, sha256 or sha512
-  checksum64    = '6ED86BF91D59F16D0F4F02CF8961CBCA461264160CB3F5CD326EDF71297CC948'
-  checksumType64= 'sha256' #default is checksumType
+  checksum64    = $checksum64
+  checksumType64= $checksumType64
 }
 
 Install-ChocolateyPackage @packageArgs # https://docs.chocolatey.org/en-us/create/functions/install-chocolateypackage
