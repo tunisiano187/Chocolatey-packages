@@ -213,3 +213,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+frogger
