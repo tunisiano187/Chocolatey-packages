@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 #$url           = ''
-$url64          = 'https://proton.me/download/PassDesktop/win32/x64/ProtonPass_Setup_1.16.7.exe'
+$url64          = 'https://proton.me/download/PassDesktop/win32/x64/ProtonPass_Setup_1.22.3.exe'
 $checksum64     = ''
 $checksumType64 = ''
 

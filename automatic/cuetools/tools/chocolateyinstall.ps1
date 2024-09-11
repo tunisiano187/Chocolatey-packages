@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = ''
-$checksum     = ''
+$url          = 'https://github.com/gchudov/cuetools.net/releases/download/v2.2.6/CUETools_2.2.6.zip'
+$checksum     = '103b209502935c911f2162a5babfb21550476413aee13d88187e39783a2a2e32'
 $checksumType = 'sha256'
 
 $packageArgs = @{
