@@ -1,4 +1,4 @@
-﻿$packageName = 'millipede' 
+$packageName = 'millipede'
 $Shortcut    = 'Millipede.lnk'
 
 remove-item "$env:Public\Desktop\$Shortcut" -Force -ErrorAction 'SilentlyContinue'
