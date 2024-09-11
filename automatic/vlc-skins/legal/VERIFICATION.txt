@@ -6,11 +6,11 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-url32: https://www.medo64.com/download/vhdattach422.exe
+url32: https://www.videolan.org/vlc/skins2/vlc-skins.zip
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum32: 013510C10844652EC37B587A714B922E425DC979EBE33621A45125B4FC31284F
+checksum32: F26CF757285724B5F9E792D2C346E0F112A61B2A4F0A2D63DE886250D114F4B0
