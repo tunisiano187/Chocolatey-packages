@@ -11,10 +11,9 @@ $FileFullPath = "$toolsDir\$ExeFile"
 
 $packageArgs = @{
   packageName   = $packageName
-  fileType      = 'EXE'
   url           = $url
   FileFullPath  = $FileFullPath
-  softwareName  = ''
+  softwareName  = 'frink'
   checksum      = $checksum
   checksumType  = $checksumType
 }
