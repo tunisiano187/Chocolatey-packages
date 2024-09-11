@@ -39,6 +39,7 @@ chainlp
 chrome-remote-desktop-chrome
 CoolReader
 copay
+crosextrafonts-carlito-font
 CyberGhost-VPN
 datacleaner
 datahealthcheck
@@ -115,6 +116,7 @@ mailnoter
 ManuelBastioniLAB
 md5sums
 meson
+millipede
 monkeyacademy
 mooncoin
 mossawir-lan-messenger
@@ -209,5 +211,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-millipede
-crosextrafonts-carlito-font
