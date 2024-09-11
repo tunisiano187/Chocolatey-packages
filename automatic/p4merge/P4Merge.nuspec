@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
 	<id>p4merge</id>
-	<version>2024.2</version>
+	<version>2024.3</version>
 	<owners>tunisiano</owners>
 	<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/p4merge</packageSourceUrl>
 	<iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a900da85b5ae92a06009fb5b35b3253720ca2206/icons/p4merge.png</iconUrl>
@@ -23,7 +23,7 @@ to resolve conflicts and merge competing versions into one.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
 	<releaseNotes>#### Software
 https://www.perforce.com/perforce/doc.current/user/p4vmergenotes.txt
