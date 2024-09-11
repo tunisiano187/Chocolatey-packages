@@ -19,7 +19,7 @@ The Proton Pass desktop app for Windows, includes offline access. To activate of
     <summary>Proton Pass secures your passwords and identity with end-to-end encryption.</summary>
     <copyright>Copyright © 2024 Proton AG</copyright>
     <tags>proton pass password manager security</tags>
-    <packageSourceUrl>https://github.com/wadoli/chocolatey-pkg-protonpass</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/protonpass</packageSourceUrl>
     <docsUrl>https://proton.me/support/pass</docsUrl>
   </metadata>
   <files>
