@@ -1,4 +1,4 @@
-﻿$packageName = 'frogger' 
+$packageName = 'frogger'
 $Shortcut    = 'Frogger.lnk'
 
 remove-item "$env:Public\Desktop\$Shortcut" -Force -ErrorAction 'SilentlyContinue'
