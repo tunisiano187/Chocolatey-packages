@@ -52,7 +52,7 @@ GM7 06/11/13
     <summary>PJ Crossley's remake of the classic Millipede game.</summary>
     <copyright>PJ Crossley</copyright>
     <tags>pjcrossley millipede retro game portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/millipede</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/millipede</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
