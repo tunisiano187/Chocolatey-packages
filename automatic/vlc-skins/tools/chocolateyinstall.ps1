@@ -12,5 +12,5 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Remove-Item $url
+Remove-Item $file
 
