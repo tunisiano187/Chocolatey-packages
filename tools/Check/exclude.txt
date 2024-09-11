@@ -211,3 +211,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+pacman
