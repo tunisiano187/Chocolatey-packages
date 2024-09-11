@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>cuetools</id>
+    <version>2.2.5</version>
+    <title>CUETools (Portable)</title>
+    <authors>Gregory S. Chudov, Moitah, others</authors>
+    <owners>wadoli</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/gchudov/cuetools.net/raw/master/License.txt</licenseUrl>
+    <projectUrl>http://cue.tools/</projectUrl>
+    <iconUrl>http://s3.cuetools.net/ctdb64.png</iconUrl>
+    <description># CUETools
+CUETools is a tool for lossless audio/CUE sheet format conversion. The goal is to make sure the album image is preserved accurately. A lossless disc image must be lossless not only in preserving contents of the audio tracks, but also in preserving gaps and CUE sheet contents. Many applications lose vital information upon conversion, and don't support all possible CUE sheet styles. For example, foobar2000 loses disc pre-gap information when converting an album image, and doesn't support gaps appended (noncompliant) CUE sheets.
+# Supported formats
+Supports WAV, FLAC, APE, LossyWAV, ALAC, TTA, and WavPack audio input/output. Audio must be 16-bit, 44.1kHz samples stereo (i.e. CD PCM). Supports every CUE sheet style (embedded, single file, gaps appended/prepended/left out). It is also possible to process a set of audio files in a directory without a CUE sheet, or use a RAR archive as an input without unpacking it.
+# CUERipper
+CUERipper is a utility for extracting digital audio from CDs, an open-source alternative to EAC. It has a lot fewer configuration options, so is somewhat easier to use, and is included in CUETools package. It supports MusicBrainz and freeDB metadata databases, AccurateRip and CTDB.</description>
+    <summary>CUETools is a tool for lossless audio/CUE sheet format conversion. CUERipper is a utility for extracting digital audio from CDs.</summary>
+    <releaseNotes>CUETools 2.2.5 Changelog
+
+* Update MAC_SDK from 9.04 to 10.37
+* FFmpeg plugin: Update FFmpeg.AutoGen from 6.0.0.2 to 6.1.0
+* FFmpeg plugin: Fix decoding flac using ffmpeg.dll plugin
+* Fix APE encoding under 32-bit
+* CUETools: Preserve settings for builtin formats
+* FFmpeg plugin: Allow decoding aiff using ffmpeg.dll
+* Fix C2 mode for further drives:
+* MATSHITA DVD-R UJ-868, HL-DT-ST BD-RE WH10LS30, HL-DT-ST DVDRAM GH22LS51
+* CUETools: Avoid applying offset twice
+* Update libFLAC from 1.4.2 to 1.4.3</releaseNotes>
+    <copyright>Copyright (C) 2006-2008  Moitah, Copyright (C) 2008-2023  Gregory S. Chudov</copyright>
+    <tags>opencl cuesheet cue lossless-compression-algorithm cd-ripper ALAC APE FLAC TTA WAV WavPack audio conversion convert cue-sheet cueripper lossless lossyWAV</tags>
+    <projectSourceUrl>https://github.com/gchudov/cuetools.net/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/wadoli/chocolatey-pkg-cuetools</packageSourceUrl>
+    <docsUrl>http://cue.tools/wiki/CUETools</docsUrl>
+    <mailingListUrl>https://hydrogenaud.io/index.php/board,74.0.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/gchudov/cuetools.net/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="netfx-4.8" version="4.8.0.20220524" />
+      <dependency id="vcredist140" version="14.36.32532" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
