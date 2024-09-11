@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>crosextrafonts-carlito-font</id>
+    <version>2013.09.20</version>
+    <title>Croscore Extra Fonts - Carlito (Install)</title>
+    <authors>Łukasz Dziedzic</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://opensource.org/licenses/OFL-1.1</licenseUrl>
+    <projectUrl>https://bugs.chromium.org/p/chromium/issues/detail?id=280557</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/mylogos/ttf_icon.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot example of Carlito versus Calabri](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Calibri_carlito_comparison.png/220px-Calibri_carlito_comparison.png)
+	
+The Chrome OS core fonts, also known as the Croscore fonts, are a collection of three TrueType font families: Arimo (sans-serif), Tinos (serif) and Cousine (monospace). These fonts are metrically compatible with Monotype Corporation’s Arial, Times New Roman, and Courier New, the most commonly used fonts on Microsoft Windows operating system, for which they are intended as open-source substitutes.
+
+Google licenses these fonts from Ascender Corporation under the Apache License 2.0.
+
+In 2013, Google released an additional Crosextra (Chrome OS Extra) package, featuring **Carlito** (which matches Microsoft's Calibri) and Caladea (matching Cambria). These two fonts are respectively metric-adjusted versions of Lato and Cambo, both available on Google Fonts.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/crosextrafonts-carlito-font/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>Carlito is a Croscore extras font metriclly compatible with Calibri.</summary>
+    <tags>ldziedzic chrome chromeos croscore carlito font ttf binaries</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/crosextrafonts-carlito-font</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-font-helpers.extension" version="0.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

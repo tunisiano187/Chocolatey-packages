@@ -1,0 +1,6 @@
+﻿==================== Croscore Extra Font Carlito ====================
+
+bcurran3 downloaded, unzipped, and packaged the Croscore Extra Font Carlito from: https://gsdview.appspot.com/chromeos-localmirror/distfiles/crosextrafonts-carlito-20130920.tar.gz
+It has a SHA256 of 4BD12B6CBC321C1CF16DA76E2C585C925CE956A08067AE6F6C64EFF6CCFDAF5A
+
+==================== Croscore Extra Font Carlito ====================
