@@ -210,3 +210,4 @@ xmeters
 zimbra-desktop
 zona
 millipede
+crosextrafonts-carlito-font
