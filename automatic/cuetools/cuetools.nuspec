@@ -5,7 +5,7 @@
     <version>2.2.5</version>
     <title>CUETools (Portable)</title>
     <authors>Gregory S. Chudov, Moitah, others</authors>
-    <owners>wadoli</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://github.com/gchudov/cuetools.net/raw/master/License.txt</licenseUrl>
     <projectUrl>http://cue.tools/</projectUrl>
