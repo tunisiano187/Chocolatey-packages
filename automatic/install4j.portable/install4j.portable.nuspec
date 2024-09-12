@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>install4j.portable</id>
-    <version>10.0.8</version>
+    <version>11.0</version>
     <title>install4j (Portable)</title>
     <authors>Dr Ingo Kegel</authors>
     <owners>tunisiano</owners>
@@ -34,7 +34,7 @@ install4j is a powerful multi-platform Java installer builder that generates nat
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Multi-Platform Java Installer Builder</summary>
     <releaseNotes>#### Program
