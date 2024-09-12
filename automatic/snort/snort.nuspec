@@ -5,7 +5,7 @@
     <version>2.9.20</version>
     <title>Snort (Install)</title>
     <authors>By Martin Roesch and The Snort Team</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.snort.org/license</licenseUrl>
     <projectUrl>https://www.snort.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7e97ae50cdee7a0f21970204fe7466e3bd49552c/icons/snort.png</iconUrl>

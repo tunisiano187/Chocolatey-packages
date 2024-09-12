@@ -5,7 +5,7 @@
     <version>20.7.0.20181</version>
     <title>SolarWinds Backup Manager (Install)</title>
     <authors>SolarWinds MSP</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://solarwindsmsp.com/legal/solarwinds-msp-software-services-agreement</licenseUrl>
     <projectUrl>https://solarwindsmsp.com/products/remote-management/backup-and-recovery</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@85179b8cd4077f4ed6504a5368999df5aee90917/icons/solarwinds-backup-manager.png</iconUrl>
