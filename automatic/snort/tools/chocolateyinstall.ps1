@@ -2,7 +2,7 @@
 $packageName   = 'snort' 
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $TodaysVersion = ($ENV:ChocolateyPackageVersion -replace '[.]','_')
-$url           = "$toolsDir\Snort_"+$TodaysVersion+"_Installer.exe"
+$url           = "$toolsDir\Snort_Installer.exe"
 $ahkExe        = 'AutoHotKey'
 $ahkFile       = "$toolsDir\snort_install.ahk"
 
