@@ -1,8 +1,0 @@
-﻿============================= SNORT ==============================
-
-bcurran3 downloads and packages the included .EXE installer for Snort from the developer's website. 
-
-The direct download link can be found at:
-https://www.snort.org/downloads#snort-downloads
-
-============================= SNORT ==============================
