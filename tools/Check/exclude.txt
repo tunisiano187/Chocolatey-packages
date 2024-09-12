@@ -129,6 +129,7 @@ movefile
 mrboom
 msdeploy
 msigna
+mspacmannes
 myuninst
 neat
 nexusfile
@@ -218,4 +219,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-mspacmannes

@@ -1,4 +1,3 @@
-mspacman 0.0 - New maintainer
 donkeykongjr 0.0 - New maintainer
 centipede 0.0 - New maintainer
 misslecommand 0.0 - New maintainer
