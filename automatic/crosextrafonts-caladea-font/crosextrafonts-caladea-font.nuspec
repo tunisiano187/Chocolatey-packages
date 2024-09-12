@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>crosextrafonts-caladea-font</id>
+    <version>2013.02.14</version>
+    <title>Croscore Extra Fonts - Caladea (Install)</title>
+    <authors>Carolina Giovagnoli,Andres Torresi, Huerta Tipográfica</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://fontlibrary.org/en/font/caladea</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/mylogos/ttf_icon.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot example of Caladea font](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Caladea-sample.svg/220px-Caladea-sample.svg.png)
+	
+The Chrome OS core fonts, also known as the Croscore fonts, are a collection of three TrueType font families: Arimo (sans-serif), Tinos (serif) and Cousine (monospace). These fonts are metrically compatible with Monotype Corporation’s Arial, Times New Roman, and Courier New, the most commonly used fonts on Microsoft Windows operating system, for which they are intended as open-source substitutes.
+
+Google licenses these fonts from Ascender Corporation under the Apache License 2.0.
+
+In 2013, Google released an additional Crosextra (Chrome OS Extra) package, featuring Carlito (which matches Microsoft's Calibri) and **Caladea** (matching Cambria). These two fonts are respectively metric-adjusted versions of Lato and Cambo, both available on Google Fonts.
+
+**Caladea** (Google's Caladea font, google-crosextrafonts-caladea) is a modern, friendly serif font, metric-compatible with Microsoft Fonts Cambria font. Caladea comes in regular, bold, italic, and bold italic. The family covers Latin-Greek-Cyrillic (not a complete set, though) with about 2,000 glyphs. It has the same character coverage as Microsoft Fonts Cambria. This font is sans-serif typeface family based on Lato. Caladea is a default Cambria font replace in the LibreOffice Suite.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/crosextrafonts-caladea-font/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>Caladea is a Croscore extras font metriclly compatible with Cambria.</summary>
+    <tags>chrome chromeos croscore caladea font ttf binaries</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/crosextrafonts-caladea-font</packageSourceUrl>
+    <dependencies>
+      <dependency id="chocolatey-font-helpers.extension" version="0.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

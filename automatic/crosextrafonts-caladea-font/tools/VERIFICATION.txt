@@ -1,0 +1,6 @@
+﻿==================== Croscore Extra Font Caladea ====================
+
+bcurran3 downloaded, unzipped, and packaged the Croscore Extra Font Caladea from: https://gsdview.appspot.com/chromeos-localmirror/distfiles/crosextrafonts-20130214.tar.gz
+It has a SHA256 of C48D1C2FD613C9C06C959C34DA7B8388059E2408D2BB19845DC3ED35F76E4D09
+
+==================== Croscore Extra Font Caladea ====================
