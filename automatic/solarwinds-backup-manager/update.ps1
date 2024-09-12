@@ -21,7 +21,7 @@ function global:au_GetLatest {
     . ..\..\scripts\Get-FileVersion.ps1
     $FileVersion = Get-FileVersion $url
 
-    $Latest = @{ URL32 = $url32; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+    $Latest = @{ URL32 = $url; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
     return $Latest
 }
 
