@@ -1,8 +1,8 @@
-﻿# IMPORTANT: Before releasing this package, copy/paste the next 2 lines into PowerShell to remove all comments from this file:
+# IMPORTANT: Before releasing this package, copy/paste the next 2 lines into PowerShell to remove all comments from this file:
 #   $f='c:\path\to\thisFile.ps1'
-#   gc $f | ? {$_ -notmatch "^\s*#"} | % {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
+#   gc $f | ? {$_ -notmatch "^\s*#"} | ForEach-Object {$_ -replace '(^.*?)\s*?[^``]#.*','$1'} | Out-File $f+".~" -en utf8; mv -fo $f+".~" $f
 
-## NOTE: In 80-90% of the cases (95% with licensed versions due to Package Synchronizer and other enhancements),
+## NOTE: In 80-90ForEach-Object of the cases (95ForEach-Object with licensed versions due to Package Synchronizer and other enhancements),
 ## AutoUninstaller should be able to detect and handle registry uninstalls without a chocolateyUninstall.ps1.
 ## See https://docs.chocolatey.org/en-us/choco/commands/uninstall
 ## and https://docs.chocolatey.org/en-us/create/functions/uninstall-chocolateypackage
@@ -37,7 +37,7 @@ $packageArgs = @{
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 
 if ($key.Count -eq 1) {
-  $key | % {
+  $key | ForEach-Object {
     $packageArgs['file'] = "$($_.UninstallString)" #NOTE: You may need to split this if it contains spaces, see below
 
     if ($packageArgs['fileType'] -eq 'MSI') {
@@ -66,7 +66,7 @@ if ($key.Count -eq 1) {
   Write-Warning "$($key.Count) matches found!"
   Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
   Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | % {Write-Warning "- $($_.DisplayName)"}
+  $key | ForEach-Object {Write-Warning "- $($_.DisplayName)"}
 }
 
 ## OTHER POWERSHELL FUNCTIONS
