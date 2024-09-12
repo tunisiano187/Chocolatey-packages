@@ -124,6 +124,7 @@ ManuelBastioniLAB
 md5sums
 meson
 millipede
+misslecommand
 monkeyacademy
 mooncoin
 mossawir-lan-messenger
@@ -222,4 +223,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-misslecommand
