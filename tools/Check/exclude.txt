@@ -70,6 +70,7 @@ findthatfont
 freearc
 free-ost-reader
 free-pst-reader
+frogger
 gamedownloader
 getopt
 go-contact-sync-mod
@@ -213,4 +214,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-frogger
