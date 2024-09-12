@@ -23,6 +23,7 @@ anvide-seal-folder
 apacheds
 Ardour
 armory
+asteroids
 audioswitcher
 autobootdisk
 avirafreeantivirus
@@ -216,4 +217,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-asteroids
