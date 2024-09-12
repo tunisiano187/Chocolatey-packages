@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sdio</id>
-    <version>1.13.3.767</version>
+    <version>1.13.4.771</version>
     <title>Snappy Driver Installer Origin</title>
     <authors>Glenn Delahoy</authors>
     <owners>tunisiano</owners>
@@ -57,7 +57,7 @@ _Since `r558` all application data, including downloaded drivers, is stored unde
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Windows driver updater program.</summary>
     <releaseNotes>#### Software

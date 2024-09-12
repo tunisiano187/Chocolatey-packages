@@ -13,4 +13,4 @@ url32: https://www.videolan.org/vlc/skins2/vlc-skins.zip
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum32: F26CF757285724B5F9E792D2C346E0F112A61B2A4F0A2D63DE886250D114F4B0
+checksum32: 3F2304CF25C8FD06BF97C9C19F63C33D7D2D1D318788993D670546061DC18B77
