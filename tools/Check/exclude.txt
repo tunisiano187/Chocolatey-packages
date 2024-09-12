@@ -33,6 +33,7 @@ bitcoin-unlimited.install
 bitmessage
 bitpay-wallet
 bless
+blinkys-scary-school
 burgertime
 cameyo
 chainlp
@@ -215,4 +216,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-blinkys-scary-school
