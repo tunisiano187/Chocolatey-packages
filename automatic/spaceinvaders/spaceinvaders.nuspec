@@ -36,7 +36,7 @@ http://www.synthasite.com/home
     <summary>PJ Crossley's remake of the classic Space Invaders game.</summary>
     <copyright>PJ Crossley</copyright>
     <tags>pjcrossley space invaders retro game portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/spaceinvaders</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/spaceinvaders</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
