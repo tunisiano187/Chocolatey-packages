@@ -35,7 +35,7 @@ Allway Sync uses innovative synchronization algorithms to synchronize your data 
     <releaseNotes>https://allwaysync.com/news</releaseNotes>
     <copyright>© Usov Lab, Botkind, Inc. All rights reserved.</copyright>
     <tags>allwaysync backup synchronization synchronize</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/allway-sync</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/allway-sync</packageSourceUrl>
     <docsUrl>http://allwaysync.com/support/faq</docsUrl>
     <mailingListUrl>http://allwaysync.com/support/</mailingListUrl>
     <bugTrackerUrl>https://syncapp.com/php/stss/main</bugTrackerUrl>
