@@ -1,0 +1,58 @@
+[![](https://img.shields.io/chocolatey/v/solarwinds-backup-manager?color=green&label=solarwinds-backup-manager)](https://chocolatey.org/packages/solarwinds-backup-manager) [![](https://img.shields.io/chocolatey/dt/solarwinds-backup-manager)](https://chocolatey.org/packages/solarwinds-backup-manager)
+
+## SolarWinds Backup Manager (Install)
+
+---
+
+### [choco://solarwinds-backup-manager](choco://solarwinds-backup-manager)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
+
+### Protect Your Users’ Data with Sophisticated Backup and Rapid Disaster Recovery
+
+Data loss can cause serious financial hardships for a company, and system downtime can cripple productivity, preventing a business from providing good service to customers. That’s why it’s critical to be prepared with the right technology.
+
+SolarWinds® Remote Monitoring & Management provides a hybrid cloud backup and disaster recovery feature, allowing you to help quickly restore business continuity after a disaster. Our True Delta™ technology helps to reduce backup times by storing changes instead of full files. This allows you to back up files quickly and frequently, helping you to prevent losing data due to a disaster. The backup and recovery feature also uses strong encryption both in transit and at rest, so you can breathe more easily knowing that data is kept safe.
+
+### Experience the Hybrid Cloud
+
+* **Best of both worlds:** Leverage a hybrid cloud architecture that gives you the control and speed of on-premises backup combined with the convenience and added redundancy of a cloud-based approach.
+* **Back up a number of devices at almost any level:** Back up everything, including workstations, servers, and even virtual machines and servers. Additionally, backups can be set for anything from individual files to applications all the way to full systems.
+
+### Back Up Fast, Recover Fast
+
+* **Fast backup:** Take advantage of our True Delta technology, which backs up changes rather than full files. This helps to reduce the time it takes to run the backup process, allowing you to back up more frequently.
+* **Fast recovery:** Get rapid recovery after a disaster using our hybrid cloud architecture that restores from either cloud-based or local copies—whichever is faster.
+* **Bare metal recovery:** Restore to a bare metal state using nothing more than a bootable USB drive or CD-ROM.
+* **Automatic updates:** Remote Monitoring & Management can automatically update a standby virtual server after the completion of each live server backup.
+* **Minimum resource usage:** All backups and restores are lightweight, keeping resource drain to a minimum.
+* **Bandwidth throttling:** Restrict upload and download bandwidth during a user-defined backup window.
+* **Standby image backup:** Automatically create a local .VHD/X file of your backup selections during each scheduled backup.
+
+### Leverage Enterprise-Grade Features
+
+* **Virtual machine support:** Back up your virtual environments with host-level VMware® and Hyper-V® backups. You can restore to an existing or alternate virtual environment.
+* **Ultra secure:** Leverage AES 256 or 448-bit Blowfish encryption to help with keeping data safe on-premises, during transfers, and in the cloud.
+* **Private keys:** Data can be accessed only by someone holding a private key.
+* **Secure data centers:** Store your data in one of our global data centers, each of which are SSAE-compliant or ISO-certified.
+* **Data archiving:** Choose how long you want to retain backup copies, allowing you to keep specific datasets and backups indefinitely. 
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/solarwinds-backup-manager/readme.md)**
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---
+
+#### [choco://solarwinds-backup-manager](choco://solarwinds-backup-manager)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
