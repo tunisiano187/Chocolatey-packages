@@ -14,3 +14,6 @@ url32: https://www.videolan.org/vlc/skins2/vlc-skins.zip
 
 checksumtype: sha256
 checksum32: 3F2304CF25C8FD06BF97C9C19F63C33D7D2D1D318788993D670546061DC18B77
+
+WebPage Hash
+pagehash: 
