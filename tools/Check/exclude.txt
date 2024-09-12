@@ -41,6 +41,7 @@ chainlp
 chrome-remote-desktop-chrome
 CoolReader
 copay
+crosextrafonts-caladea-font
 crosextrafonts-carlito-font
 CyberGhost-VPN
 datacleaner
@@ -217,4 +218,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-crosextrafonts-caladea-font
