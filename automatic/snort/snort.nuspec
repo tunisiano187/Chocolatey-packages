@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>snort</id>
-    <version>2.9.14.1</version>
+    <version>2.9.20</version>
     <title>Snort (Install)</title>
     <authors>By Martin Roesch and The Snort Team</authors>
     <owners>bcurran3</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.snort.org/</projectUrl>
     <iconUrl>https://www.snort.org/assets/Snortpig_professor2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>___
+    <description><![CDATA[## Snort (Install)
+
+___
 ###[choco://snort](choco://snort)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 ___
@@ -29,7 +31,16 @@ Snort has three primary uses: It can be used as a straight packet sniffer like t
 ___
 
 Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
-___</description>
+___
+
+#### [choco://snort](choco://snort)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Snort is an open source network intrusion prevention system.</summary>
     <releaseNotes>https://www.snort.org/downloads/snort/release_notes_2.9.14.1.txt</releaseNotes>
     <copyright>Copyright (C) 2014-2015 Cisco and/or its affiliates. All rights reserved. Copyright (C) 1998-2013 Sourcefire, Inc., et al.</copyright>
