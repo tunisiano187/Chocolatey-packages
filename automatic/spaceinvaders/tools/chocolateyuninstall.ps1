@@ -1,4 +1,4 @@
-﻿$packageName = 'spaceinvaders' 
+$packageName = 'spaceinvaders'
 $Shortcut    = 'Space Invaders.lnk'
 
 remove-item "$env:Public\Desktop\$Shortcut" -Force -ErrorAction 'SilentlyContinue'
