@@ -3,23 +3,28 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fuze-desktop</id>
-    <version>0.0</version>
+    <version>23.11.14510</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fuze-desktop</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>Fuze Desktop (Install)</title>
     <authors>8x8</authors>
     <projectUrl>https://www.fuze.com/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/fuze-desktop-for-windows.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a68d43a16abac253b79b4a1bb27d4d9a1f179333/icons/fuze-desktop.png</iconUrl>
     <copyright>Fuze 8x8</copyright>
     <tags>fuze-desktop</tags>
     <summary>Enterprise cloud communication and collaboration platform. Supports instant messaging, voice calls, and audio/video conferencing.</summary>
-    <description>__REPLACE__MarkDown_Okay 
+    <description><![CDATA[## Fuze Desktop
 
+Enterprise cloud communication and collaboration platform. Supports instant messaging, voice calls, and audio/video conferencing.
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-</description>
+#### [choco://fuze-desktop](choco://fuze-desktop)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
