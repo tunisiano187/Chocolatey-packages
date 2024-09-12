@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fuze-desktop</id>
+    <version>0.0</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/fuze-desktop-for-windows</packageSourceUrl>
+    <owners>tunisiano</owners>
+    <title>Fuze Desktop (Install)</title>
+    <authors>8x8</authors>
+    <projectUrl>https://www.fuze.com/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/fuze-desktop-for-windows.png</iconUrl>
+    <copyright>Fuze 8x8</copyright> -->
+    <tags>fuze-desktop</tags>
+    <summary>Enterprise cloud communication and collaboration platform. Supports instant messaging, voice calls, and audio/video conferencing.</summary>
+    <description>__REPLACE__MarkDown_Okay 
+
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,10 +1,10 @@
-[![](https://img.shields.io/chocolatey/v/fuze-desktop-for-windows?color=green&label=fuze-desktop-for-windows)](https://chocolatey.org/packages/fuze-desktop-for-windows) [![](https://img.shields.io/chocolatey/dt/fuze-desktop-for-windows)](https://chocolatey.org/packages/fuze-desktop-for-windows)
+[![](https://img.shields.io/chocolatey/v/fuze-desktop?color=green&label=fuze-desktop)](https://chocolatey.org/packages/fuze-desktop) [![](https://img.shields.io/chocolatey/dt/fuze-desktop)](https://chocolatey.org/packages/fuze-desktop)
 
-## PKGTITLE
+## Fuze Desktop
 
-PKGDesc
+Enterprise cloud communication and collaboration platform. Supports instant messaging, voice calls, and audio/video conferencing.
 
-#### [choco://fuze-desktop-for-windows](choco://fuze-desktop-for-windows)
+#### [choco://fuze-desktop](choco://fuze-desktop)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
 ### Package-specific issue
