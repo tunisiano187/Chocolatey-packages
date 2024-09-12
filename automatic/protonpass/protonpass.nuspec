@@ -28,6 +28,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Proton Pass secures your passwords and identity with end-to-end encryption.</summary>
+    <licenseUrl>https://raw.githubusercontent.com/protonpass/proton-pass-common/main/LICENSE</licenseUrl>
     <copyright>Copyright © 2024 Proton AG</copyright>
     <tags>proton pass password manager security</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/protonpass</packageSourceUrl>
