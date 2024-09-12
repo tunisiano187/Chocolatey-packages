@@ -27,7 +27,7 @@ In 2013, Google released an additional Crosextra (Chrome OS Extra) package, feat
 ***</description>
     <summary>Caladea is a Croscore extras font metriclly compatible with Cambria.</summary>
     <tags>chrome chromeos croscore caladea font ttf binaries</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/crosextrafonts-caladea-font</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/crosextrafonts-caladea-font</packageSourceUrl>
     <dependencies>
       <dependency id="chocolatey-font-helpers.extension" version="0.0.1" />
     </dependencies>
