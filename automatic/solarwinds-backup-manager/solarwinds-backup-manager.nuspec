@@ -60,7 +60,7 @@ SolarWinds® Remote Monitoring &amp; Management provides a hybrid cloud backup a
     <releaseNotes>https://status.solarwindsmsp.com/release-notes/</releaseNotes>
     <copyright>© SolarWinds MSP</copyright>
     <tags>solarwinds solarwindsmsp msp backup manager</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/solarwinds-backup-manager</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/solarwinds-backup-manager</packageSourceUrl>
     <docsUrl>http://help.solarwinds.com/backup/documentation/Content/backup-manager/backup-manager-installation/ui-installer.htm</docsUrl>
     <mailingListUrl>https://support.solarwindsmsp.com/portal/answers#!/feedtype=RECENT_REPLY&amp;dc=RemoteManagement&amp;criteria=ALLQUESTIONS</mailingListUrl>
   </metadata>
