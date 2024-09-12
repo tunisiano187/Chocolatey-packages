@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://proton.me/pass</projectUrl>
-    <iconUrl>https://avatars.githubusercontent.com/u/124775790</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d48c5728a9583f4b66201c051f3d9315cb1e9292/icons/protonpass.png</iconUrl>
     <description><![CDATA[## Proton Pass
 
 # Proton Pass desktop application

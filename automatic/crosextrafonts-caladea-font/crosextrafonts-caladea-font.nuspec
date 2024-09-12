@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://fontlibrary.org/en/font/caladea</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/mylogos/ttf_icon.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@dbbdb85560ad93d7fce2f16f73dcef5f831ad6a7/icons/crosextrafonts-caladea-font.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot example of Caladea font](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Caladea-sample.svg/220px-Caladea-sample.svg.png)
 	

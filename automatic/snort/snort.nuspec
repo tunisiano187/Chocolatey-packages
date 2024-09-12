@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.snort.org/license</licenseUrl>
     <projectUrl>https://www.snort.org/</projectUrl>
-    <iconUrl>https://www.snort.org/assets/Snortpig_professor2.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@7e97ae50cdee7a0f21970204fe7466e3bd49552c/icons/snort.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Snort (Install)
 

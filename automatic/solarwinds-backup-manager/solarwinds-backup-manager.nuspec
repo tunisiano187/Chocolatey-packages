@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://solarwindsmsp.com/legal/solarwinds-msp-software-services-agreement</licenseUrl>
     <projectUrl>https://solarwindsmsp.com/products/remote-management/backup-and-recovery</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-backup-manager/solarwinds-backup-manager_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@85179b8cd4077f4ed6504a5368999df5aee90917/icons/solarwinds-backup-manager.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
