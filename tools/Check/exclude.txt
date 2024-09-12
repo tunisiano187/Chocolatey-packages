@@ -37,6 +37,7 @@ bless
 blinkys-scary-school
 burgertime
 cameyo
+centipede
 chainlp
 chrome-remote-desktop-chrome
 CoolReader
@@ -221,4 +222,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-centipede
