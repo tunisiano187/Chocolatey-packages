@@ -214,3 +214,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+spaceinvaders
