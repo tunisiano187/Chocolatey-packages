@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>snort</id>
+    <version>2.9.14.1</version>
+    <title>Snort (Install)</title>
+    <authors>By Martin Roesch and The Snort Team</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.snort.org/license</licenseUrl>
+    <projectUrl>https://www.snort.org/</projectUrl>
+    <iconUrl>https://www.snort.org/assets/Snortpig_professor2.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>___
+###[choco://snort](choco://snort)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+___
+
+####What is Snort?
+
+Snort is an open source network intrusion prevention system, capable of performing real-time traffic analysis and packet logging on IP networks. It can perform protocol analysis, content searching/matching, and can be used to detect a variety of attacks and probes, such as buffer overflows, stealth port scans, CGI attacks, SMB probes, OS fingerprinting attempts, and much more.
+
+####What can I do with Snort?
+
+Snort has three primary uses: It can be used as a straight packet sniffer like tcpdump, a packet logger (useful for network traffic debugging, etc), or as a full blown network intrusion prevention system.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/snort/readme.md)**
+	
+
+___
+
+Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.
+___</description>
+    <summary>Snort is an open source network intrusion prevention system.</summary>
+    <releaseNotes>https://www.snort.org/downloads/snort/release_notes_2.9.14.1.txt</releaseNotes>
+    <copyright>Copyright (C) 2014-2015 Cisco and/or its affiliates. All rights reserved. Copyright (C) 1998-2013 Sourcefire, Inc., et al.</copyright>
+    <tags>snort network intrusion security utility packet sniffer binary</tags>
+    <projectSourceUrl>https://www.snort.org/downloads</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/snort</packageSourceUrl>
+    <docsUrl>https://www.snort.org/documents</docsUrl>
+    <mailingListUrl>https://www.snort.org/community</mailingListUrl>
+    <bugTrackerUrl>https://www.snort.org/downloads</bugTrackerUrl>
+    <dependencies>
+      <dependency id="autohotkey" version="1.1.27" />
+      <dependency id="winpcap" version="4.1.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
