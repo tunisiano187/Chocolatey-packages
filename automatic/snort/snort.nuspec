@@ -35,7 +35,7 @@ ___</description>
     <copyright>Copyright (C) 2014-2015 Cisco and/or its affiliates. All rights reserved. Copyright (C) 1998-2013 Sourcefire, Inc., et al.</copyright>
     <tags>snort network intrusion security utility packet sniffer binary</tags>
     <projectSourceUrl>https://www.snort.org/downloads</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/snort</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/snort</packageSourceUrl>
     <docsUrl>https://www.snort.org/documents</docsUrl>
     <mailingListUrl>https://www.snort.org/community</mailingListUrl>
     <bugTrackerUrl>https://www.snort.org/downloads</bugTrackerUrl>
