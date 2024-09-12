@@ -2,7 +2,7 @@
 
 ## SolarWinds Backup Manager (Install)
 
-![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/tunisiano187/Chocolatey-Packages/master/automatic/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
+![Screenshot of SolarWinds Recovery Console](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@85179b8cd4077f4ed6504a5368999df5aee90917/automatic/solarwinds-backup-manager/solarwinds-backup-manager_screenshot.png)	
 
 ### Protect Your Users’ Data with Sophisticated Backup and Rapid Disaster Recovery
 
