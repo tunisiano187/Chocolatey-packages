@@ -13,6 +13,16 @@ function global:au_SearchReplace {
      }
 }
 
+function global:au_BeforeUpdate {
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion32 = Get-FileVersion $Latest.URL32
+    $Latest.Checksum32 = $fileinfo32.Checksum
+    $Latest.ChecksumType32 = $FileVersion32.checksumType
+    $FileVersion64 = Get-FileVersion $Latest.URL64
+    $Latest.Checksum64 = $fileinfo64.Checksum
+    $Latest.ChecksumType64 = $FileVersion64.checksumType
+  }
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -20,12 +30,9 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = Get-RedirectedUrl "https://allwaysync.com/content/download/allwaysync.exe"
     $url64 = Get-RedirectedUrl "https://allwaysync.com/content/download/allwaysync-x64.exe"
+    $version = Get-Version $url32.Replace('-','.')
 
-    . ..\..\scripts\Get-FileVersion.ps1
-    $FileVersion32 = Get-FileVersion $url32
-    $FileVersion64 = Get-FileVersion $url64
-
-    $Latest = @{ URL32 = $url32; Version = $FileVersion32.Version; Checksum32 = $FileVersion32.Checksum; ChecksumType32 = $FileVersion32.ChecksumType; Checksum64 = $FileVersion64.Checksum; ChecksumType64 = $FileVersion64.ChecksumType64 }
+    $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
 }
 
