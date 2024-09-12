@@ -218,3 +218,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+mspacmannes
