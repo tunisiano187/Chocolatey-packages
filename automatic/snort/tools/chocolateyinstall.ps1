@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName   = 'snort' 
+$ErrorActionPreference = 'Stop'
+$packageName   = 'snort'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $TodaysVersion = ($ENV:ChocolateyPackageVersion -replace '[.]','_')
 $url           = "$toolsDir\Snort_Installer.exe"
