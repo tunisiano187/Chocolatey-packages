@@ -52,6 +52,7 @@ diskdump
 diskext
 dnsquerysniffer
 donkeykong
+donkeykongjr
 dragondisk
 dreampie
 dropit
@@ -220,4 +221,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-donkeykongjr
