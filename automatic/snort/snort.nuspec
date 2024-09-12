@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>snort</id>
-    <version>2.9.20</version>
+    <version>2.0.20</version>
     <title>Snort (Install)</title>
     <authors>By Martin Roesch and The Snort Team</authors>
     <owners>bcurran3</owners>
