@@ -12,6 +12,13 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -26,10 +33,7 @@ function global:au_GetLatest {
 	$recentDate = $dates | Select-Object -First 1
 	$version = $recentDate.Replace("-",".")
 
-	  . ..\..\scripts\Get-FileVersion.ps1
-	  $FileVersion = Get-FileVersion $url32
-
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
