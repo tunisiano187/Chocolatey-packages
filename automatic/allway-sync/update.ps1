@@ -13,16 +13,6 @@ function global:au_SearchReplace {
      }
 }
 
-function global:au_BeforeUpdate {
-    . ..\..\scripts\Get-FileVersion.ps1
-    $FileVersion32 = Get-FileVersion $Latest.URL32
-    $Latest.Checksum32 = $fileinfo32.Checksum
-    $Latest.ChecksumType32 = $FileVersion32.checksumType
-    $FileVersion64 = Get-FileVersion $Latest.URL64
-    $Latest.Checksum64 = $fileinfo64.Checksum
-    $Latest.ChecksumType64 = $FileVersion64.checksumType
-  }
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -36,4 +26,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor none
+update
