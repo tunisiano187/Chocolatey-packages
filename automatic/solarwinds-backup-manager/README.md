@@ -2,14 +2,7 @@
 
 ## SolarWinds Backup Manager (Install)
 
----
-
-### [choco://solarwinds-backup-manager](choco://solarwinds-backup-manager)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
+![Screenshot of SolarWinds Recovery Console](https://cdn.staticaly.com/gh/tunisiano187/Chocolatey-Packages/master/automatic/solarwinds-recovery-console/solarwinds-recovery-console_screenshot.png)	
 
 ### Protect Your Users’ Data with Sophisticated Backup and Rapid Disaster Recovery
 
@@ -39,15 +32,6 @@ SolarWinds® Remote Monitoring & Management provides a hybrid cloud backup and d
 * **Private keys:** Data can be accessed only by someone holding a private key.
 * **Secure data centers:** Store your data in one of our global data centers, each of which are SSAE-compliant or ISO-certified.
 * **Data archiving:** Choose how long you want to retain backup copies, allowing you to keep specific datasets and backups indefinitely. 
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/solarwinds-backup-manager/readme.md)**
-    
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://solarwinds-backup-manager](choco://solarwinds-backup-manager)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
