@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>tivo-desktop-patch</id>
+    <version>2.8.3.20161125</version>
+    <title>TiVo Desktop Patch (Install)</title>
+    <authors>TiVo Inc.</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <projectUrl>http://www3-stg.tivo.com/mytivo/product-features/stay-connected/tivo-desktop/?WT.z_links=stayconnected_tivodesktop</projectUrl>
+    <iconUrl>https://www.tivo.com/sites/all/themes/tivo3/images/logos/tivo_logo_nav.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>On February 16, 2013, the TiVoToGo feature of the TiVo Desktop application for Windows PCs no longer allowed transfers from the DVR to the PC. A patch has been developed which will restore the TiVoToGo transfer feature.</description>
+    <summary>This patch addresses the issue with TiVo ToGo for TiVo Desktop 2.8.x</summary>
+    <releaseNotes />
+    <copyright>Copyright © 2010 TiVo Inc.</copyright>
+    <tags>TiVo Desktop admin</tags>
+    <docsUrl>https://support.tivo.com/articles/Troubleshooting/TiVo-Desktop-Video-Transfer-Troubleshooting</docsUrl>
+    <dependencies>
+      <dependency id="tivo-desktop.install" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
