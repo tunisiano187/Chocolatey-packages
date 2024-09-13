@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>dual-monitor-tools</id>
+    <version>2.10.0</version>
+    <title>Dual Monitor Tools (Install)</title>
+    <authors>Gerald Evans</authors>
+    <owners>bcurran3</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
+    <projectUrl>https://sourceforge.net/projects/dualmonitortool/</projectUrl>
+    <iconUrl>https://a.fsdn.com/allura/p/dualmonitortool/icon?1513717495</iconUrl>
+    <description>---
+
+### [choco://dual-monitor-tools](choco://dual-monitor-tools)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Dual Monitor Tools](https://fsdn.com/con/app/proj/dualmonitortool/screenshots/dmt_cursor_general.png)
+
+Tools for Windows users with dual or multiple monitors. Has hotkeys for moving windows around, restrict mouse/cursor movement between screens, application launcher, wallpaper creator and changer and a screen capture tool.
+
+### Features
+* Allows you to quickly move windows between monitors.
+* Launch applications to start on a particular monitor.
+* Provides some of the new Windows 7 hotkeys to XP and Vista users.
+* Lock cursor onto a monitor, or provide resistance to moving between monitors.
+* Create wallpaper with different images on each monitor or spanning multiple monitors.
+* Change wallpapers periodically.
+* Capture images from the primary monitor and display them on the secondary monitor.
+
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/dual-monitor-tools/readme.md)**
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Dual Monitor Tools - Tools for Windows users with dual or multiple monitors.</summary>
+    <releaseNotes>https://sourceforge.net/p/dualmonitortool/news/</releaseNotes>
+    <copyright>Copyright Gerald Evans</copyright>
+    <tags>dual monitor tools Desktop Environment System</tags>
+    <projectSourceUrl>https://sourceforge.net/p/dualmonitortool/code/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/dual-monitor-tools</packageSourceUrl>
+    <docsUrl>https://sourceforge.net/p/dualmonitortool/wiki/Home/</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/dualmonitortool/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/dualmonitortool/bugs/</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

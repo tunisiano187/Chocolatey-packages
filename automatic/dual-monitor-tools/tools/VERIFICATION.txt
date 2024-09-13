@@ -1,0 +1,9 @@
+﻿==================== Dual Monitor Tools ====================
+
+bcurran3 downloads and packages the included .MSI for Dual Monitor Tools 
+from the developer's SourceForge page. 
+
+The direct download link can be found at:
+https://sourceforge.net/projects/dualmonitortool/
+
+==================== Dual Monitor Tools ====================
