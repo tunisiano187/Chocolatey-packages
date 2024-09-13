@@ -225,3 +225,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+softkey-revealer.portable
