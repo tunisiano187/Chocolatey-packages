@@ -44,7 +44,7 @@ Tools for Windows users with dual or multiple monitors. Has hotkeys for moving w
     <copyright>Copyright Gerald Evans</copyright>
     <tags>dual monitor tools Desktop Environment System</tags>
     <projectSourceUrl>https://sourceforge.net/p/dualmonitortool/code/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/dual-monitor-tools</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dual-monitor-tools</packageSourceUrl>
     <docsUrl>https://sourceforge.net/p/dualmonitortool/wiki/Home/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/dualmonitortool/mailman/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/dualmonitortool/bugs/</bugTrackerUrl>
