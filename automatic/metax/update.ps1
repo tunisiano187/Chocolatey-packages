@@ -30,7 +30,7 @@ function global:au_GetLatest {
 	$regexPattern = 'V(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	
+
 	$url32 = "https://www.danhinsley.com/downloads/MetaXSetup.msi"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
