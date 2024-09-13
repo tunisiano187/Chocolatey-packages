@@ -192,6 +192,7 @@ superpacman
 Swish
 take-command
 tcc
+tivo-desktop-patch
 tivotogo-plex
 todobackup
 tonido-drive
@@ -223,4 +224,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-tivo-desktop-patch
