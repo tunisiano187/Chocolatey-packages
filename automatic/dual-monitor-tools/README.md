@@ -2,13 +2,6 @@
 
 ## Dual Monitor Tools (Install)
 
----
-
-### [choco://dual-monitor-tools](choco://dual-monitor-tools)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of Dual Monitor Tools](https://fsdn.com/con/app/proj/dualmonitortool/screenshots/dmt_cursor_general.png)
 
 Tools for Windows users with dual or multiple monitors. Has hotkeys for moving windows around, restrict mouse/cursor movement between screens, application launcher, wallpaper creator and changer and a screen capture tool.
@@ -22,15 +15,6 @@ Tools for Windows users with dual or multiple monitors. Has hotkeys for moving w
 * Change wallpapers periodically.
 * Capture images from the primary monitor and display them on the secondary monitor.
 
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/dual-monitor-tools/readme.md)**
-	
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://dual-monitor-tools](choco://dual-monitor-tools)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
