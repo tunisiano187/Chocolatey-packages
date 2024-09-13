@@ -89,6 +89,9 @@ function Get-FileVersion {
         }
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
+    if($FileName -like "*?*") {
+        $FileName = ($FileName.split('?'))[0]
+    }
 
     $result = @{Version = $version; Checksum = $checksum; ChecksumType = $checksumType; TempFile = $tempFile; FileSize = $FileSize; FileName = $FileName}
     return $result
