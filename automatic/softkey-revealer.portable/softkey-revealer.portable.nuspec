@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>softkey-revealer.portable</id>
+    <version>2.8.0.20161009</version>
+    <title>SoftKey Revealer (Portable)</title>
+    <authors>Mustafa Buğra AKTAŞ</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://sites.google.com/site/cakirbey/softkeyrevealer</licenseUrl>
+    <projectUrl>https://sites.google.com/site/cakirbey/softkeyrevealer</projectUrl>
+    <iconUrl>https://sites.google.com/site/cakirbey/_/rsrc/1267560342501/skr-custom-size-200-150.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screen shot of SoftKey Revealer](https://sites.google.com/site/cakirbey/softkeyrevealer/ssskr.jpg)
+
+SoftKey Revealer retrieves the CD-Key and Serial for installed softwares on computer. 
+It also saves your money and time, free and easy to use.
+
+
+Features:
+=======
+- Recover Microsoft Windows 10/8/7/2008/Vista/2003/XP/2000/ME/9x product keys
+- Recover Microsoft Office 2016/2013/2010/2007/2003/XP x86 product keys
+- Recover Microsoft Visual Studio 2010/2008/2005 product keys
+- Recover Microsoft SQL Server 2012/2008/2005/2000 product keys
+- Recover thousands of softwares product keys with registry paths
+- Change Microsoft Windows XP/2003 product keys
+- Decrypt Adobe keys
+- Remove Content Advisor password
+- Portable</description>
+    <summary>Recover Product Keys</summary>
+    <releaseNotes>added checksum</releaseNotes>
+    <copyright>Copyright © 2008-2016 Mustafa Buğra AKTAŞ</copyright>
+    <tags>softkey revealer serial util utility portable</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
