@@ -50,6 +50,7 @@ Tools for Windows users with dual or multiple monitors. Has hotkeys for moving w
     <bugTrackerUrl>https://sourceforge.net/p/dualmonitortool/bugs/</bugTrackerUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
