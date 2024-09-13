@@ -9,14 +9,14 @@ and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/veloren/Airshipper/releases/download/v0.13.0/airshipper-windows.msi>
+  url: <https://github.com/veloren/Airshipper/releases/download/v0.14.0/airshipper-windows.msi>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: F5D0CBEE1F92803BFFFDC9C5B6A476461AF0C2CF36F9067953C75DA95697DAD2
+  checksum: 734AD5707F8BAA86A59CF065FDF6657E99D11074F09DEBBD24018730B39D2CBE
 
 Using AU:
 
