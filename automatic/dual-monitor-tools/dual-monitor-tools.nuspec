@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>dual-monitor-tools</id>
-    <version>2.10.0</version>
+    <version>2.11</version>
     <title>Dual Monitor Tools (Install)</title>
     <authors>Gerald Evans</authors>
     <owners>tunisiano</owners>
@@ -10,12 +10,7 @@
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/dualmonitortool/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f425be2203962ac24cf774e5885371cd92f2418/icons/dual-monitor-tools.png</iconUrl>
-    <description>---
-
-### [choco://dual-monitor-tools](choco://dual-monitor-tools)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## Dual Monitor Tools (Install)
 
 ![Screenshot of Dual Monitor Tools](https://fsdn.com/con/app/proj/dualmonitortool/screenshots/dmt_cursor_general.png)
 
@@ -31,14 +26,14 @@ Tools for Windows users with dual or multiple monitors. Has hotkeys for moving w
 * Capture images from the primary monitor and display them on the secondary monitor.
 
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/dual-monitor-tools/readme.md)**
-	
+#### [choco://dual-monitor-tools](choco://dual-monitor-tools)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Dual Monitor Tools - Tools for Windows users with dual or multiple monitors.</summary>
     <releaseNotes>https://sourceforge.net/p/dualmonitortool/news/</releaseNotes>
     <copyright>Copyright Gerald Evans</copyright>
