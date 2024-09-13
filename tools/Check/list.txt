@@ -1,4 +1,3 @@
-camstudio 0.0 - New maintainer
 resilio-sync-business 0.0 - New maintainer
 gwyddion 0.0 - New maintainer
 3dmark 0.0 - New maintainer
