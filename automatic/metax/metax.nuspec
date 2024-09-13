@@ -64,6 +64,7 @@ You can get cover art from any of the data sources (theMovieDB, theTVDb, iTunes,
     </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>

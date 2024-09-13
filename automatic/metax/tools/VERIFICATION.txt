@@ -1,6 +1,0 @@
-﻿==================== MetaX ====================
-
-bcurran3 downloads and packages the .MSI for MetaX from the developers website at:
-https://www.danhinsley.com/downloads/MetaXSetup.msi
-
-==================== MetaX ====================

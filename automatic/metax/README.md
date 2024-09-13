@@ -2,13 +2,6 @@
 
 ## MetaX (Trial) (Install)
 
----
-
-### [choco://metax](choco://metax)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of MetaX](http://danhinsley.com/metax/784601_1.png)
 	
 ## Tag Your Movies To Look Perfect in iTunes, Apple TV or other Media Players
@@ -38,14 +31,6 @@ MetaX will import data from the MyMovies files, or from NFO files.
 
 ## Find Great Cover Art
 You can get cover art from any of the data sources (theMovieDB, theTVDb, iTunes, Amazon or Yahoo). You can also use files you've downloaded, use cut and paste from websites, and even select a frame from the movie itself!
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/metax/readme.md)**
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://metax](choco://metax)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
