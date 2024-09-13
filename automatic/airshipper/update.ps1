@@ -15,6 +15,14 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools/airshipper-windows.msi"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
@@ -30,12 +38,9 @@ function global:au_GetLatest {
     	$version = "$version-pre$($date)"
 	}
 	Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
-	$File = "tools\$($url32 -split "/" | Select-Object -Last 1)"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
 
-  	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
+  	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
