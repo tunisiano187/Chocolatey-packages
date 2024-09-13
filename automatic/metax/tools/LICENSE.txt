@@ -1,0 +1,43 @@
+﻿==================== MetaX ====================
+
+MetaX does not have a published license.
+
+
+From: Bill Curran <redacted> 
+Sent: Sunday, July 5, 2020 3:45 PM
+To: MetaXSupport@danhinsley.com
+Subject: MetaX - Distribution Permission
+
+Hi Dan,
+
+As we may or may not have discussed in the past, I maintain a Chocolatey package to install MetaX. It can be found at:
+https://chocolatey.org/packages/metax
+
+Currently the package downloads from https://www.danhinsley.com/downloads/MetaXSetup.msi and verifies the program and package versions match by a checksum. When new versions of MetaX come out and I don’t know about them, the Chocolatey package will intentionally fail to due to the mismatched checksum.
+
+I’d like to request permission to include the MetaX binary directly into the Chocolatey package so that no future versions will ever fail to install. (And if we get the whole notification subscription to new releases worked out, I can do timely updates.)
+
+There appears to be no License or EULA for MetaX. So if you’re OK with me including the binary executable (.MSI) in the package, please explicitly tell me saying so and these e-mails will be included in the package as proof of distribution rights.
+
+I really like it when I can make packages that never fail. 😊
+
+TIA,
+
+Bill
+
+
+
+From: metaxsupport@danhinsley.com <metaxsupport@danhinsley.com> 
+Sent: Monday, July 6, 2020 8:13 AM
+To: 'Bill Curran' <redacted>
+Subject: RE: MetaX - Distribution Permission
+
+You have my permission, and if there’s anything I can do to make this process easier, let me know.
+
+I’m not exactly clear on what the Chocolatey package does that just he msi doesn’t.  I’ve never used package managers, can you give me an idea of what this does?
+
+Also, it looks like the picture of MetaX on the Chocolatey MetaX page is old, you might want to update it.
+
+Dan
+
+==================== MetaX ====================

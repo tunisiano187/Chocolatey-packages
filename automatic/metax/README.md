@@ -1,0 +1,56 @@
+[![](https://img.shields.io/chocolatey/v/metax?color=green&label=metax)](https://chocolatey.org/packages/metax) [![](https://img.shields.io/chocolatey/dt/metax)](https://chocolatey.org/packages/metax)
+
+## MetaX (Trial) (Install)
+
+---
+
+### [choco://metax](choco://metax)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of MetaX](http://danhinsley.com/metax/784601_1.png)
+	
+## Tag Your Movies To Look Perfect in iTunes, Apple TV or other Media Players
+
+When you want your movies to look as good as those purchased from iTunes, with cover art, descriptions, ratings, actors and more, you NEED MetaX.
+
+With only a mouse click or two, MetaX will scour all the major sources of movie and TV information on the web: TVDB, TheMovieDB, iTunes as well as IMDB and Yahoo posters and display the information. You can select from multiple entries to get just the look you want, then quickly write the tags into the file so that it shows up in iTunes, Apple TV or whatever media play you use, just like it would if you had purchased the movie from iTunes.
+
+MetaX supports MP4, M4V, ASF, MOV, AVI, MKV and WMV files.
+
+Not all formats support all tags. AVI files in particular don't support most tags, including not supporting cover art.
+
+## Check out the MetaX YouTube channel
+The [MetaX YouTube channel](https://www.youtube.com/channel/UCy17FLxMu1AIhb07017qepQ) has lots of instructional videos
+
+## Great for TV Shows
+By using theTVDB you can tag an entire season of episodes with just a couple of clicks.
+
+## Set Ratings for Parental Control
+Set the rating of a show to allow parental controls to work. You can even use country specific ratings for the UK, Germany, France, Canada, Japan, New Zealand, Ireland and Japan.
+
+## Easy To Customize
+MetaX has lots of preferences that allow it to work the way you want it to. You can configure MetaX to copy the tagged file to a different location, set the filename or title based on information from the show (title, year, showName, season, episode and more). You can have MetaX pull the movie name or TV Show, season and episode number from the filename, you can save a copy of the untagged file, you can specify which data sources you want to use, and what order to display them in the search results, and have MetaX automatically update iTunes and MovieLibrary when it tags a file.
+
+## Import data from MyMovies or other XML files
+MetaX will import data from the MyMovies files, or from NFO files.
+
+## Find Great Cover Art
+You can get cover art from any of the data sources (theMovieDB, theTVDb, iTunes, Amazon or Yahoo). You can also use files you've downloaded, use cut and paste from websites, and even select a frame from the movie itself!
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/metax/readme.md)**
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---
+
+#### [choco://metax](choco://metax)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
