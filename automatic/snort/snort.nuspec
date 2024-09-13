@@ -38,7 +38,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <mailingListUrl>https://www.snort.org/community</mailingListUrl>
     <bugTrackerUrl>https://www.snort.org/downloads</bugTrackerUrl>
     <dependencies>
-      <dependency id="autohotkey" version="1.1.27" />
       <dependency id="winpcap" version="4.1.1" />
     </dependencies>
   </metadata>
