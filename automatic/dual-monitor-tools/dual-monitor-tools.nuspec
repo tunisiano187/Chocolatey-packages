@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/dualmonitortool/</projectUrl>
-    <iconUrl>https://a.fsdn.com/allura/p/dualmonitortool/icon?1513717495</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9f425be2203962ac24cf774e5885371cd92f2418/icons/dual-monitor-tools.png</iconUrl>
     <description>---
 
 ### [choco://dual-monitor-tools](choco://dual-monitor-tools)

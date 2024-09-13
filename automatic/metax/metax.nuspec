@@ -8,7 +8,7 @@
     <owners>the-running-dev, bcurran3</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>http://danhinsley.com/metax/metax.html</projectUrl>
-    <iconUrl>http://danhinsley.com/metax/wpimages/wpf0af8252_06.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1c44b9d2bef9c8ad5081fb116b2a26c1aeb265a1/icons/metax.png</iconUrl>
     <description>---
 
 ### [choco://metax](choco://metax)
