@@ -1,5 +1,3 @@
-3dmark 0.0 - New maintainer
-ad-photo-edit-free 0.0 - New maintainer
 feednotifier 0.0 - New maintainer
 unifying 0.0 - New maintainer
 hardware-identify 0.0 - New maintainer

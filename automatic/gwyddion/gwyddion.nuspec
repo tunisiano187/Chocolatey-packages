@@ -5,11 +5,11 @@
     <version>2.63.0</version>
     <title>Gwyddion (Install)</title>
     <authors>David Nečas (Yeti) and Petr Klapetek</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
     <projectUrl>http://gwyddion.net/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/gwyddion/gwyddion_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@aa9a12560bb114b7b3ea0998eb6b39d836bb4b59/icons/gwyddion.png</iconUrl>
     <description>---
 
 ### [choco://gwyddion](choco://gwyddion)
