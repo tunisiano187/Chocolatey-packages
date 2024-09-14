@@ -15,6 +15,15 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	$File = "tools\AtomicParsleyWindows.zip"
+	Move-Item -Path $FileVersion.TempFile -Destination $File
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
@@ -30,12 +39,8 @@ function global:au_GetLatest {
     	$version = "$version-pre$($date)"
 	}
 	Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
-	$File = "tools\AtomicParsleyWindows.zip"
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination $File
 
-  	$Latest = @{ URL32 = $url32; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+  	$Latest = @{ URL32 = $url32; Version = $Version }
 	return $Latest
 }
 
