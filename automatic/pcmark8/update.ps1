@@ -26,7 +26,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url=Get-RedirectedUrl $releases
-	$version = Get-Version $url.Replace('-','.')
+	$version = (Get-Version $url.Replace('-','.')).Version
 	if($version -eq '2.10.901') {
 		$version = '2.10.901.2024091301'
 	}
