@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ad-photo-edit-free</id>
+    <version>2.6.1.20161008</version>
+    <title>AD Photo Edit Free Edition (Install)</title>
+    <authors>Chris Wright</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>http://www.cjwdev.com/Software/ADPhotoEdit/Info.html</licenseUrl>
+    <projectUrl>http://www.cjwdev.com/Software/ADPhotoEdit/Info.html</projectUrl>
+    <iconUrl>http://www.cjwdev.com/images/user_id_up_72.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![alt text](http://www.cjwdev.com/Software/ADPhotoEdit/StandardResults.png)
+
+Use this application to upload images to the Active Directory attribute that Outlook 2010 pulls display pictures from. 
+Outlook 2010, Lync, and Sharepoint can display a photo for each user account or contact in Active Directory but includes no way to upload images into the "thumbnailPhoto" Active Directory attribute that is used to store these images other than the command line tools included with Exchange 2010. AD Photo Edit is a user friendly application designed to make it easy to upload, edit, and export these images.
+#####Free Edition is completely free for any number of users at any number of locations
+#####Bulk Edition prices start at $49 for a single license.
+
+####Free Edition Features 
+* Quick and easy way to view existing images for any number of users or contacts, with the option to limit search results by OU and other attributes 
+* Export any existing images to JPG file 
+* Remove existing images 
+* Upload new images to user accounts or contacts in your domain (or specify an alternate domain to connect to)
+* Easily rotate, resize and adjust the quality of images before uploading them 
+* Does not limit images to being less than 10 KB in size like the Exchange 2010 command line tools 
+* Works with all versions of Exchange Server
+* Choose to upload to the thumbnailPhoto attribute (used by Outlook and Lync) or jpegPhoto attribute (used by third party applications) 
+
+####Bulk Edition Features 
+* All of the features found in the Free Edition (listed above) 
+* Import images to Users or Contacts in bulk, using either CSV File or Named Images import methods 
+* Resize images and adjust their quality as they are imported in bulk 
+* Export images from Users or Contacts in bulk, with the option to only export images from accounts in a specified OU 
+* Command line support for bulk imports</description>
+    <summary>Use this application to upload images to the Active Directory attribute that Outlook 2010 pulls display pictures from.</summary>
+    <releaseNotes>checksums added</releaseNotes>
+    <copyright>Copyright (C) 2013 Cjwdev Ltd</copyright>
+    <tags>ad photo edit active directory server util utility admin</tags>
+    <bugTrackerUrl>http://www.cjwdev.com/Software/ADPhotoEdit/VersionHistory.txt</bugTrackerUrl>
+    <dependencies>
+      <dependency id="dotnet4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
