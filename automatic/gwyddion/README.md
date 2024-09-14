@@ -2,13 +2,6 @@
 
 ## Gwyddion (Install)
 
----
-
-### [choco://gwyddion](choco://gwyddion)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
 ![Screenshot of Gwyddion](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/gwyddion/gwyddion_screenshot.png)
 	
 Gwyddion is a modular program for SPM (scanning probe microscopy) data visualization and analysis. Primarily it is intended for the analysis of height fields obtained by scanning probe microscopy techniques (AFM, MFM, STM, SNOM/NSOM) and it supports a lot of SPM data formats. However, it can be used for general height field and (greyscale) image processing, for instance for the analysis of profilometry data or thickness maps from imaging spectrophotometry.
@@ -18,15 +11,6 @@ Gwyddion provides a large number of data processing functions, including all the
 Gwyddion is Free and Open Source software, covered by GNU General Public License. It aims to provide a modular program for 2D data processing and analysis that can be easily extended by third-party modules and scripts. Moreover, thanks to being free software, it provides the source code to developers and users, which makes easier both verification of its data processing algorithms and further program improvements.
 
 Gwyddion works on GNU/Linux, Microsoft Windows and Mac OS X operating systems on common architectures. All systems can be used also for development. It has a modern graphical user interface based on the widely portable Gtk+ toolkit, consistent across all the supported systems.
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gwyddion/readme.md)**
-
-
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----
 
 #### [choco://gwyddion](choco://gwyddion)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
