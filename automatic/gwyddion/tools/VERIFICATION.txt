@@ -1,0 +1,7 @@
+﻿==================== Gwyddion ====================
+
+This binary was directly downloaded and packaged up by bcurran3 from the developer's site:
+https://sourceforge.net/projects/gwyddion/files/gwyddion/
+
+
+==================== Gwyddion ====================

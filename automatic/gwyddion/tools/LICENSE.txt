@@ -1,0 +1,8 @@
+﻿==================== Gwyddion ====================
+
+Gwyddion is Free Software published under the GNU General Public License version 2 (or later) that can be found as COPYING-GPLv2.txt in the installation directory.
+
+This package contains also other components, covered by various Free Software licenses: ATK, Cairo, dlfcn-win32, gettext, GLib, GTK+, GtkGLExt, iconv, Pango, pthreads-win32, pygtk2 and pygobject2 (COPYING-LGPLv2.txt), D-BUS, FFTW and freetype (COPYING-GPLv2.txt), gtksourceview (COPYING-LGPLv2.txt and COPYING-GPLv2.txt), pycairo (COPYING-LGPLv2.txt and COPYING-MPL-1.1.txt), expat (COPYING-expat.txt), fontconfig (COPYING-fontconfig.txt), jansson (LICENSE-jansson.txt), JasPer (LICENSE-JasPer.txt), harfbuzz (COPYING-harfbuzz.txt), HDF5 (LICENSE-HDF5.txt), libaec (Copyright-libaec.txt), libffi (LICENSE-libffi.txt), libjpeg (COPYING-libjpeg.txt), libpng (COPYING-libpng.txt), libtiff (Copyright-libtiff.txt), libwebp (COPYING-libwebp.txt), libxml2 (Copyright-libxml2.txt), OpenEXR (LICENSE-OpenEXR.txt), PCRE (LICENSE-pcre.txt), libzip (LICENSE-libzip.txt), zlib (COPYING-zlib.txt) and libbz2 (LICENSE-bzip2.txt).  These components were repackaged unmodified from the Fedora MinGW32/MinGW64 cross-compilation environment.
+
+
+==================== Gwyddion ====================
