@@ -40,7 +40,7 @@ Gwyddion works on GNU/Linux, Microsoft Windows and Mac OS X operating systems on
     <copyright>Czech Metrology Institute</copyright>
     <tags>Bio-Informatics Visualization Physics Analytics</tags>
     <projectSourceUrl>https://sourceforge.net/projects/gwyddion/files/gwyddion/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/gwyddion</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gwyddion</packageSourceUrl>
     <docsUrl>http://gwyddion.net/documentation/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/gwyddion/mailman/</mailingListUrl>
     <bugTrackerUrl>http://gwyddion.net/contact.php#pk</bugTrackerUrl>
