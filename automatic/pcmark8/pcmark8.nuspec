@@ -5,7 +5,7 @@
     <version>2.10.901</version>
     <title>PCMark 8 Basic Edition (Install)</title>
     <authors>Futuremark Corporation</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pcmark8</packageSourceUrl>
     <licenseUrl>http://www.futuremark.com/support/downloads</licenseUrl>
     <projectUrl>http://www.futuremark.com/benchmarks/pcmark8</projectUrl>
