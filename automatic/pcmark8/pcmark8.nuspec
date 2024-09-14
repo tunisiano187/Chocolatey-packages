@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pcmark8</packageSourceUrl>
     <licenseUrl>http://www.futuremark.com/support/downloads</licenseUrl>
     <projectUrl>http://www.futuremark.com/benchmarks/pcmark8</projectUrl>
-    <iconUrl>https://benchmarks.ul.com/static/images/contentboxes/pcmark8-hero.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e0e579c3382b711562a9cff77c4a104106cf0d14/icons/pcmark8.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of PCMark8] (https://tpucdn.com/downloads/screenshots/2542_large.jpg)
 ####THE COMPLETE BENCHMARK FOR WINDOWS
