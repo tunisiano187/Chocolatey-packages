@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName = 'gwyddion'
 $bits        = Get-ProcessorBits
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
@@ -19,7 +19,7 @@ $packageArgs = @{
   softwareName   = 'Gwyddion'
 }
 
-Install-ChocolateyInstallPackage @packageArgs 	
+Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item $toolsDir\*.exe -EA SilentlyContinue | Out-Null
 
