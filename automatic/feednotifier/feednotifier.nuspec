@@ -50,7 +50,7 @@ Feed Notifier is for you if you want a news aggregator that focuses on real-time
     <copyright>Copyright (c) 2009-2013, Michael Fogleman</copyright>
     <tags>feed notifer rss atom foss cross-platform</tags>
     <projectSourceUrl>https://github.com/fogleman/FeedNotifier</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/feednotifier</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/feednotifier</packageSourceUrl>
     <docsUrl>https://www.feednotifier.com/support/</docsUrl>
     <bugTrackerUrl>https://github.com/fogleman/FeedNotifier/issues</bugTrackerUrl>
   </metadata>
