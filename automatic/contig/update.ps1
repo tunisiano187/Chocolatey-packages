@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 function global:au_SearchReplace {
@@ -21,7 +21,7 @@ function global:au_GetLatest {
 	$versionPattern = 'Contig\s+v(\d+(\.\d+)*)'
   	$match = [regex]::Match($page.Content, $versionPattern)
 	$version = $match.Groups[1].Value
-  
+
 	Update-Metadata -key "copyright" -value "© 1998-$(Get-Date -Format "yyyy") Mark Russinovich"
 
 	$Latest = @{ URL32 = $url32; Checksum32 = $checksum32; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
