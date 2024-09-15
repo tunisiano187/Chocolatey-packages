@@ -22,17 +22,11 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = 'https://www.nirsoft.net/utils/cports.zip'
 	$url64 = 'https://www.nirsoft.net/utils/cports-x64.zip'
-	$ExtractFolder = "$($env:TEMP)\chocolatey\chocolatey\cports\"
-	if(Test-Path $ExtractFolder) {
-		Remove-Item -Path $ExtractFolder -Recurse -Force
-	}
-	New-Item -Path $ExtractFolder -ItemType Directory
-	$ZipFile = Join-Path $ExtractFolder "cports.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile $ZipFile -UseBasicParsing
-	Expand-Archive $ZipFile -DestinationPath $ExtractFolder
-
-	$version=$(Get-Content $ExtractFolder\readme.txt | Where-Object {$_ -match '\* Version'})[0].split(' ')[-1].Replace(':','').Trim()
-
+	$page=Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/" -UseBasicParsing
+	$regexPattern = 'CurrPorts\ v(\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
+	
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
 }

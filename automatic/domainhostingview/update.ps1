@@ -10,13 +10,20 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\domainhostingview.zip"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/domainhostingview.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/domainhostingview.zip" -UseBasicParsing
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/domain_hosting_view.html" -UseBasicParsing
 	$regexPattern = 'DomainHostingView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches

@@ -27,11 +27,10 @@ function global:au_BeforeUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "./csvfileview.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
-	Expand-Archive $File -DestinationPath .\csvfv
-
-	$version=$(Get-Content .\csvfv\readme.txt | Where-Object {$_ -match 'CSVFileView'})[0].split(' ')[-1].Replace('v','')
+	$page=Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/" -UseBasicParsing
+	$regexPattern = 'CSVFileView\ v(\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
 
 	$Latest = @{ URL32 = $url32; Version = $version}
 	return $Latest
