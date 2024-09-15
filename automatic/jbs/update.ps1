@@ -20,14 +20,10 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$jbs = (Invoke-WebRequest -Uri $releases -UseBasicParsing)
 	$url32 = ($jbs.Links | Where-Object {$_ -match '\.exe'})[0].href
-
-	$File = Join-Path $env:TEMP "SwitcherSetup.exe"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-	Start-Process -FilePath $File -ArgumentList "/S" -Wait
-	while (!(Test-Path $(join-path ${env:ProgramFiles(x86)} "johnsadventures.com\John's Background Switcher\BackgroundSwitcher.exe"))) {
-		Start-Sleep -Seconds 1
-	}
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($(join-path ${env:ProgramFiles(x86)} "johnsadventures.com\John's Background Switcher\BackgroundSwitcher.exe")).FileVersion
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$regexPattern = 'Version (\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
 
 	$Latest = @{ URL32 = $url32; Version = Get-FixVersion $version -OnlyFixBelowVersion $padVersionUnder }
 	return $Latest
