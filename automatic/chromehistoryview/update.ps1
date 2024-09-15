@@ -21,19 +21,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "$($env:TEMP)\chocolatey\chromehistoryview.zip"
-	$ExtractFolder = "$($env:TEMP)\chocolatey\chomehistoryview"
-	if(Test-Path $ExtractFolder) {
-		Remove-Item -Path $ExtractFolder -Recurse -Force
-	}
-	New-Item -Path $ExtractFolder -ItemType Directory
-	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
-	Expand-Archive $File -DestinationPath $ExtractFolder
-
-	$version=$(Get-Content $ExtractFolder\readme.txt | Where-Object {$_ -match ' Version'})[0].split(' ')[2]
+	$page=Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/" -UseBasicParsing
+	$regexPattern = 'ChromeHistoryView\ v(\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
