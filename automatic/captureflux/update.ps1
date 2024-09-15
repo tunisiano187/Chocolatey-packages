@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	$regexPattern = '(\d+(\.\d+)*)</b>'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	
+
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
 	return $Latest
