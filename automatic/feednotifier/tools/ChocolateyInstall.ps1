@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName   = 'feednotifier'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url           = "$toolsDir\feed-notifier-2.6.exe"
@@ -8,8 +8,8 @@ $packageArgs = @{
   fileType      = 'EXE'
   file          = $url
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  softwareName  = 'Feed Notifier*' 
+  softwareName  = 'Feed Notifier*'
   }
-  
+
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item $toolsDir\*.exe -force | Out-Null
