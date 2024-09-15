@@ -1,0 +1,8 @@
+﻿==================== Feed Burner ====================
+
+bcurran3 downloads and packages the included .EXE for Feed Burner from the developer's website. 
+
+The direct download link can be found at:
+https://www.feednotifier.com/files/feed-notifier-2.6.exe
+
+==================== Feed Burner ====================
