@@ -14,6 +14,11 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeplane/freeplane/1.11.x/license.txt" -OutFile "legal\LICENSE.txt"
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\Freeplane-Setup-with-Java-$($Latest.Version).exe"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
 }
 
 function global:au_AfterUpdate($Package) {
@@ -24,7 +29,6 @@ function global:au_GetLatest {
 	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-Setup-with'} | Where-Object {$_ -match '.exe'} | Where-Object {$_ -match "https"}).href | Select-Object -First 1
 	$version = ($url32.Split('-|/') | Where-Object {$_ -match ".exe"}).replace('.exe','').replace('u','-u')
 
-	Invoke-WebRequest -Uri $(Get-RedirectedUrl $url32) -OutFile "tools\Freeplane-Setup-with-Java-$($version).exe"
 	if($version -eq "1.11.12") {
 		$version = "1.11.12.202442901"
 	}
@@ -33,4 +37,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update
+update -ChecksumFor none
