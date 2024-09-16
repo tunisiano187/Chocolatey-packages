@@ -37,7 +37,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
     <releaseNotes />
     <copyright>Copyright Logitech</copyright>
     <tags>logitech unifying software mouse util utility</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/unifying</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/unifying</packageSourceUrl>
     <docsUrl>https://support.logitech.com/en_us/software/unifying#</docsUrl>
   </metadata>
   <files>
