@@ -13,16 +13,25 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+  Move-Item -Path $FileVersion.TempFile -Destination "tools/$($FileVersion.FileName)"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	. ..\..\scripts\Get-FileVersion.ps1
-  $FileVersion = Get-FileVersion $release -keep
-  Move-Item -Path $FileVersion.TempFile -Destination "tools/$($FileVersion.FileName)"
+	$page = Invoke-WebRequest -Uri "https://axcrypt.net/information/release-notes/" -UseBasicParsing
+	$regexPattern = 'Windows Desktop (\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
 
-  $Latest = @{ URL32 = $release; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $FileVersion.Version }
+  $Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
 }
 

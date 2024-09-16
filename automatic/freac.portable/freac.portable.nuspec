@@ -24,12 +24,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>fre:ac is a free audio converter and CD ripper with support for various popular formats and encoders.</summary>
-    <releaseNotes>#### Software
-https://www.freac.org/index.php/en/latest-news-mainmenu-2
-
-#### Package
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <releaseNotes>https://github.com/enzo1982/freac/releases/tag/v1.1.7</releaseNotes>
     <copyright>(c) 2017 Robert Kausch</copyright>
     <tags>freac audio music codec media convert extract encoder ripper foss</tags>
     <projectSourceUrl>https://www.freac.org/</projectSourceUrl>

@@ -27,12 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>foss tools compressed texture</tags>
     <licenseUrl>https://github.com/GPUOpen-Tools/compressonator/tree/master/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>#### Software 
-* Releases Notes : https://github.com/GPUOpen-Tools/compressonator/releases
-
-#### Package
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <releaseNotes>https://github.com/GPUOpen-Tools/compressonator/releases/tag/V4.5.52</releaseNotes>
     <dependencies>
       <dependency id="vcredist2015" version="14.0.24215.20160928" />
     </dependencies>

@@ -6,7 +6,7 @@
     <title>Font Awesome (Font) (Install)</title>
     <authors>Dave Gandy</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://fontawesome.io/license/</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/LICENSE.txt</licenseUrl>
     <projectUrl>https://fontawesome.com/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/font-awesome-font/font-awesome-font_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -59,7 +59,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Font Awesome - The iconic font and CSS framework</summary>
-    <releaseNotes>https://fontawesome.com/changelog/latest</releaseNotes>
+    <releaseNotes>https://github.com/FortAwesome/Font-Awesome/releases/tag/6.6.0</releaseNotes>
     <copyright>© Fonticons, Inc.</copyright>
     <tags>font awesome otf opentype binary</tags>
     <projectSourceUrl>https://github.com/FortAwesome/Font-Awesome</projectSourceUrl>

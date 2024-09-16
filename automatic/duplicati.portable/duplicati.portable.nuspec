@@ -71,15 +71,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Duplicati - Free backup software to store encrypted backups online.</summary>
-    <releaseNotes>### Program
-
-https://github.com/duplicati/duplicati/blob/master/changelog.txt
-
-### Package
-
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
-    </releaseNotes>
+    <releaseNotes>https://github.com/duplicati/duplicati/releases/tag/v2.0.9.107_canary_2024-09-11</releaseNotes>
     <tags>duplicati cloud backup admin</tags>
     <projectSourceUrl>https://github.com/duplicati/duplicati</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duplicati.portable</packageSourceUrl>

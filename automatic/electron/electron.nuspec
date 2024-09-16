@@ -35,13 +35,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>GitHub Inc</copyright>
     <licenseUrl>https://raw.githubusercontent.com/electron/electron/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
-* [Changelog](https://github.com/electron/electron/releases/)
-
-#### Package
-* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <releaseNotes>https://github.com/electron/electron/releases/tag/v32.1.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
