@@ -19,7 +19,7 @@ the hosting company or data center that hosts the Web server, mail server, and d
     <summary>Show domain hosting information</summary>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>Â© 2024 NirSoft</copyright>
+    <copyright>© 2011 NirSoft</copyright>
     <tags>web hosting report whois company owner registrar information dns</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/domainhostingview</packageSourceUrl>
   </metadata>

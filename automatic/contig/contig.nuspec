@@ -46,7 +46,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>Â© 1998-2024 Mark Russinovich</copyright>
+    <copyright>© 1998-2012 Mark Russinovich</copyright>
     <tags>defragment disk sysinternals cli</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/contig</packageSourceUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
