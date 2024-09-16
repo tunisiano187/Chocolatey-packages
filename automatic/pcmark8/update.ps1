@@ -3,13 +3,6 @@ import-module au
 
 $releases = "https://benchmarks.ul.com/downloads/pcmark8.zip"
 
-function global:au_BeforeUpdate {
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $Latest.URL32
-	$Latest.Checksum32 = $FileVersion.Checksum
-	$Latest.ChecksumType32 = $FileVersion.checksumType
-}
-
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -36,4 +29,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 32 -NoCheckChocoVersion

@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'pcmark8'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'http://akamai-dl.futuremark.com.akamaized.net/PCMark8-v2-10-901.zip'
-$checksum       = '5CA0578BCF55671C2F8A1BCEF767A88A687091099354E01901D418D4570547BA'
+$url            = 'https://d1ejs5fxm96rib.cloudfront.net/PCMark8-v2-10-901.zip'
+$checksum       = '5ca0578bcf55671c2f8a1bcef767a88a687091099354e01901d418d4570547ba'
 $checksumType   = 'sha256'
 $silentArgs     = '/S'
 $validExitCodes = @(0)
