@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/microsoft/ntttcp</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/ntttcp.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://github.com/microsoft/ntttcp/releases/tag/v5.40</releaseNotes>
     <description><![CDATA[## Microsoft NT TCP Testing Tool (NTTTCP) 5.33 (Portable)
 
 Used to profile and measure Windows networking performance, NTttcp is one of the primary tools Microsoft engineering teams leverage to validate network function and utility.
