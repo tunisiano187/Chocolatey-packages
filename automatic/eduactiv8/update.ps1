@@ -13,6 +13,14 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\eduactiv8-$($Latest.Version)-win.zip"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -24,11 +32,8 @@ function global:au_GetLatest {
 	$links=$xml | Where-Object {$_ -match 'win.zip/download'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
 	$url32 = Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match 'win.zip/download'})
 	$version = (Get-Version $url32).Version
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\eduactiv8-$($version)-win.zip"
 
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.CHECKSUM; ChecksumType32 = $FileVersion.ChecksumType }
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
