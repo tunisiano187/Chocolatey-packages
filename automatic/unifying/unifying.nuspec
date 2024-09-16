@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>unifying</id>
+    <version>2.52.33</version>
+    <title>Logitech Unifying Software (Install)</title>
+    <authors>Logitech</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.logitech.com/en-us/tos/terms.html</licenseUrl>
+    <projectUrl>https://support.logi.com/hc/en-us/articles/360025297913</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/unifying/unifying_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://unifying](choco://unifying)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of Logitech Unifying Software](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/unifying/unifying_screenshot.png)
+
+	Logitech Unifying software lets you manage your devices that use a Unifying receiver. You can add or remove devices using the software's wizard or use advanced mode. Advanced mode also displays the status of your paired devices, battery level and firmware version.
+	
+	OS: Windows 10, Windows 11
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---
+
+
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/unifying/readme.md)**</description>
+    <summary>Lets you add and remove devices that use a Unifying receiver</summary>
+    <releaseNotes />
+    <copyright>Copyright Logitech</copyright>
+    <tags>logitech unifying software mouse util utility</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/unifying</packageSourceUrl>
+    <docsUrl>https://support.logitech.com/en_us/software/unifying#</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
