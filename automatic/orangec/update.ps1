@@ -16,6 +16,14 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+    Move-Item -Path $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -25,9 +33,6 @@ function global:au_GetLatest {
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "Windows"}
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','').Split('-')[-1]
-    $File = "tools\$($url32.Split('/')[-1])"
-    Invoke-WebRequest -Uri $url32 -OutFile $File
-    $checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType).Hash
     if($tags.tag_name -match $version) {
         if($tags.prerelease -match "true") {
             $date = $tags.published_at.ToString("yyyyMMdd")
@@ -35,7 +40,7 @@ function global:au_GetLatest {
         }
     }
 
-    return @{ URL32 = $url32; Version = $version; ReleaseUri = $tags.html_url; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
+    return @{ URL32 = $url32; Version = $version; ReleaseUri = $tags.html_url }
 }
 
 update -ChecksumFor none -NoCheckChocoVersion
