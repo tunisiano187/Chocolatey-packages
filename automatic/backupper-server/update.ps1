@@ -32,8 +32,6 @@ function global:au_GetLatest {
   $versionPattern = 'v<span\s+data--release-product="AB"\s+data--release="version">(\d+\.\d+\.\d+)<\/span>'
   $match = [regex]::Match($response.Content, $versionPattern)
 	$version = $match.Groups[1].Value
-  . ..\..\scripts\Get-FileVersion.ps1
-  $FileVersion = Get-FileVersion $url32
 
   $Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
