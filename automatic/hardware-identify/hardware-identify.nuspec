@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>hardware-identify</id>
+    <version>2.5.0</version>
+    <title>Tweaking.com - Hardware Identify (Install)</title>
+    <authors>Tweaking.com</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>http://www.tweaking.com/core/termsofuse/index.html</licenseUrl>
+    <projectUrl>http://www.tweaking.com/content/page/tweaking_com_hardware_identify.html</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/hardware-identify/hardware-identify_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>___
+###[choco://hardware-identify](choco://hardware-identify)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+___
+
+Tweaking.com - Hardware Identify will help identify unknown hardware on your system. This program does not help you download drivers but helps let you know what the hardware is so you know what drivers to find.
+
+For example say you just reinstalled a computer and the device manager shows multiple unknown hardware with no drivers installed. Well you don't know what drivers to find since you don't know what the hardware is. Now with Tweaking.com - Hardware Identify you can see what that hardware is.
+
+The program also has a easy option to help improve the device database. Once you have all drivers installed you can have the program check for any hardware on the system that isn't in the database and submit it to Tweaking.com. With in a few days the database will be updated and the device list will grow with the help of users like you!
+
+PACKAGING NOTE: Uninstall is NOT silent.
+	
+
+___
+
+Tweaking.com - Hardware Identify (Install) packaged with pride by bcurran3.
+___</description>
+    <summary>A program to identify and give information about your drivers.</summary>
+    <releaseNotes />
+    <tags>tweaking.com hardware identify driver drivers</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/hardware-identify</packageSourceUrl>
+    <mailingListUrl>http://www.tweaking.com/forums/</mailingListUrl>
+    <bugTrackerUrl>http://www.tweaking.com/content/page/tweaking_com_hardware_identify.html</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
