@@ -31,7 +31,7 @@ ___</description>
     <summary>A program to identify and give information about your drivers.</summary>
     <releaseNotes />
     <tags>tweaking.com hardware identify driver drivers</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/hardware-identify</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hardware-identify</packageSourceUrl>
     <mailingListUrl>http://www.tweaking.com/forums/</mailingListUrl>
     <bugTrackerUrl>http://www.tweaking.com/content/page/tweaking_com_hardware_identify.html</bugTrackerUrl>
   </metadata>
