@@ -19,10 +19,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://www.sdcard.org$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_ -match 'Accept'} | Where-Object {$_.href -match '.zip'}).href.replace('./',''))"
-	$File = "$env:TEMP/sdc.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
-	Expand-Archive $File -DestinationPath $env:TEMP\sdc -Force
-	$version = $(Get-ChildItem -Path $env:TEMP\sdc -Filter *.exe -Recurse)[0].Name.split(' ')[3]
+	$url = "https://www.sdcard.org/downloads/formatter/"
+	$pageContent = Invoke-WebRequest -Uri $url -UseBasicParsing
+	$versionPattern = 'SD Memory Card Formatter\s*(\d+\.\d+\.\d+)'
+	$match = [regex]::Match($pageContent.Content, $versionPattern)
+	$version = $match.Groups[1].Value
 
 	return @{ URL32 = $url32
 		Version = $version
