@@ -1,4 +1,3 @@
-winpcap 0.0 - New maintainer
 killprocess 0.0 - New maintainer
 kmttg 0.0 - New maintainer
 revo-uninstaller 0.0 - New maintainer
