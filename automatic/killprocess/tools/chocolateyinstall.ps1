@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName= 'killprocess' 
+$ErrorActionPreference = 'Stop'
+$packageName= 'killprocess'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://orangelampsoftware.com/downloads/KillProcess.exe'
 $checksum   = '511B478937F6228678A6973F5ECBF6E87D45BB7FFC4A9D81225C715D366D6062'
