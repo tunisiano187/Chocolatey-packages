@@ -40,7 +40,7 @@ For help in getting the most out of the application, we recomment that you look 
     <releaseNotes />
     <copyright>Orange Lamp Software Solutions 2009 (c)</copyright>
     <tags>orange lamp killprocess kill process util portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/killprocess</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/killprocess</packageSourceUrl>
     <docsUrl>http://orangelampsoftware.com/about_app.shtml</docsUrl>
   </metadata>
   <files>
