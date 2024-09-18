@@ -18,7 +18,7 @@
     <releaseNotes>https://www.winpcap.org/misc/changelog.htm</releaseNotes>
     <copyright>NetGroup, Politecnico di Torino (Italy). CACE Technologies, Davis (California).</copyright>
     <tags>driver foss packet capture network admin</tags>
-    <packageSourceUrl>https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/winpcap</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winpcap</packageSourceUrl>
     <docsUrl>https://www.winpcap.org/docs/default.htm</docsUrl>
     <dependencies>
       <dependency id="autohotkey.portable" />
