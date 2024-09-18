@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>WinPcap</id>
-    <version>4.1.3.20161116</version>
+    <version>4.1.3.20240918</version>
     <title>WinPcap</title>
     <authors>NetGroup, CACE Technologies</authors>
     <owners>chocolatey</owners>
@@ -26,6 +26,7 @@
     </dependencies>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
