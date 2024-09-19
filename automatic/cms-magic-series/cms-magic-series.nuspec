@@ -31,7 +31,7 @@ The Windows Central Management Software for [MAGIC Series](http://www.magicdvr.c
 ---</description>
     <summary>CMS is a remote viewing program for MAGIC Series DVRs.</summary>
     <tags>cms central management system cctv magic dvr</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/cms-magic-series</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/cms-magic-series</packageSourceUrl>
     <docsUrl>http://download.eyemaxdvr.com/XVST%20MAGIC%20SERIES/MANUAL/CMS_ENG_1050_01.pdf</docsUrl>
   </metadata>
   <files>
