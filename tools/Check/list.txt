@@ -1,4 +1,3 @@
-password-control 0.0 - New maintainer
 bzflag 0.0 - New maintainer
 uas-plex 0.0 - New maintainer
 solarwinds-automation-manager 0.0 - New maintainer
