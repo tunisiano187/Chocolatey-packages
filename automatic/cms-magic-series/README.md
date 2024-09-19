@@ -2,7 +2,7 @@
 
 ## CMS (Central Management System) for MAGIC Series DVRs (Install)
 
-![Screenshot of CMS](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/cms-magic-series/cms-magic-series_screenshot.png)
+![Screenshot of CMS](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@075bde7ac788870555cb5678e43c254984ac51ba/automatic/cms-magic-series/cms-magic-series_screenshot.png)
 
 	
 The Windows Central Management Software for [MAGIC Series](http://www.magicdvr.com/) DVRs allows users to connect to and view security cameras from multiple DVR locations from a central client application. The software lets the user configure groups of connections, then picks and choose which cameras should be displayed.
