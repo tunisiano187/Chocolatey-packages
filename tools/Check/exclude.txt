@@ -227,3 +227,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+kmttg
