@@ -1,0 +1,7 @@
+==================== Revo Uninstaller ====================
+
+bcurran3 downloads and packages the executable for Revo Uninstaller from the official VS Revo Group's site at https://www.revouninstaller.com/download-freeware-version.php.
+
+Checksums don't appear to be published. 
+
+==================== Revo Uninstaller ====================
