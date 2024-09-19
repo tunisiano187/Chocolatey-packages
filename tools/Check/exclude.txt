@@ -107,6 +107,7 @@ keepass-plugin-mskeyimporter
 keepass-plugin-trayrecent
 keepass-plugin-traytotp
 killprocess
+kmttg
 KTechLab
 kubernetes-cli
 kubernetes-kompose
@@ -227,4 +228,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-kmttg
