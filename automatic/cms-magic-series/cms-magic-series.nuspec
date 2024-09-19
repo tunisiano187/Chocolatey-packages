@@ -6,7 +6,7 @@
     <title>CMS (Central Management System) for MAGIC Series DVRs (Install)</title>
     <authors>Unknown/Unbranded</authors>
     <owners>bcurran3</owners>
-    <projectUrl>http://download.eyemaxdvr.com/XVST%20MAGIC%20SERIES/CMS/</projectUrl>
+    <projectUrl>https://www.magicdvr.com/downloads/</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/cms-magic-series/cms-magic-series_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
