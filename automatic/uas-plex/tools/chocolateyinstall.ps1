@@ -2,6 +2,7 @@
 $BundleName       = 'WebTools.bundle'
 $url              = 'https://github.com/ukdtom/WebTools.bundle/releases/download/2.4.1/WebTools.bundle.zip'
 $checksum         = '4289A1973508CC77578D64220FE728A4FD0BA15B6D8478632C5DE1EAD5C80C75'
+$checksumType     = 'sha256'
 $LocalAppDataPath = Get-ItemProperty -path "registry::hkey_current_user\software\Plex, Inc.\Plex Media Server" | select-object -expandproperty LocalAppDataPath
 
 
@@ -37,7 +38,7 @@ $packageArgs = @{
   fileType      = 'ZIP' 
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256'  
+  checksumType  = $checksumType  
 }
 
 Install-ChocolateyZipPackage @packageArgs
