@@ -6,7 +6,7 @@
     <title>Unsupported AppStore for Plex</title>
     <authors>Mikael Aspehed</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/uas-plex</packageSourceUrl>
     <projectUrl>https://forums.plex.tv/discussion/126254/rel-webtools/p1#top</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>WebTools 2.x is a collection of utilities to help with the management of your Plex Server. 
