@@ -18,11 +18,11 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "dexpot.exe"
-	$url32 = "https://dexpot.de/$($((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match 'exe'}).outerHTML.split('"')[1])"
-	Invoke-WebRequest -Uri $url32 -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-	if($version -eq "1.6.14") { $version="1.6.14.1" } #Solve previously rejected
+	$page = Invoke-WebRequest -Uri "https://dexpot.de/?id=download" -UseBasicParsing
+    $regexPattern = '<li>(\d+\.\d+\.\d+)\s+Build\s+(\d+)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+    $match = $versionMatch.Matches[0]
+	$version = "$($match.Groups[1].Value).$($match.Groups[2].Value)"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest

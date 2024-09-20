@@ -19,6 +19,10 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/stefankueng/CryptSync/master/LICENSE" -OutFile ".\tools\LICENSE.txt"
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -36,7 +40,6 @@ function global:au_GetLatest {
             $version = "$version-pre$($date)"
         }
     }
-	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/stefankueng/CryptSync/master/LICENSE" -OutFile ".\tools\LICENSE.txt"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest

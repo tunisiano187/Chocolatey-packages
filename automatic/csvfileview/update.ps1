@@ -6,12 +6,6 @@ $url32 = 'https://www.nirsoft.net/utils/csvfileview.zip'
 
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-function Unzip
-{
-    param([string]$zipfile, [string]$outpath)
-    [System.IO.Compression.ZipFile]::ExtractToDirectory($zipfile, $outpath)
-}
-
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
