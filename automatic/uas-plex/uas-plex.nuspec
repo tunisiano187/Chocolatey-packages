@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>uas-plex</id>
+    <version>2.4.1</version>
+    <title>Unsupported AppStore for Plex</title>
+    <authors>Mikael Aspehed</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <projectUrl>https://forums.plex.tv/discussion/126254/rel-webtools/p1#top</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WebTools 2.x is a collection of utilities to help with the management of your Plex Server. 
+This plugin is not limited to the usual channel interface. Instead, it utilizes a built-in webserver to display a responsive web interface which also works on mobile devices, allowing you to manage your Plex Server from any device.
+This tool was created by Dagalufh (Frontend) and Dane22 (Backend) with the beta testing from:
+
+* OttoKerner
+* sa2000
+* trumpy81
+* Xandi92
+* chuckpa
+
+##Currently the tools available are:
+
+###Logviewer
+This tool allows for easy viewing of logs related to Plex and it's plugins via an easy to use web interface. It also gives you the ability to download all of the logs in a .zip file to easily send to a developer of a specific plugin.
+(This includes logs of 3rd party plugins, contrary to the Log download button in Plex Web.)
+
+###Subtitle Management
+The purpose of this tool is to give the user a way to manage subtitles that are not embedded.
+Current features:
+
+* View the content of a subtitle file for easier identification.
+* Highlights the subtitle that is selected as active in Plex for a specific Movie or Episode
+* Removal of one or more subtitles. Usage is on your own risk as this will delete files on your hard drive.
+
+###Unsupported AppStore
+This tool was originally created by mikedm139 and was one of the most popular plugins in the Plex universe. Now, this is included in WebTools 2.0, giving it an easy to use web interface that allows for quick installation/removal/update of plugins.
+
+###FindMedia
+This tool will quickly search a library, and then compare the items in the Plex database to the actually accessible media files on disk. It will then list all missing items from either the Plex Media Server database, or from your file system. This tool combines the outcome from the 3rd party plugins "Find-Missing" and "Find-Unmatched".
+Find-Unmatched is due to that discontinued, and removed from UAS.</description>
+    <summary />
+    <releaseNotes />
+    <tags>webtools unsupported appstore uas plex admin</tags>
+    <projectSourceUrl>https://github.com/dagalufh/WebTools.bundle/releases/tag/2.3</projectSourceUrl>
+    <docsUrl>https://github.com/dagalufh/WebTools.bundle/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/dagalufh/WebTools.bundle/blob/master/http/changelog.txt</bugTrackerUrl>
+    <dependencies>
+      <dependency id="plexmediaserver" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
