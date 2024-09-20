@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ntlite-free</id>
+    <version>2.3.6.8804</version>
+    <title>NTLite (Free) (Install)</title>
+    <authors>Nlitesoft</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.ntlite.com/shop/</licenseUrl>
+    <projectUrl>https://www.ntlite.com/</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/ntlite-free/ntlite-free_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://ntlite-free](choco://ntlite-free)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+
+![Screenshot of NTLite](https://www.ntlite.com/wp-content/uploads/screen_components.png)
+	
+## Welcome to NTLite  
+### For Windows IT Professionals and Enthusiasts	
+
+### Integrate and automate
+
+Integrate updates, drivers, automate Windows and application setup, speedup Windows deployment process and have it all set for the next time.
+
+### Reduce footprint
+
+Optionally remove Windows components, simplify your installation, reduce attack vectors and free up drive space.
+
+### In-place editing
+
+Next to editing images, you can also do the same actions on your existing Windows installation in-place, without reinstallation.
+*ISO creation only for existing images
+
+### MAIN FEATURES
+* LIVE INSTALL MODIFICATIONS
+* UPDATE DOWNLOAD
+* UPDATE, DRIVER, LANGUAGE PACK AND APPLICATION INTEGRATION
+* HARDWARE TARGETING
+* TWEAKS
+* UNATTENDED SETUP
+* DISK PARTITIONING
+* APPLICATION INSTALLATION AUTOMATION
+* COMPONENT REMOVAL
+* PENDING CHANGES OVERVIEW
+* AND MORE
+
+More details at: https://www.ntlite.com/features/
+See license link for Free, Home, Professional, and Business version comparisons.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/ntlite-free/readme.md)**
+
+	
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Windows deployment tool</summary>
+    <releaseNotes>https://www.ntlite.com/changelog/</releaseNotes>
+    <copyright>© Nlitesoft</copyright>
+    <tags>nlitesoft ntlite windows deployment</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ntlite-free</packageSourceUrl>
+    <docsUrl>https://www.ntlite.com/support/</docsUrl>
+    <mailingListUrl>https://www.ntlite.com/discussions/#/categories</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
