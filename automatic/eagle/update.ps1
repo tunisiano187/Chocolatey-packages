@@ -18,11 +18,10 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    . ..\..\scripts\Get-FileVersion.ps1
-    $FileVersion = Get-FileVersion $release
+    $version = $(get-version(get-redirectedUrl 'https://www.autodesk.com/eagle-download-win')).Version
 
-	$Latest = @{ URL64 = $release; Version = $FileVersion.Version; Checksum64 = $FileVersion.Checksum; ChecksumType64 = $FileVersion.ChecksumType }
+	$Latest = @{ URL64 = $release; Version = $version }
     return $Latest
 }
 
-update -ChecksumFor none -NoCheckUrl
+update -ChecksumFor 64 -NoCheckUrl

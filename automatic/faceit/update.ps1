@@ -19,10 +19,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$Fileinfos = Get-FileVersion -url $release
+	$file=New-TemporaryFile
+	$page = Invoke-WebRequest -Uri "https://faceit-client.faceit-cdn.net/release/RELEASES?id=FACEIT&localVersion=2.0.18&arch=amd64" -OutFile $file
+	$page=get-Content -Path $file
+	$version = (($page | Select-Object -Last 1).split(' ')[1]).split('-')[1]
 
-	$Latest = @{ URL32 = $release; Checksum32 = $Fileinfos.Checksum; ChecksumType32 = $Fileinfos.ChecksumType; Version = $Fileinfos.Version }
+	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor 32 -NoCheckChocoVersion

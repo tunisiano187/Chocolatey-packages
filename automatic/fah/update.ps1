@@ -12,6 +12,7 @@ function global:au_SearchReplace {
 		'tools/chocolateyInstall.ps1' = @{
 			"(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
 			"(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
@@ -21,11 +22,9 @@ function global:au_GetLatest {
 	$json = $page.Content | convertfrom-json
 	$url32 = "https://download.foldingathome.org/releases/public/fah-client/$($($json | Where-Object {$_.package -match ".exe"} | Select-Object -First 1).package)"
 	$version = (Get-Version $url32).Version
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32
-
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+	
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor 32
