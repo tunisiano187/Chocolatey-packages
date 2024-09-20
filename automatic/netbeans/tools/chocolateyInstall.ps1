@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url			= 'https://dlcdn.apache.org/netbeans/netbeans-installers/22/Apache-NetBeans-22-bin-windows-x64.exe'
-$checksum		= 'cf7dbbce2a9c808ba262625b3d824e95cef1779f5ed65bfa6888a3d09a7fdadb5ecd187e88d2ed03ed62dc84eb8f30c328420b72951ea03b013c46455734ec33'
+$url			= 'https://dlcdn.apache.org/netbeans/netbeans-installers/23/Apache-NetBeans-23-bin-windows-x64.exe'
+$checksum		= 'e0521319856bc17837649d9cd85c5da6808960bba80e2f92331eea8338682ec6293322236156790e298178015a21e75d1d5e42b007856e70a05d635baab99697'
 $checksumType	= 'sha512'
 $fileType		= 'exe'
 $softwareName	= 'NetBeans*'
