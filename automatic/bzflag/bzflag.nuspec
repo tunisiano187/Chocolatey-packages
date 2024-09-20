@@ -23,7 +23,7 @@ platforms.</description>
     <copyright>Copyright © 2017 Scott Wichser</copyright>
     <tags>bzflag opengl game multiplayer arcade tank battlezone admin</tags>
     <projectSourceUrl>https://github.com/BZFlag-Dev/bzflag</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/bzflag</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bzflag</packageSourceUrl>
     <docsUrl>https://wiki.bzflag.org/Main_Page</docsUrl>
     <mailingListUrl>https://forums.bzflag.org/</mailingListUrl>
     <bugTrackerUrl>https://github.com/BZFlag-Dev/bzflag/issues</bugTrackerUrl>
