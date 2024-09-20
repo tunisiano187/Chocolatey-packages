@@ -24,7 +24,7 @@ function global:au_GetLatest {
     $match = $versionMatch.Matches[0]
 	$version = "$($match.Groups[1].Value).$($match.Groups[2].Value)"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$Latest = @{ URL32 = $release; Version = $version }
     return $Latest
 }
 
