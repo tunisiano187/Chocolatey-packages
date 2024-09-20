@@ -65,7 +65,7 @@ See license link for Free, Home, Professional, and Business version comparisons.
     <releaseNotes>https://www.ntlite.com/changelog/</releaseNotes>
     <copyright>© Nlitesoft</copyright>
     <tags>nlitesoft ntlite windows deployment</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ntlite-free</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ntlite-free</packageSourceUrl>
     <docsUrl>https://www.ntlite.com/support/</docsUrl>
     <mailingListUrl>https://www.ntlite.com/discussions/#/categories</mailingListUrl>
   </metadata>
