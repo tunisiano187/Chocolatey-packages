@@ -18,11 +18,14 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	choco update -y autohotkey
-	. ..\..\Scripts\Get-FileVersion.ps1
-	$FileInfos = Get-FileVersion -url $release
-	$Latest = @{ URL32 = $release; Checksum32 = $FileInfos.Checksum32; ChecksumType32 = $FileInfos.ChecksumType32; Version = $FileInfos.Version }
+	$releases="https://www.filejuggler.com/news/"
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$regexPattern = 'File Juggler (\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
+
+	$Latest = @{ URL32 = $release; Version = $Version }
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor 32
