@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>audioshell</id>
+    <version>2.3.6</version>
+    <title>AudioShell (Install)</title>
+    <authors>Softpointer Inc</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>http://www.softpointer.com/AudioShell.htm</licenseUrl>
+    <projectUrl>http://www.softpointer.com/AudioShell.htm</projectUrl>
+    <iconUrl>http://www.softpointer.com/backgrounds/top_image_top.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of AudioShell](http://www.softpointer.com/images/audio_shell2_edit2.png)
+
+AudioShell 2 is a freeware Windows Explorer shell extension which allows you to view and edit ID3 meta-data tags directly in Windows Vista/7/8 Explorer. It supports all files and tags standards supported by Tag(Ampersand)Rename - music tag editor. AudioShell adds ID3 tag editor and files rename tools into Windows system music files pop-up menu. AudioShell property shell handler add detailed music tags information into Windows Explorer columns and Preview pane, thumbnail handler add thumbnails with album art into Explorer. Full Unicode and 64 bit support.
+
+####Supported files and tags formats:
+* mp3 (all ID3 tag versions)
+* Windows Media (wma, asf and wmv files)
+* Apple iTunes aac (m4a, m4p, m4r and m4b) and mp4 and aiff files
+* ogg, flac, opus, speex (vorbis comment tags)
+* mpc, mp+, monkey’s audio, wav pack, optim frog, true audio - APE tags, APEv2 tags
+* wav - ID3v2.3 tag in 'id3 ' RIFF chunk and LIST INFO chunk
+* dsf (DSD/Direct-Stream Digital) - ID3v2.3 tag
+
+####System requirements: AudioShell is designed for Windows Vista/7/8/8.1 both 32 and 64 bit systems.</description>
+    <summary>AudioShell - ID3 tag editor shell extension</summary>
+    <releaseNotes />
+    <copyright>© Softpointer Inc 1999 - 2016.</copyright>
+    <tags>audioshell windows explorer shell extension music metadata meta-data admin</tags>
+    <bugTrackerUrl>http://www.softpointer.com/AudioShellHistory.htm</bugTrackerUrl>
+    <dependencies>
+      <dependency id="autohotkey.portable" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
