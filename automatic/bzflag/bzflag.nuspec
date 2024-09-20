@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://raw.githubusercontent.com/BZFlag-Dev/bzflag/2.4/COPYING</licenseUrl>
     <projectUrl>https://www.bzflag.org/</projectUrl>
-    <iconUrl>https://wiki.bzflag.org/images/9/9c/Bzflag-48x48.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@eeee2bafedad5ab220882e3d3f028f610b31427e/icons/bzflag.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of BZFlag](https://www.bzflag.org/images/documentation/user_interface_layout.jpg)
 

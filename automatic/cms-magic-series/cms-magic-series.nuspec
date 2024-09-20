@@ -7,7 +7,7 @@
     <authors>Unknown/Unbranded</authors>
     <owners>bcurran3</owners>
     <projectUrl>https://www.magicdvr.com/downloads/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/cms-magic-series/cms-magic-series_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@075bde7ac788870555cb5678e43c254984ac51ba/icons/cms-magic-series.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
