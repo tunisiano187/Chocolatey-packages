@@ -32,7 +32,7 @@ function global:au_GetLatest {
 	Write-Verbose "Version : $version"
 	$url32 = "https://download.electrum.org/$($version)/electrum-$($version)-portable.exe"
 	Write-Verbose 'Getting latest LICENSE.txt file'
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }

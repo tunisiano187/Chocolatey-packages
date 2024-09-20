@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	$version = $((((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links)) | Where-Object {$_.href -match '/$'} | select -First 1).href.replace('/','')
 	Write-Verbose "Version : $version"
 	$url32 = "https://download.electrum.org/$($version)/electrum-$($version)-setup.exe"
-	
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
