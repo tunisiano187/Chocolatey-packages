@@ -1,4 +1,4 @@
-$packageName      = 'uas-plex' 
+$packageName      = 'uas-plex'
 $BundleName       = 'WebTools.bundle'
 $LocalAppDataPath = Get-ItemProperty -path "registry::hkey_current_user\software\Plex, Inc.\Plex Media Server" | select-object -expandproperty LocalAppDataPath
 

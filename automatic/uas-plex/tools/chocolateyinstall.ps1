@@ -1,4 +1,4 @@
-﻿$packageName      = 'uas-plex' 
+$packageName      = 'uas-plex'
 $BundleName       = 'WebTools.bundle'
 $url              = 'https://github.com/ukdtom/WebTools.bundle/releases/download/2.4.1/WebTools.bundle.zip'
 $checksum         = '4289A1973508CC77578D64220FE728A4FD0BA15B6D8478632C5DE1EAD5C80C75'
@@ -34,10 +34,10 @@ If (Test-Path $strFileName){
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $UnZipDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256'  
+  checksumType  = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs
