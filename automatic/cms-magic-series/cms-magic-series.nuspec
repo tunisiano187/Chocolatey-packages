@@ -5,7 +5,7 @@
     <version>2.4.4.2056</version>
     <title>CMS (Central Management System) for MAGIC Series DVRs (Install)</title>
     <authors>Unknown/Unbranded</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>https://www.magicdvr.com/downloads/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@075bde7ac788870555cb5678e43c254984ac51ba/icons/cms-magic-series.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
