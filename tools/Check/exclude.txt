@@ -228,3 +228,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+solarwinds-automation-manager
