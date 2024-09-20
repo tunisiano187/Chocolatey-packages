@@ -38,7 +38,7 @@ $packageArgs = @{
   fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
-  checksumType  = $checksumType  
+  checksumType  = $checksumType
 }
 
 Install-ChocolateyZipPackage @packageArgs
