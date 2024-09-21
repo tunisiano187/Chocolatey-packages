@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>audioshell</id>
-    <version>2.3.6</version>
+    <version>2.3.6.20210925</version>
     <title>AudioShell (Install)</title>
     <authors>Softpointer Inc</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
-    <licenseUrl>http://www.softpointer.com/AudioShell.htm</licenseUrl>
-    <projectUrl>http://www.softpointer.com/AudioShell.htm</projectUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/audioshell</packageSourceUrl>
+    <licenseUrl>https://www.softpointer.com/AudioShell.htm</licenseUrl>
+    <projectUrl>https://www.softpointer.com/AudioShell.htm</projectUrl>
     <iconUrl>http://www.softpointer.com/backgrounds/top_image_top.gif</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of AudioShell](http://www.softpointer.com/images/audio_shell2_edit2.png)
@@ -31,7 +31,7 @@ AudioShell 2 is a freeware Windows Explorer shell extension which allows you to 
     <tags>audioshell windows explorer shell extension music metadata meta-data admin</tags>
     <bugTrackerUrl>http://www.softpointer.com/AudioShellHistory.htm</bugTrackerUrl>
     <dependencies>
-      <dependency id="autohotkey.portable" />
+      <dependency id="autohotkey.install" />
     </dependencies>
   </metadata>
   <files>

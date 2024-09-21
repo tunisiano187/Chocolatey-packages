@@ -1,19 +1,12 @@
 $ErrorActionPreference = 'Stop'
+
 $packageName= 'audioshell'
-$installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $url        = 'http://www.softpointer.com/downloads/AudioShell236.exe'
 $validExitCodes= @(0)
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkExe = 'AutoHotKey'
-$ahkFile = Join-Path $toolsDir "audioshell.ahk"
-Start-Process $ahkExe $ahkFile
-#$ahkProc = Start-Process -FilePath $ahkExe `
-#                         -ArgumentList $ahkFile `
-#                         -PassThru
-#$ahkId = $ahkProc.Id
-#Write-Debug "$ahkExe start time:`t$($ahkProc.StartTime.ToShortTimeString())"
-#Write-Debug "Process ID:`t$ahkId"
+$ahkFile = "$toolsDir\audioshell.ahk"
 
 $packageArgs = @{
   packageName   = $packageName
@@ -26,14 +19,6 @@ $packageArgs = @{
   validExitCodes= $validExitCodes
 }
 
+Start-Process $ahkExe $ahkFile
+
 Install-ChocolateyPackage @packageArgs
-
-#Give time for all processes to finish
-Start-Sleep 10
-
-
-
-						  
-						  
-						  
-						  
