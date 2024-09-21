@@ -1,0 +1,9 @@
+﻿==================== GNU Units ====================
+
+This binary was directly downloaded and packaged up by bcurran3 from developer's site:
+
+"Windows Binary
+
+A binary distribution for Windows is available at http://ftp.gnu.org/gnu/units/windows/ (via HTTP) and ftp://ftp.gnu.org/gnu/units/windows (via FTP)."
+
+==================== GNU Units ====================
