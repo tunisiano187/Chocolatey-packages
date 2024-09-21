@@ -10,9 +10,9 @@ $ahkFile = "$toolsDir\audioshell.ahk"
 
 $packageArgs = @{
   packageName   = $packageName
-  fileType      = 'EXE' 
+  fileType      = 'EXE'
   url           = $url
-  softwareName  = 'Audioshell*' 
+  softwareName  = 'Audioshell*'
   checksum      = '0EB44EF06A4EBD8FAA919DD59CFC692974209EF804586491FE6BC9B10965067B'
   checksumType  = 'sha256'
   silentArgs    = $silentArgs
