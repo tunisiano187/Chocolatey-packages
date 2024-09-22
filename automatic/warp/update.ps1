@@ -3,19 +3,12 @@ import-module au
 
 $releases = "https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi"
 
-function Get-Version($name) {
-	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-	while($version_file.count -eq 0)
-	{
-		$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion
-		Start-Sleep -Seconds 1
-	}
-	return $version_file
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL64
+	$Latest.Checksum64 = $FileVersion.Checksum
+	$Latest.ChecksumType64 = $FileVersion.checksumType
 }
-
-#function global:au_AfterUpdate($Package) {
-#	Invoke-VirusTotalScan $Package
-#}
 
 function global:au_SearchReplace {
 	@{
@@ -29,16 +22,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$url64=$releases
-	$checksumType = "SHA512"
 
-    $File = Join-Path $env:TEMP "warp.msi"
-	Invoke-WebRequest -Uri $url64 -OutFile $File
-    #Start-Process msiexec.exe -Wait -ArgumentList "/I $File /qn /norestart"
-	#$version = Get-Version("warp")
-	$version=(Get-AppLockerFileInformation -Path $File).Publisher.BinaryVersion.tostring()
-	$checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
-
-	$Latest = @{ URL64 = $url64; Version = $version; Checksum64 = $checksum; ChecksumType64 = $checksumType}
+	$page = Invoke-WebRequest -Uri "https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-windows-1/distribution_groups/release/public_releases?scope=tester&top=1" -UseBasicParsing
+	$regexPattern = '"version":"(\d+(\.\d+)*)'
+	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+	$version = $versionMatch.Matches[0].Groups[1].Value
+	
+	$Latest = @{ URL64 = $url64; Version = $version}
 
     return $Latest
 }

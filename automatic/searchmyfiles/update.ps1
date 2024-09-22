@@ -12,6 +12,18 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools/searchmyfiles.zip"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+	$FileVersion = Get-FileVersion $Latest.URL64 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools/searchmyfiles-x64.zip"
+	$Latest.Checksum64 = $FileVersion.Checksum
+	$Latest.ChecksumType64 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
@@ -19,8 +31,6 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/searchmyfiles.zip"
 	$url64 = "https://www.nirsoft.net/utils/searchmyfiles-x64.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/searchmyfiles.zip" -UseBasicParsing
-	Invoke-WebRequest -Uri $url64 -OutFile "tools/searchmyfiles-x64.zip" -UseBasicParsing
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/search_my_files.html" -UseBasicParsing
 	$regexPattern = 'SearchMyFiles v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
