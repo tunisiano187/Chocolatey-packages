@@ -36,7 +36,7 @@ The units are defined in an external data file. You can use the extensive data f
     <copyright>Free Software Foundation, Inc.</copyright>
     <tags>gnu units conversion</tags>
     <projectSourceUrl>https://ftp.gnu.org/gnu/units/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/gnu-units</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gnu-units</packageSourceUrl>
     <docsUrl>https://www.gnu.org/software/units/manual/</docsUrl>
   </metadata>
   <files>
