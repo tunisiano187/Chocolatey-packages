@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://node.minepi.com/node/'
+$releases = 'https://minepi.com/pi-blockchain/pi-node/'
 
 function global:au_SearchReplace {
 	@{
