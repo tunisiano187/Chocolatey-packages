@@ -1,11 +1,12 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName    = 'gnu-units'
+$file           = Get-Item $toolsPath\*.exe
 
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'EXE'
-  file           = "$toolsDir\units-2.22-setup.exe"
+  file           = $file
   validExitCodes = @(0)
   silentArgs     = '/VERYSILENT /NOCANCEL /CLOSEAPPLICATIONS /RESTART APPLICATIONS /NORESTART'
   softwareName   = 'units version 2.*'
