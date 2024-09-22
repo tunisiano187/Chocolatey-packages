@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = 'https://docs.tdarr.io/docs/installation/windows-linux-macos'
@@ -28,8 +28,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 		= (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'win32_x64/Tdarr_Updater.zip'}).href)
 	$version 	= Get-Version $url32
-	
-	
+
+
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
