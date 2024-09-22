@@ -45,7 +45,7 @@ function global:au_GetLatest {
 	foreach ($link in $fileLinks) {
 		if ($link.href -match $versionPattern) {
 			$version = [Version]$matches[1]
-			
+
 			# Compare the current version with the highest version found so far
 			if ($version -gt $highestVersion) {
 				$highestVersion = $version
