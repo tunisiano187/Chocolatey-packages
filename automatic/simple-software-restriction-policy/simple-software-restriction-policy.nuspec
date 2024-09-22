@@ -43,7 +43,7 @@ SSRP also offers a means of launching specified programs with limited rights. On
     <summary>Control which folders programs can be run from.</summary>
     <copyright>IWR Consultancy</copyright>
     <tags>iwr software restriction policy admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/simple-software-restriction-policy</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/simple-software-restriction-policy</packageSourceUrl>
     <docsUrl>http://iwrconsultancy.co.uk/ssrp/</docsUrl>
   </metadata>
   <files>
