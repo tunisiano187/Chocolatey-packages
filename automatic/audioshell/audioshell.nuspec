@@ -5,7 +5,7 @@
     <version>2.3.6.20210925</version>
     <title>AudioShell (Install)</title>
     <authors>Softpointer Inc</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/audioshell</packageSourceUrl>
     <licenseUrl>https://www.softpointer.com/AudioShell.htm</licenseUrl>
     <projectUrl>https://www.softpointer.com/AudioShell.htm</projectUrl>

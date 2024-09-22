@@ -5,7 +5,7 @@
     <version>2.22.0</version>
     <title>GNU Units (Install)</title>
     <authors>Adrian Mariano</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>https://www.gnu.org/software/units/</projectUrl>
