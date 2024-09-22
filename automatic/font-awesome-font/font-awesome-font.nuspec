@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://fontawesome.io/license/</licenseUrl>
     <projectUrl>https://fontawesome.com/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/font-awesome-font/font-awesome-font_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f40b66b98e9a9296909ca3645f54c072d2b676c6/icons/font-awesome-font.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Font Awesome (Font) (Install)
 

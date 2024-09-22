@@ -5,11 +5,11 @@
     <version>2.22.0</version>
     <title>GNU Units (Install)</title>
     <authors>Adrian Mariano</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>https://www.gnu.org/software/units/</projectUrl>
-    <iconUrl>https://www.gnu.org/graphics/heckert_gnu.transp.small.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d462b1e322c70daafe26eff1747c3a691154e533/icons/gnu-units.png</iconUrl>
     <description>---
 
 ### [choco://gnu-units](choco://gnu-units)
