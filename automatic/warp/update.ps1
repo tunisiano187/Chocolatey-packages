@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 import-module au
 
 $releases = "https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi"
@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$regexPattern = '"version":"(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	
+
 	$Latest = @{ URL64 = $url64; Version = $version}
 
     return $Latest
