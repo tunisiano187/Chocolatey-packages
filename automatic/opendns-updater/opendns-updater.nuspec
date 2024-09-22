@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>opendns-updater</id>
+    <version>2.2.1.20170716</version>
+    <title>OpenDNS Updater (Install)</title>
+    <authors>OpenDNS.com</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://www.opendns.com/terms-of-service/</licenseUrl>
+    <projectUrl>https://support.opendns.com/entries/23218654-Where-do-I-download-an-OpenDNS-Dynamic-IP-updater-client-</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/opendns-updater/OpenDNSUpdater_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of OpenDNS Updater](https://d2v7u03x06aro3.cloudfront.net/img/win_up_22_main.png)
+	
+OpenDNS Updater is useful if you have a dynamic IP address. It detects changes to your IP address and notifies OpenDNS service about the change so that your OpenDNS settings continue to be applied to your network.
+
+###[Click here for more information about OpenDNS services.](https://www.OpenDNS.com "OpenDNS's Homepage")
+
+**PACKAGING NOTE:** The uninstall is pseudo-silent. It will open up a feedback request page in your default browser.</description>
+    <summary>This is the officially supported OpenDNS Windows client, which sends your network's new IP Address to OpenDNS whenever it should change.</summary>
+    <tags>opendns updater dynamic dns admin</tags>
+    <docsUrl>https://opendns.zendesk.com/entries/25977260-Dynamic-IP-Windows-Updater-Documentation</docsUrl>
+    <bugTrackerUrl>https://opendns.zendesk.com/entries/25977260-Dynamic-IP-Windows-Updater-Documentation</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
