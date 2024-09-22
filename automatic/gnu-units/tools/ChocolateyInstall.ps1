@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName    = 'gnu-units'
 
@@ -11,7 +11,7 @@ $packageArgs = @{
   softwareName   = 'units version 2.*'
 }
 
-Install-ChocolateyInstallPackage @packageArgs 	
+Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item $toolsDir\*.exe -EA SilentlyContinue | Out-Null
 Remove-Item $toolsDir\*.sig -EA SilentlyContinue | Out-Null
