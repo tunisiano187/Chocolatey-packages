@@ -40,6 +40,7 @@ The units are defined in an external data file. You can use the extensive data f
     <docsUrl>https://www.gnu.org/software/units/manual/</docsUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
