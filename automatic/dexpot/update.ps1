@@ -23,8 +23,10 @@ function global:au_GetLatest {
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
     $match = $versionMatch.Matches[0]
 	$version = "$($match.Groups[1].Value).$($match.Groups[2].Value)"
+    $page = Invoke-WebRequest -Uri $release -UseBasicParsing
+    $url32 = "https://dexpot.de/$($page.Links.href | Where-Object {$_ -match 'exe$'} | Select-Object -First 1)"
 
-	$Latest = @{ URL32 = $release; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }
 
