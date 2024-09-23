@@ -11,18 +11,18 @@ $UnZipDir         = Join-Path -Path $LocalAppDataPath -ChildPath "Plex Media Ser
 
 $strFileName="$LocalAppDataPath\Plex Media Server\Plug-ins\$BundleName.old"
 If (Test-Path $strFileName){
-  Write-Information "Removing previous .old version." 
+  Write-Information "Removing previous .old version."
   Remove-Item "$UnZipDir\$BundleName.old" -recurse
 }Else{
-  Write-Information ".old version does not exist." 
+  Write-Information ".old version does not exist."
 }
 
 $strFileName="$LocalAppDataPath\Plex Media Server\Plug-ins\$BundleName"
 If (Test-Path $strFileName){
-  Write-Information "Removing $packageName" 
+  Write-Information "Removing $packageName"
   Remove-Item "$UnZipDir\$BundleName" -recurse
 }Else{
-  Write-Information "ERROR: No previous version exists." 
+  Write-Information "ERROR: No previous version exists."
 }
-  Write-Information "You can ignore Only an exit code of non-zero will fail... messages." 
+  Write-Information "You can ignore Only an exit code of non-zero will fail... messages."
 
