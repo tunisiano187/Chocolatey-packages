@@ -8,7 +8,7 @@ $LocalAppDataPath = Get-ItemProperty -path "registry::hkey_current_user\software
 
 if ($null -eq $LocalAppDataPath) {
    Write-Information "Plex Media Server has not been configured yet!" -ForegroundColor red -BackgroundColor blue
-   Write-Information "Creating default directories..." -ForegroundColor green -BackgroundColor blue
+   Write-Information "Creating default directories..." 
    New-Item "$env:LOCALAPPDATA\Plex" -Type Directory -force
    New-Item "$env:LOCALAPPDATA\Plex\Plex Media Server" -Type Directory -force
    New-Item "$env:LOCALAPPDATA\Plex\Plex Media Server\Plug-ins" -Type Directory -force
@@ -18,18 +18,18 @@ $UnZipDir         = Join-Path -Path $LocalAppDataPath -ChildPath "Plex Media Ser
 
 $strFileName="$LocalAppDataPath\Plex Media Server\Plug-ins\$BundleName.old"
 If (Test-Path $strFileName){
-  Write-Information "Removing previous .old version." -ForegroundColor green -BackgroundColor blue
+  Write-Information "Removing previous .old version." 
   Remove-Item "$UnZipDir\$BundleName.old" -recurse
 }Else{
-  Write-Information ".old version does not exist." -ForegroundColor green -BackgroundColor blue
+  Write-Information ".old version does not exist." 
 }
 
 $strFileName="$LocalAppDataPath\Plex Media Server\Plug-ins\$BundleName"
 If (Test-Path $strFileName){
-  Write-Information "Renaming previous version .old." -ForegroundColor green -BackgroundColor blue
+  Write-Information "Renaming previous version .old." 
   Rename-Item "$UnZipDir\$BundleName" "$BundleName.old"
 }Else{
-  Write-Information "No previous version exists." -ForegroundColor green -BackgroundColor blue
+  Write-Information "No previous version exists." 
 }
 
 $packageArgs = @{
@@ -43,4 +43,4 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-Write-Information "You can ignore Only an exit code of non-zero will fail... messages." -ForegroundColor green -BackgroundColor blue
+Write-Information "You can ignore Only an exit code of non-zero will fail... messages." 
