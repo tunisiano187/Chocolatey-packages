@@ -2,11 +2,11 @@ $ErrorActionPreference = 'Stop'
 $packageName= 'prime95.portable'
 $ShortcutName = 'Prime95'
 
-if((get-process "prime95" -ea SilentlyContinue) -eq $Null){
-        Write-Host  "prime95 not running. (Good!)"
+if($Null -eq (get-process "prime95" -ea SilentlyContinue)){
+        Write-Information  "prime95 not running. (Good!)"
 }
 else{
-    Write-Host  "Stopping Prime95..."
+    Write-Information  "Stopping Prime95..."
     Stop-Process -processname "prime95"
     Start-Sleep -s 3
  }
