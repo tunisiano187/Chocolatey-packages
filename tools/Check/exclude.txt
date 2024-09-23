@@ -148,7 +148,6 @@ Oculus-Rift-(CV1)-software
 office2019proplus
 office365proplus
 opencodecs
-ost2pst-wizard
 p4scc
 packages
 pacman
