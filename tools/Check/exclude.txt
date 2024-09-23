@@ -178,6 +178,7 @@ selfssl7
 serva
 serviwin
 sikulix
+simple-software-restriction-policy
 sketchupviewer
 skype-chrome
 snake
@@ -229,4 +230,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-simple-software-restriction-policy
