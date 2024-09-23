@@ -65,7 +65,7 @@ ___</description>
     <summary>Convert Outlook OST files to Outlook PST files.</summary>
     <copyright>Copyright 2014 4Team Corporation. All rights reserved.</copyright>
     <tags>ost2 ost pst outlook</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/OST2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ost2</packageSourceUrl>
     <docsUrl>http://www.ost2.com/WebHelp/OST2Help.htm#Installation.htm</docsUrl>
     <bugTrackerUrl>http://www.ost2.com/version-history.aspx</bugTrackerUrl>
     <dependencies>
