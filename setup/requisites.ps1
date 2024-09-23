@@ -1,4 +1,4 @@
-choco upgrade -y chocolatey checksum 
+choco upgrade -y chocolatey checksum
 choco install -y keepass.install vt-cli autohotkey chocolatey-misc-helpers.extension
 
 # http://techrena.net/disable-ie-set-up-first-run-welcome-screen/

@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 import-module AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
