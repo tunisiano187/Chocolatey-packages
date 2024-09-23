@@ -14,6 +14,10 @@ if($page.Links | Where-Object {$_.href -match 'tunisiano'}) {
         Set-GitHubConfiguration -DisableTelemetry
 
         Update-GitHubIssue -OwnerName Tunisiano187 -RepositoryName chocolatey-packages -Issue $issues.number -State Closed
+        Write-Output "$($Issues.title) closed"
+    } else {
+        Write-Output "$($Issues.title) still opened"
     }
+} else {
+    Write-Output "$($Issues.title) still opened"
 }
-Write-Output "$Issues.title closed"
