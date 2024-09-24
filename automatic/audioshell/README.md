@@ -6,7 +6,7 @@
 
 AudioShell 2 is a freeware Windows Explorer shell extension which allows you to view and edit ID3 meta-data tags directly in Windows Vista/7/8 Explorer. It supports all files and tags standards supported by Tag(Ampersand)Rename - music tag editor. AudioShell adds ID3 tag editor and files rename tools into Windows system music files pop-up menu. AudioShell property shell handler add detailed music tags information into Windows Explorer columns and Preview pane, thumbnail handler add thumbnails with album art into Explorer. Full Unicode and 64 bit support.
 
-####Supported files and tags formats:
+#### Supported files and tags formats:
 * mp3 (all ID3 tag versions)
 * Windows Media (wma, asf and wmv files)
 * Apple iTunes aac (m4a, m4p, m4r and m4b) and mp4 and aiff files
@@ -15,7 +15,7 @@ AudioShell 2 is a freeware Windows Explorer shell extension which allows you to 
 * wav - ID3v2.3 tag in 'id3 ' RIFF chunk and LIST INFO chunk
 * dsf (DSD/Direct-Stream Digital) - ID3v2.3 tag
 
-####System requirements: AudioShell is designed for Windows Vista/7/8/8.1 both 32 and 64 bit systems.
+#### System requirements: AudioShell is designed for Windows Vista/7/8/8.1 both 32 and 64 bit systems.
 
 #### [choco://audioshell](choco://audioshell)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
