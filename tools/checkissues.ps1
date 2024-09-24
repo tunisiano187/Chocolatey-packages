@@ -1,7 +1,7 @@
 ﻿$Issues=Get-GitHubIssue -OwnerName Tunisiano187 -RepositoryName chocolatey-packages -State Open | Where-Object {$_.IssueNumber -ne 3784}
 $search = $Issues.title.Split('(|)')[1]
 
-$page = Invoke-WebRequest -Uri "https://community.chocolatey.org/packages/$($search)"
+$page = Invoke-WebRequest -Uri "https://community.chocolatey.org/packages/$($search)" -UseBasicParsing
 if($page.Links | Where-Object {$_.href -match 'tunisiano'}) {
     if($page.Links | Where-Object {$_.href -match 'tunisiano187/Chocolatey-packages'}) {
         Install-Module -Name PowerShellForGitHub -Force
