@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $packageName    = 'audioshell'
 $silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-$url            = 'http://www.softpointer.com/downloads/AudioShell236.exe'
+$url            = 'https://www.softpointer.com/downloads/AudioShell236.exe'
 $checksum       = '0EB44EF06A4EBD8FAA919DD59CFC692974209EF804586491FE6BC9B10965067B'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ntlite-free</id>
-    <version>2.3.6.8804</version>
+    <version>2024.9.10073</version>
     <title>NTLite (Free) (Install)</title>
     <authors>Nlitesoft</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.ntlite.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e2cfac2853d9b8e932c9238bcdf1599048dc9f17/icons/ntlite-free.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
+    <description><![CDATA[## NTLite (Free) (Install)
+
+---
 
 ### [choco://ntlite-free](choco://ntlite-free)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
@@ -60,7 +62,16 @@ See license link for Free, Home, Professional, and Business version comparisons.
 
 **Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
 
----</description>
+---
+
+#### [choco://ntlite-free](choco://ntlite-free)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Windows deployment tool</summary>
     <releaseNotes>https://www.ntlite.com/changelog/</releaseNotes>
     <copyright>© Nlitesoft</copyright>
