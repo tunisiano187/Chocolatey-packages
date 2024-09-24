@@ -1,7 +1,7 @@
-$packageName      = 'uas-plex'
+﻿$packageName      = 'uas-plex'
 $BundleName       = 'WebTools.bundle'
-$url              = 'https://github.com/ukdtom/WebTools.bundle/releases/download/2.4.1/WebTools.bundle.zip'
-$checksum         = '4289A1973508CC77578D64220FE728A4FD0BA15B6D8478632C5DE1EAD5C80C75'
+$url              = 'https://github.com/ukdtom/WebTools.bundle/releases/download/3.0.0/WebTools.bundle.zip'
+$checksum         = '5223623E85B67DA7B42E463CC5F344D45FC7A794E8540CEDC2047D931742E4C5'
 $checksumType     = 'sha256'
 $LocalAppDataPath = Get-ItemProperty -path "registry::hkey_current_user\software\Plex, Inc.\Plex Media Server" | select-object -expandproperty LocalAppDataPath
 

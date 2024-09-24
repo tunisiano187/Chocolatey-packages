@@ -2,14 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>uas-plex</id>
-    <version>2.4.1</version>
+    <version>3.0.0</version>
     <title>Unsupported AppStore for Plex</title>
     <authors>Mikael Aspehed</authors>
     <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/uas-plex</packageSourceUrl>
     <projectUrl>https://forums.plex.tv/discussion/126254/rel-webtools/p1#top</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>WebTools 2.x is a collection of utilities to help with the management of your Plex Server. 
+    <description><![CDATA[## Unsupported AppStore for Plex
+
+WebTools 2.x is a collection of utilities to help with the management of your Plex Server. 
 This plugin is not limited to the usual channel interface. Instead, it utilizes a built-in webserver to display a responsive web interface which also works on mobile devices, allowing you to manage your Plex Server from any device.
 This tool was created by Dagalufh (Frontend) and Dane22 (Backend) with the beta testing from:
 
@@ -38,7 +40,16 @@ This tool was originally created by mikedm139 and was one of the most popular pl
 
 ###FindMedia
 This tool will quickly search a library, and then compare the items in the Plex database to the actually accessible media files on disk. It will then list all missing items from either the Plex Media Server database, or from your file system. This tool combines the outcome from the 3rd party plugins "Find-Missing" and "Find-Unmatched".
-Find-Unmatched is due to that discontinued, and removed from UAS.</description>
+Find-Unmatched is due to that discontinued, and removed from UAS.
+
+#### [choco://uas-plex](choco://uas-plex)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary />
     <releaseNotes />
     <tags>webtools unsupported appstore uas plex admin</tags>
