@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gnu-units</id>
-    <version>2.22.0</version>
+    <version>2.23</version>
     <title>GNU Units (Install)</title>
     <authors>Adrian Mariano</authors>
     <owners>tunisiano</owners>
@@ -10,12 +10,7 @@
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <projectUrl>https://www.gnu.org/software/units/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d462b1e322c70daafe26eff1747c3a691154e533/icons/gnu-units.png</iconUrl>
-    <description>---
-
-### [choco://gnu-units](choco://gnu-units)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## GNU Units (Install)
 
 GNU Units converts quantities expressed in various systems of measurement to their equivalents in other systems of measurement. Like many similar programs, it can handle multiplicative scale changes. It can also handle nonlinear conversions such as Fahrenheit to Celsius or wire gauge, and it can convert from and to sums of units, such as converting between meters and feet plus inches.
 
@@ -23,15 +18,14 @@ Beyond simple unit conversions, GNU Units can be used as a general-purpose scien
 
 The units are defined in an external data file. You can use the extensive data file that comes with this program, or you can provide your own data file to suit your needs. You can also use your own data file to supplement the standard data file.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gnu-units/readme.md)**
+#### [choco://gnu-units](choco://gnu-units)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-    
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>GNU Units is a cross-platform computer program for conversion of units of quantities.</summary>
     <copyright>Free Software Foundation, Inc.</copyright>
     <tags>gnu units conversion</tags>
