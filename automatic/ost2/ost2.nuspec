@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>http://www.4team.biz/eula.aspx</licenseUrl>
     <projectUrl>http://www.ost2.com/</projectUrl>
-    <iconUrl>http://www.ost2.com/i/logo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b4f63aed512f2b224121dd5262bdb5575790992a/icons/ost2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>___
 ###[choco://ost2](choco://ost2)
