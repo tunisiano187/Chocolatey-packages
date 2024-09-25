@@ -12,13 +12,13 @@ This tool was created by Dagalufh (Frontend) and Dane22 (Backend) with the beta 
 * Xandi92
 * chuckpa
 
-##Currently the tools available are:
+## Currently the tools available are:
 
-###Logviewer
+### Logviewer
 This tool allows for easy viewing of logs related to Plex and it's plugins via an easy to use web interface. It also gives you the ability to download all of the logs in a .zip file to easily send to a developer of a specific plugin.
 (This includes logs of 3rd party plugins, contrary to the Log download button in Plex Web.)
 
-###Subtitle Management
+### Subtitle Management
 The purpose of this tool is to give the user a way to manage subtitles that are not embedded.
 Current features:
 
@@ -26,10 +26,10 @@ Current features:
 * Highlights the subtitle that is selected as active in Plex for a specific Movie or Episode
 * Removal of one or more subtitles. Usage is on your own risk as this will delete files on your hard drive.
 
-###Unsupported AppStore
+### Unsupported AppStore
 This tool was originally created by mikedm139 and was one of the most popular plugins in the Plex universe. Now, this is included in WebTools 2.0, giving it an easy to use web interface that allows for quick installation/removal/update of plugins.
 
-###FindMedia
+### FindMedia
 This tool will quickly search a library, and then compare the items in the Plex database to the actually accessible media files on disk. It will then list all missing items from either the Plex Media Server database, or from your file system. This tool combines the outcome from the 3rd party plugins "Find-Missing" and "Find-Unmatched".
 Find-Unmatched is due to that discontinued, and removed from UAS.
 
