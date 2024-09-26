@@ -18,6 +18,7 @@ function global:au_BeforeUpdate {
 	Move-Item -Path $FileVersion.TempFile -Destination "tools\units-setup.exe"
 	$Latest.Checksum32 = $FileVersion.Checksum
 	$Latest.ChecksumType32 = $FileVersion.checksumType
+	Invoke-WebRequest -Uri "$($Latest.URL32).sig" -OutFile "tools\units-setup.exe.sig"
 }
 
 function global:au_AfterUpdate($Package) {
@@ -64,4 +65,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion

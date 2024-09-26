@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName    = 'gnu-units'
-$file           = 'tools\units-setup.exe'
+$file           = Join-Path $toolsDir 'units-setup.exe'
 
 $packageArgs = @{
   packageName    = $packageName
