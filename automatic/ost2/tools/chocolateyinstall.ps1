@@ -11,7 +11,6 @@ Start-Process $ahkExe $ahkFile
 
 $packageArgs = @{
   packageName    = $packageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   url            = $url
   checksum       = $checksum
