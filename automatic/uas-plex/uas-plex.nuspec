@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/uas-plex</packageSourceUrl>
     <projectUrl>https://github.com/ukdtom/WebTools.bundle</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@850038feb2d934aaee1e540d5092ba46baf6c882/icons/uas-plex.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Unsupported AppStore for Plex
 
