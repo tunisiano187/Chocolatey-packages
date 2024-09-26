@@ -2,16 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>uas-plex</id>
-    <version>3.0.0</version>
+    <version>2.0.0</version>
     <title>Unsupported AppStore for Plex</title>
     <authors>Mikael Aspehed</authors>
     <owners>tunisiano</owners>
-<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/uas-plex</packageSourceUrl>
-    <projectUrl>https://forums.plex.tv/discussion/126254/rel-webtools/p1#top</projectUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/uas-plex</packageSourceUrl>
+    <projectUrl>https://github.com/ukdtom/WebTools.bundle</projectUrl>
+    <iconUrl></iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Unsupported AppStore for Plex
 
-WebTools 2.x is a collection of utilities to help with the management of your Plex Server. 
+WebTools is a collection of utilities to help with the management of your Plex Server. 
 This plugin is not limited to the usual channel interface. Instead, it utilizes a built-in webserver to display a responsive web interface which also works on mobile devices, allowing you to manage your Plex Server from any device.
 This tool was created by Dagalufh (Frontend) and Dane22 (Backend) with the beta testing from:
 
@@ -50,12 +51,12 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <summary />
-    <releaseNotes />
+    <summary>WebTools is a collection of utilities to help with the management of your Plex Server.</releaseNotes>
+    <releaseNotes>https://forums.plex.tv/t/rel-webtools-unsupported-appstore/206843</releaseNotes>
     <tags>webtools unsupported appstore uas plex admin</tags>
-    <projectSourceUrl>https://github.com/dagalufh/WebTools.bundle/releases/tag/2.3</projectSourceUrl>
-    <docsUrl>https://github.com/dagalufh/WebTools.bundle/wiki</docsUrl>
-    <bugTrackerUrl>https://github.com/dagalufh/WebTools.bundle/blob/master/http/changelog.txt</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/ukdtom/WebTools.bundle</projectSourceUrl>
+    <docsUrl>https://github.com/ukdtom/WebTools.bundle/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/ukdtom/WebTools.bundle/issues</bugTrackerUrl>
     <dependencies>
       <dependency id="plexmediaserver" />
     </dependencies>

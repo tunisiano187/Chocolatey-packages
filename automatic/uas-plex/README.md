@@ -2,7 +2,7 @@
 
 ## Unsupported AppStore for Plex
 
-WebTools 2.x is a collection of utilities to help with the management of your Plex Server. 
+WebTools is a collection of utilities to help with the management of your Plex Server. 
 This plugin is not limited to the usual channel interface. Instead, it utilizes a built-in webserver to display a responsive web interface which also works on mobile devices, allowing you to manage your Plex Server from any device.
 This tool was created by Dagalufh (Frontend) and Dane22 (Backend) with the beta testing from:
 
