@@ -1,16 +1,16 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName   = 'metafox'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $TodaysVersion = $env:ChocolateyPackageVersion -replace '[.]',''
 
 $packageArgs = @{
   packageName    = $packageName
-  softwareName   = 'MetaFox*'  
+  softwareName   = 'MetaFox*'
   fileType       = 'EXE'
-  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'  
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   file           = "$toolsDir\MetaFox.exe"
-  validExitCodes = @(0)  
+  validExitCodes = @(0)
   }
-  
+
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item "$toolsDir\*.exe" -EA SilentlyContinue | Out-Null
