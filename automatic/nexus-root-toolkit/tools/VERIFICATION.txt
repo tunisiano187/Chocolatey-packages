@@ -1,5 +1,0 @@
-﻿==================== NexusRootToolkit v2.1.9 ====================
-
-bcurran3 downloaded and packaged the executable for Nexus Root Toolkit v2.1.9 from the primary mirror host provider, AndroidFileHost, at https://www.androidfilehost.com/?fid=24728673521238129. md5 checksum is listed as 53c4072f15343fd545b4676aa5bfd099
-
-==================== NexusRootToolkit v2.1.9 ====================
