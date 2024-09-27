@@ -6,7 +6,7 @@
     <title>HouseLinc (Install)</title>
     <authors>Insteon</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/houselinc</packageSourceUrl>
     <licenseUrl>http://www.insteon.com/legal</licenseUrl>
     <projectUrl>http://www.insteon.com/houselinc</projectUrl>
     <iconUrl>http://pbs.twimg.com/profile_images/2964745235/8af70adbddb4125b4b521bfb200eab04_normal.png</iconUrl>
