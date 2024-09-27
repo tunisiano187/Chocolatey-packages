@@ -8,7 +8,7 @@ $packageArgs = @{
   softwareName   = 'MetaFox*'  
   fileType       = 'EXE'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'  
-  file           = "$toolsDir\MetaFox_"+$TodaysVersion+".exe"
+  file           = "$toolsDir\MetaFox.exe"
   validExitCodes = @(0)  
   }
   
