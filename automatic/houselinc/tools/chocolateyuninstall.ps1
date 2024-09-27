@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $packageName = 'houselinc'
 $packageSearch = 'HouseLinc'
 $installerType = 'msi'
@@ -6,10 +6,10 @@ $silentArgs = '/quiet /qn /norestart'
 $validExitCodes = @(0)
 $uninstalled = $false
 
-if((get-process "HouseLinc" -ea SilentlyContinue) -eq $Null){ 
-        echo "HouseLinc not running... Good." 
+if((get-process "HouseLinc" -ea SilentlyContinue) -eq $Null){
+        echo "HouseLinc not running... Good."
 }
-else{ 
+else{
     echo "Stopping HouseLinc..."
     Stop-Process -processname "HouseLinc"
 	Start-Sleep -s 2

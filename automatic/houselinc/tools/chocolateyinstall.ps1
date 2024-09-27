@@ -1,7 +1,7 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName   = 'houselinc' 
+$ErrorActionPreference = 'Stop'
+$packageName   = 'houselinc'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url           = 'http://cache.insteon.com/downloads/HouseLincSetup.zip' 
+$url           = 'http://cache.insteon.com/downloads/HouseLincSetup.zip'
 $UnzippedMSI  = Join-Path $toolsDir 'HouseLincSetup.msi'
 $installerType = 'MSI'
 $silentArgs    = '/quiet /qn /norestart'
@@ -10,7 +10,7 @@ $validExitCodes= @(0, 3010, 1641)
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   url64bit		= $url
   checksum      = '5E374773ECE2AFF5B7F342DB76E0F27F4FDCD05F577D8A955D7DB0E2F44E6B05'
@@ -22,7 +22,7 @@ Install-ChocolateyZipPackage @packageArgs
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'MSI' 
+  fileType      = 'MSI'
   url           = $UnzippedMSI
   SilentArgs    = $silentArgs
   ValidExitCodes= $validExitCodes
@@ -34,9 +34,9 @@ Install-ChocolateyPackage @packageArgs
 
 Start-Sleep -s 30
 
-#if((get-process "msiexec" -ea SilentlyContinue) -eq $Null){ 
-#    Write-Host "msiexec currently NOT running." 
-#  }else{ 
+#if((get-process "msiexec" -ea SilentlyContinue) -eq $Null){
+#    Write-Host "msiexec currently NOT running."
+#  }else{
 #    Write-Host "Stopping msiexec process..."
 #    Stop-Process -processname "msiexec"
 #  }
