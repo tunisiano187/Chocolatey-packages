@@ -12,7 +12,7 @@ jobs:
       Github_personal_token: ${{ secrets.AU_GITHUB_API_KEY }}
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.0
       - name: Authenticate with GitHub
         run: |
           Install-Module PowerShellForGitHub -Force -ErrorAction SilentlyContinue
