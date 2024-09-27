@@ -1,0 +1,14 @@
+﻿==================== Nexus Root Toolkit v2.1.9 ====================
+
+http://www.wugfresh.com/nrt/
+
+No copyright is mentioned anywhere within the program or any reference on the WugFresh website. The WubFresh website itself does state it's copyrighted but nothing about any programs available for download.
+
+Under the Donate page at http://www.wugfresh.com/donate/ it is stated:
+
+"I release my software freely to the community but I work very hard in my limited free time to keep this software updated with the latest android builds and Nexus devices; I try my best to listen to feedback and continue to add new features.  I am opposed to adding ads in this app/installer despite all the time I spend on this, so I am hoping that if you like my work and/or I have helped you in anyway, that you please consider making a small donation. Your help and support is greatly appreciated.  Thank you!"
+
+
+bcurran3 06/07/2016
+
+==================== Nexus Root Toolkit v2.1.9 ====================
