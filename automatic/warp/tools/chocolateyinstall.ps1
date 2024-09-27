@@ -3,7 +3,7 @@ $pp             = Get-PackageParameters
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url64          = 'https://1111-releases.cloudflareclient.com/windows/Cloudflare_WARP_Release-x64.msi'
-$checksum64     = '540FB26438A66C6E9F0817A5E50296852070E48544E3D983517E5E4DF741CCF8'
+$checksum64     = '4CCB97F510E769757902B239F85E2DA52183890518369E8BAAE7F09D8B12968B'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
