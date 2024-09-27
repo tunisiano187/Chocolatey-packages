@@ -5,7 +5,7 @@
     <version>2.10.25.20161003</version>
     <title>HouseLinc (Install)</title>
     <authors>Insteon</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/houselinc</packageSourceUrl>
     <licenseUrl>http://www.insteon.com/legal</licenseUrl>
     <projectUrl>http://www.insteon.com/houselinc</projectUrl>
