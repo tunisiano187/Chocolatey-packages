@@ -1,0 +1,18 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer:
+
+    url: https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.5.exe/download
+    
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://sourceforge.net/projects/freeplane/files/freeplane%20stable/Freeplane-Setup-with-Java-1.12.5.exe/download
+
+3.  Compare to Checksum:
+
+    checksum32: d214c610141466289b5bd717447626c706bab9aebb4fc86b6091f26ae5335523
+    unzipped: d214c610141466289b5bd717447626c706bab9aebb4fc86b6091f26ae5335523

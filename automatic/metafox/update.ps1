@@ -3,10 +3,11 @@ import-module au
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumtype\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+		'.\legal\VERIFICATION.txt' = @{
+			"(?i)(\s+url:).*"                   = "`${1} $($Latest.URL32)"
+			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
+			"(?i)(\s+checksum:).*"	            = "`${1} $($Latest.Checksum32)"
+			"(?i)(\s+unzipped:).*"              = "`${1} $($Latest.Unzipped)"
 		}
 	}
 }
@@ -16,6 +17,7 @@ function global:au_BeforeUpdate {
 	$FileVersion = Get-FileVersion $Latest.URL32
 	Expand-Archive -Path $FileVersion.TempFile -DestinationPath "tools/"
 	Move-Item -Path $Latest.TempFile -Destination 'tools\MetaFox.exe'
+	$Latest.Unzipped = Get-FileHash -Path 'tools\MetaFox.exe' -Algorithm $FileVersion.checksumType
 	$Latest.Checksum32 = $FileVersion.Checksum
 	$Latest.ChecksumType32 = $FileVersion.checksumType
 }
