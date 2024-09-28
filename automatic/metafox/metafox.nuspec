@@ -5,7 +5,7 @@
     <version>2.1.9</version>
     <title>MetaFox (Install)</title>
     <authors>Tababito Technology</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://codecpack.co/download/MetaFox.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/metafox/metafox_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -35,7 +35,7 @@ Metafox is free. However, the author does accept donations on [PayPal](https://w
     <summary>MetaFox is a simple to use MKV video file converter</summary>
     <copyright>Copyright (c) Tababito Technology</copyright>
     <tags>tababito metafox mkv hevc avi mov mp4 mpg flv rmvb video converter transcoder binary</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/metafox</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/metafox</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
