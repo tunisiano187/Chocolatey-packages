@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	. ..\..\scripts\Get-FileVersion.ps1 -keep
-	$FileVersion = Get-FileVersion $Latest.URL32
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
 	Expand-Archive -Path $FileVersion.TempFile -DestinationPath "tools/"
 	Move-Item -Path $Latest.TempFile -Destination 'tools\MetaFox.exe'
 	$Latest.Unzipped = Get-FileHash -Path 'tools\MetaFox.exe' -Algorithm $FileVersion.checksumType
