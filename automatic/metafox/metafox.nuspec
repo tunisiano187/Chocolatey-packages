@@ -5,7 +5,7 @@
     <version>2.1.9</version>
     <title>MetaFox (Install)</title>
     <authors>Tababito Technology</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://codecpack.co/download/MetaFox.html</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/metafox/metafox_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
