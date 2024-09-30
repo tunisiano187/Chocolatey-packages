@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>hbbatchbeast</id>
+    <version>2.1.5</version>
+    <title>HBBatchBeast (Portable)</title>
+    <authors>HaveAGitGat</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://raw.githubusercontent.com/HaveAGitGat/HBBatchBeast/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/HaveAGitGat/HBBatchBeast</projectUrl>
+    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/hbbatchbeast/hbbatchbeast_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://hbbatchbeast](choco://hbbatchbeast)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+![Screenshot of HBBatchBeast](https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/hbbatchbeast/hbbatchbeast_screenshot.png)
+
+A free GUI application for HandBrake and FFmpeg/FFprobe on Windows, macOS and Linux (+ Linux Docker image) with an emphasis on multi HandBrake/FFmpeg instance batch conversion (including recursive folder scans and folder watching). The destination folder structure is kept the same as the source folder structure. Media in subfolders is also converted. Multiple folders can be monitored and different conversion presets can be specified for each folder. Also included:
+
+- Remote monitoring feature to monitor batch file conversions in any browser
+
+- Basic h265 benchmarking
+
+- Health check feature which can scan for corrupt video files using HandBrake (quick scan) or FFmpeg (thorough scan), although this is not always accurate. Attempt repair file feature included too.
+
+This is a standalone program on Windows but requires HandBrakeCLI to be installed on Linux and Mac. For a server application with similar functionality please see Tdarr.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/hbbatchbeast/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>HBBatchBeast for HandBrake and FFmpeg/FFprobe</summary>
+    <releaseNotes>https://github.com/HaveAGitGat/HBBatchBeast/releases</releaseNotes>
+    <copyright>HaveAGitGat</copyright>
+    <tags>hbbatchbeast handbrake transcode portable binary</tags>
+    <projectSourceUrl>https://github.com/HaveAGitGat/HBBatchBeast</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/</packageSourceUrl>
+    <docsUrl>https://github.com/HaveAGitGat/HBBatchBeast/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/HaveAGitGat/HBBatchBeast/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
