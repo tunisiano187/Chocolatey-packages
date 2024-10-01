@@ -1,4 +1,3 @@
-tautulli 0.0 - New maintainer
 log4jscanwin 0.0 - New maintainer
 outlook-photos 0.0 - New maintainer
 ubooquity 0.0 - New maintainer
