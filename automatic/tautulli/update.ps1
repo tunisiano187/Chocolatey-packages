@@ -30,7 +30,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
     $url = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
-    Update-Metadata -key "releaseNotes" -value $tags.html_url
+    Update-Metadata -key "releaseNotes" -value $tags.body
 	$version = $tags.tag_name.Replace('v','')
     if($tags.prerelease -match "true") {
         $date = $tags.published_at.ToString("yyyyMMdd")
