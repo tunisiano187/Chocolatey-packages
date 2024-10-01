@@ -1,6 +1,0 @@
-﻿========================= HBBatchBeast =========================
-
-bcurran3 downloads and packages the zip for HBBatchBeast from 
-https://github.com/HaveAGitGat/HBBatchBeast/releases
-
-========================= HBBatchBeast =========================
