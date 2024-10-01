@@ -4,13 +4,13 @@
 
 [Screenshots](http://tautulli.com/images/screenshots/activity.png)
 
-##WHAT IS TAUTULLI?
+## WHAT IS TAUTULLI?
 
 verb | tau • tul • li | \ ˈtau̇-tü-lē \ | To watch or monitor
 
 Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. The only thing missing is "why they watched it", but who am I to question your 42 plays of Frozen. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.
 
-###FEATURES:
+### FEATURES:
 * Monitoring - Monitor the current activity on your Plex Media Server.
 
 * Statistics - View statistics about your Plex library.
@@ -36,12 +36,6 @@ Tautulli is a 3rd party application that you can run alongside your Plex Media S
 * And More!
 
 Related Programs: [Plex Media Server](https://chocolatey.org/packages/plexmediaserver) | [Tautulli Android App](https://play.google.com/store/apps/details?id=com.williamcomartin.plexpyremote)
-
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/tautulli/readme.md)**	
-
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***
 
 #### [choco://tautulli](choco://tautulli)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)

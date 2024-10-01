@@ -58,10 +58,6 @@ Related Programs: [Plex Media Server](https://chocolatey.org/packages/plexmedias
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tautulli</packageSourceUrl>
     <docsUrl>https://github.com/Tautulli/Tautulli-Wiki/wiki</docsUrl>
     <mailingListUrl>https://forums.plex.tv/discussion/307821/tautulli-monitor-your-plex-media-server</mailingListUrl>
-    <dependencies>
-      <dependency id="python2" version="2.7" />
-      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
