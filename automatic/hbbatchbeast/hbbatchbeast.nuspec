@@ -39,7 +39,7 @@ This is a standalone program on Windows but requires HandBrakeCLI to be installe
     <copyright>HaveAGitGat</copyright>
     <tags>hbbatchbeast handbrake transcode portable binary</tags>
     <projectSourceUrl>https://github.com/HaveAGitGat/HBBatchBeast</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hbbatchbeast</packageSourceUrl>
     <docsUrl>https://github.com/HaveAGitGat/HBBatchBeast/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/HaveAGitGat/HBBatchBeast/issues</bugTrackerUrl>
   </metadata>
