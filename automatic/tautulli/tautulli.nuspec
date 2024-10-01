@@ -55,7 +55,7 @@ Related Programs: [Plex Media Server](https://chocolatey.org/packages/plexmedias
     <copyright>Copyright © | JonnyWong16 / WilliamComartin</copyright>
     <tags>tautulli plexpy plex pms python portable foss cross-platform binary</tags>
     <projectSourceUrl>https://github.com/Tautulli/Tautulli</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tautulli</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tautulli</packageSourceUrl>
     <docsUrl>https://github.com/Tautulli/Tautulli-Wiki/wiki</docsUrl>
     <mailingListUrl>https://forums.plex.tv/discussion/307821/tautulli-monitor-your-plex-media-server</mailingListUrl>
   </metadata>
