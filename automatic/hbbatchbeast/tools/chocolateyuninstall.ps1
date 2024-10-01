@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName  = 'hbbatchbeast' 
+$ErrorActionPreference = 'Stop'
+$packageName  = 'hbbatchbeast'
 $shortcutName = 'HBBatchBeast.lnk'
 
 Remove-Item "$ENV:Public\Desktop\$shortcutName" -Force -ErrorAction SilentlyContinue

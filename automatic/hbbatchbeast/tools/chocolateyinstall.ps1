@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $shortcutName = 'HBBatchBeast.lnk'
 $exe          = "hbbatchbeast-Windows-v"+"$env:ChocolateyPackageVersion"+"\hbbatchbeast.exe"
@@ -8,7 +8,7 @@ Remove-Item "$toolsDir\hbbatchbeast-Windows-v*" -Exclude *.7z -Recurse -EA Silen
 $packageArgs = @{
   packageName    = 'hbbatchbeast'
   UnzipLocation  = $toolsDir
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   file           = "$toolsDir\hbbatchbeast-Windows-v"+"$env:ChocolateyPackageVersion"+".7z"
   }
 
