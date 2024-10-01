@@ -5,7 +5,7 @@
     <version>2.1.5</version>
     <title>HBBatchBeast (Portable)</title>
     <authors>HaveAGitGat</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/HaveAGitGat/HBBatchBeast/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/HaveAGitGat/HBBatchBeast</projectUrl>
     <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/hbbatchbeast/hbbatchbeast_icon.png</iconUrl>
