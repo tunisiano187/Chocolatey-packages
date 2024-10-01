@@ -1,0 +1,8 @@
+﻿============================== Tautulli ==============================
+
+bcurran3 downloads and packages the included .ZIPs for Tautulli from the developer's website. 
+
+The direct download links are at:
+https://github.com/Tautulli/Tautulli/releases
+
+============================== Tautulli ==============================
