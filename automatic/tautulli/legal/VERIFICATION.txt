@@ -6,11 +6,11 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://www.snort.org/downloads/snort/Snort_2_9_20_Installer.x64.exe
+x86: https://github.com/Tautulli/Tautulli/releases/download/v2.14.5/Tautulli-windows-v2.14.5-x64.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksum: 2C0268CD3ACE4C1974DEDC2BBD2D26302F6847F13416A4F55930C639EB87619DCD2801A6679DFF6C5614F0492B2ECC992B0CEB6B0C8642FF3FA99F9B274A716E
-checksumtype: SHA512
+checksum: DD0807E9CA35E37FA6ED5321EB979E6914F3E2F4231327B224048962A1D4DDEF
+checksumtype: sha256
