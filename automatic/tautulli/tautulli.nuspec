@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://github.com/Tautulli/Tautulli/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://tautulli.com/</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/tautulli/tautulli_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@15c8e1f32f87a62bbf462556e164d83f035311e3/icons/tautulli.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>[Screenshots](http://tautulli.com/images/screenshots/activity.png)
 
