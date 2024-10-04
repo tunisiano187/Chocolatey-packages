@@ -39,6 +39,7 @@ Log4jScanner.exe /scan /report_sig
     <bugTrackerUrl>https://github.com/Qualys/log4jscanwin/issues</bugTrackerUrl>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
