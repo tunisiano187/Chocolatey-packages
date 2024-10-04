@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName = 'log4jscanwin' 
+$ErrorActionPreference = 'Stop'
+$packageName = 'log4jscanwin'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $bits        = Get-ProcessorBits
 
