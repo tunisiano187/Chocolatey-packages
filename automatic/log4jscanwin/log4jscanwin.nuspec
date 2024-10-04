@@ -34,7 +34,7 @@ Log4jScanner.exe /scan /report_sig
     <copyright>Copyright (C) 2021</copyright>
     <tags>Log4j scanner portable</tags>
     <projectSourceUrl>https://github.com/Qualys/log4jscanwin</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/log4jscanwin</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/log4jscanwin</packageSourceUrl>
     <docsUrl>https://github.com/Qualys/log4jscanwin/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Qualys/log4jscanwin/issues</bugTrackerUrl>
   </metadata>
