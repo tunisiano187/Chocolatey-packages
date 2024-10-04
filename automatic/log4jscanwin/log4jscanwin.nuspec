@@ -5,7 +5,7 @@
     <version>2.1.3.0</version>
     <title>Qualys Log4j Vulnerability Scanner (Portable)</title>
     <authors>Qualys, Inc.</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Qualys/log4jscanwin/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Qualys/log4jscanwin</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
