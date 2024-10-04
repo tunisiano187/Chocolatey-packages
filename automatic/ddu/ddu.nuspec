@@ -4,7 +4,7 @@
   <metadata>
     <id>ddu</id>
     <title>Display Driver Uninstaller</title>
-    <version>18.0.8.0</version>
+    <version>18.0.8.2</version>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
     <summary>Utility to completely remove system drivers</summary>
@@ -38,7 +38,7 @@ Mode is always recommended.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>
     <projectSourceUrl>https://github.com/Wagnard/display-drivers-uninstaller</projectSourceUrl>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>bzflag</id>
-    <version>2.4.10</version>
+    <version>2.4.26</version>
     <title>BZFlag (Install)</title>
     <authors>Scott Wichser</authors>
     <owners>tunisiano</owners>
@@ -10,14 +10,25 @@
     <projectUrl>https://www.bzflag.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@eeee2bafedad5ab220882e3d3f028f610b31427e/icons/bzflag.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of BZFlag](https://www.bzflag.org/images/documentation/user_interface_layout.jpg)
+    <description><![CDATA[## BZFlag (Install)
+
+![Screenshot of BZFlag](https://www.bzflag.org/images/documentation/user_interface_layout.jpg)
 
 BZFlag is an Open Source OpenGL multiplayer multiplatform Battle Zone
 capture the Flag game.  At its heart, the game is a 3D first person
 tank simulation where opposing teams battle for dominance.  The game
 was originally written for SGI computers running Irix, but now runs
 and is actively maintained on Windows, Linux, Mac OS X, and other
-platforms.</description>
+platforms.
+
+#### [choco://bzflag](choco://bzflag)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>BZFlag is a 3D networked multi-player multi-platform tank battle game.</summary>
     <releaseNotes>https://github.com/BZFlag-Dev/bzflag/releases</releaseNotes>
     <copyright>Copyright © 2017 Scott Wichser</copyright>
