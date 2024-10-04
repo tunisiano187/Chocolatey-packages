@@ -2,7 +2,7 @@
 
 ## BZFlag (Install)
 
-![Screenshot of BZFlag](https://www.bzflag.org/images/documentation/user_interface_layout.jpg)
+![Screenshot of BZFlag](https://www.bzflag.org/assets/images/getting-started/user-interface-layout.jpg)
 
 BZFlag is an Open Source OpenGL multiplayer multiplatform Battle Zone
 capture the Flag game.  At its heart, the game is a 3D first person
