@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>log4jscanwin</id>
+    <version>2.1.3.0</version>
+    <title>Qualys Log4j Vulnerability Scanner (Portable)</title>
+    <authors>Qualys, Inc.</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://github.com/Qualys/log4jscanwin/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Qualys/log4jscanwin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://log4jscanwin](choco://log4jscanwin)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+The Log4jScanner.exe utility helps to detect CVE-2021-44228 and CVE-2021-45046 vulnerabilities. The utility will scan the entire hard drive(s) including archives (and nested JARs) for the Java class that indicates the Java application contains a vulnerable log4j library. The utility will output its results to a console.
+
+Qualys has added a new QID (376160) that is designed to look for the results of this scan and mark the asset as vulnerable if the vulnerable log4j library was found.
+
+Qualys customers should use the following to run the tool on any asset they want to scan:
+
+Log4jScanner.exe /scan /report_sig
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/log4jscanwin/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>Log4j Vulnerability Scanner for Windows</summary>
+    <releaseNotes>https://github.com/Qualys/log4jscanwin/releases</releaseNotes>
+    <copyright>Copyright (C) 2021</copyright>
+    <tags>Log4j scanner portable</tags>
+    <projectSourceUrl>https://github.com/Qualys/log4jscanwin</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/log4jscanwin</packageSourceUrl>
+    <docsUrl>https://github.com/Qualys/log4jscanwin/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Qualys/log4jscanwin/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

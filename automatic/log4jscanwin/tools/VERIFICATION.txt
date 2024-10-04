@@ -1,0 +1,6 @@
+﻿==================== log4jscanwin ====================
+
+bcurran3 downloads and packages the executable for Log4j Vulnerability Scanner for Windows from 
+https://github.com/Qualys/log4jscanwin/releases
+
+==================== log4jscanwin ====================
