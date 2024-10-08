@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>protonpass</id>
-    <version>1.23.1</version>
+    <version>1.23.0</version>
     <title>Proton Pass</title>
     <authors>Proton AG</authors>
     <owners>tunisiano</owners>
@@ -33,6 +33,9 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>proton pass password manager security</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/protonpass</packageSourceUrl>
     <docsUrl>https://proton.me/support/pass</docsUrl>
+    <dependencies>
+      <dependency id="chocolatey-fastanswers.extension"/>
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
