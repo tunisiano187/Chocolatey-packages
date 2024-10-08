@@ -34,7 +34,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/protonpass</packageSourceUrl>
     <docsUrl>https://proton.me/support/pass</docsUrl>
     <dependencies>
-      <dependency id="chocolatey-fastanswers.extension"/>
+      <dependency id="chocolatey-fastanswers.extension" />
     </dependencies>
   </metadata>
   <files>
