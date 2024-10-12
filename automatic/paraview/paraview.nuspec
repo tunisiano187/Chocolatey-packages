@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>paraview</id>
-    <version>5.13</version>
+    <version>5.13.1</version>
     <title>paraview (Install)</title>
     <authors>Kitware, Inc.</authors>
     <owners>tunisiano</owners>
@@ -20,7 +20,7 @@ OpenSource post viewer for CAE
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>OpenSource post viewer for CAE</summary>
     <copyright>Copyright (c) 2005-2024 National Technology and Engineering Solutions of Sandia, LLC (NTESS), Kitware Inc. Sandia National Laboratories</copyright>
