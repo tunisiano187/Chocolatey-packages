@@ -15,6 +15,7 @@ allbrowsers
 allwemo
 amazingmarvin
 amazondrive
+Amazon-Games-App
 amazon-photos
 AMD-Graphics-Driver
 ammyy-admin
@@ -229,4 +230,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-Amazon-Games-App

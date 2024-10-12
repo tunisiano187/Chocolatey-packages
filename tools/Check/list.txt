@@ -1,4 +1,3 @@
-outlook-photos 0.0 - New maintainer
 ubooquity 0.0 - New maintainer
 startuplist.portable 0.0 - New maintainer
 netstress 0.0 - New maintainer
