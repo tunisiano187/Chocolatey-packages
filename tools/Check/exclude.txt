@@ -229,3 +229,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+Amazon-Games-App
