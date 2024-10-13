@@ -43,7 +43,7 @@ No Changes Required - Outlook Photos is simply an import tool – we've packed i
     <releaseNotes>https://www.exclaimer.com/outlook-photos/version-history</releaseNotes>
     <copyright>Copyright Exclaimer Ltd</copyright>
     <tags>exclaimer outlook photos ad active directory</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/outlook-photos</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/outlook-photos</packageSourceUrl>
     <docsUrl>https://www.exclaimer.com/outlook-photos/videos</docsUrl>
     <mailingListUrl>https://www.exclaimer.com/outlook-photos/support</mailingListUrl>
     <bugTrackerUrl>https://www.exclaimer.com/outlook-photos/version-history</bugTrackerUrl>
