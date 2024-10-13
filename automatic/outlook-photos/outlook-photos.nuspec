@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.exclaimer.com/outlook-photos/</licenseUrl>
     <projectUrl>https://www.exclaimer.com/outlook-photos</projectUrl>
-    <iconUrl>https://a8b03ffbc00ed4da54a1-0c6684360696717b63d89dbc0edb802c.ssl.cf1.rackcdn.com/exclaimer-logo_192x41.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b0852dbe78d579b45a58e40aa7cf13702f16cfa1/icons/outlook-photos.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Exclaimer Outlook Photos](https://e1fb6cb20426c9f446d7-c189afbaf93f5496308e0de3fd0efbd4.ssl.cf1.rackcdn.com/outlook-photos-update-photos_800x589.jpg)
 
