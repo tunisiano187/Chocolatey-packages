@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName= 'outlook-photos' 
+$ErrorActionPreference = 'Stop'
+$packageName= 'outlook-photos'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'http://download-outlook-photos.exclaimer.com/Setup.exe'
 $checksum   = 'C722359A75A158FE514D7578D31F0289062C97864E58E5C31A4AC305711004FA'
@@ -10,13 +10,13 @@ $fileLocation = "$env:ChocolateyInstall\lib\$packageName\tools\Outlook Photos In
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE' 
+  fileType      = 'EXE'
   url           = $url
   checksum      = $checksum
   checksumType  = 'sha256'
 }
 
-Install-ChocolateyZipPackage @packageArgs 
+Install-ChocolateyZipPackage @packageArgs
 
 $packageArgs = @{
   packageName   = $packageName
@@ -26,7 +26,7 @@ $packageArgs = @{
   validExitCodes= $validExitCodes
   softwareName  = 'Exclaimer Outlook Photos*'
 }
- 
+
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item "$env:ChocolateyInstall\lib\$packageName\tools\Outlook Photos Install.msi"
