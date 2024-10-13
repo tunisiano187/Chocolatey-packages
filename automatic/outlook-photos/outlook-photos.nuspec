@@ -5,7 +5,7 @@
     <version>2.1.2.0</version>
     <title>Exclaimer Outlook Photos (Install)</title>
     <authors>Exclaimer Limited</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.exclaimer.com/outlook-photos/</licenseUrl>
     <projectUrl>https://www.exclaimer.com/outlook-photos</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b0852dbe78d579b45a58e40aa7cf13702f16cfa1/icons/outlook-photos.png</iconUrl>
