@@ -34,7 +34,7 @@ Connections can be protected (HTTPS) using your own certificate.
     <releaseNotes>http://vaemendis.net/ubooquity/categorie2/release</releaseNotes>
     <copyright>Vae Mendis Software</copyright>
     <tags>ubooquity comic comicbook ebook server java portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/ubooquity</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ubooquity</packageSourceUrl>
     <docsUrl>https://vaemendis.github.io/ubooquity-doc/</docsUrl>
     <mailingListUrl>http://ubooquity.userecho.com/</mailingListUrl>
     <dependencies>
