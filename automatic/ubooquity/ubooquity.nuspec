@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>http://vaemendis.net/ubooquity/static12/license</licenseUrl>
     <projectUrl>http://vaemendis.net/ubooquity/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/ubooquity/ubooquity_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3a3d126323e20a44f92db6eb2fe5291e5d76c740/icons/ubooquity.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Ubooquity Server](http://vaemendis.net/ubooquity/data/images/V2-desktop-UI.png)
 
