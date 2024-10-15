@@ -1,0 +1,6 @@
+﻿==================== StartupList ====================
+
+bcurran3 downloaded, unzipped, and packaged the executable for StartupList from:
+https://www.merijn.nu/files/startuplist.zip
+
+==================== StartupList ====================

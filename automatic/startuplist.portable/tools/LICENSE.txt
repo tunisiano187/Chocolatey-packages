@@ -1,0 +1,22 @@
+﻿==================== StartupList ====================
+
+From http://www.merijn.nu/faq.php#a_me5
+
+"What is the license agreement for your software?
+All my software is freeware and may be used by anyone free of charge, unless specified otherwise on my website. You are allowed to use this software as long as it is not altered, reverse-engineered or sold."
+
+To further clarify if the program is freely distributable or not, I contacted the author and permission was given via the following e-mail:
+
+From: Merijn <merijn.bellekom@gmail.com> 
+Sent: Tuesday, January 15, 2019 9:33 PM
+To: Bill Curran <redacted>
+Subject: Re: Is you're software freely distributable?
+
+Hi Bill,
+Yes, go ahead. Please note that it's been a very long while since any of my software programs  has been updated, and official support ended rightly with Windows Vista.
+And thanks for the tip, I missed that link n!
+
+Regards,
+Merijn
+
+==================== StartupList ====================
