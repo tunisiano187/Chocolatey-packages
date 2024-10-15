@@ -1,4 +1,4 @@
-﻿$packageName  = 'ubooquity' 
+$packageName  = 'ubooquity'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://vaemendis.net/ubooquity/downloads/Ubooquity-2.1.2.zip'
 $checksum     = 'D880955B1CB5635BE70F7A9D4FFDD1CAB4F528683E9FC7E978B6E3658A69024C'
