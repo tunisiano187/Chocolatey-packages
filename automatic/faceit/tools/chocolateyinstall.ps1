@@ -2,7 +2,7 @@
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url            = 'https://faceit-client.faceit-cdn.net/release/FACEIT-setup-latest.exe'
-$checksum       = 'e43d0237bb15e908aa2e8cc4118186369da9f5d837a9548cb17d719eaadaa344'
+$checksum       = 'ab7a89a40ffd3b9e22cbdab76bf4499877eae729e0cd179c6215ea4edf800bd1'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
