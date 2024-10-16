@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ubooquity</id>
-    <version>2.1.2</version>
+    <version>2.1.5</version>
     <title>Ubooquity</title>
     <authors>Vae Mendis Software</authors>
     <owners>tunisiano</owners>
@@ -10,26 +10,31 @@
     <projectUrl>http://vaemendis.net/ubooquity/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3a3d126323e20a44f92db6eb2fe5291e5d76c740/icons/ubooquity.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of Ubooquity Server](http://vaemendis.net/ubooquity/data/images/V2-desktop-UI.png)
+    <description><![CDATA[## Ubooquity
 
-###Ubooquity is a free home server for your comics and ebooks library. Read your ebooks and comics on your favorite device, wherever you go.
+![Screenshot of Ubooquity Server](http://vaemendis.net/ubooquity/data/images/V2-desktop-UI.png)
 
-###Versatile
+### Ubooquity is a free home server for your comics and ebooks library. Read your ebooks and comics on your favorite device, wherever you go.
+
+### Versatile
 Ubooquity supports many types of files, with a preference for ePUB, CBZ, CBR and PDF files.
 Metadata from library management software Calibre and ComicRack are also supported.
 
-###Lightweight and multi-platform
+### Lightweight and multi-platform
 Ubooquity can be installed on any OS supporting Java (Windows, Linux, Mac OS...) and on a wide range of hardware (desktop computer, server, NAS...).
 
-###Secure
+### Secure
 Ubooquity lets you create user accounts and set access rights for each shared folder.
 Connections can be protected (HTTPS) using your own certificate.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/ubooquity/readme.md)**
+#### [choco://ubooquity](choco://ubooquity)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-***
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-***</description>
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Ubooquity is a home server for comics and ebooks</summary>
     <releaseNotes>http://vaemendis.net/ubooquity/categorie2/release</releaseNotes>
     <copyright>Vae Mendis Software</copyright>
