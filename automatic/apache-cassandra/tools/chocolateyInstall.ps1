@@ -1,6 +1,6 @@
 ﻿$packageName    = 'Cassandra'
-$url            = 'https://archive.apache.org/dist/cassandra/5.0.1/apache-cassandra-5.0.1-bin.tar.gz'
-$checksum       = '73f4c807b0aa4036500d5dc54e30ef82bcf549ab1917eff2bbc7189b0337ea84'
+$url            = 'https://dlcdn.apache.org/cassandra/5.0.2/apache-cassandra-5.0.2-bin.tar.gz'
+$checksum       = 'd721834207838b9d01919dfc33625ad17b50fea03bf9f76cdd8d3ae3a8fd2947'
 $checksumType   = 'sha256'
 $installDir     = (Get-ToolsLocation +"/$packageName")
 $unzipFolder    = Join-Path $env:TEMP "chocolatey\$packageName"
