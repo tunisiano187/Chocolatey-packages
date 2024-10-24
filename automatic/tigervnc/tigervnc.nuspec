@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tigervnc</id>
-    <version>1.14.0</version>
+    <version>1.14.1</version>
     <title>TigerVNC</title>
     <authors>TigerVNC Team et al.</authors>
     <owners>tunisiano</owners>
@@ -19,10 +19,10 @@ TigerVNC also provides extensions for advanced authentication methods and TLS en
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>TigerVNC is a high-performance, platform-neutral implementation of VNC (Virtual Network Computing), a client/server application that allows users to launch and interact with graphical applications on remote machines.</summary>
-    <releaseNotes>https://github.com/TigerVNC/tigervnc/releases/tag/1.14.0</releaseNotes>
+    <releaseNotes>https://github.com/TigerVNC/tigervnc/releases/tag/1.14.1</releaseNotes>
     <tags>vnc remote control admin</tags>
     <projectSourceUrl>https://github.com/TigerVNC/tigervnc</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tigervnc</packageSourceUrl>
