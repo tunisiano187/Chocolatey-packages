@@ -4,7 +4,7 @@
   <metadata>
     <id>winmerge</id>
     <title>winmerge</title>
-    <version>2.16.42.1</version>
+    <version>2.16.44</version>
     <authors>Kimmo Varis Denis Bradford Dean Grimm Laurent Ganier Tim Gerundt Perry Rapp</authors>
     <owners>tunisiano</owners>
     <summary>winmerge</summary>
@@ -15,7 +15,7 @@ folders and files, presenting differences in a visual text format that is easy t
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@63d0da8ee5209ca91b1d04e1ebbfe3a08f39ad40/icons/winmerge.png</iconUrl>
     <projectUrl>http://winmerge.org/</projectUrl>

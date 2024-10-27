@@ -4,7 +4,7 @@
   <metadata>
     <id>jbs</id>
     <title>John's Background Switcher</title>
-    <version>5.8.0.2</version>
+    <version>5.9</version>
     <authors>John Conners</authors>
     <owners>tunisiano</owners>
     <summary>John’s Background Switcher for Windows</summary>
@@ -15,7 +15,7 @@ Windows computer to something awesome.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <projectUrl>https://johnsad.ventures/software/backgroundswitcher/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/jbs</packageSourceUrl>

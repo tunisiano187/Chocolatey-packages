@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName    = 'WinMerge'
-$url32          = 'https://github.com/WinMerge/winmerge/releases/download/v2.16.42.1/WinMerge-2.16.42.1-Setup.exe'
-$checksum32     = '0df72ad10ca01d21f15a0ee173a69bbd8f410f85a7c9738330b4d69628c1e3c1'
+$url32          = 'https://github.com/WinMerge/winmerge/releases/download/v2.16.44/WinMerge-2.16.44-Setup.exe'
+$checksum32     = '66fa368cd3dfeace9e3eaca26c5c94147269adeb7f3e5be03490d3cb155a1580'
 $checksumType32 = 'sha256'
-$url64          = 'https://github.com/WinMerge/winmerge/releases/download/v2.16.42.1/WinMerge-2.16.42.1-x64-Setup.exe'
-$checksum64     = '5771f2a0553f53684b0e74161ed8749c4dda270f166edac253982366aee39bd3'
+$url64          = 'https://github.com/WinMerge/winmerge/releases/download/v2.16.44/WinMerge-2.16.44-x64-Setup.exe'
+$checksum64     = '055e960261fc31723856082d2bf1aec2bcc2c71f1ae2d759efec3d766affeaec'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
