@@ -9,6 +9,6 @@ For each cache file, the following information is displayed: URL, Content type, 
 You can easily select one or more items from the cache list, and then extract the files to another folder, or copy the URLs list to the clipboard.
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
