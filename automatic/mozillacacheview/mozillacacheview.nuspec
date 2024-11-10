@@ -28,7 +28,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>Â© 2024 NirSoft</copyright>
     <tags>mozilla cache extract web browser</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/mozillacacheview</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mozillacacheview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
