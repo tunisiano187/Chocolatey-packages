@@ -1,6 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module AU
-Import-Module ..\..\scripts\au_extensions.psm1
+import-module au
 
 function global:au_SearchReplace {
 	@{
@@ -11,21 +10,27 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
 	$url32 = "https://www.nirsoft.net/utils/mzcacheview.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile "tools/mzcacheview.zip"
-	$checksum32 = Get-FileHash -Path "tools/mzcacheview.zip" -Algorithm $env:ChocolateyChecksumType
 	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/mozilla_cache_viewer.html"
 	$regexPattern = 'MZCacheView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") NirSoft"
 
-	$Latest = @{ URL32 = $url32; Checksum32 = $checksum32; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
