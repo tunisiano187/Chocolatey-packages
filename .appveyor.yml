@@ -75,6 +75,7 @@ init:
 install:
 - ps: |
     $chocoVersion = if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
+    if (!(Test-Path "$env:nupkg_cache_path")) { $firstrun = "yes" }
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
       '7zip.install' = '24.7.0'
@@ -211,11 +212,7 @@ build_script:
     scripts/Remove-Nocheck.ps1
     git commit -am "Remove NoCheckChocoVersion"
     Write-Host "updating packages"
-    $commitMessage = $env:APPVEYOR_REPO_COMMIT_MESSAGE
-    $appveyorYmlModified = $commitMessage -match "appveyor\.yml"
-    if (-not $appveyorYmlModified) {
-      au/update_all.ps1 -ForcedPackages $forced
-    }
+    if ($firstrun -ne 'yes') { au/update_all.ps1 -ForcedPackages $forced }
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
 - ps: |
