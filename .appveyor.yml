@@ -211,7 +211,11 @@ build_script:
     scripts/Remove-Nocheck.ps1
     git commit -am "Remove NoCheckChocoVersion"
     Write-Host "updating packages"
-    au/update_all.ps1 -ForcedPackages $forced
+    $commitMessage = $env:APPVEYOR_REPO_COMMIT_MESSAGE
+    $appveyorYmlModified = $commitMessage -match "appveyor\.yml"
+    if (-not $appveyorYmlModified) {
+      au/update_all.ps1 -ForcedPackages $forced
+    }
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
 - ps: |
