@@ -63,7 +63,8 @@ environment:
   #Gitlab informations
   gitlab_user: tunisiano187   # GitLab username to use for the push
   gitlab_api_key:
-    secure: /Y5grZ+4FFm0+dOyuSD9zBah6vtE26U/505yI3Vnw4Y=   # GitLab API key associated with gitlab_user
+    secure: C+23qzMr8qavsOjhrqlIxTpLJg1+04Tf4xhSmlNHMyM=
+   # GitLab API key associated with gitlab_user
   gitlab_PushURL: https://gitlab.com/chocolatey-packages/automatic-updating.git   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://git.example.org/jekotia/au.git
   gitlab_commit_strategy: atomictag
 
