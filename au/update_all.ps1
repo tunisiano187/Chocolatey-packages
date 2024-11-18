@@ -53,13 +53,13 @@ $Options = [ordered]@{
         Password = $Env:github_api_key
     }
 
-    #GitLab = @{
-    #    User			= 'tunisiano187'					#Git username, leave empty if github api key is used
-    #    API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
-	#	PushURL			= $env:Gitlab_PushURL
-	#	Force			= $True
-	#	commitStrategy	= 'atomictag'
-    #}
+    GitLab = @{
+        User			= 'tunisiano187'					#Git username, leave empty if github api key is used
+        API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
+		PushURL			= $env:Gitlab_PushURL
+		Force			= $True
+		commitStrategy	= 'atomictag'
+    }
     #Issues = @{
     #    ApiToken    = $Env:github_api_key                   #Your github api key
     #    BaseBranch  = "master"
