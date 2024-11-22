@@ -63,7 +63,7 @@ environment:
   #Gitlab informations
   gitlab_user: tunisiano187   # GitLab username to use for the push
   gitlab_api_key:
-    secure: C+23qzMr8qavsOjhrqlIxTpLJg1+04Tf4xhSmlNHMyM=
+    secure: o13URdKLLBlzgwn/CDQc8UMLnsiOEw/hIMmO3SdxvuM=
    # GitLab API key associated with gitlab_user
   gitlab_PushURL: https://gitlab.com/chocolatey-packages/automatic-updating.git   # GitLab URL to push to. Must be HTTP or HTTPS. e.g. https://git.example.org/jekotia/au.git
   gitlab_commit_strategy: atomictag
@@ -176,8 +176,8 @@ build_script:
           write-host "None Forced"
         }
     }
-    #git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
-    git remote set-url origin https://$($env:github_api_key):x-oauth-basic@github.com/tunisiano187/Chocolatey-packages.git
+    git remote set-url origin https://$($env:gitlab_user):$($env:gitlab_api_key)@gitlab.com/chocolatey-packages/automatic-updating.git
+    #git remote set-url origin https://$($env:github_api_key)@github.com/tunisiano187/Chocolatey-packages.git
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "tunisiano187"
     git checkout master
