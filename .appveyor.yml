@@ -212,6 +212,8 @@ build_script:
     Write-host "Remove NoCheckChocoVersion"
     scripts/Remove-Nocheck.ps1
     git commit -am "Remove NoCheckChocoVersion"
+    git pull
+    git push
     Write-Host "updating packages"
     if ($firstrun -ne 'yes') { au/update_all.ps1 -ForcedPackages $forced }
     Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
