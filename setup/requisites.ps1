@@ -6,7 +6,7 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Internet Explorer\Main" -Name "
 Write-Output "IE first run welcome screen has been disabled."
 
 Write-Output 'Setting Windows Update service to Manual startup type.'
-Start-Process -FilePath "powershell.exe" -ArgumentList "Set-Service -Name wuauserv -StartupType Manual"
+if ($firstrun -ne 'yes') {  Start-Process -FilePath "powershell.exe" -ArgumentList "Set-Service -Name wuauserv -StartupType Manual" }
 
 #Write-Output "Set DNS to Privacy"
 #
