@@ -24,7 +24,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: tunisiano187/Chocolatey-packages
   github_api_key:
-    secure: k80gVFMer6/9wd07GMUlUfE8ec8ttZ0OmER10rIow2xblSsNv6s7axexlvfT4u/ERTEIQ8A0/f+3aKxjZCfz9S5XROUK3QLFUahFgO3JXdR9qSVstfJt0Fa6+xcNLW2D
+    secure: k80gVFMer6/9wd07GMUlUbcBRD+DF2i+tzivsoqgpYtXA6QAavcEdSqOo6EKJ3bNtWIme6WzHiengMxgMQUssgcVke8QIxk/w9liFnRUxuK76GL3Iy7DhxWLa7JCHBZ2
 
   # Gitter Integration
   gitter_webhook:
