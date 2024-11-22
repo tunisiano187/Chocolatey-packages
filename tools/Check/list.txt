@@ -1,4 +1,3 @@
-amiduos 0.0 - New maintainer
 hardware-freak 0.0 - New maintainer
 robomirror 0.0 - New maintainer
 tux-of-math-command 0.0 - New maintainer
