@@ -232,3 +232,4 @@ xmeters
 zimbra-desktop
 zona
 amiduos
+hardware-freak
