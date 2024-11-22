@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/mozilla_cache_viewer.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/mozilla_cache_viewer.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@9d9ac8e09c030b5b9411fa610a59cfedb978ad7c/icons/mozillacacheview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@ac99426fa2e5e2d2b16961ee790d4592fe47c5d0/icons/mozillacacheview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## MozillaCacheView
 
