@@ -13,7 +13,7 @@ x86: https://www.nirsoft.net/utils/mzcacheview.zip
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: @{Algorithm=SHA512; Hash=E87AFE586AE9E18DB7F286D72270A908072CDFAC51944F2DC65C8DE63B8090C2974C63ADA67A0BB57CAF6AA19AAA296A3D97DE57A55D4AB19FF03478FDF43FDF; Path=C:\projects\chocolatey-packages\automatic\mozillacacheview\tools\mzcacheview.zip}
+checksum: 07925E1444B3E4B5A55028586A6DFC7212AEEAA6AB3C9F4F4D59C202620D5D89CEA3C9411FBE2F25054B45F70249F1D792E64087A48248BBA585239B0D882746
 
 The license is available here:
 https://www.nirsoft.net/utils/mozilla_cache_viewer.html
