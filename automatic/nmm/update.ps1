@@ -25,11 +25,12 @@ function global:au_BeforeUpdate($Package) {
 	Invoke-WebRequest -Uri $licenseData.download_url -UseBasicParsing -OutFile "$licenseFile"
 	$Latest.LicenseUrl = $licenseData.html_url
 
+	Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
+
 	Get-RemoteFiles -Purge -NoSuffix
 }
 
 function global:au_AfterUpdate($Package) {
-	Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
 	Invoke-VirusTotalScan $Package
 }
 
