@@ -231,3 +231,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+amiduos
