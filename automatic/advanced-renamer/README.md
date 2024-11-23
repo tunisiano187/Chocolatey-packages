@@ -1,0 +1,38 @@
+[![](https://img.shields.io/chocolatey/v/advanced-renamer?color=green&label=advanced-renamer)](https://chocolatey.org/packages/advanced-renamer) [![](https://img.shields.io/chocolatey/dt/advanced-renamer)](https://chocolatey.org/packages/advanced-renamer)
+
+## Advanced Renamer
+
+# Advanced Renamer
+
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@9e1debf09c54740f5ee9bcda8cf8be6f0f9894c4/icons/advanced-renamer-screenshot.png)
+
+Advanced Renamer is a program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.
+
+It is easy to set up a batch job using multiple methods on a large amount of files. The 14 different methods enables you to change the names, attributes, and timestamps of files in one go. The files can also be copied or moved to new locations based on information in the files.
+
+With Advanced Renamer you can construct new file names by adding, removing, replacing, changing case, or giving the file a brand new name based on known information about the file.
+
+Before performing the operations on the files you can verify that the output will be correct and if you perform the rename and regret it, you can undo the complete batch.
+
+## Image files
+This mass file renamer is a great utility for organising digital pictures for both professionals and beginners. The thumbnail mode lets you display thumbnails directly in the file list giving you maximum control of the renaming process. With this program you can rename all your photos in a snap.
+
+## GPS data
+If your image files contain GPS data you can add the name of the city and the country where the picture was taken. Coordinates are used to lookup city, country, and state names from a database containing more than 100,000 cities around the globe.
+
+## Music files
+MP3 and other music files often have messed up names and contain weird characters. With Advanced Renamer you can change the names of your favourite music files to more suitable names using the built-in ID3 functions.
+
+## Video files
+Ever wanted to add the codec or the resolution of a video to the filename? With the video tags you can add various information about video and audio content to the names.
+
+## TV shows
+Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.
+
+#### [choco://advanced-renamer](choco://advanced-renamer)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
