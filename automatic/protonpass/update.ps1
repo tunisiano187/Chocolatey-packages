@@ -32,4 +32,4 @@ function global:au_GetLatest {
     return @{ URL32 = $release.File.Url; Checksum = $release.File.Sha512CheckSum; Version = $version }
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
