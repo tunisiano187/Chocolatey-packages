@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>advanced-renamer</id>
-    <version>3.94.3</version>
+    <version>3.94.2</version>
     <title>Advanced Renamer</title>
     <authors>Kim Jensen</authors>
     <owners>LinkSatonaka</owners>
@@ -48,6 +48,6 @@ Add episode title or airdate to video files containing TV Shows after importing 
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="*.nuspec" />
   </files>
 </package>
