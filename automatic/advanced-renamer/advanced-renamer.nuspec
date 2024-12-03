@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>advanced-renamer</id>
-    <version>3.94.2</version>
+    <version>3.95.4</version>
     <title>Advanced Renamer</title>
     <authors>Kim Jensen</authors>
     <owners>LinkSatonaka</owners>
@@ -10,7 +10,9 @@
     <licenseUrl>https://www.advancedrenamer.com/user_guide/license</licenseUrl>
     <projectUrl>http://www.advancedrenamer.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/AeliusSaionji/chocopkgs/fad605e78a28a3a84f3abf5e38b0601fe7a32d90/icons/advanced-renamer.png</iconUrl>
-    <description># Advanced Renamer
+    <description><![CDATA[## Advanced Renamer
+
+# Advanced Renamer
 
 ![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@9e1debf09c54740f5ee9bcda8cf8be6f0f9894c4/icons/advanced-renamer-screenshot.png)
 
@@ -35,7 +37,16 @@ MP3 and other music files often have messed up names and contain weird character
 Ever wanted to add the codec or the resolution of a video to the filename? With the video tags you can add various information about video and audio content to the names.
 
 ## TV shows
-Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.</description>
+Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.
+
+#### [choco://advanced-renamer](choco://advanced-renamer)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Batch file renaming utility for Windows.</summary>
     <releaseNotes>http://www.advancedrenamer.com/versionlog</releaseNotes>
     <copyright>
@@ -44,7 +55,7 @@ Add episode title or airdate to video files containing TV Shows after importing 
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/advanced-renamer</packageSourceUrl>
     <docsUrl>http://www.advancedrenamer.com/user_guide/gettingstarted</docsUrl>
     <dependencies>
-      <dependency id="advanced-renamer.install" version="3.94.3" />
+      <dependency id="advanced-renamer.install" version="3.95.4" />
     </dependencies>
   </metadata>
   <files>

@@ -9,7 +9,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$choc=$(choco search advanced-renamer | Where-Object {$_ -match "advanced-renamer"})
+	$choc=$(choco search advanced-renamer.install | Where-Object {$_ -match "advanced-renamer.install"})
 	$version = $choc.Split(" ")[1]
     if($version -eq "3.94.3") {
         $version = "3.94.3.2024112501"
