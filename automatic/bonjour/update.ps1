@@ -27,8 +27,8 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = "$($releases)32"
-	$url64 = "$($releases)64"
+	$url32 = Get-RedirectedUrl -url "$($releases)32"
+	$url64 = Get-RedirectedUrl -url "$($releases)64"
 	$startdir = Get-Location
 	$install_fname = 'bonjour.exe'
 	Write-Output 'Download'
