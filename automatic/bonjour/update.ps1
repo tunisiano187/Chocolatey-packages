@@ -37,7 +37,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
 	7z.exe x $exeFile
-	7z.exe x "$(get-location)\bonjour*.msi"
+	7z.exe x "$(get-location)\Bonjour.msi"
 	Write-Output 'Get version'
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
