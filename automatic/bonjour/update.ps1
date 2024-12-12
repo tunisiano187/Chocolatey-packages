@@ -21,7 +21,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate($Package) {
 	$Latest.ChecksumType32 = $Latest.ChecksumType64 = "SHA256"
 	$Latest.Checksum32 = (Get-FileHash -Path $exeFile -Algorithm $Latest.ChecksumType32).Hash.ToLower()
-	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType32 -Url $Latest.URL64
+	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType64 -Url $Latest.URL64
 }
 
 function global:au_AfterUpdate($Package) {
