@@ -2,6 +2,8 @@
 import-module au
 
 $releases = 'https://www.apple.com/itunes/download/win'
+$install_fname = 'bonjour.exe'
+$exeFile = Join-Path $env:TEMP $install_fname
 
 function global:au_SearchReplace {
 	@{
@@ -18,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate($Package) {
 	$Latest.ChecksumType32 = $Latest.ChecksumType64 = "SHA256"
-	$Latest.Checksum32 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType32 -Url $Latest.URL32
+	$Latest.Checksum32 = (Get-FileHash -Path $exeFile -Algorithm $Latest.ChecksumType32).Hash.ToLower()
 	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType32 -Url $Latest.URL64
 }
 
@@ -30,10 +32,8 @@ function global:au_GetLatest {
 	$url32 = Get-RedirectedUrl -url "$($releases)32"
 	$url64 = Get-RedirectedUrl -url "$($releases)64"
 	$startdir = Get-Location
-	$install_fname = 'bonjour.exe'
 	Write-Output 'Download'
 	Set-Location $env:TEMP
-	$exeFile = Join-Path $env:TEMP $install_fname
 	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
