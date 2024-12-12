@@ -36,8 +36,8 @@ function global:au_GetLatest {
 	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
-	7z.exe x $exeFile -i!"Bonjour.msi"
-	7z.exe x "$(get-location)\Bonjour.msi" -i!"mDNSResponder.exe"
+	7z.exe x $exeFile -i!"Bonjour.msi" -y
+	7z.exe x "$(get-location)\Bonjour.msi" -i!"mDNSResponder.exe" -y
 	Write-Output 'Get version'
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
