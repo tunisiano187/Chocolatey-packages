@@ -31,9 +31,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$url32 = Get-RedirectedUrl -url "$($releases)32"
 	$url64 = Get-RedirectedUrl -url "$($releases)64"
-	$startdir = Get-Location
 	Write-Output 'Download'
-	Set-Location $env:TEMP
+	Push-Location $env:TEMP
 	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
@@ -42,7 +41,7 @@ function global:au_GetLatest {
 	Write-Output 'Get version'
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
-	Set-Location $startdir
+	Pop-Location
 	if($version -eq "3.1.0.1"){
 		$version = "3.1.0.4"
 	}
