@@ -28,6 +28,9 @@ $packageArgs = @{
 Get-ChocolateyWebFile @packageArgs
 Get-ChocolateyUnzip -fileFullPath $fileFullPath -destination $toolsDir
 
+$ignoreFilePath = Join-Path -Path $toolsDir -ChildPath "SetupAdmin.exe.ignore"
+Set-Content -Path $ignoreFilePath -Value $null -ErrorAction SilentlyContinue
+
 $bonjour = (Get-ChildItem -Path $toolsDir -Filter "Bonjour*.msi").FullName
 
 $packageArgs = @{
@@ -39,4 +42,4 @@ $packageArgs = @{
   silentArgs	= "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
