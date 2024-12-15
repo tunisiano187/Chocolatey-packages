@@ -58,7 +58,7 @@ $Options = [ordered]@{
         API_Key			= $env:Gitlab_api_key					#Password if username is not empty, otherwise api key
 		PushURL			= $env:Gitlab_PushURL
 		Force			= $True
-		commitStrategy	= 'atomictag'
+		commitStrategy	= 'atomic'
     }
     #Issues = @{
     #    ApiToken    = $Env:github_api_key                   #Your github api key
