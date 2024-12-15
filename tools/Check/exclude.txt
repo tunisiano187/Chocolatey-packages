@@ -4,9 +4,9 @@ acardaoutboundsolo
 Accents
 accessdirector
 acronis-drive-monitor
-ad-tidy-free
 adblockplusie
 adguard-chrome
+ad-tidy-free
 advanced-codecs
 advancedsystemtweaker
 advtor
@@ -14,10 +14,11 @@ alcohol52-free
 allbrowsers
 allwemo
 amazingmarvin
+amazondrive
 Amazon-Games-App
 amazon-photos
-amazondrive
 AMD-Graphics-Driver
+amiduos
 ammyy-admin
 AnkhSvn
 anvide-seal-folder
@@ -65,17 +66,17 @@ ekiga
 emulationstation
 emulationstation.install
 enjarify
-evernote-chrome
 evernote2onenote
+evernote-chrome
 evimsync
 fastest-mouse-clicker
 feedly-chrome
 filetool
 findaes
 findthatfont
+freearc
 free-ost-reader
 free-pst-reader
-freearc
 frogger
 gamedownloader
 getopt
@@ -83,6 +84,7 @@ go-contact-sync-mod
 Golem-Brass-Beta
 google-dictionary-chrome
 google-web-designer
+hardware-freak
 hashdeep
 hdparm
 hexamail-pop3-downloader
@@ -113,8 +115,8 @@ KTechLab
 kubernetes-cli
 kubernetes-kompose
 kvrt
-lan-speed-test.portable
 Lando
+lan-speed-test.portable
 lastpass-chrome
 libffcall
 librecrypt
@@ -198,8 +200,8 @@ superpacman
 Swish
 take-command
 tcc
-tivo-desktop-patch
 tivo-desktop.install
+tivo-desktop-patch
 tivotogo-plex
 todobackup
 tonido-drive
@@ -231,5 +233,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-amiduos
-hardware-freak
