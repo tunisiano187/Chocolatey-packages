@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'tux-of-math-command'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = "$toolsDir\tuxmath-2.0.2-win32-installer.exe"
@@ -9,11 +9,11 @@ $packageArgs = @{
   fileType       = 'EXE'
   file           = $url
   checksum       = $checksum
-  checksumType   = 'sha256'  
+  checksumType   = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0,1)
   softwareName   = 'Tux of Math Command (remove only)'
 }
- 
+
 Install-ChocolateyInstallPackage @packageArgs
 Remove-Item $url | out-null
