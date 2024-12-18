@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>thebrain</id>
-    <version>14.0.101</version>
+    <version>14.0.102</version>
     <title>TheBrain</title>
     <authors>TheBrain Technologies LP</authors>
     <owners>tunisiano</owners>
