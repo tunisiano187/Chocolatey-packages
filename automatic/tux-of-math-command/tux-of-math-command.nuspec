@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>tux-of-math-command</id>
+    <version>2.0.2</version>
+    <title>Tux of Math Command (Install)</title>
+    <authors>criswell, davidsbruce, wkendrick</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://sourceforge.net/directory/license:gpl/</licenseUrl>
+    <projectUrl>https://sourceforge.net/projects/tuxmath/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/bcurran3/ChocolateyPackages/c2193380/tux-of-math-command/tux-of-math-command_icon.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of Tux of Math Command](https://cdn.rawgit.com/bcurran3/ChocolateyPackages/master/tux-of-math-command/tux-of-math-command_screenshot.png)
+
+"Tux, of Math Command" is a math drill game starring Tux, the Linux Penguin. Lessons are included from simple number typing through addition, subtraction, multiplication, and division of positive and negative numbers. It is intended for kids ~4-10.
+
+###Features
+* Fun arcade-style math game
+* Practice addition, subtraction, multiplication, division, negatives, and more!
+* NEW - multiplayer LAN competition
+* Factoroids - learn factoring while blasting rocks floating in space!
+* Translations to over 40 languages
+* Available for Windows, Mac OS-X, and Linux/Unix
+* Complete source code under GPLv3+
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/tux-of-math-command/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>"Tux, of Math Command" is a math drill game starring Tux, the Linux Penguin.</summary>
+    <releaseNotes>https://sourceforge.net/p/tuxmath/news/</releaseNotes>
+    <tags>tux4kids tux math kids educational game foss cross-platform binary notsilent</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tux-of-math-command</packageSourceUrl>
+    <mailingListUrl>https://sourceforge.net/p/tuxmath/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/tuxmath/bugs/</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
