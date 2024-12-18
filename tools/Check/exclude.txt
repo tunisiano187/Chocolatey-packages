@@ -235,3 +235,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+envelope-printer
