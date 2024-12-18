@@ -14,8 +14,8 @@ x64: https://www.nirsoft.net/utils/searchmyfiles-x64.zip
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: 
-checksum64: 
+checksum: 4137B85CD7C9C963C81A2E3157E9DFC7ABD422429A9528CEF1DB3B04A8C1CC41
+checksum64: 864E207869E6D8271082513ECCEBDE72E2C68DE445D6A770A0D8209446976FBA
 
 The license is available here:
 https://www.nirsoft.net/utils/search_my_files.html
