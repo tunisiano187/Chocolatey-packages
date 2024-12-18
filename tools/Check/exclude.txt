@@ -233,3 +233,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+hardware-freak
