@@ -19,6 +19,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://www.sdcard.org$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_ -match 'Accept'} | Where-Object {$_.href -match '.exe'}).href.replace('./',''))"
+	$url32 = [URI]::EscapeUriString($url32)
 	$url = "https://www.sdcard.org/downloads/formatter/"
 	$pageContent = Invoke-WebRequest -Uri $url -UseBasicParsing
 	$versionPattern = 'SD Memory Card Formatter\s*(\d+\.\d+\.\d+)'
