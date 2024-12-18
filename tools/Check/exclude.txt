@@ -234,3 +234,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+tux-of-math-command
