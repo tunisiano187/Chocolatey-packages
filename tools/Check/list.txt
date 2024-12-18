@@ -1,4 +1,3 @@
-envelope-printer 0.0 - New maintainer
 trafficlight-firefox 0.0 - New maintainer
 reprofiler 0.0 - New maintainer
 reprofiler.portable 0.0 - New maintainer
