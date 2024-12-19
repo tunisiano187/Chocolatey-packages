@@ -26,7 +26,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".xpi"} ).href)
-	
+
 	$version=(Get-Version $url32).Version
 
 	$Latest = @{ URL32 = $url32; Version = $version }
