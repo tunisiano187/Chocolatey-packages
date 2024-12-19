@@ -32,7 +32,7 @@ Tracker Revealer: Trackers are code snippets included in web site pages to track
     <tags>bitdefender trafficlight protection malware filter scanner extension firefox</tags>
     <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/trafficlight-firefox</packageSourceUrl>
     <dependencies>
-      <dependency id="firefox" version="48.0" />
+      <dependency id="firefox" version="[48.0,]" />
     </dependencies>
   </metadata>
   <files>
