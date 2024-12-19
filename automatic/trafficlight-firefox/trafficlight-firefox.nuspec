@@ -5,7 +5,7 @@
     <version>2.0.1</version>
     <title>Bitdefender TrafficLight for Firefox</title>
     <authors>BitDefender Labs</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/eula/</licenseUrl>
     <projectUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d18dc85a3c9e828f9fc2e22214b395f42e4cfc35/icons/trafficlight-firefox.png</iconUrl>
