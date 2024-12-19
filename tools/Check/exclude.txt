@@ -66,6 +66,7 @@ ekiga
 emulationstation
 emulationstation.install
 enjarify
+envelope-printer
 evernote2onenote
 evernote-chrome
 evimsync
@@ -235,4 +236,3 @@ xfinder
 xmeters
 zimbra-desktop
 zona
-envelope-printer
