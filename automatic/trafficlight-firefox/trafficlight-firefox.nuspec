@@ -5,10 +5,10 @@
     <version>2.0.1</version>
     <title>Bitdefender TrafficLight for Firefox</title>
     <authors>BitDefender Labs</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/eula/</licenseUrl>
     <projectUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/</projectUrl>
-    <iconUrl>https://download.bitdefender.com/resources/themes/draco/images/prod_trafficlight.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d18dc85a3c9e828f9fc2e22214b395f42e4cfc35/icons/trafficlight-firefox.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Bitdefender TrafficLight for Firefox](https://addons.cdn.mozilla.net/user-media/previews/full/184/184850.png?modified=1496134472)
 
@@ -30,7 +30,7 @@ Tracker Revealer: Trackers are code snippets included in web site pages to track
     <summary>Bitdefender TrafficLight adds a strong and non-intrusive layer of security to your browsing experience</summary>
     <releaseNotes>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/versions/</releaseNotes>
     <tags>bitdefender trafficlight protection malware filter scanner extension firefox</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/trafficlight-firefox</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/trafficlight-firefox</packageSourceUrl>
     <dependencies>
       <dependency id="firefox" version="[48.0,]" />
     </dependencies>
