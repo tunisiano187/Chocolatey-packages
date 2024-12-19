@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/eula/</licenseUrl>
     <projectUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/</projectUrl>
-    <iconUrl>https://download.bitdefender.com/resources/themes/draco/images/prod_trafficlight.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d18dc85a3c9e828f9fc2e22214b395f42e4cfc35/icons/trafficlight-firefox.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>![Screenshot of Bitdefender TrafficLight for Firefox](https://addons.cdn.mozilla.net/user-media/previews/full/184/184850.png?modified=1496134472)
 
