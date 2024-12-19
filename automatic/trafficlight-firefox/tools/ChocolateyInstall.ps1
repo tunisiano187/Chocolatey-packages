@@ -17,14 +17,14 @@ $extFolder = Join-Path $extensionsFolder "$extensionID"
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $extFolder
-  fileType      = 'ZIP' 
+  fileType      = 'ZIP'
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256' 
+  checksumType  = 'sha256'
 }
 
 if (!(Test-Path $extFolder)) {
-	New-Item -Force -ItemType directory -Path $extFolder 
+	New-Item -Force -ItemType directory -Path $extFolder
 	Install-ChocolateyZipPackage @packageArgs
 }
 else {
