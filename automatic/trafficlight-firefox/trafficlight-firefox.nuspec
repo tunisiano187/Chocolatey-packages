@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>trafficlight-firefox</id>
-    <version>2.0.1</version>
+    <version>3.2.7</version>
     <title>Bitdefender TrafficLight for Firefox</title>
     <authors>BitDefender Labs</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d18dc85a3c9e828f9fc2e22214b395f42e4cfc35/icons/trafficlight-firefox.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>![Screenshot of Bitdefender TrafficLight for Firefox](https://addons.cdn.mozilla.net/user-media/previews/full/184/184850.png?modified=1496134472)
+    <description><![CDATA[## Bitdefender TrafficLight for Firefox
+
+![Screenshot of Bitdefender TrafficLight for Firefox](https://addons.cdn.mozilla.net/user-media/previews/full/184/184850.png?modified=1496134472)
 
 TrafficLight is taking the security-while-browsing concept where it belongs: in the browser. This extension will add a strong layer of security over your browsing experience without inducing speed penalties or system resource consumption. Part of the processing is done in the cloud with some intelligent small engines that make various checks on pages you're visiting enabling you to have top notch antiphishing and antimalware protection.
 
@@ -26,7 +28,16 @@ Search Results: TrafficLight flags malware and fraudulent websites in search res
 
 Tracker Revealer: Trackers are code snippets included in web site pages to track and analyze your browsing behavior. TrafficLight quickly identifies and lists them.	
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/trafficlight-firefox/readme.md)**</description>
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/trafficlight-firefox/readme.md)**
+
+#### [choco://trafficlight-firefox](choco://trafficlight-firefox)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Bitdefender TrafficLight adds a strong and non-intrusive layer of security to your browsing experience</summary>
     <releaseNotes>https://addons.mozilla.org/en-US/firefox/addon/trafficlight/versions/</releaseNotes>
     <tags>bitdefender trafficlight protection malware filter scanner extension firefox</tags>
