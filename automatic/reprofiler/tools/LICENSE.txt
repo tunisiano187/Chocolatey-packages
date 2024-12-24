@@ -1,0 +1,28 @@
+﻿https://iwrconsultancy.co.uk/reprofiler
+
+Legal:
+As ever, you use this system-level utility entirely at your own risk. Various forms of disaster are not excluded from the list of possible outcomes of its incorrect use. Or, even of its correct use.
+
+This software may be duplicated any number of times, and used in private or commercial IT operations. The software may not be sold for profit in any shape or form. Third-party websites and P2P hosts may offer copies for download so long as these conditions are met.
+
+The sourcecode and executables of this software are released under the GNU Public Licence, version 3. Icons and other graphics remain the intellectual property of IWR Consultancy, and may not be used in derivative works without permission.
+
+Thanks are due to the members of the AutoIt coding team at autoitscript.com for the programming language itself, and to various contributors for the library routines which have saved a great deal of work.
+
+It is not necessary to supply sourcecode with every downloaded copy, so long as a link to the publisher's website is included in some form or other at the download location.
+
+
+From: Ian Macdonald [mailto:ianm@zeweb.co.uk] 
+Sent: Saturday, October 1, 2016 1:34 AM
+To: bcurran3
+Subject: Re: IWRC Website Enquiry
+
+Not met this package manager, but you can roll SSRP out using a silent install option anyway. 
+
+There have been suggestions from site admins that  central adminstration of policies would be useful, and this is maybe something we'll look into. 
+
+We don't offer direct download links. The present setup is designed to keep robots out, a protection which has unfortunately become necessary. Basically when you click the link, a php script runs that does various checks  before allowing you to download the file. 
+
+There is no restriction on hosting a copy elsewhere, though. 
+
+Regards, Ian. 
