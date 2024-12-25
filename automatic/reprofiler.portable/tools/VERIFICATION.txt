@@ -1,0 +1,9 @@
+﻿https://iwrconsultancy.co.uk/downloads.htm
+
+Reprofiler2.zip
+
+Version 2, Zipped version, no installer. 1744172 bytes. Released 4/12/2015.
+VirusTotal Report on executable. 
+SHA-256: 300749894539EC4AB6D6C2F79FD5924158B06E48AD55D34EDAD9725EDDB50C57
+
+PACKAGER NOTE: I get SHA-256: 057AD6768F4F757D52F01D5A77E5DAC898E031BFD29AA5C824C0623E068627A3 after downloading multiple times. I have reported this to the authors Oct 1, 2016.

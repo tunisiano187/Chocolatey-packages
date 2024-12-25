@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>reprofiler.portable</id>
+    <version>2.0</version>
+    <title>ReProfiler (Portable)</title>
+    <authors>IWR Consultancy</authors>
+    <owners>bcurran3</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>http://iwrconsultancy.co.uk/downloads.htm</licenseUrl>
+    <projectUrl>http://iwrconsultancy.co.uk/reprofiler</projectUrl>
+    <iconUrl>http://iwrconsultancy.co.uk/img/icon48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>![Screenshot of ReProfiler](https://iwrconsultancy.co.uk/img/reprofiler1.png)
+
+A common issue encountered with all recent Windows versions is the unexplained loss of access to a user's data and settings.
+
+This can happen for a number of reasons:
+
+* A disk error
+* Joining the computer to a domain
+* Disjoining the computer from a domain
+* Transfer of data to a new computer
+* Filesystem-permissions issues.
+* A change of username.
+
+In most such circumstances, the problem arises because Windows no longer recognises the profile as belonging to its user. What will happen in this case is that the next time the user logs-on, a fresh, empty profile will be created, named 'user.domain' or 'user.computer' instead of just 'user' -and from that point on, the new profile will be used instead of the correct one.
+
+It is possible to correct this type of problem manually, but this involves editing the registry and adjusting permissions, tasks which are painstaking and time-consuming, and are probably beyond the skill-level of the average user.  
+
+Reprofiler offers a quick and easy way to see which profile is associated with which user. If a problem is evident, it then provides an intuitive and straightforward means of correcting the profile ownership.</description>
+    <summary>A tool for manipulating userprofiles on Microsoft Windows XP/Vista/7/8/10 and most server editions.</summary>
+    <releaseNotes>.EXE included in package, see accompanying LICENSE.txt and VERIFICATION.txt files</releaseNotes>
+    <copyright>IWR Consultancy</copyright>
+    <tags>iwr reprofiler profile repair utility portable</tags>
+    <projectSourceUrl>http://iwrconsultancy.co.uk/downloads.htm</projectSourceUrl>
+    <docsUrl>https://iwrconsultancy.co.uk/reprofiler</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
