@@ -6,7 +6,7 @@
     <title>ReProfiler (Portable)</title>
     <authors>IWR Consultancy</authors>
     <owners>bcurran3</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/reprofiler.portable</packageSourceUrl>
     <licenseUrl>http://iwrconsultancy.co.uk/downloads.htm</licenseUrl>
     <projectUrl>http://iwrconsultancy.co.uk/reprofiler</projectUrl>
     <iconUrl>http://iwrconsultancy.co.uk/img/icon48.png</iconUrl>
