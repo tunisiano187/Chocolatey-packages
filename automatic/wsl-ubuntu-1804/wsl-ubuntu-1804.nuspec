@@ -21,7 +21,7 @@
     <releaseNotes>https://docs.microsoft.com/en-us/windows/wsl/release-notes</releaseNotes>
     <copyright>© Canonical Ltd.</copyright>
     <tags>wsl ubuntu bionicbeaver linux</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/wsl-ubuntu-1804</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wsl-ubuntu-1804</packageSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/windows/wsl/about</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/WSL/issues</bugTrackerUrl>
     <dependencies>
