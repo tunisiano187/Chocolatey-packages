@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'wsl-ubuntu-1804'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://aka.ms/wsl-ubuntu-1804'
@@ -11,7 +11,7 @@ New-Item $unzipLocation -type directory | out-null
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $unzipLocation
-  fileType       = 'ZIP' 
+  fileType       = 'ZIP'
   url            = $url
   checksum       = $checksum
   checksumType   = 'sha256'
