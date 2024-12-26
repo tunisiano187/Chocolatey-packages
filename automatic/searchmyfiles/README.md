@@ -8,6 +8,7 @@ It allows you to easily search files in your system by wildcard, by last modifie
 SearchMyFiles allows you to make a very accurate search that cannot be done with Windows search. For Example: You can search all files created in the last 10 minutes with size between 500 and 700 bytes.
 
 After you made a search, you can select one or more files, and save the list into text/html/csv/xml file, or copy the list to the clipboard.
+![Nir sofer informmations](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0ab27553f1ae11207740b8a7949a3f029dafccb7/automatic/searchmyfiles/nir%20sofer%20contact.png)
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
