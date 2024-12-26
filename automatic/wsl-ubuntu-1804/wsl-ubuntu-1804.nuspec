@@ -5,7 +5,7 @@
     <version>18.04.1.020181923</version>
     <title>Ubuntu 18.04.1 LTS for Windows Subsystem for Linux (Install)</title>
     <authors>Canonical Ltd.</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.ubuntu.com/legal</licenseUrl>
     <projectUrl>https://www.microsoft.com/en-us/windows/features</projectUrl>
     <iconUrl>https://cdn.rawgit.com/bcurran3/ChocolateyPackages/master/wsl-ubuntu-1804/ubuntu_orange_hex.png</iconUrl>
