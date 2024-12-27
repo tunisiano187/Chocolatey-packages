@@ -41,7 +41,7 @@ After the last user has logged off, if no one logs back on to the computer durin
     <releaseNotes />
     <copyright>WinAbility Software Corp.</copyright>
     <tags>activeexit winability logoff system utility admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/activeexit</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/activeexit</packageSourceUrl>
     <docsUrl>http://www.winability.com/active-exit/users-guide.htm</docsUrl>
     <bugTrackerUrl>http://www.winability.com/active-exit/users-guide.htm?whatsnew</bugTrackerUrl>
     <dependencies>
