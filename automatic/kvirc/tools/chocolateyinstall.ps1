@@ -1,8 +1,8 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://nightly.kvirc.net/win-x86_64/KVIrc-5.2.6-qt5-dev-2024-10-11-git-0e01bc6.exe'
-$checksum       = '6f6af58b497544e058735d5c5c9084580b79833520a39f035b1b85fade7eefe0'
+$url            = 'https://nightly.kvirc.net/win-x86_64/KVIrc-5.2.6-qt5-dev-2025-01-03-git-ca7cb5a.exe'
+$checksum       = '6c1af6bf872e842b357d5670db4b7f5d163a7096e7d69c98506fbeaeb48c731d'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
