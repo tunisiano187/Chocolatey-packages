@@ -4,7 +4,7 @@
   <metadata>
     <id>electron</id>
     <title>Electron</title>
-    <version>33.0.2</version>
+    <version>33.3.1</version>
     <authors>GitHub Inc</authors>
     <owners>tunisiano</owners>
     <summary>Build cross platform desktop apps with web technologies</summary>
