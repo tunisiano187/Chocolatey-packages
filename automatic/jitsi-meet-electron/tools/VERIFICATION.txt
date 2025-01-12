@@ -7,7 +7,7 @@ You can find the package source at https://github.com/tunisiano187/Chocolatey-pa
 
 To verify the package you need to
 1. Download the Oneclick installer from the following
-    URL: https://github.com/jitsi/jitsi-meet-electron/releases/download/v2024.10.0/jitsi-meet.exe
+    URL: https://github.com/jitsi/jitsi-meet-electron/releases/download/v2025.1.0/jitsi-meet.exe
 2. Unzip it running
     7z x jitsi-meet.exe
     The program is in the "$PLUGINSDIR" folder containing the app-32.7z and app-64.7z
@@ -16,5 +16,5 @@ To verify the package you need to
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: C1C8A5C165D1335C2BCF9CED767841074961DE53755F23CD8D1601F51FD2054E
-  checksum64: CF0730AA6CF2969448B10BA4DB269A94DF5491E5D8CC0E3A4B5D6F0EF78BC080
+  checksum32: F15182198F785A64B5802B980904E723B46F8BD3BBBF4E4657989A84C05F2CA1
+  checksum64: A8F5A9B3E7F155F5768F2A2047751E60E5B88DEB19F44EC809332A9ADA228AC8
