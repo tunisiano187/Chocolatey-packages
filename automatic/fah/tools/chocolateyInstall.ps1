@@ -2,8 +2,8 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S'
-$url32       = 'https://download.foldingathome.org/releases/public/fah-client/windows-10-64bit/release/fah-client_8.3.17_AMD64.exe'
-$checksum32 = 'e126d11721864c65c01e4b2e2e32a4b8bf26d340e1e797f96c2380d9a85a315b'
+$url32       = 'https://download.foldingathome.org/releases/public/fah-client/windows-10-64bit/release/fah-client_8.4.9_AMD64.exe'
+$checksum32 = '9664979343247bddf709538e0af5dea7363d835474ff202aa96c5a40b9718a99'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
