@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = $env:ChocolateyPackageName
 $url = 'https://www.nirsoft.net/utils/wakemeonlan.zip'
-$checksum = '1ac0e53b1b54ceabbc1b22c1b2408375ac4d5159a27a07d1cd1fb7e25cf804ee'
+$checksum = '02d8e33e86038494659abd238004d5f7e1522c52dd49a1d35c8a7ab60362c463'
 $checksumType = 'sha256'
 #$url64 = $env:ChocolateyPackageName
 #$checksum64 = $env:ChocolateyPackageName
