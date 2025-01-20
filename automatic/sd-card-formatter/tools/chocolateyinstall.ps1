@@ -3,12 +3,11 @@ $url                       = 'https://www.sdcard.org/downloads/formatter/eula_wi
 $Checksum                  = '89F77FC36F451FA16AD911145EA554F5651D9BC023EC1726FA66DBF54E1AE920'
 $ChecksumType              = 'sha256'
 
-$curDir	= "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$toolsDir = Join-Path $curDir "tools"
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $UnzipArgs = @{
     PackageName     = $env:chocolateyPackageName
-    Url32           = $url
+    Url             = $url
     Checksum32      = $Checksum
     checksumType    = $ChecksumType
     UnzipLocation   = $toolsDir
@@ -16,9 +15,11 @@ $UnzipArgs = @{
 
 Install-ChocolateyZipPackage @UnzipArgs
 
+$fileLocation = (get-childitem -Path $toolsDir -Filter "*.exe" -Recurse).FullName
+
 $packageArgs = @{
     packageName     = $env:chocolateyPackageName
-    file            = (get-childitem -Filter "*.exe" -Recurse).FullName
+    file            = $fileLocation
     fileType        = 'EXE'
     validExitCodes  = @(0, 3010, 1641)
     silentArgs      = '/s /v"/qn /norestart"'
