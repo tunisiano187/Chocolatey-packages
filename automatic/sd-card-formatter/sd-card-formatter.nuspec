@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sd-card-formatter</id>
-    <version>5.0.0</version>
+    <version>5.0.3.2025011901</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sd-card-formatter</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>SD Memory Card Formatter (Install)</title>
