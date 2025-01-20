@@ -26,7 +26,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
   $page = Invoke-WebRequest -Uri $release
-  $url32 = "https://www.ubackup.com$($page.Links.href | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match "Server"} | Select-Object -First 1)"
+  $url32 = Get-RedirectedUrl  "https://www.ubackup.com$($page.Links.href | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match "Server"} | Select-Object -First 1)"
   $url = "https://www.aomeitech.com/download.html"
   $response = Invoke-WebRequest -Uri $url
   $versionPattern = 'v<span\s+data--release-product="AB"\s+data--release="version">(\d+\.\d+\.\d+)<\/span>'
