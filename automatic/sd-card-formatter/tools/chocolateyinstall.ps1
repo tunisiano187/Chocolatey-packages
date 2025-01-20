@@ -14,11 +14,11 @@ $UnzipArgs = @{
     UnzipLocation   = $toolsDir
 }
 
-Get-ChocolateyUnzip @UnzipArgs
+Install-ChocolateyZipPackage @UnzipArgs
 
 $packageArgs = @{
     packageName     = $env:chocolateyPackageName
-    FileFullPath    = (get-childitem -Filter "*.exe" -Recurse).FullName
+    file            = (get-childitem -Filter "*.exe" -Recurse).FullName
     fileType        = 'EXE'
     validExitCodes  = @(0, 3010, 1641)
     silentArgs      = '/s /v"/qn /norestart"'
