@@ -8,7 +8,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $UnzipArgs = @{
     PackageName     = $env:chocolateyPackageName
     Url             = $url
-    Checksum32      = $Checksum
+    Checksum        = $Checksum
     checksumType    = $ChecksumType
     UnzipLocation   = $toolsDir
 }
