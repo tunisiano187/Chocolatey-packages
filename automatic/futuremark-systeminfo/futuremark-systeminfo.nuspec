@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>futuremark-systeminfo</id>
-    <version>5.78</version>
+    <version>5.79</version>
     <title>Futuremark SystemInfo (Install)</title>
     <authors>Futuremark</authors>
     <owners>tunisiano</owners>

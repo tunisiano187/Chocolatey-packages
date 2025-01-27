@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'futuremark-systeminfo'
-$url            = 'https://d1ejs5fxm96rib.cloudfront.net/Futuremark_SystemInfo_5_78_1322.msi'
-$checksum       = '70e33ac39debed00c66b2ffb3b2f54eefa025758a1870c026b8586f832fedaa0'
+$url            = 'https://d1ejs5fxm96rib.cloudfront.net/Futuremark_SystemInfo_5_79_1331.msi'
+$checksum       = '53c048fa84c9c09209e9ef5fbaa9377ad0c2fb81412318f76f56fbf4635a7bdc'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
