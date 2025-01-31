@@ -1,9 +1,9 @@
 ﻿# generated vars
 $packageName = 'pwgen.portable'
-$url = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/3.5.5/PwTech-3.5.5-32bit.zip/download'
-$checksum = '17168b439e8719813848cc6b7f545f2bfe58ed21fda6b6bf16ae28564c02ad62'
-$url64 = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/3.5.5/PwTech-3.5.5-64bit.zip/download'
-$checksum64 = 'bbe26c44980fcd21a090a62aa193cb896c202ce3b71b77a42a06227e4b690c9d'
+$url = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/3.5.6/PwTech-3.5.6-32bit.zip/download'
+$checksum = '9831dd7fb307c5f46624330a380aac1925ee3a498bdc921c4baefd89ca078391'
+$url64 = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/3.5.6/PwTech-3.5.6-64bit.zip/download'
+$checksum64 = 'ba06c657e70691e06a3d4e89e2ce8ec75cd3d8983fa0b10aa1aea2c7dca32c34'
 
 # static vars
 $checksumType = 'sha256'
