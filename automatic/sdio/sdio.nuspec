@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>sdio</id>
-    <version>1.13.6.773</version>
+    <version>1.14.0.777</version>
     <title>Snappy Driver Installer Origin</title>
     <authors>Glenn Delahoy</authors>
     <owners>tunisiano</owners>
