@@ -237,3 +237,4 @@ xfinder
 xmeters
 zimbra-desktop
 zona
+wsl-ubuntu-1604
