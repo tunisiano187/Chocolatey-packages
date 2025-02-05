@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wsl-ubuntu-1604</id>
+    <version>16.04.3.020181002</version>
+    <title>Ubuntu 16.04.3 LTS for Windows Subsystem for Linux (Install)</title>
+    <authors>Canonical Ltd.</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.ubuntu.com/legal</licenseUrl>
+    <projectUrl>https://www.microsoft.com/en-us/windows/features</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/bcurran3/ChocolateyPackages/master/wsl-ubuntu-1604/ubuntu_orange_hex.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>###This packages installs Ubuntu 16.04.3 LTS (xenial) for Windows Subsystem for Linux
+	
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/wsl-ubuntu-1604/readme.md)**
+
+***
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+***</description>
+    <summary>This packages installs Ubuntu 16.04.3 LTS (xenial) for Windows Subsystem for Linux</summary>
+    <releaseNotes>https://docs.microsoft.com/en-us/windows/wsl/release-notes</releaseNotes>
+    <copyright>© Canonical Ltd.</copyright>
+    <tags>wsl ubuntu xenial linux notsilent</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/wsl-ubuntu-1604</packageSourceUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/windows/wsl/about</docsUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/WSL/issues</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.2" />
+      <dependency id="wsl" version="1.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
