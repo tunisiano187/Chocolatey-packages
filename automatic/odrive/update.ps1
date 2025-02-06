@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = Get-RedirectedUrl $url32
-	$version = "1.0.$($url32.split('.') | Where-Object {$_ -match "[0-9][0-9]$"})"
+	$version = "1.6452.$($url32.split('.') | Where-Object {$_ -match "[0-9][0-9]$"})"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
