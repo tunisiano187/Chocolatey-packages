@@ -40,7 +40,7 @@ Kernel Exchange EDB Viewer is an advanced and professional software for opening 
     <releaseNotes />
     <copyright>© Copyright 2017 Lepide Software Private Limited.</copyright>
     <tags>kernel lepide microsoft exchange edb viewer admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/exchange-edb-viewer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/exchange-edb-viewer</packageSourceUrl>
     <docsUrl>http://www.nucleustechnologies.com/animated-demo-edb-viewer.html</docsUrl>
   </metadata>
   <files>
