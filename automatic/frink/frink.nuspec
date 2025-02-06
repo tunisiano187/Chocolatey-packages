@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://frinklang.org/</licenseUrl>
     <projectUrl>https://frinklang.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8f49276afb77db093da3326f3b3f56a5f22bed48/icons/frink.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/frink.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Frink (Portable)
 

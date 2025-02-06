@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://github.com/gchudov/cuetools.net/raw/master/License.txt</licenseUrl>
     <projectUrl>http://cue.tools/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@0da0a69e2d4cc4128093b0c88bcad78563177f3b/icons/cuetools.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/cuetools.png</iconUrl>
     <description><![CDATA[## CUETools (Portable)
 
 # CUETools

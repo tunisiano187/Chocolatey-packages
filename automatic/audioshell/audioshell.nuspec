@@ -9,7 +9,7 @@
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/audioshell</packageSourceUrl>
     <licenseUrl>https://www.softpointer.com/AudioShell.htm</licenseUrl>
     <projectUrl>https://www.softpointer.com/AudioShell.htm</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3fec3af0f08a676ccf56102ec1e14b849de2e2a7/icons/audioshell.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/audioshell.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AudioShell (Install)
 

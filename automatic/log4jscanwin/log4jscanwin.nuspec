@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/Qualys/log4jscanwin/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Qualys/log4jscanwin</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@411d6150c9a479ddd2458cee90d4ab545ba34ec8/icons/log4jscanwin.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/log4jscanwin.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Qualys Log4j Vulnerability Scanner (Portable)
 

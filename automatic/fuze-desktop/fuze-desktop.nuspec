@@ -9,7 +9,7 @@
     <title>Fuze Desktop (Install)</title>
     <authors>8x8</authors>
     <projectUrl>https://www.fuze.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a68d43a16abac253b79b4a1bb27d4d9a1f179333/icons/fuze-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/fuze-desktop.png</iconUrl>
     <copyright>Fuze 8x8</copyright>
     <tags>fuze-desktop</tags>
     <summary>Enterprise cloud communication and collaboration platform. Supports instant messaging, voice calls, and audio/video conferencing.</summary>
