@@ -5,7 +5,7 @@
     <version>15.9</version>
     <title>Kernel Exchange EDB Viewer (Install)</title>
     <authors>Kernel / Lepide Software</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <projectUrl>http://www.nucleustechnologies.com/exchange-edb-viewer.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@5ca3147a9667c615d60c268101fe4024727b6e41/icons/exchange-edb-viewer.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
