@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>pwgen</id>
-    <version>3.5.5</version>
+    <version>3.5.6</version>
     <title>PWGen</title>
     <authors>Christian Thoeing</authors>
     <owners>tunisiano</owners>
@@ -23,7 +23,7 @@ of random data files (e.g., key files).
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Generator of cryptographically-strong passwords</summary>
     <releaseNotes>#### Program
@@ -39,7 +39,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pwgen</packageSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/pwgen-win/bugs/</bugTrackerUrl>
     <dependencies>
-      <dependency id="pwgen.install" version="[3.5.5]" />
+      <dependency id="pwgen.install" version="[3.5.6]" />
     </dependencies>
   </metadata>
   <files>
