@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>traffic-monitor</id>
-    <version>1.85</version>
+    <version>1.85.1</version>
     <title>Traffic Monitor</title>
     <authors>zhongyang219</authors>
     <owners>tunisiano</owners>
