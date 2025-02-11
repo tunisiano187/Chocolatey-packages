@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>quaternion</id>
-    <version>0.0.96.1</version>
+    <version>0.0.97</version>
     <title>Quaternion</title>
     <authors>Quaternion team</authors>
     <owners>tunisiano</owners>
@@ -10,9 +10,16 @@
     <projectUrl>https://github.com/Fxrh/Quaternion</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/quaternion.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Quaternion is a cross-platform Qt5-based desktop IM client for Matrix, a reference desktop application using [libqmatrixclient SDK](https://matrix.org/docs/projects/sdk/libqmatrixclient.html).
+    <description><![CDATA[## Quaternion
+Quaternion is a cross-platform Qt5-based desktop IM client for Matrix, a reference desktop application using [libqmatrixclient SDK](https://matrix.org/docs/projects/sdk/libqmatrixclient.html).
 
-Most of talking around Quaternion happens in Matrix room: #quaternion:matrix.org. Welcome, and have fun!</description>
+Most of talking around Quaternion happens in Matrix room: #quaternion:matrix.org. Welcome, and have fun!
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>An IM client for the Matrix protocol.</summary>
     <releaseNotes>[Changelog](https://github.com/Fxrh/Quaternion/releases)</releaseNotes>
     <tags>qt qt5 matrix quaternion cross-platform</tags>
