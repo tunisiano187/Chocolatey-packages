@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>jitsi-meet-electron</id>
-    <version>2025.1.1</version>
+    <version>2025.2.0</version>
     <title>Jitsi Meet Electron</title>
     <authors>Jitsi Meet Electron community</authors>
     <owners>tunisiano</owners>
@@ -30,7 +30,7 @@ It is therefore suggested to use `choco-upgrade-all-at-startup` or `choco-upgrad
 ![screenshot](https://raw.githubusercontent.com/jitsi/jitsi-meet-electron/master/screenshot.png)
 ]]></description>
     <summary>Desktop application for Jitsi Meet built with Electron.</summary>
-    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2025.1.1</releaseNotes>
+    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2025.2.0</releaseNotes>
     <copyright />
     <tags>jitsi webinar webcam meeting electron</tags>
     <projectSourceUrl>https://github.com/jitsi/jitsi-meet-electron</projectSourceUrl>
