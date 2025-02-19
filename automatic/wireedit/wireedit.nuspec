@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wireedit</id>
-    <version>3.13.329</version>
+    <version>3.14.421</version>
     <title>WireEdit</title>
     <owners>tunisiano</owners>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wireedit</packageSourceUrl>
