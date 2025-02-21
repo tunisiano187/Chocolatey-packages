@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>openhab</id>
-    <version>4.3.2</version>
+    <version>4.3.3</version>
     <title>openHAB</title>
     <authors>openHAB Community and the openHAB Foundation</authors>
     <owners>tunisiano</owners>
