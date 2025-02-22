@@ -5,7 +5,11 @@ Snappy Driver Installer Origin is a fork of Snappy Driver Installer starting at 
 
 Snappy Driver Installer Origin remains a free, open source project. Free means it costs you nothing to download and use. Free means it is free of adware, malware, backdoors, unwanted third party software or other dodgy stuff.
 
-#### INSTALL MISSING DRIVERS AND UPDATE OLD DRIVERS
+### Usage
+
+Launch the SDIO_auto.bat file and it will start the software depending on your system
+
+### INSTALL MISSING DRIVERS AND UPDATE OLD DRIVERS
 
 If you've lost your driver discs, you're unable to find drivers on the manufacturer's website or Windows Update can't configure your hardware, use this tool to quickly find and install all missing drivers.
 
