@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>hass-agent</id>
+    <version>2022.14.0</version>
+    <title>Home assistant agent</title>
+    <authors>LAB02-Research</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://github.com/LAB02-Research/HASS.Agent/raw/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/LAB02-Research/HASS.Agent</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@c064448cf153b7a97d4a369af2b8f4098d15eaa7/icons/hass-agent.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Home assistant agent
+HASS.Agent is a Windows-based client (companion) application for Home Assistant, developed in .NET 6.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <summary>Agent to send information from windows to home assistant</summary>
+    <tags>hass home assistant agent admin</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/hass-agent</packageSourceUrl>
+    <releaseNotes> #### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
