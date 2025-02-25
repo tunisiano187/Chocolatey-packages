@@ -1,7 +1,7 @@
 ﻿$packageName    = 'bzflag'
 $installerType  = 'exe'
-$url            = 'https://download.bzflag.org/bzflag/windows/2.4.26/bzflag-2.4.26.exe'
-$checksum       = '3c84287e41c4ed697f13a2116bdd05f11098d2c4e262be0f080e0c019edbd96b'
+$url            = 'https://download.bzflag.org/bzflag/windows/2.4.28/bzflag-2.4.28.exe'
+$checksum       = '689f625ca50d8782ba09ebf2f88a005d2feeb70e3699b1b0f95649f41b5946eb'
 $checksumType   = 'sha256'
 $silentArgs     = '/S'
 $validExitCodes = @(0)
