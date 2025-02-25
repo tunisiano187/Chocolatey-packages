@@ -21,7 +21,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Agent to send information from windows to home assistant</summary>
     <tags>hass home assistant agent admin</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/hass-agent</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/hass-agent</packageSourceUrl>
     <releaseNotes> #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
