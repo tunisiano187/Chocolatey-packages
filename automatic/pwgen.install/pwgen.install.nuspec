@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>pwgen.install</id>
-    <version>3.5.5</version>
+    <version>3.5.6</version>
     <title>PWGen (Install)</title>
     <authors>Christian Thoeing</authors>
     <owners>tunisiano</owners>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>searchmyfiles</id>
-    <version>3.30</version>
+    <version>3.31.0</version>
     <title>SearchMyFiles</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
