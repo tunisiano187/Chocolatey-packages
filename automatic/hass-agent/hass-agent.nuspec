@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/hass-agent/HASS.Agent/raw/main/LICENSE</licenseUrl>
     <projectUrl>https://github.com/hass-agent/HASS.Agent</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@c064448cf153b7a97d4a369af2b8f4098d15eaa7/icons/hass-agent.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@f3bf09599f415d05f094d8c9356b03cde89dff76/icons/hass-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Home assistant agent
 HASS.Agent is a Windows-based client (companion) application for Home Assistant, developed in .NET 6.
