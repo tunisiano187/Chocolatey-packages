@@ -7,8 +7,8 @@
     <title>Home assistant agent</title>
     <authors>LAB02-Research</authors>
     <owners>tunisiano</owners>
-    <licenseUrl>https://github.com/LAB02-Research/HASS.Agent/raw/main/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/LAB02-Research/HASS.Agent</projectUrl>
+    <licenseUrl>https://github.com/hass-agent/HASS.Agent/raw/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/hass-agent/HASS.Agent</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@c064448cf153b7a97d4a369af2b8f4098d15eaa7/icons/hass-agent.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Home assistant agent
