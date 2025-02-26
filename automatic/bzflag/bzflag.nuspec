@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>bzflag</id>
-    <version>2.4.28</version>
+    <version>2.4.27</version>
     <title>BZFlag (Install)</title>
     <authors>Scott Wichser</authors>
     <owners>tunisiano</owners>
@@ -33,7 +33,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>https://github.com/BZFlag-Dev/bzflag/releases</releaseNotes>
     <copyright>Copyright © 2017 Scott Wichser</copyright>
     <tags>bzflag opengl game multiplayer arcade tank battlezone admin</tags>
-    <projectSourceUrl>https://github.com/BZFlag-Dev/bzflag</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bzflag</packageSourceUrl>
     <docsUrl>https://wiki.bzflag.org/Main_Page</docsUrl>
     <mailingListUrl>https://forums.bzflag.org/</mailingListUrl>
