@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url          = 'https://github.com/LAB02-Research/HASS.Agent/releases/download/2022.14.0/HASS.Agent.Installer.exe'
+$url          = 'https://github.com/hass-agent/HASS.Agent/releases/download/2.1.1/HASS.Agent.Installer.exe'
 $checksumType = 'sha256'
-$checksum     = '7891381611435f304be5f303032788f87b4e6696ba0bda42c242d46dc5916134'
+$checksum     = '19c96bba6dda99e596c05f55b7b6499aa5af3f3769a530f48c22cea87034a364'
 
 $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
