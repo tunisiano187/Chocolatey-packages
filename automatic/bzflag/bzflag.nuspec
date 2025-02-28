@@ -4,7 +4,7 @@
     <id>bzflag</id>
     <version>2.4.28</version>
     <title>BZFlag (Install)</title>
-    <authors>Scott Wichser</authors>
+    <authors>BZFlag Developers</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/BZFlag-Dev/bzflag/2.4/COPYING</licenseUrl>
     <projectUrl>https://www.bzflag.org/</projectUrl>
@@ -31,10 +31,11 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>BZFlag is a 3D networked multi-player multi-platform tank battle game.</summary>
     <releaseNotes>https://github.com/BZFlag-Dev/bzflag/releases</releaseNotes>
-    <copyright>Copyright © 2017 Scott Wichser</copyright>
+    <copyright>Copyright © 2025 Tim Riker</copyright>
     <tags>bzflag opengl game multiplayer arcade tank battlezone admin</tags>
+    <projectSourceUrl>https://github.com/BZFlag-Dev/bzflag</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bzflag</packageSourceUrl>
-    <docsUrl>https://wiki.bzflag.org/Main_Page</docsUrl>
+    <docsUrl>https://www.bzflag.org/documentation/</docsUrl>
     <mailingListUrl>https://forums.bzflag.org/</mailingListUrl>
     <bugTrackerUrl>https://github.com/BZFlag-Dev/bzflag/issues</bugTrackerUrl>
   </metadata>
