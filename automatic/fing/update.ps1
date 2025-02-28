@@ -16,8 +16,8 @@ function global:au_GetLatest {
 	$File = Join-Path $env:TEMP "fing.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
-	if($version -eq '2.4.1') {
-		$version = '2.4.1.202012201'
+	if($version -eq '3.8.1.633') {
+		$version = '3.8.1.634'
 	}
 	Write-Output "Version : $version"
 
