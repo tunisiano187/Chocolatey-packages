@@ -11,7 +11,7 @@ $packageArgs = @{
   checksum        = $checksum
   checksumType    = $checksumType
 
-  silentArgs	    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  silentArgs	    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
 }
 
 Install-ChocolateyPackage @packageArgs
