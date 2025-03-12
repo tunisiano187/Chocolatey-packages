@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>drivergenius</id>
-    <version>24.0.0.153</version>
+    <version>24.0.0.158</version>
     <title>Driver Genius</title>
     <authors>Driver-Soft Inc</authors>
     <owners>tunisiano</owners>
