@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>cura-lulzbot</id>
-    <version>4.13.10</version>
+    <version>4.13.15</version>
     <title>Cura LulzBot Edition (Install)</title>
     <authors>Aleph Objects Inc., David Braam</authors>
     <owners>tunisiano</owners>
@@ -18,7 +18,7 @@ The latest version features an updated user interface, more slicing options, an 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Cura LE is a Free Software program for LulzBot 3D printers.</summary>
     <releaseNotes>* [Releases](https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/-/releases)</releaseNotes>
