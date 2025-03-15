@@ -4,7 +4,7 @@
   <metadata>
     <id>digikam</id>
     <title>digiKam</title>
-    <version>8.2.0</version>
+    <version>8.6.0</version>
     <authors>digiKam team</authors>
     <owners>tunisiano</owners>
     <summary>Manage your photographs like a professional</summary>
@@ -20,7 +20,7 @@ digiKam is an advanced digital photo management application for KDE, which makes
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/digikam</packageSourceUrl>
     <projectUrl>https://www.digikam.org/</projectUrl>
