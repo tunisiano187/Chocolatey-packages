@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>quaternion</id>
-    <version>0.0.97</version>
+    <version>0.0.97.1</version>
     <title>Quaternion</title>
     <authors>Quaternion team</authors>
     <owners>tunisiano</owners>

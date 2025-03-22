@@ -7,13 +7,13 @@ Package can be verified like this:
 
 1. Download the following installer(s):
 
-    32-bit: https://github.com/quotient-im/Quaternion/releases/download/0.0.97/quaternion-0.0.97.zip
+    32-bit: https://github.com/quotient-im/Quaternion/releases/download/0.0.97.1/quaternion-0.0.97.1.zip
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use PowerShell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32 : 5FC9146736A64CABA791483523A733F374DEF2C769E7A4410B1B583A1331332A
+   checksum32 : 7525DDA8363638BFB29533CE86C132B2B9EE8A353309F955FEA8CCE31077CD1D
 
 The included 'LICENSE.txt' file have been obtained from:
 https://github.com/QMatrixClient/Quaternion/blob/master/COPYING
