@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://software.lulzbot.com/Windows/Cura%20LulzBot%20Edition%204.13/4.13.15/Cura_LulzBot_Edition-4.13.15-amd64.exe'
-$checksum32 = '4e41e3fe44f28756a9319142d793142e39e10f0e4e4893eed1809a1fb38c1c7a'
+$url32      = 'https://software.lulzbot.com/Windows/Cura%20LulzBot%20Edition%204.13/4.13.16/Cura_LulzBot_Edition-4.13.16-amd64.exe'
+$checksum32 = '485de3bdc50ced0bf15c41888f26a8c0ebb775a73e32e0827026ea9ab9428017'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
