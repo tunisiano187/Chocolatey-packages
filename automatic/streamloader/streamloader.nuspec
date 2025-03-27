@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>streamloader</id>
-    <version>0.0</version>
+    <version>1.7.2</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/streamloader</packageSourceUrl>
     <owners>tunisiano</owners>
     
@@ -17,13 +17,25 @@
     
     <tags>streamloader youtube twitch</tags>
     <summary>Watch Twitch, Beam, Smashcast streams, Youtube videos and many more in Mediaplayer</summary>
-    <description>__REPLACE__MarkDown_Okay 
+    <description><![CDATA[## StreamLoader
 
+---
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-</description>
+With X-StreamLoader you can open and record your favorite live streams or Online videos (VOD) in a Mediaplayer like VLC on PC, Tablet or Notebook only with some few clicks.
+X-StreamLoader supports a lot of Stream/Videoplatforms like Twitch, Youtube, Smashcast and many more.
+
+---
+
+#### [choco://streamloader](choco://streamloader)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+
+---
+]]></description>
     <releaseNotes>https://xstreamloader.techweb.at/en/changelog.html</releaseNotes>
     <dependencies>
       <dependency id="streamlink" />
