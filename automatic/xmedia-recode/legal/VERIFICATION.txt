@@ -6,15 +6,15 @@ The installer have been downloaded from the official mirror and can be verified 
 
 1. Download the following installer(s):
 
-x32: https://www.xmedia-recode.de/download/XMediaRecode3607_setup.exe
-x64: https://www.xmedia-recode.de/download/XMediaRecode3607_x64_setup.exe
+x32: https://www.xmedia-recode.de/download/XMediaRecode3609_setup.exe
+x64: https://www.xmedia-recode.de/download/XMediaRecode3609_x64_setup.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksum32: 588C0046AB794D65A9D74FEC256369518DE69842C79AD17118D558736A16D605
-checksum64: 172F11E72D8E615A1DC8B579860BFE75588B16043CA072A8533DFB23BCB9BE79
+checksum32: 4EBD54DF3BC42502E51ED9E17C6F62B2F5B5774670D52AF7D9AE6E8CA7D843C8
+checksum64: C6D560D6349A663B47F2D63262CE110843999EE7D4444C25F968687DE5BB3911
 checksumtype: sha256
 
 The included 'LICENSE.txt' file have been obtained from:
