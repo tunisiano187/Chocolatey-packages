@@ -9,14 +9,14 @@ and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/nukeop/nuclear/releases/download/v0.6.44/nuclear.Setup.0.6.44.exe>
+  url: <https://github.com/nukeop/nuclear/releases/download/v0.6.45/nuclear.Setup.0.6.45.exe>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum:51FA651586FC330461CEDFE9FCC35C517C5CE997F2982DE496D19C965C55A8F1
+  checksum:9C0EF8097C8518BC134FC78FF2276D6C1021C7C7ECE6E59D6073B205587B5A33
 
 Using AU:
 
