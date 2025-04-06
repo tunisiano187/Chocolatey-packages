@@ -20,10 +20,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$jbs = (Invoke-WebRequest -Uri $releases -UseBasicParsing)
 	$url32 = ($jbs.Links | Where-Object {$_ -match '\.exe'})[0].href
-	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$regexPattern = 'Version (\d+(\.\d+)*)'
-	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	$version = $versionMatch.Matches[0].Groups[1].Value
+	$version = Get-Version (($jbs.Links | Where-Object {$_ -match '\.zip'})[0].href)
 
 	$Latest = @{ URL32 = $url32; Version = Get-FixVersion $version -OnlyFixBelowVersion $padVersionUnder }
 	return $Latest
