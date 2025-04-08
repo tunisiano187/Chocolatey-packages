@@ -1,8 +1,8 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '-q'
-$url            = 'https://download.ej-technologies.com/install4j/install4j_windows-x64_11_0_2.exe'
-$checksum       = 'f3d19301aae5bba319d0a9b9e54452608e1854b3e504412250ad40c8d89eea54'
+$url            = 'https://download.ej-technologies.com/install4j/install4j_windows-x64_11_0_3.exe'
+$checksum       = 'a2a6f21e6d463db3e14760d04589fb69dd9636ef2b446d4b106bcb954aa660a2'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)
 
