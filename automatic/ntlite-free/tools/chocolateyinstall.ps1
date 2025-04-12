@@ -2,10 +2,10 @@
 $packageName    = 'ntlite-free'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://downloads.ntlite.com/files/NTLite_setup_x86.exe'
-$checksum       = 'f9a472315520bcd30f4831edecd24b622bb3b1f9141c78e23059a16aac8f0f87'
+$checksum       = '59d887135e2167dfc840d6ec9784e7295713e9aa28ea86950ce1f3c14971dbfe'
 $checksumType   = 'sha256'
 $url64          = 'https://downloads.ntlite.com/files/NTLite_setup_x64.exe'
-$checksum64     = '67577541d764e3b0bf697daf01db961db12b3c58770cc2d231bf5a1e328e7c7a'
+$checksum64     = '64789884083578502760bf67288f313cb9f21a1f9219fd003740a506f9fe4ec8'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
