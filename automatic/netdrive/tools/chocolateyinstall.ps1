@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'netdrive'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://downloads.bdrive.com/netdrive/builds/d1df5a2cfcc34ce48bb730a261169594/NetDrive3-3.17.960.msi'
-$checksum       = '42648DD2A3FF6E7B25C3E1CE1463FE4A12805C1510FC5BFEB866A184FC2A2BE2'
+$url            = 'https://downloads.bdrive.com/netdrive/builds/13f88b1f05b84c5897d6ac69a37ac8b6/NetDrive3-3.18.1125.msi'
+$checksum       = '1E922784357D7DEA59DCC8279DC158E157F16437BCE130312FB053DCBB6164D9'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
