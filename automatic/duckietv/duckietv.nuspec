@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>duckietv</id>
-    <version>2025.404.1411</version>
+    <version>2025.418.722</version>
     <title>DuckieTV</title>
     <authors>SchizoDuckie</authors>
     <owners>tunisiano</owners>
@@ -33,7 +33,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>DuckieTV is the TV-Show calendar you've been waiting for. A personalized calendar that tracks the shows you like that can search on multiple torrent sites</summary>
-    <releaseNotes>https://github.com/DuckieTV/Nightlies/releases/tag/nightly-202504041411</releaseNotes>
+    <releaseNotes>https://github.com/DuckieTV/Nightlies/releases/tag/nightly-202504180722</releaseNotes>
     <copyright />
     <tags>tv series-database calendar angularjs javascript episodes search-engine torrent-client remote-control angular nwjs qbittorrent series trakt automation utorrent js admin</tags>
     <projectSourceUrl>https://github.com/SchizoDuckie/DuckieTV</projectSourceUrl>
