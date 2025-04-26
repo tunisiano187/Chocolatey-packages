@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>duplicati.portable</id>
-    <version>2.1.0.116</version>
+    <version>2.1.0.117</version>
     <title>Duplicati (Portable)</title>
     <authors>Kenneth Skovhede and Rene Stach</authors>
     <owners>tunisiano</owners>
