@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>nmm</id>
-    <version>0.88.0</version>
+    <version>0.88.1</version>
     <title>Nexus Mod Manager</title>
     <authors>https://github.com/Nexus-Mods/Nexus-Mod-Manager/graphs/contributors</authors>
     <owners>tunisiano</owners>
