@@ -1,10 +1,10 @@
 ﻿$installerType = 'exe'
 $silentArgs = '/S'
-$url = 'https://ftp.osuosl.org/pub/deluge/windows/deluge-2.1.1-win32-setup.exe'
-$checksum = '5f88c44f22937c43e765b08e9391b5978394a821f81eaca99baa6c2831d6224d'
+$url = 'https://ftp.osuosl.org/pub/deluge/windows/deluge-2.2.0-win32-setup.exe'
+$checksum = 'c35dbaea459fad5a3e45910735c1fffdfbbeab24296a0820878312df7285c2be'
 $checksumType = 'sha256'
-$url64 = 'https://ftp.osuosl.org/pub/deluge/windows/deluge-2.1.1-win64-setup.exe'
-$checksum64 = '183f401f088cbb973633dbeeb16ded1326b7aa567acfc9de32855d5be14653ae'
+$url64 = 'https://ftp.osuosl.org/pub/deluge/windows/deluge-2.2.0-win64-setup.exe'
+$checksum64 = 'b2e414dd9cf637d3ea9f5b783972bb36cbb801134b6df79d67c1c08f68f4e889'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0)
 

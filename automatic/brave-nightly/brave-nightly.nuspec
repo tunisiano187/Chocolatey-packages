@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>brave-nightly</id>
-    <version>1.80.14-nightly</version>
+    <version>1.80.18-nightly</version>
     <title>Brave Browser (Nightly)</title>
     <authors>Brave Software Inc.</authors>
     <owners>tunisiano</owners>
