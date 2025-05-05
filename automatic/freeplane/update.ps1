@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://sourceforge.net/projects/freeplane/files/freeplane%20stable/'
+$releases = 'https://sourceforge.net/projects/freeplane/rss?path=/freeplane%20stable'
 
 function global:au_SearchReplace {
 	@{
@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeplane/freeplane/1.11.x/license.txt" -OutFile "legal\LICENSE.txt"
+	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeplane/freeplane/1.12.x/license.txt" -OutFile "legal\LICENSE.txt"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $Latest.URL32 -keep
 	Move-Item -Path $FileVersion.TempFile -Destination "tools\Freeplane-Setup-with-Java-$($Latest.Version).exe"
@@ -26,7 +26,12 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-Setup-with'} | Where-Object {$_ -match '.exe'} | Where-Object {$_ -match "https"}).href | Select-Object -First 1
+	[xml]$rss = Invoke-WebRequest -Uri $releases | Select-Object -ExpandProperty Content
+	$items = $rss.rss.channel.item | Where-Object {
+		($_.title -like "*-Setup-with*.exe*") -or ($_.link -like "*-Setup-with*.exe*")
+	} | Select-Object -First 1
+
+	$url32 = $items.link
 	$version = ($url32.Split('-|/') | Where-Object {$_ -match ".exe"}).replace('.exe','').replace('u','-u')
 
 	if($version -eq "1.11.12") {
