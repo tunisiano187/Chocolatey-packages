@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windowsfirewallcontrol</id>
-    <version>6.14.0.0</version>
+    <version>6.15.0.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/windowsfirewallcontrol</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>windowsfirewallcontrol (Install)</title>
