@@ -23,10 +23,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$url64=$releases
 
-	$page = Invoke-WebRequest -Uri "https://install.appcenter.ms/api/v0.1/apps/cloudflare/1.1.1.1-windows-1/distribution_groups/release/public_releases?scope=tester&top=1" -UseBasicParsing
-	$regexPattern = '"version":"(\d+(\.\d+)*)'
-	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	$version = $versionMatch.Matches[0].Groups[1].Value
+	$version = (Get-Version(Get-RedirectedUrl($url64))).Version
 
 	$Latest = @{ URL64 = $url64; Version = $version}
 
