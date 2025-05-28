@@ -28,7 +28,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	[xml]$rss = Invoke-WebRequest -Uri $releases | Select-Object -ExpandProperty Content
 	$items = $rss.rss.channel.item | Where-Object {
-		($_.title -like "*-Setup-with*.exe*") -or ($_.link -like "*-Setup-with*.exe*")
+		($_.title -like "*-Setup-with*.exe*") -or ($_.link -like "*Freeplane-Setup*.exe*")
 	} | Select-Object -First 1
 
 	$url32 = $items.link
