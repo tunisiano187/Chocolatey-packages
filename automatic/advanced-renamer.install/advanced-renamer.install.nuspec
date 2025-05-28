@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>advanced-renamer.install</id>
-    <version>3.95.4</version>
+    <version>4.11</version>
     <title>Advanced Renamer (Install)</title>
     <authors>Kim Jensen</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,11 @@
     <projectUrl>https://www.advancedrenamer.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e677f9c61645ae9820397c8c820442f0e5123cce/icons/advanced-renamer.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description># Advanced Renamer
+    <description><![CDATA[## Advanced Renamer (Install)
+
+# Advanced Renamer
+
+![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@5b53749ca10feabe274f1de02f95881e95efa0e6/icons/advanced-renamer-screenshot.png)
 
 Advanced Renamer is a program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.
 
@@ -33,7 +37,16 @@ MP3 and other music files often have messed up names and contain weird character
 Ever wanted to add the codec or the resolution of a video to the filename? With the video tags you can add various information about video and audio content to the names.
 
 ## TV shows
-Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.</description>
+Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.
+
+#### [choco://advanced-renamer.install](choco://advanced-renamer.install)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Batch file renaming utility for Windows.</summary>
     <releaseNotes>https://www.advancedrenamer.com/versionlog</releaseNotes>
     <copyright />

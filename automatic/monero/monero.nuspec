@@ -4,12 +4,12 @@
   <metadata>
     <id>monero</id>
     <title>Monero Wallet</title>
-    <version>0.18.3.3</version>
+    <version>0.18.4.0</version>
     <authors>Monero Project</authors>
     <owners>tunisiano</owners>
     <summary>Monero: the secure, private, untraceable cryptocurrency</summary>
     <description><![CDATA[# Monero
-Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork.
+Monero (XMR) is a cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork.
 
 Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
 
@@ -18,19 +18,18 @@ This software is detected as virus by many sources, the developper say to add an
 [Virus related issue](https://www.getmonero.org/get-started/faq/#antivirus)
 
 ### Community
-* [Forum](https://forum.getmonero.org/)
+* [Forum](https://forum.monero.space/)
 * [Bitcointalk](https://bitcointalk.org/index.php?topic=583449.0)
 * [Reddit](http://www.reddit.com/r/monero)
 
 ### Documentation
-* [FAQ](https://monero.org/faq/)
-* [Services](http://monero.org/services/)
-* [Developer blog](https://getmonero.org/blog/)
+* [FAQ](https://www.getmonero.org/get-started/faq/)
+* [Developer blog](https://www.getmonero.org/blog/)
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/monero</packageSourceUrl>
     <projectUrl>https://www.getmonero.org/</projectUrl>

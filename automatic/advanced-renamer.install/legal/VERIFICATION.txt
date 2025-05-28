@@ -8,14 +8,14 @@ location and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/wez/atomicparsley/releases/download/20240608.083822.1ed9031/AtomicParsleyWindows.zip>
+  url: <https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_11.exe>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: CC7C5A7DCABA28869F3819E4A57F382DC0FF307B7B013F9BFFD028605AE6F52D
+  checksum: C0D3895F789EA89FACA60766D3ED7CF4CB8D15BD57547E4A69C7EAF86370BB98
 
 Using AU:
 
