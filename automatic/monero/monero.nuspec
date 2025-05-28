@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>monero</id>
+    <title>Monero Wallet</title>
+    <version>0.18.3.3</version>
+    <authors>Monero Project</authors>
+    <owners>tunisiano</owners>
+    <summary>Monero: the secure, private, untraceable cryptocurrency</summary>
+    <description><![CDATA[# Monero
+Monero (XMR) is a new cryptocurrency which is based on CryptoNote code and is not a Bitcoin fork.
+
+Main Monero features that were inherited from CryptoNote are Ring Signatures and unlinkable transactions.
+
+## Attention ! 
+This software is detected as virus by many sources, the developper say to add an exception to your antivirus.
+[Virus related issue](https://www.getmonero.org/get-started/faq/#antivirus)
+
+### Community
+* [Forum](https://forum.getmonero.org/)
+* [Bitcointalk](https://bitcointalk.org/index.php?topic=583449.0)
+* [Reddit](http://www.reddit.com/r/monero)
+
+### Documentation
+* [FAQ](https://monero.org/faq/)
+* [Services](http://monero.org/services/)
+* [Developer blog](https://getmonero.org/blog/)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+]]></description>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/monero</packageSourceUrl>
+    <projectUrl>https://www.getmonero.org/</projectUrl>
+    <projectSourceUrl>https://github.com/monero-project/bitmonero</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/monero-project/bitmonero/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@9d9ac8e09c030b5b9411fa610a59cfedb978ad7c/icons/monero.png</iconUrl>
+    <tags>xmr p2p anonymity cryptonote cryptonight cpu-mining</tags>
+    <copyright>Monero Project</copyright>
+    <licenseUrl>https://github.com/monero-project/bitmonero#license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+#### Program
+* [News](https://www.getmonero.org/blog/)
+* [Roadmap](https://www.getmonero.org/resources/roadmap/)
+* [Changelog](https://github.com/monero-project/bitmonero/blob/development/ReleaseNotes.txt)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
