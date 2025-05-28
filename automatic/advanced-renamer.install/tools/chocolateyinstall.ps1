@@ -4,7 +4,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName      = 'advanced-renamer.install'
   fileType         = 'EXE'
-  file64           = Get-Item "$toolsDir\*x64.exe"
+  file64           = Get-Item "$toolsDir\*.exe"
   softwareName     = 'Advanced Renamer*'
   silentArgs       = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
 }

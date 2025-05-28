@@ -1,0 +1,24 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download
+location and can be verified by doing the following:
+
+1. Download the following:
+
+  url: <https://github.com/wez/atomicparsley/releases/download/20240608.083822.1ed9031/AtomicParsleyWindows.zip>
+
+2. You can obtain the checksum using one of the following methods:
+  - Use powershell function 'Get-FileHash'
+  - Use Chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum: CC7C5A7DCABA28869F3819E4A57F382DC0FF307B7B013F9BFFD028605AE6F52D
+
+Using AU:
+
+  Get-RemoteChecksum
+
+The file 'LICENSE.txt' has been obtained from <https://www.advancedrenamer.com/user_guide/license>

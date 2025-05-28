@@ -7,12 +7,10 @@
     <authors>Kim Jensen</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://www.advancedrenamer.com/user_guide/license</licenseUrl>
-    <projectUrl>http://www.advancedrenamer.com/</projectUrl>
+    <projectUrl>https://www.advancedrenamer.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e677f9c61645ae9820397c8c820442f0e5123cce/icons/advanced-renamer.install.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description># Advanced Renamer
-
-![](https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@5b53749ca10feabe274f1de02f95881e95efa0e6/icons/advanced-renamer-screenshot.png)
 
 Advanced Renamer is a program for renaming multiple files and folders at once. By configuring renaming methods the names can be manipulated in various ways.
 
@@ -37,11 +35,11 @@ Ever wanted to add the codec or the resolution of a video to the filename? With 
 ## TV shows
 Add episode title or airdate to video files containing TV Shows after importing show information from the tvmaze.com website.</description>
     <summary>Batch file renaming utility for Windows.</summary>
-    <releaseNotes>http://www.advancedrenamer.com/versionlog</releaseNotes>
+    <releaseNotes>https://www.advancedrenamer.com/versionlog</releaseNotes>
     <copyright />
     <tags>advanced-renamer admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/advanced-renamer.install</packageSourceUrl>
-    <docsUrl>http://www.advancedrenamer.com/user_guide/gettingstarted</docsUrl>
+    <docsUrl>https://www.advancedrenamer.com/user_guide/gettingstarted</docsUrl>
     <provides>advanced-renamer</provides>
   </metadata>
   <files>
