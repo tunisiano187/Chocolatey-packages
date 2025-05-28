@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module Chocolatey-AU
+import-module AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://github.com/monero-project/monero/releases/latest'
