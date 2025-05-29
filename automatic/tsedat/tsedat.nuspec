@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tsedat</id>
-    <version>7.64.2818</version>
+    <version>7.66.2820</version>
     <title>TheSage English Dictionary and Thesaurus</title>
     <authors>Sequence Publishing</authors>
     <owners>tunisiano</owners>
