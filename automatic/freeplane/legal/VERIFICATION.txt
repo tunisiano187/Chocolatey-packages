@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://sourceforge.net/projects/freeplane/files/freeplane%20stable/archive/1.12.10/Freeplane-Setup-touchscreen-1.12.10.exe/download
+    x32: https://sourceforge.net/projects/freeplane/files/freeplane%20stable/archive/1.12.11/Freeplane-Setup-touchscreen-1.12.11.exe/download
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://sourceforge.net/projects/freeplane/files/freeplane%20stable/archive/1.12.10/Freeplane-Setup-touchscreen-1.12.10.exe/download
+        Get-RemoteChecksum https://sourceforge.net/projects/freeplane/files/freeplane%20stable/archive/1.12.11/Freeplane-Setup-touchscreen-1.12.11.exe/download
 
 3.  Compare to Checksum:
 
-    checksum32: E6AE06FC12BA12594789D5382CB2950A6FC06965ECF92188E847767890206BF6
+    checksum32: 29D8EA11BF3BF65976A65340C842FB9D4EABE98B0CDE48599F5464C6375300C5
