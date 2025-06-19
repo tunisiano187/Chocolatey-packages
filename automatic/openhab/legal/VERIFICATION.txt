@@ -6,14 +6,14 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://github.com/openhab/openhab-distro/releases/download/5.0.0.M2/openhab-5.0.0.M2.zip
+x86: https://github.com/openhab/openhab-distro/releases/download/5.0.0.M3/openhab-5.0.0.M3.zip
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum: 257CEEDE1D35905E2FCCFBCC074EFDA5DEC895EB86DE538B1DAB1D91E7DA01D8
+checksum: 6EC2E163522C56AE530A285260F7FC0D2441F9DFEFBA9EE7C5D7E3A9723C240A
 
 The license is available here:
 https://github.com/openhab/openhab-distro/blob/master/LICENSE
