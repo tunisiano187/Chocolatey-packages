@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://www.mblock.cc/en/download/'
+$releases = 'https://mblock.cc/pages/downloads'
 
 function global:au_SearchReplace {
 	@{
