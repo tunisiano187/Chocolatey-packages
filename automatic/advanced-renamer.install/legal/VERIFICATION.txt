@@ -8,14 +8,14 @@ location and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_12.exe>
+  url: <https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_13.exe>
 
 2. You can obtain the checksum using one of the following methods:
   - Use powershell function 'Get-FileHash'
   - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: 210BD5C5331F99AD207386CE2EEE1D387EC398834B2C9DDB97E48048E85F1198
+  checksum: 3CF75E55F08B3049F4F6B556B7C6CA1219820FEF5D337EDCDB173CE8EE8AE769
 
 Using AU:
 
