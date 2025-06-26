@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ost2</id>
-    <version>2.22.0038</version>
+    <version>2.30.0042</version>
     <title>OST2 Free (Install)</title>
     <authors>4Team Corporation</authors>
     <owners>tunisiano</owners>
