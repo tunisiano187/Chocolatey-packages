@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url           = 'https://www.winabilitysoftware.com/files/ActiveExitLite-24.5.0-setup.exe'
+$url           = 'https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_13.exe'
 $checksumType  = 'sha256'
-$checksum      = '4D6FFF49D6FEAA1159A5735337440DF8F2E03A925D9BC38ABC767734018D85D0'
+$checksum      = '906715ABEB84F1CA3677CC4861B2BB443AFA427DC92AE7E4E9B49223267F7704'
 
 
 $packageArgs = @{
