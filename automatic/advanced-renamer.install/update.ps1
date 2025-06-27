@@ -6,11 +6,11 @@ $releases = 'https://www.advancedrenamer.com/download'
 
 function global:au_SearchReplace {
 	@{
-    	".\legal\VERIFICATION.txt" = @{
-    		"(?i)(^\s*url(32)?\:\s*).*"        = "`${1}<$($Latest.URL32)>"
-    		"(?i)(^\s*checksum(32)?\:\s*).*"   = "`${1}$($Latest.Checksum32)"
-    		"(?i)(^\s*checksum\s*type\:\s*).*" = "`${1}$($Latest.ChecksumType32)"
-    	}
+    	'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
+		}
 	}
 }
 

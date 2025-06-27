@@ -57,6 +57,5 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
