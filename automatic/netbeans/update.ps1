@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 import-module au
 
-$releases = 'https://netbeans.apache.org/front/main/index.html'
-$github = 'https://github.com/apache/netbeans/releases/latest'
+$releases = 'https://installers.friendsofapachenetbeans.org/'
+$github = 'https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/latest'
 $Owner = $github.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $github.Split('/') | Select-Object -Last 1 -Skip 2
 
@@ -20,22 +20,24 @@ function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_GetLatest {
 	$Page = Invoke-WebRequest -Uri $releases -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$ReleasePage = ($Page.Links | Where-Object {$_ -match "download/n"}).href
+	$ReleasePage = ($Page.Links | Where-Object {$_ -match "download/"}).href
 	$ReleasePage = [Uri]::new([Uri]::new($releases), $ReleasePage).ToString()
 	$Page = Invoke-WebRequest -Uri $ReleasePage -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$Links = ($Page.Links | Where-Object {$_ -match "exe"}).href
-	$closestrelease = $Links | Where-Object {$_ -match "exe$"}
-	$release = ((Invoke-WebRequest -Uri $closestrelease).Links | Where-Object {$_.href -match "exe$"} | Select-Object -First 1).href
-	$ChecksumLink = ($Links | Where-Object {$_ -match "exe."} | Where-Object {$_ -notmatch "asc"})
-	$ChecksumType = $ChecksumLink.split(".")[-1]
-	$Checksum = (invoke-WebRequest -Uri $ChecksumLink).content.split(' ')[0]
+	$release = ($Page.Links | Where-Object {$_ -match "exe"}).href
 
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 
-	$version=$release.Split('/') | Where-Object {$_ -match "[0-9][0-9]"} | Where-Object {$_ -notmatch 'exe'}
+	$version=($release.Split('/') | Where-Object {$_ -match "[0-9][0-9]"} | Where-Object {$_ -notmatch 'exe'}).Substring(1).replace('-','.0-')
 	if($version -notmatch '\.') {
 		$version+=".0"
 	}
