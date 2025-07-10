@@ -29,7 +29,7 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
 	$Page = Invoke-WebRequest -Uri $releases -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$ReleasePage = ($Page.Links | Where-Object {$_ -match "download/"}).href
+	$ReleasePage = ($Page.Links | Where-Object {$_ -match "download/"}).href | Where-Object {$_ -match "exe"} | Select-Object -First 1
 	$ReleasePage = [Uri]::new([Uri]::new($releases), $ReleasePage).ToString()
 	$Page = Invoke-WebRequest -Uri $ReleasePage -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
 	$release = ($Page.Links | Where-Object {$_ -match "exe"}).href
