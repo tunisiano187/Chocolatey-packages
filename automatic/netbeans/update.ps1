@@ -30,7 +30,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$Page = Invoke-WebRequest -Uri $releases -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
 	$release = ($Page.Links | Where-Object {$_ -match "download/"}).href | Where-Object {$_ -match "exe"} | Select-Object -First 1
-	
+
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	#Update-Metadata -key "releaseNotes" -value $tags.html_url
 
