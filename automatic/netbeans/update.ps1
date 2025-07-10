@@ -29,13 +29,10 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
 	$Page = Invoke-WebRequest -Uri $releases -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$ReleasePage = ($Page.Links | Where-Object {$_ -match "download/"}).href | Where-Object {$_ -match "exe"} | Select-Object -First 1
-	$ReleasePage = [Uri]::new([Uri]::new($releases), $ReleasePage).ToString()
-	$Page = Invoke-WebRequest -Uri $ReleasePage -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$release = ($Page.Links | Where-Object {$_ -match "exe"}).href
-
+	$release = ($Page.Links | Where-Object {$_ -match "download/"}).href | Where-Object {$_ -match "exe"} | Select-Object -First 1
+	
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	Update-Metadata -key "releaseNotes" -value $tags.html_url
+	#Update-Metadata -key "releaseNotes" -value $tags.html_url
 
 	$version=($release.Split('/') | Where-Object {$_ -match "[0-9][0-9]"} | Where-Object {$_ -notmatch 'exe'}).Substring(1).replace('-','.0-')
 	if($version -notmatch '\.') {
