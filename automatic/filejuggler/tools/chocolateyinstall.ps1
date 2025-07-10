@@ -3,8 +3,8 @@ $packageName    = $env:ChocolateyPackageName
 $installerType  = 'EXE'
 $silentArgs     = '/qb'
 $url            = 'https://www.filejuggler.com/download/filejuggler.exe'
-$checksum       = ''
-$checksumtype	= ''
+$checksum       = '8EE71EF21C9DB1C54B71BBE0A55BF68F2AAD6730AA8F3E235CBBEEA5AFEBF43B'
+$checksumtype	= 'sha256'
 
 $scriptPath     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ahkFile        = Join-Path $scriptPath "chocolateyInstall.ahk"
