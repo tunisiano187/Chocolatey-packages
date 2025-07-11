@@ -2,8 +2,8 @@
 $packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/S /v/qn'
-$url = 'https://boinc.berkeley.edu/dl/boinc_8.0.2_windows_x86_64.exe'
-$checksum = 'd137beddc5b3ca40c7d47996631a98006d0c54fbcca0d63d7db64e6d7fd8d19f'
+$url = 'https://boinc.berkeley.edu/dl/boinc_8.2.4_windows_x86_64.exe'
+$checksum = '95984071db58b329d342886b517a21093fc460578a592a9e7c4e0c63a704c1a2'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 
