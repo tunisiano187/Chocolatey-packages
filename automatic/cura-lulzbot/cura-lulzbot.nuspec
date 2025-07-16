@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>cura-lulzbot</id>
-    <version>4.13.16</version>
+    <version>4.13.17</version>
     <title>Cura LulzBot Edition (Install)</title>
     <authors>Aleph Objects Inc., David Braam</authors>
     <owners>tunisiano</owners>
