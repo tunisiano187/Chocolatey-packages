@@ -5,7 +5,7 @@ $checksum		= '4f05cbca95d9dd9b099c07da5a58d89767f164e2ffdb00bf1a814d1ed0acf1d52f
 $checksumType	= 'sha512'
 $fileType		= 'exe'
 $softwareName	= 'NetBeans*'
-$silentArgs		= '--silent'
+$silentArgs		= '/S'
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
