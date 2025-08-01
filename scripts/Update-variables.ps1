@@ -66,7 +66,7 @@ function Update-Variable {
   $ps1 = $ps1 -replace '% ', 'ForEach-Object '
   $ps1 = $ps1 -replace 'cup ', 'choco upgrade '
   $ps1 = $ps1 -replace 'cinst ', 'choco install '
-  $ps1 = $ps1 -replace 'import-module chocolatey-AU', 'import-module AU'
+  $ps1 = $ps1 -replace 'import-module AU', 'import-module chocolatey-AU'
 #  $ps1 = $ps1 -replace 'releases"', 'releases/latest"'
 #  $ps1 = $ps1 -replace "releases'", "releases/latest'"
   $ps1 = $ps1 | ForEach-Object {$_.TrimEnd()}
