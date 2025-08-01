@@ -103,7 +103,7 @@ install:
 - git --version
 - choco --version
 - ps: |
-    git clone -q https://github.com/tunisiano187/chocolatey-au.git $Env:TEMP/au
+    git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
     install-module Wormies-AU-Helpers -Force
     Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force
     Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
