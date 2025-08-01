@@ -108,7 +108,7 @@ install:
     install-module Wormies-AU-Helpers -Force
     Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force
     Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
-    . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+    #. "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
 - ps: |
     "Build info"
