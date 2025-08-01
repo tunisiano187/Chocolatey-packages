@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/pwgen-win/rss?path=/Password%20Tech'
 

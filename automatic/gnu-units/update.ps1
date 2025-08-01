@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://ftp.gnu.org/gnu/units/windows/'
 

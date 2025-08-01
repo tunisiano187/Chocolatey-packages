@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = "https://cdn.pawns.app/download/app/latest/windows/Pawns%20Setup.exe"
 

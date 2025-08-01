@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Continue';
-import-module au
+$ErrorActionPreference = 'Continue';
+import-module chocolatey-AU
 
 $releases = 'https://www.apple.com/itunes/download/win'
 $install_fname = 'bonjour.exe'

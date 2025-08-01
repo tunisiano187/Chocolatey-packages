@@ -1,6 +1,6 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
-import-module au
+import-module chocolatey-AU
 
 function global:au_SearchReplace {
 	@{

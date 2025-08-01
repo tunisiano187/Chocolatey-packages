@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $url32 = 'https://download.sp.f-secure.com/SE/Retail/installer/F-SecureNetworkInstaller-AV.exe'
 

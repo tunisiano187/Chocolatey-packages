@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = "https://www.zimbra.com/zimbra-desktop-download/"
 

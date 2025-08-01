@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ebfd2163-8e0b-11e9-9708-d17ec0ebcb31&page[size]=1'
 

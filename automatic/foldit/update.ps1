@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $release = 'https://files.ipd.uw.edu/pub/foldit/Foldit-win_x64.exe'
 

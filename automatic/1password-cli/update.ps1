@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module AU
+import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://app-updates.agilebits.com/product_history/CLI2'

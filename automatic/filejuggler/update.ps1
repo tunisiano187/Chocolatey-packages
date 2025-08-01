@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $release = 'https://www.filejuggler.com/download/filejuggler.exe'
 

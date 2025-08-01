@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/windjview/files/WinDjView/2.1/'
 

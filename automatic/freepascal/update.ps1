@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/freepascal/rss?path=/Win32'
 

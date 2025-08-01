@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://github.com/mpc-qt/mpc-qt/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3

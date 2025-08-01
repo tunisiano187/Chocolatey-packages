@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 $curDir	= "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $toolsDir = Join-Path $curDir "tools"
 $releases 	= 'https://sourceforge.net/projects/tigervnc/rss?path=/stable'

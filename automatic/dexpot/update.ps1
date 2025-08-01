@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $release = "https://dexpot.de/index.php?id=thankyou"
 

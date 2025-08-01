@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://www.glenn.delahoy.com/snappy-driver-installer-origin/'
 

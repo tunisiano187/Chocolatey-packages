@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 function global:au_SearchReplace {

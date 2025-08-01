@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://api.fuze.com/citadel/v1/applications/fuzeapp/windows/versions/latest/download/perMachineInstaller'
 

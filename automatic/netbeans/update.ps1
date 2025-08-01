@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://installers.friendsofapachenetbeans.org/'
 $github = 'https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/latest'

@@ -1,4 +1,4 @@
-﻿import-module au
+import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $release = 'https://www.softpointer.com/AudioShell.htm'

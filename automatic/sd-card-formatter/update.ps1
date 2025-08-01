@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/'
 

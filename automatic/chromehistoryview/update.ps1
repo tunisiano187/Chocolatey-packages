@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $url32 = 'https://www.nirsoft.net/utils/chromehistoryview.zip'
 

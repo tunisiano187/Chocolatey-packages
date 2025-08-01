@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $release = 'https://downloads.scratch.mit.edu/desktop/Scratch%20Setup.exe'
 

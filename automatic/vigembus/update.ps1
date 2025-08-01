@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 # $releases = 'https://github.com/ViGEm/ViGEmBus/releases/latest'
 $Owner = "ViGEm"

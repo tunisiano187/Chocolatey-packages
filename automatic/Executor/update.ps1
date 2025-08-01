@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $base     = 'http://www.1space.dk/executor'
 $releases = "$base/downloadlinks.html"

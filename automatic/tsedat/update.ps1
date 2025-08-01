@@ -1,4 +1,4 @@
-Import-Module au
+import-module chocolatey-AU
 
 $releases = 'https://sequencepublishing.com/cgi-bin/download.cgi?thesage'
 

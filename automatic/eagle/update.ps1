@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $release = 'https://www.autodesk.com/eagle-download-win'
 

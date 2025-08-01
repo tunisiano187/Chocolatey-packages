@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://api.github.com/repos/yang991178/fluent-reader/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3

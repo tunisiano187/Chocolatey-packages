@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://github.com/DuckieTV/Nightlies/releases'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 2

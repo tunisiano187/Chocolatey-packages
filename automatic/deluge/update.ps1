@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $releases = "https://ftp.osuosl.org/pub/deluge/windows/?C=M;O=D"
 $release = "https://ftp.osuosl.org/pub/deluge/windows/"

@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $domain   = 'https://github.com'
 $ghproj = 'jitsi/jitsi-meet-electron'

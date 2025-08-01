@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $url32 = 'https://frinklang.org/frinkjar/frink.jar'
 

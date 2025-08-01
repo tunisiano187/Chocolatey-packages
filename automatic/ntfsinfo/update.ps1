@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $releases = 'https://learn.microsoft.com/fr-fr/sysinternals/downloads/ntfsinfo'
 

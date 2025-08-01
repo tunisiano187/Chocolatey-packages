@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete'
 

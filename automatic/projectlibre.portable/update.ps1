@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'http://sourceforge.net/projects/projectlibre/files/latest/download'
 

@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $release = 'https://www.nirsoft.net/utils/mweather.zip'
 

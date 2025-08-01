@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $url32 = 'https://www.nirsoft.net/utils/usblogview.zip'
 

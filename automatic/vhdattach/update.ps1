@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $domain = 'https://www.medo64.com'
 $releases = 'https://www.medo64.com/vhdattach/'

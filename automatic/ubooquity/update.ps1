@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module AU
+import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'http://vaemendis.net/ubooquity/static2/download'

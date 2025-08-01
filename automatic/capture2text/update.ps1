@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/capture2text/rss?path=/Capture2Text'
 

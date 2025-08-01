@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 . ..\..\scripts\Get-FileVersion.ps1
 
 $release = 'https://faceit-client.faceit-cdn.net/release/FACEIT-setup-latest.exe'

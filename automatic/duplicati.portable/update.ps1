@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = "https://github.com/duplicati/duplicati/releases/latest"
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3

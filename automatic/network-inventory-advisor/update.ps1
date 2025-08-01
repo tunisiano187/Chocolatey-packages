@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://www.network-inventory-advisor.com/download.html'
 

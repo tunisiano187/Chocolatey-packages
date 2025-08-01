@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://www.videolan.org/vlc/skins2/vlc-skins.zip'
 

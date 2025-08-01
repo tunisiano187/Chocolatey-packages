@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://download.eyemaxdvr.com/XVST%20MAGIC%20SERIES/CMS/'
 

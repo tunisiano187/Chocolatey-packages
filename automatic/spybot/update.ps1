@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = "https://www.safer-networking.org/products/spybot-free-edition/download-mirror-1/"
 

@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module chocolatey-AU
 
 $releases = 'https://addons.mozilla.org/en-US/firefox/addon/trafficlight/'
 

@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module chocolatey-AU
 
 $releases = 'https://johnsad.ventures/software/backgroundswitcher/windows/'
 $padVersionUnder = '5.4.0.3'
