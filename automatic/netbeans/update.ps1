@@ -38,6 +38,9 @@ function global:au_GetLatest {
 	if($version -notmatch '\.') {
 		$version+=".0"
 	}
+	if($version -match "25.0") {
+		$version = "25.0.0.20250801"
+	}
 
 	$Latest = @{ URL64 = $release; Checksum64 = $Checksum; ChecksumType64 = $ChecksumType; Version = $version }
 	return $Latest
