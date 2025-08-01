@@ -18,7 +18,7 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 $Env:au_version = "master"
 
 Write-Output "Build AU"
-git clone -q https://github.com/tunisiano187/chocolatey-au.git $Env:TEMP/au
+git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
 # Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
 . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
