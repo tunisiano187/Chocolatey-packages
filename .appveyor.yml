@@ -109,6 +109,7 @@ install:
     Copy-Item setup/AU $Env:TEMP/au/AU -Recurse -Force
     Copy-Item setup/build.ps1 -Destination $Env:TEMP/au/ -Force
     #. "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+    import-module ".\scripts\au_extensions.psm1"
 
 - ps: |
     "Build info"
