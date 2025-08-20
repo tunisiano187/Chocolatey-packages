@@ -2,11 +2,11 @@
 
 $packageName      = '1password-cli'
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url              = 'https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.1/op_windows_386_v2.31.1.zip'
-$checksum         = '33739DA463138B52FD65992BDC8D6513F85E0B97C6C2BBEEFB02FD18756ED3FF'
+$url              = 'https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_windows_386_v2.32.0.zip'
+$checksum         = 'AC65421654C401CBC73CD75BCE909AB74299197B467ED6A27C474678FA6C2299'
 $checksumType     = 'sha256'
-$url64            = 'https://cache.agilebits.com/dist/1P/op2/pkg/v2.31.1/op_windows_amd64_v2.31.1.zip'
-$checksum64       = '7CF3A30BDE910A8087052CD453186F80B72931B94FD4E90B4C6F5485C436B451'
+$url64            = 'https://cache.agilebits.com/dist/1P/op2/pkg/v2.32.0/op_windows_amd64_v2.32.0.zip'
+$checksum64       = '7FBA6D1F4DF4EAF8DB814E0B3E8C697CB46599BDA691F7755C97988BA1CB339A'
 $checksumType64   = 'sha256'
 
 $packageArgs = @{
