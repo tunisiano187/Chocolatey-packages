@@ -1,81 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
-    <version>5.2.6-qt5-dev-2025-01-03-git-ca7cb5a</version>
+    <version>5.2.8</version>
     <title>KVIrc</title>
     <authors>Szymon Stefanek</authors>
-    <owners>tunisiano</owners>
-    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
-    <projectUrl>https://www.kvirc.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8874bcd7964d7460ab7bd3410a8275e813a3d9ee/icons/kvirc.png</iconUrl>
+    <owners>tunisiano, aborazmeh</owners>
+    <tags>chat chat-client client dcc im internet-relay-chat irc kvirc messenger video video-chat voice voice-chat</tags>
+    <copyright>Copyright © 2006–2023 Szymon Stefanek</copyright>
+    <releaseNotes>https://github.com/kvirc/KVIrc/releases/tag/5.2.8</releaseNotes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## KVIrc
+    <bugTrackerUrl>https://github.com/kvirc/KVIrc/issues</bugTrackerUrl>
+    <docsUrl>https://www.kvirc.net/doc/</docsUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@8874bcd7964d7460ab7bd3410a8275e813a3d9ee/icons/kvirc.png</iconUrl>
+    <licenseUrl>https://github.com/kvirc/KVIrc/blob/master/COPYING</licenseUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/kvirc</packageSourceUrl>
+    <projectSourceUrl>https://github.com/kvirc/KVIrc</projectSourceUrl>
+    <projectUrl>https://www.kvirc.net/</projectUrl>
+    <summary>KVIrc is a free portable IRC client based on the excellent Qt GUI toolkit.</summary>
+    <description><![CDATA[# KVIrc
 
-KVIrc is a [free](https://www.gnu.org) portable [IRC](https://www.wikiwand.com/en/Internet_Relay_Chat) client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is being written by [Szymon Stefanek](https://www.pragmaware.net) and the KVIrc Development Team with the contribution of many IRC addicted developers around the world.
+KVIrc is a free, portable [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat)
+client based on the excellent [Qt GUI toolkit](https://www.qt.io/). It is
+developed by [Szymon Stefanek](https://www.pragmaware.net/) and the KVIrc
+Development Team, along with the contributions of many IRC-addicted developers
+around the world.
 
-**Features**
+## Features
 
 - User interface
-    - Full GUI Based configuration
-    - Floatable windows
-    - Built-in help browser
-    - Themes support (all configurable by GUI or scripting)
-    - Pseudo-transparency support (up to the desktop on KDE)
-    - Drag & Drop toolbar editing
-    - Activity Notifier Pop-Up
-    - Status bar with Applet support
-    - Unread text mark
-    - 14 Languages Translations
-
+  - Full GUI Based configuration
+  - Floatable windows
+  - Built-in help browser
+  - Themes support (all configurable by GUI or scripting)
+  - Pseudo-transparency support (up to the desktop on KDE)
+  - Drag & Drop toolbar editing
+  - Activity Notifier Pop-Up
+  - Status bar with Applet support
+  - Unread text mark
+  - 14 Languages Translations
 - Network
-    - Proxy support (SOCKSv4, SOCKSv5, HTTP)
-    - Full IPv6 support (also for DCC transfers)
-    - SSL support (also over IPv6)
-    - Micryption support
-
+  - Proxy support (SOCKSv4, SOCKSv5, HTTP)
+  - Full IPv6 support (also for DCC transfers)
+  - SSL support (also over IPv6)
+  - Micryption support
 - Core
-    - Modular architecture: unfrequently used features reside in external modules and are loaded only when necessary
-    - Extensibility: a huge API for writing extension modules
-    - UNICODE support
-
+  - Modular architecture: unfrequently used features reside in external modules and are loaded only when necessary
+  - Extensibility: a huge API for writing extension modules
+  - UNICODE support
 - IRC
-    - Multi-server connection
-    - Notify lists (yes, WATCH is supported)
-    - Ignore lists
-    - Registered users database
-    - Lag meter
-    - Configurable logging
-    - Standard DCC CHAT and SEND (with resume) support
-    - Extended DCC types: VOICE, RSEND, GET, RECV
-    - DCC CHAT over SSL
-    - DCC bandwidth limit (ability to set it "on the fly")
-
+  - Multi-server connection
+  - Notify lists (yes, WATCH is supported)
+  - Ignore lists
+  - Registered users database
+  - Lag meter
+  - Configurable logging
+  - Standard DCC CHAT and SEND (with resume) support
+  - Extended DCC types: VOICE, RSEND, GET, RECV
+  - DCC CHAT over SSL
+  - DCC bandwidth limit (ability to set it "on the fly")
 - Scripting
-    - Built-in scripting language interpreter
-        - scalars, arrays and hashes...
-        - aliases
-        - popups
-        - events
-        - scriptable toolbars
-        - Perl support
-        - Ability to translate scripts (by the means of the tr() function)
-    - Objects support in scripting language: yes, now you can do OOP
+  - Built-in scripting language interpreter
+    - scalars, arrays and hashes...
+    - aliases
+    - popups
+    - events
+    - scriptable toolbars
+    - Perl support
+    - Ability to translate scripts (by the means of the tr() function)
+  - Objects support in scripting language: yes, now you can do OOP
 
-### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+## Package-specific issue
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+If this package isn't up-to-date for some days,
+[create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose).
+
+Support the Chocolatey package maintainer on [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820).
 ]]></description>
-    <summary>KVIrc is a free portable IRC client based on the excellent Qt GUI toolkit.</summary>
-    <releaseNotes>https://raw.githubusercontent.com/kvirc/KVIrc/master/RELEASES</releaseNotes>
-    <copyright>Copyright © 2007-2018 Szymon Stefanek</copyright>
-    <tags>kvirc irc chat</tags>
-    <projectSourceUrl>https://github.com/kvirc/KVIrc</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/kvirc</packageSourceUrl>
-    <docsUrl>https://www.kvirc.net/doc/</docsUrl>
-    <bugTrackerUrl>https://github.com/kvirc/KVIrc/issues</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
