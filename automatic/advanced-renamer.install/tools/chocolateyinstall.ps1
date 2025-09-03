@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url           = 'https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_16.exe'
+$url           = 'https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_16_1.exe'
 $checksumType  = 'sha256'
-$checksum      = '5D4A863FF2FCBA653067DBF344C1252B66F565BC6C311B03E920E272726D65A2'
+$checksum      = 'F80BC125873211D926F205D682FC6438AA2B5957F4BBE814C46832FEA1D0D7F2'
 
 
 $packageArgs = @{
