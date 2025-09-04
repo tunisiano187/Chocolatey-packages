@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>advanced-renamer</id>
-    <version>4.16.0</version>
+    <version>4.16.1</version>
     <title>Advanced Renamer</title>
     <authors>Kim Jensen</authors>
     <owners>tunisiano</owners>
@@ -55,7 +55,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/advanced-renamer</packageSourceUrl>
     <docsUrl>http://www.advancedrenamer.com/user_guide/gettingstarted</docsUrl>
     <dependencies>
-      <dependency id="advanced-renamer.install" version="4.16.0" />
+      <dependency id="advanced-renamer.install" version="4.16.1" />
     </dependencies>
   </metadata>
   <files>
