@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fing</id>
-    <version>3.9.0.634</version>
+    <version>3.9.1.635</version>
     <title>Fing</title>
     <authors>Fing</authors>
     <owners>tunisiano</owners>
