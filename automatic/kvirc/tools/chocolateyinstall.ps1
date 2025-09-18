@@ -1,20 +1,21 @@
-﻿
-$ErrorActionPreference = 'Stop';
-$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://nightly.kvirc.net/win-x86_64/KVIrc-5.2.6-qt5-dev-2025-01-03-git-ca7cb5a.exe'
-$checksum       = '6c1af6bf872e842b357d5670db4b7f5d163a7096e7d69c98506fbeaeb48c731d'
-$checksumType   = 'sha256'
+$ErrorActionPreference = 'Stop'
+$ErrorView             = 'NormalView'
+
+$toolsDir        = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url64           = 'https://github.com/kvirc/KVIrc/releases/download/5.2.8/KVIrc-5.2.8-Quasar-x86_64.exe'
+$checksum64      = '7c4c944c8a37a2051556414f8c1833cdebb3c4312afb489da39ea8d96c2c7f32ded704a4ae970c715f8b3094aff89e99f6ae344125497b9e574e633c999ad7a4'
+$checksumType    = 'sha512'
 
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  url           = $url
-  softwareName  = 'KVIrc*'
-  checksum      = $checksum
-  checksumType  = $checksumType
-  validExitCodes= @(0, 3010, 1641)
-  silentArgs   = '/S'
+  packageName    = $env:ChocolateyPackageName
+  unzipLocation  = $toolsDir
+  fileType       = 'EXE'
+  url            = $url64
+  softwareName   = 'KVIrc*'
+  checksum       = $checksum64
+  checksumType   = $checksumType
+  validExitCodes = @(0, 1641, 3010)
+  silentArgs     = '/S'
 }
 
 Install-ChocolateyPackage @packageArgs
