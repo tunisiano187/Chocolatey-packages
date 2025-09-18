@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $url32 = 'https://www.nirsoft.net/utils/csvfileview.zip'
 # $url64 = 'https://www.nirsoft.net/utils/csvfileview-x64.zip'

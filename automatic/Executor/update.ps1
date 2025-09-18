@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $base     = 'http://www.1space.dk/executor'
 $releases = "$base/downloadlinks.html"

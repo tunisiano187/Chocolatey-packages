@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://api.github.com/repos/Tautulli/Tautulli/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3

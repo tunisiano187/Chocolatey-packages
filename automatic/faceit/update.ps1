@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 . ..\..\scripts\Get-FileVersion.ps1
 
 $release = 'https://faceit-client.faceit-cdn.net/release/FACEIT-setup-latest.exe'

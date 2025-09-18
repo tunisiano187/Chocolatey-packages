@@ -1,4 +1,5 @@
 import-module chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://github.com/DuckieTV/Nightlies/releases'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 2
