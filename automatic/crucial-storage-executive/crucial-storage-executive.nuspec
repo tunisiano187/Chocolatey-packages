@@ -9,7 +9,7 @@
     <title>crucial-storage-executive (Install)</title>
     <authors>Crucial Memory</authors>
     <projectUrl>https://www.crucial.com/support/storage-executive</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/DragRedSim/choco-packages/842a6e3f5c0648a7d50489227494f06215adafba/icons/crucial-storage-executive.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@609be77cac9908e9d9a3c00b99ad261fabc49045/icons/crucial-storage-executive.png</iconUrl>
     <copyright>© 2022 Micron Technology, Inc. All rights reserved</copyright>
     <licenseUrl>https://www.crucial.com/company/terms-of-use</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
