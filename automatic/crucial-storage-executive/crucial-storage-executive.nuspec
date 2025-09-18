@@ -5,7 +5,7 @@
     <id>crucial-storage-executive</id>
     <version>8.07</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/crucial-storage-executive</packageSourceUrl>
-    <owners>DragRedSim</owners>
+    <owners>tunisiano</owners>
     <title>crucial-storage-executive (Install)</title>
     <authors>Crucial Memory</authors>
     <projectUrl>https://www.crucial.com/support/storage-executive</projectUrl>
