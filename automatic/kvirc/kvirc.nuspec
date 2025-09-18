@@ -6,7 +6,7 @@
     <version>5.2.8</version>
     <title>KVIrc</title>
     <authors>Szymon Stefanek</authors>
-    <owners>tunisiano, aborazmeh</owners>
+    <owners>tunisiano</owners>
     <tags>chat chat-client client dcc im internet-relay-chat irc kvirc messenger video video-chat voice voice-chat</tags>
     <copyright>Copyright © 2006–2023 Szymon Stefanek</copyright>
     <releaseNotes>https://github.com/kvirc/KVIrc/releases/tag/5.2.8</releaseNotes>
