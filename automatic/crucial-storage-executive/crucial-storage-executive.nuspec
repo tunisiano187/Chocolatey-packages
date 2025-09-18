@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>crucial-storage-executive</id>
+    <version>8.07</version>
+    <packageSourceUrl>https://github.com/DragRedSim/choco-packages/tree/main/crucial-storage-executive</packageSourceUrl>
+    <owners>DragRedSim</owners>
+    <title>crucial-storage-executive (Install)</title>
+    <authors>Crucial Memory</authors>
+    <projectUrl>https://www.crucial.com/support/storage-executive</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/DragRedSim/choco-packages/842a6e3f5c0648a7d50489227494f06215adafba/icons/crucial-storage-executive.png</iconUrl>
+    <copyright>© 2022 Micron Technology, Inc. All rights reserved</copyright>
+    <licenseUrl>https://www.crucial.com/company/terms-of-use</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.crucial.com/support/storage-executive</docsUrl>
+    <tags>crucial-storage-executive crucial ssd firmware</tags>
+    <summary>Crucial Storage Executive is a free software tool that helps optimize the performance of your Crucial SSD.</summary>
+    <description><![CDATA[A free software tool that helps optimize the performance of your Crucial SSD.
+This free downloadable tool enables your Crucial SSD to become even faster and allows it to get periodic updates so it’s constantly performing at its best. With Storage Executive, you can see how much storage (GB) you’ve used, download the latest firmware, monitor the drive’s temperature, reset your encryption password, and enable the Momentum Cache feature, which makes many SSD operations up to 10x faster.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
