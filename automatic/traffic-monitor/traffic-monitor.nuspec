@@ -19,7 +19,15 @@
 - Display the network connection details.
 - Support the window displayed in the taskbar.
 - Support for changing skin and customizing skin.
-- Historical traffic statistics.</description>
+- Historical traffic statistics.
+
+## Package Parameters
+The following package parameters can be set:
+
+* `/unzipLocation` - Unzip to a different path than default.
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `choco install traffic-monitor -params '"/unzipLocation:D:\traffic-monitor"'`.</description>
     <summary>TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.</summary>
     <releaseNotes>https://github.com/zhongyang219/TrafficMonitor/releases</releaseNotes>
     <tags>foss productivity network traffic monitor</tags>

@@ -10,9 +10,17 @@ $checksumType64 = 'sha256'
 
 $shortcutsPath = [Environment]::GetFolderPath("Programs")
 
+$unzip_location = "$Env:LOCALAPPDATA\"
+
+$pp = Get-PackageParameters
+if ($pp.unzipLocation) {
+    $unzip_location = $pp.unzipLocation
+    Write-Output "Param: Unzipping (installing) to $unzip_location"
+}
+
 $packageArgs = @{
   packageName     = $packageName
-  unzipLocation   = "$Env:LOCALAPPDATA\"
+  unzipLocation   = $unzip_location
   url             = $url32
   Checksum        = $checksum32
   ChecksumType    = $checksumType32
