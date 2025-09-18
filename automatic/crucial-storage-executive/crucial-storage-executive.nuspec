@@ -4,7 +4,7 @@
   <metadata>
     <id>crucial-storage-executive</id>
     <version>8.07</version>
-    <packageSourceUrl>https://github.com/DragRedSim/choco-packages/tree/main/crucial-storage-executive</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/crucial-storage-executive</packageSourceUrl>
     <owners>DragRedSim</owners>
     <title>crucial-storage-executive (Install)</title>
     <authors>Crucial Memory</authors>
