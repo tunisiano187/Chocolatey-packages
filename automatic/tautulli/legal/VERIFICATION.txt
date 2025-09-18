@@ -6,11 +6,11 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://github.com/Tautulli/Tautulli/releases/download/v2.15.2/Tautulli-windows-v2.15.2-x64.exe
+x86: https://github.com/Tautulli/Tautulli/releases/download/v2.16.0/Tautulli-windows-v2.16.0-x64.exe
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksum: 072AAF86F864D5183495D9215C24DA8CD02651FC1511C0BA7E9A5FED159372A3
+checksum: 5FE78C14796D64328ECC7A846BC2F041473296F8ADA3822D31B7622A487B4223
 checksumtype: sha256

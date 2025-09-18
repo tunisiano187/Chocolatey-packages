@@ -4,7 +4,7 @@
   <metadata>
     <id>csvfileview</id>
     <title>CSVFileView</title>
-    <version>2.64</version>
+    <version>2.65</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>CSV/Tab-delimited file viewer and converter for Windows</summary>
@@ -22,7 +22,7 @@ or HTML report.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/csvfileview</packageSourceUrl>
     <projectUrl>https://www.nirsoft.net/utils/csv_file_view.html</projectUrl>

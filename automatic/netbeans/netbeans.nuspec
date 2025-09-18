@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>netbeans</id>
-    <version>25.0</version>
+    <version>27.0-build1</version>
     <title>NetBeans IDE (complete)</title>
     <authors>Apache</authors>
     <owners>tunisiano</owners>

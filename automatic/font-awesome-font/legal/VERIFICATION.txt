@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/FortAwesome/Font-Awesome/releases/download/7.0.0/fontawesome-free-7.0.0-desktop.zip
+    x32: https://github.com/FortAwesome/Font-Awesome/releases/download/7.0.1/fontawesome-free-7.0.1-desktop.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/FortAwesome/Font-Awesome/releases/download/7.0.0/fontawesome-free-7.0.0-desktop.zip
+        Get-RemoteChecksum https://github.com/FortAwesome/Font-Awesome/releases/download/7.0.1/fontawesome-free-7.0.1-desktop.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 4409B8438D3B8382A502E59FACC1D4AB5353B788943EFAFFB566A5682936C3FE
+    checksum32: 7E0D5CFF6248FFE2A20CDFE71CA986D9423FC66738B48BB6D71FC393ADEA87E4

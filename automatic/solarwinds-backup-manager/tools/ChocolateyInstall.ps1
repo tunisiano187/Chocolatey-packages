@@ -2,7 +2,7 @@
 $packageName    = 'solarwinds-backup-manager'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://cdn.cloudbackup.management/maxdownloads/mxb-windows-x86_x64.exe'
-$checksum       = '52B59BD8A10BBF66B9C521F7932BC6EA25E0ACCE5019ED04EF09143422E8046E'
+$checksum       = '481C82C12A116563BAEB79E51128B06EF7DAB1B0F0BA748E9C36E8C9896D566D'
 $checksumType   = 'sha256'
 
 Write-Host "  ** Backup Manager will open its web console in your default browser after installing." -ForeGround Magenta
