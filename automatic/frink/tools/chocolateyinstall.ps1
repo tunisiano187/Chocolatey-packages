@@ -2,7 +2,7 @@
 $packageName  = 'frink'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://frinklang.org/frinkjar/frink.jar'
-$checksum     = '476C10499DDC1A0C86E0BA3A4B5B3F315C9CB02D882BAC1000371782FCA06898'
+$checksum     = 'D78E75597567BBEC149E5F8B60A319AC217BFAFC4F3DD9F9CE35DC6DAA188220'
 $checksumType = 'sha256'
 $ExeFile      = 'frink.jar'
 $ShortcutName = 'Frink.lnk'
