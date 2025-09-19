@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".exe"}).href
+	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".exe"} | Select-Object -First 1).href
 	[version]$version=$url.Split("/")[-2]
 
 	if($version -eq "0.4.11") {
