@@ -4,7 +4,7 @@
   <metadata>
     <id>electrum</id>
     <title>Electrum</title>
-    <version>4.6.0</version>
+    <version>4.6.2</version>
     <authors>Electrum Developers</authors>
     <owners>tunisiano</owners>
     <summary>Lightweight Bitcoin client</summary>
@@ -46,7 +46,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
     <dependencies>
-      <dependency id="electrum.install" version="[4.6.0]" />
+      <dependency id="electrum.install" version="[4.6.2]" />
     </dependencies>
   </metadata>
   <files>
