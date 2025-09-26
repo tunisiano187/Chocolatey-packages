@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>advanced-renamer.install</id>
-    <version>4.16.1</version>
+    <version>4.17</version>
     <title>Advanced Renamer (Install)</title>
     <authors>Kim Jensen</authors>
     <owners>tunisiano</owners>
