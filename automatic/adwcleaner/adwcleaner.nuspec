@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.malwarebytes.com/adwcleaner/eula/</licenseUrl>
     <projectUrl>https://www.malwarebytes.com/adwcleaner/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@50fde2ea33f9f3277b4cdae4abd95b438dc8f6e5/icons/adwcleaner.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@deca0d486319778dfb0a69e849429701f22d0ef2/icons/adwcleaner.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AdwCleaner (Portable)
 
