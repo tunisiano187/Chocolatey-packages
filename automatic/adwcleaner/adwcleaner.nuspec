@@ -54,7 +54,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>https://toolslib.net/downloads/viewdownload/1-adwcleaner/history/</releaseNotes>
     <copyright>© Malwarebytes</copyright>
     <tags>malwarebytes adwcleaner unattended malware-scanner malware-remover toolbar-remover</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/adwcleaner</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/adwcleaner</packageSourceUrl>
     <docsUrl>https://toolslib.net/downloads/viewdownload/1-adwcleaner/pages/5-en-adwcleaner-documentation/</docsUrl>
     <bugTrackerUrl>https://toolslib.net/forum/viewcategory/1-adwcleaner/</bugTrackerUrl>
   </metadata>
