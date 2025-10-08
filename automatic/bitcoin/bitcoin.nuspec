@@ -66,7 +66,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/bitcoin</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bitcoin</packageSourceUrl>
     <projectUrl>https://bitcoin.org/</projectUrl>
     <projectSourceUrl>https://github.com/bitcoin/bitcoin</projectSourceUrl>
     <bugTrackerUrl>https://github.com/bitcoin/bitcoin/issues</bugTrackerUrl>
