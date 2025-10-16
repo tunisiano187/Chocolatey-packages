@@ -19,6 +19,7 @@ if ($MyInvocation.InvocationName -ne '.') {
 }
 
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
@@ -32,7 +33,7 @@ function global:au_GetLatest {
     $folder = "https://bitcoincore.org/bin/$(((Invoke-WebRequest -Uri 'https://bitcoincore.org/bin/' -UseBasicParsing).Links | Where-Object {$_.href -match $version} | Select-Object -Last 1).href)"
 
 	Write-Verbose 'Get files'
-	$file = $(((Invoke-WebRequest -Uri $folder -UseBasicParsing).Links | Where-Object {$_.href -match ".zip"} | Where-Object {$_.href -match "win64"} | Where-Object {$_.href -notmatch "debug" }).href)
+	$file = $(((Invoke-WebRequest -Uri $folder -UseBasicParsing).Links | Where-Object {$_.href -match ".zip"} | Where-Object {$_.href -match "win64"} | Where-Object {$_.href -notmatch "debug" } | Where-Object {$_.href -notmatch "unsigned" }).href)
     $url64 = "$folder$file"
 	#$url64 = "https://github.com/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".zip"} | Select-Object -First 1).href)"
 

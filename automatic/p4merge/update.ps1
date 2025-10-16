@@ -21,6 +21,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate($Package) {
 	Get-RemoteFiles -Purge -NoSuffix
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 

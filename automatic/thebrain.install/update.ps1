@@ -15,6 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_AfterUpdate($Package) {
 	Update-Metadata -key "releaseNotes" -value $Latest.ReleaseNotes
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
