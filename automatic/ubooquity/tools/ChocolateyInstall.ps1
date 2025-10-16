@@ -1,7 +1,7 @@
 ﻿$packageName  = 'ubooquity'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://stompsoftware.com/downloadfiles/albumstomp/SetupAlbumStompV2.exe'
-$checksum     = 'e6da1083635df601b5eb841de879a2286efef0982bc4d9c3183f4f2126fd0a9c'
+$url          = 'http://vaemendis.net/ubooquity/downloads/Ubooquity-3.1.0.zip'
+$checksum     = 'a9db701e6ee71d834d09e05f724e4f1c577432c0782f31119e43a06f0d874b6b'
 $checksumType = 'sha256'
 
 $packageArgs = @{
