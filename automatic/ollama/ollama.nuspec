@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/ollama/ollama/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://ollama.com/</projectUrl>
-    <iconUrl>https://ollama.com/public/ollama.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/ollama.png</iconUrl>
     <description><![CDATA[## Ollama Large Language Models
 
 Get up and running with large language models locally with Ollama.
