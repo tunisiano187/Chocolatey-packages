@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>https://github.com/ollama/ollama/releases/tag/v0.4.3</releaseNotes>
     <tags>ollama llm models local</tags>
     <projectSourceUrl>https://github.com/ollama/ollama</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/ollama</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ollama</packageSourceUrl>
     <docsUrl>https://github.com/ollama/ollama/tree/main/docs</docsUrl>
     <bugTrackerUrl>https://github.com/ollama/ollama/issues</bugTrackerUrl>
   </metadata>
