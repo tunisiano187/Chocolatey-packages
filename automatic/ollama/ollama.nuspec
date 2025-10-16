@@ -5,7 +5,7 @@
     <version>0.4.1</version>
     <title>Ollama Large Language Models</title>
     <authors>Jeffrey Morgan</authors>
-    <owners>Spencer Churchill</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/ollama/ollama/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://ollama.com/</projectUrl>
