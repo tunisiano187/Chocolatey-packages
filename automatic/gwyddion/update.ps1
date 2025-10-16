@@ -19,8 +19,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "$env:TEMP\gwyddion.xml"
-	[xml]$xml = Get-Content $File
+	[xml]$xml = Invoke-WebRequest -Uri $releases
 
 	# Chercher le premier élément <link> qui contient '-win32.exe'
 	$linkNode = $xml.rss.channel.item | Where-Object { $_.link -match '-win32.exe' } | Select-Object -First 1
