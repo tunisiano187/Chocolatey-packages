@@ -19,13 +19,15 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = 'https://stompsoftware.com/downloadfiles/albumstomp/SetupAlbumStompV2.exe'
+	$url = 'http://vaemendis.net/ubooquity/downloads/'
 
 	$pageContent = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$versionPattern = 'Version\s+(\d+\.\d+\.\d+)'
 	$versionMatch = [regex]::Match($pageContent, $versionPattern)
 
 	$version=$versionMatch.Groups[1].Value
+	$pageContent = Invoke-WebRequest -Uri $url -UseBasicParsing
+	$url32 = "$($url)$(($pageContent.Links | Where-Object {$_ -match $version}).href)"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
