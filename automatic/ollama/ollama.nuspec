@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ollama</id>
+    <version>0.4.1</version>
+    <title>Ollama Large Language Models</title>
+    <authors>Jeffrey Morgan</authors>
+    <owners>Spencer Churchill</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ollama/ollama/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://ollama.com/</projectUrl>
+    <iconUrl>https://ollama.com/public/ollama.png</iconUrl>
+    <description><![CDATA[## Ollama Large Language Models
+
+Get up and running with large language models locally with Ollama.
+
+#### [choco://ollama](choco://ollama)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <summary>Effortlessly run large language models locally with Ollama.</summary>
+    <releaseNotes>https://github.com/ollama/ollama/releases/tag/v0.4.3</releaseNotes>
+    <tags>ollama llm models local</tags>
+    <projectSourceUrl>https://github.com/ollama/ollama</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/ollama</packageSourceUrl>
+    <docsUrl>https://github.com/ollama/ollama/tree/main/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/ollama/ollama/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
