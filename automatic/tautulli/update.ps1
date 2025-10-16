@@ -8,24 +8,12 @@ $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
-        "legal\VERIFICATION.txt"      = @{
-			"(?i)(x86:).*"        				= "`${1} $($Latest.URL32)"
-			"(?i)(checksum:).*" 				= "`${1} $($Latest.Checksum32)"
-			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
+        'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
+			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
 		}
     }
-}
-
-function global:au_BeforeUpdate {
-	. ..\..\scripts\Get-FileVersion.ps1
-    $FileVersion = Get-FileVersion $Latest.URL32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
-	$Latest.Checksum32 = $FileVersion.Checksum
-	$Latest.ChecksumType32 = $FileVersion.checksumType
-}
-
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
