@@ -11,24 +11,20 @@ function global:au_GetLatest {
 	$download_page.Content -match $verre | Out-Null
 	$version		= $Matches[0].ToString()
 	#short-circuit if there is no new update to the webpage
-	if ($version -eq $package.NuspecVersion) {
-		return @{version = $version}
-	}
-
 	$url64			= $download_page.links | ? href -match $filere | select -First 1 -expand href
 	if ($url64.StartsWith("/")) {
 		# url is NOT fully qualified
 		$url64 = ([System.Uri]$releases).scheme + '://' + ([System.Uri]$releases).authority + $url64
 	}
-	$checksumType	= 'sha256'
-	$checksum64		= Get-RemoteChecksum -Algorithm $checksumType -Url $url64
 
 	return @{
 		Url64             = $url64
 		Version           = $version
-		Checksum64        = $checksum64
-		ChecksumType64    = $checksumType
 	}
+}
+
+function global:au_AfterUpdate($Package) {
+	Invoke-VirusTotalScan $Package
 }
 
 function global:au_SearchReplace {

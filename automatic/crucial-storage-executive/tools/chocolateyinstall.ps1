@@ -3,9 +3,9 @@
 $toolsDir               = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url64                  = 'https://www.crucial.com/content/dam/crucial/support/storage-executive-win-64.zip'
-$checksum64             = '297a00cb8dd434876ca58998bcbf50f0d79d5736f63f633eaf57a5496903b6b1'
-$checksumType64         = 'sha256'
-$version				        = '8.07'
+$checksum64             = ''
+$checksumType64         = ''
+$version				        = '11.05.052025.00'
 
 $packageArgs = @{
   packageName           = $env:ChocolateyPackageName
