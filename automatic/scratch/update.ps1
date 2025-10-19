@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module AU
+import-module chocolatey-AU
 $releases = 'https://api.github.com/repos/scratchfoundation/scratch-desktop/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
