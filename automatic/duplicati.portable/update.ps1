@@ -17,6 +17,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_AfterUpdate($Package) {
+	Import-Module ..\..\scripts\au_extensions.psm1
 	Invoke-VirusTotalScan $Package
 }
 

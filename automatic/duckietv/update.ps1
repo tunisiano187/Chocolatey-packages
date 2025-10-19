@@ -26,6 +26,7 @@ function global:au_BeforeUpdate($Package) {
 function global:au_AfterUpdate($Package) {
   Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
   Update-Metadata -key "releaseNotes" -value $Latest.ReleaseUri
+	Import-Module ..\..\scripts\au_extensions.psm1
 	Invoke-VirusTotalScan $Package
 }
 
