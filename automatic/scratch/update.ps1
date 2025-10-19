@@ -1,5 +1,9 @@
 $ErrorActionPreference = 'Stop'
-import-module chocolatey-AU
+import-module AU
+$releases = 'https://api.github.com/repos/scratchfoundation/scratch-desktop/releases/latest'
+$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
+$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+
 
 $release = 'https://downloads.scratch.mit.edu/desktop/Scratch%20Setup.exe'
 
@@ -13,14 +17,24 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "Scratch.exe"
-	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	$tags = Get-GitHubRepositoryTag -Owner 'scratchfoundation' -RepositoryName 'scratch-desktop'
+
+	# Prend le dernier tag
+	$latestTag = $tags | Select-Object -First 1
+	$version = $latestTag.name.Replace('v','')
 
 	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
