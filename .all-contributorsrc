@@ -117,7 +117,7 @@
   ],
   "contributorsPerLine": 5,
   "contributorsSortAlphabetically": false,
-  "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img alt=\"<%= contributor.login %>'s avatar\" crossorigin=\"anonymous\" decoding=\"sync\" height=\"<%= options.imageSize %>\" referrerpolicy=\"strict-origin\" src=\"<%= contributor.avatar_url %>&s=<%= options.imageSize %>\" width=\"<%= options.imageSize %>\" /><br /><span style=\"font-weight: 700;\"><%= contributor.name %></span></a><br /><%= contributions %>",
+  "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img alt=\"<%= contributor.login %>'s avatar\" height=\"<%= options.imageSize %>\" src=\"<%= contributor.avatar_url %>&s=<%= options.imageSize %>\" width=\"<%= options.imageSize %>\" /><br /><strong><%= contributor.name %></strong></a><br /><%= contributions %>",
   "files": ["README.md"],
   "imageSize": 80,
   "linkToUsage": false,
