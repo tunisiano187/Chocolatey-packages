@@ -2,6 +2,13 @@ import-module chocolatey-AU
 
 $releases = 'https://www.crucial.com/support/storage-executive'
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL64
+	$Latest.Checksum64 = $FileVersion.Checksum
+	$Latest.ChecksumType64 = $FileVersion.checksumType
+}
+
 function global:au_GetLatest {
 	$package = [AUPackage]::new( $pwd )
 	$download_page	= Invoke-WebRequest -UseBasicParsing -Uri $releases
@@ -38,4 +45,4 @@ function global:au_SearchReplace {
   }
 }
 
-Update-Package -ChecksumFor 64
+Update-Package -ChecksumFor none
