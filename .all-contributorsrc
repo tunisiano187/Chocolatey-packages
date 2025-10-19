@@ -1,33 +1,129 @@
 {
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
+  "badgeTemplate": "[all-contributors-badge]: https://img.shields.io/badge/All_Contributors-<%= contributors.length %>-ffe450?style=flat&logo=clubhouse&logoColor=ffe450&logoSize=auto&labelColor=33205c&cacheSeconds=7200",
   "commit": false,
+  "commitConvention": "jshint",
   "contributors": [
     {
-      "login": "tunisiano187",
-      "name": "Tunisiano18",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/6095739?v=4",
-      "profile": "https://www.bowlman.org",
+      "avatar_url": "https://secure.gravatar.com/avatar/9c654799ceb39ed56986bb178a5e2fe6?r=g&d=retro",
       "contributions": [
-        "code"
-      ]
+        "bug",
+        "code",
+        "doc",
+        "maintenance",
+        "projectManagement"
+      ],
+      "login": "tunisiano187",
+      "name": "Fabian Clerbois",
+      "profile": "https://www.bowlman.org/"
     },
     {
+      "avatar_url": "https://avatars.githubusercontent.com/u/9150547?v=4",
+      "contributions": ["code"],
+      "login": "amayii0",
+      "name": "Rudy Dullier",
+      "profile": "https://www.instructables.com/member/RudyD1/instructables/"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17103864?v=4",
+      "contributions": ["code", "translation"],
+      "login": "ordonezgs",
+      "name": "Santiago G. Ordoñez",
+      "profile": "https://github.com/ordonezgs"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1270002?v=4",
+      "contributions": ["code"],
+      "login": "dgalbraith",
+      "name": "D. Galbraith",
+      "profile": "https://github.com/dgalbraith"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1271146?v=4",
+      "contributions": ["code"],
+      "login": "gep13",
+      "name": "Gary Ewan Park",
+      "profile": "https://www.gep13.co.uk/blog"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/615914?v=4",
+      "contributions": ["code"],
+      "login": "jbarthelmes",
+      "name": "Johannes Barthelmes",
+      "profile": "https://github.com/jbarthelmes"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/23485114?v=4",
+      "contributions": ["code"],
+      "login": "xmha97",
+      "name": "Muhammadhussein Ammari",
+      "profile": "https://github.com/xmha97"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/1191271?v=4",
+      "contributions": ["bug"],
       "login": "RedBaron2",
       "name": "RB",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/1191271?v=4",
-      "profile": "https://github.com/RedBaron2",
-      "contributions": [
-        "bug"
-      ]
+      "profile": "https://github.com/RedBaron2"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/20788820?v=4",
+      "contributions": ["code"],
+      "login": "jwfxpr",
+      "name": "John Reid",
+      "profile": "https://github.com/jwfxpr"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/32028105?v=4",
+      "contributions": ["code"],
+      "login": "unusedcow",
+      "name": "unusedcow",
+      "profile": "https://youtu.be/_gJdT5Vn11w"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/4258646?v=4",
+      "contributions": ["code"],
+      "login": "pokepoke81",
+      "name": "pokepoke81",
+      "profile": "https://github.com/pokepoke81"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/33471049?v=4",
+      "contributions": ["code"],
+      "login": "NightFurySL2001",
+      "name": "NightFurySL2001",
+      "profile": "https://github.com/NightFurySL2001"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/6869577?v=4",
+      "contributions": ["code"],
+      "login": "brogers5",
+      "name": "Brian Rogers",
+      "profile": "https://github.com/brogers5"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/328999?v=4",
+      "contributions": ["maintenance"],
+      "login": "blast007",
+      "name": "Scott Wichser",
+      "profile": "https://github.com/blast007"
+    },
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/15098724?v=4",
+      "contributions": ["code", "doc", "maintenance"],
+      "login": "RogueScholar",
+      "name": "Peter J. Mello",
+      "profile": "https://github.com/RogueScholar"
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 5,
+  "contributorsSortAlphabetically": false,
+  "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img alt=\"<%= contributor.login %>'s avatar\" crossorigin=\"anonymous\" decoding=\"sync\" height=\"<%= options.imageSize %>\" referrerpolicy=\"strict-origin\" src=\"<%= contributor.avatar_url %>&s=<%= options.imageSize %>\" width=\"<%= options.imageSize %>\" /><br /><span style=\"font-weight: 700;\"><%= contributor.name %></span></a><br /><%= contributions %>",
+  "files": ["README.md"],
+  "imageSize": 80,
+  "linkToUsage": false,
   "projectName": "Chocolatey-packages",
   "projectOwner": "tunisiano187",
-  "repoType": "github",
   "repoHost": "https://github.com",
+  "repoType": "github",
   "skipCi": true
 }
