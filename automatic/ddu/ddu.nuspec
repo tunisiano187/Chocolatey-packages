@@ -4,7 +4,7 @@
   <metadata>
     <id>ddu</id>
     <title>Display Driver Uninstaller</title>
-    <version>18.1.3.6</version>
+    <version>18.1.3.7</version>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
     <summary>Utility to completely remove system drivers</summary>
