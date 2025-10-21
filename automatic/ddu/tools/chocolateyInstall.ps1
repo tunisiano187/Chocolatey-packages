@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.1.3.1.exe'
-$checksum       = '0ecbfaef38c8e8dac414b66f6183ac0705f3f622695734bc75ee4f2f4079129e'
+$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.1.3.6.exe'
+$checksum       = 'f23e6e481a0bb8bb5b2b8e8cf75baa02a9402c779da1f235c6bd59e8f2c5d6cd'
 $checksumType   = 'sha256'
-$referer        = 'https://www.wagnardsoft.com/forums/viewtopic.php?t=5370&sid=8e57048396a7bb191ab302e61406659b'
+$referer        = 'https://www.wagnardsoft.com/forums/viewtopic.php?t=5439&sid=16819e2b43dfb0b363161034766f4aef'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/test.html" #  Required to be allowed just after
