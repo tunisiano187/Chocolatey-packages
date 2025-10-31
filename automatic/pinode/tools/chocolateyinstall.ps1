@@ -2,8 +2,8 @@
 
 $packageName      = $env:ChocolateyPackageName
 $toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url              = 'https://downloads.minepi.com/Pi%20Network%20Setup%200.5.0.exe'
-$checksum         = 'fc31852db38e8a6a51991ca082d7982f93ff370623c7ab8068d3415862cd83c6'
+$url              = 'https://downloads.minepi.com/Pi%20Network%20Setup%200.5.4.exe'
+$checksum         = 'eb8fb273f1d7b2490377d239772f2a2daea446a916ff7d60728bcbfe852e03ed'
 $checksumType     = 'sha256'
 
 $packageArgs = @{
