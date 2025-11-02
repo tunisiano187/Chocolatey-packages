@@ -7,8 +7,8 @@ if ($psver -ge 3) {
 }
 $packageName = $env:ChocolateyPackageName
 $packageSearch = 'KeePass Password Safe'
-$url = 'https://keepass.info/extensions/v2/kpscript/KPScript-2.59.zip'
-$checksum = '3488d719459ea71e1c45f694a39c830d41d1d6b562520a4b7c99706c84e434f3'
+$url = 'https://keepass.info/extensions/v2/kpscript/KPScript-2.60.zip'
+$checksum = '43c48abc4dabef9987a71b61c120ed526a727b8e807225c4ccc18fc2c7e3f2fc'
 $checksumType = 'sha256'
 try {
 # search registry for location of installed KeePass

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>keepass-plugin-kpscript</id>
-    <version>2.59</version>
+    <version>2.60</version>
     <title>KeePass Plugin KPScript</title>
     <authors>Dominik Reichl</authors>
     <owners>tunisiano</owners>
