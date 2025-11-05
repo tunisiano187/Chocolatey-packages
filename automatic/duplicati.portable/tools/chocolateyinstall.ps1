@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/duplicati/duplicati/releases/download/v2.2.0.0_stable_2025-10-23/duplicati-2.2.0.0_stable_2025-10-23-win-x64-gui.zip'
-$checksum       = '3ddc3b0c10afa89dc6618fddb138d3e0521a1e75466c3399e5c07ab1e0cc3bb2'
+$url            = 'https://github.com/duplicati/duplicati/releases/download/v2.2.0.100_canary_2025-11-05/duplicati-2.2.0.100_canary_2025-11-05-win-x64-gui.zip'
+$checksum       = '3cf1f0bac190e3a83c637a83e51c9dae298be4e6b60e367bd0f64f2b5ba3d199'
 $checksumType   = 'sha256'
 
 
