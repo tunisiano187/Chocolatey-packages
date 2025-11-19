@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>odrive</id>
-    <version>1.6452.7422</version>
+    <version>1.6452.7426</version>
     <title>odrive (Install)</title>
     <authors>ODrive.com</authors>
     <owners>tunisiano</owners>
