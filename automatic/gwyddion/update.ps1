@@ -1,6 +1,6 @@
 import-module chocolatey-AU
 
-$releases = 'https://sourceforge.net/projects/gwyddion/rss?path=/'
+$releases = 'https://sourceforge.net/projects/gwyddion/rss?path=/gwyddion'
 
 function global:au_SearchReplace {
 	@{
@@ -22,11 +22,11 @@ function global:au_GetLatest {
 	[xml]$xml = Invoke-WebRequest -Uri $releases
 
 	# Chercher le premier élément <link> qui contient '-win32.exe'
-	$linkNode = $xml.rss.channel.item | Where-Object { $_.link -match '-win32.exe' } | Select-Object -First 1
+	$linkNode = $xml.rss.channel.item | Where-Object { $_.link -match '.win32.exe' } | Select-Object -First 1
 
 	# Extraire l'URL
 	$url32 = $linkNode.link
-	$linkNode = $xml.rss.channel.item | Where-Object { $_.link -match '-win64.exe' } | Select-Object -First 1
+	$linkNode = $xml.rss.channel.item | Where-Object { $_.link -match '.win64.exe' } | Select-Object -First 1
 
 	# Extraire l'URL
 	$url64 = $linkNode.link
