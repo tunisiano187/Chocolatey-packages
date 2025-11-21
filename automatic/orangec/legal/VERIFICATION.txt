@@ -4,19 +4,19 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 The embedded software has been downloaded from the listed download
-location on <https://github.com/LADSoft/OrangeC/releases/tag/Orange-C-v6.73.1>
+location on <https://github.com/LADSoft/OrangeC/releases/tag/v7.0.7>
 and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/LADSoft/OrangeC/releases/download/Orange-C-v6.73.1/WindowsInstaller6738.exe>
+  url: <https://github.com/LADSoft/OrangeC/releases/download/v7.0.7/WindowsInstaller707.exe>
 
   2. You can obtain the checksum using one of the following methods:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: 107B6C28562B090211CA999F9CD64B059948064D4DC282A8AF1A5A0869465833
+  checksum: 1F789446C989D6636868C6AA8C2ECE9C69309A5BA925F9962C7D202F1B8EF90E
 
 Using AU:
 

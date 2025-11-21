@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>captureflux</id>
-    <version>6.2.0.55</version>
+    <version>6.3.0</version>
     <title>CaptureFlux (Portable)</title>
     <authors>Paul Glagla</authors>
     <owners>tunisiano</owners>
@@ -32,7 +32,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>CaptureFlux to preview a live video or audio stream, record it in direct-to-disk or grab images from the stream</summary>
     <copyright>Paul Glagla</copyright>

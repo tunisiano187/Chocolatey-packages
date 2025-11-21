@@ -13,7 +13,7 @@ link32: https://wordweb.info/cgi-bin/geoip/wordweb.exe
   - Use chocolatey utility 'checksum.exe'
 
 checksumtype: sha256
-checksum32: 9A0209BEC084351661C6A36CC38E62105AD1A282F4543549699DE4D7C9CB87EB
+checksum32: EBF738B80C519B2E90BF6561B0B8E4D1C6A34B6D68F9BB11E385729B4F890B7D
 
 The included 'LICENSE.txt' file have been obtained from:
 license: https://wordweb.info/free/licence5.html
