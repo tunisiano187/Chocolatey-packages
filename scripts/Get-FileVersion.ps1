@@ -29,10 +29,15 @@ function Get-FileVersion {
     if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
 
     if($url.Trim().Length -gt 0) {
-        $tempFile = Join-Path $env:TEMP $($url.split('/')[-1])
+        if($($url.split('/')[-1]) -match 'sourceforge') {
+            $FileName = $url.split('/')[-1]
+        } else {
+            $FileName = $url.split('/')[-2]
+        }
+        $tempFile = Join-Path $env:TEMP $($FileName)
         import-module C:\ProgramData\chocolatey\helpers\chocolateyInstaller.psm1 -ErrorAction SilentlyContinue -Force
         try {
-            $FileName = Get-WebFileName -url $url -defaultName $($url.split('/')[-1])
+            $FileName = Get-WebFileName -url $url -defaultName $FileName
             $tempFile = Join-Path $env:TEMP $FileName
         }
         catch {
