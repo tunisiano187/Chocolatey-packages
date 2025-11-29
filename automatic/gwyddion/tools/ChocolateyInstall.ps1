@@ -21,7 +21,7 @@ $packageArgs = @{
   softwareName   = 'Gwyddion'
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
 #Remove-Item $toolsDir\*.exe -EA SilentlyContinue | Out-Null
 
