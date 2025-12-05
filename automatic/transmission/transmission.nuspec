@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>transmission</id>
-    <version>4.1.0-beta3</version>
+    <version>4.1.0-beta4</version>
     <title>Transmission</title>
     <authors>Transmission Project</authors>
     <owners>tunisiano</owners>
