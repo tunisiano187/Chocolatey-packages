@@ -10,8 +10,7 @@ $warningPreference = "Continue"
 $chocoLib = Join-Path $env:ChocolateyInstall "lib"
 if (Test-Path -PathType Container (Join-Path $chocoLib 'install4j.*')) {
   Write-Warning "Uninstall NOT complete."
-  Write-Host
-@"
+  Write-Output @"
   This package is a metapackage; a chocolatey feature not yet fully implemented.
   To retain future compatibility this package does not uninstall the dependent
   package it points to as designated with *.install or *.portable.`n
@@ -23,5 +22,5 @@ if (Test-Path -PathType Container (Join-Path $chocoLib 'install4j.*')) {
     $text += "$i "
   }
   $text += "-y`n"
-  Write-Host $text
+  Write-Output $text
 }
