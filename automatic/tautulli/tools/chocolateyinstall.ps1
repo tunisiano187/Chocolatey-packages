@@ -1,15 +1,18 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName    = 'tautulli'
+$packageName    = $env:chocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file            = "$toolsDir\Tautulli-windows-v"+$ENV:ChocolateyPackageVersion+"-x64.exe"
+$url            = "$toolsDir\Tautulli-windows-v"+$ENV:ChocolateyPackageVersion+"-x64.exe"
+$checksum       = 'D41D8CD98F00B204E9800998ECF8427E'
+$checksumType   = 'MD5'
 
 $packageArgs = @{
   packageName  = $packageName
   fileType     = 'EXE'
-  file         = $file
+  url          = $url
+  checksum     = $checksum
+  checksumType = $checksumType
   silentArgs   = '/S'
   softwareName = "tautulli"
 }
 
-Install-ChocolateyInstallPackage @packageArgs
-Remove-Item $file -Force -ErrorAction SilentlyContinue | Out-Null
+Install-ChocolateyPackage @packageArgs
