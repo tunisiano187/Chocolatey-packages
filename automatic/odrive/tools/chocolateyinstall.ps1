@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url			= 'https://dba0rg1h0v09q.cloudfront.net/odrivesync.7434.exe'
-$checksum		= 'b9bf273b3e8d0c031a70570ae090cdce986fd77c1fea03f9304ff0fe14887a64'
+$url			= 'https://dba0rg1h0v09q.cloudfront.net/odrivesync.7437.exe'
+$checksum		= '82f06e137b6ddd1d73bac22a5d93f3a4f1b6b1e3ca60145a08ef9ab85c576083'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
