@@ -4,8 +4,8 @@ $installer     = (Get-ChildItem -Path $toolsDir -Filter "*.exe").FullName
 
 $packageArgs = @{
   packageName   = 'orangec'
-  fileType      = 'EXE'
-  file          = $installer
+  FileType      = 'EXE'
+  File          = $installer
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   softwareName  = 'Orange C Version*'
 }
