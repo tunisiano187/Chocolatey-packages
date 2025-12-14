@@ -4,7 +4,7 @@
   <metadata>
     <id>wakemeonlan</id>
     <title>WakeMeOnLan</title>
-    <version>1.95</version>
+    <version>1.94</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>Turn on computers on your network with Wake-on-LAN packet</summary>
