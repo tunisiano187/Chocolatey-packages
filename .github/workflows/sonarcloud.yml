@@ -17,7 +17,7 @@ jobs:
         # Skip the SonarQube scan when a token is not available (e.g. pull requests from forks
         # do not have access to repository secrets) — this avoids unexpected failures.
         if: ${{ secrets.SONAR_TOKEN != '' }}
-        uses: SonarSource/sonarqube-scan-action@v6
+        uses: SonarSource/sonarqube-scan-action@v7
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: Skip SonarQube scan when token missing
