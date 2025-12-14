@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>solarwinds-backup-manager</id>
-    <version>25.10.0.25327</version>
+    <version>25.10.0.25344</version>
     <title>SolarWinds Backup Manager (Install)</title>
     <authors>SolarWinds MSP</authors>
     <owners>tunisiano</owners>
