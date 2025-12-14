@@ -13,7 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.1
       - name: Get new package
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_ACTOR: ${{ github.event.issue.user.login }}
         run: |
           Import-Module "${{ github.workspace }}\scripts\new.psm1"
           Set-Location ${{ github.workspace }}
-          Find-nextissueGH -packageName "${{ github.event.issue.title }}" -actor "${{ github.event.issue.user.login }}"
+          Find-nextissueGH -packageName "$env:ISSUE_TITLE" -actor "$env:ISSUE_ACTOR"
