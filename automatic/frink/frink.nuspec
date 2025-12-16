@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>frink</id>
-    <version>2025.12.12</version>
+    <version>2025.12.11</version>
     <title>Frink (Portable)</title>
     <authors>Alan Eliasen</authors>
     <owners>tunisiano</owners>
@@ -27,7 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>frink</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/frink</packageSourceUrl>
     <dependencies>
-      <dependency id="javaruntime" version="8.0.0" />
+      <dependency id="temurin" version="21.0.8.9" />
     </dependencies>
   </metadata>
   <files>
