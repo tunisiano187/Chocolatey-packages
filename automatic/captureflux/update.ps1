@@ -13,6 +13,13 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.checksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Import-Module ..\..\scripts\au_extensions.psm1
 	Invoke-VirusTotalScan $Package
