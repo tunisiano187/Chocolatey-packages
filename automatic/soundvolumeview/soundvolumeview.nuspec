@@ -25,7 +25,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>View/change sound levels and save/load sound level profiles on Windows Vista/ from UI and command-line</summary>
     <releaseNotes>https://www.nirsoft.net/utils/sound_volume_view.html</releaseNotes>
-    <copyright>© 2013 NirSoft</copyright>
+    <copyright>Â© 2025 NirSoft</copyright>
     <tags>volume display mute profile cli</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/soundvolumeview</packageSourceUrl>
   </metadata>
