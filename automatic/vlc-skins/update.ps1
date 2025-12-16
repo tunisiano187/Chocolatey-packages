@@ -29,7 +29,7 @@ function global:au_GetLatest {
 		$version = "0.0"
 	} else {
 		Move-Item -Path $FileInfos.TempFile -Destination "tools\$($FileInfos.FileName)"
-		$response = Invoke-WebRequest -Uri $releases -Method Head
+		$response = Invoke-WebRequest -Uri $releases -Method Head -UseBasicParsing
 		$FileDate = [datetime]::Parse($response.Headers["Last-Modified"])
 		$version = "{0:0000}.{1:00}.{2:00}" -f $FileDate.Year, $FileDate.Month, $FileDate.Day
 		$pageurl = 'https://www.videolan.org/vlc/skins.html?sort=date_mod'
