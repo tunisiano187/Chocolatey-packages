@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://proton.me/download/pass/windows/ProtonPass_Setup_1.33.0.exe'
-$checksum64     = 'F7C4D078AFC0691389092F0C94BE55672935958CF0743335A824F7876151ED5C'
+$url64          = 'https://proton.me/download/pass/windows/ProtonPass_Setup_1.33.2.exe'
+$checksum64     = '12F10F1B297B2DA12FCED51597F85AFC41EBC30FE107DFA03A53C185BDFD6B69'
 $checksumType64 = 'sha256'
 
 if ((Get-IsWinServer)) {
