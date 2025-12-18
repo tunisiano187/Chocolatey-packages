@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>slade</id>
+    <version>3.2.4</version>
+    <title>Slade</title>
+    <authors>sirjuddington</authors>
+    <owners>n3rd4i</owners>
+<packageSourceUrl></packageSourceUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://slade.mancubus.net/</projectUrl>
+    <iconUrl>https://cdn.statically.io/img/slade.mancubus.net/images/title.png</iconUrl>
+    <description>SLADE3 is a modern editor for Doom-engine based games and source ports. It has the ability to view, modify, and write many different game-specific formats, and even convert between some of them, or from/to other generic formats such as PNG.
+
+    SLADE3 can be considered a successor to both SLumpEd and SLADE - it combines the features of both, to create an all-in-one editor. Why does it keep the name of what was previously just a map editor? Because it fits :)
+
+    As with SLumpEd and previous versions of SLADE, SLADE3 is fully cross-platform. It can be run on various operating systems, including Windows, Linux and Mac OS/X. So no matter your preferred OS, SLADE3 is available for you.</description>
+    <summary>editor for Doom-engine</summary>
+    <releaseNotes>https://slade.mancubus.net/index.php?page=changes</releaseNotes>
+    <tags>slade doom editor</tags>
+    <projectSourceUrl>https://github.com/sirjuddington/SLADE</projectSourceUrl>
+    <docsUrl>https://slade.mancubus.net/index.php?page=wiki</docsUrl>
+    <mailingListUrl>https://github.com/sirjuddington/SLADE/graphs/contributors</mailingListUrl>
+    <bugTrackerUrl>https://github.com/sirjuddington/SLADE/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
