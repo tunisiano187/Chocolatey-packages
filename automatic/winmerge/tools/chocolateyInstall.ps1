@@ -8,6 +8,12 @@ $url64          = 'https://github.com/WinMerge/winmerge/releases/download/v2.16.
 $checksum64     = 'f0b8094da0df8f3b6ed02ddda01b8c6264a48d7db0d1ccafb09a16e9090cbe8a'
 $checksumType64 = 'sha256'
 
+if ($PackageParameters.shellextension) {
+  $pp = '/TASKS="-ShellExtension"'
+} else {
+  $pp = ''
+}
+
 $packageArgs = @{
   packageName            = $packageName
   fileType               = 'EXE'
@@ -17,7 +23,7 @@ $packageArgs = @{
   url64bit               = $url64
   checksum64             = $checksum64
   checksumType64         = $checksumType64
-  silentArgs             = '/VERYSILENT /SP- /NORESTART'
+  silentArgs             = "/VERYSILENT /SP- /NORESTART $pp"
   validExitCodes         = @(0)
   registryUninstallerKey = $packageName
 }
