@@ -20,9 +20,9 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
-pushd $toolsDir
+Push-Location $toolsDir
 $fileName = Get-ChildItem -Filter "StorageExecutive-$version*"
 $packageArgs.file = Join-Path -Path $toolsDir -ChildPath $fileName
 Install-ChocolateyInstallPackage @packageArgs
-del $fileName
-popd
+Remove-Item $fileName
+Pop-Location

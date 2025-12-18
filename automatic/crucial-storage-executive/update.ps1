@@ -18,7 +18,7 @@ function global:au_GetLatest {
 	$download_page.Content -match $verre | Out-Null
 	$version		= $Matches[0].ToString()
 	#short-circuit if there is no new update to the webpage
-	$url64			= $download_page.links | ? href -match $filere | select -First 1 -expand href
+	$url64			= $download_page.links | Where-Object href -match $filere | Select-Object -First 1 -expand href
 	if ($url64.StartsWith("/")) {
 		# url is NOT fully qualified
 		$url64 = ([System.Uri]$releases).scheme + '://' + ([System.Uri]$releases).authority + $url64
