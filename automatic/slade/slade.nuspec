@@ -6,7 +6,7 @@
     <title>Slade</title>
     <authors>sirjuddington</authors>
     <owners>n3rd4i</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/slade</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://slade.mancubus.net/</projectUrl>
     <iconUrl>https://cdn.statically.io/img/slade.mancubus.net/images/title.png</iconUrl>
