@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/slade</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://slade.mancubus.net/</projectUrl>
-    <iconUrl>https://cdn.statically.io/img/slade.mancubus.net/images/title.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@2f3137bb3b15ed725c31baf9a21e202cc78676eb/icons/slade.png</iconUrl>
     <description>SLADE3 is a modern editor for Doom-engine based games and source ports. It has the ability to view, modify, and write many different game-specific formats, and even convert between some of them, or from/to other generic formats such as PNG.
 
     SLADE3 can be considered a successor to both SLumpEd and SLADE - it combines the features of both, to create an all-in-one editor. Why does it keep the name of what was previously just a map editor? Because it fits :)
