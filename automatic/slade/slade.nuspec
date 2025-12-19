@@ -5,7 +5,7 @@
     <version>3.2.4</version>
     <title>Slade</title>
     <authors>sirjuddington</authors>
-    <owners>n3rd4i</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/slade</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://slade.mancubus.net/</projectUrl>
