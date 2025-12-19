@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ollama</id>
-    <version>0.13.4</version>
+    <version>0.13.5</version>
     <title>Ollama Large Language Models</title>
     <authors>Jeffrey Morgan</authors>
     <owners>tunisiano</owners>
