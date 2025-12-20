@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = $env:chocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = "$toolsDir\Tautulli-windows-v"+$ENV:ChocolateyPackageVersion+"-x64.exe"
+$url            = ''
 $checksum       = 'D41D8CD98F00B204E9800998ECF8427E'
 $checksumType   = 'MD5'
 
