@@ -65,7 +65,6 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <mailingListUrl>https://forums.plex.tv/discussion/307821/tautulli-monitor-your-plex-media-server</mailingListUrl>
   </metadata>
   <files>
-    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
