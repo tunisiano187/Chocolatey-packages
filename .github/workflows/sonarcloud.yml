@@ -1,26 +1,17 @@
-﻿name: Build
+﻿# .github/workflows/sonarqube.yml (correct)
+name: SonarQube
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [ opened, synchronize, reopened ]
+
 jobs:
-  sonarqube:
-    name: SonarQube
+  sonar:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarQube Scan
-        # Skip the SonarQube scan when a token is not available (e.g. pull requests from forks
-        # do not have access to repository secrets) — this avoids unexpected failures.
-        if: ${{ secrets.SONAR_TOKEN != '' }}
+      - uses: actions/checkout@v4
+      - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v7
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      - name: Skip SonarQube scan when token missing
-        if: ${{ secrets.SONAR_TOKEN == '' }}
-        run: |
-          echo "SONAR_TOKEN secret not provided; skipping SonarQube scan to avoid scanner failures."
