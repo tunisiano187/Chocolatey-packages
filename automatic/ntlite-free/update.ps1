@@ -23,8 +23,8 @@ function global:au_GetLatest {
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
 	$urls = $page.Links | Where-Object {$_.href -match 'exe$'}
-	$url32 = $urls.href | Where-Object {$_ -match "x86"}
-	$url64 = $urls.href | Where-Object {$_ -match "x64"}
+	$url32 = $urls.href | Where-Object {$_ -match "x86"} | Select-Object -First 1
+	$url64 = $urls.href | Where-Object {$_ -match "x64"} | Select-Object -First 1
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
