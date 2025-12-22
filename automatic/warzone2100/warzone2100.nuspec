@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>warzone2100</id>
-    <version>4.5.2</version>
+    <version>4.6.2</version>
     <title>Warzone 2100 (Install)</title>
     <authors>buginator, cypr, sendai, the_cybersphinx, vexed-1</authors>
     <owners>tunisiano</owners>
