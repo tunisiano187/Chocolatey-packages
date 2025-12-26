@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>crucial-storage-executive</id>
-    <version>11.11</version>
+    <version>11.10</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/crucial-storage-executive</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>crucial-storage-executive (Install)</title>
