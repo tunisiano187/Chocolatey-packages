@@ -12,8 +12,8 @@ x86: https://github.com/openhab/openhab-distro/releases/download/5.1.0/openhab-5
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksumtype: sha256
-checksum: A09E44DF025DC05D2E75B0B2C4B352322CC259876A599895F4DDB1B2C16D58FC
+checksumtype: SHA512
+checksum: E580A92C3B98909F4CC9FE0B53C86C9D020BA71D6B374EBE2C5E340312E50F2568807A6EC80012FBE7D1CACD87933EECF74DF8B5194B98730F22BB467B33C222
 
 The license is available here:
 https://github.com/openhab/openhab-distro/blob/master/LICENSE
