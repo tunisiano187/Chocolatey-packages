@@ -9,7 +9,7 @@ $packageArgs = @{
   fileType       = 'EXE'
   url            = $url
   validExitCodes = @(0)
-  silentArgs     = '/S /ALLUSERS=1'
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /ALLUSERS=1'
   softwareName   = 'Warzone 2100*'
   checksum       = $checksum
   checksumType   = $checksumType
