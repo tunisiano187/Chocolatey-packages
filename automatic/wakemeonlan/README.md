@@ -14,6 +14,10 @@ these computers with a single click.
 WakeMeOnLan also allows you to turn on a computer from command-line, by specifying the 
 computer name, IP address, or the MAC address of the remote network card.
 
+Virus alert
+
+### ![Image](nirsofer-answer.jpg "Answer from Nirsofer")
+
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
