@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>warp</id>
-    <version>2025.9.558.0</version>
+    <version>2025.10.186.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/warp</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>WARP (Install)</title>
