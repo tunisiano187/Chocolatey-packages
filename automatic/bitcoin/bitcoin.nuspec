@@ -4,7 +4,7 @@
   <metadata>
     <id>bitcoin</id>
     <title>Bitcoin Core Wallet</title>
-    <version>30.1.0</version>
+    <version>30.2.0</version>
     <authors>Satoshi Nakamoto,Gavin Andresen,Bitcoin Developers</authors>
     <owners>tunisiano</owners>
     <summary>A software-based online payment system</summary>
@@ -91,7 +91,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
     <conflicts>bitcoinxt</conflicts>
     <dependencies>
-      <dependency id="bitcoin.install" version="[30.1.0]" />
+      <dependency id="bitcoin.install" version="[30.2.0]" />
     </dependencies>
   </metadata>
   <files>
