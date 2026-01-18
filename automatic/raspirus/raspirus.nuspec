@@ -5,7 +5,7 @@
     <version>2.2.0</version>
     <title>Raspirus</title>
     <authors>Raspirus Team</authors>
-    <owners>Raspirus</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://github.com/Raspirus/raspirus/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://raspirus.deno.dev/</projectUrl>
