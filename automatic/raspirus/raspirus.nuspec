@@ -26,7 +26,7 @@ Welcome to Raspirus, your lightweight rules-based malware scanner. Originally de
     <copyright>© 2022-PRESENT Raspirus Team</copyright>
     <tags>antivirus free open-source security scanner</tags>
     <projectSourceUrl>https://github.com/Raspirus/raspirus</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/raspirus</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Raspirus/raspirus/chocolatey/raspirus</packageSourceUrl>
     <docsUrl>https://raspirus.github.io/docs/</docsUrl>
     <bugTrackerUrl>https://github.com/Raspirus/raspirus/issues</bugTrackerUrl>
   </metadata>
