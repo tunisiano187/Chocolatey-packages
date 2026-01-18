@@ -54,7 +54,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>openHAB - a vendor and technology agnostic open source automation software for your home</summary>
-    <releaseNotes>https://github.com/openhab/openhab-distro/releases/tag/5.1.0</releaseNotes>
+    <releaseNotes>https://github.com/openhab/openhab-distro/releases/tag/5.1.1</releaseNotes>
     <copyright>Copyright © by the openHAB Community and the openHAB Foundation e.V.</copyright>
     <tags>openhab home automation smart java binary foss cross-platform</tags>
     <projectSourceUrl>https://github.com/openhab/openhab-distro</projectSourceUrl>
