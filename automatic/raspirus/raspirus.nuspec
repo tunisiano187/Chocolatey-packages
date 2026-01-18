@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://github.com/Raspirus/raspirus/blob/main/LICENSE</licenseUrl>
     <projectUrl>https://raspirus.deno.dev/</projectUrl>
-    <iconUrl>https://raw.githack.com/Raspirus/media/main/logo/logo-final.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@626a2cb42ea6ec8ecb7bfb51ceea89710ffe0e15/icons/raspirus.svg</iconUrl>
     <description>**Raspirus: Empowering Your Malware Protection**
 
 Welcome to Raspirus, your lightweight rules-based malware scanner. Originally designed to scan attached USB drives using a Raspberry Pi, Raspirus has evolved into a versatile tool capable of scanning local files and folders as well. Some of its standout features include:
