@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>wordweb-free</id>
-    <version>10.54</version>
+    <version>10.55</version>
     <title>WordWeb Free (Install)</title>
     <authors>WordWeb Software</authors>
     <owners>tunisiano</owners>
