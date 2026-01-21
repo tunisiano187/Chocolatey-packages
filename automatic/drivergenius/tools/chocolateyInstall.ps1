@@ -2,7 +2,7 @@
 $installerType  = 'exe'
 $silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $url            = 'https://www.driver-soft.com/products/DriverGenius_Setup_25.0.exe'
-$checksum       = 'd36f4d285b69fda002815641be734c5fbc4e29bc59257c73d411e71843cc6af8'
+$checksum       = 'b694e42a4b4fa666dda510b62a50e4bed41b5298268564379844c35d6979b4f5'
 $checksumType   = 'sha256'
 $validExitCodes = @(0)
 
