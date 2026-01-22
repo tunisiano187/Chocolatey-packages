@@ -2,8 +2,8 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $checksumType   = 'sha256'
-$checksum       = '23e46bbb5978f1cc746f638577676bbb2c8130a4a24121d0dc937b2a27fb3bd8'
-$url            = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.17.4.825.zip'
+$checksum       = 'ed2acf0a7688b0aa701df29c5994808c820707bc1e372cd6a89bd783a0ff916d'
+$url            = 'https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.17.5.826.zip'
 
 $packageArgs = @{
     packageName   = 'sdio'
