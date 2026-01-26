@@ -173,6 +173,7 @@ profile
 pulse
 pydiosync
 raidar
+raspirus
 regexpeditor
 rehash
 reprofiler
