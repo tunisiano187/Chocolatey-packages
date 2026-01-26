@@ -4,6 +4,7 @@ import-module chocolatey-AU
 $releases = 'https://download.foldingathome.org/releases/public/fah-client/meta.json'
 
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
