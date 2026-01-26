@@ -5,8 +5,8 @@
     <version>15.0.2</version>
     <title>EmEditor</title>
     <authors>Emurasoft</authors>
-    <owners>Pine Mizune</owners>
-<packageSourceUrl></packageSourceUrl>
+    <owners>tunisiano</owners>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/emeditor</packageSourceUrl>
     <licenseUrl>https://www.emeditor.com/#toggle-id-3</licenseUrl>
     <projectUrl>https://www.emeditor.com</projectUrl>
     <iconUrl>http://cdn.rawgit.com/pine613/chocolatey-packages/master/emeditor/emeditor.png</iconUrl>
