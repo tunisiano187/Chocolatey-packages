@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>emeditor</id>
+    <version>15.0.2</version>
+    <title>EmEditor</title>
+    <authors>Emurasoft</authors>
+    <owners>Pine Mizune</owners>
+<packageSourceUrl></packageSourceUrl>
+    <licenseUrl>https://www.emeditor.com/#toggle-id-3</licenseUrl>
+    <projectUrl>https://www.emeditor.com</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/pine613/chocolatey-packages/master/emeditor/emeditor.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EmEditor is a fast, lightweight, yet extendable, easy-to-use text editor for Windows. Both native 64-bit and 32-bit builds are available!
+
+This is a 30 day trial version but you can use free version past its day.</description>
+    <summary>EmEditor is a fast, lightweight, yet extendable, easy-to-use text editor for Windows. Both native 64-bit and 32-bit builds are available!</summary>
+    <tags>editor</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
