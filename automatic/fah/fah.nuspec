@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fah</id>
-    <version>8.4.9</version>
+    <version>8.5.5</version>
     <title>Folding@home</title>
     <authors>Pande Lab</authors>
     <owners>tunisiano</owners>
