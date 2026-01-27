@@ -20,6 +20,7 @@ function global:au_SearchReplace {
 function global:au_AfterUpdate($Package) {
   $Latest.LicenseUrl = (Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).html_url
   Update-Metadata -key "licenseUrl" -value $Latest.LicenseUrl
+	Import-Module ..\..\scripts\au_extensions.psm1
 	Invoke-VirusTotalScan $Package
 }
 
