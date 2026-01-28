@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference  = 'Stop'
-$url                    = 'https://github.com/transmission/transmission/releases/download/4.1.0-beta.5/transmission-4.1.0-beta.5+r11d3fc6f5a-x86.msi'
-$checksum               = '5484dd673c1db1bd95a4a51ea5d4dc1c135d9867178107eae722286fad0be995'
+$url                    = 'https://github.com/transmission/transmission/releases/download/4.1.0/transmission-4.1.0-x86.msi'
+$checksum               = 'cddd35de5ca686fd6c9b65a1ec22ee6b5744d033b389365ca62eddc6e7843b40'
 $checksumType           = 'sha256'
-$url64                  = 'https://github.com/transmission/transmission/releases/download/4.1.0-beta.5/transmission-4.1.0-beta.5+r11d3fc6f5a-x64.msi'
-$checksum64             = '65be8bc603a54e4352768508ffa62b794a9415b56869daad565599cab4897bf3'
+$url64                  = 'https://github.com/transmission/transmission/releases/download/4.1.0/transmission-4.1.0-x64.msi'
+$checksum64             = '9a0c14d2aab07fa2e7084a4e0d4a7a2bfaef41c7df794b273fbd8b2ad997c2f7'
 $checksumType64         = 'sha256'
 
 $packageArgs = @{
