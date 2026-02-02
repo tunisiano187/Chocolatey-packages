@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>trafficlight-firefox</id>
-    <version>3.4.0</version>
+    <version>3.4.1</version>
     <title>Bitdefender TrafficLight for Firefox</title>
     <authors>BitDefender Labs</authors>
     <owners>tunisiano</owners>
