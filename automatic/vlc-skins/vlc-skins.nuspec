@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>vlc-skins</id>
-    <version>2026.01.18</version>
+    <version>2026.02.08</version>
     <title>VLC Skins (Install)</title>
     <authors>Various</authors>
     <owners>tunisiano</owners>
