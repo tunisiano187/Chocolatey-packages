@@ -29,22 +29,47 @@ function global:au_BeforeUpdate {
 }
 
 function global:au_GetLatest {
-	$Page = Invoke-WebRequest -Uri $releases -UserAgent "Update checker of Chocolatey Community Package 'Netbeans'"
-	$release = ($Page.Links | Where-Object {$_ -match "download/"}).href | Where-Object {$_ -match "exe"} | Select-Object -First 1
+	try {
+		# Get latest release from GitHub
+		$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+		
+		if (-not $tags) {
+			throw "Could not fetch latest release from GitHub"
+		}
 
-	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	#Update-Metadata -key "releaseNotes" -value $tags.html_url
+		# Extract Windows x64 exe from release assets
+		$asset = $tags.assets | Where-Object { $_.name -match 'Apache-NetBeans.*\.exe$' } | Select-Object -First 1
+		
+		if (-not $asset) {
+			throw "Could not find Windows exe asset in latest release"
+		}
 
-	$version=($release.Split('/') | Where-Object {$_ -match "[0-9][0-9]"} | Where-Object {$_ -notmatch 'exe'}).Substring(1).replace('-','.0-')
-	if($version -notmatch '\.') {
-		$version+=".0"
+		$url64 = $asset.browser_download_url
+		
+		# Parse version from release tag (e.g., "v28-build2" -> "28")
+		$version = $tags.tag_name -replace 'v([0-9]+).*', '$1'
+		
+		if (-not $version -or $version -match '^v') {
+			throw "Could not parse version from tag: $($tags.tag_name)"
+		}
+
+		# NetBeans versions don't include subversion, but Chocolatey needs one
+		if ($version -notmatch '\.') {
+			$version += ".0"
+		}
+
+		$Latest = @{ 
+			URL64 = $url64
+			Checksum64 = ""
+			ChecksumType64 = ""
+			Version = $version
+		}
+		return $Latest
 	}
-	if($version -match "25.0") {
-		$version = "25.0.0.20250801"
+	catch {
+		Write-Error "Error fetching latest NetBeans release: $_"
+		throw
 	}
-
-	$Latest = @{ URL64 = $release; Checksum64 = $Checksum; ChecksumType64 = $ChecksumType; Version = $version }
-	return $Latest
 }
 
 update -ChecksumFor none -NoCheckChocoVersion
