@@ -19,11 +19,24 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $url = Get-RedirectedUrl $release
-    $version = $(Get-Version($url)).Version
+    try {
+        $url = Get-RedirectedUrl $release
+        if (-not $url) {
+            throw "Could not get redirect from $release"
+        }
+        $version = $(Get-Version($url)).Version
+        
+        if (-not $version) {
+            throw "Could not extract version from URL"
+        }
 
-	$Latest = @{ URL64 = $url; Version = $version }
-    return $Latest
+        $Latest = @{ URL64 = $url; Version = $version }
+        return $Latest
+    }
+    catch {
+        Write-Error "Error getting latest Eagle version: $_"
+        throw
+    }
 }
 
 update -ChecksumFor 64 -NoCheckUrl

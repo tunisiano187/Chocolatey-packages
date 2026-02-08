@@ -29,18 +29,38 @@ function global:au_AfterUpdate($Package) {
 
 
 function global:au_GetLatest {
-  $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-  $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
-  $url = $urls | Where-Object {$_ -match 'x64'}
-  $version = $tags.tag_name.Replace('v','')
-  if($tags.prerelease -match "true") {
-      $date = $tags.published_at.ToString("yyyyMMdd")
-      $version = "$version-pre$($date)"
+  try {
+    $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+    
+    if (-not $tags) {
+      throw "Could not fetch GitHub releases for $Owner/$repo"
+    }
+    
+    $urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+    if (-not $urls) {
+      throw "No zip assets found in release"
+    }
+    
+    $url = $urls | Where-Object {$_ -match 'x64'} | Select-Object -First 1
+    if (-not $url) {
+      throw "No x64 zip found in assets"
+    }
+    
+    $version = $tags.tag_name.Replace('v','')
+    if($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
+    }
+    
+    return @{
+      URL64 = $url
+      Version = $version.Replace('v','')
+      ReleaseNotes = "https://github.com/Ryochan7/DS4Windows/releases/tag/${version}"
+    }
   }
-  @{
-    URL64 = $url
-    Version = $version.Replace('v','')
-    ReleaseNotes = "https://github.com/Ryochan7/DS4Windows/releases/tag/${version}"
+  catch {
+    Write-Error "Error getting latest DS4Windows version: $_"
+    throw
   }
 }
 
