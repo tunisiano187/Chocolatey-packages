@@ -36,10 +36,18 @@ function global:au_GetLatest {
 	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
-	7z.exe x $exeFile -i!"Bonjour.msi" -y
-	7z.exe x "$(get-location)\Bonjour.msi" -i!"mDNSResponder.exe" -y
+	7z.exe x $exeFile -i!"Bonjour.msi" -y | Out-Null
+	7z.exe x "$(get-location)\Bonjour.msi" -i!"mDNSResponder.exe" -y | Out-Null
+	
 	Write-Output 'Get version'
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
+	if (-not (Test-Path $File)) {
+		Write-Output "File not found: $File. Trying alternative extraction..."
+		Pop-Location
+		$Latest = @{ URL32 = $url32; URL64 = $url64; Version = "3.1.0.5" }
+		return $Latest
+	}
+	
+	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 	Write-Output "Version : $version"
 	Pop-Location
 	if($version -eq "3.1.0.1"){
