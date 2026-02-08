@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>wamp-server</id>
-    <version>3.4.0</version>
+    <version>3.4.0.2025122601</version>
     <title>Wamp Server</title>
     <authors>Romain Bourdon</authors>
     <owners>tunisiano</owners>
