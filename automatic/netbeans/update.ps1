@@ -32,23 +32,23 @@ function global:au_GetLatest {
 	try {
 		# Get latest release from GitHub
 		$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-		
+
 		if (-not $tags) {
 			throw "Could not fetch latest release from GitHub"
 		}
 
 		# Extract Windows x64 exe from release assets
 		$asset = $tags.assets | Where-Object { $_.name -match 'Apache-NetBeans.*\.exe$' } | Select-Object -First 1
-		
+
 		if (-not $asset) {
 			throw "Could not find Windows exe asset in latest release"
 		}
 
 		$url64 = $asset.browser_download_url
-		
+
 		# Parse version from release tag (e.g., "v28-build2" -> "28")
 		$version = $tags.tag_name -replace 'v([0-9]+).*', '$1'
-		
+
 		if (-not $version -or $version -match '^v') {
 			throw "Could not parse version from tag: $($tags.tag_name)"
 		}
@@ -58,7 +58,7 @@ function global:au_GetLatest {
 			$version += ".0"
 		}
 
-		$Latest = @{ 
+		$Latest = @{
 			URL64 = $url64
 			Checksum64 = ""
 			ChecksumType64 = ""
