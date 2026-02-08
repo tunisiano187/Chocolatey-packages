@@ -23,7 +23,17 @@ function global:au_GetLatest {
 
 	$url32 = "https://files.informer.com/siinst.exe"
 
-	$version = $($download_page.Content.Split("<span>") | Where-Object {$_ -match "\.[0-9][0-9][0-9][0-9]"} | Where-Object {$_ -match '(x86/x64)'}).split(' ')[0].trim()
+	$versionMatches = $download_page.Content.Split("<span>") | Where-Object {$_ -match "\.[0-9][0-9][0-9][0-9]"} | Where-Object {$_ -match '(x86/x64)'}
+	
+	if (-not $versionMatches) {
+		throw "Could not extract version information from page"
+	}
+	
+	$version = @($versionMatches)[0].split(' ')[0].trim()
+	
+	if (-not $version -or $version -eq "") {
+		throw "Could not parse version"
+	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest

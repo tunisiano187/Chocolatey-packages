@@ -20,11 +20,17 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'DirectDownload'} | Where-Object {$_ -match "Download for Windows"} ).href)[0]
-	$ReleasesNotes = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Release notes'} ).href)
+	$response = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$downloadLink = $response.Links | Where-Object {$_.href -match 'DirectDownload'} | Where-Object {$_.href -match 'Download for Windows'} | Select-Object -First 1
+	if (-not $downloadLink) {
+		throw "Could not find DirectDownload link for Windows"
+	}
+	$url32 = $downloadLink.href
+	$ReleaseNotesLink = $response.Links | Where-Object {$_.href -match 'Release notes'} | Select-Object -First 1
+	$ReleasesNotes = $ReleaseNotesLink.href
 	$url32 = Get-RedirectedUrl $url32
 
-	$version=($url32.Replace('%20', "-").split('-') | Where-Object {$_ -match "[0-9]"}).Replace('\.0$','')
+	$version = ($url32.Replace('%20', "-").split('-') | Where-Object {$_ -match "[0-9]"} | Select-Object -First 1).Replace('\.0$','')
 
 	$Latest = @{ URL32 = $url32; Version = $version; ReleaseNotes = $ReleasesNotes }
 	return $Latest

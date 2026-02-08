@@ -19,7 +19,14 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'}).href | Select-Object -First 1
+	$response = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	if (-not $response.Links) {
+		throw "No download links found on $releases"
+	}
+	$url32 = ($response.Links | Where-Object {$_.href -match '\.zip'} | Select-Object -First 1).href
+	if (-not $url32) {
+		throw "Could not find .zip download link"
+	}
 	$version = $url32.Split('/')[-2]
 
 	$url32 = Get-RedirectedUrl "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/projectlibre-$version.zip/download"

@@ -26,15 +26,16 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
-    $url32 = $urls | Where-Object {$_ -match 'x86'}
-    $url64 = $urls | Where-Object {$_ -match 'x64'}
+    $url32 = $urls | Where-Object {$_ -match 'x86'} | Select-Object -First 1
+    $url64 = $urls | Where-Object {$_ -match 'x64'} | Select-Object -First 1
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
-	$version = $url32 -split 'v|/' | select-object -Last 1 -Skip 1
-    if($tags.tag_name -match $version) {
-        if($tags.prerelease -match "true") {
-            $date = $tags.published_at.ToString("yyyyMMdd")
-            $version = "$version-pre$($date)"
-        }
+	
+	# Extract version from tag name, removing 'v' prefix
+	$version = $tags.tag_name -replace '^v'
+	
+	if ($tags.prerelease -match "true") {
+        $date = $tags.published_at.ToString("yyyyMMdd")
+        $version = "$version-pre$($date)"
     }
 
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
