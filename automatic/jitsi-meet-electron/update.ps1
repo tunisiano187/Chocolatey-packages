@@ -1,8 +1,8 @@
 import-module chocolatey-AU
 
-$releases = 'https://api.github.com/repos/jonelo/jacksum-fbi-windows/releases/latest'
-$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
-$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+$releases = 'https://api.github.com/repos/jitsi/jitsi-meet-electron/releases/latest'
+$Owner = 'jitsi'
+$repo = 'jitsi-meet-electron'
 
 function global:au_SearchReplace {
   @{
