@@ -25,7 +25,7 @@ function global:au_GetLatest {
             throw "Could not get redirect from $release"
         }
         $version = $(Get-Version($url)).Version
-        
+
         if (-not $version) {
             throw "Could not extract version from URL"
         }
