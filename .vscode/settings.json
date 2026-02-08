@@ -14,5 +14,9 @@
         "statusBarItem.hoverBackground": "#6F3215",
         "statusBar.foreground": "#FDCEA5",
 
-      }
+    },
+    "sonarlint.connectedMode.project": {
+        "connectionId": "tunisiano187",
+        "projectKey": "tunisiano187_Chocolatey-packages"
+    }
 }
