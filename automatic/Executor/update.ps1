@@ -25,10 +25,23 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32      = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base +  '/' + $_ } | Select-Object -First 1
+	$url32 = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base + '/' + $_ } | Select-Object -First 1
+	
+	if (-not $url32) {
+		throw "Could not find EXE download link"
+	}
 
-	[XML]$feed	= $((Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml' -UseBasicParsing)).Content
-	$version 	= $feed.rss.channel.item[0].title.split(' ')[-1].trim()
+	$feedResponse = Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml' -UseBasicParsing
+	if (-not $feedResponse) {
+		throw "Could not fetch RSS feed"
+	}
+	
+	[XML]$feed = $feedResponse.Content
+	if (-not $feed.rss.channel.item[0]) {
+		throw "Could not parse RSS feed"
+	}
+	
+	$version = $feed.rss.channel.item[0].title.split(' ')[-1].trim()
 
 	return @{
 		Url32 	= $url32
