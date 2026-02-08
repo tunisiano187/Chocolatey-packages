@@ -35,17 +35,17 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$regexPattern = 'XMedia Recode (\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	
+
 	if (-not $versionMatch.Matches -or $versionMatch.Matches.Count -eq 0) {
 		throw "Could not find version pattern in page content"
 	}
-	
+
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	
+
 	if (-not $version -or $version -eq "" -or $version -match '^\d{2}$') {
 		throw "Invalid version extracted: '$version'"
 	}
-	
+
 	$versionfile = ($version -replace '[.]','')
 	$url32 = "https://www.xmedia-recode.de/download/XMediaRecode$($versionfile)_setup.exe"
 	$url64 = "https://www.xmedia-recode.de/download/XMediaRecode$($versionfile)_x64_setup.exe"

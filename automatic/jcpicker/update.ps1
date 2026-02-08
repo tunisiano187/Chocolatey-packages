@@ -27,18 +27,18 @@ function global:au_GetLatest {
 
 	$page = Invoke-WebRequest -Uri "https://annystudio.com/software/colorpicker" -UseBasicParsing
 	$versionLinks = $page.Links | Where-Object {$_.href -match "jcpicker\.exe"}
-	
+
 	if (-not $versionLinks) {
 		throw "Could not find jcpicker.exe download link"
 	}
-	
+
 	$versionText = $versionLinks[0].outerHTML
 	$versionMatch = $versionText | Select-String -Pattern '(\d+\.\d+)' -AllMatches
-	
+
 	if (-not $versionMatch.Matches) {
 		throw "Could not extract version number from page"
 	}
-	
+
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
 	$Latest = @{ URL32 = $url32; Version = $version }

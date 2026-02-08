@@ -26,7 +26,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
 	$url32 = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base + '/' + $_ } | Select-Object -First 1
-	
+
 	if (-not $url32) {
 		throw "Could not find EXE download link"
 	}
@@ -35,12 +35,12 @@ function global:au_GetLatest {
 	if (-not $feedResponse) {
 		throw "Could not fetch RSS feed"
 	}
-	
+
 	[XML]$feed = $feedResponse.Content
 	if (-not $feed.rss.channel.item[0]) {
 		throw "Could not parse RSS feed"
 	}
-	
+
 	$version = $feed.rss.channel.item[0].title.split(' ')[-1].trim()
 
 	return @{

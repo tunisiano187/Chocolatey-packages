@@ -26,20 +26,20 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	
+
 	if (-not $tags) {
 		throw "Could not fetch GitHub release for $Owner/$repo"
 	}
-	
+
 	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "x64-(\d+)\.zip$"} | Select-Object -First 1
-	
+
 	if (-not $url32) {
 		throw "Could not find x64 ZIP file in release assets"
 	}
-	
+
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','').Replace('-','.')
-	
+
 	if ($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"
