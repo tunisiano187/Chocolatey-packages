@@ -5,7 +5,7 @@ $checksum		= '893B21E6FF4EB99C0171845E4C2AF15FAA6F3AE34687A4EC2E1CFFE14C5FB72F'
 $checksumType	= 'sha256'
 $fileType		= 'exe'
 $softwareName	= 'NetBeans*'
-$silentArgs		= '/S'
+$silentArgs		= '--verbose --output "$env:TEMP\netbeans-install.log" --silent'
 
 $packageArgs = @{
     packageName     = $env:ChocolateyPackageName
