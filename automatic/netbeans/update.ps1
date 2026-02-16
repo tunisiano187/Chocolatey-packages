@@ -31,7 +31,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	try {
 		# Get latest release from GitHub
-		$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo
+		$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 
 		if (-not $tags) {
 			throw "Could not fetch latest release from GitHub"
