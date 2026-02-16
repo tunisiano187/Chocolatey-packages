@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Analyser PS (.ps1)",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-NoProfile", "-Command", "Invoke-ScriptAnalyzer -Path '${file}'"],
+            "group": {
+                "kind": "build",
+                "isDefault": "**/*.ps1"
+            },
+            "problemMatcher": ["$psscriptanalyzer"]
+        },
+        {
+            "label": "Vérifier MD (.md)",
+            "type": "shell",
+            "command": "markdownlint",
+            "args": ["${file}"],
+            "group": {
+                "kind": "build",
+                "isDefault": "**/*.md"
+            },
+            "problemMatcher": ["$markdownlint"]
+        },
+        {
+            "label": "Autres fichiers (non supportés)",
+            "type": "shell",
+            "command": "echo",
+            "args": ["Fichier ${file##*/} (ext: ${file##*.}). Types supportés: .ps1, .md. Demandez à Perplexity pour ajouter d'autres (ex: .txt, .json) !"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false
+            }
+        }
+    ]
+}
