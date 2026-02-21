@@ -3,8 +3,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
 
 $checksumType = 'sha256'
-$url          = 'https://slade.mancubus.net/files/3.2.11/slade_3.2.11_x64.7z'
-$checksum     = '69cf7c641cd2f587c58c5835773a4ee5d31137e04fb2a74256682f99c93ee538'
+$url          = 'https://slade.mancubus.net/files/3.2.12/slade_3.2.12_x64.7z'
+$checksum     = '95dbaab79f317e8191861642a7b438266eaa227e3528399af01e184048e2974b'
 
 
 $unzipLocation = $installLocation
