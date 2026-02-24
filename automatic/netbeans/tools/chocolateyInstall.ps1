@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url			= 'https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v28-build2/Apache-NetBeans-28.exe'
-$checksum		= '893B21E6FF4EB99C0171845E4C2AF15FAA6F3AE34687A4EC2E1CFFE14C5FB72F'
+$url			= 'https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29.exe'
+$checksum		= '152531686F53D9AF24D41172576C5FB780B9054E027ED38B496B1A7AEFA3BAA4'
 $checksumType	= 'sha256'
 $fileType		= 'exe'
 $softwareName	= 'NetBeans*'
