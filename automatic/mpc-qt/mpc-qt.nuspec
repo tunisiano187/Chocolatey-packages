@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mpc-qt</id>
-    <version>25.07</version>
+    <version>26.01</version>
     <title>MPC QT</title>
     <authors>https://github.com/mpc-qt/mpc-qt/graphs/contributors</authors>
     <owners>tunisiano</owners>
