@@ -3,12 +3,7 @@ $search = $Issues.title.Split('(|)')[1]
 Write-Output "search: $search"
 
 try {
-    try {
     $page = Invoke-WebRequest -Uri "https://community.chocolatey.org/packages/$($search)" -UseBasicParsing -ErrorAction Stop
-} catch {
-    Write-Output "Package page not found or error for $search: $_"
-    return
-} -ErrorAction Stop
 } catch {
     Write-Output "Package page not found or error for '$search': $_"
     return
