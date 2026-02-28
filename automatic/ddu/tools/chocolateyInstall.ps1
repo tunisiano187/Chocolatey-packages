@@ -21,3 +21,10 @@ Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\*.exe"
 Remove-Item "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\DDU*" -Recurse
 
 Install-ChocolateyZipPackage @packageArgs
+
+# Create shortcuts so users can easily find the app
+$exePath = Get-ChildItem "$toolsDir\DDU*" -Filter "*.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($exePath) {
+    Install-ChocolateyShortcut -ShortcutFilePath "$env:Public\Desktop\DDU.lnk" -TargetPath $exePath.FullName -Description "Display Driver Uninstaller"
+    Install-ChocolateyShortcut -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\DDU.lnk" -TargetPath $exePath.FullName -Description "Display Driver Uninstaller"
+}
