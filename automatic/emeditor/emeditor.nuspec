@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>emeditor</id>
-    <version>15.0.2</version>
+    <version>26.0.3</version>
     <title>EmEditor</title>
     <authors>Emurasoft</authors>
     <owners>tunisiano</owners>

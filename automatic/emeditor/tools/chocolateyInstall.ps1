@@ -1,8 +1,11 @@
-﻿$packageName = 'emeditor'
-$version = '15.0.2'
-$fileType = 'exe'
-$installArgs = '/exenoui /q'
-$url = 'http://files.emeditor.com/emed32_15.0.2.exe'
-$url64 = 'http://files.emeditor.com/emed64_15.0.2.exe'
+$packageName = 'emeditor'
+$version     = '26.0.3'
+$fileType    = 'msi'
+$installArgs = '/quiet /norestart'
+$url64       = 'https://emeditor.blob.core.windows.net/emed64_26.0.3.msi'
+$checksum64  = '2762ee07156cbc2ad274aa62fe82e701cd6736182eac44c529eae98eb6bc5221'
 
-Install-ChocolateyPackage $packageName $fileType $installArgs $url $url64
+Install-ChocolateyPackage $packageName $fileType $installArgs `
+    -url64bit $url64 `
+    -checksum64 $checksum64 `
+    -checksumType64 'sha256'
