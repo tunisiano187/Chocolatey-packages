@@ -1,0 +1,92 @@
+name: GPU Price Check
+
+on:
+  schedule:
+    # Every Monday and Thursday at 08:00 UTC
+    - cron: '0 8 * * 1,4'
+  workflow_dispatch:
+
+jobs:
+  check-price:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check RTX 4060 Ti 16GB price
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.GPU_ALERT_TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.GPU_ALERT_TELEGRAM_CHAT_ID }}
+          PRICE_THRESHOLD: "450"
+        run: |
+          python3 << 'EOF'
+          import urllib.request, json, re, os, sys
+
+          threshold = float(os.environ.get('PRICE_THRESHOLD', 450))
+          token = os.environ.get('TELEGRAM_TOKEN', '')
+          chat_id = os.environ.get('TELEGRAM_CHAT_ID', '')
+
+          results = []
+
+          # --- idealo.be ---
+          try:
+            url = "https://www.idealo.be/prix/446302614/zotac-gaming-geforce-rtx-4060-ti-16gb.html"
+            req = urllib.request.Request(url, headers={
+              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'
+            })
+            html = urllib.request.urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
+            # Chercher le prix le plus bas
+            prices = re.findall(r'"lowPrice"\s*:\s*"?([\d,\.]+)"?', html)
+            if not prices:
+              prices = re.findall(r'(\d{2,3}[,\.]\d{2})\s*€', html)
+            if prices:
+              price_str = prices[0].replace(',', '.').replace('\xa0', '')
+              price = float(re.sub(r'[^\d.]', '', price_str))
+              results.append(('idealo.be', price))
+              print(f"idealo.be: €{price:.2f}")
+          except Exception as e:
+            print(f"idealo.be error: {e}")
+
+          # --- 2ememain.be (search) ---
+          try:
+            url = "https://www.2ememain.be/l/informatique-et-logiciels/composants-pc/cartes-graphiques/#Language:all-languages&q:rtx+4060+ti+16gb&sortBy:SORT_INDEX&sortOrder:DECREASING"
+            req = urllib.request.Request(url, headers={
+              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'
+            })
+            html = urllib.request.urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
+            prices = re.findall(r'"price"\s*:\s*{\s*"amount"\s*:\s*([\d\.]+)', html)
+            if prices:
+              price = min(float(p) for p in prices if float(p) > 50)
+              results.append(('2ememain.be', price))
+              print(f"2ememain.be: €{price:.2f}")
+          except Exception as e:
+            print(f"2ememain.be error: {e}")
+
+          if not results:
+            print("No prices found")
+            sys.exit(0)
+
+          best_price = min(p for _, p in results)
+          best_source = [s for s, p in results if p == best_price][0]
+
+          print(f"Best price: €{best_price:.2f} on {best_source}")
+
+          if best_price <= threshold and token and chat_id:
+            msg = (
+              f"🎮 Alerte GPU !\n"
+              f"RTX 4060 Ti 16GB à **€{best_price:.2f}** sur {best_source}\n"
+              f"Seuil configuré : €{threshold:.0f}\n"
+              f"⚡ C'est le bon moment !"
+            )
+            data = json.dumps({
+              'chat_id': chat_id,
+              'text': msg,
+              'parse_mode': 'Markdown'
+            }).encode()
+            req = urllib.request.Request(
+              f'https://api.telegram.org/bot{token}/sendMessage',
+              data=data,
+              headers={'Content-Type': 'application/json'}
+            )
+            resp = urllib.request.urlopen(req, timeout=10).read()
+            print("Telegram alert sent!")
+          else:
+            print(f"Price €{best_price:.2f} above threshold €{threshold:.0f}, no alert.")
+          EOF
