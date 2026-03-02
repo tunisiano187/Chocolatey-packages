@@ -5,7 +5,7 @@
     <version>8.4</version>
     <title>Belarc Advisor</title>
     <authors>Daniel Dieppa</authors>
-    <owners>Daniel Dieppa</owners>
+    <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/belarc-advisor</packageSourceUrl>
     <projectUrl>http://www.belarc.com/index.html</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
