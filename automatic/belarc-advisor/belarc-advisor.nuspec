@@ -6,7 +6,7 @@
     <title>Belarc Advisor</title>
     <authors>Daniel Dieppa</authors>
     <owners>Daniel Dieppa</owners>
-<packageSourceUrl></packageSourceUrl>
+<packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/belarc-advisor</packageSourceUrl>
     <projectUrl>http://www.belarc.com/index.html</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Belarc Advisor builds a detailed profile of your installed software and hardware, network inventory, missing Microsoft hotfixes, anti-virus status, security benchmarks, and displays the results in your Web browser. All of your PC profile information is kept private on your PC and is not sent to any web server. 
