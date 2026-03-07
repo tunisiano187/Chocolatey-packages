@@ -31,6 +31,6 @@ jobs:
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $APPVEYOR_TOKEN" \
             -d "{\"branch\": \"${GITHUB_REF##refs/heads/}\"}" \
-            https://ci.appveyor.com/api/projects/<account>/<project>/build
+            https://ci.appveyor.com/api/projects/tunisiano187/chocolatey-packages/build
 
 # You can also add additional logic (tags, custom data, etc.) as needed.
