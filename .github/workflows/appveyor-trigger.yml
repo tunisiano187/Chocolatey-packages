@@ -16,21 +16,30 @@ on:
     types: [completed]
 
 jobs:
-  call-appveyor:
-    # run regardless of success/failure as long as the workflow has completed
-    if: ${{ always() }}
+  trigger-appveyor:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger AppVeyor
-        env:
-          APPVEYOR_TOKEN: ${{ secrets.APPVEYOR_API_TOKEN }}
+      - name: Vérifier les variables d'environnement
         run: |
-          echo "Starting AppVeyor build for branch $GITHUB_REF"
-          curl -sS \
-            -X POST \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer $APPVEYOR_TOKEN" \
-            -d "{\"branch\": \"${GITHUB_REF##refs/heads/}\"}" \
-            https://ci.appveyor.com/api/projects/tunisiano187/chocolatey-packages/build
-
-# You can also add additional logic (tags, custom data, etc.) as needed.
+          echo "APPEYOR_TOKEN=${{ env.APPVEYOR_TOKEN }}"
+          echo "TOKEN_LENGTH=${#APPVEYOR_TOKEN}"
+          echo "REFNAME=${GITHUB_REF##refs/heads/}"
+      
+      - name: Déclencher Build AppVeyor
+        id: appveyor
+        run: |
+          curl -sS -w "\\nHTTP_CODE:%{http_code}\\n" \
+          -X POST "https://ci.appveyor.com/api/projects/tunisiano187/Chocolatey-packages/build" \
+          -H "Authorization: Bearer ${{ env.APPVEYOR_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d "{\"branch\": \"${GITHUB_REF##refs/heads/}\"}" \
+          > response.json
+        
+      - name: Analyser réponse
+        if: steps.appveyor.outcomes.success
+        env:
+          APPVEYOR_CODE: ${{ env.PROJECT_URL }}
+        run: |
+          cat response.json
+          echo "✅ Build déclenché avec succès !"
+          echo "Branch: $BRANCH_NAME"
