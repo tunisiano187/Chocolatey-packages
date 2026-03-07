@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/belarc-advisor</packageSourceUrl>
     <projectUrl>http://www.belarc.com/index.html</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3d6022650c690f50de29a21b9e65544b49c3a2fb/icons/belarc-advisor.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Belarc Advisor builds a detailed profile of your installed software and hardware, network inventory, missing Microsoft hotfixes, anti-virus status, security benchmarks, and displays the results in your Web browser. All of your PC profile information is kept private on your PC and is not sent to any web server. 
 Operating Systems: Runs on Windows 8.1, 2012 R2, 8, 2012, 7, 2008 R2, Vista, 2008, 2003, XP, 2000, NT 4, Me, 98, and 95. Both 32-bit and 64-bit Windows are supported.
