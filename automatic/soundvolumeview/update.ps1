@@ -25,7 +25,7 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url64 -OutFile "tools/soundvolumeview-x64.zip" -UseBasicParsing
 	$Checksum32 = (Get-FileHash -Path "tools/soundvolumeview.zip" -Algorithm $env:ChocolateyChecksumType).Hash
 	$Checksum64 = (Get-FileHash -Path "tools/soundvolumeview-x64.zip" -Algorithm $env:ChocolateyChecksumType).Hash
-	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/sound_volume_view.html"
+	$pageContent = Invoke-WebRequest -Uri "https://www.nirsoft.net/utils/sound_volume_view.html" -UseBasicParsing
 	$regexPattern = 'SoundVolumeView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
