@@ -1,0 +1,36 @@
+﻿name: Trigger AppVeyor build
+
+# This workflow runs when one of the other GH Actions workflows finishes.
+# Replace the names in "workflows" with the actual workflow names you care about
+# (the `name:` field at the top of each .yml file).
+# It only continues when the completed run succeeded, then calls the AppVeyor API
+# to start a build.  You need to create a repository secret named
+# `APPVEYOR_API_TOKEN` with a personal token from AppVeyor (Settings/Account).
+
+on:
+  workflow_run:
+    workflows:
+      - "CodeQL / Analyze (actions) (dynamic)"
+      - "SonarQube Analysis"              # SonarCloud Code Analysis Completed in SonarQube Analysis / sonar (push)
+      - "Package improver"               # Package improver / updater (push)
+    types: [completed]
+
+jobs:
+  call-appveyor:
+    # run regardless of success/failure as long as the workflow has completed
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger AppVeyor
+        env:
+          APPVEYOR_TOKEN: ${{ secrets.APPVEYOR_API_TOKEN }}
+        run: |
+          echo "Starting AppVeyor build for branch $GITHUB_REF"
+          curl -sS \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $APPVEYOR_TOKEN" \
+            -d "{\"branch\": \"${GITHUB_REF##refs/heads/}\"}" \
+            https://ci.appveyor.com/api/projects/<account>/<project>/build
+
+# You can also add additional logic (tags, custom data, etc.) as needed.
