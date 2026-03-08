@@ -1,0 +1,39 @@
+[![](https://img.shields.io/chocolatey/v/javauninstalltool?color=green&label=javauninstalltool)](https://chocolatey.org/packages/javauninstalltool) [![](https://img.shields.io/chocolatey/dt/javauninstalltool)](https://chocolatey.org/packages/javauninstalltool)
+
+## Java Uninstall Tool (Portable)
+
+---
+
+### [choco://javauninstalltool](choco://javauninstalltool)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+## Information about the Java Uninstall Tool for Windows
+
+The Java Uninstall tool helps you improve your computer security by simplifying the process of finding and uninstalling versions of Java. The Uninstall tool shows you a list of the Java versions on your computer and then allows you to select which versions to remove.
+
+## Highlights of the Java Uninstall tool
+
+* Versions of Java detected will be presented to the user for removal
+* The user can choose to remove all or select specific versions of Java to remove
+* Works on Windows operating systems
+* Detects and allows removal of Java versions 1.4.2 and higher.
+* Only Java versions installed using the Java installer are detected. If Java is bundled with any application that uses its own installer, that version of Java will not be offered for removal.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/javauninstalltool/readme.md)**
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---
+
+#### [choco://javauninstalltool](choco://javauninstalltool)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)

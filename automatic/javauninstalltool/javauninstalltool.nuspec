@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>javauninstalltool</id>
+    <version>15.0.0.0</version>
+    <title>Java Uninstall Tool (Portable)</title>
+    <authors>Oracle</authors>
+    <owners>bcurran3</owners>
+    <licenseUrl>https://www.java.com/en/download/uninstall-app/terms.jsp</licenseUrl>
+    <projectUrl>https://www.java.com/en/download/faq/uninstaller_toolfaq.xml</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/50fd97744110dcbce1acde889c0870599c9d5584/icons/java.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>---
+
+### [choco://javauninstalltool](choco://javauninstalltool)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+---
+
+## Information about the Java Uninstall Tool for Windows
+
+The Java Uninstall tool helps you improve your computer security by simplifying the process of finding and uninstalling versions of Java. The Uninstall tool shows you a list of the Java versions on your computer and then allows you to select which versions to remove.
+
+## Highlights of the Java Uninstall tool
+
+* Versions of Java detected will be presented to the user for removal
+* The user can choose to remove all or select specific versions of Java to remove
+* Works on Windows operating systems
+* Detects and allows removal of Java versions 1.4.2 and higher.
+* Only Java versions installed using the Java installer are detected. If Java is bundled with any application that uses its own installer, that version of Java will not be offered for removal.
+
+**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/javauninstalltool/readme.md)**
+    
+
+---
+
+**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+
+---</description>
+    <summary>Out-of-date versions of Java on your computer may present a serious security risk. If out-of-date versions are found, this tool will help you remove them.</summary>
+    <copyright>Oracle</copyright>
+    <tags>oracle java uninstaller tool portable</tags>
+    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/javauninstalltool</packageSourceUrl>
+    <docsUrl>https://www.java.com/en/download/faq/uninstaller_toolfaq.xml</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
