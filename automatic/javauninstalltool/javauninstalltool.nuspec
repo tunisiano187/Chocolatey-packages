@@ -40,7 +40,7 @@ The Java Uninstall tool helps you improve your computer security by simplifying 
     <summary>Out-of-date versions of Java on your computer may present a serious security risk. If out-of-date versions are found, this tool will help you remove them.</summary>
     <copyright>Oracle</copyright>
     <tags>oracle java uninstaller tool portable</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/javauninstalltool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/javauninstalltool</packageSourceUrl>
     <docsUrl>https://www.java.com/en/download/faq/uninstaller_toolfaq.xml</docsUrl>
   </metadata>
   <files>
