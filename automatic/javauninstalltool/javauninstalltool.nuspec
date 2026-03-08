@@ -5,7 +5,7 @@
     <version>15.0.0.0</version>
     <title>Java Uninstall Tool (Portable)</title>
     <authors>Oracle</authors>
-    <owners>bcurran3</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://www.java.com/en/download/uninstall-app/terms.jsp</licenseUrl>
     <projectUrl>https://www.java.com/en/download/faq/uninstaller_toolfaq.xml</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@da2aeed95cb1468eb9990dd040947535e190ccd8/icons/javauninstalltool.svg</iconUrl>
