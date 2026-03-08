@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     This script performs the installation or uninstallation of Apache NetBeans IDE 20.
     # LICENSE #
@@ -149,7 +149,7 @@ Try {
         Get-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*','HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' -ErrorAction Stop | Out-Null
         } Catch [System.InvalidCastException] {
         $NetBeans = (& reg query "HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall" | Where-Object {$_ -match 'nbi\-'})
-    
+
         ForEach ($entry in $NetBeans) {
         $registryPath = $entry -replace 'HKEY_LOCAL_MACHINE', 'HKLM:'
         & reg add $entry /v NoModify /t REG_DWORD /d 0x1 /f | Out-Null
@@ -157,12 +157,12 @@ Try {
         }
 
         ## Remove Any Existing Version of Apache NetBeans IDE 20 (Originally Installed by User)
-        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'        
+        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'
         ForEach ($app in $appList)
         {
         If($app.UninstallString)
         {
-        $uninstPath = $($app.UninstallString).Replace('"','')      
+        $uninstPath = $($app.UninstallString).Replace('"','')
         If(Test-Path -Path $uninstPath)
         {
         Write-Log -Message "Found $($app.DisplayName) $($app.DisplayVersion) and a valid uninstall string, now attempting to uninstall."
@@ -173,12 +173,12 @@ Try {
         }
 
         ## Remove Any Existing Version of Apache NetBeans IDE 20 (Originally Installed by System)
-        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'        
+        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'
         ForEach ($app in $appList)
         {
         If($app.UninstallString)
         {
-        $uninstPath = $($app.UninstallString).Replace('"','')      
+        $uninstPath = $($app.UninstallString).Replace('"','')
         If(Test-Path -Path $uninstPath)
         {
         Write-Log -Message "Found $($app.DisplayName) $($app.DisplayVersion) and a valid uninstall string, now attempting to uninstall."
@@ -187,7 +187,7 @@ Try {
         }
         }
         }
-  
+
         ##*===============================================
         ##* INSTALLATION
         ##*===============================================
@@ -195,7 +195,7 @@ Try {
 
         If ($ENV:PROCESSOR_ARCHITECTURE -eq 'x86'){
         Write-Log -Message "Detected 32-bit OS Architecture. Apache NetBeans 20 is not supported on 32-bit operating systems." -Severity 2 -Source $deployAppScriptFriendlyName
-      
+
         }
         Else
         {
@@ -204,7 +204,7 @@ Try {
         ## Install Java JDK 64-bit
         $msiPath = Get-ChildItem -Path "$dirFiles" -Include jdk-*_windows-x64_bin.msi -File -Recurse -ErrorAction SilentlyContinue
         $transform = Get-ChildItem -Path "$dirFiles" -Include *.mst -File -Recurse -ErrorAction SilentlyContinue
-              
+
         If(($msiPath.Exists) -and ($transform.Exists))
         {
         Write-Log -Message "Found $($msiPath.FullName) and $($transform.FullName), now attempting to install Java JDK 64-bit."
@@ -221,7 +221,7 @@ Try {
         ## Install Apache NetBeans IDE 20
         $exePath = Get-ChildItem -Path "$dirFiles" -Include Apache-NetBeans-20*-bin-windows-x64.exe -File -Recurse -ErrorAction SilentlyContinue
         $xml = Get-ChildItem -Path "$dirFiles" -Include state.xml -File -Recurse -ErrorAction SilentlyContinue
-              
+
         If(($exePath.Exists) -and ($xml.Exists))
         {
         Write-Log -Message "Found $($exePath.FullName) and $($xml.FullName), now attempting to install $installTitle."
@@ -234,15 +234,15 @@ Try {
 
         If ($config.Exists) {
         Write-Log -Message "Found $($config.FullName), now attempting to copy the core.properties file."
-    
+
         $NetBeansVersions = @("20.9", "20.8", "20.7", "20.6", "20.5", "20.4", "20.3", "20.2", "20.1", "20")
 
-        $userProfiles = Get-WmiObject Win32_UserProfile | Where {(!$_.Special) -and $_.LocalPath -notlike 'C:\Windows\ServiceProfiles*'} | Select-Object -ExpandProperty LocalPath
+        $userProfiles = Get-WmiObject Win32_UserProfile | Where-Object {(!$_.Special) -and $_.LocalPath -notlike 'C:\Windows\ServiceProfiles*'} | Select-Object -ExpandProperty LocalPath
 
         ForEach ($profile in $userProfiles) {
         ForEach ($version in $NetBeansVersions) {
         $NetBeansPath = Join-Path $profile "AppData\Roaming\NetBeans\$Version\config\Preferences\org\netbeans\"
-            
+
         If (Test-Path -Path "$envProgramFiles\NetBeans-$version\") {
         New-Item -Path $NetBeansPath -ItemType Directory -Force
         Copy-Item -Path $config.FullName -Destination $NetBeansPath -ErrorAction SilentlyContinue
@@ -256,7 +256,7 @@ Try {
         Show-InstallationPrompt -Message "Apache NetBeans IDE 20 installer or state.xml response file were not found. Installation aborted." -ButtonRightText "OK"
         }
         }
-   
+
         ##*===============================================
         ##* POST-INSTALLATION
         ##*===============================================
@@ -287,7 +287,7 @@ Try {
         Get-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*','HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' -ErrorAction Stop | Out-Null
         } Catch [System.InvalidCastException] {
         $NetBeans = (& reg query "HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall" | Where-Object {$_ -match 'nbi\-'})
-    
+
         ForEach ($entry in $NetBeans) {
         $registryPath = $entry -replace 'HKEY_LOCAL_MACHINE', 'HKLM:'
         & reg add $entry /v NoModify /t REG_DWORD /d 0x1 /f | Out-Null
@@ -295,12 +295,12 @@ Try {
         }
 
         ## Uninstall Any Existing Version of Apache NetBeans IDE 20 (Originally Installed by User)
-        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'        
+        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'
         ForEach ($app in $appList)
         {
         If($app.UninstallString)
         {
-        $uninstPath = $($app.UninstallString).Replace('"','')      
+        $uninstPath = $($app.UninstallString).Replace('"','')
         If(Test-Path -Path $uninstPath)
         {
         Write-Log -Message "Found $($app.DisplayName) $($app.DisplayVersion) and a valid uninstall string, now attempting to uninstall."
@@ -311,12 +311,12 @@ Try {
         }
 
         ## Uninstall Any Existing Version of Apache NetBeans IDE 20 (Originally Installed by System)
-        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'        
+        $appList = Get-InstalledApplication -Name 'Apache NetBeans IDE 20'
         ForEach ($app in $appList)
         {
         If($app.UninstallString)
         {
-        $uninstPath = $($app.UninstallString).Replace('"','')      
+        $uninstPath = $($app.UninstallString).Replace('"','')
         If(Test-Path -Path $uninstPath)
         {
         Write-Log -Message "Found $($app.DisplayName) $($app.DisplayVersion) and a valid uninstall string, now attempting to uninstall."
