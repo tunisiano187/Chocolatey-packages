@@ -1,5 +1,5 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName  = 'javauninstalltool' 
+$ErrorActionPreference = 'Stop'
+$packageName  = 'javauninstalltool'
 $shortcutName = 'Java Uninstall Tool.lnk'
 
 remove-item "$env:Public\Desktop\$shortcutName" -Force -ErrorAction 'SilentlyContinue'
