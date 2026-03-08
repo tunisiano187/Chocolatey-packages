@@ -8,7 +8,7 @@
     <owners>bcurran3</owners>
     <licenseUrl>https://www.java.com/en/download/uninstall-app/terms.jsp</licenseUrl>
     <projectUrl>https://www.java.com/en/download/faq/uninstaller_toolfaq.xml</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/50fd97744110dcbce1acde889c0870599c9d5584/icons/java.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@da2aeed95cb1468eb9990dd040947535e190ccd8/icons/javauninstalltool.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>---
 
