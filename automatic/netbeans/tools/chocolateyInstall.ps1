@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 # use Chocolatey helper to download the installer so it appears in the tools directory
 # next to our bundled installer script.  We do not call Install-ChocolateyPackage
