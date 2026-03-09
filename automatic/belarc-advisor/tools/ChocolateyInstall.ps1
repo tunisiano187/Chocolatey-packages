@@ -1,6 +1,6 @@
-$packageName    = 'belarc-advisor'
-$url            = 'https://www2.aomeisoftware.com/download/adb/ABServerTrial.exe'
-$checksum       = 'FCA81EC6930922351FB98C429D76164A0D82152F9BBE5D2E92F500CA83C43352'
+﻿$packageName    = 'belarc-advisor'
+$url            = 'http://www.belarc.com/Programs/advisorinstaller.exe'
+$checksum       = '47EA898493F64ED818EDF9B76B0B0E047D753C3E1EBCFB70E251563D4212E56F'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
