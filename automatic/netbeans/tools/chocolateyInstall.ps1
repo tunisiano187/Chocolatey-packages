@@ -15,7 +15,7 @@ $packageArgs = @{
     packageName  = $env:ChocolateyPackageName
     url          = $url
     fileType     = 'exe'
-    destination  = $installerFile
+    fileFullPath = $installerFile
     checksum     = $checksum
     checksumType = $checksumType
 }
