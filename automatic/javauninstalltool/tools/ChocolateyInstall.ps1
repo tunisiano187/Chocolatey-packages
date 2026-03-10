@@ -3,6 +3,7 @@ $packageName  = 'javauninstalltool'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://javadl-esd-secure.oracle.com/update/jut/JavaUninstallTool.exe'
 $checksum     = '06FBF93F1C0EBD3585F4C6CC1095BF32109CD8233E4D49780E558624F4FCB7C2'
+$checksumType = 'sha256'
 $shortcutName = 'Java Uninstall Tool.lnk'
 $portableEXE  = 'JavaUninstallTool.exe'
 
@@ -13,7 +14,7 @@ $packageArgs = @{
   FileFullPath  = "$toolsDir\JavaUninstallTool.exe"
   softwareName  = ''
   checksum      = $checksum
-  checksumType  = 'sha256'
+  checksumType  = $checksumType
 }
 
 Get-ChocolateyWebFile @packageArgs

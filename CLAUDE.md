@@ -82,7 +82,12 @@ Global AU hooks (`au_BeforeUpdate`, `au_AfterUpdate`) are also supported and use
 ### Helper scripts (`scripts/`)
 Shared utilities imported by update scripts:
 - `au_extensions.psm1` — AU extensions (e.g. `Invoke-VirusTotalScan`)
-- `Get-FileVersion.ps1` — Downloads a file and returns its checksum/version
+- `Get-FileVersion.ps1` — Downloads a file and returns its version (from PE FileVersionInfo) and checksum. Call it without specifying `-checksumType` so it picks the appropriate algorithm automatically. Use `.Checksum` and `.ChecksumType` from the returned object:
+  ```powershell
+  . ..\..\scripts\Get-FileVersion.ps1
+  $FileVersion = Get-FileVersion $url
+  $Latest = @{ ...; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+  ```
 - `checks.ps1`, `Find-*.ps1` — Auditing and QA helpers
 
 ### AU configuration (`au/`)
