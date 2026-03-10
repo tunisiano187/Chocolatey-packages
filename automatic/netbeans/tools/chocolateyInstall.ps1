@@ -30,5 +30,4 @@ if (-not (Test-Path $installerScript)) {
 }
 
 Write-Host 'Running bundled installer script in silent mode'
-Start-ChocolateyProcessAsAdmin -FilePath 'powershell' -ArgumentList
-    "-NoProfile -ExecutionPolicy Bypass -File `"$installerScript`" -DeploymentType Install -DeployMode Silent" -Wait
+Start-ChocolateyProcessAsAdmin -FilePath 'powershell' -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$installerScript`" -DeploymentType Install -DeployMode Silent" -Wait
