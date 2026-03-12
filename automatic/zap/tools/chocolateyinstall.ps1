@@ -6,6 +6,7 @@ $url32          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/
 $url64          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2_17_0_windows.exe'
 $checksum32     = '125fc89c73d440141ce859109e23258700b863b94475d5461926ec757d99e94a'
 $checksum64     = 'ebdaf6f00ffd9c21891d29360196e13a14091f84dde2bfa1e0b61213a93bc5ca'
+$checksumType32 = 'sha512'
 $pf             = ''
 
 $packageArgs = @{
@@ -16,9 +17,9 @@ $packageArgs = @{
   url64bit       = $url64
   softwareName   = 'Zed Attack Proxy*'
   checksum       = $checksum32
-  checksumType   = 'sha256'
+  checksumType   = $checksumType32
   checksum64     = $checksum64
-  checksumType64 = 'sha256'
+  checksumType64 = $checksumType32
   silentArgs     = '-q'
   validExitCodes = @(0)
 }
