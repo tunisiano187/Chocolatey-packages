@@ -46,7 +46,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
     <copyright>Copyright ©2025 ZAP Dev Team</copyright>
     <tags>zap admin dast security proxy attack web pentesting</tags>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/zap</packageSourceUrl>
     <docsUrl>https://www.zaproxy.org/docs/</docsUrl>
     <mailingListUrl>https://groups.google.com/g/zaproxy-users</mailingListUrl>
     <bugTrackerUrl>https://github.com/zaproxy/zaproxy/issues</bugTrackerUrl>
