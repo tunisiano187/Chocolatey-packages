@@ -32,7 +32,6 @@ function global:au_GetLatest {
     	$date = $tags.published_at.ToString("yyyyMMdd")
     	$version = "$version-pre$($date)"
 	}
-	Invoke-WebRequest -Uri $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url) -OutFile "legal\LICENSE.txt"
 
   	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
