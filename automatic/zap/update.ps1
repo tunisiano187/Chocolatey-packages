@@ -1,5 +1,5 @@
 # Update script for zap package
-import-module au
+import-module chocolatey-AU
 function global:au_SearchReplace {
     @{
         "$($Latest.PackageName)\tools\chocolateyInstall.ps1" = @{
