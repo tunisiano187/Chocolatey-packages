@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>javauninstalltool</id>
-    <version>15.0.0.0</version>
+    <version>25.0.0.0</version>
     <title>Java Uninstall Tool (Portable)</title>
     <authors>Oracle</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,9 @@
     <projectUrl>https://www.java.com/en/download/faq/uninstaller_toolfaq.xml</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@da2aeed95cb1468eb9990dd040947535e190ccd8/icons/javauninstalltool.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
+    <description><![CDATA[## Java Uninstall Tool (Portable)
+
+---
 
 ### [choco://javauninstalltool](choco://javauninstalltool)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
@@ -36,7 +38,16 @@ The Java Uninstall tool helps you improve your computer security by simplifying 
 
 **Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
 
----</description>
+---
+
+#### [choco://javauninstalltool](choco://javauninstalltool)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Out-of-date versions of Java on your computer may present a serious security risk. If out-of-date versions are found, this tool will help you remove them.</summary>
     <copyright>Oracle</copyright>
     <tags>oracle java uninstaller tool portable</tags>
