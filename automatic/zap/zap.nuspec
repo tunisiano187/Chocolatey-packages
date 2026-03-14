@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://www.zaproxy.org/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/21dec8124d4ca81a4956465270b35386c95e4c25/icons/zap.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d8d7ed3aa3e7648d2f4a01812626c7ef27648473/icons/zap.png</iconUrl>
     <description># Zed Attack Proxy (ZAP)
 
 The Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
