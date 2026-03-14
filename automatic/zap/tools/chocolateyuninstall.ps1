@@ -1,8 +1,8 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $packageName = 'zap'
 $softwareName = 'Zed Attack Proxy*'
-$installerType = 'EXE' 
+$installerType = 'EXE'
 $silentArgs = '-q'
 $validExitCodes = @(0)
 
@@ -10,7 +10,7 @@ $uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
 
 if ($key.Count -eq 1) {
-  $key | % { 
+  $key | ForEach-Object {
     $file = "$($_.UninstallString)"
 
     Uninstall-ChocolateyPackage -PackageName $packageName `
@@ -25,5 +25,5 @@ if ($key.Count -eq 1) {
   Write-Warning "$key.Count matches found!"
   Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
   Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | % {Write-Warning "- $_.DisplayName"}
+  $key | ForEach-Object {Write-Warning "- $_.DisplayName"}
 }
