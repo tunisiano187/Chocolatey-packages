@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$url32 = "http://www.belarc.com/Programs/advisorinstaller.exe"
+$url32 = "https://downloads.belarc.com/advisor/advisorinstaller.exe"
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
