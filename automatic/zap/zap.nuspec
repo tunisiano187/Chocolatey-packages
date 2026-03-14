@@ -5,7 +5,7 @@
     <version>2.17.0.20251217</version>
     <title>Zed Attack Proxy (ZAP) (Install)</title>
     <authors>Checkmarx</authors>
-    <owners>jtcmedia</owners>
+    <owners>tunisiano</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://www.zaproxy.org/</projectUrl>
