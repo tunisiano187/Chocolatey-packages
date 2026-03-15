@@ -29,7 +29,7 @@ Your synchronized files are completely private and resides only on your computer
     <releaseNotes />
     <copyright>CodeLathe</copyright>
     <tags>codelathe tonido cloud home server sync admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tonido-sync</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tonido-sync</packageSourceUrl>
     <docsUrl>http://www.tonido.com/tonidodesktop_how/</docsUrl>
     <mailingListUrl>http://www.tonido.com/forum/</mailingListUrl>
   </metadata>
