@@ -17,7 +17,7 @@ jobs:
           PRICE_THRESHOLD: "450"
         run: |
           python3 << 'EOF'
-          import urllib.request, json, re, os, sys
+          import urllib.request, json, re, os, sys, ssl
 
           threshold = float(os.environ.get('PRICE_THRESHOLD', 450))
           token = os.environ.get('TELEGRAM_TOKEN', '')
@@ -25,14 +25,19 @@ jobs:
 
           results = []
 
+          # SSL context that tolerates CDN hostname mismatches
+          ssl_ctx = ssl.create_default_context()
+          ssl_ctx.check_hostname = False
+          ssl_ctx.verify_mode = ssl.CERT_NONE
+
           # --- idealo.be ---
           try:
             url = "https://www.idealo.be/prix/446302614/zotac-gaming-geforce-rtx-4060-ti-16gb.html"
             req = urllib.request.Request(url, headers={
-              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'
+              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept-Language': 'fr-BE,fr;q=0.9',
             })
-            html = urllib.request.urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
-            # Chercher le prix le plus bas
+            html = urllib.request.urlopen(req, timeout=15, context=ssl_ctx).read().decode('utf-8', errors='ignore')
             prices = re.findall(r'"lowPrice"\s*:\s*"?([\d,\.]+)"?', html)
             if not prices:
               prices = re.findall(r'(\d{2,3}[,\.]\d{2})\s*€', html)
@@ -41,21 +46,41 @@ jobs:
               price = float(re.sub(r'[^\d.]', '', price_str))
               results.append(('idealo.be', price))
               print(f"idealo.be: €{price:.2f}")
+            else:
+              print("idealo.be: no price found in page")
           except Exception as e:
             print(f"idealo.be error: {e}")
 
-          # --- 2ememain.be (search) ---
+          # --- 2ememain.be via API (fragment URLs are not server-side) ---
           try:
-            url = "https://www.2ememain.be/l/informatique-et-logiciels/composants-pc/cartes-graphiques/#Language:all-languages&q:rtx+4060+ti+16gb&sortBy:SORT_INDEX&sortOrder:DECREASING"
-            req = urllib.request.Request(url, headers={
-              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36'
+            api_url = (
+              "https://www.2ememain.be/lrp/api/search"
+              "?query=rtx+4060+ti+16gb"
+              "&attributesByKey[]=Language:all-languages"
+              "&sortBy=SORT_INDEX&sortOrder=DECREASING"
+              "&searchInTitleAndDescription=true"
+            )
+            req = urllib.request.Request(api_url, headers={
+              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept': 'application/json',
+              'Accept-Language': 'fr-BE,fr;q=0.9',
             })
-            html = urllib.request.urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
-            prices = re.findall(r'"price"\s*:\s*{\s*"amount"\s*:\s*([\d\.]+)', html)
+            data = urllib.request.urlopen(req, timeout=15, context=ssl_ctx).read().decode('utf-8', errors='ignore')
+            obj = json.loads(data)
+            # listings are under obj['listings'] or obj['data']['listings']
+            listings = obj.get('listings') or (obj.get('data') or {}).get('listings') or []
+            prices = []
+            for item in listings:
+              price_info = item.get('priceInfo') or {}
+              amt = price_info.get('priceCents')
+              if amt and float(amt) > 5000:  # priceCents > 50€
+                prices.append(float(amt) / 100)
             if prices:
-              price = min(float(p) for p in prices if float(p) > 50)
+              price = min(prices)
               results.append(('2ememain.be', price))
               print(f"2ememain.be: €{price:.2f}")
+            else:
+              print("2ememain.be: no listings found")
           except Exception as e:
             print(f"2ememain.be error: {e}")
 
