@@ -209,7 +209,7 @@ build_script:
     scripts/ListPackages.ps1
     git commit -am "List packages"
     Write-host "Check broken package"
-    tools/looknewer.ps1
+    #tools/looknewer.ps1
     git commit -am "Broken packages"
     Write-host "Remove NoCheckChocoVersion"
     scripts/Remove-Nocheck.ps1
