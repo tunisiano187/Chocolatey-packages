@@ -51,7 +51,7 @@ Works on Windows 2000, XP, Vista, Windows 7, Windows 8 and Windows 10 running on
     <releaseNotes />
     <copyright>CodeLathe</copyright>
     <tags>codelathe tonido cloud home server admin</tags>
-    <packageSourceUrl>https://github.com/bcurran3/ChocolateyPackages/tree/master/tonido-server</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/tonido-server</packageSourceUrl>
     <docsUrl>http://www.tonido.com/tonidodesktop_how/</docsUrl>
     <mailingListUrl>http://www.tonido.com/forum/</mailingListUrl>
     <bugTrackerUrl>http://www.tonido.com/tonido-release-notes/</bugTrackerUrl>
