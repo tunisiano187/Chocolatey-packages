@@ -1,6 +1,6 @@
 ﻿$packageName  = 'trafficlight-firefox'
-$url          = 'https://addons.mozilla.org/firefox/downloads/file/4676912/trafficlight-3.4.1.xpi'
-$checksum     = 'AE304462A4810EB3F8CC925A5220F563F806E7BFF1F36193DFEBE66A8E5B8931'
+$url          = 'https://addons.mozilla.org/firefox/downloads/file/4716464/trafficlight-3.4.3.xpi'
+$checksum     = '996ABF9B8BD579EDA5A6EB1F62A7D289562D579B5D5184C62F1D388D2191BE60'
 $checksumType = 'sha256'
 $extensionID  = "{6c4e0842-d473-48fd-a930-67dbcea33345}"
 
