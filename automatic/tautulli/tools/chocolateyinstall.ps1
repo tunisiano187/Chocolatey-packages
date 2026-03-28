@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = $env:chocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/Tautulli/Tautulli/releases/download/v2.16.1/Tautulli-windows-v2.16.1-x64.exe'
-$checksum       = 'e1ec11e0b61ac21f1a15d2a41f05dce42a453e46e639d60b0faa6cfde45f78ea'
+$url            = 'https://github.com/Tautulli/Tautulli/releases/download/v2.17.0/Tautulli-windows-v2.17.0-x64.exe'
+$checksum       = '38ffb9e45589687d702dd9a7275226bb5bf02bdd67dce8f1dd7a82eac2d17a77'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
