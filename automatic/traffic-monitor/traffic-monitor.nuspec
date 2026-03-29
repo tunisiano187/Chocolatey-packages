@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>traffic-monitor</id>
-    <version>1.85.1</version>
+    <version>1.86</version>
     <title>Traffic Monitor</title>
     <authors>zhongyang219</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,7 @@
     <licenseUrl>https://github.com/zhongyang219/TrafficMonitor/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/zhongyang219/TrafficMonitor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.
+    <description><![CDATA[TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.
 
 # Main Features
 
@@ -27,7 +27,13 @@ The following package parameters can be set:
 * `/unzipLocation` - Unzip to a different path than default.
 
 These parameters can be passed to the installer with the use of `-params`.
-For example: `choco install traffic-monitor -params '"/unzipLocation:D:\traffic-monitor"'`.</description>
+For example: `choco install traffic-monitor -params '"/unzipLocation:D:\traffic-monitor"'`.
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.</summary>
     <releaseNotes>https://github.com/zhongyang219/TrafficMonitor/releases</releaseNotes>
     <tags>foss productivity network traffic monitor</tags>
