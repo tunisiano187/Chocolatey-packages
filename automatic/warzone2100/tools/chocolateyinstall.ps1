@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName  = 'warzone2100'
-$url          = 'https://github.com/Warzone2100/warzone2100/releases/download/4.6.3/warzone2100_win_installer.exe'
-$checksum     = '9d64331fceac1d64ca480aaf51c703955b71d2d55f577157625353a56a20d261'
+$url          = 'https://github.com/Warzone2100/warzone2100/releases/download/4.7.0/warzone2100_win_installer.exe'
+$checksum     = '80ee0913413bdf9b6edef8c53a31f89e6613db3b7324cdd98cae8d3cd571b7cf'
 $checksumType = 'sha256'
 
 $packageArgs = @{
