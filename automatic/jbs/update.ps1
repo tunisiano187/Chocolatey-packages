@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://johnsad.ventures/software/backgroundswitcher/windows/'
 $padVersionUnder = '5.4.0.3'
