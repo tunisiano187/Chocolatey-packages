@@ -2,10 +2,10 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url          = 'https://github.com/yang991178/fluent-reader/releases/download/v1.2.1/Fluent.Reader.Setup.1.2.1.x86.exe' # download url, HTTPS preferred
-$checksum     = '56a0ea30c1f9c70723ea3ef3694636b737c8b4d69c15760e0b622f37ddfb0f8c'
-$url64        = 'https://github.com/yang991178/fluent-reader/releases/download/v1.2.1/Fluent.Reader.Setup.1.2.1.x64.exe' # 64bit URL here (HTTPS preferred) or remove - if installer contains both (very rare), use $url
-$checksum64   = '51b63bb629e2a7686245a9671b0377d565d9d077ac202538ccdf79735703e3f9'
+$url          = 'https://github.com/yang991178/fluent-reader/releases/download/v1.2.2/Fluent.Reader.Setup.1.2.2.x86.exe' # download url, HTTPS preferred
+$checksum     = 'd3ac8178eea9d533174cda6a6f9da23c21cb203da8a4f6cbb02824ebdec6c049'
+$url64        = 'https://github.com/yang991178/fluent-reader/releases/download/v1.2.2/Fluent.Reader.Setup.1.2.2.x64.exe' # 64bit URL here (HTTPS preferred) or remove - if installer contains both (very rare), use $url
+$checksum64   = '8b62c3804bc9664676add4f06b2b92b4d36f38c39caa6af89788f34f30030cae'
 $checksumType = 'sha256'
 
 $packageArgs = @{
