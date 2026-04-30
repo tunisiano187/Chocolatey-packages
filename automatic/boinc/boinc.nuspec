@@ -3,7 +3,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>boinc</id>
-    <version>8.2.9</version>
+    <version>8.2.11</version>
     <title>BOINC</title>
     <authors>University of California</authors>
     <owners>tunisiano</owners>
