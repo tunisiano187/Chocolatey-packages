@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gwyddion</id>
-    <version>2.63.0</version>
+    <version>2.71</version>
     <title>Gwyddion (Install)</title>
     <authors>David Nečas (Yeti) and Petr Klapetek</authors>
     <owners>tunisiano</owners>
@@ -10,14 +10,9 @@
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
     <projectUrl>http://gwyddion.net/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/gwyddion.png</iconUrl>
-    <description>---
+    <description><![CDATA[## Gwyddion (Install)
 
-### [choco://gwyddion](choco://gwyddion)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Screenshot of Gwyddion](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/gwyddion/gwyddion_screenshot.png)
+![Screenshot of Gwyddion](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@aa9a12560bb114b7b3ea0998eb6b39d836bb4b59/automatic/gwyddion/gwyddion_screenshot.png)
 	
 Gwyddion is a modular program for SPM (scanning probe microscopy) data visualization and analysis. Primarily it is intended for the analysis of height fields obtained by scanning probe microscopy techniques (AFM, MFM, STM, SNOM/NSOM) and it supports a lot of SPM data formats. However, it can be used for general height field and (greyscale) image processing, for instance for the analysis of profilometry data or thickness maps from imaging spectrophotometry.
 
@@ -27,14 +22,14 @@ Gwyddion is Free and Open Source software, covered by GNU General Public License
 
 Gwyddion works on GNU/Linux, Microsoft Windows and Mac OS X operating systems on common architectures. All systems can be used also for development. It has a modern graphical user interface based on the widely portable Gtk+ toolkit, consistent across all the supported systems.
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/gwyddion/readme.md)**
+#### [choco://gwyddion](choco://gwyddion)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Gwyddion is a multiplatform modular free software for visualization and analysis of data from scanning probe microscopy (SPM) techniques (like AFM, MFM, STM, SNOM/NSOM).</summary>
     <releaseNotes>http://gwyddion.net/</releaseNotes>
     <copyright>Czech Metrology Institute</copyright>
