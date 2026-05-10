@@ -2,8 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$base     = 'http://www.1space.dk/executor'
-$releases = "$base/downloadlinks.html"
+$base     = 'https://executor.dk'
+$releases = "$base/download"
 
 function global:au_BeforeUpdate {
   $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
@@ -31,7 +31,7 @@ function global:au_GetLatest {
 		throw "Could not find EXE download link"
 	}
 
-	$feedResponse = Invoke-WebRequest -Uri 'http://www.1space.dk/executor/rssfeed.xml' -UseBasicParsing
+	$feedResponse = Invoke-WebRequest -Uri 'https://executor.dk/rssfeed.xml' -UseBasicParsing
 	if (-not $feedResponse) {
 		throw "Could not fetch RSS feed"
 	}
