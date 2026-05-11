@@ -23,10 +23,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "Tech\/"} | Where-Object {$_.href -notmatch 'css'}).href[0].split('/')[-2]
-	$url32 = "https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/$version/PwTech-$version-32bit.zip/download"
-	$url64 = $url32.replace('32bit','64bit')
+	$url = "https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/$version/PwTech-$version-portable.zip/download"
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
+	$Latest = @{ URL32 = $url; URL64 = $url; Version = $version }
 	return $Latest
 }
 

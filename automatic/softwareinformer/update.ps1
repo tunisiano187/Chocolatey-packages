@@ -2,7 +2,9 @@ $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$releases = "https://software-informer.informer.com/download/"
+# software-informer.informer.com is Cloudflare-blocked.
+# files.informer.com/siinst.exe is a direct CDN link that bypasses Cloudflare;
+# version is extracted from the exe's FileVersionInfo.
 
 function global:au_SearchReplace {
     @{
@@ -19,24 +21,16 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-	$url32 = "https://files.informer.com/siinst.exe"
-
-	$versionMatches = $download_page.Content.Split("<span>") | Where-Object {$_ -match "\.[0-9][0-9][0-9][0-9]"} | Where-Object {$_ -match '(x86/x64)'}
-
-	if (-not $versionMatches) {
-		throw "Could not extract version information from page"
+	$url32    = "https://files.informer.com/siinst.exe"
+	$tempFile = Join-Path $env:TEMP "siinst_version_check.exe"
+	try {
+		Invoke-WebRequest -Uri $url32 -OutFile $tempFile -UseBasicParsing
+		$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion.Trim()
+		if (-not $version) { throw "Could not extract version from siinst.exe" }
+	} finally {
+		if (Test-Path $tempFile) { Remove-Item $tempFile -Force -ErrorAction SilentlyContinue }
 	}
-
-	$version = @($versionMatches)[0].split(' ')[0].trim()
-
-	if (-not $version -or $version -eq "") {
-		throw "Could not parse version"
-	}
-
-	$Latest = @{ URL32 = $url32; Version = $version }
-    return $Latest
+	return @{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor 32

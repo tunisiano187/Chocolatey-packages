@@ -1,6 +1,8 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
+# packetstream.software.informer.com is Cloudflare-blocked.
+# The S3 "latest" URL serves the current release; version is extracted from the exe.
 $url32 = 'https://s3-us-west-2.amazonaws.com/packetstream-releases/latest/PacketStream.exe'
 
 function global:au_SearchReplace {
@@ -18,14 +20,15 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$pageContent = Invoke-WebRequest -Uri "https://packetstream.software.informer.com/" -UseBasicParsing
-	$regexPattern = 'PacketStream \s*(\d+(\.\d+)*)'
-	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
-
-	$version = $versionMatch.Matches[0].Groups[1].Value
-
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	$tempFile = Join-Path $env:TEMP "PacketStream_version_check.exe"
+	try {
+		Invoke-WebRequest -Uri $url32 -OutFile $tempFile -UseBasicParsing
+		$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion.Trim()
+		if (-not $version) { throw "Could not extract version from PacketStream.exe" }
+	} finally {
+		if (Test-Path $tempFile) { Remove-Item $tempFile -Force -ErrorAction SilentlyContinue }
+	}
+	return @{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor 32
