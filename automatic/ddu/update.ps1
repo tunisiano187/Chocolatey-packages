@@ -1,7 +1,9 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-$releases = "https://www.wagnardsoft.com/forums/viewforum.php?f=5"
+# Changed from forums (Cloudflare IUAM) to the main DDU page which is accessible.
+# Direct download URL pattern: https://www.wagnardsoft.com/DDU/download/DDU%20v{version}.exe
+$releases = "https://www.wagnardsoft.com/display-driver-uninstaller-ddu"
 
 function global:au_SearchReplace {
 	@{
@@ -20,24 +22,22 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	Add-Type -AssemblyName System.Web # To URLDecode
-	$links = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match 'Released'}).href
-	if ($links -is [array]) { $links = $links[0] }
-	$urlend = $(([System.Web.HttpUtility]::UrlDecode($links).replace('./','').replace('&amp;','&')))
-	$release="https://www.wagnardsoft.com/forums/$urlend"
-	$splited=$release.split('&')
-	$referer="$($splited[0])&$($splited[1])"
-	$url32=(((Invoke-WebRequest -Uri $release -UseBasicParsing).Links | Where-Object {$_ -match '.exe'} | Where-Object {$_ -notmatch 'setup'}).href)
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 
-	$version=$url32.split('/')[-1].ToLower().split('v')[-1].replace('.exe','')
-	#$version = Get-Version $url32
-	if($version -eq "18.0.7.7") {
-		$version = '18.0.7.2024062101'
+	# Extract version from content links like /content/Download-Display-Driver-Uninstaller-DDU-18152
+	# Pattern: DDU-{2-digit-major}{minor}{patch}{build} e.g. DDU-18152 => 18.1.5.2
+	if ($page.Content -match '/content/Download-Display-Driver-Uninstaller-DDU-(\d{2})(\d)(\d)(\d+)') {
+		$version = "$($Matches[1]).$($Matches[2]).$($Matches[3]).$($Matches[4])"
+	} elseif ($page.Content -match '[Vv](\d{2}\.\d+\.\d+\.\d+)') {
+		$version = $Matches[1]
+	} else {
+		throw "Could not extract DDU version from $releases"
 	}
-	$version = $version.Replace('_setup','')
 
-	$Latest = @{ URL32 = $url32; Referer = $referer; Version = $version }
-	return $Latest
+	$url32   = "https://www.wagnardsoft.com/DDU/download/DDU%20v$version.exe"
+	$referer = $releases
+
+	return @{ URL32 = $url32; Referer = $referer; Version = $version }
 }
 
 
