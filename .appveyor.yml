@@ -78,20 +78,19 @@ install:
     $chocoVersion = if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
     if (!(Test-Path "$env:nupkg_cache_path")) { $firstrun = "yes" }
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
-    [ordered]@{
-      'chocolatey' = $chocoVersion
-      'chocolatey-core.extension' = '1.4.0'
-      '7zip.install' = '24.7.0'
-      'chocolatey-misc-helpers.extension' = '0.0.4'
-      'wormies-au-helpers' = '0.4.1'
-      'checksum' = '0.3.1'
-      'keepass.install' = '2.57.0'
-      'vt-cli' = '1.0.0'
-      'autohotkey' = '1.1.37.1'
-      'pngquant' = '3.0.3'
-      'jpegoptim' =  '1.5.5.1'
-
-    }.GetEnumerator() | % {
+    $pkgs = New-Object 'System.Collections.Specialized.OrderedDictionary'
+    $pkgs.Add('chocolatey', $chocoVersion)
+    $pkgs.Add('chocolatey-core.extension', '1.4.0')
+    $pkgs.Add('7zip.install', '24.7.0')
+    $pkgs.Add('chocolatey-misc-helpers.extension', '0.0.4')
+    $pkgs.Add('wormies-au-helpers', '0.4.1')
+    $pkgs.Add('checksum', '0.3.1')
+    $pkgs.Add('keepass.install', '2.57.0')
+    $pkgs.Add('vt-cli', '1.0.0')
+    $pkgs.Add('autohotkey', '1.1.37.1')
+    $pkgs.Add('pngquant', '3.0.3')
+    $pkgs.Add('jpegoptim', '1.5.5.1')
+    $pkgs.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { choco upgrade $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
       else { choco install -y $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
@@ -252,3 +251,4 @@ notifications:
 
 cache:
   - '%nupkg_cache_path% -> .appveyor.yml'
+
