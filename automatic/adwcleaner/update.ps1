@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	Remove-Item $File -Force
 	Remove-Item "tools/*.exe" -ErrorAction SilentlyContinue
 
-	$Latest = @{ URL32 = $release; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
+	$Latest = @{ URL32 = $release; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version; FileType = 'exe' }
 	return $Latest
 }
 
