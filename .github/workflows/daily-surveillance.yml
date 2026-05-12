@@ -155,8 +155,8 @@ jobs:
             EOF
             )
             
-            # Find the main surveillance issue (CHO-78) and comment on it
+            # Find the main surveillance issue (CHO-3998) and comment on it
             # Note: This assumes the issue exists in the same repository
-            gh issue comment 78 --body "$COMMENT_BODY"
-            echo "Comment posted to CHO-78 surveillance issue"
+            gh issue comment 3998 --body "$COMMENT_BODY"
+            echo "Comment posted to CHO-3998 surveillance issue"
           fi
