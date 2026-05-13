@@ -38,8 +38,8 @@ jobs:
           Write-Host "Current time: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz')"
           Write-Host "Repository: ${{ github.repository }}"
           
-          # Run the surveillance script
-          & ./scripts/Daily-GitHub-Surveillance.ps1 `
+          # Run the simplified surveillance script
+          & ./scripts/test-surveillance-simple.ps1 `
             -Repository "${{ github.repository }}" `
             -GitHubToken "$env:GITHUB_TOKEN" `
             -DaysBack 1
