@@ -74,7 +74,7 @@ jobs:
               Co-authored-by: GitHub Action <action@github.com>" \
                 --author="GitHub Action <action@github.com>"
               
-              git push origin main
+              git push origin $GITHUB_REF_NAME
               echo "Report committed and pushed successfully"
             fi
           else
