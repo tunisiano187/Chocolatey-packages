@@ -88,8 +88,8 @@ jobs:
         run: |
           # Check if we have critical findings that need an issue
           if [ -f "Daily-GitHub-Surveillance-Report.md" ]; then
-            # Look for critical issues in the report
-            if grep -q "🔴 **critical**" "Daily-GitHub-Surveillance-Report.md"; then
+            # Look for issues in the report (simplified check)
+            if grep -q "Issues Found:" "Daily-GitHub-Surveillance-Report.md"; then
               echo "Critical issues detected, creating GitHub issue..."
               
               # Create issue body
@@ -120,9 +120,9 @@ jobs:
               # Create GitHub issue using gh CLI
               echo "$ISSUE_BODY" > /tmp/critical-issue-body.md
               gh issue create \
-                --title "🚨 Surveillance Quotidienne - Issues Critiques $(date '+%Y-%m-%d')" \
+                --title "📊 Rapport de Surveillance Quotidien $(date '+%Y-%m-%d')" \
                 --body-file /tmp/critical-issue-body.md \
-                --label "critical,bug,security,automation" \
+                --label "bug,security" \
                 --assignee tunisiano187
               
               echo "Critical issue created successfully"
