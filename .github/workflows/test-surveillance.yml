@@ -1,0 +1,30 @@
+name: Test Daily Surveillance
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up PowerShell
+        uses: microsoft/setup-powershell@v1
+        with:
+          powershell-version: '7.x'
+      
+      - name: Test PowerShell execution
+        run: |
+          Write-Host "PowerShell test successful"
+          Write-Host "Current date: $(Get-Date)"
+          Write-Host "Repository: ${{ github.repository }}"
+      
+      - name: Create test report
+        run: |
+          echo "# Test Surveillance Report" > test-report.md
+          echo "Date: $(date)" >> test-report.md
+          echo "Status: Test successful" >> test-report.md
+          echo "Repository: ${{ github.repository }}" >> test-report.md
+          cat test-report.md
