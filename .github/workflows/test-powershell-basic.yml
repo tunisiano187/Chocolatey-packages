@@ -1,0 +1,37 @@
+name: Test PowerShell Basic
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install PowerShell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y powershell
+          pwsh --version
+      
+      - name: Test basic PowerShell
+        run: |
+          echo "Testing basic PowerShell commands..."
+          pwsh -Command "Write-Host 'PowerShell test successful'"
+          pwsh -Command "Get-Date"
+          pwsh -Command "Write-Host 'Current location: ' + (Get-Location)"
+          
+      - name: Test PowerShell modules
+        run: |
+          echo "Testing PowerShell modules..."
+          pwsh -Command "Get-Module -ListAvailable | Where-Object {$_.Name -like '*GitHub*' -or $_.Name -like '*AU*'}"
+          
+      - name: Create simple report
+        run: |
+          echo "# Simple Test Report" > Daily-GitHub-Surveillance-Report.md
+          echo "Date: $(date)" >> Daily-GitHub-Surveillance-Report.md
+          echo "Status: PowerShell test successful" >> Daily-GitHub-Surveillance-Report.md
+          echo "Repository: ${{ github.repository }}" >> Daily-GitHub-Surveillance-Report.md
+          cat Daily-GitHub-Surveillance-Report.md
