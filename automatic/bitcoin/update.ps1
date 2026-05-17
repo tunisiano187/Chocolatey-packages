@@ -17,8 +17,9 @@ if ($MyInvocation.InvocationName -ne '.') {
 }
 
 function global:au_GetLatest {
-    $choc=$(choco search bitcoin.install -s chocolatey | Where-Object {$_ -match "bitcoin.install"})
-	$version = $choc.Split(" ")[1]
+    $apiUrl = 'https://api.github.com/repos/bitcoin/bitcoin/releases/latest'
+    $release = Invoke-RestMethod -Uri $apiUrl -UseBasicParsing
+    $version = $release.tag_name -replace '^v', ''
 
     return @{
         Version = $version

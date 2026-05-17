@@ -18,11 +18,15 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = "https://keepass.info/$(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match "OtpKeyProv-"} | Where-Object {$_.href -notmatch '-source'}).href)"
-	$version = $url32.split('-')[-1].Replace('.zip','')
+	$links = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Links |
+		Where-Object { $_.href -match "OtpKeyProv-" } |
+		Where-Object { $_.href -notmatch '-source' }
+	if (-not $links) { throw "Could not find OtpKeyProv download link on keepass.info/plugins.html" }
+	$href = ($links | Select-Object -First 1).href
+	$url32 = "https://keepass.info/$href"
+	$version = $url32.split('-')[-1].Replace('.zip', '')
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	return @{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor 32 -NoCheckChocoVersion

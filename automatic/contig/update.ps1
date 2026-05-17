@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+. ..\..\scripts\Get-FileVersion.ps1
 
 function global:au_SearchReplace {
 	@{
@@ -18,15 +19,21 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$url32 = "https://download.sysinternals.com/files/Contig.zip"
-	$page=Invoke-WebRequest -Uri "https://learn.microsoft.com/en-us/sysinternals/downloads/contig" -UseBasicParsing
+	$page = Invoke-WebRequest -Uri "https://learn.microsoft.com/en-us/sysinternals/downloads/contig" -UseBasicParsing
 	$versionPattern = 'Contig\s+v(\d+(\.\d+)*)'
-  	$match = [regex]::Match($page.Content, $versionPattern)
+	$match = [regex]::Match($page.Content, $versionPattern)
+	if (-not $match.Success) { throw "Could not find Contig version on MS Learn page" }
 	$version = $match.Groups[1].Value
 
+	$fileVersion = Get-FileVersion $url32
 	Update-Metadata -key "copyright" -value "© 1998-$(Get-Date -Format "yyyy") Mark Russinovich"
 
-	$Latest = @{ URL32 = $url32; Checksum32 = $checksum32; ChecksumType32 = $env:ChocolateyChecksumType; Version = $version }
-	return $Latest
+	return @{
+		URL32         = $url32
+		Checksum32    = $fileVersion.Checksum
+		ChecksumType32 = $fileVersion.ChecksumType
+		Version       = $version
+	}
 }
 
 update -ChecksumFor none -NoCheckChocoVersion
