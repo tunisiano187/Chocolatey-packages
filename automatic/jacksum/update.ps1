@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-$releases = 'https://api.github.com/repos/jonelo/jacksum-fbi-windows/releases/latest'
+$releases = 'https://api.github.com/repos/jonelo/jacksum-for-windows/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
