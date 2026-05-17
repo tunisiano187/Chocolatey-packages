@@ -33,7 +33,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$regexPattern = 'XMedia Recode (\d+(\.\d+)*)'
+	$regexPattern = 'XMedia Recode (\d+\.\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 
 	if (-not $versionMatch.Matches -or $versionMatch.Matches.Count -eq 0) {

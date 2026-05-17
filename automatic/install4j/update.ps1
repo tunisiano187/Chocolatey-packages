@@ -10,10 +10,6 @@ function global:au_SearchReplace {
 	}
 }
 
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
-}
-
 function global:au_GetLatest {
 	$choc = choco search install4j.install -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "install4j.install"}
 

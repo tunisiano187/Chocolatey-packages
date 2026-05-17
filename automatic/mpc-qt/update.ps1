@@ -31,10 +31,10 @@ function global:au_GetLatest {
 		throw "Could not fetch GitHub release for $Owner/$repo"
 	}
 
-	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "x64-(\d+)\.zip$"} | Select-Object -First 1
+	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "mpc-qt-win-x64-[\d.]+\.zip$"} | Select-Object -First 1
 
 	if (-not $url32) {
-		throw "Could not find x64 ZIP file in release assets"
+		throw "Could not find Windows x64 ZIP file in release assets (expected mpc-qt-win-x64-*.zip)"
 	}
 
 	Update-Metadata -key "releaseNotes" -value $tags.html_url

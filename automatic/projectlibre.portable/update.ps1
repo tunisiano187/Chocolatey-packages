@@ -1,7 +1,6 @@
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$releases = 'http://sourceforge.net/projects/projectlibre/files/latest/download'
 
 function global:au_SearchReplace {
 	@{
@@ -19,17 +18,24 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$response = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	if (-not $response.Links) {
-		throw "No download links found on $releases"
+	# SourceForge latest/download redirects to the jar file URL which contains the version
+	$redirectUrl = Get-RedirectedUrl 'http://sourceforge.net/projects/projectlibre/files/latest/download'
+	if (-not $redirectUrl) {
+		throw "Could not follow SourceForge redirect"
 	}
-	$url32 = ($response.Links | Where-Object {$_.href -match '\.zip'} | Select-Object -First 1).href
-	if (-not $url32) {
-		throw "Could not find .zip download link"
-	}
-	$version = $url32.Split('/')[-2]
 
+	# Extract version from URL like: .../ProjectLibre/1.9.8/projectlibre-1.9.8.jar
+	$versionMatch = $redirectUrl | Select-String -Pattern '/ProjectLibre/([\d.]+)/'
+	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
+		throw "Could not extract version from redirect URL: $redirectUrl"
+	}
+	$version = $versionMatch.Matches[0].Groups[1].Value
+
+	# Construct direct ZIP download URL (lowercase filename)
 	$url32 = Get-RedirectedUrl "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/projectlibre-$version.zip/download"
+	if (-not $url32) {
+		throw "Could not get ZIP download URL for version $version"
+	}
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

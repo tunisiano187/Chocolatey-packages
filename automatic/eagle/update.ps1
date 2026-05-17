@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-$release = 'https://www.autodesk.com/eagle-download-win'
+$release = 'https://eagle-updates.circuits.io/downloads/latest.html'
 
 function global:au_SearchReplace {
     @{
@@ -19,24 +19,22 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    try {
-        $url = Get-RedirectedUrl $release
-        if (-not $url) {
-            throw "Could not get redirect from $release"
-        }
-        $version = $(Get-Version($url)).Version
+    $page = Invoke-WebRequest -Uri $release -UseBasicParsing
+    $url64 = ($page.Links | Where-Object {$_.href -match 'Win_64bit\.exe'} | Select-Object -First 1).href
 
-        if (-not $version) {
-            throw "Could not extract version from URL"
-        }
+    if (-not $url64) {
+        throw "Could not find Windows 64-bit download link on eagle-updates.circuits.io"
+    }
 
-        $Latest = @{ URL64 = $url; Version = $version }
-        return $Latest
+    # Extract version from URL like: .../9_6_2/Autodesk_EAGLE_9.6.2_English_Win_64bit.exe
+    $versionMatch = $url64 | Select-String -Pattern 'EAGLE_([\d.]+)_English_Win'
+    if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
+        throw "Could not extract version from URL: $url64"
     }
-    catch {
-        Write-Error "Error getting latest Eagle version: $_"
-        throw
-    }
+    $version = $versionMatch.Matches[0].Groups[1].Value
+
+    $Latest = @{ URL64 = $url64; Version = $version }
+    return $Latest
 }
 
 update -ChecksumFor 64 -NoCheckUrl

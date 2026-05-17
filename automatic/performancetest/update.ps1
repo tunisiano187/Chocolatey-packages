@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$releases = "https://www.passmark.com/downloads/petst.exe"
+$releases = "https://www.passmark.com/downloads/PerformanceTest_Windows_x86-64.exe"
 
 function Get-Version($name) {
 	$version_file=$(../../tools/Get-InstalledApps.ps1 -ComputerName $env:COMPUTERNAME -NameRegex $name).DisplayVersion

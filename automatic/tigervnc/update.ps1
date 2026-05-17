@@ -35,9 +35,9 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $releases -OutFile $File
 	$xml = Get-Content $File
 
-	# Extract download links using regex instead of split
+	# Extract download links from RSS <link> tags (SourceForge RSS uses <link> not href)
 	$links = @()
-	$linkPattern = 'href="([^"]*\.exe/download)"'
+	$linkPattern = '<link>(https://sourceforge\.net/projects/tigervnc/files/[^<]*\.exe/download)</link>'
 	$linkMatches = [regex]::Matches($xml, $linkPattern)
 
 	foreach ($match in $linkMatches) {
