@@ -33,7 +33,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
     $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "Setup.+\.exe$"} | Select-Object -First 1
-    
+
     if (-not $url32) {
         throw "Could not find Setup.*.exe download link in $Owner/$repo release"
     }

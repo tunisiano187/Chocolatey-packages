@@ -20,11 +20,11 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases
 	$regexPattern = '>v(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	
+
 	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
 		throw "Could not extract version number from $releases. Page structure may have changed."
 	}
-	
+
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
 	$urls = $page.Links | Where-Object {$_.href -match 'exe$'}
