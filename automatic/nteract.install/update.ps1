@@ -21,7 +21,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
+    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Select-Object -First 1
+    
+    if (-not $url32) {
+        throw "Could not find .exe asset in release for $Owner/$repo"
+    }
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','')
     if($tags.prerelease -match "true") {

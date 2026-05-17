@@ -35,8 +35,8 @@ function global:au_GetLatest {
 	$versionText = $versionLinks[0].outerHTML
 	$versionMatch = $versionText | Select-String -Pattern '(\d+\.\d+)' -AllMatches
 
-	if (-not $versionMatch.Matches) {
-		throw "Could not extract version number from page"
+	if (-not $versionMatch -or -not $versionMatch.Matches -or $versionMatch.Matches.Count -eq 0) {
+		throw "Could not extract version number from page. Upstream page structure may have changed."
 	}
 
 	$version = $versionMatch.Matches[0].Groups[1].Value

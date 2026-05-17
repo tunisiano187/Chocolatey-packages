@@ -21,7 +21,11 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "win.zip$"}
+    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "win.zip$"} | Select-Object -First 1
+    
+    if (-not $url32) {
+        throw "Could not find win.zip asset in release for $Owner/$repo"
+    }
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','')
     if($tags.prerelease -match "true") {

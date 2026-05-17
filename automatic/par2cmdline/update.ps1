@@ -26,8 +26,17 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+    
+    if (-not $urls) {
+        throw "Could not find any .zip assets in release for $Owner/$repo"
+    }
+    
     $url32 = $urls | Where-Object {$_ -match 'x86'} | Select-Object -First 1
     $url64 = $urls | Where-Object {$_ -match 'x64'} | Select-Object -First 1
+    
+    if (-not $url32 -and -not $url64) {
+        throw "Could not find x86 or x64 zip files in release assets"
+    }
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 
 	# Extract version from tag name, removing 'v' prefix

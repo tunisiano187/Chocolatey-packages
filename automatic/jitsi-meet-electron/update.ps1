@@ -42,7 +42,7 @@ function global:au_GetLatest {
   }
 
 	$versionParts = $tags.tag_name -split 'v|/' | Where-Object {$_ -match "."}
-  $version = $versionParts[0].Trim()
+  $version = ([string]$versionParts[0]).Trim()
 
   if ($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
