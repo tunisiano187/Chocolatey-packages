@@ -32,12 +32,12 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
-    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "Setup.+\.exe$"} | Select-Object -First 1
+    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "setup\.exe$"} | Select-Object -First 1
 
     if (-not $url32) {
-        throw "Could not find Setup.*.exe download link in $Owner/$repo release"
+        throw "Could not find *setup.exe download link in $Owner/$repo release"
     }
-    $version = $tags.tag_name.Replace('v','')
+    $version = $tags.tag_name -replace '^.*@|^v'
     $releasenotes = $tags.html_url
     if($tags.prerelease -match "true") {
         $date = $tags.published_at.ToString("yyyyMMdd")
@@ -45,7 +45,7 @@ function global:au_GetLatest {
     }
     . ..\..\scripts\Get-FileVersion.ps1
     $FileVersion = Get-FileVersion $url32 -keep
-    Move-Item -Path $FileVersion.TempFile -Destination "tools\$($Filename.Filename)"
+    Move-Item -Path $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
 
     return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; ReleaseNotes = $releasenotes }
 }

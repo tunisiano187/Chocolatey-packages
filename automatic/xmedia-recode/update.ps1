@@ -46,9 +46,19 @@ function global:au_GetLatest {
 		throw "Invalid version extracted: '$version'"
 	}
 
-	$versionfile = ($version -replace '[.]','')
-	$url32 = "https://www.xmedia-recode.de/download/XMediaRecode$($versionfile)_setup.exe"
-	$url64 = "https://www.xmedia-recode.de/download/XMediaRecode$($versionfile)_x64_setup.exe"
+	# Scrape the actual download URLs from each download page (32-bit and 64-bit have independent file versioning)
+	$page64 = Invoke-WebRequest -Uri "https://www.xmedia-recode.de/en/download-64bit.php" -UseBasicParsing
+	$url64 = ($page64.Links | Where-Object {$_.href -match 'XMediaRecode\d+_x64_setup\.exe$'} | Select-Object -First 1).href
+
+	$page32 = Invoke-WebRequest -Uri "https://www.xmedia-recode.de/en/download-32bit.php" -UseBasicParsing
+	$url32 = ($page32.Links | Where-Object {$_.href -match 'XMediaRecode\d+_setup\.exe$' -and $_.href -notmatch '_x64_'} | Select-Object -First 1).href
+
+	if (-not $url64) {
+		throw "Could not find 64-bit download URL on xmedia-recode.de"
+	}
+	if (-not $url32) {
+		$url32 = $url64  # fall back to 64-bit if 32-bit is gone
+	}
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest
