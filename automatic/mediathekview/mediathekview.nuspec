@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>mediathekview</id>
+    <version>14.5.0</version>
+    <title>MediathekView</title>
+    <authors>MediathekView Team</authors>
+    <owners>tunisiano187</owners>
+    <licenseUrl>https://raw.githubusercontent.com/mediathekview/mediathekview/master/LICENSE</licenseUrl>
+    <projectUrl>https://mediathekview.de/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/mediathekview/mediathekview/master/src/main/resources/MediathekView.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MediathekView is a tool to browse and download the Mediathek of various German public broadcasters (ARD, ZDF, WDR, BR, NDR, SWR, MDR, HR, RBB, SR, KiKA, 3sat, arte, ORF, SRF, RTS).</description>
+    <summary>Tool to browse and download German public broadcaster media content</summary>
+    <releaseNotes>https://mediathekview.de/changelog/14-5-0/</releaseNotes>
+    <tags>mediathekview video download media german broadcast</tags>
+    <copyright>Copyright © 2010-2024 MediathekView Team</copyright>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
