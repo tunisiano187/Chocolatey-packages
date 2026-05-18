@@ -23,23 +23,18 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = 'https://annystudio.com/jcpicker.zip'
+	$baseUrl = 'https://annystudio.com/software/colorpicker'
+	$page = Invoke-WebRequest -Uri $baseUrl -UseBasicParsing
 
-	$page = Invoke-WebRequest -Uri "https://annystudio.com/software/colorpicker" -UseBasicParsing
-	$versionLinks = $page.Links | Where-Object {$_.href -match "jcpicker\.exe"}
-
-	if (-not $versionLinks) {
-		throw "Could not find jcpicker.exe download link"
+	# Version is in "Latest version: <b>X.Y</b>" — not inside the link outerHTML
+	$versionMatch = $page.Content | Select-String -Pattern 'Latest version:\s*<b>(\d+\.\d+)</b>' -AllMatches
+	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
+		throw "Could not extract version from annystudio.com page. Page structure may have changed."
 	}
-
-	$versionText = $versionLinks[0].outerHTML
-	$versionMatch = $versionText | Select-String -Pattern '(\d+\.\d+)' -AllMatches
-
-	if (-not $versionMatch -or -not $versionMatch.Matches -or $versionMatch.Matches.Count -eq 0) {
-		throw "Could not extract version number from page. Upstream page structure may have changed."
-	}
-
 	$version = $versionMatch.Matches[0].Groups[1].Value
+
+	# zip URL is /software/colorpicker/jcpicker.zip, not the root-level path used before
+	$url32 = "$baseUrl/jcpicker.zip"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest

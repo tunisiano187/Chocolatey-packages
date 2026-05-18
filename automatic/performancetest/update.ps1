@@ -30,15 +30,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$url64=$releases
+	$url64 = $releases
+	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 
-    $File = Join-Path $env:TEMP $($url64.Split('/') | Select-Object -Last 1)
-	Invoke-WebRequest -Uri $url64 -OutFile $File
-    $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
+	$File = Join-Path $env:TEMP $($url64.Split('/') | Select-Object -Last 1)
+	Invoke-WebRequest -Uri $url64 -OutFile $File -UserAgent $userAgent
+	$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim().replace(',','.')
 
-	$Latest = @{ URL64 = $url64; Version = $version}
-
-    return $Latest
+	$Latest = @{ URL64 = $url64; Version = $version }
+	return $Latest
 }
 
 update -ChecksumFor 64
