@@ -26,11 +26,11 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
-    
+
     if (-not $urls) {
         throw "Could not find any .zip assets in release for $Owner/$repo"
     }
-    
+
     $url64 = $urls | Where-Object {$_ -match 'x64'} | Select-Object -First 1
     $url32 = $urls | Where-Object {$_ -match 'x86'} | Select-Object -First 1
 
