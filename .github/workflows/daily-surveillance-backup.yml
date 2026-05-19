@@ -19,32 +19,28 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Set up PowerShell
-        uses: actions/setup-dotnet@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          dotnet-version: '8.0.x'
-      - name: Install PowerShell
+          python-version: '3.11'
+
+      - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y powershell
-          pwsh --version
-      
+          python -m pip install --upgrade pip
+          pip install requests
+
       - name: Run daily surveillance
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: pwsh
         run: |
-          Write-Host "Starting daily GitHub surveillance..."
-          Write-Host "Current time: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz')"
-          Write-Host "Repository: ${{ github.repository }}"
-          
+          echo "🚀 Starting daily GitHub surveillance..."
+          echo "Current time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "Repository: ${{ github.repository }}"
+
           # Run the enhanced surveillance script
-          & ./scripts/test-surveillance-enhanced.ps1 `
-            -Repository "${{ github.repository }}" `
-            -GitHubToken "$env:GITHUB_TOKEN" `
-            -DaysBack 1
-          
-          Write-Host "Daily surveillance completed"
+          python3 enhanced_surveillance.py
+
+          echo "Daily surveillance completed"
       
       - name: Commit and push surveillance report
         run: |
