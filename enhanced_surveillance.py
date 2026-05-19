@@ -102,8 +102,8 @@ def generate_enhanced_report(issues: List[Dict], repository: str) -> str:
     for priority in ["🔴 critical", "🟠 high", "🟡 medium", "🔵 low", "⚪ normal"]:
         if priority in issues_by_priority:
             issues_list = issues_by_priority[priority]
-            report_lines.append(f"$(Format-IssueList $response)")
-            
+            report_lines.append(f"#### {priority} ({len(issues_list)} issues)")
+
             for issue in issues_list:
                 link = f"https://github.com/{repository}/issues/{issue['number']}"
                 report_lines.append(f"- #{issue['number']}: {issue['title']} - {link} [{priority}]")
