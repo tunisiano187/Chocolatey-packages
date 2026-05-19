@@ -23,12 +23,12 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
-      
+
       - name: Run daily surveillance
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -36,10 +36,10 @@ jobs:
           echo "🚀 Starting daily GitHub surveillance..."
           echo "Current time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           echo "Repository: ${{ github.repository }}"
-          
+
           # Run the enhanced surveillance script
           python3 enhanced_surveillance.py
-          
+
           echo "Daily surveillance completed"
       
       - name: Commit and push surveillance report
@@ -84,59 +84,74 @@ jobs:
         run: |
           # Check if we have critical findings that need an issue
           if [ -f "Daily-GitHub-Surveillance-Report.md" ]; then
-            # Check for critical issues
+            # Enhanced check for critical issues based on enhanced report
             if grep -q "🔴 critical" "Daily-GitHub-Surveillance-Report.md"; then
-              echo "🚨 Critical issues detected, creating GitHub issue..."
+              echo "Critical issues detected, creating GitHub issue..."
               
-              # Extract critical issues count
-              CRITICAL_COUNT=$(grep -o "🔴 critical: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
-              
-              # Extract critical issues list
-              CRITICAL_ISSUES=$(grep -A 5 "🔴 critical" "Daily-GitHub-Surveillance-Report.md" | head -10)
+              # Extract critical issues from enhanced report
+              CRITICAL_ISSUES=$(grep -A 20 "📊 Résumé par Priorité" "Daily-GitHub-Surveillance-Report.md" | grep "🔴 critical" -A 5 | head -10)
               
               # Create issue body
+              ISSUE_BODY=$(cat <<'EOF'
+              ## 🚨 Rapport de Surveillance Quotidien - Critiques Détectées
+
+              Des **issues critiques** ont été détectés lors de la surveillance quotidienne du repository ${{ github.repository }}.
+
+              ### 🔴 Issues Critiques Requérant une Attention Immédiate
+              
+              $CRITICAL_ISSUES
+
+              ### 📊 Statistiques Critiques
+              - **Issues critiques**: $(grep -o "🔴 critical: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
+              - **Issues hautes priorité**: $(grep -o "🟠 high: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
+              - **Total issues**: $(grep -o "Total issues: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
+
+              ### 🚀 Actions Recommandées
+              - **🔴 Immédiate**: Répondre aux issues critiques dans les 24 heures
+              - **🟠 Haute**: Traiter les issues de haute priorité dans les 3 jours
+              - **🟡 Moyenne**: À traiter dans la semaine
+              - **🔵 Basse**: Peut attendre 2 semaines
+              - **⚪ Normale**: Suivi standard
+
+              ### 📋 Prochaines Étapes
+              1. **Analyser** chaque issue critique pour déterminer l'urgence
+              2. **Assigner** les issues aux mainteneurs appropriés
+              3. **Prioriser** en fonction de l'impact et de la fréquence
+              4. **Suivre** l'évolution quotidiennement
+              5. **Clôturer** une fois résolues
+
+              ### 🔗 Liens Directs
+              Rapport complet: [Daily-GitHub-Surveillance-Report.md](../../blob/$(git rev-parse HEAD)/Daily-GitHub-Surveillance-Report.md)
+              Workflow: [GitHub Actions Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+              ---
+              *Ce rapport a été généré automatiquement par [GitHub Actions daily surveillance workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) à $(date '+%Y-%m-%d %H:%M:%S UTC')*
+              EOF
+              )
+              
+              # Create GitHub issue using gh CLI
+              echo "$ISSUE_BODY" > /tmp/critical-issue-body.md
               gh issue create \
                 --title "🚨 Surveillance Quotidienne - Critiques $(date '+%Y-%m-%d')" \
-                --body "## 🚨 Rapport de Surveillance Quotidienne - Critiques Détectées
-
-Des **issues critiques** ont été détectés lors de la surveillance quotidienne du repository ${{ github.repository }}.
-
-### 🔴 Issues Critiques Requérant une Attention Immédiate
-
-$CRITICAL_ISSUES
-
-### 📊 Statistiques Critiques
-- **Issues critiques**: $CRITICAL_COUNT
-- **Issues hautes priorité**: $(grep -o "🟠 high: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
-- **Total issues**: $(grep -o "Total issues: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
-
-### 🚀 Actions Recommandées
-- **🔴 Immédiate**: Répondre aux issues critiques dans les 24 heures
-- **🟠 Haute**: Traiter les issues de haute priorité dans les 3 jours
-- **🟡 Moyenne**: À traiter dans la semaine
-- **🔵 Basse**: Peut attendre 2 semaines
-- **⚪ Normale**: Suivi standard
-
-### 📋 Prochaines Étapes
-1. **Analyser** chaque issue critique pour déterminer l'urgence
-2. **Assigner** les issues aux mainteneurs appropriés
-3. **Prioriser** en fonction de l'impact et de la fréquence
-4. **Suivre** l'évolution quotidiennement
-5. **Clôturer** une fois résolues
-
-### 🔗 Liens Directs
-Rapport complet: [Daily-GitHub-Surveillance-Report.md](../../blob/$(git rev-parse HEAD)/Daily-GitHub-Surveillance-Report.md)
-Workflow: [GitHub Actions Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-
----
-*Ce rapport a été généré automatiquement par [GitHub Actions daily surveillance workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) à $(date '+%Y-%m-%d %H:%M:%S UTC')*" \
+                --body-file /tmp/critical-issue-body.md \
                 --label "bug,security,critical" \
                 --assignee tunisiano187
               
               echo "Critical issue created successfully"
             else
-              echo "✅ No critical issues detected"
+              echo "No critical issues detected"
             fi
+          fi
+      
+      - name: Check for critical issues flag
+        if: always()
+        run: |
+          # Check if the PowerShell script flagged critical issues
+          if [ -f "critical_issues_flag.txt" ]; then
+            echo "CRITICAL_ISSUES_FLAG_FOUND" > /tmp/critical-flag-status.txt
+            echo "Critical issues flag detected - will create issue"
+          else
+            echo "No critical issues flag found"
           fi
       
       - name: Comment on main surveillance issue
@@ -152,31 +167,36 @@ Workflow: [GitHub Actions Run](${{ github.server_url }}/${{ github.repository }}
             HIGH_COUNT=$(grep -o "🟠 high: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
             
             # Create enhanced summary comment
-            gh issue comment 3998 --body "## 📊 Rapport de Surveillance Quotidien $(date '+%Y-%m-%d')
+            COMMENT_BODY=$(cat <<'EOF'
+            ## 📊 Rapport de Surveillance Quotidien $(date '+%Y-%m-%d')
 
-### 📈 Statistiques Quotidiennes
-- **Total issues**: $TOTAL_ISSUES
-- **🔴 Critiques**: $CRITICAL_COUNT
-- **🟠 Hautes**: $HIGH_COUNT
-- **🟡 Moyennes**: $(grep -o "🟡 medium: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
-- **🔵 Basses**: $(grep -o "🔵 low: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
-- **⚪ Normales**: $(grep -o "⚪ normal: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
+            ### 📈 Statistiques Quotidiennes
+            - **Total issues**: $TOTAL_ISSUES
+            - **🔴 Critiques**: $CRITICAL_COUNT
+            - **🟠 Hautes**: $HIGH_COUNT
+            - **🟡 Moyennes**: $(grep -o "🟡 medium: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
+            - **🔵 Basses**: $(grep -o "🔵 low: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
+            - **⚪ Normales**: $(grep -o "⚪ normal: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
 
-### 🚀 Issues Récentes
-$(grep "#" "Daily-GitHub-Surveillance-Report.md" | head -5 | sed 's/^/    /')
+            ### 🚀 Issues Récentes
+            $(cat Daily-GitHub-Surveillance-Report.md | grep "#" | head -5 | sed 's/^/    /')
 
-### 📋 Actions Immédiates
-$(if [ "$CRITICAL_COUNT" -gt 0 ]; then echo "    🔴 **$CRITICAL_COUNT** issue(s) critique(s) requièrent attention immédiate"; fi)
-$(if [ "$HIGH_COUNT" -gt 0 ]; then echo "    🟠 **$HIGH_COUNT** issue(s) de haute priorité à traiter dans les 3 jours"; fi)
-$(if [ "$CRITICAL_COUNT" -eq 0 ] && [ "$HIGH_COUNT" -eq 0 ]; then echo "    ✅ Aucune issue critique ou haute priorité détectée aujourd'hui"; fi)
+            ### 📋 Actions Immédiates
+            $(if [ "$CRITICAL_COUNT" -gt 0 ]; then echo "    🔴 **$CRITICAL_COUNT** issue(s) critique(s) requièrent attention immédiate"; fi)
+            $(if [ "$HIGH_COUNT" -gt 0 ]; then echo "    🟠 **$HIGH_COUNT** issue(s) de haute priorité à traiter dans les 3 jours"; fi)
+            $(if [ "$CRITICAL_COUNT" -eq 0 ] && [ "$HIGH_COUNT" -eq 0 ]; then echo "    ✅ Aucune issue critique ou haute priorité détectée aujourd'hui"; fi)
 
-### 🔗 Liens Utiles
-- **Rapport complet**: [Daily-GitHub-Surveillance-Report.md](../../blob/$(git rev-parse HEAD)/Daily-GitHub-Surveillance-Report.md)
-- **Workflow**: [GitHub Actions Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-- **Repository Issues**: [Issues](${{ github.server_url }}/${{ github.repository }}/issues)
+            ### 🔗 Liens Utiles
+            - **Rapport complet**: [Daily-GitHub-Surveillance-Report.md](../../blob/$(git rev-parse HEAD)/Daily-GitHub-Surveillance-Report.md)
+            - **Workflow**: [GitHub Actions Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            - **Repository Issues**: [Issues](${{ github.server_url }}/${{ github.repository }}/issues)
 
----
-*Généré automatiquement par [GitHub Actions daily surveillance workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) à $(date '+%Y-%m-%d %H:%M:%S UTC')*"
+            ---
+            *Généré automatiquement par [GitHub Actions daily surveillance workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) à $(date '+%Y-%m-%d %H:%M:%S UTC')*
+            EOF
+            )
             
+            # Post comment on the main surveillance issue (CHO-3998)
+            gh issue comment 3998 --body "$COMMENT_BODY"
             echo "Enhanced comment posted to CHO-3998 surveillance issue"
           fi
