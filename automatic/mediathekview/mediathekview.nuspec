@@ -8,6 +8,7 @@
     <owners>tunisiano187</owners>
     <licenseUrl>https://raw.githubusercontent.com/mediathekview/mediathekview/master/LICENSE</licenseUrl>
     <projectUrl>https://mediathekview.de/</projectUrl>
+    <packageSourceUrl>https://github.com/mediathekview/mediathekview</packageSourceUrl>
     <iconUrl>https://raw.githubusercontent.com/mediathekview/mediathekview/master/src/main/resources/MediathekView.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MediathekView is a tool to browse and download the Mediathek of various German public broadcasters (ARD, ZDF, WDR, BR, NDR, SWR, MDR, HR, RBB, SR, KiKA, 3sat, arte, ORF, SRF, RTS).</description>
