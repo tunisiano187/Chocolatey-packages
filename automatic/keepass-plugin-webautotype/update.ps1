@@ -22,11 +22,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	choco upgrade -y keepass
-	$url32 = "https://sourceforge.net/projects/webautotype/files/latest/download"
-	$version = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match "files\/v"}).href[0].split('/')[-2].replace('v','')
-	if($version -eq '6.8.1') {
-		$version = '6.8.1.20220207'
-	}
+	$versionHref = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match 'files/v'} | Select-Object -First 1).href
+	$version = $versionHref.split('/')[-2].replace('v','').trim()
+	$url32 = "https://downloads.sourceforge.net/project/webautotype/v$version/WebAutoType.zip"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
