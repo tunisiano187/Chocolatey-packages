@@ -1,7 +1,7 @@
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$releases = 'https://ftp.gnu.org/gnu/units/windows/'
+$releases = 'https://mirrors.kernel.org/gnu/units/windows/'
 
 function global:au_SearchReplace {
 	@{
@@ -27,8 +27,8 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	# URL of the GNU FTP directory
-	$url = "https://ftp.gnu.org/gnu/units/windows/"
+	# URL of the GNU mirror directory (mirrors.kernel.org avoids 403 on ftp.gnu.org)
+	$url = "https://mirrors.kernel.org/gnu/units/windows/"
 
 	# Fetch the HTML content from the page
 	$response = Invoke-WebRequest -Uri $url
