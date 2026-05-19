@@ -23,7 +23,10 @@ function global:au_GetLatest {
 	$tempFile = Join-Path $env:TEMP "PacketStream_version_check.exe"
 	try {
 		Invoke-WebRequest -Uri $url32 -OutFile $tempFile -UseBasicParsing
-		$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion.Trim()
+		$fvi = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile)
+		$version = if ($fvi.FileVersion) { $fvi.FileVersion.Trim() } `
+		           elseif ($fvi.ProductVersion) { $fvi.ProductVersion.Trim() } `
+		           else { $null }
 		if (-not $version) { throw "Could not extract version from PacketStream.exe" }
 	} finally {
 		if (Test-Path $tempFile) { Remove-Item $tempFile -Force -ErrorAction SilentlyContinue }

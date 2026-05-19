@@ -1,7 +1,7 @@
 ﻿$packageName  = 'captureflux'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://paulglagla.com/fichiers/captureflux_63en.zip'
-$checksum     = ''
+$checksum     = '3ccdd131c1320af39190bceefd3cc6bafa5425b546663d0fdb8f26993b0f4d37'
 $checksumType = 'sha256'
 
 

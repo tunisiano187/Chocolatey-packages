@@ -5,7 +5,7 @@ $releases = 'http://paul.glagla.free.fr/captureflux_en.htm'
 
 function global:au_SearchReplace {
 	@{
-		'tools/chocolateyInstall.ps1' = @{
+		'tools/chocolateyinstall.ps1' = @{
 			"(^[$]url\s*=\s*)('.*')"      		= "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
@@ -33,7 +33,7 @@ function global:au_GetLatest {
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
 
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = ''; ChecksumType32 = 'sha256' }
 	return $Latest
 }
 
