@@ -17,13 +17,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$clnt = new-object System.Net.WebClient;
-	$clnt.OpenRead($release).Close();
-	$version=$([datetime]$clnt.ResponseHeaders["Last-Modified"];).ToString("0.0.yyyyMMdd")
-	Write-Output "Version : $version"
-	$url32 = $release
+	# The Last-Modified header on the download URL is stale (stuck at 2022-09-15)
+	# even though Foldit is actively updated. Scrape the release number from the
+	# releases page instead.
+	$releasePage = Invoke-WebRequest -Uri 'https://fold.it/releases' -UseBasicParsing
+	if ($releasePage.Content -match 'Release\s+(\d+)') {
+		$releaseNumber = [int]$matches[1]
+		$version = "${releaseNumber}.0.0"
+	} else {
+		throw "Could not determine Foldit release number from releases page"
+	}
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	Write-Output "Version : $version"
+	$Latest = @{ URL32 = $release; Version = $version }
 	return $Latest
 }
 
