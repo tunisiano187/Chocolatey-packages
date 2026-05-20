@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://ftp.gnu.org/gnu/units/windows/units-2.23-setup.exe
+    x32: https://mirrors.kernel.org/gnu/units/windows/units-2.27-setup.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://ftp.gnu.org/gnu/units/windows/units-2.23-setup.exe
+        Get-RemoteChecksum https://mirrors.kernel.org/gnu/units/windows/units-2.27-setup.exe
 
 3.  Compare to Checksum:
 
-    checksum32: EC8DA81A45A7F076CB10FA354B7B74B8C9FCF7171CE359E3E463294F6187E43E
+    checksum32: DB7A0BF90A20FCF9EC6A3DE8EB10B798F7F61FEE1EFC4B4BF89F01B4B6D83DA2

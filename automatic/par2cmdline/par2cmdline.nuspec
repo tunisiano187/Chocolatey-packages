@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>par2cmdline</id>
-    <version>0.8.1</version>
+    <version>1.1.1</version>
     <title>par2cmdline</title>
     <authors>Peter Brian Clements,Marcel Partap,Ike Devolder</authors>
     <owners>tunisiano</owners>
@@ -20,7 +20,7 @@ It can be used with any kind of file. PAR2 uses Reed Solomon Coding to perform i
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Parity Archive Volume Set, for checking and repair of files</summary>
     <releaseNotes>#### Program

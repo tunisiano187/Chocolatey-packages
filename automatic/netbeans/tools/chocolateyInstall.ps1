@@ -4,8 +4,8 @@
 # next to our bundled installer script.  We do not call Install-ChocolateyPackage
 # directly because the `installer.ps1` script does the actual work.
 
-$url           = 'https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29.exe'
-$checksum      = '152531686F53D9AF24D41172576C5FB780B9054E027ED38B496B1A7AEFA3BAA4'
+$url           = 'https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-sans/Apache-NetBeans-30.exe'
+$checksum      = '2F4749AA1D98026DF18EB136D3AC40F824FD5550BD6726367BAD93A2C4A8095F'
 $checksumType  = 'sha256'
 
 $toolsDir      = Split-Path -Parent $MyInvocation.MyCommand.Definition
