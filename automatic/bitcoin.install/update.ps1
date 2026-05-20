@@ -24,12 +24,9 @@ function global:au_GetLatest {
     $version = $release.tag_name -replace '^v', ''
     Update-Metadata -key "releaseNotes" -value $release.html_url
 
-    $url64 = $release.assets.browser_download_url |
-        Where-Object { $_ -match 'win64.*\.exe$' } |
-        Where-Object { $_ -notmatch 'unsigned' } |
-        Select-Object -First 1
-
-    if (-not $url64) { throw "Could not find win64 installer asset in bitcoin release $version" }
+    # Bitcoin Core does not publish binary assets to GitHub releases.
+    # Binaries are hosted at bitcoincore.org/bin/.
+    $url64 = "https://bitcoincore.org/bin/bitcoin-core-$version/bitcoin-$version-win64-setup.exe"
 
     return @{ URL64 = $url64; Version = $version }
 }
