@@ -17,22 +17,31 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $releasesPage = 'https://mediathekview.de/download/'
+    # Enumerate the stable directory to find the latest versioned .exe
+    # URL pattern: https://download.mediathekview.de/stabil/MediathekView-{version}-win.exe
+    $stabilDir = 'https://download.mediathekview.de/stabil/'
 
     try {
-        # Download the releases page to find the latest version
-        $page = Invoke-WebRequest -Uri $releasesPage -UseBasicParsing
+        $page = Invoke-WebRequest -Uri $stabilDir -UseBasicParsing
 
-        # Look for the latest stable version (pattern like 14.5.0)
-        $versionPattern = '(\d+\.\d+\.\d+)'
-        $version = [regex]::Matches($page.Content, $versionPattern) | Select-Object -First 1 | ForEach-Object { $_.Groups[1].Value }
-
-        if (-not $version) {
-            throw "Unable to find version from $releasesPage"
+        # Collect all versioned windows exe links (exclude 'latest' and 'arm64')
+        $versionedExes = $page.Links | Where-Object {
+            $_.href -match 'MediathekView-[\d.]+-win\.exe$' -and $_.href -notmatch 'latest'
         }
 
-        # Construct the download URL (typical pattern for MediathekView)
-        $url32 = "https://download.mediathekview.de/stable/$version/MediathekView-$version-windows.exe"
+        if (-not $versionedExes) {
+            throw "Could not find versioned win exe on $stabilDir"
+        }
+
+        # Sort by version descending and take the newest
+        $latest = $versionedExes | ForEach-Object {
+            $m = [regex]::Match($_.href, 'MediathekView-([\d.]+)-win\.exe')
+            [pscustomobject]@{ href = $_.href; version = $m.Groups[1].Value }
+        } | Sort-Object { [Version]$_.version } -Descending | Select-Object -First 1
+
+        $version = $latest.version
+        $url32 = "https://download.mediathekview.de$($latest.href)"
+        if ($latest.href -match '^https?://') { $url32 = $latest.href }
 
         return @{
             Version = $version

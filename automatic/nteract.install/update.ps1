@@ -16,18 +16,25 @@ function global:au_SearchReplace {
 }
 
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Select-Object -First 1
+    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "\.exe$"} | Select-Object -First 1
 
     if (-not $url32) {
         throw "Could not find .exe asset in release for $Owner/$repo"
     }
     Update-Metadata -key "releaseNotes" -value $tags.html_url
-	$version = $tags.tag_name.Replace('v','')
+
+    # Strip leading 'v'; normalize '-stable.NNNNNN' build-metadata suffix to '.NNNNNN'
+    # so NuGet gets a valid 4-part version (e.g. v2.4.8-stable.202605142308 → 2.4.8.202605142308)
+    $version = $tags.tag_name -replace '^v', ''
+    $version = $version -replace '-stable\.(\d+)$', '.$1'
+    $version = $version -replace '-stable$', ''
+
     if($tags.prerelease -match "true") {
         $date = $tags.published_at.ToString("yyyyMMdd")
         $version = "$version-pre$($date)"

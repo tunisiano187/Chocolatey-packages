@@ -24,7 +24,8 @@ function global:au_GetLatest {
 	choco upgrade -y keepass
 	$versionHref = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match 'files/v'} | Select-Object -First 1).href
 	$version = $versionHref.split('/')[-2].replace('v','').trim()
-	$url32 = "https://downloads.sourceforge.net/project/webautotype/v$version/WebAutoType.zip"
+	# Filename changed from WebAutoType.zip to WebAutoType-v{version}.zip since v6.9.x
+	$url32 = "https://downloads.sourceforge.net/project/webautotype/v$version/WebAutoType-v$version.zip"
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
