@@ -5,7 +5,7 @@
     <version>14.5.0</version>
     <title>MediathekView</title>
     <authors>MediathekView Team</authors>
-    <owners>tunisiano187</owners>
+    <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/mediathekview/mediathekview/master/LICENSE</licenseUrl>
     <projectUrl>https://mediathekview.de/</projectUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mediathekview</packageSourceUrl>
