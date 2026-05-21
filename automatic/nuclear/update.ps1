@@ -7,10 +7,10 @@ $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 
 function global:au_SearchReplace {
     @{
-        ".\legal\VERIFICATION.txt" = @{
-            "(?i)(^\s*url(32)?\:\s*).*"        = "`${1}<$($Latest.URL32)>"
-            "(?i)(^\s*checksum(32)?\:\s*).*"   = "`${1}$($Latest.Checksum32)"
-            "(?i)(^\s*checksum\s*type\:\s*).*" = "`${1}$($Latest.ChecksumType32)"
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(url64bit\s*=\s*').*(')"           = "`${1}$($Latest.URL64)`${2}"
+            "(checksum64\s*=\s*').*(')"         = "`${1}$($Latest.Checksum64)`${2}"
+            "(checksumType64\s*=\s*').*(')"     = "`${1}$($Latest.ChecksumType64)`${2}"
           }
     }
 }
@@ -33,9 +33,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo | Select-Object -First 1
-    $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "setup\.exe$"} | Select-Object -First 1
+    $url64 = $tags.assets.browser_download_url | Where-Object {$_ -match "setup\.exe$"} | Select-Object -First 1
 
-    if (-not $url32) {
+    if (-not $url64) {
         throw "Could not find *setup.exe download link in $Owner/$repo release"
     }
     $version = $tags.tag_name -replace '^.*@|^v'
@@ -45,10 +45,9 @@ function global:au_GetLatest {
         $version = "$version-pre$($date)"
     }
     . ..\..\scripts\Get-FileVersion.ps1
-    $FileVersion = Get-FileVersion $url32 -keep
-    Move-Item -Path $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
+    $FileVersion = Get-FileVersion $url64
 
-    return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; ReleaseNotes = $releasenotes }
+    return @{ URL64 = $url64; Version = $version; Checksum64 = $FileVersion.Checksum; ChecksumType64 = $FileVersion.ChecksumType; ReleaseNotes = $releasenotes }
 }
 
 update-package -ChecksumFor none

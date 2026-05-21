@@ -1,19 +1,12 @@
-﻿$ErrorActionPreference = 'Stop'
-
+$ErrorActionPreference = 'Stop'
 $packageName = 'nuclear'
-
-$toolsDir = Split-Path $MyInvocation.MyCommand.Definition
-$fileLocation = Get-Item "$toolsDir\*.exe"
-
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
-  file           = $fileLocation
-  silentArgs     = "/S"
+  url64bit       = 'https://github.com/nukeop/nuclear/releases/download/player%401.37.3/Nuclear_1.37.3_x64-setup.exe'
+  checksum64     = '63822DBC0AC1773D56DF94166F3736B266AE1096A588D5B6A498F578B01F74BC'
+  checksumType64 = 'sha256'
+  silentArgs     = '/S'
   validExitCodes = @(0)
 }
-
-Install-ChocolateyInstallPackage @packageArgs
-
-# Remove the installers as there is no more need for it
-Remove-Item $toolsDir\*.exe -ea 0 -Force
+Install-ChocolateyPackage @packageArgs
