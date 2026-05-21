@@ -1,0 +1,50 @@
+name: Push package to Chocolatey
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_name:
+        description: 'Package name to push (e.g. nuclear)'
+        required: true
+        type: string
+
+jobs:
+  push:
+    runs-on: windows-2025
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Pack and push package
+        env:
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCOLATEY_API_KEY }}
+        run: |
+          $packageName = "${{ github.event.inputs.package_name }}"
+          $packageDir = "automatic\$packageName"
+
+          if (-not (Test-Path $packageDir)) {
+            Write-Error "Package directory not found: $packageDir"
+            exit 1
+          }
+
+          Set-Location $packageDir
+
+          # Run AU update to refresh checksums without pushing (to ensure files are current)
+          # Then pack and push manually
+
+          Write-Host "Packing $packageName..."
+          choco pack "$packageName.nuspec" --out "$env:TEMP\choco-push"
+
+          $nupkg = Get-ChildItem "$env:TEMP\choco-push\*.nupkg" | Select-Object -First 1
+          if (-not $nupkg) {
+            Write-Error "choco pack failed - no .nupkg generated"
+            exit 1
+          }
+
+          Write-Host "Pushing $($nupkg.Name) to Chocolatey..."
+          choco push $nupkg.FullName --source="'https://push.chocolatey.org/'" --api-key="$env:CHOCOLATEY_API_KEY" --force
+
+          Write-Host "Done: $($nupkg.Name) submitted to Chocolatey."
