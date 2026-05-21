@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>SamplePackage</id>
+    <version>0.1.0</version>
+    <title>Sample Package</title>
+    <authors>GitHubManager</authors>
+    <owners>Chocolatey Packages Company</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A sample package scaffold for testing packaging workflow.</description>
+    <summary>A minimal sample package.</summary>
+    <projectUrl>https://github.com/tunisiano187/Chocolatey-packages</projectUrl>
+  </metadata>
+  <files>
+    <file src="chocolateyinstall.ps1" target="tools\\" />
+  </files>
+</package>
