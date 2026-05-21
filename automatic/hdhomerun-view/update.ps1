@@ -4,6 +4,7 @@ import-module chocolatey-AU
 $url32 = 'https://download.silicondust.com/hdhomerun/hdhomerun_windows.exe'
 
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
