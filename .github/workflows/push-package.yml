@@ -20,7 +20,7 @@ jobs:
 
       - name: Pack and push package
         env:
-          CHOCOLATEY_API_KEY: ${{ secrets.CHOCOLATEY_API_KEY }}
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
         run: |
           $packageName = "${{ github.event.inputs.package_name }}"
           $packageDir = "automatic\$packageName"
