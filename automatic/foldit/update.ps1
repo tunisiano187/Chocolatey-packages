@@ -4,6 +4,7 @@ import-module chocolatey-AU
 $release = 'https://files.ipd.uw.edu/pub/foldit/Foldit-win_x64.exe'
 
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 

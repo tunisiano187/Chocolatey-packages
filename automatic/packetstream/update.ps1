@@ -16,21 +16,22 @@ function global:au_SearchReplace {
 }
 
 function global:au_AfterUpdate($Package) {
+	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	$tempFile = Join-Path $env:TEMP "PacketStream_version_check.exe"
-	try {
-		Invoke-WebRequest -Uri $url32 -OutFile $tempFile -UseBasicParsing
-		$fvi = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile)
-		$version = if ($fvi.FileVersion) { $fvi.FileVersion.Trim() } `
-		           elseif ($fvi.ProductVersion) { $fvi.ProductVersion.Trim() } `
-		           else { $null }
-		if (-not $version) { throw "Could not extract version from PacketStream.exe" }
-	} finally {
-		if (Test-Path $tempFile) { Remove-Item $tempFile -Force -ErrorAction SilentlyContinue }
+	# The PacketStream.exe has no embedded FileVersion/ProductVersion.
+	# Use the S3 ETag as a change-detection proxy and derive a date-based version
+	# from the Last-Modified header (format: YYYY.M.D.0).
+	$response = Invoke-WebRequest -Uri $url32 -Method Head -UseBasicParsing
+	$lastModified = $response.Headers['Last-Modified']
+	if (-not $lastModified) {
+		throw "No Last-Modified header on PacketStream S3 URL"
 	}
+	$dt = [datetime]::Parse($lastModified)
+	$version = "$($dt.Year).$($dt.Month).$($dt.Day).0"
+
 	return @{ URL32 = $url32; Version = $version }
 }
 
