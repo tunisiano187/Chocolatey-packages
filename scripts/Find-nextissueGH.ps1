@@ -12,6 +12,15 @@ function Find-nextissueGH {
     Write-output $PSVersionTable
 
     "packageName : $packageName"
+
+    # Exit early if the issue title does not match the expected format.
+    # This guard must come BEFORE the Split call to avoid a null-valued expression
+    # crash when an issue title contains no parentheses.
+    if($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested") {
+        "Not running the get-package script"
+        exit 0
+    }
+
     if($packageName -match "exclude") {
         $search = $packageName.substring(6).Split('(')[1].split(')')[0]
     } else {
@@ -19,11 +28,6 @@ function Find-nextissueGH {
     }
     "Package to import : $search"
     if($actor -ne 'tunisiano187') {
-        exit 0
-    }
-    if($packageName -notmatch 'update requested' -and $packageName -notmatch "package requested") {
-        "Not running the get-package script"
-        $search = $null
         exit 0
     }
 
