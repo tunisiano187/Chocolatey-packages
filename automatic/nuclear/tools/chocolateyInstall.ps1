@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName = 'nuclear'
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
-  url64bit       = 'https://github.com/nukeop/nuclear/releases/download/player%401.37.3/Nuclear_1.37.3_x64-setup.exe'
-  checksum64     = '63822DBC0AC1773D56DF94166F3736B266AE1096A588D5B6A498F578B01F74BC'
+  url64bit       = 'https://github.com/nukeop/nuclear/releases/download/player%401.37.4/Nuclear_1.37.4_x64-setup.exe'
+  checksum64     = 'BC9302C8C424C9B2F4EF15B71520F92B334FCCBD73D0E7113BA3DAA1CF5D4A49'
   checksumType64 = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
