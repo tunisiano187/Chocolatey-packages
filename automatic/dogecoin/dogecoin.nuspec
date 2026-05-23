@@ -1,4 +1,4 @@
-Ôªø<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>dogecoin</id>
@@ -37,7 +37,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>¬© 2012 The √êogecoin Project</copyright>
+    <copyright>© 2012 The –ogecoin Project</copyright>
     <tags>ltc doge p2p cryptocurrency</tags>
     <projectSourceUrl>https://github.com/dogecoin/dogecoin</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dogecoin</packageSourceUrl>
@@ -47,4 +47,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
       <dependency id="dogecoin.install" version="[1.14.9]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

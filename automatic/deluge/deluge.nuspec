@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>deluge</id>
@@ -11,8 +11,8 @@
     <projectUrl>https://deluge-torrent.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/deluge.svg</iconUrl>
     <description>## deluge
-Deluge is a [full-featured](https://dev.deluge-torrent.org/wiki/About#Whataboutfeatures) ​BitTorrent client for Linux, OS X, Unix and Windows. 
-Deluge uses ​[libtorrent](https://www.libtorrent.org/) in its backend and features multiple user-interfaces including: GTK+, web and console. 
+Deluge is a [full-featured](https://dev.deluge-torrent.org/wiki/About#Whataboutfeatures) ?BitTorrent client for Linux, OS X, Unix and Windows. 
+Deluge uses ?[libtorrent](https://www.libtorrent.org/) in its backend and features multiple user-interfaces including: GTK+, web and console. 
 It has been designed using the client server model with a daemon process that handles all the bittorrent activity. 
 The Deluge daemon is able to run on headless machines with the user-interfaces being able to connect remotely from any platform.
 
@@ -21,9 +21,9 @@ Deluge features a rich [plugin collection](https://dev.deluge-torrent.org/wiki/P
 Deluge was created with the intention of being lightweight and unobtrusive. 
 It is our belief that downloading shouldn't be the primary task on your computer and therefore shouldn't monopolize system resources.
 
-Deluge is not designed for any one desktop environment and will work just fine in GNOME, KDE, XFCE and others. We do our best to adhere to the [​freedesktop](https://www.freedesktop.org/wiki/) standards.
+Deluge is not designed for any one desktop environment and will work just fine in GNOME, KDE, XFCE and others. We do our best to adhere to the [?freedesktop](https://www.freedesktop.org/wiki/) standards.
 
-Deluge is ​Free Software and is licensed under the ​GNU General Public License.
+Deluge is ?Free Software and is licensed under the ?GNU General Public License.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
@@ -35,7 +35,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 2009 Deluge Team</copyright>
+    <copyright>� 2009 Deluge Team</copyright>
     <tags>torrent p2p encryption python admin</tags>
     <projectSourceUrl>https://git.deluge-torrent.org/deluge</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/deluge</packageSourceUrl>
@@ -46,4 +46,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
       <dependency id="vcredist2008" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

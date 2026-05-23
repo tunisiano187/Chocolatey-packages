@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>allway-sync</id>
@@ -29,11 +29,14 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>Allway Sync - File synchronization that works.</summary>
     <releaseNotes>https://allwaysync.com/news</releaseNotes>
-    <copyright>© Usov Lab, Botkind, Inc. All rights reserved.</copyright>
+    <copyright>� Usov Lab, Botkind, Inc. All rights reserved.</copyright>
     <tags>allwaysync backup synchronization synchronize</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/allway-sync</packageSourceUrl>
     <docsUrl>http://allwaysync.com/support/faq</docsUrl>
     <mailingListUrl>http://allwaysync.com/support/</mailingListUrl>
     <bugTrackerUrl>https://syncapp.com/php/stss/main</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

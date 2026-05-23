@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mysteriumvpn</id>
@@ -38,11 +38,14 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>© Mysterium</copyright>
+    <copyright>� Mysterium</copyright>
     <tags>vpn decentralized admin</tags>
     <projectSourceUrl>https://github.com/mysteriumnetwork/mysterium-vpn-desktop</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mysteriumvpn</packageSourceUrl>
     <docsUrl>https://www.mysteriumvpn.com/post/what-is-vpn</docsUrl>
     <bugTrackerUrl>https://github.com/mysteriumnetwork/mysterium-vpn-desktop/issues</bugTrackerUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
