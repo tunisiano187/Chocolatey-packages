@@ -18,6 +18,45 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.2
 
+      - name: Download embedded binaries (binary-embedded packages)
+        run: |
+          $packageName = "${{ github.event.inputs.package_name }}"
+          $packageDir = "automatic\$packageName"
+          $verFile = "$packageDir\legal\VERIFICATION.txt"
+          $installFile = "$packageDir\tools\chocolateyInstall.ps1"
+
+          if (-not ((Test-Path $verFile) -and (Test-Path $installFile))) {
+            Write-Host "No binary embedding detected, skipping download."
+            exit 0
+          }
+
+          $verContent = Get-Content $verFile -Raw
+          $installContent = Get-Content $installFile -Raw
+
+          $url32 = if ($verContent -match '(?im)^x32:\s+(\S+)') { $Matches[1] } else { $null }
+          $url64 = if ($verContent -match '(?im)^x64:\s+(\S+)') { $Matches[1] } else { $null }
+
+          if (-not ($url32 -or $url64)) {
+            Write-Host "No download URLs found in VERIFICATION.txt, skipping download."
+            exit 0
+          }
+
+          Write-Host "Binary-embedded package: downloading installers..."
+
+          # Extract target filenames from chocolateyInstall.ps1
+          # Matches: file = "$toolsDir\SomeInstaller.exe"
+          $file32Name = if ($installContent -match '\bfile\b\s*=\s*"[^"]*\\([^"\\]+)"') { $Matches[1] } else { $null }
+          $file64Name = if ($installContent -match '\bfile64\b\s*=\s*"[^"]*\\([^"\\]+)"') { $Matches[1] } else { $null }
+
+          if ($url32 -and $file32Name) {
+            Write-Host "  32-bit: $url32 -> $packageDir\tools\$file32Name"
+            Invoke-WebRequest -Uri $url32 -OutFile "$packageDir\tools\$file32Name" -UseBasicParsing
+          }
+          if ($url64 -and $file64Name) {
+            Write-Host "  64-bit: $url64 -> $packageDir\tools\$file64Name"
+            Invoke-WebRequest -Uri $url64 -OutFile "$packageDir\tools\$file64Name" -UseBasicParsing
+          }
+
       - name: Pack and push package
         env:
           CHOCOLATEY_API_KEY: ${{ secrets.CHOCO_API_KEY }}
@@ -31,9 +70,6 @@ jobs:
           }
 
           Set-Location $packageDir
-
-          # Run AU update to refresh checksums without pushing (to ensure files are current)
-          # Then pack and push manually
 
           Write-Host "Packing $packageName..."
           choco pack "$packageName.nuspec" --out "$env:TEMP\choco-push"
