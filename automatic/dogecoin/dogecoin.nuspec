@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>dogecoin</id>
+    <version>1.14.9</version>
     <title>Dogecoin Core Wallet</title>
-    <version>1.14.8</version>
     <authors>Jackson Palmer</authors>
     <owners>tunisiano</owners>
-    <summary>Cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW)</summary>
-    <description><![CDATA[## Dogecoin
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://dogecoin.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3f07f11d33584886889acdc3cd890260dfbddba/icons/dogecoin.png</iconUrl>
+    <description>## Dogecoin
 Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide.
 
 ### Known issue
@@ -25,20 +27,9 @@ the software include cryptocurrency miner that are considered as virus
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
-]]></description>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dogecoin</packageSourceUrl>
-    <projectUrl>http://dogecoin.com</projectUrl>
-    <projectSourceUrl>https://github.com/dogecoin/dogecoin</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/dogecoin/dogecoin/issues</bugTrackerUrl>
-    <docsUrl>http://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide</docsUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3f07f11d33584886889acdc3cd890260dfbddba/icons/dogecoin.png</iconUrl>
-    <tags>ltc doge p2p cryptocurrency</tags>
-    <copyright>© 2012 The Ðogecoin Project</copyright>
-    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>
-#### Program
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
+    <summary>Cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW)</summary>
+    <releaseNotes>#### Program
 * [Roadmap](https://github.com/dogecoin/dogecoin/milestones)
 * [Changelog](https://github.com/dogecoin/dogecoin/releases/latest)
 
@@ -46,11 +37,14 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <copyright>© 2012 The Ðogecoin Project</copyright>
+    <tags>ltc doge p2p cryptocurrency</tags>
+    <projectSourceUrl>https://github.com/dogecoin/dogecoin</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dogecoin</packageSourceUrl>
+    <docsUrl>http://www.reddit.com/r/dogecoin/wiki/dogecoincoreguide</docsUrl>
+    <bugTrackerUrl>https://github.com/dogecoin/dogecoin/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="dogecoin.install" version="[1.14.8]" />
+      <dependency id="dogecoin.install" version="[1.14.9]" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

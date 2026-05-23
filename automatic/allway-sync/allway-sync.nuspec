@@ -1,36 +1,32 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>allway-sync</id>
-    <version>20.2.1</version>
+    <version>22.0.1</version>
     <title>allway-sync (Install)</title>
     <authors>Botkind, Inc.</authors>
     <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://allwaysync.com/license</licenseUrl>
     <projectUrl>http://allwaysync.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/allway-sync.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>---
-### [choco://allway-sync](choco://allway-sync)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3335e025e93578d36d7a69bd2f9c0db66dad6084/icons/allway-sync.png</iconUrl>
+    <description>## allway-sync (Install)
 
 ![Screenshot of Allway Sync](http://allwaysync.com/content/img/screenshots/sync.png)
 
 Allway Sync uses innovative synchronization algorithms to synchronize your data between desktop PCs, laptops, USB drives, remote FTP/SFTP and WebDAV servers, various online data storages and more. Data compression and encryption are supported. It combines bulletproof reliability with extremely easy-to-use interface. Allway Sync also can synchronize your PC data with a Mac via Sync Gateway.
 
-**SOCIAL MEDIA:**
+** SOCIAL MEDIA: **
 [Facebook](https://www.facebook.com/AllwaySync) [Twitter](https://twitter.com/allwaysync)
 
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/allway-sync/readme.md)**
-    
----
+#### [choco://allway-sync](choco://allway-sync)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>Allway Sync - File synchronization that works.</summary>
     <releaseNotes>https://allwaysync.com/news</releaseNotes>
     <copyright>© Usov Lab, Botkind, Inc. All rights reserved.</copyright>
@@ -40,7 +36,4 @@ Allway Sync uses innovative synchronization algorithms to synchronize your data 
     <mailingListUrl>http://allwaysync.com/support/</mailingListUrl>
     <bugTrackerUrl>https://syncapp.com/php/stss/main</bugTrackerUrl>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

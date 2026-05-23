@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mysteriumvpn</id>
-    <version>10.16.0</version>
+    <version>10.17.10</version>
     <title>MysteriumVPN</title>
     <authors>Mysterium Team</authors>
     <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.githubusercontent.com/mysteriumnetwork/mysterium-vpn-desktop/master/LICENSE</licenseUrl>
     <projectUrl>https://mysteriumvpn.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9ce764c7238e9e939e70bce486326434f976c1fd/icons/mysteriumvpn.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Mysterium VPN
+    <description>## Mysterium VPN
 ### Censorship free internet for all
 Safe, secure and affordable.
 The first decentralized VPN of its kind.
@@ -30,8 +29,7 @@ MysteriumVPN guarantees private and unrestricted internet.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
-]]></description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>Decentralized VPN</summary>
     <releaseNotes>#### Program
 * [Changelog](https://github.com/mysteriumnetwork/mysterium-vpn-desktop/commit/master)
@@ -47,7 +45,4 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <docsUrl>https://www.mysteriumvpn.com/post/what-is-vpn</docsUrl>
     <bugTrackerUrl>https://github.com/mysteriumnetwork/mysterium-vpn-desktop/issues</bugTrackerUrl>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

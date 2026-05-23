@@ -1,16 +1,16 @@
-<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>deluge</id>
-    <version>2.1.0</version>
+    <version>2.2.0</version>
     <title>Deluge</title>
     <authors>Arvid Norberg,Andrew Resch,Damien Churchill,John Garland</authors>
     <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://git.deluge-torrent.org/deluge/tree/LICENSE</licenseUrl>
     <projectUrl>https://deluge-torrent.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/deluge.svg</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## deluge
+    <description>## deluge
 Deluge is a [full-featured](https://dev.deluge-torrent.org/wiki/About#Whataboutfeatures) ​BitTorrent client for Linux, OS X, Unix and Windows. 
 Deluge uses ​[libtorrent](https://www.libtorrent.org/) in its backend and features multiple user-interfaces including: GTK+, web and console. 
 It has been designed using the client server model with a daemon process that handles all the bittorrent activity. 
@@ -28,8 +28,7 @@ Deluge is ​Free Software and is licensed under the ​GNU General Public Licen
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
-]]></description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>Full-featured, lightweight BitTorrent client</summary>
     <releaseNotes>#### Program
 * [Release changelog](https://deluge.readthedocs.io/en/latest/changelog.html)
@@ -47,7 +46,4 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
       <dependency id="vcredist2008" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

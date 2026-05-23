@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.1.4.1.exe'
-$checksum       = 'b49723ce66c6cd40bd1c4eacb5fb38ae6b01369d669d41ec345cda0284a93c1d'
+$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.1.5.3.exe'
+$checksum       = 'f5923e10115f410e0481c0194153a4c961dde9378d2456acd753de9581f80128'
 $checksumType   = 'sha256'
-$referer        = 'https://www.wagnardsoft.com/forums/viewtopic.php?t=5498&sid=6da34f4a22240e81afd5b5e37fb05f1b'
+$referer        = 'https://www.wagnardsoft.com/display-driver-uninstaller-ddu'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 Invoke-WebRequest -Uri $referer -OutFile "$env:TEMP/test.html" #  Required to be allowed just after

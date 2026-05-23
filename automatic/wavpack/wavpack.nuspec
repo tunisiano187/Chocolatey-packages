@@ -1,16 +1,16 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>wavpack</id>
-    <version>5.8.1</version>
+    <version>5.9.0</version>
     <title>WavPack</title>
     <authors>WavPack</authors>
     <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/dbry/WavPack/blob/master/license.txt</licenseUrl>
     <projectUrl>https://www.wavpack.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c5c7cea836efabf129c1aedc744a68f4b1f21652/icons/wavpack.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## WavPack
+    <description>## WavPack
 WavPack is a completely open audio compression format providing lossless, high-quality lossy, and a unique hybrid compression mode. Although the technology is loosely based on previous versions of WavPack, the new version 4 format has been designed from the ground up to offer unparalleled performance and functionality.
 
 In the default lossless mode WavPack acts just like a WinZip compressor for audio files. However, unlike MP3 or WMA encoding which can affect the sound quality, not a single bit of the original information is lost, so there's no chance of degradation. This makes lossless mode ideal for archiving audio material or any other situation where quality is paramount. The compression ratio depends on the source material, but generally is between 30% and 70%.
@@ -28,8 +28,7 @@ WavPack employs only well known, public domain techniques (i.e., linear predicti
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
-]]></description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>Hybrid lossless audio compression</summary>
     <releaseNotes>[Changelog](http://www.wavpack.com/changelog.txt)</releaseNotes>
     <copyright>© WavPack</copyright>
@@ -38,7 +37,4 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wavpack</packageSourceUrl>
     <docsUrl>http://www.wavpack.com/downloads.html#documentation</docsUrl>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

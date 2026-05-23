@@ -16,8 +16,8 @@ New-Item -ItemType Directory -Force -Path $downtemp | Out-Null
 $packageArgs = @{
   packageName   = 'jitsi-meet-electron'
   fileFullPath  = "$downtemp\jitsi-meet.exe"
-  url           = 'https://release-assets.githubusercontent.com/github-production-release-asset/76293911/e0861e35-b00a-4b3e-a6ce-b6ac1b502f62?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-12-15T17%3A06%3A08Z&rscd=attachment%3B+filename%3Djitsi-meet.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-12-15T16%3A05%3A50Z&ske=2025-12-15T17%3A06%3A08Z&sks=b&skv=2018-11-09&sig=A1HMcRgT8P7cczh2FhPq7%2BT8kuY4ceqLankn55OmWLA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2NTgxOTU1OCwibmJmIjoxNzY1ODE1OTU4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.s_SxjHbnoXj81osnWwwu9wEUqCePPiqoa5Lyspq1xIo&response-content-disposition=attachment%3B%20filename%3Djitsi-meet.exe&response-content-type=application%2Foctet-stream'
-  checksum      = '1ae9c39c0177d504c88b9021762f5a9e719240538f8fdfdf4e67c22bbcc17803'
+  url           = 'https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.5.0/jitsi-meet.exe'
+  checksum      = 'DF5C5B439D97B08BE7DD14247C8AE91082ADC867AC6491AB3FDA914FD652427D'
   checksumType  = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs

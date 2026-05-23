@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rstray</id>
-    <version>3.0.0</version>
+    <version>3.1.0</version>
     <title>Redshift Tray</title>
     <authors>ltGuillaume</authors>
     <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://github.com/ltGuillaume/Redshift-Tray/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ltGuillaume/Redshift-Tray</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@4abb65e34a94e9c2696fee951c7bb55dd0900120/icons/rstray.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## Redshift Tray
+    <description>## Redshift Tray
 Redshift Tray (by ltGuillaume) is a no-frills GUI for the excellent screen 
 temperature adjustment tool Redshift by Jon Lund Steffensen. 
 
@@ -36,8 +35,7 @@ or - if you can - report the executable as safe.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
-]]></description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>A no-frills GUI for the excellent Redshift, with some optional OS hotkeys.</summary>
     <releaseNotes>#### Software
 https://github.com/ltGuillaume/Redshift-Tray/releases/latest/
@@ -49,7 +47,4 @@ https://github.com/ltGuillaume/Redshift-Tray/releases/latest/
     <projectSourceUrl>https://github.com/ltGuillaume/Redshift-Tray</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/rstray</packageSourceUrl>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>

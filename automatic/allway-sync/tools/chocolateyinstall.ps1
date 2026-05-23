@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://allwaysync.com/content/download/allwaysync.exe'
-$checksum     = 'EFD10324D81669FA47ECE5CA98D1C043C4717CB81E97BEF926C21C110532A0F2'
+$url          = 'https://allwaysync.com/content/download/allwaysync-22-0-1.exe'
+$checksum     = 'd405b2310c27ccfe578de7d587c59f21bcc76d0c7eed09792d7fcd67c544bf9e'
 $checksumType = 'sha256'
-$url64        = 'https://allwaysync.com/content/download/allwaysync-x64.exe'
-$checksum64   = '6A2B489E07964975B666CC82492DF21EE9A5DB51B4827E39D0694F6FCAF08D89'
+$url64        = 'https://allwaysync.com/content/download/allwaysync-x64-22-0-1.exe'
+$checksum64   = '7e29f26cdddf8dd0f2b8c7da6ff2da0c1312388abd28763713f29c285e017370'
 
 $packageArgs = @{
   packageName    = 'allway-sync'

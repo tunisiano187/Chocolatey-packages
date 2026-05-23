@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>ddu</id>
+    <version>18.1.5.3</version>
     <title>Display Driver Uninstaller</title>
-    <version>18.1.4.1</version>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
-    <summary>Utility to completely remove system drivers</summary>
-    <description><![CDATA[## Display Driver Uninstaller
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Wagnard/display-drivers-uninstaller/blob/WPF/LICENSE.md</licenseUrl>
+    <projectUrl>https://www.wagnardsoft.com/display-driver-uninstaller-ddu</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
+    <description>## Display Driver Uninstaller
 Display Driver Uninstaller is a driver removal utility that can help you completely 
 remove Graphics Processing Unit (GPU) display card drivers and packages (AMD/NVIDIA) 
 from your system without leaving leftovers behind; including registry keys, folders 
@@ -38,29 +40,21 @@ Mode is always recommended.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
-]]></description>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>
-    <projectSourceUrl>https://github.com/Wagnard/display-drivers-uninstaller</projectSourceUrl>
-    <projectUrl>https://www.wagnardsoft.com/display-driver-uninstaller-ddu</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
-    <tags>driver uninstaller nvidia ati</tags>
-    <copyright>© Ghislain Harvey</copyright>
-    <licenseUrl>https://github.com/Wagnard/display-drivers-uninstaller/blob/WPF/LICENSE.md</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <mailingListUrl>https://www.wagnardsoft.com/forums/viewforum.php?f=5</mailingListUrl>
-    <releaseNotes>
-#### Program
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
+    <summary>Utility to completely remove system drivers</summary>
+    <releaseNotes>#### Program
 * [Changelog](https://www.wagnardsoft.com/display-driver-uninstaller-ddu)
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+    <copyright>© Ghislain Harvey</copyright>
+    <tags>driver uninstaller nvidia ati</tags>
+    <projectSourceUrl>https://github.com/Wagnard/display-drivers-uninstaller</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>
+    <mailingListUrl>https://www.wagnardsoft.com/forums/viewforum.php?f=5</mailingListUrl>
     <dependencies>
       <dependency id="kb2919355" version="1.0.20160915" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
