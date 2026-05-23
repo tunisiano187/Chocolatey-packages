@@ -1,29 +1,52 @@
 $ErrorActionPreference = 'Stop'
-import-module chocolatey-AU
+Import-Module chocolatey-AU
 
-$url32 = 'https://download.silicondust.com/hdhomerun/hdhomerun_windows.exe'
+$baseUrl = 'https://download.silicondust.com/hdhomerun/hdhomerun_windows.exe'
 
 function global:au_AfterUpdate($Package) {
-	. ..\..\scripts\Invoke-VirusTotalScan.ps1
-	Invoke-VirusTotalScan $Package
+    . ..\..\scripts\Invoke-VirusTotalScan.ps1
+    Invoke-VirusTotalScan $Package
 }
 
 function global:au_SearchReplace {
-	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-		}
-	}
+    @{
+        'tools/chocolateyInstall.ps1' = @{
+            "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+        }
+    }
 }
 
 function global:au_GetLatest {
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32
+    # Follow the redirect once to obtain the versioned filename
+    # e.g. hdhomerun_windows.exe -> hdhomerun_windows_20260326.exe
+    $req = [System.Net.HttpWebRequest]::Create($baseUrl)
+    $req.Method = 'HEAD'
+    $req.AllowAutoRedirect = $false
+    $resp = $req.GetResponse()
+    $redirectUrl = $resp.Headers['Location']
+    $resp.Close()
 
-	$Latest = @{ URL32 = $url32; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
-	return $Latest
+    if (!$redirectUrl) {
+        throw "No redirect from $baseUrl — cannot determine version"
+    }
+
+    # Parse date from versioned filename: hdhomerun_windows_YYYYMMDD.exe
+    if ($redirectUrl -notmatch 'hdhomerun_windows_(\d{4})(\d{2})(\d{2})\.exe') {
+        throw "Cannot parse version from redirect URL: $redirectUrl"
+    }
+    $version = "$($Matches[1]).$($Matches[2]).$($Matches[3])"
+
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion = Get-FileVersion $redirectUrl
+
+    return @{
+        URL32          = $redirectUrl
+        Version        = $version
+        Checksum32     = $FileVersion.Checksum
+        ChecksumType32 = $FileVersion.ChecksumType
+    }
 }
 
 update -ChecksumFor none
