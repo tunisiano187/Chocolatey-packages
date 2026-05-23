@@ -1,18 +1,14 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-05-22 09:57:59 UTC  
+**Date**: 2026-05-23 08:36:54 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (9 total)
+### 🚀 Issues Ouverts (6 total)
 
-#### 🔴 critical (7 issues)
-- #4013: CHO-202-2: Mitigate claude_transient_upstream errors in CI/CD - https://github.com/tunisiano187/Chocolatey-packages/issues/4013 [🔴 critical]
-- #4012: CHO-202-1: Triage - collect evidence for claude_transient_upstream errors - https://github.com/tunisiano187/Chocolatey-packages/issues/4012 [🔴 critical]
-- #4011: CHO-202-1: Triage - collect evidence for claude_transient_upstream errors - https://github.com/tunisiano187/Chocolatey-packages/issues/4011 [🔴 critical]
-- #4010: CHO-202: Investigate claude_transient_upstream error in Chocolatey-packages CI/CD pipeline - https://github.com/tunisiano187/Chocolatey-packages/issues/4010 [🔴 critical]
+#### 🔴 critical (3 issues)
 - #4004: [Bug] pngquant package claims to be version 3.0.3, but when installed it is 2.17.0 - https://github.com/tunisiano187/Chocolatey-packages/issues/4004 [🔴 critical]
 - #4003: 🔧 Fix Git Commit Step in Daily Surveillance Workflow - https://github.com/tunisiano187/Chocolatey-packages/issues/4003 [🔴 critical]
 - #4001: 🔧 Fix Daily Surveillance Workflow Infrastructure Issue - https://github.com/tunisiano187/Chocolatey-packages/issues/4001 [🔴 critical]
@@ -20,7 +16,8 @@
 #### 🟡 medium (1 issues)
 - #3998: 📊 Main GitHub Surveillance Issue - https://github.com/tunisiano187/Chocolatey-packages/issues/3998 [🟡 medium]
 
-#### ⚪ normal (1 issues)
+#### ⚪ normal (2 issues)
+- #4014: Investigate and resolve GitHub CLI rate limiting for Chocolatey-packages - https://github.com/tunisiano187/Chocolatey-packages/issues/4014 [⚪ normal]
 - #3784: Dependency Dashboard - https://github.com/tunisiano187/Chocolatey-packages/issues/3784 [⚪ normal]
 
 ### 🔄 Pull Requests en Attente (0 total)
@@ -31,14 +28,14 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 7
+- 🔴 critical: 3
 - 🟡 medium: 1
-- ⚪ normal: 1
+- ⚪ normal: 2
 
 ### 📈 Statistiques Globales
-- **Total issues**: 9
+- **Total issues**: 6
 - **Total PRs**: 0
-- **Critiques**: 7
+- **Critiques**: 3
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -50,4 +47,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-05-22 09:57:59 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-05-23 08:36:54 UTC*
