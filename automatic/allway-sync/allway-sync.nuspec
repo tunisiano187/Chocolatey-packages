@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://allwaysync.com/license</licenseUrl>
     <projectUrl>http://allwaysync.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3335e025e93578d36d7a69bd2f9c0db66dad6084/icons/allway-sync.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@13930f88753e040df726d2aa2e2274ae1ee6c8e8/icons/allway-sync.png</iconUrl>
     <description>## allway-sync (Install)
 
 ![Screenshot of Allway Sync](http://allwaysync.com/content/img/screenshots/sync.png)
@@ -29,7 +29,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
     <summary>Allway Sync - File synchronization that works.</summary>
     <releaseNotes>https://allwaysync.com/news</releaseNotes>
-    <copyright>© Usov Lab, Botkind, Inc. All rights reserved.</copyright>
+    <copyright>ï¿½ Usov Lab, Botkind, Inc. All rights reserved.</copyright>
     <tags>allwaysync backup synchronization synchronize</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/allway-sync</packageSourceUrl>
     <docsUrl>http://allwaysync.com/support/faq</docsUrl>
