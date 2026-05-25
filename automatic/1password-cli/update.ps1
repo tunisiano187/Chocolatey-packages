@@ -33,8 +33,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$Links = (Invoke-WebRequest -Uri $releases).Links
-	$url32 = ($Links | Where-Object {$_.href -match 'windows_386_'} | Select-Object -First 1).href
-	$url64 = ($Links | Where-Object {$_.href -match 'windows_amd64'} | Select-Object -First 1).href
+	# Filter out pre-release (beta/alpha/rc) URLs — only keep stable releases
+	$url32 = ($Links | Where-Object {$_.href -match 'windows_386_' -and $_.href -notmatch '-beta|-alpha|-rc'} | Select-Object -First 1).href
+	$url64 = ($Links | Where-Object {$_.href -match 'windows_amd64' -and $_.href -notmatch '-beta|-alpha|-rc'} | Select-Object -First 1).href
 	$version = (Get-Version $url32).Version
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }

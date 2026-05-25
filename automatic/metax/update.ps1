@@ -30,7 +30,8 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases
 	$regexPattern = 'V(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	$version = $versionMatch.Matches[0].Groups[1].Value
+	# Pick the highest version found on the page (not the first match)
+	$version = ($versionMatch.Matches | ForEach-Object { $_.Groups[1].Value } | Sort-Object { [version]$_ } | Select-Object -Last 1)
 
 	$url32 = "https://www.danhinsley.com/downloads/MetaXSetup.msi"
 
