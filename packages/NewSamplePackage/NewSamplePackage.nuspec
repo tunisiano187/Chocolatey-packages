@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>NewSamplePackage</id>
+    <version>1.0.0</version>
+    <title>New Sample Package</title>
+    <authors>GitHubManager</authors>
+    <owners>Chocolatey Packages Company</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A new sample package created by GitHubManager.</description>
+    <summary>A simple example package.</summary>
+    <projectUrl>https://github.com/tunisiano187/Chocolatey-packages</projectUrl>
+    <dependencies>
+        <!-- Add dependencies here if any -->
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Add files to include in the package -->
+    <file src="chocolateyinstall.ps1" target="tools\" />
+  </files>
+</package>
