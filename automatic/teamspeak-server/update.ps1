@@ -21,7 +21,8 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$json = Invoke-WebRequest -Uri $versionsUrl -UseBasicParsing | ConvertFrom-Json
+	$headers = @{ 'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' }
+	$json = Invoke-WebRequest -Uri $versionsUrl -UseBasicParsing -Headers $headers | ConvertFrom-Json
 
 	$win32 = $json.windows.x86
 	$win64 = $json.windows.x86_64
@@ -33,6 +34,7 @@ function global:au_GetLatest {
 		Checksum32     = $win32.checksum.ToUpper()
 		ChecksumType32 = 'sha256'
 		Checksum64     = $win64.checksum.ToUpper()
+		ChecksumType64 = 'sha256'
 	}
 }
 
