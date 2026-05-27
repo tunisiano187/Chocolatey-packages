@@ -21,12 +21,24 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     # Follow the redirect once to obtain the versioned filename
     # e.g. hdhomerun_windows.exe -> hdhomerun_windows_20260326.exe
-    $req = [System.Net.HttpWebRequest]::Create($baseUrl)
-    $req.Method = 'HEAD'
-    $req.AllowAutoRedirect = $false
-    $resp = $req.GetResponse()
-    $redirectUrl = $resp.Headers['Location']
-    $resp.Close()
+    # Note: in .NET Framework (PS 5.1), GetResponse() throws WebException for 3xx;
+    # the Location header is on the exception's Response object. In .NET Core (PS 7+)
+    # it returns the redirect response directly. Handle both.
+    $redirectUrl = $null
+    try {
+        $req = [System.Net.HttpWebRequest]::Create($baseUrl)
+        $req.Method = 'HEAD'
+        $req.AllowAutoRedirect = $false
+        $resp = $req.GetResponse()
+        $redirectUrl = $resp.Headers['Location']
+        $resp.Close()
+    } catch [System.Net.WebException] {
+        $exResp = $_.Exception.Response
+        if ($exResp) {
+            $redirectUrl = $exResp.Headers['Location']
+            $exResp.Close()
+        }
+    }
 
     if (!$redirectUrl) {
         throw "No redirect from $baseUrl — cannot determine version"
