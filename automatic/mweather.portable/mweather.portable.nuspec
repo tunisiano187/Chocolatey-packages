@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mweather.portable</id>
@@ -27,7 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <summary>decode METAR world weather reports</summary>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 2003 NirSoft</copyright>
+    <copyright>(c) 2003 NirSoft</copyright>
     <tags>decoder decode weather report stations world html xml freeware</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mweather.portable</packageSourceUrl>
   </metadata>
