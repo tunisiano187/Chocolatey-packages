@@ -30,8 +30,12 @@ function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases
 	$regexPattern = 'V(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	# Pick the highest version found on the page (not the first match)
-	$version = ($versionMatch.Matches | ForEach-Object { $_.Groups[1].Value } | Sort-Object { [version]$_ } | Select-Object -Last 1)
+	# Pick the highest version found on the page; filter out bare integers (e.g. "2") that
+	# lack a dot, as [version] requires at least Major.Minor and throws otherwise.
+	$version = ($versionMatch.Matches | ForEach-Object { $_.Groups[1].Value } |
+		Where-Object { $_ -match '\.' } |
+		Sort-Object { [version]$_ } | Select-Object -Last 1)
+	if (-not $version) { throw "Could not find a valid version string (X.Y) on the metax page" }
 
 	$url32 = "https://www.danhinsley.com/downloads/MetaXSetup.msi"
 
