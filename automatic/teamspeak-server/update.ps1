@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-$releases = 'https://www.teamspeak.com/en/downloads/#server'
+$versionsUrl = 'https://www.teamspeak.com/versions/server.json'
 
 function global:au_SearchReplace {
 	@{
@@ -21,17 +21,19 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$urls = ($page.Links | Where-Object {$_ -match ".zip"} | Where-Object {$_ -match "win"}).href
-	$url32 = $urls | Where-Object {$_ -match "win32"}
-	$url64 = $urls | Where-Object {$_ -match "win64"}
-	$version = $url32.Split('/')[-2]
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion32 = Get-FileVersion $url32
-	$FileVersion64 = Get-FileVersion $url64
+	$json = Invoke-WebRequest -Uri $versionsUrl -UseBasicParsing | ConvertFrom-Json
 
-	$Latest = @{ URL32 = $url32; URL64 = $url64; Checksum32 = $FileVersion32.Checksum; ChecksumType32 = $FileVersion32.ChecksumType; Checksum64 = $FileVersion64.Checksum; ChecksumType64 = $FileVersion64.ChecksumType; Version = $version }
-	return $Latest
+	$win32 = $json.windows.x86
+	$win64 = $json.windows.x86_64
+
+	return @{
+		Version        = $win32.version
+		URL32          = $win32.mirrors.'teamspeak.com'
+		URL64          = $win64.mirrors.'teamspeak.com'
+		Checksum32     = $win32.checksum.ToUpper()
+		ChecksumType32 = 'sha256'
+		Checksum64     = $win64.checksum.ToUpper()
+	}
 }
 
 update -ChecksumFor none
