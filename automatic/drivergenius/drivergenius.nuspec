@@ -38,7 +38,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Professional driver management tool and hardware diagnostics</summary>
     <releaseNotes>https://www.driver-soft.com/download.html</releaseNotes>
-    <copyright>© 2002 Driver-Soft Inc</copyright>
+    <copyright>(c) 2002 Driver-Soft Inc</copyright>
     <tags>freeware driver manager admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/drivergenius</packageSourceUrl>
     <docsUrl>https://www.driver-soft.com/userguide.html</docsUrl>

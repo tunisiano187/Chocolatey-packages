@@ -24,7 +24,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>P4Merge: Visual Merge Tool. Provides graphical three-way merging and side-by-side file comparisons.</summary>
     <releaseNotes>Initial release</releaseNotes>
-    <copyright>Copyright © 2022 Perforce. All rights reserved.</copyright>
+    <copyright>Copyright (c) 2022 Perforce. All rights reserved.</copyright>
     <tags>devbox notepad merge diff git</tags>
     <dependencies>
       <dependency id="P4Merge" version="[2023.4.0]" />

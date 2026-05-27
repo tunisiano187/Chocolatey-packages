@@ -31,7 +31,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>BZFlag is a 3D networked multi-player multi-platform tank battle game.</summary>
     <releaseNotes>https://github.com/BZFlag-Dev/bzflag/releases</releaseNotes>
-    <copyright>Copyright © 2025 Tim Riker</copyright>
+    <copyright>Copyright (c) 2025 Tim Riker</copyright>
     <tags>bzflag opengl game multiplayer arcade tank battlezone admin</tags>
     <projectSourceUrl>https://github.com/BZFlag-Dev/bzflag</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/bzflag</packageSourceUrl>

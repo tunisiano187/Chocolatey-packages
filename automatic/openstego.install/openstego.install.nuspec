@@ -33,7 +33,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© Samir Vaidya</copyright>
+    <copyright>(c) Samir Vaidya</copyright>
     <tags>steganography security encryption</tags>
     <dependencies>
       <dependency id="javaruntime" />

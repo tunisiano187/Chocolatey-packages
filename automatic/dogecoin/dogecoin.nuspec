@@ -37,7 +37,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>© 2012 The Ðogecoin Project</copyright>
+    <copyright>(c) 2012 The Dogecoin Project</copyright>
     <tags>ltc doge p2p cryptocurrency</tags>
     <projectSourceUrl>https://github.com/dogecoin/dogecoin</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/dogecoin</packageSourceUrl>

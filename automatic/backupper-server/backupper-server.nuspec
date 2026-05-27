@@ -46,7 +46,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>The Easiest Data Backup and Disaster Recovery Solution for Windows Server Machines</summary>
     <releaseNotes>https://www.ubackup.com/changelog.html</releaseNotes>
-    <copyright>Copyright © AOMEI</copyright>
+    <copyright>Copyright (c) AOMEI</copyright>
     <tags>aomei backupper backup clone restore trial</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/backupper-server</packageSourceUrl>
     <docsUrl>https://www.ubackup.com/help/</docsUrl>

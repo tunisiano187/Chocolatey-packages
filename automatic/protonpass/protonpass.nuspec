@@ -17,7 +17,7 @@ Proton Pass is a cloud based password manager solution with end-to-end encryptio
 
 It also generates unique email aliases, preventing your true email address from being used to track you, exposed in data breaches, or targeted for spam.
 
-The Proton Pass desktop app for Windows, includes offline access. To activate offline mode, Go to settings > Enable offline mode, you’ll be asked to enter your password.
+The Proton Pass desktop app for Windows, includes offline access. To activate offline mode, Go to settings > Enable offline mode, you'll be asked to enter your password.
 
 #### [choco://protonpass](choco://protonpass)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Proton Pass secures your passwords and identity with end-to-end encryption.</summary>
     <licenseUrl>https://raw.githubusercontent.com/protonpass/proton-pass-common/main/LICENSE</licenseUrl>
-    <copyright>Copyright © 2024 Proton AG</copyright>
+    <copyright>Copyright (c) 2024 Proton AG</copyright>
     <tags>proton pass password manager security</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/protonpass</packageSourceUrl>
     <docsUrl>https://proton.me/support/pass</docsUrl>

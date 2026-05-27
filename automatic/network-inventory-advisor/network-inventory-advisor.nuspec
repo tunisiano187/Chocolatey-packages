@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Network Inventory Advisor runs precise software and hardware analysis of your machines and scans all devices in your network.</summary>
     <releaseNotes>https://www.network-inventory-advisor.com/help/network-inventory-advisor-5-released/</releaseNotes>
-    <copyright>© ClearApps.com</copyright>
+    <copyright>(c) ClearApps.com</copyright>
     <tags>network inventory advisor scan license management trial</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/network-inventory-advisor</packageSourceUrl>
     <docsUrl>http://help.network-inventory-advisor.com/category/getting-started/</docsUrl>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<!--Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>sdelete</id>
@@ -52,7 +52,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectUrl>https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete</projectUrl>
     <mailingListUrl>https://docs.microsoft.com/sysinternals/community</mailingListUrl>
     <tags>privacy security delete erase sysinternals cli</tags>
-    <copyright>© Mark Russinovich</copyright>
+    <copyright>(c) Mark Russinovich</copyright>
     <licenseUrl>https://docs.microsoft.com/en-us/legal/termsofuse</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>

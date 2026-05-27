@@ -4,7 +4,7 @@
     <id>jacksum</id>
     <version>2.9.0</version>
     <title>Jacksum</title>
-    <authors>Johann N. Löfflmann</authors>
+    <authors>Johann N. Lofflmann</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://jacksum.net/en/legal/copyright.html</licenseUrl>
     <projectUrl>https://jacksum.net/en/index.html</projectUrl>
@@ -67,7 +67,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Cross platform checksum utility of 58 hashes</summary>
     <releaseNotes>https://github.com/jonelo/jacksum-fbi-windows/releases/tag/v2.6.0</releaseNotes>
-    <copyright>© Johann N. Löfflmann</copyright>
+    <copyright>(c) Johann N. Lofflmann</copyright>
     <tags>file checksum java commandline</tags>
     <dependencies>
       <dependency id="javaruntime" version="(7,)" />

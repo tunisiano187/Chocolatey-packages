@@ -12,7 +12,7 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d8d7ed3aa3e7648d2f4a01812626c7ef27648473/icons/zap.png</iconUrl>
     <description># Zed Attack Proxy (ZAP)
 
-The Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
+The Zed Attack Proxy (ZAP) is one of the world's most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
 
 ## Features
 
@@ -43,7 +43,7 @@ Some of ZAP's functionality:
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!</description>
     <summary>The Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.</summary>
     <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.17.0</releaseNotes>
-    <copyright>Copyright ©2025 ZAP Dev Team</copyright>
+    <copyright>Copyright (c)2025 ZAP Dev Team</copyright>
     <tags>zap admin dast security proxy attack web pentesting</tags>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/zap</packageSourceUrl>

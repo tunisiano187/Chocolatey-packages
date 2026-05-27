@@ -31,7 +31,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>SystemInfo is a component used in many of our benchmarks to identify the hardware in your system.</summary>
     <releaseNotes>https://benchmarks.ul.com/systeminfo</releaseNotes>
-    <copyright>© Futuremark Corporation</copyright>
+    <copyright>(c) Futuremark Corporation</copyright>
     <tags>futuremark ul systeminfo benchmarks</tags>
     <bugTrackerUrl>https://benchmarks.ul.com/support</bugTrackerUrl>
   </metadata>

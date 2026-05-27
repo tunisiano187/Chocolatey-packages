@@ -79,7 +79,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>NetDrive - Access your cloud storage as if it is a local drive.</summary>
     <releaseNotes>https://accounts.bdrive.com/product_history/NetDrive3/</releaseNotes>
-    <copyright>Copyright © Bdrive Inc.</copyright>
+    <copyright>Copyright (c) Bdrive Inc.</copyright>
     <tags>netdrive net drive amazon box dropbox ftp google hubic onedrive openstack owncloud webdav android airdrive trial</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/netdrive</packageSourceUrl>
     <docsUrl>https://www.netdrive.net/support/</docsUrl>

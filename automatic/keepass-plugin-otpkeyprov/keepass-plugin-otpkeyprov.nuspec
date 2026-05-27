@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectUrl>http://keepass.info/plugins.html#otpkeyprov</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@9aadb348225d7e0821ca5c77e4ae6139c6b2bff7/icons/keepass-plugin-otpkeyprov.png</iconUrl>
     <tags>keepass plugin security otp</tags>
-    <copyright>© 2011 Dominik Reichl</copyright>
+    <copyright>(c) 2011 Dominik Reichl</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>

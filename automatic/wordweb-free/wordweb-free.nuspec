@@ -45,7 +45,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Windows dictionary and thesaurus</summary>
     <releaseNotes>https://wordweb.info/users.html</releaseNotes>
-    <copyright>Copyright © WordWeb Software</copyright>
+    <copyright>Copyright (c) WordWeb Software</copyright>
     <tags>wordweb dictionary thesaurus binary</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/wordweb-free</packageSourceUrl>
     <docsUrl>https://wordweb.info/more.html</docsUrl>

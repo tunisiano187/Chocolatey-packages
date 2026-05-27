@@ -33,7 +33,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Grab data from list-view, tree-view, combo box, WebBrowser control, and text-box.</summary>
     <releaseNotes>https://www.nirsoft.net/utils/sysexp.html</releaseNotes>
-    <copyright>© 2003 NirSoft</copyright>
+    <copyright>(c) 2003 NirSoft</copyright>
     <tags>data visualizer lists admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sysexp.install</packageSourceUrl>
   </metadata>

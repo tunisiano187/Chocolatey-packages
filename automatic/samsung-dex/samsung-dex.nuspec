@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>samsung-dex</id>
@@ -23,9 +23,9 @@
 
 ### Push the boundaries of your Galaxy with Samsung DeX
 
-Maximize your productivity with Samsung DeX on your Samsung Galaxy device. Seamlessly transition from sending messages to friends to watching movies and preparing presentations simultaneously – all on a large screen. Wireless DeX is also available for added convenience.
+Maximize your productivity with Samsung DeX on your Samsung Galaxy device. Seamlessly transition from sending messages to friends to watching movies and preparing presentations simultaneously - all on a large screen. Wireless DeX is also available for added convenience.
 
-When using a tablet, choose your preferred mode: New DeX or Classic DeX. With New DeX mode, the tablet’s UI remains intact, ensuring a continuation of your tablet experience. Opt for Classic DeX mode to transform your tablet’s interface into a familiar desktop environment. 
+When using a tablet, choose your preferred mode: New DeX or Classic DeX. With New DeX mode, the tablet's UI remains intact, ensuring a continuation of your tablet experience. Opt for Classic DeX mode to transform your tablet's interface into a familiar desktop environment. 
 
 Go to Settings> Connected devices> Choose between New/Classic in Samsung DeX.
 

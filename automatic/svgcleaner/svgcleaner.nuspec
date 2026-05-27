@@ -38,7 +38,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 2013 Reizner Evgeniy</copyright>
+    <copyright>(c) 2013 Reizner Evgeniy</copyright>
     <language>en-us</language>
     <tags>svg optimization gui cli</tags>
   </metadata>

@@ -38,7 +38,7 @@ Kernel Exchange EDB Viewer is an advanced and professional software for opening 
 * MS Outlook should be installed with a profile</description>
     <summary>Free Exchange EDB Viewer</summary>
     <releaseNotes />
-    <copyright>© Copyright 2017 Lepide Software Private Limited.</copyright>
+    <copyright>(c) Copyright 2017 Lepide Software Private Limited.</copyright>
     <tags>kernel lepide microsoft exchange edb viewer admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/exchange-edb-viewer</packageSourceUrl>
     <docsUrl>http://www.nucleustechnologies.com/animated-demo-edb-viewer.html</docsUrl>

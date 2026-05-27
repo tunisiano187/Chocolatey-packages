@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <summary>View the cache files of Firefox/Mozilla browsers</summary>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>Â© 2024 NirSoft</copyright>
+    <copyright>A(c) 2024 NirSoft</copyright>
     <tags>mozilla cache extract web browser</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mozillacacheview</packageSourceUrl>
   </metadata>

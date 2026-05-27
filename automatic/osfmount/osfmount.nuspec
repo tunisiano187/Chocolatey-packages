@@ -4,7 +4,7 @@
     <id>osfmount</id>
     <version>3.1.1003.0</version>
     <title>OSFMount (Install)</title>
-    <authors>PassMark® Software Pty Ltd</authors>
+    <authors>PassMark(r) Software Pty Ltd</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.osforensics.com/tools/mount-disk-images.html</projectUrl>
@@ -13,11 +13,11 @@
 
 ![Screenshot of OSFMount](https://www.osforensics.com/img/osfmount-mainscreenshot%201.png)
 
-OSFMount is a free utility designed for use with [PassMark OSForensics](https://www.osforensics.com/index.html)™
+OSFMount is a free utility designed for use with [PassMark OSForensics](https://www.osforensics.com/index.html)(TM)
 
 ## Overview
 
-OSFMount allows you to mount local disk image files (bit-for-bit copies of an entire disk or disk partition) in Windows as a physical disk or a logical drive letter. You can then analyze the disk image file with [PassMark OSForensics](https://www.osforensics.com/index.html)™ by using the physical disk name (eg. \\.\PhysicalDrive1) or logical drive letter (eg. Z:).
+OSFMount allows you to mount local disk image files (bit-for-bit copies of an entire disk or disk partition) in Windows as a physical disk or a logical drive letter. You can then analyze the disk image file with [PassMark OSForensics](https://www.osforensics.com/index.html)(TM) by using the physical disk name (eg. \\.\PhysicalDrive1) or logical drive letter (eg. Z:).
 
 By default, the image files are mounted as read only so that the original image files are not altered.
 

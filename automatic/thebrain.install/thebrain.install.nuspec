@@ -32,7 +32,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Mind mapping and file manager</summary>
     <releaseNotes>https://assets.thebrain.com/documents/TheBrain-14-0-Release-Notes.pdf</releaseNotes>
-    <copyright>© 1998 TheBrain Technologies LP</copyright>
+    <copyright>(c) 1998 TheBrain Technologies LP</copyright>
     <tags>mindmap brainstorm concept-map file-management admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thebrain.install</packageSourceUrl>
     <mailingListUrl>https://forums.thebrain.com/</mailingListUrl>

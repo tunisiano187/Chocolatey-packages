@@ -74,7 +74,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Windows deployment tool</summary>
     <releaseNotes>https://www.ntlite.com/changelog/</releaseNotes>
-    <copyright>© Nlitesoft</copyright>
+    <copyright>(c) Nlitesoft</copyright>
     <tags>nlitesoft ntlite windows deployment</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ntlite-free</packageSourceUrl>
     <docsUrl>https://www.ntlite.com/support/</docsUrl>

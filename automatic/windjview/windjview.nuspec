@@ -27,7 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>[News](http://windjview.sourceforge.net/news)
 [Changelog](http://windjview.sourceforge.net/version-history)
 [Known issues](https://sourceforge.net/p/windjview/bugs/)</releaseNotes>
-    <copyright>© 2004 Andrew Zhezherun, Leonid Zhezherun</copyright>
+    <copyright>(c) 2004 Andrew Zhezherun, Leonid Zhezherun</copyright>
     <tags>djvu viewer</tags>
   </metadata>
   <files>

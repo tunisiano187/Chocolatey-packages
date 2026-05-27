@@ -18,7 +18,7 @@
 
 ## Fast results. Powerful cleaning.
 
-Computer running slow? Strange messages popping up? Browser homepage changed without your permission? This could be the work of adware (and its friends), a sneaky variant of malware that is hard to find, and harder to remove. Malwarebytes AdwCleaner employs innovative technology engineered solely to detect and remove these unwanted hitchhikers. It’s the cleaner of choice for home users and technicians.
+Computer running slow? Strange messages popping up? Browser homepage changed without your permission? This could be the work of adware (and its friends), a sneaky variant of malware that is hard to find, and harder to remove. Malwarebytes AdwCleaner employs innovative technology engineered solely to detect and remove these unwanted hitchhikers. It's the cleaner of choice for home users and technicians.
 
 ## What it does for you
 
@@ -34,9 +34,9 @@ Removes unwanted browser toolbars, which are often bundled in with other downloa
 
 Scans your computer in seconds. Clean your computer in less time than it takes to make a cup of coffee.
 
-### Installs…nothing
+### Installs...nothing
 
-Doesn’t use much memory or processor power, and there’s nothing to install. Just download, launch, and click to scan. It’s that simple.	
+Doesn't use much memory or processor power, and there's nothing to install. Just download, launch, and click to scan. It's that simple.	
 
 ---
 
@@ -52,7 +52,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Anti-Adware/Toolbar/PUP/Hijacker search and delete tool</summary>
     <releaseNotes>https://toolslib.net/downloads/viewdownload/1-adwcleaner/history/</releaseNotes>
-    <copyright>© Malwarebytes</copyright>
+    <copyright>(c) Malwarebytes</copyright>
     <tags>malwarebytes adwcleaner unattended malware-scanner malware-remover toolbar-remover</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/adwcleaner</packageSourceUrl>
     <docsUrl>https://toolslib.net/downloads/viewdownload/1-adwcleaner/pages/5-en-adwcleaner-documentation/</docsUrl>

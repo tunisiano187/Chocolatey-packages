@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 2015 Branza Victor-Alexandru, Luigi Poole, Jean van Kasteel, Ivo Georgiev</copyright>
+    <copyright>(c) 2015 Branza Victor-Alexandru, Luigi Poole, Jean van Kasteel, Ivo Georgiev</copyright>
     <tags>torrent streaming video player admin</tags>
     <projectSourceUrl>https://github.com/jaruba/PowderPlayer</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/powderplayer</packageSourceUrl>

@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>© Mark Russinovich</copyright>
+    <copyright>(c) Mark Russinovich</copyright>
     <tags>debug process dump sysinternals cli</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/procdump</packageSourceUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>

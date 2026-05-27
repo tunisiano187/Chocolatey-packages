@@ -22,7 +22,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Free Pascal is a 32, 64 and 16 bit professional Pascal compiler.</summary>
     <releaseNotes>https://www.freepascal.org/news.var</releaseNotes>
-    <copyright>© 1993 Free Pascal team</copyright>
+    <copyright>(c) 1993 Free Pascal team</copyright>
     <tags>freepascal pascal</tags>
     <projectSourceUrl>https://www.freepascal.org/down/source/sources.var</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/freepascal</packageSourceUrl>

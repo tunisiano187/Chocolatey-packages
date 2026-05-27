@@ -4,7 +4,7 @@
     <id>vigembus</id>
     <version>1.22.0</version>
     <title>Virtual Gamepad Emulation Framework (Install)</title>
-    <authors>Benjamin Höglinger-Stelzer</authors>
+    <authors>Benjamin Hoglinger-Stelzer</authors>
     <owners>tunisiano</owners>
     <licenseUrl>https://github.com/ViGEm/ViGEmBus/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://vigem.org/</projectUrl>

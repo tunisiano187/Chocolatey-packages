@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Font Awesome (Font) (Install)
 
-Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
+Font Awesome gives you scalable vector icons that can instantly be customized  -  size, color, drop shadow, and anything that can be done with the power of CSS.
 
 ### One Font, 675 Icons
 
@@ -60,7 +60,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Font Awesome - The iconic font and CSS framework</summary>
     <releaseNotes>https://fontawesome.com/changelog/latest</releaseNotes>
-    <copyright>© Fonticons, Inc.</copyright>
+    <copyright>(c) Fonticons, Inc.</copyright>
     <tags>font awesome otf opentype binary</tags>
     <projectSourceUrl>https://github.com/FortAwesome/Font-Awesome</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/font-awesome-font</packageSourceUrl>

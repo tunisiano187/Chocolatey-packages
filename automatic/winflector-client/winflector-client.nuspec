@@ -46,7 +46,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Winflector terminal software client</summary>
     <releaseNotes>https://www.winflector.com/english/support/versions.html</releaseNotes>
-    <copyright>© Era Software SC, © OTC S.A.</copyright>
+    <copyright>(c) Era Software SC, (c) OTC S.A.</copyright>
     <tags>winflector remote application execution terminal server rdp</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winflector-client</packageSourceUrl>
     <docsUrl>https://www.winflector.com/english/support/documentation_s.html</docsUrl>

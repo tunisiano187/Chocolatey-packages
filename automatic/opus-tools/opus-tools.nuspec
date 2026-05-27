@@ -24,7 +24,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectUrl>http://www.opus-codec.org/</projectUrl>
     <projectSourceUrl>https://github.com/xiph/opus-tools</projectSourceUrl>
     <tags>audio codec speech cli</tags>
-    <copyright>© Opus</copyright>
+    <copyright>(c) Opus</copyright>
     <licenseUrl>https://www.opus-codec.org/license/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/opus-tools.svg</iconUrl>

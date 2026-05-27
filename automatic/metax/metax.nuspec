@@ -54,7 +54,7 @@ You can get cover art from any of the data sources (theMovieDB, theTVDb, iTunes,
 
 ---</description>
     <summary>Tag Your Movies To Look Perfect in iTunes, Apple TV or other Media Players</summary>
-    <copyright>Copyright © Knowledge Design Software</copyright>
+    <copyright>Copyright (c) Knowledge Design Software</copyright>
     <tags>metax tagging video mp4 m4v mov avi mkv wmv trial binary</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/metax</packageSourceUrl>
     <docsUrl>http://www.danhinsley.com/MetaX Help PDF.pdf</docsUrl>

@@ -14,11 +14,11 @@
 
 ![Screenshot of SolarWinds Recovery Console](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@85179b8cd4077f4ed6504a5368999df5aee90917/automatic/solarwinds-backup-manager/solarwinds-backup-manager_screenshot.png)	
 
-### Protect Your Users’ Data with Sophisticated Backup and Rapid Disaster Recovery
+### Protect Your Users' Data with Sophisticated Backup and Rapid Disaster Recovery
 
-Data loss can cause serious financial hardships for a company, and system downtime can cripple productivity, preventing a business from providing good service to customers. That’s why it’s critical to be prepared with the right technology.
+Data loss can cause serious financial hardships for a company, and system downtime can cripple productivity, preventing a business from providing good service to customers. That's why it's critical to be prepared with the right technology.
 
-SolarWinds® Remote Monitoring & Management provides a hybrid cloud backup and disaster recovery feature, allowing you to help quickly restore business continuity after a disaster. Our True Delta™ technology helps to reduce backup times by storing changes instead of full files. This allows you to back up files quickly and frequently, helping you to prevent losing data due to a disaster. The backup and recovery feature also uses strong encryption both in transit and at rest, so you can breathe more easily knowing that data is kept safe.
+SolarWinds(r) Remote Monitoring & Management provides a hybrid cloud backup and disaster recovery feature, allowing you to help quickly restore business continuity after a disaster. Our True Delta(TM) technology helps to reduce backup times by storing changes instead of full files. This allows you to back up files quickly and frequently, helping you to prevent losing data due to a disaster. The backup and recovery feature also uses strong encryption both in transit and at rest, so you can breathe more easily knowing that data is kept safe.
 
 ### Experience the Hybrid Cloud
 
@@ -28,7 +28,7 @@ SolarWinds® Remote Monitoring & Management provides a hybrid cloud backup and d
 ### Back Up Fast, Recover Fast
 
 * **Fast backup:** Take advantage of our True Delta technology, which backs up changes rather than full files. This helps to reduce the time it takes to run the backup process, allowing you to back up more frequently.
-* **Fast recovery:** Get rapid recovery after a disaster using our hybrid cloud architecture that restores from either cloud-based or local copies—whichever is faster.
+* **Fast recovery:** Get rapid recovery after a disaster using our hybrid cloud architecture that restores from either cloud-based or local copies - whichever is faster.
 * **Bare metal recovery:** Restore to a bare metal state using nothing more than a bootable USB drive or CD-ROM.
 * **Automatic updates:** Remote Monitoring & Management can automatically update a standby virtual server after the completion of each live server backup.
 * **Minimum resource usage:** All backups and restores are lightweight, keeping resource drain to a minimum.
@@ -37,7 +37,7 @@ SolarWinds® Remote Monitoring & Management provides a hybrid cloud backup and d
 
 ### Leverage Enterprise-Grade Features
 
-* **Virtual machine support:** Back up your virtual environments with host-level VMware® and Hyper-V® backups. You can restore to an existing or alternate virtual environment.
+* **Virtual machine support:** Back up your virtual environments with host-level VMware(r) and Hyper-V(r) backups. You can restore to an existing or alternate virtual environment.
 * **Ultra secure:** Leverage AES 256 or 448-bit Blowfish encryption to help with keeping data safe on-premises, during transfers, and in the cloud.
 * **Private keys:** Data can be accessed only by someone holding a private key.
 * **Secure data centers:** Store your data in one of our global data centers, each of which are SSAE-compliant or ISO-certified.
@@ -51,9 +51,9 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <summary>Protect Your Users’ Data with Sophisticated Backup and Rapid Disaster Recovery</summary>
+    <summary>Protect Your Users' Data with Sophisticated Backup and Rapid Disaster Recovery</summary>
     <releaseNotes>https://status.solarwindsmsp.com/release-notes/</releaseNotes>
-    <copyright>© SolarWinds MSP</copyright>
+    <copyright>(c) SolarWinds MSP</copyright>
     <tags>solarwinds solarwindsmsp msp backup manager</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/solarwinds-backup-manager</packageSourceUrl>
     <docsUrl>http://help.solarwinds.com/backup/documentation/Content/backup-manager/backup-manager-installation/ui-installer.htm</docsUrl>

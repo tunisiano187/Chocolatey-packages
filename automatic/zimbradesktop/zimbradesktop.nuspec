@@ -42,7 +42,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© Zimbra Inc</copyright>
+    <copyright>(c) Zimbra Inc</copyright>
     <tags>collaboration task schedule admin</tags>
     <projectSourceUrl>https://wiki.zimbra.com/wiki/Building_Zimbra_using_Git</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/zimbradesktop</packageSourceUrl>

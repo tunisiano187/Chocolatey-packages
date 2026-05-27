@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Find duplicate files by content, name, or date and find similar images and music by tags</summary>
     <releaseNotes>http://www.digitalvolcano.co.uk/dcchangelog.html</releaseNotes>
-    <copyright>© DigitalVolcano Software</copyright>
+    <copyright>(c) DigitalVolcano Software</copyright>
     <tags>file-duplicates deduplication admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/duplicatecleaner</packageSourceUrl>
     <dependencies>

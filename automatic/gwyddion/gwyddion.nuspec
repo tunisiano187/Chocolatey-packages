@@ -4,7 +4,7 @@
     <id>gwyddion</id>
     <version>2.71</version>
     <title>Gwyddion (Install)</title>
-    <authors>David Nečas (Yeti) and Petr Klapetek</authors>
+    <authors>David Necas (Yeti) and Petr Klapetek</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</licenseUrl>
@@ -16,7 +16,7 @@
 	
 Gwyddion is a modular program for SPM (scanning probe microscopy) data visualization and analysis. Primarily it is intended for the analysis of height fields obtained by scanning probe microscopy techniques (AFM, MFM, STM, SNOM/NSOM) and it supports a lot of SPM data formats. However, it can be used for general height field and (greyscale) image processing, for instance for the analysis of profilometry data or thickness maps from imaging spectrophotometry.
 
-Gwyddion provides a large number of data processing functions, including all the standard statistical characterization, levelling and data correction, filtering or grain marking functions. And since the developers are active SPM users, the program also contains a number of specific, uncommon, odd and experimental data processing methods they found useful – and you may find them useful too.
+Gwyddion provides a large number of data processing functions, including all the standard statistical characterization, levelling and data correction, filtering or grain marking functions. And since the developers are active SPM users, the program also contains a number of specific, uncommon, odd and experimental data processing methods they found useful - and you may find them useful too.
 
 Gwyddion is Free and Open Source software, covered by GNU General Public License. It aims to provide a modular program for 2D data processing and analysis that can be easily extended by third-party modules and scripts. Moreover, thanks to being free software, it provides the source code to developers and users, which makes easier both verification of its data processing algorithms and further program improvements.
 

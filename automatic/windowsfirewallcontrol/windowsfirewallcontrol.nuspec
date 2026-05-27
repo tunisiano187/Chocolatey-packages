@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<!--Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windowsfirewallcontrol</id>
@@ -39,38 +39,38 @@ allow any connection. This is done by Windows Firewall itself based on the
 existing firewall rules.
 Program Features
 
-√ Notifications of outbound blocked connections.
-√ Learning mode that automatically allows digitally signed programs.
-√ Create temporary rules which are automatically deleted when they expire or on 
+V Notifications of outbound blocked connections.
+V Learning mode that automatically allows digitally signed programs.
+V Create temporary rules which are automatically deleted when they expire or on 
     program restart.
-√ Intuitive user interface which is easy accessible through a system tray icon.
-√ Full support with standard user accounts. Elevated privileges are required 
+V Intuitive user interface which is easy accessible through a system tray icon.
+V Full support with standard user accounts. Elevated privileges are required 
     only at installation.
-√ Disable the ability of other programs to tamper Windows Firewall rules and state.
-√ Integrated support of creating, modifying and deleting Window Firewall rules.
-√ Multiple and easier ways of creating new rules in Windows Firewall.
-√ Lock feature which can disable the access to the settings of the program and 
+V Disable the ability of other programs to tamper Windows Firewall rules and state.
+V Integrated support of creating, modifying and deleting Window Firewall rules.
+V Multiple and easier ways of creating new rules in Windows Firewall.
+V Lock feature which can disable the access to the settings of the program and 
     Windows Firewall.
-√ Shell integration into the right click context menu of the executable files.
-√ Automatically display invalid rules for programs that do not exist any more.
-√ Possibility to find and display duplicate firewall rules.
-√ Merge multiple similar rules or duplicate existing ones.
-√ View recently allowed and blocked connections and create new rules from the 
+V Shell integration into the right click context menu of the executable files.
+V Automatically display invalid rules for programs that do not exist any more.
+V Possibility to find and display duplicate firewall rules.
+V Merge multiple similar rules or duplicate existing ones.
+V View recently allowed and blocked connections and create new rules from the 
     Security log.
-√ Import and export of partial sets of rules.
-√ Protection to unauthorized uninstallation.
-√ Possibility to restore previous settings at uninstallation.
-√ Global hot keys are supported and various shortcut keys are available.
-√ Integrated multi language support in 29 languages.
-√ And many, many more. Just try it out.
+V Import and export of partial sets of rules.
+V Protection to unauthorized uninstallation.
+V Possibility to restore previous settings at uninstallation.
+V Global hot keys are supported and various shortcut keys are available.
+V Integrated multi language support in 29 languages.
+V And many, many more. Just try it out.
 
 ## System Requirements
 
-√ Microsoft .NET Framework version 4.5 or a newer version.
-√ Compatible with all x86 and x64 versions of Windows 10, 8.1, 8, 7, Server 2016, 
+V Microsoft .NET Framework version 4.5 or a newer version.
+V Compatible with all x86 and x64 versions of Windows 10, 8.1, 8, 7, Server 2016, 
 Server 2012.
-√ Windows Firewall service is required to be enabled for Windows Firewall Control to run.
-√ DNS Client service is required to be enabled for the notifications to work properly.
+V Windows Firewall service is required to be enabled for Windows Firewall Control to run.
+V DNS Client service is required to be enabled for the notifications to work properly.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)

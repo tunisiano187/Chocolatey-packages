@@ -58,7 +58,7 @@ Duplicati uses strong AES-256 encryption to protect your privacy. You can also u
 
 
 ### Built for online
-Duplicati was designed for online backups from scratch. It is not only data efficient but also handles network issues nicely. E.g. interrupted backups can be resumed and Duplicati tests the content of backups regularly. That way broken backups on corrupt storage systems can be detected before it’s too late.
+Duplicati was designed for online backups from scratch. It is not only data efficient but also handles network issues nicely. E.g. interrupted backups can be resumed and Duplicati tests the content of backups regularly. That way broken backups on corrupt storage systems can be detected before it's too late.
 
 
 ### Web-based user interface

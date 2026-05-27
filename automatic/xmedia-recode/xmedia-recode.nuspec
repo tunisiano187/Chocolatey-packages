@@ -4,7 +4,7 @@
     <id>xmedia-recode</id>
     <version>3.6.3.0</version>
     <title>XMedia Recode (Install)</title>
-    <authors>Sebastian Dörfler</authors>
+    <authors>Sebastian Dorfler</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.xmedia-recode.de/en/</projectUrl>
@@ -56,7 +56,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>XMedia Recode is a free All-In-One video converter and audio converter tool</summary>
     <releaseNotes>https://www.xmedia-recode.de/en/version.php</releaseNotes>
-    <copyright>Copyright © Sebastian Dörfler</copyright>
+    <copyright>Copyright (c) Sebastian Dorfler</copyright>
     <tags>sdorfler dvd-ripper video-converter audio-converter binary embedded</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/xmedia-recode</packageSourceUrl>
     <docsUrl>https://www.xmedia-recode.de/en/help/</docsUrl>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sd-card-formatter</id>
@@ -29,11 +29,11 @@ using formatting tools provided with individual operating systems. In general, f
 with operating systems can format various storage media including SD/SDHC/SDXC Cards, but it may not be 
 ptimized for SD/SDHC/SDXC Cards and it may result in lower performance.
 
-SD/SDHC/SDXC Cards have a “Protected Area” for SD Card security purposes. The SD Memory Card Formatter
+SD/SDHC/SDXC Cards have a "Protected Area" for SD Card security purposes. The SD Memory Card Formatter
 does not format the protected area in the SD/SDHC/SDXC Cards. The protected area shall be formatted by
 an appropriate PC application or SD host devices that provide SD security function.
 
-The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the “BitLocker To Go"
+The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the "BitLocker To Go"
 functionality of Windows. Please format the SD/SDHC/SDXC Card after it has been unlocked.
 
 ### Package-specific issue

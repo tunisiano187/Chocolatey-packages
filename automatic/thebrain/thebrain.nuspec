@@ -36,7 +36,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 1998 TheBrain Technologies LP</copyright>
+    <copyright>(c) 1998 TheBrain Technologies LP</copyright>
     <tags>mindmap brainstorm concept-map file-management admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/thebrain</packageSourceUrl>
     <mailingListUrl>https://forums.thebrain.com/</mailingListUrl>

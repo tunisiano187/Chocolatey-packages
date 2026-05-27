@@ -25,7 +25,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Dual pane file manager</summary>
     <releaseNotes />
-    <copyright>© 2015 xiles</copyright>
+    <copyright>(c) 2015 xiles</copyright>
     <tags>file manager</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/nexusfile.portable</packageSourceUrl>
   </metadata>

@@ -20,7 +20,7 @@ Protect your servers, applications, workstations and critical business documents
 
 The SolarWinds Backup management console is unique. The customizable dashboard provides at-a-glance status and fast issue resolution in just a few clicks. 
  
-Increase your efficiency using deduplication - the full dataset for any system is backed up only once. Every backup afterward is incremental, updating only what’s changed—minimizing bandwidth usage and optimizing storage for your clients. 
+Increase your efficiency using deduplication - the full dataset for any system is backed up only once. Every backup afterward is incremental, updating only what's changed - minimizing bandwidth usage and optimizing storage for your clients. 
 
 SpeedVault, a local cache capability, gives you the option to help recover data in minutes and meet, or better yet, exceed your Recovery Time Objectives (RTO). 
 
@@ -34,7 +34,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>Get More Done with Automation without Learning a New Scripting Language</summary>
     <releaseNotes>https://status.n-able.com/release-notes/</releaseNotes>
-    <copyright>© N-able MSP</copyright>
+    <copyright>(c) N-able MSP</copyright>
     <tags>solarwinds solarwindsmsp nable msp backup recovery console</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/solarwinds-recovery-console</packageSourceUrl>
     <docsUrl>https://documentation.n-able.com/backup/userguide/documentation/Content/advanced-recovery/recovery-console/home.htm</docsUrl>

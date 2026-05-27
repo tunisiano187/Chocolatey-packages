@@ -31,7 +31,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© Peter Brian Clements, Marcel Partap, Ike Devolder</copyright>
+    <copyright>(c) Peter Brian Clements, Marcel Partap, Ike Devolder</copyright>
     <tags>par file recovery</tags>
   </metadata>
   <files>

@@ -48,7 +48,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>© Ghislain Harvey</copyright>
+    <copyright>(c) Ghislain Harvey</copyright>
     <tags>driver uninstaller nvidia ati</tags>
     <projectSourceUrl>https://github.com/Wagnard/display-drivers-uninstaller</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/ddu</packageSourceUrl>

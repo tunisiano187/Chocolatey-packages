@@ -16,7 +16,7 @@
 
 ### VNC Connect business benefits
 
-VNC Connect, the industry’s most flexible and secure remote access software. Choose the VNC Connect annual subscription that meets your business needs.	
+VNC Connect, the industry's most flexible and secure remote access software. Choose the VNC Connect annual subscription that meets your business needs.	
 
 ### Home
 
@@ -81,7 +81,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>VNC Connect is the latest version of RealVNC remote control software.</summary>
     <releaseNotes>https://www.realvnc.com/docs/desktop-release-notes.html</releaseNotes>
-    <copyright>Copyright © RealVNC Limited. All rights reserved.</copyright>
+    <copyright>Copyright (c) RealVNC Limited. All rights reserved.</copyright>
     <tags>realvnc vnc connect remote control</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/vnc-connect</packageSourceUrl>
     <docsUrl>https://help.realvnc.com/</docsUrl>

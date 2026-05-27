@@ -4,7 +4,7 @@
     <id>performancetest</id>
     <version>11.1.1010.0</version>
     <title>PassMark PerformanceTest (Install)</title>
-    <authors>PassMark® Software</authors>
+    <authors>PassMark(r) Software</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.passmark.com/legal/disclaimer.htm</licenseUrl>
@@ -67,7 +67,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <summary>PerformanceTest - Easy PC Benchmarking</summary>
     <releaseNotes>https://www.passmark.com/products/performancetest/history.php</releaseNotes>
-    <copyright>Copyright © PassMark® Software</copyright>
+    <copyright>Copyright (c) PassMark(r) Software</copyright>
     <tags>passmark performancetest benchmark benchmarking trial</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/performancetest</packageSourceUrl>
     <docsUrl>https://www.passmark.com/support/performancetest/index.htm</docsUrl>

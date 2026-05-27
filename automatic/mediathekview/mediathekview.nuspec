@@ -15,7 +15,7 @@
     <summary>Tool to browse and download German public broadcaster media content</summary>
     <releaseNotes>https://mediathekview.de/changelog/14-5-0/</releaseNotes>
     <tags>mediathekview video download media german broadcast</tags>
-    <copyright>Copyright © 2010-2024 MediathekView Team</copyright>
+    <copyright>Copyright (c) 2010-2024 MediathekView Team</copyright>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

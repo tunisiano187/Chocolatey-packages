@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<!--Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>transmission</id>
@@ -19,7 +19,7 @@ Transmission is a cross-platform BitTorrent client that is open source, easy, po
 * Daemon ideal for servers, embedded systems, and headless use
 * All these can be remote controlled by Web and Terminal clients
 * Local Peer Discovery
-* Full encryption, DHT, µTP, PEX and Magnet Link support
+* Full encryption, DHT, uTP, PEX and Magnet Link support
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
@@ -34,7 +34,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
-    <copyright>© 2005 Transmission Project</copyright>
+    <copyright>(c) 2005 Transmission Project</copyright>
     <tags>transmission qt torrent magnet p2p admin</tags>
     <projectSourceUrl>https://github.com/transmission/transmission</projectSourceUrl>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/transmission</packageSourceUrl>

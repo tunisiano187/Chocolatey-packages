@@ -37,7 +37,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
-    <copyright>© 1993 Aleksander Simonic</copyright>
+    <copyright>(c) 1993 Aleksander Simonic</copyright>
     <tags>tex latex editor trial shareware nagscreen admin</tags>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winedt</packageSourceUrl>
     <docsUrl>https://www.winedt.com/doc/QuickGuide.pdf</docsUrl>

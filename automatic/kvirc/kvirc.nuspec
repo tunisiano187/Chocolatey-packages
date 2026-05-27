@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
@@ -8,7 +8,7 @@
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>
     <tags>chat chat-client client dcc im internet-relay-chat irc kvirc messenger video video-chat voice voice-chat</tags>
-    <copyright>Copyright © 2006–2023 Szymon Stefanek</copyright>
+    <copyright>Copyright (c) 2006-2023 Szymon Stefanek</copyright>
     <releaseNotes>https://github.com/kvirc/KVIrc/releases/tag/5.2.8</releaseNotes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <bugTrackerUrl>https://github.com/kvirc/KVIrc/issues</bugTrackerUrl>
