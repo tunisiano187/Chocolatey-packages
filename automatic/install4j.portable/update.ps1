@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	#$checksumType = "SHA512"
 	#$checksum = Get-RemoteChecksum -Url $url -Algorithm $checksumType
-	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") ej-technologies GmbH"
+	Update-Metadata -key "copyright" -value "(c) $(Get-Date -Format "yyyy") ej-technologies GmbH"
 
 	$Latest = @{ URL32 = $url; Version = $version}
 	return $Latest

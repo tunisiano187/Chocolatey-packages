@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$version = $match.Groups[1].Value
 
 	$fileVersion = Get-FileVersion $url32
-	Update-Metadata -key "copyright" -value "© 1998-$(Get-Date -Format "yyyy") Mark Russinovich"
+	Update-Metadata -key "copyright" -value "(c) 1998-$(Get-Date -Format "yyyy") Mark Russinovich"
 
 	return @{
 		URL32         = $url32

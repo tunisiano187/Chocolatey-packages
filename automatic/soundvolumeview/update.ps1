@@ -29,7 +29,7 @@ function global:au_GetLatest {
 	$regexPattern = 'SoundVolumeView v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") NirSoft"
+	Update-Metadata -key "copyright" -value "(c) $(Get-Date -Format "yyyy") NirSoft"
 
 	$Latest = @{ URL32 = $url32; Checksum32 = $Checksum32; ChecksumType32 = $env:ChocolateyChecksumType; URL64 = $url64; Checksum64 = $Checksum64; ChecksumType64 = $env:ChocolateyChecksumType; Version = $version }
 	return $Latest

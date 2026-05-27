@@ -32,7 +32,7 @@ function global:au_GetLatest {
 	try {
 		# The GitHub /releases/latest endpoint may return a release without Windows exe assets
 		# (e.g. nb29-zulufx-25 only has RPM/DEB). Iterate recent releases to find one with a
-		# Windows .exe asset — typically tagged v{N}-build{x} or nb{N}-sans.
+		# Windows .exe asset  -  typically tagged v{N}-build{x} or nb{N}-sans.
 		$apiUrl = "https://api.github.com/repos/$Owner/$repo/releases?per_page=10"
 		$headers = @{ 'User-Agent' = 'chocolatey-au' }
 		$releaseList = Invoke-RestMethod -Uri $apiUrl -Headers $headers -UseBasicParsing

@@ -41,7 +41,7 @@ function global:au_GetLatest {
     }
 
     if (!$redirectUrl) {
-        throw "No redirect from $baseUrl — cannot determine version"
+        throw "No redirect from $baseUrl  -  cannot determine version"
     }
 
     # Parse date from versioned filename: hdhomerun_windows_YYYYMMDD.exe

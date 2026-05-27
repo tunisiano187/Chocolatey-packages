@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	$baseUrl = 'https://annystudio.com/software/colorpicker'
 	$page = Invoke-WebRequest -Uri $baseUrl -UseBasicParsing
 
-	# Version is in "Latest version: <b>X.Y</b>" — not inside the link outerHTML
+	# Version is in "Latest version: <b>X.Y</b>"  -  not inside the link outerHTML
 	$versionMatch = $page.Content | Select-String -Pattern 'Latest version:\s*<b>(\d+\.\d+)</b>' -AllMatches
 	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
 		throw "Could not extract version from annystudio.com page. Page structure may have changed."

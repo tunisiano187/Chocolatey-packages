@@ -30,7 +30,7 @@ function global:au_GetLatest {
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 
     # Strip leading 'v' and any '-stable.NNNNNN' build-metadata suffix
-    # Tag format: v2.4.8-stable.202605142308 → version 2.4.8
+    # Tag format: v2.4.8-stable.202605142308 ? version 2.4.8
     # The timestamp suffix exceeds NuGet's 4-part int limits so we drop it entirely
     $version = $tags.tag_name -replace '^v', ''
     $version = $version -replace '-stable.*$', ''

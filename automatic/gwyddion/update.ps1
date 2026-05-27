@@ -32,7 +32,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	[xml]$xml = Invoke-WebRequest -Uri $releases
 
-	# Chercher le premier élément <link> qui contient '-win32.exe'
+	# Chercher le premier element <link> qui contient '-win32.exe'
 	$linkNode = $xml.rss.channel.item | Where-Object { $_.link -match '.win32.exe' } | Select-Object -First 1
 
 	# Extraire l'URL

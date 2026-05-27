@@ -23,7 +23,7 @@ function global:au_GetLatest {
 	}
 
 	$version = $parts[1]
-	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") ej-technologies GmbH"
+	Update-Metadata -key "copyright" -value "(c) $(Get-Date -Format "yyyy") ej-technologies GmbH"
 
 	$Latest = @{ Version = $version }
 	return $Latest

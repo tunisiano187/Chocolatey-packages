@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$regexPattern = 'SysExporter v(\d+(\.\d+)*)'
 	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-	Update-Metadata -key "copyright" -value "© $(Get-Date -Format "yyyy") NirSoft"
+	Update-Metadata -key "copyright" -value "(c) $(Get-Date -Format "yyyy") NirSoft"
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
 	return $Latest

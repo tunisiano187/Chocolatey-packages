@@ -24,7 +24,7 @@ function global:au_GetLatest {
 		throw "Could not find 64-bit download URL on $releases"
 	}
 
-	# x86 legacy only — skip if unavailable; fall back to x64
+	# x86 legacy only  -  skip if unavailable; fall back to x64
 	$url32match = ($page.Content | Select-String -Pattern 'https://downloads\.ntlite\.com/files/NTLite_setup_x86[^"]*\.exe' -AllMatches).Matches
 	$url32 = if ($url32match) { $url32match[0].Value } else { $url64 }
 
