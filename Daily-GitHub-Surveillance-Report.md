@@ -1,14 +1,15 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-05-26 10:34:55 UTC  
+**Date**: 2026-05-27 10:39:31 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (10 total)
+### 🚀 Issues Ouverts (11 total)
 
-#### 🔴 critical (4 issues)
+#### 🔴 critical (5 issues)
+- #4020: fix(ci): prevent push rejections in surveillance workflows - https://github.com/tunisiano187/Chocolatey-packages/issues/4020 [🔴 critical]
 - #4016: fix: repair daily-surveillance workflow YAML error and pin action versions - https://github.com/tunisiano187/Chocolatey-packages/issues/4016 [🔴 critical]
 - #4004: [Bug] pngquant package claims to be version 3.0.3, but when installed it is 2.17.0 - https://github.com/tunisiano187/Chocolatey-packages/issues/4004 [🔴 critical]
 - #4003: 🔧 Fix Git Commit Step in Daily Surveillance Workflow - https://github.com/tunisiano187/Chocolatey-packages/issues/4003 [🔴 critical]
@@ -19,8 +20,8 @@
 
 #### ⚪ normal (5 issues)
 - #4019: Investigate and resolve access to issue 3998 in Chocolatey-packages repo - https://github.com/tunisiano187/Chocolatey-packages/issues/4019 [⚪ normal]
-- #4018: Update actions/setup-python action to v6 - https://github.com/tunisiano187/Chocolatey-packages/issues/4018 [⚪ normal]
-- #4017: Update dependency python to 3.14 - https://github.com/tunisiano187/Chocolatey-packages/issues/4017 [⚪ normal]
+- #4018: chore(deps): update actions/setup-python action to v6 - https://github.com/tunisiano187/Chocolatey-packages/issues/4018 [⚪ normal]
+- #4017: chore(deps): update dependency python to 3.14 - https://github.com/tunisiano187/Chocolatey-packages/issues/4017 [⚪ normal]
 - #4014: Investigate and resolve GitHub CLI rate limiting for Chocolatey-packages - https://github.com/tunisiano187/Chocolatey-packages/issues/4014 [⚪ normal]
 - #3784: Dependency Dashboard - https://github.com/tunisiano187/Chocolatey-packages/issues/3784 [⚪ normal]
 
@@ -32,14 +33,14 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 4
+- 🔴 critical: 5
 - 🟡 medium: 1
 - ⚪ normal: 5
 
 ### 📈 Statistiques Globales
-- **Total issues**: 10
+- **Total issues**: 11
 - **Total PRs**: 0
-- **Critiques**: 4
+- **Critiques**: 5
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -51,4 +52,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-05-26 10:34:55 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-05-27 10:39:31 UTC*
