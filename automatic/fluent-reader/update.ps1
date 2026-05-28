@@ -30,7 +30,7 @@ function global:au_GetLatest {
 	$version = $tags.tag_name.Replace('v','')
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	. ..\..\scripts\Get-GithubRepositoryLicense.ps1
-	Update-Metadata -key "licenseUrl" -value $(Get-GithubRepositoryLicense $Owner $repo)
+	Update-Metadata -key "licenseUrl" -value $(Get-GithubRepositoryLicense $Owner $repo).download_url
 	if($tags.prerelease -match "true") {
 		$date = $tags.published_at.ToString("yyyyMMdd")
 		$version = "$version-pre$($date)"

@@ -25,7 +25,7 @@ function Get-GithubRepositoryLicense {
 
   $licenseData = Invoke-RestMethod -Uri "https://api.github.com/repos/${repoUser}/${repoName}/license"
 
-  # Return the raw download URL (not the full object — returning the object
-  # caused the base64-encoded license content to be written into licenseUrl).
-  return $licenseData.download_url
+  # Return the full response object so callers can access .download_url, .html_url, etc.
+  # Do NOT pass the object directly to Update-Metadata -value; use .download_url instead.
+  return $licenseData
 }
