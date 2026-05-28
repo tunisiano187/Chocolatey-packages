@@ -6,11 +6,11 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://www.nirsoft.net/utils/searchmyfiles.zip
+x86: https://www.danhinsley.com/downloads/MetaXSetup.msi
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: D5B1FF964D478171A353CD787141AD7B6F679BC0070A142237C0BFC2D6793D6F
+checksum: 9651189C42946B07DE58356D5968DE4A2773B6530E89742B37D16D5974B29BD4

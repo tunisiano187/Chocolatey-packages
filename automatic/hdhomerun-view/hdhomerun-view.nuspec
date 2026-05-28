@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>hdhomerun-view</id>
-    <version>2023.10.20</version>
+    <version>2026.03.26</version>
     <title>HDHomeRun View (Install)</title>
     <authors>SiliconDust</authors>
     <owners>tunisiano</owners>
@@ -10,14 +10,9 @@
     <licenseUrl>https://www.silicondust.com/support/downloads/gpl/</licenseUrl>
     <projectUrl>https://www.silicondust.com/products/software/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@30e719a9484b3bdc129ad3f5e7e88da3657f5f9d/icons/hdhomerun-view.png</iconUrl>
-    <description>---
+    <description><![CDATA[## HDHomeRun View (Install)
 
-### [choco://hdhomerun-view](choco://hdhomerun-view)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
-
-![Screenshot of HDHomeRun View](https://raw.githubusercontent.com/bcurran3/ChocolateyPackages/master/hdhomerun-view/hdhomerun-view_screenshot.png)
+![Screenshot of HDHomeRun View](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@309652b7129eb3de995652c6dbfde2b0cd498936/automatic/hdhomerun-view/hdhomerun-view_screenshot.png)
 
 ### HDHomeRun VIEW app
 
@@ -43,14 +38,14 @@ Also includes the HDHomeRun Setup and HDHomeRun Config programs.
 **RELATED PACKAGES**
 [HDHomeRun Viewer for Plex ](https://chocolatey.org/packages/hdhomerunviewer-plex) | [HDGrandSlam for Plex ](https://chocolatey.org/packages/hdgrandslam-plex)
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/hdhomerun-view/readme.md)**
+#### [choco://hdhomerun-view](choco://hdhomerun-view)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
----
-
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>HDHomeRun View is a program to view live TV on your PC streamed from SiliconDust HDHomeRun tuners.</summary>
     <releaseNotes>Software Changelog: https://www.silicondust.com/support/downloads/software-changelog/
 Firmware Changelog: https://www.silicondust.com/support/downloads/firmware-changelog/</releaseNotes>

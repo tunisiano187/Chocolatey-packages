@@ -2,19 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>metax</id>
-    <version>2.87.0</version>
+    <version>2.90</version>
     <title>MetaX (Trial) (Install)</title>
     <authors>Knowledge Design Software</authors>
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>http://danhinsley.com/metax/metax.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@1c44b9d2bef9c8ad5081fb116b2a26c1aeb265a1/icons/metax.png</iconUrl>
-    <description>---
-
-### [choco://metax](choco://metax)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
-
----
+    <description><![CDATA[## MetaX (Trial) (Install)
 
 ![Screenshot of MetaX](http://danhinsley.com/metax/784601_1.png)
 	
@@ -46,13 +41,14 @@ MetaX will import data from the MyMovies files, or from NFO files.
 ## Find Great Cover Art
 You can get cover art from any of the data sources (theMovieDB, theTVDb, iTunes, Amazon or Yahoo). You can also use files you've downloaded, use cut and paste from websites, and even select a frame from the movie itself!
 
-**[PACKAGE NOTES](https://github.com/bcurran3/ChocolateyPackages/blob/master/metax/readme.md)**
+#### [choco://metax](choco://metax)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
----
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-**Click here to [Patreon-ize](https://www.patreon.com/bcurran3) the package maintainer.**
-
----</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Tag Your Movies To Look Perfect in iTunes, Apple TV or other Media Players</summary>
     <copyright>Copyright (c) Knowledge Design Software</copyright>
     <tags>metax tagging video mp4 m4v mov avi mkv wmv trial binary</tags>
