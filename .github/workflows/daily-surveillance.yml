@@ -77,28 +77,15 @@ jobs:
           if [ -f "Daily-GitHub-Surveillance-Report.md" ]; then
             if grep -q "🔴 critical" "Daily-GitHub-Surveillance-Report.md"; then
               echo "Critical issues detected, creating GitHub issue..."
-              
+
               CRITICAL_ISSUES=$(grep "🔴 critical" "Daily-GitHub-Surveillance-Report.md" | head -n 5)
-              
-              ISSUE_BODY=$(cat <<EOF
-              ## 🚨 Rapport de Surveillance Quotidien - Critiques Détectées
+              REPORT_DATE="$(date '+%Y-%m-%d')"
+              RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              REPORT_URL="../../blob/${{ github.sha }}/Daily-GitHub-Surveillance-Report.md"
 
-              Des **issues critiques** ont été détectées lors de la surveillance quotidienne du repository ${{ github.repository }}.
+              printf '## 🚨 Rapport de Surveillance Quotidien - Critiques Détectées\n\nDes **issues critiques** ont été détectées lors de la surveillance quotidienne du repository ${{ github.repository }}.\n\n### 🔴 Issues Critiques (échantillon)\n\n%s\n\n### 🔗 Liens Utiles\n- Rapport complet: [Daily-GitHub-Surveillance-Report.md](%s)\n- Workflow: [GitHub Actions Run](%s)\n\n---\n*Généré automatiquement par GitHub Actions daily surveillance workflow*\n' \
+                "$CRITICAL_ISSUES" "$REPORT_URL" "$RUN_URL" > /tmp/critical-issue-body.md
 
-              ### 🔴 Issues Critiques (échantillon)
-              
-              $CRITICAL_ISSUES
-
-              ### 🔗 Liens Utiles
-              Rapport complet: [Daily-GitHub-Surveillance-Report.md](../../blob/\${{ github.sha }}/Daily-GitHub-Surveillance-Report.md)
-              Workflow: [GitHub Actions Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-
-              ---
-              *Généré automatiquement par GitHub Actions daily surveillance workflow*
-EOF
-              )
-              
-              echo "$ISSUE_BODY" > /tmp/critical-issue-body.md
               gh issue create \
                 --title "🚨 Surveillance Quotidienne - Critiques $(date '+%Y-%m-%d')" \
                 --body-file /tmp/critical-issue-body.md \
@@ -114,15 +101,17 @@ EOF
         run: |
           if [ -f "Daily-GitHub-Surveillance-Report.md" ]; then
             TOTAL_ISSUES=$(grep -o "Total issues: [0-9]*" "Daily-GitHub-Surveillance-Report.md" | cut -d: -f2 | tr -d ' ')
-            
-            COMMENT_BODY=$(cat <<EOF
-            ## 📊 Rapport de Surveillance Quotidien $(date '+%Y-%m-%d')
-            - **Total issues**: $TOTAL_ISSUES
-            - **Statut**: $(grep -q "🔴 critical" Daily-GitHub-Surveillance-Report.md && echo "🔴 Critiques détectées" || echo "✅ OK")
+            REPORT_DATE="$(date '+%Y-%m-%d')"
+            RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            REPORT_URL="../../blob/${{ github.sha }}/Daily-GitHub-Surveillance-Report.md"
 
-            [Rapport complet](../../blob/\${{ github.sha }}/Daily-GitHub-Surveillance-Report.md)
-EOF
-            )
-            
-            gh issue comment 3998 --body "$COMMENT_BODY"
+            if grep -q "🔴 critical" Daily-GitHub-Surveillance-Report.md; then
+              STATUS="🔴 Critiques détectées"
+            else
+              STATUS="✅ OK"
+            fi
+
+            printf '## 📊 Rapport de Surveillance Quotidien %s\n- **Total issues**: %s\n- **Statut**: %s\n\n[Rapport complet](%s) | [Workflow](%s)\n' \
+              "$REPORT_DATE" "$TOTAL_ISSUES" "$STATUS" "$REPORT_URL" "$RUN_URL" \
+              | gh issue comment 3998 --body-file -
           fi
