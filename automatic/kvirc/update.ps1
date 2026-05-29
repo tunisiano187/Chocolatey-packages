@@ -46,7 +46,9 @@ function global:au_GetLatest {
     $_ -match $nightlyRegex
   } | Select-Object -Last 1
   $nightlyReleaseURL     = "https://nightly.kvirc.net${nightlyRelease}"
-  $nightlyReleaseVersion = $Matches.betaver
+  # Convert '5.2.8-dev-2025-12-08' → '5.2.8.20251208' so NuGet semver sorts it
+  # correctly (5.2.8.20251208 > 5.2.8, whereas 5.2.8-dev < 5.2.8 as a prerelease).
+  $nightlyReleaseVersion = $Matches.betaver -replace '-dev-(\d{4})-(\d{2})-(\d{2})$', '.$1$2$3'
 
   if($nightlyReleaseVersion -ge $ghReleaseVersion) {
     $Latest = @{
