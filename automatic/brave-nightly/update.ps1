@@ -2,9 +2,9 @@ $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-# $releases = 'https://github.com/brave/brave-browser/releases/latest'
 $Owner = "brave"
 $repo = "brave-browser"
+
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -18,34 +18,43 @@ function global:au_SearchReplace {
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
+
 function global:au_GetLatest {
-	Write-Verbose 'Get files'
-	$page = Invoke-WebRequest -Uri "https://github.com/brave/brave-browser/tags"
-	$tag = ($page.Links | Where-Object {$_.href -match "tag/v"} | Select-Object -First 1).href.split('/')[-1]
-	try {
-		$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
-		$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"} | Where-Object { $_ -match 'StandaloneSilent'} | Where-Object {$_ -notmatch '32.exe'} | Where-Object {$_ -notmatch 'Arm64'}
-		Update-Metadata -key "releaseNotes" -value $tags.html_url
+	Write-Verbose 'Fetching GitHub releases'
 
-		Write-Verbose 'Checking version'
-		$version=($tags.name.Split(' ')[1]).replace('v','')
-	}
-	catch {
-		$version = "0.0"
+	# Use the GitHub API to get recent releases and find the latest prerelease (nightly).
+	# The old approach scraped the HTML tags page and took the first tag, which could be a
+	# stable release — leaving $url32 null and causing AU "URL check" failures.
+	$headers = @{ 'User-Agent' = 'chocolatey-au-updater/1.0' }
+	$releases = Invoke-RestMethod "https://api.github.com/repos/$Owner/$repo/releases?per_page=20" -Headers $headers
+	$nightlyRelease = $releases | Where-Object { $_.prerelease -eq $true } | Select-Object -First 1
+
+	if (-not $nightlyRelease) {
+		Write-Warning "No nightly prerelease found in last 20 releases"
+		return
 	}
 
-	if($version -eq "0.0") {}
-	elseif($tags.prerelease -eq $true) {
-		$version = "$version-nightly"
-	} elseif ($url32 -match 'Nightly') {
-		$version = "$version-nightly"
-	} else {
-		$version = '0.0'
+	$url32 = $nightlyRelease.assets.browser_download_url |
+		Where-Object { $_ -match "\.exe$" } |
+		Where-Object { $_ -match 'StandaloneSilent' } |
+		Where-Object { $_ -notmatch '32\.exe' } |
+		Where-Object { $_ -notmatch 'Arm64' } |
+		Select-Object -First 1
+
+	if (-not $url32) {
+		Write-Warning "No StandaloneSilentNightly exe asset found in release $($nightlyRelease.tag_name)"
+		return
 	}
+
+	Update-Metadata -key "releaseNotes" -value $nightlyRelease.html_url
+
+	# Extract version from tag name (e.g. "v1.93.7" -> "1.93.7-nightly")
+	$version = ($nightlyRelease.tag_name -replace '^v', '') + '-nightly'
+
 	Write-Output "Version : $version"
+	Write-Output "URL32   : $url32"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	return @{ Version = $version; URL32 = $url32 }
 }
 
 try {
