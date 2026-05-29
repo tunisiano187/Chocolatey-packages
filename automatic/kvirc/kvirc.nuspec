@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>kvirc</id>
-    <version>5.2.8</version>
+    <version>5.2.8.20251208</version>
     <title>KVIrc</title>
     <authors>Szymon Stefanek</authors>
     <owners>tunisiano</owners>
@@ -19,13 +19,14 @@
     <projectSourceUrl>https://github.com/kvirc/KVIrc</projectSourceUrl>
     <projectUrl>https://www.kvirc.net/</projectUrl>
     <summary>KVIrc is a free portable IRC client based on the excellent Qt GUI toolkit.</summary>
-    <description><![CDATA[# KVIrc
+    <description><![CDATA[
+# KVIrc
 
 KVIrc is a free, portable [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat)
-client based on the excellent [Qt GUI toolkit](https://www.qt.io/). It is
-developed by [Szymon Stefanek](https://www.pragmaware.net/) and the KVIrc
-Development Team, along with the contributions of many IRC-addicted developers
-around the world.
+client based on the excellent [Qt GUI toolkit](https://www.qt.io/). KVirc is
+being written by [Szymon Stefanek](https://www.pragmaware.net/) and the KVIrc
+Development Team with the contribution of many IRC-addicted developers around
+the world.
 
 ## Features
 
@@ -71,12 +72,14 @@ around the world.
     - Ability to translate scripts (by the means of the tr() function)
   - Objects support in scripting language: yes, now you can do OOP
 
-## Package-specific issue
+## Package-specific issues
 
-If this package isn't up-to-date for some days,
-[create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose).
+If this package isn't up-to-date, please
+[create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+about it.
 
-Support the Chocolatey package maintainer on [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820).
+Support the Chocolatey package maintainer at
+[![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
   </metadata>
   <files>
