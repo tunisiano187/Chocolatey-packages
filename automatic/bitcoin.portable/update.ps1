@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module Chocolatey-AU
+Import-Module Chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 if ($MyInvocation.InvocationName -ne '.') {
