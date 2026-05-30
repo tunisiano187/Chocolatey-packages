@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.1.5.3.exe'
-$checksum       = 'f5923e10115f410e0481c0194153a4c961dde9378d2456acd753de9581f80128'
+$url            = 'https://www.wagnardsoft.com/DDU/download/DDU%20v18.1.5.4.exe'
+$checksum       = 'fa6656c25241f1ce94460d3eedf2982ccf272f8c82589fc257c60182b2e5168a'
 $checksumType   = 'sha256'
 $referer        = 'https://www.wagnardsoft.com/display-driver-uninstaller-ddu'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

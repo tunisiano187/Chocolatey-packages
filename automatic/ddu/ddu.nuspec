@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>ddu</id>
-    <version>18.1.5.3</version>
+    <version>18.1.5.4</version>
     <title>Display Driver Uninstaller</title>
     <authors>Ghislain Harvey,Shady757</authors>
     <owners>tunisiano</owners>
@@ -10,7 +10,7 @@
     <licenseUrl>https://github.com/Wagnard/display-drivers-uninstaller/blob/WPF/LICENSE.md</licenseUrl>
     <projectUrl>https://www.wagnardsoft.com/display-driver-uninstaller-ddu</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a7de863bfffb4460bdffe57e795c48fdf630d3db/icons/ddu.png</iconUrl>
-    <description>## Display Driver Uninstaller
+    <description><![CDATA[## Display Driver Uninstaller
 Display Driver Uninstaller is a driver removal utility that can help you completely 
 remove Graphics Processing Unit (GPU) display card drivers and packages (AMD/NVIDIA) 
 from your system without leaving leftovers behind; including registry keys, folders 
@@ -40,7 +40,8 @@ Mode is always recommended.
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)</description>
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
     <summary>Utility to completely remove system drivers</summary>
     <releaseNotes>#### Program
 * [Changelog](https://www.wagnardsoft.com/display-driver-uninstaller-ddu)
