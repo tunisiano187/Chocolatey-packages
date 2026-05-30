@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-Import-Module au
+import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $url32 = 'https://pngquant.org/pngquant-windows.zip'
