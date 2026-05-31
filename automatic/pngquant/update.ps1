@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module chocolatey-AU
+Import-Module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $url32 = 'https://pngquant.org/pngquant-windows.zip'
@@ -21,9 +21,11 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    # Download the Windows zip and read the version from pngquant.exe FileVersionInfo.
-    # This avoids the mismatch caused by scraping pngquant.org, whose homepage advertises
-    # the macOS/Linux version (currently 3.0.3) while the Windows binary lags behind (2.17.0).
+    # Download the Windows zip and extract the version from the embedded string in pngquant.exe.
+    # pngquant is a Rust binary with no PE FileVersionInfo resource; the version string
+    # "X.Y.Z (Month YYYY)" is embedded as a literal. This avoids the mismatch caused by
+    # scraping pngquant.org, whose homepage advertises the macOS/Linux version while the
+    # Windows binary lags behind.
     $tmpZip = Join-Path $env:TEMP 'pngquant-windows-version-check.zip'
     $tmpDir = Join-Path $env:TEMP 'pngquant-version-check'
 
@@ -33,7 +35,16 @@ function global:au_GetLatest {
 
     $exePath = Get-ChildItem -Path $tmpDir -Filter 'pngquant.exe' -Recurse |
                Select-Object -First 1 -ExpandProperty FullName
-    $version = ([System.Diagnostics.FileVersionInfo]::GetVersionInfo($exePath)).FileVersion.Trim()
+    if (-not $exePath) { throw 'pngquant.exe not found in extracted zip' }
+
+    # pngquant is a Rust binary with no PE FileVersionInfo resource.
+    # The version string "X.Y.Z (Month YYYY)" is embedded as a string literal.
+    $bytes = [System.IO.File]::ReadAllBytes($exePath)
+    $text  = [System.Text.Encoding]::ASCII.GetString($bytes)
+    if ($text -notmatch '(\d+\.\d+\.\d+) \((?:January|February|March|April|May|June|July|August|September|October|November|December) \d{4}\)') {
+        throw 'Cannot detect version from pngquant.exe binary string'
+    }
+    $version = $Matches[1]
 
     Remove-Item $tmpZip -Force
     Remove-Item $tmpDir -Recurse -Force
