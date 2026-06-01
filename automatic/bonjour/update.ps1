@@ -20,7 +20,11 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate($Package) {
 	$Latest.ChecksumType32 = $Latest.ChecksumType64 = "SHA256"
-	$Latest.Checksum32 = (Get-FileHash -Path $exeFile -Algorithm $Latest.ChecksumType32).Hash.ToLower()
+	if (Test-Path $exeFile) {
+		$Latest.Checksum32 = (Get-FileHash -Path $exeFile -Algorithm $Latest.ChecksumType32).Hash.ToLower()
+	} else {
+		throw "iTunes installer not found at '$exeFile' — download may have failed."
+	}
 	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType64 -Url $Latest.URL64
 }
 
@@ -37,12 +41,17 @@ function global:au_GetLatest {
 	$userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 	Invoke-WebRequest -Uri $url32 -OutFile $exeFile -UserAgent $userAgent
 	$File = "$(get-location)\mDNSResponder.exe"
+	$bonjourMsi = "$(get-location)\Bonjour.msi"
 	7z.exe x $exeFile -i!"Bonjour.msi" -y | Out-Null
-	7z.exe x "$(get-location)\Bonjour.msi" -i!"mDNSResponder.exe" -y | Out-Null
+	if (Test-Path $bonjourMsi) {
+		7z.exe x $bonjourMsi -i!"mDNSResponder.exe" -y | Out-Null
+	} else {
+		Write-Warning "Bonjour.msi not found inside the iTunes installer — Apple may have changed the installer format."
+	}
 
 	Write-Output 'Get version'
 	if (-not (Test-Path $File)) {
-		Write-Output "File not found: $File. Trying alternative extraction..."
+		Write-Output "mDNSResponder.exe not found. Returning fallback version 3.1.0.5."
 		Pop-Location
 		$Latest = @{ URL32 = $url32; URL64 = $url64; Version = "3.1.0.5" }
 		return $Latest
