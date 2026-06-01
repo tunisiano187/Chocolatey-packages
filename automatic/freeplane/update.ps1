@@ -15,11 +15,17 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeplane/freeplane/1.12.x/license.txt" -OutFile "legal\LICENSE.txt"
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $Latest.URL32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\Freeplane-Setup-with-Java-$($Latest.Version).exe"
-	$Latest.Checksum32 = $FileVersion.Checksum
-	$Latest.ChecksumType32 = $FileVersion.checksumType
+	# SourceForge URLs end with /download; extract the actual .exe filename from the second-to-last path segment
+	$urlSegments = ([uri]$Latest.URL32).AbsolutePath -split '/' | Where-Object { $_ }
+	$cleanFileName = if ($urlSegments[-1] -eq 'download') {
+		[uri]::UnescapeDataString($urlSegments[-2])
+	} else {
+		[System.IO.Path]::GetFileName(([uri]$Latest.URL32).LocalPath)
+	}
+	$destPath = "tools\$cleanFileName"
+	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing
+	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
+	$Latest.ChecksumType32 = 'sha512'
 }
 
 function global:au_AfterUpdate($Package) {
