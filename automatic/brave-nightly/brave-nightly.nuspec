@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>brave-nightly</id>
-    <version>1.92.92-nightly</version>
+    <version>1.93.13-nightly</version>
     <title>Brave Browser (Nightly)</title>
     <authors>Brave Software Inc.</authors>
     <owners>tunisiano</owners>
@@ -25,7 +25,7 @@ Everywhere;
 #### Notes
 
 * Nightly is an early preview for new versions of Brave. This build showcases the newest
-advances and it's not ready for daily use. Brave Beta automatically sends crash reports.
+advances and it’s not ready for daily use. Brave Beta automatically sends crash reports.
 
 ### Package-specific issue
 
