@@ -17,7 +17,8 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate {
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $Latest.URL32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
+	$cleanFileName = [System.IO.Path]::GetFileName([uri]::new($Latest.URL32).LocalPath)
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\$cleanFileName"
 	$Latest.Checksum32 = $FileVersion.Checksum
 	$Latest.ChecksumType32 = $FileVersion.checksumType
 }
