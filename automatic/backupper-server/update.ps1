@@ -1,7 +1,9 @@
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$release = 'https://www.ubackup.com/server.html'
+# The ubackup.com website is behind Cloudflare and blocks automated requests.
+# The direct download URL on aomeisoftware.com CDN is accessible without JS challenge.
+$url32 = 'https://www2.aomeisoftware.com/download/adb/ABServerTrial.exe'
 
 function global:au_SearchReplace {
 	@{
@@ -17,7 +19,7 @@ function global:au_BeforeUpdate {
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $Latest.URL32
 	$Latest.Checksum32 = $FileVersion.Checksum
-	$Latest.ChecksumType32 = $FileVersion.checksumType
+	$Latest.ChecksumType32 = $FileVersion.ChecksumType
 }
 
 function global:au_AfterUpdate($Package) {
@@ -25,16 +27,16 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-  $page = Invoke-WebRequest -Uri $release
-  $url32 = Get-RedirectedUrl  "https://www.ubackup.com$($page.Links.href | Where-Object {$_ -match ".exe$"} | Where-Object {$_ -match "Server"} | Select-Object -First 1)"
-  $url = "https://www.ubackup.com/download.html"
-  $response = Invoke-WebRequest -Uri $url
-  $versionPattern = 'v?\d+\.\d+\.\d+'
-  $match = [regex]::Match($response.Content, $versionPattern)
-	$version = $match.Groups[0].Value
+  # Download the exe and extract the version from PE FileVersionInfo.
+  # This bypasses the Cloudflare challenge on ubackup.com/server.html which blocks
+  # PowerShell Invoke-WebRequest. The permanent CDN URL always serves the latest installer.
+  . ..\..\scripts\Get-FileVersion.ps1
+  $FileVersion = Get-FileVersion $url32
+  $version = $FileVersion.Version
 
-  $Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+  if (-not $version) { throw "Could not extract version from $url32" }
+
+  return @{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor none -NoCheckChocoVersion
