@@ -99,3 +99,18 @@ Packages are updated daily in AppVeyor. The `au_Push = 'true'` environment varia
 
 ### Linting
 `PSScriptAnalyzerSettings.psd1` excludes `PSAvoidGlobalVars` and `PSUseShouldProcessForStateChangingFunctions` (both intentionally used by AU's global function pattern).
+
+## Daily Session Task
+
+At the start of every session, automatically perform the following routine:
+
+1. **Check open GitHub issues** on `tunisiano187/Chocolatey-packages` (exclude the Dependency Dashboard, issue #3784).
+   - For each actionable issue found: investigate, implement a fix, and open a PR. Never push directly to master.
+2. **If no actionable issues exist**: check the most recent CI workflow run for failures (GitHub Actions).
+   - For each CI failure found: diagnose the root cause, fix it, and open a PR.
+3. **Always use PRs** — never commit fixes directly to master.
+4. **Save updates to this task**: if the user provides a remark, correction, or addition to this daily task definition during a session, append it to this section in CLAUDE.md and commit it.
+
+### Task history / amendments
+<!-- Append user amendments below this line, with date -->
+- 2026-06-03: Task created. Exclude Dependency Dashboard (#3784) from issue analysis.
