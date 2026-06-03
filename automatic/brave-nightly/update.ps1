@@ -27,22 +27,28 @@ function global:au_GetLatest {
 	# stable release — leaving $url32 null and causing AU "URL check" failures.
 	$headers = @{ 'User-Agent' = 'chocolatey-au-updater/1.0' }
 	$releases = Invoke-RestMethod "https://api.github.com/repos/$Owner/$repo/releases?per_page=20" -Headers $headers
-	$nightlyRelease = $releases | Where-Object { $_.prerelease -eq $true } | Select-Object -First 1
 
-	if (-not $nightlyRelease) {
-		Write-Warning "No nightly prerelease found in last 20 releases"
-		return
+	# Find the first prerelease that already has the StandaloneSilentNightly exe uploaded.
+	# Some releases are tagged as prerelease but assets haven't been published yet;
+	# selecting the first such release (without checking for the exe) returns nothing.
+	$nightlyRelease = $null
+	$url32 = $null
+	foreach ($release in ($releases | Where-Object { $_.prerelease -eq $true })) {
+		$candidate = $release.assets.browser_download_url |
+			Where-Object { $_ -match "\.exe$" } |
+			Where-Object { $_ -match 'StandaloneSilent' } |
+			Where-Object { $_ -notmatch '32\.exe' } |
+			Where-Object { $_ -notmatch 'Arm64' } |
+			Select-Object -First 1
+		if ($candidate) {
+			$nightlyRelease = $release
+			$url32 = $candidate
+			break
+		}
 	}
 
-	$url32 = $nightlyRelease.assets.browser_download_url |
-		Where-Object { $_ -match "\.exe$" } |
-		Where-Object { $_ -match 'StandaloneSilent' } |
-		Where-Object { $_ -notmatch '32\.exe' } |
-		Where-Object { $_ -notmatch 'Arm64' } |
-		Select-Object -First 1
-
-	if (-not $url32) {
-		Write-Warning "No StandaloneSilentNightly exe asset found in release $($nightlyRelease.tag_name)"
+	if (-not $nightlyRelease) {
+		Write-Warning "No nightly prerelease with StandaloneSilentNightly exe found in last 20 releases"
 		return
 	}
 
