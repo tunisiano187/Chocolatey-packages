@@ -6,7 +6,7 @@ on:
 
 jobs:
   validation:
-    if: ${{ github.event.issue.state == 'open' && (contains(github.event.issue.title, 'exclude') || contains(github.event.issue.title, 'remove') || contains(github.event.issue.title, 'block')) }}
+    if: ${{ github.actor != 'renovate[bot]' && github.event.issue.state == 'open' && (contains(github.event.issue.title, 'exclude') || contains(github.event.issue.title, 'remove') || contains(github.event.issue.title, 'block')) }}
     runs-on: windows-2025
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
