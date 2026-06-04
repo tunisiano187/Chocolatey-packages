@@ -89,7 +89,7 @@ jobs:
               gh issue create \
                 --title "🚨 Surveillance Quotidienne - Critiques $(date '+%Y-%m-%d')" \
                 --body-file /tmp/critical-issue-body.md \
-                --label "bug,security,critical" \
+                --label "bug" \
                 --assignee tunisiano187
             fi
           fi
