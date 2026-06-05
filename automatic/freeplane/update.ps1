@@ -15,14 +15,10 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate {
 	Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeplane/freeplane/1.12.x/license.txt" -OutFile "legal\LICENSE.txt"
-	# SourceForge URLs end with /download; extract the actual .exe filename from the second-to-last path segment
-	$urlSegments = ([uri]$Latest.URL32).AbsolutePath -split '/' | Where-Object { $_ }
-	$cleanFileName = if ($urlSegments[-1] -eq 'download') {
-		[uri]::UnescapeDataString($urlSegments[-2])
-	} else {
-		[System.IO.Path]::GetFileName(([uri]$Latest.URL32).LocalPath)
-	}
-	$destPath = "tools\$cleanFileName"
+	# Clean any stale installer files or directories from previous runs (prevents CHO-113/CHO-378/CHO-408 recurrence)
+	Get-ChildItem 'tools' -Filter '*.exe' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force
+	# Use a fixed filename to avoid SourceForge URL path-segment parsing issues
+	$destPath = 'tools\freeplane-setup.exe'
 	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing
 	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
 	$Latest.ChecksumType32 = 'sha512'
@@ -35,7 +31,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	[xml]$rss = Invoke-WebRequest -Uri $releases | Select-Object -ExpandProperty Content
 	$items = $rss.rss.channel.item | Where-Object {
-		($_.title -like "*-Setup-with*.exe*") -or ($_.link -like "*Freeplane-Setup*.exe*")
+		($_.title -like "*-Setup-with*.exe*") -or ($_.link -like "*Freeplane-Setup*.exe*") -or ($_.link -like '*.exe/download')
 	} | Select-Object -First 1
 
 	$url32 = $items.link
