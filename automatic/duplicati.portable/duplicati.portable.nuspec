@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>duplicati.portable</id>
-    <version>2.3.0.103</version>
+    <version>2.3.0.104</version>
     <title>Duplicati (Portable)</title>
     <authors>Kenneth Skovhede and Rene Stach</authors>
     <owners>tunisiano</owners>
@@ -58,7 +58,7 @@ Duplicati uses strong AES-256 encryption to protect your privacy. You can also u
 
 
 ### Built for online
-Duplicati was designed for online backups from scratch. It is not only data efficient but also handles network issues nicely. E.g. interrupted backups can be resumed and Duplicati tests the content of backups regularly. That way broken backups on corrupt storage systems can be detected before it's too late.
+Duplicati was designed for online backups from scratch. It is not only data efficient but also handles network issues nicely. E.g. interrupted backups can be resumed and Duplicati tests the content of backups regularly. That way broken backups on corrupt storage systems can be detected before it’s too late.
 
 
 ### Web-based user interface
