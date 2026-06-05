@@ -19,7 +19,7 @@ function Block-Package {
     )
     Write-Output $actor
     if(($actor -ne 'tunisiano187' -and $actor -ne 'github-actions[bot]') -or ($title.ToLower() -notmatch 'exclude' -and $title.ToLower() -notmatch 'remove' -and $title.ToLower() -notmatch 'block')) {
-      throw "User $actor cannot run this"
+      Write-Warning "User $actor cannot run this - skipping"; return
     }
     $ErrorActionPreference = 'Stop';
 
