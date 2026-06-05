@@ -15,12 +15,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $Latest.URL32 -keep
-	$cleanFileName = [System.IO.Path]::GetFileName([uri]::new($Latest.URL32).LocalPath)
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\$cleanFileName"
-	$Latest.Checksum32 = $FileVersion.Checksum
-	$Latest.ChecksumType32 = $FileVersion.checksumType
+	# Remove any stale MSI files from previous runs (prevents CHO-112/CHO-377/CHO-409 recurrence)
+	Get-ChildItem 'tools' -Filter '*.msi' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force
+	# Use a version-derived fixed filename to avoid SourceForge URL special-character issues with WebClient
+	$destPath = "tools\DualMonitorTools-$($Latest.Version).msi"
+	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing
+	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
+	$Latest.ChecksumType32 = 'sha512'
 }
 
 function global:au_AfterUpdate($Package) {
