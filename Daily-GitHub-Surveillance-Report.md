@@ -1,14 +1,15 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-07 09:46:43 UTC  
+**Date**: 2026-06-08 11:26:22 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (9 total)
+### 🚀 Issues Ouverts (10 total)
 
-#### 🔴 critical (2 issues)
+#### 🔴 critical (3 issues)
+- #4038: 🚨 Surveillance Quotidienne - Critiques 2026-06-07 - https://github.com/tunisiano187/Chocolatey-packages/issues/4038 [🔴 critical]
 - #4035: fix(keepass-plugin-kpfloatingpanel): remove $env:ChocolateyBinRoot to fix CPMR0072 moderation failure - https://github.com/tunisiano187/Chocolatey-packages/issues/4035 [🔴 critical]
 - #4029: fix(bonjour): replace em dash with ASCII hyphen to fix parse error - https://github.com/tunisiano187/Chocolatey-packages/issues/4029 [🔴 critical]
 
@@ -29,13 +30,13 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 2
+- 🔴 critical: 3
 - ⚪ normal: 7
 
 ### 📈 Statistiques Globales
-- **Total issues**: 9
+- **Total issues**: 10
 - **Total PRs**: 0
-- **Critiques**: 2
+- **Critiques**: 3
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -47,4 +48,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-07 09:46:43 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-08 11:26:22 UTC*
