@@ -2,8 +2,8 @@
 $packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '/S'
-$url64          = 'https://download.kde.org/stable/digikam/9.0.0/digiKam-9.0.0-Qt6-Win64.exe'
-$checksum64     = '74bbaacfa23fb98faae2669c9bd385046f20217414d3677f385a5de25bc72cf1'
+$url64          = 'https://download.kde.org/stable/digikam/9.1.0/digiKam-9.1.0-Qt6-Win64.exe'
+$checksum64     = '28ef373ab45ecc7eb1fd105b57828a29588504eb5a286c9e89c987c056bce8be'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0)
 
