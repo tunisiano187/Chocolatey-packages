@@ -32,9 +32,18 @@ function global:au_GetLatest {
   # PowerShell Invoke-WebRequest. The permanent CDN URL always serves the latest installer.
   . ..\..\scripts\Get-FileVersion.ps1
   $FileVersion = Get-FileVersion $url32
-  $version = $FileVersion.Version
+  $v = [version]$FileVersion.Version
 
-  if (-not $version) { throw "Could not extract version from $url32" }
+  if (-not $v) { throw "Could not extract version from $url32" }
+
+  # PE FileVersionInfo returns 4-part versions (e.g. 8.3.0.0).
+  # Normalize to 3-part when revision is 0 so AU matches the nuspec/chocolatey.org format
+  # and does not attempt a redundant push that results in a 409 Conflict.
+  $version = if ($v.Revision -le 0) {
+      '{0}.{1}.{2}' -f $v.Major, $v.Minor, $v.Build
+  } else {
+      $v.ToString()
+  }
 
   return @{ URL32 = $url32; Version = $version }
 }
