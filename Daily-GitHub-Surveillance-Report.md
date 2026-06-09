@@ -1,19 +1,21 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-08 11:26:22 UTC  
+**Date**: 2026-06-09 10:09:11 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (10 total)
+### 🚀 Issues Ouverts (12 total)
 
 #### 🔴 critical (3 issues)
-- #4038: 🚨 Surveillance Quotidienne - Critiques 2026-06-07 - https://github.com/tunisiano187/Chocolatey-packages/issues/4038 [🔴 critical]
+- #4041: fix(dual-monitor-tools): URL-encode download path to prevent WebClient exception - https://github.com/tunisiano187/Chocolatey-packages/issues/4041 [🔴 critical]
 - #4035: fix(keepass-plugin-kpfloatingpanel): remove $env:ChocolateyBinRoot to fix CPMR0072 moderation failure - https://github.com/tunisiano187/Chocolatey-packages/issues/4035 [🔴 critical]
 - #4029: fix(bonjour): replace em dash with ASCII hyphen to fix parse error - https://github.com/tunisiano187/Chocolatey-packages/issues/4029 [🔴 critical]
 
-#### ⚪ normal (7 issues)
+#### ⚪ normal (9 issues)
+- #4042: fix(freeplane): tighten RSS filter, dynamic license branch, clean old .exe (CHO-425) - https://github.com/tunisiano187/Chocolatey-packages/issues/4042 [⚪ normal]
+- #4040: fix(backupper-server): normalize 4-part PE version to 3-part to stop 409 push loop (CHO-423) - https://github.com/tunisiano187/Chocolatey-packages/issues/4040 [⚪ normal]
 - #4036: feat(autoruns): restore package with modern AU update.ps1 (CHO-416) - https://github.com/tunisiano187/Chocolatey-packages/issues/4036 [⚪ normal]
 - #4034: fix(chromehistoryview): bump to v1.53 [PUSH chromehistoryview] - https://github.com/tunisiano187/Chocolatey-packages/issues/4034 [⚪ normal]
 - #4033: [Update Request] Autoruns - https://github.com/tunisiano187/Chocolatey-packages/issues/4033 [⚪ normal]
@@ -31,10 +33,10 @@ Aucun Pull Request détecté
 ### 📊 Résumé par Priorité
 
 - 🔴 critical: 3
-- ⚪ normal: 7
+- ⚪ normal: 9
 
 ### 📈 Statistiques Globales
-- **Total issues**: 10
+- **Total issues**: 12
 - **Total PRs**: 0
 - **Critiques**: 3
 - **Hautes priorités**: 0
@@ -48,4 +50,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-08 11:26:22 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-09 10:09:11 UTC*
