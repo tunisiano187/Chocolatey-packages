@@ -1,7 +1,7 @@
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
-$releases = 'http://sourceforge.net/projects/projectlibre/files/latest/download'
+$releases = 'https://sourceforge.net/projects/projectlibre/files/latest/download'
 
 function global:au_SearchReplace {
 	@{

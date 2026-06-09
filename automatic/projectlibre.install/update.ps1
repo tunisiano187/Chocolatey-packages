@@ -18,7 +18,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	# SourceForge latest/download redirects to the jar file URL which contains the version
-	$redirectUrl = Get-RedirectedUrl 'http://sourceforge.net/projects/projectlibre/files/latest/download'
+	$redirectUrl = Get-RedirectedUrl 'https://sourceforge.net/projects/projectlibre/files/latest/download'
 	if (-not $redirectUrl) {
 		throw "Could not follow SourceForge redirect"
 	}
