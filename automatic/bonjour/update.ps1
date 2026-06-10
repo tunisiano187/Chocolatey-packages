@@ -23,7 +23,7 @@ function global:au_BeforeUpdate($Package) {
 	if (Test-Path $exeFile) {
 		$Latest.Checksum32 = (Get-FileHash -Path $exeFile -Algorithm $Latest.ChecksumType32).Hash.ToLower()
 	} else {
-		throw "iTunes installer not found at '$exeFile' — download may have failed."
+		throw "iTunes installer not found at '$exeFile' - download may have failed."
 	}
 	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType64 -Url $Latest.URL64
 }
@@ -46,7 +46,7 @@ function global:au_GetLatest {
 	if (Test-Path $bonjourMsi) {
 		7z.exe x $bonjourMsi -i!"mDNSResponder.exe" -y | Out-Null
 	} else {
-		Write-Warning "Bonjour.msi not found inside the iTunes installer — Apple may have changed the installer format."
+		Write-Warning "Bonjour.msi not found inside the iTunes installer - Apple may have changed the installer format."
 	}
 
 	Write-Output 'Get version'
