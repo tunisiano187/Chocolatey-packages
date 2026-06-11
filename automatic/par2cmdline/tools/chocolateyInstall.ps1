@@ -1,8 +1,8 @@
-﻿$url            = 'https://github.com/Parchive/par2cmdline/releases/download/v1.1.1/par2cmdline-1.1.1-win-x64.zip'
-$checksum       = 'b0d949e2b85759cf1a8a6f9c780cfc2dc8bfe650d379c43bd18e4b7794049409'
+﻿$url            = 'https://github.com/Parchive/par2cmdline/releases/download/v1.2.0/par2cmdline-1.2.0-win-x64.zip'
+$checksum       = 'c827065486fcf358fb6e5f1c6178678cf19e501a10be958e621be796da2fbbff'
 $checksumType   = 'sha256'
-$url64          = 'https://github.com/Parchive/par2cmdline/releases/download/v1.1.1/par2cmdline-1.1.1-win-x64.zip'
-$checksum64     = 'b0d949e2b85759cf1a8a6f9c780cfc2dc8bfe650d379c43bd18e4b7794049409'
+$url64          = 'https://github.com/Parchive/par2cmdline/releases/download/v1.2.0/par2cmdline-1.2.0-win-x64.zip'
+$checksum64     = 'c827065486fcf358fb6e5f1c6178678cf19e501a10be958e621be796da2fbbff'
 $checksumType64 = 'sha256'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 

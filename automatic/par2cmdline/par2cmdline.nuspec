@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>par2cmdline</id>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
     <title>par2cmdline</title>
     <authors>Peter Brian Clements,Marcel Partap,Ike Devolder</authors>
     <owners>tunisiano</owners>
