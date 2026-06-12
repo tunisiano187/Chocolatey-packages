@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
+. ..\..\scripts\Get-FileVersion.ps1
 
 $releases = "https://www.winflector.com/english/download.html"
 
@@ -21,15 +22,21 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $link = ($page.Links | Where-Object {$_.outerHTML -match "Client for Windows"} | Select-Object -First 1)
-	$url32="https://www.winflector.com/$($link.href)"
+    $url32 = "https://www.winflector.com/$($link.href)"
 
     $regexPattern = 'Client for Windows \((\d+(\.\d+)*)'
-	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	$version = $versionMatch.Matches[0].Groups[1].Value
+    $versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
+    $version = $versionMatch.Matches[0].Groups[1].Value
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+    $FileVersion = Get-FileVersion $url32
+    $Latest = @{
+        URL32         = $url32
+        Version       = $version
+        Checksum32    = $FileVersion.Checksum
+        ChecksumType32 = $FileVersion.ChecksumType
+    }
 
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
