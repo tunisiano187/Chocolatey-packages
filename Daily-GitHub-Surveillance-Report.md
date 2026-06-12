@@ -1,14 +1,15 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-11 11:10:15 UTC  
+**Date**: 2026-06-12 08:05:54 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (21 total)
+### 🚀 Issues Ouverts (20 total)
 
-#### 🔴 critical (8 issues)
+#### 🔴 critical (9 issues)
+- #4054: 🚨 Surveillance Quotidienne - Critiques 2026-06-11 - https://github.com/tunisiano187/Chocolatey-packages/issues/4054 [🔴 critical]
 - #4052: fix(bonjour): replace em-dash on lines 26 and 49 to fix AppVeyor parse error (CHO-442) - https://github.com/tunisiano187/Chocolatey-packages/issues/4052 [🔴 critical]
 - #4050: 🚨 Surveillance Quotidienne - Critiques 2026-06-10 - https://github.com/tunisiano187/Chocolatey-packages/issues/4050 [🔴 critical]
 - #4049: fix(winflector-client): use Get-FileVersion to avoid store URL redirect path error (CHO-437) - https://github.com/tunisiano187/Chocolatey-packages/issues/4049 [🔴 critical]
@@ -18,7 +19,7 @@
 - #4041: fix(dual-monitor-tools): URL-encode download path to prevent WebClient exception - https://github.com/tunisiano187/Chocolatey-packages/issues/4041 [🔴 critical]
 - #4035: fix(keepass-plugin-kpfloatingpanel): remove $env:ChocolateyBinRoot to fix CPMR0072 moderation failure - https://github.com/tunisiano187/Chocolatey-packages/issues/4035 [🔴 critical]
 
-#### ⚪ normal (13 issues)
+#### ⚪ normal (11 issues)
 - #4053: fix(ost2): add User-Agent header and null guard in au_GetLatest (CHO-444) - https://github.com/tunisiano187/Chocolatey-packages/issues/4053 [⚪ normal]
 - #4051: fix(projectlibre.install): keep permanent SourceForge URL to fix illegal path characters (CHO-436) - https://github.com/tunisiano187/Chocolatey-packages/issues/4051 [⚪ normal]
 - #4045: fix(projectlibre): upgrade SourceForge redirect URL from HTTP to HTTPS (CHO-427) - https://github.com/tunisiano187/Chocolatey-packages/issues/4045 [⚪ normal]
@@ -29,8 +30,6 @@
 - #4034: fix(chromehistoryview): bump to v1.53 [PUSH chromehistoryview] - https://github.com/tunisiano187/Chocolatey-packages/issues/4034 [⚪ normal]
 - #4033: [Update Request] Autoruns - https://github.com/tunisiano187/Chocolatey-packages/issues/4033 [⚪ normal]
 - #4032: fix(pngquant): pin nuspec to 3.0.3 to prevent AU downgrade push (CHO-411) - https://github.com/tunisiano187/Chocolatey-packages/issues/4032 [⚪ normal]
-- #4031: fix(dual-monitor-tools): prevent illegal characters in path regression (CHO-409) - https://github.com/tunisiano187/Chocolatey-packages/issues/4031 [⚪ normal]
-- #4030: fix(freeplane): prevent download.exe path regression (CHO-408, 3rd occurrence) - https://github.com/tunisiano187/Chocolatey-packages/issues/4030 [⚪ normal]
 - #3784: Dependency Dashboard - https://github.com/tunisiano187/Chocolatey-packages/issues/3784 [⚪ normal]
 
 ### 🔄 Pull Requests en Attente (0 total)
@@ -41,13 +40,13 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 8
-- ⚪ normal: 13
+- 🔴 critical: 9
+- ⚪ normal: 11
 
 ### 📈 Statistiques Globales
-- **Total issues**: 21
+- **Total issues**: 20
 - **Total PRs**: 0
-- **Critiques**: 8
+- **Critiques**: 9
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -59,4 +58,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-11 11:10:15 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-12 08:05:54 UTC*
