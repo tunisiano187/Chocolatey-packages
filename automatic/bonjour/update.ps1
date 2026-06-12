@@ -23,7 +23,7 @@ function global:au_BeforeUpdate($Package) {
 	if (Test-Path $exeFile) {
 		$Latest.Checksum32 = (Get-FileHash -Path $exeFile -Algorithm $Latest.ChecksumType32).Hash.ToLower()
 	} else {
-		throw "iTunes installer not found at '$exeFile' — download may have failed."
+		throw "iTunes installer not found at '$exeFile' - download may have failed."
 	}
 	$Latest.Checksum64 = Get-RemoteChecksum -Algorithm $Latest.ChecksumType64 -Url $Latest.URL64
 }
