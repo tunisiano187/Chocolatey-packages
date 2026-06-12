@@ -21,7 +21,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/keepass-plugin-kpfloatingpanel</packageSourceUrl>
     <projectUrl>https://github.com/mitchcapper/KPFloatingPanel</projectUrl>
-    <projectSourceUrl>https://github.com/mitchcapper/KPFloatingPanel</projectSourceUrl>
+    <projectSourceUrl>https://github.com/mitchcapper/KPFloatingPanel/tree/master</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mitchcapper/KPFloatingPanel/issues</bugTrackerUrl>
     <docsUrl>https://github.com/mitchcapper/KPFloatingPanel/wiki/</docsUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@61bbc80b1b144484675dcdecece7b970c869ffc4/icons/keepass-plugin-kpfloatingpanel.png</iconUrl>
