@@ -1,12 +1,15 @@
 import-module chocolatey-AU
 
-$releases = 'https://sourceforge.net/projects/windjview/files/WinDjView/2.1/'
+# Use the SourceForge RSS feed scoped to /WinDjView so any future version folder
+# (e.g. 2.2, 3.0) is discovered automatically instead of being hardcoded.
+# Investigated 2026-06-09: upstream is still on v2.1 with no newer release.
+$releases = 'https://sourceforge.net/projects/windjview/rss?path=/WinDjView'
 
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+			"(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+			"(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
@@ -18,19 +21,29 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '-setup.'} | Where-Object {$_ -match '.exe'} | Where-Object {$_ -match "https"}).href | Select-Object -First 1
-	$version = $url32.Split('-')[-2]
-	$current_checksum = (Get-Item $PSScriptRoot\tools\chocolateyInstall.ps1 | Select-String '\bchecksum\b') -split "=|'" | Where-Object {$_ -notmatch " "} | Select-Object -Last 1 -Skip 1
-    if ($current_checksum.Length -ne 64) { throw "Can't find current checksum" }
-    $remote_checksum  = Get-RemoteChecksum $url32
-    if ($current_checksum -ne $remote_checksum) {
-		$verdate=get-date -Format "yyyyMMdd"
-        $version = "$version.$verdate"
-    }
-	$version = '2.1.0.20230112'
+	[xml]$rss = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
+	$item = $rss.rss.channel.item |
+		Where-Object { $_.link -like '*-Setup.exe/download*' } |
+		Select-Object -First 1
+	if (-not $item) { throw 'No WinDjView Setup installer found in RSS feed' }
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	$url32   = $item.link
+	$version = [regex]::Match($url32, 'WinDjView-(\d+(?:\.\d+)+)-Setup\.exe').Groups[1].Value
+	if (-not $version) { throw "Could not parse version from URL: $url32" }
+
+	# Detect silent binary replacements: if the remote checksum differs from the
+	# value already stored in chocolateyInstall.ps1, bump with a datestamp so AU
+	# publishes the corrected binary even when the upstream version string is unchanged.
+	$installContent   = Get-Content "$PSScriptRoot\tools\chocolateyInstall.ps1" -Raw
+	$current_checksum = [regex]::Match($installContent, "\`$checksum\s*=\s*'([a-fA-F0-9]{64})'").Groups[1].Value
+	if ($current_checksum.Length -eq 64) {
+		$remote_checksum = Get-RemoteChecksum $url32
+		if ($current_checksum -ne $remote_checksum) {
+			$version = "$version.$(Get-Date -Format 'yyyyMMdd')"
+		}
+	}
+
+	return @{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor 32 -NoCheckChocoVersion
