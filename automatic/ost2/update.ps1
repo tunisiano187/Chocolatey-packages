@@ -30,7 +30,7 @@ function global:au_GetLatest {
 	$regexPattern = 'Version:\s*(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	if (-not $versionMatch -or -not $versionMatch.Matches.Count) {
-		throw "Version not found on $releases — page layout may have changed"
+		throw "Version not found on $releases - page layout may have changed"
 	}
 	$version = $versionMatch.Matches[0].Groups[1].Value
 	$url32 = "https://d.4team.biz/files/ost2_setup.exe"
