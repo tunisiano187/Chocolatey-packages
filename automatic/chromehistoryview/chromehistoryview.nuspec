@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>chromehistoryview</id>
-    <version>1.52</version>
+    <version>1.53</version>
     <title>ChromeHistoryView</title>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
