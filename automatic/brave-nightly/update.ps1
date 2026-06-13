@@ -24,7 +24,7 @@ function global:au_GetLatest {
 
 	# Use the GitHub API to get recent releases and find the latest prerelease (nightly).
 	# The old approach scraped the HTML tags page and took the first tag, which could be a
-	# stable release — leaving $url32 null and causing AU "URL check" failures.
+	# stable release - leaving $url32 null and causing AU "URL check" failures.
 	$headers = @{ 'User-Agent' = 'chocolatey-au-updater/1.0' }
 	$releases = Invoke-RestMethod "https://api.github.com/repos/$Owner/$repo/releases?per_page=20" -Headers $headers
 
