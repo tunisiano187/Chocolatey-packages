@@ -115,3 +115,4 @@ At the start of every session, automatically perform the following routine:
 <!-- Append user amendments below this line, with date -->
 - 2026-06-03: Task created. Exclude Dependency Dashboard (#3784) from issue analysis.
 - 2026-06-14: Before creating a new PR for an issue or CI failure, check whether an open PR already addresses it — if one exists, skip creation. Also, when auditing the PR backlog, note that existing open PRs may no longer be relevant or necessary; do not assume they all need to be merged or acted upon.
+- 2026-06-14: Each PR must be scoped to a single package only. Never group multiple packages into one PR, even if the fix pattern is identical. Close any open multi-package PRs.
