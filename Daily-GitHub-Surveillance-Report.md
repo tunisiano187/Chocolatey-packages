@@ -1,18 +1,14 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-13 07:47:51 UTC  
+**Date**: 2026-06-14 08:02:40 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (21 total)
+### 🚀 Issues Ouverts (18 total)
 
-#### 🔴 critical (10 issues)
-- #4055: 🚨 Surveillance Quotidienne - Critiques 2026-06-12 - https://github.com/tunisiano187/Chocolatey-packages/issues/4055 [🔴 critical]
-- #4054: 🚨 Surveillance Quotidienne - Critiques 2026-06-11 - https://github.com/tunisiano187/Chocolatey-packages/issues/4054 [🔴 critical]
-- #4052: fix(bonjour): replace em-dash on lines 26 and 49 to fix AppVeyor parse error (CHO-442) - https://github.com/tunisiano187/Chocolatey-packages/issues/4052 [🔴 critical]
-- #4050: 🚨 Surveillance Quotidienne - Critiques 2026-06-10 - https://github.com/tunisiano187/Chocolatey-packages/issues/4050 [🔴 critical]
+#### 🔴 critical (6 issues)
 - #4049: fix(winflector-client): use Get-FileVersion to avoid store URL redirect path error (CHO-437) - https://github.com/tunisiano187/Chocolatey-packages/issues/4049 [🔴 critical]
 - #4048: fix(tigervnc): remove Get-RedirectedUrl to fix SourceForge CDN path error (CHO-435) - https://github.com/tunisiano187/Chocolatey-packages/issues/4048 [🔴 critical]
 - #4047: fix(pwgen): use Get-FileVersion to avoid SourceForge /download path error (CHO-433, CHO-434) - https://github.com/tunisiano187/Chocolatey-packages/issues/4047 [🔴 critical]
@@ -20,7 +16,8 @@
 - #4041: fix(dual-monitor-tools): URL-encode download path to prevent WebClient exception - https://github.com/tunisiano187/Chocolatey-packages/issues/4041 [🔴 critical]
 - #4035: fix(keepass-plugin-kpfloatingpanel): remove $env:ChocolateyBinRoot to fix CPMR0072 moderation failure - https://github.com/tunisiano187/Chocolatey-packages/issues/4035 [🔴 critical]
 
-#### ⚪ normal (11 issues)
+#### ⚪ normal (12 issues)
+- #4057: fix(bonjour,brave-nightly): replace remaining em-dashes with ASCII hyphens (CHO-451) - https://github.com/tunisiano187/Chocolatey-packages/issues/4057 [⚪ normal]
 - #4053: fix(ost2): add User-Agent header and null guard in au_GetLatest (CHO-444) - https://github.com/tunisiano187/Chocolatey-packages/issues/4053 [⚪ normal]
 - #4051: fix(projectlibre.install): keep permanent SourceForge URL to fix illegal path characters (CHO-436) - https://github.com/tunisiano187/Chocolatey-packages/issues/4051 [⚪ normal]
 - #4045: fix(projectlibre): upgrade SourceForge redirect URL from HTTP to HTTPS (CHO-427) - https://github.com/tunisiano187/Chocolatey-packages/issues/4045 [⚪ normal]
@@ -41,13 +38,13 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 10
-- ⚪ normal: 11
+- 🔴 critical: 6
+- ⚪ normal: 12
 
 ### 📈 Statistiques Globales
-- **Total issues**: 21
+- **Total issues**: 18
 - **Total PRs**: 0
-- **Critiques**: 10
+- **Critiques**: 6
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -59,4 +56,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-13 07:47:51 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-14 08:02:40 UTC*
