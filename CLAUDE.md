@@ -114,3 +114,4 @@ At the start of every session, automatically perform the following routine:
 ### Task history / amendments
 <!-- Append user amendments below this line, with date -->
 - 2026-06-03: Task created. Exclude Dependency Dashboard (#3784) from issue analysis.
+- 2026-06-14: Before creating a new PR for an issue or CI failure, check whether an open PR already addresses it — if one exists, skip creation. Also, when auditing the PR backlog, note that existing open PRs may no longer be relevant or necessary; do not assume they all need to be merged or acted upon.
