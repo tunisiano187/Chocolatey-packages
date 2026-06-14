@@ -1,5 +1,6 @@
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
+. ..\..\scripts\Get-FileVersion.ps1
 
 function global:au_SearchReplace {
 	@{
@@ -30,14 +31,20 @@ function global:au_GetLatest {
 	}
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
-	# Version 1.9.x distributes MSI for Windows (no EXE available)
-	$url32 = Get-RedirectedUrl "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/ProjectLibre-$version.msi/download"
-	if (-not $url32) {
-		throw "Could not get MSI download URL for version $version"
-	}
+	# Keep the permanent SourceForge /download URL — do NOT call Get-RedirectedUrl here.
+	# Get-RedirectedUrl returns CDN mirror URLs with query params (?ts=...&use_mirror=...)
+	# that WebClient.DownloadFile treats as illegal path characters, breaking AU's checksum
+	# logic. Invoke-WebRequest (used by Get-FileVersion) follows the redirect transparently.
+	$url32 = "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/ProjectLibre-$version.msi/download"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
+	$FileVersion = Get-FileVersion $url32
+	$Latest = @{
+		URL32          = $url32
+		Version        = $version
+		Checksum32     = $FileVersion.Checksum
+		ChecksumType32 = $FileVersion.ChecksumType
+	}
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
