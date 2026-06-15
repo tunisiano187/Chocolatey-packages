@@ -34,6 +34,7 @@ function global:au_GetLatest {
 	$xml = Get-Content $File
 	$links=$xml | Where-Object {$_ -match '.msi/download'} | Select-Object -First 1
 	$url32 = Get-RedirectedUrl ($links.Split('<|>') | Where-Object {$_ -match '.msi/download'})
+	$url32 = [uri]::EscapeUriString($url32)
 	$version = (Get-Version $url32).Version
 
 	$Latest = @{ URL32 = $url32; Version = $version }
