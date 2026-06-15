@@ -50,4 +50,4 @@ function global:au_GetLatest {
     return @{ URL64 = $url64; Version = $version; Checksum64 = $FileVersion.Checksum; ChecksumType64 = $FileVersion.ChecksumType; ReleaseNotes = $releasenotes }
 }
 
-update-package -ChecksumFor none
+update -ChecksumFor none
