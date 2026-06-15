@@ -19,10 +19,15 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
     $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $urls = $page.Links | Where-Object { $_.href -match '.7z' } | Where-Object { $_.href -notmatch 'winxp|tools|beta' } | Select-Object -ExpandProperty href -Unique
-    $url32 = "https://slade.mancubus.net/$($urls | Where-Object { $_ -notmatch 'x64' })"
-    $url64 = "https://slade.mancubus.net/$($urls | Where-Object { $_ -match 'x64' })"
-    $version = (Get-Version $url32).Version
+    # Filter to absolute GitHub release URLs only to avoid concatenating relative + absolute hrefs
+    $urls = $page.Links |
+        Where-Object { $_.href -match '\.7z' } |
+        Where-Object { $_.href -notmatch 'winxp|tools|beta' } |
+        Where-Object { $_.href -match 'github\.com' } |
+        Select-Object -ExpandProperty href -Unique
+    # Package ships 64-bit only; URL32 slot is used for the x64 archive
+    $url64 = $urls | Where-Object { $_ -match 'x64' } | Select-Object -First 1
+    $version = (Get-Version $url64).Version
     @{
         Version      = $version
         URL32        = $url64
