@@ -6,8 +6,8 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $pp = Get-PackageParameters
 
 $packageName    = $env:ChocolateyPackageName
-$url            = 'https://github.com/realsenseai/librealsense/releases/download/v2.58.1/RealSense.SDK-WIN10-2.58.1.10581.exe'
-$checksum       = '70397b7165e057c9e94c0398da97d7592e05e4793aaa23c1c3a277be984ccc70'
+$url            = 'https://github.com/realsenseai/librealsense/releases/download/v2.58.2/RealSense.SDK-WIN10-2.58.2.10647.exe'
+$checksum       = '54d78c054f525ab7a780ed0d2ce3c8d6fa787e3e7f618a88b899aca57ae1f5ae'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
