@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/belarc-advisor</packageSourceUrl>
     <projectUrl>http://www.belarc.com/index.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@3d6022650c690f50de29a21b9e65544b49c3a2fb/icons/belarc-advisor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b42f135bcc8d707a68138dc63a4b3c3fabbca292/icons/belarc-advisor.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Belarc Advisor
 
