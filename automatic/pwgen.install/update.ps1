@@ -19,15 +19,12 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "$env:TEMP\pwgen.install.xml"
-	Invoke-WebRequest -Uri $releases -OutFile $File
-	$xml = Get-Content $File
-	$links=$xml | Where-Object {$_ -match 'Setup.exe/download'} | Where-Object {$_ -match 'link'}  | Select-Object -First 1
-	$url32 = $links.Split('<|>') | Where-Object {$_ -match 'download'}
-	$version = (Get-Version $url32).Version
+	[xml]$xml = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
+	$item = $xml.rss.channel.item | Where-Object { $_.link -match '(?i)Setup\.exe/download' -and $_.link -notmatch '\.sig/' } | Select-Object -First 1
+	$url32 = $item.link
+	$version = [regex]::Match($url32, 'Password%20Tech/([^/]+)/').Groups[1].Value
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	@{ URL32 = $url32; Version = $version }
 }
 
 update -ChecksumFor 32
