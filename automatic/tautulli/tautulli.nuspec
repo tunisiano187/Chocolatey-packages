@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>tautulli</id>
-    <version>2.17.1</version>
+    <version>2.17.2</version>
     <title>Tautulli for Plex</title>
     <authors>JonnyWong16, WilliamComartin</authors>
     <owners>tunisiano</owners>
@@ -16,7 +16,7 @@
 
 ## WHAT IS TAUTULLI?
 
-verb | tau * tul * li | \ ?tau?-tu-le \ | To watch or monitor
+verb | tau • tul • li | \ ˈtau̇-tü-lē \ | To watch or monitor
 
 Tautulli is a 3rd party application that you can run alongside your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. The only thing missing is "why they watched it", but who am I to question your 42 plays of Frozen. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.
 
