@@ -46,7 +46,7 @@ function global:au_GetLatest {
 	if (Test-Path $bonjourMsi) {
 		7z.exe x $bonjourMsi -i!"mDNSResponder.exe" -y | Out-Null
 	} else {
-		Write-Warning "Bonjour.msi not found inside the iTunes installer — Apple may have changed the installer format."
+		Write-Warning "Bonjour.msi not found inside the iTunes installer - Apple may have changed the installer format."
 	}
 
 	Write-Output 'Get version'
