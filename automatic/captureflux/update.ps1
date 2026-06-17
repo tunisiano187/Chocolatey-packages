@@ -27,11 +27,17 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32 = "https://paulglagla.com/$($page.Links.href | Where-Object {$_ -match "zip$"} | Select-Object -First 1)"
+
+	# Prefer the absolute paulglagla.com link if present on the page; fall back to constructing from relative link
+	$url32 = $page.Links.href | Where-Object { $_ -match 'https://paulglagla\.com.*captureflux.*\.zip$' } | Select-Object -First 1
+	if (-not $url32) {
+		$relLink = $page.Links.href | Where-Object { $_ -match 'captureflux.*\.zip$' } | Select-Object -First 1
+		$url32 = "https://paulglagla.com/$relLink"
+	}
+
 	$regexPattern = '(\d+(\.\d+)*)</b>'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
-
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = ''; ChecksumType32 = 'sha256' }
 	return $Latest
