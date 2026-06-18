@@ -25,6 +25,23 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	if (-not (Test-Path "tools")) {
+		New-Item -ItemType Directory -Path "tools" | Out-Null
+	}
+
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32 -keep
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\tigervnc.exe" -Force
+	$FileVersion64 = Get-FileVersion $Latest.URL64 -keep
+	Move-Item -Path $FileVersion64.TempFile -Destination "tools\tigervnc64.exe" -Force
+
+	$Latest.Checksum32     = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.ChecksumType
+	$Latest.Checksum64     = $FileVersion64.Checksum
+	$Latest.ChecksumType64 = $FileVersion64.ChecksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
@@ -55,33 +72,24 @@ function global:au_GetLatest {
 		throw "Could not find both 32-bit and 64-bit download links"
 	}
 
+	# Extract version from URL path (e.g. .../stable/1.16.2/tigervnc-1.16.2.exe/download)
 	# Do NOT call Get-RedirectedUrl here — it returns CDN mirror URLs with query params
 	# (?ts=...&use_mirror=...) that WebClient.DownloadFile treats as illegal path characters,
 	# breaking the AU retry loop and the VirusTotal scan (Get-RemoteFiles). Keep the permanent
 	# SourceForge /download URLs; Invoke-WebRequest follows the redirect automatically.
-
-	if (-not (Test-Path "tools")) {
-		New-Item -ItemType Directory -Path "tools" | Out-Null
+	$versionMatch = [regex]::Match($url32, '/stable/([^/]+)/')
+	if (-not $versionMatch.Success) {
+		throw "Could not extract version from URL: $url32"
 	}
+	$version = $versionMatch.Groups[1].Value
 
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\tigervnc.exe" -Force
-	$FileVersion64 = Get-FileVersion $url64 -keep
-	Move-Item -Path $FileVersion64.TempFile -Destination "tools\tigervnc64.exe" -Force
-
-	$Latest = @{
-		URL32          = $url32
-		URL64          = $url64
-		Version        = $FileVersion.Version
-		Checksum32     = $FileVersion.Checksum
-		ChecksumType32 = $FileVersion.ChecksumType
-		Checksum64     = $FileVersion64.Checksum
-		ChecksumType64 = $FileVersion64.ChecksumType
-		FileName32     = 'tigervnc.exe'
-		FileName64     = 'tigervnc64.exe'
+	return @{
+		URL32      = $url32
+		URL64      = $url64
+		Version    = $version
+		FileName32 = 'tigervnc.exe'
+		FileName64 = 'tigervnc64.exe'
 	}
-	return $Latest
 }
 
 update -ChecksumFor none -NoCheckChocoVersion
