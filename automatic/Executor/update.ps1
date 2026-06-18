@@ -25,7 +25,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32 = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base + '/' + $_ } | Select-Object -First 1
+	$url32 = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $releases + '/' + $_ } | Select-Object -First 1
 
 	if (-not $url32) {
 		throw "Could not find EXE download link"
