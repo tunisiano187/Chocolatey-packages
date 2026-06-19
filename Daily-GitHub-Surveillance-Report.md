@@ -1,20 +1,21 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-18 08:16:05 UTC  
+**Date**: 2026-06-19 08:21:35 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (13 total)
+### 🚀 Issues Ouverts (14 total)
 
-#### 🔴 critical (4 issues)
-- #4071: 🚨 Surveillance Quotidienne - Critiques 2026-06-17 - https://github.com/tunisiano187/Chocolatey-packages/issues/4071 [🔴 critical]
+#### 🔴 critical (3 issues)
+- #4076: 🚨 Surveillance Quotidienne - Critiques 2026-06-18 - https://github.com/tunisiano187/Chocolatey-packages/issues/4076 [🔴 critical]
 - #4069: fix(bonjour): replace em dash with hyphen to fix CP1252 parse error (CHO-471) - https://github.com/tunisiano187/Chocolatey-packages/issues/4069 [🔴 critical]
-- #4067: 🚨 Surveillance Quotidienne - Critiques 2026-06-16 - https://github.com/tunisiano187/Chocolatey-packages/issues/4067 [🔴 critical]
 - #4065: fix(windjview): use Get-FileVersion to avoid SourceForge /download path error (CHO-461) - https://github.com/tunisiano187/Chocolatey-packages/issues/4065 [🔴 critical]
 
-#### ⚪ normal (9 issues)
+#### ⚪ normal (11 issues)
+- #4080: chore(deps): update actions/checkout action to v7 - https://github.com/tunisiano187/Chocolatey-packages/issues/4080 [⚪ normal]
+- #4077: fix(tigervnc): move file downloads from au_GetLatest to au_BeforeUpdate (CHO-485) - https://github.com/tunisiano187/Chocolatey-packages/issues/4077 [⚪ normal]
 - #4075: fix(jcpicker): use Regex::Match + trailing-slash URL, normalize version to 3 parts - https://github.com/tunisiano187/Chocolatey-packages/issues/4075 [⚪ normal]
 - #4074: fix(captureflux): use specific URL match to avoid fragile zip$-first selection - https://github.com/tunisiano187/Chocolatey-packages/issues/4074 [⚪ normal]
 - #4073: fix(pwgen.portable): replace brittle line-split XML parsing with [xml] cast - https://github.com/tunisiano187/Chocolatey-packages/issues/4073 [⚪ normal]
@@ -33,13 +34,13 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 4
-- ⚪ normal: 9
+- 🔴 critical: 3
+- ⚪ normal: 11
 
 ### 📈 Statistiques Globales
-- **Total issues**: 13
+- **Total issues**: 14
 - **Total PRs**: 0
-- **Critiques**: 4
+- **Critiques**: 3
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -51,4 +52,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-18 08:16:05 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-19 08:21:35 UTC*
