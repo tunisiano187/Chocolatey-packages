@@ -1,6 +1,6 @@
-import-module chocolatey-AU
+Import-Module chocolatey-AU
 
-$releases = 'https://lulzbot.com/support/cura-windows'
+$baseUrl = 'https://software.lulzbot.com/Cura_LulzBot_Edition/Windows'
 
 function global:au_SearchReplace {
     @{
@@ -12,21 +12,43 @@ function global:au_SearchReplace {
 }
 
 function global:au_AfterUpdate($Package) {
-	Import-Module ..\..\scripts\au_extensions.psm1
-	Invoke-VirusTotalScan $Package
+    Import-Module ..\..\scripts\au_extensions.psm1
+    Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $indexPage = Invoke-WebRequest -Uri "$baseUrl/" -UseBasicParsing
 
-    $url = $download_page.links | Where-Object href -match '.exe$' | Where-Object href -notmatch 'BETA' | Select-Object -First 1 -expand href
+    # Get stable version folders only (X.Y.Z pattern, no BETA/alpha suffix in folder name)
+    $versions = $indexPage.links |
+        Select-Object -ExpandProperty href |
+        Where-Object { $_ -match '^\d+\.\d+\.\d+/$' } |
+        ForEach-Object { $_.TrimEnd('/') } |
+        Sort-Object { [version]$_ } -Descending
 
-    $version = $url.Split('/')[-1].split('-') | Where-Object {$_ -NotMatch 'Win'} | Where-Object {$_ -match '\.'} | Where-Object {$_ -notmatch 'exe'}
+    foreach ($ver in $versions) {
+        $versionPage = Invoke-WebRequest -Uri "$baseUrl/$ver/" -UseBasicParsing
 
-    @{
-        URL32 = $url
-        Version = $version
+        # Find a stable .exe: exclude Exp, BETA, alpha, patched variants
+        $exeHref = $versionPage.links |
+            Select-Object -ExpandProperty href |
+            Where-Object { $_ -match '\.exe$' } |
+            Where-Object { $_ -notmatch 'Exp' } |
+            Where-Object { $_ -notmatch 'BETA' } |
+            Where-Object { $_ -notmatch 'alpha' } |
+            Where-Object { $_ -notmatch 'patched' } |
+            Select-Object -First 1
+
+        if ($exeHref) {
+            $url = if ($exeHref -match '^https?://') { $exeHref } else { "$baseUrl/$ver/$exeHref" }
+            return @{
+                URL32   = $url
+                Version = $ver
+            }
+        }
     }
+
+    throw "Could not find a stable Windows installer in $baseUrl"
 }
 
 update -ChecksumFor 32 -NoCheckChocoVersion
