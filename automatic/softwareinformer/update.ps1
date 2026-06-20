@@ -24,8 +24,21 @@ function global:au_GetLatest {
 	$url32    = "https://files.informer.com/siinst.exe"
 	$tempFile = Join-Path $env:TEMP "siinst_version_check.exe"
 	try {
-		Invoke-WebRequest -Uri $url32 -OutFile $tempFile -UseBasicParsing
-		$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion.Trim()
+		$response = Invoke-WebRequest -Uri $url32 -OutFile $tempFile -UseBasicParsing -PassThru
+		if ($response.StatusCode -ne 200) {
+			throw "Download failed with HTTP status $($response.StatusCode)"
+		}
+		# Validate we got a PE binary (MZ header), not an error page
+		$header = [System.IO.File]::ReadAllBytes($tempFile) | Select-Object -First 2
+		if ($header[0] -ne 0x4D -or $header[1] -ne 0x5A) {
+			throw "Downloaded file is not a valid PE executable (got an error page?)"
+		}
+		$versionInfo = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile)
+		$fileVersion = $versionInfo.FileVersion
+		if (-not $fileVersion) {
+			throw "FileVersion is null in siinst.exe — the file may be corrupt or an error page"
+		}
+		$version = $fileVersion.Trim()
 		if (-not $version) { throw "Could not extract version from siinst.exe" }
 	} finally {
 		if (Test-Path $tempFile) { Remove-Item $tempFile -Force -ErrorAction SilentlyContinue }
