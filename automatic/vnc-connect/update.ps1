@@ -26,7 +26,8 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$page = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
+	$headers = @{ 'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' }
+	$page = (Invoke-WebRequest -Uri $releases -UseBasicParsing -Headers $headers).Content
 	$regex = 'data-file="(https://downloads\.realvnc\.com/download/file/vnc\.files/VNC-Server-[^"]+-Windows-msi\.zip)"'
 	if ($page -match $regex) {
 		$url32 = $matches[1]
