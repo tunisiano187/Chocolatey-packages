@@ -27,27 +27,33 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$webResponse = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$folderLink = $webResponse.Links | Where-Object {$_.href -match 'v[0-9].'} | Select-Object -Last 1
 
-	if (-not $folderLink) {
-		throw "Could not find version folder link"
+	# Use regex on Content (works in both Windows PS 5.1 and PS Core where .Links may be null)
+	$folderMatches = [regex]::Matches($webResponse.Content, 'href="(v(\d+)\.(\d+)/)"')
+	if (-not $folderMatches.Count) {
+		throw "Could not find version folder links on $releases"
 	}
 
-	$folder = $folderLink.href
+	# Sort numerically to get the true latest (avoids lexicographic ordering issues like v5.9 > v5.10)
+	$latestFolder = $folderMatches | Sort-Object {
+		[int]$_.Groups[2].Value * 1000 + [int]$_.Groups[3].Value
+	} | Select-Object -Last 1
+
+	$folder = $latestFolder.Groups[1].Value  # e.g., "v6.1/"
 
 	$fileResponse = Invoke-WebRequest -Uri "$releases$folder" -UseBasicParsing
-	$fileLink = $fileResponse.Links | Where-Object {$_.href -match ".msi"} | Select-Object -Last 1
 
-	if (-not $fileLink) {
-		throw "Could not find .msi file link"
+	# Match non-MPI Windows AMD64 MSI specifically
+	$fileMatches = [regex]::Matches($fileResponse.Content, 'href="(ParaView-[\d.]+-Windows-[^"]+\.msi)"')
+	if (-not $fileMatches.Count) {
+		throw "Could not find Windows MSI file link in $releases$folder"
 	}
 
-	$file = ($fileLink.href).replace('.0&','&')
+	$file = ($fileMatches | Select-Object -Last 1).Groups[1].Value
+	$version = ($file -split '-')[1]
 	$url = "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=$folder&type=binary&os=Windows&downloadFile=$file"
-	$version = $file.Split('-') | Where-Object {$_ -match '^[0-9]\.[0-9]'} | Select-Object -First 1
 
-	$Latest = @{ URL32 = $url; Version = $version }
-	return $Latest
+	return @{ URL32 = $url; Version = $version }
 }
 
 update -ChecksumFor none -NoCheckChocoVersion
