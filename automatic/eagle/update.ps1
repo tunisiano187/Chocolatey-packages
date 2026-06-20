@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $page = Invoke-WebRequest -Uri $release -UseBasicParsing
+    $page = Invoke-WebRequest -Uri $release -UseBasicParsing -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     $url64 = ($page.Links | Where-Object {$_.href -match 'Win_64bit\.exe'} | Select-Object -First 1).href
 
     if (-not $url64) {
