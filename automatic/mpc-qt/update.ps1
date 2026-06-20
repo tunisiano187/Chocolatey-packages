@@ -2,8 +2,8 @@ import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://github.com/mpc-qt/mpc-qt/releases/latest'
-$Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
-$repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
+$Owner = 'mpc-qt'
+$repo = 'mpc-qt'
 
 
 function global:au_SearchReplace {
