@@ -2,6 +2,8 @@ import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 . ..\..\scripts\Get-FileVersion.ps1
 
+$releases = 'https://sourceforge.net/projects/projectlibre/rss?path=/ProjectLibre'
+
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
@@ -18,25 +20,24 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	# SourceForge latest/download redirects to the JAR file URL which contains the version
-	$redirectUrl = Get-RedirectedUrl 'https://sourceforge.net/projects/projectlibre/files/latest/download'
-	if (-not $redirectUrl) {
-		throw "Could not follow SourceForge redirect"
+	[xml]$rss = Invoke-WebRequest -Uri $releases -UseBasicParsing | Select-Object -ExpandProperty Content
+	$item = $rss.rss.channel.item | Where-Object {
+		$_.link -match 'projectlibre-[\d.]+\.zip/download'
+	} | Select-Object -First 1
+
+	if (-not $item) {
+		throw "Could not find zip download entry in SourceForge RSS feed"
 	}
 
-	# Extract version from URL like: .../ProjectLibre/1.9.8/projectlibre-1.9.8.jar
-	$versionMatch = $redirectUrl | Select-String -Pattern '/ProjectLibre/([\d.]+)/'
-	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
-		throw "Could not extract version from redirect URL: $redirectUrl"
+	$url32 = $item.link
+	$versionMatch = [regex]::Match($url32, 'projectlibre-([\d.]+)\.zip')
+	if (-not $versionMatch.Success) {
+		throw "Could not extract version from RSS link: $url32"
 	}
-	$version = $versionMatch.Matches[0].Groups[1].Value
+	$version = $versionMatch.Groups[1].Value
 
 	# Keep the permanent SourceForge /download URL — do NOT call Get-RedirectedUrl here.
-	# Get-RedirectedUrl returns CDN mirror URLs with query params (?viasf=1, ?ts=...&use_mirror=...)
-	# that WebClient.DownloadFile treats as illegal path characters, breaking AU's checksum
-	# logic. Get-FileVersion uses Invoke-WebRequest which follows the redirect transparently.
-	$url32 = "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/projectlibre-$version.zip/download"
-
+	# Get-FileVersion uses Invoke-WebRequest which follows the redirect transparently.
 	$FileVersion = Get-FileVersion $url32
 	$Latest = @{
 		URL32          = $url32
