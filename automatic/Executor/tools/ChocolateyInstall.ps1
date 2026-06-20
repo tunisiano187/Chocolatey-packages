@@ -3,8 +3,8 @@
 $packageArgs = @{
     PackageName     = $env:ChocolateyPackageName
     FileType        = 'exe'
-    Url             = 'https://executor.dk/previousdownloads/ExecutorSetup111.exe'
-    Checksum        = '01aadd7208f7715e43d2d9399b41e297ed9127bff6a715bd8b77f158d0076a5c'
+    Url             = 'https://executor.dk/ExecutorSetup.exe'
+    Checksum        = '55bfbe301680bc8c4749080b713e2688050b2ac5742b175a92daf000a6fdc283'
     ChecksumType    = 'sha256'
     SilentArgs      = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 }
