@@ -1,6 +1,5 @@
 import-module chocolatey-AU
 
-$releases = 'https://api.github.com/repos/jitsi/jitsi-meet-electron/releases/latest'
 $Owner = 'jitsi'
 $repo = 'jitsi-meet-electron'
 
@@ -30,33 +29,32 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-  # Use -Latest to consistently get the newest non-draft non-pre-release
-  $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
+  # Use direct REST call instead of Get-GitHubRelease to avoid rate-limit failures in CI
+  $headers = @{ 'User-Agent' = 'chocolatey-au-updater/1.0' }
+  $release = Invoke-RestMethod "https://api.github.com/repos/$Owner/$repo/releases/latest" -Headers $headers
 
-  if (-not $tags) {
+  if (-not $release) {
     throw "Could not fetch GitHub releases for $Owner/$repo"
   }
 
-	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match "\.exe$"} | Select-Object -First 1
+  $url32 = $release.assets.browser_download_url | Where-Object { $_ -match '\.exe$' } | Select-Object -First 1
 
   if (-not $url32) {
     throw "Could not find .exe asset in release"
   }
 
-  # Strip leading 'v' and replace any remaining '-' separators with '.'
-  $version = $tags.tag_name -replace '^v', ''
+  # Strip leading 'v'
+  $version = $release.tag_name -replace '^v', ''
 
-  if ($tags.prerelease -match "true") {
-		$date = $tags.published_at.ToString("yyyyMMdd")
-		$version = "$version-pre$($date)"
-	}
-
-  $releaseNotesUrl = $tags.html_url
+  if ($release.prerelease) {
+    $date = $release.published_at.ToString("yyyyMMdd")
+    $version = "$version-pre$($date)"
+  }
 
   return @{
-    URL32 = $url32
-    Version = $version
-    ReleaseNotes = $releaseNotesUrl
+    URL32        = $url32
+    Version      = $version
+    ReleaseNotes = $release.html_url
   }
 }
 
