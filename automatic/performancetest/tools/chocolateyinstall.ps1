@@ -2,7 +2,7 @@
 $packageName    = 'performancetest'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www.passmark.com/downloads/PerformanceTest_Windows_x86-64.exe'
-$checksum       = 'fdf4e5556a3f93d3fea91ee386f27a4aedf27835ed76a96e7dc2a9cf36270c90'
+$checksum       = '54bb0b938a72f05b7be918420d3a3aa854c1ee0e10887142c6477cf02eaafaf0'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
