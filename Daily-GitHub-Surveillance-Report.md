@@ -1,14 +1,15 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-21 08:10:21 UTC  
+**Date**: 2026-06-22 08:34:54 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (29 total)
+### 🚀 Issues Ouverts (30 total)
 
-#### 🔴 critical (5 issues)
+#### 🔴 critical (6 issues)
+- #4097: 🚨 Surveillance Quotidienne - Critiques 2026-06-21 - https://github.com/tunisiano187/Chocolatey-packages/issues/4097 [🔴 critical]
 - #4084: 🚨 Surveillance Quotidienne - Critiques 2026-06-20 - https://github.com/tunisiano187/Chocolatey-packages/issues/4084 [🔴 critical]
 - #4082: fix(chromehistoryview): sync nuspec to v1.53 to stop 409 push failures (CHO-487) - https://github.com/tunisiano187/Chocolatey-packages/issues/4082 [🔴 critical]
 - #4081: 🚨 Surveillance Quotidienne - Critiques 2026-06-19 - https://github.com/tunisiano187/Chocolatey-packages/issues/4081 [🔴 critical]
@@ -51,14 +52,14 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 5
+- 🔴 critical: 6
 - 🟠 high: 3
 - ⚪ normal: 21
 
 ### 📈 Statistiques Globales
-- **Total issues**: 29
+- **Total issues**: 30
 - **Total PRs**: 0
-- **Critiques**: 5
+- **Critiques**: 6
 - **Hautes priorités**: 3
 
 ### 🚀 Actions Recommandées
@@ -70,4 +71,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-21 08:10:21 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-22 08:34:54 UTC*
