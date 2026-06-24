@@ -1,14 +1,15 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-23 07:48:12 UTC  
+**Date**: 2026-06-24 07:47:02 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (31 total)
+### 🚀 Issues Ouverts (33 total)
 
-#### 🔴 critical (7 issues)
+#### 🔴 critical (8 issues)
+- #4099: 🚨 Surveillance Quotidienne - Critiques 2026-06-23 - https://github.com/tunisiano187/Chocolatey-packages/issues/4099 [🔴 critical]
 - #4098: 🚨 Surveillance Quotidienne - Critiques 2026-06-22 - https://github.com/tunisiano187/Chocolatey-packages/issues/4098 [🔴 critical]
 - #4097: 🚨 Surveillance Quotidienne - Critiques 2026-06-21 - https://github.com/tunisiano187/Chocolatey-packages/issues/4097 [🔴 critical]
 - #4084: 🚨 Surveillance Quotidienne - Critiques 2026-06-20 - https://github.com/tunisiano187/Chocolatey-packages/issues/4084 [🔴 critical]
@@ -22,7 +23,8 @@
 - #4089: fix(install4j): replace choco search with upstream website query - https://github.com/tunisiano187/Chocolatey-packages/issues/4089 [🟠 high]
 - #4088: fix(Executor): fix regex to select current release instead of previousdownloads link - https://github.com/tunisiano187/Chocolatey-packages/issues/4088 [🟠 high]
 
-#### ⚪ normal (21 issues)
+#### ⚪ normal (22 issues)
+- #4100: chore(deps): update actions/setup-python action to v6.3.0 - https://github.com/tunisiano187/Chocolatey-packages/issues/4100 [⚪ normal]
 - #4096: fix(softwareinformer): add null check and PE header validation (CHO-502) - https://github.com/tunisiano187/Chocolatey-packages/issues/4096 [⚪ normal]
 - #4095: fix(vnc-connect): add browser User-Agent header to bypass 403 (CHO-504) - https://github.com/tunisiano187/Chocolatey-packages/issues/4095 [⚪ normal]
 - #4094: fix(projectlibre.portable): replace Get-RedirectedUrl with SourceForge RSS feed (CHO-501) - https://github.com/tunisiano187/Chocolatey-packages/issues/4094 [⚪ normal]
@@ -53,14 +55,14 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 7
+- 🔴 critical: 8
 - 🟠 high: 3
-- ⚪ normal: 21
+- ⚪ normal: 22
 
 ### 📈 Statistiques Globales
-- **Total issues**: 31
+- **Total issues**: 33
 - **Total PRs**: 0
-- **Critiques**: 7
+- **Critiques**: 8
 - **Hautes priorités**: 3
 
 ### 🚀 Actions Recommandées
@@ -72,4 +74,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-23 07:48:12 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-24 07:47:02 UTC*
