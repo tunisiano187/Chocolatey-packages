@@ -24,8 +24,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$url32 = $downloadPage.links | where-object href -match 'E.+\.exe' | select-object -expand href | foreach-object { $base + '/' + $_ } | Select-Object -First 1
+	$downloadPage = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+	$url32 = $downloadPage.links | where-object { $_.href -match '^ExecutorSetup\.exe$' } | select-object -expand href | foreach-object { "$base/$_" } | Select-Object -First 1
 
 	if (-not $url32) {
 		throw "Could not find EXE download link"
