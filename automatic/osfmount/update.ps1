@@ -25,15 +25,12 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$releases='https://www.osforensics.com/tools/mount-disk-images.html'
-	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing -Headers @{'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
-	$regexPattern = 'OSFMount V(\d+(\.\d+)*)'
-	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
-	$version = $versionMatch.Matches[0].Groups[1].Value
-	$url32 = "https://www.osforensics.com/downloads/osfmount.exe"
+	$url32 = 'https://www.osforensics.com/downloads/osfmount.exe'
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32
+	$version = $FileVersion.Version
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	return @{ URL32 = $url32; Version = $version }
 }
 
 update -NoCheckUrl -ChecksumFor none
