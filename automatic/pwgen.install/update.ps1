@@ -20,34 +20,18 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "$env:TEMP\pwgen.install.xml"
-	Invoke-WebRequest -Uri $releases -OutFile $File
-	$xml = Get-Content $File
+	[xml]$xml = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
+	$item = $xml.rss.channel.item | Where-Object { $_.link -match '(?i)Setup\.exe/download' -and $_.link -notmatch '\.sig/' } | Select-Object -First 1
+	$url32 = $item.link
+	$version = [regex]::Match($url32, 'Password%20Tech/([^/]+)/').Groups[1].Value
 
-	# RSS is newest-first; grab the first Setup.exe entry
-	$links = $xml | Where-Object { $_ -match 'Setup\.exe/download' } | Where-Object { $_ -match 'link' } | Select-Object -First 1
-	$url32 = ($links.Split('<|>') | Where-Object { $_ -match '/download' })[0]
-
-	if (-not $url32) {
-		throw "Could not find Setup.exe download link in RSS feed"
-	}
-
-	$version = (Get-Version $url32).Version
-
-	# Use Get-FileVersion to compute checksum without bundling the installer; Get-FileVersion
-	# uses the second-to-last URL segment as filename, which is the real exe name, avoiding
-	# the /download suffix path error that -ChecksumFor 32 triggers.
 	$fileInfo = Get-FileVersion $url32
-	$checksum = $fileInfo.Checksum
-	$checksumType = $fileInfo.ChecksumType
-
-	$Latest = @{
+	@{
 		URL32          = $url32
 		Version        = $version
-		Checksum32     = $checksum
-		ChecksumType32 = $checksumType
+		Checksum32     = $fileInfo.Checksum
+		ChecksumType32 = $fileInfo.ChecksumType
 	}
-	return $Latest
 }
 
 update -ChecksumFor none
