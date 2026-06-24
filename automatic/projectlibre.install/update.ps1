@@ -19,7 +19,7 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	# SourceForge latest/download redirects to the jar file URL which contains the version
-	$redirectUrl = Get-RedirectedUrl 'http://sourceforge.net/projects/projectlibre/files/latest/download'
+	$redirectUrl = Get-RedirectedUrl 'https://sourceforge.net'/projects/projectlibre/files/latest/download'
 	if (-not $redirectUrl) {
 		throw "Could not follow SourceForge redirect"
 	}
@@ -31,7 +31,7 @@ function global:au_GetLatest {
 	}
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
-	# Keep the permanent SourceForge /download URL — do NOT call Get-RedirectedUrl here.
+	# Keep the permanent SourceForge /download URL -- do NOT call Get-RedirectedUrl here.
 	# Get-RedirectedUrl returns CDN mirror URLs with query params (?ts=...&use_mirror=...)
 	# that WebClient.DownloadFile treats as illegal path characters, breaking AU's checksum
 	# logic. Invoke-WebRequest (used by Get-FileVersion) follows the redirect transparently.
