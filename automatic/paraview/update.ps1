@@ -28,7 +28,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	$webResponse = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-	# Use regex on Content (works in both Windows PS 5.1 and PS Core where .Links may be null)
+	# Use regex on Content (works in both Windows PS 5.1 and PS Core Where-Object .Links may be null)
 	$folderMatches = [regex]::Matches($webResponse.Content, 'href="(v(\d+)\.(\d+)/)"')
 	if (-not $folderMatches.Count) {
 		throw "Could not find version folder links on $releases"
