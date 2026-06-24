@@ -2,6 +2,8 @@ $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
+$releases = 'https://www.ej-technologies.com/download/install4j/files'
+
 function global:au_SearchReplace {
 	@{
 		"$($Latest.PackageName).nuspec" = @{
@@ -11,18 +13,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$choc = choco search install4j.install -s https://community.chocolatey.org/api/v2 | Where-Object {$_ -match "install4j.install"}
+	$pageContent = Invoke-WebRequest -Uri $releases
+	$regexPattern = 'version:\s*(\d+(\.\d+)*)'
+	$versionMatch = $pageContent.Content | Select-String -Pattern $regexPattern -AllMatches
 
-	if (-not $choc) {
-		throw "Could not find install4j.install package in Chocolatey repo"
-	}
-
-	$parts = $choc.Split(" ")
-	if ($parts.Count -lt 2) {
-		throw "Could not parse version from choco search result"
-	}
-
-	$version = $parts[1]
+	$version = $versionMatch.Matches[0].Groups[1].Value
 	Update-Metadata -key "copyright" -value "(c) $(Get-Date -Format "yyyy") ej-technologies GmbH"
 
 	$Latest = @{ Version = $version }
