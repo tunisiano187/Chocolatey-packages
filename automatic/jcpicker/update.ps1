@@ -24,21 +24,29 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
+	# Use the canonical URL with trailing slash to avoid a 301 redirect that can cause
+	# Invoke-WebRequest to return empty content on some PowerShell/Windows configurations.
 	$baseUrl = 'https://annystudio.com/software/colorpicker'
-	$page = Invoke-WebRequest -Uri $baseUrl -UseBasicParsing
+	$page = Invoke-WebRequest -Uri "$baseUrl/" -UseBasicParsing
 
-	# Version is in "Latest version: <b>X.Y</b>"  -  not inside the link outerHTML
-	$versionMatch = $page.Content | Select-String -Pattern 'Latest version:\s*<b>(\d+\.\d+)</b>' -AllMatches
-	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
+	# Use [Regex]::Match directly (more reliable than Select-String via pipeline on PS5/Windows).
+	# Version is in "Latest version: <b>X.Y</b>" on the download page.
+	$match = [Regex]::Match($page.Content, 'Latest version:\s*<b>([\d.]+)</b>')
+	if (-not $match.Success) {
 		throw "Could not extract version from annystudio.com page. Page structure may have changed."
 	}
-	$version = $versionMatch.Matches[0].Groups[1].Value
+	$version = $match.Groups[1].Value.Trim()
 
-	# zip URL is /software/colorpicker/jcpicker.zip, not the root-level path used before
+	# Normalize to 3-part version (e.g. "6.2" -> "6.2.0") to match nuspec convention
+	# and prevent AU string-compare from seeing a spurious version change.
+	$parts = $version.Split('.')
+	while ($parts.Count -lt 3) { $parts += '0' }
+	$version = ($parts[0..2]) -join '.'
+
+	# zip URL is /software/colorpicker/jcpicker.zip
 	$url32 = "$baseUrl/jcpicker.zip"
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+	return @{ URL32 = $url32; Version = $version }
 }
 
  update -ChecksumFor none
