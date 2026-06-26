@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>font-awesome-font</id>
-    <version>7.2.0</version>
+    <version>7.3.0</version>
     <title>Font Awesome (Font) (Install)</title>
     <authors>Dave Gandy</authors>
     <owners>tunisiano</owners>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Font Awesome (Font) (Install)
 
-Font Awesome gives you scalable vector icons that can instantly be customized  -  size, color, drop shadow, and anything that can be done with the power of CSS.
+Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
 
 ### One Font, 675 Icons
 
