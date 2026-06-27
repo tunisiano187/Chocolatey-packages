@@ -1,16 +1,14 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-06-26 07:48:19 UTC  
+**Date**: 2026-06-27 07:33:47 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (3 total)
+### 🚀 Issues Ouverts (1 total)
 
-#### ⚪ normal (3 issues)
-- #4100: chore(deps): update actions/setup-python action to v6.3.0 - https://github.com/tunisiano187/Chocolatey-packages/issues/4100 [⚪ normal]
-- #4080: chore(deps): update actions/checkout action to v7 - https://github.com/tunisiano187/Chocolatey-packages/issues/4080 [⚪ normal]
+#### ⚪ normal (1 issues)
 - #3784: Dependency Dashboard - https://github.com/tunisiano187/Chocolatey-packages/issues/3784 [⚪ normal]
 
 ### 🔄 Pull Requests en Attente (0 total)
@@ -21,10 +19,10 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- ⚪ normal: 3
+- ⚪ normal: 1
 
 ### 📈 Statistiques Globales
-- **Total issues**: 3
+- **Total issues**: 1
 - **Total PRs**: 0
 - **Critiques**: 0
 - **Hautes priorités**: 0
@@ -38,4 +36,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-06-26 07:48:19 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-06-27 07:33:47 UTC*
