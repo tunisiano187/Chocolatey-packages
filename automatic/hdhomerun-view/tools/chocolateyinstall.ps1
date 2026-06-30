@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url            = 'https://download.silicondust.com/hdhomerun/hdhomerun_windows_20260326.exe'
-$checksum       = '261A2D7849034B7C1EAB253DF3516F6DF120E1A9D56D16F8645D28D28298264F'
+$url            = 'https://download.silicondust.com/hdhomerun/hdhomerun_windows_20260629.exe'
+$checksum       = 'C32872053782BBAD833E51ED0FD08EF6F8F1D5483A92F51657C2BFD655FAAE90'
 $checksumType   = 'sha256'
 
 $packageArgs = @{

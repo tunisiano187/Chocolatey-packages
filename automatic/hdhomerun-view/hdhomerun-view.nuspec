@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>hdhomerun-view</id>
-    <version>2026.03.26</version>
+    <version>2026.06.29</version>
     <title>HDHomeRun View (Install)</title>
     <authors>SiliconDust</authors>
     <owners>tunisiano</owners>
