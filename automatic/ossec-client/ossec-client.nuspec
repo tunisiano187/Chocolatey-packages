@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ossec-client</id>
-    <version>3.8.0</version>
+    <version>4.1.0</version>
     <title>OSSEC Agent</title>
     <authors>Trend Micro</authors>
     <owners>tunisiano</owners>
