@@ -1,7 +1,7 @@
 ﻿# generated vars
 $packageName = $env:ChocolateyPackageName
-$url = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/3.6.0/PwTech-3.6.0-Setup.exe/download'
-$checksum = '245a5f60a20cb5fbd64c2f02f4b023d966e2d288586445ec6e20e2932a93e806'
+$url = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/3.5.7/PwTech-3.5.7-Setup.exe/download'
+$checksum = 'e9d449d9eea32d3d64d274bd5c1ff8940362bb3473ddb11c6a48487d946653e0'
 
 # static vars
 $checksumType = 'sha256'

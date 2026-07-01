@@ -22,6 +22,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
 	[xml]$xml = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
 	$item = $xml.rss.channel.item | Where-Object { $_.link -match '(?i)Setup\.exe/download' -and $_.link -notmatch '\.sig/' } | Select-Object -First 1
+	if ($null -eq $item) { throw "Could not find Setup.exe in SourceForge RSS feed for Password Tech" }
 	$url32 = $item.link
 	$version = [regex]::Match($url32, 'Password%20Tech/([^/]+)/').Groups[1].Value
 
