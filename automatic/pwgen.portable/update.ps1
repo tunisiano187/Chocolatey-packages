@@ -27,6 +27,9 @@ function global:au_GetLatest {
 	$item = $xml.rss.channel.item | Where-Object { $_.link -match 'portable\.zip/download' -and $_.link -notmatch '\.sig/' } | Select-Object -First 1
 	if ($null -eq $item) { throw "Could not find portable.zip in SourceForge RSS feed for Password Tech" }
 	$url = $item.link
+	# Convert SourceForge /download redirect to direct CDN URL — redirect URLs return 404
+	# from AppVeyor's shared IP pool, breaking AU's URL validation step.
+	$url = $url -replace 'https://sourceforge\.net/projects/([^/]+)/files/', 'https://downloads.sourceforge.net/project/$1/' -replace '/download$', ''
 	$version = [regex]::Match($url, 'Password%20Tech/([^/]+)/').Groups[1].Value
 
 	$fileInfo = Get-FileVersion $url
