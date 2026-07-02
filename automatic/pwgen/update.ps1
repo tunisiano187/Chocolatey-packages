@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-$releases = 'https://sourceforge.net/projects/pwgen-win/files/Password%20Tech/'
+$releases = 'https://sourceforge.net/projects/pwgen-win/rss?path=/Password%20Tech'
 
 function global:au_SearchReplace {
 	@{
@@ -12,11 +12,12 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-	$choc=$(choco search pwgen.install | Where-Object {$_ -match "pwgen.install"})
-	$version = $choc.Split(" ")[1]
+	[xml]$xml = (Invoke-WebRequest -Uri $releases -UseBasicParsing).Content
+	$item = $xml.rss.channel.item | Where-Object { $_.link -match '(?i)Setup\.exe/download' -and $_.link -notmatch '\.sig/' } | Select-Object -First 1
+	if ($null -eq $item) { throw "Could not find Setup.exe in SourceForge RSS feed for Password Tech" }
+	$version = [regex]::Match($item.link, 'Password%20Tech/([^/]+)/').Groups[1].Value
 
-	$Latest = @{ Version = $version }
-	return $Latest
+	@{ Version = $version }
 }
 
 update -ChecksumFor none -NoCheckUrl
