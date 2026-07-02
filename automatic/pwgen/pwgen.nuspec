@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>pwgen</id>
-    <version>3.5.7</version>
+    <version>3.6.0</version>
     <title>PWGen</title>
     <authors>Christian Thoeing</authors>
     <owners>tunisiano</owners>
@@ -12,9 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## pwgen
 PWGen is a professional password generator capable of creating large amounts of cryptographically-secure passwords
-or passphrases consisting of words from a word list. It uses a "random pool" technique to generate random data
+or passphrases consisting of words from a word list. It uses a “random pool” technique to generate random data
 based on user inputs (keystrokes, mouse handling) and volatile system parameters. PWGen provides lots of options
-to customize passwords to the users' various needs. Additionally, it offers strong text encryption and the creation
+to customize passwords to the users’ various needs. Additionally, it offers strong text encryption and the creation
 of random data files (e.g., key files).
 
 [Screenshots](https://sourceforge.net/p/pwgen-win/wiki/)
@@ -39,7 +39,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/pwgen</packageSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/pwgen-win/bugs/</bugTrackerUrl>
     <dependencies>
-      <dependency id="pwgen.install" version="[3.5.7]" />
+      <dependency id="pwgen.install" version="[3.6.0]" />
     </dependencies>
   </metadata>
   <files>
