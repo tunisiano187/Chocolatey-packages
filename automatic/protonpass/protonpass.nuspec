@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>protonpass</id>
-    <version>1.37.0</version>
+    <version>1.38.0</version>
     <title>Proton Pass</title>
     <authors>Proton AG</authors>
     <owners>tunisiano</owners>
@@ -17,7 +17,7 @@ Proton Pass is a cloud based password manager solution with end-to-end encryptio
 
 It also generates unique email aliases, preventing your true email address from being used to track you, exposed in data breaches, or targeted for spam.
 
-The Proton Pass desktop app for Windows, includes offline access. To activate offline mode, Go to settings > Enable offline mode, you'll be asked to enter your password.
+The Proton Pass desktop app for Windows, includes offline access. To activate offline mode, Go to settings > Enable offline mode, you’ll be asked to enter your password.
 
 #### [choco://protonpass](choco://protonpass)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
