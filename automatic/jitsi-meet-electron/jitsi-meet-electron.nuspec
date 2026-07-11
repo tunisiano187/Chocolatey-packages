@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>jitsi-meet-electron</id>
-    <version>2026.6.0</version>
+    <version>2026.7.0</version>
     <title>Jitsi Meet Electron</title>
     <authors>Jitsi Meet Electron community</authors>
     <owners>tunisiano</owners>
@@ -35,7 +35,7 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 Support the package maintainer here [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>Desktop application for Jitsi Meet built with Electron.</summary>
-    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2026.6.0</releaseNotes>
+    <releaseNotes>https://github.com/jitsi/jitsi-meet-electron/releases/tag/v2026.7.0</releaseNotes>
     <copyright></copyright>
     <tags>jitsi webinar webcam meeting electron</tags>
     <projectSourceUrl>https://github.com/jitsi/jitsi-meet-electron</projectSourceUrl>
