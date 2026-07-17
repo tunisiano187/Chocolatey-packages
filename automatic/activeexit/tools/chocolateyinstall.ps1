@@ -1,9 +1,9 @@
 ﻿$packageName   = 'activeexit'
 $installerType = 'EXE'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url           = 'https://www.winabilitysoftware.com/files/ActiveExitLite-24.5.0-setup.exe'
+$url           = 'https://www.winabilitysoftware.com/files/ActiveExitLite-26.7.0-setup.exe'
 $checksumType  = 'sha256'
-$checksum      = '4D6FFF49D6FEAA1159A5735337440DF8F2E03A925D9BC38ABC767734018D85D0'
+$checksum      = 'BEDE2AF9580101C8BFF79A6FC1EBE4129C3F5797001FAB9AEC911A4849E46865'
 $silentArgs    = ''
 $validExitCodes= @(0)
 $ahkExe        = 'AutoHotKey'

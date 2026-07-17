@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>activeexit</id>
-    <version>24.5.0</version>
+    <version>26.7.0</version>
     <title>ActiveExit (Install)</title>
     <authors>WinAbility Software Corp.</authors>
     <owners>tunisiano</owners>
@@ -14,7 +14,7 @@
 
 ![Screenshot of ActiveExit](http://www.winability.com/screenshots/active-exit.png)
 
-ActiveExit(TM) is a system utility that can automatically log off users from their accounts after a period of inactivity. If you are a system administrator and users of your network often forget to log off before leaving, ActiveExit can save you quite a bit of your nerve cells. Even if the user has locked the computer, ActiveExit can log the user off after the idle period you specify, without your intervention.
+ActiveExit™ is a system utility that can automatically log off users from their accounts after a period of inactivity. If you are a system administrator and users of your network often forget to log off before leaving, ActiveExit can save you quite a bit of your nerve cells. Even if the user has locked the computer, ActiveExit can log the user off after the idle period you specify, without your intervention.
 
 If you manage a large network of computers using Active Directory and Group Policy, you can use ActiveExit to edit a Group Policy Object (GPO) to manage all network computers from one central location on the server.
 
