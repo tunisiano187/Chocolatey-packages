@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>install4j</id>
-    <version>13.0.2</version>
+    <version>0.0</version>
     <title>install4j</title>
     <authors>Dr Ingo Kegel</authors>
     <owners>tunisiano</owners>
