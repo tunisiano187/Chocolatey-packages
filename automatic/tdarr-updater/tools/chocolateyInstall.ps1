@@ -1,16 +1,16 @@
-﻿$ErrorActionPreference = 'Stop'
-$packageName      = 'tdarr-updater'
-$toolsDir         = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$ErrorActionPreference = 'Stop'
+$packageName = 'tdarr-updater'
+$toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-  packageName    = $packageName
-  Destination    = "$env:ProgramFiles\Tdarr"
-  FileFullPath   = "$toolsDir\Tdarr_Updater.zip"
+  packageName   = $packageName
+  unzipLocation = "$env:ProgramFiles\Tdarr"
+  url           = 'https://storage.tdarr.io/versions/2.81.01/win32_x64/Tdarr_Updater.zip'
+  checksum      = '0BE065C21C124AFA56CC265C5F132243140C1424F58935F283BE479C6FCC472E'
+  checksumType  = 'sha256'
 }
 
-Get-ChocolateyUnzip @packageArgs
-
-Remove-Item "$toolsDir\*.zip" -EA SilentlyContinue | Out-Null
+Install-ChocolateyZipPackage @packageArgs
 
 Get-ChildItem -Path $env:ProgramFiles\Tdarr -Recurse | Where-Object {
   $_.Extension -eq '.exe'
@@ -24,4 +24,3 @@ Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\Tdarr_Server.l
 Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Tdarr\Tdarr_Server.lnk" -targetPath "$env:ProgramFiles\Tdarr\Tdarr_Server\Tdarr_Server.exe" -WorkingDirectory "$env:ProgramFiles\Tdarr\Tdarr_Server" -RunAsAdmin
 Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\Tdarr_Node.lnk" -targetPath "$env:ProgramFiles\Tdarr\Tdarr_Node\Tdarr_Node.exe" -WorkingDirectory "$env:ProgramFiles\Tdarr\Tdarr_Node" -RunAsAdmin
 Install-ChocolateyShortcut -shortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Tdarr\Tdarr_Node.lnk" -targetPath "$env:ProgramFiles\Tdarr\Tdarr_Node\Tdarr_Node.exe" -WorkingDirectory "$env:ProgramFiles\Tdarr\Tdarr_Node" -RunAsAdmin
-
