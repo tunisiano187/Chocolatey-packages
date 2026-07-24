@@ -1,44 +1,28 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
-$curDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$toolsDir = Join-Path $curDir "tools"
 $releases = 'https://sourceforge.net/projects/tigervnc/rss?path=/stable'
-$options  =
-@{
-  Headers = @{
-    UserAgent = 'Wget';
-  }
-}
 
 function global:au_SearchReplace {
 	@{
-		"legal\VERIFICATION.txt"      = @{
-			"(?i)(link32:).*"        			= "`${1} $($Latest.URL32)"
-			"(?i)(checksum32:).*" 				= "`${1} $($Latest.Checksum32)"
-			"(?i)(checksumtype:).*" 			= "`${1} $($Latest.ChecksumType32)"
-			"(?i)(link64:).*"        			= "`${1} $($Latest.URL64)"
-			"(?i)(checksum64:).*" 				= "`${1} $($Latest.Checksum64)"
+		'tools/chocolateyInstall.ps1' = @{
+			"(url\s*=\s*)'.*'"             = "`$1'$($Latest.URL32)'"
+			"(url64bit\s*=\s*)'.*'"        = "`$1'$($Latest.URL64)'"
+			"(checksum\s*=\s*)'.*'"        = "`$1'$($Latest.Checksum32)'"
+			"(checksumType\s*=\s*)'.*'"    = "`$1'$($Latest.ChecksumType32)'"
+			"(checksum64\s*=\s*)'.*'"      = "`$1'$($Latest.Checksum64)'"
+			"(checksumType64\s*=\s*)'.*'"  = "`$1'$($Latest.ChecksumType64)'"
+		}
+		"legal\VERIFICATION.txt" = @{
+			"(?i)(link32:).*"       = "`${1} $($Latest.URL32)"
+			"(?i)(checksum32:).*"   = "`${1} $($Latest.Checksum32)"
+			"(?i)(checksumtype:).*" = "`${1} $($Latest.ChecksumType32)"
+			"(?i)(link64:).*"       = "`${1} $($Latest.URL64)"
+			"(?i)(checksum64:).*"   = "`${1} $($Latest.Checksum64)"
 		}
 		"$($Latest.PackageName).nuspec" = @{
-			"(\<releaseNotes\>).*?(\</releaseNotes\>)"		= "`${1}https://github.com/TigerVNC/tigervnc/releases/tag/$($Latest.Version)`$2"
+			"(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}https://github.com/TigerVNC/tigervnc/releases/tag/$($Latest.Version)`$2"
 		}
 	}
-}
-
-function global:au_BeforeUpdate($Package) {
-	if (-not (Test-Path $toolsDir)) {
-		New-Item -ItemType Directory -Path $toolsDir | Out-Null
-	}
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion   = Get-FileVersion $Latest.URL32 -keep
-	Move-Item -Path $FileVersion.TempFile -Destination (Join-Path $toolsDir 'tigervnc.exe') -Force
-	$FileVersion64 = Get-FileVersion $Latest.URL64 -keep
-	Move-Item -Path $FileVersion64.TempFile -Destination (Join-Path $toolsDir 'tigervnc64.exe') -Force
-
-	$Latest.Checksum32     = $FileVersion.Checksum
-	$Latest.ChecksumType32 = $FileVersion.ChecksumType
-	$Latest.Checksum64     = $FileVersion64.Checksum
-	$Latest.ChecksumType64 = $FileVersion64.ChecksumType
 }
 
 function global:au_AfterUpdate($Package) {
@@ -83,12 +67,18 @@ function global:au_GetLatest {
 		throw "Could not extract version from URL: $url64"
 	}
 
+	. ..\..\scripts\Get-FileVersion.ps1
+	$fv32 = Get-FileVersion $url32
+	$fv64 = Get-FileVersion $url64
+
 	return @{
-		URL32      = $url32
-		URL64      = $url64
-		Version    = $version
-		FileName32 = 'tigervnc.exe'
-		FileName64 = 'tigervnc64.exe'
+		URL32          = $url32
+		URL64          = $url64
+		Version        = $version
+		Checksum32     = $fv32.Checksum
+		ChecksumType32 = $fv32.ChecksumType
+		Checksum64     = $fv64.Checksum
+		ChecksumType64 = $fv64.ChecksumType
 	}
 }
 
