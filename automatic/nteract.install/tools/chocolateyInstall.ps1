@@ -19,7 +19,7 @@ $packageArgs = @{
   checksumType  = $checksumType
 
   silentArgs   = '/S' # NSIS
-  validExitCodes= @(0)
+  validExitCodes= @(0, 2)
 }
 
 Install-ChocolateyPackage @packageArgs
