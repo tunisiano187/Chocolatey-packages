@@ -16,7 +16,7 @@ jobs:
         shell: powershell
 
     steps:
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
 
       - name: Download embedded binaries (binary-embedded packages)
         run: |
