@@ -13,7 +13,7 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-$fileLocation = Get-Item "$toolsDir\mpc-qt\*-qt.exe"
+$fileLocation = Get-ChildItem "$toolsDir\mpc-qt" -Recurse -Filter "*-qt.exe" | Select-Object -First 1 -ExpandProperty FullName
 $shortcutName = 'MPC-QT.lnk'
 
 Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\$shortcutName" -targetPath "$fileLocation" -WorkingDirectory "$toolsDir\mpc-qt"
