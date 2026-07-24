@@ -12,8 +12,6 @@ Get-ChocolateyUnzip @packageArgs
 
 Remove-Item "$toolsDir\*.zip" -EA SilentlyContinue | Out-Null
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "$env:ProgramFiles\Tdarr\Tdarr_Updater.exe"
-
 Get-ChildItem -Path $env:ProgramFiles\Tdarr -Recurse | Where-Object {
   $_.Extension -eq '.exe'
 } | ForEach-Object {
