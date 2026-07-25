@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName = 'tdarr-updater'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
