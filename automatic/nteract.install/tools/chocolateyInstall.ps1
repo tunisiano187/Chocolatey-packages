@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $packageName  = $env:ChocolateyPackageName
 $url          = 'https://github.com/nteract/nteract/releases/download/v2.6.2-stable.202606300322/nteract-stable-windows-x64.exe'
@@ -19,7 +19,7 @@ $packageArgs = @{
   checksumType  = $checksumType
 
   silentArgs   = '/S' # NSIS
-  validExitCodes= @(0, 2)
+  validExitCodes= @(0, 1, 2)
 }
 
 Install-ChocolateyPackage @packageArgs
