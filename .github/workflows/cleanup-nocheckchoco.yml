@@ -27,7 +27,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          pr_count=0
           for update_file in automatic/*/update.ps1; do
+            if [ "$pr_count" -ge 10 ]; then
+              echo "Reached limit of 10 PRs for this run, stopping"
+              break
+            fi
+
             # Skip if no -NoCheckChocoVersion flag
             if ! grep -q '\-NoCheckChocoVersion' "$update_file"; then
               continue
@@ -76,4 +82,5 @@ jobs:
               --head "$branch"
 
             git checkout master
+            pr_count=$((pr_count + 1))
           done
