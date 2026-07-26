@@ -33,4 +33,4 @@ function global:au_GetLatest {
 	return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
