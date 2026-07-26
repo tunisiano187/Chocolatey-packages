@@ -106,10 +106,11 @@ At the start of every session, automatically perform the following routine:
 
 1. **Check open GitHub issues** on `tunisiano187/Chocolatey-packages` (exclude the Dependency Dashboard, issue #3784).
    - For each actionable issue found: investigate, implement a fix, and open a PR. Never push directly to master.
-2. **If no actionable issues exist**: check the most recent CI workflow run for failures (GitHub Actions).
+2. **Check AppVeyor CI** at https://ci.appveyor.com/project/tunisiano187/chocolatey-packages — fetch the page, identify failing packages from the most recent run, classify each failure (transient vs. code bug), and open a PR for each non-transient fix. Apply the same rules as for GitHub Actions failures.
+3. **If no actionable issues exist**: check the most recent CI workflow run for failures (GitHub Actions).
    - For each CI failure found: diagnose the root cause, fix it, and open a PR.
-3. **Always use PRs** — never commit fixes directly to master.
-4. **Save updates to this task**: if the user provides a remark, correction, or addition to this daily task definition during a session, append it to this section in CLAUDE.md and commit it.
+4. **Always use PRs** — never commit fixes directly to master.
+5. **Save updates to this task**: if the user provides a remark, correction, or addition to this daily task definition during a session, append it to this section in CLAUDE.md and commit it.
 
 ### Task history / amendments
 <!-- Append user amendments below this line, with date -->
@@ -119,3 +120,4 @@ At the start of every session, automatically perform the following routine:
 - 2026-07-24: Setting nuspec version to `0.0` and adding `-NoCheckChocoVersion` to `update.ps1` must ONLY be done for packages where an actual code fix was made (e.g. wrong exit codes, broken install logic). Do NOT apply this treatment to packages that failed due to transient infrastructure errors (503), stale checksums on rolling URLs, or missing embedded files — AU handles those automatically on the next run.
 - 2026-07-24: After AU successfully re-submits a fixed package and it passes validation on chocolatey.org, open a PR to remove `-NoCheckChocoVersion` from `update.ps1` (it is a one-time re-push flag, not a permanent setting).
 - 2026-07-26: At the start of each session, scan packages that have `-NoCheckChocoVersion` in their `update.ps1`. If a package's nuspec version is no longer `0.0` (i.e., AU has already successfully updated and pushed it), open a PR to remove `-NoCheckChocoVersion` — it has served its purpose.
+- 2026-07-26: Check AppVeyor CI (https://ci.appveyor.com/project/tunisiano187/chocolatey-packages) once per day as part of the daily routine (added as step 2 above).
