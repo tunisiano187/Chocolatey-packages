@@ -3,6 +3,14 @@ import-module chocolatey-AU
 
 function global:au_SearchReplace {
 	@{
+		"tools/chocolateyInstall.ps1" = @{
+			"(?i)(url\s*=\s*')[^']*"             = "`${1}$($Latest.URL32)"
+			"(?i)(checksum\s*=\s*')[^']*"        = "`${1}$($Latest.Checksum32)"
+			"(?i)(checksumType\s*=\s*')[^']*"    = "`${1}$($Latest.ChecksumType32)"
+			"(?i)(url64bit\s*=\s*')[^']*"        = "`${1}$($Latest.URL64)"
+			"(?i)(checksum64\s*=\s*')[^']*"      = "`${1}$($Latest.Checksum64)"
+			"(?i)(checksumType64\s*=\s*')[^']*"  = "`${1}$($Latest.ChecksumType64)"
+		}
 		"legal\VERIFICATION.txt"      = @{
 			"(?i)(x86:).*"        				= "`${1} $($Latest.URL32)"
 			"(?i)(checksum:).*" 				= "`${1} $($Latest.Checksum32)"
