@@ -27,11 +27,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          existing_count=$(gh pr list --search 'head:auto/remove-nocheckchoco-' --state open --json number -q 'length' 2>/dev/null || echo 0)
-          echo "Currently $existing_count open cleanup PRs"
+          existing_count=$(gh pr list --state open --json number -q 'length' 2>/dev/null || echo 0)
+          echo "Currently $existing_count open PRs total"
           slots=$((10 - existing_count))
           if [ "$slots" -le 0 ]; then
-            echo "Already at or above 10 open cleanup PRs, skipping"
+            echo "Already at or above 10 open PRs, skipping"
             exit 0
           fi
           pr_count=0
