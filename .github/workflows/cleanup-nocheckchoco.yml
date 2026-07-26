@@ -1,0 +1,79 @@
+name: Remove -NoCheckChocoVersion after AU re-push
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Find and fix packages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for update_file in automatic/*/update.ps1; do
+            # Skip if no -NoCheckChocoVersion flag
+            if ! grep -q '\-NoCheckChocoVersion' "$update_file"; then
+              continue
+            fi
+
+            pkg=$(basename "$(dirname "$update_file")")
+
+            # Find the nuspec (name may differ from folder name)
+            nuspec=$(find "automatic/$pkg" -maxdepth 1 -name '*.nuspec' | head -1)
+            if [ -z "$nuspec" ]; then
+              echo "No nuspec found for $pkg, skipping"
+              continue
+            fi
+
+            version=$(grep -oP '(?<=<version>)[^<]+' "$nuspec" | head -1)
+
+            # Only act if version has moved past 0.0
+            if [ "$version" = "0.0" ]; then
+              continue
+            fi
+
+            echo "Package $pkg is at version $version — removing -NoCheckChocoVersion"
+
+            branch="auto/remove-nocheckchoco-$pkg"
+
+            # Skip if an open PR already targets this branch
+            existing=$(gh pr list --head "$branch" --state open --json number -q '.[0].number' 2>/dev/null)
+            if [ -n "$existing" ]; then
+              echo "Open PR #$existing already exists for $pkg, skipping"
+              continue
+            fi
+
+            git checkout -B "$branch" origin/master
+
+            # Remove the flag (handles flag anywhere on the update line)
+            sed -i 's/ -NoCheckChocoVersion//g' "$update_file"
+
+            git add "$update_file"
+            git commit -m "chore($pkg): remove -NoCheckChocoVersion (version now $version)"
+            git push -u origin "$branch" --force-with-lease
+
+            gh pr create \
+              --title "chore($pkg): remove -NoCheckChocoVersion (version now $version)" \
+              --body "AU has successfully re-pushed \`$pkg\` and the nuspec version is now \`$version\` (no longer \`0.0\`). This removes the one-time \`-NoCheckChocoVersion\` flag per the package maintenance policy." \
+              --base master \
+              --head "$branch"
+
+            git checkout master
+          done
