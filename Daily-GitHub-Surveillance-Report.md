@@ -1,17 +1,19 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-07-25 08:30:00 UTC  
+**Date**: 2026-07-26 08:56:45 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (2 total)
+### 🚀 Issues Ouverts (4 total)
 
 #### 🟡 medium (1 issues)
 - #3998: 📊 Main GitHub Surveillance Issue - https://github.com/tunisiano187/Chocolatey-packages/issues/3998 [🟡 medium]
 
-#### ⚪ normal (1 issues)
+#### ⚪ normal (3 issues)
+- #4124: fix(projectlibre.install): bump nuspec to 1.9.8 and fix VERIFICATION.txt - https://github.com/tunisiano187/Chocolatey-packages/issues/4124 [⚪ normal]
+- #4123: 3 years out of date - https://github.com/tunisiano187/Chocolatey-packages/issues/4123 [⚪ normal]
 - #3784: Dependency Dashboard - https://github.com/tunisiano187/Chocolatey-packages/issues/3784 [⚪ normal]
 
 ### 🔄 Pull Requests en Attente (0 total)
@@ -23,10 +25,10 @@ Aucun Pull Request détecté
 ### 📊 Résumé par Priorité
 
 - 🟡 medium: 1
-- ⚪ normal: 1
+- ⚪ normal: 3
 
 ### 📈 Statistiques Globales
-- **Total issues**: 2
+- **Total issues**: 4
 - **Total PRs**: 0
 - **Critiques**: 0
 - **Hautes priorités**: 0
@@ -40,4 +42,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-07-25 08:30:00 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-07-26 08:56:45 UTC*
