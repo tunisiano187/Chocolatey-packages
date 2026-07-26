@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $packageName   = 'openhab'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $ExeFile       = 'start.bat'
