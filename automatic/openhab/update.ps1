@@ -7,6 +7,11 @@ $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
 $repo = $releases.Split('/') | Select-Object -Last 1 -Skip 2
 function global:au_SearchReplace {
 	@{
+		"tools\chocolateyinstall.ps1" = @{
+			"(?i)(url\s*=\s*')[^']*"          = "`${1}$($Latest.URL32)"
+			"(?i)(checksum\s*=\s*')[^']*"     = "`${1}$($Latest.Checksum32)"
+			"(?i)(checksumType\s*=\s*')[^']*" = "`${1}$($Latest.ChecksumType32)"
+		}
 		"legal\VERIFICATION.txt"      = @{
 			"(?i)(x86:).*"        				= "`${1} $($Latest.URL32)"
 			"(?i)(checksum:).*" 				= "`${1} $($Latest.Checksum32)"
@@ -21,10 +26,9 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
-	$url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
+	$url32 = ($tags.assets.browser_download_url | Where-Object {$_ -match "/openhab-\d[\d.]*\.zip$"}) | Select-Object -First 1
 	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion $url32 -keep
-	Move-Item $FileVersion.TempFile -Destination "tools\$($FileVersion.FileName)"
+	$FileVersion = Get-FileVersion $url32
 	$version = $tags.tag_name.Replace('v','').Replace('.M','-M')
 	Update-Metadata -key "releaseNotes" -value $tags.html_url
 	Update-Metadata -key "licenseUrl" -value $((Get-GitHubLicense -OwnerName $Owner -RepositoryName $repo).download_url)

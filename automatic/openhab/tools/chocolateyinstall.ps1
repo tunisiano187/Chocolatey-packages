@@ -20,11 +20,13 @@ if (!($env:JAVA_HOME)) {
 
 $packageArgs = @{
   packageName    = $packageName
-  Destination    = $toolsDir
-  FileFullPath   = "$toolsDir\openhab-$env:ChocolateyPackageVersion.zip"
+  unzipLocation  = $toolsDir
+  url            = 'https://github.com/openhab/openhab-distro/releases/download/5.2.0/openhab-5.2.0.zip'
+  checksum       = '24B686A6948753E689A140F20B1F40F10BFD9B1CB7417E2FC884154DDB15A9CE'
+  checksumType   = 'sha256'
 }
 
-Get-ChocolateyUnzip @packageArgs
+Install-ChocolateyZipPackage @packageArgs
 
 New-Item "$toolsDir\openHAB" -type directory -force -ErrorAction SilentlyContinue
 Install-ChocolateyShortcut -shortcutFilePath "$env:Public\Desktop\$ShortcutName" -targetPath "$toolsDir\openHAB" -WorkingDirectory "$toolsDir\openHAB" -IconLocation "$toolsDir\openHAB.ico"
@@ -40,4 +42,3 @@ Install-ChocolateyShortcut -shortcutFilePath "$toolsDir\openHAB\$ShortcutName7" 
 
 $WhoAmI=whoami
 icacls.exe $toolsDir /grant $WhoAmI":"'(OI)(CI)'F /T | out-null
-Remove-Item $toolsDir\openhab-*.zip -Force | Out-Null
