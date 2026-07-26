@@ -27,7 +27,20 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          existing_count=$(gh pr list --search 'head:auto/remove-nocheckchoco-' --state open --json number -q 'length' 2>/dev/null || echo 0)
+          echo "Currently $existing_count open cleanup PRs"
+          slots=$((10 - existing_count))
+          if [ "$slots" -le 0 ]; then
+            echo "Already at or above 10 open cleanup PRs, skipping"
+            exit 0
+          fi
+          pr_count=0
           for update_file in automatic/*/update.ps1; do
+            if [ "$pr_count" -ge "$slots" ]; then
+              echo "Reached the open-PR limit of 10, stopping"
+              break
+            fi
+
             # Skip if no -NoCheckChocoVersion flag
             if ! grep -q '\-NoCheckChocoVersion' "$update_file"; then
               continue
@@ -76,4 +89,5 @@ jobs:
               --head "$branch"
 
             git checkout master
+            pr_count=$((pr_count + 1))
           done
