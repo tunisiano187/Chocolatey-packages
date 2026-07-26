@@ -79,7 +79,7 @@ jobs:
             sed -i 's/ -NoCheckChocoVersion//g' "$update_file"
 
             git add "$update_file"
-            git commit -m "chore($pkg): remove -NoCheckChocoVersion (version now $version)"
+            git commit -m "chore($pkg): remove -NoCheckChocoVersion (version now $version) [skip ci]"
             git push -u origin "$branch" --force-with-lease
 
             gh pr create \
