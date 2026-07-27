@@ -51,4 +51,4 @@ function global:au_GetLatest {
     throw "Could not find a stable Windows installer in $baseUrl"
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
