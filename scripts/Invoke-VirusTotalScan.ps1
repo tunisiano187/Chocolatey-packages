@@ -21,7 +21,16 @@ choco install -y vt-cli
 
     if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
         if (!$existingFileName32 -and !$existingFileName64) {
-            Get-RemoteFiles -NoSuffix
+            try {
+                Get-RemoteFiles -NoSuffix
+            } catch {
+                # Get-RemoteFiles derives the file extension from the last '.' in the whole
+                # URL. URLs with no extension in their final segment (e.g. SourceForge's
+                # trailing "/download") make it pick up a bogus multi-segment "extension",
+                # producing an invalid nested path and throwing. VirusTotal submission is
+                # best-effort - don't let it abort the whole package update.
+                Write-Warning "Get-RemoteFiles failed, skipping VirusTotal binary submission: $_"
+            }
         }
 
         if ($Latest.FileName32) {
