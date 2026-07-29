@@ -3,7 +3,7 @@ $packageName = 'windjview'
 $installerType = 'exe'
 $silentArgs = '/S'
 $url = 'https://sourceforge.net/projects/windjview/files/WinDjView/2.1/WinDjView-2.1-Setup.exe/download'
-$checksum = '45963d6a84b06955e724e358594e9572d7eb2ce3e35a0bdbfdf57382af6a1f7f'
+$checksum = 'C46A0B6B2C1C289B99FC92212443C911B80A899DDC772442E1A47264C9039C5C'
 $checksumType = 'sha256'
 $validExitCodes = @(0)
 

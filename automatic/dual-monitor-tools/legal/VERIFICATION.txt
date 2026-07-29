@@ -6,11 +6,11 @@ The installer have been downloaded from the GitHub mirror and can be verified li
 
 1. Download the following installer(s):
 
-x86: https://phoenixnap.dl.sourceforge.net/project/dualmonitortool/dualmonitortool/2.11/DualMonitorTools-2.11.msi?viasf=1
+x86: https://pilotfiber.dl.sourceforge.net/project/dualmonitortool/dualmonitortool/2.12/DualMonitorTools-2.12.msi?viasf=1&fid=d7c32a16b35f4684&e=1785399759&st=TqrN1blyKrv54-D2Y81xJw
 
 2. You can use one of the following methods to obtain the checksum(s):
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
 checksum type: sha256
-checksum: 9F680D10DF37F6B04BACE9FEDE8E031849FA5C8F257F7AA8A6974F94EDC15874
+checksum: 382DB114FCB9A7E64F712D458AE06EEB657C3F998EC3ACA0826407FC80D127DF
