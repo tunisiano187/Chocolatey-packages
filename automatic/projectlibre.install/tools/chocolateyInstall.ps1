@@ -1,5 +1,5 @@
-$url          = 'https://downloads.sourceforge.net/project/projectlibre/ProjectLibre/1.9.8/ProjectLibre-1.9.8.msi'
-$checksum     = '32e46ba3ce7b3a81dc8ec648f6baf8f6f6056c8cf9203f75f8187e9e4637833f'
+﻿$url          = 'https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.9.8/ProjectLibre-1.9.8.msi/download'
+$checksum     = '32E46BA3CE7B3A81DC8EC648F6BAF8F6F6056C8CF9203F75F8187E9E4637833F'
 $checksumType = 'sha256'
 
 $packageArgs = @{
