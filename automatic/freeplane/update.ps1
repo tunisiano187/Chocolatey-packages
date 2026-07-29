@@ -1,3 +1,4 @@
+$ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
@@ -60,4 +61,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
