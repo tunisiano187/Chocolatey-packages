@@ -48,4 +48,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -NoCheckChocoVersion -ChecksumFor none
+update -ChecksumFor none
