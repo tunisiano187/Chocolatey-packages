@@ -21,14 +21,32 @@ choco install -y vt-cli
 
     if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
         if (!$existingFileName32 -and !$existingFileName64) {
+            # Get-RemoteFiles takes the URL's last path segment as the base file name and
+            # extracts the extension via `(?<=\.)[^.]+$` matched against the *whole* URL.
+            # Rolling download URLs with a dotless final segment - e.g. SourceForge's
+            # trailing "/download" (.../tigervnc64-1.16.2.exe/download) - break both: the
+            # base name becomes the literal word "download", and the extension regex walks
+            # back to the last '.' anywhere in the URL, picking up "exe/download" from the
+            # segment before it. That produces an invalid nested path
+            # (tools\download.exe\download) and Get-RemoteFiles throws. When the URL ends
+            # in "/download", point it one segment earlier for the name and supply the real
+            # extension directly so it never has to guess.
+            $probeUrl = $Latest.Url32
+            if (-not $probeUrl) { $probeUrl = $Latest.Url64 }
+
+            $getRemoteFilesArgs = @{ NoSuffix = $true }
+            if ($probeUrl -match '/download$') {
+                $getRemoteFilesArgs.FileNameSkip = 1
+                if (-not $Latest.FileType -and $probeUrl -match '\.([A-Za-z0-9]+)/download$') {
+                    $Latest.FileType = $Matches[1]
+                }
+            }
+
             try {
-                Get-RemoteFiles -NoSuffix
+                Get-RemoteFiles @getRemoteFilesArgs
             } catch {
-                # Get-RemoteFiles derives the file extension from the last '.' in the whole
-                # URL. URLs with no extension in their final segment (e.g. SourceForge's
-                # trailing "/download") make it pick up a bogus multi-segment "extension",
-                # producing an invalid nested path and throwing. VirusTotal submission is
-                # best-effort - don't let it abort the whole package update.
+                # Best-effort submission - don't let an unforeseen URL shape abort the
+                # whole package update.
                 Write-Warning "Get-RemoteFiles failed, skipping VirusTotal binary submission: $_"
             }
         }
