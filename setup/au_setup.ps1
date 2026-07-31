@@ -15,7 +15,7 @@ if ($null -ne $refreshenv -and $refreshenv.CommandType -ne 'Application') {
 
 Install-PackageProvider -Name NuGet -Force
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-$Env:au_version = "master"
+$Env:au_version = "develop"
 
 Write-Output "Build AU"
 git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
