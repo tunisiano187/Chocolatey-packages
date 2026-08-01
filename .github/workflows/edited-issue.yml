@@ -4,6 +4,10 @@ on:
   issues:
     types: [edited]
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   validation:
     if: ${{ github.event.issue.state == 'open' && (contains(github.event.issue.title, 'exclude') || contains(github.event.issue.title, 'remove') || contains(github.event.issue.title, 'block')) }}
