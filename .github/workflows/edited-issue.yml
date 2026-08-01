@@ -14,6 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
       - name: Check exception
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPOSITORY: ${{ github.event.repository.full_name }}
+          ACTOR: ${{ github.event.issue.user.login }}
         run: |
           Import-Module "${{ github.workspace }}\scripts\edit.psm1"
-          Block-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}" -actor "${{ github.event.issue.user.login }}"
+          Block-package -title "$env:ISSUE_TITLE" -issueNumber $env:ISSUE_NUMBER -repository "$env:REPOSITORY" -actor "$env:ACTOR"
