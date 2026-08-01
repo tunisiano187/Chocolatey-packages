@@ -30,7 +30,7 @@ function global:au_GetLatest {
 }
 
 try {
-	update -ChecksumFor 32 -NoCheckChocoVersion -NoCheckUrl
+	update -ChecksumFor 32 -NoCheckUrl
 } catch {
 	$ignore = "Job returned no object, Vector smash ?"
 	if ($_ -match $ignore) { Write-Output $ignore; 'ignore' } else { throw $_ }
