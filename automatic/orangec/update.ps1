@@ -44,4 +44,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; Version = $version; ReleaseUri = $tags.html_url }
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
