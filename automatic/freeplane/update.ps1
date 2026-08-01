@@ -36,6 +36,9 @@ function global:au_BeforeUpdate {
 	}
 	$destPath = "tools\$cleanFileName"
 	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing
+	if (!(Test-Path $destPath) -or (Get-Item $destPath).Length -eq 0) {
+		throw "Installer download failed or produced an empty file: $destPath (from $($Latest.URL32))"
+	}
 	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
 	$Latest.ChecksumType32 = 'sha512'
 }
@@ -61,4 +64,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
