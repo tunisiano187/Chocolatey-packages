@@ -1,4 +1,3 @@
-$ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
@@ -10,11 +9,6 @@ function global:au_SearchReplace {
 			"(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
 			"(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
 			"(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
-		}
-		'tools\chocolateyInstall.ps1' = @{
-			"(^\s*[$]url\s*=\s*)('.*')"           = "`$1'$($Latest.URL32)'"
-			"(^\s*[$]checksum\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum32)'"
-			"(^\s*[$]checksumType\s*=\s*)('.*')"  = "`$1'$($Latest.ChecksumType32)'"
 		}
 	}
 }
@@ -30,63 +24,19 @@ function global:au_BeforeUpdate {
 		# Fall back to 1.12.x if the branch-specific URL fails
 		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/freeplane/freeplane/1.12.x/license.txt" -OutFile "legal\LICENSE.txt" -UseBasicParsing
 	}
-	# The installer is no longer embedded in the package (see #4298/#4312 history): chocolateyInstall.ps1
-	# now downloads it fresh at install time via -Url/-Checksum, so the packaging step can no longer lose
-	# a bundled file. We still need to download it here once, to a scratch location outside the package
-	# directory, purely to compute a checksum for chocolateyInstall.ps1's -Checksum parameter.
-	# SourceForge's "direct download" URLs end in a trailing "/download" segment (e.g.
-	# .../Freeplane-Setup-1.13.3.exe/download) -- that trailing segment is not part of the real file
-	# name, so it has to be stripped before taking the last path segment, otherwise the derived name
-	# is just the literal word "download".
-	$fileName = ($Latest.URL32 -replace '/download$', '').Split('/')[-1]
-	if (-not $fileName) { $fileName = "freeplane-$($Latest.Version).exe" }
-	$destPath = Join-Path $env:TEMP $fileName
-
-	# SourceForge's automatic mirror selection (the plain "/download" URL) is unreliable from CI /
-	# datacenter IPs: instead of a redirect to a real binary it can serve a small HTML "choose a
-	# mirror" / bot-block page that still downloads instantly and has a non-zero size. It's
-	# consistently reliable from residential/office IPs, which is why this doesn't reproduce
-	# locally. A previous version of this fix tried pinning specific mirrors via "?use_mirror=...",
-	# but live testing proved SourceForge's redirect silently ignores/overrides that hint -- the
-	# same "?use_mirror=netcologne" request came back mapped to "pilotfiber", then "netactuate" on
-	# separate attempts. What actually varies per request is SourceForge's own (unpinnable) mirror
-	# assignment, so instead just retry the same URL a few times with a short delay -- each retry
-	# gets a fresh assignment, improving the odds of landing on a mirror that works for this IP.
-	$maxAttempts = 5
-	$validExe = $false
-	$lastFailureDetail = $null
-	for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
-		try {
-			$response = Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing -ErrorAction Stop -PassThru
-			$lastFailureDetail = "HTTP $($response.StatusCode), Content-Type: $($response.Headers['Content-Type']), $((Get-Item $destPath).Length) bytes"
-		} catch {
-			$lastFailureDetail = "request failed: $_"
-			Start-Sleep -Seconds 3
-			continue
-		}
-		if (-not (Test-Path $destPath) -or (Get-Item $destPath).Length -eq 0) {
-			$lastFailureDetail = "empty file ($lastFailureDetail)"
-			Start-Sleep -Seconds 3
-			continue
-		}
-		# A non-empty file isn't proof of a valid installer (see comment above). Confirm it's
-		# actually a Windows PE executable by checking for the 'MZ' DOS header magic bytes -- if
-		# this passes, the checksum baked into chocolateyInstall.ps1 is guaranteed to correspond to
-		# a real installer, and Chocolatey's own -Checksum verification at install time protects
-		# against the URL serving something different later.
-		$header = [byte[]]::new(2)
-		$stream = [System.IO.File]::OpenRead($destPath)
-		try { $stream.Read($header, 0, 2) | Out-Null } finally { $stream.Close() }
-		if ($header[0] -eq 0x4D -and $header[1] -eq 0x5A) { $validExe = $true; break }
-		$lastFailureDetail = "missing 'MZ' header ($lastFailureDetail)"
-		Start-Sleep -Seconds 3
+	# Clean up any old installer files before downloading the new one
+	Get-ChildItem "tools\*.exe" -ErrorAction SilentlyContinue | Remove-Item -Force
+	# SourceForge URLs end with /download; extract the .exe filename from the second-to-last path segment
+	$urlSegments = ([uri]$Latest.URL32).AbsolutePath -split '/' | Where-Object { $_ }
+	$cleanFileName = if ($urlSegments[-1] -eq 'download') {
+		[uri]::UnescapeDataString($urlSegments[-2])
+	} else {
+		[System.IO.Path]::GetFileName(([uri]$Latest.URL32).LocalPath)
 	}
-	if (-not $validExe) {
-		throw "Downloaded file is not a valid Windows executable after $maxAttempts attempts: $destPath (from $($Latest.URL32)). Last failure: $lastFailureDetail"
-	}
+	$destPath = "tools\$cleanFileName"
+	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing
 	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
 	$Latest.ChecksumType32 = 'sha512'
-	Remove-Item -Path $destPath -Force -ErrorAction SilentlyContinue
 }
 
 function global:au_AfterUpdate($Package) {
@@ -110,4 +60,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
