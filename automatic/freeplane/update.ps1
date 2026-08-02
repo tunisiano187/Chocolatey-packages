@@ -39,6 +39,17 @@ function global:au_BeforeUpdate {
 	if (-not (Test-Path $destPath) -or (Get-Item $destPath).Length -eq 0) {
 		throw "Installer download failed or produced an empty file: $destPath (from $($Latest.URL32))"
 	}
+	# A non-empty file isn't proof of a valid installer: SourceForge occasionally serves a small
+	# HTML page (bot-block / mirror-choice interstitial) instead of the binary, which still has a
+	# non-zero size and would previously slip through here, get pushed, and fail Chocolatey
+	# verification with no exe found. Confirm it's actually a Windows PE executable by checking
+	# for the 'MZ' DOS header magic bytes.
+	$header = [byte[]]::new(2)
+	$stream = [System.IO.File]::OpenRead($destPath)
+	try { $stream.Read($header, 0, 2) | Out-Null } finally { $stream.Close() }
+	if ($header[0] -ne 0x4D -or $header[1] -ne 0x5A) {
+		throw "Downloaded file is not a valid Windows executable (missing 'MZ' header): $destPath (from $($Latest.URL32))"
+	}
 	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
 	$Latest.ChecksumType32 = 'sha512'
 }
