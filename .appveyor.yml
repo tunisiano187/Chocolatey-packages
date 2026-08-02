@@ -155,7 +155,11 @@ build_script:
                 return
             }
         }
-        $lastupdated=git log -1 --stat | Where-Object {$_ -match "automatic"} | Where-Object {$_ -notmatch "'automatic"}
+        # Anchored to the start of the line (ignoring leading whitespace) so this only matches real
+        # `git log --stat` diffstat lines (e.g. " automatic/freeplane/update.ps1 | 28 ++--"), not
+        # commit-message prose that happens to contain "automatic" as a substring (e.g. "...picks
+        # this up automatically."), which used to be split into bogus package name tokens.
+        $lastupdated=git log -1 --stat | Where-Object {$_ -match "^\s*automatic/"} | Where-Object {$_ -notmatch "'automatic"}
         if($lastupdated.Count -ne 0 -and ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true')) {
           $Env:au_Push = "false"
           $packages = $lastupdated.split('/').split(' ')
