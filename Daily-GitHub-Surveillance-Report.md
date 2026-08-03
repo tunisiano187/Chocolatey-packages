@@ -1,6 +1,6 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-08-02 08:54:54 UTC  
+**Date**: 2026-08-03 10:12:35 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
@@ -12,7 +12,7 @@
 - #3998: 📊 Main GitHub Surveillance Issue - https://github.com/tunisiano187/Chocolatey-packages/issues/3998 [🟡 medium]
 
 #### ⚪ normal (2 issues)
-- #4312: fix(freeplane): verify PE 'MZ' header, not just non-empty file - https://github.com/tunisiano187/Chocolatey-packages/issues/4312 [⚪ normal]
+- #4321: chore(deps): update actions/checkout action to v7 - https://github.com/tunisiano187/Chocolatey-packages/issues/4321 [⚪ normal]
 - #3784: Dependency Dashboard - https://github.com/tunisiano187/Chocolatey-packages/issues/3784 [⚪ normal]
 
 ### 🔄 Pull Requests en Attente (0 total)
@@ -41,4 +41,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-08-02 08:54:54 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-08-03 10:12:35 UTC*
