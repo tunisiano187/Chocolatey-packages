@@ -21,8 +21,8 @@ if (!($env:JAVA_HOME)) {
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/openhab/openhab-distro/releases/download/5.2.0/openhab-5.2.0.zip'
-  checksum       = '24B686A6948753E689A140F20B1F40F10BFD9B1CB7417E2FC884154DDB15A9CE'
+  url            = 'https://github.com/openhab/openhab-distro/releases/download/5.2.1/openhab-5.2.1.zip'
+  checksum       = '21392C234D3DCEF40FEE14F0F67176BDB7B78094A836BCABD4E3EDEFB624AB40'
   checksumType   = 'sha256'
 }
 
