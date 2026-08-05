@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-# Changed from forums (Cloudflare IUAM) to the main DDU page which is accessible.
-# Direct download URL pattern: https://www.wagnardsoft.com/DDU/download/DDU%20v{version}.exe
+# Versions are scraped from the main DDU page (no Cloudflare challenge).
+# Downloads are served from download.wagnardsoft.com (no referer required).
 $releases = "https://www.wagnardsoft.com/display-driver-uninstaller-ddu"
 
 function global:au_SearchReplace {
@@ -11,7 +11,6 @@ function global:au_SearchReplace {
 			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-			"(^[$]referer\s*=\s*)('.*')" = "`$1'$($Latest.Referer)'"
 		}
 	}
 }
@@ -34,10 +33,9 @@ function global:au_GetLatest {
 		throw "Could not extract DDU version from $releases"
 	}
 
-	$url32   = "https://www.wagnardsoft.com/DDU/download/DDU%20v$version.exe"
-	$referer = $releases
+	$url32 = "https://download.wagnardsoft.com/DDU/DDU%20v$version.exe"
 
-	return @{ URL32 = $url32; Referer = $referer; Version = $version }
+	return @{ URL32 = $url32; Version = $version }
 }
 
 
