@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sd-card-formatter</id>
-    <version>5.0.3.2025011901</version>
+    <version>5.0.4</version>
     <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/sd-card-formatter</packageSourceUrl>
     <owners>tunisiano</owners>
     <title>SD Memory Card Formatter (Install)</title>
@@ -29,11 +29,11 @@ using formatting tools provided with individual operating systems. In general, f
 with operating systems can format various storage media including SD/SDHC/SDXC Cards, but it may not be 
 ptimized for SD/SDHC/SDXC Cards and it may result in lower performance.
 
-SD/SDHC/SDXC Cards have a "Protected Area" for SD Card security purposes. The SD Memory Card Formatter
+SD/SDHC/SDXC Cards have a “Protected Area” for SD Card security purposes. The SD Memory Card Formatter
 does not format the protected area in the SD/SDHC/SDXC Cards. The protected area shall be formatted by
 an appropriate PC application or SD host devices that provide SD security function.
 
-The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the "BitLocker To Go"
+The SD Memory Card Formatter doesn't support SD/SDHC/SDXC Card encrypted by the “BitLocker To Go"
 functionality of Windows. Please format the SD/SDHC/SDXC Card after it has been unlocked.
 
 ### Package-specific issue

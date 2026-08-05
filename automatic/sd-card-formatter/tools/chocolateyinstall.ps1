@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference     = 'Stop'
 $url                       = 'https://www.sdcard.org/downloads/formatter/eula_windows/SDCardFormatterv5_WinEN.zip'
-$Checksum                  = '89F77FC36F451FA16AD911145EA554F5651D9BC023EC1726FA66DBF54E1AE920'
+$Checksum                  = '9ADD165771A821863636CAE0D5D12D4E4F1B99A527CDA68A2F6651D7192F0514'
 $ChecksumType              = 'sha256'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
