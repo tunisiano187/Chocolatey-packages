@@ -16,8 +16,8 @@ New-Item -ItemType Directory -Force -Path $downtemp | Out-Null
 $packageArgs = @{
   packageName   = 'jitsi-meet-electron'
   fileFullPath  = "$downtemp\jitsi-meet.exe"
-  url           = 'https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.7.0/jitsi-meet.exe'
-  checksum      = '7C229DBA2C66075104A98F8ABE47D441CB6B4B33160835CF069A215B65058A5F'
+  url           = 'https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.8.0/jitsi-meet.exe'
+  checksum      = '7879FD567241DC741FFCE9CBC3AB6D52A52A2F2142A24A39D28DD091AC6C54E2'
   checksumType  = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs
