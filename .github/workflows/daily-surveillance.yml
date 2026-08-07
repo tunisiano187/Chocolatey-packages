@@ -7,6 +7,10 @@ on:
     - cron: '30 6 * * *'  # 06:30 UTC
   workflow_dispatch:  # Allow manual triggering
 
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   surveillance:
     runs-on: ubuntu-latest
