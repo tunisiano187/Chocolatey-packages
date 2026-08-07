@@ -6,6 +6,9 @@ on:
     - cron: '0 8 * * 1,4'
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   check-price:
     runs-on: ubuntu-latest
