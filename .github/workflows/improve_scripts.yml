@@ -1,5 +1,8 @@
 ﻿name: Package improver
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [master]
