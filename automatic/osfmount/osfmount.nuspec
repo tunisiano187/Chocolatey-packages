@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>osfmount</id>
-    <version>3.1.1003.0</version>
+    <version>3.2.1000.0</version>
     <title>OSFMount (Install)</title>
     <authors>PassMark(r) Software Pty Ltd</authors>
     <owners>tunisiano</owners>
@@ -13,11 +13,11 @@
 
 ![Screenshot of OSFMount](https://www.osforensics.com/img/osfmount-mainscreenshot%201.png)
 
-OSFMount is a free utility designed for use with [PassMark OSForensics](https://www.osforensics.com/index.html)(TM)
+OSFMount is a free utility designed for use with [PassMark OSForensics](https://www.osforensics.com/index.html)™
 
 ## Overview
 
-OSFMount allows you to mount local disk image files (bit-for-bit copies of an entire disk or disk partition) in Windows as a physical disk or a logical drive letter. You can then analyze the disk image file with [PassMark OSForensics](https://www.osforensics.com/index.html)(TM) by using the physical disk name (eg. \\.\PhysicalDrive1) or logical drive letter (eg. Z:).
+OSFMount allows you to mount local disk image files (bit-for-bit copies of an entire disk or disk partition) in Windows as a physical disk or a logical drive letter. You can then analyze the disk image file with [PassMark OSForensics](https://www.osforensics.com/index.html)™ by using the physical disk name (eg. \\.\PhysicalDrive1) or logical drive letter (eg. Z:).
 
 By default, the image files are mounted as read only so that the original image files are not altered.
 
@@ -33,7 +33,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
     <summary>OSFMount - Mount dd image files in Windows</summary>
     <copyright>Copyright (C) PassMark Software</copyright>
