@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>perplexity</id>
+    <version>1.7.0</version>
+    <title>Perplexity</title>
+    <authors>Perplexity AI, Inc.</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.perplexity.ai/hub/terms-of-service</licenseUrl>
+    <projectUrl>https://www.perplexity.ai/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b6038056ade641330b2ecbebb952dbad143ee19f/icons/perplexity.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Perplexity
+
+Perplexity is an AI-powered search engine and answer engine that provides instant, accurate answers with cited sources. It combines the power of large language models with real-time web search to give you comprehensive, up-to-date responses.
+
+## Features
+
+- **AI-Powered Search**: Ask questions in natural language and get direct answers
+- **Cited Sources**: Every answer includes references so you can verify information
+- **Follow-up Questions**: Dig deeper with contextual follow-up questions
+- **Real-Time Information**: Access up-to-date web content for current events
+- **Focus Modes**: Search across the web, academic papers, YouTube, Reddit, and more
+- **Collections**: Organize your research into collections
+- **Perplexity Pro**: Enhanced features with access to GPT-4, Claude, and other frontier models
+
+## Installation
+
+This package installs the Perplexity desktop application for Windows (x64).
+
+---
+
+#### [choco://perplexity](choco://perplexity)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+
+---
+]]></description>
+    <summary>AI-powered search engine that gives instant answers with cited sources</summary>
+    <releaseNotes>https://www.perplexity.ai/hub/blog</releaseNotes>
+    <copyright>© 2026 Perplexity AI, Inc.</copyright>
+    <tags>perplexity ai search llm artificial-intelligence chatbot assistant answer-engine</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/perplexity</packageSourceUrl>
+    <projectSourceUrl>https://www.perplexity.ai/platforms</projectSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
