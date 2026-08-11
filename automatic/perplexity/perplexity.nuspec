@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>perplexity</id>
+    <version>1.7.0</version>
+    <title>Perplexity AI</title>
+    <authors>Perplexity AI, Inc.</authors>
+    <owners>tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://www.perplexity.ai</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@master/icons/perplexity.png</iconUrl>
+    <description><![CDATA[## Perplexity AI
+
+Perplexity is an AI-powered search engine and assistant that delivers accurate, real-time answers with cited sources. Ask questions in natural language and get synthesized, conversational responses — backed by live web search and transparent citations.
+
+The Windows desktop app brings the full Perplexity experience to your desktop, including AI search, Personal Computer (local-file and Microsoft 365 integration), and always-on assistant capabilities.
+
+#### [choco://perplexity](choco://perplexity)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <summary>AI-powered search engine and desktop assistant with cited, real-time answers.</summary>
+    <releaseNotes>https://www.perplexity.ai/changelog</releaseNotes>
+    <tags>ai search llm perplexity assistant chatbot</tags>
+    <projectSourceUrl>https://www.perplexity.ai/platforms</projectSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/perplexity</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
