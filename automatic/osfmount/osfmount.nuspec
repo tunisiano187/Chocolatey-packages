@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.osforensics.com/tools/mount-disk-images.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@bdd098c7fb86bd992461367b5aaf3fd41bfa9fb2/icons/osfmount.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@07da58ad88fab90798fd1b4b5e54cd9fbf70d0b6/icons/osfmount.png</iconUrl>
     <description><![CDATA[## OSFMount (Install)
 
 ![Screenshot of OSFMount](https://www.osforensics.com/img/osfmount-mainscreenshot%201.png)
