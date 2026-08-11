@@ -83,7 +83,7 @@ function global:au_BeforeUpdate {
 	# au_AfterUpdate below) treats an unset $Latest.FileName32 as "no file has been tracked yet
 	# for this package" -- it re-downloads via its own Get-RemoteFiles purely to scan it, then
 	# DELETES whatever it downloaded once the scan is done. That's correct for download-on-install
-	# packages, where the scanned file is meant to be disposable scratch data -- but freeplane
+	# packages, Where-Object the scanned file is meant to be disposable scratch data -- but freeplane
 	# never set FileName32, so the shared script wrongly treated its real, already-embedded exe
 	# the same way: scanned it, then deleted it right after au_BeforeUpdate had placed it. AU
 	# still reported success since nothing threw. This is the exact same bug just found and fixed
