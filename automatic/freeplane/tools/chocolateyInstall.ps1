@@ -1,4 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
+﻿$ErrorActionPreference = 'Stop'
+$packageName = $env:ChocolateyPackageName
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
