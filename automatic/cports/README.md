@@ -14,6 +14,9 @@ ports, and save the TCP/UDP ports information to HTML file , XML file, or to tab
 CurrPorts also automatically mark with pink color suspicious TCP/UDP ports owned by unidentified
 applications (Applications without version information and icons).
 
+### A note on antivirus detections
+NirSoft's network/system utilities, including CurrPorts, are commonly flagged by some antivirus engines as "hacktool" or "riskware". This isn't because they contain malware -- it's because their legitimate functionality (inspecting open ports and the processes behind them) overlaps with techniques malware also uses. Nir Sofer (the developer) addresses this directly in an official blog post, ["Antivirus companies cause a big headache to small developers"](https://blog.nirsoft.net/2009/05/17/antivirus-companies-cause-a-big-headache-to-small-developers/) -- see also the ongoing discussion thread underneath it, and the [full "Antivirus Issues" category](https://blog.nirsoft.net/category/antivirus-issues/) on his blog for further documented cases. NirSoft states its utilities are clean and recommends reporting the detection to your antivirus vendor as a false positive.
+
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
 
