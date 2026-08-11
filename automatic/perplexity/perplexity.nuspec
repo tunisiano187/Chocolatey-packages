@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.perplexity.ai</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@master/icons/perplexity.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@b3de67f614d0e9118ac7afbcb0c41302c61205ce/icons/perplexity.png</iconUrl>
     <description><![CDATA[## Perplexity AI
 
 Perplexity is an AI-powered search engine and assistant that delivers accurate, real-time answers with cited sources. Ask questions in natural language and get synthesized, conversational responses — backed by live web search and transparent citations.
