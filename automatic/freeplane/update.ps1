@@ -1,3 +1,4 @@
+$ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
@@ -26,17 +27,69 @@ function global:au_BeforeUpdate {
 	}
 	# Clean up any old installer files before downloading the new one
 	Get-ChildItem "tools\*.exe" -ErrorAction SilentlyContinue | Remove-Item -Force
-	# SourceForge URLs end with /download; extract the .exe filename from the second-to-last path segment
-	$urlSegments = ([uri]$Latest.URL32).AbsolutePath -split '/' | Where-Object { $_ }
-	$cleanFileName = if ($urlSegments[-1] -eq 'download') {
-		[uri]::UnescapeDataString($urlSegments[-2])
-	} else {
-		[System.IO.Path]::GetFileName(([uri]$Latest.URL32).LocalPath)
+
+	# Chocolatey's own guidance is to prefer embedding the installer in the package when the
+	# packaged .nupkg stays well under ~200MB (freeplane's installer is ~107MB), rather than
+	# downloading it fresh at install time -- so this package embeds again, as it originally did.
+	# SourceForge's "direct download" URLs end in a trailing "/download" segment -- strip it to
+	# get the real file name instead of assuming a hardcoded one.
+	$fileName = ($Latest.URL32 -replace '/download$', '').Split('/')[-1]
+	if (-not $fileName) { $fileName = "freeplane-$($Latest.Version).exe" }
+	$destPath = "tools\$fileName"
+
+	# SourceForge's automatic mirror selection is unreliable from CI/datacenter IPs: it can serve
+	# a small HTML "choose a mirror" page instead of redirecting to the real binary. It's
+	# consistently reliable from residential/office IPs, which is why this doesn't reproduce
+	# locally. Retry the same URL a few times with a short delay -- each retry gets a fresh mirror
+	# assignment, improving the odds of landing on one that works for this IP (verified live: a
+	# pinned "?use_mirror=" query parameter does NOT actually pin anything, SourceForge silently
+	# reassigns regardless -- so plain retries are what actually help, not mirror pinning).
+	$maxAttempts = 5
+	$validExe = $false
+	$lastFailureDetail = $null
+	for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
+		try {
+			$response = Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing -ErrorAction Stop -PassThru
+			$lastFailureDetail = "HTTP $($response.StatusCode), Content-Type: $($response.Headers['Content-Type']), $((Get-Item $destPath).Length) bytes"
+		} catch {
+			$lastFailureDetail = "request failed: $_"
+			Start-Sleep -Seconds 3
+			continue
+		}
+		if (-not (Test-Path $destPath) -or (Get-Item $destPath).Length -eq 0) {
+			$lastFailureDetail = "empty file ($lastFailureDetail)"
+			Start-Sleep -Seconds 3
+			continue
+		}
+		# A non-empty file isn't proof of a valid installer: SourceForge occasionally serves a
+		# small HTML page (bot-block / mirror-choice interstitial) instead of the binary, which
+		# still has a non-zero size. Confirm it's actually a Windows PE executable by checking for
+		# the 'MZ' DOS header magic bytes.
+		$header = [byte[]]::new(2)
+		$stream = [System.IO.File]::OpenRead($destPath)
+		try { $stream.Read($header, 0, 2) | Out-Null } finally { $stream.Close() }
+		if ($header[0] -eq 0x4D -and $header[1] -eq 0x5A) { $validExe = $true; break }
+		$lastFailureDetail = "missing 'MZ' header ($lastFailureDetail)"
+		Start-Sleep -Seconds 3
 	}
-	$destPath = "tools\$cleanFileName"
-	Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing
+	if (-not $validExe) {
+		throw "Downloaded file is not a valid Windows executable after $maxAttempts attempts: $destPath (from $($Latest.URL32)). Last failure: $lastFailureDetail"
+	}
+
 	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
 	$Latest.ChecksumType32 = 'sha512'
+	# The actual root cause behind every previous "no exe in tools\" moderation failure on this
+	# package (#4249/#4301/#4312 history): scripts/Invoke-VirusTotalScan.ps1 (called from
+	# au_AfterUpdate below) treats an unset $Latest.FileName32 as "no file has been tracked yet
+	# for this package" -- it re-downloads via its own Get-RemoteFiles purely to scan it, then
+	# DELETES whatever it downloaded once the scan is done. That's correct for download-on-install
+	# packages, where the scanned file is meant to be disposable scratch data -- but freeplane
+	# never set FileName32, so the shared script wrongly treated its real, already-embedded exe
+	# the same way: scanned it, then deleted it right after au_BeforeUpdate had placed it. AU
+	# still reported success since nothing threw. This is the exact same bug just found and fixed
+	# for `osfmount`. Setting FileName32 marks the file as pre-existing, so the scan uses it
+	# directly and skips the delete-after-scan step.
+	$Latest.FileName32 = $fileName
 }
 
 function global:au_AfterUpdate($Package) {
@@ -60,4 +113,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
