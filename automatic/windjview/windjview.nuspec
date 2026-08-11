@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>windjview</id>
-    <version>2.1.20260729</version>
+    <version>0.0</version>
     <title>WinDjView</title>
     <authors>Andrew Zhezherun, Leonid Zhezherun</authors>
     <owners>tunisiano</owners>
@@ -16,6 +16,9 @@ WinDjView is a fast, compact and powerful DjVu viewer for Windows with tabbed in
 
 [Forum](https://sourceforge.net/p/windjview/discussion/)
 [Source code](https://sourceforge.net/p/windjview/code/)
+
+### A note on antivirus detections
+Some antivirus engines have flagged the WinDjView installer with generic/heuristic detections (e.g. "Generic.Malware/Suspicious"). This has been discussed as a likely false positive by users on the project's own [SourceForge discussion forum](https://sourceforge.net/p/windjview/discussion/392867/thread/b60e69c48a/) and elsewhere -- the project is old, unsigned, and low-traffic, which is a common combination for heuristic antivirus engines to flag even when the binary is clean. If your antivirus flags this package, please consider reporting it to your AV vendor as a false positive.
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
