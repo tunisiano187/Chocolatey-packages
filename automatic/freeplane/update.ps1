@@ -35,7 +35,14 @@ function global:au_BeforeUpdate {
 	# get the real file name instead of assuming a hardcoded one.
 	$fileName = ($Latest.URL32 -replace '/download$', '').Split('/')[-1]
 	if (-not $fileName) { $fileName = "freeplane-$($Latest.Version).exe" }
-	$destPath = "tools\$fileName"
+	# Use an absolute path, not a bare "tools\..." relative one: [System.IO.File]::OpenRead()
+	# below resolves relative paths against .NET's process working directory, which can differ
+	# from PowerShell's own location (confirmed live: it resolved to C:\Windows\system32\tools\...
+	# during an AU run, throwing DirectoryNotFoundException even though the same relative path
+	# worked fine for Invoke-WebRequest -OutFile and Get-FileHash just lines below, since those
+	# are PowerShell cmdlets that respect $PWD). $PSScriptRoot is this script's own directory and
+	# is unaffected by whatever the current process directory happens to be.
+	$destPath = Join-Path $PSScriptRoot "tools\$fileName"
 
 	# SourceForge's automatic mirror selection is unreliable from CI/datacenter IPs: it can serve
 	# a small HTML "choose a mirror" page instead of redirecting to the real binary. It's
