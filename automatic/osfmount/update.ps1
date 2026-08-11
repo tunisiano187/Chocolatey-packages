@@ -33,7 +33,7 @@ function global:au_BeforeUpdate {
 	# The real bug: scripts/Invoke-VirusTotalScan.ps1 (called from au_AfterUpdate) treats an
 	# unset $Latest.FileName32 as "no file has been tracked yet" -- it re-downloads via its own
 	# Get-RemoteFiles into tools\ for scanning purposes, then deletes whatever it downloaded
-	# afterward (correct behavior for download-on-install packages, where that's meant to be
+	# afterward (correct behavior for download-on-install packages, Where-Object that's meant to be
 	# scratch data). Because osfmount never set FileName32, that cleanup deleted this package's
 	# real, already-embedded osfmount.exe right after au_BeforeUpdate placed it -- AU still
 	# reported "updated ... and pushed" since nothing threw, but the pushed .nupkg had no exe
