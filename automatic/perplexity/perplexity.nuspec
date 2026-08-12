@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if "Omega" doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>perplexity</id>
+    <version>1.7.0</version>
+    <title>Perplexity AI</title>
+    <authors>Perplexity AI, Inc.</authors>
+    <owners>tunisiano</owners>
+    <licenseUrl>https://www.perplexity.ai/hub/legal/terms-of-service</licenseUrl>
+    <projectUrl>https://www.perplexity.ai/platforms</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@master/icons/perplexity.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[## Perplexity AI
+
+Perplexity is an AI-powered search engine and chatbot that provides real-time, sourced answers to your questions. It combines the power of large language models with live web search to give accurate, up-to-date responses with citations.
+
+### Features
+
+- **AI-powered search** — Ask questions in natural language and get concise answers with sources
+- **Real-time web access** — Always up-to-date information from the web
+- **Source citations** — Every answer includes references so you can verify the information
+- **Follow-up questions** — Continue a conversation with context-aware follow-ups
+- **Multiple AI models** — Access various underlying AI models
+- **Focus modes** — Search academic papers, Reddit, YouTube, and more
+- **Collections** — Organize and share your research
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <summary>AI-powered search engine and chatbot with real-time web access and source citations</summary>
+    <tags>perplexity ai search chatbot llm desktop admin</tags>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/perplexity</packageSourceUrl>
+    <releaseNotes>https://www.perplexity.ai/hub/blog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
