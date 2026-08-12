@@ -148,8 +148,24 @@ build_script:
 
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
                     pushd $package_dir
+                      # Only pack/push if update.ps1 actually bumped the nuspec version. Packages
+                      # with an embedded installer (Install-ChocolateyPackage -File) only have the
+                      # binary on disk after au_BeforeUpdate genuinely downloads it as part of a
+                      # real update -- a bare git checkout never has it (it's never committed).
+                      # Packing unconditionally after a no-op update.ps1 run (e.g. a commit that
+                      # only touches the nuspec description or icon URL, no version change) would
+                      # silently repackage that bare checkout and push a nupkg missing the
+                      # installer. Confirmed live: this exact thing happened to `osfmount` after a
+                      # icon-only commit -- AU logged "Updated: False, Pushed: False" and this loop
+                      # packed and pushed anyway.
+                      $versionBefore = if (Test-Path "$package.nuspec" -ea 0) { (Select-String -Path "$package.nuspec" -Pattern '<version>.*</version>' -ea 0).Line }
                       if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
-                      choco pack; Push-Package -All;
+                      $versionAfter = if (Test-Path "$package.nuspec" -ea 0) { (Select-String -Path "$package.nuspec" -Pattern '<version>.*</version>' -ea 0).Line }
+                      if ($versionBefore -ne $versionAfter) {
+                        choco pack; Push-Package -All;
+                      } else {
+                        Write-Host "No version change for $package after update.ps1 -- skipping choco pack/push"
+                      }
                     popd
                 }
                 return
@@ -172,8 +188,19 @@ build_script:
 
                 if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
                 pushd $package_dir
+                  # See the matching comment in the [PUSH ...] handler above: only pack/push if
+                  # update.ps1 actually bumped the nuspec version, so a no-op run (e.g. a commit
+                  # that only touches the nuspec description or icon URL) doesn't silently
+                  # repackage a bare git checkout that's missing any embedded-installer binary
+                  # (those only exist on disk after a genuine au_BeforeUpdate download).
+                  $versionBefore = if (Test-Path "$package.nuspec" -ea 0) { (Select-String -Path "$package.nuspec" -Pattern '<version>.*</version>' -ea 0).Line }
                   if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
-                  choco pack; Push-Package -All;
+                  $versionAfter = if (Test-Path "$package.nuspec" -ea 0) { (Select-String -Path "$package.nuspec" -Pattern '<version>.*</version>' -ea 0).Line }
+                  if ($versionBefore -ne $versionAfter) {
+                    choco pack; Push-Package -All;
+                  } else {
+                    Write-Host "No version change for $package after update.ps1 -- skipping choco pack/push"
+                  }
                 popd
               }
           }
