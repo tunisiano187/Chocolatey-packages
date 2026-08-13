@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>perplexity</id>
+    <version>0.0</version>
+    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/perplexity</packageSourceUrl>
+    <owners>tunisiano</owners>
+    <title>Perplexity</title>
+    <authors>Perplexity AI, Inc.</authors>
+    <projectUrl>https://www.perplexity.ai/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@master/icons/perplexity.png</iconUrl>
+    <licenseUrl>https://www.perplexity.ai/hub/faq/terms-of-service</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>perplexity ai llm search assistant artificial-intelligence admin</tags>
+    <summary>Ask questions, get instant answers with sources. The AI search engine that understands what you're actually looking for.</summary>
+    <description><![CDATA[## Perplexity
+
+Perplexity is an AI-powered search engine and assistant that delivers direct, accurate answers with cited sources. It understands natural language questions and synthesises information from across the web in real time.
+
+**Key features:**
+
+- Ask anything in plain language and get immediate, sourced answers
+- Follow-up questions maintain context throughout the conversation
+- Access to real-time web information
+- Supports file uploads, image understanding, and document analysis
+- Focus modes for targeted searches (Academic, YouTube, Reddit, and more)
+- Available across Windows, macOS, iOS, and Android
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
+]]></description>
+    <releaseNotes>https://www.perplexity.ai/platforms</releaseNotes>
+    <copyright>Copyright 2026 Perplexity AI, Inc.</copyright>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
