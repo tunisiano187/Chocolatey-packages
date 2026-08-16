@@ -34,14 +34,23 @@ def get_github_issues(repository: str, token: str, days_back: int = 1) -> List[D
             
         issues.extend(page_issues)
         page += 1
-        
+
         # Respect rate limits
         if 'X-RateLimit-Remaining' in response.headers:
             remaining = int(response.headers['X-RateLimit-Remaining'])
             if remaining < 10:
                 print(f"⚠️  Rate limit low: {remaining} remaining")
                 break
-    
+
+    # Exclude issues this workflow created itself (its own "Critiques" reports,
+    # opened with --label "bug" in daily-surveillance.yml). Without this, a
+    # report that's still open when the next run fires gets classified
+    # "🔴 critical" (its own "bug" label matches classify_priority()) and a new
+    # report is created about it -- which is itself labeled "bug" and repeats
+    # the cycle indefinitely. Confirmed live: issues #4027-#4101 (daily,
+    # 2026-06-05 to 06-24), #4299, and #4353->#4354 are all this same loop.
+    issues = [i for i in issues if i.get('user', {}).get('login') != 'github-actions[bot]']
+
     return issues
 
 def classify_priority(title: str, labels: List[str]) -> str:
