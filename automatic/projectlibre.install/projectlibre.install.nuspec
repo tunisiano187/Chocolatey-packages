@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>projectlibre.install</id>
-    <version>1.9.8</version>
+    <version>0.0</version>
     <title>ProjectLibre</title>
     <authors>ProjectLibre</authors>
     <owners>tunisiano</owners>
@@ -34,7 +34,15 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>(c) ProjectLibre</copyright>
     <tags>project-management task schedule</tags>
     <dependencies>
-      <dependency id="javaruntime" />
+      <!-- Depend on jre8 directly rather than the javaruntime meta-package: javaruntime's
+           latest release (8.0.431, published Feb 2026) hard-pins jre8:8.0.431, whose Oracle
+           AutoDL download links have since gone stale/dead -- confirmed live: v1.9.8 failed
+           verification with "The install of jre8 was NOT successful", cascading to
+           "Failed to install projectlibre because a previous dependency failed". jre8 itself
+           has since moved on to 8.0.501 (published 29 Jul 2026) with working links; depending
+           on it directly and unversioned always resolves to whatever jre8 build is currently
+           live, instead of being stuck behind javaruntime's stale pin. -->
+      <dependency id="jre8" />
     </dependencies>
   </metadata>
   <files>
