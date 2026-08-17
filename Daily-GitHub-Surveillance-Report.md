@@ -1,15 +1,12 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-08-16 07:09:07 UTC  
+**Date**: 2026-08-17 07:32:27 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (3 total)
-
-#### 🔴 critical (1 issues)
-- #4353: 🚨 Surveillance Quotidienne - Critiques 2026-08-15 - https://github.com/tunisiano187/Chocolatey-packages/issues/4353 [🔴 critical]
+### 🚀 Issues Ouverts (2 total)
 
 #### 🟡 medium (1 issues)
 - #3998: 📊 Main GitHub Surveillance Issue - https://github.com/tunisiano187/Chocolatey-packages/issues/3998 [🟡 medium]
@@ -25,14 +22,13 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
-- 🔴 critical: 1
 - 🟡 medium: 1
 - ⚪ normal: 1
 
 ### 📈 Statistiques Globales
-- **Total issues**: 3
+- **Total issues**: 2
 - **Total PRs**: 0
-- **Critiques**: 1
+- **Critiques**: 0
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -44,4 +40,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-08-16 07:09:07 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-08-17 07:32:27 UTC*
