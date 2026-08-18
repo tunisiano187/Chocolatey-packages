@@ -26,7 +26,7 @@ function global:au_GetLatest {
 	$re  = "-x86-"
 	$url32 = $download_page.Content.Split('"') | Where-Object {$_ -match $re}
 
-	$version = $url32.Split('-') | Where-Object {$_ -match '\..\.'} | Where-Object {$_ -notmatch "ultra"}
+	$version = ($url32.Split('-') | Where-Object {$_ -match '\..\.'} | Where-Object {$_ -notmatch "ultra"} | Select-Object -Last 1)
 	$url64 = $url32.Replace('x86','x86_64')
 
 	$Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
