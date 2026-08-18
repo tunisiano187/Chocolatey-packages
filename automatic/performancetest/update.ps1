@@ -35,7 +35,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	# Scrape the version history page instead of downloading the exe (passmark blocks direct exe downloads from CI)
-	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+	$headers = @{ 'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' }
+	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing -Headers $headers
 	$match = [regex]::Match($page.Content, 'V(\d+\.\d+) Build (\d+)')
 	if (-not $match.Success) { throw "Could not parse version from $releases" }
 	$versionBase = $match.Groups[1].Value   # e.g. "11.1"
