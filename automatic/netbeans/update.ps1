@@ -60,6 +60,17 @@ function global:au_GetLatest {
 			$version += ".0"
 		}
 
+		# One-time collision bump: 31.0.0 already went live on chocolatey.org with the
+		# broken nb31-rc1 URL (published before the release-selection logic above existed
+		# -- it used to always take releases/latest, which was still the RC at the time).
+		# Chocolatey.org package versions are immutable, so re-submitting "31.0.0" now that
+		# au_GetLatest correctly resolves the stable nb31 asset gets rejected with a 409
+		# Conflict on every daily run, and the corrected chocolateyInstall.ps1 never makes
+		# it into git since AU only commits packages it successfully pushed. Bumping to a
+		# version chocolatey.org has never seen breaks the loop and ships the fix. Confirmed
+		# live: v31.0.0's installed nupkg still contains the dead nb31-rc1 URL today.
+		if ($version -eq "31.0") { $version = "31.0.1" }
+
 		$Latest = @{
 			URL64 = $url64
 			Checksum64 = ""
