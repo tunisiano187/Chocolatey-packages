@@ -36,7 +36,7 @@ function global:au_GetLatest {
 		$versionInfo = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile)
 		$fileVersion = $versionInfo.FileVersion
 		if (-not $fileVersion) {
-			throw "FileVersion is null in siinst.exe — the file may be corrupt or an error page"
+			throw "FileVersion is null in siinst.exe - the file may be corrupt or an error page"
 		}
 		$version = $fileVersion.Trim()
 		if (-not $version) { throw "Could not extract version from siinst.exe" }
