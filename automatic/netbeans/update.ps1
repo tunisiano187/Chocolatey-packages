@@ -60,16 +60,20 @@ function global:au_GetLatest {
 			$version += ".0"
 		}
 
-		# One-time collision bump: 31.0.0 already went live on chocolatey.org with the
-		# broken nb31-rc1 URL (published before the release-selection logic above existed
-		# -- it used to always take releases/latest, which was still the RC at the time).
-		# Chocolatey.org package versions are immutable, so re-submitting "31.0.0" now that
-		# au_GetLatest correctly resolves the stable nb31 asset gets rejected with a 409
-		# Conflict on every daily run, and the corrected chocolateyInstall.ps1 never makes
-		# it into git since AU only commits packages it successfully pushed. Bumping to a
-		# version chocolatey.org has never seen breaks the loop and ships the fix. Confirmed
-		# live: v31.0.0's installed nupkg still contains the dead nb31-rc1 URL today.
-		if ($version -eq "31.0") { $version = "31.0.1" }
+		# Collision bump, round 2: 31.0.0 went live with the broken nb31-rc1 URL, so this was
+		# first bumped to 31.0.1 to force a fresh push with the corrected stable nb31 asset --
+		# and that push DID succeed (confirmed live: 31.0.1 is now the published version with
+		# the correct URL). But the push happened via the PR-merge-triggered single-package
+		# path in .appveyor.yml, which -- unlike the daily scheduled au/update_all.ps1 job --
+		# has no git credentials wired in and never commits back to master. So the nuspec here
+		# stayed at 0.0, and every run since keeps recomputing "31.0.1" and getting rejected
+		# with a 409 Conflict, since chocolatey.org already has it. The package itself is fine
+		# now (31.0.1 has the correct URL) -- this is purely to stop the daily 409 noise by
+		# giving AU one more never-before-seen version to successfully push and finally commit.
+		# If nb32 (or later) lands upstream before this runs again, this branch goes dead on
+		# its own and nothing further is needed; if this exact loop recurs, the fix is the same
+		# -- bump the hardcoded target version again.
+		if ($version -eq "31.0") { $version = "31.0.2" }
 
 		$Latest = @{
 			URL64 = $url64
