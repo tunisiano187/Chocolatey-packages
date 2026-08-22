@@ -142,6 +142,12 @@ build_script:
             '\[PUSH (.+?)\]' {
                 $packages = $Matches[1] -split ' '
                 Write-Host "PUSHING PACKAGES: $packages"
+                # This handler has its own git remote/identity because it `return`s before the
+                # shared setup further down in this script ever runs.
+                git remote set-url origin https://$($env:github_api_key)@github.com/tunisiano187/Chocolatey-packages.git
+                git config --global user.email "helpdesk.choc@gmail.com"
+                git config --global user.name "tunisiano187"
+                $anyCommitted = $false
                 foreach ($package in $packages) {
                     Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
                     $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
@@ -162,12 +168,32 @@ build_script:
                       if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
                       $versionAfter = if (Test-Path "$package.nuspec" -ea 0) { (Select-String -Path "$package.nuspec" -Pattern '<version>.*</version>' -ea 0).Line }
                       if ($versionBefore -ne $versionAfter) {
-                        choco pack; Push-Package -All;
+                        # This whole handler never used to commit anything back to git -- only the
+                        # daily scheduled au/update_all.ps1 job has its own git integration for
+                        # that. A push made here (PR-merge-triggered) that succeeded therefore left
+                        # chocolatey.org and this repo permanently out of sync: the next run (this
+                        # handler or the daily one) recomputes the exact same already-published
+                        # version and gets rejected with 409 Conflict, forever, since chocolatey.org
+                        # package versions are immutable and there's no local record it ever
+                        # succeeded. Confirmed live: netbeans, cports and projectlibre.install all
+                        # stuck in this exact loop. -ErrorAction Stop forces a real push failure to
+                        # throw so it's caught below instead of silently falling through (this
+                        # script sets $ErrorActionPreference = 'Continue' at the top).
+                        try {
+                          choco pack
+                          Push-Package -All -ErrorAction Stop
+                          git add -A .
+                          git commit -m "AU-pushed $package (single-package handler)"
+                          $anyCommitted = $true
+                        } catch {
+                          Write-Warning "Push failed for $package, not committing local changes: $_"
+                        }
                       } else {
                         Write-Host "No version change for $package after update.ps1 -- skipping choco pack/push"
                       }
                     popd
                 }
+                if ($anyCommitted) { git pull --rebase; git push origin master }
                 return
             }
         }
@@ -180,6 +206,12 @@ build_script:
           $Env:au_Push = "false"
           $packages = $lastupdated.split('/').split(' ')
           Write-Host "PUSHING PACKAGES: $packages"
+          # This handler has its own git remote/identity because it `return`s before the shared
+          # setup further down in this script ever runs.
+          git remote set-url origin https://$($env:github_api_key)@github.com/tunisiano187/Chocolatey-packages.git
+          git config --global user.email "helpdesk.choc@gmail.com"
+          git config --global user.name "tunisiano187"
+          $anyCommitted = $false
           foreach ($line in $packages) {
               $package = $line.split(' ')
               if($package -ne 'automatic' -AND $package -notmatch '\+' -AND $package -notmatch '^\-' -AND $package -notmatch 'update\.ps1') {
@@ -197,13 +229,26 @@ build_script:
                   if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
                   $versionAfter = if (Test-Path "$package.nuspec" -ea 0) { (Select-String -Path "$package.nuspec" -Pattern '<version>.*</version>' -ea 0).Line }
                   if ($versionBefore -ne $versionAfter) {
-                    choco pack; Push-Package -All;
+                    # See the matching comment in the [PUSH ...] handler above: commit locally on a
+                    # successful push, since nothing else ever will for this handler, or the
+                    # version stays permanently unrecorded and every future run just re-pushes the
+                    # same already-published version into a 409 Conflict forever.
+                    try {
+                      choco pack
+                      Push-Package -All -ErrorAction Stop
+                      git add -A .
+                      git commit -m "AU-pushed $package (single-package handler)"
+                      $anyCommitted = $true
+                    } catch {
+                      Write-Warning "Push failed for $package, not committing local changes: $_"
+                    }
                   } else {
                     Write-Host "No version change for $package after update.ps1 -- skipping choco pack/push"
                   }
                 popd
               }
           }
+          if ($anyCommitted) { git pull --rebase; git push origin master }
           return
         } else {
           write-host "None Forced"
