@@ -51,12 +51,21 @@ function global:au_BeforeUpdate {
 	# assignment, improving the odds of landing on one that works for this IP (verified live: a
 	# pinned "?use_mirror=" query parameter does NOT actually pin anything, SourceForge silently
 	# reassigns regardless -- so plain retries are what actually help, not mirror pinning).
+	# The RSS feed's <link> is the "/download" auto-mirror-select endpoint. Fetching that exact
+	# URL from this CI's datacenter IP consistently (not just occasionally) returns SourceForge's
+	# HTML "choose a mirror" interstitial on every one of 5 retries -- confirmed live, so this
+	# isn't the intermittent flakiness the retry loop was originally written for. Stripping the
+	# trailing "/download" and fetching the bare file URL instead avoids that bot-gated endpoint;
+	# SourceForge still 302-redirects it straight to a mirror, which Invoke-WebRequest follows
+	# automatically, and it isn't subject to the same automation block.
+	$fetchUrl = $Latest.URL32 -replace '/download$', ''
+
 	$maxAttempts = 5
 	$validExe = $false
 	$lastFailureDetail = $null
 	for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
 		try {
-			$response = Invoke-WebRequest -Uri $Latest.URL32 -OutFile $destPath -UseBasicParsing -ErrorAction Stop -PassThru
+			$response = Invoke-WebRequest -Uri $fetchUrl -OutFile $destPath -UseBasicParsing -ErrorAction Stop -PassThru
 			$lastFailureDetail = "HTTP $($response.StatusCode), Content-Type: $($response.Headers['Content-Type']), $((Get-Item $destPath).Length) bytes"
 		} catch {
 			$lastFailureDetail = "request failed: $_"
@@ -80,7 +89,7 @@ function global:au_BeforeUpdate {
 		Start-Sleep -Seconds 3
 	}
 	if (-not $validExe) {
-		throw "Downloaded file is not a valid Windows executable after $maxAttempts attempts: $destPath (from $($Latest.URL32)). Last failure: $lastFailureDetail"
+		throw "Downloaded file is not a valid Windows executable after $maxAttempts attempts: $destPath (from $fetchUrl). Last failure: $lastFailureDetail"
 	}
 
 	$Latest.Checksum32 = (Get-FileHash -Path $destPath -Algorithm SHA512).Hash
