@@ -32,7 +32,16 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
   $page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$tag = ($page.Links | Where-Object {$_.href -match "tag"} | Select-Object -First 2 -Skip 1).href.split('/')[-1]
+	# The old "match 'tag', skip 1, take 2" heuristic assumed exactly one nav link containing
+	# the substring "tag" (e.g. a "Tags" page link) precedes the real per-release "/tag/<name>"
+	# links -- but that substring also matches GitHub's own "/tags" link, and how many of those
+	# appear before the release list isn't stable across GitHub UI changes. Confirmed live: this
+	# picked a non-existent tag and Get-GitHubRelease -Tag threw a 404. Match the real release
+	# tag URL shape directly instead of guessing an offset.
+	$tag = ($page.Links | Where-Object {$_.href -match "/tag/"} | Select-Object -First 1).href.split('/')[-1]
+	if (-not $tag) {
+		throw "Could not find a release tag link on $releases"
+	}
   $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Tag $tag
 	$urls = $tags.assets.browser_download_url | Where-Object {$_ -match ".zip$"}
   $url32 = $urls | Where-Object {$_ -match 'windows-x32'}
