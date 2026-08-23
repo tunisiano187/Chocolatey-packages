@@ -11,11 +11,17 @@ function global:au_BeforeUpdate {
 
 function global:au_GetLatest {
 	$package = [AUPackage]::new( $pwd )
-	$download_page	= Invoke-WebRequest -UseBasicParsing -Uri $releases
+	# Without a browser-like User-Agent, crucial.com rejects the request outright ("Request
+	# Rejected... consult with your administrator", a WAF page) instead of serving the real
+	# page -- the previous regex match against that rejection page silently failed, leaving
+	# $Matches unset and throwing an opaque "Cannot index into a null array" on $Matches[0].
+	$download_page	= Invoke-WebRequest -UseBasicParsing -Uri $releases -UserAgent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 	$filere			= '\.zip$'
 
 	$verre			= '(?<=Version\s)[\d.-]+(?=\s)'
-	$download_page.Content -match $verre | Out-Null
+	if ($download_page.Content -notmatch $verre) {
+		throw "Could not find version pattern '$verre' on $releases"
+	}
 	$version		= $Matches[0].ToString()
 	#short-circuit if there is no new update to the webpage
 	$url64			= $download_page.links | Where-Object href -match $filere | Select-Object -First 1 -expand href
