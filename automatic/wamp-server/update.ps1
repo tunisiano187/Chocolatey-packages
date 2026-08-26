@@ -24,11 +24,11 @@ function global:au_GetLatest {
         $version = $matches[1]
     }
     if($version -eq '3.4.0') {
-        $version = $version + ".2025122601"
+        $version = $version + ".2026082601"
     }
 
 	$Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor 32 -NoCheckChocoVersion
