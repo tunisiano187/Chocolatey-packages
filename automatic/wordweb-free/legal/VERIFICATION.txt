@@ -12,8 +12,8 @@ link32: https://wordweb.info/cgi-bin/geoip/wordweb.exe
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksumtype: SHA256
-checksum32: 0171CB5DFA12BA9E600AAC5E5ABAA0B4DAD94F4F2EECFC2D3B79D17527DA2E14
+checksumtype: sha256
+checksum32: A2C9FA67B2047A862DFBE3605058B8A9AA28D2E695AA23492876B49E29246539
 
 The included 'LICENSE.txt' file have been obtained from:
 license: https://wordweb.info/free/licence5.html
