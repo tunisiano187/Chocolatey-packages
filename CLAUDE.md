@@ -58,6 +58,13 @@ Each package under `automatic/<name>/` contains:
 - `update.ps1` — AU update script; must define `au_GetLatest` (and optionally `au_SearchReplace`, `au_BeforeUpdate`, `au_AfterUpdate`)
 - `tools/chocolateyInstall.ps1` — The actual installation script run by Chocolatey
 
+Prefer splatting (`$packageArgs = @{ ... }; Install-ChocolateyPackage @packageArgs`) over long
+`-Param "value" \`` continuation chains when calling `Install-ChocolateyPackage`/
+`Install-ChocolateyZipPackage`/etc. in `chocolateyInstall.ps1` — this is the established style
+elsewhere in the repo (e.g. `projectlibre.install`). Existing packages don't need a dedicated
+pass to convert them, but whenever a package's `chocolateyInstall.ps1` is touched for any other
+reason and isn't already splatted, convert it to splatting as part of that change.
+
 ### AU update.ps1 conventions
 Every automatic package's `update.ps1` follows this pattern:
 ```powershell
