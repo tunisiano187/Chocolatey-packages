@@ -25,21 +25,20 @@ developed on the shared branch `claude/choco-packages-cicd-zq09hd`:
 - `tunisiano187/choco-packages`
 - `tunisiano187/Chocolatey-packages1`
 
-The job is defined in full in **`CLAUDE.md` → "Daily Session Task"**: check
-open GitHub issues, check AppVeyor CI
-(https://ci.appveyor.com/project/tunisiano187/chocolatey-packages), check
-GitHub Actions, fix what's actionable, one PR per package, never push to
-master directly. **Read that section and its full amendment history before
-doing anything** — it encodes hard-won corrections (e.g. never touch
-`.appveyor.yml`, never hand-set nuspec `<version>`, the Perplexity
-rejection precedent) that are easy to silently violate if you re-derive
-the rules from scratch.
+The job itself — what to check, in what order, and every rule that governs
+it — is defined in **`CLAUDE.md` → "Daily Session Task"** and its full
+amendment history. That's the single source of truth; it isn't restated
+here, and it changes over time (see the sync rule above), so always read
+it directly rather than trusting a summary. This file only adds what
+CLAUDE.md doesn't cover: git/PR mechanics, fix patterns not yet written
+up there, and context outside the repo (credentials, auxiliary scripts).
 
-## Branch / PR mechanics that aren't obvious from CLAUDE.md
+## Branch / PR mechanics that aren't in CLAUDE.md
 
 - The shared branch `claude/choco-packages-cicd-zq09hd` can only carry
-  **one open PR at a time** per repo. Workflow for each new fix once the
-  previous PR on that branch has merged:
+  **one open PR at a time** per repo (one-PR-per-package is CLAUDE.md's
+  rule; this is the git consequence of it). Workflow for each new fix
+  once the previous PR on that branch has merged:
   ```
   git fetch origin master
   git checkout -B claude/choco-packages-cicd-zq09hd origin/master
@@ -56,14 +55,8 @@ the rules from scratch.
   Activity Events section for the full posture on owned-PR CI/review
   handling — it is not optional, drive every opened PR to green or
   explain why not.
-- One PR per package, always (CLAUDE.md, 2026-06-14). Never batch fixes
-  for multiple packages into one PR even when the root cause and fix
-  pattern are identical (e.g. the three-package 409-conflict batch below
-  was still shipped as three separate PRs).
-- Before opening a new PR for an issue/CI failure, check there isn't
-  already an open PR addressing it.
 
-## Established fix patterns (apply these, don't re-derive)
+## Fix patterns not yet written up in CLAUDE.md
 
 ### The recurring 409-Conflict version-collision bug
 Symptom: a package update run fails pushing to chocolatey.org with a 409
@@ -94,32 +87,17 @@ defaults to SHA512 — pass `-checksumType 'sha256'` explicitly if the
 committed checksums in the repo are SHA256, or the comparison always
 reports "different" and defeats the fix.
 
-### Stale checksum on a rolling URL
-If the upstream download URL is stable but its *content* changes without
-the filename/version changing, AU can't detect this on its own (it only
-recomputes checksums when the version string changes). This is one of
-the few cases where manually setting the nuspec to `0.0` +
-`-NoCheckChocoVersion` in `update.ps1` is appropriate (CLAUDE.md,
-2026-07-24). Once AU successfully re-pushes and the version moves off
-`0.0`, open a PR to remove `-NoCheckChocoVersion` (CLAUDE.md, 2026-07-26)
-— never hand-edit the nuspec version itself (2026-08-01).
-
-### Splatting convention
-Prefer `$packageArgs = @{ ... }; Install-ChocolateyZipPackage @packageArgs`
-over long `-Param "value" \`` backtick chains in `chocolateyInstall.ps1`.
-Documented in CLAUDE.md under "Automatic package structure". Not a
-dedicated repo-wide refactor pass — apply it opportunistically whenever a
-package's `chocolateyInstall.ps1` is touched for any other reason.
+Stale-checksum-on-a-rolling-URL handling and the splatting convention are
+already fully documented in CLAUDE.md (2026-07-24/07-26/08-01 amendments,
+and the "Automatic package structure" section, respectively) — nothing to
+add here, just apply them as written there.
 
 ## Package-specific precedents (don't re-litigate these)
 
-- **Perplexity AI**: rejected five times (PRs #4329, #4332, #4342, #4345,
-  #4348) on ToS grounds — redistribution/automation-tooling prohibition.
-  If a Perplexity PR/branch resurfaces, close it citing CLAUDE.md's
-  2026-08-14 entry with no further licensing analysis. Stale branches to
-  delete if you have access: `claude/stoic-galileo-ik2hlm`,
-  `claude/stoic-galileo-en0d6x`, `claude/stoic-galileo-t4fxq2`,
-  `claude/stoic-galileo-ut5oln`.
+- **Perplexity AI**: full rationale, rejected-PR numbers, and stale
+  branches to delete are in CLAUDE.md's 2026-08-14 entry — if a Perplexity
+  PR/branch resurfaces, act on that entry directly, no need to duplicate
+  it here.
 - **windjview**: flagged by chocolatey-ops moderation for bundled
   Yandex adware. Independently verified via VirusTotal (genuine
   detection, not a false positive). User decision: leave the package
@@ -188,11 +166,6 @@ mail.
 - `git stash` / `git stash pop` is the right tool when you need to keep
   an unrelated in-progress change (e.g. a CLAUDE.md doc edit) off an
   in-flight PR branch temporarily.
-- All secrets across this whole operation live under
-  `/home/user/.credentials/<service>/` with `700`/`600` permissions,
-  never inside a git repository. Keep it that way for anything new.
-- When in doubt about a convention, CLAUDE.md's amendment history is the
-  source of truth — it exists specifically because the user has
-  corrected this role's behavior multiple times and asked for those
-  corrections to persist. Read the whole "Task history / amendments"
-  section before acting, not just the top-level task description.
+- Keep any new secret under `/home/user/.credentials/<service>/`
+  (`700`/`600` permissions), never inside a git repository — same
+  pattern as the two examples above.
