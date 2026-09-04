@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url            = 'https://github.com/ollama/ollama/releases/download/v0.33.2/OllamaSetup.exe'
-$checksum       = '5a91c1cf92480e28a84cd99e437219be719df5a50d5fa0fd5fe5b5c4a122f506'
+$url            = 'https://github.com/ollama/ollama/releases/download/v0.33.3/OllamaSetup.exe'
+$checksum       = '32cdcb1da477bc7fffbf1c1cdeeb99b1db003af094db56dd3c156abd04d34f8e'
 $checksumType   = 'sha256'
 
 $packageArgs = @{
