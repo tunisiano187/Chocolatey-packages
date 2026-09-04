@@ -38,18 +38,28 @@ function global:au_GetLatest {
 	# Uses the real upstream $version -- the collision bump below must not affect this URL.
 	$url32 = "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/ProjectLibre-$version.msi/download"
 
-	$FileVersion = Get-FileVersion $url32
+	$FileVersion = Get-FileVersion $url32 -checksumType 'sha256'
 
-	# Collision bump: same root cause as netbeans/cports -- the single-package push handler in
-	# .appveyor.yml doesn't commit back to git, so the nuspec stays at 0.0 forever and every run
-	# recomputes the identical already-published version (1.9.8), hitting 409 Conflict. Bump the
-	# *reported* version only (after the URL above is already built from the real one) to a
-	# version chocolatey.org has never seen, to break the loop. Uses a FIXED literal, not
-	# Get-Date: SourceForge's ProjectLibre-1.9.8.msi is unchanged day to day (same checksum),
-	# so a dynamic today's-date suffix would mint a brand-new never-before-seen version every
-	# single day forever instead of stopping after one successful push. If this exact loop
-	# recurs (still stuck, no new upstream release), bump this hardcoded literal again by hand.
-	if ($version -eq "1.9.8") { $version = "1.9.8.20260904" }
+	# Same root cause as netbeans/cports: the single-package push handler in .appveyor.yml
+	# doesn't commit back to git, so the nuspec stays at 0.0 forever and a bare version-string
+	# comparison against it always looks "new" even when SourceForge hasn't actually released
+	# anything, hitting 409 Conflict every run. Compare the freshly-downloaded checksum against
+	# what's already committed in chocolateyInstall.ps1 instead -- ground truth for "did the
+	# binary actually change" -- and only bump the *reported* version (after the URL above is
+	# already built from the real upstream one) when it genuinely has, using the msi's own
+	# Last-Modified date rather than "today" so repeated checks before a successful commit
+	# lands don't each mint a further new version. Same technique already used by windjview.
+	$installContent = Get-Content "$PSScriptRoot\tools\chocolateyInstall.ps1" -Raw
+	$current_checksum = [regex]::Match($installContent, "\`$checksum\s*=\s*'([a-fA-F0-9]+)'").Groups[1].Value
+	if ($current_checksum -and $current_checksum -ne $FileVersion.Checksum) {
+		try {
+			$lastModified = (Invoke-WebRequest -Uri $url32 -Method Head -UseBasicParsing).Headers['Last-Modified']
+			$dateStamp = ([datetime]::Parse($lastModified)).ToString('yyyyMMdd')
+		} catch {
+			$dateStamp = Get-Date -Format 'yyyyMMdd'
+		}
+		$version = "$version.$dateStamp"
+	}
 
 	$Latest = @{
 		URL32          = $url32
