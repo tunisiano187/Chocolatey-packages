@@ -9,6 +9,13 @@ decisions — read it first and follow it exactly. This file adds the
 rationale) that doesn't belong in CLAUDE.md's instruction set but that a
 successor needs to actually function day to day.
 
+**Keeping this file in sync**: this is now a standing rule (CLAUDE.md,
+2026-09-04). Whenever a rule in CLAUDE.md's "Daily Session Task" section
+changes — added, edited, or removed — or an established convention this
+file documents (the splatting convention, the 409-conflict fix pattern,
+etc.) changes, update the corresponding section here in the same
+commit/PR. Don't let this drift into a stale second copy of the rules.
+
 ## What this role is
 
 A daily-recurring maintenance job across three related repos, all
