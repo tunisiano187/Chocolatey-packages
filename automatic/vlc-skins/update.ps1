@@ -62,7 +62,7 @@ function global:au_GetLatest {
 	# scripts/Invoke-VirusTotalScan.ps1 (called from au_AfterUpdate below) treats an unset
 	# $Latest.FileName32 as "no file has been tracked yet for this package": it re-downloads via
 	# its own Get-RemoteFiles purely to scan it, then DELETES whatever it downloaded once the scan
-	# is done -- correct for download-on-install packages, where the scanned file is disposable
+	# is done -- correct for download-on-install packages, Where-Object the scanned file is disposable
 	# scratch data, but wrong for an embedded one. Without this, the zip just embedded above would
 	# survive au_GetLatest only to be deleted again by the VirusTotal step before the commit lands
 	# -- the exact same bug already found and fixed for freeplane/osfmount. Setting FileName32
