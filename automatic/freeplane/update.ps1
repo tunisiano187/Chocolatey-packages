@@ -60,12 +60,19 @@ function global:au_BeforeUpdate {
 	# automatically, and it isn't subject to the same automation block.
 	$fetchUrl = $Latest.URL32 -replace '/download$', ''
 
+	# PowerShell's default Invoke-WebRequest User-Agent ("WindowsPowerShell/x.y") is a well-known
+	# automation fingerprint. Confirmed live (2026-09-04): AppVeyor still gets served the HTML
+	# mirror-choice interstitial on every one of 5 retries even against this bare (non-/download)
+	# URL, so the URL-shape fix above didn't fully solve it -- a plain browser User-Agent is a
+	# cheap, safe further mitigation for the same class of bot-detection SourceForge applies here.
+	$browserUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+
 	$maxAttempts = 5
 	$validExe = $false
 	$lastFailureDetail = $null
 	for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
 		try {
-			$response = Invoke-WebRequest -Uri $fetchUrl -OutFile $destPath -UseBasicParsing -ErrorAction Stop -PassThru
+			$response = Invoke-WebRequest -Uri $fetchUrl -OutFile $destPath -UseBasicParsing -UserAgent $browserUserAgent -ErrorAction Stop -PassThru
 			$lastFailureDetail = "HTTP $($response.StatusCode), Content-Type: $($response.Headers['Content-Type']), $((Get-Item $destPath).Length) bytes"
 		} catch {
 			$lastFailureDetail = "request failed: $_"
