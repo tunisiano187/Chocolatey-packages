@@ -92,6 +92,18 @@ already fully documented in CLAUDE.md (2026-07-24/07-26/08-01 amendments,
 and the "Automatic package structure" section, respectively) — nothing to
 add here, just apply them as written there.
 
+**Follow-up gotcha**: the checksum-comparison fix alone doesn't fully close
+the loop for a package whose nuspec stays at `0.0` forever (the
+`.appveyor.yml` gap above) — with `-NoCheckChocoVersion` still set, AU keeps
+re-attempting the same already-published version and gets 409 again, just
+on a fixed version instead of a new one each day (hit this with `cports`
+and `projectlibre.install`, one day after their checksum fixes shipped).
+Remove `-NoCheckChocoVersion` once you can confirm a real successful
+publish — the AU error itself saying the version "already exists", or a
+moderation "Passed Verification Testing" email — even if the local nuspec
+is still stuck at `0.0` and never shows it; see CLAUDE.md's 2026-09-05
+amendment.
+
 ## Package-specific precedents (don't re-litigate these)
 
 - **Perplexity AI**: full rationale, rejected-PR numbers, and stale
@@ -169,3 +181,23 @@ mail.
 - Keep any new secret under `/home/user/.credentials/<service>/`
   (`700`/`600` permissions), never inside a git repository — same
   pattern as the two examples above.
+- This session's repo access is scoped to `tunisiano187`'s own
+  repositories. Read access to any *other* owner's public repo still
+  works fine via a bare `git clone` or `add_repo` with `access: "read"`
+  (confirmed working for `arduino/arduino-ide`, `freeplane/freeplane`,
+  `BOINC/boinc`, among others) — useful for checking an upstream
+  project's actual source/release layout. But push access, PR creation,
+  and even read-only actions through the GitHub API/MCP integration
+  (issues, forking, etc.) are hard-blocked for any repo outside
+  `tunisiano187` — confirmed by three independent failures in the same
+  session: `add_repo` with `access:"push"` on another owner's repo
+  ("cross-tier adds are not supported"), `fork_repository` on another
+  owner's repo (blocked by the GitHub MCP server's own allowlist,
+  independent of the target account's real GitHub permissions), and
+  no pre-existing fork under `tunisiano187` to route around it with. If a
+  task needs a PR against a repo owned by someone else (e.g. a CodeTriage
+  suggestion landing on a genuinely different maintainer's repo), the fix
+  can still be prepared and handed to the user as a patch/diff, but
+  actually filing it requires either the user forking that repo to their
+  own account first (then it's same-owner and `add_repo` works normally)
+  or a separate session scoped to that repo from the start.
