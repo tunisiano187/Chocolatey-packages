@@ -49,6 +49,17 @@ function global:au_GetLatest {
 	# already built from the real upstream one) when it genuinely has, using the msi's own
 	# Last-Modified date rather than "today" so repeated checks before a successful commit
 	# lands don't each mint a further new version. Same technique already used by windjview.
+	#
+	# This alone isn't enough, though: since the nuspec never advances off 0.0 either way, every
+	# subsequent run recomputes the exact same version (same stale committed checksum, same
+	# unchanged Last-Modified date) and, with -NoCheckChocoVersion still forcing a push attempt
+	# regardless, keeps re-pushing a version that already succeeded once -- 409 forever, just on
+	# a fixed version instead of a new one each day (confirmed live: exactly this, the day after
+	# this technique first shipped -- same bug independently found and fixed for cports).
+	# -NoCheckChocoVersion is removed below for that reason: AU's own default check against the
+	# live chocolatey.org feed correctly recognizes an already-published version and skips
+	# cleanly, with no error and no push attempt, and still lets a genuinely new future version
+	# through untouched.
 	$installContent = Get-Content "$PSScriptRoot\tools\chocolateyInstall.ps1" -Raw
 	$current_checksum = [regex]::Match($installContent, "\`$checksum\s*=\s*'([a-fA-F0-9]+)'").Groups[1].Value
 	if ($current_checksum -and $current_checksum -ne $FileVersion.Checksum) {
@@ -70,4 +81,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
