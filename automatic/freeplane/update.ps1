@@ -60,19 +60,24 @@ function global:au_BeforeUpdate {
 	# automatically, and it isn't subject to the same automation block.
 	$fetchUrl = $Latest.URL32 -replace '/download$', ''
 
-	# PowerShell's default Invoke-WebRequest User-Agent ("WindowsPowerShell/x.y") is a well-known
-	# automation fingerprint. Confirmed live (2026-09-04): AppVeyor still gets served the HTML
-	# mirror-choice interstitial on every one of 5 retries even against this bare (non-/download)
-	# URL, so the URL-shape fix above didn't fully solve it -- a plain browser User-Agent is a
-	# cheap, safe further mitigation for the same class of bot-detection SourceForge applies here.
-	$browserUserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-
+	# 2026-09-04/05 postmortem: a prior version of this function sent a spoofed browser
+	# User-Agent here ('Chrome/120...') as a further mitigation attempt. DO NOT reintroduce that.
+	# AppVeyor's daily runs had failed identically and harmlessly against this same bare URL every
+	# single day from 23 Aug through 3 Sep (plain HTTP 200 "choose a mirror" HTML page, no
+	# Cloudflare challenge markers) -- confirmed by reading each day's job log directly. The very
+	# next run after the User-Agent change merged (4 Sep 16:13 UTC) started getting served an
+	# active Cloudflare JS "managed challenge" (`_cf_chl_opt`, "Just a moment...") instead, and it
+	# stayed elevated across every subsequent run checked over the following 16+ hours (different
+	# cf-ray each time, so not a one-off blip). Sending a browser UA without the matching TLS/JA3
+	# fingerprint a real browser would have is a textbook bot-management red flag -- it very
+	# likely made Cloudflare's scoring for this IP/path *worse*, not better. Leave the default
+	# PowerShell UA (or none) rather than trying to impersonate a browser again.
 	$maxAttempts = 5
 	$validExe = $false
 	$lastFailureDetail = $null
 	for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
 		try {
-			$response = Invoke-WebRequest -Uri $fetchUrl -OutFile $destPath -UseBasicParsing -UserAgent $browserUserAgent -ErrorAction Stop -PassThru
+			$response = Invoke-WebRequest -Uri $fetchUrl -OutFile $destPath -UseBasicParsing -ErrorAction Stop -PassThru
 			$lastFailureDetail = "HTTP $($response.StatusCode), Content-Type: $($response.Headers['Content-Type']), $((Get-Item $destPath).Length) bytes"
 		} catch {
 			$lastFailureDetail = "request failed: $_"
