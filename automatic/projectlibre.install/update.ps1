@@ -18,16 +18,22 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	# SourceForge latest/download redirects to the jar file URL which contains the version
-	$redirectUrl = Get-RedirectedUrl 'http://sourceforge.net/projects/projectlibre/files/latest/download'
-	if (-not $redirectUrl) {
-		throw "Could not follow SourceForge redirect"
+	# Use SourceForge RSS feed to find the latest MSI release URL.
+	# Replaces Get-RedirectedUrl (Wormies-AU-Helpers) which throws
+	# "You cannot call a method on a null-valued expression" on .NET Core / .NET 5+
+	# because HttpWebResponse.ResponseUri can be null after CDN redirect chains.
+	$rss = [xml](Invoke-WebRequest -Uri 'https://sourceforge.net/projects/projectlibre/rss?path=/ProjectLibre' -UseBasicParsing).Content
+	$url32 = ($rss.rss.channel.item |
+		Where-Object { $_.link -match '\.msi/download$' } |
+		Select-Object -First 1).link
+	if (-not $url32) {
+		throw "Could not find MSI release in SourceForge RSS feed"
 	}
 
-	# Extract version from URL like: .../ProjectLibre/1.9.8/projectlibre-1.9.8.jar
-	$versionMatch = $redirectUrl | Select-String -Pattern '/ProjectLibre/([\d.]+)/'
+	# Extract version from link like: .../ProjectLibre/1.9.8/ProjectLibre-1.9.8.msi/download
+	$versionMatch = $url32 | Select-String -Pattern '/ProjectLibre/([\d.]+)/'
 	if (-not $versionMatch -or $versionMatch.Matches.Count -eq 0) {
-		throw "Could not extract version from redirect URL: $redirectUrl"
+		throw "Could not extract version from SourceForge RSS link: $url32"
 	}
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
@@ -36,8 +42,6 @@ function global:au_GetLatest {
 	# that WebClient.DownloadFile treats as illegal path characters, breaking AU's checksum
 	# logic. Invoke-WebRequest (used by Get-FileVersion) follows the redirect transparently.
 	# Uses the real upstream $version -- the collision bump below must not affect this URL.
-	$url32 = "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/$version/ProjectLibre-$version.msi/download"
-
 	$FileVersion = Get-FileVersion $url32 -checksumType 'sha256'
 
 	# Same root cause as netbeans/cports: the single-package push handler in .appveyor.yml
