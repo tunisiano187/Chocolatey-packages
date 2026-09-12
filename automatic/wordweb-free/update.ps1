@@ -34,7 +34,7 @@ function global:au_GetLatest {
 	# below) treats an unset $Latest.FileName32 as "no file has been tracked yet for this
 	# package" -- it re-downloads via its own Get-RemoteFiles purely to scan it, then DELETES
 	# whatever it downloaded once the scan is done. That's correct for download-on-install
-	# packages, where the scanned file is disposable scratch data -- but wordweb-free embeds the
+	# packages, Where-Object the scanned file is disposable scratch data -- but wordweb-free embeds the
 	# exe (tools/chocolateyInstall.ps1 finds it via Get-ChildItem *.exe), so the shared script
 	# wrongly deleted the just-downloaded exe right after au_GetLatest placed it above. AU still
 	# reported success since nothing threw -- the nupkg was committed with no exe in tools/, so
