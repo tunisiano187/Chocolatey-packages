@@ -2,7 +2,7 @@
 $packageName  = 'javauninstalltool'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://javadl-esd-secure.oracle.com/update/jut/JavaUninstallTool.exe'
-$checksum     = 'C542BD3490F56D7E35C0F6B6F468E083906F3BBF09A41DC409A6B982DEEA29B2'
+$checksum     = '73788DCC98F1AA2E20984493A68ABB357E8EB3779FBD59D940614821DA890BC6'
 $checksumType = 'sha256'
 $shortcutName = 'Java Uninstall Tool.lnk'
 $portableEXE  = 'JavaUninstallTool.exe'
