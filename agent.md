@@ -187,15 +187,13 @@ mail.
 - `git stash` / `git stash pop` is the right tool when you need to keep
   an unrelated in-progress change (e.g. a CLAUDE.md doc edit) off an
   in-flight PR branch temporarily.
-- **Merging PRs directly**: normally leave merging to the user. The one
-  exception (per CLAUDE.md's 2026-09-16 amendment) is a PR auto-opened by
-  the repo's own workflow (author `github-actions[bot]`) for a
-  policy-mandated, single-line, already-vetted change — e.g. the
-  `-NoCheckChocoVersion` removal PRs from the 2026-07-24/07-26 rules.
-  Merge those directly once all CI checks are green and there's no
-  pending review comment; otherwise report status instead of merging.
-  This does not extend to PRs carrying any actual code judgment call, or
-  to PRs you didn't just verify yourself.
+- **Never merge a PR without the user's explicit go-ahead** — no
+  exceptions, per CLAUDE.md's 2026-09-16 amendment (which revoked a
+  same-day permission to auto-merge vetted `github-actions[bot]`
+  maintenance PRs; that permission is dead, don't resurrect it). Verify
+  and report CI status and review comments as usual, but leave the merge
+  button to the user, or wait for them to explicitly say to merge a given
+  PR.
 - Keep any new secret under `/home/user/.credentials/<service>/`
   (`700`/`600` permissions), never inside a git repository — same
   pattern as the two examples above.
