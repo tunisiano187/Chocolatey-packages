@@ -164,6 +164,15 @@ mail.
   `x-apikey: <key>`. Not tied to the AU `au_AfterUpdate` VirusTotal scan
   hook (that uses its own configured key inside `au/update_vars.ps1`,
   not committed).
+- **Behavior is defined by the trigger's own prompt, not by memory**: the
+  exact triage rules (CodeTriage link verification via real HTTP redirect
+  rather than trusting the email body, which repos/senders count as noise
+  to auto-trash — e.g. `agiresearch/AIOS` notifications, decided
+  2026-09-16 — etc.) live in the trigger's stored prompt text itself
+  (`trig_017axRnenvJ5ax7KgUbsJ9P8`, editable via `update_trigger`). When
+  the user gives a standing instruction about this routine, edit the
+  trigger's prompt directly rather than relying on in-session memory, so
+  it survives across sessions.
 
 ## General operating notes
 
@@ -178,6 +187,15 @@ mail.
 - `git stash` / `git stash pop` is the right tool when you need to keep
   an unrelated in-progress change (e.g. a CLAUDE.md doc edit) off an
   in-flight PR branch temporarily.
+- **Merging PRs directly**: normally leave merging to the user. The one
+  exception (per CLAUDE.md's 2026-09-16 amendment) is a PR auto-opened by
+  the repo's own workflow (author `github-actions[bot]`) for a
+  policy-mandated, single-line, already-vetted change — e.g. the
+  `-NoCheckChocoVersion` removal PRs from the 2026-07-24/07-26 rules.
+  Merge those directly once all CI checks are green and there's no
+  pending review comment; otherwise report status instead of merging.
+  This does not extend to PRs carrying any actual code judgment call, or
+  to PRs you didn't just verify yourself.
 - Keep any new secret under `/home/user/.credentials/<service>/`
   (`700`/`600` permissions), never inside a git repository — same
   pattern as the two examples above.
