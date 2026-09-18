@@ -1,6 +1,6 @@
 ﻿$packageName = 'install4j.portable'
-$url = 'https://download.ej-technologies.com/install4j/install4j_windows-x64_13_1.zip'
-$checksum = 'bae139648f9e57882cf5057415f9a6bdee070c9e2b0aff2b048ce124bd50c529'
+$url = 'https://download.ej-technologies.com/install4j/install4j_windows-x64_13_1_1.zip'
+$checksum = 'bf9e6c97ec395fd90fee2bb8938f4143ed913649cabb96621311b50e6a7502aa'
 $checksumType = 'sha256'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
