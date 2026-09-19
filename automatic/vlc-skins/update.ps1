@@ -71,4 +71,13 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor none
+# 2026-09-19: v2026.08.30 failed chocolatey.org verification ("cannot find the file specified:
+# tools\vlc-skins.zip") on 30 Aug -- BEFORE the embed-unconditionally/FileName32 fix above shipped
+# on 4-5 Sep. Since upstream hasn't changed since (same file, same Last-Modified date), au_GetLatest
+# keeps recomputing the exact same "2026.08.30" version every run, which already matches the
+# locally-committed nuspec -- so AU concludes nothing changed and never re-attempts the push, and
+# the already-fixed code has never actually been exercised against a real submission. Moderation's
+# own guidance is to "repush your updated package with the exact same version" for this case.
+# Reset to 0.0 + -NoCheckChocoVersion forces exactly that one-time re-push; remove the flag once
+# this version passes verification per the usual policy.
+update -ChecksumFor none -NoCheckChocoVersion
