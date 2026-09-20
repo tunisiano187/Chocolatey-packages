@@ -12,8 +12,8 @@ url32: https://www.videolan.org/vlc/skins2/vlc-skins.zip
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-checksumtype: sha256
-checksum32: B09EA21739D1D45A887C5B3A7454F93EBEC0BAC9846A9F869863F19A726EA70F
+checksumtype: 0
+checksum32: 0
 
 WebPage Hash
-pagehash: 6D5D8118D2AB677BB72BBD71316BAB64124911EB04ACD316F5FB30089F01B205
+pagehash: 0
