@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 # Electron stopped publishing a win32-ia32 (32-bit Windows) build as of v44 -- 64-bit only now.
-$url = 'https://github.com/electron/electron/releases/download/v44.4.4/electron-v44.4.4-win32-x64.zip'
-$checksum = '47a3097f1e14030c99937a5ff9534446f44cf0c0032b88f2466360bab4ca9cdc'
+$url = 'https://github.com/electron/electron/releases/download/v44.4.5/electron-v44.4.5-win32-x64.zip'
+$checksum = '11c395820a5aaa8ebcc0686b476d0ac98a730274ebfbdc8cf5538a7c2815cb5d'
 $checksumType = 'sha256'
 
 $packageArgs = @{
