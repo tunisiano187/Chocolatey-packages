@@ -78,6 +78,8 @@ function global:au_GetLatest {
 # locally-committed nuspec -- so AU concludes nothing changed and never re-attempts the push, and
 # the already-fixed code has never actually been exercised against a real submission. Moderation's
 # own guidance is to "repush your updated package with the exact same version" for this case.
-# Reset to 0.0 + -NoCheckChocoVersion forces exactly that one-time re-push; remove the flag once
-# this version passes verification per the usual policy.
-update -ChecksumFor none -NoCheckChocoVersion
+# -NoCheckChocoVersion is no longer needed: upstream released a genuinely new skins pack on
+# 22 Sep, which the fixed checksum-comparison logic correctly detected and pushed as v2026.09.22
+# -- confirmed live and approved on chocolatey.org. Its one-time job is done.
+update -ChecksumFor none
+
