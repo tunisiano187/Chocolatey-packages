@@ -9,16 +9,13 @@ if ((Get-IsWinServer)) {
   throw
 }
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  url64bit      = $url64
-  silentArgs    = "/s"
-  validExitCodes= @(0)
-  softwareName  = 'Proton Pass*'
-  checksum64    = $checksum64
-  checksumType64= $checksumType64
+$dlArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  FileFullPath   = Join-Path $toolsDir 'ProtonPass.msix'
+  Url64bit       = $url64
+  Checksum64     = $checksum64
+  ChecksumType64 = $checksumType64
 }
 
-Install-ChocolateyPackage @packageArgs
+Get-ChocolateyWebFile @dlArgs
+Add-AppxPackage -Path $dlArgs.FileFullPath
