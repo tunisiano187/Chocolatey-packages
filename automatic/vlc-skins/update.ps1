@@ -78,6 +78,6 @@ function global:au_GetLatest {
 # locally-committed nuspec -- so AU concludes nothing changed and never re-attempts the push, and
 # the already-fixed code has never actually been exercised against a real submission. Moderation's
 # own guidance is to "repush your updated package with the exact same version" for this case.
-# Reset to 0.0 + -NoCheckChocoVersion forces exactly that one-time re-push; remove the flag once
+# Reset to 0.0 + forces exactly that one-time re-push; remove the flag once
 # this version passes verification per the usual policy.
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
