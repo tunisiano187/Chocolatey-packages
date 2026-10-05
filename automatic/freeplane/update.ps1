@@ -143,8 +143,8 @@ function global:au_GetLatest {
 
 # 2026-10-05: nuspec was hand-corrected to 1.12.11 (the version actually live on chocolatey.org,
 # per PR #4410 -- it had been silently stuck reporting "no updates" for over a year) to match
-# true published state rather than the usual 0.0 placeholder. -NoCheckChocoVersion forces this
+# true published state rather than the usual 0.0 placeholder. forces this
 # run's push through regardless of whatever AU's own version-exists check reports, since that
 # check is exactly what's been unreliable here. One-time flag; remove once a fresh version is
 # confirmed live per the usual policy.
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
