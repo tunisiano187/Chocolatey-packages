@@ -1,6 +1,6 @@
 ﻿$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v6.1/&type=binary&os=Windows&downloadFile=ParaView-6.1.1-Windows-Python3.12-msvc2017-AMD64.msi' # download url, HTTPS preferred
-$checksum       = '9CDC653D839EBDD14903DD11A473018D722185EEF091569454170C5BAB876D6D'
+$url            = 'https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v6.2/&type=binary&os=Windows&downloadFile=ParaView-6.2.0-Windows-Python3.12-msvc2017-AMD64.msi' # download url, HTTPS preferred
+$checksum       = '386F308913D217A558EB8069A811C0037E2D9174385F573ECAA43CD814E29F40'
 $checksumType   = 'sha256'
 
 $packageArgs = @{

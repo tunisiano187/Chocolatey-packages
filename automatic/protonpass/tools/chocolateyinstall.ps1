@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://proton.me/download/pass/windows/ProtonPass_1.40.2.msix'
-$checksum64     = '7B3FFC1A35E043DAC5768067D3E03F07C3BB8C4A234FA77094311CB7EA299888'
+$url64          = 'https://proton.me/download/pass/windows/ProtonPass_1.41.1.msix'
+$checksum64     = '6D79822FC096DA7E819E915BADF1E92DB6FFA577D4E8615A6EA0A506D5ACABD4'
 $checksumType64 = 'sha256'
 
 if ((Get-IsWinServer)) {
@@ -9,16 +9,13 @@ if ((Get-IsWinServer)) {
   throw
 }
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  url64bit      = $url64
-  silentArgs    = "/s"
-  validExitCodes= @(0)
-  softwareName  = 'Proton Pass*'
-  checksum64    = $checksum64
-  checksumType64= $checksumType64
+$dlArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  FileFullPath   = Join-Path $toolsDir 'ProtonPass.msix'
+  Url64bit       = $url64
+  Checksum64     = $checksum64
+  ChecksumType64 = $checksumType64
 }
 
-Install-ChocolateyPackage @packageArgs
+Get-ChocolateyWebFile @dlArgs
+Add-AppxPackage -Path $dlArgs.FileFullPath

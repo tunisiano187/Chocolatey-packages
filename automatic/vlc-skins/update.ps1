@@ -81,3 +81,8 @@ function global:au_GetLatest {
 # Reset to 0.0 + forces exactly that one-time re-push; remove the flag once
 # this version passes verification per the usual policy.
 update -ChecksumFor none
+# -NoCheckChocoVersion is no longer needed: upstream released a genuinely new skins pack on
+# 22 Sep, which the fixed checksum-comparison logic correctly detected and pushed as v2026.09.22
+# -- confirmed live and approved on chocolatey.org. Its one-time job is done.
+update -ChecksumFor none
+

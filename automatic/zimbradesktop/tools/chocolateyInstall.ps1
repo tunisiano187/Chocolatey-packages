@@ -1,8 +1,8 @@
 ﻿$packageName        = 'zimbra-desktop'
 $installerType      = 'exe'
 $silentArgs         = '/S'
-$url                = 'https://files.zimbra.com/downloads/zxui/4.49.0/Zimbra_Desktop_4.49.0_9e1f2c9e2_20260427162542.exe'
-$checksum           = '66af67e62e04fa7da14e12c53e8bb1edd8da0cf24ca861293600edfda3b353a4'
+$url                = 'https://files.zimbra.com/downloads/zxui/4.50.0/Zimbra_Desktop_4.50.0_1c29dbde6_20260828104135.exe'
+$checksum           = '80c1d73122b48eaeb7bb04c17390cdaa35f2e2376d07be8a8696c1fc26e6a7cc'
 $checksumType       = 'sha256'
 $validExitCodes     = @(0)
 

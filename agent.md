@@ -132,47 +132,51 @@ amendment.
 
 Separate from the Chocolatey package work, but running on its own daily
 routine (trigger `trig_017axRnenvJ5ax7KgUbsJ9P8`, fires 08:00 UTC daily):
-checks the `helpdesk.choc@gmail.com` inbox and trashes already-handled
-mail.
+checks the `helpdesk.choc@gmail.com` inbox.
 
-- **Why a custom script instead of the native Gmail connector**: the
-  native Claude Gmail MCP connector is already bound to a different
-  account (`tunisiano187@gmail.com`) and can only hold one account at a
-  time. IMAP/SMTP (port 993/587) are fully blocked by this sandbox's
-  network egress policy (HTTPS-only via proxy) — confirmed by a direct
-  socket test timing out. Zapier was tried first but its task quota was
-  exhausted and the user found it too expensive ("trop cher"); fully
-  migrated off it.
-- **Implementation**: `/home/user/scripts_helpdesk_gmail/gmail_check.py`
-  — a from-scratch OAuth2 REST client (token refresh via
-  `oauth2.googleapis.com/token`, mail operations via
-  `gmail.googleapis.com/gmail/v1/users/me/...`). Subcommands: `list
-  --max N`, `show <message_id>`, `trash <message_id>`.
-- **Credentials**: `/home/user/.credentials/helpdesk_gmail/credentials.json`
-  (`client_id`, `client_secret`, `refresh_token`), directory `chmod 700`,
-  file `chmod 600`, deliberately kept **outside any git repo**. If this
-  file is missing/rotated, the OAuth flow needs to be redone with the
-  user (walk them through creating a Google Cloud OAuth client and
-  authorizing it; see conversation history for the exact steps if
-  needed) — do not attempt IMAP as a fallback, it's network-blocked here.
-  If a session ever prints or otherwise exposes these values in plain
-  chat, tell the user to rotate them.
+- **History**: originally a from-scratch OAuth2 REST script
+  (`/home/user/scripts_helpdesk_gmail/gmail_check.py`, credentials at
+  `/home/user/.credentials/helpdesk_gmail/`) after the native Gmail MCP
+  connector proved unusable (it's bound to a different account,
+  `tunisiano187@gmail.com`, and can only hold one account at a time) and
+  Zapier was dropped as too expensive. That script and its credentials
+  lived outside any git repo on purpose (no secrets committed) — the
+  container was recreated around 2026-09-23 and **both were permanently
+  lost** (nothing to recover; this is expected for anything living outside
+  a repo). The routine failed silently for several days until this was
+  noticed and the trigger was paused.
+- **Current implementation (since 2026-10-01)**: the `Mailbox_MCP`
+  connector (tools `mcp__Mailbox_MCP__*`), set up by the user and
+  confirmed bound to `helpdesk.choc@gmail.com` (not a Gmail-specific MCP —
+  it's a generic IMAP-ish mailbox connector; `list_emails`, `read_email`,
+  `search_emails`, `archive_email`, `mark_junk`, etc.).
+  **It is hard-capped at 5 tool calls per day** — this is the single most
+  important constraint on this routine. A single `list_emails` call's
+  previews are almost always enough for the whole day's triage; reserve
+  the rest of the budget rather than spending it on `read_email` for
+  routine-looking mail, and do **not** use `mark_read`/`archive_email`/
+  `mark_junk` to tidy the inbox unless the user explicitly asks for it in
+  that session — the old "trash everything already-handled" reflex from
+  the gmail_check.py era no longer fits a 5-calls/day budget. Report
+  findings; don't spend calls cleaning up.
 - **VirusTotal API key**: `/home/user/.credentials/virustotal/apikey.txt`
   (`chmod 600`), used for ad-hoc moderation-flag verification (e.g. the
   windjview case above) via `GET
   https://www.virustotal.com/api/v3/files/{sha256}` with header
   `x-apikey: <key>`. Not tied to the AU `au_AfterUpdate` VirusTotal scan
   hook (that uses its own configured key inside `au/update_vars.ps1`,
-  not committed).
+  not committed). Still outside any git repo — if a future container
+  reset loses this too, it's the same unrecoverable situation as above;
+  tell the user rather than guessing.
 - **Behavior is defined by the trigger's own prompt, not by memory**: the
-  exact triage rules (CodeTriage link verification via real HTTP redirect
-  rather than trusting the email body, which repos/senders count as noise
-  to auto-trash — e.g. `agiresearch/AIOS` notifications, decided
-  2026-09-16 — etc.) live in the trigger's stored prompt text itself
-  (`trig_017axRnenvJ5ax7KgUbsJ9P8`, editable via `update_trigger`). When
-  the user gives a standing instruction about this routine, edit the
-  trigger's prompt directly rather than relying on in-session memory, so
-  it survives across sessions.
+  exact triage rules (the 5-call budget above, CodeTriage link
+  verification via real HTTP redirect rather than trusting the email
+  body, which repos/senders count as noise — e.g. `agiresearch/AIOS`
+  notifications, decided 2026-09-16 — etc.) live in the trigger's stored
+  prompt text itself (`trig_017axRnenvJ5ax7KgUbsJ9P8`, editable via
+  `update_trigger`). When the user gives a standing instruction about
+  this routine, edit the trigger's prompt directly rather than relying on
+  in-session memory, so it survives across sessions.
 
 ## General operating notes
 
