@@ -10,11 +10,6 @@ function global:au_SearchReplace {
 			"(checksum\s*=\s*)'.*'"     = "`$1'$($Latest.Checksum32)'"
 			"(checksumType\s*=\s*)'.*'" = "`$1'$($Latest.ChecksumType32)'"
 		}
-		"legal\VERIFICATION.txt" = @{
-			"(?i)(x86:).*"           = "`${1} $($Latest.URL32)"
-			"(?i)(checksum:).*"      = "`${1} $($Latest.Checksum32)"
-			"(?i)(checksum Type:).*" = "`${1} $($Latest.ChecksumType32)"
-		}
 	}
 }
 
@@ -33,4 +28,10 @@ function global:au_GetLatest {
 	return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
 }
 
-update -ChecksumFor none
+# 2026-10-06: chocolatey.org moderation (virtualex) asked to drop legal/VERIFICATION.txt and
+# legal/LICENSE.txt -- this package downloads its zip at install time rather than embedding it,
+# so those files (meant for embedded binaries) don't apply here; the EULA is already linked via
+# licenseUrl. Resubmitting under the exact same version per the moderator's own instructions, so
+# -NoCheckChocoVersion forces this run's push through even though au_GetLatest will likely
+# recompute the same 2.94.1. One-time flag; remove once the resubmission is confirmed live.
+update -ChecksumFor none -NoCheckChocoVersion
