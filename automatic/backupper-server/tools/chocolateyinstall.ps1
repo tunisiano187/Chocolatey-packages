@@ -2,7 +2,7 @@
 $packageName    = 'backupper-server'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://www2.aomeisoftware.com/download/adb/ABServerTrial.exe'
-$checksum       = '7D16711C583DA427AF5719569DCEE97D97C694E8A8EC7FDDD8F6A6BC5AAA3795'
+$checksum       = '7197166FFEE46E0F324D26562444708FE27AFF8AC0A93B08C68F48BFF9FBB230'
 $checksumType   = 'sha256'
 
 if (!(Get-IsWinServer)) {
