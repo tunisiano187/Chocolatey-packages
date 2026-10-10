@@ -53,4 +53,10 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor 32
+# 2026-10-10: v15.0.0 failed chocolatey.org moderation (install hung 45 min then timed out --
+# confirmed via the verifier's own log and gist: install4j's installer doesn't recognize '/S',
+# so it opened its GUI wizard instead of installing silently; fixed in chocolateyInstall.ps1 by
+# switching to install4j's own '-q' silent switch). Nuspec is already at 15.0.0 and upstream
+# hasn't moved since, so -NoCheckChocoVersion forces this run to resubmit the exact same version
+# with the fix, per the moderator's own instructions. One-time flag; remove once confirmed live.
+update -ChecksumFor 32 -NoCheckChocoVersion

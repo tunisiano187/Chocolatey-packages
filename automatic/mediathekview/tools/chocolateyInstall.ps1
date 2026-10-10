@@ -13,7 +13,12 @@ $packageArgs = @{
   checksum        = $checksum32
   checksumType    = $checksumType32
   softwareName    = "$packageName*"
-  silentArgs      = '/S'
+  # v15.0.0's installer is install4j (confirmed via its embedded strings -- "com/install4j/..."),
+  # not the NSIS-style installer '/S' targets. install4j doesn't recognize '/S' at all, so the
+  # installer opened its normal GUI wizard instead of running silently, and choco's verifier timed
+  # out after 45 minutes waiting for a process that was sitting on an unattended prompt. '-q' is
+  # install4j's own documented silent-install switch.
+  silentArgs      = '-q'
   validExitCodes= @(0)
 }
 
