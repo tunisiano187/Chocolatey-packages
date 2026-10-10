@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageName      = 'mediathekview'
-$url32            = 'https://download.mediathekview.de/stable/14.5.0/MediathekView-14-5-0-windows.exe'
-$checksum32       = 'placeholder'
+$url32            = 'https://download.mediathekview.de/stabil/MediathekView-15.0.0-win.exe'
+$checksum32       = '367f08e409435b98797cc20cea92249a7c12f86d0c71ddd3fc9aacec1f0fab04'
 $checksumType32   = 'sha256'
 
 $packageArgs = @{
