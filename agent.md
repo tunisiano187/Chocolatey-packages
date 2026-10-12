@@ -87,10 +87,13 @@ defaults to SHA512 — pass `-checksumType 'sha256'` explicitly if the
 committed checksums in the repo are SHA256, or the comparison always
 reports "different" and defeats the fix.
 
-Stale-checksum-on-a-rolling-URL handling and the splatting convention are
-already fully documented in CLAUDE.md (2026-07-24/07-26/08-01 amendments,
-and the "Automatic package structure" section, respectively) — nothing to
-add here, just apply them as written there.
+Stale-checksum-on-a-rolling-URL handling, the splatting convention, and the
+no-rationale-comments-inside-`tools/`-scripts convention (CLAUDE.md's
+2026-10-12 amendment — put *why* a fix was made in the PR/commit, or a
+`CHANGELOG.md` at the package root, never in `chocolateyInstall.ps1` etc.)
+are already fully documented in CLAUDE.md (2026-07-24/07-26/08-01/10-12
+amendments, and the "Automatic package structure" section, respectively) —
+nothing to add here, just apply them as written there.
 
 **Follow-up gotcha**: the checksum-comparison fix alone doesn't fully close
 the loop for a package whose nuspec stays at `0.0` forever (the

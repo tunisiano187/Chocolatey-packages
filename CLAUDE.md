@@ -65,6 +65,11 @@ elsewhere in the repo (e.g. `projectlibre.install`). Existing packages don't nee
 pass to convert them, but whenever a package's `chocolateyInstall.ps1` is touched for any other
 reason and isn't already splatted, convert it to splatting as part of that change.
 
+Never document the rationale for a fix/update inside any file under `tools/` (`chocolateyInstall.ps1`,
+`chocolateyUninstall.ps1`, etc.) — those files hold only the code itself. The PR description and
+commit message are normally enough; if a package needs change history beyond that, put it in a
+`CHANGELOG.md` at the package's own root (`automatic/<name>/CHANGELOG.md`), never under `tools/`.
+
 ### AU update.ps1 conventions
 Every automatic package's `update.ps1` follows this pattern:
 ```powershell
@@ -134,3 +139,4 @@ At the start of every session, automatically perform the following routine:
 - 2026-09-05: Refines 2026-07-26's `-NoCheckChocoVersion` removal scan. Don't gate it purely on "has the local nuspec moved off `0.0`" — for a package whose push happens through the single-package handler in `.appveyor.yml` (which never commits back to git), the nuspec can stay at `0.0` forever *even after a genuinely successful publish*, so that signal alone can miss the removal window entirely. `cports` and `projectlibre.install` hit exactly this: the checksum-comparison fix correctly stopped minting a new version every day, but with `-NoCheckChocoVersion` still forcing a push attempt on the same unchanged version every run, each run re-hit `409 Conflict` against a version that had already published successfully days earlier. Also treat a confirmed successful publish — an AU error report saying the version "already exists" on chocolatey.org, or a moderation "Passed Verification Testing" email — as a trigger to remove `-NoCheckChocoVersion` for that package, even while its local nuspec is still stuck at `0.0`.
 - 2026-09-16: Auto-generated maintenance PRs opened by the repo's own workflow (e.g. `github-actions[bot]` PRs removing a one-time `-NoCheckChocoVersion` flag per the 2026-07-24/2026-07-26 rules) may be merged directly, without waiting for the user, once all CI checks are green and there are no pending review comments. If CI is red or there's an unresolved review comment, report it instead of merging. This applies specifically to that class of policy-mandated, single-line, already-vetted PR — not to PRs with any actual code judgment call in them.
 - 2026-09-16 (superseded same day): the above auto-merge permission is revoked. **Never merge any PR — of any kind, including the `github-actions[bot]` maintenance PRs described above — without the user's explicit go-ahead.** Verify CI status and review comments and report them as usual, but leave the actual merge button to the user, or wait for them to say "merge it" for a specific PR.
+- 2026-10-12: Never document the rationale for a fix/update inside any file under a package's `tools/` folder (`chocolateyInstall.ps1`, `chocolateyUninstall.ps1`, etc.) — those files hold only the code itself. Change documentation belongs in the PR description/commit message, or — if the package needs change history beyond that — in a `CHANGELOG.md` at the package's own root (`automatic/<name>/CHANGELOG.md`), never under `tools/`. (See "Automatic package structure" above, where this is also documented inline.)
