@@ -13,7 +13,7 @@ $packageArgs = @{
   checksum        = $checksum32
   checksumType    = $checksumType32
   softwareName    = "$packageName*"
-  silentArgs      = '/S'
+  silentArgs      = '-q'
   validExitCodes= @(0)
 }
 
