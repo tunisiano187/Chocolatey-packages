@@ -133,18 +133,19 @@ function global:au_GetLatest {
 		($_.link -notlike "*touchscreen*")
 	} | Select-Object -First 1
 
+	if (-not $items) {
+		throw "No matching Freeplane-Setup-*.exe entry found in SourceForge RSS feed ($releases) -- feed may be empty, blocked, or the file naming pattern changed."
+	}
+
 	$url32 = $items.link
 	$versionMatch = [regex]::Match($url32, 'Freeplane-Setup-(\d+\.\d+(?:\.\d+)?(?:-u\d+)?)\.exe')
+	if (-not $versionMatch.Success) {
+		throw "Could not extract a version number from matched URL: $url32"
+	}
 	$version = $versionMatch.Groups[1].Value
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 
-# 2026-10-05: nuspec was hand-corrected to 1.12.11 (the version actually live on chocolatey.org,
-# per PR #4410 -- it had been silently stuck reporting "no updates" for over a year) to match
-# true published state rather than the usual 0.0 placeholder. forces this
-# run's push through regardless of whatever AU's own version-exists check reports, since that
-# check is exactly what's been unreliable here. One-time flag; remove once a fresh version is
-# confirmed live per the usual policy.
 update -ChecksumFor none
