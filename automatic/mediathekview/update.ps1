@@ -57,6 +57,6 @@ function global:au_GetLatest {
 # confirmed via the verifier's own log and gist: install4j's installer doesn't recognize '/S',
 # so it opened its GUI wizard instead of installing silently; fixed in chocolateyInstall.ps1 by
 # switching to install4j's own '-q' silent switch). Nuspec is already at 15.0.0 and upstream
-# hasn't moved since, so -NoCheckChocoVersion forces this run to resubmit the exact same version
+# hasn't moved since, so forces this run to resubmit the exact same version
 # with the fix, per the moderator's own instructions. One-time flag; remove once confirmed live.
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor 32
