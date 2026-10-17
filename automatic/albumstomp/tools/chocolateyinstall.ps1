@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $url                = 'https://stompsoftware.com/downloadfiles/albumstomp/SetupAlbumStompV2.exe'
-$checksum           = 'e6da1083635df601b5eb841de879a2286efef0982bc4d9c3183f4f2126fd0a9c'
+$checksum           = 'e5ab0c75a6595c25a9ee9e6f8cc70ee07747d936f18f82fe82c8016ebb57071a'
 $checksumType       = 'sha256'
 
 $packageArgs = @{
