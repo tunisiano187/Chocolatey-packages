@@ -7,7 +7,7 @@ The latest installers are available here:
 
    
 Direct Download:
-Version        : 6.2
+Version        : 6.3.0
 URL            : https://annystudio.com/software/colorpicker/jcpicker.zip
-CheckSum       : 0C87E4EF9C22DE23A8B5810C66D71B860B39A3B64D6898338969E3AB10484D23
+CheckSum       : 3121D2F7587309BA194D158233B83CD6E0658EFA43A3F11365F627F6E37908BE
 CheckSumType   : sha256
