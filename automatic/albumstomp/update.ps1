@@ -3,6 +3,7 @@ import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://www.stompsoftware.com/downloads/'
+$script:FileVersionCache = $null
 
 function global:au_SearchReplace {
 	@{
@@ -15,8 +16,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate {
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion -url $Latest.URL32 -checksumType 'sha256'
+	# Reuse the download au_GetLatest already did for the checksum-drift check below when
+	# it's for the same URL, instead of fetching this 53 MB installer a second time.
+	if ($script:FileVersionCache -and $script:FileVersionCache.Url -eq $Latest.URL32) {
+		$FileVersion = $script:FileVersionCache.Result
+	} else {
+		. ..\..\scripts\Get-FileVersion.ps1
+		$FileVersion = Get-FileVersion -url $Latest.URL32 -checksumType 'sha256'
+	}
 	$Latest.Checksum32 = $FileVersion.Checksum
 	$Latest.ChecksumType32 = $FileVersion.ChecksumType
 }
@@ -47,6 +54,7 @@ function global:au_GetLatest {
 	if ($baseVersion -eq '2.40') {
 		. ..\..\scripts\Get-FileVersion.ps1
 		$FileVersion = Get-FileVersion -url $url32 -checksumType 'sha256'
+		$script:FileVersionCache = @{ Url = $url32; Result = $FileVersion }
 		$installContent = Get-Content "$PSScriptRoot\tools\chocolateyinstall.ps1" -Raw
 		$current_checksum = [regex]::Match($installContent, "\`$checksum\s*=\s*'([a-fA-F0-9]+)'").Groups[1].Value
 		if ($current_checksum -and $current_checksum -ne $FileVersion.Checksum) {
