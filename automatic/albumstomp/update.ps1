@@ -38,16 +38,18 @@ function global:au_GetLatest {
 	$FileVersion = Get-FileVersion -url $url32 -checksumType 'sha256'
 
 	$version = $baseVersion
-	$installContent = Get-Content "$PSScriptRoot\tools\chocolateyinstall.ps1" -Raw
-	$current_checksum = [regex]::Match($installContent, "\`$checksum\s*=\s*'([a-fA-F0-9]+)'").Groups[1].Value
-	if ($current_checksum -and $current_checksum -ne $FileVersion.Checksum) {
-		try {
-			$lastModified = (Invoke-WebRequest -Uri $url32 -Method Head -UseBasicParsing).Headers['Last-Modified']
-			$dateStamp = ([datetime]::Parse($lastModified)).ToString('yyyyMMdd')
-		} catch {
-			$dateStamp = Get-Date -Format 'yyyyMMdd'
+	if ($baseVersion -eq '2.40') {
+		$installContent = Get-Content "$PSScriptRoot\tools\chocolateyinstall.ps1" -Raw
+		$current_checksum = [regex]::Match($installContent, "\`$checksum\s*=\s*'([a-fA-F0-9]+)'").Groups[1].Value
+		if ($current_checksum -and $current_checksum -ne $FileVersion.Checksum) {
+			try {
+				$lastModified = (Invoke-WebRequest -Uri $url32 -Method Head -UseBasicParsing).Headers['Last-Modified']
+				$dateStamp = ([datetime]::Parse($lastModified)).ToString('yyyyMMdd')
+			} catch {
+				$dateStamp = Get-Date -Format 'yyyyMMdd'
+			}
+			$version = "$baseVersion.$dateStamp"
 		}
-		$version = "$baseVersion.$dateStamp"
 	}
 
 	return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
