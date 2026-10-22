@@ -263,7 +263,7 @@ on_finish:
       'eventlogs.txt'
     )
     $paths | ? { Test-Path $_ } | % { Push-AppveyorArtifact $_ }
-    Remove-Item -Path $env:TEMP -Recurse -Force -ErrorAction SilentlyContinue
+    try { Remove-Item -Path $env:TEMP -Recurse -Force -ErrorAction Stop } catch { Write-Host "TEMP cleanup failed (non-fatal): $_" }
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 notifications:
