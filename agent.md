@@ -87,13 +87,18 @@ defaults to SHA512 — pass `-checksumType 'sha256'` explicitly if the
 committed checksums in the repo are SHA256, or the comparison always
 reports "different" and defeats the fix.
 
-Stale-checksum-on-a-rolling-URL handling, the splatting convention, and the
+Stale-checksum-on-a-rolling-URL handling, the splatting convention, the
 no-rationale-comments-inside-`tools/`-scripts convention (CLAUDE.md's
 2026-10-12 amendment — put *why* a fix was made in the PR/commit, or a
-`CHANGELOG.md` at the package root, never in `chocolateyInstall.ps1` etc.)
-are already fully documented in CLAUDE.md (2026-07-24/07-26/08-01/10-12
-amendments, and the "Automatic package structure" section, respectively) —
-nothing to add here, just apply them as written there.
+`CHANGELOG.md` at the package root, never in `chocolateyInstall.ps1` etc.),
+and the auto-force-resubmit rule for the recurring chocolatey.org
+"We were unable to find a package, and are unable to continue validation."
+moderation message (CLAUDE.md's 2026-10-24 amendment — force it immediately
+rather than waiting for AU's normal comparison, which often never retries
+a push for a version it believes it already pushed) are already fully
+documented in CLAUDE.md (2026-07-24/07-26/08-01/10-12/10-24 amendments, and
+the "Automatic package structure" section, respectively) — nothing to add
+here, just apply them as written there.
 
 **Follow-up gotcha**: the checksum-comparison fix alone doesn't fully close
 the loop for a package whose nuspec stays at `0.0` forever (the
