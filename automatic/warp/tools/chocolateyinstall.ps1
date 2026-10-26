@@ -22,9 +22,14 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1641)
 }
 
-if([System.Environment]::OSVersion.Version -ge ([version]"10.0.18363")) {
-  Install-ChocolateyPackage @packageArgs
-} else {
-  Write-Warning "System not supported, 1909+ required"
-  exit 0;
+$OSVersion = [version](Get-CimInstance Win32_OperatingSystem).Version
+
+Write-Host "Detected Windows Version: $OSVersion"
+
+if ($OSVersion -ge [version]"10.0.18363") {
+    Install-ChocolateyPackage @packageArgs
+}
+else {
+    Write-Warning "System not supported, 1909+ required. Detected version: $OSVersion"
+    exit 1
 }
