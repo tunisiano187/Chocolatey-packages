@@ -5,8 +5,8 @@ $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = "$env:ProgramFiles\Tdarr"
-  url           = 'https://storage.tdarr.io/versions/2.94.01/win32_x64/Tdarr_Updater.zip'
-  checksum      = '574F20B7FDFB52F8F33448773F2D37968DFF6E8BB221C7521317A69EDBC2364F'
+  url           = 'https://storage.tdarr.io/versions/3.04.00/win32_x64/Tdarr_Updater.zip'
+  checksum      = '80A81A2F9D805E0ABC01A82FAD3EC4EC127243C7AFC7E43488052BA4838FDA68'
   checksumType  = 'sha256'
 }
 
