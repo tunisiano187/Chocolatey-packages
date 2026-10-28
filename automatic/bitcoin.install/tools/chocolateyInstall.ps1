@@ -1,8 +1,8 @@
 ﻿$packageName    = $env:ChocolateyPackageName
 $installerType  = 'exe'
 $silentArgs     = '/S'
-$url64          = 'https://bitcoincore.org/bin/bitcoin-core-31.1/bitcoin-31.1-win64-setup.exe'
-$checksum64     = 'd0c6d0f3cd08689472a6f53c4ce33a5f059c092758c32c42541b47db4e193458'
+$url64          = 'https://bitcoincore.org/bin/bitcoin-core-32.1/bitcoin-32.1-win64-setup.exe'
+$checksum64     = 'd4cc64d500fa7713b5e2f3b9d46a215def3c4ed91aa46bf13e4de1a042bf9aa2'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0)
 
