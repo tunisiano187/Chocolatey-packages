@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference  = 'Stop'
-$url                    = 'https://dl.johnsadventures.com/SwitcherSetup61.exe'
-$checksum               = '0167cb69bfc7930ebc7e89e77cef6d8d737e4813640c0a9bec429e37bc79ad19'
+$url                    = 'https://dl.johnsadventures.com/SwitcherSetup62.exe'
+$checksum               = '689bc815219a185d1d89ea6e007efd5c34c512e7e7b9259de1e1e8815864f27d'
 $checksumType           = 'sha256'
 
 $packageArgs = @{

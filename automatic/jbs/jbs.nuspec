@@ -4,12 +4,12 @@
   <metadata>
     <id>jbs</id>
     <title>John's Background Switcher</title>
-    <version>6.1.0.8</version>
+    <version>6.2.0.9</version>
     <authors>John Conners</authors>
     <owners>tunisiano</owners>
     <summary>John's Background Switcher for Windows</summary>
     <description><![CDATA[## chocolatey-package-jbs
-John's Background Switcher (or JBS for short) periodically changes the background image on your 
+John’s Background Switcher (or JBS for short) periodically changes the background image on your 
 Windows computer to something awesome.
 
 ### Package-specific issue
