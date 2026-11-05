@@ -4,19 +4,19 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 The embedded software has been downloaded from the listed download
-location on <https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases/tag/0.93.12>
+location on <https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases/tag/0.93.13>
 and can be verified by doing the following:
 
 1. Download the following:
 
-  url: <https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases/download/0.93.12/NMM-0.93.12.exe>
+  url: <https://github.com/Nexus-Mods/Nexus-Mod-Manager/releases/download/0.93.13/NMM-0.93.13.exe>
 
   2. You can obtain the checksum using one of the following methods:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum:94B9C3333AF00E398AC3B4A39D4FBFFC3AF298DFD9FF3232F2D5A15DBEF6D98A
+  checksum:4A8FF0B9871ED3D10B85C6F1A7D1F53FA29601983F91ED0A6B05B7E5A98AB983
 
 Using AU:
 
