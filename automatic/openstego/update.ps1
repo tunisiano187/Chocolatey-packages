@@ -1,6 +1,8 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
+$releases = 'https://api.github.com/repos/syvaidya/openstego/releases/latest'
+
 function global:au_SearchReplace {
 	@{
 		"$($Latest.PackageName).nuspec" = @{
@@ -15,11 +17,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$choc=$(choco search openstego.install | Where-Object {$_ -match "openstego"})
-	$version = $choc.Split(" ")[1]
-
-	$Latest = @{ Version = $version }
-	return $Latest
+    $release = Invoke-RestMethod $releases
+    $version = $release.tag_name.Replace('v','').Split('-') | Where-Object {$_ -match '\.'}
+    if ($release.prerelease -match 'true') {
+        $date = $release.published_at.ToString('yyyyMMdd')
+        $version = "$version-pre$($date)"
+    }
+    return @{ Version = $version }
 }
 
 update -ChecksumFor none
