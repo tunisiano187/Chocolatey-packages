@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>openstego.install</id>
-    <version>0.8.6</version>
+    <version>0.0</version>
     <title>OpenStego (Install)</title>
     <authors>Samir Vaidya</authors>
     <owners>tunisiano</owners>
@@ -36,7 +36,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>(c) Samir Vaidya</copyright>
     <tags>steganography security encryption</tags>
     <dependencies>
-      <dependency id="javaruntime" />
+      <dependency id="jre8" />
     </dependencies>
   </metadata>
   <files>
