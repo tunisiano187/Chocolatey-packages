@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $url          = 'https://cdn.privacywall.org/pro/PrivacyWallFirewallProSetup.exe'
-$checksum     = '6fcf264992a22f6d3bdce3919410fb1a1be2fc2076f14be78ad1c34e96dde1cc'
+$checksum     = 'fa02a3bacf22735805c512b18a441f559b0c53e9ebf75f80b48c5cba779708eb'
 $checksumType = 'sha256'
 
 $packageArgs = @{
