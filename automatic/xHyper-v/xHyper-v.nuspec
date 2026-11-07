@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xHyper-v</id>
-    <version>3.18.0</version>
+    <version>0.0</version>
     <title>xHyper-v DSC Module</title>
     <authors>PowerShell Team</authors>
     <owners>tunisiano</owners>
