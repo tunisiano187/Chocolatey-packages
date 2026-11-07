@@ -1,7 +1,7 @@
 $packageName = 'exchange-edb-viewer'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url         = 'http://www.nucleustechnologies.com/downloads/exchange-edb-viewer.exe'
-$checksum    = '465BC1041EE2C5082F2E26A38B1B61C587423B4D2F032B5BE38CE7D574ADE3ED'
+$checksum    = 'F09E131EFE586754BA41550179C793BE39A0EFECF697A14D875ABD9685D2F8E8'
 
 $packageArgs = @{
   packageName   = $packageName
