@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName      = $env:ChocolateyPackageName
-$url64            = 'https://cdist2.perforce.com/perforce/r26.2/bin.ntx64/p4vinst64.exe'
-$checksum         = '80C592BD948FFE22799D005302ECA50DD5780E80F7C08F3B54436C3867C9B64D'
+$url64            = 'https://cdist2.perforce.com/perforce/r26.3/bin.ntx64/p4vinst64.exe'
+$checksum         = '29F413112E41A34DDD375D10576CF177A62380664032250FFB96D2B1FD59281A'
 $checksumType     = 'sha256'
 
 $packageArgs = @{
