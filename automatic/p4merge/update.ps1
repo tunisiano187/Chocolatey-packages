@@ -6,6 +6,7 @@ $releases = 'https://cdist2.perforce.com/perforce/'
 function global:au_SearchReplace {
 	@{
 		'tools/chocolateyInstall.ps1' = @{
+			"(^[$]url64\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
 			"(^[$]checksum\s*=\s*)('.*')" 		= "`$1'$($Latest.Checksum32)'"
 			"(^[$]checksumType\s*=\s*)('.*')" 	= "`$1'$($Latest.ChecksumType32)'"
 		}
@@ -20,7 +21,13 @@ function global:au_SearchReplace {
 
 
 function global:au_BeforeUpdate($Package) {
-	Get-RemoteFiles -Purge -NoSuffix
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $Latest.URL32
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.ChecksumType
+}
+
+function global:au_AfterUpdate($Package) {
 	. ..\..\scripts\Invoke-VirusTotalScan.ps1
 	Invoke-VirusTotalScan $Package
 }
@@ -49,7 +56,6 @@ function global:au_GetLatest {
 			Write-Verbose "V$($item) Not found"
 		}
     }
-	Invoke-WebRequest -Uri $url64 -OutFile ".\tools\p4vinst64.exe"
 
 	if($version -eq "2022.3") {
 		$version = "2022.3.0.2022112301"
@@ -58,4 +64,4 @@ function global:au_GetLatest {
 	return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
