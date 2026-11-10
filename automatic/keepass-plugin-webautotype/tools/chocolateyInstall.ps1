@@ -10,8 +10,8 @@ if ($psver -ge 3) {
 $packageName    = $env:ChocolateyPackageName
 $typName        = 'WebAutoType.plgx'
 $packageSearch  = 'KeePass'
-$url            = 'https://downloads.sourceforge.net/project/webautotype/v6.9.3/WebAutoType-v6.9.3.zip'
-$checksum       = 'cd9afae81da64644be155de01248d6b4a5d929049c489d8a2e78162f8fce7226'
+$url            = 'https://downloads.sourceforge.net/project/webautotype/v6.9.4/WebAutoType-v6.9.4.zip'
+$checksum       = '75ccdbbf4da5c21bb79f1e721d526a313bf0b65e42e8dda52ebd252c3bba8baa'
 $checksumType   = 'sha256'
 
 try {
