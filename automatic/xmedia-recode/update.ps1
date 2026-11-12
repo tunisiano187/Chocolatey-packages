@@ -34,7 +34,8 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-	$regexPattern = 'XMedia Recode (\d+\.\d+(\.\d+)*)'
+	# Require at least 2 dots (3+ components) to avoid matching "64" from "XMedia Recode 64bit"
+	$regexPattern = 'XMedia Recode ((\d+\.){2,}\d+)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 
 	if (-not $versionMatch.Matches -or $versionMatch.Matches.Count -eq 0) {
@@ -43,7 +44,7 @@ function global:au_GetLatest {
 
 	$version = $versionMatch.Matches[0].Groups[1].Value
 
-	if (-not $version -or $version -eq "" -or $version -match '^\d{2}$') {
+	if (-not $version -or $version -eq "") {
 		throw "Invalid version extracted: '$version'"
 	}
 
