@@ -61,4 +61,8 @@ function global:au_GetLatest {
 }
 
 
-update -ChecksumFor none
+# -NoCheckUrl: AU's own independent URL-reachability check (separate from -ChecksumFor,
+# which only controls checksum computation) hits the bare URL with no Referer and always
+# gets the same 403 -- confirmed still failing after #4468 added the Referer-aware download
+# in au_BeforeUpdate, because that check runs regardless of -ChecksumFor.
+update -ChecksumFor none -NoCheckUrl
