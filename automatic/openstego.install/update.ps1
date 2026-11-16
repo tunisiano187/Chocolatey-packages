@@ -33,4 +33,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; Version = $version }
 }
 
-update-package -ChecksumFor 32 -NoCheckChocoVersion
+update-package -ChecksumFor 32
