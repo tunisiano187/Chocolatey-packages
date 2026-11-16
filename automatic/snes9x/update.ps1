@@ -38,4 +38,4 @@ function global:au_GetLatest {
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
 
-update-package -NoCheckChocoVersion
+update-package
