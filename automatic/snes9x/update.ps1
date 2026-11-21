@@ -30,6 +30,9 @@ function global:au_GetLatest {
     $url64 = $urls | Where-Object {$_ -match 'win32-x64'}
     Update-Metadata -key "releaseNotes" -value $tags.html_url
 	$version = $tags.tag_name.Replace('v','')
+	$parts = $version.Split('.')
+	while ($parts.Count -lt 3) { $parts += '0' }
+	$version = ($parts[0..2]) -join '.'
     if($tags.prerelease -match "true") {
         $date = $tags.published_at.ToString("yyyyMMdd")
         $version = "$version-pre$($date)"
