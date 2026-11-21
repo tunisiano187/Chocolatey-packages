@@ -27,6 +27,9 @@ function global:au_GetLatest {
 	$regexPattern = 'CurrPorts\ v(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
+	$parts = $version.Split('.')
+	while ($parts.Count -lt 3) { $parts += '0' }
+	$version = ($parts[0..2]) -join '.'
 
 	# nirsoft.net doesn't bump the CurrPorts version string on every silent binary refresh, and
 	# the single-package push handler in .appveyor.yml doesn't commit back to git (same root
