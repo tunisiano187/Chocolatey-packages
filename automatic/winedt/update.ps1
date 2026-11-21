@@ -23,6 +23,9 @@ function global:au_GetLatest {
 	$url32="https://www.winedt.com/$($link.href)"
 
     $version = (Get-Version $link.outerHTML).Version
+	$parts = $version.Split('.')
+	while ($parts.Count -lt 3) { $parts += '0' }
+	$version = ($parts[0..2]) -join '.'
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 
