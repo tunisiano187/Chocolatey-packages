@@ -22,7 +22,12 @@ function global:au_GetLatest {
 	# minepi.com/pi-blockchain/pi-node/ now 301-redirects to minepi.com/pi-node/ -- follow it
 	# with -UseBasicParsing's default redirect handling (Invoke-WebRequest follows 3xx
 	# automatically), so $releases itself doesn't need to change.
-	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match ".exe"} | Select-Object -First 1).href
+	# minepi.com is behind Cloudflare and intermittently rejects requests with no User-Agent
+	# at all (PowerShell's default) -- confirmed live, a browser UA gets a normal 200 with the
+	# .exe link present. Without it, $url silently ends up empty and the error below reports an
+	# empty filename instead of the real cause.
+	$ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+	$url = ((Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent $ua).Links | Where-Object {$_ -match ".exe"} | Select-Object -First 1).href
 	$filename = [System.IO.Path]::GetFileName($url)
 
 	# The installer filename changed from space/%20-separated ("Pi Network Setup 0.6.2.exe")
