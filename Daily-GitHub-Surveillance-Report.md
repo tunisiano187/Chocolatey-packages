@@ -1,12 +1,15 @@
 ## 📋 Rapport de Surveillance Quotidienne GitHub
 
-**Date**: 2026-11-21 14:51:11 UTC  
+**Date**: 2026-11-22 14:47:21 UTC  
 **Repository**: tunisiano187/Chocolatey-packages  
 **Période**: 1 jour(s)  
 
 ---
 
-### 🚀 Issues Ouverts (2 total)
+### 🚀 Issues Ouverts (3 total)
+
+#### 🔴 critical (1 issues)
+- #4484: [Bug] 5.0.4 Checksum Fail - https://github.com/tunisiano187/Chocolatey-packages/issues/4484 [🔴 critical]
 
 #### 🟡 medium (1 issues)
 - #3998: 📊 Main GitHub Surveillance Issue - https://github.com/tunisiano187/Chocolatey-packages/issues/3998 [🟡 medium]
@@ -22,13 +25,14 @@ Aucun Pull Request détecté
 
 ### 📊 Résumé par Priorité
 
+- 🔴 critical: 1
 - 🟡 medium: 1
 - ⚪ normal: 1
 
 ### 📈 Statistiques Globales
-- **Total issues**: 2
+- **Total issues**: 3
 - **Total PRs**: 0
-- **Critiques**: 0
+- **Critiques**: 1
 - **Hautes priorités**: 0
 
 ### 🚀 Actions Recommandées
@@ -40,4 +44,4 @@ Aucun Pull Request détecté
 
 ---
 
-*Généré automatiquement par Enhanced Surveillance Script à 2026-11-21 14:51:11 UTC*
+*Généré automatiquement par Enhanced Surveillance Script à 2026-11-22 14:47:21 UTC*
