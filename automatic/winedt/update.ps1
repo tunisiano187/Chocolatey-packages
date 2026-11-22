@@ -22,7 +22,7 @@ function global:au_GetLatest {
     $link = ((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_ -match '.exe'})
 	$url32="https://www.winedt.com/$($link.href)"
 
-    $version = (Get-Version $link.outerHTML).Version
+    $version = (Get-Version $link.outerHTML).Version.ToString()
 	$parts = $version.Split('.')
 	while ($parts.Count -lt 3) { $parts += '0' }
 	$version = ($parts[0..2]) -join '.'
