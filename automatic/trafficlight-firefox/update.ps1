@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 import-module chocolatey-AU
 
-$releases = 'https://addons.mozilla.org/en-US/firefox/addon/trafficlight/'
+$releases = 'https://addons.mozilla.org/api/v5/addons/addon/trafficlight/'
 
 function global:au_SearchReplace {
 	@{
@@ -26,9 +26,13 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$url32 = (((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object {$_.href -match ".xpi"} ).href)
-
-	$version=(Get-Version $url32).Version
+	# addons.mozilla.org/en-US/firefox/addon/trafficlight/ now serves a JS "Client Challenge"
+	# anti-bot page with no .xpi link in the static HTML -- confirmed live (plain page fetch
+	# returns an empty React-shell document). The official AMO REST API isn't behind that
+	# challenge and returns the same data cleanly.
+	$addon = Invoke-RestMethod -Uri $releases -UseBasicParsing
+	$url32 = $addon.current_version.file.url
+	$version = $addon.current_version.version
 
 	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
