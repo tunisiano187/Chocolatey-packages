@@ -55,10 +55,15 @@ function global:au_BeforeUpdate {
 	# URL from this CI's datacenter IP consistently (not just occasionally) returns SourceForge's
 	# HTML "choose a mirror" interstitial on every one of 5 retries -- confirmed live, so this
 	# isn't the intermittent flakiness the retry loop was originally written for. Stripping the
-	# trailing "/download" and fetching the bare file URL instead avoids that bot-gated endpoint;
-	# SourceForge still 302-redirects it straight to a mirror, which Invoke-WebRequest follows
-	# automatically, and it isn't subject to the same automation block.
-	$fetchUrl = $Latest.URL32 -replace '/download$', ''
+	# trailing "/download" and fetching the bare sourceforge.net file URL was tried next, but it
+	# still hit the same HTML interstitial on this CI's IP (5/5 attempts, "missing 'MZ' header").
+	# downloads.sourceforge.net is SourceForge's own documented direct-link host for scripted/
+	# automated downloads: it 302-redirects straight to a mirror without ever serving the
+	# browser-facing "choose a mirror" page, so it isn't subject to that same block.
+	if ($Latest.URL32 -notmatch '^https://sourceforge\.net/projects/([^/]+)/files/(.+?)/download$') {
+		throw "Could not derive a downloads.sourceforge.net direct link from: $($Latest.URL32)"
+	}
+	$fetchUrl = "https://downloads.sourceforge.net/project/$($Matches[1])/$($Matches[2])"
 
 	# 2026-09-04/05 postmortem: a prior version of this function sent a spoofed browser
 	# User-Agent here ('Chrome/120...') as a further mitigation attempt. DO NOT reintroduce that.
