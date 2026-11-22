@@ -2,8 +2,10 @@ import-module chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 # The ubackup.com website is behind Cloudflare and blocks automated requests.
-# The direct download URL on aomeisoftware.com CDN is accessible without JS challenge.
-$url32 = 'https://www2.aomeisoftware.com/download/adb/ABServerTrial.exe'
+# The old www2.aomeisoftware.com CDN URL started 404ing; go.ubackup.com/dl/... (scraped from
+# the current server.html download button) is the new stable redirecting URL -- confirmed live,
+# it 302s to a time-limited aomeiget.com URL but is itself accessible without a JS challenge.
+$url32 = 'https://go.ubackup.com/dl/adb/ABServerTrial.exe'
 
 function global:au_SearchReplace {
 	@{
