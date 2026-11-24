@@ -2,10 +2,10 @@
 $packageName    = 'solarwinds-recovery-console'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://install.mob.system-monitor.com/backup-and-recovery-rc-windows-x86.exe'
-$checksum       = 'B4B87E3081CBDFBB3AECDB874F1894CD6F5110BD1E8802D0EDF87F6A03A35CED'
+$checksum       = '7A25FF00EA01D93ECD3B74DDFAEDCD22A28D4C071CE72DAC18FE88D6A3BAA769'
 $checksumType   = 'sha256'
 $url64          = ''
-$checksum64     = '8D523DFAC3DE2737AC00307A97FD9EDC94134B6D79B4FA16E70002231B66D2E4'
+$checksum64     = '6AA8EC34BD11E0E5CB8FCF7F85625A54A7D5529E55421085B19185C87BAC7C0B'
 $checksumType64 = ''
 
 $packageArgs = @{
