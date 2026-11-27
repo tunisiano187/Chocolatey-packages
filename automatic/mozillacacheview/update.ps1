@@ -16,13 +16,24 @@ function global:au_BeforeUpdate {
 	# Get-FileVersion derives .FileName via Chocolatey's own Get-WebFileName, which can append an
 	# extra extension (e.g. ".txt") based on the server's Content-Type response at download time
 	# instead of trusting the URL's own ".zip". chocolateyInstall.ps1 always looks for an exact
-	# "mzcacheview.zip", so a renamed drop here silently breaks 7z extraction on install (confirmed:
-	# v2.25.0 shipped with mzcacheview.zip.txt and failed chocolatey.org's verification testing with
-	# "7-Zip encountered a fatal error... The system cannot find the file specified"). Target the
-	# exact filename chocolateyInstall.ps1 expects instead of trusting the dynamically detected name.
-	Move-Item -Path $FileVersion.TempFile -Destination "tools\mzcacheview.zip"
+	# "mzcacheview.zip", so a renamed drop here silently breaks 7z extraction on install.
+	#
+	# A first attempt at this fix (just retargeting Move-Item's destination, PR #4495) did NOT
+	# actually clear it: v2.25.0 failed chocolatey.org's verification testing a second time with
+	# the identical mzcacheview.zip.txt, on a build confirmed (via git ancestry) to have run with
+	# that fix already in place. The remaining suspect is au_AfterUpdate: Invoke-VirusTotalScan
+	# calls AU's own Get-RemoteFiles -NoSuffix whenever neither $Latest.FileName32 nor FileName64
+	# is already set, which independently re-downloads $Latest.URL32 into tools\ *after* this
+	# function runs - a second, redundant write to the same destination. Force the move (in case a
+	# stale same-named file is already present), verify it actually landed, and set FileName32
+	# ourselves so that redundant second download is skipped entirely.
+	Move-Item -Path $FileVersion.TempFile -Destination "tools\mzcacheview.zip" -Force
+	if (-not (Test-Path "tools\mzcacheview.zip")) {
+		throw "tools\mzcacheview.zip is missing after Move-Item - chocolateyInstall.ps1 would fail to find it"
+	}
 	$Latest.Checksum32 = $FileVersion.Checksum
 	$Latest.ChecksumType32 = $FileVersion.checksumType
+	$Latest.FileName32 = 'mzcacheview.zip'
 }
 
 function global:au_AfterUpdate($Package) {
