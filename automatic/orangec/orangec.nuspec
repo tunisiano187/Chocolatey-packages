@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>orangec</id>
-    <version>7.20.1</version>
+    <version>0.0</version>
     <title>Orange C/C++ Compiler (Install)</title>
     <authors>David Lindauer</authors>
     <owners>tunisiano</owners>
